@@ -277,6 +277,7 @@
   "Profile": {
     "title": "Tu perfil",
     "loading": "Cargando…",
+    "loadFailed": "No se pudo cargar tu perfil. Recarga la página o inténtalo más tarde.",
     "welcome": "Tu correo está confirmado. ¡Bienvenido a YourHEI!",
     "email": "Correo electrónico",
     "plan": "Plan",

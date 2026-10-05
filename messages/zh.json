@@ -277,6 +277,7 @@
   "Profile": {
     "title": "你的个人资料",
     "loading": "加载中…",
+    "loadFailed": "无法加载个人资料。请刷新页面或稍后再试。",
     "welcome": "邮箱已确认，欢迎使用 YourHEI！",
     "email": "电子邮箱",
     "plan": "套餐",
