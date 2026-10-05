@@ -13,7 +13,9 @@
     "login": "Iniciar sesión",
     "loginSoon": "El inicio de sesión estará disponible pronto",
     "language": "Idioma",
-    "toggleTheme": "Cambiar entre tema claro y oscuro"
+    "toggleTheme": "Cambiar entre tema claro y oscuro",
+    "profile": "Perfil",
+    "logout": "Cerrar sesión"
   },
   "Footer": {
     "navLabel": "Información del sitio",
@@ -83,13 +85,11 @@
     },
     "privacy": {
       "title": "Política de privacidad",
-      "banner": "Plantilla: requiere revisión de un abogado.",
-      "body": "El texto completo se añadirá antes de abrir el registro. Por ahora el sitio no recoge datos personales ni usa rastreadores de terceros."
+      "banner": "Plantilla: requiere revisión de un abogado."
     },
     "terms": {
       "title": "Condiciones de uso",
-      "banner": "Plantilla: requiere revisión de un abogado.",
-      "body": "El texto completo se añadirá antes de abrir el registro."
+      "banner": "Plantilla: requiere revisión de un abogado."
     },
     "comingSoon": {
       "title": "Próximamente",
@@ -100,6 +100,249 @@
       "title": "Página no encontrada",
       "body": "La página que buscas no existe.",
       "home": "Ir al inicio"
+    }
+  },
+  "Subregions": {
+    "eastern-europe": "Europa del Este",
+    "northern-europe": "Europa del Norte",
+    "southern-europe": "Europa del Sur",
+    "western-europe": "Europa Occidental",
+    "central-asia": "Asia Central",
+    "eastern-asia": "Asia Oriental",
+    "south-eastern-asia": "Sudeste Asiático",
+    "southern-asia": "Asia del Sur",
+    "western-asia": "Asia Occidental"
+  },
+  "Register": {
+    "title": "Crea tu cuenta",
+    "intro": "Cuatro pasos cortos. Hasta que crees la cuenta, tus respuestas se guardan solo en este navegador.",
+    "progressLabel": "Progreso del registro",
+    "stepOf": "Paso {current} de {total}",
+    "steps": {
+      "search": "Qué buscas",
+      "about": "Sobre ti",
+      "documents": "Documentos",
+      "account": "Cuenta"
+    },
+    "back": "Atrás",
+    "next": "Siguiente",
+    "create": "Crear cuenta",
+    "creating": "Creando la cuenta…",
+    "alreadyHave": "¿Ya tienes una cuenta?",
+    "loginLink": "Iniciar sesión",
+    "search": {
+      "regionsTitle": "Regiones",
+      "regionsHint": "Elige una o varias. Abajo puedes afinar los países.",
+      "regions": {
+        "caucasus-ca-ee": "Cáucaso, Asia Central y Europa del Este",
+        "europe": "Europa",
+        "asia": "Asia"
+      },
+      "countriesTitle": "Países",
+      "countriesHint": "Están marcados todos los países de las regiones elegidas. Desmarca los que no necesites.",
+      "pickRegion": "Elige primero una región.",
+      "selectAll": "Seleccionar todos",
+      "clearAll": "Quitar todos",
+      "groupLabel": "Países: {group}",
+      "typesTitle": "Tipos de institución",
+      "typesHint": "Elige uno o varios."
+    },
+    "about": {
+      "birthDate": "Fecha de nacimiento",
+      "birthDateWhy": "Para comprobar la edad mínima en tu país y mostrarte programas adecuados.",
+      "gender": "Género",
+      "genderWhy": "Es necesario para escuelas y residencias no mixtas. Puedes elegir no decirlo.",
+      "male": "Masculino",
+      "female": "Femenino",
+      "undisclosed": "Prefiero no decirlo",
+      "residence": "País de residencia",
+      "residenceWhy": "Determina la edad mínima, la moneda que se muestra y las reglas de reconocimiento de títulos.",
+      "residencePlaceholder": "Elige un país",
+      "citizenship": "Nacionalidad (una o varias)",
+      "citizenshipWhy": "Las normas de visado y los requisitos de admisión dependen de la nacionalidad.",
+      "countrySearch": "Escribe el nombre de un país",
+      "remove": "Quitar {name}",
+      "noMatches": "Ningún país coincide",
+      "ageCheck": "Tengo al menos {age} años",
+      "ageCheckWhy": "La edad mínima depende de tu país de residencia."
+    },
+    "documents": {
+      "intro": "Indica qué documentos ya tienes. Es solo un estado: no te pedimos subir nada.",
+      "why": "Lo usamos para mostrarte qué falta para la admisión.",
+      "status": {
+        "have": "Lo tengo",
+        "in_progress": "En trámite",
+        "none": "No lo tengo"
+      },
+      "visaCountries": "¿En qué países es válido?",
+      "expectedDate": "Fecha prevista de obtención",
+      "eduKind": "¿Qué documento?",
+      "eduSchool": "Certificado escolar",
+      "eduDiploma": "Título (colegio universitario o universidad)",
+      "items": {
+        "passport": "Pasaporte internacional",
+        "study_visa": "Visado de estudios o permiso de residencia",
+        "education": "Certificado escolar / título",
+        "transcript": "Expediente de calificaciones",
+        "apostille": "Apostilla o legalización consular",
+        "notarized_translation": "Traducción notarial de los documentos",
+        "recognition": "Reconocimiento (homologación) de documentos de estudios",
+        "proof_of_funds": "Prueba de fondos (extracto, carta de patrocinio, cuenta bloqueada)",
+        "health_insurance": "Seguro médico",
+        "parental_consent": "Consentimiento notarial de los padres para estudiar en el extranjero (menores de 18)"
+      }
+    },
+    "account": {
+      "email": "Correo electrónico",
+      "emailWhy": "Para iniciar sesión y recibir mensajes del servicio.",
+      "password": "Contraseña",
+      "passwordHint": "Al menos 10 caracteres, con una letra y un número.",
+      "show": "Mostrar contraseña",
+      "hide": "Ocultar contraseña",
+      "consent": "He leído y acepto la <privacy>política de privacidad</privacy> y las <terms>condiciones de uso</terms>.",
+      "marketing": "Quiero recibir novedades y consejos por correo (opcional).",
+      "checkEmailTitle": "Revisa tu correo",
+      "checkEmailText": "Hemos enviado un enlace de confirmación a {email}. Ábrelo para terminar el registro. Mira también la carpeta de spam.",
+      "resend": "Enviar el enlace de nuevo",
+      "resent": "El enlace se ha enviado de nuevo.",
+      "notConfigured": "El registro no está disponible ahora: el servicio aún no está configurado."
+    },
+    "underage": {
+      "title": "Lo sentimos",
+      "text": "Todavía no puedes registrarte: en tu país la edad mínima es {age}. No se creó ninguna cuenta y no se guardó nada de lo que escribiste.",
+      "home": "Volver al inicio"
+    },
+    "errors": {
+      "required": "Rellena este campo",
+      "regionsMin": "Elige al menos una región",
+      "countriesMin": "Elige al menos un país",
+      "typesMin": "Elige al menos un tipo",
+      "birthInvalid": "Introduce una fecha de nacimiento válida",
+      "dateInvalid": "Introduce una fecha válida",
+      "genderRequired": "Elige una opción",
+      "residenceRequired": "Elige tu país de residencia",
+      "citizenshipRequired": "Añade al menos una nacionalidad",
+      "ageCheckRequired": "Confirma tu edad",
+      "emailInvalid": "Introduce un correo válido",
+      "consentRequired": "Este consentimiento es obligatorio",
+      "passwordTooShort": "Usa al menos 10 caracteres",
+      "passwordNeedsLetter": "Añade una letra",
+      "passwordNeedsDigit": "Añade un número",
+      "passwordCommon": "Esta contraseña es demasiado común",
+      "passwordLikeEmail": "La contraseña no debe contener el nombre de tu correo",
+      "signUpFailed": "No pudimos crear la cuenta. Inténtalo de nuevo.",
+      "rateLimit": "Demasiados intentos. Espera unos minutos e inténtalo de nuevo.",
+      "network": "Sin conexión. Revisa tu internet e inténtalo de nuevo."
+    }
+  },
+  "Login": {
+    "title": "Iniciar sesión",
+    "email": "Correo electrónico",
+    "password": "Contraseña",
+    "submit": "Iniciar sesión",
+    "submitting": "Entrando…",
+    "forgot": "¿Olvidaste tu contraseña?",
+    "noAccount": "¿Aún no tienes cuenta?",
+    "register": "Crear una",
+    "resend": "Enviar de nuevo el enlace de confirmación",
+    "resent": "El enlace se ha enviado de nuevo. Revisa tu correo.",
+    "notConfigured": "Iniciar sesión no está disponible ahora: el servicio aún no está configurado.",
+    "notices": {
+      "link": "Este enlace ha caducado o se abrió en otro navegador. Si ya confirmaste tu correo, simplemente inicia sesión."
+    },
+    "errors": {
+      "invalid": "Correo o contraseña incorrectos.",
+      "notConfirmed": "Primero confirma tu correo: abre el enlace que te enviamos.",
+      "generic": "No se pudo iniciar sesión. Inténtalo de nuevo.",
+      "rateLimit": "Demasiados intentos. Espera unos minutos e inténtalo de nuevo."
+    }
+  },
+  "Forgot": {
+    "title": "Restablecer la contraseña",
+    "text": "Introduce tu correo y te enviaremos un enlace para crear una contraseña nueva.",
+    "email": "Correo electrónico",
+    "submit": "Enviar el enlace",
+    "sent": "Si esta dirección tiene una cuenta, el enlace va en camino. Revisa tu correo.",
+    "back": "Volver a iniciar sesión"
+  },
+  "Reset": {
+    "title": "Nueva contraseña",
+    "newPassword": "Nueva contraseña",
+    "submit": "Guardar contraseña",
+    "done": "Contraseña cambiada. Úsala la próxima vez que inicies sesión.",
+    "toProfile": "Ir a tu perfil",
+    "noSession": "Este enlace ha caducado. Solicita uno nuevo.",
+    "requestNew": "Solicitar un enlace nuevo"
+  },
+  "Profile": {
+    "title": "Tu perfil",
+    "loading": "Cargando…",
+    "welcome": "Tu correo está confirmado. ¡Bienvenido a YourHEI!",
+    "email": "Correo electrónico",
+    "plan": "Plan",
+    "planFree": "Gratuito",
+    "planPremium": "Premium",
+    "sections": {
+      "search": "Qué buscas",
+      "about": "Sobre ti",
+      "documents": "Documentos",
+      "privacy": "Correo y privacidad"
+    },
+    "save": "Guardar",
+    "saving": "Guardando…",
+    "saved": "Guardado",
+    "saveFailed": "No se pudo guardar. Inténtalo de nuevo.",
+    "ageBlocked": "Esta fecha de nacimiento o este país no cumplen la edad mínima ({age}).",
+    "marketing": "Quiero recibir novedades y consejos por correo",
+    "survey": {
+      "title": "Cuéntanos más sobre tus planes",
+      "text": "La encuesta que alimenta tus recomendaciones llegará pronto."
+    },
+    "data": {
+      "title": "Tus datos",
+      "exportText": "Descarga en un archivo todo lo que guardamos sobre ti.",
+      "export": "Descargar mis datos",
+      "exportFailed": "No se pudo preparar el archivo. Inténtalo de nuevo.",
+      "deleteText": "Elimina tu cuenta y todos tus datos. No se puede deshacer.",
+      "delete": "Eliminar cuenta y todos los datos",
+      "confirmText": "¿Seguro? Tu perfil, tus documentos y tu acceso se eliminarán de inmediato.",
+      "confirm": "Sí, eliminar todo",
+      "cancel": "Cancelar",
+      "deleteFailed": "No se pudo eliminar la cuenta. Inténtalo de nuevo."
+    }
+  },
+  "Legal": {
+    "privacy": {
+      "intro": "Esta plantilla explica qué datos recoge YourHEI y por qué. No es definitiva: un abogado debe revisarla antes del lanzamiento.",
+      "s1Title": "Quiénes somos",
+      "s1Text": "YourHEI es un proyecto que ayuda a los aspirantes a elegir dónde estudiar. Los datos de contacto para preguntas sobre tus datos se publicarán aquí antes del lanzamiento.",
+      "s2Title": "Qué recogemos",
+      "s2Text": "Solo lo necesario para las recomendaciones: correo y contraseña (la contraseña se guarda solo como hash seguro, nunca como texto), fecha de nacimiento, género (puedes no decirlo), país de residencia, nacionalidades, lo que buscas y el estado de tus documentos. No recogemos copias de tus documentos.",
+      "s3Title": "Por qué lo pedimos",
+      "s3Text": "La fecha de nacimiento y el país de residencia sirven para comprobar la edad mínima en tu país. La nacionalidad, la residencia y los documentos sirven para mostrar las normas de visado y lo que falta para la admisión. El género importa para escuelas y residencias no mixtas. El correo sirve para iniciar sesión y recibir mensajes del servicio.",
+      "s4Title": "Dónde se guardan los datos",
+      "s4Text": "Los datos se guardan con nuestro proveedor de bases de datos (Supabase) hasta que elimines tu cuenta. Las reglas de acceso permiten que cada persona vea solo sus propios datos.",
+      "s5Title": "Tus derechos",
+      "s5Text": "En tu perfil puedes editar todos tus datos, descargar una copia y eliminar tu cuenta con todos los datos. La eliminación es inmediata e irreversible. Las novedades y consejos por correo solo se envían si marcaste la casilla opcional, y puedes desactivarlos en tu perfil.",
+      "s6Title": "Edad mínima",
+      "s6Text": "Solo registramos a personas desde la edad mínima de su país de residencia (14, 16 o 18 años según el país). Si eres menor, no se crea ninguna cuenta y no se guarda nada de lo que escribiste.",
+      "s7Title": "Cookies y rastreadores",
+      "s7Text": "El sitio no usa analítica, publicidad ni rastreadores de terceros. Solo guarda datos técnicos en tu navegador: el idioma, el tema y la sesión. Se añadirá un banner de cookies antes de activar analítica o publicidad."
+    },
+    "terms": {
+      "intro": "Esta plantilla describe las reglas de uso de YourHEI. No es definitiva: un abogado debe revisarla antes del lanzamiento.",
+      "s1Title": "El servicio",
+      "s1Text": "YourHEI muestra instituciones educativas en un mapa y propone opciones según tus respuestas. En esta etapa es gratuito.",
+      "s2Title": "Tu cuenta",
+      "s2Text": "Da información veraz y guarda tu contraseña en secreto. Una persona, una cuenta. Debes haber alcanzado la edad mínima de tu país de residencia.",
+      "s3Title": "Información, no asesoramiento",
+      "s3Text": "Los datos de las instituciones proceden de fuentes abiertas y pueden estar desactualizados o incompletos. Comprueba siempre el sitio oficial antes de solicitar la admisión. Una recomendación no es una promesa de admisión.",
+      "s4Title": "Uso responsable",
+      "s4Text": "No abuses del servicio: no recojas datos de forma masiva y automática, no intentes vulnerarlo y no envíes denuncias falsas.",
+      "s5Title": "Cambios y finalización",
+      "s5Text": "Podemos cambiar el servicio y estas condiciones; los cambios importantes se anunciarán en el sitio. Puedes eliminar tu cuenta en cualquier momento.",
+      "s6Title": "Responsabilidad",
+      "s6Text": "El servicio se ofrece tal cual. Los límites de responsabilidad y la ley aplicable se añadirán cuando un abogado revise este texto."
     }
   }
 }

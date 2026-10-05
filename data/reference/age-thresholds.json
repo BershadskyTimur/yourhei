@@ -1,0 +1,15 @@
+{
+  "_comment": "Minimum registration age by country of residence (SPEC.md section 6). ALL values need legal review. Edited later in the admin panel (stage 4).",
+  "default": 14,
+  "needsLegalReview": true,
+  "overrides": {
+    "AT": 16, "BE": 16, "BG": 16, "HR": 16, "CY": 16, "CZ": 16, "DK": 16, "EE": 16,
+    "FI": 16, "FR": 16, "DE": 16, "GR": 16, "HU": 16, "IE": 16, "IT": 16, "LV": 16,
+    "LT": 16, "LU": 16, "MT": 16, "NL": 16, "PL": 16, "PT": 16, "RO": 16, "SK": 16,
+    "SI": 16, "ES": 16, "SE": 16,
+    "IS": 16, "LI": 16, "NO": 16,
+    "GB": 16, "CH": 16,
+    "GE": 16,
+    "IN": 18
+  }
+}

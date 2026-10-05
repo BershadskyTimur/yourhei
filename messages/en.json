@@ -13,7 +13,9 @@
     "login": "Log in",
     "loginSoon": "Sign-in will be available soon",
     "language": "Language",
-    "toggleTheme": "Switch light / dark theme"
+    "toggleTheme": "Switch light / dark theme",
+    "profile": "Profile",
+    "logout": "Log out"
   },
   "Footer": {
     "navLabel": "Site information",
@@ -83,13 +85,11 @@
     },
     "privacy": {
       "title": "Privacy policy",
-      "banner": "Template — requires review by a lawyer.",
-      "body": "The full text will be added before registration opens. For now the site collects no personal data and uses no third-party trackers."
+      "banner": "Template — requires review by a lawyer."
     },
     "terms": {
       "title": "Terms of use",
-      "banner": "Template — requires review by a lawyer.",
-      "body": "The full text will be added before registration opens."
+      "banner": "Template — requires review by a lawyer."
     },
     "comingSoon": {
       "title": "Coming soon",
@@ -100,6 +100,249 @@
       "title": "Page not found",
       "body": "The page you are looking for does not exist.",
       "home": "Go to the home page"
+    }
+  },
+  "Subregions": {
+    "eastern-europe": "Eastern Europe",
+    "northern-europe": "Northern Europe",
+    "southern-europe": "Southern Europe",
+    "western-europe": "Western Europe",
+    "central-asia": "Central Asia",
+    "eastern-asia": "Eastern Asia",
+    "south-eastern-asia": "South-eastern Asia",
+    "southern-asia": "Southern Asia",
+    "western-asia": "Western Asia"
+  },
+  "Register": {
+    "title": "Create your account",
+    "intro": "Four short steps. Until you create the account, your answers stay in this browser only.",
+    "progressLabel": "Registration progress",
+    "stepOf": "Step {current} of {total}",
+    "steps": {
+      "search": "What you are looking for",
+      "about": "About you",
+      "documents": "Documents",
+      "account": "Account"
+    },
+    "back": "Back",
+    "next": "Next",
+    "create": "Create account",
+    "creating": "Creating the account…",
+    "alreadyHave": "Already have an account?",
+    "loginLink": "Log in",
+    "search": {
+      "regionsTitle": "Regions",
+      "regionsHint": "Choose one or more. You can fine-tune the countries below.",
+      "regions": {
+        "caucasus-ca-ee": "Caucasus, Central Asia and Eastern Europe",
+        "europe": "Europe",
+        "asia": "Asia"
+      },
+      "countriesTitle": "Countries",
+      "countriesHint": "All countries of the chosen regions are selected. Untick the ones you do not need.",
+      "pickRegion": "Choose a region first.",
+      "selectAll": "Select all",
+      "clearAll": "Clear all",
+      "groupLabel": "Countries: {group}",
+      "typesTitle": "Types of institutions",
+      "typesHint": "Choose one or more."
+    },
+    "about": {
+      "birthDate": "Date of birth",
+      "birthDateWhy": "To check the minimum age in your country and to show suitable programmes.",
+      "gender": "Gender",
+      "genderWhy": "Needed for single-sex schools and dormitories. You may choose not to say.",
+      "male": "Male",
+      "female": "Female",
+      "undisclosed": "Prefer not to say",
+      "residence": "Country of residence",
+      "residenceWhy": "Sets the minimum age, the display currency and the diploma-recognition rules.",
+      "residencePlaceholder": "Choose a country",
+      "citizenship": "Citizenship (one or several)",
+      "citizenshipWhy": "Visa rules and admission requirements depend on citizenship.",
+      "countrySearch": "Type a country name",
+      "remove": "Remove {name}",
+      "noMatches": "No matching country",
+      "ageCheck": "I am at least {age} years old",
+      "ageCheckWhy": "The minimum age depends on your country of residence."
+    },
+    "documents": {
+      "intro": "Tell us which documents you already have. This is only a status: we do not ask you to upload anything.",
+      "why": "We use it to show what is still missing for admission.",
+      "status": {
+        "have": "Have it",
+        "in_progress": "In progress",
+        "none": "Do not have"
+      },
+      "visaCountries": "Valid in which countries?",
+      "expectedDate": "Expected date of receipt",
+      "eduKind": "Which document?",
+      "eduSchool": "School certificate",
+      "eduDiploma": "Diploma (college or university)",
+      "items": {
+        "passport": "International passport",
+        "study_visa": "Study visa or residence permit",
+        "education": "School certificate / diploma",
+        "transcript": "Transcript of grades",
+        "apostille": "Apostille or consular legalisation",
+        "notarized_translation": "Notarised translation of documents",
+        "recognition": "Recognition (nostrification) of education documents",
+        "proof_of_funds": "Proof of funds (statement, sponsor letter, blocked account)",
+        "health_insurance": "Health insurance",
+        "parental_consent": "Notarised parental consent to study abroad (under 18)"
+      }
+    },
+    "account": {
+      "email": "E-mail",
+      "emailWhy": "To sign in and for service messages.",
+      "password": "Password",
+      "passwordHint": "At least 10 characters, with a letter and a digit.",
+      "show": "Show password",
+      "hide": "Hide password",
+      "consent": "I have read and accept the <privacy>privacy policy</privacy> and the <terms>terms of use</terms>.",
+      "marketing": "Send me news and tips by e-mail (optional).",
+      "checkEmailTitle": "Check your e-mail",
+      "checkEmailText": "We sent a confirmation link to {email}. Open it to finish the registration. Look in the spam folder too.",
+      "resend": "Send the link again",
+      "resent": "The link was sent again.",
+      "notConfigured": "Registration is not available right now: the service is not configured yet."
+    },
+    "underage": {
+      "title": "We are sorry",
+      "text": "You cannot register yet: in your country the minimum age is {age}. No account was created and nothing you entered was saved.",
+      "home": "Back to the home page"
+    },
+    "errors": {
+      "required": "Please fill in this field",
+      "regionsMin": "Choose at least one region",
+      "countriesMin": "Choose at least one country",
+      "typesMin": "Choose at least one type",
+      "birthInvalid": "Enter a valid date of birth",
+      "dateInvalid": "Enter a valid date",
+      "genderRequired": "Choose an option",
+      "residenceRequired": "Choose your country of residence",
+      "citizenshipRequired": "Add at least one citizenship",
+      "ageCheckRequired": "Please confirm your age",
+      "emailInvalid": "Enter a valid e-mail address",
+      "consentRequired": "This consent is required",
+      "passwordTooShort": "Use at least 10 characters",
+      "passwordNeedsLetter": "Add a letter",
+      "passwordNeedsDigit": "Add a digit",
+      "passwordCommon": "This password is too common",
+      "passwordLikeEmail": "The password must not contain the name from your e-mail",
+      "signUpFailed": "We could not create the account. Please try again.",
+      "rateLimit": "Too many attempts. Please wait a few minutes and try again.",
+      "network": "No connection. Check your internet and try again."
+    }
+  },
+  "Login": {
+    "title": "Log in",
+    "email": "E-mail",
+    "password": "Password",
+    "submit": "Log in",
+    "submitting": "Logging in…",
+    "forgot": "Forgot your password?",
+    "noAccount": "No account yet?",
+    "register": "Create one",
+    "resend": "Send the confirmation link again",
+    "resent": "The link was sent again. Check your e-mail.",
+    "notConfigured": "Logging in is not available right now: the service is not configured yet.",
+    "notices": {
+      "link": "This link has expired or was opened in another browser. If you have already confirmed your e-mail, just log in."
+    },
+    "errors": {
+      "invalid": "Wrong e-mail or password.",
+      "notConfirmed": "Confirm your e-mail first: open the link we sent you.",
+      "generic": "Could not log in. Please try again.",
+      "rateLimit": "Too many attempts. Please wait a few minutes and try again."
+    }
+  },
+  "Forgot": {
+    "title": "Reset your password",
+    "text": "Enter your e-mail and we will send a link to set a new password.",
+    "email": "E-mail",
+    "submit": "Send the link",
+    "sent": "If this address has an account, a link is on its way. Check your e-mail.",
+    "back": "Back to log in"
+  },
+  "Reset": {
+    "title": "Set a new password",
+    "newPassword": "New password",
+    "submit": "Save password",
+    "done": "Password changed. Use it the next time you log in.",
+    "toProfile": "Go to your profile",
+    "noSession": "This link has expired. Please request a new one.",
+    "requestNew": "Request a new link"
+  },
+  "Profile": {
+    "title": "Your profile",
+    "loading": "Loading…",
+    "welcome": "Your e-mail is confirmed. Welcome to YourHEI!",
+    "email": "E-mail",
+    "plan": "Plan",
+    "planFree": "Free",
+    "planPremium": "Premium",
+    "sections": {
+      "search": "What you are looking for",
+      "about": "About you",
+      "documents": "Documents",
+      "privacy": "E-mail and privacy"
+    },
+    "save": "Save",
+    "saving": "Saving…",
+    "saved": "Saved",
+    "saveFailed": "Could not save. Please try again.",
+    "ageBlocked": "This date of birth or country does not meet the minimum age ({age}).",
+    "marketing": "Send me news and tips by e-mail",
+    "survey": {
+      "title": "Tell us more about your plans",
+      "text": "The survey that powers your matches is coming soon."
+    },
+    "data": {
+      "title": "Your data",
+      "exportText": "Download everything we store about you as a file.",
+      "export": "Download my data",
+      "exportFailed": "Could not prepare the file. Please try again.",
+      "deleteText": "Delete your account and all your data. This cannot be undone.",
+      "delete": "Delete account and all data",
+      "confirmText": "Are you sure? Your profile, documents and login will be removed immediately.",
+      "confirm": "Yes, delete everything",
+      "cancel": "Cancel",
+      "deleteFailed": "Could not delete the account. Please try again."
+    }
+  },
+  "Legal": {
+    "privacy": {
+      "intro": "This template explains which data YourHEI collects and why. It is not final: a lawyer must review it before the site is launched.",
+      "s1Title": "Who we are",
+      "s1Text": "YourHEI is a project that helps applicants choose where to study. Contact details for questions about your data will be published here before launch.",
+      "s2Title": "What we collect",
+      "s2Text": "Only what matching needs: e-mail and password (the password is stored only as a secure hash, never as text), date of birth, gender (you may choose not to say), country of residence, citizenships, what you are looking for, and the status of your documents. We do not collect copies of your documents.",
+      "s3Title": "Why we ask",
+      "s3Text": "Date of birth and country of residence are used to check the minimum age in your country. Citizenship, residence and documents are used to show visa rules and what is missing for admission. Gender matters for single-sex schools and dormitories. Your e-mail is used to sign in and for service messages.",
+      "s4Title": "Where the data is kept",
+      "s4Text": "Data is stored with our database provider (Supabase) until you delete your account. Access rules let each person see only their own data.",
+      "s5Title": "Your rights",
+      "s5Text": "In your profile you can edit all your data, download a copy and delete your account with all data. Deletion happens immediately and cannot be undone. News and tips by e-mail are sent only if you ticked the optional box, and you can turn them off in your profile.",
+      "s6Title": "Minimum age",
+      "s6Text": "We register people only from the minimum age of their country of residence (14, 16 or 18, depending on the country). If you are younger, no account is created and nothing you typed is stored.",
+      "s7Title": "Cookies and trackers",
+      "s7Text": "The site uses no analytics, advertising or third-party trackers. It keeps only technical data in your browser: your language, your theme and your login session. A cookie banner will be added before any analytics or advertising is switched on."
+    },
+    "terms": {
+      "intro": "This template describes the rules of using YourHEI. It is not final: a lawyer must review it before the site is launched.",
+      "s1Title": "The service",
+      "s1Text": "YourHEI shows educational institutions on a map and suggests options based on your answers. At this stage it is free.",
+      "s2Title": "Your account",
+      "s2Text": "Give true information and keep your password secret. One person, one account. You must have reached the minimum age of your country of residence.",
+      "s3Title": "Information, not advice",
+      "s3Text": "Data about institutions comes from open sources and may be outdated or incomplete. Always check the official website before you apply. A suggestion is not a promise of admission.",
+      "s4Title": "Fair use",
+      "s4Text": "Do not misuse the service: no automated mass collection of data, no attempts to break it, no false reports.",
+      "s5Title": "Changes and ending",
+      "s5Text": "We may change the service and these terms; important changes will be announced on the site. You can delete your account at any time.",
+      "s6Title": "Liability",
+      "s6Text": "The service is provided as it is. Limits of liability and the governing law will be added after a lawyer has reviewed this text."
     }
   }
 }

@@ -100,8 +100,9 @@ test('footer pages and placeholders open', async ({ page }) => {
     ['/en/terms', 'Terms of use'],
     ['/en/about', 'About the project'],
     ['/en/contact', 'Contact & support'],
-    ['/en/login', 'Coming soon'],
-    ['/en/register', 'Coming soon'],
+    ['/en/login', 'Log in'],
+    ['/en/register', 'Create your account'],
+    ['/en/forgot-password', 'Reset your password'],
   ] as const) {
     await page.goto(path);
     await expect(page.getByRole('heading', { level: 1 })).toHaveText(title);

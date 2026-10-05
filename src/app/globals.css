@@ -29,6 +29,9 @@
   --gold: #c9a227; /* decoration only (lines, dots) */
   --gold-text: #7a5f0a;
 
+  /* Errors */
+  --danger: #b3261e;
+
   /* Lines and focus */
   --border: #e4d5c5;
   --border-strong: #9c7a5b; /* borders of inputs and buttons */
@@ -75,6 +78,8 @@
   --gold: #c9a227;
   --gold-text: #d9b53a;
 
+  --danger: #ff8a80;
+
   --border: #3a2e26;
   --border-strong: #8c7459;
   --focus: #f0a45d;
@@ -95,6 +100,7 @@
   --color-on-accent: var(--on-accent);
   --color-accent-text: var(--accent-text);
   --color-accent-soft: var(--accent-soft);
+  --color-danger: var(--danger);
   --color-gold: var(--gold);
   --color-gold-text: var(--gold-text);
   --color-line: var(--border);

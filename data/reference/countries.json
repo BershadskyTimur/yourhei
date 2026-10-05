@@ -1,0 +1,1247 @@
+[
+ {
+  "code": "AD",
+  "region": "europe",
+  "subregion": "southern-europe"
+ },
+ {
+  "code": "AE",
+  "region": "asia",
+  "subregion": "western-asia"
+ },
+ {
+  "code": "AF",
+  "region": "asia",
+  "subregion": "southern-asia"
+ },
+ {
+  "code": "AG",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "AI",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "AL",
+  "region": "europe",
+  "subregion": "southern-europe"
+ },
+ {
+  "code": "AM",
+  "region": "asia",
+  "subregion": "western-asia"
+ },
+ {
+  "code": "AO",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "AQ",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "AR",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "AS",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "AT",
+  "region": "europe",
+  "subregion": "western-europe"
+ },
+ {
+  "code": "AU",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "AW",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "AX",
+  "region": "europe",
+  "subregion": "northern-europe"
+ },
+ {
+  "code": "AZ",
+  "region": "asia",
+  "subregion": "western-asia"
+ },
+ {
+  "code": "BA",
+  "region": "europe",
+  "subregion": "southern-europe"
+ },
+ {
+  "code": "BB",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "BD",
+  "region": "asia",
+  "subregion": "southern-asia"
+ },
+ {
+  "code": "BE",
+  "region": "europe",
+  "subregion": "western-europe"
+ },
+ {
+  "code": "BF",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "BG",
+  "region": "europe",
+  "subregion": "eastern-europe"
+ },
+ {
+  "code": "BH",
+  "region": "asia",
+  "subregion": "western-asia"
+ },
+ {
+  "code": "BI",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "BJ",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "BL",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "BM",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "BN",
+  "region": "asia",
+  "subregion": "south-eastern-asia"
+ },
+ {
+  "code": "BO",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "BQ",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "BR",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "BS",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "BT",
+  "region": "asia",
+  "subregion": "southern-asia"
+ },
+ {
+  "code": "BV",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "BW",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "BY",
+  "region": "europe",
+  "subregion": "eastern-europe"
+ },
+ {
+  "code": "BZ",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "CA",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "CC",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "CD",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "CF",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "CG",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "CH",
+  "region": "europe",
+  "subregion": "western-europe"
+ },
+ {
+  "code": "CI",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "CK",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "CL",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "CM",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "CN",
+  "region": "asia",
+  "subregion": "eastern-asia"
+ },
+ {
+  "code": "CO",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "CR",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "CU",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "CV",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "CW",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "CX",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "CY",
+  "region": "asia",
+  "subregion": "western-asia"
+ },
+ {
+  "code": "CZ",
+  "region": "europe",
+  "subregion": "eastern-europe"
+ },
+ {
+  "code": "DE",
+  "region": "europe",
+  "subregion": "western-europe"
+ },
+ {
+  "code": "DJ",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "DK",
+  "region": "europe",
+  "subregion": "northern-europe"
+ },
+ {
+  "code": "DM",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "DO",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "DZ",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "EC",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "EE",
+  "region": "europe",
+  "subregion": "northern-europe"
+ },
+ {
+  "code": "EG",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "EH",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "ER",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "ES",
+  "region": "europe",
+  "subregion": "southern-europe"
+ },
+ {
+  "code": "ET",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "FI",
+  "region": "europe",
+  "subregion": "northern-europe"
+ },
+ {
+  "code": "FJ",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "FK",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "FM",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "FO",
+  "region": "europe",
+  "subregion": "northern-europe"
+ },
+ {
+  "code": "FR",
+  "region": "europe",
+  "subregion": "western-europe"
+ },
+ {
+  "code": "GA",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "GB",
+  "region": "europe",
+  "subregion": "northern-europe"
+ },
+ {
+  "code": "GD",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "GE",
+  "region": "asia",
+  "subregion": "western-asia"
+ },
+ {
+  "code": "GF",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "GG",
+  "region": "europe",
+  "subregion": "northern-europe"
+ },
+ {
+  "code": "GH",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "GI",
+  "region": "europe",
+  "subregion": "southern-europe"
+ },
+ {
+  "code": "GL",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "GM",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "GN",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "GP",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "GQ",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "GR",
+  "region": "europe",
+  "subregion": "southern-europe"
+ },
+ {
+  "code": "GS",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "GT",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "GU",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "GW",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "GY",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "HK",
+  "region": "asia",
+  "subregion": "eastern-asia"
+ },
+ {
+  "code": "HM",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "HN",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "HR",
+  "region": "europe",
+  "subregion": "southern-europe"
+ },
+ {
+  "code": "HT",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "HU",
+  "region": "europe",
+  "subregion": "eastern-europe"
+ },
+ {
+  "code": "ID",
+  "region": "asia",
+  "subregion": "south-eastern-asia"
+ },
+ {
+  "code": "IE",
+  "region": "europe",
+  "subregion": "northern-europe"
+ },
+ {
+  "code": "IL",
+  "region": "asia",
+  "subregion": "western-asia"
+ },
+ {
+  "code": "IM",
+  "region": "europe",
+  "subregion": "northern-europe"
+ },
+ {
+  "code": "IN",
+  "region": "asia",
+  "subregion": "southern-asia"
+ },
+ {
+  "code": "IO",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "IQ",
+  "region": "asia",
+  "subregion": "western-asia"
+ },
+ {
+  "code": "IR",
+  "region": "asia",
+  "subregion": "southern-asia"
+ },
+ {
+  "code": "IS",
+  "region": "europe",
+  "subregion": "northern-europe"
+ },
+ {
+  "code": "IT",
+  "region": "europe",
+  "subregion": "southern-europe"
+ },
+ {
+  "code": "JE",
+  "region": "europe",
+  "subregion": "northern-europe"
+ },
+ {
+  "code": "JM",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "JO",
+  "region": "asia",
+  "subregion": "western-asia"
+ },
+ {
+  "code": "JP",
+  "region": "asia",
+  "subregion": "eastern-asia"
+ },
+ {
+  "code": "KE",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "KG",
+  "region": "asia",
+  "subregion": "central-asia"
+ },
+ {
+  "code": "KH",
+  "region": "asia",
+  "subregion": "south-eastern-asia"
+ },
+ {
+  "code": "KI",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "KM",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "KN",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "KP",
+  "region": "asia",
+  "subregion": "eastern-asia"
+ },
+ {
+  "code": "KR",
+  "region": "asia",
+  "subregion": "eastern-asia"
+ },
+ {
+  "code": "KW",
+  "region": "asia",
+  "subregion": "western-asia"
+ },
+ {
+  "code": "KY",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "KZ",
+  "region": "asia",
+  "subregion": "central-asia"
+ },
+ {
+  "code": "LA",
+  "region": "asia",
+  "subregion": "south-eastern-asia"
+ },
+ {
+  "code": "LB",
+  "region": "asia",
+  "subregion": "western-asia"
+ },
+ {
+  "code": "LC",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "LI",
+  "region": "europe",
+  "subregion": "western-europe"
+ },
+ {
+  "code": "LK",
+  "region": "asia",
+  "subregion": "southern-asia"
+ },
+ {
+  "code": "LR",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "LS",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "LT",
+  "region": "europe",
+  "subregion": "northern-europe"
+ },
+ {
+  "code": "LU",
+  "region": "europe",
+  "subregion": "western-europe"
+ },
+ {
+  "code": "LV",
+  "region": "europe",
+  "subregion": "northern-europe"
+ },
+ {
+  "code": "LY",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "MA",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "MC",
+  "region": "europe",
+  "subregion": "western-europe"
+ },
+ {
+  "code": "MD",
+  "region": "europe",
+  "subregion": "eastern-europe"
+ },
+ {
+  "code": "ME",
+  "region": "europe",
+  "subregion": "southern-europe"
+ },
+ {
+  "code": "MF",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "MG",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "MH",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "MK",
+  "region": "europe",
+  "subregion": "southern-europe"
+ },
+ {
+  "code": "ML",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "MM",
+  "region": "asia",
+  "subregion": "south-eastern-asia"
+ },
+ {
+  "code": "MN",
+  "region": "asia",
+  "subregion": "eastern-asia"
+ },
+ {
+  "code": "MO",
+  "region": "asia",
+  "subregion": "eastern-asia"
+ },
+ {
+  "code": "MP",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "MQ",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "MR",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "MS",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "MT",
+  "region": "europe",
+  "subregion": "southern-europe"
+ },
+ {
+  "code": "MU",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "MV",
+  "region": "asia",
+  "subregion": "southern-asia"
+ },
+ {
+  "code": "MW",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "MX",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "MY",
+  "region": "asia",
+  "subregion": "south-eastern-asia"
+ },
+ {
+  "code": "MZ",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "NA",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "NC",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "NE",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "NF",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "NG",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "NI",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "NL",
+  "region": "europe",
+  "subregion": "western-europe"
+ },
+ {
+  "code": "NO",
+  "region": "europe",
+  "subregion": "northern-europe"
+ },
+ {
+  "code": "NP",
+  "region": "asia",
+  "subregion": "southern-asia"
+ },
+ {
+  "code": "NR",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "NU",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "NZ",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "OM",
+  "region": "asia",
+  "subregion": "western-asia"
+ },
+ {
+  "code": "PA",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "PE",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "PF",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "PG",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "PH",
+  "region": "asia",
+  "subregion": "south-eastern-asia"
+ },
+ {
+  "code": "PK",
+  "region": "asia",
+  "subregion": "southern-asia"
+ },
+ {
+  "code": "PL",
+  "region": "europe",
+  "subregion": "eastern-europe"
+ },
+ {
+  "code": "PM",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "PN",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "PR",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "PS",
+  "region": "asia",
+  "subregion": "western-asia"
+ },
+ {
+  "code": "PT",
+  "region": "europe",
+  "subregion": "southern-europe"
+ },
+ {
+  "code": "PW",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "PY",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "QA",
+  "region": "asia",
+  "subregion": "western-asia"
+ },
+ {
+  "code": "RE",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "RO",
+  "region": "europe",
+  "subregion": "eastern-europe"
+ },
+ {
+  "code": "RS",
+  "region": "europe",
+  "subregion": "southern-europe"
+ },
+ {
+  "code": "RU",
+  "region": "europe",
+  "subregion": "eastern-europe"
+ },
+ {
+  "code": "RW",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "SA",
+  "region": "asia",
+  "subregion": "western-asia"
+ },
+ {
+  "code": "SB",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "SC",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "SD",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "SE",
+  "region": "europe",
+  "subregion": "northern-europe"
+ },
+ {
+  "code": "SG",
+  "region": "asia",
+  "subregion": "south-eastern-asia"
+ },
+ {
+  "code": "SH",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "SI",
+  "region": "europe",
+  "subregion": "southern-europe"
+ },
+ {
+  "code": "SJ",
+  "region": "europe",
+  "subregion": "northern-europe"
+ },
+ {
+  "code": "SK",
+  "region": "europe",
+  "subregion": "eastern-europe"
+ },
+ {
+  "code": "SL",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "SM",
+  "region": "europe",
+  "subregion": "southern-europe"
+ },
+ {
+  "code": "SN",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "SO",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "SR",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "SS",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "ST",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "SV",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "SX",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "SY",
+  "region": "asia",
+  "subregion": "western-asia"
+ },
+ {
+  "code": "SZ",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "TC",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "TD",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "TF",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "TG",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "TH",
+  "region": "asia",
+  "subregion": "south-eastern-asia"
+ },
+ {
+  "code": "TJ",
+  "region": "asia",
+  "subregion": "central-asia"
+ },
+ {
+  "code": "TK",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "TL",
+  "region": "asia",
+  "subregion": "south-eastern-asia"
+ },
+ {
+  "code": "TM",
+  "region": "asia",
+  "subregion": "central-asia"
+ },
+ {
+  "code": "TN",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "TO",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "TR",
+  "region": "asia",
+  "subregion": "western-asia"
+ },
+ {
+  "code": "TT",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "TV",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "TW",
+  "region": "asia",
+  "subregion": "eastern-asia"
+ },
+ {
+  "code": "TZ",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "UA",
+  "region": "europe",
+  "subregion": "eastern-europe"
+ },
+ {
+  "code": "UG",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "UM",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "US",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "UY",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "UZ",
+  "region": "asia",
+  "subregion": "central-asia"
+ },
+ {
+  "code": "VA",
+  "region": "europe",
+  "subregion": "southern-europe"
+ },
+ {
+  "code": "VC",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "VE",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "VG",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "VI",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "VN",
+  "region": "asia",
+  "subregion": "south-eastern-asia"
+ },
+ {
+  "code": "VU",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "WF",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "WS",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "YE",
+  "region": "asia",
+  "subregion": "western-asia"
+ },
+ {
+  "code": "YT",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "ZA",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "ZM",
+  "region": "other",
+  "subregion": null
+ },
+ {
+  "code": "ZW",
+  "region": "other",
+  "subregion": null
+ }
+]

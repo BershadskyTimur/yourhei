@@ -1,5 +1,6 @@
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
+import { AuthButton } from './AuthButton';
 import { LocaleSwitcher } from './LocaleSwitcher';
 import { ThemeToggle } from './ThemeToggle';
 
@@ -24,12 +25,7 @@ export function Header() {
         <div className="flex items-center gap-2">
           <LocaleSwitcher />
           <ThemeToggle />
-          <Link
-            href="/login"
-            className="inline-flex h-10 items-center rounded-full bg-accent px-4 text-sm font-semibold text-on-accent hover:opacity-90"
-          >
-            {t('login')}
-          </Link>
+          <AuthButton />
         </div>
       </div>
     </header>
