@@ -45,7 +45,7 @@
       "legendLabel": "Institution types (tap to show or hide)",
       "shown": "{shown} of {total} shown",
       "loadError": "Could not load the institutions. Please try again later.",
-      "testData": "Test data: {count, plural, one {# institution} other {# institutions}} in Georgia and Kazakhstan from Wikidata. Detailed cards will appear later.",
+      "testData": "{count, plural, one {# institution} other {# institutions}} from open data (Wikidata) are on the map. Detailed cards with programmes and tuition are added step by step.",
       "more": "Details",
       "close": "Close",
       "noWebgl": "Your browser cannot display the map. Try another browser or enable hardware acceleration.",

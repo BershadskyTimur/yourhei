@@ -45,7 +45,7 @@
       "legendLabel": "Tipos de institución (pulsa para mostrar u ocultar)",
       "shown": "Se muestran {shown} de {total}",
       "loadError": "No se pudieron cargar las instituciones. Inténtalo más tarde.",
-      "testData": "Datos de prueba: {count, plural, one {# institución} other {# instituciones}} de Georgia y Kazajistán desde Wikidata. Las fichas detalladas llegarán más adelante.",
+      "testData": "En el mapa hay {count, plural, one {# institución} other {# instituciones}} de datos abiertos (Wikidata). Las fichas detalladas con programas y matrícula se añaden poco a poco.",
       "more": "Detalles",
       "close": "Cerrar",
       "noWebgl": "Tu navegador no puede mostrar el mapa. Prueba con otro navegador o activa la aceleración por hardware.",

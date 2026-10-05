@@ -57,15 +57,23 @@ test('theme toggle switches light and dark', async ({ page }) => {
 test('type filter hides and shows institutions', async ({ page }) => {
   await page.goto('/en');
   const status = page.locator('[aria-live="polite"]');
-  await expect(status).toContainText('45 of 45');
+  // The number of institutions depends on what is in the database, so read it instead of assuming it.
+  await expect(status).toContainText(/\d+ of \d+ shown/);
+  const read = async () => {
+    const [, shown, total] = /(\d+) of (\d+) shown/.exec((await status.textContent()) ?? '') ?? [];
+    return { shown: Number(shown), total: Number(total) };
+  };
+  const all = await read();
+  expect(all.total).toBeGreaterThan(0);
+  expect(all.shown).toBe(all.total);
 
   const schools = page.getByRole('button', { name: /^School/ });
   await schools.click();
   await expect(schools).toHaveAttribute('aria-pressed', 'false');
-  await expect(status).toContainText('32 of 45');
+  await expect.poll(async () => (await read()).shown).toBeLessThan(all.total);
 
   await schools.click();
-  await expect(status).toContainText('45 of 45');
+  await expect.poll(async () => (await read()).shown).toBe(all.total);
 });
 
 test('search finds an institution, opens its card and the details page', async ({ page }) => {

@@ -58,6 +58,10 @@ export function academicFit(program: MatchProgram, input: MatchInput): AcademicF
     }
   }
 
+  // Language certificates listed for a programme are alternatives ("IELTS 6.0 or TOEFL 78"):
+  // the best one counts, and a gap is reported only when even the best one is not reached.
+  const certOptions: { margin: number; gap: Note }[] = [];
+
   for (const { exam, min } of minScores) {
     const cert = CERTIFICATES.find((c) => c.id === exam);
     if (cert) {
@@ -71,8 +75,10 @@ export function academicFit(program: MatchProgram, input: MatchInput): AcademicF
       } else {
         margin = (cefrRank(have) - cefrRank(needed)) * POINTS_PER_CEFR_LEVEL;
       }
-      margins.push(margin);
-      if (margin < 0) gaps.push({ key: 'gap.language', params: { exam: exam.toUpperCase(), need: min, have: typeof sameScore === 'number' ? sameScore : have } });
+      certOptions.push({
+        margin,
+        gap: { key: 'gap.language', params: { exam: exam.toUpperCase(), need: min, have: typeof sameScore === 'number' ? sameScore : have } },
+      });
       continue;
     }
 
@@ -90,6 +96,12 @@ export function academicFit(program: MatchProgram, input: MatchInput): AcademicF
         gaps.push({ key: 'gap.exam_missing', params: { exam: exam.toUpperCase(), need: min } });
       }
     }
+  }
+
+  if (certOptions.length > 0) {
+    const best = certOptions.reduce((a, b) => (b.margin > a.margin ? b : a));
+    margins.push(best.margin);
+    if (best.margin < 0) gaps.push(best.gap);
   }
 
   const minMargin = margins.length ? Math.min(...margins) : null;

@@ -1,0 +1,503 @@
+{
+  "schema_version": 1,
+  "collected_at": "2026-10-05",
+  "academic_year": "2026/2027",
+  "institution": {
+    "external_ids": {},
+    "names": {
+      "original": "Ilia State University",
+      "en": "Ilia State University"
+    },
+    "type": "university",
+    "country": "GE",
+    "city": {
+      "en": "Tbilisi"
+    },
+    "ownership": "public",
+    "founded_year": null,
+    "website": "https://iliauni.edu.ge",
+    "description": {},
+    "dormitory": null,
+    "rankings": []
+  },
+  "programs": [
+    {
+      "names": {
+        "original": "Computer Engineering",
+        "en": "Computer Engineering"
+      },
+      "level": "bachelor",
+      "isced_f": "0714",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4.5,
+      "format": "on_campus",
+      "intakes": [
+        "09",
+        "02"
+      ],
+      "tuition": [
+        {
+          "amount": 5000,
+          "currency": "USD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [],
+        "min_scores": [
+          {
+            "exam": "ielts",
+            "min": null
+          }
+        ],
+        "min_gpa": null
+      },
+      "deadlines": [
+        {
+          "intake": "2027-02",
+          "applies_to": "international",
+          "date": null
+        }
+      ],
+      "application_fee": {
+        "amount": 150,
+        "currency": "USD"
+      },
+      "application_url": "https://international.iliauni.edu.ge/for-degree-seeking-applicants/"
+    },
+    {
+      "names": {
+        "original": "Computer Science",
+        "en": "Computer Science"
+      },
+      "level": "bachelor",
+      "isced_f": "0613",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4.5,
+      "format": "on_campus",
+      "intakes": [
+        "09",
+        "02"
+      ],
+      "tuition": [
+        {
+          "amount": 4500,
+          "currency": "USD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [],
+        "min_scores": [
+          {
+            "exam": "ielts",
+            "min": null
+          }
+        ],
+        "min_gpa": null
+      },
+      "deadlines": [
+        {
+          "intake": "2027-02",
+          "applies_to": "international",
+          "date": null
+        }
+      ],
+      "application_fee": {
+        "amount": 150,
+        "currency": "USD"
+      },
+      "application_url": "https://international.iliauni.edu.ge/for-degree-seeking-applicants/"
+    },
+    {
+      "names": {
+        "original": "Civil Engineering",
+        "en": "Civil Engineering"
+      },
+      "level": "bachelor",
+      "isced_f": "0732",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4.5,
+      "format": "on_campus",
+      "intakes": [
+        "09",
+        "02"
+      ],
+      "tuition": [
+        {
+          "amount": 4000,
+          "currency": "USD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [],
+        "min_scores": [
+          {
+            "exam": "ielts",
+            "min": null
+          }
+        ],
+        "min_gpa": null
+      },
+      "deadlines": [
+        {
+          "intake": "2027-02",
+          "applies_to": "international",
+          "date": null
+        }
+      ],
+      "application_fee": {
+        "amount": 150,
+        "currency": "USD"
+      },
+      "application_url": "https://international.iliauni.edu.ge/for-degree-seeking-applicants/"
+    },
+    {
+      "names": {
+        "original": "Electrical and Electronic Engineering",
+        "en": "Electrical and Electronic Engineering"
+      },
+      "level": "bachelor",
+      "isced_f": "0714",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4.5,
+      "format": "on_campus",
+      "intakes": [
+        "09",
+        "02"
+      ],
+      "tuition": [
+        {
+          "amount": 4000,
+          "currency": "USD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [],
+        "min_scores": [
+          {
+            "exam": "ielts",
+            "min": null
+          }
+        ],
+        "min_gpa": null
+      },
+      "deadlines": [
+        {
+          "intake": "2027-02",
+          "applies_to": "international",
+          "date": null
+        }
+      ],
+      "application_fee": {
+        "amount": 150,
+        "currency": "USD"
+      },
+      "application_url": "https://international.iliauni.edu.ge/for-degree-seeking-applicants/"
+    },
+    {
+      "names": {
+        "original": "Applied Genetics",
+        "en": "Applied Genetics"
+      },
+      "level": "master",
+      "isced_f": "0511",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 2,
+      "format": "on_campus",
+      "intakes": [
+        "09",
+        "02"
+      ],
+      "tuition": [
+        {
+          "amount": 3200,
+          "currency": "USD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [],
+        "min_scores": [
+          {
+            "exam": "ielts",
+            "min": null
+          }
+        ],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 150,
+        "currency": "USD"
+      },
+      "application_url": "https://international.iliauni.edu.ge/for-degree-seeking-applicants/"
+    },
+    {
+      "names": {
+        "original": "Atmospheric and Near Space Sciences",
+        "en": "Atmospheric and Near Space Sciences"
+      },
+      "level": "master",
+      "isced_f": "0532",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 2,
+      "format": "on_campus",
+      "intakes": [
+        "09",
+        "02"
+      ],
+      "tuition": [
+        {
+          "amount": 3200,
+          "currency": "USD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [],
+        "min_scores": [
+          {
+            "exam": "ielts",
+            "min": null
+          }
+        ],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 150,
+        "currency": "USD"
+      },
+      "application_url": "https://international.iliauni.edu.ge/for-degree-seeking-applicants/"
+    }
+  ],
+  "scholarships": [
+    {
+      "names": {
+        "original": "Iliauni Scholarship for Entrants",
+        "en": "Iliauni Scholarship for Entrants"
+      },
+      "covers": "partial",
+      "eligibility": {
+        "en": "Top first-year students of seven faculties by unified national exam results (an annual award of 1000 GEL); aimed at applicants through the national exams."
+      },
+      "url": "https://admissions.iliauni.edu.ge/en/tuition-fees-and-funding-opportunities/"
+    }
+  ],
+  "sources": [
+    {
+      "field": "programs[0].tuition[0].amount",
+      "url": "https://international.iliauni.edu.ge/for-degree-seeking-applicants/",
+      "accessed_at": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[0].duration_years",
+      "url": "https://international.iliauni.edu.ge/for-degree-seeking-applicants/",
+      "accessed_at": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[0].intakes",
+      "url": "https://international.iliauni.edu.ge/for-degree-seeking-applicants/",
+      "accessed_at": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[0].application_fee",
+      "url": "https://international.iliauni.edu.ge/for-degree-seeking-applicants/",
+      "accessed_at": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[0].isced_f",
+      "url": "https://international.iliauni.edu.ge/for-degree-seeking-applicants/",
+      "accessed_at": "2026-10-05",
+      "confidence": "low"
+    },
+    {
+      "field": "programs[1].tuition[0].amount",
+      "url": "https://international.iliauni.edu.ge/for-degree-seeking-applicants/",
+      "accessed_at": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[1].duration_years",
+      "url": "https://international.iliauni.edu.ge/for-degree-seeking-applicants/",
+      "accessed_at": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[1].intakes",
+      "url": "https://international.iliauni.edu.ge/for-degree-seeking-applicants/",
+      "accessed_at": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[1].application_fee",
+      "url": "https://international.iliauni.edu.ge/for-degree-seeking-applicants/",
+      "accessed_at": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[1].isced_f",
+      "url": "https://international.iliauni.edu.ge/for-degree-seeking-applicants/",
+      "accessed_at": "2026-10-05",
+      "confidence": "low"
+    },
+    {
+      "field": "programs[2].tuition[0].amount",
+      "url": "https://international.iliauni.edu.ge/for-degree-seeking-applicants/",
+      "accessed_at": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[2].duration_years",
+      "url": "https://international.iliauni.edu.ge/for-degree-seeking-applicants/",
+      "accessed_at": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[2].intakes",
+      "url": "https://international.iliauni.edu.ge/for-degree-seeking-applicants/",
+      "accessed_at": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[2].application_fee",
+      "url": "https://international.iliauni.edu.ge/for-degree-seeking-applicants/",
+      "accessed_at": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[2].isced_f",
+      "url": "https://international.iliauni.edu.ge/for-degree-seeking-applicants/",
+      "accessed_at": "2026-10-05",
+      "confidence": "low"
+    },
+    {
+      "field": "programs[3].tuition[0].amount",
+      "url": "https://international.iliauni.edu.ge/for-degree-seeking-applicants/",
+      "accessed_at": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[3].duration_years",
+      "url": "https://international.iliauni.edu.ge/for-degree-seeking-applicants/",
+      "accessed_at": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[3].intakes",
+      "url": "https://international.iliauni.edu.ge/for-degree-seeking-applicants/",
+      "accessed_at": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[3].application_fee",
+      "url": "https://international.iliauni.edu.ge/for-degree-seeking-applicants/",
+      "accessed_at": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[3].isced_f",
+      "url": "https://international.iliauni.edu.ge/for-degree-seeking-applicants/",
+      "accessed_at": "2026-10-05",
+      "confidence": "low"
+    },
+    {
+      "field": "programs[4].tuition[0].amount",
+      "url": "https://international.iliauni.edu.ge/for-degree-seeking-applicants/",
+      "accessed_at": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[4].duration_years",
+      "url": "https://international.iliauni.edu.ge/for-degree-seeking-applicants/",
+      "accessed_at": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[4].intakes",
+      "url": "https://international.iliauni.edu.ge/for-degree-seeking-applicants/",
+      "accessed_at": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[4].application_fee",
+      "url": "https://international.iliauni.edu.ge/for-degree-seeking-applicants/",
+      "accessed_at": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[4].isced_f",
+      "url": "https://international.iliauni.edu.ge/for-degree-seeking-applicants/",
+      "accessed_at": "2026-10-05",
+      "confidence": "low"
+    },
+    {
+      "field": "programs[5].tuition[0].amount",
+      "url": "https://international.iliauni.edu.ge/for-degree-seeking-applicants/",
+      "accessed_at": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[5].duration_years",
+      "url": "https://international.iliauni.edu.ge/for-degree-seeking-applicants/",
+      "accessed_at": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[5].intakes",
+      "url": "https://international.iliauni.edu.ge/for-degree-seeking-applicants/",
+      "accessed_at": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[5].application_fee",
+      "url": "https://international.iliauni.edu.ge/for-degree-seeking-applicants/",
+      "accessed_at": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[5].isced_f",
+      "url": "https://international.iliauni.edu.ge/for-degree-seeking-applicants/",
+      "accessed_at": "2026-10-05",
+      "confidence": "low"
+    },
+    {
+      "field": "programs[0].deadlines[0].date",
+      "url": "https://international.iliauni.edu.ge/for-degree-seeking-applicants/",
+      "accessed_at": "2026-10-05",
+      "confidence": "medium"
+    },
+    {
+      "field": "institution.ownership",
+      "url": "https://admissions.iliauni.edu.ge/en/tuition-fees-and-funding-opportunities/",
+      "accessed_at": "2026-10-05",
+      "confidence": "medium"
+    }
+  ],
+  "notes_for_reviewer": "Only the English-taught programmes of the international page were collected; the page lists \"4 years + 1 semester\" for bachelors (4.5 used). English requirement is B2 / certificate, but the minimum scores sit in a separate document that was not read (min left empty). Deadlines: fall July 30, spring December 15 (no year stated, dates left empty). Documents list not stated. ISCED-F codes assigned by the collector (Computer Engineering and Electrical engineering are borderline between 0713 and 0714): please check. Ownership \"public\" is inferred from state-funded places on the fees page."
+}
