@@ -1,0 +1,105 @@
+{
+  "Meta": {
+    "title": "YourHEI — find your school, college or university",
+    "description": "A map and matching service for universities, colleges and schools in the Caucasus, Central Asia, Eastern Europe, Europe and Asia."
+  },
+  "Common": {
+    "siteName": "YourHEI",
+    "skipToContent": "Skip to main content",
+    "translationUnavailable": "translation unavailable"
+  },
+  "Header": {
+    "homeLabel": "YourHEI — home",
+    "login": "Log in",
+    "loginSoon": "Sign-in will be available soon",
+    "language": "Language",
+    "toggleTheme": "Switch light / dark theme"
+  },
+  "Footer": {
+    "navLabel": "Site information",
+    "about": "About",
+    "contacts": "Contact & support",
+    "privacy": "Privacy policy",
+    "terms": "Terms of use",
+    "dataCredit": "Institution data: Wikidata (CC0). Map: © OpenStreetMap contributors, OpenFreeMap.",
+    "rights": "© {year} YourHEI"
+  },
+  "Types": {
+    "university": "University",
+    "college": "College",
+    "school": "School",
+    "language_school": "Language school",
+    "foundation": "Foundation programs",
+    "vocational": "Vocational school"
+  },
+  "Home": {
+    "map": {
+      "title": "Find your place to study",
+      "mapLabel": "Map of educational institutions",
+      "searchLabel": "Search by name or city",
+      "searchPlaceholder": "Name or city",
+      "noResults": "Nothing found",
+      "legendLabel": "Institution types (tap to show or hide)",
+      "shown": "{shown} of {total} shown",
+      "loadError": "Could not load the institutions. Please try again later.",
+      "testData": "Test data: {count, plural, one {# institution} other {# institutions}} in Georgia and Kazakhstan from Wikidata. Detailed cards will appear later.",
+      "more": "Details",
+      "close": "Close",
+      "noWebgl": "Your browser cannot display the map. Try another browser or enable hardware acceleration.",
+      "zoomIn": "Zoom in",
+      "zoomOut": "Zoom out",
+      "toggleAttribution": "Map data sources",
+      "mapFeedback": "Report a map problem"
+    },
+    "about": {
+      "title": "What is YourHEI",
+      "text": "YourHEI helps applicants and their families find a university, college, school or language courses in the Caucasus, Central Asia, Eastern Europe, Europe and Asia. Tell us about yourself and we will suggest suitable options and show what is still missing for admission."
+    },
+    "how": {
+      "title": "How it works",
+      "step1Title": "Register",
+      "step1Text": "Create an account and tell us your country, age and documents.",
+      "step2Title": "Take the survey",
+      "step2Text": "Answer questions about your goals, grades, languages and budget.",
+      "step3Title": "Get your matches",
+      "step3Text": "Receive a list of safe, suitable and ambitious options.",
+      "cta": "Start matching"
+    }
+  },
+  "Institution": {
+    "comingSoon": "Detailed data will appear soon.",
+    "officialSite": "Official website",
+    "founded": "Founded: {year}",
+    "back": "Back to the map"
+  },
+  "Pages": {
+    "about": {
+      "title": "About the project",
+      "body": "YourHEI is a project that helps people choose where to study. It is under development: right now only the map with test data is available."
+    },
+    "contact": {
+      "title": "Contact & support",
+      "body": "A contact form for questions and for institutions that want to update their page will appear in a later version."
+    },
+    "privacy": {
+      "title": "Privacy policy",
+      "banner": "Template — requires review by a lawyer.",
+      "body": "The full text will be added before registration opens. For now the site collects no personal data and uses no third-party trackers."
+    },
+    "terms": {
+      "title": "Terms of use",
+      "banner": "Template — requires review by a lawyer.",
+      "body": "The full text will be added before registration opens."
+    },
+    "comingSoon": {
+      "title": "Coming soon",
+      "body": "This part of the site is not ready yet. Registration and matching are planned for the next stages.",
+      "back": "Back to the home page"
+    },
+    "notFound": {
+      "title": "Page not found",
+      "body": "The page you are looking for does not exist.",
+      "home": "Go to the home page"
+    }
+  }
+}

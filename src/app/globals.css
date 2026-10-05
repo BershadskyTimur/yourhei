@@ -1,0 +1,171 @@
+@import "tailwindcss";
+
+/* Dark theme is switched by next-themes via the data-theme attribute on <html>. */
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+/*
+ * DESIGN TOKENS — the only place where colours are written (SPEC.md section 3).
+ * Components use the semantic Tailwind names below (bg-bg, text-text, bg-accent...).
+ * Contrast of the text/background pairs is checked by src/config/palette.test.ts.
+ */
+:root {
+  color-scheme: light;
+
+  /* Surfaces and text */
+  --bg: #ffffff;
+  --surface: #fbf7f2;
+  --surface-strong: #f3e9dd;
+  --text: #3b2414; /* dark brown */
+  --text-muted: #6b4226; /* brown */
+  --brand-text: #6b4226; /* brown, for headings and the logo */
+
+  /* Orange: the button is a darker orange so white text passes WCAG AA */
+  --accent: #b85a0f;
+  --on-accent: #ffffff;
+  --accent-text: #a04f0b; /* orange used as text / links */
+  --accent-soft: #fce9d6;
+
+  /* Gold */
+  --gold: #c9a227; /* decoration only (lines, dots) */
+  --gold-text: #7a5f0a;
+
+  /* Lines and focus */
+  --border: #e4d5c5;
+  --border-strong: #9c7a5b; /* borders of inputs and buttons */
+  --focus: #b85a0f;
+
+  /* Footer */
+  --footer-bg: #3b2414;
+  --footer-text: #f3ede6;
+  --footer-muted: #d9c7b3;
+
+  /* Map: clusters and type dots (the same in both themes; each dot also has an icon) */
+  --cluster: #6b4226;
+  --on-cluster: #ffffff;
+  --map-ring: #ffffff;
+  --type-university: #c9a227;
+  --type-university-on: #3b2414;
+  --type-college: #c0392b;
+  --type-college-on: #ffffff;
+  --type-school: #2f6fd0;
+  --type-school-on: #ffffff;
+  --type-language_school: #2e8b57;
+  --type-language_school-on: #ffffff;
+  --type-foundation: #7b4fc0;
+  --type-foundation-on: #ffffff;
+  --type-vocational: #159a9c;
+  --type-vocational-on: #ffffff;
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+
+  --bg: #111111;
+  --surface: #1b1613;
+  --surface-strong: #261e19;
+  --text: #f3ede6; /* warm near-white: brown text is unreadable on black */
+  --text-muted: #d8c6b2;
+  --brand-text: #e3b866;
+
+  --accent: #e07b24;
+  --on-accent: #111111;
+  --accent-text: #f0a45d;
+  --accent-soft: #3a2614;
+
+  --gold: #c9a227;
+  --gold-text: #d9b53a;
+
+  --border: #3a2e26;
+  --border-strong: #8c7459;
+  --focus: #f0a45d;
+
+  --footer-bg: #1b1613;
+  --footer-text: #f3ede6;
+  --footer-muted: #d8c6b2;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-strong: var(--surface-strong);
+  --color-text: var(--text);
+  --color-muted: var(--text-muted);
+  --color-brand: var(--brand-text);
+  --color-accent: var(--accent);
+  --color-on-accent: var(--on-accent);
+  --color-accent-text: var(--accent-text);
+  --color-accent-soft: var(--accent-soft);
+  --color-gold: var(--gold);
+  --color-gold-text: var(--gold-text);
+  --color-line: var(--border);
+  --color-line-strong: var(--border-strong);
+  --color-footer: var(--footer-bg);
+  --color-on-footer: var(--footer-text);
+  --color-footer-muted: var(--footer-muted);
+
+  /* Fallbacks matter: a font variable that is not loaded (e.g. Chinese outside /zh) must not break the stack. */
+  --font-sans:
+    var(--font-noto, system-ui), var(--font-noto-ka, system-ui), var(--font-noto-sc, system-ui),
+    system-ui, sans-serif;
+}
+
+html {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* Visible keyboard focus everywhere */
+:where(a, button, input, select, textarea, summary, [tabindex]):focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+  border-radius: 0.375rem;
+}
+
+/* Long Georgian words and dense Chinese text must wrap, never be cut off */
+h1,
+h2,
+h3,
+p,
+a,
+button,
+label,
+li {
+  overflow-wrap: anywhere;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* MapLibre popups/controls inherit our font and follow the theme */
+.maplibregl-ctrl-attrib {
+  font-family: inherit;
+}
+[data-theme="dark"] .maplibregl-ctrl-attrib,
+[data-theme="dark"] .maplibregl-ctrl-attrib a {
+  background: rgb(17 17 17 / 0.8);
+  color: #f3ede6;
+}
+[data-theme="dark"] .maplibregl-ctrl-group {
+  background: #1b1613;
+}
+[data-theme="dark"] .maplibregl-ctrl-group button + button {
+  border-top-color: #3a2e26;
+}
+[data-theme="dark"] .maplibregl-ctrl-icon {
+  filter: invert(1);
+}

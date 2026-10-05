@@ -1,0 +1,105 @@
+{
+  "Meta": {
+    "title": "YourHEI — 找到适合你的学校、学院或大学",
+    "description": "覆盖高加索、中亚、东欧、欧洲和亚洲的大学、学院和学校地图与智能匹配。"
+  },
+  "Common": {
+    "siteName": "YourHEI",
+    "skipToContent": "跳到主要内容",
+    "translationUnavailable": "暂无翻译"
+  },
+  "Header": {
+    "homeLabel": "YourHEI — 返回首页",
+    "login": "登录",
+    "loginSoon": "登录功能即将上线",
+    "language": "语言",
+    "toggleTheme": "切换浅色 / 深色主题"
+  },
+  "Footer": {
+    "navLabel": "网站信息",
+    "about": "关于项目",
+    "contacts": "联系与支持",
+    "privacy": "隐私政策",
+    "terms": "使用条款",
+    "dataCredit": "院校数据：Wikidata（CC0）。地图：© OpenStreetMap 贡献者，OpenFreeMap。",
+    "rights": "© {year} YourHEI"
+  },
+  "Types": {
+    "university": "大学",
+    "college": "学院",
+    "school": "中小学",
+    "language_school": "语言学校",
+    "foundation": "预科课程",
+    "vocational": "职业学校"
+  },
+  "Home": {
+    "map": {
+      "title": "找到你的求学之地",
+      "mapLabel": "教育机构地图",
+      "searchLabel": "按名称或城市搜索",
+      "searchPlaceholder": "名称或城市",
+      "noResults": "未找到结果",
+      "legendLabel": "机构类型（点按以显示或隐藏）",
+      "shown": "显示 {shown} / {total}",
+      "loadError": "无法加载机构数据，请稍后再试。",
+      "testData": "测试数据：来自 Wikidata 的格鲁吉亚和哈萨克斯坦共 {count} 所院校。详细信息卡片将稍后推出。",
+      "more": "详情",
+      "close": "关闭",
+      "noWebgl": "你的浏览器无法显示地图。请尝试其他浏览器，或开启硬件加速。",
+      "zoomIn": "放大",
+      "zoomOut": "缩小",
+      "toggleAttribution": "地图数据来源",
+      "mapFeedback": "报告地图问题"
+    },
+    "about": {
+      "title": "YourHEI 是什么",
+      "text": "YourHEI 帮助考生及其家人在高加索、中亚、东欧、欧洲和亚洲寻找大学、学院、学校或语言课程。告诉我们你的情况，我们会推荐合适的选择，并指出入学还缺少什么。"
+    },
+    "how": {
+      "title": "使用方式",
+      "step1Title": "注册",
+      "step1Text": "创建账号，填写所在国家、年龄和证件情况。",
+      "step2Title": "完成问卷",
+      "step2Text": "回答关于目标、成绩、语言和预算的问题。",
+      "step3Title": "获得推荐",
+      "step3Text": "获得包含稳妥、合适和有挑战性选择的院校清单。",
+      "cta": "开始匹配"
+    }
+  },
+  "Institution": {
+    "comingSoon": "详细数据即将上线。",
+    "officialSite": "官方网站",
+    "founded": "创办年份：{year}",
+    "back": "返回地图"
+  },
+  "Pages": {
+    "about": {
+      "title": "关于项目",
+      "body": "YourHEI 是一个帮助人们选择求学去向的项目。目前仍在开发中：现在只提供带有测试数据的地图。"
+    },
+    "contact": {
+      "title": "联系与支持",
+      "body": "用于提问以及院校更新自身页面的联系表单将在后续版本中推出。"
+    },
+    "privacy": {
+      "title": "隐私政策",
+      "banner": "模板——需由律师审核。",
+      "body": "完整文本将在开放注册前补充。目前本站不收集个人数据，也不使用第三方追踪器。"
+    },
+    "terms": {
+      "title": "使用条款",
+      "banner": "模板——需由律师审核。",
+      "body": "完整文本将在开放注册前补充。"
+    },
+    "comingSoon": {
+      "title": "敬请期待",
+      "body": "网站的这一部分尚未完成。注册和匹配功能计划在后续阶段推出。",
+      "back": "返回首页"
+    },
+    "notFound": {
+      "title": "页面不存在",
+      "body": "你访问的页面不存在。",
+      "home": "返回首页"
+    }
+  }
+}

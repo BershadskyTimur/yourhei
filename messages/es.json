@@ -1,0 +1,105 @@
+{
+  "Meta": {
+    "title": "YourHEI — encuentra tu escuela, colegio o universidad",
+    "description": "Mapa y buscador de universidades, colegios y escuelas en el Cáucaso, Asia Central, Europa del Este, Europa y Asia."
+  },
+  "Common": {
+    "siteName": "YourHEI",
+    "skipToContent": "Saltar al contenido principal",
+    "translationUnavailable": "traducción no disponible"
+  },
+  "Header": {
+    "homeLabel": "YourHEI — inicio",
+    "login": "Iniciar sesión",
+    "loginSoon": "El inicio de sesión estará disponible pronto",
+    "language": "Idioma",
+    "toggleTheme": "Cambiar entre tema claro y oscuro"
+  },
+  "Footer": {
+    "navLabel": "Información del sitio",
+    "about": "Acerca del proyecto",
+    "contacts": "Contacto y soporte",
+    "privacy": "Política de privacidad",
+    "terms": "Condiciones de uso",
+    "dataCredit": "Datos de instituciones: Wikidata (CC0). Mapa: © colaboradores de OpenStreetMap, OpenFreeMap.",
+    "rights": "© {year} YourHEI"
+  },
+  "Types": {
+    "university": "Universidad",
+    "college": "Colegio universitario",
+    "school": "Escuela",
+    "language_school": "Escuela de idiomas",
+    "foundation": "Programas preparatorios",
+    "vocational": "Formación profesional"
+  },
+  "Home": {
+    "map": {
+      "title": "Encuentra dónde estudiar",
+      "mapLabel": "Mapa de instituciones educativas",
+      "searchLabel": "Buscar por nombre o ciudad",
+      "searchPlaceholder": "Nombre o ciudad",
+      "noResults": "No se encontró nada",
+      "legendLabel": "Tipos de institución (pulsa para mostrar u ocultar)",
+      "shown": "Se muestran {shown} de {total}",
+      "loadError": "No se pudieron cargar las instituciones. Inténtalo más tarde.",
+      "testData": "Datos de prueba: {count, plural, one {# institución} other {# instituciones}} de Georgia y Kazajistán desde Wikidata. Las fichas detalladas llegarán más adelante.",
+      "more": "Detalles",
+      "close": "Cerrar",
+      "noWebgl": "Tu navegador no puede mostrar el mapa. Prueba con otro navegador o activa la aceleración por hardware.",
+      "zoomIn": "Acercar",
+      "zoomOut": "Alejar",
+      "toggleAttribution": "Fuentes de datos del mapa",
+      "mapFeedback": "Informar de un problema del mapa"
+    },
+    "about": {
+      "title": "Qué es YourHEI",
+      "text": "YourHEI ayuda a los aspirantes y a sus familias a encontrar una universidad, un colegio, una escuela o cursos en el Cáucaso, Asia Central, Europa del Este, Europa y Asia. Cuéntanos sobre ti y te sugeriremos opciones adecuadas y lo que aún falta para la admisión."
+    },
+    "how": {
+      "title": "Cómo funciona",
+      "step1Title": "Regístrate",
+      "step1Text": "Crea una cuenta e indica tu país, edad y documentos.",
+      "step2Title": "Responde la encuesta",
+      "step2Text": "Contesta preguntas sobre tus objetivos, notas, idiomas y presupuesto.",
+      "step3Title": "Recibe tus opciones",
+      "step3Text": "Obtén una lista de opciones seguras, adecuadas y ambiciosas.",
+      "cta": "Empezar la búsqueda"
+    }
+  },
+  "Institution": {
+    "comingSoon": "Pronto habrá datos detallados.",
+    "officialSite": "Sitio web oficial",
+    "founded": "Fundada en {year}",
+    "back": "Volver al mapa"
+  },
+  "Pages": {
+    "about": {
+      "title": "Acerca del proyecto",
+      "body": "YourHEI es un proyecto que ayuda a elegir dónde estudiar. Está en desarrollo: por ahora solo está disponible el mapa con datos de prueba."
+    },
+    "contact": {
+      "title": "Contacto y soporte",
+      "body": "Un formulario de contacto para preguntas y para instituciones que quieran actualizar su página llegará en una versión posterior."
+    },
+    "privacy": {
+      "title": "Política de privacidad",
+      "banner": "Plantilla: requiere revisión de un abogado.",
+      "body": "El texto completo se añadirá antes de abrir el registro. Por ahora el sitio no recoge datos personales ni usa rastreadores de terceros."
+    },
+    "terms": {
+      "title": "Condiciones de uso",
+      "banner": "Plantilla: requiere revisión de un abogado.",
+      "body": "El texto completo se añadirá antes de abrir el registro."
+    },
+    "comingSoon": {
+      "title": "Próximamente",
+      "body": "Esta parte del sitio aún no está lista. El registro y la búsqueda están previstos para las siguientes etapas.",
+      "back": "Volver al inicio"
+    },
+    "notFound": {
+      "title": "Página no encontrada",
+      "body": "La página que buscas no existe.",
+      "home": "Ir al inicio"
+    }
+  }
+}
