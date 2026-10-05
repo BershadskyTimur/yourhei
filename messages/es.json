@@ -297,8 +297,9 @@
     "ageBlocked": "Esta fecha de nacimiento o este país no cumplen la edad mínima ({age}).",
     "marketing": "Quiero recibir novedades y consejos por correo",
     "survey": {
-      "title": "Cuéntanos más sobre tus planes",
-      "text": "La encuesta que alimenta tus recomendaciones llegará pronto."
+      "title": "Haz la encuesta de recomendación",
+      "text": "Responde preguntas sobre tus objetivos, resultados y presupuesto para recibir instituciones adecuadas.",
+      "open": "Ir a la encuesta"
     },
     "data": {
       "title": "Tus datos",
@@ -349,6 +350,444 @@
       "s5Text": "Podemos cambiar el servicio y estas condiciones; los cambios importantes se anunciarán en el sitio. Puedes eliminar tu cuenta en cualquier momento.",
       "s6Title": "Responsabilidad",
       "s6Text": "El servicio se ofrece tal cual. Los límites de responsabilidad y la ley aplicable se añadirán cuando un abogado revise este texto."
+    }
+  },
+  "Survey": {
+    "title": "Tu encuesta de recomendación",
+    "intro": "Responde preguntas sobre tus objetivos, resultados, idiomas y presupuesto. Unas 15 preguntas son obligatorias; el resto es opcional y se puede omitir con un clic. Tus respuestas se guardan sobre la marcha.",
+    "hub": {
+      "start": "Empezar la encuesta",
+      "continue": "Continuar donde lo dejaste",
+      "discard": "Descartar y empezar de nuevo",
+      "startedOn": "Empezaste esta encuesta el {date}.",
+      "again": "Hacer la encuesta de nuevo",
+      "past": "Tus encuestas completadas",
+      "pastItem": "Completada el {date}",
+      "noteRetake": "Una encuesta completada no se puede cambiar. Si tus planes cambian, haz la encuesta de nuevo: se usarán las respuestas nuevas.",
+      "profileHint": "Consejo: completa antes tu perfil (nacionalidad, regiones, documentos) para obtener mejores resultados."
+    },
+    "done": {
+      "title": "¡Gracias! La encuesta está completa.",
+      "text": "Tus respuestas están guardadas. Las instituciones adecuadas se mostrarán aquí en la siguiente etapa del proyecto.",
+      "toProfile": "Volver a mi perfil"
+    },
+    "ui": {
+      "loading": "Cargando…",
+      "loadFailed": "No se pudo cargar la encuesta. Recarga la página o inténtalo más tarde.",
+      "questionOf": "Pregunta {current} de {total}",
+      "requiredLeft": "{count, plural, one {# pregunta obligatoria restante} other {# preguntas obligatorias restantes}}",
+      "optional": "Opcional",
+      "back": "Atrás",
+      "next": "Siguiente",
+      "skip": "Omitir",
+      "skipAll": "Omitir todas las preguntas opcionales",
+      "finish": "Terminar",
+      "saving": "Guardando…",
+      "saveFailed": "No se pudo guardar tu respuesta. Revisa tu conexión e inténtalo de nuevo.",
+      "saveAndExit": "Guardar y continuar más tarde",
+      "progressLabel": "Progreso de la encuesta",
+      "add": "Añadir",
+      "remove": "Quitar",
+      "search": "Buscar por nombre",
+      "choose": "Elige…",
+      "approximate": "Las conversiones entre sistemas de calificación son aproximadas.",
+      "noMatches": "No se encontró nada",
+      "moveUp": "Subir",
+      "moveDown": "Bajar",
+      "counter": "{chosen} de {count} elegidos",
+      "range": "De {min} a {max}"
+    },
+    "errors": {
+      "required": "Responde a esta pregunta",
+      "invalid": "Revisa esta respuesta",
+      "outOfRange": "Este valor está fuera del rango permitido",
+      "tooMany": "Demasiadas opciones",
+      "priorities": "Elige exactamente 3 elementos distintos"
+    },
+    "education": {
+      "level": "Educación actual",
+      "year": "Año de finalización (o previsto)",
+      "levels": {
+        "school_9": "Escuela, hasta 9.º curso",
+        "school_11": "Escuela, cursos 10.º–12.º",
+        "college": "Colegio universitario",
+        "bachelor": "Grado",
+        "master": "Máster",
+        "other": "Otro"
+      }
+    },
+    "grade": {
+      "none": "Aún no tengo calificaciones",
+      "system": "Sistema de calificación",
+      "value": "Tu nota media",
+      "range": "De {min} a {max}"
+    },
+    "subjects": {
+      "subject": "Asignatura",
+      "grade": "Nota"
+    },
+    "exams": {
+      "exam": "Examen",
+      "score": "Puntuación",
+      "range": "Rango posible: de {min} a {max}"
+    },
+    "languages": {
+      "language": "Idioma",
+      "level": "Tu nivel",
+      "certificate": "Certificado (opcional)",
+      "certValue": "Puntuación o nivel",
+      "none": "Sin certificado",
+      "addLanguage": "Añadir un idioma"
+    },
+    "selfLevels": {
+      "a1": "Conozco unas pocas frases",
+      "a2": "Temas sencillos de la vida diaria",
+      "b1": "Me defiendo en viajes y en el trabajo",
+      "b2": "Hablo con fluidez de la mayoría de los temas",
+      "c1": "Puedo estudiar en este idioma",
+      "c2": "Como un hablante nativo",
+      "native": "Lengua materna"
+    },
+    "studyLanguages": {
+      "languages": "Idiomas en los que estoy dispuesto/a a estudiar",
+      "prepYear": "¿Harías un año preparatorio de idioma?",
+      "yes": "Sí",
+      "no": "No"
+    },
+    "budget": {
+      "currency": "Moneda",
+      "tuition": "Matrícula al año",
+      "living": "Gastos de vida al año"
+    },
+    "olympiads": {
+      "subject": "Asignatura",
+      "level": "Nivel",
+      "place": "Puesto"
+    },
+    "olympiadLevels": {
+      "school": "Escolar",
+      "regional": "Regional",
+      "national": "Nacional",
+      "international": "Internacional"
+    },
+    "priorities": {
+      "price": "Precio",
+      "prestige": "Prestigio",
+      "location": "País y ciudad",
+      "chances": "Posibilidades de admisión",
+      "field": "El campo de estudio",
+      "career": "Perspectivas laborales"
+    },
+    "riasec": {
+      "intro": "Valora cada afirmación de 1 a 5. No hay respuestas correctas ni incorrectas.",
+      "scale": {
+        "1": "no va conmigo",
+        "2": "más bien no",
+        "3": "neutral",
+        "4": "más bien sí",
+        "5": "muy propio de mí"
+      },
+      "items": {
+        "0": "Me gusta arreglar o construir cosas con las manos o con herramientas.",
+        "1": "Me gusta descubrir cómo funciona algo experimentando o analizando datos.",
+        "2": "Me gusta crear algo original: escribir, dibujar, diseñar o componer.",
+        "3": "Me gusta ayudar, enseñar o cuidar a otras personas.",
+        "4": "Me gusta liderar un equipo o convencer a otros de que apoyen mi idea.",
+        "5": "Me gusta organizar información, llevar registros y seguir procedimientos claros.",
+        "6": "Disfruto trabajando al aire libre, con máquinas, animales o plantas.",
+        "7": "Disfruto resolviendo un rompecabezas difícil o un problema de matemáticas.",
+        "8": "Me gusta expresar ideas mediante la música, el teatro o los medios visuales.",
+        "9": "Se me da bien escuchar a las personas y apoyarlas en momentos difíciles.",
+        "10": "Me gusta iniciar un proyecto o un negocio y asumir riesgos.",
+        "11": "Me gusta planificar presupuestos, horarios y detalles para que todo funcione con exactitud."
+      },
+      "suggestions": "Direcciones que podrían encajar contigo",
+      "suggestionsHint": "Quédate con las que te gusten. Necesitas al menos una.",
+      "answerAll": "Responde a las 12 afirmaciones para ver las direcciones sugeridas."
+    },
+    "q": {
+      "level": {
+        "title": "¿Qué quieres estudiar?",
+        "options": {
+          "school": "Escuela",
+          "college": "Colegio universitario",
+          "foundation": "Año preparatorio (foundation)",
+          "bachelor": "Grado",
+          "master": "Máster",
+          "phd": "Doctorado (PhD)",
+          "language_course": "Cursos de idiomas"
+        }
+      },
+      "situation": {
+        "title": "¿Cuál es tu situación?",
+        "options": {
+          "first": "Solicito plaza por primera vez",
+          "transfer": "Quiero trasladarme y convalidar asignaturas",
+          "second_degree": "Un segundo título"
+        }
+      },
+      "start": {
+        "title": "¿Cuándo quieres empezar?"
+      },
+      "format": {
+        "title": "¿Qué formato de estudio?",
+        "options": {
+          "on_campus": "Presencial",
+          "online": "En línea",
+          "blended": "Mixto",
+          "any": "Cualquiera"
+        }
+      },
+      "field_certainty": {
+        "title": "¿Qué seguridad tienes sobre tu campo?",
+        "options": {
+          "sure": "Lo sé con exactitud",
+          "few": "Tengo un par de opciones",
+          "unknown": "No lo sé, ayúdame"
+        }
+      },
+      "fields": {
+        "title": "¿Qué campos te interesan?",
+        "hint": "Elige hasta 3; el primero es el más importante. Puedes llegar hasta una especialidad concreta."
+      },
+      "riasec": {
+        "title": "Busquemos direcciones que encajen contigo",
+        "hint": "Doce afirmaciones cortas sobre lo que te gusta hacer."
+      },
+      "diploma_field": {
+        "title": "¿En qué era tu título anterior?",
+        "hint": "Elige el campo de tu grado o máster."
+      },
+      "school_profile": {
+        "title": "¿Qué perfil escolar quieres?"
+      },
+      "school_grade": {
+        "title": "¿A qué curso quieres entrar?"
+      },
+      "school_program": {
+        "title": "¿Qué programa?",
+        "options": {
+          "national": "Nacional",
+          "ib": "IB",
+          "alevel": "A-levels",
+          "american": "Estadounidense"
+        }
+      },
+      "school_boarding": {
+        "title": "¿Internado o vivir con tu familia?",
+        "options": {
+          "boarding": "Internado",
+          "family": "Vivir con mi familia",
+          "any": "Cualquiera"
+        }
+      },
+      "school_coed": {
+        "title": "¿Escuela mixta o no mixta?",
+        "options": {
+          "coed": "Mixta",
+          "single_sex": "No mixta",
+          "any": "Sin preferencia"
+        }
+      },
+      "profession": {
+        "title": "¿Qué profesión quieres aprender?"
+      },
+      "college_to_uni": {
+        "title": "¿Te gustaría pasar después a una universidad?",
+        "options": {
+          "yes": "Sí",
+          "no": "No",
+          "maybe": "Quizá"
+        }
+      },
+      "education": {
+        "title": "Tu educación actual"
+      },
+      "grade": {
+        "title": "Tu nota media",
+        "hint": "Elige el sistema de calificación que mejor conozcas."
+      },
+      "subjects": {
+        "title": "Tus mejores asignaturas y notas",
+        "hint": "Hasta 5. Las notas usan el sistema que elegiste antes."
+      },
+      "exams": {
+        "title": "Exámenes que has hecho o harás",
+        "hint": "Exámenes nacionales o internacionales con tus puntuaciones."
+      },
+      "languages": {
+        "title": "¿Qué idiomas hablas y con qué nivel?",
+        "hint": "Añade cada idioma y valórate con sinceridad. El certificado es opcional."
+      },
+      "study_languages": {
+        "title": "¿En qué idiomas podrías estudiar?"
+      },
+      "olympiads": {
+        "title": "Olimpiadas y concursos",
+        "hint": "Asignatura, nivel y puesto obtenido."
+      },
+      "achievements": {
+        "title": "Tus logros",
+        "options": {
+          "projects": "Proyectos",
+          "publications": "Publicaciones",
+          "sport": "Deporte",
+          "creative": "Portafolio creativo",
+          "volunteering": "Voluntariado"
+        }
+      },
+      "work_years": {
+        "title": "¿Cuántos años has trabajado?"
+      },
+      "research_topic": {
+        "title": "Tu tema de investigación",
+        "hint": "Si ya tienes uno."
+      },
+      "entrance": {
+        "title": "¿Para qué estás preparado/a?",
+        "options": {
+          "entrance_exams": "Exámenes de ingreso en la institución",
+          "interview": "Una entrevista",
+          "creative_contest": "Un concurso creativo"
+        }
+      },
+      "funding": {
+        "title": "¿Cómo piensas pagar los estudios?",
+        "options": {
+          "free": "Solo plazas gratuitas",
+          "paid": "Plazas de pago",
+          "both": "Cualquiera de las dos"
+        }
+      },
+      "budget": {
+        "title": "Tu presupuesto anual",
+        "hint": "Matrícula y gastos de vida al año, en una sola moneda."
+      },
+      "scholarship": {
+        "title": "¿Necesitas una beca?",
+        "options": {
+          "yes": "Sí, la necesito",
+          "no": "No",
+          "maybe": "Me vendría bien"
+        }
+      },
+      "loan": {
+        "title": "¿Considerarías un préstamo de estudios?",
+        "options": {
+          "yes": "Sí",
+          "no": "No"
+        }
+      },
+      "rating": {
+        "title": "¿Qué importancia tiene el ranking de la institución?",
+        "options": {
+          "top_world": "Entre las mejores del mundo",
+          "top_country": "Entre las mejores del país",
+          "any": "No importa"
+        }
+      },
+      "ownership": {
+        "title": "¿Pública o privada?",
+        "options": {
+          "public": "Pública",
+          "private": "Privada",
+          "any": "No importa"
+        }
+      },
+      "size": {
+        "title": "¿Institución grande o pequeña?",
+        "options": {
+          "large": "Grande",
+          "small": "Pequeña",
+          "any": "No importa"
+        }
+      },
+      "strategy": {
+        "title": "¿Cuán ambiciosas deben ser tus recomendaciones?",
+        "options": {
+          "safe": "Solo opciones seguras",
+          "balanced": "Equilibrado",
+          "ambitious": "Ambicioso"
+        }
+      },
+      "extras": {
+        "title": "¿Qué importa además del título?",
+        "options": {
+          "internship": "Prácticas",
+          "double_degree": "Doble titulación",
+          "exchange": "Semestre de intercambio"
+        }
+      },
+      "recognition": {
+        "title": "¿Debe reconocerse el título en tu país?",
+        "options": {
+          "yes": "Sí",
+          "no": "No",
+          "any": "No importa"
+        }
+      },
+      "city_size": {
+        "title": "¿Qué tipo de ciudad prefieres?",
+        "options": {
+          "megapolis": "Una gran metrópoli",
+          "medium": "Una ciudad mediana",
+          "small_student": "Una pequeña ciudad universitaria",
+          "any": "No importa"
+        }
+      },
+      "climate": {
+        "title": "¿Qué clima prefieres?",
+        "options": {
+          "warm": "Cálido",
+          "temperate": "Templado",
+          "cold": "Frío",
+          "any": "No importa"
+        }
+      },
+      "dorm": {
+        "title": "¿Necesitas residencia?",
+        "options": {
+          "yes": "Sí",
+          "no": "No",
+          "any": "No importa"
+        }
+      },
+      "work_during": {
+        "title": "¿Quieres trabajar mientras estudias?",
+        "options": {
+          "yes": "Sí",
+          "no": "No",
+          "maybe": "Quizá"
+        }
+      },
+      "after": {
+        "title": "Tus planes después de estudiar",
+        "options": {
+          "stay": "Quedarme en el país",
+          "return": "Volver a casa",
+          "unknown": "Aún no lo sé"
+        }
+      },
+      "family": {
+        "title": "¿Viajas con alguien?",
+        "hint": "Opcional.",
+        "options": {
+          "partner": "Con pareja",
+          "children": "Con hijos"
+        }
+      },
+      "accessibility": {
+        "title": "¿Necesitas un entorno accesible?",
+        "options": {
+          "yes": "Sí",
+          "no": "No",
+          "prefer_not": "Prefiero no decirlo"
+        }
+      },
+      "priorities": {
+        "title": "Elige las 3 cosas más importantes",
+        "hint": "Esto decide qué pesa más al ordenar tus recomendaciones."
+      }
     }
   }
 }

@@ -145,7 +145,7 @@ test.describe('profile (signed in with a fake session)', () => {
     await fakeSignIn(page, profileRow);
     await page.goto('/en/profile');
     await expect(page.getByRole('heading', { name: 'Complete your profile' })).toBeVisible();
-    await expect(page.getByRole('heading', { name: 'Tell us more about your plans' })).toBeVisible();
+    await expect(page.getByRole('heading', { name: 'Take the matching survey' })).toBeVisible();
     await expect(page.locator('form h2')).toHaveText(['About you', 'What you are looking for', 'Documents']);
   });
 
