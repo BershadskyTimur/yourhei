@@ -297,8 +297,9 @@
     "ageBlocked": "此出生日期或国家不满足最低年龄要求（{age} 岁）。",
     "marketing": "通过邮件向我发送新闻和提示",
     "survey": {
-      "title": "告诉我们更多你的计划",
-      "text": "用于生成推荐的问卷即将上线。"
+      "title": "完成匹配问卷",
+      "text": "回答关于目标、成绩和预算的问题，获取合适的院校。",
+      "open": "前往问卷"
     },
     "data": {
       "title": "你的数据",
@@ -349,6 +350,444 @@
       "s5Text": "我们可能更改服务和本条款，重要变更会在网站上公告。你可以随时删除账号。",
       "s6Title": "责任",
       "s6Text": "服务按现状提供。责任限制和适用法律将在律师审核本文后补充。"
+    }
+  },
+  "Survey": {
+    "title": "你的匹配问卷",
+    "intro": "回答关于你的目标、成绩、语言和预算的问题。约 15 个问题为必答，其余为选答，可一键跳过。回答会随时自动保存。",
+    "hub": {
+      "start": "开始问卷",
+      "continue": "从上次停下的地方继续",
+      "discard": "放弃并重新开始",
+      "startedOn": "你在 {date} 开始了这份问卷。",
+      "again": "重新做问卷",
+      "past": "你已完成的问卷",
+      "pastItem": "完成于 {date}",
+      "noteRetake": "已完成的问卷无法修改。如果你的计划有变，请重新做一次问卷：将使用新的回答。",
+      "profileHint": "提示：请先完善个人资料（国籍、地区、证件），结果会更准确。"
+    },
+    "done": {
+      "title": "谢谢！问卷已完成。",
+      "text": "你的回答已保存。合适的院校将在项目的下一阶段显示在这里。",
+      "toProfile": "返回我的个人资料"
+    },
+    "ui": {
+      "loading": "加载中…",
+      "loadFailed": "无法加载问卷。请刷新页面或稍后再试。",
+      "questionOf": "第 {current} 题，共 {total} 题",
+      "requiredLeft": "{count, plural, other {还剩 # 个必答问题}}",
+      "optional": "选答",
+      "back": "上一题",
+      "next": "下一题",
+      "skip": "跳过",
+      "skipAll": "跳过所有选答问题",
+      "finish": "完成",
+      "saving": "正在保存…",
+      "saveFailed": "无法保存你的回答。请检查网络后重试。",
+      "saveAndExit": "保存，稍后继续",
+      "progressLabel": "问卷进度",
+      "add": "添加",
+      "remove": "移除",
+      "search": "按名称搜索",
+      "choose": "请选择…",
+      "approximate": "不同评分体系之间的换算只是近似值。",
+      "noMatches": "未找到结果",
+      "moveUp": "上移",
+      "moveDown": "下移",
+      "counter": "已选 {chosen} / {count}",
+      "range": "范围 {min} 至 {max}"
+    },
+    "errors": {
+      "required": "请回答此问题",
+      "invalid": "请检查此回答",
+      "outOfRange": "该数值超出允许范围",
+      "tooMany": "选择过多",
+      "priorities": "请恰好选择 3 个不同的选项"
+    },
+    "education": {
+      "level": "目前的学历",
+      "year": "毕业年份（或预计）",
+      "levels": {
+        "school_9": "中学，9 年级以下",
+        "school_11": "中学，10–12 年级",
+        "college": "学院",
+        "bachelor": "本科",
+        "master": "硕士",
+        "other": "其他"
+      }
+    },
+    "grade": {
+      "none": "我还没有成绩",
+      "system": "评分体系",
+      "value": "你的平均成绩",
+      "range": "范围 {min} 至 {max}"
+    },
+    "subjects": {
+      "subject": "科目",
+      "grade": "成绩"
+    },
+    "exams": {
+      "exam": "考试",
+      "score": "分数",
+      "range": "可能的范围：{min} 至 {max}"
+    },
+    "languages": {
+      "language": "语言",
+      "level": "你的水平",
+      "certificate": "证书（可选）",
+      "certValue": "分数或等级",
+      "none": "无证书",
+      "addLanguage": "添加语言"
+    },
+    "selfLevels": {
+      "a1": "只会几句话",
+      "a2": "能谈简单的日常话题",
+      "b1": "旅行和工作中能交流",
+      "b2": "能流利讨论大多数话题",
+      "c1": "能用这门语言学习",
+      "c2": "接近母语水平",
+      "native": "母语"
+    },
+    "studyLanguages": {
+      "languages": "我愿意用来学习的语言",
+      "prepYear": "你是否愿意先上一年语言预科？",
+      "yes": "是",
+      "no": "否"
+    },
+    "budget": {
+      "currency": "货币",
+      "tuition": "每年学费",
+      "living": "每年生活费"
+    },
+    "olympiads": {
+      "subject": "科目",
+      "level": "级别",
+      "place": "名次"
+    },
+    "olympiadLevels": {
+      "school": "校级",
+      "regional": "地区级",
+      "national": "国家级",
+      "international": "国际级"
+    },
+    "priorities": {
+      "price": "费用",
+      "prestige": "声誉",
+      "location": "国家和城市",
+      "chances": "录取机会",
+      "field": "学习方向",
+      "career": "职业前景"
+    },
+    "riasec": {
+      "intro": "请按 1 到 5 为每条描述打分。没有对错之分。",
+      "scale": {
+        "1": "不符合我",
+        "2": "不太符合",
+        "3": "一般",
+        "4": "比较符合",
+        "5": "非常符合我"
+      },
+      "items": {
+        "0": "我喜欢用双手或工具修理、组装东西。",
+        "1": "我喜欢通过实验或分析数据弄清事物的原理。",
+        "2": "我喜欢创作原创作品：写作、绘画、设计或作曲。",
+        "3": "我喜欢帮助、教导或照顾他人。",
+        "4": "我喜欢带领团队，或说服别人支持我的想法。",
+        "5": "我喜欢整理信息、做记录并遵循明确的流程。",
+        "6": "我喜欢在户外工作，或与机器、动物、植物打交道。",
+        "7": "我喜欢解难题或数学题。",
+        "8": "我喜欢通过音乐、戏剧或视觉媒体表达想法。",
+        "9": "我善于倾听他人，并在困难时给予支持。",
+        "10": "我喜欢发起项目或创业，并愿意承担风险。",
+        "11": "我喜欢规划预算、日程和细节，让一切准确运转。"
+      },
+      "suggestions": "可能适合你的方向",
+      "suggestionsHint": "保留你喜欢的方向，至少保留一个。",
+      "answerAll": "回答全部 12 条描述后，即可看到推荐方向。"
+    },
+    "q": {
+      "level": {
+        "title": "你想学什么？",
+        "options": {
+          "school": "中小学",
+          "college": "学院",
+          "foundation": "预科（foundation）",
+          "bachelor": "本科",
+          "master": "硕士",
+          "phd": "博士（PhD）",
+          "language_course": "语言课程"
+        }
+      },
+      "situation": {
+        "title": "你的情况是？",
+        "options": {
+          "first": "第一次申请",
+          "transfer": "想转学并保留学分",
+          "second_degree": "第二学位"
+        }
+      },
+      "start": {
+        "title": "你想什么时候开始？"
+      },
+      "format": {
+        "title": "你想要哪种学习形式？",
+        "options": {
+          "on_campus": "线下",
+          "online": "线上",
+          "blended": "混合",
+          "any": "都可以"
+        }
+      },
+      "field_certainty": {
+        "title": "你对专业方向有多确定？",
+        "options": {
+          "sure": "非常确定",
+          "few": "有几个备选",
+          "unknown": "不知道，请帮我"
+        }
+      },
+      "fields": {
+        "title": "你对哪些专业方向感兴趣？",
+        "hint": "最多选 3 个，第一个最重要。可以细化到具体专业。"
+      },
+      "riasec": {
+        "title": "来找找适合你的方向",
+        "hint": "十二条关于你喜欢做什么的简短描述。"
+      },
+      "diploma_field": {
+        "title": "你之前的学位是什么专业？",
+        "hint": "请选择你的本科或硕士学位所属方向。"
+      },
+      "school_profile": {
+        "title": "你想要哪种中学方向？"
+      },
+      "school_grade": {
+        "title": "你想进入几年级？"
+      },
+      "school_program": {
+        "title": "哪种课程体系？",
+        "options": {
+          "national": "本国课程",
+          "ib": "IB",
+          "alevel": "A-level",
+          "american": "美国课程"
+        }
+      },
+      "school_boarding": {
+        "title": "寄宿还是与家人同住？",
+        "options": {
+          "boarding": "寄宿学校",
+          "family": "与家人同住",
+          "any": "都可以"
+        }
+      },
+      "school_coed": {
+        "title": "男女同校还是单一性别学校？",
+        "options": {
+          "coed": "男女同校",
+          "single_sex": "单一性别",
+          "any": "无所谓"
+        }
+      },
+      "profession": {
+        "title": "你想学习哪种职业技能？"
+      },
+      "college_to_uni": {
+        "title": "之后你想转入大学吗？",
+        "options": {
+          "yes": "想",
+          "no": "不想",
+          "maybe": "也许"
+        }
+      },
+      "education": {
+        "title": "你目前的学历"
+      },
+      "grade": {
+        "title": "你的平均成绩",
+        "hint": "请选择你最熟悉的评分体系。"
+      },
+      "subjects": {
+        "title": "你最擅长的科目和成绩",
+        "hint": "最多 5 个。成绩使用你之前选择的评分体系。"
+      },
+      "exams": {
+        "title": "你参加过或将要参加的考试",
+        "hint": "国家或国际考试及你的分数。"
+      },
+      "languages": {
+        "title": "你会哪些语言，水平如何？",
+        "hint": "添加每种语言并如实评估自己。证书为可选。"
+      },
+      "study_languages": {
+        "title": "你可以用哪些语言学习？"
+      },
+      "olympiads": {
+        "title": "奥林匹克竞赛与比赛",
+        "hint": "科目、级别和获得的名次。"
+      },
+      "achievements": {
+        "title": "你的成就",
+        "options": {
+          "projects": "项目",
+          "publications": "发表作品",
+          "sport": "体育",
+          "creative": "创意作品集",
+          "volunteering": "志愿服务"
+        }
+      },
+      "work_years": {
+        "title": "你有几年工作经验？"
+      },
+      "research_topic": {
+        "title": "你的研究课题",
+        "hint": "如果已经有的话。"
+      },
+      "entrance": {
+        "title": "你愿意接受什么？",
+        "options": {
+          "entrance_exams": "院校的入学考试",
+          "interview": "面试",
+          "creative_contest": "创意比赛"
+        }
+      },
+      "funding": {
+        "title": "你打算如何支付学费？",
+        "options": {
+          "free": "只考虑免学费名额",
+          "paid": "收费名额",
+          "both": "都可以考虑"
+        }
+      },
+      "budget": {
+        "title": "你的年度预算",
+        "hint": "每年的学费和生活费，使用同一种货币。"
+      },
+      "scholarship": {
+        "title": "你需要奖学金吗？",
+        "options": {
+          "yes": "是的，需要",
+          "no": "不需要",
+          "maybe": "有的话更好"
+        }
+      },
+      "loan": {
+        "title": "你会考虑教育贷款吗？",
+        "options": {
+          "yes": "会",
+          "no": "不会"
+        }
+      },
+      "rating": {
+        "title": "院校排名对你有多重要？",
+        "options": {
+          "top_world": "世界前列",
+          "top_country": "国内前列",
+          "any": "不重要"
+        }
+      },
+      "ownership": {
+        "title": "公立还是私立？",
+        "options": {
+          "public": "公立",
+          "private": "私立",
+          "any": "不重要"
+        }
+      },
+      "size": {
+        "title": "大型还是小型院校？",
+        "options": {
+          "large": "大型",
+          "small": "小型",
+          "any": "不重要"
+        }
+      },
+      "strategy": {
+        "title": "你希望推荐有多大的挑战性？",
+        "options": {
+          "safe": "只要稳妥的机会",
+          "balanced": "均衡",
+          "ambitious": "有挑战性"
+        }
+      },
+      "extras": {
+        "title": "除学位外你还看重什么？",
+        "options": {
+          "internship": "实习与实践",
+          "double_degree": "双学位",
+          "exchange": "交换学期"
+        }
+      },
+      "recognition": {
+        "title": "文凭是否必须在你的国家获得认可？",
+        "options": {
+          "yes": "是",
+          "no": "否",
+          "any": "不重要"
+        }
+      },
+      "city_size": {
+        "title": "你喜欢什么样的城市？",
+        "options": {
+          "megapolis": "大都市",
+          "medium": "中等城市",
+          "small_student": "小型大学城",
+          "any": "不重要"
+        }
+      },
+      "climate": {
+        "title": "你喜欢什么气候？",
+        "options": {
+          "warm": "温暖",
+          "temperate": "温和",
+          "cold": "寒冷",
+          "any": "不重要"
+        }
+      },
+      "dorm": {
+        "title": "你需要宿舍吗？",
+        "options": {
+          "yes": "需要",
+          "no": "不需要",
+          "any": "不重要"
+        }
+      },
+      "work_during": {
+        "title": "你想在学习期间工作吗？",
+        "options": {
+          "yes": "想",
+          "no": "不想",
+          "maybe": "也许"
+        }
+      },
+      "after": {
+        "title": "学成之后的计划",
+        "options": {
+          "stay": "留在当地",
+          "return": "回国",
+          "unknown": "还没想好"
+        }
+      },
+      "family": {
+        "title": "你是否有人同行？",
+        "hint": "选答。",
+        "options": {
+          "partner": "伴侣",
+          "children": "孩子"
+        }
+      },
+      "accessibility": {
+        "title": "你需要无障碍环境吗？",
+        "options": {
+          "yes": "需要",
+          "no": "不需要",
+          "prefer_not": "不愿透露"
+        }
+      },
+      "priorities": {
+        "title": "请选择最重要的 3 项",
+        "hint": "这决定了我们在为你的匹配排序时更看重什么。"
+      }
     }
   }
 }

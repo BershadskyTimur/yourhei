@@ -5,7 +5,7 @@ import { useTranslations } from 'next-intl';
 import { useSearchParams } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { useForm, useWatch, type Resolver } from 'react-hook-form';
-import { useRouter } from '@/i18n/navigation';
+import { Link, useRouter } from '@/i18n/navigation';
 import { calcAge, isOldEnough, minAgeFor } from '@/lib/age';
 import { documentsFromDb, documentsToDb, type DbDocument } from '@/lib/registration/documents';
 import {
@@ -247,6 +247,9 @@ export function ProfileEditor() {
       <section className="rounded-2xl border border-line-strong bg-accent-soft p-5 sm:p-6">
         <h2 className="text-xl font-bold text-brand">{t('survey.title')}</h2>
         <p className="mt-1">{t('survey.text')}</p>
+        <Link href="/survey" className={`${primaryButton} mt-4`}>
+          {t('survey.open')}
+        </Link>
       </section>
 
       <form onSubmit={form.handleSubmit(onSave)} noValidate className="space-y-8">

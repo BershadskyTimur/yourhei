@@ -297,8 +297,9 @@
     "ageBlocked": "This date of birth or country does not meet the minimum age ({age}).",
     "marketing": "Send me news and tips by e-mail",
     "survey": {
-      "title": "Tell us more about your plans",
-      "text": "The survey that powers your matches is coming soon."
+      "title": "Take the matching survey",
+      "text": "Answer questions about your goals, results and budget to get suitable institutions.",
+      "open": "Go to the survey"
     },
     "data": {
       "title": "Your data",
@@ -349,6 +350,444 @@
       "s5Text": "We may change the service and these terms; important changes will be announced on the site. You can delete your account at any time.",
       "s6Title": "Liability",
       "s6Text": "The service is provided as it is. Limits of liability and the governing law will be added after a lawyer has reviewed this text."
+    }
+  },
+  "Survey": {
+    "title": "Your matching survey",
+    "intro": "Answer questions about your goals, results, languages and budget. About 15 questions are required; the rest are optional and can be skipped in one click. Your answers are saved as you go.",
+    "hub": {
+      "start": "Start the survey",
+      "continue": "Continue where you stopped",
+      "discard": "Discard and start over",
+      "startedOn": "You started this survey on {date}.",
+      "again": "Take the survey again",
+      "past": "Your completed surveys",
+      "pastItem": "Completed {date}",
+      "noteRetake": "A completed survey cannot be changed. If your plans change, take the survey again: the new answers will be used.",
+      "profileHint": "Tip: fill in your profile first (citizenship, regions, documents) for better results."
+    },
+    "done": {
+      "title": "Thank you! The survey is complete.",
+      "text": "Your answers are saved. Suitable institutions will be shown here at the next stage of the project.",
+      "toProfile": "Back to my profile"
+    },
+    "ui": {
+      "loading": "Loading…",
+      "loadFailed": "Could not load the survey. Please reload the page or try again later.",
+      "questionOf": "Question {current} of {total}",
+      "requiredLeft": "{count, plural, one {# required question left} other {# required questions left}}",
+      "optional": "Optional",
+      "back": "Back",
+      "next": "Next",
+      "skip": "Skip",
+      "skipAll": "Skip all optional questions",
+      "finish": "Finish",
+      "saving": "Saving…",
+      "saveFailed": "Could not save your answer. Check your connection and try again.",
+      "saveAndExit": "Save and continue later",
+      "progressLabel": "Survey progress",
+      "add": "Add",
+      "remove": "Remove",
+      "search": "Search by name",
+      "choose": "Choose…",
+      "approximate": "Conversions between grading systems are approximate.",
+      "noMatches": "Nothing found",
+      "moveUp": "Move up",
+      "moveDown": "Move down",
+      "counter": "{chosen} of {count} chosen",
+      "range": "From {min} to {max}"
+    },
+    "errors": {
+      "required": "Please answer this question",
+      "invalid": "Please check this answer",
+      "outOfRange": "This value is outside the allowed range",
+      "tooMany": "Too many choices",
+      "priorities": "Choose exactly 3 different items"
+    },
+    "education": {
+      "level": "Current education",
+      "year": "Year of graduation (or expected)",
+      "levels": {
+        "school_9": "School, up to grade 9",
+        "school_11": "School, grades 10-12",
+        "college": "College",
+        "bachelor": "Bachelor's degree",
+        "master": "Master's degree",
+        "other": "Other"
+      }
+    },
+    "grade": {
+      "none": "I do not have grades yet",
+      "system": "Grading system",
+      "value": "Your average grade",
+      "range": "From {min} to {max}"
+    },
+    "subjects": {
+      "subject": "Subject",
+      "grade": "Grade"
+    },
+    "exams": {
+      "exam": "Exam",
+      "score": "Score",
+      "range": "Possible range: {min} to {max}"
+    },
+    "languages": {
+      "language": "Language",
+      "level": "Your level",
+      "certificate": "Certificate (optional)",
+      "certValue": "Score or level",
+      "none": "No certificate",
+      "addLanguage": "Add a language"
+    },
+    "selfLevels": {
+      "a1": "I know a few phrases",
+      "a2": "Simple everyday topics",
+      "b1": "I manage on trips and at work",
+      "b2": "I discuss most topics fluently",
+      "c1": "I can study in this language",
+      "c2": "Like a native speaker",
+      "native": "Native language"
+    },
+    "studyLanguages": {
+      "languages": "Languages I am ready to study in",
+      "prepYear": "Would you take a preparatory language year?",
+      "yes": "Yes",
+      "no": "No"
+    },
+    "budget": {
+      "currency": "Currency",
+      "tuition": "Tuition per year",
+      "living": "Living costs per year"
+    },
+    "olympiads": {
+      "subject": "Subject",
+      "level": "Level",
+      "place": "Place"
+    },
+    "olympiadLevels": {
+      "school": "School",
+      "regional": "Regional",
+      "national": "National",
+      "international": "International"
+    },
+    "priorities": {
+      "price": "Price",
+      "prestige": "Prestige",
+      "location": "Country and city",
+      "chances": "Chances of admission",
+      "field": "The field of study",
+      "career": "Career prospects"
+    },
+    "riasec": {
+      "intro": "Rate each statement from 1 to 5. There are no right or wrong answers.",
+      "scale": {
+        "1": "not for me",
+        "2": "rather not",
+        "3": "neutral",
+        "4": "rather yes",
+        "5": "very much me"
+      },
+      "items": {
+        "0": "I like to fix or build things with my hands or tools.",
+        "1": "I like to figure out how something works by experimenting or analysing data.",
+        "2": "I like to create something original: write, draw, design or compose.",
+        "3": "I like to help, teach or take care of other people.",
+        "4": "I like to lead a team or persuade others to follow my idea.",
+        "5": "I like to organise information, keep records and follow clear procedures.",
+        "6": "I enjoy working outdoors, with machines, animals or plants.",
+        "7": "I enjoy solving a hard puzzle or a maths problem.",
+        "8": "I like to express ideas through music, theatre or visual media.",
+        "9": "I am good at listening to people and supporting them in hard times.",
+        "10": "I like to start a project or a business and take risks.",
+        "11": "I like to plan budgets, schedules and details so that everything runs exactly right."
+      },
+      "suggestions": "Directions that may suit you",
+      "suggestionsHint": "Keep the ones you like. You need at least one.",
+      "answerAll": "Answer all 12 statements to see suggested directions."
+    },
+    "q": {
+      "level": {
+        "title": "What do you want to study?",
+        "options": {
+          "school": "School",
+          "college": "College",
+          "foundation": "Foundation (preparatory year)",
+          "bachelor": "Bachelor's degree",
+          "master": "Master's degree",
+          "phd": "PhD",
+          "language_course": "Language courses"
+        }
+      },
+      "situation": {
+        "title": "What is your situation?",
+        "options": {
+          "first": "Applying for the first time",
+          "transfer": "I want to transfer and keep my credits",
+          "second_degree": "A second degree"
+        }
+      },
+      "start": {
+        "title": "When do you want to start?"
+      },
+      "format": {
+        "title": "Which study format?",
+        "options": {
+          "on_campus": "On campus",
+          "online": "Online",
+          "blended": "Blended",
+          "any": "Any"
+        }
+      },
+      "field_certainty": {
+        "title": "How sure are you about your field?",
+        "options": {
+          "sure": "I know exactly",
+          "few": "I have a couple of options",
+          "unknown": "I do not know, please help"
+        }
+      },
+      "fields": {
+        "title": "Which fields interest you?",
+        "hint": "Choose up to 3; the first is the most important. You can go down to a specific specialty."
+      },
+      "riasec": {
+        "title": "Let's find directions that suit you",
+        "hint": "Twelve short statements about what you like to do."
+      },
+      "diploma_field": {
+        "title": "What was your previous degree in?",
+        "hint": "Choose the field of your bachelor's or master's diploma."
+      },
+      "school_profile": {
+        "title": "Which school profile do you want?"
+      },
+      "school_grade": {
+        "title": "Which grade do you want to enter?"
+      },
+      "school_program": {
+        "title": "Which programme?",
+        "options": {
+          "national": "National",
+          "ib": "IB",
+          "alevel": "A-levels",
+          "american": "American"
+        }
+      },
+      "school_boarding": {
+        "title": "Boarding school or living with your family?",
+        "options": {
+          "boarding": "Boarding school",
+          "family": "Living with my family",
+          "any": "Either"
+        }
+      },
+      "school_coed": {
+        "title": "Co-educational or single-sex school?",
+        "options": {
+          "coed": "Co-educational",
+          "single_sex": "Single-sex",
+          "any": "No preference"
+        }
+      },
+      "profession": {
+        "title": "Which profession do you want to learn?"
+      },
+      "college_to_uni": {
+        "title": "Would you like to transfer to a university afterwards?",
+        "options": {
+          "yes": "Yes",
+          "no": "No",
+          "maybe": "Maybe"
+        }
+      },
+      "education": {
+        "title": "Your current education"
+      },
+      "grade": {
+        "title": "Your average grade",
+        "hint": "Choose the grading system you know best."
+      },
+      "subjects": {
+        "title": "Your best subjects and grades",
+        "hint": "Up to 5. Grades use the grading system you chose before."
+      },
+      "exams": {
+        "title": "Exams you have taken or will take",
+        "hint": "National or international exams with your scores."
+      },
+      "languages": {
+        "title": "Which languages do you speak, and how well?",
+        "hint": "Add each language and rate yourself honestly. A certificate is optional."
+      },
+      "study_languages": {
+        "title": "In which languages could you study?"
+      },
+      "olympiads": {
+        "title": "Olympiads and competitions",
+        "hint": "Subject, level and the place you took."
+      },
+      "achievements": {
+        "title": "Your achievements",
+        "options": {
+          "projects": "Projects",
+          "publications": "Publications",
+          "sport": "Sport",
+          "creative": "Creative portfolio",
+          "volunteering": "Volunteering"
+        }
+      },
+      "work_years": {
+        "title": "How many years have you worked?"
+      },
+      "research_topic": {
+        "title": "Your research topic",
+        "hint": "If you already have one."
+      },
+      "entrance": {
+        "title": "What are you ready for?",
+        "options": {
+          "entrance_exams": "Entrance exams at the institution",
+          "interview": "An interview",
+          "creative_contest": "A creative contest"
+        }
+      },
+      "funding": {
+        "title": "How do you plan to pay for your studies?",
+        "options": {
+          "free": "Only free (tuition-free) places",
+          "paid": "Paid places",
+          "both": "Either"
+        }
+      },
+      "budget": {
+        "title": "Your yearly budget",
+        "hint": "Tuition and living costs per year, in one currency."
+      },
+      "scholarship": {
+        "title": "Do you need a scholarship?",
+        "options": {
+          "yes": "Yes, I need one",
+          "no": "No",
+          "maybe": "It would help"
+        }
+      },
+      "loan": {
+        "title": "Would you consider an education loan?",
+        "options": {
+          "yes": "Yes",
+          "no": "No"
+        }
+      },
+      "rating": {
+        "title": "How important is the ranking of the institution?",
+        "options": {
+          "top_world": "Top of the world",
+          "top_country": "Top of the country",
+          "any": "Not important"
+        }
+      },
+      "ownership": {
+        "title": "Public or private?",
+        "options": {
+          "public": "Public",
+          "private": "Private",
+          "any": "Not important"
+        }
+      },
+      "size": {
+        "title": "Large or small institution?",
+        "options": {
+          "large": "Large",
+          "small": "Small",
+          "any": "Not important"
+        }
+      },
+      "strategy": {
+        "title": "How ambitious should your matches be?",
+        "options": {
+          "safe": "Only safe chances",
+          "balanced": "Balanced",
+          "ambitious": "Ambitious"
+        }
+      },
+      "extras": {
+        "title": "What matters besides the degree?",
+        "options": {
+          "internship": "Internships and practice",
+          "double_degree": "Double degree",
+          "exchange": "Exchange semester"
+        }
+      },
+      "recognition": {
+        "title": "Must the diploma be recognised in your country?",
+        "options": {
+          "yes": "Yes",
+          "no": "No",
+          "any": "Not important"
+        }
+      },
+      "city_size": {
+        "title": "What kind of city do you prefer?",
+        "options": {
+          "megapolis": "A big metropolis",
+          "medium": "A medium-sized city",
+          "small_student": "A small student town",
+          "any": "Not important"
+        }
+      },
+      "climate": {
+        "title": "Which climate do you prefer?",
+        "options": {
+          "warm": "Warm",
+          "temperate": "Temperate",
+          "cold": "Cold",
+          "any": "Not important"
+        }
+      },
+      "dorm": {
+        "title": "Do you need a dormitory?",
+        "options": {
+          "yes": "Yes",
+          "no": "No",
+          "any": "Not important"
+        }
+      },
+      "work_during": {
+        "title": "Do you want to work while studying?",
+        "options": {
+          "yes": "Yes",
+          "no": "No",
+          "maybe": "Maybe"
+        }
+      },
+      "after": {
+        "title": "Your plans after studying",
+        "options": {
+          "stay": "Stay in the country",
+          "return": "Return home",
+          "unknown": "Not sure yet"
+        }
+      },
+      "family": {
+        "title": "Are you travelling with someone?",
+        "hint": "Optional.",
+        "options": {
+          "partner": "A partner",
+          "children": "Children"
+        }
+      },
+      "accessibility": {
+        "title": "Do you need an accessible environment?",
+        "options": {
+          "yes": "Yes",
+          "no": "No",
+          "prefer_not": "Prefer not to say"
+        }
+      },
+      "priorities": {
+        "title": "Choose the 3 most important things",
+        "hint": "This decides what counts most when we rank your matches."
+      }
     }
   }
 }
