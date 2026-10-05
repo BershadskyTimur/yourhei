@@ -33,7 +33,8 @@ describe.each(LOCALE_CODES.filter((c) => c !== 'en'))('messages/%s.json', (code)
   });
 
   it('uses the same {placeholders} as English', () => {
-    const names = (s: string) => [...s.matchAll(/\{(\w+)/g)].map((m) => m[1]).sort();
+    // A parameter is "{name}" or "{name, plural|select, ...}"; words inside the option texts are not parameters.
+    const names = (s: string) => [...new Set([...s.matchAll(/\{(\w+)\s*(?:,|\})/g)].map((m) => m[1]))].sort();
     for (const key of Object.keys(reference)) {
       expect(names(messages[key]), key).toEqual(names(reference[key]));
     }

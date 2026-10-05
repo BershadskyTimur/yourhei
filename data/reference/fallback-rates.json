@@ -1,0 +1,9 @@
+{
+  "_comment": "Rough units of each currency per 1 US dollar, used ONLY when the live rates cannot be loaded. Approximate; checked by hand from time to time.",
+  "updated": "2026-10",
+  "rates": {
+    "USD": 1, "EUR": 0.92, "GBP": 0.79, "CHF": 0.88, "GEL": 2.7, "KZT": 500, "UZS": 12700, "AMD": 390,
+    "AZN": 1.7, "RUB": 90, "KGS": 87, "TJS": 10.7, "TMT": 3.5, "BYN": 3.3, "MDL": 17.8, "UAH": 41,
+    "CNY": 7.2, "KRW": 1350, "INR": 83, "JPY": 150, "TRY": 32, "PLN": 4, "CZK": 23
+  }
+}

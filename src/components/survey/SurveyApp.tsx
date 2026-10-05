@@ -165,7 +165,8 @@ function Done({ onAgain }: { onAgain: () => void }) {
       <p className="mt-3 text-lg">{t('done.text')}</p>
       <p className="mt-2 text-sm text-muted">{t('hub.noteRetake')}</p>
       <div className="mt-6 flex flex-wrap gap-3">
-        <Link href="/profile" className={primaryButton}>{t('done.toProfile')}</Link>
+        <Link href="/matches" className={primaryButton}>{t('done.toMatches')}</Link>
+        <Link href="/profile" className={secondaryButton}>{t('done.toProfile')}</Link>
         <button type="button" onClick={onAgain} className={secondaryButton}>{t('hub.again')}</button>
       </div>
     </section>

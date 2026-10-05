@@ -29,6 +29,7 @@ export async function fakeSignIn(
   page: Page,
   profile: Record<string, unknown> | null,
   seedAttempts: FakeAttempt[] = [],
+  data: { programs?: unknown[]; countries?: unknown[] } = {},
 ) {
   const { url, ref } = supabaseRef();
   const user = {
@@ -70,7 +71,11 @@ export async function fakeSignIn(
     // GET with maybeSingle(): one object, or null
     return route.fulfill(profile ? json(profile) : { status: 200, contentType: 'application/json', body: 'null' });
   });
-  // The survey table: a tiny in-memory copy of survey_attempts (see fakeSurveyDb below).
+  // Published programmes and country facts for the matches page.
+  await page.route(`${url}/rest/v1/programs**`, (route) => route.fulfill(json(data.programs ?? [])));
+  await page.route(`${url}/rest/v1/country_data**`, (route) => route.fulfill(json(data.countries ?? [])));
+
+  // The survey table: a tiny in-memory copy of survey_attempts.
   attempts = [...seedAttempts];
   await page.route(`${url}/rest/v1/survey_attempts**`, (route) => {
     const req = route.request();
