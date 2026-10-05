@@ -11,7 +11,6 @@
   "Header": {
     "homeLabel": "YourHEI — inicio",
     "login": "Iniciar sesión",
-    "loginSoon": "El inicio de sesión estará disponible pronto",
     "language": "Idioma",
     "toggleTheme": "Cambiar entre tema claro y oscuro",
     "profile": "Perfil",
@@ -24,8 +23,9 @@
     "contacts": "Contacto y soporte",
     "privacy": "Política de privacidad",
     "terms": "Condiciones de uso",
-    "dataCredit": "Datos de instituciones: Wikidata (CC0). Mapa: © colaboradores de OpenStreetMap, OpenFreeMap.",
-    "rights": "© {year} YourHEI"
+    "dataCredit": "Datos del mapa © colaboradores de OpenStreetMap, OpenFreeMap.",
+    "rights": "© {year} YourHEI",
+    "tagline": "Encuentra dónde estudiar: universidades, colegios y escuelas en un mapa, con recomendaciones que se explican solas."
   },
   "Types": {
     "university": "Universidad",
@@ -45,18 +45,14 @@
       "legendLabel": "Tipos de institución (pulsa para mostrar u ocultar)",
       "shown": "Se muestran {shown} de {total}",
       "loadError": "No se pudieron cargar las instituciones. Inténtalo más tarde.",
-      "testData": "En el mapa hay {count, plural, one {# institución} other {# instituciones}} de datos abiertos (Wikidata). Las fichas detalladas con programas y matrícula se añaden poco a poco.",
       "more": "Detalles",
       "close": "Cerrar",
       "noWebgl": "Tu navegador no puede mostrar el mapa. Prueba con otro navegador o activa la aceleración por hardware.",
       "zoomIn": "Acercar",
       "zoomOut": "Alejar",
       "toggleAttribution": "Fuentes de datos del mapa",
-      "mapFeedback": "Informar de un problema del mapa"
-    },
-    "about": {
-      "title": "Qué es YourHEI",
-      "text": "YourHEI ayuda a los aspirantes y a sus familias a encontrar una universidad, un colegio, una escuela o cursos en el Cáucaso, Asia Central, Europa del Este, Europa y Asia. Cuéntanos sobre ti y te sugeriremos opciones adecuadas y lo que aún falta para la admisión."
+      "mapFeedback": "Informar de un problema del mapa",
+      "heading": "Mapa de instituciones"
     },
     "how": {
       "title": "Cómo funciona",
@@ -67,6 +63,36 @@
       "step3Title": "Recibe tus opciones",
       "step3Text": "Obtén una lista de opciones seguras, adecuadas y ambiciosas.",
       "cta": "Empezar la búsqueda"
+    },
+    "hero": {
+      "badge": "Estudiar en el extranjero, más fácil",
+      "subtitle": "Explora {count} universidades y colegios en el mapa, responde una encuesta corta y descubre dónde encajas de verdad: con motivos claros y lo que aún te falta.",
+      "ctaMap": "Explorar el mapa"
+    },
+    "stats": {
+      "institutions": "{count, plural, one {# institución} other {# instituciones}}",
+      "countries": "{count, plural, one {# país} other {# países}}",
+      "languages": "{count} idiomas",
+      "free": "Gratis"
+    },
+    "why": {
+      "title": "Por qué YourHEI",
+      "f1Title": "Todo en un mapa",
+      "f1Text": "Universidades, colegios y escuelas del Cáucaso, Asia Central, Europa del Este, Europa y Asia.",
+      "f2Title": "Resultados que se explican",
+      "f2Text": "Cada resultado muestra por qué encaja y qué te falta, por ejemplo una puntuación de idioma más alta.",
+      "f3Title": "Datos con fuentes",
+      "f3Text": "Los precios, requisitos y plazos proceden de sitios oficiales, con enlace y fecha de comprobación.",
+      "f4Title": "En tu idioma",
+      "f4Text": "El sitio habla {languages} idiomas y muestra los precios en tu moneda."
+    },
+    "countries": {
+      "title": "Dónde puedes estudiar",
+      "text": "Países con instituciones en el mapa."
+    },
+    "cta": {
+      "title": "¿Listo para encontrar tu lugar?",
+      "text": "Crea una cuenta gratuita, responde la encuesta y recibe tus resultados en minutos."
     }
   },
   "Institution": {
@@ -78,24 +104,18 @@
   "Pages": {
     "about": {
       "title": "Acerca del proyecto",
-      "body": "YourHEI es un proyecto que ayuda a elegir dónde estudiar. Está en desarrollo: por ahora solo está disponible el mapa con datos de prueba."
+      "body": "YourHEI ayuda a los aspirantes y a sus familias a elegir dónde estudiar: un mapa interactivo de universidades, colegios y escuelas, una encuesta corta sobre tus objetivos, resultados y presupuesto, y recomendaciones que explican por qué encajan. El servicio es gratuito para los aspirantes."
     },
     "contact": {
       "title": "Contacto y soporte",
-      "body": "Un formulario de contacto para preguntas y para instituciones que quieran actualizar su página llegará en una versión posterior."
+      "body": "¿Preguntas sobre el servicio, correcciones en la página de una institución o sobre tus datos personales? Escríbenos.",
+      "emailLabel": "Correo"
     },
     "privacy": {
-      "title": "Política de privacidad",
-      "banner": "Plantilla: requiere revisión de un abogado."
+      "title": "Política de privacidad"
     },
     "terms": {
-      "title": "Condiciones de uso",
-      "banner": "Plantilla: requiere revisión de un abogado."
-    },
-    "comingSoon": {
-      "title": "Próximamente",
-      "body": "Esta parte del sitio aún no está lista. El registro y la búsqueda están previstos para las siguientes etapas.",
-      "back": "Volver al inicio"
+      "title": "Condiciones de uso"
     },
     "notFound": {
       "title": "Página no encontrada",
@@ -120,9 +140,6 @@
     "progressLabel": "Progreso del registro",
     "stepOf": "Paso {current} de {total}",
     "steps": {
-      "search": "Qué buscas",
-      "about": "Sobre ti",
-      "documents": "Documentos",
       "account": "Cuenta",
       "age": "Tu edad"
     },
@@ -216,14 +233,9 @@
     },
     "errors": {
       "required": "Rellena este campo",
-      "regionsMin": "Elige al menos una región",
-      "countriesMin": "Elige al menos un país",
-      "typesMin": "Elige al menos un tipo",
       "birthInvalid": "Introduce una fecha de nacimiento válida",
       "dateInvalid": "Introduce una fecha válida",
-      "genderRequired": "Elige una opción",
       "residenceRequired": "Elige tu país de residencia",
-      "citizenshipRequired": "Añade al menos una nacionalidad",
       "ageCheckRequired": "Confirma tu edad",
       "emailInvalid": "Introduce un correo válido",
       "consentRequired": "Este consentimiento es obligatorio",
@@ -321,37 +333,46 @@
   },
   "Legal": {
     "privacy": {
-      "intro": "Esta plantilla explica qué datos recoge YourHEI y por qué. No es definitiva: un abogado debe revisarla antes del lanzamiento.",
       "s1Title": "Quiénes somos",
-      "s1Text": "YourHEI es un proyecto que ayuda a los aspirantes a elegir dónde estudiar. Los datos de contacto para preguntas sobre tus datos se publicarán aquí antes del lanzamiento.",
+      "s1Text": "YourHEI es un servicio que ayuda a los aspirantes a elegir dónde estudiar. Esta política explica qué datos recogemos y cómo los usamos. Al usar el sitio, la aceptas.",
       "s2Title": "Qué recogemos",
-      "s2Text": "Solo lo necesario para las recomendaciones: correo y contraseña (la contraseña se guarda solo como hash seguro, nunca como texto), fecha de nacimiento, género (puedes no decirlo), país de residencia, nacionalidades, lo que buscas y el estado de tus documentos. No recogemos copias de tus documentos.",
-      "s3Title": "Por qué lo pedimos",
-      "s3Text": "La fecha de nacimiento y el país de residencia sirven para comprobar la edad mínima en tu país. La nacionalidad, la residencia y los documentos sirven para mostrar las normas de visado y lo que falta para la admisión. El género importa para escuelas y residencias no mixtas. El correo sirve para iniciar sesión y recibir mensajes del servicio.",
-      "s4Title": "Dónde se guardan los datos",
-      "s4Text": "Los datos se guardan con nuestro proveedor de bases de datos (Supabase) hasta que elimines tu cuenta. Las reglas de acceso permiten que cada persona vea solo sus propios datos.",
-      "s5Title": "Tus derechos",
-      "s5Text": "En tu perfil puedes editar todos tus datos, descargar una copia y eliminar tu cuenta con todos los datos. La eliminación es inmediata e irreversible. Las novedades y consejos por correo solo se envían si marcaste la casilla opcional, y puedes desactivarlos en tu perfil.",
-      "s6Title": "Edad mínima",
-      "s6Text": "Solo registramos a personas desde la edad mínima de su país de residencia (14, 16 o 18 años según el país). Si eres menor, no se crea ninguna cuenta y no se guarda nada de lo que escribiste.",
-      "s7Title": "Cookies y rastreadores",
-      "s7Text": "El sitio no usa analítica, publicidad ni rastreadores de terceros. Solo guarda datos técnicos en tu navegador: el idioma, el tema y la sesión. Se añadirá un banner de cookies antes de activar analítica o publicidad."
+      "s2Text": "Datos de la cuenta (correo y una forma protegida de tu contraseña); datos del perfil (fecha de nacimiento, género si lo indicas, país de residencia, nacionalidades, lo que buscas, el estado de tus documentos); tus respuestas de la encuesta; y datos técnicos y de uso (páginas que visitas, acciones en el sitio, dispositivo, navegador, idioma, dirección IP, ubicación aproximada, el sitio desde el que llegas), también mediante cookies y tecnologías similares.",
+      "s3Title": "Por qué lo recogemos",
+      "s3Text": "Para operar y mejorar el servicio, comprobar la edad mínima, elaborar tus recomendaciones, comunicarnos contigo, medir el uso del sitio, mostrar publicidad, hacer investigación, mantener la seguridad y cumplir obligaciones legales.",
+      "s4Title": "Analítica y comunicación de datos",
+      "s4Text": "Podemos usar herramientas de analítica y publicidad. Podemos enviar datos de analítica y de uso, y otros datos que recojamos, a proveedores y socios de analítica, publicidad, alojamiento y otros, estén donde estén, también en otros países.",
+      "s5Title": "Cómo podemos usar los datos",
+      "s5Text": "En la medida en que la ley lo permita, podemos usar los datos que recogemos como consideremos oportuno: para operar, personalizar, analizar y mejorar el servicio, desarrollar nuevos productos y servicios, anunciar, y publicar o compartir estadísticas e investigaciones, también de forma agregada o anonimizada.",
+      "s6Title": "Conservación",
+      "s6Text": "Los datos se conservan con nuestros proveedores (por ejemplo, el de la base de datos) hasta que elimines tu cuenta. Los registros técnicos y las copias de seguridad pueden conservarse algún tiempo más.",
+      "s7Title": "Tus derechos",
+      "s7Text": "En tu perfil puedes editar tus datos, descargar una copia, desactivar los correos y eliminar tu cuenta con todos los datos. Cuando la ley te dé más derechos, por ejemplo en la UE, el EEE o el Reino Unido, los respetamos.",
+      "s8Title": "Edad mínima",
+      "s8Text": "Solo registramos a personas desde la edad mínima de su país de residencia (14, 16 o 18 años según el país). Si eres menor, no se crea ninguna cuenta y no se guarda nada de lo que escribiste.",
+      "s9Title": "Cookies y tecnologías similares",
+      "s9Text": "Usamos cookies y tecnologías similares para tu idioma, tema e inicio de sesión, y para analítica y publicidad. Cuando la ley lo exige, primero pedimos tu consentimiento.",
+      "s10Title": "Cambios",
+      "s10Text": "Podemos cambiar esta política. La fecha de arriba indica la última versión; si sigues usando el sitio tras un cambio, aceptas la nueva versión."
     },
     "terms": {
-      "intro": "Esta plantilla describe las reglas de uso de YourHEI. No es definitiva: un abogado debe revisarla antes del lanzamiento.",
       "s1Title": "El servicio",
-      "s1Text": "YourHEI muestra instituciones educativas en un mapa y propone opciones según tus respuestas. En esta etapa es gratuito.",
+      "s1Text": "YourHEI muestra instituciones educativas en un mapa y propone opciones según tus respuestas. Es gratuito para los aspirantes.",
       "s2Title": "Tu cuenta",
       "s2Text": "Da información veraz y guarda tu contraseña en secreto. Una persona, una cuenta. Debes haber alcanzado la edad mínima de tu país de residencia.",
       "s3Title": "Información, no asesoramiento",
-      "s3Text": "Los datos de las instituciones proceden de fuentes abiertas y pueden estar desactualizados o incompletos. Comprueba siempre el sitio oficial antes de solicitar la admisión. Una recomendación no es una promesa de admisión.",
+      "s3Text": "Los datos de las instituciones proceden de fuentes abiertas y oficiales y pueden estar desactualizados o incompletos. Comprueba siempre el sitio oficial antes de solicitar la admisión. Una recomendación no es una promesa de admisión.",
       "s4Title": "Uso responsable",
       "s4Text": "No abuses del servicio: no recojas datos de forma masiva y automática, no intentes vulnerarlo y no envíes denuncias falsas.",
-      "s5Title": "Cambios y finalización",
-      "s5Text": "Podemos cambiar el servicio y estas condiciones; los cambios importantes se anunciarán en el sitio. Puedes eliminar tu cuenta en cualquier momento.",
-      "s6Title": "Responsabilidad",
-      "s6Text": "El servicio se ofrece tal cual. Los límites de responsabilidad y la ley aplicable se añadirán cuando un abogado revise este texto."
-    }
+      "s5Title": "Datos y analítica",
+      "s5Text": "Al usar el servicio aceptas que podamos recoger datos de analítica y de uso, enviarlos a los terceros que elijamos, estén donde estén, y usar todos los datos que recojamos como consideremos oportuno, tal como se describe en la Política de privacidad, en la medida en que la ley lo permita.",
+      "s6Title": "Publicidad y terceros",
+      "s6Text": "El sitio muestra publicidad y puede enlazar a sitios de terceros. No somos responsables de su contenido ni de sus ofertas.",
+      "s7Title": "Cambios y finalización",
+      "s7Text": "Podemos cambiar el servicio y estas condiciones; si sigues usando el servicio tras un cambio, lo aceptas. Puedes eliminar tu cuenta en cualquier momento.",
+      "s8Title": "Responsabilidad",
+      "s8Text": "El servicio se ofrece tal cual, sin garantías, y no respondemos de las pérdidas derivadas de su uso, en la medida en que la ley lo permita."
+    },
+    "updated": "Última actualización: {date}"
   },
   "Survey": {
     "title": "Tu encuesta de recomendación",
@@ -875,5 +896,8 @@
         "over_budget": "La matrícula ronda {cost} {currency} al año, por encima de tu presupuesto de {budget} {currency}."
       }
     }
+  },
+  "Ads": {
+    "label": "Publicidad"
   }
 }

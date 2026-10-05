@@ -1,4 +1,4 @@
-import { expect, test, type Page } from '@playwright/test';
+﻿import { expect, test, type Page } from '@playwright/test';
 import { fakeSignIn } from './helpers';
 
 // Supabase is replaced by fakes here, so no real account is created and no e-mail is sent.
@@ -237,19 +237,19 @@ test.describe('login, reset and guests', () => {
 
 test.describe('legal pages', () => {
   for (const [path, sections] of [
-    ['privacy', 7],
-    ['terms', 6],
+    ['privacy', 10],
+    ['terms', 8],
   ] as const) {
-    test(`/${path} has ${sections} sections and the lawyer note`, async ({ page }) => {
+    test(`/${path} has ${sections} sections and no template note`, async ({ page }) => {
       await page.goto(`/en/${path}`);
-      await expect(page.getByText('Template — requires review by a lawyer.')).toBeVisible();
+      await expect(page.getByText(/template|requires review/i)).toHaveCount(0);
       await expect(page.locator('article h2')).toHaveCount(sections);
     });
   }
 });
 
 test.describe('every language: registration and profile fit the screen', () => {
-  for (const locale of ['ru', 'ka', 'es', 'zh'] as const) {
+  for (const locale of ['ru', 'ka', 'es', 'zh', 'uk', 'hy', 'kk'] as const) {
     test(`/${locale}: no horizontal scroll`, async ({ page }) => {
       const overflow = () =>
         page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
