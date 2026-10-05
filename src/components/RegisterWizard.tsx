@@ -3,7 +3,7 @@
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useLocale, useTranslations } from 'next-intl';
 import { useEffect, useRef, useState, useSyncExternalStore } from 'react';
-import { useForm, type FieldPath } from 'react-hook-form';
+import { useForm, type FieldPath, type Resolver } from 'react-hook-form';
 import { Link, useRouter } from '@/i18n/navigation';
 import { isOldEnough, minAgeFor } from '@/lib/age';
 import {
@@ -15,13 +15,11 @@ import {
 } from '@/lib/registration/schema';
 import { clearDraft, loadDraft, saveDraft } from '@/lib/registration/storage';
 import { getSupabaseBrowser, isSupabaseConfigured } from '@/lib/supabase/client';
-import { StepAbout } from './forms/StepAbout';
 import { StepAccount } from './forms/StepAccount';
-import { StepDocuments } from './forms/StepDocuments';
-import { StepSearch } from './forms/StepSearch';
+import { StepAge } from './forms/StepAge';
 import { primaryButton, secondaryButton } from './forms/ui';
 
-const STEP_KEYS = ['search', 'about', 'documents', 'account'] as const;
+const STEP_KEYS = ['age', 'account'] as const;
 const LAST = STEP_KEYS.length - 1;
 
 const subscribeNothing = () => () => {};
@@ -43,7 +41,8 @@ function Wizard({ draft }: { draft: ReturnType<typeof loadDraft> }) {
   const router = useRouter();
 
   const form = useForm<RegistrationForm>({
-    resolver: zodResolver(registrationSchema),
+    // The registration schema checks only age + account; the form type also has the profile fields.
+    resolver: zodResolver(registrationSchema) as unknown as Resolver<RegistrationForm>,
     defaultValues: draft?.values ?? emptyRegistration(),
     reValidateMode: 'onChange',
     criteriaMode: 'all',
@@ -94,7 +93,7 @@ function Wizard({ draft }: { draft: ReturnType<typeof loadDraft> }) {
       );
       return;
     }
-    if (step === 1) {
+    if (step === 0) {
       const { birthDate, residenceCountry } = form.getValues();
       if (!isOldEnough(birthDate, residenceCountry)) return rejectUnderage(residenceCountry);
     }
@@ -220,10 +219,8 @@ function Wizard({ draft }: { draft: ReturnType<typeof loadDraft> }) {
       </h2>
 
       <div className="mt-6">
-        {step === 0 && <StepSearch form={form} />}
-        {step === 1 && <StepAbout form={form} />}
-        {step === 2 && <StepDocuments form={form} />}
-        {step === 3 && <StepAccount form={form} />}
+        {step === 0 && <StepAge form={form} />}
+        {step === 1 && <StepAccount form={form} />}
       </div>
 
       {step === LAST && !configured && (
