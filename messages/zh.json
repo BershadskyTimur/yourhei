@@ -45,7 +45,7 @@
       "legendLabel": "机构类型（点按以显示或隐藏）",
       "shown": "显示 {shown} / {total}",
       "loadError": "无法加载机构数据，请稍后再试。",
-      "testData": "测试数据：来自 Wikidata 的格鲁吉亚和哈萨克斯坦共 {count} 所院校。详细信息卡片将稍后推出。",
+      "testData": "地图上有 {count} 所来自开放数据（Wikidata）的院校。包含专业和学费的详细信息卡片正在逐步添加。",
       "more": "详情",
       "close": "关闭",
       "noWebgl": "你的浏览器无法显示地图。请尝试其他浏览器，或开启硬件加速。",

@@ -157,6 +157,19 @@ describe('academic fit', () => {
     expect(fit.gaps[0]).toEqual({ key: 'gap.language', params: { exam: 'IELTS', need: 6.5, have: 6 } });
     expect(fit.hardFail).toBe(false);
   });
+  it('listed language certificates are alternatives: the best one counts', () => {
+    const p = program({ requirements: { minGpa: null, minScores: [{ exam: 'ielts', min: 6 }, { exam: 'toefl', min: 78 }], documents: [] } });
+    // IELTS 7 is far above 6; TOEFL is not needed
+    const strong = academicFit(p, input({ languages: [{ lang: 'en', level: 'b2', cert: { id: 'ielts', value: 7 } }] }));
+    expect(strong.margins).toHaveLength(1);
+    expect(strong.met).toBe(true);
+    expect(strong.gaps).toEqual([]);
+    // only a weak IELTS: one gap is reported, not two
+    const weak = academicFit(p, input({ languages: [{ lang: 'en', level: 'b1', cert: { id: 'ielts', value: 5 } }] }));
+    expect(weak.met).toBe(false);
+    expect(weak.gaps).toHaveLength(1);
+  });
+
   it('a certificate above the requirement is met', () => {
     const p = program({ requirements: { minGpa: null, minScores: [{ exam: 'ielts', min: 6 }], documents: [] } });
     const i = input({ languages: [{ lang: 'en', level: 'b2', cert: { id: 'ielts', value: 7.5 } }] });

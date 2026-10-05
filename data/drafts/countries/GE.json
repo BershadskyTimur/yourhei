@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "collected_at": "2026-10-05",
+  "country": "GE",
+  "currency": "GEL",
+  "academic_year_start": "09",
+  "study_visa": {
+    "summary": {
+      "en": "A residence permit for study is issued on a certificate from an authorised Georgian educational institution that confirms the study programme and its expected length.",
+      "ru": "Вид на жительство для учёбы выдаётся по справке аккредитованного учебного заведения Грузии, подтверждающей программу и ожидаемый срок обучения."
+    },
+    "official_url": "https://sda.gov.ge/en/products/migration-residence-permits/"
+  },
+  "work_during_study": {
+    "allowed": null,
+    "summary": {
+      "en": "Not clear from the sources read: foreigners without a permanent residence permit need a separate right to work, granted by the State Employment Support Agency. Check before relying on it.",
+      "ru": "По изученным источникам неясно: иностранцам без постоянного вида на жительство нужно отдельное право на работу, которое выдаёт Агентство содействия занятости. Проверьте перед использованием."
+    }
+  },
+  "post_study_work_visa": {
+    "available": null,
+    "summary": {
+      "en": "Not found.",
+      "ru": "Не найдено."
+    }
+  },
+  "cost_of_living": [],
+  "diploma_recognition": {
+    "summary": {
+      "en": "Not collected yet.",
+      "ru": "Пока не собрано."
+    },
+    "official_url": null
+  },
+  "application_systems": [],
+  "sources": [
+    {
+      "field": "study_visa",
+      "url": "https://sda.gov.ge/en/products/migration-residence-permits/",
+      "accessed_at": "2026-10-05",
+      "confidence": "medium"
+    },
+    {
+      "field": "work_during_study",
+      "url": "https://sda.gov.ge/en/products/migration-residence-permits/",
+      "accessed_at": "2026-10-05",
+      "confidence": "low"
+    },
+    {
+      "field": "academic_year_start",
+      "url": "https://international.iliauni.edu.ge/for-degree-seeking-applicants/",
+      "accessed_at": "2026-10-05",
+      "confidence": "medium"
+    }
+  ],
+  "notes_for_reviewer": "Currency and the September start are certain from the universities read. The work rule comes from a search summary of the Law on the Legal Status of Aliens and the State Migration Agency page: it was NOT read in full, so \"allowed\" is left empty. Cost of living, post-study visa and diploma recognition were not collected."
+}

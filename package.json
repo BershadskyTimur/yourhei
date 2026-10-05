@@ -12,7 +12,8 @@
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "test:e2e": "playwright test",
-    "seed:build": "node scripts/build-seed.mjs"
+    "seed:build": "node scripts/build-seed.mjs",
+    "data:import": "node scripts/import-drafts.mts"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.9.1",

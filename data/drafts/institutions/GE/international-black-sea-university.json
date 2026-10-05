@@ -1,0 +1,1149 @@
+{
+  "schema_version": 1,
+  "collected_at": "2026-10-05",
+  "academic_year": "2026/2027",
+  "institution": {
+    "external_ids": {},
+    "names": {
+      "original": "International Black Sea University",
+      "en": "International Black Sea University"
+    },
+    "type": "university",
+    "country": "GE",
+    "city": {
+      "en": "Tbilisi"
+    },
+    "ownership": null,
+    "founded_year": null,
+    "website": "https://ibsu.edu.ge",
+    "description": {},
+    "dormitory": null,
+    "rankings": []
+  },
+  "programs": [
+    {
+      "names": {
+        "original": "Business Administration - Management",
+        "en": "Business Administration - Management"
+      },
+      "level": "bachelor",
+      "isced_f": "0413",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 4490,
+          "currency": "GEL",
+          "period": "year",
+          "applies_to": "domestic"
+        },
+        {
+          "amount": 4900,
+          "currency": "USD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript",
+          "notarized_translation"
+        ],
+        "min_scores": [
+          {
+            "exam": "ielts",
+            "min": 6
+          },
+          {
+            "exam": "toefl",
+            "min": 78
+          }
+        ],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://ibsu.edu.ge/en/iro/admission/"
+    },
+    {
+      "names": {
+        "original": "Business Administration - Marketing",
+        "en": "Business Administration - Marketing"
+      },
+      "level": "bachelor",
+      "isced_f": "0414",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 4490,
+          "currency": "GEL",
+          "period": "year",
+          "applies_to": "domestic"
+        },
+        {
+          "amount": 4900,
+          "currency": "USD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript",
+          "notarized_translation"
+        ],
+        "min_scores": [
+          {
+            "exam": "ielts",
+            "min": 6
+          },
+          {
+            "exam": "toefl",
+            "min": 78
+          }
+        ],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://ibsu.edu.ge/en/iro/admission/"
+    },
+    {
+      "names": {
+        "original": "Business Administration - Finances",
+        "en": "Business Administration - Finances"
+      },
+      "level": "bachelor",
+      "isced_f": "0412",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 4490,
+          "currency": "GEL",
+          "period": "year",
+          "applies_to": "domestic"
+        },
+        {
+          "amount": 4900,
+          "currency": "USD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript",
+          "notarized_translation"
+        ],
+        "min_scores": [
+          {
+            "exam": "ielts",
+            "min": 6
+          },
+          {
+            "exam": "toefl",
+            "min": 78
+          }
+        ],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://ibsu.edu.ge/en/iro/admission/"
+    },
+    {
+      "names": {
+        "original": "Business Administration - Accounting and Audit",
+        "en": "Business Administration - Accounting and Audit"
+      },
+      "level": "bachelor",
+      "isced_f": "0411",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 4490,
+          "currency": "GEL",
+          "period": "year",
+          "applies_to": "domestic"
+        },
+        {
+          "amount": 4900,
+          "currency": "USD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript",
+          "notarized_translation"
+        ],
+        "min_scores": [
+          {
+            "exam": "ielts",
+            "min": 6
+          },
+          {
+            "exam": "toefl",
+            "min": 78
+          }
+        ],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://ibsu.edu.ge/en/iro/admission/"
+    },
+    {
+      "names": {
+        "original": "Business Administration - Tourism",
+        "en": "Business Administration - Tourism"
+      },
+      "level": "bachelor",
+      "isced_f": "1015",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 3190,
+          "currency": "GEL",
+          "period": "year",
+          "applies_to": "domestic"
+        },
+        {
+          "amount": 4900,
+          "currency": "USD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript",
+          "notarized_translation"
+        ],
+        "min_scores": [
+          {
+            "exam": "ielts",
+            "min": 6
+          },
+          {
+            "exam": "toefl",
+            "min": 78
+          }
+        ],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://ibsu.edu.ge/en/iro/admission/"
+    },
+    {
+      "names": {
+        "original": "Economics",
+        "en": "Economics"
+      },
+      "level": "bachelor",
+      "isced_f": "0311",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 3190,
+          "currency": "GEL",
+          "period": "year",
+          "applies_to": "domestic"
+        },
+        {
+          "amount": 4900,
+          "currency": "USD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript",
+          "notarized_translation"
+        ],
+        "min_scores": [
+          {
+            "exam": "ielts",
+            "min": 6
+          },
+          {
+            "exam": "toefl",
+            "min": 78
+          }
+        ],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://ibsu.edu.ge/en/iro/admission/"
+    },
+    {
+      "names": {
+        "original": "American Studies",
+        "en": "American Studies"
+      },
+      "level": "bachelor",
+      "isced_f": "0314",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 3190,
+          "currency": "GEL",
+          "period": "year",
+          "applies_to": "domestic"
+        },
+        {
+          "amount": 4900,
+          "currency": "USD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript",
+          "notarized_translation"
+        ],
+        "min_scores": [
+          {
+            "exam": "ielts",
+            "min": 6
+          },
+          {
+            "exam": "toefl",
+            "min": 78
+          }
+        ],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://ibsu.edu.ge/en/iro/admission/"
+    },
+    {
+      "names": {
+        "original": "English Philology",
+        "en": "English Philology"
+      },
+      "level": "bachelor",
+      "isced_f": "0232",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 4190,
+          "currency": "GEL",
+          "period": "year",
+          "applies_to": "domestic"
+        },
+        {
+          "amount": 4900,
+          "currency": "USD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript",
+          "notarized_translation"
+        ],
+        "min_scores": [
+          {
+            "exam": "ielts",
+            "min": 6
+          },
+          {
+            "exam": "toefl",
+            "min": 78
+          }
+        ],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://ibsu.edu.ge/en/iro/admission/"
+    },
+    {
+      "names": {
+        "original": "International Relations",
+        "en": "International Relations"
+      },
+      "level": "bachelor",
+      "isced_f": "0312",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 5190,
+          "currency": "GEL",
+          "period": "year",
+          "applies_to": "domestic"
+        },
+        {
+          "amount": 4900,
+          "currency": "USD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript",
+          "notarized_translation"
+        ],
+        "min_scores": [
+          {
+            "exam": "ielts",
+            "min": 6
+          },
+          {
+            "exam": "toefl",
+            "min": 78
+          }
+        ],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://ibsu.edu.ge/en/iro/admission/"
+    },
+    {
+      "names": {
+        "original": "Psychology",
+        "en": "Psychology"
+      },
+      "level": "bachelor",
+      "isced_f": "0313",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 3990,
+          "currency": "GEL",
+          "period": "year",
+          "applies_to": "domestic"
+        },
+        {
+          "amount": 4900,
+          "currency": "USD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript",
+          "notarized_translation"
+        ],
+        "min_scores": [
+          {
+            "exam": "ielts",
+            "min": 6
+          },
+          {
+            "exam": "toefl",
+            "min": 78
+          }
+        ],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://ibsu.edu.ge/en/iro/admission/"
+    },
+    {
+      "names": {
+        "original": "Computer Science and Artificial Intelligence",
+        "en": "Computer Science and Artificial Intelligence"
+      },
+      "level": "bachelor",
+      "isced_f": "0613",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 4990,
+          "currency": "GEL",
+          "period": "year",
+          "applies_to": "domestic"
+        },
+        {
+          "amount": 4900,
+          "currency": "USD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript",
+          "notarized_translation"
+        ],
+        "min_scores": [
+          {
+            "exam": "ielts",
+            "min": 6
+          },
+          {
+            "exam": "toefl",
+            "min": 78
+          }
+        ],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://ibsu.edu.ge/en/iro/admission/"
+    },
+    {
+      "names": {
+        "original": "Architecture",
+        "en": "Architecture"
+      },
+      "level": "bachelor",
+      "isced_f": "0731",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 5990,
+          "currency": "GEL",
+          "period": "year",
+          "applies_to": "domestic"
+        },
+        {
+          "amount": 4900,
+          "currency": "USD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript",
+          "notarized_translation"
+        ],
+        "min_scores": [
+          {
+            "exam": "ielts",
+            "min": 6
+          },
+          {
+            "exam": "toefl",
+            "min": 78
+          }
+        ],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://ibsu.edu.ge/en/iro/admission/"
+    },
+    {
+      "names": {
+        "original": "Graphic Design",
+        "en": "Graphic Design"
+      },
+      "level": "bachelor",
+      "isced_f": "0211",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 4590,
+          "currency": "GEL",
+          "period": "year",
+          "applies_to": "domestic"
+        },
+        {
+          "amount": 4900,
+          "currency": "USD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript",
+          "notarized_translation"
+        ],
+        "min_scores": [
+          {
+            "exam": "ielts",
+            "min": 6
+          },
+          {
+            "exam": "toefl",
+            "min": 78
+          }
+        ],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://ibsu.edu.ge/en/iro/admission/"
+    },
+    {
+      "names": {
+        "original": "Medical Doctor",
+        "en": "Medical Doctor"
+      },
+      "level": "bachelor",
+      "isced_f": "0912",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 6190,
+          "currency": "GEL",
+          "period": "year",
+          "applies_to": "domestic"
+        },
+        {
+          "amount": 5900,
+          "currency": "USD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript",
+          "notarized_translation"
+        ],
+        "min_scores": [
+          {
+            "exam": "ielts",
+            "min": 6
+          },
+          {
+            "exam": "toefl",
+            "min": 78
+          }
+        ],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://ibsu.edu.ge/en/iro/admission/"
+    }
+  ],
+  "scholarships": [],
+  "sources": [
+    {
+      "field": "programs[0].tuition[0].amount",
+      "url": "https://ibsu.edu.ge/en/entrant/tuition-fees/",
+      "accessed_at": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[0].tuition[1].amount",
+      "url": "https://ibsu.edu.ge/en/entrant/tuition-fees/",
+      "accessed_at": "2026-10-05",
+      "confidence": "medium"
+    },
+    {
+      "field": "programs[0].languages",
+      "url": "https://ibsu.edu.ge/en/programs/bachelors/",
+      "accessed_at": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[0].requirements.min_scores",
+      "url": "https://ibsu.edu.ge/en/iro/admission/",
+      "accessed_at": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[0].isced_f",
+      "url": "https://ibsu.edu.ge/en/programs/bachelors/",
+      "accessed_at": "2026-10-05",
+      "confidence": "low"
+    },
+    {
+      "field": "programs[1].tuition[0].amount",
+      "url": "https://ibsu.edu.ge/en/entrant/tuition-fees/",
+      "accessed_at": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[1].tuition[1].amount",
+      "url": "https://ibsu.edu.ge/en/entrant/tuition-fees/",
+      "accessed_at": "2026-10-05",
+      "confidence": "medium"
+    },
+    {
+      "field": "programs[1].languages",
+      "url": "https://ibsu.edu.ge/en/programs/bachelors/",
+      "accessed_at": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[1].requirements.min_scores",
+      "url": "https://ibsu.edu.ge/en/iro/admission/",
+      "accessed_at": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[1].isced_f",
+      "url": "https://ibsu.edu.ge/en/programs/bachelors/",
+      "accessed_at": "2026-10-05",
+      "confidence": "low"
+    },
+    {
+      "field": "programs[2].tuition[0].amount",
+      "url": "https://ibsu.edu.ge/en/entrant/tuition-fees/",
+      "accessed_at": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[2].tuition[1].amount",
+      "url": "https://ibsu.edu.ge/en/entrant/tuition-fees/",
+      "accessed_at": "2026-10-05",
+      "confidence": "medium"
+    },
+    {
+      "field": "programs[2].languages",
+      "url": "https://ibsu.edu.ge/en/programs/bachelors/",
+      "accessed_at": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[2].requirements.min_scores",
+      "url": "https://ibsu.edu.ge/en/iro/admission/",
+      "accessed_at": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[2].isced_f",
+      "url": "https://ibsu.edu.ge/en/programs/bachelors/",
+      "accessed_at": "2026-10-05",
+      "confidence": "low"
+    },
+    {
+      "field": "programs[3].tuition[0].amount",
+      "url": "https://ibsu.edu.ge/en/entrant/tuition-fees/",
+      "accessed_at": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[3].tuition[1].amount",
+      "url": "https://ibsu.edu.ge/en/entrant/tuition-fees/",
+      "accessed_at": "2026-10-05",
+      "confidence": "medium"
+    },
+    {
+      "field": "programs[3].languages",
+      "url": "https://ibsu.edu.ge/en/programs/bachelors/",
+      "accessed_at": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[3].requirements.min_scores",
+      "url": "https://ibsu.edu.ge/en/iro/admission/",
+      "accessed_at": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[3].isced_f",
+      "url": "https://ibsu.edu.ge/en/programs/bachelors/",
+      "accessed_at": "2026-10-05",
+      "confidence": "low"
+    },
+    {
+      "field": "programs[4].tuition[0].amount",
+      "url": "https://ibsu.edu.ge/en/entrant/tuition-fees/",
+      "accessed_at": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[4].tuition[1].amount",
+      "url": "https://ibsu.edu.ge/en/entrant/tuition-fees/",
+      "accessed_at": "2026-10-05",
+      "confidence": "medium"
+    },
+    {
+      "field": "programs[4].languages",
+      "url": "https://ibsu.edu.ge/en/programs/bachelors/",
+      "accessed_at": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[4].requirements.min_scores",
+      "url": "https://ibsu.edu.ge/en/iro/admission/",
+      "accessed_at": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[4].isced_f",
+      "url": "https://ibsu.edu.ge/en/programs/bachelors/",
+      "accessed_at": "2026-10-05",
+      "confidence": "low"
+    },
+    {
+      "field": "programs[5].tuition[0].amount",
+      "url": "https://ibsu.edu.ge/en/entrant/tuition-fees/",
+      "accessed_at": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[5].tuition[1].amount",
+      "url": "https://ibsu.edu.ge/en/entrant/tuition-fees/",
+      "accessed_at": "2026-10-05",
+      "confidence": "medium"
+    },
+    {
+      "field": "programs[5].languages",
+      "url": "https://ibsu.edu.ge/en/programs/bachelors/",
+      "accessed_at": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[5].requirements.min_scores",
+      "url": "https://ibsu.edu.ge/en/iro/admission/",
+      "accessed_at": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[5].isced_f",
+      "url": "https://ibsu.edu.ge/en/programs/bachelors/",
+      "accessed_at": "2026-10-05",
+      "confidence": "low"
+    },
+    {
+      "field": "programs[6].tuition[0].amount",
+      "url": "https://ibsu.edu.ge/en/entrant/tuition-fees/",
+      "accessed_at": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[6].tuition[1].amount",
+      "url": "https://ibsu.edu.ge/en/entrant/tuition-fees/",
+      "accessed_at": "2026-10-05",
+      "confidence": "medium"
+    },
+    {
+      "field": "programs[6].languages",
+      "url": "https://ibsu.edu.ge/en/programs/bachelors/",
+      "accessed_at": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[6].requirements.min_scores",
+      "url": "https://ibsu.edu.ge/en/iro/admission/",
+      "accessed_at": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[6].isced_f",
+      "url": "https://ibsu.edu.ge/en/programs/bachelors/",
+      "accessed_at": "2026-10-05",
+      "confidence": "low"
+    },
+    {
+      "field": "programs[7].tuition[0].amount",
+      "url": "https://ibsu.edu.ge/en/entrant/tuition-fees/",
+      "accessed_at": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[7].tuition[1].amount",
+      "url": "https://ibsu.edu.ge/en/entrant/tuition-fees/",
+      "accessed_at": "2026-10-05",
+      "confidence": "medium"
+    },
+    {
+      "field": "programs[7].languages",
+      "url": "https://ibsu.edu.ge/en/programs/bachelors/",
+      "accessed_at": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[7].requirements.min_scores",
+      "url": "https://ibsu.edu.ge/en/iro/admission/",
+      "accessed_at": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[7].isced_f",
+      "url": "https://ibsu.edu.ge/en/programs/bachelors/",
+      "accessed_at": "2026-10-05",
+      "confidence": "low"
+    },
+    {
+      "field": "programs[8].tuition[0].amount",
+      "url": "https://ibsu.edu.ge/en/entrant/tuition-fees/",
+      "accessed_at": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[8].tuition[1].amount",
+      "url": "https://ibsu.edu.ge/en/entrant/tuition-fees/",
+      "accessed_at": "2026-10-05",
+      "confidence": "medium"
+    },
+    {
+      "field": "programs[8].languages",
+      "url": "https://ibsu.edu.ge/en/programs/bachelors/",
+      "accessed_at": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[8].requirements.min_scores",
+      "url": "https://ibsu.edu.ge/en/iro/admission/",
+      "accessed_at": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[8].isced_f",
+      "url": "https://ibsu.edu.ge/en/programs/bachelors/",
+      "accessed_at": "2026-10-05",
+      "confidence": "low"
+    },
+    {
+      "field": "programs[9].tuition[0].amount",
+      "url": "https://ibsu.edu.ge/en/entrant/tuition-fees/",
+      "accessed_at": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[9].tuition[1].amount",
+      "url": "https://ibsu.edu.ge/en/entrant/tuition-fees/",
+      "accessed_at": "2026-10-05",
+      "confidence": "medium"
+    },
+    {
+      "field": "programs[9].languages",
+      "url": "https://ibsu.edu.ge/en/programs/bachelors/",
+      "accessed_at": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[9].requirements.min_scores",
+      "url": "https://ibsu.edu.ge/en/iro/admission/",
+      "accessed_at": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[9].isced_f",
+      "url": "https://ibsu.edu.ge/en/programs/bachelors/",
+      "accessed_at": "2026-10-05",
+      "confidence": "low"
+    },
+    {
+      "field": "programs[10].tuition[0].amount",
+      "url": "https://ibsu.edu.ge/en/entrant/tuition-fees/",
+      "accessed_at": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[10].tuition[1].amount",
+      "url": "https://ibsu.edu.ge/en/entrant/tuition-fees/",
+      "accessed_at": "2026-10-05",
+      "confidence": "medium"
+    },
+    {
+      "field": "programs[10].languages",
+      "url": "https://ibsu.edu.ge/en/programs/bachelors/",
+      "accessed_at": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[10].requirements.min_scores",
+      "url": "https://ibsu.edu.ge/en/iro/admission/",
+      "accessed_at": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[10].isced_f",
+      "url": "https://ibsu.edu.ge/en/programs/bachelors/",
+      "accessed_at": "2026-10-05",
+      "confidence": "low"
+    },
+    {
+      "field": "programs[11].tuition[0].amount",
+      "url": "https://ibsu.edu.ge/en/entrant/tuition-fees/",
+      "accessed_at": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[11].tuition[1].amount",
+      "url": "https://ibsu.edu.ge/en/entrant/tuition-fees/",
+      "accessed_at": "2026-10-05",
+      "confidence": "medium"
+    },
+    {
+      "field": "programs[11].languages",
+      "url": "https://ibsu.edu.ge/en/programs/bachelors/",
+      "accessed_at": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[11].requirements.min_scores",
+      "url": "https://ibsu.edu.ge/en/iro/admission/",
+      "accessed_at": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[11].isced_f",
+      "url": "https://ibsu.edu.ge/en/programs/bachelors/",
+      "accessed_at": "2026-10-05",
+      "confidence": "low"
+    },
+    {
+      "field": "programs[12].tuition[0].amount",
+      "url": "https://ibsu.edu.ge/en/entrant/tuition-fees/",
+      "accessed_at": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[12].tuition[1].amount",
+      "url": "https://ibsu.edu.ge/en/entrant/tuition-fees/",
+      "accessed_at": "2026-10-05",
+      "confidence": "medium"
+    },
+    {
+      "field": "programs[12].languages",
+      "url": "https://ibsu.edu.ge/en/programs/bachelors/",
+      "accessed_at": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[12].requirements.min_scores",
+      "url": "https://ibsu.edu.ge/en/iro/admission/",
+      "accessed_at": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[12].isced_f",
+      "url": "https://ibsu.edu.ge/en/programs/bachelors/",
+      "accessed_at": "2026-10-05",
+      "confidence": "low"
+    },
+    {
+      "field": "programs[13].tuition[0].amount",
+      "url": "https://ibsu.edu.ge/en/entrant/tuition-fees/",
+      "accessed_at": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[13].tuition[1].amount",
+      "url": "https://ibsu.edu.ge/en/entrant/tuition-fees/",
+      "accessed_at": "2026-10-05",
+      "confidence": "medium"
+    },
+    {
+      "field": "programs[13].languages",
+      "url": "https://ibsu.edu.ge/en/programs/bachelors/",
+      "accessed_at": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[13].requirements.min_scores",
+      "url": "https://ibsu.edu.ge/en/iro/admission/",
+      "accessed_at": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[13].isced_f",
+      "url": "https://ibsu.edu.ge/en/programs/bachelors/",
+      "accessed_at": "2026-10-05",
+      "confidence": "low"
+    }
+  ],
+  "notes_for_reviewer": "The fees page names no academic year (2026/2027 assumed): CHECK. The page lists GEL fees per programme and, for \"International Students (Bachelor)\", the line \"$4900 Scholarship Up to $1000\" (medicine: \"$5900 ... Up to $500\"): read as a tuition of 4900 / 5900 USD per year with a scholarship of up to 1000 / 500 USD, so the international amount is medium confidence. The GEL amounts are treated as the price for Georgian citizens (domestic). Only English-taught bachelor programmes were collected. Duration, intakes, deadlines, application fee and dormitory are not stated on the pages read. IELTS 6.0 / TOEFL 78 is the general requirement for international applicants."
+}

@@ -1,0 +1,239 @@
+{
+  "schema_version": 1,
+  "collected_at": "2026-10-05",
+  "academic_year": "2026/2027",
+  "institution": {
+    "external_ids": {},
+    "names": {
+      "original": "Tbilisi State Medical University",
+      "en": "Tbilisi State Medical University"
+    },
+    "type": "university",
+    "country": "GE",
+    "city": {
+      "en": "Tbilisi"
+    },
+    "ownership": null,
+    "founded_year": null,
+    "website": "https://tsmu.edu",
+    "description": {},
+    "dormitory": null,
+    "rankings": []
+  },
+  "programs": [
+    {
+      "names": {
+        "original": "Medical Doctor (English medium)",
+        "en": "Medical Doctor (English medium)"
+      },
+      "level": "bachelor",
+      "isced_f": "0912",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 8000,
+          "currency": "USD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://tsmu.edu/ts/content.php?id=7&aid=135&bid=92&cid=327&did=0&eid=0&lang=en"
+    },
+    {
+      "names": {
+        "original": "Dental Medicine (English medium)",
+        "en": "Dental Medicine (English medium)"
+      },
+      "level": "bachelor",
+      "isced_f": "0911",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 7000,
+          "currency": "USD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://tsmu.edu/ts/content.php?id=7&aid=135&bid=92&cid=327&did=0&eid=0&lang=en"
+    },
+    {
+      "names": {
+        "original": "Pharmacy (English medium)",
+        "en": "Pharmacy (English medium)"
+      },
+      "level": "bachelor",
+      "isced_f": "0916",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 3500,
+          "currency": "USD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://tsmu.edu/ts/content.php?id=7&aid=135&bid=92&cid=327&did=0&eid=0&lang=en"
+    },
+    {
+      "names": {
+        "original": "Physical Medicine and Rehabilitation (English medium)",
+        "en": "Physical Medicine and Rehabilitation (English medium)"
+      },
+      "level": "bachelor",
+      "isced_f": "0915",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 3000,
+          "currency": "USD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://tsmu.edu/ts/content.php?id=7&aid=135&bid=92&cid=327&did=0&eid=0&lang=en"
+    },
+    {
+      "names": {
+        "original": "Preparatory Course",
+        "en": "Preparatory Course"
+      },
+      "level": "foundation",
+      "isced_f": null,
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 2000,
+          "currency": "USD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://tsmu.edu/ts/content.php?id=7&aid=135&bid=92&cid=327&did=0&eid=0&lang=en"
+    }
+  ],
+  "scholarships": [],
+  "sources": [
+    {
+      "field": "programs[0].tuition[0].amount",
+      "url": "https://tsmu.edu/ts/content.php?id=7&aid=135&bid=92&cid=327&did=0&eid=0&lang=en",
+      "accessed_at": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[0].languages",
+      "url": "https://tsmu.edu/ts/content.php?id=7&aid=135&bid=92&cid=327&did=0&eid=0&lang=en",
+      "accessed_at": "2026-10-05",
+      "confidence": "medium"
+    },
+    {
+      "field": "programs[1].tuition[0].amount",
+      "url": "https://tsmu.edu/ts/content.php?id=7&aid=135&bid=92&cid=327&did=0&eid=0&lang=en",
+      "accessed_at": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[1].languages",
+      "url": "https://tsmu.edu/ts/content.php?id=7&aid=135&bid=92&cid=327&did=0&eid=0&lang=en",
+      "accessed_at": "2026-10-05",
+      "confidence": "medium"
+    },
+    {
+      "field": "programs[2].tuition[0].amount",
+      "url": "https://tsmu.edu/ts/content.php?id=7&aid=135&bid=92&cid=327&did=0&eid=0&lang=en",
+      "accessed_at": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[2].languages",
+      "url": "https://tsmu.edu/ts/content.php?id=7&aid=135&bid=92&cid=327&did=0&eid=0&lang=en",
+      "accessed_at": "2026-10-05",
+      "confidence": "medium"
+    },
+    {
+      "field": "programs[3].tuition[0].amount",
+      "url": "https://tsmu.edu/ts/content.php?id=7&aid=135&bid=92&cid=327&did=0&eid=0&lang=en",
+      "accessed_at": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[3].languages",
+      "url": "https://tsmu.edu/ts/content.php?id=7&aid=135&bid=92&cid=327&did=0&eid=0&lang=en",
+      "accessed_at": "2026-10-05",
+      "confidence": "medium"
+    },
+    {
+      "field": "programs[4].tuition[0].amount",
+      "url": "https://tsmu.edu/ts/content.php?id=7&aid=135&bid=92&cid=327&did=0&eid=0&lang=en",
+      "accessed_at": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[4].languages",
+      "url": "https://tsmu.edu/ts/content.php?id=7&aid=135&bid=92&cid=327&did=0&eid=0&lang=en",
+      "accessed_at": "2026-10-05",
+      "confidence": "medium"
+    }
+  ],
+  "notes_for_reviewer": "The page names no academic year (2026/2027 assumed): CHECK. Duration, intakes, language scores, documents and dates are \"not stated\" on the page; the long one-cycle medical programmes are recorded as bachelor level with duration empty. \"Public Health and Management\" ($4000) was left out because its level is not stated. The \"American MD\" programme (13,500 USD) comes from a search summary only and was not added."
+}
