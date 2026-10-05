@@ -49,7 +49,12 @@ export async function saveAnswers(supabase: SupabaseClient, id: string, answers:
   return (data?.length ?? 0) > 0;
 }
 
-/** Saves the final answers and freezes the attempt in one step. */
+/**
+ * Saves the final answers and freezes the attempt in one step.
+ * Resolves true when the attempt is completed afterwards. If the update reports no changed row,
+ * the attempt is read again: it may already be completed (an earlier click went through, or the
+ * answer to the update was lost), which counts as success.
+ */
 export async function completeAttempt(supabase: SupabaseClient, id: string, answers: Answers): Promise<boolean> {
   const { data, error } = await supabase
     .from('survey_attempts')
@@ -58,7 +63,18 @@ export async function completeAttempt(supabase: SupabaseClient, id: string, answ
     .eq('status', 'in_progress')
     .select('id');
   if (error) throw error;
-  return (data?.length ?? 0) > 0;
+  if ((data?.length ?? 0) > 0) return true;
+
+  const { data: row, error: readError } = await supabase
+    .from('survey_attempts')
+    .select('status')
+    .eq('id', id)
+    .maybeSingle();
+  if (readError) throw readError;
+  if (row?.status !== 'completed') {
+    console.error('[survey] the update changed no row and the attempt is not completed', { id, status: row?.status ?? 'not found' });
+  }
+  return row?.status === 'completed';
 }
 
 export async function abandonAttempt(supabase: SupabaseClient, id: string): Promise<void> {
