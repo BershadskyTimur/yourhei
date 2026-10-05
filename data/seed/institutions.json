@@ -1,0 +1,913 @@
+[
+  {
+    "slug": "academy-of-gelati",
+    "type": "school",
+    "country": "GE",
+    "city": {},
+    "names": {
+      "original": "გელათის აკადემია",
+      "en": "Academy of Gelati",
+      "ka": "გელათის აკადემია"
+    },
+    "lat": 42.262222,
+    "lng": 42.716389,
+    "website": null,
+    "foundedYear": null,
+    "externalIds": {
+      "wikidata": "Q414434"
+    }
+  },
+  {
+    "slug": "buckswood-international-school-tbilisi",
+    "type": "school",
+    "country": "GE",
+    "city": {
+      "en": "Tbilisi"
+    },
+    "names": {
+      "original": "Buckswood International School – Tbilisi",
+      "en": "Buckswood International School – Tbilisi"
+    },
+    "lat": 41.679843,
+    "lng": 44.689862,
+    "website": "http://www.buckswood.ge/",
+    "foundedYear": 2000,
+    "externalIds": {
+      "wikidata": "Q4983536"
+    }
+  },
+  {
+    "slug": "international-school-of-georgia",
+    "type": "school",
+    "country": "GE",
+    "city": {},
+    "names": {
+      "original": "International School of Georgia",
+      "en": "International School of Georgia"
+    },
+    "lat": 41.710556,
+    "lng": 44.73,
+    "website": "http://newschoolgeorgia.com/",
+    "foundedYear": null,
+    "externalIds": {
+      "wikidata": "Q6052958"
+    }
+  },
+  {
+    "slug": "khashuri-public-school-1",
+    "type": "school",
+    "country": "GE",
+    "city": {
+      "en": "Khashuri"
+    },
+    "names": {
+      "original": "ხაშურის პირველი საჯარო სკოლა",
+      "en": "Khashuri Public School #1",
+      "ka": "ხაშურის პირველი საჯარო სკოლა"
+    },
+    "lat": 41.9955,
+    "lng": 43.5946,
+    "website": null,
+    "foundedYear": null,
+    "externalIds": {
+      "wikidata": "Q20582760"
+    }
+  },
+  {
+    "slug": "khashuri-second-public-school",
+    "type": "school",
+    "country": "GE",
+    "city": {
+      "en": "Khashuri Municipality"
+    },
+    "names": {
+      "original": "ხაშურის მე-2 საჯარო სკოლა",
+      "en": "Khashuri Second Public School",
+      "ka": "ხაშურის მე-2 საჯარო სკოლა"
+    },
+    "lat": 41.988373,
+    "lng": 43.595587,
+    "website": null,
+    "foundedYear": null,
+    "externalIds": {
+      "wikidata": "Q16379235"
+    }
+  },
+  {
+    "slug": "public-school-no-2-in-dmanisi",
+    "type": "school",
+    "country": "GE",
+    "city": {
+      "en": "Dmanisi"
+    },
+    "names": {
+      "original": "დმანისის მეორე საჯარო სკოლა",
+      "en": "Public School No. 2 in Dmanisi",
+      "ka": "დმანისის მეორე საჯარო სკოლა"
+    },
+    "lat": 41.325991,
+    "lng": 44.207094,
+    "website": null,
+    "foundedYear": 1932,
+    "externalIds": {
+      "wikidata": "Q25542945"
+    }
+  },
+  {
+    "slug": "qsi-international-school-of-tbilisi",
+    "type": "school",
+    "country": "GE",
+    "city": {},
+    "names": {
+      "original": "QSI International School of Tbilisi",
+      "en": "QSI International School of Tbilisi"
+    },
+    "lat": 41.803333,
+    "lng": 44.7625,
+    "website": null,
+    "foundedYear": null,
+    "externalIds": {
+      "wikidata": "Q7265556"
+    }
+  },
+  {
+    "slug": "st-ilia-the-martali-kvareli-gymnasium-of-the-georgian-patria",
+    "type": "school",
+    "country": "GE",
+    "city": {
+      "en": "Qvareli Municipality"
+    },
+    "names": {
+      "original": "ა(ა)იპ საქართველოს საპატრიარქოს წმინდა ილია მართლის სახელობის ყვარლის სკოლა-გიმნაზია",
+      "en": "St. Ilia the Martali Kvareli Gymnasium of the Georgian Patriarchate",
+      "ka": "ა(ა)იპ საქართველოს საპატრიარქოს წმინდა ილია მართლის სახელობის ყვარლის სკოლა-გიმნაზია"
+    },
+    "lat": 41.945667,
+    "lng": 45.818111,
+    "website": "https://kvarlisgimnazia.edupage.org/?",
+    "foundedYear": 1999,
+    "externalIds": {
+      "wikidata": "Q133275332"
+    }
+  },
+  {
+    "slug": "agricultural-university-of-georgia",
+    "type": "university",
+    "country": "GE",
+    "city": {
+      "en": "Tbilisi"
+    },
+    "names": {
+      "original": "საქართველოს აგრარული უნივერსიტეტი",
+      "en": "Agricultural University of Georgia",
+      "ru": "Аграрный университет Грузии",
+      "ka": "საქართველოს აგრარული უნივერსიტეტი"
+    },
+    "lat": 41.8056,
+    "lng": 44.7682,
+    "website": "http://agruni.edu.ge/",
+    "foundedYear": 1929,
+    "externalIds": {
+      "wikidata": "Q16375275"
+    }
+  },
+  {
+    "slug": "akaki-tsereteli-state-university",
+    "type": "university",
+    "country": "GE",
+    "city": {
+      "en": "Kutaisi"
+    },
+    "names": {
+      "original": "ქუთაისის სახელმწიფო უნივერსიტეტი",
+      "en": "Akaki Tsereteli State University",
+      "ru": "Кутаисский государственный университет имени Акакия Церетели",
+      "ka": "ქუთაისის სახელმწიფო უნივერსიტეტი"
+    },
+    "lat": 42.264554,
+    "lng": 42.710592,
+    "website": "http://www.atsu.edu.ge",
+    "foundedYear": 1930,
+    "externalIds": {
+      "wikidata": "Q4700199"
+    }
+  },
+  {
+    "slug": "batumi-state-maritime-academy",
+    "type": "university",
+    "country": "GE",
+    "city": {
+      "en": "Batumi"
+    },
+    "names": {
+      "original": "ბათუმის სახელმწიფო საზღვაო აკადემია",
+      "en": "Batumi State Maritime Academy",
+      "ru": "Батумская государственная морская академия",
+      "ka": "ბათუმის სახელმწიფო საზღვაო აკადემია"
+    },
+    "lat": 41.646983,
+    "lng": 41.621786,
+    "website": "http://www.bsma.edu.ge/",
+    "foundedYear": 1929,
+    "externalIds": {
+      "wikidata": "Q1155788"
+    }
+  },
+  {
+    "slug": "david-aghmashenebeli-university-of-georgia",
+    "type": "university",
+    "country": "GE",
+    "city": {
+      "en": "Tbilisi"
+    },
+    "names": {
+      "original": "დავით აღმაშენებლის სახელობის უნივერსიტეტი",
+      "en": "David Aghmashenebeli University of Georgia",
+      "ka": "დავით აღმაშენებლის სახელობის უნივერსიტეტი"
+    },
+    "lat": 41.710278,
+    "lng": 44.767222,
+    "website": "https://sdasu.edu.ge/en",
+    "foundedYear": 1992,
+    "externalIds": {
+      "wikidata": "Q5230631"
+    }
+  },
+  {
+    "slug": "free-university-of-tbilisi",
+    "type": "university",
+    "country": "GE",
+    "city": {
+      "en": "Tbilisi"
+    },
+    "names": {
+      "original": "თავისუფალი უნივერსიტეტი",
+      "en": "Free University of Tbilisi",
+      "ru": "Свободный университет Тбилиси",
+      "ka": "თავისუფალი უნივერსიტეტი",
+      "zh": "第比利斯开放大学"
+    },
+    "lat": 41.805728,
+    "lng": 44.765726,
+    "website": "http://www.freeuni.ge/",
+    "foundedYear": 2007,
+    "externalIds": {
+      "wikidata": "Q3648053"
+    }
+  },
+  {
+    "slug": "georgian-institute-of-public-affairs",
+    "type": "university",
+    "country": "GE",
+    "city": {
+      "en": "Tbilisi"
+    },
+    "names": {
+      "original": "საქართველოს საზოგადოებრივ საქმეთა ინსტიტუტი",
+      "en": "Georgian Institute of Public Affairs",
+      "ka": "საქართველოს საზოგადოებრივ საქმეთა ინსტიტუტი"
+    },
+    "lat": 41.701944,
+    "lng": 44.798056,
+    "website": "http://www.gipa.ge",
+    "foundedYear": 1994,
+    "externalIds": {
+      "wikidata": "Q5548027"
+    }
+  },
+  {
+    "slug": "georgian-state-university-of-subtropical-agriculture",
+    "type": "university",
+    "country": "GE",
+    "city": {
+      "en": "Kutaisi"
+    },
+    "names": {
+      "original": "Грузинский государственный университет субтропического хозяйства",
+      "en": "Georgian State University of Subtropical Agriculture",
+      "ru": "Грузинский государственный университет субтропического хозяйства",
+      "zh": "格鲁吉亚国立亚热带农业大学"
+    },
+    "lat": 42.24917,
+    "lng": 42.68927,
+    "website": "http://www.eng.ssmsu.edu.ge/",
+    "foundedYear": 1952,
+    "externalIds": {
+      "wikidata": "Q4150543"
+    }
+  },
+  {
+    "slug": "georgian-technical-university",
+    "type": "university",
+    "country": "GE",
+    "city": {
+      "en": "Tbilisi"
+    },
+    "names": {
+      "original": "საქართველოს ტექნიკური უნივერსიტეტი",
+      "en": "Georgian Technical University",
+      "ru": "Грузинский технический университет",
+      "ka": "საქართველოს ტექნიკური უნივერსიტეტი",
+      "zh": "格鲁吉亚工业大学"
+    },
+    "lat": 41.716944,
+    "lng": 44.778056,
+    "website": "http://gtu.ge/",
+    "foundedYear": 1922,
+    "externalIds": {
+      "wikidata": "Q1425119"
+    }
+  },
+  {
+    "slug": "gori-state-teaching-university",
+    "type": "university",
+    "country": "GE",
+    "city": {
+      "en": "Gori Municipality"
+    },
+    "names": {
+      "original": "გორის უნივერსიტეტი",
+      "en": "Gori State Teaching University",
+      "ru": "Государственный университет Гори",
+      "ka": "გორის უნივერსიტეტი"
+    },
+    "lat": 41.982389,
+    "lng": 44.113611,
+    "website": "http://www.gu.edu.ge/",
+    "foundedYear": 2007,
+    "externalIds": {
+      "wikidata": "Q5586426"
+    }
+  },
+  {
+    "slug": "ilia-state-university",
+    "type": "university",
+    "country": "GE",
+    "city": {
+      "en": "Tbilisi"
+    },
+    "names": {
+      "original": "ილიას სახელმწიფო უნივერსიტეტი",
+      "en": "Ilia State University",
+      "ru": "Государственный университет Ильи",
+      "ka": "ილიას სახელმწიფო უნივერსიტეტი",
+      "zh": "伊利亚国立大学"
+    },
+    "lat": 41.709833,
+    "lng": 44.7855,
+    "website": "http://www.iliauni.edu.ge/",
+    "foundedYear": 2006,
+    "externalIds": {
+      "wikidata": "Q2324420"
+    }
+  },
+  {
+    "slug": "international-black-sea-university",
+    "type": "university",
+    "country": "GE",
+    "city": {
+      "en": "Tbilisi"
+    },
+    "names": {
+      "original": "შავი ზღვის საერთაშორისო უნივერსიტეტი",
+      "en": "International Black Sea University",
+      "ru": "Международный черноморский университет",
+      "ka": "შავი ზღვის საერთაშორისო უნივერსიტეტი",
+      "zh": "國際黑海大學"
+    },
+    "lat": 41.797361,
+    "lng": 44.773944,
+    "website": "http://www.ibsu.edu.ge/",
+    "foundedYear": 1995,
+    "externalIds": {
+      "wikidata": "Q2905589"
+    }
+  },
+  {
+    "slug": "shota-rustaveli-state-university",
+    "type": "university",
+    "country": "GE",
+    "city": {
+      "en": "Batumi"
+    },
+    "names": {
+      "original": "ბათუმის შოთა რუსთაველის სახელმწიფო უნივერსიტეტი",
+      "en": "Shota Rustaveli State University",
+      "ru": "Батумский государственный университет имени Шота Руставели",
+      "ka": "ბათუმის შოთა რუსთაველის სახელმწიფო უნივერსიტეტი",
+      "es": "Universidad Estatal Shota Rustaveli"
+    },
+    "lat": 41.649722,
+    "lng": 41.626944,
+    "website": "http://bsu.edu.ge/",
+    "foundedYear": 1990,
+    "externalIds": {
+      "wikidata": "Q773986"
+    }
+  },
+  {
+    "slug": "sukhishvili-university",
+    "type": "university",
+    "country": "GE",
+    "city": {
+      "en": "Gori"
+    },
+    "names": {
+      "original": "სუხიშვილის სასწავლო უნივერსიტეტი",
+      "en": "Sukhishvili University",
+      "ru": "Университет Сухишвили",
+      "ka": "სუხიშვილის სასწავლო უნივერსიტეტი"
+    },
+    "lat": 41.9925,
+    "lng": 44.11,
+    "website": "http://www.sukhishvilebi.edu.ge",
+    "foundedYear": 1995,
+    "externalIds": {
+      "wikidata": "Q4475825"
+    }
+  },
+  {
+    "slug": "tbilisi-state-medical-university",
+    "type": "university",
+    "country": "GE",
+    "city": {
+      "en": "Tbilisi"
+    },
+    "names": {
+      "original": "თბილისის სახელმწიფო სამედიცინო უნივერსიტეტი",
+      "en": "Tbilisi State Medical University",
+      "ru": "Тбилисский государственный медицинский университет",
+      "ka": "თბილისის სახელმწიფო სამედიცინო უნივერსიტეტი",
+      "zh": "第比利斯国立医科大学"
+    },
+    "lat": 41.727389,
+    "lng": 44.753972,
+    "website": "http://www.tsmu.edu",
+    "foundedYear": 1918,
+    "externalIds": {
+      "wikidata": "Q2905597"
+    }
+  },
+  {
+    "slug": "telavi-iakob-gogebashvili-state-university",
+    "type": "university",
+    "country": "GE",
+    "city": {
+      "en": "Telavi"
+    },
+    "names": {
+      "original": "თელავის სახელმწიფო უნივერსიტეტი",
+      "en": "Telavi Iakob Gogebashvili State University",
+      "ru": "Телавский государственный университет",
+      "ka": "თელავის სახელმწიფო უნივერსიტეტი"
+    },
+    "lat": 41.91,
+    "lng": 45.468056,
+    "website": "http://tesau.edu.ge/",
+    "foundedYear": 1999,
+    "externalIds": {
+      "wikidata": "Q12865028"
+    }
+  },
+  {
+    "slug": "the-university-of-georgia",
+    "type": "university",
+    "country": "GE",
+    "city": {
+      "en": "Tbilisi"
+    },
+    "names": {
+      "original": "საქართველოს უნივერსიტეტი",
+      "en": "The University of Georgia",
+      "ka": "საქართველოს უნივერსიტეტი",
+      "zh": "格鲁吉亚大学"
+    },
+    "lat": 41.723889,
+    "lng": 44.777778,
+    "website": "http://www.ug.edu.ge/",
+    "foundedYear": 2004,
+    "externalIds": {
+      "wikidata": "Q1509484"
+    }
+  },
+  {
+    "slug": "almaty-college-of-decorative-and-applied-arts",
+    "type": "college",
+    "country": "KZ",
+    "city": {},
+    "names": {
+      "original": "Алматинский колледж декоративно-прикладного искусства",
+      "en": "Almaty College of Decorative and Applied Arts",
+      "ru": "Алматинский колледж декоративно-прикладного искусства"
+    },
+    "lat": 43.239,
+    "lng": 76.9105,
+    "website": "http://www.akdpi.kz/",
+    "foundedYear": 1938,
+    "externalIds": {
+      "wikidata": "Q12528547"
+    }
+  },
+  {
+    "slug": "kostanay-industrial-pedagogical-college",
+    "type": "college",
+    "country": "KZ",
+    "city": {},
+    "names": {
+      "original": "Костанайский педагогический колледж",
+      "en": "Kostanay Industrial-Pedagogical College",
+      "ru": "Костанайский педагогический колледж"
+    },
+    "lat": 53.1825,
+    "lng": 63.609444,
+    "website": null,
+    "foundedYear": null,
+    "externalIds": {
+      "wikidata": "Q22814817"
+    }
+  },
+  {
+    "slug": "pavlodar-music-college",
+    "type": "college",
+    "country": "KZ",
+    "city": {
+      "en": "Pavlodar"
+    },
+    "names": {
+      "original": "Государственное учреждение \"Комплекс \"Музыкальный колледж - музыкальная школа-интернат для одаренных детей\"",
+      "en": "Pavlodar Music College",
+      "ru": "Музыкальный Колледж Павлодар"
+    },
+    "lat": 52.296067,
+    "lng": 76.9457,
+    "website": "https://www.muscomplexpavl.edu.kz/",
+    "foundedYear": 1959,
+    "externalIds": {
+      "wikidata": "Q137332395"
+    }
+  },
+  {
+    "slug": "the-almaty-college-of-communication",
+    "type": "college",
+    "country": "KZ",
+    "city": {
+      "en": "Almaty"
+    },
+    "names": {
+      "original": "Алматинский колледж связи",
+      "en": "The Almaty college of communication",
+      "ru": "Алматинский колледж связи"
+    },
+    "lat": 43.2024,
+    "lng": 76.88,
+    "website": "https://acc.college.kz/",
+    "foundedYear": 1930,
+    "externalIds": {
+      "wikidata": "Q12528526"
+    }
+  },
+  {
+    "slug": "haileybury-almaty",
+    "type": "school",
+    "country": "KZ",
+    "city": {
+      "en": "Almaty"
+    },
+    "names": {
+      "original": "Haileybury Almaty",
+      "en": "Haileybury Almaty",
+      "ru": "Haileybury Almaty"
+    },
+    "lat": 43.217281,
+    "lng": 76.933651,
+    "website": "https://www.haileybury.kz/almaty",
+    "foundedYear": 2008,
+    "externalIds": {
+      "wikidata": "Q5639261"
+    }
+  },
+  {
+    "slug": "international-school-of-almaty",
+    "type": "school",
+    "country": "KZ",
+    "city": {
+      "en": "Almaty"
+    },
+    "names": {
+      "original": "International School of Almaty",
+      "en": "International School of Almaty"
+    },
+    "lat": 43.23547,
+    "lng": 76.90536,
+    "website": "https://www.qsi.org/kazakhstan/kaz",
+    "foundedYear": 2000,
+    "externalIds": {
+      "wikidata": "Q48970222"
+    }
+  },
+  {
+    "slug": "miras-international-school-almaty",
+    "type": "school",
+    "country": "KZ",
+    "city": {
+      "en": "Almaty"
+    },
+    "names": {
+      "original": "Miras International School, Almaty",
+      "en": "Miras International School, Almaty"
+    },
+    "lat": 43.193611,
+    "lng": 76.880278,
+    "website": "http://www.miras.kz",
+    "foundedYear": 1999,
+    "externalIds": {
+      "wikidata": "Q6872895"
+    }
+  },
+  {
+    "slug": "miras-international-school-astana",
+    "type": "school",
+    "country": "KZ",
+    "city": {},
+    "names": {
+      "original": "Miras International School Astana",
+      "en": "Miras International School Astana"
+    },
+    "lat": 51.151667,
+    "lng": 71.487222,
+    "website": null,
+    "foundedYear": null,
+    "externalIds": {
+      "wikidata": "Q25042277"
+    }
+  },
+  {
+    "slug": "qsi-international-school-of-astana",
+    "type": "school",
+    "country": "KZ",
+    "city": {
+      "en": "Akmola Region"
+    },
+    "names": {
+      "original": "QSI International School of Astana",
+      "en": "QSI International School of Astana"
+    },
+    "lat": 51.145972,
+    "lng": 71.387889,
+    "website": "http://astana.qsischool.org/",
+    "foundedYear": 2005,
+    "externalIds": {
+      "wikidata": "Q18346184"
+    }
+  },
+  {
+    "slug": "almaty-technological-university",
+    "type": "university",
+    "country": "KZ",
+    "city": {
+      "en": "Almaty"
+    },
+    "names": {
+      "original": "Алматинский технологический университет",
+      "en": "Almaty Technological University",
+      "ru": "Алматинский технологический университет"
+    },
+    "lat": 43.252414,
+    "lng": 76.926666,
+    "website": "http://atu.edu.kz/",
+    "foundedYear": 1957,
+    "externalIds": {
+      "wikidata": "Q2399553"
+    }
+  },
+  {
+    "slug": "karaganda-state-university",
+    "type": "university",
+    "country": "KZ",
+    "city": {
+      "en": "Karaganda"
+    },
+    "names": {
+      "original": "Карагандинский государственный университет имени Е. А. Букетова",
+      "en": "Karaganda State University",
+      "ru": "Карагандинский государственный университет имени Е. А. Букетова",
+      "es": "Universidad Buketov de Karagandá",
+      "zh": "Карагандинский государственный университет имени Е.А.Букетова"
+    },
+    "lat": 49.77,
+    "lng": 73.126,
+    "website": "http://www.ksu.kz/",
+    "foundedYear": 1972,
+    "externalIds": {
+      "wikidata": "Q920456"
+    }
+  },
+  {
+    "slug": "kazakh-british-technical-university",
+    "type": "university",
+    "country": "KZ",
+    "city": {
+      "en": "Almaty"
+    },
+    "names": {
+      "original": "Казахстанско-Британский технический университет",
+      "en": "Kazakh-British Technical University",
+      "ru": "Казахстанско-Британский технический университет",
+      "zh": "哈英技术大学"
+    },
+    "lat": 43.255689,
+    "lng": 76.943124,
+    "website": "http://kbtu.kz/ch/",
+    "foundedYear": 2001,
+    "externalIds": {
+      "wikidata": "Q1734762"
+    }
+  },
+  {
+    "slug": "kazakh-german-university",
+    "type": "university",
+    "country": "KZ",
+    "city": {
+      "en": "Almaty"
+    },
+    "names": {
+      "original": "Казахстанско-Немецкий университет",
+      "en": "Kazakh-German University",
+      "ru": "Казахстанско-Немецкий университет"
+    },
+    "lat": 43.249,
+    "lng": 76.9541,
+    "website": "http://dku.kz/",
+    "foundedYear": 1999,
+    "externalIds": {
+      "wikidata": "Q373642"
+    }
+  },
+  {
+    "slug": "kimep-university",
+    "type": "university",
+    "country": "KZ",
+    "city": {
+      "en": "Almaty"
+    },
+    "names": {
+      "original": "Казахстанский институт менеджмента, экономики и прогнозирования",
+      "en": "KIMEP University",
+      "ru": "Казахстанский институт менеджмента, экономики и прогнозирования",
+      "zh": "KIMEP大學"
+    },
+    "lat": 43.241951,
+    "lng": 76.955312,
+    "website": "http://www.kimep.kz",
+    "foundedYear": 1992,
+    "externalIds": {
+      "wikidata": "Q1046224"
+    }
+  },
+  {
+    "slug": "l-n-gumilyov-eurasian-national-university",
+    "type": "university",
+    "country": "KZ",
+    "city": {
+      "en": "Astana"
+    },
+    "names": {
+      "original": "Евразийский национальный университет имени Л. Н. Гумилёва",
+      "en": "L. N. Gumilyov Eurasian National University",
+      "ru": "Евразийский национальный университет имени Л. Н. Гумилёва",
+      "es": "Universidad Nacional de Eurasia",
+      "zh": "歐亞國立大學"
+    },
+    "lat": 51.1602,
+    "lng": 71.4648,
+    "website": "https://enu.kz/",
+    "foundedYear": 1996,
+    "externalIds": {
+      "wikidata": "Q127745"
+    }
+  },
+  {
+    "slug": "narkhoz-university",
+    "type": "university",
+    "country": "KZ",
+    "city": {
+      "en": "Almaty"
+    },
+    "names": {
+      "original": "Университет Нархоз",
+      "en": "Narkhoz University",
+      "ru": "Университет Нархоз",
+      "zh": "納爾霍斯大學"
+    },
+    "lat": 43.2146,
+    "lng": 76.8711,
+    "website": "http://www.narxoz.kz",
+    "foundedYear": 1963,
+    "externalIds": {
+      "wikidata": "Q1046493"
+    }
+  },
+  {
+    "slug": "pavlodar-pedagogical-university",
+    "type": "university",
+    "country": "KZ",
+    "city": {
+      "en": "Pavlodar"
+    },
+    "names": {
+      "original": "Павлодарский государственный педагогический университет",
+      "en": "Pavlodar Pedagogical University",
+      "ru": "Павлодарский государственный педагогический университет"
+    },
+    "lat": 52.298067,
+    "lng": 76.954261,
+    "website": "http://www.ppi.kz/",
+    "foundedYear": 1962,
+    "externalIds": {
+      "wikidata": "Q1233542"
+    }
+  },
+  {
+    "slug": "satbayev-university",
+    "type": "university",
+    "country": "KZ",
+    "city": {
+      "en": "Almaty"
+    },
+    "names": {
+      "original": "Казахский горно-металлургический институт",
+      "en": "Satbayev University",
+      "ru": "Казахский национальный исследовательский технический университет имени К. И. Сатпаева",
+      "es": "Universidad Nacional Técnica de Kazajistán",
+      "zh": "萨巴拜耶夫哈萨克国立科技大学"
+    },
+    "lat": 43.23648,
+    "lng": 76.931569,
+    "website": "https://satbayev.university",
+    "foundedYear": 1934,
+    "externalIds": {
+      "wikidata": "Q1513804"
+    }
+  },
+  {
+    "slug": "semey-medical-university",
+    "type": "university",
+    "country": "KZ",
+    "city": {
+      "en": "Semey"
+    },
+    "names": {
+      "original": "Медицинский университет Семей",
+      "en": "Semey Medical University",
+      "ru": "Медицинский университет Семей"
+    },
+    "lat": 50.405939,
+    "lng": 80.243947,
+    "website": "https://semeymedicaluniversity.kz/",
+    "foundedYear": 1953,
+    "externalIds": {
+      "wikidata": "Q2324449"
+    }
+  },
+  {
+    "slug": "shakarim-university",
+    "type": "university",
+    "country": "KZ",
+    "city": {
+      "en": "Semey"
+    },
+    "names": {
+      "original": "Государственный университет имени Шакарима города Семей",
+      "en": "Shakarim University",
+      "ru": "Государственный университет имени Шакарима города Семей"
+    },
+    "lat": 50.398866,
+    "lng": 80.21268,
+    "website": "http://semgu.kz/en/",
+    "foundedYear": 1995,
+    "externalIds": {
+      "wikidata": "Q991502"
+    }
+  },
+  {
+    "slug": "toraighyrov-university",
+    "type": "university",
+    "country": "KZ",
+    "city": {
+      "en": "Pavlodar"
+    },
+    "names": {
+      "original": "Торайгыров университет",
+      "en": "Toraighyrov University",
+      "ru": "Торайгыров университет",
+      "zh": "巴甫洛達爾國立大學"
+    },
+    "lat": 52.266318,
+    "lng": 76.966674,
+    "website": "https://tou.edu.kz/",
+    "foundedYear": 1960,
+    "externalIds": {
+      "wikidata": "Q2324530"
+    }
+  }
+]
