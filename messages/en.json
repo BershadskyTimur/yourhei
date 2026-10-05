@@ -115,14 +115,15 @@
   },
   "Register": {
     "title": "Create your account",
-    "intro": "Four short steps. Until you create the account, your answers stay in this browser only.",
+    "intro": "Two short steps. Everything else (countries, documents, what you are looking for) you fill in later in your profile, whenever you like.",
     "progressLabel": "Registration progress",
     "stepOf": "Step {current} of {total}",
     "steps": {
       "search": "What you are looking for",
       "about": "About you",
       "documents": "Documents",
-      "account": "Account"
+      "account": "Account",
+      "age": "Your age"
     },
     "back": "Back",
     "next": "Next",
@@ -310,6 +311,10 @@
       "confirm": "Yes, delete everything",
       "cancel": "Cancel",
       "deleteFailed": "Could not delete the account. Please try again."
+    },
+    "complete": {
+      "title": "Complete your profile",
+      "text": "Add your citizenship, the regions and types of institutions you are looking for, and your documents. You can change all of this at any time."
     }
   },
   "Legal": {

@@ -115,14 +115,15 @@
   },
   "Register": {
     "title": "创建账号",
-    "intro": "只需四个简短步骤。在创建账号之前，你的回答只保存在此浏览器中。",
+    "intro": "只需两个简短步骤。其余内容（国家、证件、你在找什么）可以稍后在个人资料中随时补充。",
     "progressLabel": "注册进度",
     "stepOf": "第 {current} 步，共 {total} 步",
     "steps": {
       "search": "你在找什么",
       "about": "关于你",
       "documents": "证件",
-      "account": "账号"
+      "account": "账号",
+      "age": "你的年龄"
     },
     "back": "上一步",
     "next": "下一步",
@@ -310,6 +311,10 @@
       "confirm": "是的，全部删除",
       "cancel": "取消",
       "deleteFailed": "无法删除账号，请重试。"
+    },
+    "complete": {
+      "title": "完善你的个人资料",
+      "text": "请补充你的国籍、想找的地区和机构类型以及证件情况。这些内容可随时修改。"
     }
   },
   "Legal": {

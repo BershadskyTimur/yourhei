@@ -3,12 +3,10 @@
 import { useLocale, useTranslations } from 'next-intl';
 import { useMemo } from 'react';
 import type { UseFormReturn } from 'react-hook-form';
+import { minAgeFor } from '@/lib/age';
 import { sortedCountryNames } from '@/lib/countries';
 import type { RegistrationForm } from '@/lib/registration/schema';
-import { CountryMultiSelect } from './CountryMultiSelect';
-import { Field, Group, inputClass } from './ui';
-
-const GENDERS = ['male', 'female', 'undisclosed'] as const;
+import { ErrorText, Field, inputClass } from './ui';
 
 function todayIso(): string {
   const d = new Date();
@@ -16,14 +14,13 @@ function todayIso(): string {
   return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
 }
 
-/** Profile: date of birth, country of residence, gender (optional) and citizenships. */
-export function StepAbout({ form }: { form: UseFormReturn<RegistrationForm> }) {
+/** Registration step 1: only what is needed to apply the minimum age before the account exists. */
+export function StepAge({ form }: { form: UseFormReturn<RegistrationForm> }) {
   const t = useTranslations('Register.about');
   const locale = useLocale();
-  const { register, watch, setValue, formState } = form;
+  const { register, watch, formState } = form;
   const errors = formState.errors;
-
-  const citizenships = watch('citizenships');
+  const residence = watch('residenceCountry');
   const countries = useMemo(() => sortedCountryNames(locale), [locale]);
 
   return (
@@ -63,24 +60,16 @@ export function StepAbout({ form }: { form: UseFormReturn<RegistrationForm> }) {
         </select>
       </Field>
 
-      <Group legend={t('gender')} why={t('genderWhy')} error={errors.gender?.message}>
-        <div className="flex flex-wrap gap-x-6 gap-y-2">
-          {GENDERS.map((g) => (
-            <label key={g} className="inline-flex min-h-10 items-center gap-2">
-              <input type="radio" value={g} className="h-5 w-5 accent-accent" {...register('gender')} />
-              {t(g)}
-            </label>
-          ))}
-        </div>
-      </Group>
-
-      <Field label={t('citizenship')} why={t('citizenshipWhy')} error={errors.citizenships?.message} htmlFor="citizenships">
-        <CountryMultiSelect
-          inputId="citizenships"
-          value={citizenships}
-          onChange={(next) => setValue('citizenships', next, { shouldDirty: true })}
-        />
-      </Field>
+      <div>
+        <label className="flex items-start gap-3">
+          <input type="checkbox" className="mt-1 h-5 w-5 shrink-0 accent-accent" {...register('ageConfirmed')} />
+          <span>
+            <span className="font-semibold">{t('ageCheck', { age: minAgeFor(residence || '') })}</span>
+            <span className="block text-sm text-muted">{t('ageCheckWhy')}</span>
+          </span>
+        </label>
+        <ErrorText code={errors.ageConfirmed?.message} />
+      </div>
     </div>
   );
 }

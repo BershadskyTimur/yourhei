@@ -1,29 +1,35 @@
 import { z } from 'zod';
-import { calcAge, isPlausibleBirthDate, parseIsoDate } from '../age';
+import { isPlausibleBirthDate, parseIsoDate } from '../age';
 import { COUNTRY_CODES } from '../countries';
 import { INSTITUTION_TYPES } from '../institutions/types';
 import { checkPassword } from '../password';
-import { DOC_KEYS, defaultDocuments, documentsToDb, type DocumentsForm } from './documents';
+import { DOC_KEYS, defaultDocuments, type DocumentsForm } from './documents';
 
 // Error messages are KEYS of Register.errors.* in the translation files, not texts.
+//
+// Registration asks only for the age (to apply the minimum age before an account exists,
+// SPEC.md section 6) and for the account. Everything else lives in the profile and can be
+// filled in and changed at any time, so the profile fields are optional.
 
 const countryCode = z.string().refine((c) => COUNTRY_CODES.has(c), 'required');
 
+const birthDateField = z
+  .string()
+  .min(1, 'required')
+  .refine((v) => isPlausibleBirthDate(v), 'birthInvalid');
+const residenceField = z.string().refine((c) => COUNTRY_CODES.has(c), 'residenceRequired');
+
 const searchShape = {
-  regions: z.array(z.string()).min(1, 'regionsMin'),
-  countries: z.array(countryCode).min(1, 'countriesMin'),
-  types: z.array(z.enum(INSTITUTION_TYPES)).min(1, 'typesMin'),
+  regions: z.array(z.string()),
+  countries: z.array(countryCode),
+  types: z.array(z.enum(INSTITUTION_TYPES)),
 };
 
 const aboutShape = {
-  birthDate: z
-    .string()
-    .min(1, 'required')
-    .refine((v) => isPlausibleBirthDate(v), 'birthInvalid'),
-  gender: z.enum(['male', 'female', 'undisclosed'], 'genderRequired'),
-  residenceCountry: z.string().refine((c) => COUNTRY_CODES.has(c), 'residenceRequired'),
-  citizenships: z.array(countryCode).min(1, 'citizenshipRequired'),
-  ageConfirmed: z.boolean().refine((v) => v, 'ageCheckRequired'),
+  birthDate: birthDateField,
+  gender: z.enum(['male', 'female', 'undisclosed', '']),
+  residenceCountry: residenceField,
+  citizenships: z.array(countryCode),
 };
 
 const documentsShape = {
@@ -45,8 +51,14 @@ const accountShape = {
   marketingOptIn: z.boolean(),
 };
 
+/** The registration form: age first, then the account. */
 export const registrationSchema = z
-  .object({ ...searchShape, ...aboutShape, ...documentsShape, ...accountShape })
+  .object({
+    birthDate: birthDateField,
+    residenceCountry: residenceField,
+    ageConfirmed: z.boolean().refine((v) => v, 'ageCheckRequired'),
+    ...accountShape,
+  })
   .superRefine((v, ctx) => {
     // The password rules depend on the e-mail, so they are checked on the whole form.
     for (const problem of checkPassword(v.password, v.email)) {
@@ -54,17 +66,22 @@ export const registrationSchema = z
     }
   });
 
-/** The same form without the account step: used when editing a profile. */
+/** The profile form: about you, what you are looking for, documents. */
 export const profileSchema = z.object({ ...searchShape, ...aboutShape, ...documentsShape });
 
-export type RegistrationForm = z.infer<typeof registrationSchema>;
+/** All fields of both forms: the step components work with this one type. */
+export type RegistrationForm = z.infer<typeof profileSchema> & {
+  ageConfirmed: boolean;
+  email: string;
+  password: string;
+  consentAccepted: boolean;
+  marketingOptIn: boolean;
+};
 export type ProfileForm = z.infer<typeof profileSchema>;
 
-/** Which fields belong to which step (used to validate one step at a time). */
+/** Which fields belong to which registration step (used to validate one step at a time). */
 export const STEP_FIELDS = [
-  ['regions', 'countries', 'types'],
-  ['birthDate', 'gender', 'residenceCountry', 'citizenships', 'ageConfirmed'],
-  ['documents'],
+  ['birthDate', 'residenceCountry', 'ageConfirmed'],
   ['email', 'password', 'consentAccepted'],
 ] as const satisfies readonly (readonly (keyof RegistrationForm)[])[];
 
@@ -74,7 +91,7 @@ export function emptyRegistration(): RegistrationForm {
     countries: [],
     types: [],
     birthDate: '',
-    gender: '' as RegistrationForm['gender'],
+    gender: '',
     residenceCountry: '',
     citizenships: [],
     ageConfirmed: false,
@@ -86,11 +103,11 @@ export function emptyRegistration(): RegistrationForm {
   };
 }
 
-/** The part of the form that is the same in registration and in the profile editor. */
+/** The profile form -> columns of the profiles table. */
 export function profileValuesToDb(v: ProfileForm) {
   return {
     birth_date: v.birthDate,
-    gender: v.gender,
+    gender: v.gender || null,
     residence_country: v.residenceCountry,
     citizenships: v.citizenships,
     target_regions: v.regions,
@@ -100,14 +117,11 @@ export function profileValuesToDb(v: ProfileForm) {
 }
 
 /** Data sent to Supabase inside user_metadata.wizard; the database trigger validates it again. */
-export function buildSignUpMetadata(v: RegistrationForm, today: Date = new Date()) {
-  const minor = (calcAge(v.birthDate, today) ?? 99) < 18;
+export function buildSignUpMetadata(v: Pick<RegistrationForm, 'birthDate' | 'residenceCountry' | 'consentAccepted' | 'marketingOptIn'>) {
   return {
     wizard: {
-      ...profileValuesToDb(v),
-      documents: Object.fromEntries(
-        documentsToDb(v.documents, minor).map((d) => [d.doc_type, { status: d.status, details: d.details }]),
-      ),
+      birth_date: v.birthDate,
+      residence_country: v.residenceCountry,
       privacy_accepted: v.consentAccepted,
       terms_accepted: v.consentAccepted,
       marketing_opt_in: v.marketingOptIn,

@@ -4,7 +4,7 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { useTranslations } from 'next-intl';
 import { useSearchParams } from 'next/navigation';
 import { useEffect, useState } from 'react';
-import { useForm, type Resolver } from 'react-hook-form';
+import { useForm, useWatch, type Resolver } from 'react-hook-form';
 import { useRouter } from '@/i18n/navigation';
 import { calcAge, isOldEnough, minAgeFor } from '@/lib/age';
 import { documentsFromDb, documentsToDb, type DbDocument } from '@/lib/registration/documents';
@@ -57,6 +57,12 @@ export function ProfileEditor() {
     reValidateMode: 'onChange',
     criteriaMode: 'all',
   });
+
+  const [citizenships, countries, types] = useWatch({
+    control: form.control,
+    name: ['citizenships', 'countries', 'types'],
+  });
+  const incomplete = citizenships.length === 0 || countries.length === 0 || types.length === 0;
 
   const [status, setStatus] = useState<'loading' | 'ready'>('loading');
   const [loadFailed, setLoadFailed] = useState(false);
@@ -231,17 +237,24 @@ export function ProfileEditor() {
         </div>
       </dl>
 
+      {incomplete && (
+        <section className="rounded-2xl border border-line-strong bg-accent-soft p-5 sm:p-6">
+          <h2 className="text-xl font-bold text-brand">{t('complete.title')}</h2>
+          <p className="mt-1">{t('complete.text')}</p>
+        </section>
+      )}
+
       <section className="rounded-2xl border border-line-strong bg-accent-soft p-5 sm:p-6">
         <h2 className="text-xl font-bold text-brand">{t('survey.title')}</h2>
         <p className="mt-1">{t('survey.text')}</p>
       </section>
 
       <form onSubmit={form.handleSubmit(onSave)} noValidate className="space-y-8">
-        <Section title={t('sections.search')}>
-          <StepSearch form={form} />
-        </Section>
         <Section title={t('sections.about')}>
           <StepAbout form={form} />
+        </Section>
+        <Section title={t('sections.search')}>
+          <StepSearch form={form} />
         </Section>
         <Section title={t('sections.documents')}>
           <StepDocuments form={form} />

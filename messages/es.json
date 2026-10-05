@@ -115,14 +115,15 @@
   },
   "Register": {
     "title": "Crea tu cuenta",
-    "intro": "Cuatro pasos cortos. Hasta que crees la cuenta, tus respuestas se guardan solo en este navegador.",
+    "intro": "Dos pasos cortos. Todo lo demás (países, documentos, lo que buscas) lo completas después en tu perfil, cuando quieras.",
     "progressLabel": "Progreso del registro",
     "stepOf": "Paso {current} de {total}",
     "steps": {
       "search": "Qué buscas",
       "about": "Sobre ti",
       "documents": "Documentos",
-      "account": "Cuenta"
+      "account": "Cuenta",
+      "age": "Tu edad"
     },
     "back": "Atrás",
     "next": "Siguiente",
@@ -310,6 +311,10 @@
       "confirm": "Sí, eliminar todo",
       "cancel": "Cancelar",
       "deleteFailed": "No se pudo eliminar la cuenta. Inténtalo de nuevo."
+    },
+    "complete": {
+      "title": "Completa tu perfil",
+      "text": "Añade tu nacionalidad, las regiones y los tipos de institución que buscas y tus documentos. Puedes cambiar todo esto en cualquier momento."
     }
   },
   "Legal": {
