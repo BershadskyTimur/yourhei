@@ -15,7 +15,8 @@
     "language": "Language",
     "toggleTheme": "Switch light / dark theme",
     "profile": "Profile",
-    "logout": "Log out"
+    "logout": "Log out",
+    "matches": "My matches"
   },
   "Footer": {
     "navLabel": "Site information",
@@ -368,8 +369,9 @@
     },
     "done": {
       "title": "Thank you! The survey is complete.",
-      "text": "Your answers are saved. Suitable institutions will be shown here at the next stage of the project.",
-      "toProfile": "Back to my profile"
+      "text": "Your answers are saved. See the institutions that fit you best.",
+      "toProfile": "Back to my profile",
+      "toMatches": "See my matches"
     },
     "ui": {
       "loading": "Loading…",
@@ -787,6 +789,90 @@
       "priorities": {
         "title": "Choose the 3 most important things",
         "hint": "This decides what counts most when we rank your matches."
+      }
+    }
+  },
+  "Matches": {
+    "title": "Your matches",
+    "loading": "Looking for the best matches…",
+    "failed": "Could not load the matches. Please reload the page or try again later.",
+    "noSurvey": {
+      "title": "Take the survey first",
+      "text": "The matches are built from your survey answers and your profile.",
+      "cta": "Go to the survey"
+    },
+    "basedOn": "Based on your survey of {date} and your profile.",
+    "noData": {
+      "title": "Programme data is being added",
+      "text": "We are collecting and checking data about programmes (tuition, languages, requirements). Matches appear here as soon as verified programmes are published."
+    },
+    "summary": "We checked {checked} programmes; {passed} fit your requirements.",
+    "nothing": {
+      "title": "No programme fits all your requirements yet",
+      "text": "Try wider choices: more countries or types in your profile, another budget, or a preparatory year. New programmes are added regularly.",
+      "profile": "Edit my profile",
+      "survey": "Take the survey again"
+    },
+    "groups": {
+      "safe": {
+        "title": "Safe choices",
+        "text": "You meet the requirements with room to spare."
+      },
+      "suitable": {
+        "title": "Suitable choices",
+        "text": "You meet the requirements."
+      },
+      "ambitious": {
+        "title": "Ambitious choices",
+        "text": "Slightly below some requirements, but worth a try."
+      }
+    },
+    "retake": "Take the survey again",
+    "editProfile": "Edit my profile",
+    "credits": {
+      "live": "Exchange rates:",
+      "fallback": "Exchange rates are approximate (live rates unavailable). Source:"
+    },
+    "card": {
+      "score": "Match score {score} out of 100",
+      "languages": "Language of study",
+      "duration": "Duration",
+      "years": "{count, plural, one {# year} other {# years}}",
+      "tuition": "Tuition",
+      "free": "Free",
+      "perYear": "year",
+      "tuitionUnknown": "no data",
+      "why": "Why it fits",
+      "gaps": "What is missing",
+      "noData": "No data for",
+      "apply": "Apply on the official site"
+    },
+    "components": {
+      "academic": "requirements",
+      "field": "specialty",
+      "prestige": "ranking",
+      "preferences": "city and institution",
+      "extras": "extras",
+      "life": "housing and work",
+      "budget": "budget"
+    },
+    "notes": {
+      "why": {
+        "academic": "Your grades and certificates meet the requirements.",
+        "field": "{match, select, exact {Exactly your specialty.} narrow {Close to your specialty.} broad {The same broad field of study.} other {Related to your field.}}",
+        "prestige": "Highly ranked, as you wanted.",
+        "preferences": "Matches your wishes for the institution and the city.",
+        "extras": "Offers the extras you asked for.",
+        "life": "Good conditions: housing and the rules for working.",
+        "budget": "Fits your budget."
+      },
+      "gap": {
+        "gpa": "Average grade: {need} required, you have {have}.",
+        "language": "{exam}: {need} required, you have {have}.",
+        "exam": "{exam}: {need} required, you have {have}.",
+        "exam_missing": "{exam} {need} is required and you have no result yet.",
+        "prep_year": "Taught in {languages}: you would need a preparatory language year.",
+        "over_budget": "Tuition is about {cost} {currency} a year, above your budget of {budget} {currency}."
       }
     }
   }

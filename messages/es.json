@@ -15,7 +15,8 @@
     "language": "Idioma",
     "toggleTheme": "Cambiar entre tema claro y oscuro",
     "profile": "Perfil",
-    "logout": "Cerrar sesión"
+    "logout": "Cerrar sesión",
+    "matches": "Mis resultados"
   },
   "Footer": {
     "navLabel": "Información del sitio",
@@ -368,8 +369,9 @@
     },
     "done": {
       "title": "¡Gracias! La encuesta está completa.",
-      "text": "Tus respuestas están guardadas. Las instituciones adecuadas se mostrarán aquí en la siguiente etapa del proyecto.",
-      "toProfile": "Volver a mi perfil"
+      "text": "Tus respuestas están guardadas. Mira las instituciones que mejor encajan contigo.",
+      "toProfile": "Volver a mi perfil",
+      "toMatches": "Ver mis resultados"
     },
     "ui": {
       "loading": "Cargando…",
@@ -787,6 +789,90 @@
       "priorities": {
         "title": "Elige las 3 cosas más importantes",
         "hint": "Esto decide qué pesa más al ordenar tus recomendaciones."
+      }
+    }
+  },
+  "Matches": {
+    "title": "Tus resultados",
+    "loading": "Buscando las mejores opciones…",
+    "failed": "No se pudieron cargar los resultados. Recarga la página o inténtalo más tarde.",
+    "noSurvey": {
+      "title": "Primero haz la encuesta",
+      "text": "Los resultados se construyen con las respuestas de la encuesta y tu perfil.",
+      "cta": "Ir a la encuesta"
+    },
+    "basedOn": "Según tu encuesta del {date} y tu perfil.",
+    "noData": {
+      "title": "Se están añadiendo datos de programas",
+      "text": "Estamos reuniendo y comprobando datos de programas (matrícula, idiomas, requisitos). Los resultados aparecerán aquí en cuanto se publiquen programas verificados."
+    },
+    "summary": "Hemos revisado {checked} programas; {passed} cumplen tus requisitos.",
+    "nothing": {
+      "title": "Ningún programa cumple todavía todos tus requisitos",
+      "text": "Prueba con opciones más amplias: más países o tipos en tu perfil, otro presupuesto o un año preparatorio. Se añaden programas nuevos con regularidad.",
+      "profile": "Editar mi perfil",
+      "survey": "Hacer la encuesta de nuevo"
+    },
+    "groups": {
+      "safe": {
+        "title": "Opciones seguras",
+        "text": "Cumples los requisitos con margen."
+      },
+      "suitable": {
+        "title": "Opciones adecuadas",
+        "text": "Cumples los requisitos."
+      },
+      "ambitious": {
+        "title": "Opciones ambiciosas",
+        "text": "Algo por debajo de algunos requisitos, pero vale la pena intentarlo."
+      }
+    },
+    "retake": "Hacer la encuesta de nuevo",
+    "editProfile": "Editar mi perfil",
+    "credits": {
+      "live": "Tipos de cambio:",
+      "fallback": "Los tipos de cambio son aproximados (no hay datos en vivo). Fuente:"
+    },
+    "card": {
+      "score": "Compatibilidad {score} de 100",
+      "languages": "Idioma de estudio",
+      "duration": "Duración",
+      "years": "{count, plural, one {# año} other {# años}}",
+      "tuition": "Matrícula",
+      "free": "Gratis",
+      "perYear": "año",
+      "tuitionUnknown": "sin datos",
+      "why": "Por qué encaja",
+      "gaps": "Qué falta",
+      "noData": "Sin datos de",
+      "apply": "Solicitar en el sitio oficial"
+    },
+    "components": {
+      "academic": "requisitos",
+      "field": "especialidad",
+      "prestige": "ranking",
+      "preferences": "ciudad e institución",
+      "extras": "extras",
+      "life": "alojamiento y trabajo",
+      "budget": "presupuesto"
+    },
+    "notes": {
+      "why": {
+        "academic": "Tus notas y certificados cumplen los requisitos.",
+        "field": "{match, select, exact {Exactamente tu especialidad.} narrow {Cercana a tu especialidad.} broad {El mismo campo amplio.} other {Relacionada con tu campo.}}",
+        "prestige": "Bien posicionada en rankings, como querías.",
+        "preferences": "Coincide con tus preferencias de institución y ciudad.",
+        "extras": "Ofrece lo que pediste: prácticas, doble titulación o intercambio.",
+        "life": "Buenas condiciones: alojamiento y normas para trabajar.",
+        "budget": "Encaja en tu presupuesto."
+      },
+      "gap": {
+        "gpa": "Nota media: se pide {need}, tienes {have}.",
+        "language": "{exam}: se pide {need}, tienes {have}.",
+        "exam": "{exam}: se pide {need}, tienes {have}.",
+        "exam_missing": "Se pide {exam} {need} y aún no tienes resultado.",
+        "prep_year": "Se imparte en {languages}: necesitarías un año preparatorio de idioma.",
+        "over_budget": "La matrícula ronda {cost} {currency} al año, por encima de tu presupuesto de {budget} {currency}."
       }
     }
   }

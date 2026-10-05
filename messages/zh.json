@@ -15,7 +15,8 @@
     "language": "语言",
     "toggleTheme": "切换浅色 / 深色主题",
     "profile": "个人资料",
-    "logout": "退出登录"
+    "logout": "退出登录",
+    "matches": "我的匹配"
   },
   "Footer": {
     "navLabel": "网站信息",
@@ -368,8 +369,9 @@
     },
     "done": {
       "title": "谢谢！问卷已完成。",
-      "text": "你的回答已保存。合适的院校将在项目的下一阶段显示在这里。",
-      "toProfile": "返回我的个人资料"
+      "text": "你的回答已保存。来看看最适合你的院校吧。",
+      "toProfile": "返回我的个人资料",
+      "toMatches": "查看我的匹配"
     },
     "ui": {
       "loading": "加载中…",
@@ -787,6 +789,90 @@
       "priorities": {
         "title": "请选择最重要的 3 项",
         "hint": "这决定了我们在为你的匹配排序时更看重什么。"
+      }
+    }
+  },
+  "Matches": {
+    "title": "你的匹配结果",
+    "loading": "正在寻找最佳匹配…",
+    "failed": "无法加载匹配结果。请刷新页面或稍后再试。",
+    "noSurvey": {
+      "title": "请先完成问卷",
+      "text": "匹配结果根据你的问卷回答和个人资料生成。",
+      "cta": "前往问卷"
+    },
+    "basedOn": "基于你 {date} 的问卷和个人资料。",
+    "noData": {
+      "title": "正在补充专业数据",
+      "text": "我们正在收集并核实各专业的数据（学费、授课语言、入学要求）。核实后的专业发布后，匹配结果会显示在这里。"
+    },
+    "summary": "已检查 {checked} 个专业，其中 {passed} 个符合你的要求。",
+    "nothing": {
+      "title": "暂时没有专业满足你的全部要求",
+      "text": "试试放宽条件：在个人资料中增加国家或机构类型、调整预算，或接受预科年。我们会定期添加新专业。",
+      "profile": "修改个人资料",
+      "survey": "重新做问卷"
+    },
+    "groups": {
+      "safe": {
+        "title": "稳妥之选",
+        "text": "你满足要求且有余量。"
+      },
+      "suitable": {
+        "title": "合适之选",
+        "text": "你满足要求。"
+      },
+      "ambitious": {
+        "title": "冲刺之选",
+        "text": "略低于部分要求，但值得一试。"
+      }
+    },
+    "retake": "重新做问卷",
+    "editProfile": "修改个人资料",
+    "credits": {
+      "live": "汇率来源：",
+      "fallback": "汇率为近似值（无法获取实时汇率）。来源："
+    },
+    "card": {
+      "score": "匹配度 {score} / 100",
+      "languages": "授课语言",
+      "duration": "学制",
+      "years": "{count, plural, other {# 年}}",
+      "tuition": "学费",
+      "free": "免费",
+      "perYear": "年",
+      "tuitionUnknown": "暂无数据",
+      "why": "为什么适合你",
+      "gaps": "还缺少什么",
+      "noData": "缺少数据：",
+      "apply": "前往官网申请"
+    },
+    "components": {
+      "academic": "入学要求",
+      "field": "专业",
+      "prestige": "排名",
+      "preferences": "城市与院校",
+      "extras": "附加项",
+      "life": "住宿与工作",
+      "budget": "预算"
+    },
+    "notes": {
+      "why": {
+        "academic": "你的成绩和证书满足入学要求。",
+        "field": "{match, select, exact {正是你想学的专业。} narrow {与你想学的专业接近。} broad {属于同一大类方向。} other {与你的方向相关。}}",
+        "prestige": "排名靠前，符合你的期望。",
+        "preferences": "符合你对院校和城市的偏好。",
+        "extras": "提供你想要的附加项：实习、双学位或交换。",
+        "life": "条件良好：住宿和工作规定。",
+        "budget": "符合你的预算。"
+      },
+      "gap": {
+        "gpa": "平均成绩：要求 {need}，你的是 {have}。",
+        "language": "{exam}：要求 {need}，你的是 {have}。",
+        "exam": "{exam}：要求 {need}，你的是 {have}。",
+        "exam_missing": "需要 {exam} {need}，你还没有成绩。",
+        "prep_year": "授课语言为 {languages}：你需要先读一年语言预科。",
+        "over_budget": "学费约每年 {cost} {currency}，超出你 {budget} {currency} 的预算。"
       }
     }
   }
