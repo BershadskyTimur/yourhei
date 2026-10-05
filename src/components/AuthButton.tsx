@@ -13,12 +13,25 @@ export function AuthButton() {
   const t = useTranslations('Header');
   const router = useRouter();
   const [signedIn, setSignedIn] = useState(false);
+  const [isAdmin, setIsAdmin] = useState(false);
 
   useEffect(() => {
     const supabase = getSupabaseBrowser();
     if (!supabase) return;
-    supabase.auth.getSession().then(({ data }) => setSignedIn(Boolean(data.session)));
-    const { data } = supabase.auth.onAuthStateChange((_event, session) => setSignedIn(Boolean(session)));
+    // Only used to show the "Admin" link; the admin pages are protected by the database itself.
+    const checkAdmin = async (userId: string | undefined) => {
+      if (!userId) return setIsAdmin(false);
+      const { data } = await supabase.from('profiles').select('role').eq('id', userId).maybeSingle();
+      setIsAdmin(data?.role === 'admin');
+    };
+    supabase.auth.getSession().then(({ data }) => {
+      setSignedIn(Boolean(data.session));
+      void checkAdmin(data.session?.user.id);
+    });
+    const { data } = supabase.auth.onAuthStateChange((_event, session) => {
+      setSignedIn(Boolean(session));
+      void checkAdmin(session?.user.id);
+    });
     return () => data.subscription.unsubscribe();
   }, []);
 
@@ -35,6 +48,14 @@ export function AuthButton() {
 
   return (
     <>
+      {isAdmin && (
+        <Link
+          href="/admin"
+          className="inline-flex h-10 items-center rounded-full border border-line-strong px-4 text-sm font-medium text-text hover:bg-surface-strong"
+        >
+          Admin
+        </Link>
+      )}
       <Link
         href="/matches"
         className="inline-flex h-10 items-center rounded-full border border-line-strong px-4 text-sm font-medium text-text hover:bg-surface-strong"

@@ -11,43 +11,50 @@
 :root {
   color-scheme: light;
 
-  /* Surfaces and text */
+  /* Surfaces and text: white page, warm cream cards, near-black text */
   --bg: #ffffff;
-  --surface: #fbf7f2;
-  --surface-strong: #f3e9dd;
-  --text: #3b2414; /* dark brown */
-  --text-muted: #6b4226; /* brown */
-  --brand-text: #6b4226; /* brown, for headings and the logo */
+  --surface: #fff7ea;
+  --surface-strong: #ffe8c2;
+  --text: #1c1917; /* near-black */
+  --text-muted: #57534e;
+  --brand-text: #a84508; /* orange: headings and the logo */
 
-  /* Orange: the button is a darker orange so white text passes WCAG AA */
-  --accent: #b85a0f;
+  /* Orange: the button is a deep orange so white text passes WCAG AA */
+  --accent: #c2410c;
   --on-accent: #ffffff;
-  --accent-text: #a04f0b; /* orange used as text / links */
-  --accent-soft: #fce9d6;
+  --accent-text: #a84508; /* orange used as text / links */
+  --accent-soft: #ffedd5;
 
   /* Gold */
-  --gold: #c9a227; /* decoration only (lines, dots) */
-  --gold-text: #7a5f0a;
+  --gold: #e0a100; /* decoration (lines, dots, badges) */
+  --gold-text: #8a6100;
 
   /* Errors */
   --danger: #b3261e;
 
   /* Lines and focus */
-  --border: #e4d5c5;
-  --border-strong: #9c7a5b; /* borders of inputs and buttons */
-  --focus: #b85a0f;
+  --border: #f3dcb0;
+  --border-strong: #9a7b4f; /* borders of inputs and buttons */
+  --focus: #c2410c;
 
-  /* Footer */
-  --footer-bg: #3b2414;
-  --footer-text: #f3ede6;
-  --footer-muted: #d9c7b3;
+  /* Footer: light in the light theme (so the light theme has no dark bands) */
+  --footer-bg: #fff1d6;
+  --footer-text: #1c1917;
+  --footer-muted: #57534e;
+
+  /* Hero band and decorations */
+  --hero-a: #fff3d6;
+  --hero-b: #ffe2bf;
+  --hero-glow: #ffb347;
+  --ad-bg: #fffaf0;
+  --ad-border: #d9b36a;
 
   /* Map: clusters and type dots (the same in both themes; each dot also has an icon) */
-  --cluster: #6b4226;
+  --cluster: #c2410c;
   --on-cluster: #ffffff;
   --map-ring: #ffffff;
-  --type-university: #c9a227;
-  --type-university-on: #3b2414;
+  --type-university: #e0a100;
+  --type-university-on: #1c1917;
   --type-college: #c0392b;
   --type-college-on: #ffffff;
   --type-school: #2f6fd0;
@@ -63,32 +70,37 @@
 [data-theme="dark"] {
   color-scheme: dark;
 
-  --bg: #111111;
-  --surface: #1b1613;
-  --surface-strong: #261e19;
-  --text: #f3ede6; /* warm near-white: brown text is unreadable on black */
-  --text-muted: #d8c6b2;
-  --brand-text: #e3b866;
+  --bg: #0f0e0c;
+  --surface: #1a1713;
+  --surface-strong: #2a2218;
+  --text: #f6f1e7; /* warm near-white */
+  --text-muted: #d6cfc2;
+  --brand-text: #fbbf24; /* gold */
 
-  --accent: #e07b24;
+  --accent: #f97316;
   --on-accent: #111111;
-  --accent-text: #f0a45d;
-  --accent-soft: #3a2614;
+  --accent-text: #fdba74;
+  --accent-soft: #33200d;
 
-  --gold: #c9a227;
-  --gold-text: #d9b53a;
+  --gold: #fbbf24;
+  --gold-text: #fbbf24;
 
   --danger: #ff8a80;
 
-  --border: #3a2e26;
-  --border-strong: #8c7459;
-  --focus: #f0a45d;
+  --border: #3a3226;
+  --border-strong: #8d7b5e;
+  --focus: #fdba74;
 
-  --footer-bg: #1b1613;
-  --footer-text: #f3ede6;
-  --footer-muted: #d8c6b2;
+  --footer-bg: #14120f;
+  --footer-text: #f6f1e7;
+  --footer-muted: #d6cfc2;
+
+  --hero-a: #21170b;
+  --hero-b: #33200d;
+  --hero-glow: #c2410c;
+  --ad-bg: #17140f;
+  --ad-border: #6b5a3a;
 }
-
 @theme inline {
   --color-bg: var(--bg);
   --color-surface: var(--surface);
@@ -111,7 +123,7 @@
 
   /* Fallbacks matter: a font variable that is not loaded (e.g. Chinese outside /zh) must not break the stack. */
   --font-sans:
-    var(--font-noto, system-ui), var(--font-noto-ka, system-ui), var(--font-noto-sc, system-ui),
+    var(--font-noto, system-ui), var(--font-noto-ka, system-ui), var(--font-noto-hy, system-ui), var(--font-noto-sc, system-ui),
     system-ui, sans-serif;
 }
 
@@ -174,4 +186,34 @@ li {
 }
 [data-theme="dark"] .maplibregl-ctrl-icon {
   filter: invert(1);
+}
+
+/* ---- Decorations (colours come only from the tokens above) ---- */
+.hero-bg {
+  background:
+    radial-gradient(60rem 28rem at 85% -10%, color-mix(in srgb, var(--hero-glow) 35%, transparent), transparent 60%),
+    radial-gradient(40rem 22rem at 0% 110%, color-mix(in srgb, var(--gold) 28%, transparent), transparent 60%),
+    linear-gradient(135deg, var(--hero-a), var(--hero-b));
+}
+.hero-dots {
+  background-image: radial-gradient(color-mix(in srgb, var(--gold) 55%, transparent) 1.2px, transparent 1.2px);
+  background-size: 22px 22px;
+  mask-image: linear-gradient(to left, black, transparent 70%);
+}
+.gold-gradient-text {
+  background: linear-gradient(90deg, var(--accent-text), var(--gold-text));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+[data-theme="dark"] .gold-gradient-text {
+  background: linear-gradient(90deg, var(--accent-text), var(--gold));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.gold-rule {
+  height: 3px;
+  border-radius: 3px;
+  background: linear-gradient(90deg, var(--accent), var(--gold), transparent);
 }

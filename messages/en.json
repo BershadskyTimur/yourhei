@@ -11,7 +11,6 @@
   "Header": {
     "homeLabel": "YourHEI — home",
     "login": "Log in",
-    "loginSoon": "Sign-in will be available soon",
     "language": "Language",
     "toggleTheme": "Switch light / dark theme",
     "profile": "Profile",
@@ -24,8 +23,9 @@
     "contacts": "Contact & support",
     "privacy": "Privacy policy",
     "terms": "Terms of use",
-    "dataCredit": "Institution data: Wikidata (CC0). Map: © OpenStreetMap contributors, OpenFreeMap.",
-    "rights": "© {year} YourHEI"
+    "dataCredit": "Map data © OpenStreetMap contributors, OpenFreeMap.",
+    "rights": "© {year} YourHEI",
+    "tagline": "Find where to study: universities, colleges and schools on one map, with matches that explain themselves."
   },
   "Types": {
     "university": "University",
@@ -45,18 +45,14 @@
       "legendLabel": "Institution types (tap to show or hide)",
       "shown": "{shown} of {total} shown",
       "loadError": "Could not load the institutions. Please try again later.",
-      "testData": "{count, plural, one {# institution} other {# institutions}} from open data (Wikidata) are on the map. Detailed cards with programmes and tuition are added step by step.",
       "more": "Details",
       "close": "Close",
       "noWebgl": "Your browser cannot display the map. Try another browser or enable hardware acceleration.",
       "zoomIn": "Zoom in",
       "zoomOut": "Zoom out",
       "toggleAttribution": "Map data sources",
-      "mapFeedback": "Report a map problem"
-    },
-    "about": {
-      "title": "What is YourHEI",
-      "text": "YourHEI helps applicants and their families find a university, college, school or language courses in the Caucasus, Central Asia, Eastern Europe, Europe and Asia. Tell us about yourself and we will suggest suitable options and show what is still missing for admission."
+      "mapFeedback": "Report a map problem",
+      "heading": "Map of institutions"
     },
     "how": {
       "title": "How it works",
@@ -67,6 +63,36 @@
       "step3Title": "Get your matches",
       "step3Text": "Receive a list of safe, suitable and ambitious options.",
       "cta": "Start matching"
+    },
+    "hero": {
+      "badge": "Study abroad, simplified",
+      "subtitle": "Explore {count} universities and colleges on the map, answer a short survey and see where you really fit — with clear reasons and what is still missing.",
+      "ctaMap": "Explore the map"
+    },
+    "stats": {
+      "institutions": "{count, plural, one {# institution} other {# institutions}}",
+      "countries": "{count, plural, one {# country} other {# countries}}",
+      "languages": "{count} languages",
+      "free": "Free to use"
+    },
+    "why": {
+      "title": "Why YourHEI",
+      "f1Title": "Everything on one map",
+      "f1Text": "Universities, colleges and schools across the Caucasus, Central Asia, Eastern Europe, Europe and Asia.",
+      "f2Title": "Matches that explain themselves",
+      "f2Text": "Every result shows why it fits and what you still need, for example a higher language score.",
+      "f3Title": "Data with sources",
+      "f3Text": "Prices, requirements and deadlines come from official sites, with a link and the date we checked.",
+      "f4Title": "In your language",
+      "f4Text": "The site speaks {languages} languages and shows prices in your currency."
+    },
+    "countries": {
+      "title": "Where you can study",
+      "text": "Countries with institutions on the map."
+    },
+    "cta": {
+      "title": "Ready to find your place?",
+      "text": "Create a free account, answer the survey and get your matches in minutes."
     }
   },
   "Institution": {
@@ -78,24 +104,18 @@
   "Pages": {
     "about": {
       "title": "About the project",
-      "body": "YourHEI is a project that helps people choose where to study. It is under development: right now only the map with test data is available."
+      "body": "YourHEI helps applicants and their families choose where to study: an interactive map of universities, colleges and schools, a short survey about your goals, results and budget, and matches that explain why they fit. The service is free for applicants."
     },
     "contact": {
       "title": "Contact & support",
-      "body": "A contact form for questions and for institutions that want to update their page will appear in a later version."
+      "body": "Questions about the service, corrections to an institution's page, or about your personal data? Write to us.",
+      "emailLabel": "E-mail"
     },
     "privacy": {
-      "title": "Privacy policy",
-      "banner": "Template — requires review by a lawyer."
+      "title": "Privacy policy"
     },
     "terms": {
-      "title": "Terms of use",
-      "banner": "Template — requires review by a lawyer."
-    },
-    "comingSoon": {
-      "title": "Coming soon",
-      "body": "This part of the site is not ready yet. Registration and matching are planned for the next stages.",
-      "back": "Back to the home page"
+      "title": "Terms of use"
     },
     "notFound": {
       "title": "Page not found",
@@ -120,9 +140,6 @@
     "progressLabel": "Registration progress",
     "stepOf": "Step {current} of {total}",
     "steps": {
-      "search": "What you are looking for",
-      "about": "About you",
-      "documents": "Documents",
       "account": "Account",
       "age": "Your age"
     },
@@ -216,14 +233,9 @@
     },
     "errors": {
       "required": "Please fill in this field",
-      "regionsMin": "Choose at least one region",
-      "countriesMin": "Choose at least one country",
-      "typesMin": "Choose at least one type",
       "birthInvalid": "Enter a valid date of birth",
       "dateInvalid": "Enter a valid date",
-      "genderRequired": "Choose an option",
       "residenceRequired": "Choose your country of residence",
-      "citizenshipRequired": "Add at least one citizenship",
       "ageCheckRequired": "Please confirm your age",
       "emailInvalid": "Enter a valid e-mail address",
       "consentRequired": "This consent is required",
@@ -321,37 +333,46 @@
   },
   "Legal": {
     "privacy": {
-      "intro": "This template explains which data YourHEI collects and why. It is not final: a lawyer must review it before the site is launched.",
       "s1Title": "Who we are",
-      "s1Text": "YourHEI is a project that helps applicants choose where to study. Contact details for questions about your data will be published here before launch.",
+      "s1Text": "YourHEI is a service that helps applicants choose where to study. This policy explains what data we collect and how we use it. By using the site you agree to it.",
       "s2Title": "What we collect",
-      "s2Text": "Only what matching needs: e-mail and password (the password is stored only as a secure hash, never as text), date of birth, gender (you may choose not to say), country of residence, citizenships, what you are looking for, and the status of your documents. We do not collect copies of your documents.",
-      "s3Title": "Why we ask",
-      "s3Text": "Date of birth and country of residence are used to check the minimum age in your country. Citizenship, residence and documents are used to show visa rules and what is missing for admission. Gender matters for single-sex schools and dormitories. Your e-mail is used to sign in and for service messages.",
-      "s4Title": "Where the data is kept",
-      "s4Text": "Data is stored with our database provider (Supabase) until you delete your account. Access rules let each person see only their own data.",
-      "s5Title": "Your rights",
-      "s5Text": "In your profile you can edit all your data, download a copy and delete your account with all data. Deletion happens immediately and cannot be undone. News and tips by e-mail are sent only if you ticked the optional box, and you can turn them off in your profile.",
-      "s6Title": "Minimum age",
-      "s6Text": "We register people only from the minimum age of their country of residence (14, 16 or 18, depending on the country). If you are younger, no account is created and nothing you typed is stored.",
-      "s7Title": "Cookies and trackers",
-      "s7Text": "The site uses no analytics, advertising or third-party trackers. It keeps only technical data in your browser: your language, your theme and your login session. A cookie banner will be added before any analytics or advertising is switched on."
+      "s2Text": "Account data (e-mail and a protected form of your password); profile data (date of birth, gender if you give it, country of residence, citizenships, what you are looking for, the status of your documents); your survey answers; and technical and usage data (pages you visit, actions on the site, device, browser, language, IP address, approximate location, the site you came from), including through cookies and similar technologies.",
+      "s3Title": "Why we collect it",
+      "s3Text": "To run and improve the service, check the minimum age, build your matches, communicate with you, measure how the site is used, show advertising, do research, keep the service secure and meet legal duties.",
+      "s4Title": "Analytics and sharing",
+      "s4Text": "We may use analytics and advertising tools. We may send analytics and usage data, and other data we collect, to analytics, advertising, hosting and other providers and partners, wherever they are located, including in other countries.",
+      "s5Title": "How we may use the data",
+      "s5Text": "To the extent the law allows, we may use the data we collect as we see fit: to run, personalise, analyse and improve the service, to develop new products and services, to advertise, and to publish or share statistics and research, including in aggregated or anonymised form.",
+      "s6Title": "Storage",
+      "s6Text": "Data is stored with our providers (for example our database provider) until you delete your account. Technical logs and backups may be kept for some time after that.",
+      "s7Title": "Your rights",
+      "s7Text": "In your profile you can edit your data, download a copy, switch off e-mails and delete your account with all data. Where the law gives you more rights, for example in the EU, the EEA or the UK, we respect them.",
+      "s8Title": "Minimum age",
+      "s8Text": "We register people only from the minimum age of their country of residence (14, 16 or 18, depending on the country). If you are younger, no account is created and nothing you typed is stored.",
+      "s9Title": "Cookies and similar technologies",
+      "s9Text": "We use cookies and similar technologies for your language, theme and sign-in, and for analytics and advertising. Where the law requires it, we ask for your consent first.",
+      "s10Title": "Changes",
+      "s10Text": "We may change this policy. The date at the top shows the latest version; if you keep using the site after a change, you accept the new version."
     },
     "terms": {
-      "intro": "This template describes the rules of using YourHEI. It is not final: a lawyer must review it before the site is launched.",
       "s1Title": "The service",
-      "s1Text": "YourHEI shows educational institutions on a map and suggests options based on your answers. At this stage it is free.",
+      "s1Text": "YourHEI shows educational institutions on a map and suggests options based on your answers. It is free for applicants.",
       "s2Title": "Your account",
       "s2Text": "Give true information and keep your password secret. One person, one account. You must have reached the minimum age of your country of residence.",
       "s3Title": "Information, not advice",
-      "s3Text": "Data about institutions comes from open sources and may be outdated or incomplete. Always check the official website before you apply. A suggestion is not a promise of admission.",
+      "s3Text": "Data about institutions comes from open and official sources and may be outdated or incomplete. Always check the official website before you apply. A suggestion is not a promise of admission.",
       "s4Title": "Fair use",
       "s4Text": "Do not misuse the service: no automated mass collection of data, no attempts to break it, no false reports.",
-      "s5Title": "Changes and ending",
-      "s5Text": "We may change the service and these terms; important changes will be announced on the site. You can delete your account at any time.",
-      "s6Title": "Liability",
-      "s6Text": "The service is provided as it is. Limits of liability and the governing law will be added after a lawyer has reviewed this text."
-    }
+      "s5Title": "Data and analytics",
+      "s5Text": "By using the service you agree that we may collect analytics and usage data, send it to any third parties we choose, wherever they are, and use all the data we collect in any way we see fit, as described in the Privacy policy, to the extent the law allows.",
+      "s6Title": "Advertising and third parties",
+      "s6Text": "The site shows advertising and may link to third-party sites. We are not responsible for their content or their offers.",
+      "s7Title": "Changes and ending",
+      "s7Text": "We may change the service and these terms; if you keep using the service after a change, you accept it. You can delete your account at any time.",
+      "s8Title": "Liability",
+      "s8Text": "The service is provided as it is, without guarantees, and we are not liable for losses from using it, to the extent the law allows."
+    },
+    "updated": "Last updated: {date}"
   },
   "Survey": {
     "title": "Your matching survey",
@@ -875,5 +896,8 @@
         "over_budget": "Tuition is about {cost} {currency} a year, above your budget of {budget} {currency}."
       }
     }
+  },
+  "Ads": {
+    "label": "Advertisement"
   }
 }

@@ -49,6 +49,15 @@ const TEXT_PAIRS: [string, string, number][] = [
   ['danger', 'bg', 4.5],
   ['danger', 'surface', 4.5],
   ['danger', 'accent-soft', 4.5],
+  ['text', 'hero-a', 4.5],
+  ['text', 'hero-b', 4.5],
+  ['text-muted', 'hero-a', 4.5],
+  ['text-muted', 'hero-b', 4.5],
+  ['brand-text', 'hero-a', 4.5],
+  ['brand-text', 'hero-b', 4.5],
+  ['accent-text', 'hero-b', 4.5],
+  ['text', 'ad-bg', 4.5],
+  ['text-muted', 'ad-bg', 4.5],
 ];
 const UI_PAIRS: [string, string, number][] = [
   ['border-strong', 'bg', 3],

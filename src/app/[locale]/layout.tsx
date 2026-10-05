@@ -1,5 +1,5 @@
-import type { Metadata } from 'next';
-import { Noto_Sans, Noto_Sans_Georgian, Noto_Sans_SC } from 'next/font/google';
+import type { Metadata, Viewport } from 'next';
+import { Noto_Sans, Noto_Sans_Armenian, Noto_Sans_Georgian, Noto_Sans_SC } from 'next/font/google';
 import { hasLocale, NextIntlClientProvider } from 'next-intl';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
@@ -12,15 +12,21 @@ import { LOCALES } from '@/config/locales';
 import { routing } from '@/i18n/routing';
 import '../globals.css';
 
-// Latin + Cyrillic, Georgian (Mkhedruli) and Simplified Chinese (SPEC.md section 3).
+// Latin + Cyrillic (incl. Kazakh letters), Armenian, Georgian (Mkhedruli) and Simplified Chinese.
 const notoSans = Noto_Sans({
-  subsets: ['latin', 'latin-ext', 'cyrillic'],
+  subsets: ['latin', 'latin-ext', 'cyrillic', 'cyrillic-ext'],
   variable: '--font-noto',
   display: 'swap',
 });
 const notoGeorgian = Noto_Sans_Georgian({
   subsets: ['georgian'],
   variable: '--font-noto-ka',
+  display: 'swap',
+  preload: false,
+});
+const notoArmenian = Noto_Sans_Armenian({
+  subsets: ['armenian'],
+  variable: '--font-noto-hy',
   display: 'swap',
   preload: false,
 });
@@ -31,6 +37,10 @@ const notoChinese = Noto_Sans_SC({
   display: 'swap',
   preload: false,
 });
+
+// Tells the browser that the site draws both a light and a dark theme itself, so it does not
+// darken the pages on its own ("auto dark mode").
+export const viewport: Viewport = { colorScheme: 'light dark' };
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -62,6 +72,7 @@ export default async function LocaleLayout({
   const fonts = [
     notoSans.variable,
     notoGeorgian.variable,
+    notoArmenian.variable,
     locale === 'zh' ? notoChinese.variable : '',
   ].join(' ');
 

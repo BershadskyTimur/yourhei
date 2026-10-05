@@ -69,7 +69,9 @@ export function InstitutionExplorer({ items, loadError }: Props) {
 
   return (
     <section
+      id="map"
       aria-labelledby="map-title"
+      className="overflow-hidden rounded-3xl border border-line-strong/40 bg-bg shadow-xl"
       onKeyDown={(e) => {
         if (e.key === 'Escape') {
           setSelectedId(null);
@@ -78,10 +80,10 @@ export function InstitutionExplorer({ items, loadError }: Props) {
       }}
     >
       <div className="border-b border-line bg-surface">
-        <div className="mx-auto flex max-w-6xl flex-col gap-3 px-4 py-3 sm:py-4 lg:flex-row lg:items-end lg:justify-between">
-          <h1 id="map-title" className="text-xl font-bold text-brand sm:text-3xl">
-            {t('title')}
-          </h1>
+        <div className="flex flex-col gap-3 px-4 py-3 sm:py-4 lg:flex-row lg:items-end lg:justify-between">
+          <h2 id="map-title" className="text-xl font-bold text-brand sm:text-2xl">
+            {t('heading')}
+          </h2>
 
           <div
             className="relative w-full lg:max-w-sm"
@@ -133,7 +135,7 @@ export function InstitutionExplorer({ items, loadError }: Props) {
           </div>
         </div>
 
-        <div className="mx-auto max-w-6xl px-4 pb-4">
+        <div className="px-4 pb-4">
           <p id="legend-label" className="mb-2 text-sm text-muted">
             {t('legendLabel')}
           </p>
@@ -185,7 +187,7 @@ export function InstitutionExplorer({ items, loadError }: Props) {
       </div>
 
       {/* On phones the map fills the rest of the first screen, so its bottom card is never off-screen. */}
-      <div className="relative h-[calc(100svh-20rem)] min-h-[380px] max-h-[860px] w-full bg-surface-strong sm:h-[70svh] sm:min-h-[420px]">
+      <div className="relative h-[70svh] min-h-[420px] max-h-[760px] w-full bg-surface-strong">
         {!unsupported && (
           <InstitutionMap
             items={filtered}
@@ -259,9 +261,8 @@ export function InstitutionExplorer({ items, loadError }: Props) {
         )}
       </div>
 
-      <div className="mx-auto max-w-6xl px-4 py-3 text-sm text-muted">
+      <div className="px-4 py-3 text-sm text-muted">
         <p aria-live="polite">{t('shown', { shown: filtered.length, total: items.length })}</p>
-        <p className="mt-1">{t('testData', { count: items.length })}</p>
       </div>
     </section>
   );
