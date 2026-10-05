@@ -277,6 +277,7 @@
   "Profile": {
     "title": "Your profile",
     "loading": "Loading…",
+    "loadFailed": "Could not load your profile. Reload the page or try again later.",
     "welcome": "Your e-mail is confirmed. Welcome to YourHEI!",
     "email": "E-mail",
     "plan": "Plan",

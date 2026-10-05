@@ -59,6 +59,7 @@ export function ProfileEditor() {
   });
 
   const [status, setStatus] = useState<'loading' | 'ready'>('loading');
+  const [loadFailed, setLoadFailed] = useState(false);
   const [account, setAccount] = useState<{ id: string; email: string; createdAt: string } | null>(null);
   const [profile, setProfile] = useState<ProfileRow | null>(null);
   const [marketing, setMarketing] = useState(false);
@@ -80,10 +81,15 @@ export function ProfileEditor() {
         router.replace('/login?next=%2Fprofile');
         return;
       }
-      const [{ data: p }, { data: docs }] = await Promise.all([
+      const [{ data: p, error: e1 }, { data: docs, error: e2 }] = await Promise.all([
         supabase.from('profiles').select('*').eq('id', user.id).maybeSingle(),
         supabase.from('user_documents').select('doc_type, status, details').eq('user_id', user.id),
       ]);
+      // No table (the database is not set up) or no profile row: saving could never work, so say so.
+      if (e1 || e2 || !p) {
+        console.error('[profile] could not load the profile', e1 ?? e2 ?? 'no profile row');
+        setLoadFailed(true);
+      }
       const row = p as ProfileRow | null;
       setAccount({ id: user.id, email: user.email ?? '', createdAt: user.created_at });
       setProfile(row);
@@ -116,15 +122,18 @@ export function ProfileEditor() {
     const minor = (calcAge(values.birthDate) ?? 99) < 18;
     const rows = documentsToDb(values.documents, minor);
 
-    const { error: profileError } = await supabase
+    // .select() returns the changed rows: none means there was no profile row, so nothing was saved.
+    const { data: updated, error: profileError } = await supabase
       .from('profiles')
       .update(profileValuesToDb(values))
-      .eq('id', account.id);
-    if (profileError) {
+      .eq('id', account.id)
+      .select('id');
+    if (profileError || !updated?.length) {
+      if (profileError) console.error('[profile] save failed', profileError);
       setSaving(false);
       setSaveMessage({
         kind: 'error',
-        text: profileError.message.includes('age_below_threshold')
+        text: profileError?.message.includes('age_below_threshold')
           ? t('ageBlocked', { age: minAgeFor(values.residenceCountry) })
           : t('saveFailed'),
       });
@@ -200,6 +209,11 @@ export function ProfileEditor() {
 
   return (
     <div className="space-y-8">
+      {loadFailed && (
+        <p role="alert" className="rounded-xl border border-danger p-4 font-medium text-danger">
+          {t('loadFailed')}
+        </p>
+      )}
       {params.get('welcome') === '1' && (
         <p role="status" className="rounded-xl border border-line-strong bg-accent-soft p-4 font-medium">
           {t('welcome')}

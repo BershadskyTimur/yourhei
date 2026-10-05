@@ -223,6 +223,12 @@ create trigger on_auth_user_created
   after insert on auth.users
   for each row execute function public.handle_new_user();
 
+-- Accounts created before this file was run have no profile yet: give them an empty one,
+-- which the person fills in on the profile page.
+insert into public.profiles (id)
+select id from auth.users
+on conflict (id) do nothing;
+
 -- The same age rule when the profile is edited: the birth date or the country cannot be
 -- changed to something below the minimum age.
 create or replace function public.enforce_age_on_profile_update()
