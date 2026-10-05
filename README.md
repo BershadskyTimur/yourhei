@@ -12,6 +12,7 @@ npm run typecheck  # проверка типов
 npm test           # юнит-тесты (Vitest)
 npm run test:e2e   # браузерные тесты (Playwright)
 npm run seed:build # пересобрать тестовые данные из data/seed/raw_wikidata.json
+node scripts/build-reference.mjs # пересобрать справочник стран и SQL к нему
 ```
 
 Данные заведений: Wikidata (CC0). Карта: © участники OpenStreetMap, OpenFreeMap.

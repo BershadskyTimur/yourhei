@@ -13,7 +13,9 @@
     "login": "登录",
     "loginSoon": "登录功能即将上线",
     "language": "语言",
-    "toggleTheme": "切换浅色 / 深色主题"
+    "toggleTheme": "切换浅色 / 深色主题",
+    "profile": "个人资料",
+    "logout": "退出登录"
   },
   "Footer": {
     "navLabel": "网站信息",
@@ -83,13 +85,11 @@
     },
     "privacy": {
       "title": "隐私政策",
-      "banner": "模板——需由律师审核。",
-      "body": "完整文本将在开放注册前补充。目前本站不收集个人数据，也不使用第三方追踪器。"
+      "banner": "模板——需由律师审核。"
     },
     "terms": {
       "title": "使用条款",
-      "banner": "模板——需由律师审核。",
-      "body": "完整文本将在开放注册前补充。"
+      "banner": "模板——需由律师审核。"
     },
     "comingSoon": {
       "title": "敬请期待",
@@ -100,6 +100,249 @@
       "title": "页面不存在",
       "body": "你访问的页面不存在。",
       "home": "返回首页"
+    }
+  },
+  "Subregions": {
+    "eastern-europe": "东欧",
+    "northern-europe": "北欧",
+    "southern-europe": "南欧",
+    "western-europe": "西欧",
+    "central-asia": "中亚",
+    "eastern-asia": "东亚",
+    "south-eastern-asia": "东南亚",
+    "southern-asia": "南亚",
+    "western-asia": "西亚"
+  },
+  "Register": {
+    "title": "创建账号",
+    "intro": "只需四个简短步骤。在创建账号之前，你的回答只保存在此浏览器中。",
+    "progressLabel": "注册进度",
+    "stepOf": "第 {current} 步，共 {total} 步",
+    "steps": {
+      "search": "你在找什么",
+      "about": "关于你",
+      "documents": "证件",
+      "account": "账号"
+    },
+    "back": "上一步",
+    "next": "下一步",
+    "create": "创建账号",
+    "creating": "正在创建账号…",
+    "alreadyHave": "已有账号？",
+    "loginLink": "登录",
+    "search": {
+      "regionsTitle": "地区",
+      "regionsHint": "可选择一个或多个，下方可进一步调整国家。",
+      "regions": {
+        "caucasus-ca-ee": "高加索、中亚和东欧",
+        "europe": "欧洲",
+        "asia": "亚洲"
+      },
+      "countriesTitle": "国家",
+      "countriesHint": "已选中所选地区的全部国家，请取消不需要的国家。",
+      "pickRegion": "请先选择地区。",
+      "selectAll": "全选",
+      "clearAll": "全部取消",
+      "groupLabel": "国家：{group}",
+      "typesTitle": "机构类型",
+      "typesHint": "可选择一个或多个。"
+    },
+    "about": {
+      "birthDate": "出生日期",
+      "birthDateWhy": "用于核对你所在国家的最低年龄，并展示合适的专业。",
+      "gender": "性别",
+      "genderWhy": "用于单一性别学校和宿舍。你也可以选择不透露。",
+      "male": "男",
+      "female": "女",
+      "undisclosed": "不愿透露",
+      "residence": "居住国家",
+      "residenceWhy": "决定最低年龄、显示货币和学历认证规则。",
+      "residencePlaceholder": "选择国家",
+      "citizenship": "国籍（可多选）",
+      "citizenshipWhy": "签证规则和入学要求取决于国籍。",
+      "countrySearch": "输入国家名称",
+      "remove": "移除 {name}",
+      "noMatches": "没有匹配的国家",
+      "ageCheck": "我已年满 {age} 岁",
+      "ageCheckWhy": "最低年龄取决于你的居住国家。"
+    },
+    "documents": {
+      "intro": "请标明你已有哪些证件。这只是状态：无需上传任何文件。",
+      "why": "我们据此显示入学还缺少什么。",
+      "status": {
+        "have": "已有",
+        "in_progress": "办理中",
+        "none": "没有"
+      },
+      "visaCountries": "在哪些国家有效？",
+      "expectedDate": "预计取得日期",
+      "eduKind": "是哪种证件？",
+      "eduSchool": "中学毕业证书",
+      "eduDiploma": "学位证书（学院或大学）",
+      "items": {
+        "passport": "护照",
+        "study_visa": "学习签证或居留许可",
+        "education": "毕业证书 / 学位证书",
+        "transcript": "成绩单",
+        "apostille": "海牙认证或领事认证",
+        "notarized_translation": "证件公证翻译",
+        "recognition": "学历认证",
+        "proof_of_funds": "资金证明（银行流水、担保信、冻结账户）",
+        "health_insurance": "医疗保险",
+        "parental_consent": "父母出具的出国留学公证同意书（未满 18 岁）"
+      }
+    },
+    "account": {
+      "email": "电子邮箱",
+      "emailWhy": "用于登录和接收服务通知。",
+      "password": "密码",
+      "passwordHint": "至少 10 个字符，包含字母和数字。",
+      "show": "显示密码",
+      "hide": "隐藏密码",
+      "consent": "我已阅读并接受<privacy>隐私政策</privacy>和<terms>使用条款</terms>。",
+      "marketing": "通过邮件向我发送新闻和提示（可选）。",
+      "checkEmailTitle": "请查收邮件",
+      "checkEmailText": "我们已向 {email} 发送确认链接。请打开链接完成注册，也请查看垃圾邮件文件夹。",
+      "resend": "重新发送链接",
+      "resent": "链接已重新发送。",
+      "notConfigured": "目前无法注册：服务尚未配置。"
+    },
+    "underage": {
+      "title": "非常抱歉",
+      "text": "你暂时无法注册：你所在国家的最低年龄为 {age} 岁。未创建账号，你输入的内容也未被保存。",
+      "home": "返回首页"
+    },
+    "errors": {
+      "required": "请填写此项",
+      "regionsMin": "请至少选择一个地区",
+      "countriesMin": "请至少选择一个国家",
+      "typesMin": "请至少选择一种类型",
+      "birthInvalid": "请输入有效的出生日期",
+      "dateInvalid": "请输入有效的日期",
+      "genderRequired": "请选择一项",
+      "residenceRequired": "请选择居住国家",
+      "citizenshipRequired": "请至少添加一个国籍",
+      "ageCheckRequired": "请确认你的年龄",
+      "emailInvalid": "请输入有效的邮箱地址",
+      "consentRequired": "必须同意此项",
+      "passwordTooShort": "请至少使用 10 个字符",
+      "passwordNeedsLetter": "请加入字母",
+      "passwordNeedsDigit": "请加入数字",
+      "passwordCommon": "此密码过于常见",
+      "passwordLikeEmail": "密码不能包含你邮箱中的用户名",
+      "signUpFailed": "无法创建账号，请重试。",
+      "rateLimit": "尝试次数过多，请等待几分钟后重试。",
+      "network": "无网络连接。请检查网络后重试。"
+    }
+  },
+  "Login": {
+    "title": "登录",
+    "email": "电子邮箱",
+    "password": "密码",
+    "submit": "登录",
+    "submitting": "正在登录…",
+    "forgot": "忘记密码？",
+    "noAccount": "还没有账号？",
+    "register": "立即创建",
+    "resend": "重新发送确认链接",
+    "resent": "链接已重新发送，请查收邮件。",
+    "notConfigured": "目前无法登录：服务尚未配置。",
+    "notices": {
+      "link": "此链接已过期，或在其他浏览器中打开。如果你已确认邮箱，直接登录即可。"
+    },
+    "errors": {
+      "invalid": "邮箱或密码错误。",
+      "notConfirmed": "请先确认邮箱：打开我们发给你的链接。",
+      "generic": "无法登录，请重试。",
+      "rateLimit": "尝试次数过多，请等待几分钟后重试。"
+    }
+  },
+  "Forgot": {
+    "title": "重置密码",
+    "text": "输入你的邮箱，我们会发送设置新密码的链接。",
+    "email": "电子邮箱",
+    "submit": "发送链接",
+    "sent": "如果该地址已有账号，链接正在发送，请查收邮件。",
+    "back": "返回登录"
+  },
+  "Reset": {
+    "title": "设置新密码",
+    "newPassword": "新密码",
+    "submit": "保存密码",
+    "done": "密码已更改，下次登录时请使用新密码。",
+    "toProfile": "前往个人资料",
+    "noSession": "此链接已过期，请重新申请。",
+    "requestNew": "重新申请链接"
+  },
+  "Profile": {
+    "title": "你的个人资料",
+    "loading": "加载中…",
+    "welcome": "邮箱已确认，欢迎使用 YourHEI！",
+    "email": "电子邮箱",
+    "plan": "套餐",
+    "planFree": "免费",
+    "planPremium": "高级版",
+    "sections": {
+      "search": "你在找什么",
+      "about": "关于你",
+      "documents": "证件",
+      "privacy": "邮箱与隐私"
+    },
+    "save": "保存",
+    "saving": "正在保存…",
+    "saved": "已保存",
+    "saveFailed": "保存失败，请重试。",
+    "ageBlocked": "此出生日期或国家不满足最低年龄要求（{age} 岁）。",
+    "marketing": "通过邮件向我发送新闻和提示",
+    "survey": {
+      "title": "告诉我们更多你的计划",
+      "text": "用于生成推荐的问卷即将上线。"
+    },
+    "data": {
+      "title": "你的数据",
+      "exportText": "将我们保存的关于你的全部数据下载为一个文件。",
+      "export": "下载我的数据",
+      "exportFailed": "无法生成文件，请重试。",
+      "deleteText": "删除你的账号和全部数据，此操作无法撤销。",
+      "delete": "删除账号和全部数据",
+      "confirmText": "确定吗？你的资料、证件信息和登录将立即被删除。",
+      "confirm": "是的，全部删除",
+      "cancel": "取消",
+      "deleteFailed": "无法删除账号，请重试。"
+    }
+  },
+  "Legal": {
+    "privacy": {
+      "intro": "本模板说明 YourHEI 收集哪些数据以及原因。内容并非最终版本：网站上线前必须由律师审核。",
+      "s1Title": "我们是谁",
+      "s1Text": "YourHEI 是一个帮助考生选择求学去向的项目。关于你的数据的联系方式将在上线前公布于此。",
+      "s2Title": "我们收集什么",
+      "s2Text": "仅收集匹配所需的信息：邮箱和密码（密码只以安全哈希形式保存，绝不以明文保存）、出生日期、性别（可选择不透露）、居住国家、国籍、你在找什么，以及证件状态。我们不收集证件的复印件。",
+      "s3Title": "为什么要询问",
+      "s3Text": "出生日期和居住国家用于核对你所在国家的最低年龄。国籍、居住地和证件用于显示签证规则以及入学还缺少什么。性别对单一性别学校和宿舍很重要。邮箱用于登录和接收服务通知。",
+      "s4Title": "数据存放在哪里",
+      "s4Text": "在你删除账号之前，数据保存在我们的数据库服务商（Supabase）处。访问规则确保每个人只能看到自己的数据。",
+      "s5Title": "你的权利",
+      "s5Text": "你可以在个人资料中修改全部数据、下载副本并删除账号及全部数据。删除立即生效，无法撤销。只有在你勾选了可选项时，我们才会通过邮件发送新闻和提示，你可以随时在个人资料中关闭。",
+      "s6Title": "最低年龄",
+      "s6Text": "我们只为达到其居住国家最低年龄的人注册（视国家而定，为 14、16 或 18 岁）。如果你未达到，则不会创建账号，你输入的内容也不会被保存。",
+      "s7Title": "Cookie 与追踪器",
+      "s7Text": "本站不使用统计分析、广告或第三方追踪器，只在你的浏览器中保存技术数据：语言、主题和登录会话。在开启统计或广告之前，会先添加 Cookie 同意横幅。"
+    },
+    "terms": {
+      "intro": "本模板描述使用 YourHEI 的规则。内容并非最终版本：网站上线前必须由律师审核。",
+      "s1Title": "服务内容",
+      "s1Text": "YourHEI 在地图上显示教育机构，并根据你的回答推荐选项。现阶段免费。",
+      "s2Title": "你的账号",
+      "s2Text": "请提供真实信息并妥善保管密码。一人一个账号。你必须已达到居住国家的最低年龄。",
+      "s3Title": "仅供参考，不构成建议",
+      "s3Text": "机构数据来自公开来源，可能已过时或不完整。申请前请务必核对官方网站。推荐不代表保证录取。",
+      "s4Title": "合理使用",
+      "s4Text": "请勿滥用本服务：不得自动批量抓取数据，不得试图破坏系统，不得提交虚假举报。",
+      "s5Title": "变更与终止",
+      "s5Text": "我们可能更改服务和本条款，重要变更会在网站上公告。你可以随时删除账号。",
+      "s6Title": "责任",
+      "s6Text": "服务按现状提供。责任限制和适用法律将在律师审核本文后补充。"
     }
   }
 }

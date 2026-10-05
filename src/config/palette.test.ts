@@ -46,6 +46,9 @@ const TEXT_PAIRS: [string, string, number][] = [
   ['footer-text', 'footer-bg', 4.5],
   ['footer-muted', 'footer-bg', 4.5],
   ['on-cluster', 'cluster', 4.5],
+  ['danger', 'bg', 4.5],
+  ['danger', 'surface', 4.5],
+  ['danger', 'accent-soft', 4.5],
 ];
 const UI_PAIRS: [string, string, number][] = [
   ['border-strong', 'bg', 3],
