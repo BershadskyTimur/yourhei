@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useState } from 'react';
 import { Link } from '@/i18n/navigation';
+import { safeHttpUrl } from '@/lib/safe-url';
 import { getSupabaseBrowser, isSupabaseConfigured } from '@/lib/supabase/client';
 
 // The admin panel is an internal tool for the site owner, so it is in Russian only (not translated).
@@ -162,7 +163,7 @@ function Institutions() {
 
   useEffect(() => {
     let live = true;
-    const term = q.trim().replace(/[%,()]/g, '');
+    const term = q.trim().replace(/[^\p{L}\p{N} '-]/gu, '');
     let query = getSupabaseBrowser()!
       .from('institutions')
       .select('id, slug, type, country, city, names, website, ownership, founded_year, status', { count: 'exact' })
@@ -404,7 +405,7 @@ function Programs() {
                   {p.free ? ' · бесплатно' : ''}
                 </div>
                 {typeof p.application_url === 'string' && (
-                  <a href={p.application_url} target="_blank" rel="noopener noreferrer" className="text-sm underline">
+                  <a href={safeHttpUrl(p.application_url) ?? undefined} target="_blank" rel="noopener noreferrer" className="text-sm underline">
                     Официальная страница
                   </a>
                 )}

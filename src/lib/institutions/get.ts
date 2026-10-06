@@ -1,4 +1,5 @@
 import { createClient } from '@supabase/supabase-js';
+import { safeHttpUrl } from '../safe-url';
 import seed from '../../../data/seed/institutions.json';
 import { isInstitutionType, type MapInstitution } from './types';
 
@@ -47,7 +48,7 @@ function fromSeed(): MapInstitution[] {
             names: s.names,
             lat: s.lat,
             lng: s.lng,
-            website: s.website,
+            website: safeHttpUrl(s.website),
             foundedYear: s.foundedYear,
           },
         ]
@@ -106,7 +107,7 @@ export async function getMapInstitutions(): Promise<InstitutionsResult> {
             names: r.names,
             lat: r.lat,
             lng: r.lng,
-            website: r.website,
+            website: safeHttpUrl(r.website),
             foundedYear: r.founded_year,
           },
         ]
