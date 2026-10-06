@@ -215,6 +215,34 @@ begin
 end
 $draft$;
 
+-- CA/university-of-toronto
+do $draft$
+declare v uuid;
+begin
+  select id into v from public.institutions where country = 'CA' and slug = 'university-of-toronto';
+  if v is null then raise exception 'Institution CA/university-of-toronto is not in the database: run the institutions import first'; end if;
+  update public.institutions set
+    website = coalesce('https://www.utoronto.ca', website), ownership = 'public', founded_year = coalesce(null, founded_year),
+    dormitory = null, description = '{"en":"Canada''s largest research university, in Toronto. International tuition is charged per programme and is much higher than for Canadian students.","ru":"Крупнейший исследовательский университет Канады, в Торонто. Плата для иностранцев зависит от программы и намного выше, чем для канадцев."}'::jsonb, city_size = 'megapolis',
+    climate = 'cold', size = 'large', features = array['internship', 'exchange']::text[],
+    status = 'draft', verified_at = null
+  where id = v;
+  delete from public.programs where institution_id = v;
+  insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
+    v, '{"original":"Arts and Science (first year)","en":"Arts and Science (first year)","ru":"Искусства и науки (первый год)"}'::jsonb, 'bachelor', '0500', array['en']::text[], null, 'on_campus', array[]::text[],
+    '[{"amount":66110,"currency":"CAD","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://future.utoronto.ca/', '2026/2027', 'draft', null);
+  insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
+    v, '{"original":"Applied Science and Engineering","en":"Applied Science and Engineering","ru":"Прикладные науки и инженерия"}'::jsonb, 'bachelor', '0710', array['en']::text[], null, 'on_campus', array[]::text[],
+    '[{"amount":72860,"currency":"CAD","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://future.utoronto.ca/', '2026/2027', 'draft', null);
+  delete from public.scholarships where institution_id = v;
+  delete from public.rankings where institution_id = v;
+  delete from public.sources where entity = 'institution' and entity_id = v::text;
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[1].tuition[0].amount', 'https://discover.engineering.utoronto.ca/finances/', '2026-10-06', 'medium');
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[0].tuition[0].amount', 'https://planningandbudget.utoronto.ca/wp-content/uploads/2026/04/2026-27-Tuition-Fee-Report_FINAL.pdf', '2026-10-06', 'medium');
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[1].tuition[0].amount', 'https://planningandbudget.utoronto.ca/wp-content/uploads/2026/04/2026-27-Tuition-Fee-Report_FINAL.pdf', '2026-10-06', 'medium');
+end
+$draft$;
+
 -- CN/peking-university
 do $draft$
 declare v uuid;
@@ -294,6 +322,70 @@ begin
   insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[5].tuition[0].amount', 'https://international.join-tsinghua.edu.cn/Admission1/Fees.htm', '2026-10-06', 'high');
   insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[6].tuition[0].amount', 'https://international.join-tsinghua.edu.cn/Admission1/Fees.htm', '2026-10-06', 'high');
   insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[7].tuition[0].amount', 'https://international.join-tsinghua.edu.cn/Admission1/Fees.htm', '2026-10-06', 'high');
+end
+$draft$;
+
+-- CN/university-of-hong-kong
+do $draft$
+declare v uuid;
+begin
+  select id into v from public.institutions where country = 'CN' and slug = 'university-of-hong-kong';
+  if v is null then raise exception 'Institution CN/university-of-hong-kong is not in the database: run the institutions import first'; end if;
+  update public.institutions set
+    website = coalesce('https://www.hku.hk', website), ownership = 'public', founded_year = coalesce(null, founded_year),
+    dormitory = null, description = '{"en":"Hong Kong''s oldest university, teaching in English. Non-local students pay a higher fee than local students.","ru":"Старейший университет Гонконга, обучение на английском. Для нелокальных студентов плата выше, чем для местных."}'::jsonb, city_size = 'megapolis',
+    climate = 'warm', size = 'large', features = array['exchange']::text[],
+    status = 'draft', verified_at = null
+  where id = v;
+  delete from public.programs where institution_id = v;
+  insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
+    v, '{"original":"Engineering (Faculty of Engineering)","en":"Engineering (Faculty of Engineering)","ru":"Инженерия"}'::jsonb, 'bachelor', '0710', array['en']::text[], null, 'on_campus', array[]::text[],
+    '[{"amount":249000,"currency":"HKD","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[{"exam":"ielts","min":6.5}],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://admissions.hku.hk/', '2026/2027', 'draft', null);
+  insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
+    v, '{"original":"Science (Faculty of Science)","en":"Science (Faculty of Science)","ru":"Естественные науки"}'::jsonb, 'bachelor', '0500', array['en']::text[], null, 'on_campus', array[]::text[],
+    '[{"amount":249000,"currency":"HKD","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[{"exam":"ielts","min":6.5}],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://admissions.hku.hk/', '2026/2027', 'draft', null);
+  insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
+    v, '{"original":"Computing and Data Science (School of Computing and Data Science)","en":"Computing and Data Science (School of Computing and Data Science)","ru":"Информатика и наука о данных"}'::jsonb, 'bachelor', '0613', array['en']::text[], null, 'on_campus', array[]::text[],
+    '[{"amount":249000,"currency":"HKD","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[{"exam":"ielts","min":6.5}],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://admissions.hku.hk/', '2026/2027', 'draft', null);
+  insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
+    v, '{"original":"Medicine (Faculty of Medicine)","en":"Medicine (Faculty of Medicine)","ru":"Медицина"}'::jsonb, 'bachelor', '0912', array['en']::text[], null, 'on_campus', array[]::text[],
+    '[{"amount":249000,"currency":"HKD","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[{"exam":"ielts","min":6.5}],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://admissions.hku.hk/', '2026/2027', 'draft', null);
+  insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
+    v, '{"original":"Dentistry (Faculty of Dentistry)","en":"Dentistry (Faculty of Dentistry)","ru":"Стоматология"}'::jsonb, 'bachelor', '0911', array['en']::text[], null, 'on_campus', array[]::text[],
+    '[{"amount":249000,"currency":"HKD","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[{"exam":"ielts","min":6.5}],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://admissions.hku.hk/', '2026/2027', 'draft', null);
+  insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
+    v, '{"original":"Business and Economics (Faculty of Business and Economics)","en":"Business and Economics (Faculty of Business and Economics)","ru":"Бизнес и экономика"}'::jsonb, 'bachelor', '0413', array['en']::text[], null, 'on_campus', array[]::text[],
+    '[{"amount":224000,"currency":"HKD","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[{"exam":"ielts","min":6.5}],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://admissions.hku.hk/', '2026/2027', 'draft', null);
+  insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
+    v, '{"original":"Arts (Faculty of Arts)","en":"Arts (Faculty of Arts)","ru":"Гуманитарные науки"}'::jsonb, 'bachelor', '0220', array['en']::text[], null, 'on_campus', array[]::text[],
+    '[{"amount":224000,"currency":"HKD","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[{"exam":"ielts","min":6.5}],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://admissions.hku.hk/', '2026/2027', 'draft', null);
+  insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
+    v, '{"original":"Social Sciences (Faculty of Social Sciences)","en":"Social Sciences (Faculty of Social Sciences)","ru":"Социальные науки"}'::jsonb, 'bachelor', '0310', array['en']::text[], null, 'on_campus', array[]::text[],
+    '[{"amount":224000,"currency":"HKD","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[{"exam":"ielts","min":6.5}],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://admissions.hku.hk/', '2026/2027', 'draft', null);
+  insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
+    v, '{"original":"Law (Faculty of Law)","en":"Law (Faculty of Law)","ru":"Право"}'::jsonb, 'bachelor', '0421', array['en']::text[], null, 'on_campus', array[]::text[],
+    '[{"amount":224000,"currency":"HKD","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[{"exam":"ielts","min":6.5}],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://admissions.hku.hk/', '2026/2027', 'draft', null);
+  insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
+    v, '{"original":"Education (Faculty of Education)","en":"Education (Faculty of Education)","ru":"Образование"}'::jsonb, 'bachelor', '0111', array['en']::text[], null, 'on_campus', array[]::text[],
+    '[{"amount":224000,"currency":"HKD","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[{"exam":"ielts","min":6.5}],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://admissions.hku.hk/', '2026/2027', 'draft', null);
+  insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
+    v, '{"original":"Architecture (Faculty of Architecture)","en":"Architecture (Faculty of Architecture)","ru":"Архитектура"}'::jsonb, 'bachelor', '0731', array['en']::text[], null, 'on_campus', array[]::text[],
+    '[{"amount":224000,"currency":"HKD","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[{"exam":"ielts","min":6.5}],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://admissions.hku.hk/', '2026/2027', 'draft', null);
+  delete from public.scholarships where institution_id = v;
+  delete from public.rankings where institution_id = v;
+  delete from public.sources where entity = 'institution' and entity_id = v::text;
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[0].requirements.min_scores', 'https://admissions.hku.hk/apply/international-qualifications/english-language-requirement', '2026-10-06', 'medium');
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[0].tuition[0].amount', 'https://www.hku.hk/en/admission-aid/tuition-fee-scholarships', '2026-10-06', 'high');
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[1].tuition[0].amount', 'https://www.hku.hk/en/admission-aid/tuition-fee-scholarships', '2026-10-06', 'high');
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[2].tuition[0].amount', 'https://www.hku.hk/en/admission-aid/tuition-fee-scholarships', '2026-10-06', 'high');
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[3].tuition[0].amount', 'https://www.hku.hk/en/admission-aid/tuition-fee-scholarships', '2026-10-06', 'high');
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[4].tuition[0].amount', 'https://www.hku.hk/en/admission-aid/tuition-fee-scholarships', '2026-10-06', 'high');
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[5].tuition[0].amount', 'https://www.hku.hk/en/admission-aid/tuition-fee-scholarships', '2026-10-06', 'high');
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[6].tuition[0].amount', 'https://www.hku.hk/en/admission-aid/tuition-fee-scholarships', '2026-10-06', 'high');
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[7].tuition[0].amount', 'https://www.hku.hk/en/admission-aid/tuition-fee-scholarships', '2026-10-06', 'high');
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[8].tuition[0].amount', 'https://www.hku.hk/en/admission-aid/tuition-fee-scholarships', '2026-10-06', 'high');
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[9].tuition[0].amount', 'https://www.hku.hk/en/admission-aid/tuition-fee-scholarships', '2026-10-06', 'high');
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[10].tuition[0].amount', 'https://www.hku.hk/en/admission-aid/tuition-fee-scholarships', '2026-10-06', 'high');
 end
 $draft$;
 
@@ -403,6 +495,81 @@ begin
   insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[19].tuition[0].amount', 'https://www.xjtlu.edu.cn/en/admissions/global/fees-and-scholarships', '2026-10-06', 'high');
   insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[20].tuition[0].amount', 'https://www.xjtlu.edu.cn/en/admissions/global/fees-and-scholarships', '2026-10-06', 'high');
   insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[21].tuition[0].amount', 'https://www.xjtlu.edu.cn/en/admissions/global/fees-and-scholarships', '2026-10-06', 'high');
+end
+$draft$;
+
+-- CZ/charles-university
+do $draft$
+declare v uuid;
+begin
+  select id into v from public.institutions where country = 'CZ' and slug = 'charles-university';
+  if v is null then raise exception 'Institution CZ/charles-university is not in the database: run the institutions import first'; end if;
+  update public.institutions set
+    website = coalesce('https://cuni.cz', website), ownership = 'public', founded_year = coalesce(null, founded_year),
+    dormitory = null, description = '{"en":"The oldest and largest university in the Czech Republic, in Prague. Tuition for studies in English depends on the faculty and programme.","ru":"Старейший и крупнейший университет Чехии, в Праге. Стоимость обучения на английском зависит от факультета и программы."}'::jsonb, city_size = 'megapolis',
+    climate = 'temperate', size = 'large', features = array['exchange']::text[],
+    status = 'draft', verified_at = null
+  where id = v;
+  delete from public.programs where institution_id = v;
+  insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
+    v, '{"original":"Liberal Arts and Humanities (Faculty of Humanities)","en":"Liberal Arts and Humanities (Faculty of Humanities)","ru":"Свободные искусства и гуманитарные науки (факультет гуманитарных наук)"}'::jsonb, 'bachelor', '0220', array['en']::text[], 3, 'on_campus', array[]::text[],
+    '[{"amount":5000,"currency":"EUR","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate"],"min_scores":[],"min_gpa":null,"entrance_exams":"General Academic Prerequisites (GAP) test: critical thinking, text analysis, logical reasoning","interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://fhs.cuni.cz/FHSENG-524.html', '2026/2027', 'draft', null);
+  insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
+    v, '{"original":"History and Area Studies (Faculty of Social Sciences)","en":"History and Area Studies (Faculty of Social Sciences)","ru":"История и регионоведение (факультет социальных наук)"}'::jsonb, 'bachelor', '0222', array['en']::text[], 3, 'on_campus', array[]::text[],
+    '[{"amount":5000,"currency":"EUR","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate"],"min_scores":[],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://ims.fsv.cuni.cz/en/academics/bachelors-degree-programmes/history-and-area-studies-full-time-study-english/tuition-fees', '2026/2027', 'draft', null);
+  delete from public.scholarships where institution_id = v;
+  delete from public.rankings where institution_id = v;
+  delete from public.sources where entity = 'institution' and entity_id = v::text;
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[1].tuition[0].amount', 'https://ims.fsv.cuni.cz/en/academics/bachelors-degree-programmes/history-and-area-studies-full-time-study-english/tuition-fees', '2026-10-06', 'high');
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[0].tuition[0].amount', 'https://fhs.cuni.cz/FHSENG-524.html', '2026-10-06', 'high');
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[1].tuition[0].amount', 'https://fhs.cuni.cz/FHSENG-524.html', '2026-10-06', 'high');
+end
+$draft$;
+
+-- DE/technical-university-of-munich
+do $draft$
+declare v uuid;
+begin
+  select id into v from public.institutions where country = 'DE' and slug = 'technical-university-of-munich';
+  if v is null then raise exception 'Institution DE/technical-university-of-munich is not in the database: run the institutions import first'; end if;
+  update public.institutions set
+    website = coalesce('https://www.tum.de/en/', website), ownership = 'public', founded_year = coalesce(null, founded_year),
+    dormitory = null, description = '{"en":"A leading technical university in Munich. Since winter semester 2024/25 students from outside the EU/EEA pay tuition (EUR 2,000 or 3,000 per semester for bachelor programmes).","ru":"Ведущий технический университет в Мюнхене. С зимнего семестра 2024/25 студенты не из ЕС/ЕЭЗ платят за обучение (2000 или 3000 евро за семестр на бакалавриате)."}'::jsonb, city_size = 'megapolis',
+    climate = 'temperate', size = 'large', features = array['internship', 'exchange']::text[],
+    status = 'draft', verified_at = null
+  where id = v;
+  delete from public.programs where institution_id = v;
+  insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
+    v, '{"original":"Management and Technology (B.Sc.)","en":"Management and Technology (B.Sc.)","ru":"Менеджмент и технологии (B.Sc.)"}'::jsonb, 'bachelor', '0413', array['en', 'de']::text[], 3, 'on_campus', array['10']::text[],
+    '[{"amount":2000,"currency":"EUR","period":"semester","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[],"min_gpa":null,"entrance_exams":"Aptitude assessment procedure (school grades and subject performance)","interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://www.tum.de/en/studies/degree-programs/detail/management-and-technology-bachelor-of-science-bsc', '2026/2027', 'draft', null);
+  delete from public.scholarships where institution_id = v;
+  delete from public.rankings where institution_id = v;
+  delete from public.sources where entity = 'institution' and entity_id = v::text;
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[0].intakes', 'https://www.tum.de/en/studies/degree-programs/detail/management-and-technology-bachelor-of-science-bsc', '2026-10-06', 'medium');
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[0].tuition[0].amount', 'https://www.tum.de/en/studies/degree-programs/detail/management-and-technology-bachelor-of-science-bsc', '2026-10-06', 'high');
+end
+$draft$;
+
+-- FI/aalto-university
+do $draft$
+declare v uuid;
+begin
+  select id into v from public.institutions where country = 'FI' and slug = 'aalto-university';
+  if v is null then raise exception 'Institution FI/aalto-university is not in the database: run the institutions import first'; end if;
+  update public.institutions set
+    website = coalesce('https://www.aalto.fi/en', website), ownership = 'public', founded_year = coalesce(null, founded_year),
+    dormitory = null, description = '{"en":"A Finnish university of technology, business and art near Helsinki. Non-EU/EEA bachelor students pay a yearly fee that depends on the field.","ru":"Финский университет технологий, бизнеса и искусства рядом с Хельсинки. Студенты не из ЕС/ЕЭЗ платят ежегодный взнос, зависящий от направления."}'::jsonb, city_size = 'medium',
+    climate = 'cold', size = 'large', features = array['internship', 'exchange']::text[],
+    status = 'draft', verified_at = null
+  where id = v;
+  delete from public.programs where institution_id = v;
+  insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
+    v, '{"original":"International Business (BSc)","en":"International Business (BSc)","ru":"Международный бизнес (бакалавр)"}'::jsonb, 'bachelor', '0413', array['en']::text[], null, 'on_campus', array[]::text[],
+    '[{"amount":12000,"currency":"EUR","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://www.aalto.fi/en/study-options/international-business-bachelor-of-science-and-master-of-science-economics-and-business', '2026/2027', 'draft', null);
+  delete from public.scholarships where institution_id = v;
+  delete from public.rankings where institution_id = v;
+  delete from public.sources where entity = 'institution' and entity_id = v::text;
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[0].tuition[0].amount', 'https://www.aalto.fi/en/international-students/paying-the-tuition-fee', '2026-10-06', 'high');
 end
 $draft$;
 
@@ -740,6 +907,65 @@ begin
 end
 $draft$;
 
+-- IE/trinity-college-dublin
+do $draft$
+declare v uuid;
+begin
+  select id into v from public.institutions where country = 'IE' and slug = 'trinity-college-dublin';
+  if v is null then
+    insert into public.institutions (slug, type, country, city, names, location, website, status) values ('trinity-college-dublin', 'university', 'IE', '{"en":"Dublin","ru":"Дублин"}'::jsonb, '{"original":"Trinity College Dublin","en":"Trinity College Dublin","ru":"Тринити-колледж Дублин"}'::jsonb, extensions.ST_SetSRID(extensions.ST_MakePoint(-6.2577, 53.3444), 4326)::extensions.geography, 'https://www.tcd.ie', 'draft') returning id into v;
+  end if;
+  update public.institutions set
+    website = coalesce('https://www.tcd.ie', website), ownership = 'public', founded_year = coalesce(null, founded_year),
+    dormitory = null, description = '{"en":"Ireland''s oldest university, in the centre of Dublin, teaching in English. Non-EU undergraduates apply directly to Trinity.","ru":"Старейший университет Ирландии в центре Дублина, обучение на английском. Студенты из-за пределов ЕС подают документы напрямую в университет."}'::jsonb, city_size = 'megapolis',
+    climate = 'temperate', size = 'large', features = array['exchange']::text[],
+    status = 'draft', verified_at = null
+  where id = v;
+  delete from public.programs where institution_id = v;
+  insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
+    v, '{"original":"Business, Economic and Social Studies (B.E.S.S.)","en":"Business, Economic and Social Studies (B.E.S.S.)","ru":"Бизнес, экономика и социальные науки (B.E.S.S.)"}'::jsonb, 'bachelor', '0310', array['en']::text[], null, 'on_campus', array[]::text[],
+    '[{"amount":22580,"currency":"EUR","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[{"exam":"ielts","min":6.5}],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://www.tcd.ie/study/apply/making-an-application/undergraduate/', '2026/2027', 'draft', null);
+  insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
+    v, '{"original":"Biology and Biomedical Sciences","en":"Biology and Biomedical Sciences","ru":"Биология и биомедицинские науки"}'::jsonb, 'bachelor', '0511', array['en']::text[], null, 'on_campus', array[]::text[],
+    '[{"amount":29570,"currency":"EUR","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[{"exam":"ielts","min":6.5}],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://www.tcd.ie/study/apply/making-an-application/undergraduate/', '2026/2027', 'draft', null);
+  insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
+    v, '{"original":"Engineering (common entry)","en":"Engineering (common entry)","ru":"Инженерия (общий набор)"}'::jsonb, 'bachelor', '0710', array['en']::text[], null, 'on_campus', array[]::text[],
+    '[{"amount":29570,"currency":"EUR","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[{"exam":"ielts","min":6.5}],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://www.tcd.ie/study/apply/making-an-application/undergraduate/', '2026/2027', 'draft', null);
+  delete from public.scholarships where institution_id = v;
+  delete from public.rankings where institution_id = v;
+  delete from public.sources where entity = 'institution' and entity_id = v::text;
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[0].requirements.min_scores', 'https://www.tcd.ie/study/english-language-requirements/', '2026-10-06', 'medium');
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[0].tuition[0].amount', 'https://www.tcd.ie/courses/undergraduate/fees/', '2026-10-06', 'high');
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[1].tuition[0].amount', 'https://www.tcd.ie/courses/undergraduate/fees/', '2026-10-06', 'high');
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[2].tuition[0].amount', 'https://www.tcd.ie/courses/undergraduate/fees/', '2026-10-06', 'high');
+end
+$draft$;
+
+-- JP/university-of-tokyo
+do $draft$
+declare v uuid;
+begin
+  select id into v from public.institutions where country = 'JP' and slug = 'university-of-tokyo';
+  if v is null then
+    insert into public.institutions (slug, type, country, city, names, location, website, status) values ('university-of-tokyo', 'university', 'JP', '{"original":"東京","en":"Tokyo","ru":"Токио"}'::jsonb, '{"original":"東京大学","en":"University of Tokyo","ru":"Токийский университет"}'::jsonb, extensions.ST_SetSRID(extensions.ST_MakePoint(139.76232, 35.71339), 4326)::extensions.geography, 'https://www.u-tokyo.ac.jp/en/', 'draft') returning id into v;
+  end if;
+  update public.institutions set
+    website = coalesce('https://www.u-tokyo.ac.jp/en/', website), ownership = 'public', founded_year = coalesce(null, founded_year),
+    dormitory = null, description = '{"en":"Japan''s top national university in Tokyo. Most undergraduate courses are taught in Japanese; the same tuition applies to Japanese and international students.","ru":"Ведущий национальный университет Японии в Токио. Большинство программ бакалавриата преподаётся на японском; плата одинакова для японцев и иностранцев."}'::jsonb, city_size = 'megapolis',
+    climate = 'temperate', size = 'large', features = array['exchange']::text[],
+    status = 'draft', verified_at = null
+  where id = v;
+  delete from public.programs where institution_id = v;
+  insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
+    v, '{"original":"Undergraduate programmes (taught in Japanese)","en":"Undergraduate programmes (taught in Japanese)","ru":"Бакалавриат (на японском языке)"}'::jsonb, 'bachelor', null, array['ja']::text[], null, 'on_campus', array[]::text[],
+    '[{"amount":642960,"currency":"JPY","period":"year","applies_to":"all"}]'::jsonb, false, '{"documents":["passport","school_certificate"],"min_scores":[],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://www.u-tokyo.ac.jp/adm/inbound/en/programs-admissions-u.html', '2026/2027', 'draft', null);
+  delete from public.scholarships where institution_id = v;
+  delete from public.rankings where institution_id = v;
+  delete from public.sources where entity = 'institution' and entity_id = v::text;
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[0].tuition[0].amount', 'https://www.u-tokyo.ac.jp/en/prospective-students/tuition_fees.html', '2026-10-06', 'high');
+end
+$draft$;
+
 -- KZ/astana-it-university
 do $draft$
 declare v uuid;
@@ -874,6 +1100,190 @@ begin
   insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[12].tuition[0].amount', 'https://nu.edu.kz/admissions/fees-and-funding/', '2026-10-06', 'high');
   insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[13].tuition[0].amount', 'https://nu.edu.kz/admissions/fees-and-funding/', '2026-10-06', 'high');
   insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[14].tuition[0].amount', 'https://nu.edu.kz/admissions/fees-and-funding/', '2026-10-06', 'high');
+end
+$draft$;
+
+-- NL/delft-university-of-technology
+do $draft$
+declare v uuid;
+begin
+  select id into v from public.institutions where country = 'NL' and slug = 'delft-university-of-technology';
+  if v is null then raise exception 'Institution NL/delft-university-of-technology is not in the database: run the institutions import first'; end if;
+  update public.institutions set
+    website = coalesce('https://www.tudelft.nl/en', website), ownership = 'public', founded_year = coalesce(null, founded_year),
+    dormitory = null, description = '{"en":"The largest and oldest Dutch technical university. Non-EU/EFTA bachelor students pay a fixed institutional fee. This card holds only the fee, not individual programmes.","ru":"Крупнейший и старейший технический университет Нидерландов. Студенты не из ЕС/ЕАСТ платят фиксированную плату. В карточке только цена, без отдельных программ."}'::jsonb, city_size = 'small_student',
+    climate = 'temperate', size = 'large', features = array['internship', 'exchange']::text[],
+    status = 'draft', verified_at = null
+  where id = v;
+  delete from public.programs where institution_id = v;
+  insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
+    v, '{"original":"Bachelor programmes (non-EU tuition fee)","en":"Bachelor programmes (non-EU tuition fee)","ru":"Бакалаврские программы (плата для студентов не из ЕС)"}'::jsonb, 'bachelor', null, array['en', 'nl']::text[], 3, 'on_campus', array[]::text[],
+    '[{"amount":19906,"currency":"EUR","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://www.tudelft.nl/en/education/admission-and-application/bachelors-programmes', '2026/2027', 'draft', null);
+  delete from public.scholarships where institution_id = v;
+  delete from public.rankings where institution_id = v;
+  delete from public.sources where entity = 'institution' and entity_id = v::text;
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[0].tuition[0].amount', 'https://www.tudelft.nl/en/education/study-programme-orientation/practical-matters/tuition-fee-finances', '2026-10-06', 'high');
+end
+$draft$;
+
+-- NL/university-of-amsterdam
+do $draft$
+declare v uuid;
+begin
+  select id into v from public.institutions where country = 'NL' and slug = 'university-of-amsterdam';
+  if v is null then raise exception 'Institution NL/university-of-amsterdam is not in the database: run the institutions import first'; end if;
+  update public.institutions set
+    website = coalesce('https://www.uva.nl/en', website), ownership = 'public', founded_year = coalesce(null, founded_year),
+    dormitory = null, description = '{"en":"A large public research university in Amsterdam with many English-taught bachelor programmes. Non-EEA students pay an institutional fee that depends on the faculty.","ru":"Крупный государственный исследовательский университет в Амстердаме с множеством бакалаврских программ на английском. Студенты не из ЕЭЗ платят сбор, зависящий от факультета."}'::jsonb, city_size = 'megapolis',
+    climate = 'temperate', size = 'large', features = array['exchange']::text[],
+    status = 'draft', verified_at = null
+  where id = v;
+  delete from public.programs where institution_id = v;
+  insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
+    v, '{"original":"Humanities (Faculty of Humanities)","en":"Humanities (Faculty of Humanities)","ru":"Гуманитарные науки"}'::jsonb, 'bachelor', '0220', array['en']::text[], null, 'on_campus', array[]::text[],
+    '[{"amount":17500,"currency":"EUR","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://www.uva.nl/en/education/bachelor-s', '2026/2027', 'draft', null);
+  insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
+    v, '{"original":"Economics and Business (Faculty of Economics and Business)","en":"Economics and Business (Faculty of Economics and Business)","ru":"Экономика и бизнес"}'::jsonb, 'bachelor', '0413', array['en']::text[], null, 'on_campus', array[]::text[],
+    '[{"amount":13900,"currency":"EUR","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://www.uva.nl/en/education/bachelor-s', '2026/2027', 'draft', null);
+  insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
+    v, '{"original":"Social and Behavioural Sciences (Faculty of Social and Behavioural Sciences)","en":"Social and Behavioural Sciences (Faculty of Social and Behavioural Sciences)","ru":"Социальные и поведенческие науки"}'::jsonb, 'bachelor', '0310', array['en']::text[], null, 'on_campus', array[]::text[],
+    '[{"amount":16670,"currency":"EUR","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://www.uva.nl/en/education/bachelor-s', '2026/2027', 'draft', null);
+  insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
+    v, '{"original":"Law (Amsterdam Law School)","en":"Law (Amsterdam Law School)","ru":"Право"}'::jsonb, 'bachelor', '0421', array['en']::text[], null, 'on_campus', array[]::text[],
+    '[{"amount":17500,"currency":"EUR","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://www.uva.nl/en/education/bachelor-s', '2026/2027', 'draft', null);
+  insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
+    v, '{"original":"Science (Faculty of Science)","en":"Science (Faculty of Science)","ru":"Естественные науки"}'::jsonb, 'bachelor', '0500', array['en']::text[], null, 'on_campus', array[]::text[],
+    '[{"amount":21800,"currency":"EUR","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://www.uva.nl/en/education/bachelor-s', '2026/2027', 'draft', null);
+  insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
+    v, '{"original":"Liberal arts and sciences (Amsterdam University College)","en":"Liberal arts and sciences (Amsterdam University College)","ru":"Свободные искусства и науки (Amsterdam University College)"}'::jsonb, 'bachelor', null, array['en']::text[], null, 'on_campus', array[]::text[],
+    '[{"amount":20430,"currency":"EUR","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://www.uva.nl/en/education/bachelor-s', '2026/2027', 'draft', null);
+  delete from public.scholarships where institution_id = v;
+  delete from public.rankings where institution_id = v;
+  delete from public.sources where entity = 'institution' and entity_id = v::text;
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[0].tuition[0].amount', 'https://www.uva.nl/en/education/fees-and-funding/tuition-fees/tuition-fees.html', '2026-10-06', 'high');
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[1].tuition[0].amount', 'https://www.uva.nl/en/education/fees-and-funding/tuition-fees/tuition-fees.html', '2026-10-06', 'high');
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[2].tuition[0].amount', 'https://www.uva.nl/en/education/fees-and-funding/tuition-fees/tuition-fees.html', '2026-10-06', 'high');
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[3].tuition[0].amount', 'https://www.uva.nl/en/education/fees-and-funding/tuition-fees/tuition-fees.html', '2026-10-06', 'high');
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[4].tuition[0].amount', 'https://www.uva.nl/en/education/fees-and-funding/tuition-fees/tuition-fees.html', '2026-10-06', 'high');
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[5].tuition[0].amount', 'https://www.uva.nl/en/education/fees-and-funding/tuition-fees/tuition-fees.html', '2026-10-06', 'high');
+end
+$draft$;
+
+-- NZ/university-of-auckland
+do $draft$
+declare v uuid;
+begin
+  select id into v from public.institutions where country = 'NZ' and slug = 'university-of-auckland';
+  if v is null then raise exception 'Institution NZ/university-of-auckland is not in the database: run the institutions import first'; end if;
+  update public.institutions set
+    website = coalesce('https://www.auckland.ac.nz', website), ownership = 'public', founded_year = coalesce(null, founded_year),
+    dormitory = null, description = '{"en":"The largest university in New Zealand, in Auckland, with broad undergraduate offerings in science, engineering, business, law, arts, health and design.","ru":"Крупнейший университет Новой Зеландии, в Окленде: бакалавриат по наукам, инженерии, бизнесу, праву, гуманитарным наукам, медицине и дизайну."}'::jsonb, city_size = 'megapolis',
+    climate = 'temperate', size = 'large', features = array['exchange']::text[],
+    status = 'draft', verified_at = null
+  where id = v;
+  delete from public.programs where institution_id = v;
+  insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
+    v, '{"original":"Bachelor of Engineering (Honours)","en":"Bachelor of Engineering (Honours)","ru":"Бакалавр инженерии (Honours)"}'::jsonb, 'bachelor', '0710', array['en']::text[], null, 'on_campus', array[]::text[],
+    '[{"amount":58009,"currency":"NZD","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://www.auckland.ac.nz/en/study/applications-and-admissions.html', '2026/2027', 'draft', null);
+  insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
+    v, '{"original":"Bachelor of Science","en":"Bachelor of Science","ru":"Бакалавр наук"}'::jsonb, 'bachelor', '0500', array['en']::text[], null, 'on_campus', array[]::text[],
+    '[{"amount":47221,"currency":"NZD","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://www.auckland.ac.nz/en/study/applications-and-admissions.html', '2026/2027', 'draft', null);
+  insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
+    v, '{"original":"Bachelor of Commerce","en":"Bachelor of Commerce","ru":"Бакалавр коммерции"}'::jsonb, 'bachelor', '0413', array['en']::text[], null, 'on_campus', array[]::text[],
+    '[{"amount":48133,"currency":"NZD","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://www.auckland.ac.nz/en/study/applications-and-admissions.html', '2026/2027', 'draft', null);
+  insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
+    v, '{"original":"Bachelor of Arts","en":"Bachelor of Arts","ru":"Бакалавр искусств (гуманитарные науки)"}'::jsonb, 'bachelor', '0220', array['en']::text[], null, 'on_campus', array[]::text[],
+    '[{"amount":40225,"currency":"NZD","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://www.auckland.ac.nz/en/study/applications-and-admissions.html', '2026/2027', 'draft', null);
+  insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
+    v, '{"original":"Bachelor of Laws","en":"Bachelor of Laws","ru":"Бакалавр права"}'::jsonb, 'bachelor', '0421', array['en']::text[], null, 'on_campus', array[]::text[],
+    '[{"amount":47218,"currency":"NZD","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://www.auckland.ac.nz/en/study/applications-and-admissions.html', '2026/2027', 'draft', null);
+  insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
+    v, '{"original":"Bachelor of Architectural Studies","en":"Bachelor of Architectural Studies","ru":"Бакалавр архитектурных исследований"}'::jsonb, 'bachelor', '0731', array['en']::text[], null, 'on_campus', array[]::text[],
+    '[{"amount":52148,"currency":"NZD","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://www.auckland.ac.nz/en/study/applications-and-admissions.html', '2026/2027', 'draft', null);
+  insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
+    v, '{"original":"Bachelor of Design","en":"Bachelor of Design","ru":"Бакалавр дизайна"}'::jsonb, 'bachelor', '0210', array['en']::text[], null, 'on_campus', array[]::text[],
+    '[{"amount":49226,"currency":"NZD","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://www.auckland.ac.nz/en/study/applications-and-admissions.html', '2026/2027', 'draft', null);
+  insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
+    v, '{"original":"Bachelor of Health Sciences","en":"Bachelor of Health Sciences","ru":"Бакалавр наук о здоровье"}'::jsonb, 'bachelor', '0910', array['en']::text[], null, 'on_campus', array[]::text[],
+    '[{"amount":42818,"currency":"NZD","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://www.auckland.ac.nz/en/study/applications-and-admissions.html', '2026/2027', 'draft', null);
+  insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
+    v, '{"original":"Bachelor of Nursing","en":"Bachelor of Nursing","ru":"Бакалавр сестринского дела"}'::jsonb, 'bachelor', '0913', array['en']::text[], null, 'on_campus', array[]::text[],
+    '[{"amount":42818,"currency":"NZD","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://www.auckland.ac.nz/en/study/applications-and-admissions.html', '2026/2027', 'draft', null);
+  insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
+    v, '{"original":"Bachelor of Pharmacy","en":"Bachelor of Pharmacy","ru":"Бакалавр фармации"}'::jsonb, 'bachelor', '0916', array['en']::text[], null, 'on_campus', array[]::text[],
+    '[{"amount":55214,"currency":"NZD","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://www.auckland.ac.nz/en/study/applications-and-admissions.html', '2026/2027', 'draft', null);
+  insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
+    v, '{"original":"Bachelor of Music","en":"Bachelor of Music","ru":"Бакалавр музыки"}'::jsonb, 'bachelor', '0215', array['en']::text[], null, 'on_campus', array[]::text[],
+    '[{"amount":47221,"currency":"NZD","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://www.auckland.ac.nz/en/study/applications-and-admissions.html', '2026/2027', 'draft', null);
+  insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
+    v, '{"original":"Bachelor of Global Studies","en":"Bachelor of Global Studies","ru":"Бакалавр глобальных исследований"}'::jsonb, 'bachelor', '0310', array['en']::text[], null, 'on_campus', array[]::text[],
+    '[{"amount":52148,"currency":"NZD","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://www.auckland.ac.nz/en/study/applications-and-admissions.html', '2026/2027', 'draft', null);
+  insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
+    v, '{"original":"Bachelor of Urban Planning (Honours)","en":"Bachelor of Urban Planning (Honours)","ru":"Бакалавр градостроительства (Honours)"}'::jsonb, 'bachelor', '0732', array['en']::text[], null, 'on_campus', array[]::text[],
+    '[{"amount":47221,"currency":"NZD","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://www.auckland.ac.nz/en/study/applications-and-admissions.html', '2026/2027', 'draft', null);
+  delete from public.scholarships where institution_id = v;
+  delete from public.rankings where institution_id = v;
+  delete from public.sources where entity = 'institution' and entity_id = v::text;
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[0].tuition[0].amount', 'https://www.auckland.ac.nz/en/study/fees-and-money-matters/tuition-fees/international-student-fees/undergraduate-international-fees.html', '2026-10-06', 'high');
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[1].tuition[0].amount', 'https://www.auckland.ac.nz/en/study/fees-and-money-matters/tuition-fees/international-student-fees/undergraduate-international-fees.html', '2026-10-06', 'high');
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[2].tuition[0].amount', 'https://www.auckland.ac.nz/en/study/fees-and-money-matters/tuition-fees/international-student-fees/undergraduate-international-fees.html', '2026-10-06', 'high');
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[3].tuition[0].amount', 'https://www.auckland.ac.nz/en/study/fees-and-money-matters/tuition-fees/international-student-fees/undergraduate-international-fees.html', '2026-10-06', 'high');
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[4].tuition[0].amount', 'https://www.auckland.ac.nz/en/study/fees-and-money-matters/tuition-fees/international-student-fees/undergraduate-international-fees.html', '2026-10-06', 'high');
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[5].tuition[0].amount', 'https://www.auckland.ac.nz/en/study/fees-and-money-matters/tuition-fees/international-student-fees/undergraduate-international-fees.html', '2026-10-06', 'high');
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[6].tuition[0].amount', 'https://www.auckland.ac.nz/en/study/fees-and-money-matters/tuition-fees/international-student-fees/undergraduate-international-fees.html', '2026-10-06', 'high');
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[7].tuition[0].amount', 'https://www.auckland.ac.nz/en/study/fees-and-money-matters/tuition-fees/international-student-fees/undergraduate-international-fees.html', '2026-10-06', 'high');
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[8].tuition[0].amount', 'https://www.auckland.ac.nz/en/study/fees-and-money-matters/tuition-fees/international-student-fees/undergraduate-international-fees.html', '2026-10-06', 'high');
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[9].tuition[0].amount', 'https://www.auckland.ac.nz/en/study/fees-and-money-matters/tuition-fees/international-student-fees/undergraduate-international-fees.html', '2026-10-06', 'high');
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[10].tuition[0].amount', 'https://www.auckland.ac.nz/en/study/fees-and-money-matters/tuition-fees/international-student-fees/undergraduate-international-fees.html', '2026-10-06', 'high');
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[11].tuition[0].amount', 'https://www.auckland.ac.nz/en/study/fees-and-money-matters/tuition-fees/international-student-fees/undergraduate-international-fees.html', '2026-10-06', 'high');
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[12].tuition[0].amount', 'https://www.auckland.ac.nz/en/study/fees-and-money-matters/tuition-fees/international-student-fees/undergraduate-international-fees.html', '2026-10-06', 'high');
+end
+$draft$;
+
+-- SE/royal-institute-of-technology
+do $draft$
+declare v uuid;
+begin
+  select id into v from public.institutions where country = 'SE' and slug = 'royal-institute-of-technology';
+  if v is null then raise exception 'Institution SE/royal-institute-of-technology is not in the database: run the institutions import first'; end if;
+  update public.institutions set
+    website = coalesce('https://www.kth.se/en', website), ownership = 'public', founded_year = coalesce(null, founded_year),
+    dormitory = null, description = '{"en":"Sweden''s largest technical university, in Stockholm. Citizens of countries outside the EU/EEA/Switzerland pay tuition fees.","ru":"Крупнейший технический университет Швеции, в Стокгольме. Граждане стран вне ЕС/ЕЭЗ/Швейцарии платят за обучение."}'::jsonb, city_size = 'megapolis',
+    climate = 'cold', size = 'large', features = array['exchange']::text[],
+    status = 'draft', verified_at = null
+  where id = v;
+  delete from public.programs where institution_id = v;
+  insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
+    v, '{"original":"Information and Communication Technology (bachelor)","en":"Information and Communication Technology (bachelor)","ru":"Информационные и коммуникационные технологии (бакалавриат)"}'::jsonb, 'bachelor', '0613', array['en']::text[], 3, 'on_campus', array[]::text[],
+    '[{"amount":423000,"currency":"SEK","period":"total","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, '{"amount":900,"currency":"SEK"}'::jsonb, 'https://www.kth.se/en/studies/bachelor/fees-1.646274', '2026/2027', 'draft', null);
+  delete from public.scholarships where institution_id = v;
+  delete from public.rankings where institution_id = v;
+  delete from public.sources where entity = 'institution' and entity_id = v::text;
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[0].application_fee', 'https://www.kth.se/en/studies/bachelor/fees-1.646274', '2026-10-06', 'high');
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[0].tuition[0].amount', 'https://www.kth.se/en/studies/bachelor/fees-1.646274', '2026-10-06', 'high');
+end
+$draft$;
+
+-- US/massachusetts-institute-of-technology
+do $draft$
+declare v uuid;
+begin
+  select id into v from public.institutions where country = 'US' and slug = 'massachusetts-institute-of-technology';
+  if v is null then raise exception 'Institution US/massachusetts-institute-of-technology is not in the database: run the institutions import first'; end if;
+  update public.institutions set
+    website = coalesce('https://www.mit.edu', website), ownership = 'private', founded_year = coalesce(null, founded_year),
+    dormitory = null, description = '{"en":"A private research university near Boston, known for science and engineering. All undergraduates pay the same tuition.","ru":"Частный исследовательский университет рядом с Бостоном, известный науками и инженерией. Все бакалавры платят одинаковую сумму."}'::jsonb, city_size = 'medium',
+    climate = 'cold', size = 'large', features = array['internship', 'exchange']::text[],
+    status = 'draft', verified_at = null
+  where id = v;
+  delete from public.programs where institution_id = v;
+  insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
+    v, '{"original":"Undergraduate degree programmes (SB)","en":"Undergraduate degree programmes (SB)","ru":"Бакалавриат (SB)"}'::jsonb, 'bachelor', null, array['en']::text[], 4, 'on_campus', array[]::text[],
+    '[{"amount":66720,"currency":"USD","period":"year","applies_to":"all"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://mitadmissions.org/', '2026/2027', 'draft', null);
+  delete from public.scholarships where institution_id = v;
+  delete from public.rankings where institution_id = v;
+  delete from public.sources where entity = 'institution' and entity_id = v::text;
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[0].tuition[0].amount', 'https://registrar.mit.edu/registration-academics/tuition-fees/undergraduate', '2026-10-06', 'high');
 end
 $draft$;
 

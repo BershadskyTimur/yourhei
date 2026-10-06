@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "collected_at": "2026-10-06",
+  "academic_year": "2026/2027",
+  "institution": {
+    "external_ids": {},
+    "description": {
+      "en": "Japan's top national university in Tokyo. Most undergraduate courses are taught in Japanese; the same tuition applies to Japanese and international students.",
+      "ru": "Ведущий национальный университет Японии в Токио. Большинство программ бакалавриата преподаётся на японском; плата одинакова для японцев и иностранцев."
+    },
+    "rankings": [],
+    "dormitory": null,
+    "ownership": "public",
+    "founded_year": null,
+    "names": {
+      "original": "東京大学",
+      "en": "University of Tokyo",
+      "ru": "Токийский университет"
+    },
+    "type": "university",
+    "city": {
+      "original": "東京",
+      "en": "Tokyo",
+      "ru": "Токио"
+    },
+    "website": "https://www.u-tokyo.ac.jp/en/",
+    "location": {
+      "lat": 35.71339,
+      "lng": 139.76232
+    },
+    "city_size": "megapolis",
+    "climate": "temperate",
+    "size": "large",
+    "features": [
+      "exchange"
+    ],
+    "country": "JP"
+  },
+  "programs": [
+    {
+      "names": {
+        "original": "Undergraduate programmes (taught in Japanese)",
+        "en": "Undergraduate programmes (taught in Japanese)",
+        "ru": "Бакалавриат (на японском языке)"
+      },
+      "level": "bachelor",
+      "isced_f": null,
+      "languages": [
+        "ja"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 642960,
+          "currency": "JPY",
+          "period": "year",
+          "applies_to": "all"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.u-tokyo.ac.jp/adm/inbound/en/programs-admissions-u.html"
+    }
+  ],
+  "scholarships": [],
+  "sources": [
+    {
+      "field": "programs[0].tuition[0].amount",
+      "url": "https://www.u-tokyo.ac.jp/en/prospective-students/tuition_fees.html",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    }
+  ],
+  "notes_for_reviewer": "Official u-tokyo.ac.jp pages read 2026-10-06. Annual tuition JPY 642,960 plus a one-time admission fee of JPY 282,000 (not encoded); same for international and Japanese students; Japanese-government scholarship holders pay no tuition. The page gives no academic year (stored as 2026/2027; the search snippet said April 2026 entry). A high level of Japanese is needed for the traditional undergraduate programmes; the English-taught options (PEAK at Komaba, the Global Science Course for transfers into year 3) were NOT collected because their pages did not open. No JLPT minimum found. This card is generic: no majors, no ISCED-F code, durations empty. LOCATION from Wikidata."
+}

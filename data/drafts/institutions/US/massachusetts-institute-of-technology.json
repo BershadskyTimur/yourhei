@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "collected_at": "2026-10-06",
+  "academic_year": "2026/2027",
+  "institution": {
+    "external_ids": {},
+    "description": {
+      "en": "A private research university near Boston, known for science and engineering. All undergraduates pay the same tuition.",
+      "ru": "Частный исследовательский университет рядом с Бостоном, известный науками и инженерией. Все бакалавры платят одинаковую сумму."
+    },
+    "rankings": [],
+    "dormitory": null,
+    "ownership": "private",
+    "founded_year": null,
+    "names": {
+      "original": "Massachusetts Institute of Technology",
+      "en": "Massachusetts Institute of Technology",
+      "ru": "Массачусетский технологический институт"
+    },
+    "type": "university",
+    "city": {
+      "en": "Cambridge, Massachusetts",
+      "ru": "Кембридж, Массачусетс"
+    },
+    "website": "https://www.mit.edu",
+    "city_size": "medium",
+    "climate": "cold",
+    "size": "large",
+    "features": [
+      "internship",
+      "exchange"
+    ],
+    "country": "US"
+  },
+  "programs": [
+    {
+      "names": {
+        "original": "Undergraduate degree programmes (SB)",
+        "en": "Undergraduate degree programmes (SB)",
+        "ru": "Бакалавриат (SB)"
+      },
+      "level": "bachelor",
+      "isced_f": null,
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 66720,
+          "currency": "USD",
+          "period": "year",
+          "applies_to": "all"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://mitadmissions.org/"
+    }
+  ],
+  "scholarships": [],
+  "sources": [
+    {
+      "field": "programs[0].tuition[0].amount",
+      "url": "https://registrar.mit.edu/registration-academics/tuition-fees/undergraduate",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    }
+  ],
+  "notes_for_reviewer": "Official registrar.mit.edu page read 2026-10-06: full tuition for 2026-2027 is USD 33,360 per term (fall and spring), stored as USD 66,720 per year. Student life fee, housing, food and books are extra (not collected; the cost-of-attendance total of about USD 92,760 came from a search summary). MIT meets the demonstrated financial need of admitted students including international ones (from the search summary; not verified here). This card is GENERIC (no majors, no ISCED-F code); the 4-year length is general knowledge. English tests, SAT policy and deadlines not collected."
+}

@@ -1,0 +1,552 @@
+{
+  "schema_version": 1,
+  "collected_at": "2026-10-06",
+  "academic_year": "2026/2027",
+  "institution": {
+    "external_ids": {},
+    "description": {
+      "en": "Hong Kong's oldest university, teaching in English. Non-local students pay a higher fee than local students.",
+      "ru": "Старейший университет Гонконга, обучение на английском. Для нелокальных студентов плата выше, чем для местных."
+    },
+    "rankings": [],
+    "dormitory": null,
+    "ownership": "public",
+    "founded_year": null,
+    "names": {
+      "original": "The University of Hong Kong",
+      "en": "University of Hong Kong",
+      "ru": "Гонконгский университет"
+    },
+    "type": "university",
+    "city": {
+      "en": "Hong Kong",
+      "ru": "Гонконг"
+    },
+    "website": "https://www.hku.hk",
+    "city_size": "megapolis",
+    "climate": "warm",
+    "size": "large",
+    "features": [
+      "exchange"
+    ],
+    "country": "CN"
+  },
+  "programs": [
+    {
+      "names": {
+        "original": "Engineering (Faculty of Engineering)",
+        "en": "Engineering (Faculty of Engineering)",
+        "ru": "Инженерия"
+      },
+      "level": "bachelor",
+      "isced_f": "0710",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 249000,
+          "currency": "HKD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [
+          {
+            "exam": "ielts",
+            "min": 6.5
+          }
+        ],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://admissions.hku.hk/"
+    },
+    {
+      "names": {
+        "original": "Science (Faculty of Science)",
+        "en": "Science (Faculty of Science)",
+        "ru": "Естественные науки"
+      },
+      "level": "bachelor",
+      "isced_f": "0500",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 249000,
+          "currency": "HKD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [
+          {
+            "exam": "ielts",
+            "min": 6.5
+          }
+        ],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://admissions.hku.hk/"
+    },
+    {
+      "names": {
+        "original": "Computing and Data Science (School of Computing and Data Science)",
+        "en": "Computing and Data Science (School of Computing and Data Science)",
+        "ru": "Информатика и наука о данных"
+      },
+      "level": "bachelor",
+      "isced_f": "0613",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 249000,
+          "currency": "HKD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [
+          {
+            "exam": "ielts",
+            "min": 6.5
+          }
+        ],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://admissions.hku.hk/"
+    },
+    {
+      "names": {
+        "original": "Medicine (Faculty of Medicine)",
+        "en": "Medicine (Faculty of Medicine)",
+        "ru": "Медицина"
+      },
+      "level": "bachelor",
+      "isced_f": "0912",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 249000,
+          "currency": "HKD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [
+          {
+            "exam": "ielts",
+            "min": 6.5
+          }
+        ],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://admissions.hku.hk/"
+    },
+    {
+      "names": {
+        "original": "Dentistry (Faculty of Dentistry)",
+        "en": "Dentistry (Faculty of Dentistry)",
+        "ru": "Стоматология"
+      },
+      "level": "bachelor",
+      "isced_f": "0911",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 249000,
+          "currency": "HKD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [
+          {
+            "exam": "ielts",
+            "min": 6.5
+          }
+        ],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://admissions.hku.hk/"
+    },
+    {
+      "names": {
+        "original": "Business and Economics (Faculty of Business and Economics)",
+        "en": "Business and Economics (Faculty of Business and Economics)",
+        "ru": "Бизнес и экономика"
+      },
+      "level": "bachelor",
+      "isced_f": "0413",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 224000,
+          "currency": "HKD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [
+          {
+            "exam": "ielts",
+            "min": 6.5
+          }
+        ],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://admissions.hku.hk/"
+    },
+    {
+      "names": {
+        "original": "Arts (Faculty of Arts)",
+        "en": "Arts (Faculty of Arts)",
+        "ru": "Гуманитарные науки"
+      },
+      "level": "bachelor",
+      "isced_f": "0220",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 224000,
+          "currency": "HKD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [
+          {
+            "exam": "ielts",
+            "min": 6.5
+          }
+        ],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://admissions.hku.hk/"
+    },
+    {
+      "names": {
+        "original": "Social Sciences (Faculty of Social Sciences)",
+        "en": "Social Sciences (Faculty of Social Sciences)",
+        "ru": "Социальные науки"
+      },
+      "level": "bachelor",
+      "isced_f": "0310",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 224000,
+          "currency": "HKD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [
+          {
+            "exam": "ielts",
+            "min": 6.5
+          }
+        ],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://admissions.hku.hk/"
+    },
+    {
+      "names": {
+        "original": "Law (Faculty of Law)",
+        "en": "Law (Faculty of Law)",
+        "ru": "Право"
+      },
+      "level": "bachelor",
+      "isced_f": "0421",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 224000,
+          "currency": "HKD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [
+          {
+            "exam": "ielts",
+            "min": 6.5
+          }
+        ],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://admissions.hku.hk/"
+    },
+    {
+      "names": {
+        "original": "Education (Faculty of Education)",
+        "en": "Education (Faculty of Education)",
+        "ru": "Образование"
+      },
+      "level": "bachelor",
+      "isced_f": "0111",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 224000,
+          "currency": "HKD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [
+          {
+            "exam": "ielts",
+            "min": 6.5
+          }
+        ],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://admissions.hku.hk/"
+    },
+    {
+      "names": {
+        "original": "Architecture (Faculty of Architecture)",
+        "en": "Architecture (Faculty of Architecture)",
+        "ru": "Архитектура"
+      },
+      "level": "bachelor",
+      "isced_f": "0731",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 224000,
+          "currency": "HKD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [
+          {
+            "exam": "ielts",
+            "min": 6.5
+          }
+        ],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://admissions.hku.hk/"
+    }
+  ],
+  "scholarships": [],
+  "sources": [
+    {
+      "field": "programs[0].requirements.min_scores",
+      "url": "https://admissions.hku.hk/apply/international-qualifications/english-language-requirement",
+      "accessed_at": "2026-10-06",
+      "confidence": "medium"
+    },
+    {
+      "field": "programs[0].tuition[0].amount",
+      "url": "https://www.hku.hk/en/admission-aid/tuition-fee-scholarships",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[1].tuition[0].amount",
+      "url": "https://www.hku.hk/en/admission-aid/tuition-fee-scholarships",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[2].tuition[0].amount",
+      "url": "https://www.hku.hk/en/admission-aid/tuition-fee-scholarships",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[3].tuition[0].amount",
+      "url": "https://www.hku.hk/en/admission-aid/tuition-fee-scholarships",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[4].tuition[0].amount",
+      "url": "https://www.hku.hk/en/admission-aid/tuition-fee-scholarships",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[5].tuition[0].amount",
+      "url": "https://www.hku.hk/en/admission-aid/tuition-fee-scholarships",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[6].tuition[0].amount",
+      "url": "https://www.hku.hk/en/admission-aid/tuition-fee-scholarships",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[7].tuition[0].amount",
+      "url": "https://www.hku.hk/en/admission-aid/tuition-fee-scholarships",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[8].tuition[0].amount",
+      "url": "https://www.hku.hk/en/admission-aid/tuition-fee-scholarships",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[9].tuition[0].amount",
+      "url": "https://www.hku.hk/en/admission-aid/tuition-fee-scholarships",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[10].tuition[0].amount",
+      "url": "https://www.hku.hk/en/admission-aid/tuition-fee-scholarships",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    }
+  ],
+  "notes_for_reviewer": "Official hku.hk page read 2026-10-06: tuition for non-local undergraduates of the 2026-27 cohort is HK$224,000 per year (Architecture, Arts, Business and Economics, Education, Law, Social Sciences) and HK$249,000 (Dentistry, Engineering, Medicine, Science, School of Biomedical Engineering, School of Computing and Data Science, School of Innovation). The page lists faculties, not degrees, so the cards are faculty-level, named after the faculties. IELTS 6.5 overall (6.0 in writing and speaking) comes from a search summary of the English-requirement page, which did not open: medium confidence. Durations, deadlines, application fee not collected. NOTE: in the database this university has country CN (Wikidata), so people who choose \"Hong Kong\" (HK) as a country will not see it: consider moving it to HK."
+}

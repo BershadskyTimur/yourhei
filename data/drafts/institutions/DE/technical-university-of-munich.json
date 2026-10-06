@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "collected_at": "2026-10-06",
+  "academic_year": "2026/2027",
+  "institution": {
+    "external_ids": {},
+    "description": {
+      "en": "A leading technical university in Munich. Since winter semester 2024/25 students from outside the EU/EEA pay tuition (EUR 2,000 or 3,000 per semester for bachelor programmes).",
+      "ru": "Ведущий технический университет в Мюнхене. С зимнего семестра 2024/25 студенты не из ЕС/ЕЭЗ платят за обучение (2000 или 3000 евро за семестр на бакалавриате)."
+    },
+    "rankings": [],
+    "dormitory": null,
+    "ownership": "public",
+    "founded_year": null,
+    "names": {
+      "original": "Technische Universität München",
+      "en": "Technical University of Munich",
+      "ru": "Технический университет Мюнхена"
+    },
+    "type": "university",
+    "city": {
+      "original": "München",
+      "en": "Munich",
+      "ru": "Мюнхен"
+    },
+    "website": "https://www.tum.de/en/",
+    "city_size": "megapolis",
+    "climate": "temperate",
+    "size": "large",
+    "features": [
+      "internship",
+      "exchange"
+    ],
+    "country": "DE"
+  },
+  "programs": [
+    {
+      "names": {
+        "original": "Management and Technology (B.Sc.)",
+        "en": "Management and Technology (B.Sc.)",
+        "ru": "Менеджмент и технологии (B.Sc.)"
+      },
+      "level": "bachelor",
+      "isced_f": "0413",
+      "languages": [
+        "en",
+        "de"
+      ],
+      "duration_years": 3,
+      "format": "on_campus",
+      "intakes": [
+        "10"
+      ],
+      "tuition": [
+        {
+          "amount": 2000,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null,
+        "entrance_exams": "Aptitude assessment procedure (school grades and subject performance)"
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.tum.de/en/studies/degree-programs/detail/management-and-technology-bachelor-of-science-bsc"
+    }
+  ],
+  "scholarships": [],
+  "sources": [
+    {
+      "field": "programs[0].intakes",
+      "url": "https://www.tum.de/en/studies/degree-programs/detail/management-and-technology-bachelor-of-science-bsc",
+      "accessed_at": "2026-10-06",
+      "confidence": "medium"
+    },
+    {
+      "field": "programs[0].tuition[0].amount",
+      "url": "https://www.tum.de/en/studies/degree-programs/detail/management-and-technology-bachelor-of-science-bsc",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    }
+  ],
+  "notes_for_reviewer": "Official tum.de pages read 2026-10-06. Non-EU/EEA bachelor tuition is \"usually EUR 2,000 or 3,000 per semester\" depending on the programme (tuition page); Management and Technology B.Sc. is EUR 2,000 per semester (stored as a semester fee, the engine doubles it to a year). Duration 6 semesters (180 ECTS). Language: English (only for the specialisation Computer Engineering) or English and German: I stored en and de, please check. Winter-semester application window 15 May - 15 July; the year was not stated, so no deadline is stored (intake month 10 is the usual winter-semester start, my assumption). The regular semester fee (EUR 97 in summer 2026 in Munich) is extra and not stored. Only this ONE programme was verified: other TUM programmes and their fees (2,000 or 3,000) are not collected. Fee waivers and scholarships exist (not encoded)."
+}

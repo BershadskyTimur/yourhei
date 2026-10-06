@@ -1,0 +1,573 @@
+{
+  "schema_version": 1,
+  "collected_at": "2026-10-06",
+  "academic_year": "2026/2027",
+  "institution": {
+    "external_ids": {},
+    "description": {
+      "en": "The largest university in New Zealand, in Auckland, with broad undergraduate offerings in science, engineering, business, law, arts, health and design.",
+      "ru": "Крупнейший университет Новой Зеландии, в Окленде: бакалавриат по наукам, инженерии, бизнесу, праву, гуманитарным наукам, медицине и дизайну."
+    },
+    "rankings": [],
+    "dormitory": null,
+    "ownership": "public",
+    "founded_year": null,
+    "names": {
+      "original": "University of Auckland",
+      "en": "University of Auckland",
+      "ru": "Оклендский университет"
+    },
+    "type": "university",
+    "city": {
+      "en": "Auckland",
+      "ru": "Окленд"
+    },
+    "website": "https://www.auckland.ac.nz",
+    "city_size": "megapolis",
+    "climate": "temperate",
+    "size": "large",
+    "features": [
+      "exchange"
+    ],
+    "country": "NZ"
+  },
+  "programs": [
+    {
+      "names": {
+        "original": "Bachelor of Engineering (Honours)",
+        "en": "Bachelor of Engineering (Honours)",
+        "ru": "Бакалавр инженерии (Honours)"
+      },
+      "level": "bachelor",
+      "isced_f": "0710",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 58009,
+          "currency": "NZD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.auckland.ac.nz/en/study/applications-and-admissions.html"
+    },
+    {
+      "names": {
+        "original": "Bachelor of Science",
+        "en": "Bachelor of Science",
+        "ru": "Бакалавр наук"
+      },
+      "level": "bachelor",
+      "isced_f": "0500",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 47221,
+          "currency": "NZD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.auckland.ac.nz/en/study/applications-and-admissions.html"
+    },
+    {
+      "names": {
+        "original": "Bachelor of Commerce",
+        "en": "Bachelor of Commerce",
+        "ru": "Бакалавр коммерции"
+      },
+      "level": "bachelor",
+      "isced_f": "0413",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 48133,
+          "currency": "NZD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.auckland.ac.nz/en/study/applications-and-admissions.html"
+    },
+    {
+      "names": {
+        "original": "Bachelor of Arts",
+        "en": "Bachelor of Arts",
+        "ru": "Бакалавр искусств (гуманитарные науки)"
+      },
+      "level": "bachelor",
+      "isced_f": "0220",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 40225,
+          "currency": "NZD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.auckland.ac.nz/en/study/applications-and-admissions.html"
+    },
+    {
+      "names": {
+        "original": "Bachelor of Laws",
+        "en": "Bachelor of Laws",
+        "ru": "Бакалавр права"
+      },
+      "level": "bachelor",
+      "isced_f": "0421",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 47218,
+          "currency": "NZD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.auckland.ac.nz/en/study/applications-and-admissions.html"
+    },
+    {
+      "names": {
+        "original": "Bachelor of Architectural Studies",
+        "en": "Bachelor of Architectural Studies",
+        "ru": "Бакалавр архитектурных исследований"
+      },
+      "level": "bachelor",
+      "isced_f": "0731",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 52148,
+          "currency": "NZD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.auckland.ac.nz/en/study/applications-and-admissions.html"
+    },
+    {
+      "names": {
+        "original": "Bachelor of Design",
+        "en": "Bachelor of Design",
+        "ru": "Бакалавр дизайна"
+      },
+      "level": "bachelor",
+      "isced_f": "0210",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 49226,
+          "currency": "NZD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.auckland.ac.nz/en/study/applications-and-admissions.html"
+    },
+    {
+      "names": {
+        "original": "Bachelor of Health Sciences",
+        "en": "Bachelor of Health Sciences",
+        "ru": "Бакалавр наук о здоровье"
+      },
+      "level": "bachelor",
+      "isced_f": "0910",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 42818,
+          "currency": "NZD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.auckland.ac.nz/en/study/applications-and-admissions.html"
+    },
+    {
+      "names": {
+        "original": "Bachelor of Nursing",
+        "en": "Bachelor of Nursing",
+        "ru": "Бакалавр сестринского дела"
+      },
+      "level": "bachelor",
+      "isced_f": "0913",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 42818,
+          "currency": "NZD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.auckland.ac.nz/en/study/applications-and-admissions.html"
+    },
+    {
+      "names": {
+        "original": "Bachelor of Pharmacy",
+        "en": "Bachelor of Pharmacy",
+        "ru": "Бакалавр фармации"
+      },
+      "level": "bachelor",
+      "isced_f": "0916",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 55214,
+          "currency": "NZD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.auckland.ac.nz/en/study/applications-and-admissions.html"
+    },
+    {
+      "names": {
+        "original": "Bachelor of Music",
+        "en": "Bachelor of Music",
+        "ru": "Бакалавр музыки"
+      },
+      "level": "bachelor",
+      "isced_f": "0215",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 47221,
+          "currency": "NZD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.auckland.ac.nz/en/study/applications-and-admissions.html"
+    },
+    {
+      "names": {
+        "original": "Bachelor of Global Studies",
+        "en": "Bachelor of Global Studies",
+        "ru": "Бакалавр глобальных исследований"
+      },
+      "level": "bachelor",
+      "isced_f": "0310",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 52148,
+          "currency": "NZD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.auckland.ac.nz/en/study/applications-and-admissions.html"
+    },
+    {
+      "names": {
+        "original": "Bachelor of Urban Planning (Honours)",
+        "en": "Bachelor of Urban Planning (Honours)",
+        "ru": "Бакалавр градостроительства (Honours)"
+      },
+      "level": "bachelor",
+      "isced_f": "0732",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 47221,
+          "currency": "NZD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.auckland.ac.nz/en/study/applications-and-admissions.html"
+    }
+  ],
+  "scholarships": [],
+  "sources": [
+    {
+      "field": "programs[0].tuition[0].amount",
+      "url": "https://www.auckland.ac.nz/en/study/fees-and-money-matters/tuition-fees/international-student-fees/undergraduate-international-fees.html",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[1].tuition[0].amount",
+      "url": "https://www.auckland.ac.nz/en/study/fees-and-money-matters/tuition-fees/international-student-fees/undergraduate-international-fees.html",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[2].tuition[0].amount",
+      "url": "https://www.auckland.ac.nz/en/study/fees-and-money-matters/tuition-fees/international-student-fees/undergraduate-international-fees.html",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[3].tuition[0].amount",
+      "url": "https://www.auckland.ac.nz/en/study/fees-and-money-matters/tuition-fees/international-student-fees/undergraduate-international-fees.html",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[4].tuition[0].amount",
+      "url": "https://www.auckland.ac.nz/en/study/fees-and-money-matters/tuition-fees/international-student-fees/undergraduate-international-fees.html",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[5].tuition[0].amount",
+      "url": "https://www.auckland.ac.nz/en/study/fees-and-money-matters/tuition-fees/international-student-fees/undergraduate-international-fees.html",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[6].tuition[0].amount",
+      "url": "https://www.auckland.ac.nz/en/study/fees-and-money-matters/tuition-fees/international-student-fees/undergraduate-international-fees.html",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[7].tuition[0].amount",
+      "url": "https://www.auckland.ac.nz/en/study/fees-and-money-matters/tuition-fees/international-student-fees/undergraduate-international-fees.html",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[8].tuition[0].amount",
+      "url": "https://www.auckland.ac.nz/en/study/fees-and-money-matters/tuition-fees/international-student-fees/undergraduate-international-fees.html",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[9].tuition[0].amount",
+      "url": "https://www.auckland.ac.nz/en/study/fees-and-money-matters/tuition-fees/international-student-fees/undergraduate-international-fees.html",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[10].tuition[0].amount",
+      "url": "https://www.auckland.ac.nz/en/study/fees-and-money-matters/tuition-fees/international-student-fees/undergraduate-international-fees.html",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[11].tuition[0].amount",
+      "url": "https://www.auckland.ac.nz/en/study/fees-and-money-matters/tuition-fees/international-student-fees/undergraduate-international-fees.html",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[12].tuition[0].amount",
+      "url": "https://www.auckland.ac.nz/en/study/fees-and-money-matters/tuition-fees/international-student-fees/undergraduate-international-fees.html",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    }
+  ],
+  "notes_for_reviewer": "Official auckland.ac.nz fees page read 2026-10-06: 2026 international undergraduate fees in NZD per year, as listed. The Bachelor of Science is listed as NZ$47,221-58,009 depending on the subject: I stored the lowest (47,221). Not included: Medicine (admission from Year 2 only, NZ$86,561), Optometry, Communications, Education, Fine Arts, Dance, Medical Imaging, Property, Sport. A compulsory student services fee of NZ$9.44 per point (about NZ$1,133 per year) is not included. The page lists fees for 2026, which I stored as 2026/2027. NOT found: English requirements (IELTS etc.), deadlines, durations (left empty), accommodation. I did not copy the typical 3-4 year durations from memory."
+}

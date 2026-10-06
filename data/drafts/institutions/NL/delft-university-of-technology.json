@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "collected_at": "2026-10-06",
+  "academic_year": "2026/2027",
+  "institution": {
+    "external_ids": {},
+    "description": {
+      "en": "The largest and oldest Dutch technical university. Non-EU/EFTA bachelor students pay a fixed institutional fee. This card holds only the fee, not individual programmes.",
+      "ru": "Крупнейший и старейший технический университет Нидерландов. Студенты не из ЕС/ЕАСТ платят фиксированную плату. В карточке только цена, без отдельных программ."
+    },
+    "rankings": [],
+    "dormitory": null,
+    "ownership": "public",
+    "founded_year": null,
+    "names": {
+      "original": "Technische Universiteit Delft",
+      "en": "Delft University of Technology",
+      "ru": "Делфтский технический университет"
+    },
+    "type": "university",
+    "city": {
+      "original": "Delft",
+      "en": "Delft",
+      "ru": "Делфт"
+    },
+    "website": "https://www.tudelft.nl/en",
+    "city_size": "small_student",
+    "climate": "temperate",
+    "size": "large",
+    "features": [
+      "internship",
+      "exchange"
+    ],
+    "country": "NL"
+  },
+  "programs": [
+    {
+      "names": {
+        "original": "Bachelor programmes (non-EU tuition fee)",
+        "en": "Bachelor programmes (non-EU tuition fee)",
+        "ru": "Бакалаврские программы (плата для студентов не из ЕС)"
+      },
+      "level": "bachelor",
+      "isced_f": null,
+      "languages": [
+        "en",
+        "nl"
+      ],
+      "duration_years": 3,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 19906,
+          "currency": "EUR",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.tudelft.nl/en/education/admission-and-application/bachelors-programmes"
+    }
+  ],
+  "scholarships": [],
+  "sources": [
+    {
+      "field": "programs[0].tuition[0].amount",
+      "url": "https://www.tudelft.nl/en/education/study-programme-orientation/practical-matters/tuition-fee-finances",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    }
+  ],
+  "notes_for_reviewer": "Official tudelft.nl page read 2026-10-06: tuition for non-EU/EFTA bachelor students in 2026-2027 is EUR 19,906 per year; students who were already enrolled at the 2025-26 rate (EUR 17,310) pay a transitional EUR 18,175 (not stored). Non-EU first-year students who need help with a visa must pay by 1 July (23:59 CEST). THIS CARD IS GENERIC: the 16 BSc programmes are not listed, the length of 3 years is a general fact I did not verify on the page, and languages \"en, nl\" are my assumption (several programmes are Dutch-taught). Please treat it as an indication of price only. No ISCED-F code."
+}

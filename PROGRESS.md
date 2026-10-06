@@ -158,3 +158,8 @@
 - KZ: Nazarbayev University, Astana IT University. AZ: ADA University. AM: American University of Armenia, Yerevan State Medical University. GE: Caucasus University, Tbilisi State University (только Computer Science) + 3 прежних. CN: Peking University (2 общие строки), Tsinghua (категории цен), XJTLU (22 программы).
 - Формат карточки теперь может создать заведение, которого нет в базе (поле `institution.location`). У AITU и YSMU координаты приблизительные (центр города), их нужно поправить.
 - Не нашлось/не собрано: цены KIMEP и SDU (в PDF), KBTU (сайт недоступен), Khazar (нет списка программ), требования к английскому у AUA/XJTLU/AITU, стоимость жизни и признание дипломов по странам.
+
+## Подробные данные, вторая волна (октябрь 2026)
+- Добавлено 12 вузов: Auckland (NZ), Trinity College Dublin (IE), Charles University (CZ), TUM (DE, 1 программа), University of Tokyo (JP, общая строка), University of Toronto (CA, 2 направления, medium), HKU (в базе стоит как CN), UvA и TU Delft (NL), Aalto (FI), KTH (SE), MIT (US). Всего 25 вузов, 165 программ.
+- Многие карточки общие (уровень факультета/направления): списки специальностей на страницах не нашлись. Все допущения описаны в `notes_for_reviewer` и в `docs/review/REVIEW.md`.
+- Не удалось: NUS, Khalifa (цена за кредит без числа кредитов), UM Malaysia (цена, похоже, за всю программу), Koç, Warsaw, ETH (PDF не читается), Melbourne (диапазоны цен).
