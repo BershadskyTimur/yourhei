@@ -129,7 +129,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
         </section>
       )}
 
-      <section className="hero-bg mx-4 mt-12 overflow-hidden rounded-lg border border-line xl:mx-auto xl:max-w-[1500px]">
+      <section className="band-dark mx-4 mt-12 overflow-hidden rounded-lg border border-line xl:mx-auto xl:max-w-[1500px]">
         <div className="flex flex-col items-start gap-6 px-6 py-10 sm:px-10 lg:flex-row lg:items-center lg:justify-between">
           <div>
             <h2 className="text-2xl font-semibold text-text">{t('cta.title')}</h2>

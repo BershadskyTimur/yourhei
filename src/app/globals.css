@@ -13,18 +13,18 @@
   color-scheme: only light;
 
   /* Surfaces and text: white page, warm cream cards, near-black text */
-  --bg: #ffffff;
-  --surface: #f6f4f0;
-  --surface-strong: #ebe7e0;
+  --bg: #e8e4dc;
+  --surface: #f1eee8;
+  --surface-strong: #d9d3c6;
   --text: #1d1b18; /* near-black */
-  --text-muted: #5b5750;
+  --text-muted: #4d4942;
   --brand-text: #7c3a14; /* deep bronze: headings and the logo */
 
   /* Orange: the button is a deep orange so white text passes WCAG AA */
   --accent: #9a4a1c;
   --on-accent: #ffffff;
-  --accent-text: #8a4118; /* bronze used as text / links */
-  --accent-soft: #f1e6da;
+  --accent-text: #7f3a12; /* bronze used as text / links */
+  --accent-soft: #e2d6c6;
 
   /* Gold */
   --gold: #b8923f; /* decoration (thin lines, badges) */
@@ -34,26 +34,26 @@
   --danger: #b3261e;
 
   /* Lines and focus */
-  --border: #e4dfd6;
-  --border-strong: #8c8578; /* borders of inputs and buttons */
+  --border: #c9c2b3;
+  --border-strong: #7d7667; /* borders of inputs and buttons */
   --focus: #9a4a1c;
 
   /* Footer: light in the light theme (so the light theme has no dark bands) */
-  --footer-bg: #f0ede7;
-  --footer-text: #1d1b18;
-  --footer-muted: #5b5750;
+  --footer-bg: #26231e;
+  --footer-text: #efebe3;
+  --footer-muted: #c4beb2;
 
   /* Hero band and decorations */
-  --hero-a: #f6f4f0;
-  --hero-b: #f1eee8;
+  --hero-a: #d8d1c3;
+  --hero-b: #cfc7b6;
   --hero-glow: #b8923f;
-  --ad-bg: #f6f4f0;
-  --ad-border: #d6d0c5;
+  --ad-bg: #ddd7ca;
+  --ad-border: #b5ad9c;
 
   /* Map: clusters and type dots (the same in both themes; each dot also has an icon) */
   --cluster: #9a4a1c;
   --on-cluster: #ffffff;
-  --map-ring: #ffffff;
+  --map-ring: #f1eee8;
   --type-university: #e0a100;
   --type-university-on: #1c1917;
   --type-college: #c0392b;
@@ -203,4 +203,19 @@ li {
 .gold-rule {
   height: 1px;
   background: var(--border);
+}
+/* A dark band inside the light theme: the text tokens are switched to light ones for everything inside. */
+.band-dark {
+  background: #26231e;
+  color: #efebe3;
+  --text: #efebe3;
+  --text-muted: #c4beb2;
+  --brand-text: #d9bd78;
+  --accent-text: #e0aa72;
+  --border: #3a362f;
+  --border-strong: #85806f;
+  --surface-strong: #35312a;
+}
+[data-theme="dark"] .band-dark {
+  background: #181714;
 }
