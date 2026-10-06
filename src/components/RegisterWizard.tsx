@@ -158,7 +158,7 @@ function Wizard({ draft }: { draft: ReturnType<typeof loadDraft> }) {
   if (underageMin !== null) {
     return (
       <section aria-labelledby="underage-title" className="rounded-2xl border border-line-strong bg-accent-soft p-6">
-        <h2 id="underage-title" className="text-2xl font-bold text-brand">
+        <h2 id="underage-title" className="text-2xl font-semibold text-text">
           {t('underage.title')}
         </h2>
         <p className="mt-3 text-lg">{t('underage.text', { age: underageMin })}</p>
@@ -172,7 +172,7 @@ function Wizard({ draft }: { draft: ReturnType<typeof loadDraft> }) {
   if (sentTo) {
     return (
       <section aria-labelledby="sent-title" className="rounded-2xl border border-line bg-surface p-6">
-        <h2 id="sent-title" className="text-2xl font-bold text-brand">
+        <h2 id="sent-title" className="text-2xl font-semibold text-text">
           {t('account.checkEmailTitle')}
         </h2>
         <p className="mt-3 text-lg">{t('account.checkEmailText', { email: sentTo })}</p>
@@ -214,7 +214,7 @@ function Wizard({ draft }: { draft: ReturnType<typeof loadDraft> }) {
         </p>
       </div>
 
-      <h2 ref={headingRef} tabIndex={-1} className="mt-4 text-2xl font-bold text-brand outline-none">
+      <h2 ref={headingRef} tabIndex={-1} className="mt-4 text-2xl font-semibold text-text outline-none">
         {t(`steps.${STEP_KEYS[step]}`)}
       </h2>
 

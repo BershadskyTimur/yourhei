@@ -9,48 +9,49 @@
  * Contrast of the text/background pairs is checked by src/config/palette.test.ts.
  */
 :root {
-  color-scheme: light;
+  /* "only" stops browsers from darkening the page on their own (forced / auto dark mode) */
+  color-scheme: only light;
 
   /* Surfaces and text: white page, warm cream cards, near-black text */
   --bg: #ffffff;
-  --surface: #fff7ea;
-  --surface-strong: #ffe8c2;
-  --text: #1c1917; /* near-black */
-  --text-muted: #57534e;
-  --brand-text: #a84508; /* orange: headings and the logo */
+  --surface: #f6f4f0;
+  --surface-strong: #ebe7e0;
+  --text: #1d1b18; /* near-black */
+  --text-muted: #5b5750;
+  --brand-text: #7c3a14; /* deep bronze: headings and the logo */
 
   /* Orange: the button is a deep orange so white text passes WCAG AA */
-  --accent: #c2410c;
+  --accent: #9a4a1c;
   --on-accent: #ffffff;
-  --accent-text: #a84508; /* orange used as text / links */
-  --accent-soft: #ffedd5;
+  --accent-text: #8a4118; /* bronze used as text / links */
+  --accent-soft: #f1e6da;
 
   /* Gold */
-  --gold: #e0a100; /* decoration (lines, dots, badges) */
-  --gold-text: #8a6100;
+  --gold: #b8923f; /* decoration (thin lines, badges) */
+  --gold-text: #7a5c14;
 
   /* Errors */
   --danger: #b3261e;
 
   /* Lines and focus */
-  --border: #f3dcb0;
-  --border-strong: #9a7b4f; /* borders of inputs and buttons */
-  --focus: #c2410c;
+  --border: #e4dfd6;
+  --border-strong: #8c8578; /* borders of inputs and buttons */
+  --focus: #9a4a1c;
 
   /* Footer: light in the light theme (so the light theme has no dark bands) */
-  --footer-bg: #fff1d6;
-  --footer-text: #1c1917;
-  --footer-muted: #57534e;
+  --footer-bg: #f0ede7;
+  --footer-text: #1d1b18;
+  --footer-muted: #5b5750;
 
   /* Hero band and decorations */
-  --hero-a: #fff3d6;
-  --hero-b: #ffe2bf;
-  --hero-glow: #ffb347;
-  --ad-bg: #fffaf0;
-  --ad-border: #d9b36a;
+  --hero-a: #f6f4f0;
+  --hero-b: #f1eee8;
+  --hero-glow: #b8923f;
+  --ad-bg: #f6f4f0;
+  --ad-border: #d6d0c5;
 
   /* Map: clusters and type dots (the same in both themes; each dot also has an icon) */
-  --cluster: #c2410c;
+  --cluster: #9a4a1c;
   --on-cluster: #ffffff;
   --map-ring: #ffffff;
   --type-university: #e0a100;
@@ -70,36 +71,36 @@
 [data-theme="dark"] {
   color-scheme: dark;
 
-  --bg: #0f0e0c;
-  --surface: #1a1713;
-  --surface-strong: #2a2218;
-  --text: #f6f1e7; /* warm near-white */
-  --text-muted: #d6cfc2;
-  --brand-text: #fbbf24; /* gold */
+  --bg: #11100e;
+  --surface: #181714;
+  --surface-strong: #24221e;
+  --text: #efebe3; /* warm near-white */
+  --text-muted: #c4beb2;
+  --brand-text: #d9bd78; /* soft gold */
 
-  --accent: #f97316;
-  --on-accent: #111111;
-  --accent-text: #fdba74;
-  --accent-soft: #33200d;
+  --accent: #d08a4a;
+  --on-accent: #14120f;
+  --accent-text: #e0aa72;
+  --accent-soft: #2a211a;
 
-  --gold: #fbbf24;
-  --gold-text: #fbbf24;
+  --gold: #c9a45a;
+  --gold-text: #d9bd78;
 
   --danger: #ff8a80;
 
-  --border: #3a3226;
-  --border-strong: #8d7b5e;
-  --focus: #fdba74;
+  --border: #2e2b25;
+  --border-strong: #85806f;
+  --focus: #e0aa72;
 
-  --footer-bg: #14120f;
-  --footer-text: #f6f1e7;
-  --footer-muted: #d6cfc2;
+  --footer-bg: #151412;
+  --footer-text: #efebe3;
+  --footer-muted: #c4beb2;
 
-  --hero-a: #21170b;
-  --hero-b: #33200d;
-  --hero-glow: #c2410c;
-  --ad-bg: #17140f;
-  --ad-border: #6b5a3a;
+  --hero-a: #181714;
+  --hero-b: #1d1b17;
+  --hero-glow: #c9a45a;
+  --ad-bg: #151412;
+  --ad-border: #36332c;
 }
 @theme inline {
   --color-bg: var(--bg);
@@ -188,32 +189,18 @@ li {
   filter: invert(1);
 }
 
-/* ---- Decorations (colours come only from the tokens above) ---- */
+/* ---- Decorations: flat and matte (colours come only from the tokens above) ---- */
 .hero-bg {
-  background:
-    radial-gradient(60rem 28rem at 85% -10%, color-mix(in srgb, var(--hero-glow) 35%, transparent), transparent 60%),
-    radial-gradient(40rem 22rem at 0% 110%, color-mix(in srgb, var(--gold) 28%, transparent), transparent 60%),
-    linear-gradient(135deg, var(--hero-a), var(--hero-b));
+  background: linear-gradient(180deg, var(--hero-a), var(--hero-b));
+  border-bottom: 1px solid var(--border);
 }
 .hero-dots {
-  background-image: radial-gradient(color-mix(in srgb, var(--gold) 55%, transparent) 1.2px, transparent 1.2px);
-  background-size: 22px 22px;
-  mask-image: linear-gradient(to left, black, transparent 70%);
+  display: none;
 }
 .gold-gradient-text {
-  background: linear-gradient(90deg, var(--accent-text), var(--gold-text));
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-[data-theme="dark"] .gold-gradient-text {
-  background: linear-gradient(90deg, var(--accent-text), var(--gold));
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  color: var(--accent-text);
 }
 .gold-rule {
-  height: 3px;
-  border-radius: 3px;
-  background: linear-gradient(90deg, var(--accent), var(--gold), transparent);
+  height: 1px;
+  background: var(--border);
 }

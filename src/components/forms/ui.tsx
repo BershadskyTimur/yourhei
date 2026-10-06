@@ -6,9 +6,9 @@ import type { ReactNode } from 'react';
 export const inputClass =
   'h-11 w-full rounded-xl border border-line-strong bg-bg px-3 text-text placeholder:text-muted';
 export const primaryButton =
-  'inline-flex h-11 items-center justify-center rounded-full bg-accent px-6 font-semibold text-on-accent hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-60';
+  'inline-flex h-11 items-center justify-center rounded-lg bg-accent px-6 font-semibold text-on-accent hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-60';
 export const secondaryButton =
-  'inline-flex h-11 items-center justify-center rounded-full border border-line-strong bg-bg px-6 font-semibold text-text hover:bg-surface-strong disabled:opacity-60';
+  'inline-flex h-11 items-center justify-center rounded-lg border border-line-strong bg-bg px-6 font-semibold text-text hover:bg-surface-strong disabled:opacity-60';
 
 /** A translated validation message. The code is a key of Register.errors.* */
 export function ErrorText({ code, id }: { code?: string; id?: string }) {

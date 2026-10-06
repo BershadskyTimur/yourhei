@@ -15,7 +15,7 @@ export function LocaleSwitcher() {
       aria-label={t('language')}
       value={locale}
       onChange={(e) => router.replace(pathname, { locale: e.target.value })}
-      className="h-10 max-w-[9rem] rounded-full border border-line-strong bg-bg px-3 text-sm text-text"
+      className="h-10 max-w-[9rem] rounded-lg border border-line-strong bg-bg px-3 text-sm text-text"
     >
       {LOCALES.map((l) => (
         <option key={l.code} value={l.code} lang={l.code}>

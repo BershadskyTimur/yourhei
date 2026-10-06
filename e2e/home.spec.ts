@@ -1,4 +1,4 @@
-﻿import { expect, test } from '@playwright/test';
+import { expect, test } from '@playwright/test';
 
 const LOCALES = ['ru', 'en', 'ka', 'es', 'zh', 'uk', 'hy', 'kk'] as const;
 
@@ -50,7 +50,7 @@ test('theme toggle switches light and dark', async ({ page }) => {
 
   await page.getByRole('button', { name: /Switch light/ }).click();
   await expect(html).toHaveAttribute('data-theme', 'dark');
-  expect(await bg()).toBe('rgb(15, 14, 12)');
+  expect(await bg()).toBe('rgb(17, 16, 14)');
   await expect(page.locator('[data-map-ready="true"]')).toBeVisible();
 });
 

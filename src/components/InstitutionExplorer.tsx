@@ -71,7 +71,7 @@ export function InstitutionExplorer({ items, loadError }: Props) {
     <section
       id="map"
       aria-labelledby="map-title"
-      className="overflow-hidden rounded-3xl border border-line-strong/40 bg-bg shadow-xl"
+      className="overflow-hidden rounded-lg border border-line bg-bg"
       onKeyDown={(e) => {
         if (e.key === 'Escape') {
           setSelectedId(null);
@@ -81,7 +81,7 @@ export function InstitutionExplorer({ items, loadError }: Props) {
     >
       <div className="border-b border-line bg-surface">
         <div className="flex flex-col gap-3 px-4 py-3 sm:py-4 lg:flex-row lg:items-end lg:justify-between">
-          <h2 id="map-title" className="text-xl font-bold text-brand sm:text-2xl">
+          <h2 id="map-title" className="text-xl font-semibold text-text sm:text-2xl">
             {t('heading')}
           </h2>
 
@@ -105,10 +105,10 @@ export function InstitutionExplorer({ items, loadError }: Props) {
                 setShowSuggestions(true);
               }}
               onFocus={() => setShowSuggestions(true)}
-              className="h-11 w-full rounded-full border border-line-strong bg-bg px-4 text-text placeholder:text-muted"
+              className="h-11 w-full rounded-lg border border-line-strong bg-bg px-4 text-text placeholder:text-muted"
             />
             {showSuggestions && query.trim() !== '' && (
-              <ul className="absolute inset-x-0 top-full z-20 mt-1 overflow-hidden rounded-2xl border border-line-strong bg-bg shadow-lg">
+              <ul className="absolute inset-x-0 top-full z-20 mt-1 overflow-hidden rounded-lg border border-line-strong bg-bg">
                 {suggestions.length === 0 ? (
                   <li className="px-4 py-3 text-sm text-muted">{t('noResults')}</li>
                 ) : (
@@ -217,7 +217,7 @@ export function InstitutionExplorer({ items, loadError }: Props) {
           <div
             role="dialog"
             aria-label={selectedName}
-            className="absolute inset-x-3 bottom-3 z-10 rounded-2xl border border-line-strong bg-bg p-4 shadow-xl sm:inset-x-auto sm:start-4 sm:bottom-4 sm:w-80"
+            className="absolute inset-x-3 bottom-3 z-10 rounded-lg border border-line-strong bg-bg p-4 sm:inset-x-auto sm:start-4 sm:bottom-4 sm:w-80"
           >
             <div className="flex items-start gap-3">
               <TypeDot type={selected.type} />
@@ -253,7 +253,7 @@ export function InstitutionExplorer({ items, loadError }: Props) {
             </div>
             <Link
               href={`/institutions/${selected.country.toLowerCase()}/${selected.slug}`}
-              className="mt-3 inline-flex h-10 w-full items-center justify-center rounded-full bg-accent px-4 text-sm font-semibold text-on-accent hover:opacity-90"
+              className="mt-3 inline-flex h-10 w-full items-center justify-center rounded-lg bg-accent px-4 text-sm font-semibold text-on-accent hover:opacity-90"
             >
               {t('more')}
             </Link>

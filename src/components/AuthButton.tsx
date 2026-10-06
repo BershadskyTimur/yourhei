@@ -39,7 +39,7 @@ export function AuthButton() {
     return (
       <Link
         href="/login"
-        className="inline-flex h-10 items-center rounded-full bg-accent px-4 text-sm font-semibold text-on-accent hover:opacity-90"
+        className="inline-flex h-10 items-center rounded-lg bg-accent px-4 text-sm font-medium text-on-accent hover:opacity-90"
       >
         {t('login')}
       </Link>
@@ -51,20 +51,20 @@ export function AuthButton() {
       {isAdmin && (
         <Link
           href="/admin"
-          className="inline-flex h-10 items-center rounded-full border border-line-strong px-4 text-sm font-medium text-text hover:bg-surface-strong"
+          className="inline-flex h-10 items-center rounded-lg border border-line-strong px-4 text-sm font-medium text-text hover:bg-surface-strong"
         >
           Admin
         </Link>
       )}
       <Link
         href="/matches"
-        className="inline-flex h-10 items-center rounded-full border border-line-strong px-4 text-sm font-medium text-text hover:bg-surface-strong"
+        className="inline-flex h-10 items-center rounded-lg border border-line-strong px-4 text-sm font-medium text-text hover:bg-surface-strong"
       >
         {t('matches')}
       </Link>
       <Link
         href="/profile"
-        className="inline-flex h-10 items-center rounded-full bg-accent px-4 text-sm font-semibold text-on-accent hover:opacity-90"
+        className="inline-flex h-10 items-center rounded-lg bg-accent px-4 text-sm font-medium text-on-accent hover:opacity-90"
       >
         {t('profile')}
       </Link>
@@ -74,7 +74,7 @@ export function AuthButton() {
           await getSupabaseBrowser()?.auth.signOut();
           router.replace('/');
         }}
-        className="inline-flex h-10 items-center rounded-full border border-line-strong px-4 text-sm font-medium text-text hover:bg-surface-strong"
+        className="inline-flex h-10 items-center rounded-lg border border-line-strong px-4 text-sm font-medium text-text hover:bg-surface-strong"
       >
         {t('logout')}
       </button>

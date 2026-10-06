@@ -7,7 +7,7 @@ export default async function RegisterPage({ params }: { params: Promise<{ local
   const t = await getTranslations('Register');
   return (
     <div className="mx-auto max-w-2xl px-4 py-10">
-      <h1 className="text-3xl font-bold text-brand">{t('title')}</h1>
+      <h1 className="text-3xl font-semibold text-text">{t('title')}</h1>
       <div className="mt-4">
         <RegisterWizard />
       </div>

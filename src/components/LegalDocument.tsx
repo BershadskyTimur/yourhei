@@ -20,7 +20,7 @@ export async function LegalDocument({ kind, locale }: { kind: 'privacy' | 'terms
       <p className="text-sm text-muted">{tLegal('updated', { date })}</p>
       {SECTIONS[kind].map((n) => (
         <section key={n}>
-          <h2 className="mt-6 text-xl font-bold text-brand">{t(`s${n}Title` as never)}</h2>
+          <h2 className="mt-6 text-xl font-semibold text-text">{t(`s${n}Title` as never)}</h2>
           <p className="mt-2">{t(`s${n}Text` as never)}</p>
         </section>
       ))}

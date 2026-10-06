@@ -12,9 +12,9 @@ export function PageShell({
 }) {
   return (
     <article className="mx-auto max-w-3xl px-4 py-12">
-      <h1 className="text-3xl font-bold text-brand">{title}</h1>
+      <h1 className="text-3xl font-semibold tracking-tight text-text">{title}</h1>
       {banner && (
-        <p className="mt-4 rounded-xl border border-line-strong bg-accent-soft px-4 py-3 text-sm font-medium text-text">
+        <p className="mt-4 rounded-lg border border-line bg-accent-soft px-4 py-3 text-sm font-medium text-text">
           {banner}
         </p>
       )}

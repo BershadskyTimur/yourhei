@@ -21,9 +21,9 @@ export function AdSlot({ kind, className = '' }: { kind: AdKind; className?: str
     <aside
       aria-label={t('label')}
       data-ad-slot={kind}
-      className={`mx-auto flex flex-col items-center justify-center rounded-xl border border-dashed border-[var(--ad-border)] bg-[var(--ad-bg)] text-center ${size.box} ${className}`}
+      className={`mx-auto flex flex-col items-center justify-center rounded-lg border border-[var(--ad-border)] bg-[var(--ad-bg)] text-center ${size.box} ${className}`}
     >
-      <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-muted">{t('label')}</span>
+      <span className="text-[10px] font-medium uppercase tracking-[0.22em] text-muted">{t('label')}</span>
       <span className="mt-1 text-xs text-muted">{size.label}</span>
     </aside>
   );

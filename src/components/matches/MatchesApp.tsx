@@ -79,7 +79,7 @@ export function MatchesApp() {
   if (state.kind === 'no-survey') {
     return (
       <section className="rounded-2xl border border-line-strong bg-accent-soft p-6">
-        <h2 className="text-xl font-bold text-brand">{t('noSurvey.title')}</h2>
+        <h2 className="text-xl font-semibold text-text">{t('noSurvey.title')}</h2>
         <p className="mt-2">{t('noSurvey.text')}</p>
         <Link href="/survey" className={`${primaryButton} mt-4`}>{t('noSurvey.cta')}</Link>
       </section>
@@ -105,7 +105,7 @@ function Results({ attempt, programs, countries, rates, ratesSource, profile }: 
 
       {programs.length === 0 ? (
         <section className="rounded-2xl border border-line-strong bg-accent-soft p-6">
-          <h2 className="text-xl font-bold text-brand">{t('noData.title')}</h2>
+          <h2 className="text-xl font-semibold text-text">{t('noData.title')}</h2>
           <p className="mt-2">{t('noData.text')}</p>
         </section>
       ) : (
@@ -114,7 +114,7 @@ function Results({ attempt, programs, countries, rates, ratesSource, profile }: 
 
       {programs.length > 0 && total === 0 && (
         <section className="rounded-2xl border border-line bg-surface p-6">
-          <h2 className="text-xl font-bold text-brand">{t('nothing.title')}</h2>
+          <h2 className="text-xl font-semibold text-text">{t('nothing.title')}</h2>
           <p className="mt-2">{t('nothing.text')}</p>
           <div className="mt-4 flex flex-wrap gap-3">
             <Link href="/profile" className={secondaryButton}>{t('nothing.profile')}</Link>
@@ -126,7 +126,7 @@ function Results({ attempt, programs, countries, rates, ratesSource, profile }: 
       {GROUPS.map((g) =>
         matches[g].length === 0 ? null : (
           <section key={g} aria-labelledby={`group-${g}`}>
-            <h2 id={`group-${g}`} className="text-2xl font-bold text-brand">{t(`groups.${g}.title`)}</h2>
+            <h2 id={`group-${g}`} className="text-2xl font-semibold text-text">{t(`groups.${g}.title`)}</h2>
             <p className="mt-1 text-muted">{t(`groups.${g}.text`)}</p>
             <ul className="mt-4 space-y-4">
               {matches[g].map((r) => (

@@ -1,7 +1,7 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { AdSlot } from '@/components/AdSlot';
 import { InstitutionExplorer } from '@/components/InstitutionExplorer';
-import { CapIcon, GlobeIcon, HeroArt, MapIcon, ShieldIcon, SparkIcon } from '@/components/icons';
+import { GlobeIcon, MapIcon, ShieldIcon, SparkIcon } from '@/components/icons';
 import { LOCALES } from '@/config/locales';
 import { Link } from '@/i18n/navigation';
 import { getMapInstitutions } from '@/lib/institutions/get';
@@ -10,9 +10,9 @@ import { getMapInstitutions } from '@/lib/institutions/get';
 export const revalidate = 3600;
 
 const primary =
-  'inline-flex h-12 items-center justify-center rounded-full bg-accent px-8 text-base font-semibold text-on-accent shadow-md hover:opacity-90';
+  'inline-flex h-12 items-center justify-center rounded-lg bg-accent px-7 text-base font-medium text-on-accent hover:opacity-90';
 const secondary =
-  'inline-flex h-12 items-center justify-center rounded-full border border-line-strong bg-bg/70 px-8 text-base font-semibold text-text hover:bg-surface-strong';
+  'inline-flex h-12 items-center justify-center rounded-lg border border-line-strong px-7 text-base font-medium text-text hover:bg-surface-strong';
 
 export default async function HomePage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -40,47 +40,36 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
 
   return (
     <>
-      <section className="hero-bg relative overflow-hidden">
-        <div className="hero-dots pointer-events-none absolute inset-y-0 end-0 w-2/3 opacity-70" aria-hidden="true" />
-        <div className="relative mx-auto grid max-w-[1500px] items-center gap-8 px-4 py-12 sm:py-16 lg:grid-cols-[1.25fr_1fr]">
+      <section className="hero-bg">
+        <div className="mx-auto max-w-[1500px] px-4 py-14 sm:py-20">
           <div>
-            <span className="inline-flex items-center gap-2 rounded-full border border-line-strong/50 bg-bg/70 px-4 py-1.5 text-sm font-semibold text-brand">
-              <CapIcon />
-              {t('hero.badge')}
-            </span>
-            <h1 className="mt-5 text-4xl font-extrabold leading-[1.1] tracking-tight text-text sm:text-5xl lg:text-6xl">
+            <p className="text-sm font-medium uppercase tracking-[0.18em] text-accent-text">{t('hero.badge')}</p>
+            <h1 className="mt-4 max-w-4xl text-4xl font-semibold leading-[1.1] tracking-tight text-text sm:text-5xl lg:text-6xl">
               {t('map.title')}
             </h1>
-            <div className="gold-rule mt-5 w-40" aria-hidden="true" />
-            <p className="mt-5 max-w-2xl text-lg leading-relaxed text-muted sm:text-xl">
+            <div className="mt-6 h-px w-16 bg-gold" aria-hidden="true" />
+            <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted">
               {t('hero.subtitle', { count: items.length })}
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link href="/register" className={primary}>{t('how.cta')}</Link>
               <a href="#map" className={secondary}>{t('hero.ctaMap')}</a>
             </div>
-            <ul className="mt-8 flex flex-wrap gap-3">
+            <ul className="mt-10 flex flex-wrap gap-x-8 gap-y-2 text-sm text-muted">
               {[
                 t('stats.institutions', { count: items.length }),
                 t('stats.countries', { count: perCountry.size }),
                 t('stats.languages', { count: LOCALES.length }),
                 t('stats.free'),
               ].map((s) => (
-                <li key={s} className="rounded-full border border-line-strong/40 bg-bg/70 px-4 py-1.5 text-sm font-semibold text-text">
+                <li key={s} className="border-s border-line-strong ps-3">
                   {s}
                 </li>
               ))}
             </ul>
           </div>
-          <div className="hidden justify-center lg:flex">
-            <HeroArt />
-          </div>
         </div>
       </section>
-
-      <div className="mx-auto mt-6 max-w-[1500px] px-4">
-        <AdSlot kind="banner" />
-      </div>
 
       <div className="mx-auto mt-6 grid max-w-[1500px] gap-4 px-4 xl:grid-cols-[160px_minmax(0,1fr)_160px]">
         <div className="hidden xl:block">
@@ -93,15 +82,15 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       </div>
 
       <section aria-labelledby="why-title" className="mx-auto mt-16 max-w-[1500px] px-4">
-        <h2 id="why-title" className="text-3xl font-bold text-brand">{t('why.title')}</h2>
-        <div className="gold-rule mt-3 w-24" aria-hidden="true" />
+        <h2 id="why-title" className="text-2xl font-semibold text-text">{t('why.title')}</h2>
+        <div className="mt-3 h-px w-12 bg-gold" aria-hidden="true" />
         <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {features.map((f) => (
-            <li key={f.title} className="rounded-3xl border border-line bg-surface p-6 shadow-sm">
-              <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-accent text-on-accent shadow">
+            <li key={f.title} className="rounded-lg border border-line bg-surface p-6">
+              <span className="flex h-10 w-10 items-center justify-center rounded-lg border border-line-strong text-accent-text">
                 {f.icon}
               </span>
-              <h3 className="mt-4 text-lg font-bold">{f.title}</h3>
+              <h3 className="mt-4 text-lg font-semibold">{f.title}</h3>
               <p className="mt-2 text-muted">{f.text}</p>
             </li>
           ))}
@@ -109,48 +98,41 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       </section>
 
       <section aria-labelledby="how-title" className="mx-auto mt-16 max-w-[1500px] px-4">
-        <h2 id="how-title" className="text-3xl font-bold text-brand">{t('how.title')}</h2>
-        <div className="gold-rule mt-3 w-24" aria-hidden="true" />
+        <h2 id="how-title" className="text-2xl font-semibold text-text">{t('how.title')}</h2>
+        <div className="mt-3 h-px w-12 bg-gold" aria-hidden="true" />
         <ol className="mt-8 grid gap-4 sm:grid-cols-3">
           {steps.map((s, idx) => (
-            <li key={s.title} className="relative overflow-hidden rounded-3xl border border-line bg-surface p-6">
-              <span aria-hidden="true" className="absolute -end-2 -top-6 text-[7rem] font-black leading-none text-gold/20">
+            <li key={s.title} className="rounded-lg border border-line bg-surface p-6">
+              <span aria-hidden="true" className="relative flex h-9 w-9 items-center justify-center rounded-full border border-line-strong font-medium text-accent-text">
                 {idx + 1}
               </span>
-              <span aria-hidden="true" className="relative flex h-10 w-10 items-center justify-center rounded-full bg-accent font-bold text-on-accent">
-                {idx + 1}
-              </span>
-              <h3 className="relative mt-4 text-xl font-bold">{s.title}</h3>
+              <h3 className="relative mt-4 text-xl font-semibold">{s.title}</h3>
               <p className="relative mt-2 text-muted">{s.text}</p>
             </li>
           ))}
         </ol>
       </section>
 
-      <div className="mx-auto mt-12 max-w-[1500px] px-4">
-        <AdSlot kind="leaderboard" />
-      </div>
-
       {countries.length > 0 && (
         <section aria-labelledby="countries-title" className="mx-auto mt-16 max-w-[1500px] px-4">
-          <h2 id="countries-title" className="text-3xl font-bold text-brand">{t('countries.title')}</h2>
-          <div className="gold-rule mt-3 w-24" aria-hidden="true" />
+          <h2 id="countries-title" className="text-2xl font-semibold text-text">{t('countries.title')}</h2>
+          <div className="mt-3 h-px w-12 bg-gold" aria-hidden="true" />
           <p className="mt-3 text-muted">{t('countries.text')}</p>
           <ul className="mt-6 flex flex-wrap gap-2">
             {countries.map(([code, count]) => (
-              <li key={code} className="rounded-full border border-line-strong/50 bg-surface px-4 py-2 text-sm font-medium">
+              <li key={code} className="rounded-lg border border-line bg-surface px-3 py-1.5 text-sm">
                 {regionNames.of(code) ?? code}
-                <span className="ms-2 rounded-full bg-accent-soft px-2 py-0.5 text-xs font-bold text-accent-text">{count}</span>
+                <span className="ms-2 text-xs text-muted">{count}</span>
               </li>
             ))}
           </ul>
         </section>
       )}
 
-      <section className="hero-bg mx-4 mt-16 overflow-hidden rounded-[2rem] border border-line-strong/40 xl:mx-auto xl:max-w-[1500px]">
+      <section className="hero-bg mx-4 mt-12 overflow-hidden rounded-lg border border-line xl:mx-auto xl:max-w-[1500px]">
         <div className="flex flex-col items-start gap-6 px-6 py-10 sm:px-10 lg:flex-row lg:items-center lg:justify-between">
           <div>
-            <h2 className="text-3xl font-extrabold text-text">{t('cta.title')}</h2>
+            <h2 className="text-2xl font-semibold text-text">{t('cta.title')}</h2>
             <p className="mt-2 max-w-2xl text-lg text-muted">{t('cta.text')}</p>
           </div>
           <Link href="/register" className={primary}>{t('how.cta')}</Link>

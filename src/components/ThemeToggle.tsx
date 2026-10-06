@@ -14,7 +14,7 @@ export function ThemeToggle() {
       onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
       aria-label={t('toggleTheme')}
       title={t('toggleTheme')}
-      className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-line-strong text-text hover:bg-surface-strong"
+      className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-line-strong text-text hover:bg-surface-strong"
     >
       <svg
         className="block dark:hidden"
