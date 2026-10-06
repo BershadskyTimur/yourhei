@@ -1,5 +1,6 @@
 import type { SupabaseClient } from '@supabase/supabase-js';
 import { isInstitutionType } from '../institutions/types';
+import { safeHttpUrl } from '../safe-url';
 import type { AppliesTo, CountryFacts, Level, MatchInstitution, MatchProgram, Period, Ranking, StudyFormat, Tuition } from './types';
 
 // Reads the published programmes and country facts from Supabase and turns database rows into the
@@ -79,7 +80,7 @@ export function toProgram(row: Row): MatchProgram | null {
       documents: arr(req.documents).filter((d): d is string => typeof d === 'string'),
     },
     applicationFee: str(fee.currency) ? { amount: num(fee.amount), currency: fee.currency as string } : null,
-    applicationUrl: str(row.application_url),
+    applicationUrl: safeHttpUrl(row.application_url),
   };
 }
 

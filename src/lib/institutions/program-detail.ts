@@ -1,3 +1,4 @@
+import { safeHttpUrl } from '../safe-url';
 import type { LocalizedText } from './types';
 
 // Parsing of programme rows (no server code here: the compare page uses it in the browser too).
@@ -70,7 +71,7 @@ export function toProgramDetail(r: Row): ProgramDetail | null {
       return str(x.intake) ? [{ intake: x.intake as string, appliesTo: str(x.applies_to) ?? 'all', date: str(x.date) }] : [];
     }),
     applicationFee: money(r.application_fee),
-    applicationUrl: str(r.application_url),
+    applicationUrl: safeHttpUrl(r.application_url),
     academicYear: str(r.academic_year),
   };
 }

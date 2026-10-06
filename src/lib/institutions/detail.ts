@@ -1,4 +1,5 @@
 import { createClient } from '@supabase/supabase-js';
+import { safeHttpUrl } from '../safe-url';
 import { getMapInstitutions } from './get';
 import { arr, num, oneOf, rec, str, texts, toProgramDetail, type ProgramDetail, type Row } from './program-detail';
 import { isInstitutionType, type InstitutionType, type LocalizedText } from './types';
@@ -43,7 +44,7 @@ export async function getInstitutionDetail(country: string, slug: string): Promi
     const { items } = await getMapInstitutions();
     const i = items.find((x) => x.country === cc && x.slug === slug);
     return i
-      ? { id: null, slug: i.slug, type: i.type, country: i.country, city: i.city, names: i.names, website: i.website, foundedYear: i.foundedYear, ownership: null, dormitory: null, features: [], description: {}, verifiedAt: null, programs: [], rankings: [], scholarships: [] }
+      ? { id: null, slug: i.slug, type: i.type, country: i.country, city: i.city, names: i.names, website: safeHttpUrl(i.website), foundedYear: i.foundedYear, ownership: null, dormitory: null, features: [], description: {}, verifiedAt: null, programs: [], rankings: [], scholarships: [] }
       : null;
   }
 
@@ -65,7 +66,7 @@ export async function getInstitutionDetail(country: string, slug: string): Promi
     country: cc,
     city: texts(r.city),
     names: texts(r.names),
-    website: str(r.website),
+    website: safeHttpUrl(r.website),
     foundedYear: num(r.founded_year),
     ownership: oneOf(r.ownership, ['public', 'private'] as const),
     dormitory: typeof r.dormitory === 'boolean' ? r.dormitory : null,
@@ -77,6 +78,6 @@ export async function getInstitutionDetail(country: string, slug: string): Promi
       const k = rec(x);
       return str(k.name) && num(k.year) !== null && str(k.position) ? [{ name: k.name as string, year: num(k.year) as number, position: k.position as string }] : [];
     }),
-    scholarships: published(r.scholarships).map((s) => ({ names: texts(s.names), covers: str(s.covers), url: str(s.url) })),
+    scholarships: published(r.scholarships).map((s) => ({ names: texts(s.names), covers: str(s.covers), url: safeHttpUrl(s.url) })),
   };
 }
