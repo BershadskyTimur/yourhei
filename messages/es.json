@@ -1,7 +1,7 @@
 {
   "Meta": {
     "title": "YourHEI — encuentra tu escuela, colegio o universidad",
-    "description": "Mapa y buscador de universidades, colegios y escuelas en el Cáucaso, Asia Central, Europa del Este, Europa y Asia."
+    "description": "Mapa y selección de universidades, colegios y escuelas de Europa, Asia, América, Oceanía, el Cáucaso y Asia Central."
   },
   "Common": {
     "siteName": "YourHEI",
@@ -79,7 +79,7 @@
     "why": {
       "title": "Por qué YourHEI",
       "f1Title": "Todo en un mapa",
-      "f1Text": "Universidades, colegios y escuelas del Cáucaso, Asia Central, Europa del Este, Europa y Asia.",
+      "f1Text": "Universidades, colegios y escuelas de Europa, Asia, América, Oceanía y el Cáucaso, en un solo mapa.",
       "f2Title": "Resultados que se explican",
       "f2Text": "Cada resultado muestra por qué encaja y qué te falta, por ejemplo una puntuación de idioma más alta.",
       "f3Title": "Datos con fuentes",

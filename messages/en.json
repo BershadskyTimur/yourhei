@@ -1,7 +1,7 @@
 {
   "Meta": {
     "title": "YourHEI — find your school, college or university",
-    "description": "A map and matching service for universities, colleges and schools in the Caucasus, Central Asia, Eastern Europe, Europe and Asia."
+    "description": "A map and a personal match of universities, colleges and schools in Europe, Asia, the Americas, Oceania, the Caucasus and Central Asia."
   },
   "Common": {
     "siteName": "YourHEI",
@@ -79,7 +79,7 @@
     "why": {
       "title": "Why YourHEI",
       "f1Title": "Everything on one map",
-      "f1Text": "Universities, colleges and schools across the Caucasus, Central Asia, Eastern Europe, Europe and Asia.",
+      "f1Text": "Universities, colleges and schools across Europe, Asia, the Americas, Oceania and the Caucasus, on one map.",
       "f2Title": "Matches that explain themselves",
       "f2Text": "Every result shows why it fits and what you still need, for example a higher language score.",
       "f3Title": "Data with sources",
