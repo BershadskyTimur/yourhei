@@ -15,7 +15,8 @@
     "toggleTheme": "切换浅色 / 深色主题",
     "profile": "个人资料",
     "logout": "退出登录",
-    "matches": "我的匹配"
+    "matches": "我的匹配",
+    "favorites": "我的清单"
   },
   "Footer": {
     "navLabel": "网站信息",
@@ -99,7 +100,62 @@
     "comingSoon": "详细数据即将上线。",
     "officialSite": "官方网站",
     "founded": "创办年份：{year}",
-    "back": "返回地图"
+    "back": "返回地图",
+    "factsTitle": "基本信息",
+    "ownership": "办学性质",
+    "public": "公立",
+    "private": "私立",
+    "dormitory": "宿舍",
+    "dormitoryYes": "提供",
+    "dormitoryNo": "不提供",
+    "featuresTitle": "发展机会",
+    "features": {
+      "internship": "实习",
+      "double_degree": "双学位",
+      "exchange": "交换项目"
+    },
+    "programsTitle": "专业项目",
+    "noPrograms": "该院校的详细专业数据正在收集中，请先查看官方网站。",
+    "for": {
+      "international": "国际学生",
+      "domestic": "本国学生",
+      "eu": "欧盟学生",
+      "all": "所有学生"
+    },
+    "per": {
+      "year": "每年",
+      "semester": "每学期",
+      "credit": "每学分",
+      "total": "整个项目"
+    },
+    "tuitionTitle": "学费",
+    "free": "免费",
+    "requirementsTitle": "申请要求",
+    "minScore": "{exam} 最低分：{score}",
+    "documentsTitle": "所需材料",
+    "entranceTitle": "入学考核",
+    "noRequirements": "暂未公布申请要求。",
+    "intake": "入学时间",
+    "deadline": "截止日期",
+    "applicationFee": "申请费",
+    "deadlinesTitle": "截止日期",
+    "rankingsTitle": "排名",
+    "rankingLine": "{name}（{year}）：{position}",
+    "scholarshipsTitle": "奖学金",
+    "covers": {
+      "tuition": "覆盖学费",
+      "living": "覆盖生活费",
+      "full": "全额资助",
+      "partial": "部分资助"
+    },
+    "checked": "数据核对日期：{date}。",
+    "disclaimer": "申请前请务必在官方网站核实费用和截止日期。",
+    "report": "报告本页错误",
+    "duration": "学制",
+    "programsCount": "{count, plural, other {# 个专业}}",
+    "favoriteAdd": "收藏",
+    "favoriteRemove": "已收藏",
+    "favoriteLogin": "登录后收藏"
   },
   "Pages": {
     "about": {
@@ -278,8 +334,13 @@
       "invalid": "邮箱或密码错误。",
       "notConfirmed": "请先确认邮箱：打开我们发给你的链接。",
       "generic": "无法登录，请重试。",
-      "rateLimit": "尝试次数过多，请等待几分钟后重试。"
-    }
+      "rateLimit": "尝试次数过多，请等待几分钟后重试。",
+      "google": "无法使用 Google 登录，请重试。",
+      "captcha": "请完成安全验证。"
+    },
+    "google": "使用 Google 继续",
+    "googleNotice": "使用 Google 继续即表示您接受<privacy>隐私政策</privacy>和<terms>使用条款</terms>。",
+    "or": "或使用邮箱"
   },
   "Forgot": {
     "title": "重置密码",
@@ -339,7 +400,8 @@
     "complete": {
       "title": "完善你的个人资料",
       "text": "请补充你的国籍、想找的地区和机构类型以及证件情况。这些内容可随时修改。"
-    }
+    },
+    "ageNeeded": "请补充出生日期和居住国家后继续：我们需要它们来核对最低年龄。"
   },
   "Legal": {
     "privacy": {
@@ -909,5 +971,54 @@
   },
   "Ads": {
     "label": "广告"
+  },
+  "Compare": {
+    "title": "对比专业",
+    "intro": "最多并排对比 3 个专业。价格以院校公布为准。",
+    "add": "对比",
+    "remove": "移出对比",
+    "bar": "{count, plural, other {已选 # 个专业}}",
+    "open": "对比",
+    "clear": "清空",
+    "empty": "还没有可对比的内容。请在匹配结果中点击“对比”按钮选择专业。",
+    "needTwo": "请至少选择两个专业。",
+    "loading": "加载中…",
+    "failed": "无法加载专业，请重试。",
+    "back": "返回我的匹配",
+    "max": "最多可对比 3 个专业。",
+    "rows": {
+      "institution": "院校",
+      "location": "地点",
+      "level": "层次",
+      "duration": "学制",
+      "languages": "授课语言",
+      "tuition": "学费",
+      "requirements": "申请要求",
+      "deadlines": "截止日期",
+      "apply": "申请"
+    }
+  },
+  "Favorites": {
+    "title": "我的清单",
+    "intro": "你收藏的院校，包含截止日期和需要准备的材料。",
+    "empty": "还没有收藏。打开一所院校并点击“收藏”。",
+    "emptyCta": "打开地图",
+    "remove": "移除",
+    "nextDeadline": "最近截止日期：{date}",
+    "noDeadline": "暂无已公布的近期截止日期",
+    "docsTitle": "需准备的材料",
+    "docHave": "已有",
+    "docMissing": "暂无",
+    "loading": "加载中…",
+    "failed": "无法加载你的清单，请重试。",
+    "open": "打开详情"
+  },
+  "Consent": {
+    "title": "Cookie 与分析",
+    "text": "我们使用必要的 Cookie 来运行网站（语言、主题、登录）。经您许可，我们还会使用分析和广告技术，并可能按照隐私政策所述与合作伙伴共享这些数据。",
+    "accept": "全部接受",
+    "decline": "仅必要项",
+    "policy": "隐私政策",
+    "settings": "Cookie 设置"
   }
 }

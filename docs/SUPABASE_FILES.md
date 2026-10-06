@@ -16,6 +16,8 @@
 | 4 | `supabase\migrations\0004_survey.sql` | Опрос |
 | 5 | `supabase\migrations\0005_programs.sql` | Программы, стипендии, рейтинги, данные по странам |
 | 6 | `supabase\migrations\0006_admin.sql` | **Админ-панель** (роль админа, журнал изменений) |
+| 6а | `supabase\migrations\0007_favorites.sql` | «Мой список» (сохранённые заведения) |
+| 6б | `supabase\migrations\0008_oauth.sql` | Вход через Google (запись согласия) |
 
 ## Б. Заведения на карте (после пункта 5; порядок между ними любой)
 

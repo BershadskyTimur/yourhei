@@ -90,7 +90,10 @@ export function MatchesApp() {
 
 function Results({ attempt, programs, countries, rates, ratesSource, profile }: Extract<State, { kind: 'ready' }>) {
   const t = useTranslations('Matches');
+  const tCmp = useTranslations('Compare');
   const locale = useLocale();
+  const [compare, setCompare] = useState<string[]>([]);
+  const toggleCompare = (id: string) => setCompare((cur) => (cur.includes(id) ? cur.filter((x) => x !== id) : cur.length >= 3 ? cur : [...cur, id]));
 
   const matches: Matches = useMemo(
     () => matchPrograms(programs, buildMatchInput(attempt.answers, profile), { countries, rates }),
@@ -130,7 +133,7 @@ function Results({ attempt, programs, countries, rates, ratesSource, profile }: 
             <p className="mt-1 text-muted">{t(`groups.${g}.text`)}</p>
             <ul className="mt-4 space-y-4">
               {matches[g].map((r) => (
-                <li key={r.program.id}><ResultCard result={r} /></li>
+                <li key={r.program.id}><ResultCard result={r} selected={compare.includes(r.program.id)} full={compare.length >= 3} onToggle={() => toggleCompare(r.program.id)} /></li>
               ))}
             </ul>
           </section>
@@ -141,6 +144,19 @@ function Results({ attempt, programs, countries, rates, ratesSource, profile }: 
         <Link href="/survey" className={secondaryButton}>{t('retake')}</Link>
         <Link href="/profile" className={secondaryButton}>{t('editProfile')}</Link>
       </div>
+      {compare.length > 0 && (
+        <div className="sticky bottom-3 z-20 flex flex-wrap items-center justify-between gap-3 rounded-lg border border-line-strong bg-bg p-3" role="region" aria-label={tCmp('title')}>
+          <span className="font-medium">{tCmp('bar', { count: compare.length })}</span>
+          <span className="flex gap-2">
+            <button type="button" onClick={() => setCompare([])} className={secondaryButton}>{tCmp('clear')}</button>
+            {compare.length >= 2 ? (
+              <Link href={{ pathname: '/compare', query: { ids: compare.join(',') } }} className={primaryButton}>{tCmp('open')}</Link>
+            ) : (
+              <span className="self-center text-sm text-muted">{tCmp('needTwo')}</span>
+            )}
+          </span>
+        </div>
+      )}
       <p className="text-xs text-muted">
         {ratesSource === 'live' ? t('credits.live') : t('credits.fallback')}{' '}
         <a href="https://www.exchangerate-api.com" target="_blank" rel="noopener noreferrer" className="underline">ExchangeRate-API</a>
@@ -149,8 +165,9 @@ function Results({ attempt, programs, countries, rates, ratesSource, profile }: 
   );
 }
 
-function ResultCard({ result }: { result: MatchResult }) {
+function ResultCard({ result, selected, full, onToggle }: { result: MatchResult; selected: boolean; full: boolean; onToggle: () => void }) {
   const t = useTranslations('Matches');
+  const tCmp = useTranslations('Compare');
   const locale = useLocale();
   const { program, score, why, gaps, missing, tuitionShown } = result;
   const inst = program.institution;
@@ -225,11 +242,23 @@ function ResultCard({ result }: { result: MatchResult }) {
         </p>
       )}
 
-      {program.applicationUrl && (
-        <a href={program.applicationUrl} target="_blank" rel="noopener noreferrer" className={`${secondaryButton} mt-4 !h-10`}>
-          {t('card.apply')}
-        </a>
-      )}
+      <div className="mt-4 flex flex-wrap gap-2">
+        {program.applicationUrl && (
+          <a href={program.applicationUrl} target="_blank" rel="noopener noreferrer" className={`${secondaryButton} !h-10`}>
+            {t('card.apply')}
+          </a>
+        )}
+        <button
+          type="button"
+          onClick={onToggle}
+          aria-pressed={selected}
+          disabled={!selected && full}
+          title={!selected && full ? tCmp('max') : undefined}
+          className={`${secondaryButton} !h-10 ${selected ? 'border-accent bg-accent-soft' : ''}`}
+        >
+          {selected ? tCmp('remove') : tCmp('add')}
+        </button>
+      </div>
     </article>
   );
 }

@@ -6,6 +6,8 @@ import { useState, type FormEvent } from 'react';
 import { Link, useRouter } from '@/i18n/navigation';
 import { getSupabaseBrowser, isSupabaseConfigured } from '@/lib/supabase/client';
 import { PasswordInput } from './forms/StepAccount';
+import { GoogleButton } from './GoogleButton';
+import { Turnstile, captchaEnabled } from './Turnstile';
 import { Field, inputClass, primaryButton, secondaryButton } from './forms/ui';
 
 export function LoginForm() {
@@ -20,6 +22,8 @@ export function LoginForm() {
   const [unconfirmed, setUnconfirmed] = useState(false);
   const [resent, setResent] = useState(false);
   const [busy, setBusy] = useState(false);
+  const [captcha, setCaptcha] = useState<string | null>(null);
+  const [resetSignal, setResetSignal] = useState(0);
 
   // Only plain in-site paths are accepted as "where to go after login".
   const requested = params.get('next') ?? '';
@@ -29,11 +33,13 @@ export function LoginForm() {
     e.preventDefault();
     const supabase = getSupabaseBrowser();
     if (!supabase) return;
+    if (captchaEnabled && !captcha) return setError(t('errors.captcha'));
     setBusy(true);
     setError(null);
     setUnconfirmed(false);
-    const { error: err } = await supabase.auth.signInWithPassword({ email: email.trim(), password });
+    const { error: err } = await supabase.auth.signInWithPassword({ email: email.trim(), password, options: captcha ? { captchaToken: captcha } : undefined });
     setBusy(false);
+    if (err) setResetSignal((n) => n + 1);
     if (!err) {
       router.replace(next);
       return;
@@ -58,6 +64,8 @@ export function LoginForm() {
   };
 
   return (
+    <>
+    <GoogleButton next={next} />
     <form onSubmit={onSubmit} className="space-y-5" noValidate>
       {params.get('notice') === 'link' && (
         <p role="status" className="rounded-xl border border-line-strong bg-accent-soft p-3 text-sm">
@@ -96,6 +104,7 @@ export function LoginForm() {
         </div>
       </div>
 
+      <Turnstile onToken={setCaptcha} resetSignal={resetSignal} />
       {error && (
         <p role="alert" className="text-sm font-medium text-danger">
           {error}
@@ -130,5 +139,6 @@ export function LoginForm() {
         </Link>
       </p>
     </form>
+    </>
   );
 }

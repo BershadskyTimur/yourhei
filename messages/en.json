@@ -15,7 +15,8 @@
     "toggleTheme": "Switch light / dark theme",
     "profile": "Profile",
     "logout": "Log out",
-    "matches": "My matches"
+    "matches": "My matches",
+    "favorites": "My list"
   },
   "Footer": {
     "navLabel": "Site information",
@@ -99,7 +100,62 @@
     "comingSoon": "Detailed data will appear soon.",
     "officialSite": "Official website",
     "founded": "Founded: {year}",
-    "back": "Back to the map"
+    "back": "Back to the map",
+    "factsTitle": "Key facts",
+    "ownership": "Ownership",
+    "public": "Public",
+    "private": "Private",
+    "dormitory": "Dormitory",
+    "dormitoryYes": "Available",
+    "dormitoryNo": "Not available",
+    "featuresTitle": "Opportunities",
+    "features": {
+      "internship": "Internships",
+      "double_degree": "Double degree",
+      "exchange": "Exchange programmes"
+    },
+    "programsTitle": "Programmes",
+    "noPrograms": "Detailed programme data for this institution is being collected. Please check the official website.",
+    "for": {
+      "international": "international students",
+      "domestic": "citizens",
+      "eu": "EU citizens",
+      "all": "all students"
+    },
+    "per": {
+      "year": "per year",
+      "semester": "per semester",
+      "credit": "per credit",
+      "total": "for the whole programme"
+    },
+    "tuitionTitle": "Tuition",
+    "free": "Free",
+    "requirementsTitle": "Requirements",
+    "minScore": "Minimum {exam}: {score}",
+    "documentsTitle": "Documents",
+    "entranceTitle": "Entrance procedure",
+    "noRequirements": "No requirements published yet.",
+    "intake": "Intake",
+    "deadline": "Deadline",
+    "applicationFee": "Application fee",
+    "deadlinesTitle": "Deadlines",
+    "rankingsTitle": "Rankings",
+    "rankingLine": "{name} ({year}): {position}",
+    "scholarshipsTitle": "Scholarships",
+    "covers": {
+      "tuition": "covers tuition",
+      "living": "covers living costs",
+      "full": "full funding",
+      "partial": "partial funding"
+    },
+    "checked": "Data checked on {date}.",
+    "disclaimer": "Always confirm prices and deadlines on the official website before applying.",
+    "report": "Report an error on this page",
+    "duration": "Duration",
+    "programsCount": "{count, plural, one {# programme} other {# programmes}}",
+    "favoriteAdd": "Save",
+    "favoriteRemove": "Saved",
+    "favoriteLogin": "Log in to save"
   },
   "Pages": {
     "about": {
@@ -278,8 +334,13 @@
       "invalid": "Wrong e-mail or password.",
       "notConfirmed": "Confirm your e-mail first: open the link we sent you.",
       "generic": "Could not log in. Please try again.",
-      "rateLimit": "Too many attempts. Please wait a few minutes and try again."
-    }
+      "rateLimit": "Too many attempts. Please wait a few minutes and try again.",
+      "google": "Could not sign in with Google. Please try again.",
+      "captcha": "Please complete the security check."
+    },
+    "google": "Continue with Google",
+    "googleNotice": "By continuing with Google you accept the <privacy>Privacy Policy</privacy> and the <terms>Terms of use</terms>.",
+    "or": "or with e-mail"
   },
   "Forgot": {
     "title": "Reset your password",
@@ -339,7 +400,8 @@
     "complete": {
       "title": "Complete your profile",
       "text": "Add your citizenship, the regions and types of institutions you are looking for, and your documents. You can change all of this at any time."
-    }
+    },
+    "ageNeeded": "Add your date of birth and country of residence to continue: we need them to check the minimum age."
   },
   "Legal": {
     "privacy": {
@@ -909,5 +971,54 @@
   },
   "Ads": {
     "label": "Advertisement"
+  },
+  "Compare": {
+    "title": "Compare programmes",
+    "intro": "Up to 3 programmes side by side. Prices are as published by the institution.",
+    "add": "Compare",
+    "remove": "Remove from comparison",
+    "bar": "{count, plural, one {# programme selected} other {# programmes selected}}",
+    "open": "Compare",
+    "clear": "Clear",
+    "empty": "Nothing to compare yet. Pick programmes with the Compare button in your matches.",
+    "needTwo": "Select at least two programmes to compare.",
+    "loading": "Loading…",
+    "failed": "Could not load the programmes. Please try again.",
+    "back": "Back to my matches",
+    "max": "You can compare up to 3 programmes.",
+    "rows": {
+      "institution": "Institution",
+      "location": "Location",
+      "level": "Level",
+      "duration": "Duration",
+      "languages": "Language of instruction",
+      "tuition": "Tuition",
+      "requirements": "Requirements",
+      "deadlines": "Deadlines",
+      "apply": "Apply"
+    }
+  },
+  "Favorites": {
+    "title": "My list",
+    "intro": "Institutions you saved, with deadlines and the documents you need.",
+    "empty": "Nothing saved yet. Open an institution and press Save.",
+    "emptyCta": "Open the map",
+    "remove": "Remove",
+    "nextDeadline": "Next deadline: {date}",
+    "noDeadline": "No upcoming deadline published",
+    "docsTitle": "Documents to prepare",
+    "docHave": "ready",
+    "docMissing": "not yet",
+    "loading": "Loading…",
+    "failed": "Could not load your list. Please try again.",
+    "open": "Open the card"
+  },
+  "Consent": {
+    "title": "Cookies and analytics",
+    "text": "We use necessary cookies to run the site (language, theme, login). With your permission we also use analytics and advertising technologies and may share this data with our partners, as described in the Privacy Policy.",
+    "accept": "Accept all",
+    "decline": "Only necessary",
+    "policy": "Privacy Policy",
+    "settings": "Cookie settings"
   }
 }

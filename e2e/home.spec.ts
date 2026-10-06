@@ -88,7 +88,8 @@ test('search finds an institution, opens its card and the details page', async (
 
   await expect(page).toHaveURL(/\/en\/institutions\/ge\/ilia-state-university$/);
   await expect(page.getByRole('heading', { level: 1 })).toHaveText('Ilia State University');
-  await expect(page.getByText('Detailed data will appear soon.')).toBeVisible();
+  // Programmes (when the database has published ones) or the note that data is being collected.
+  await expect(page.getByRole('heading', { level: 2, name: /^Programmes/ })).toBeVisible();
 });
 
 test('search with no match says so', async ({ page }) => {

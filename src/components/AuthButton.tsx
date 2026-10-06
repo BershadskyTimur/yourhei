@@ -57,6 +57,12 @@ export function AuthButton() {
         </Link>
       )}
       <Link
+        href="/favorites"
+        className="inline-flex h-10 items-center rounded-lg border border-line-strong px-4 text-sm font-medium text-text hover:bg-surface-strong"
+      >
+        {t('favorites')}
+      </Link>
+      <Link
         href="/matches"
         className="inline-flex h-10 items-center rounded-lg border border-line-strong px-4 text-sm font-medium text-text hover:bg-surface-strong"
       >

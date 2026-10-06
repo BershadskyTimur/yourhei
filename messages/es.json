@@ -15,7 +15,8 @@
     "toggleTheme": "Cambiar entre tema claro y oscuro",
     "profile": "Perfil",
     "logout": "Cerrar sesión",
-    "matches": "Mis resultados"
+    "matches": "Mis resultados",
+    "favorites": "Mi lista"
   },
   "Footer": {
     "navLabel": "Información del sitio",
@@ -99,7 +100,62 @@
     "comingSoon": "Pronto habrá datos detallados.",
     "officialSite": "Sitio web oficial",
     "founded": "Fundada en {year}",
-    "back": "Volver al mapa"
+    "back": "Volver al mapa",
+    "factsTitle": "Datos clave",
+    "ownership": "Titularidad",
+    "public": "Pública",
+    "private": "Privada",
+    "dormitory": "Residencia",
+    "dormitoryYes": "Disponible",
+    "dormitoryNo": "No disponible",
+    "featuresTitle": "Oportunidades",
+    "features": {
+      "internship": "Prácticas",
+      "double_degree": "Doble titulación",
+      "exchange": "Programas de intercambio"
+    },
+    "programsTitle": "Programas",
+    "noPrograms": "Se están recopilando los datos detallados de los programas de esta institución. Consulta el sitio web oficial.",
+    "for": {
+      "international": "estudiantes internacionales",
+      "domestic": "ciudadanos",
+      "eu": "ciudadanos de la UE",
+      "all": "todos los estudiantes"
+    },
+    "per": {
+      "year": "al año",
+      "semester": "por semestre",
+      "credit": "por crédito",
+      "total": "por todo el programa"
+    },
+    "tuitionTitle": "Matrícula",
+    "free": "Gratis",
+    "requirementsTitle": "Requisitos",
+    "minScore": "Mínimo {exam}: {score}",
+    "documentsTitle": "Documentos",
+    "entranceTitle": "Proceso de admisión",
+    "noRequirements": "Aún no hay requisitos publicados.",
+    "intake": "Inicio",
+    "deadline": "Plazo",
+    "applicationFee": "Tasa de solicitud",
+    "deadlinesTitle": "Plazos",
+    "rankingsTitle": "Rankings",
+    "rankingLine": "{name} ({year}): {position}",
+    "scholarshipsTitle": "Becas",
+    "covers": {
+      "tuition": "cubre la matrícula",
+      "living": "cubre los gastos de vida",
+      "full": "financiación completa",
+      "partial": "financiación parcial"
+    },
+    "checked": "Datos comprobados el {date}.",
+    "disclaimer": "Confirma siempre precios y plazos en el sitio web oficial antes de solicitar.",
+    "report": "Informar de un error en esta página",
+    "duration": "Duración",
+    "programsCount": "{count, plural, one {# programa} other {# programas}}",
+    "favoriteAdd": "Guardar",
+    "favoriteRemove": "Guardado",
+    "favoriteLogin": "Inicia sesión para guardar"
   },
   "Pages": {
     "about": {
@@ -278,8 +334,13 @@
       "invalid": "Correo o contraseña incorrectos.",
       "notConfirmed": "Primero confirma tu correo: abre el enlace que te enviamos.",
       "generic": "No se pudo iniciar sesión. Inténtalo de nuevo.",
-      "rateLimit": "Demasiados intentos. Espera unos minutos e inténtalo de nuevo."
-    }
+      "rateLimit": "Demasiados intentos. Espera unos minutos e inténtalo de nuevo.",
+      "google": "No se pudo iniciar sesión con Google. Inténtalo de nuevo.",
+      "captcha": "Completa la comprobación de seguridad."
+    },
+    "google": "Continuar con Google",
+    "googleNotice": "Al continuar con Google aceptas la <privacy>Política de privacidad</privacy> y las <terms>Condiciones de uso</terms>.",
+    "or": "o con correo"
   },
   "Forgot": {
     "title": "Restablecer la contraseña",
@@ -339,7 +400,8 @@
     "complete": {
       "title": "Completa tu perfil",
       "text": "Añade tu nacionalidad, las regiones y los tipos de institución que buscas y tus documentos. Puedes cambiar todo esto en cualquier momento."
-    }
+    },
+    "ageNeeded": "Añade tu fecha de nacimiento y país de residencia para continuar: los necesitamos para comprobar la edad mínima."
   },
   "Legal": {
     "privacy": {
@@ -909,5 +971,54 @@
   },
   "Ads": {
     "label": "Publicidad"
+  },
+  "Compare": {
+    "title": "Comparar programas",
+    "intro": "Hasta 3 programas lado a lado. Los precios son los publicados por la institución.",
+    "add": "Comparar",
+    "remove": "Quitar de la comparación",
+    "bar": "{count, plural, one {# programa seleccionado} other {# programas seleccionados}}",
+    "open": "Comparar",
+    "clear": "Limpiar",
+    "empty": "Todavía no hay nada que comparar. Elige programas con el botón Comparar en tus resultados.",
+    "needTwo": "Elige al menos dos programas.",
+    "loading": "Cargando…",
+    "failed": "No se pudieron cargar los programas. Inténtalo de nuevo.",
+    "back": "Volver a mis resultados",
+    "max": "Puedes comparar hasta 3 programas.",
+    "rows": {
+      "institution": "Institución",
+      "location": "Ubicación",
+      "level": "Nivel",
+      "duration": "Duración",
+      "languages": "Idioma de enseñanza",
+      "tuition": "Matrícula",
+      "requirements": "Requisitos",
+      "deadlines": "Plazos",
+      "apply": "Solicitar"
+    }
+  },
+  "Favorites": {
+    "title": "Mi lista",
+    "intro": "Las instituciones que guardaste, con plazos y los documentos que necesitas.",
+    "empty": "Aún no has guardado nada. Abre una institución y pulsa Guardar.",
+    "emptyCta": "Abrir el mapa",
+    "remove": "Quitar",
+    "nextDeadline": "Próximo plazo: {date}",
+    "noDeadline": "No hay plazos próximos publicados",
+    "docsTitle": "Documentos que preparar",
+    "docHave": "listo",
+    "docMissing": "aún no",
+    "loading": "Cargando…",
+    "failed": "No se pudo cargar tu lista. Inténtalo de nuevo.",
+    "open": "Abrir la ficha"
+  },
+  "Consent": {
+    "title": "Cookies y analítica",
+    "text": "Usamos cookies necesarias para que el sitio funcione (idioma, tema, inicio de sesión). Con tu permiso también usamos tecnologías de analítica y publicidad y podemos compartir estos datos con nuestros socios, como se describe en la Política de privacidad.",
+    "accept": "Aceptar todo",
+    "decline": "Solo las necesarias",
+    "policy": "Política de privacidad",
+    "settings": "Ajustes de cookies"
   }
 }
