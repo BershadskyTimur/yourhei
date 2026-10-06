@@ -157,6 +157,8 @@ const PAGE = 25;
 function Institutions() {
   const [q, setQ] = useState('');
   const [status, setStatus] = useState('');
+  const [type, setType] = useState('');
+  const [country, setCountry] = useState('');
   const [page, setPage] = useState(0);
   const [rows, setRows] = useState<Row[]>([]);
   const [count, setCount] = useState(0);
@@ -175,6 +177,8 @@ function Institutions() {
       .order('slug')
       .range(page * PAGE, page * PAGE + PAGE - 1);
     if (status) query = query.eq('status', status);
+    if (type) query = query.eq('type', type);
+    if (/^[A-Za-z]{2}$/.test(country)) query = query.eq('country', country.toUpperCase());
     if (term) query = query.or(`names->>en.ilike.%${term}%,names->>original.ilike.%${term}%`);
     query.then((res) => {
       if (!live) return;
@@ -186,7 +190,7 @@ function Institutions() {
     return () => {
       live = false;
     };
-  }, [q, status, page, tick]);
+  }, [q, status, type, country, page, tick]);
 
   const load = () => setTick((n) => n + 1);
 
@@ -217,6 +221,16 @@ function Institutions() {
           <option value="published">Опубликован</option>
           <option value="draft">Черновик</option>
         </select>
+        <select className={input} aria-label="Тип" value={type} onChange={(e) => { setType(e.target.value); setPage(0); }}>
+          <option value="">Любой тип</option>
+          <option value="university">Вуз</option>
+          <option value="college">Колледж</option>
+          <option value="school">Школа</option>
+          <option value="language_school">Языковая школа</option>
+          <option value="foundation">Подготовительные программы</option>
+          <option value="vocational">Техникум / профучилище</option>
+        </select>
+        <input className={`${input} w-24`} placeholder="Страна" aria-label="Код страны" maxLength={2} value={country} onChange={(e) => { setCountry(e.target.value); setPage(0); }} />
       </div>
       <Status error={error} loading={loading} />
       <ul className="mt-4 divide-y divide-line rounded-xl border border-line">
