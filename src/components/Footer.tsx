@@ -1,5 +1,6 @@
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
+import { ConsentSettingsLink } from './ConsentSettingsLink';
 import { Logo } from './Logo';
 
 export function Footer() {
@@ -14,7 +15,7 @@ export function Footer() {
   ] as const;
 
   return (
-    <footer className="mt-16 bg-footer text-on-footer">
+    <footer className="band-dark mt-16 bg-footer text-on-footer">
       <div className="gold-rule" aria-hidden="true" />
       <div className="mx-auto grid max-w-[1500px] gap-8 px-4 py-10 md:grid-cols-[1fr_auto]">
         <div>
@@ -30,6 +31,9 @@ export function Footer() {
                 </Link>
               </li>
             ))}
+            <li>
+              <ConsentSettingsLink />
+            </li>
           </ul>
         </nav>
         <p className="text-sm text-footer-muted md:col-span-2">{t('dataCredit')}</p>

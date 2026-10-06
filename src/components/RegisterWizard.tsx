@@ -17,6 +17,7 @@ import { clearDraft, loadDraft, saveDraft } from '@/lib/registration/storage';
 import { getSupabaseBrowser, isSupabaseConfigured } from '@/lib/supabase/client';
 import { StepAccount } from './forms/StepAccount';
 import { StepAge } from './forms/StepAge';
+import { Turnstile, captchaEnabled } from './Turnstile';
 import { primaryButton, secondaryButton } from './forms/ui';
 
 const STEP_KEYS = ['age', 'account'] as const;
@@ -37,6 +38,7 @@ export function RegisterWizard() {
 function Wizard({ draft }: { draft: ReturnType<typeof loadDraft> }) {
   const t = useTranslations('Register');
   const tErr = useTranslations('Register.errors');
+  const tCaptcha = useTranslations('Login.errors');
   const locale = useLocale();
   const router = useRouter();
 
@@ -54,6 +56,8 @@ function Wizard({ draft }: { draft: ReturnType<typeof loadDraft> }) {
   const [submitError, setSubmitError] = useState<string | null>(null);
   const [submitting, setSubmitting] = useState(false);
   const [resendNote, setResendNote] = useState(false);
+  const [captcha, setCaptcha] = useState<string | null>(null);
+  const [resetSignal, setResetSignal] = useState(0);
   const headingRef = useRef<HTMLHeadingElement>(null);
   const configured = isSupabaseConfigured();
 
@@ -109,6 +113,7 @@ function Wizard({ draft }: { draft: ReturnType<typeof loadDraft> }) {
 
     const supabase = getSupabaseBrowser();
     if (!supabase) return;
+    if (captchaEnabled && !captcha) return setSubmitError(tCaptcha('captcha'));
     setSubmitting(true);
     try {
       const { data, error } = await supabase.auth.signUp({
@@ -117,9 +122,11 @@ function Wizard({ draft }: { draft: ReturnType<typeof loadDraft> }) {
         options: {
           data: buildSignUpMetadata(values),
           emailRedirectTo: emailRedirect(`/${locale}/profile?welcome=1`),
+          captchaToken: captcha ?? undefined,
         },
       });
       if (error) {
+        setResetSignal((n) => n + 1);
         if (error.message.includes('age_below_threshold')) return rejectUnderage(values.residenceCountry);
         setSubmitError(error.status === 429 ? tErr('rateLimit') : tErr('signUpFailed'));
         return;
@@ -228,6 +235,7 @@ function Wizard({ draft }: { draft: ReturnType<typeof loadDraft> }) {
           {t('account.notConfigured')}
         </p>
       )}
+      {step === LAST && <div className="mt-6"><Turnstile onToken={setCaptcha} resetSignal={resetSignal} /></div>}
       {submitError && (
         <p role="alert" className="mt-6 text-sm font-medium text-danger">
           {submitError}

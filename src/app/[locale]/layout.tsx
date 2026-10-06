@@ -10,6 +10,7 @@ import { Header } from '@/components/Header';
 import { ThemeProvider } from '@/components/ThemeProvider';
 import { LOCALES } from '@/config/locales';
 import { routing } from '@/i18n/routing';
+import { siteUrl } from '@/lib/site-url';
 import '../globals.css';
 
 // Latin + Cyrillic (incl. Kazakh letters), Armenian, Georgian (Mkhedruli) and Simplified Chinese.
@@ -53,7 +54,12 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'Meta' });
-  return { title: t('title'), description: t('description') };
+  return {
+    metadataBase: new URL(siteUrl()),
+    title: t('title'),
+    description: t('description'),
+    openGraph: { title: t('title'), description: t('description'), siteName: 'YourHEI', locale, type: 'website' },
+  };
 }
 
 export default async function LocaleLayout({
