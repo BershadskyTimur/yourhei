@@ -46,7 +46,7 @@ test('theme toggle switches light and dark', async ({ page }) => {
   const html = page.locator('html');
   await expect(html).toHaveAttribute('data-theme', 'light');
   const bg = () => page.evaluate(() => getComputedStyle(document.body).backgroundColor);
-  expect(await bg()).toBe('rgb(255, 255, 255)');
+  expect(await bg()).toBe('rgb(232, 228, 220)');
 
   await page.getByRole('button', { name: /Switch light/ }).click();
   await expect(html).toHaveAttribute('data-theme', 'dark');
