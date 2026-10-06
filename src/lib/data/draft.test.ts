@@ -96,7 +96,21 @@ describe('institutionDraftToSql', () => {
     expect(sql(false)).toContain('raise exception');
   });
 
-  it('stores drafts hidden and published rows with a verification date', () => {
+  it('creates a missing institution from the card when it has coordinates', () => {
+    const d = draft();
+    (d.institution as Record<string, unknown>).location = { lat: 41.7, lng: 44.8 };
+    const r = validateInstitutionDraft(d);
+    if (!r.ok) throw new Error(r.errors.join('\n'));
+    const s = institutionDraftToSql(r.data, 'ilia', { publish: true });
+    expect(s).toContain('insert into public.institutions');
+    expect(s).toContain('ST_MakePoint(44.8, 41.7)');
+    expect(s).not.toContain('raise exception');
+  });
+  it('rejects coordinates that are out of range', () => {
+    const d = draft();
+    (d.institution as Record<string, unknown>).location = { lat: 141, lng: 44.8 };
+    expect(validateInstitutionDraft(d).ok).toBe(false);
+  });  it('stores drafts hidden and published rows with a verification date', () => {
     expect(sql(false)).toContain("'draft'");
     expect(sql(false)).not.toContain('now()');
     expect(sql(true)).toContain("'published'");

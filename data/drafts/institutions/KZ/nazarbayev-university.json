@@ -1,0 +1,879 @@
+{
+  "schema_version": 1,
+  "collected_at": "2026-10-06",
+  "academic_year": "2026/2027",
+  "institution": {
+    "external_ids": {},
+    "description": {
+      "en": "An English-taught research university in Astana with schools of engineering, computing, business, sciences and medicine. Undergraduate teaching is fully in English.",
+      "ru": "Исследовательский университет в Астане, обучение полностью на английском. Школы инженерии, компьютерных наук, бизнеса, наук и медицины."
+    },
+    "rankings": [],
+    "dormitory": {
+      "available": true,
+      "cost": null
+    },
+    "ownership": null,
+    "founded_year": null,
+    "names": {
+      "original": "Nazarbayev University",
+      "en": "Nazarbayev University",
+      "ru": "Назарбаев Университет"
+    },
+    "type": "university",
+    "city": {
+      "original": "Astana",
+      "en": "Astana",
+      "ru": "Астана"
+    },
+    "website": "https://nu.edu.kz",
+    "city_size": "medium",
+    "climate": "cold",
+    "size": "large",
+    "features": [
+      "exchange",
+      "double_degree"
+    ],
+    "country": "KZ"
+  },
+  "programs": [
+    {
+      "names": {
+        "original": "Foundation Year Program (NUFYP)",
+        "en": "Foundation Year Program (NUFYP)",
+        "ru": "Подготовительный год (NUFYP)"
+      },
+      "level": "foundation",
+      "isced_f": null,
+      "languages": [
+        "en"
+      ],
+      "duration_years": 1,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 12000,
+          "currency": "USD",
+          "period": "year",
+          "applies_to": "all"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [
+          {
+            "exam": "ielts",
+            "min": 5.5
+          },
+          {
+            "exam": "sat",
+            "min": 1140
+          },
+          {
+            "exam": "act",
+            "min": 24
+          }
+        ],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://admissions.nu.edu.kz"
+    },
+    {
+      "names": {
+        "original": "Bachelor of Science in Computer Science",
+        "en": "Bachelor of Science in Computer Science",
+        "ru": "Бакалавр: Информатика (Computer Science)"
+      },
+      "level": "bachelor",
+      "isced_f": "0613",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 15000,
+          "currency": "USD",
+          "period": "year",
+          "applies_to": "all"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [
+          {
+            "exam": "ielts",
+            "min": 6
+          },
+          {
+            "exam": "sat",
+            "min": 1240
+          },
+          {
+            "exam": "act",
+            "min": 26
+          }
+        ],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://admissions.nu.edu.kz"
+    },
+    {
+      "names": {
+        "original": "Bachelor of Science in Robotics Engineering",
+        "en": "Bachelor of Science in Robotics Engineering",
+        "ru": "Бакалавр: Робототехника"
+      },
+      "level": "bachelor",
+      "isced_f": "0714",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 15000,
+          "currency": "USD",
+          "period": "year",
+          "applies_to": "all"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [
+          {
+            "exam": "ielts",
+            "min": 6
+          },
+          {
+            "exam": "sat",
+            "min": 1240
+          },
+          {
+            "exam": "act",
+            "min": 26
+          }
+        ],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://admissions.nu.edu.kz"
+    },
+    {
+      "names": {
+        "original": "Bachelor of Science in Mathematics",
+        "en": "Bachelor of Science in Mathematics",
+        "ru": "Бакалавр: Математика"
+      },
+      "level": "bachelor",
+      "isced_f": "0541",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 15000,
+          "currency": "USD",
+          "period": "year",
+          "applies_to": "all"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [
+          {
+            "exam": "ielts",
+            "min": 6
+          },
+          {
+            "exam": "sat",
+            "min": 1240
+          },
+          {
+            "exam": "act",
+            "min": 26
+          }
+        ],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://admissions.nu.edu.kz"
+    },
+    {
+      "names": {
+        "original": "Bachelor of Business Administration",
+        "en": "Bachelor of Business Administration",
+        "ru": "Бакалавр: Управление бизнесом"
+      },
+      "level": "bachelor",
+      "isced_f": "0413",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 15000,
+          "currency": "USD",
+          "period": "year",
+          "applies_to": "all"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [
+          {
+            "exam": "ielts",
+            "min": 6
+          },
+          {
+            "exam": "sat",
+            "min": 1240
+          },
+          {
+            "exam": "act",
+            "min": 26
+          }
+        ],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://admissions.nu.edu.kz"
+    },
+    {
+      "names": {
+        "original": "Bachelor of Arts in Economics",
+        "en": "Bachelor of Arts in Economics",
+        "ru": "Бакалавр: Экономика"
+      },
+      "level": "bachelor",
+      "isced_f": "0311",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 15000,
+          "currency": "USD",
+          "period": "year",
+          "applies_to": "all"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [
+          {
+            "exam": "ielts",
+            "min": 6
+          },
+          {
+            "exam": "sat",
+            "min": 1240
+          },
+          {
+            "exam": "act",
+            "min": 26
+          }
+        ],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://admissions.nu.edu.kz"
+    },
+    {
+      "names": {
+        "original": "Bachelor of Engineering in Mechanical and Aerospace Engineering",
+        "en": "Bachelor of Engineering in Mechanical and Aerospace Engineering",
+        "ru": "Бакалавр: Машиностроение и аэрокосмическая инженерия"
+      },
+      "level": "bachelor",
+      "isced_f": "0715",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 15000,
+          "currency": "USD",
+          "period": "year",
+          "applies_to": "all"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [
+          {
+            "exam": "ielts",
+            "min": 6
+          },
+          {
+            "exam": "sat",
+            "min": 1240
+          },
+          {
+            "exam": "act",
+            "min": 26
+          }
+        ],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://admissions.nu.edu.kz"
+    },
+    {
+      "names": {
+        "original": "Bachelor of Engineering in Electrical and Computer Engineering",
+        "en": "Bachelor of Engineering in Electrical and Computer Engineering",
+        "ru": "Бакалавр: Электротехника и компьютерная инженерия"
+      },
+      "level": "bachelor",
+      "isced_f": "0713",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 15000,
+          "currency": "USD",
+          "period": "year",
+          "applies_to": "all"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [
+          {
+            "exam": "ielts",
+            "min": 6
+          },
+          {
+            "exam": "sat",
+            "min": 1240
+          },
+          {
+            "exam": "act",
+            "min": 26
+          }
+        ],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://admissions.nu.edu.kz"
+    },
+    {
+      "names": {
+        "original": "Bachelor of Engineering in Civil and Environmental Engineering",
+        "en": "Bachelor of Engineering in Civil and Environmental Engineering",
+        "ru": "Бакалавр: Строительная и экологическая инженерия"
+      },
+      "level": "bachelor",
+      "isced_f": "0732",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 15000,
+          "currency": "USD",
+          "period": "year",
+          "applies_to": "all"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [
+          {
+            "exam": "ielts",
+            "min": 6
+          },
+          {
+            "exam": "sat",
+            "min": 1240
+          },
+          {
+            "exam": "act",
+            "min": 26
+          }
+        ],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://admissions.nu.edu.kz"
+    },
+    {
+      "names": {
+        "original": "Bachelor of Engineering in Chemical and Materials Engineering",
+        "en": "Bachelor of Engineering in Chemical and Materials Engineering",
+        "ru": "Бакалавр: Химическая инженерия и материалы"
+      },
+      "level": "bachelor",
+      "isced_f": "0711",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 15000,
+          "currency": "USD",
+          "period": "year",
+          "applies_to": "all"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [
+          {
+            "exam": "ielts",
+            "min": 6
+          },
+          {
+            "exam": "sat",
+            "min": 1240
+          },
+          {
+            "exam": "act",
+            "min": 26
+          }
+        ],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://admissions.nu.edu.kz"
+    },
+    {
+      "names": {
+        "original": "Bachelor of Science in Biological Sciences",
+        "en": "Bachelor of Science in Biological Sciences",
+        "ru": "Бакалавр: Биологические науки"
+      },
+      "level": "bachelor",
+      "isced_f": "0511",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 15000,
+          "currency": "USD",
+          "period": "year",
+          "applies_to": "all"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [
+          {
+            "exam": "ielts",
+            "min": 6
+          },
+          {
+            "exam": "sat",
+            "min": 1240
+          },
+          {
+            "exam": "act",
+            "min": 26
+          }
+        ],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://admissions.nu.edu.kz"
+    },
+    {
+      "names": {
+        "original": "Bachelor of Science in Physics",
+        "en": "Bachelor of Science in Physics",
+        "ru": "Бакалавр: Физика"
+      },
+      "level": "bachelor",
+      "isced_f": "0533",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 15000,
+          "currency": "USD",
+          "period": "year",
+          "applies_to": "all"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [
+          {
+            "exam": "ielts",
+            "min": 6
+          },
+          {
+            "exam": "sat",
+            "min": 1240
+          },
+          {
+            "exam": "act",
+            "min": 26
+          }
+        ],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://admissions.nu.edu.kz"
+    },
+    {
+      "names": {
+        "original": "Bachelor of Science in Chemistry",
+        "en": "Bachelor of Science in Chemistry",
+        "ru": "Бакалавр: Химия"
+      },
+      "level": "bachelor",
+      "isced_f": "0531",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 15000,
+          "currency": "USD",
+          "period": "year",
+          "applies_to": "all"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [
+          {
+            "exam": "ielts",
+            "min": 6
+          },
+          {
+            "exam": "sat",
+            "min": 1240
+          },
+          {
+            "exam": "act",
+            "min": 26
+          }
+        ],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://admissions.nu.edu.kz"
+    },
+    {
+      "names": {
+        "original": "Bachelor of Arts in Political Science and International Relations",
+        "en": "Bachelor of Arts in Political Science and International Relations",
+        "ru": "Бакалавр: Политология и международные отношения"
+      },
+      "level": "bachelor",
+      "isced_f": "0312",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 15000,
+          "currency": "USD",
+          "period": "year",
+          "applies_to": "all"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [
+          {
+            "exam": "ielts",
+            "min": 6
+          },
+          {
+            "exam": "sat",
+            "min": 1240
+          },
+          {
+            "exam": "act",
+            "min": 26
+          }
+        ],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://admissions.nu.edu.kz"
+    },
+    {
+      "names": {
+        "original": "Bachelor of Science in Petroleum Engineering",
+        "en": "Bachelor of Science in Petroleum Engineering",
+        "ru": "Бакалавр: Нефтяная инженерия"
+      },
+      "level": "bachelor",
+      "isced_f": "0724",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 15000,
+          "currency": "USD",
+          "period": "year",
+          "applies_to": "all"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [
+          {
+            "exam": "ielts",
+            "min": 6
+          },
+          {
+            "exam": "sat",
+            "min": 1240
+          },
+          {
+            "exam": "act",
+            "min": 26
+          }
+        ],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://admissions.nu.edu.kz"
+    }
+  ],
+  "scholarships": [],
+  "sources": [
+    {
+      "field": "institution.dormitory",
+      "url": "https://nu.edu.kz/admissions/how-to-apply/foundation-undergraduate/regular-admissions/",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[0].requirements.min_scores",
+      "url": "https://nu.edu.kz/admissions/how-to-apply/foundation-undergraduate/regular-admissions/",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[1].requirements.min_scores",
+      "url": "https://nu.edu.kz/admissions/how-to-apply/foundation-undergraduate/regular-admissions/",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[1].names",
+      "url": "https://nu.edu.kz/admissions/programs/",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[0].tuition[0].amount",
+      "url": "https://nu.edu.kz/admissions/fees-and-funding/",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[1].tuition[0].amount",
+      "url": "https://nu.edu.kz/admissions/fees-and-funding/",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[2].tuition[0].amount",
+      "url": "https://nu.edu.kz/admissions/fees-and-funding/",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[3].tuition[0].amount",
+      "url": "https://nu.edu.kz/admissions/fees-and-funding/",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[4].tuition[0].amount",
+      "url": "https://nu.edu.kz/admissions/fees-and-funding/",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[5].tuition[0].amount",
+      "url": "https://nu.edu.kz/admissions/fees-and-funding/",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[6].tuition[0].amount",
+      "url": "https://nu.edu.kz/admissions/fees-and-funding/",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[7].tuition[0].amount",
+      "url": "https://nu.edu.kz/admissions/fees-and-funding/",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[8].tuition[0].amount",
+      "url": "https://nu.edu.kz/admissions/fees-and-funding/",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[9].tuition[0].amount",
+      "url": "https://nu.edu.kz/admissions/fees-and-funding/",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[10].tuition[0].amount",
+      "url": "https://nu.edu.kz/admissions/fees-and-funding/",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[11].tuition[0].amount",
+      "url": "https://nu.edu.kz/admissions/fees-and-funding/",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[12].tuition[0].amount",
+      "url": "https://nu.edu.kz/admissions/fees-and-funding/",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[13].tuition[0].amount",
+      "url": "https://nu.edu.kz/admissions/fees-and-funding/",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[14].tuition[0].amount",
+      "url": "https://nu.edu.kz/admissions/fees-and-funding/",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    }
+  ],
+  "notes_for_reviewer": "Source: official nu.edu.kz pages (fees, regular admissions, programme list), read 2026-10-06. Tuition is the same for foreign and Kazakh citizens (USD 15,000 / year undergraduate, 12,000 foundation); Kazakh residents pay in tenge at 486 KZT per USD. Accepted alternatives to IELTS 6.0: SAT 1240, ACT 26 (also UNT in English 85, IB 27, A-level BBB: not encoded). TOEFL \"equivalent\" is not given as a number, so it is left out. Mid-year intake 2026-27: application deadline 2026-11-28; the main intake month and the 2027-28 dates were not published (\"to be announced\"), so intakes and deadlines are empty. Application fee 10,000 KZT (30,000 in the last two weeks): not encoded, other currency. On-campus dormitory about USD 55 per month (cost per month does not fit the format: left out). Programme level and ISCED-F codes are my assignment, please check. Only 14 of the 22 listed bachelor programmes are included (the others have the same fee and rules)."
+}

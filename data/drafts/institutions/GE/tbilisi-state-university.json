@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "collected_at": "2026-10-06",
+  "academic_year": "2026/2027",
+  "institution": {
+    "external_ids": {},
+    "description": {
+      "en": "The oldest and largest university in Georgia. This card covers only the English-taught Computer Science bachelor programme for international applicants.",
+      "ru": "Старейший и крупнейший университет Грузии. Эта карточка пока содержит только бакалавриат «Информатика» на английском для иностранцев."
+    },
+    "rankings": [],
+    "dormitory": null,
+    "ownership": "public",
+    "founded_year": null,
+    "names": {
+      "original": "თბილისის სახელმწიფო უნივერსიტეტი",
+      "en": "Ivane Javakhishvili Tbilisi State University",
+      "ru": "Тбилисский государственный университет имени Иванэ Джавахишвили"
+    },
+    "type": "university",
+    "city": {
+      "original": "თბილისი",
+      "en": "Tbilisi",
+      "ru": "Тбилиси"
+    },
+    "website": "https://www.tsu.ge/en",
+    "location": {
+      "lat": 41.71,
+      "lng": 44.778333
+    },
+    "city_size": "medium",
+    "climate": "temperate",
+    "size": "large",
+    "features": [],
+    "country": "GE"
+  },
+  "programs": [
+    {
+      "names": {
+        "original": "Computer Science (English)",
+        "en": "Computer Science (English)",
+        "ru": "Информатика (на английском)"
+      },
+      "level": "bachelor",
+      "isced_f": "0613",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 4000,
+          "currency": "USD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "notarized_translation"
+        ],
+        "min_scores": [
+          {
+            "exam": "ielts",
+            "min": 4
+          }
+        ],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://computing.tsu.ge/en/for-enrollee"
+    }
+  ],
+  "scholarships": [],
+  "sources": [
+    {
+      "field": "programs[0].requirements.min_scores",
+      "url": "https://computing.tsu.ge/en/for-enrollee",
+      "accessed_at": "2026-10-06",
+      "confidence": "medium"
+    },
+    {
+      "field": "programs[0].tuition[0].amount",
+      "url": "https://computing.tsu.ge/en/for-enrollee",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    }
+  ],
+  "notes_for_reviewer": "Official computing.tsu.ge page read 2026-10-06: USD 4,000 per year (2,000 per semester), 4 years / 240 ECTS. English requirement is a B1-level certificate: the page gives \"IELTS 4.0 - 5.0\" (I stored 4.0, medium confidence) or PET pass with merit, TOEFL, TOEIC, PTE. Documents: translated and notarised school certificate and passport, proof that maths and English were passed at school; faculty interview. Deadline, application fee and a direct application URL were not found. Other TSU programmes (e.g. Chemistry, 10,000 GEL per year in a search snippet) were NOT verified and are not included. Coordinates are from Wikidata (the main building)."
+}

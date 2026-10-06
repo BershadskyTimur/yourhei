@@ -1,0 +1,1131 @@
+{
+  "schema_version": 1,
+  "collected_at": "2026-10-06",
+  "academic_year": "2027/2028",
+  "institution": {
+    "external_ids": {},
+    "description": {
+      "en": "A joint venture between Xi'an Jiaotong University and the University of Liverpool in Suzhou. Degrees are awarded in English-style programmes with a wide choice of science, engineering, business and humanities majors.",
+      "ru": "Совместный университет Сианьского университета Цзяотун и Ливерпульского университета в Сучжоу. Широкий выбор программ: инженерия, наука, бизнес, гуманитарные направления."
+    },
+    "rankings": [],
+    "dormitory": null,
+    "ownership": "private",
+    "founded_year": null,
+    "names": {
+      "original": "西交利物浦大学",
+      "en": "Xi'an Jiaotong-Liverpool University",
+      "ru": "Сианьский университет Цзяотун — Ливерпуль"
+    },
+    "type": "university",
+    "city": {
+      "en": "Suzhou",
+      "ru": "Сучжоу"
+    },
+    "website": "https://www.xjtlu.edu.cn/en",
+    "city_size": "megapolis",
+    "climate": "temperate",
+    "size": "large",
+    "features": [
+      "double_degree",
+      "exchange"
+    ],
+    "country": "CN"
+  },
+  "programs": [
+    {
+      "names": {
+        "original": "Computer Science and Technology (BEng Hons)",
+        "en": "Computer Science and Technology (BEng Hons)",
+        "ru": "Информатика и технологии (BEng)"
+      },
+      "level": "bachelor",
+      "isced_f": "0613",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 99000,
+          "currency": "CNY",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [
+        {
+          "intake": "2027-09",
+          "applies_to": "international",
+          "date": "2027-05-31"
+        }
+      ],
+      "application_fee": null,
+      "application_url": "https://www.xjtlu.edu.cn/en/admissions/global/how-to-apply"
+    },
+    {
+      "names": {
+        "original": "Artificial Intelligence (BEng Hons)",
+        "en": "Artificial Intelligence (BEng Hons)",
+        "ru": "Искусственный интеллект (BEng)"
+      },
+      "level": "bachelor",
+      "isced_f": "0610",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 99000,
+          "currency": "CNY",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [
+        {
+          "intake": "2027-09",
+          "applies_to": "international",
+          "date": "2027-05-31"
+        }
+      ],
+      "application_fee": null,
+      "application_url": "https://www.xjtlu.edu.cn/en/admissions/global/how-to-apply"
+    },
+    {
+      "names": {
+        "original": "Data Science and Big Data Technology (BEng Hons)",
+        "en": "Data Science and Big Data Technology (BEng Hons)",
+        "ru": "Наука о данных и большие данные (BEng)"
+      },
+      "level": "bachelor",
+      "isced_f": "0612",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 99000,
+          "currency": "CNY",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [
+        {
+          "intake": "2027-09",
+          "applies_to": "international",
+          "date": "2027-05-31"
+        }
+      ],
+      "application_fee": null,
+      "application_url": "https://www.xjtlu.edu.cn/en/admissions/global/how-to-apply"
+    },
+    {
+      "names": {
+        "original": "Information and Computing Science (BSc Hons)",
+        "en": "Information and Computing Science (BSc Hons)",
+        "ru": "Информатика и вычислительные науки (BSc)"
+      },
+      "level": "bachelor",
+      "isced_f": "0613",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 99000,
+          "currency": "CNY",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [
+        {
+          "intake": "2027-09",
+          "applies_to": "international",
+          "date": "2027-05-31"
+        }
+      ],
+      "application_fee": null,
+      "application_url": "https://www.xjtlu.edu.cn/en/admissions/global/how-to-apply"
+    },
+    {
+      "names": {
+        "original": "Electrical Engineering (BEng Hons)",
+        "en": "Electrical Engineering (BEng Hons)",
+        "ru": "Электротехника (BEng)"
+      },
+      "level": "bachelor",
+      "isced_f": "0713",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 99000,
+          "currency": "CNY",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [
+        {
+          "intake": "2027-09",
+          "applies_to": "international",
+          "date": "2027-05-31"
+        }
+      ],
+      "application_fee": null,
+      "application_url": "https://www.xjtlu.edu.cn/en/admissions/global/how-to-apply"
+    },
+    {
+      "names": {
+        "original": "Telecommunications Engineering (BEng Hons)",
+        "en": "Telecommunications Engineering (BEng Hons)",
+        "ru": "Телекоммуникационная инженерия (BEng)"
+      },
+      "level": "bachelor",
+      "isced_f": "0714",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 99000,
+          "currency": "CNY",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [
+        {
+          "intake": "2027-09",
+          "applies_to": "international",
+          "date": "2027-05-31"
+        }
+      ],
+      "application_fee": null,
+      "application_url": "https://www.xjtlu.edu.cn/en/admissions/global/how-to-apply"
+    },
+    {
+      "names": {
+        "original": "Mechatronics and Robotic Systems (BEng Hons)",
+        "en": "Mechatronics and Robotic Systems (BEng Hons)",
+        "ru": "Мехатроника и робототехника (BEng)"
+      },
+      "level": "bachelor",
+      "isced_f": "0714",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 99000,
+          "currency": "CNY",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [
+        {
+          "intake": "2027-09",
+          "applies_to": "international",
+          "date": "2027-05-31"
+        }
+      ],
+      "application_fee": null,
+      "application_url": "https://www.xjtlu.edu.cn/en/admissions/global/how-to-apply"
+    },
+    {
+      "names": {
+        "original": "Civil Engineering (BEng Hons)",
+        "en": "Civil Engineering (BEng Hons)",
+        "ru": "Строительная инженерия (BEng)"
+      },
+      "level": "bachelor",
+      "isced_f": "0732",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 99000,
+          "currency": "CNY",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [
+        {
+          "intake": "2027-09",
+          "applies_to": "international",
+          "date": "2027-05-31"
+        }
+      ],
+      "application_fee": null,
+      "application_url": "https://www.xjtlu.edu.cn/en/admissions/global/how-to-apply"
+    },
+    {
+      "names": {
+        "original": "Architecture (BEng Hons)",
+        "en": "Architecture (BEng Hons)",
+        "ru": "Архитектура (BEng)"
+      },
+      "level": "bachelor",
+      "isced_f": "0731",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 99000,
+          "currency": "CNY",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [
+        {
+          "intake": "2027-09",
+          "applies_to": "international",
+          "date": "2027-05-31"
+        }
+      ],
+      "application_fee": null,
+      "application_url": "https://www.xjtlu.edu.cn/en/admissions/global/how-to-apply"
+    },
+    {
+      "names": {
+        "original": "Industrial Design (BEng Hons)",
+        "en": "Industrial Design (BEng Hons)",
+        "ru": "Промышленный дизайн (BEng)"
+      },
+      "level": "bachelor",
+      "isced_f": "0212",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 99000,
+          "currency": "CNY",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [
+        {
+          "intake": "2027-09",
+          "applies_to": "international",
+          "date": "2027-05-31"
+        }
+      ],
+      "application_fee": null,
+      "application_url": "https://www.xjtlu.edu.cn/en/admissions/global/how-to-apply"
+    },
+    {
+      "names": {
+        "original": "Applied Mathematics (BSc Hons)",
+        "en": "Applied Mathematics (BSc Hons)",
+        "ru": "Прикладная математика (BSc)"
+      },
+      "level": "bachelor",
+      "isced_f": "0541",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 99000,
+          "currency": "CNY",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [
+        {
+          "intake": "2027-09",
+          "applies_to": "international",
+          "date": "2027-05-31"
+        }
+      ],
+      "application_fee": null,
+      "application_url": "https://www.xjtlu.edu.cn/en/admissions/global/how-to-apply"
+    },
+    {
+      "names": {
+        "original": "Biological Sciences (BSc Hons)",
+        "en": "Biological Sciences (BSc Hons)",
+        "ru": "Биологические науки (BSc)"
+      },
+      "level": "bachelor",
+      "isced_f": "0511",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 99000,
+          "currency": "CNY",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [
+        {
+          "intake": "2027-09",
+          "applies_to": "international",
+          "date": "2027-05-31"
+        }
+      ],
+      "application_fee": null,
+      "application_url": "https://www.xjtlu.edu.cn/en/admissions/global/how-to-apply"
+    },
+    {
+      "names": {
+        "original": "Biomedical Sciences (BSc Hons)",
+        "en": "Biomedical Sciences (BSc Hons)",
+        "ru": "Биомедицинские науки (BSc)"
+      },
+      "level": "bachelor",
+      "isced_f": "0511",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 99000,
+          "currency": "CNY",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [
+        {
+          "intake": "2027-09",
+          "applies_to": "international",
+          "date": "2027-05-31"
+        }
+      ],
+      "application_fee": null,
+      "application_url": "https://www.xjtlu.edu.cn/en/admissions/global/how-to-apply"
+    },
+    {
+      "names": {
+        "original": "Pharmaceutical Sciences (BSc Hons)",
+        "en": "Pharmaceutical Sciences (BSc Hons)",
+        "ru": "Фармацевтические науки (BSc)"
+      },
+      "level": "bachelor",
+      "isced_f": "0916",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 99000,
+          "currency": "CNY",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [
+        {
+          "intake": "2027-09",
+          "applies_to": "international",
+          "date": "2027-05-31"
+        }
+      ],
+      "application_fee": null,
+      "application_url": "https://www.xjtlu.edu.cn/en/admissions/global/how-to-apply"
+    },
+    {
+      "names": {
+        "original": "Psychology (BSc Hons)",
+        "en": "Psychology (BSc Hons)",
+        "ru": "Психология (BSc)"
+      },
+      "level": "bachelor",
+      "isced_f": "0313",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 99000,
+          "currency": "CNY",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [
+        {
+          "intake": "2027-09",
+          "applies_to": "international",
+          "date": "2027-05-31"
+        }
+      ],
+      "application_fee": null,
+      "application_url": "https://www.xjtlu.edu.cn/en/admissions/global/how-to-apply"
+    },
+    {
+      "names": {
+        "original": "Economics (BSc Hons)",
+        "en": "Economics (BSc Hons)",
+        "ru": "Экономика (BSc)"
+      },
+      "level": "bachelor",
+      "isced_f": "0311",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 99000,
+          "currency": "CNY",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [
+        {
+          "intake": "2027-09",
+          "applies_to": "international",
+          "date": "2027-05-31"
+        }
+      ],
+      "application_fee": null,
+      "application_url": "https://www.xjtlu.edu.cn/en/admissions/global/how-to-apply"
+    },
+    {
+      "names": {
+        "original": "Economics and Finance (BSc Hons)",
+        "en": "Economics and Finance (BSc Hons)",
+        "ru": "Экономика и финансы (BSc)"
+      },
+      "level": "bachelor",
+      "isced_f": "0311",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 99000,
+          "currency": "CNY",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [
+        {
+          "intake": "2027-09",
+          "applies_to": "international",
+          "date": "2027-05-31"
+        }
+      ],
+      "application_fee": null,
+      "application_url": "https://www.xjtlu.edu.cn/en/admissions/global/how-to-apply"
+    },
+    {
+      "names": {
+        "original": "Accounting (BA Hons)",
+        "en": "Accounting (BA Hons)",
+        "ru": "Бухгалтерский учёт (BA)"
+      },
+      "level": "bachelor",
+      "isced_f": "0411",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 99000,
+          "currency": "CNY",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [
+        {
+          "intake": "2027-09",
+          "applies_to": "international",
+          "date": "2027-05-31"
+        }
+      ],
+      "application_fee": null,
+      "application_url": "https://www.xjtlu.edu.cn/en/admissions/global/how-to-apply"
+    },
+    {
+      "names": {
+        "original": "Business Administration (BA Hons)",
+        "en": "Business Administration (BA Hons)",
+        "ru": "Управление бизнесом (BA)"
+      },
+      "level": "bachelor",
+      "isced_f": "0413",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 99000,
+          "currency": "CNY",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [
+        {
+          "intake": "2027-09",
+          "applies_to": "international",
+          "date": "2027-05-31"
+        }
+      ],
+      "application_fee": null,
+      "application_url": "https://www.xjtlu.edu.cn/en/admissions/global/how-to-apply"
+    },
+    {
+      "names": {
+        "original": "International Relations (BA Hons)",
+        "en": "International Relations (BA Hons)",
+        "ru": "Международные отношения (BA)"
+      },
+      "level": "bachelor",
+      "isced_f": "0312",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 99000,
+          "currency": "CNY",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [
+        {
+          "intake": "2027-09",
+          "applies_to": "international",
+          "date": "2027-05-31"
+        }
+      ],
+      "application_fee": null,
+      "application_url": "https://www.xjtlu.edu.cn/en/admissions/global/how-to-apply"
+    },
+    {
+      "names": {
+        "original": "Media and Communication Studies (BA Hons)",
+        "en": "Media and Communication Studies (BA Hons)",
+        "ru": "Медиа и коммуникации (BA)"
+      },
+      "level": "bachelor",
+      "isced_f": "0321",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 99000,
+          "currency": "CNY",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [
+        {
+          "intake": "2027-09",
+          "applies_to": "international",
+          "date": "2027-05-31"
+        }
+      ],
+      "application_fee": null,
+      "application_url": "https://www.xjtlu.edu.cn/en/admissions/global/how-to-apply"
+    },
+    {
+      "names": {
+        "original": "Translation and Interpreting (BA Hons)",
+        "en": "Translation and Interpreting (BA Hons)",
+        "ru": "Перевод (BA)"
+      },
+      "level": "bachelor",
+      "isced_f": "0231",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 99000,
+          "currency": "CNY",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [
+        {
+          "intake": "2027-09",
+          "applies_to": "international",
+          "date": "2027-05-31"
+        }
+      ],
+      "application_fee": null,
+      "application_url": "https://www.xjtlu.edu.cn/en/admissions/global/how-to-apply"
+    }
+  ],
+  "scholarships": [],
+  "sources": [
+    {
+      "field": "programs[0].deadlines[0].date",
+      "url": "https://www.xjtlu.edu.cn/en/admissions/global/how-to-apply",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[0].names",
+      "url": "https://www.xjtlu.edu.cn/en/study/undergraduate",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[0].tuition[0].amount",
+      "url": "https://www.xjtlu.edu.cn/en/admissions/global/fees-and-scholarships",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[1].tuition[0].amount",
+      "url": "https://www.xjtlu.edu.cn/en/admissions/global/fees-and-scholarships",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[2].tuition[0].amount",
+      "url": "https://www.xjtlu.edu.cn/en/admissions/global/fees-and-scholarships",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[3].tuition[0].amount",
+      "url": "https://www.xjtlu.edu.cn/en/admissions/global/fees-and-scholarships",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[4].tuition[0].amount",
+      "url": "https://www.xjtlu.edu.cn/en/admissions/global/fees-and-scholarships",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[5].tuition[0].amount",
+      "url": "https://www.xjtlu.edu.cn/en/admissions/global/fees-and-scholarships",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[6].tuition[0].amount",
+      "url": "https://www.xjtlu.edu.cn/en/admissions/global/fees-and-scholarships",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[7].tuition[0].amount",
+      "url": "https://www.xjtlu.edu.cn/en/admissions/global/fees-and-scholarships",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[8].tuition[0].amount",
+      "url": "https://www.xjtlu.edu.cn/en/admissions/global/fees-and-scholarships",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[9].tuition[0].amount",
+      "url": "https://www.xjtlu.edu.cn/en/admissions/global/fees-and-scholarships",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[10].tuition[0].amount",
+      "url": "https://www.xjtlu.edu.cn/en/admissions/global/fees-and-scholarships",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[11].tuition[0].amount",
+      "url": "https://www.xjtlu.edu.cn/en/admissions/global/fees-and-scholarships",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[12].tuition[0].amount",
+      "url": "https://www.xjtlu.edu.cn/en/admissions/global/fees-and-scholarships",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[13].tuition[0].amount",
+      "url": "https://www.xjtlu.edu.cn/en/admissions/global/fees-and-scholarships",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[14].tuition[0].amount",
+      "url": "https://www.xjtlu.edu.cn/en/admissions/global/fees-and-scholarships",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[15].tuition[0].amount",
+      "url": "https://www.xjtlu.edu.cn/en/admissions/global/fees-and-scholarships",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[16].tuition[0].amount",
+      "url": "https://www.xjtlu.edu.cn/en/admissions/global/fees-and-scholarships",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[17].tuition[0].amount",
+      "url": "https://www.xjtlu.edu.cn/en/admissions/global/fees-and-scholarships",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[18].tuition[0].amount",
+      "url": "https://www.xjtlu.edu.cn/en/admissions/global/fees-and-scholarships",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[19].tuition[0].amount",
+      "url": "https://www.xjtlu.edu.cn/en/admissions/global/fees-and-scholarships",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[20].tuition[0].amount",
+      "url": "https://www.xjtlu.edu.cn/en/admissions/global/fees-and-scholarships",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[21].tuition[0].amount",
+      "url": "https://www.xjtlu.edu.cn/en/admissions/global/fees-and-scholarships",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    }
+  ],
+  "notes_for_reviewer": "Official xjtlu.edu.cn pages read 2026-10-06. International undergraduate tuition RMB 99,000 per academic year; the pages refer to September 2027 entry (application closing 31 May 2027), so academic year 2027/2028. 10% early-bird discount; entry scholarship up to 50%; deposit RMB 10,000 after an unconditional offer (none of this is encoded). English minimum scores (IELTS/TOEFL), application fee, accommodation costs and programme durations were NOT on the pages: scores left empty, duration 4 years assumed for all (please check: some programmes differ). Language \"en\" is my assumption (XJTLU teaches in English); the pages do not say it. 22 of the 52 listed programmes are included, all with the same fee. City Suzhou and ownership \"private\" are general knowledge. Programme names are as published, ISCED-F codes are my assignment."
+}

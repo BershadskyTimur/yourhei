@@ -1,0 +1,372 @@
+{
+  "schema_version": 1,
+  "collected_at": "2026-10-06",
+  "academic_year": "2026/2027",
+  "institution": {
+    "external_ids": {},
+    "description": {
+      "en": "A university in Astana focused on IT, with international bachelor programmes taught in English.",
+      "ru": "Университет в Астане с упором на ИТ; для иностранцев есть бакалаврские программы на английском."
+    },
+    "rankings": [],
+    "dormitory": {
+      "available": true,
+      "cost": null
+    },
+    "ownership": null,
+    "founded_year": null,
+    "names": {
+      "original": "Astana IT University",
+      "en": "Astana IT University",
+      "ru": "Astana IT University"
+    },
+    "type": "university",
+    "city": {
+      "original": "Astana",
+      "en": "Astana",
+      "ru": "Астана"
+    },
+    "website": "https://astanait.edu.kz",
+    "location": {
+      "lat": 51.1694,
+      "lng": 71.4491
+    },
+    "city_size": "medium",
+    "climate": "cold",
+    "size": "small",
+    "features": [],
+    "country": "KZ"
+  },
+  "programs": [
+    {
+      "names": {
+        "original": "Software Engineering",
+        "en": "Software Engineering",
+        "ru": "Программная инженерия"
+      },
+      "level": "bachelor",
+      "isced_f": "0613",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 3,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 5000,
+          "currency": "USD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://forms.gle/m4m1UKkCwf74bRuy9"
+    },
+    {
+      "names": {
+        "original": "Computer Science",
+        "en": "Computer Science",
+        "ru": "Информатика"
+      },
+      "level": "bachelor",
+      "isced_f": "0613",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 3,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 5000,
+          "currency": "USD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://forms.gle/m4m1UKkCwf74bRuy9"
+    },
+    {
+      "names": {
+        "original": "Big Data Analysis",
+        "en": "Big Data Analysis",
+        "ru": "Анализ больших данных"
+      },
+      "level": "bachelor",
+      "isced_f": "0612",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 3,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 5000,
+          "currency": "USD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://forms.gle/m4m1UKkCwf74bRuy9"
+    },
+    {
+      "names": {
+        "original": "Mathematical and Computational Science",
+        "en": "Mathematical and Computational Science",
+        "ru": "Математические и вычислительные науки"
+      },
+      "level": "bachelor",
+      "isced_f": "0541",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 3,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 5000,
+          "currency": "USD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://forms.gle/m4m1UKkCwf74bRuy9"
+    },
+    {
+      "names": {
+        "original": "Cybersecurity",
+        "en": "Cybersecurity",
+        "ru": "Кибербезопасность"
+      },
+      "level": "bachelor",
+      "isced_f": "0613",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 3,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 5000,
+          "currency": "USD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://forms.gle/m4m1UKkCwf74bRuy9"
+    },
+    {
+      "names": {
+        "original": "Electronic Engineering",
+        "en": "Electronic Engineering",
+        "ru": "Электронная инженерия"
+      },
+      "level": "bachelor",
+      "isced_f": "0714",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 3,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 5000,
+          "currency": "USD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://forms.gle/m4m1UKkCwf74bRuy9"
+    },
+    {
+      "names": {
+        "original": "IT Management",
+        "en": "IT Management",
+        "ru": "ИТ-менеджмент"
+      },
+      "level": "bachelor",
+      "isced_f": "0413",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 3,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 5000,
+          "currency": "USD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://forms.gle/m4m1UKkCwf74bRuy9"
+    },
+    {
+      "names": {
+        "original": "Digital Journalism",
+        "en": "Digital Journalism",
+        "ru": "Цифровая журналистика"
+      },
+      "level": "bachelor",
+      "isced_f": "0321",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 3,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 5000,
+          "currency": "USD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://forms.gle/m4m1UKkCwf74bRuy9"
+    }
+  ],
+  "scholarships": [],
+  "sources": [
+    {
+      "field": "institution.dormitory",
+      "url": "https://int.astanait.edu.kz/",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[0].tuition[0].amount",
+      "url": "https://int.astanait.edu.kz/",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[1].tuition[0].amount",
+      "url": "https://int.astanait.edu.kz/",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[2].tuition[0].amount",
+      "url": "https://int.astanait.edu.kz/",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[3].tuition[0].amount",
+      "url": "https://int.astanait.edu.kz/",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[4].tuition[0].amount",
+      "url": "https://int.astanait.edu.kz/",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[5].tuition[0].amount",
+      "url": "https://int.astanait.edu.kz/",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[6].tuition[0].amount",
+      "url": "https://int.astanait.edu.kz/",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[7].tuition[0].amount",
+      "url": "https://int.astanait.edu.kz/",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    }
+  ],
+  "notes_for_reviewer": "Official int.astanait.edu.kz page read 2026-10-06 (international bachelor): USD 5,000 per academic year, 3 years, English. 16 programmes are listed, 8 are included. Accepted English tests are listed (IELTS, TOEFL, Duolingo ...) but no minimum scores: left empty. Other requirements: medical certificate, 6 photos, interview. Student residence USD 70 per month (cost per month does not fit the format). Deadline and application fee not stated. LOCATION IS APPROXIMATE (centre of Astana): the institution is not in the Wikidata import and has no coordinates there; please move the pin. Duration of 3 years is as published for international students."
+}

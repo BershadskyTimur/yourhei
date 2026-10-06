@@ -1,0 +1,1457 @@
+{
+  "schema_version": 1,
+  "collected_at": "2026-10-06",
+  "academic_year": "2026/2027",
+  "institution": {
+    "external_ids": {},
+    "description": {
+      "en": "A public university in Baku run by the Ministry of Foreign Affairs, with schools of public affairs, business, IT and engineering, law, agriculture and design. The Wikidata entry still carries its old name, Azerbaijan Diplomatic Academy.",
+      "ru": "Университет в Баку, находящийся в ведении МИД Азербайджана: школы международных отношений, бизнеса, ИТ и инженерии, права, сельского хозяйства и дизайна."
+    },
+    "rankings": [],
+    "dormitory": null,
+    "ownership": null,
+    "founded_year": null,
+    "names": {
+      "original": "ADA Universiteti",
+      "en": "ADA University",
+      "ru": "Университет АДА"
+    },
+    "type": "university",
+    "city": {
+      "original": "Bakı",
+      "en": "Baku",
+      "ru": "Баку"
+    },
+    "website": "https://www.ada.edu.az/en",
+    "city_size": "megapolis",
+    "climate": "temperate",
+    "size": "small",
+    "features": [],
+    "country": "AZ"
+  },
+  "programs": [
+    {
+      "names": {
+        "original": "International Studies (BAIS)",
+        "en": "International Studies (BAIS)",
+        "ru": "Международные отношения (BAIS)"
+      },
+      "level": "bachelor",
+      "isced_f": "0312",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 8500,
+          "currency": "AZN",
+          "period": "year",
+          "applies_to": "international"
+        },
+        {
+          "amount": 6000,
+          "currency": "AZN",
+          "period": "year",
+          "applies_to": "domestic"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript",
+          "notarized_translation"
+        ],
+        "min_scores": [
+          {
+            "exam": "ielts",
+            "min": 6
+          },
+          {
+            "exam": "toefl",
+            "min": 75
+          }
+        ],
+        "min_gpa": null
+      },
+      "deadlines": [
+        {
+          "intake": "2026-09",
+          "applies_to": "international",
+          "date": "2026-07-01"
+        }
+      ],
+      "application_fee": {
+        "amount": 100,
+        "currency": "AZN"
+      },
+      "application_url": "https://www.ada.edu.az/en/admission/undergraduate"
+    },
+    {
+      "names": {
+        "original": "Public Administration (BAPA)",
+        "en": "Public Administration (BAPA)",
+        "ru": "Государственное управление (BAPA)"
+      },
+      "level": "bachelor",
+      "isced_f": "0413",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 8500,
+          "currency": "AZN",
+          "period": "year",
+          "applies_to": "international"
+        },
+        {
+          "amount": 6000,
+          "currency": "AZN",
+          "period": "year",
+          "applies_to": "domestic"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript",
+          "notarized_translation"
+        ],
+        "min_scores": [
+          {
+            "exam": "ielts",
+            "min": 6
+          },
+          {
+            "exam": "toefl",
+            "min": 75
+          }
+        ],
+        "min_gpa": null
+      },
+      "deadlines": [
+        {
+          "intake": "2026-09",
+          "applies_to": "international",
+          "date": "2026-07-01"
+        }
+      ],
+      "application_fee": {
+        "amount": 100,
+        "currency": "AZN"
+      },
+      "application_url": "https://www.ada.edu.az/en/admission/undergraduate"
+    },
+    {
+      "names": {
+        "original": "Communication and Digital Media (BACDM)",
+        "en": "Communication and Digital Media (BACDM)",
+        "ru": "Коммуникации и цифровые медиа (BACDM)"
+      },
+      "level": "bachelor",
+      "isced_f": "0321",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 8500,
+          "currency": "AZN",
+          "period": "year",
+          "applies_to": "international"
+        },
+        {
+          "amount": 6000,
+          "currency": "AZN",
+          "period": "year",
+          "applies_to": "domestic"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript",
+          "notarized_translation"
+        ],
+        "min_scores": [
+          {
+            "exam": "ielts",
+            "min": 6
+          },
+          {
+            "exam": "toefl",
+            "min": 75
+          }
+        ],
+        "min_gpa": null
+      },
+      "deadlines": [
+        {
+          "intake": "2026-09",
+          "applies_to": "international",
+          "date": "2026-07-01"
+        }
+      ],
+      "application_fee": {
+        "amount": 100,
+        "currency": "AZN"
+      },
+      "application_url": "https://www.ada.edu.az/en/admission/undergraduate"
+    },
+    {
+      "names": {
+        "original": "Business Administration (BBA)",
+        "en": "Business Administration (BBA)",
+        "ru": "Управление бизнесом (BBA)"
+      },
+      "level": "bachelor",
+      "isced_f": "0413",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 8500,
+          "currency": "AZN",
+          "period": "year",
+          "applies_to": "international"
+        },
+        {
+          "amount": 6500,
+          "currency": "AZN",
+          "period": "year",
+          "applies_to": "domestic"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript",
+          "notarized_translation"
+        ],
+        "min_scores": [
+          {
+            "exam": "ielts",
+            "min": 6
+          },
+          {
+            "exam": "toefl",
+            "min": 75
+          }
+        ],
+        "min_gpa": null
+      },
+      "deadlines": [
+        {
+          "intake": "2026-09",
+          "applies_to": "international",
+          "date": "2026-07-01"
+        }
+      ],
+      "application_fee": {
+        "amount": 100,
+        "currency": "AZN"
+      },
+      "application_url": "https://www.ada.edu.az/en/admission/undergraduate"
+    },
+    {
+      "names": {
+        "original": "Economics (BSE)",
+        "en": "Economics (BSE)",
+        "ru": "Экономика (BSE)"
+      },
+      "level": "bachelor",
+      "isced_f": "0311",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 8500,
+          "currency": "AZN",
+          "period": "year",
+          "applies_to": "international"
+        },
+        {
+          "amount": 6500,
+          "currency": "AZN",
+          "period": "year",
+          "applies_to": "domestic"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript",
+          "notarized_translation"
+        ],
+        "min_scores": [
+          {
+            "exam": "ielts",
+            "min": 6
+          },
+          {
+            "exam": "toefl",
+            "min": 75
+          }
+        ],
+        "min_gpa": null
+      },
+      "deadlines": [
+        {
+          "intake": "2026-09",
+          "applies_to": "international",
+          "date": "2026-07-01"
+        }
+      ],
+      "application_fee": {
+        "amount": 100,
+        "currency": "AZN"
+      },
+      "application_url": "https://www.ada.edu.az/en/admission/undergraduate"
+    },
+    {
+      "names": {
+        "original": "Finance (BSF)",
+        "en": "Finance (BSF)",
+        "ru": "Финансы (BSF)"
+      },
+      "level": "bachelor",
+      "isced_f": "0412",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 8500,
+          "currency": "AZN",
+          "period": "year",
+          "applies_to": "international"
+        },
+        {
+          "amount": 8000,
+          "currency": "AZN",
+          "period": "year",
+          "applies_to": "domestic"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript",
+          "notarized_translation"
+        ],
+        "min_scores": [
+          {
+            "exam": "ielts",
+            "min": 6
+          },
+          {
+            "exam": "toefl",
+            "min": 75
+          }
+        ],
+        "min_gpa": null
+      },
+      "deadlines": [
+        {
+          "intake": "2026-09",
+          "applies_to": "international",
+          "date": "2026-07-01"
+        }
+      ],
+      "application_fee": {
+        "amount": 100,
+        "currency": "AZN"
+      },
+      "application_url": "https://www.ada.edu.az/en/admission/undergraduate"
+    },
+    {
+      "names": {
+        "original": "Law (LLB)",
+        "en": "Law (LLB)",
+        "ru": "Право (LLB)"
+      },
+      "level": "bachelor",
+      "isced_f": "0421",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 8500,
+          "currency": "AZN",
+          "period": "year",
+          "applies_to": "international"
+        },
+        {
+          "amount": 8000,
+          "currency": "AZN",
+          "period": "year",
+          "applies_to": "domestic"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript",
+          "notarized_translation"
+        ],
+        "min_scores": [
+          {
+            "exam": "ielts",
+            "min": 6
+          },
+          {
+            "exam": "toefl",
+            "min": 75
+          }
+        ],
+        "min_gpa": null
+      },
+      "deadlines": [
+        {
+          "intake": "2026-09",
+          "applies_to": "international",
+          "date": "2026-07-01"
+        }
+      ],
+      "application_fee": {
+        "amount": 100,
+        "currency": "AZN"
+      },
+      "application_url": "https://www.ada.edu.az/en/admission/undergraduate"
+    },
+    {
+      "names": {
+        "original": "Computer Science (BSCS)",
+        "en": "Computer Science (BSCS)",
+        "ru": "Информатика (BSCS)"
+      },
+      "level": "bachelor",
+      "isced_f": "0613",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 8500,
+          "currency": "AZN",
+          "period": "year",
+          "applies_to": "international"
+        },
+        {
+          "amount": 6000,
+          "currency": "AZN",
+          "period": "year",
+          "applies_to": "domestic"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript",
+          "notarized_translation"
+        ],
+        "min_scores": [
+          {
+            "exam": "ielts",
+            "min": 6
+          },
+          {
+            "exam": "toefl",
+            "min": 75
+          }
+        ],
+        "min_gpa": null
+      },
+      "deadlines": [
+        {
+          "intake": "2026-09",
+          "applies_to": "international",
+          "date": "2026-07-01"
+        }
+      ],
+      "application_fee": {
+        "amount": 100,
+        "currency": "AZN"
+      },
+      "application_url": "https://www.ada.edu.az/en/admission/undergraduate"
+    },
+    {
+      "names": {
+        "original": "Computer Engineering (BSCE)",
+        "en": "Computer Engineering (BSCE)",
+        "ru": "Компьютерная инженерия (BSCE)"
+      },
+      "level": "bachelor",
+      "isced_f": "0714",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 8500,
+          "currency": "AZN",
+          "period": "year",
+          "applies_to": "international"
+        },
+        {
+          "amount": 6000,
+          "currency": "AZN",
+          "period": "year",
+          "applies_to": "domestic"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript",
+          "notarized_translation"
+        ],
+        "min_scores": [
+          {
+            "exam": "ielts",
+            "min": 6
+          },
+          {
+            "exam": "toefl",
+            "min": 75
+          }
+        ],
+        "min_gpa": null
+      },
+      "deadlines": [
+        {
+          "intake": "2026-09",
+          "applies_to": "international",
+          "date": "2026-07-01"
+        }
+      ],
+      "application_fee": {
+        "amount": 100,
+        "currency": "AZN"
+      },
+      "application_url": "https://www.ada.edu.az/en/admission/undergraduate"
+    },
+    {
+      "names": {
+        "original": "Information Technology (BSIT)",
+        "en": "Information Technology (BSIT)",
+        "ru": "Информационные технологии (BSIT)"
+      },
+      "level": "bachelor",
+      "isced_f": "0613",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 8500,
+          "currency": "AZN",
+          "period": "year",
+          "applies_to": "international"
+        },
+        {
+          "amount": 6000,
+          "currency": "AZN",
+          "period": "year",
+          "applies_to": "domestic"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript",
+          "notarized_translation"
+        ],
+        "min_scores": [
+          {
+            "exam": "ielts",
+            "min": 6
+          },
+          {
+            "exam": "toefl",
+            "min": 75
+          }
+        ],
+        "min_gpa": null
+      },
+      "deadlines": [
+        {
+          "intake": "2026-09",
+          "applies_to": "international",
+          "date": "2026-07-01"
+        }
+      ],
+      "application_fee": {
+        "amount": 100,
+        "currency": "AZN"
+      },
+      "application_url": "https://www.ada.edu.az/en/admission/undergraduate"
+    },
+    {
+      "names": {
+        "original": "Mathematics (BSMATH)",
+        "en": "Mathematics (BSMATH)",
+        "ru": "Математика (BSMATH)"
+      },
+      "level": "bachelor",
+      "isced_f": "0541",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 8500,
+          "currency": "AZN",
+          "period": "year",
+          "applies_to": "international"
+        },
+        {
+          "amount": 6000,
+          "currency": "AZN",
+          "period": "year",
+          "applies_to": "domestic"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript",
+          "notarized_translation"
+        ],
+        "min_scores": [
+          {
+            "exam": "ielts",
+            "min": 6
+          },
+          {
+            "exam": "toefl",
+            "min": 75
+          }
+        ],
+        "min_gpa": null
+      },
+      "deadlines": [
+        {
+          "intake": "2026-09",
+          "applies_to": "international",
+          "date": "2026-07-01"
+        }
+      ],
+      "application_fee": {
+        "amount": 100,
+        "currency": "AZN"
+      },
+      "application_url": "https://www.ada.edu.az/en/admission/undergraduate"
+    },
+    {
+      "names": {
+        "original": "Electrical and Electronics Engineering (BSEEE)",
+        "en": "Electrical and Electronics Engineering (BSEEE)",
+        "ru": "Электротехника и электроника (BSEEE)"
+      },
+      "level": "bachelor",
+      "isced_f": "0713",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 8500,
+          "currency": "AZN",
+          "period": "year",
+          "applies_to": "international"
+        },
+        {
+          "amount": 6000,
+          "currency": "AZN",
+          "period": "year",
+          "applies_to": "domestic"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript",
+          "notarized_translation"
+        ],
+        "min_scores": [
+          {
+            "exam": "ielts",
+            "min": 6
+          },
+          {
+            "exam": "toefl",
+            "min": 75
+          }
+        ],
+        "min_gpa": null
+      },
+      "deadlines": [
+        {
+          "intake": "2026-09",
+          "applies_to": "international",
+          "date": "2026-07-01"
+        }
+      ],
+      "application_fee": {
+        "amount": 100,
+        "currency": "AZN"
+      },
+      "application_url": "https://www.ada.edu.az/en/admission/undergraduate"
+    },
+    {
+      "names": {
+        "original": "Architecture (BARCH)",
+        "en": "Architecture (BARCH)",
+        "ru": "Архитектура (BARCH)"
+      },
+      "level": "bachelor",
+      "isced_f": "0731",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 8500,
+          "currency": "AZN",
+          "period": "year",
+          "applies_to": "international"
+        },
+        {
+          "amount": 6000,
+          "currency": "AZN",
+          "period": "year",
+          "applies_to": "domestic"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript",
+          "notarized_translation"
+        ],
+        "min_scores": [
+          {
+            "exam": "ielts",
+            "min": 6
+          },
+          {
+            "exam": "toefl",
+            "min": 75
+          }
+        ],
+        "min_gpa": null
+      },
+      "deadlines": [
+        {
+          "intake": "2026-09",
+          "applies_to": "international",
+          "date": "2026-07-01"
+        }
+      ],
+      "application_fee": {
+        "amount": 100,
+        "currency": "AZN"
+      },
+      "application_url": "https://www.ada.edu.az/en/admission/undergraduate"
+    },
+    {
+      "names": {
+        "original": "Interior Design (BID)",
+        "en": "Interior Design (BID)",
+        "ru": "Дизайн интерьера (BID)"
+      },
+      "level": "bachelor",
+      "isced_f": "0212",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 8500,
+          "currency": "AZN",
+          "period": "year",
+          "applies_to": "international"
+        },
+        {
+          "amount": 6000,
+          "currency": "AZN",
+          "period": "year",
+          "applies_to": "domestic"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript",
+          "notarized_translation"
+        ],
+        "min_scores": [
+          {
+            "exam": "ielts",
+            "min": 6
+          },
+          {
+            "exam": "toefl",
+            "min": 75
+          }
+        ],
+        "min_gpa": null
+      },
+      "deadlines": [
+        {
+          "intake": "2026-09",
+          "applies_to": "international",
+          "date": "2026-07-01"
+        }
+      ],
+      "application_fee": {
+        "amount": 100,
+        "currency": "AZN"
+      },
+      "application_url": "https://www.ada.edu.az/en/admission/undergraduate"
+    },
+    {
+      "names": {
+        "original": "Urban Planning (BUP)",
+        "en": "Urban Planning (BUP)",
+        "ru": "Градостроительство (BUP)"
+      },
+      "level": "bachelor",
+      "isced_f": "0731",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 8500,
+          "currency": "AZN",
+          "period": "year",
+          "applies_to": "international"
+        },
+        {
+          "amount": 6000,
+          "currency": "AZN",
+          "period": "year",
+          "applies_to": "domestic"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript",
+          "notarized_translation"
+        ],
+        "min_scores": [
+          {
+            "exam": "ielts",
+            "min": 6
+          },
+          {
+            "exam": "toefl",
+            "min": 75
+          }
+        ],
+        "min_gpa": null
+      },
+      "deadlines": [
+        {
+          "intake": "2026-09",
+          "applies_to": "international",
+          "date": "2026-07-01"
+        }
+      ],
+      "application_fee": {
+        "amount": 100,
+        "currency": "AZN"
+      },
+      "application_url": "https://www.ada.edu.az/en/admission/undergraduate"
+    },
+    {
+      "names": {
+        "original": "Communication Design (BCD)",
+        "en": "Communication Design (BCD)",
+        "ru": "Коммуникационный дизайн (BCD)"
+      },
+      "level": "bachelor",
+      "isced_f": "0211",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 8500,
+          "currency": "AZN",
+          "period": "year",
+          "applies_to": "international"
+        },
+        {
+          "amount": 6000,
+          "currency": "AZN",
+          "period": "year",
+          "applies_to": "domestic"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript",
+          "notarized_translation"
+        ],
+        "min_scores": [
+          {
+            "exam": "ielts",
+            "min": 6
+          },
+          {
+            "exam": "toefl",
+            "min": 75
+          }
+        ],
+        "min_gpa": null
+      },
+      "deadlines": [
+        {
+          "intake": "2026-09",
+          "applies_to": "international",
+          "date": "2026-07-01"
+        }
+      ],
+      "application_fee": {
+        "amount": 100,
+        "currency": "AZN"
+      },
+      "application_url": "https://www.ada.edu.az/en/admission/undergraduate"
+    },
+    {
+      "names": {
+        "original": "Agricultural Technologies (BSAT)",
+        "en": "Agricultural Technologies (BSAT)",
+        "ru": "Сельскохозяйственные технологии (BSAT)"
+      },
+      "level": "bachelor",
+      "isced_f": "0811",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 8500,
+          "currency": "AZN",
+          "period": "year",
+          "applies_to": "international"
+        },
+        {
+          "amount": 6000,
+          "currency": "AZN",
+          "period": "year",
+          "applies_to": "domestic"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript",
+          "notarized_translation"
+        ],
+        "min_scores": [
+          {
+            "exam": "ielts",
+            "min": 6
+          },
+          {
+            "exam": "toefl",
+            "min": 75
+          }
+        ],
+        "min_gpa": null
+      },
+      "deadlines": [
+        {
+          "intake": "2026-09",
+          "applies_to": "international",
+          "date": "2026-07-01"
+        }
+      ],
+      "application_fee": {
+        "amount": 100,
+        "currency": "AZN"
+      },
+      "application_url": "https://www.ada.edu.az/en/admission/undergraduate"
+    },
+    {
+      "names": {
+        "original": "Food Technologies (BSFT)",
+        "en": "Food Technologies (BSFT)",
+        "ru": "Пищевые технологии (BSFT)"
+      },
+      "level": "bachelor",
+      "isced_f": "0721",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 8500,
+          "currency": "AZN",
+          "period": "year",
+          "applies_to": "international"
+        },
+        {
+          "amount": 6000,
+          "currency": "AZN",
+          "period": "year",
+          "applies_to": "domestic"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript",
+          "notarized_translation"
+        ],
+        "min_scores": [
+          {
+            "exam": "ielts",
+            "min": 6
+          },
+          {
+            "exam": "toefl",
+            "min": 75
+          }
+        ],
+        "min_gpa": null
+      },
+      "deadlines": [
+        {
+          "intake": "2026-09",
+          "applies_to": "international",
+          "date": "2026-07-01"
+        }
+      ],
+      "application_fee": {
+        "amount": 100,
+        "currency": "AZN"
+      },
+      "application_url": "https://www.ada.edu.az/en/admission/undergraduate"
+    },
+    {
+      "names": {
+        "original": "Animal Science (BSAS)",
+        "en": "Animal Science (BSAS)",
+        "ru": "Животноводство (BSAS)"
+      },
+      "level": "bachelor",
+      "isced_f": "0812",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 8500,
+          "currency": "AZN",
+          "period": "year",
+          "applies_to": "international"
+        },
+        {
+          "amount": 6000,
+          "currency": "AZN",
+          "period": "year",
+          "applies_to": "domestic"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript",
+          "notarized_translation"
+        ],
+        "min_scores": [
+          {
+            "exam": "ielts",
+            "min": 6
+          },
+          {
+            "exam": "toefl",
+            "min": 75
+          }
+        ],
+        "min_gpa": null
+      },
+      "deadlines": [
+        {
+          "intake": "2026-09",
+          "applies_to": "international",
+          "date": "2026-07-01"
+        }
+      ],
+      "application_fee": {
+        "amount": 100,
+        "currency": "AZN"
+      },
+      "application_url": "https://www.ada.edu.az/en/admission/undergraduate"
+    }
+  ],
+  "scholarships": [],
+  "sources": [
+    {
+      "field": "programs[0].requirements.min_scores",
+      "url": "https://www.ada.edu.az/en/admission/undergraduate",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[0].deadlines[0].date",
+      "url": "https://www.ada.edu.az/en/admission/undergraduate",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[0].tuition[0].amount",
+      "url": "https://www.ada.edu.az/en/admission/tuition-costs",
+      "accessed_at": "2026-10-06",
+      "confidence": "medium"
+    },
+    {
+      "field": "programs[0].tuition[1].amount",
+      "url": "https://www.ada.edu.az/en/admission/tuition-costs",
+      "accessed_at": "2026-10-06",
+      "confidence": "medium"
+    },
+    {
+      "field": "programs[1].tuition[0].amount",
+      "url": "https://www.ada.edu.az/en/admission/tuition-costs",
+      "accessed_at": "2026-10-06",
+      "confidence": "medium"
+    },
+    {
+      "field": "programs[1].tuition[1].amount",
+      "url": "https://www.ada.edu.az/en/admission/tuition-costs",
+      "accessed_at": "2026-10-06",
+      "confidence": "medium"
+    },
+    {
+      "field": "programs[2].tuition[0].amount",
+      "url": "https://www.ada.edu.az/en/admission/tuition-costs",
+      "accessed_at": "2026-10-06",
+      "confidence": "medium"
+    },
+    {
+      "field": "programs[2].tuition[1].amount",
+      "url": "https://www.ada.edu.az/en/admission/tuition-costs",
+      "accessed_at": "2026-10-06",
+      "confidence": "medium"
+    },
+    {
+      "field": "programs[3].tuition[0].amount",
+      "url": "https://www.ada.edu.az/en/admission/tuition-costs",
+      "accessed_at": "2026-10-06",
+      "confidence": "medium"
+    },
+    {
+      "field": "programs[3].tuition[1].amount",
+      "url": "https://www.ada.edu.az/en/admission/tuition-costs",
+      "accessed_at": "2026-10-06",
+      "confidence": "medium"
+    },
+    {
+      "field": "programs[4].tuition[0].amount",
+      "url": "https://www.ada.edu.az/en/admission/tuition-costs",
+      "accessed_at": "2026-10-06",
+      "confidence": "medium"
+    },
+    {
+      "field": "programs[4].tuition[1].amount",
+      "url": "https://www.ada.edu.az/en/admission/tuition-costs",
+      "accessed_at": "2026-10-06",
+      "confidence": "medium"
+    },
+    {
+      "field": "programs[5].tuition[0].amount",
+      "url": "https://www.ada.edu.az/en/admission/tuition-costs",
+      "accessed_at": "2026-10-06",
+      "confidence": "medium"
+    },
+    {
+      "field": "programs[5].tuition[1].amount",
+      "url": "https://www.ada.edu.az/en/admission/tuition-costs",
+      "accessed_at": "2026-10-06",
+      "confidence": "medium"
+    },
+    {
+      "field": "programs[6].tuition[0].amount",
+      "url": "https://www.ada.edu.az/en/admission/tuition-costs",
+      "accessed_at": "2026-10-06",
+      "confidence": "medium"
+    },
+    {
+      "field": "programs[6].tuition[1].amount",
+      "url": "https://www.ada.edu.az/en/admission/tuition-costs",
+      "accessed_at": "2026-10-06",
+      "confidence": "medium"
+    },
+    {
+      "field": "programs[7].tuition[0].amount",
+      "url": "https://www.ada.edu.az/en/admission/tuition-costs",
+      "accessed_at": "2026-10-06",
+      "confidence": "medium"
+    },
+    {
+      "field": "programs[7].tuition[1].amount",
+      "url": "https://www.ada.edu.az/en/admission/tuition-costs",
+      "accessed_at": "2026-10-06",
+      "confidence": "medium"
+    },
+    {
+      "field": "programs[8].tuition[0].amount",
+      "url": "https://www.ada.edu.az/en/admission/tuition-costs",
+      "accessed_at": "2026-10-06",
+      "confidence": "medium"
+    },
+    {
+      "field": "programs[8].tuition[1].amount",
+      "url": "https://www.ada.edu.az/en/admission/tuition-costs",
+      "accessed_at": "2026-10-06",
+      "confidence": "medium"
+    },
+    {
+      "field": "programs[9].tuition[0].amount",
+      "url": "https://www.ada.edu.az/en/admission/tuition-costs",
+      "accessed_at": "2026-10-06",
+      "confidence": "medium"
+    },
+    {
+      "field": "programs[9].tuition[1].amount",
+      "url": "https://www.ada.edu.az/en/admission/tuition-costs",
+      "accessed_at": "2026-10-06",
+      "confidence": "medium"
+    },
+    {
+      "field": "programs[10].tuition[0].amount",
+      "url": "https://www.ada.edu.az/en/admission/tuition-costs",
+      "accessed_at": "2026-10-06",
+      "confidence": "medium"
+    },
+    {
+      "field": "programs[10].tuition[1].amount",
+      "url": "https://www.ada.edu.az/en/admission/tuition-costs",
+      "accessed_at": "2026-10-06",
+      "confidence": "medium"
+    },
+    {
+      "field": "programs[11].tuition[0].amount",
+      "url": "https://www.ada.edu.az/en/admission/tuition-costs",
+      "accessed_at": "2026-10-06",
+      "confidence": "medium"
+    },
+    {
+      "field": "programs[11].tuition[1].amount",
+      "url": "https://www.ada.edu.az/en/admission/tuition-costs",
+      "accessed_at": "2026-10-06",
+      "confidence": "medium"
+    },
+    {
+      "field": "programs[12].tuition[0].amount",
+      "url": "https://www.ada.edu.az/en/admission/tuition-costs",
+      "accessed_at": "2026-10-06",
+      "confidence": "medium"
+    },
+    {
+      "field": "programs[12].tuition[1].amount",
+      "url": "https://www.ada.edu.az/en/admission/tuition-costs",
+      "accessed_at": "2026-10-06",
+      "confidence": "medium"
+    },
+    {
+      "field": "programs[13].tuition[0].amount",
+      "url": "https://www.ada.edu.az/en/admission/tuition-costs",
+      "accessed_at": "2026-10-06",
+      "confidence": "medium"
+    },
+    {
+      "field": "programs[13].tuition[1].amount",
+      "url": "https://www.ada.edu.az/en/admission/tuition-costs",
+      "accessed_at": "2026-10-06",
+      "confidence": "medium"
+    },
+    {
+      "field": "programs[14].tuition[0].amount",
+      "url": "https://www.ada.edu.az/en/admission/tuition-costs",
+      "accessed_at": "2026-10-06",
+      "confidence": "medium"
+    },
+    {
+      "field": "programs[14].tuition[1].amount",
+      "url": "https://www.ada.edu.az/en/admission/tuition-costs",
+      "accessed_at": "2026-10-06",
+      "confidence": "medium"
+    },
+    {
+      "field": "programs[15].tuition[0].amount",
+      "url": "https://www.ada.edu.az/en/admission/tuition-costs",
+      "accessed_at": "2026-10-06",
+      "confidence": "medium"
+    },
+    {
+      "field": "programs[15].tuition[1].amount",
+      "url": "https://www.ada.edu.az/en/admission/tuition-costs",
+      "accessed_at": "2026-10-06",
+      "confidence": "medium"
+    },
+    {
+      "field": "programs[16].tuition[0].amount",
+      "url": "https://www.ada.edu.az/en/admission/tuition-costs",
+      "accessed_at": "2026-10-06",
+      "confidence": "medium"
+    },
+    {
+      "field": "programs[16].tuition[1].amount",
+      "url": "https://www.ada.edu.az/en/admission/tuition-costs",
+      "accessed_at": "2026-10-06",
+      "confidence": "medium"
+    },
+    {
+      "field": "programs[17].tuition[0].amount",
+      "url": "https://www.ada.edu.az/en/admission/tuition-costs",
+      "accessed_at": "2026-10-06",
+      "confidence": "medium"
+    },
+    {
+      "field": "programs[17].tuition[1].amount",
+      "url": "https://www.ada.edu.az/en/admission/tuition-costs",
+      "accessed_at": "2026-10-06",
+      "confidence": "medium"
+    },
+    {
+      "field": "programs[18].tuition[0].amount",
+      "url": "https://www.ada.edu.az/en/admission/tuition-costs",
+      "accessed_at": "2026-10-06",
+      "confidence": "medium"
+    },
+    {
+      "field": "programs[18].tuition[1].amount",
+      "url": "https://www.ada.edu.az/en/admission/tuition-costs",
+      "accessed_at": "2026-10-06",
+      "confidence": "medium"
+    }
+  ],
+  "notes_for_reviewer": "Official ada.edu.az pages read 2026-10-06. FEES are for 2025 (the tuition page says \"2025\", no later table found): confidence medium, check the 2026-27 numbers. Fee shown = tuition + 750 AZN student fee, as published (e.g. non-citizen 8500 = 7750 + 750). Citizen rates 6000-8000 AZN by school. English minimums are the exemption scores from the English preparatory programme (IELTS 6.0, TOEFL iBT 75), not strict entry scores; PTE 50 and Duolingo 105 are also accepted (not encoded). Early deadline 2026-04-08, late deadline 2026-07-01 (I stored the late one). Application fee 100 AZN. Language of instruction is not stated explicitly on the page; \"en\" is my assumption from the English-language documents and test requirements. Dormitory costs not found. Programme codes (BAIS, BBA...) are from the fee table; ISCED-F codes are my assignment. The database record uses Wikidata name \"Azerbaijan Diplomatic Academy\" (ADA University is its present name)."
+}

@@ -1,0 +1,598 @@
+{
+  "schema_version": 1,
+  "collected_at": "2026-10-06",
+  "academic_year": "2026/2027",
+  "institution": {
+    "external_ids": {},
+    "description": {
+      "en": "A private university in Tbilisi with English-taught bachelor programmes in business, computing, architecture, design, psychology, economics and medicine.",
+      "ru": "Частный университет в Тбилиси; на английском есть бакалавриат по бизнесу, информатике, архитектуре, дизайну, психологии, экономике и медицине."
+    },
+    "rankings": [],
+    "dormitory": null,
+    "ownership": "private",
+    "founded_year": null,
+    "names": {
+      "original": "კავკასიის უნივერსიტეტი",
+      "en": "Caucasus University",
+      "ru": "Кавказский университет"
+    },
+    "type": "university",
+    "city": {
+      "original": "თბილისი",
+      "en": "Tbilisi",
+      "ru": "Тбилиси"
+    },
+    "website": "https://www.cu.edu.ge",
+    "location": {
+      "lat": 41.725,
+      "lng": 44.778333
+    },
+    "city_size": "medium",
+    "climate": "temperate",
+    "size": "small",
+    "features": [
+      "double_degree",
+      "exchange"
+    ],
+    "country": "GE"
+  },
+  "programs": [
+    {
+      "names": {
+        "original": "Business Administration (finance, marketing, management)",
+        "en": "Business Administration (finance, marketing, management)",
+        "ru": "Управление бизнесом (финансы, маркетинг, менеджмент)"
+      },
+      "level": "bachelor",
+      "isced_f": "0413",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 3,
+      "format": "on_campus",
+      "intakes": [
+        "09",
+        "02"
+      ],
+      "tuition": [
+        {
+          "amount": 5500,
+          "currency": "USD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "notarized_translation"
+        ],
+        "min_scores": [
+          {
+            "exam": "ielts",
+            "min": 6
+          },
+          {
+            "exam": "toefl",
+            "min": 78
+          }
+        ],
+        "min_gpa": null,
+        "entrance_exams": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://cu.edu.ge/en/cu-international-students/international-how-to-apply"
+    },
+    {
+      "names": {
+        "original": "Computer Science",
+        "en": "Computer Science",
+        "ru": "Информатика"
+      },
+      "level": "bachelor",
+      "isced_f": "0613",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 3,
+      "format": "on_campus",
+      "intakes": [
+        "09",
+        "02"
+      ],
+      "tuition": [
+        {
+          "amount": 5500,
+          "currency": "USD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "notarized_translation"
+        ],
+        "min_scores": [
+          {
+            "exam": "ielts",
+            "min": 6
+          },
+          {
+            "exam": "toefl",
+            "min": 78
+          }
+        ],
+        "min_gpa": null,
+        "entrance_exams": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://cu.edu.ge/en/cu-international-students/international-how-to-apply"
+    },
+    {
+      "names": {
+        "original": "Computer Science and Artificial Intelligence",
+        "en": "Computer Science and Artificial Intelligence",
+        "ru": "Информатика и искусственный интеллект"
+      },
+      "level": "bachelor",
+      "isced_f": "0613",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 3,
+      "format": "on_campus",
+      "intakes": [
+        "09",
+        "02"
+      ],
+      "tuition": [
+        {
+          "amount": 5500,
+          "currency": "USD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "notarized_translation"
+        ],
+        "min_scores": [
+          {
+            "exam": "ielts",
+            "min": 6
+          },
+          {
+            "exam": "toefl",
+            "min": 78
+          }
+        ],
+        "min_gpa": null,
+        "entrance_exams": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://cu.edu.ge/en/cu-international-students/international-how-to-apply"
+    },
+    {
+      "names": {
+        "original": "Cybersecurity",
+        "en": "Cybersecurity",
+        "ru": "Кибербезопасность"
+      },
+      "level": "bachelor",
+      "isced_f": "0613",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [
+        "09",
+        "02"
+      ],
+      "tuition": [
+        {
+          "amount": 5500,
+          "currency": "USD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "notarized_translation"
+        ],
+        "min_scores": [
+          {
+            "exam": "ielts",
+            "min": 6
+          },
+          {
+            "exam": "toefl",
+            "min": 78
+          }
+        ],
+        "min_gpa": null,
+        "entrance_exams": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://cu.edu.ge/en/cu-international-students/international-how-to-apply"
+    },
+    {
+      "names": {
+        "original": "Architecture",
+        "en": "Architecture",
+        "ru": "Архитектура"
+      },
+      "level": "bachelor",
+      "isced_f": "0731",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [
+        "09",
+        "02"
+      ],
+      "tuition": [
+        {
+          "amount": 5000,
+          "currency": "USD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "notarized_translation"
+        ],
+        "min_scores": [
+          {
+            "exam": "ielts",
+            "min": 6
+          },
+          {
+            "exam": "toefl",
+            "min": 78
+          }
+        ],
+        "min_gpa": null,
+        "entrance_exams": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://cu.edu.ge/en/cu-international-students/international-how-to-apply"
+    },
+    {
+      "names": {
+        "original": "Graphic Design",
+        "en": "Graphic Design",
+        "ru": "Графический дизайн"
+      },
+      "level": "bachelor",
+      "isced_f": "0211",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 3,
+      "format": "on_campus",
+      "intakes": [
+        "09",
+        "02"
+      ],
+      "tuition": [
+        {
+          "amount": 5000,
+          "currency": "USD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "notarized_translation"
+        ],
+        "min_scores": [
+          {
+            "exam": "ielts",
+            "min": 6
+          },
+          {
+            "exam": "toefl",
+            "min": 78
+          }
+        ],
+        "min_gpa": null,
+        "entrance_exams": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://cu.edu.ge/en/cu-international-students/international-how-to-apply"
+    },
+    {
+      "names": {
+        "original": "Diplomacy and International Relations",
+        "en": "Diplomacy and International Relations",
+        "ru": "Дипломатия и международные отношения"
+      },
+      "level": "bachelor",
+      "isced_f": "0312",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 3,
+      "format": "on_campus",
+      "intakes": [
+        "09",
+        "02"
+      ],
+      "tuition": [
+        {
+          "amount": 5000,
+          "currency": "USD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "notarized_translation"
+        ],
+        "min_scores": [
+          {
+            "exam": "ielts",
+            "min": 6
+          },
+          {
+            "exam": "toefl",
+            "min": 78
+          }
+        ],
+        "min_gpa": null,
+        "entrance_exams": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://cu.edu.ge/en/cu-international-students/international-how-to-apply"
+    },
+    {
+      "names": {
+        "original": "Psychology",
+        "en": "Psychology",
+        "ru": "Психология"
+      },
+      "level": "bachelor",
+      "isced_f": "0313",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 3,
+      "format": "on_campus",
+      "intakes": [
+        "09",
+        "02"
+      ],
+      "tuition": [
+        {
+          "amount": 5000,
+          "currency": "USD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "notarized_translation"
+        ],
+        "min_scores": [
+          {
+            "exam": "ielts",
+            "min": 6
+          },
+          {
+            "exam": "toefl",
+            "min": 78
+          }
+        ],
+        "min_gpa": null,
+        "entrance_exams": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://cu.edu.ge/en/cu-international-students/international-how-to-apply"
+    },
+    {
+      "names": {
+        "original": "Economics",
+        "en": "Economics",
+        "ru": "Экономика"
+      },
+      "level": "bachelor",
+      "isced_f": "0311",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 3,
+      "format": "on_campus",
+      "intakes": [
+        "09",
+        "02"
+      ],
+      "tuition": [
+        {
+          "amount": 5000,
+          "currency": "USD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "notarized_translation"
+        ],
+        "min_scores": [
+          {
+            "exam": "ielts",
+            "min": 6
+          },
+          {
+            "exam": "toefl",
+            "min": 78
+          }
+        ],
+        "min_gpa": null,
+        "entrance_exams": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://cu.edu.ge/en/cu-international-students/international-how-to-apply"
+    },
+    {
+      "names": {
+        "original": "Medical Doctor (one-cycle)",
+        "en": "Medical Doctor (one-cycle)",
+        "ru": "Лечебное дело (единый цикл)"
+      },
+      "level": "bachelor",
+      "isced_f": "0912",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 6,
+      "format": "on_campus",
+      "intakes": [
+        "09",
+        "02"
+      ],
+      "tuition": [
+        {
+          "amount": 6000,
+          "currency": "USD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "notarized_translation"
+        ],
+        "min_scores": [
+          {
+            "exam": "ielts",
+            "min": 6
+          },
+          {
+            "exam": "toefl",
+            "min": 78
+          }
+        ],
+        "min_gpa": null,
+        "entrance_exams": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://cu.edu.ge/en/cu-international-students/international-how-to-apply"
+    }
+  ],
+  "scholarships": [],
+  "sources": [
+    {
+      "field": "programs[0].requirements.min_scores",
+      "url": "https://cu.edu.ge/en/cu-international-students/international-how-to-apply",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[0].deadlines",
+      "url": "https://cu.edu.ge/en/cu-international-students/international-how-to-apply",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[0].tuition[0].amount",
+      "url": "https://www.cu.edu.ge/en/cu-international-students/programs-english/ba-international-students",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[1].tuition[0].amount",
+      "url": "https://www.cu.edu.ge/en/cu-international-students/programs-english/ba-international-students",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[2].tuition[0].amount",
+      "url": "https://www.cu.edu.ge/en/cu-international-students/programs-english/ba-international-students",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[3].tuition[0].amount",
+      "url": "https://www.cu.edu.ge/en/cu-international-students/programs-english/ba-international-students",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[4].tuition[0].amount",
+      "url": "https://www.cu.edu.ge/en/cu-international-students/programs-english/ba-international-students",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[5].tuition[0].amount",
+      "url": "https://www.cu.edu.ge/en/cu-international-students/programs-english/ba-international-students",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[6].tuition[0].amount",
+      "url": "https://www.cu.edu.ge/en/cu-international-students/programs-english/ba-international-students",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[7].tuition[0].amount",
+      "url": "https://www.cu.edu.ge/en/cu-international-students/programs-english/ba-international-students",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[8].tuition[0].amount",
+      "url": "https://www.cu.edu.ge/en/cu-international-students/programs-english/ba-international-students",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[9].tuition[0].amount",
+      "url": "https://www.cu.edu.ge/en/cu-international-students/programs-english/ba-international-students",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    }
+  ],
+  "notes_for_reviewer": "Official cu.edu.ge pages read 2026-10-06. Fees are USD per year for international students; the page does not say which academic year they are for (treated as 2026/2027, please confirm). Entry: IELTS 6.0 or TOEFL 78, notarised passport and school certificate copies, CV, photo, video interview. Application deadlines: fall semester 20 August, spring semester 20 October (intake months 09 and 02; I did not store dates because the year is unclear). Application fee exists but no amount; accommodation is not described. The page also lists joint programmes with Kean University (USA) at USD 10,000 and with Rennes School of Business at EUR 10,000: NOT included. Durations are as published (many are 3-year). ISCED-F codes are my assignment. Location is the Wikidata coordinate (Tbilisi); ownership \"private\" is general knowledge, please confirm."
+}
