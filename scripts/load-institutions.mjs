@@ -1,5 +1,6 @@
-// Loads data/seed/wikidata-world.json into your Supabase database in one go (instead of pasting SQL files).
-//   Run:  node scripts/load-institutions.mjs
+// Loads institution files from data/seed into your Supabase database in one go (instead of pasting SQL files).
+//   Run:  node scripts/load-institutions.mjs                 (the world universities file)
+//   Or:   node scripts/load-institutions.mjs data/seed/wikidata-other.json data/seed/osm-language-schools.json
 // Needs SUPABASE_SERVICE_ROLE_KEY in .env.local. That key is SECRET: it works only on your computer, in
 // this script. Never put it in a variable that starts with NEXT_PUBLIC_ and never send it to anyone.
 // Institutions that are already in the database (same Wikidata id) are skipped, so it is safe to run again.
@@ -20,17 +21,22 @@ if (!url || !key) {
 }
 const supabase = createClient(url, key, { auth: { persistSession: false } });
 
-const { institutions } = JSON.parse(readFileSync('data/seed/wikidata-world.json', 'utf8'));
+const files = process.argv.slice(2).length ? process.argv.slice(2) : ['data/seed/wikidata-world.json'];
+const institutions = files.flatMap((f) => JSON.parse(readFileSync(f, 'utf8')).institutions);
+const extId = (r) => (r.wikidata ? { wikidata: r.wikidata } : { osm: r.osm });
 
-// Wikidata ids that are already in the database
+// Wikidata / OpenStreetMap ids that are already in the database
 const have = new Set();
 for (let from = 0; ; from += 1000) {
   const { data, error } = await supabase.from('institutions').select('external_ids').range(from, from + 999);
   if (error) throw new Error(error.message);
-  for (const r of data) if (r.external_ids?.wikidata) have.add(r.external_ids.wikidata);
+  for (const r of data) {
+    if (r.external_ids?.wikidata) have.add(r.external_ids.wikidata);
+    if (r.external_ids?.osm) have.add(r.external_ids.osm);
+  }
   if (data.length < 1000) break;
 }
-const todo = institutions.filter((i) => !have.has(i.wikidata));
+const todo = institutions.filter((i) => !have.has(i.wikidata ?? i.osm));
 console.log(`${institutions.length} in the file, ${have.size} already in the database, ${todo.length} to add.`);
 
 let added = 0;
@@ -44,7 +50,7 @@ for (let i = 0; i < todo.length; i += 200) {
     location: `SRID=4326;POINT(${r.lng} ${r.lat})`,
     website: r.website,
     founded_year: r.foundedYear,
-    external_ids: { wikidata: r.wikidata },
+    external_ids: extId(r),
   }));
   const { error } = await supabase.from('institutions').upsert(batch, { onConflict: 'country,slug', ignoreDuplicates: true });
   if (error) {
