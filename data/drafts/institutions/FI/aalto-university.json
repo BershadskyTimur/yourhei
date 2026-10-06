@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "collected_at": "2026-10-06",
+  "academic_year": "2026/2027",
+  "institution": {
+    "external_ids": {},
+    "description": {
+      "en": "A Finnish university of technology, business and art near Helsinki. Non-EU/EEA bachelor students pay a yearly fee that depends on the field.",
+      "ru": "Финский университет технологий, бизнеса и искусства рядом с Хельсинки. Студенты не из ЕС/ЕЭЗ платят ежегодный взнос, зависящий от направления."
+    },
+    "rankings": [],
+    "dormitory": null,
+    "ownership": "public",
+    "founded_year": null,
+    "names": {
+      "original": "Aalto-yliopisto",
+      "en": "Aalto University",
+      "ru": "Университет Аалто"
+    },
+    "type": "university",
+    "city": {
+      "original": "Espoo",
+      "en": "Espoo",
+      "ru": "Эспоо"
+    },
+    "website": "https://www.aalto.fi/en",
+    "city_size": "medium",
+    "climate": "cold",
+    "size": "large",
+    "features": [
+      "internship",
+      "exchange"
+    ],
+    "country": "FI"
+  },
+  "programs": [
+    {
+      "names": {
+        "original": "International Business (BSc)",
+        "en": "International Business (BSc)",
+        "ru": "Международный бизнес (бакалавр)"
+      },
+      "level": "bachelor",
+      "isced_f": "0413",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 12000,
+          "currency": "EUR",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.aalto.fi/en/study-options/international-business-bachelor-of-science-and-master-of-science-economics-and-business"
+    }
+  ],
+  "scholarships": [],
+  "sources": [
+    {
+      "field": "programs[0].tuition[0].amount",
+      "url": "https://www.aalto.fi/en/international-students/paying-the-tuition-fee",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    }
+  ],
+  "notes_for_reviewer": "Official aalto.fi page read 2026-10-06: for study rights beginning on or after 1 August 2025, non-EU/EEA bachelor tuition is EUR 12,000 per academic year (business and technology) and EUR 15,000 (art and architecture); a 25% reduction (EUR 9,000 / 11,250) applies to the first year if the offer is accepted and paid within 21 days; full scholarships remove the fee. I stored the business fee for ONE programme, International Business (found by title in a search result; I did not open its page, so duration, English as the teaching language, requirements and deadlines are unverified and left empty/assumed). Technology and design programmes are not collected. Aalto bachelor programmes are partly taught in Finnish."
+}

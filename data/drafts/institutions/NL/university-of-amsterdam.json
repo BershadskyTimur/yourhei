@@ -1,0 +1,287 @@
+{
+  "schema_version": 1,
+  "collected_at": "2026-10-06",
+  "academic_year": "2026/2027",
+  "institution": {
+    "external_ids": {},
+    "description": {
+      "en": "A large public research university in Amsterdam with many English-taught bachelor programmes. Non-EEA students pay an institutional fee that depends on the faculty.",
+      "ru": "Крупный государственный исследовательский университет в Амстердаме с множеством бакалаврских программ на английском. Студенты не из ЕЭЗ платят сбор, зависящий от факультета."
+    },
+    "rankings": [],
+    "dormitory": null,
+    "ownership": "public",
+    "founded_year": null,
+    "names": {
+      "original": "Universiteit van Amsterdam",
+      "en": "University of Amsterdam",
+      "ru": "Амстердамский университет"
+    },
+    "type": "university",
+    "city": {
+      "original": "Amsterdam",
+      "en": "Amsterdam",
+      "ru": "Амстердам"
+    },
+    "website": "https://www.uva.nl/en",
+    "city_size": "megapolis",
+    "climate": "temperate",
+    "size": "large",
+    "features": [
+      "exchange"
+    ],
+    "country": "NL"
+  },
+  "programs": [
+    {
+      "names": {
+        "original": "Humanities (Faculty of Humanities)",
+        "en": "Humanities (Faculty of Humanities)",
+        "ru": "Гуманитарные науки"
+      },
+      "level": "bachelor",
+      "isced_f": "0220",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 17500,
+          "currency": "EUR",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.uva.nl/en/education/bachelor-s"
+    },
+    {
+      "names": {
+        "original": "Economics and Business (Faculty of Economics and Business)",
+        "en": "Economics and Business (Faculty of Economics and Business)",
+        "ru": "Экономика и бизнес"
+      },
+      "level": "bachelor",
+      "isced_f": "0413",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 13900,
+          "currency": "EUR",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.uva.nl/en/education/bachelor-s"
+    },
+    {
+      "names": {
+        "original": "Social and Behavioural Sciences (Faculty of Social and Behavioural Sciences)",
+        "en": "Social and Behavioural Sciences (Faculty of Social and Behavioural Sciences)",
+        "ru": "Социальные и поведенческие науки"
+      },
+      "level": "bachelor",
+      "isced_f": "0310",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 16670,
+          "currency": "EUR",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.uva.nl/en/education/bachelor-s"
+    },
+    {
+      "names": {
+        "original": "Law (Amsterdam Law School)",
+        "en": "Law (Amsterdam Law School)",
+        "ru": "Право"
+      },
+      "level": "bachelor",
+      "isced_f": "0421",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 17500,
+          "currency": "EUR",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.uva.nl/en/education/bachelor-s"
+    },
+    {
+      "names": {
+        "original": "Science (Faculty of Science)",
+        "en": "Science (Faculty of Science)",
+        "ru": "Естественные науки"
+      },
+      "level": "bachelor",
+      "isced_f": "0500",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 21800,
+          "currency": "EUR",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.uva.nl/en/education/bachelor-s"
+    },
+    {
+      "names": {
+        "original": "Liberal arts and sciences (Amsterdam University College)",
+        "en": "Liberal arts and sciences (Amsterdam University College)",
+        "ru": "Свободные искусства и науки (Amsterdam University College)"
+      },
+      "level": "bachelor",
+      "isced_f": null,
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 20430,
+          "currency": "EUR",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.uva.nl/en/education/bachelor-s"
+    }
+  ],
+  "scholarships": [],
+  "sources": [
+    {
+      "field": "programs[0].tuition[0].amount",
+      "url": "https://www.uva.nl/en/education/fees-and-funding/tuition-fees/tuition-fees.html",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[1].tuition[0].amount",
+      "url": "https://www.uva.nl/en/education/fees-and-funding/tuition-fees/tuition-fees.html",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[2].tuition[0].amount",
+      "url": "https://www.uva.nl/en/education/fees-and-funding/tuition-fees/tuition-fees.html",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[3].tuition[0].amount",
+      "url": "https://www.uva.nl/en/education/fees-and-funding/tuition-fees/tuition-fees.html",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[4].tuition[0].amount",
+      "url": "https://www.uva.nl/en/education/fees-and-funding/tuition-fees/tuition-fees.html",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[5].tuition[0].amount",
+      "url": "https://www.uva.nl/en/education/fees-and-funding/tuition-fees/tuition-fees.html",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    }
+  ],
+  "notes_for_reviewer": "Official uva.nl page read 2026-10-06: 2026-2027 institutional tuition fee for non-EEA bachelor students by faculty (EUR per year): Humanities 17,500; Economics and Business 13,900; Social and Behavioural Sciences 16,670; Law 17,500; Science 21,800; Amsterdam University College 20,430; Medicine and Dentistry 34,700 (not included). The statutory fee that EU students pay is EUR 2,694 (full-time); non-EEA students pay the institutional fee instead (the page does not say whether the statutory fee is added: please check). The cards are FACULTY-level: UvA has many individual programmes with their own pages that I did not collect, and not every programme is taught in English: language \"en\" is an assumption for the English-taught ones. ISCED-F codes (none for the AUC line) are my assignment. English requirements, deadlines and application fees not collected."
+}

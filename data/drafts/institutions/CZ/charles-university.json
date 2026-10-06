@@ -1,0 +1,128 @@
+{
+  "schema_version": 1,
+  "collected_at": "2026-10-06",
+  "academic_year": "2026/2027",
+  "institution": {
+    "external_ids": {},
+    "description": {
+      "en": "The oldest and largest university in the Czech Republic, in Prague. Tuition for studies in English depends on the faculty and programme.",
+      "ru": "Старейший и крупнейший университет Чехии, в Праге. Стоимость обучения на английском зависит от факультета и программы."
+    },
+    "rankings": [],
+    "dormitory": null,
+    "ownership": "public",
+    "founded_year": null,
+    "names": {
+      "original": "Univerzita Karlova",
+      "en": "Charles University",
+      "ru": "Карлов университет"
+    },
+    "type": "university",
+    "city": {
+      "original": "Praha",
+      "en": "Prague",
+      "ru": "Прага"
+    },
+    "website": "https://cuni.cz",
+    "city_size": "megapolis",
+    "climate": "temperate",
+    "size": "large",
+    "features": [
+      "exchange"
+    ],
+    "country": "CZ"
+  },
+  "programs": [
+    {
+      "names": {
+        "original": "Liberal Arts and Humanities (Faculty of Humanities)",
+        "en": "Liberal Arts and Humanities (Faculty of Humanities)",
+        "ru": "Свободные искусства и гуманитарные науки (факультет гуманитарных наук)"
+      },
+      "level": "bachelor",
+      "isced_f": "0220",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 3,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 5000,
+          "currency": "EUR",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate"
+        ],
+        "min_scores": [],
+        "min_gpa": null,
+        "entrance_exams": "General Academic Prerequisites (GAP) test: critical thinking, text analysis, logical reasoning"
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://fhs.cuni.cz/FHSENG-524.html"
+    },
+    {
+      "names": {
+        "original": "History and Area Studies (Faculty of Social Sciences)",
+        "en": "History and Area Studies (Faculty of Social Sciences)",
+        "ru": "История и регионоведение (факультет социальных наук)"
+      },
+      "level": "bachelor",
+      "isced_f": "0222",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 3,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 5000,
+          "currency": "EUR",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://ims.fsv.cuni.cz/en/academics/bachelors-degree-programmes/history-and-area-studies-full-time-study-english/tuition-fees"
+    }
+  ],
+  "scholarships": [],
+  "sources": [
+    {
+      "field": "programs[1].tuition[0].amount",
+      "url": "https://ims.fsv.cuni.cz/en/academics/bachelors-degree-programmes/history-and-area-studies-full-time-study-english/tuition-fees",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[0].tuition[0].amount",
+      "url": "https://fhs.cuni.cz/FHSENG-524.html",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[1].tuition[0].amount",
+      "url": "https://fhs.cuni.cz/FHSENG-524.html",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    }
+  ],
+  "notes_for_reviewer": "Official cuni.cz faculty pages read 2026-10-06. Two English-taught 3-year bachelor programmes, each EUR 5,000 per year (the pages do not name the academic year; stored as 2026/2027). The university-wide rule is that studies in English cost between EUR 40 and 30,620 per year depending on the programme: many more programmes exist and are NOT collected. Faculty of Science (MFF): EUR 7,100 per year for non-EU students in 2026/27 (programmes not collected). Liberal Arts deadline was 2026-03-31 and the GAP exam 2026-04-25 (passed): 2027 dates not found, left empty. English requirements and application fees not on the pages."
+}

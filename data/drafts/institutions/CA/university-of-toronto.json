@@ -1,0 +1,129 @@
+{
+  "schema_version": 1,
+  "collected_at": "2026-10-06",
+  "academic_year": "2026/2027",
+  "institution": {
+    "external_ids": {},
+    "description": {
+      "en": "Canada's largest research university, in Toronto. International tuition is charged per programme and is much higher than for Canadian students.",
+      "ru": "Крупнейший исследовательский университет Канады, в Торонто. Плата для иностранцев зависит от программы и намного выше, чем для канадцев."
+    },
+    "rankings": [],
+    "dormitory": null,
+    "ownership": "public",
+    "founded_year": null,
+    "names": {
+      "original": "University of Toronto",
+      "en": "University of Toronto",
+      "ru": "Университет Торонто"
+    },
+    "type": "university",
+    "city": {
+      "en": "Toronto",
+      "ru": "Торонто"
+    },
+    "website": "https://www.utoronto.ca",
+    "city_size": "megapolis",
+    "climate": "cold",
+    "size": "large",
+    "features": [
+      "internship",
+      "exchange"
+    ],
+    "country": "CA"
+  },
+  "programs": [
+    {
+      "names": {
+        "original": "Arts and Science (first year)",
+        "en": "Arts and Science (first year)",
+        "ru": "Искусства и науки (первый год)"
+      },
+      "level": "bachelor",
+      "isced_f": "0500",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 66110,
+          "currency": "CAD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://future.utoronto.ca/"
+    },
+    {
+      "names": {
+        "original": "Applied Science and Engineering",
+        "en": "Applied Science and Engineering",
+        "ru": "Прикладные науки и инженерия"
+      },
+      "level": "bachelor",
+      "isced_f": "0710",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 72860,
+          "currency": "CAD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://future.utoronto.ca/"
+    }
+  ],
+  "scholarships": [],
+  "sources": [
+    {
+      "field": "programs[1].tuition[0].amount",
+      "url": "https://discover.engineering.utoronto.ca/finances/",
+      "accessed_at": "2026-10-06",
+      "confidence": "medium"
+    },
+    {
+      "field": "programs[0].tuition[0].amount",
+      "url": "https://planningandbudget.utoronto.ca/wp-content/uploads/2026/04/2026-27-Tuition-Fee-Report_FINAL.pdf",
+      "accessed_at": "2026-10-06",
+      "confidence": "medium"
+    },
+    {
+      "field": "programs[1].tuition[0].amount",
+      "url": "https://planningandbudget.utoronto.ca/wp-content/uploads/2026/04/2026-27-Tuition-Fee-Report_FINAL.pdf",
+      "accessed_at": "2026-10-06",
+      "confidence": "medium"
+    }
+  ],
+  "notes_for_reviewer": "MEDIUM confidence. The 2026-27 amounts (CAD 66,110 Arts and Science first year; CAD 72,860 Engineering) come from a search summary of the university's official 2026-27 tuition fee report (the PDF itself was not opened). The Engineering page I opened shows CAD 70,060 for 2025-26, which matches a 4% increase to about 72,860. Incidental fees (about CAD 2,200), UHIP health insurance (CAD 792) and residence (CAD 13,645-37,848) are extra and not stored. Other programmes, English requirements, deadlines and durations were not collected."
+}

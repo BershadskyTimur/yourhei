@@ -1,0 +1,188 @@
+{
+  "schema_version": 1,
+  "collected_at": "2026-10-06",
+  "academic_year": "2026/2027",
+  "institution": {
+    "external_ids": {},
+    "description": {
+      "en": "Ireland's oldest university, in the centre of Dublin, teaching in English. Non-EU undergraduates apply directly to Trinity.",
+      "ru": "Старейший университет Ирландии в центре Дублина, обучение на английском. Студенты из-за пределов ЕС подают документы напрямую в университет."
+    },
+    "rankings": [],
+    "dormitory": null,
+    "ownership": "public",
+    "founded_year": null,
+    "names": {
+      "original": "Trinity College Dublin",
+      "en": "Trinity College Dublin",
+      "ru": "Тринити-колледж Дублин"
+    },
+    "type": "university",
+    "city": {
+      "en": "Dublin",
+      "ru": "Дублин"
+    },
+    "website": "https://www.tcd.ie",
+    "location": {
+      "lat": 53.3444,
+      "lng": -6.2577
+    },
+    "city_size": "megapolis",
+    "climate": "temperate",
+    "size": "large",
+    "features": [
+      "exchange"
+    ],
+    "country": "IE"
+  },
+  "programs": [
+    {
+      "names": {
+        "original": "Business, Economic and Social Studies (B.E.S.S.)",
+        "en": "Business, Economic and Social Studies (B.E.S.S.)",
+        "ru": "Бизнес, экономика и социальные науки (B.E.S.S.)"
+      },
+      "level": "bachelor",
+      "isced_f": "0310",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 22580,
+          "currency": "EUR",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [
+          {
+            "exam": "ielts",
+            "min": 6.5
+          }
+        ],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.tcd.ie/study/apply/making-an-application/undergraduate/"
+    },
+    {
+      "names": {
+        "original": "Biology and Biomedical Sciences",
+        "en": "Biology and Biomedical Sciences",
+        "ru": "Биология и биомедицинские науки"
+      },
+      "level": "bachelor",
+      "isced_f": "0511",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 29570,
+          "currency": "EUR",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [
+          {
+            "exam": "ielts",
+            "min": 6.5
+          }
+        ],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.tcd.ie/study/apply/making-an-application/undergraduate/"
+    },
+    {
+      "names": {
+        "original": "Engineering (common entry)",
+        "en": "Engineering (common entry)",
+        "ru": "Инженерия (общий набор)"
+      },
+      "level": "bachelor",
+      "isced_f": "0710",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 29570,
+          "currency": "EUR",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [
+          {
+            "exam": "ielts",
+            "min": 6.5
+          }
+        ],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.tcd.ie/study/apply/making-an-application/undergraduate/"
+    }
+  ],
+  "scholarships": [],
+  "sources": [
+    {
+      "field": "programs[0].requirements.min_scores",
+      "url": "https://www.tcd.ie/study/english-language-requirements/",
+      "accessed_at": "2026-10-06",
+      "confidence": "medium"
+    },
+    {
+      "field": "programs[0].tuition[0].amount",
+      "url": "https://www.tcd.ie/courses/undergraduate/fees/",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[1].tuition[0].amount",
+      "url": "https://www.tcd.ie/courses/undergraduate/fees/",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[2].tuition[0].amount",
+      "url": "https://www.tcd.ie/courses/undergraduate/fees/",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    }
+  ],
+  "notes_for_reviewer": "Official tcd.ie fee page read 2026-10-06: non-EU undergraduate fee for year 1 in 2026/27: EUR 22,580 (arts, humanities, business and social studies), EUR 29,570 (science and engineering). The fee is for the first year only, not the whole course. Medicine and Dental Science (capped at EUR 60,000) are not included. IELTS 6.5 overall (\"Band B, standard entry\"; some courses need more) comes from a search summary of the English-language page (not opened): confidence medium. Non-EU applicants apply directly to Trinity (the CAO closing date applies to EU applicants). Durations and deadlines for non-EU applicants were not collected. LOCATION from Wikidata (Trinity College, Dublin). ISCED-F codes are my assignment."
+}

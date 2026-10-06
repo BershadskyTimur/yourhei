@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "collected_at": "2026-10-06",
+  "academic_year": "2026/2027",
+  "institution": {
+    "external_ids": {},
+    "description": {
+      "en": "Sweden's largest technical university, in Stockholm. Citizens of countries outside the EU/EEA/Switzerland pay tuition fees.",
+      "ru": "Крупнейший технический университет Швеции, в Стокгольме. Граждане стран вне ЕС/ЕЭЗ/Швейцарии платят за обучение."
+    },
+    "rankings": [],
+    "dormitory": null,
+    "ownership": "public",
+    "founded_year": null,
+    "names": {
+      "original": "Kungliga Tekniska högskolan",
+      "en": "KTH Royal Institute of Technology",
+      "ru": "Королевский технологический институт KTH"
+    },
+    "type": "university",
+    "city": {
+      "original": "Stockholm",
+      "en": "Stockholm",
+      "ru": "Стокгольм"
+    },
+    "website": "https://www.kth.se/en",
+    "city_size": "megapolis",
+    "climate": "cold",
+    "size": "large",
+    "features": [
+      "exchange"
+    ],
+    "country": "SE"
+  },
+  "programs": [
+    {
+      "names": {
+        "original": "Information and Communication Technology (bachelor)",
+        "en": "Information and Communication Technology (bachelor)",
+        "ru": "Информационные и коммуникационные технологии (бакалавриат)"
+      },
+      "level": "bachelor",
+      "isced_f": "0613",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 3,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 423000,
+          "currency": "SEK",
+          "period": "total",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 900,
+        "currency": "SEK"
+      },
+      "application_url": "https://www.kth.se/en/studies/bachelor/fees-1.646274"
+    }
+  ],
+  "scholarships": [],
+  "sources": [
+    {
+      "field": "programs[0].application_fee",
+      "url": "https://www.kth.se/en/studies/bachelor/fees-1.646274",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[0].tuition[0].amount",
+      "url": "https://www.kth.se/en/studies/bachelor/fees-1.646274",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    }
+  ],
+  "notes_for_reviewer": "Official kth.se page read 2026-10-06: for non-EU/EEA/Swiss citizens the FULL programme tuition for the bachelor in Information and Communication Technology is SEK 423,000 (stored as \"total\"; with the 3-year length the engine shows about SEK 141,000 per year); application fee SEK 900. The page names only this programme. The 3-year duration is my assumption from the fee and the usual bachelor length: please check. English as the language of instruction is an assumption (the fee page applies to programmes taught in English). The academic year is not stated. Other bachelor programmes (mostly in Swedish) are not collected."
+}
