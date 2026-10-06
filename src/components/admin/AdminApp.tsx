@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 import { useCallback, useEffect, useState } from 'react';
 import { Link } from '@/i18n/navigation';
@@ -34,9 +34,9 @@ const STAT_LABELS: [string, string][] = [
 ];
 
 const btn =
-  'inline-flex h-9 items-center rounded-full border border-line-strong px-3 text-sm font-medium text-text hover:bg-surface-strong disabled:opacity-50';
+  'inline-flex h-9 items-center rounded-lg border border-line-strong px-3 text-sm font-medium text-text hover:bg-surface-strong disabled:opacity-50';
 const btnPrimary =
-  'inline-flex h-9 items-center rounded-full bg-accent px-3 text-sm font-semibold text-on-accent hover:opacity-90 disabled:opacity-50';
+  'inline-flex h-9 items-center rounded-lg bg-accent px-3 text-sm font-semibold text-on-accent hover:opacity-90 disabled:opacity-50';
 const input =
   'h-10 rounded-lg border border-line-strong bg-bg px-3 text-text focus:outline-2 focus:outline-offset-2 focus:outline-accent';
 
@@ -138,7 +138,7 @@ function Dashboard() {
           {STAT_LABELS.map(([key, label]) => (
             <div key={key} className="rounded-xl border border-line bg-surface p-4">
               <dt className="text-sm text-muted">{label}</dt>
-              <dd className="mt-1 text-3xl font-bold text-brand">{data[key] ?? 0}</dd>
+              <dd className="mt-1 text-3xl font-semibold text-text">{data[key] ?? 0}</dd>
             </div>
           ))}
         </dl>

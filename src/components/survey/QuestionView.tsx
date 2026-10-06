@@ -529,7 +529,7 @@ export function QuestionView({ q, value, answers, onChange }: Props) {
           <p className="text-sm text-muted">1 — {t('riasec.scale.1')} · 5 — {t('riasec.scale.5')}</p>
           {complete ? (
             <div>
-              <h3 className="text-lg font-bold text-brand">{t('riasec.suggestions')}</h3>
+              <h3 className="text-lg font-semibold text-text">{t('riasec.suggestions')}</h3>
               <p className="mb-2 text-sm text-muted">{t('riasec.suggestionsHint')}</p>
               <div className="flex flex-wrap gap-2">
                 {suggestions.map((code) => (

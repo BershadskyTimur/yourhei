@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
+import { SideAds } from '@/components/SideAds';
 import { TypeDot } from '@/components/TypeDot';
 import { Link } from '@/i18n/navigation';
 import { getMapInstitutions } from '@/lib/institutions/get';
@@ -39,12 +40,13 @@ export default async function InstitutionPage({ params }: { params: Params }) {
   const countryName = new Intl.DisplayNames([locale], { type: 'region' }).of(institution.country);
 
   return (
-    <article className="mx-auto max-w-3xl px-4 py-12">
+    <SideAds>
+    <article className="mx-auto max-w-3xl py-12">
       <p className="flex items-center gap-3 text-sm font-medium uppercase tracking-wide text-muted">
         <TypeDot type={institution.type} />
         {tTypes(institution.type)}
       </p>
-      <h1 className="mt-3 text-3xl font-bold text-brand">{name}</h1>
+      <h1 className="mt-3 text-3xl font-semibold tracking-tight text-text">{name}</h1>
       {original && original !== name && <p className="mt-1 text-lg text-muted">{original}</p>}
       <p className="mt-3 text-lg">{[city, countryName].filter(Boolean).join(', ')}</p>
       {institution.foundedYear && (
@@ -62,7 +64,7 @@ export default async function InstitutionPage({ params }: { params: Params }) {
           </a>
         </p>
       )}
-      <p className="mt-6 rounded-xl border border-line-strong bg-accent-soft px-4 py-3 text-text">
+      <p className="mt-6 rounded-lg border border-line bg-accent-soft px-4 py-3 text-text">
         {t('comingSoon')}
       </p>
       <p className="mt-8">
@@ -71,5 +73,6 @@ export default async function InstitutionPage({ params }: { params: Params }) {
         </Link>
       </p>
     </article>
+    </SideAds>
   );
 }

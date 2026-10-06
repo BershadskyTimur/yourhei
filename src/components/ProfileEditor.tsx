@@ -39,7 +39,7 @@ type Message = { kind: 'ok' | 'error'; text: string } | null;
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <section className="rounded-2xl border border-line bg-surface p-5 sm:p-6">
-      <h2 className="mb-5 text-xl font-bold text-brand">{title}</h2>
+      <h2 className="mb-5 text-xl font-semibold text-text">{title}</h2>
       {children}
     </section>
   );
@@ -239,13 +239,13 @@ export function ProfileEditor() {
 
       {incomplete && (
         <section className="rounded-2xl border border-line-strong bg-accent-soft p-5 sm:p-6">
-          <h2 className="text-xl font-bold text-brand">{t('complete.title')}</h2>
+          <h2 className="text-xl font-semibold text-text">{t('complete.title')}</h2>
           <p className="mt-1">{t('complete.text')}</p>
         </section>
       )}
 
       <section className="rounded-2xl border border-line-strong bg-accent-soft p-5 sm:p-6">
-        <h2 className="text-xl font-bold text-brand">{t('survey.title')}</h2>
+        <h2 className="text-xl font-semibold text-text">{t('survey.title')}</h2>
         <p className="mt-1">{t('survey.text')}</p>
         <Link href="/survey" className={`${primaryButton} mt-4`}>
           {t('survey.open')}

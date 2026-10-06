@@ -138,7 +138,7 @@ function Hub({ attempts, onStart, onChanged }: { attempts: Attempt[]; onStart: (
 
       {finished.length > 0 && (
         <section aria-labelledby="past-title">
-          <h2 id="past-title" className="text-xl font-bold text-brand">{t('hub.past')}</h2>
+          <h2 id="past-title" className="text-xl font-semibold text-text">{t('hub.past')}</h2>
           <p className="mt-1 text-sm text-muted">{t('hub.noteRetake')}</p>
           <ul className="mt-4 space-y-2">
             {finished.map((a) => (
@@ -161,7 +161,7 @@ function Done({ onAgain }: { onAgain: () => void }) {
   const t = useTranslations('Survey');
   return (
     <section aria-labelledby="done-title" className="rounded-2xl border border-line-strong bg-accent-soft p-6">
-      <h2 id="done-title" className="text-2xl font-bold text-brand">{t('done.title')}</h2>
+      <h2 id="done-title" className="text-2xl font-semibold text-text">{t('done.title')}</h2>
       <p className="mt-3 text-lg">{t('done.text')}</p>
       <p className="mt-2 text-sm text-muted">{t('hub.noteRetake')}</p>
       <div className="mt-6 flex flex-wrap gap-3">
@@ -272,7 +272,7 @@ function Runner({ attempt, onDone, onExit }: { attempt: Attempt; onDone: () => v
         </p>
       </div>
 
-      <h2 id="question-title" ref={titleRef} tabIndex={-1} className="text-2xl font-bold text-brand outline-none">
+      <h2 id="question-title" ref={titleRef} tabIndex={-1} className="text-2xl font-semibold text-text outline-none">
         {t(`q.${q.id}.title` as never)}
       </h2>
       {!q.required && <p className="mt-1 text-sm font-medium text-muted">{tUi('optional')}</p>}
