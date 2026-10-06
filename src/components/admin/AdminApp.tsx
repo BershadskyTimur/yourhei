@@ -9,12 +9,14 @@ import { getSupabaseBrowser, isSupabaseConfigured } from '@/lib/supabase/client'
 // Real protection is in the database (supabase/migrations/0006_admin.sql): without the "admin" role
 // every request below is refused by Row Level Security, whatever this page shows.
 
-type Tab = 'dashboard' | 'institutions' | 'programs' | 'countries' | 'log';
+type Tab = 'dashboard' | 'users' | 'traffic' | 'institutions' | 'programs' | 'countries' | 'log';
 type Access = 'loading' | 'guest' | 'denied' | 'admin' | 'unconfigured';
 type Row = Record<string, unknown>;
 
 const TABS: { id: Tab; label: string }[] = [
   { id: 'dashboard', label: 'Обзор' },
+  { id: 'users', label: 'Пользователи' },
+  { id: 'traffic', label: 'Посещаемость' },
   { id: 'institutions', label: 'Вузы и школы' },
   { id: 'programs', label: 'Программы на проверке' },
   { id: 'countries', label: 'Данные стран' },
@@ -89,6 +91,8 @@ export function AdminApp() {
       </div>
       <div className="mt-6">
         {tab === 'dashboard' && <Dashboard />}
+        {tab === 'users' && <UsersStats />}
+        {tab === 'traffic' && <Traffic />}
         {tab === 'institutions' && <Institutions />}
         {tab === 'programs' && <Programs />}
         {tab === 'countries' && <Countries />}
@@ -486,6 +490,172 @@ function AuditLog() {
           </li>
         ))}
       </ul>
+    </section>
+  );
+}
+
+// ------------------------------------------------------------------ analytics (numbers come from admin_user_stats / admin_traffic)
+
+const regionNames = new Intl.DisplayNames(['ru'], { type: 'region' });
+const countryName = (code: unknown) => {
+  try {
+    return regionNames.of(String(code)) ?? String(code);
+  } catch {
+    return String(code);
+  }
+};
+
+function BarList({ title, rows, hint }: { title: string; rows: { label: string; n: number; extra?: string }[]; hint?: string }) {
+  const max = Math.max(1, ...rows.map((r) => r.n));
+  return (
+    <div className="rounded-xl border border-line bg-surface p-4">
+      <h3 className="font-semibold text-text">{title}</h3>
+      {hint && <p className="text-xs text-muted">{hint}</p>}
+      {rows.length === 0 ? (
+        <p className="mt-2 text-sm text-muted">Данных пока нет.</p>
+      ) : (
+        <ul className="mt-3 space-y-2 text-sm">
+          {rows.map((r) => (
+            <li key={r.label}>
+              <div className="flex justify-between gap-2">
+                <span className="min-w-0 truncate">{r.label}{r.extra ? <span className="text-muted"> · {r.extra}</span> : null}</span>
+                <span className="font-medium tabular-nums">{r.n}</span>
+              </div>
+              <div className="mt-1 h-1.5 rounded-full bg-surface-strong" aria-hidden="true">
+                <div className="h-1.5 rounded-full bg-accent" style={{ width: `${Math.max(2, (r.n / max) * 100)}%` }} />
+              </div>
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  );
+}
+
+function DayChart({ title, data, valueKey = 'n' }: { title: string; data: Row[]; valueKey?: string }) {
+  const values = data.map((d) => Number(d[valueKey] ?? 0));
+  const max = Math.max(1, ...values);
+  return (
+    <div className="rounded-xl border border-line bg-surface p-4">
+      <h3 className="font-semibold text-text">{title}</h3>
+      <div className="mt-3 flex h-28 items-end gap-0.5" role="img" aria-label={`${title}: всего ${values.reduce((a, b) => a + b, 0)}`}>
+        {data.map((d, i) => (
+          <div key={String(d.day)} title={`${String(d.day)}: ${values[i]}`} className="min-w-0 flex-1 rounded-t bg-accent" style={{ height: `${Math.max(2, (values[i] / max) * 100)}%`, opacity: values[i] === 0 ? 0.25 : 1 }} />
+        ))}
+      </div>
+      <p className="mt-1 flex justify-between text-xs text-muted"><span>{String(data[0]?.day ?? '')}</span><span>{String(data.at(-1)?.day ?? '')}</span></p>
+    </div>
+  );
+}
+
+const rows = (list: unknown, label: (r: Row) => string, extra?: (r: Row) => string | undefined) =>
+  (Array.isArray(list) ? list : []).map((r) => ({ label: label(r as Row), n: Number((r as Row).n ?? 0), extra: extra?.(r as Row) }));
+const objRows = (o: unknown, map: Record<string, string> = {}) =>
+  Object.entries((o ?? {}) as Record<string, number>).sort((a, b) => b[1] - a[1]).map(([k, n]) => ({ label: map[k] ?? k, n: Number(n) }));
+
+function Stat({ label, value }: { label: string; value: React.ReactNode }) {
+  return (
+    <div className="rounded-xl border border-line bg-surface p-4">
+      <dt className="text-sm text-muted">{label}</dt>
+      <dd className="mt-1 text-3xl font-bold text-text">{value}</dd>
+    </div>
+  );
+}
+
+function UsersStats() {
+  const { data, error, loading } = useLoad<Row>(async () => {
+    const res = await getSupabaseBrowser()!.rpc('admin_user_stats');
+    return { data: res.data as Row | null, error: res.error };
+  });
+  const d = data ?? {};
+  const completed = Number(d.surveys_completed ?? 0);
+  const total = Number(d.total ?? 0);
+  const pct = (a: number, b: number) => (b > 0 ? `${Math.round((a / b) * 100)}%` : '—');
+  return (
+    <section>
+      <h2 className="text-xl font-semibold">Пользователи</h2>
+      <p className="mt-1 text-sm text-muted">Только суммы и средние значения, без имён и почт. Возраст считается по дате рождения из профиля.</p>
+      <Status error={error} loading={loading} />
+      {data && (
+        <div className="mt-4 space-y-4">
+          <dl className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+            <Stat label="Зарегистрировано" value={String(d.total ?? 0)} />
+            <Stat label="Новых за 7 / 30 дней" value={`${d.new_7d ?? 0} / ${d.new_30d ?? 0}`} />
+            <Stat label="Средний возраст" value={d.avg_age != null ? String(d.avg_age) : '—'} />
+            <Stat label="Согласны на рассылку" value={`${d.marketing_opt_in ?? 0} (${pct(Number(d.marketing_opt_in ?? 0), total)})`} />
+          </dl>
+          <div className="grid gap-4 lg:grid-cols-2">
+            <DayChart title="Регистрации за 30 дней" data={(d.signups_by_day as Row[]) ?? []} />
+            <BarList title="Возраст" rows={rows(d.age_buckets, (r) => String(r.label))} hint={`Возраст указан у ${d.with_age ?? 0} из ${total}`} />
+            <BarList title="Страна проживания и средний возраст" rows={rows(d.residence_top, (r) => countryName(r.country), (r) => (r.avg_age != null ? `ср. возраст ${r.avg_age}` : undefined))} />
+            <BarList title="Гражданство" rows={rows(d.citizenship_top, (r) => countryName(r.country))} />
+            <BarList title="Страны, куда хотят поступать" rows={rows(d.target_countries_top, (r) => countryName(r.country))} />
+            <BarList title="Какие заведения ищут" rows={objRows(d.target_types)} />
+            <BarList title="Уровень обучения в опросах" rows={objRows(d.levels)} hint="Только завершённые опросы" />
+            <BarList title="Пол" rows={objRows(d.gender, { male: 'мужской', female: 'женский', undisclosed: 'не указан', unknown: 'нет данных' })} />
+          </div>
+          <div className="rounded-xl border border-line bg-surface p-4">
+            <h3 className="font-semibold text-text">Путь пользователя</h3>
+            <ul className="mt-2 space-y-1 text-sm">
+              <li>Зарегистрировались: <b>{total}</b></li>
+              <li>Начали опрос: <b>{String(d.surveys_started ?? 0)}</b> ({pct(Number(d.surveys_started ?? 0), total)})</li>
+              <li>Завершили опрос: <b>{completed}</b> ({pct(completed, total)})</li>
+              <li>Сохранили заведения: <b>{String(d.users_with_favorites ?? 0)}</b> человек, всего {String(d.favorites_total ?? 0)} сохранений</li>
+            </ul>
+          </div>
+          <BarList title="Чаще всего сохраняют" rows={rows(d.top_favorites, (r) => String(r.name), (r) => countryName(r.country))} />
+        </div>
+      )}
+    </section>
+  );
+}
+
+function Traffic() {
+  const [days, setDays] = useState(30);
+  const [state, setState] = useState<{ data: Row | null; error: string | null; loading: boolean }>({ data: null, error: null, loading: true });
+  useEffect(() => {
+    let live = true;
+    getSupabaseBrowser()!
+      .rpc('admin_traffic', { p_days: days })
+      .then((res) => {
+        if (live) setState({ data: res.data as Row | null, error: res.error?.message ?? null, loading: false });
+      });
+    return () => {
+      live = false;
+    };
+  }, [days]);
+  const d = state.data ?? {};
+  const byDay = (d.by_day as Row[]) ?? [];
+  return (
+    <section>
+      <div className="flex flex-wrap items-center justify-between gap-3">
+        <h2 className="text-xl font-semibold">Посещаемость</h2>
+        <select className={input} aria-label="Период" value={days} onChange={(e) => { setDays(Number(e.target.value)); setState((s) => ({ ...s, loading: true })); }}>
+          <option value={7}>7 дней</option>
+          <option value={30}>30 дней</option>
+          <option value={90}>90 дней</option>
+          <option value={365}>Год</option>
+        </select>
+      </div>
+      <p className="mt-1 text-sm text-muted">Считаются только посетители, которые нажали «Принять все» в баннере cookie и не включили Do Not Track, поэтому реальные цифры выше. Адреса IP не хранятся.</p>
+      <Status error={state.error} loading={state.loading} />
+      {state.data && (
+        <div className="mt-4 space-y-4">
+          <dl className="grid gap-3 sm:grid-cols-2">
+            <Stat label="Просмотров страниц" value={String(d.views ?? 0)} />
+            <Stat label="Посетителей (сессий)" value={String(d.visitors ?? 0)} />
+          </dl>
+          <div className="grid gap-4 lg:grid-cols-2">
+            <DayChart title="Просмотры по дням" data={byDay} valueKey="views" />
+            <DayChart title="Посетители по дням" data={byDay} valueKey="visitors" />
+            <BarList title="Популярные страницы" rows={rows(d.top_pages, (r) => String(r.path))} />
+            <BarList title="Страны посетителей" rows={rows(d.countries, (r) => countryName(r.country))} />
+            <BarList title="Устройства" rows={objRows(d.devices, { mobile: 'телефон', tablet: 'планшет', desktop: 'компьютер', unknown: 'нет данных' })} />
+            <BarList title="Языки сайта" rows={objRows(d.locales)} />
+            <BarList title="Откуда пришли" rows={rows(d.referrers, (r) => String(r.host))} hint="Сайты, с которых перешли по ссылке" />
+          </div>
+        </div>
+      )}
     </section>
   );
 }
