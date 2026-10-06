@@ -7,6 +7,7 @@ import type { ReactNode } from 'react';
 import { ConsentBannerSlot } from '@/components/ConsentBannerSlot';
 import { Footer } from '@/components/Footer';
 import { Header } from '@/components/Header';
+import { PageViewTracker } from '@/components/PageViewTracker';
 import { ThemeProvider } from '@/components/ThemeProvider';
 import { LOCALES } from '@/config/locales';
 import { routing } from '@/i18n/routing';
@@ -99,6 +100,7 @@ export default async function LocaleLayout({
             </main>
             <Footer />
             <ConsentBannerSlot />
+            <PageViewTracker />
           </ThemeProvider>
         </NextIntlClientProvider>
       </body>
