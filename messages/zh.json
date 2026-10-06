@@ -132,7 +132,15 @@
     "eastern-asia": "东亚",
     "south-eastern-asia": "东南亚",
     "southern-asia": "南亚",
-    "western-asia": "西亚"
+    "western-asia": "西亚",
+    "northern-america": "北美洲",
+    "central-america": "中美洲",
+    "caribbean": "加勒比地区",
+    "south-america": "南美洲",
+    "australia-nz": "澳大利亚和新西兰",
+    "melanesia": "美拉尼西亚",
+    "micronesia": "密克罗尼西亚",
+    "polynesia": "波利尼西亚"
   },
   "Register": {
     "title": "创建账号",
@@ -155,7 +163,9 @@
       "regions": {
         "caucasus-ca-ee": "高加索、中亚和东欧",
         "europe": "欧洲",
-        "asia": "亚洲"
+        "asia": "亚洲",
+        "americas": "美洲",
+        "oceania": "大洋洲"
       },
       "countriesTitle": "国家",
       "countriesHint": "已选中所选地区的全部国家，请取消不需要的国家。",

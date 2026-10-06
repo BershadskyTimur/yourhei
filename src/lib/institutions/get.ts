@@ -71,12 +71,25 @@ export async function getMapInstitutions(): Promise<InstitutionsResult> {
   }
 
   const supabase = createClient(url, key, { auth: { persistSession: false } });
-  const { data, error } = await supabase
-    .from('map_institutions')
-    .select('id, slug, type, country, city, names, lat, lng, website, founded_year')
-    .limit(1000);
+  // Supabase returns at most 1000 rows per request, so the list is read page by page.
+  const PAGE = 1000;
+  const data: unknown[] = [];
+  let error: { message: string } | null = null;
+  for (let from = 0; ; from += PAGE) {
+    const res = await supabase
+      .from('map_institutions')
+      .select('id, slug, type, country, city, names, lat, lng, website, founded_year')
+      .order('id')
+      .range(from, from + PAGE - 1);
+    if (res.error) {
+      error = res.error;
+      break;
+    }
+    data.push(...(res.data ?? []));
+    if ((res.data ?? []).length < PAGE) break;
+  }
 
-  if (error || !data) {
+  if (error) {
     console.error('[institutions] Supabase error:', error?.message);
     return { items: [], source: 'supabase', error: true };
   }

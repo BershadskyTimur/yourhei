@@ -132,7 +132,15 @@
     "eastern-asia": "Шығыс Азия",
     "south-eastern-asia": "Оңтүстік-Шығыс Азия",
     "southern-asia": "Оңтүстік Азия",
-    "western-asia": "Батыс Азия"
+    "western-asia": "Батыс Азия",
+    "northern-america": "Солтүстік Америка",
+    "central-america": "Орталық Америка",
+    "caribbean": "Кариб аралдары",
+    "south-america": "Оңтүстік Америка",
+    "australia-nz": "Австралия және Жаңа Зеландия",
+    "melanesia": "Меланезия",
+    "micronesia": "Микронезия",
+    "polynesia": "Полинезия"
   },
   "Register": {
     "title": "Аккаунт ашу",
@@ -155,7 +163,9 @@
       "regions": {
         "caucasus-ca-ee": "Кавказ, Орталық Азия және Шығыс Еуропа",
         "europe": "Еуропа",
-        "asia": "Азия"
+        "asia": "Азия",
+        "americas": "Америка",
+        "oceania": "Океания"
       },
       "countriesTitle": "Елдер",
       "countriesHint": "Таңдалған аймақтардың барлық елдері белгіленген. Қажет емесінің белгісін алып тастаңыз.",

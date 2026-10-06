@@ -14,8 +14,8 @@ describe('country reference data', () => {
     expect(COUNTRY_CODES.has('TW')).toBe(true);
     expect(COUNTRY_CODES.has('XK')).toBe(false);
   });
-  it('defines the three starting macro-regions', () => {
-    expect(REGIONS.map((r) => r.id)).toEqual(['caucasus-ca-ee', 'europe', 'asia']);
+  it('defines the macro-regions', () => {
+    expect(REGIONS.map((r) => r.id)).toEqual(['caucasus-ca-ee', 'europe', 'asia', 'americas', 'oceania']);
   });
   it('the Caucasus / Central Asia / Eastern Europe region has the 12 countries of SPEC.md', () => {
     const r = REGIONS.find((x) => x.id === 'caucasus-ca-ee')!;
@@ -34,6 +34,14 @@ describe('countriesOfRegions / groupBySubregion', () => {
     expect(new Set(codes).size).toBe(codes.length);
     expect(codes).toContain('KZ');
     expect(codes).toContain('JP');
+  });
+  it('has the Americas and Oceania with their sub-regions', () => {
+    const groups = groupBySubregion(countriesOfRegions(['americas', 'oceania']));
+    expect(groups.map((g) => g.subregion)).toEqual([
+      'northern-america', 'central-america', 'caribbean', 'south-america', 'australia-nz', 'melanesia', 'micronesia', 'polynesia',
+    ]);
+    expect(countriesOfRegions(['americas'])).toContain('BR');
+    expect(countriesOfRegions(['oceania'])).toContain('NZ');
   });
   it('groups by sub-region in a fixed order', () => {
     const groups = groupBySubregion(countriesOfRegions(['caucasus-ca-ee']));

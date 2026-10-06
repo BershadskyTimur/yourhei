@@ -132,7 +132,15 @@
     "eastern-asia": "Արևելյան Ասիա",
     "south-eastern-asia": "Հարավարևելյան Ասիա",
     "southern-asia": "Հարավային Ասիա",
-    "western-asia": "Արևմտյան Ասիա"
+    "western-asia": "Արևմտյան Ասիա",
+    "northern-america": "Հյուսիսային Ամերիկա",
+    "central-america": "Կենտրոնական Ամերիկա",
+    "caribbean": "Կարիբյան կղզիներ",
+    "south-america": "Հարավային Ամերիկա",
+    "australia-nz": "Ավստրալիա և Նոր Զելանդիա",
+    "melanesia": "Մելանեզիա",
+    "micronesia": "Միկրոնեզիա",
+    "polynesia": "Պոլինեզիա"
   },
   "Register": {
     "title": "Ստեղծեք հաշիվ",
@@ -155,7 +163,9 @@
       "regions": {
         "caucasus-ca-ee": "Կովկաս, Կենտրոնական Ասիա և Արևելյան Եվրոպա",
         "europe": "Եվրոպա",
-        "asia": "Ասիա"
+        "asia": "Ասիա",
+        "americas": "Ամերիկա",
+        "oceania": "Օվկիանիա"
       },
       "countriesTitle": "Երկրներ",
       "countriesHint": "Ընտրված են ընտրված տարածաշրջանների բոլոր երկրները։ Հանեք նշումը անհարկիներից։",
