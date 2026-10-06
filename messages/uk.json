@@ -132,7 +132,15 @@
     "eastern-asia": "Східна Азія",
     "south-eastern-asia": "Південно-Східна Азія",
     "southern-asia": "Південна Азія",
-    "western-asia": "Західна Азія"
+    "western-asia": "Західна Азія",
+    "northern-america": "Північна Америка",
+    "central-america": "Центральна Америка",
+    "caribbean": "Карибські острови",
+    "south-america": "Південна Америка",
+    "australia-nz": "Австралія та Нова Зеландія",
+    "melanesia": "Меланезія",
+    "micronesia": "Мікронезія",
+    "polynesia": "Полінезія"
   },
   "Register": {
     "title": "Створіть акаунт",
@@ -155,7 +163,9 @@
       "regions": {
         "caucasus-ca-ee": "Кавказ, Центральна Азія та Східна Європа",
         "europe": "Європа",
-        "asia": "Азія"
+        "asia": "Азія",
+        "americas": "Америка",
+        "oceania": "Океанія"
       },
       "countriesTitle": "Країни",
       "countriesHint": "Обрано всі країни вибраних регіонів. Зніміть позначки з непотрібних.",

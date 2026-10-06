@@ -132,7 +132,15 @@
     "eastern-asia": "Eastern Asia",
     "south-eastern-asia": "South-eastern Asia",
     "southern-asia": "Southern Asia",
-    "western-asia": "Western Asia"
+    "western-asia": "Western Asia",
+    "northern-america": "Northern America",
+    "central-america": "Central America",
+    "caribbean": "Caribbean",
+    "south-america": "South America",
+    "australia-nz": "Australia and New Zealand",
+    "melanesia": "Melanesia",
+    "micronesia": "Micronesia",
+    "polynesia": "Polynesia"
   },
   "Register": {
     "title": "Create your account",
@@ -155,7 +163,9 @@
       "regions": {
         "caucasus-ca-ee": "Caucasus, Central Asia and Eastern Europe",
         "europe": "Europe",
-        "asia": "Asia"
+        "asia": "Asia",
+        "americas": "Americas",
+        "oceania": "Oceania"
       },
       "countriesTitle": "Countries",
       "countriesHint": "All countries of the chosen regions are selected. Untick the ones you do not need.",

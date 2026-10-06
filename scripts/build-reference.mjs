@@ -21,6 +21,14 @@ const SUBREGIONS = {
   'south-eastern-asia': ['asia', split('BN KH ID LA MY MM PH SG TH TL VN')],
   'southern-asia': ['asia', split('AF BD BT IN IR LK MV NP PK')],
   'western-asia': ['asia', split('AM AZ BH CY GE IQ IL JO KW LB OM PS QA SA SY TR AE YE')],
+  'northern-america': ['americas', split('BM CA GL PM US')],
+  'central-america': ['americas', split('BZ CR SV GT HN MX NI PA')],
+  caribbean: ['americas', split('AI AG AW BS BB BQ VG KY CU CW DM DO GD GP HT JM MQ MS PR BL KN LC MF VC SX TT TC VI')],
+  'south-america': ['americas', split('AR BO BV BR CL CO EC FK GF GY PY PE GS SR UY VE')],
+  'australia-nz': ['oceania', split('AU NZ NF CC CX HM')],
+  melanesia: ['oceania', split('FJ NC PG SB VU')],
+  micronesia: ['oceania', split('GU KI MH FM NR MP PW UM')],
+  polynesia: ['oceania', split('AS CK PF NU PN WS TK TO TV WF')],
 };
 
 // SPEC.md section 5: working region "Caucasus, Central Asia and Eastern Europe".
@@ -51,6 +59,8 @@ const regions = [
   { id: 'caucasus-ca-ee', countries: CAUCASUS_CA_EE },
   { id: 'europe', countries: list.filter((c) => c.region === 'europe').map((c) => c.code) },
   { id: 'asia', countries: list.filter((c) => c.region === 'asia').map((c) => c.code) },
+  { id: 'americas', countries: list.filter((c) => c.region === 'americas').map((c) => c.code) },
+  { id: 'oceania', countries: list.filter((c) => c.region === 'oceania').map((c) => c.code) },
 ];
 
 mkdirSync('data/reference', { recursive: true });

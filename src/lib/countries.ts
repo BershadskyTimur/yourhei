@@ -3,7 +3,7 @@ import regionData from '../../data/reference/regions.json';
 
 export interface CountryRecord {
   code: string; // ISO 3166-1 alpha-2
-  region: 'europe' | 'asia' | 'other';
+  region: 'europe' | 'asia' | 'americas' | 'oceania' | 'other';
   subregion: string | null; // UN M49 sub-region key
 }
 
@@ -24,6 +24,14 @@ export const SUBREGION_ORDER = [
   'south-eastern-asia',
   'southern-asia',
   'western-asia',
+  'northern-america',
+  'central-america',
+  'caribbean',
+  'south-america',
+  'australia-nz',
+  'melanesia',
+  'micronesia',
+  'polynesia',
 ] as const;
 
 export function countriesOfRegions(regionIds: readonly string[]): string[] {

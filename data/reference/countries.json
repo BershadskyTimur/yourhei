@@ -16,13 +16,13 @@
  },
  {
   "code": "AG",
-  "region": "other",
-  "subregion": null
+  "region": "americas",
+  "subregion": "caribbean"
  },
  {
   "code": "AI",
-  "region": "other",
-  "subregion": null
+  "region": "americas",
+  "subregion": "caribbean"
  },
  {
   "code": "AL",
@@ -46,13 +46,13 @@
  },
  {
   "code": "AR",
-  "region": "other",
-  "subregion": null
+  "region": "americas",
+  "subregion": "south-america"
  },
  {
   "code": "AS",
-  "region": "other",
-  "subregion": null
+  "region": "oceania",
+  "subregion": "polynesia"
  },
  {
   "code": "AT",
@@ -61,13 +61,13 @@
  },
  {
   "code": "AU",
-  "region": "other",
-  "subregion": null
+  "region": "oceania",
+  "subregion": "australia-nz"
  },
  {
   "code": "AW",
-  "region": "other",
-  "subregion": null
+  "region": "americas",
+  "subregion": "caribbean"
  },
  {
   "code": "AX",
@@ -86,8 +86,8 @@
  },
  {
   "code": "BB",
-  "region": "other",
-  "subregion": null
+  "region": "americas",
+  "subregion": "caribbean"
  },
  {
   "code": "BD",
@@ -126,13 +126,13 @@
  },
  {
   "code": "BL",
-  "region": "other",
-  "subregion": null
+  "region": "americas",
+  "subregion": "caribbean"
  },
  {
   "code": "BM",
-  "region": "other",
-  "subregion": null
+  "region": "americas",
+  "subregion": "northern-america"
  },
  {
   "code": "BN",
@@ -141,23 +141,23 @@
  },
  {
   "code": "BO",
-  "region": "other",
-  "subregion": null
+  "region": "americas",
+  "subregion": "south-america"
  },
  {
   "code": "BQ",
-  "region": "other",
-  "subregion": null
+  "region": "americas",
+  "subregion": "caribbean"
  },
  {
   "code": "BR",
-  "region": "other",
-  "subregion": null
+  "region": "americas",
+  "subregion": "south-america"
  },
  {
   "code": "BS",
-  "region": "other",
-  "subregion": null
+  "region": "americas",
+  "subregion": "caribbean"
  },
  {
   "code": "BT",
@@ -166,8 +166,8 @@
  },
  {
   "code": "BV",
-  "region": "other",
-  "subregion": null
+  "region": "americas",
+  "subregion": "south-america"
  },
  {
   "code": "BW",
@@ -181,18 +181,18 @@
  },
  {
   "code": "BZ",
-  "region": "other",
-  "subregion": null
+  "region": "americas",
+  "subregion": "central-america"
  },
  {
   "code": "CA",
-  "region": "other",
-  "subregion": null
+  "region": "americas",
+  "subregion": "northern-america"
  },
  {
   "code": "CC",
-  "region": "other",
-  "subregion": null
+  "region": "oceania",
+  "subregion": "australia-nz"
  },
  {
   "code": "CD",
@@ -221,13 +221,13 @@
  },
  {
   "code": "CK",
-  "region": "other",
-  "subregion": null
+  "region": "oceania",
+  "subregion": "polynesia"
  },
  {
   "code": "CL",
-  "region": "other",
-  "subregion": null
+  "region": "americas",
+  "subregion": "south-america"
  },
  {
   "code": "CM",
@@ -241,18 +241,18 @@
  },
  {
   "code": "CO",
-  "region": "other",
-  "subregion": null
+  "region": "americas",
+  "subregion": "south-america"
  },
  {
   "code": "CR",
-  "region": "other",
-  "subregion": null
+  "region": "americas",
+  "subregion": "central-america"
  },
  {
   "code": "CU",
-  "region": "other",
-  "subregion": null
+  "region": "americas",
+  "subregion": "caribbean"
  },
  {
   "code": "CV",
@@ -261,13 +261,13 @@
  },
  {
   "code": "CW",
-  "region": "other",
-  "subregion": null
+  "region": "americas",
+  "subregion": "caribbean"
  },
  {
   "code": "CX",
-  "region": "other",
-  "subregion": null
+  "region": "oceania",
+  "subregion": "australia-nz"
  },
  {
   "code": "CY",
@@ -296,13 +296,13 @@
  },
  {
   "code": "DM",
-  "region": "other",
-  "subregion": null
+  "region": "americas",
+  "subregion": "caribbean"
  },
  {
   "code": "DO",
-  "region": "other",
-  "subregion": null
+  "region": "americas",
+  "subregion": "caribbean"
  },
  {
   "code": "DZ",
@@ -311,8 +311,8 @@
  },
  {
   "code": "EC",
-  "region": "other",
-  "subregion": null
+  "region": "americas",
+  "subregion": "south-america"
  },
  {
   "code": "EE",
@@ -351,18 +351,18 @@
  },
  {
   "code": "FJ",
-  "region": "other",
-  "subregion": null
+  "region": "oceania",
+  "subregion": "melanesia"
  },
  {
   "code": "FK",
-  "region": "other",
-  "subregion": null
+  "region": "americas",
+  "subregion": "south-america"
  },
  {
   "code": "FM",
-  "region": "other",
-  "subregion": null
+  "region": "oceania",
+  "subregion": "micronesia"
  },
  {
   "code": "FO",
@@ -386,8 +386,8 @@
  },
  {
   "code": "GD",
-  "region": "other",
-  "subregion": null
+  "region": "americas",
+  "subregion": "caribbean"
  },
  {
   "code": "GE",
@@ -396,8 +396,8 @@
  },
  {
   "code": "GF",
-  "region": "other",
-  "subregion": null
+  "region": "americas",
+  "subregion": "south-america"
  },
  {
   "code": "GG",
@@ -416,8 +416,8 @@
  },
  {
   "code": "GL",
-  "region": "other",
-  "subregion": null
+  "region": "americas",
+  "subregion": "northern-america"
  },
  {
   "code": "GM",
@@ -431,8 +431,8 @@
  },
  {
   "code": "GP",
-  "region": "other",
-  "subregion": null
+  "region": "americas",
+  "subregion": "caribbean"
  },
  {
   "code": "GQ",
@@ -446,18 +446,18 @@
  },
  {
   "code": "GS",
-  "region": "other",
-  "subregion": null
+  "region": "americas",
+  "subregion": "south-america"
  },
  {
   "code": "GT",
-  "region": "other",
-  "subregion": null
+  "region": "americas",
+  "subregion": "central-america"
  },
  {
   "code": "GU",
-  "region": "other",
-  "subregion": null
+  "region": "oceania",
+  "subregion": "micronesia"
  },
  {
   "code": "GW",
@@ -466,8 +466,8 @@
  },
  {
   "code": "GY",
-  "region": "other",
-  "subregion": null
+  "region": "americas",
+  "subregion": "south-america"
  },
  {
   "code": "HK",
@@ -476,13 +476,13 @@
  },
  {
   "code": "HM",
-  "region": "other",
-  "subregion": null
+  "region": "oceania",
+  "subregion": "australia-nz"
  },
  {
   "code": "HN",
-  "region": "other",
-  "subregion": null
+  "region": "americas",
+  "subregion": "central-america"
  },
  {
   "code": "HR",
@@ -491,8 +491,8 @@
  },
  {
   "code": "HT",
-  "region": "other",
-  "subregion": null
+  "region": "americas",
+  "subregion": "caribbean"
  },
  {
   "code": "HU",
@@ -556,8 +556,8 @@
  },
  {
   "code": "JM",
-  "region": "other",
-  "subregion": null
+  "region": "americas",
+  "subregion": "caribbean"
  },
  {
   "code": "JO",
@@ -586,8 +586,8 @@
  },
  {
   "code": "KI",
-  "region": "other",
-  "subregion": null
+  "region": "oceania",
+  "subregion": "micronesia"
  },
  {
   "code": "KM",
@@ -596,8 +596,8 @@
  },
  {
   "code": "KN",
-  "region": "other",
-  "subregion": null
+  "region": "americas",
+  "subregion": "caribbean"
  },
  {
   "code": "KP",
@@ -616,8 +616,8 @@
  },
  {
   "code": "KY",
-  "region": "other",
-  "subregion": null
+  "region": "americas",
+  "subregion": "caribbean"
  },
  {
   "code": "KZ",
@@ -636,8 +636,8 @@
  },
  {
   "code": "LC",
-  "region": "other",
-  "subregion": null
+  "region": "americas",
+  "subregion": "caribbean"
  },
  {
   "code": "LI",
@@ -701,8 +701,8 @@
  },
  {
   "code": "MF",
-  "region": "other",
-  "subregion": null
+  "region": "americas",
+  "subregion": "caribbean"
  },
  {
   "code": "MG",
@@ -711,8 +711,8 @@
  },
  {
   "code": "MH",
-  "region": "other",
-  "subregion": null
+  "region": "oceania",
+  "subregion": "micronesia"
  },
  {
   "code": "MK",
@@ -741,13 +741,13 @@
  },
  {
   "code": "MP",
-  "region": "other",
-  "subregion": null
+  "region": "oceania",
+  "subregion": "micronesia"
  },
  {
   "code": "MQ",
-  "region": "other",
-  "subregion": null
+  "region": "americas",
+  "subregion": "caribbean"
  },
  {
   "code": "MR",
@@ -756,8 +756,8 @@
  },
  {
   "code": "MS",
-  "region": "other",
-  "subregion": null
+  "region": "americas",
+  "subregion": "caribbean"
  },
  {
   "code": "MT",
@@ -781,8 +781,8 @@
  },
  {
   "code": "MX",
-  "region": "other",
-  "subregion": null
+  "region": "americas",
+  "subregion": "central-america"
  },
  {
   "code": "MY",
@@ -801,8 +801,8 @@
  },
  {
   "code": "NC",
-  "region": "other",
-  "subregion": null
+  "region": "oceania",
+  "subregion": "melanesia"
  },
  {
   "code": "NE",
@@ -811,8 +811,8 @@
  },
  {
   "code": "NF",
-  "region": "other",
-  "subregion": null
+  "region": "oceania",
+  "subregion": "australia-nz"
  },
  {
   "code": "NG",
@@ -821,8 +821,8 @@
  },
  {
   "code": "NI",
-  "region": "other",
-  "subregion": null
+  "region": "americas",
+  "subregion": "central-america"
  },
  {
   "code": "NL",
@@ -841,18 +841,18 @@
  },
  {
   "code": "NR",
-  "region": "other",
-  "subregion": null
+  "region": "oceania",
+  "subregion": "micronesia"
  },
  {
   "code": "NU",
-  "region": "other",
-  "subregion": null
+  "region": "oceania",
+  "subregion": "polynesia"
  },
  {
   "code": "NZ",
-  "region": "other",
-  "subregion": null
+  "region": "oceania",
+  "subregion": "australia-nz"
  },
  {
   "code": "OM",
@@ -861,23 +861,23 @@
  },
  {
   "code": "PA",
-  "region": "other",
-  "subregion": null
+  "region": "americas",
+  "subregion": "central-america"
  },
  {
   "code": "PE",
-  "region": "other",
-  "subregion": null
+  "region": "americas",
+  "subregion": "south-america"
  },
  {
   "code": "PF",
-  "region": "other",
-  "subregion": null
+  "region": "oceania",
+  "subregion": "polynesia"
  },
  {
   "code": "PG",
-  "region": "other",
-  "subregion": null
+  "region": "oceania",
+  "subregion": "melanesia"
  },
  {
   "code": "PH",
@@ -896,18 +896,18 @@
  },
  {
   "code": "PM",
-  "region": "other",
-  "subregion": null
+  "region": "americas",
+  "subregion": "northern-america"
  },
  {
   "code": "PN",
-  "region": "other",
-  "subregion": null
+  "region": "oceania",
+  "subregion": "polynesia"
  },
  {
   "code": "PR",
-  "region": "other",
-  "subregion": null
+  "region": "americas",
+  "subregion": "caribbean"
  },
  {
   "code": "PS",
@@ -921,13 +921,13 @@
  },
  {
   "code": "PW",
-  "region": "other",
-  "subregion": null
+  "region": "oceania",
+  "subregion": "micronesia"
  },
  {
   "code": "PY",
-  "region": "other",
-  "subregion": null
+  "region": "americas",
+  "subregion": "south-america"
  },
  {
   "code": "QA",
@@ -966,8 +966,8 @@
  },
  {
   "code": "SB",
-  "region": "other",
-  "subregion": null
+  "region": "oceania",
+  "subregion": "melanesia"
  },
  {
   "code": "SC",
@@ -1031,8 +1031,8 @@
  },
  {
   "code": "SR",
-  "region": "other",
-  "subregion": null
+  "region": "americas",
+  "subregion": "south-america"
  },
  {
   "code": "SS",
@@ -1046,13 +1046,13 @@
  },
  {
   "code": "SV",
-  "region": "other",
-  "subregion": null
+  "region": "americas",
+  "subregion": "central-america"
  },
  {
   "code": "SX",
-  "region": "other",
-  "subregion": null
+  "region": "americas",
+  "subregion": "caribbean"
  },
  {
   "code": "SY",
@@ -1066,8 +1066,8 @@
  },
  {
   "code": "TC",
-  "region": "other",
-  "subregion": null
+  "region": "americas",
+  "subregion": "caribbean"
  },
  {
   "code": "TD",
@@ -1096,8 +1096,8 @@
  },
  {
   "code": "TK",
-  "region": "other",
-  "subregion": null
+  "region": "oceania",
+  "subregion": "polynesia"
  },
  {
   "code": "TL",
@@ -1116,8 +1116,8 @@
  },
  {
   "code": "TO",
-  "region": "other",
-  "subregion": null
+  "region": "oceania",
+  "subregion": "polynesia"
  },
  {
   "code": "TR",
@@ -1126,13 +1126,13 @@
  },
  {
   "code": "TT",
-  "region": "other",
-  "subregion": null
+  "region": "americas",
+  "subregion": "caribbean"
  },
  {
   "code": "TV",
-  "region": "other",
-  "subregion": null
+  "region": "oceania",
+  "subregion": "polynesia"
  },
  {
   "code": "TW",
@@ -1156,18 +1156,18 @@
  },
  {
   "code": "UM",
-  "region": "other",
-  "subregion": null
+  "region": "oceania",
+  "subregion": "micronesia"
  },
  {
   "code": "US",
-  "region": "other",
-  "subregion": null
+  "region": "americas",
+  "subregion": "northern-america"
  },
  {
   "code": "UY",
-  "region": "other",
-  "subregion": null
+  "region": "americas",
+  "subregion": "south-america"
  },
  {
   "code": "UZ",
@@ -1181,23 +1181,23 @@
  },
  {
   "code": "VC",
-  "region": "other",
-  "subregion": null
+  "region": "americas",
+  "subregion": "caribbean"
  },
  {
   "code": "VE",
-  "region": "other",
-  "subregion": null
+  "region": "americas",
+  "subregion": "south-america"
  },
  {
   "code": "VG",
-  "region": "other",
-  "subregion": null
+  "region": "americas",
+  "subregion": "caribbean"
  },
  {
   "code": "VI",
-  "region": "other",
-  "subregion": null
+  "region": "americas",
+  "subregion": "caribbean"
  },
  {
   "code": "VN",
@@ -1206,18 +1206,18 @@
  },
  {
   "code": "VU",
-  "region": "other",
-  "subregion": null
+  "region": "oceania",
+  "subregion": "melanesia"
  },
  {
   "code": "WF",
-  "region": "other",
-  "subregion": null
+  "region": "oceania",
+  "subregion": "polynesia"
  },
  {
   "code": "WS",
-  "region": "other",
-  "subregion": null
+  "region": "oceania",
+  "subregion": "polynesia"
  },
  {
   "code": "YE",

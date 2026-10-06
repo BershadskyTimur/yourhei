@@ -132,7 +132,15 @@
     "eastern-asia": "აღმოსავლეთ აზია",
     "south-eastern-asia": "სამხრეთ-აღმოსავლეთ აზია",
     "southern-asia": "სამხრეთ აზია",
-    "western-asia": "დასავლეთ აზია"
+    "western-asia": "დასავლეთ აზია",
+    "northern-america": "ჩრდილოეთ ამერიკა",
+    "central-america": "ცენტრალური ამერიკა",
+    "caribbean": "კარიბის ზღვის რეგიონი",
+    "south-america": "სამხრეთ ამერიკა",
+    "australia-nz": "ავსტრალია და ახალი ზელანდია",
+    "melanesia": "მელანეზია",
+    "micronesia": "მიკრონეზია",
+    "polynesia": "პოლინეზია"
   },
   "Register": {
     "title": "შექმენით ანგარიში",
@@ -155,7 +163,9 @@
       "regions": {
         "caucasus-ca-ee": "კავკასია, ცენტრალური აზია და აღმოსავლეთ ევროპა",
         "europe": "ევროპა",
-        "asia": "აზია"
+        "asia": "აზია",
+        "americas": "ამერიკა",
+        "oceania": "ოკეანეთი"
       },
       "countriesTitle": "ქვეყნები",
       "countriesHint": "არჩეულია არჩეული რეგიონების ყველა ქვეყანა. მოხსენით ზედმეტები.",
