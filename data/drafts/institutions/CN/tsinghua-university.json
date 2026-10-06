@@ -1,0 +1,510 @@
+{
+  "schema_version": 1,
+  "collected_at": "2026-10-06",
+  "academic_year": "2027/2028",
+  "institution": {
+    "external_ids": {},
+    "description": {
+      "en": "One of the top universities in China, in Beijing. International undergraduates apply to Chinese-English taught majors (fee depends on the field) or to a few fully English-taught programmes.",
+      "ru": "Один из ведущих университетов Китая, в Пекине. Иностранные бакалавры поступают на программы «китайский-английский» (цена зависит от направления) или на несколько программ полностью на английском."
+    },
+    "rankings": [],
+    "dormitory": null,
+    "ownership": "public",
+    "founded_year": null,
+    "names": {
+      "original": "清华大学",
+      "en": "Tsinghua University",
+      "ru": "Университет Цинхуа"
+    },
+    "type": "university",
+    "city": {
+      "original": "北京",
+      "en": "Beijing",
+      "ru": "Пекин"
+    },
+    "website": "https://www.tsinghua.edu.cn/en/",
+    "city_size": "megapolis",
+    "climate": "cold",
+    "size": "large",
+    "features": [
+      "exchange",
+      "double_degree"
+    ],
+    "country": "CN"
+  },
+  "programs": [
+    {
+      "names": {
+        "original": "Computer Science (Chinese-English taught)",
+        "en": "Computer Science (Chinese-English taught)",
+        "ru": "Информатика (китайский + английский)"
+      },
+      "level": "bachelor",
+      "isced_f": "0613",
+      "languages": [
+        "zh"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 30000,
+          "currency": "CNY",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [
+        {
+          "intake": "2027-09",
+          "applies_to": "international",
+          "date": "2026-11-20"
+        },
+        {
+          "intake": "2027-09",
+          "applies_to": "international",
+          "date": "2027-02-28"
+        }
+      ],
+      "application_fee": {
+        "amount": 800,
+        "currency": "CNY"
+      },
+      "application_url": "https://international.join-tsinghua.edu.cn/"
+    },
+    {
+      "names": {
+        "original": "Automation (Chinese-English taught)",
+        "en": "Automation (Chinese-English taught)",
+        "ru": "Автоматизация (китайский + английский)"
+      },
+      "level": "bachelor",
+      "isced_f": "0714",
+      "languages": [
+        "zh"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 30000,
+          "currency": "CNY",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [
+        {
+          "intake": "2027-09",
+          "applies_to": "international",
+          "date": "2026-11-20"
+        },
+        {
+          "intake": "2027-09",
+          "applies_to": "international",
+          "date": "2027-02-28"
+        }
+      ],
+      "application_fee": {
+        "amount": 800,
+        "currency": "CNY"
+      },
+      "application_url": "https://international.join-tsinghua.edu.cn/"
+    },
+    {
+      "names": {
+        "original": "Electronic Information (Chinese-English taught)",
+        "en": "Electronic Information (Chinese-English taught)",
+        "ru": "Электронная информация (китайский + английский)"
+      },
+      "level": "bachelor",
+      "isced_f": "0714",
+      "languages": [
+        "zh"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 30000,
+          "currency": "CNY",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [
+        {
+          "intake": "2027-09",
+          "applies_to": "international",
+          "date": "2026-11-20"
+        },
+        {
+          "intake": "2027-09",
+          "applies_to": "international",
+          "date": "2027-02-28"
+        }
+      ],
+      "application_fee": {
+        "amount": 800,
+        "currency": "CNY"
+      },
+      "application_url": "https://international.join-tsinghua.edu.cn/"
+    },
+    {
+      "names": {
+        "original": "Architecture (Chinese-English taught)",
+        "en": "Architecture (Chinese-English taught)",
+        "ru": "Архитектура (китайский + английский)"
+      },
+      "level": "bachelor",
+      "isced_f": "0731",
+      "languages": [
+        "zh"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 30000,
+          "currency": "CNY",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [
+        {
+          "intake": "2027-09",
+          "applies_to": "international",
+          "date": "2026-11-20"
+        },
+        {
+          "intake": "2027-09",
+          "applies_to": "international",
+          "date": "2027-02-28"
+        }
+      ],
+      "application_fee": {
+        "amount": 800,
+        "currency": "CNY"
+      },
+      "application_url": "https://international.join-tsinghua.edu.cn/"
+    },
+    {
+      "names": {
+        "original": "Chemistry and Life Sciences (Chinese-English taught)",
+        "en": "Chemistry and Life Sciences (Chinese-English taught)",
+        "ru": "Химия и науки о жизни (китайский + английский)"
+      },
+      "level": "bachelor",
+      "isced_f": "0531",
+      "languages": [
+        "zh"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 30000,
+          "currency": "CNY",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [
+        {
+          "intake": "2027-09",
+          "applies_to": "international",
+          "date": "2026-11-20"
+        },
+        {
+          "intake": "2027-09",
+          "applies_to": "international",
+          "date": "2027-02-28"
+        }
+      ],
+      "application_fee": {
+        "amount": 800,
+        "currency": "CNY"
+      },
+      "application_url": "https://international.join-tsinghua.edu.cn/"
+    },
+    {
+      "names": {
+        "original": "Economics, Finance and Management (Chinese-English taught)",
+        "en": "Economics, Finance and Management (Chinese-English taught)",
+        "ru": "Экономика, финансы и менеджмент (китайский + английский)"
+      },
+      "level": "bachelor",
+      "isced_f": "0311",
+      "languages": [
+        "zh"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 26000,
+          "currency": "CNY",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [
+        {
+          "intake": "2027-09",
+          "applies_to": "international",
+          "date": "2026-11-20"
+        },
+        {
+          "intake": "2027-09",
+          "applies_to": "international",
+          "date": "2027-02-28"
+        }
+      ],
+      "application_fee": {
+        "amount": 800,
+        "currency": "CNY"
+      },
+      "application_url": "https://international.join-tsinghua.edu.cn/"
+    },
+    {
+      "names": {
+        "original": "Law (Chinese-English taught)",
+        "en": "Law (Chinese-English taught)",
+        "ru": "Право (китайский + английский)"
+      },
+      "level": "bachelor",
+      "isced_f": "0421",
+      "languages": [
+        "zh"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 26000,
+          "currency": "CNY",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [
+        {
+          "intake": "2027-09",
+          "applies_to": "international",
+          "date": "2026-11-20"
+        },
+        {
+          "intake": "2027-09",
+          "applies_to": "international",
+          "date": "2027-02-28"
+        }
+      ],
+      "application_fee": {
+        "amount": 800,
+        "currency": "CNY"
+      },
+      "application_url": "https://international.join-tsinghua.edu.cn/"
+    },
+    {
+      "names": {
+        "original": "English-taught undergraduate programmes (Zijing and Zhishan)",
+        "en": "English-taught undergraduate programmes (Zijing and Zhishan)",
+        "ru": "Программы на английском языке (Zijing, Zhishan)"
+      },
+      "level": "bachelor",
+      "isced_f": null,
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 100000,
+          "currency": "CNY",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [
+        {
+          "intake": "2027-09",
+          "applies_to": "international",
+          "date": "2026-11-20"
+        },
+        {
+          "intake": "2027-09",
+          "applies_to": "international",
+          "date": "2027-02-28"
+        }
+      ],
+      "application_fee": {
+        "amount": 800,
+        "currency": "CNY"
+      },
+      "application_url": "https://international.join-tsinghua.edu.cn/"
+    }
+  ],
+  "scholarships": [],
+  "sources": [
+    {
+      "field": "programs[0].deadlines[0].date",
+      "url": "https://international.join-tsinghua.edu.cn/Admission1/Schedule.htm",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[0].application_fee",
+      "url": "https://international.join-tsinghua.edu.cn/Admission1/Fees.htm",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[0].tuition[0].amount",
+      "url": "https://international.join-tsinghua.edu.cn/Admission1/Fees.htm",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[1].tuition[0].amount",
+      "url": "https://international.join-tsinghua.edu.cn/Admission1/Fees.htm",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[2].tuition[0].amount",
+      "url": "https://international.join-tsinghua.edu.cn/Admission1/Fees.htm",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[3].tuition[0].amount",
+      "url": "https://international.join-tsinghua.edu.cn/Admission1/Fees.htm",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[4].tuition[0].amount",
+      "url": "https://international.join-tsinghua.edu.cn/Admission1/Fees.htm",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[5].tuition[0].amount",
+      "url": "https://international.join-tsinghua.edu.cn/Admission1/Fees.htm",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[6].tuition[0].amount",
+      "url": "https://international.join-tsinghua.edu.cn/Admission1/Fees.htm",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[7].tuition[0].amount",
+      "url": "https://international.join-tsinghua.edu.cn/Admission1/Fees.htm",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    }
+  ],
+  "notes_for_reviewer": "Official international.join-tsinghua.edu.cn pages read 2026-10-06. Annual tuition by category: RMB 30,000 (Architecture, Intelligent Manufacturing, Electronic Information, Computer Science, Automation, Mathematics/Physics, Chemistry/Life Science and several colleges), RMB 26,000 (Economics/Finance/Management, Law and three colleges), RMB 40,000 (arts), RMB 100,000 (the three English-taught programmes). Clinical medicine (RMB 40,000-70,000) is not included. Application fee RMB 800; insurance RMB 800 per year (not encoded); dormitory prices are not published. First round 2026-09-30 to 2026-11-20 (results Jan 2027), second round 2026-11-21 to 2027-02-28: both final dates are stored. NO HSK or English minimums were found on these pages: the Chinese-English taught programmes need Chinese in practice, so I set language \"zh\" only; the English-taught line is \"en\". These cards are fee categories, not individual majors; the real list of majors is on the site. Duration 4 years is an assumption. ISCED-F codes are my assignment."
+}

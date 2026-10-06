@@ -1,0 +1,157 @@
+{
+  "schema_version": 1,
+  "collected_at": "2026-10-06",
+  "academic_year": "2026/2027",
+  "institution": {
+    "external_ids": {},
+    "description": {
+      "en": "The main state medical university of Armenia with English-taught medicine, dentistry and pharmacy programmes for foreign citizens.",
+      "ru": "Главный государственный медицинский вуз Армении; для иностранцев есть программы на английском: лечебное дело, стоматология, фармация."
+    },
+    "rankings": [],
+    "dormitory": null,
+    "ownership": "public",
+    "founded_year": null,
+    "names": {
+      "original": "Երևանի Մ. Հերացու անվան պետական բժշկական համալսարան",
+      "en": "Yerevan State Medical University",
+      "ru": "Ереванский государственный медицинский университет"
+    },
+    "type": "university",
+    "city": {
+      "original": "Երևան",
+      "en": "Yerevan",
+      "ru": "Ереван"
+    },
+    "website": "https://ysmu.am",
+    "location": {
+      "lat": 40.1792,
+      "lng": 44.4991
+    },
+    "city_size": "medium",
+    "climate": "temperate",
+    "size": "large",
+    "features": [],
+    "country": "AM"
+  },
+  "programs": [
+    {
+      "names": {
+        "original": "General Medicine (MD, English)",
+        "en": "General Medicine (MD, English)",
+        "ru": "Лечебное дело (на английском)"
+      },
+      "level": "bachelor",
+      "isced_f": "0912",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 6,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 2600000,
+          "currency": "AMD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [],
+        "min_scores": [],
+        "min_gpa": null,
+        "entrance_exams": "Two of three entrance exams: physics, chemistry, biology (exams on 1-2 October 2026)"
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://ysmu.am/en/admission-foreign-citizens/"
+    },
+    {
+      "names": {
+        "original": "Stomatology (English)",
+        "en": "Stomatology (English)",
+        "ru": "Стоматология (на английском)"
+      },
+      "level": "bachelor",
+      "isced_f": "0911",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 5,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 2600000,
+          "currency": "AMD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [],
+        "min_scores": [],
+        "min_gpa": null,
+        "entrance_exams": "Two of three entrance exams: physics, chemistry, biology (exams on 1-2 October 2026)"
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://ysmu.am/en/admission-foreign-citizens/"
+    },
+    {
+      "names": {
+        "original": "Pharmacy, bachelor (English)",
+        "en": "Pharmacy, bachelor (English)",
+        "ru": "Фармация, бакалавриат (на английском)"
+      },
+      "level": "bachelor",
+      "isced_f": "0916",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 2100000,
+          "currency": "AMD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [],
+        "min_scores": [],
+        "min_gpa": null,
+        "entrance_exams": "Two of three entrance exams: physics, chemistry, biology (exams on 1-2 October 2026)"
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://ysmu.am/en/admission-foreign-citizens/"
+    }
+  ],
+  "scholarships": [],
+  "sources": [
+    {
+      "field": "programs[0].tuition[0].amount",
+      "url": "https://ysmu.am/en/admission-foreign-citizens/",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[1].tuition[0].amount",
+      "url": "https://ysmu.am/en/admission-foreign-citizens/",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[2].tuition[0].amount",
+      "url": "https://ysmu.am/en/admission-foreign-citizens/",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    }
+  ],
+  "notes_for_reviewer": "Official ysmu.am page for foreign citizens read 2026-10-06 (academic year 2026-2027): annual tuition for English-taught General Medicine 2,600,000 AMD (6 years), Stomatology 2,600,000 AMD (5 years), Pharmacy bachelor 2,100,000 AMD (4 years). Applications 22 June - 30 September 2026, entrance exams 1-2 October 2026 (two of physics / chemistry / biology). Application fee, dormitory cost and the exact document list were not on the page. Medicine and stomatology are single-cycle degrees: I used level \"bachelor\" like the existing Georgian medical card; please decide if \"master\" is better. LOCATION IS APPROXIMATE (centre of Yerevan): the institution has no coordinates in Wikidata; please move the pin. Pharmacy master (1 year, 2,200,000 AMD) not included."
+}

@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "collected_at": "2026-10-06",
+  "country": "AZ",
+  "currency": "AZN",
+  "academic_year_start": "09",
+  "study_visa": {
+    "summary": {
+      "en": "Foreign students need a temporary residence permit from the State Migration Service; the university helps with it. Visas are issued through the ASAN Visa system; some nationalities can get an e-visa for up to 30 days. The Ministry of Foreign Affairs guide lists a USD 20 visa fee for scholarship students (reimbursed by the university).",
+      "ru": "Иностранным студентам нужен вид на временное проживание в Государственной миграционной службе; университет помогает его оформить. Визы выдаются через систему ASAN Visa, для ряда стран есть электронная виза до 30 дней. По справке МИД, для стипендиатов виза стоит 20 USD (возмещает университет)."
+    },
+    "official_url": "https://mfa.gov.az/files/shares/Scholarship/Guidelines%20for%20International%20Students.pdf"
+  },
+  "work_during_study": {
+    "allowed": null,
+    "summary": {
+      "en": "A foreigner who wants to do paid work must get a work permit in addition to the temporary residence permit (State Migration Service). Whether students get a simpler route was not found.",
+      "ru": "Иностранцу для оплачиваемой работы нужно разрешение на работу в дополнение к виду на жительство. Есть ли для студентов упрощённый порядок — не найдено."
+    }
+  },
+  "post_study_work_visa": {
+    "available": null,
+    "summary": {
+      "en": "Not verified.",
+      "ru": "Не проверено."
+    }
+  },
+  "cost_of_living": [],
+  "diploma_recognition": {
+    "summary": {},
+    "official_url": null,
+    "recognised": null
+  },
+  "application_systems": [],
+  "sources": [
+    {
+      "field": "study_visa",
+      "url": "https://mfa.gov.az/files/shares/Scholarship/Guidelines%20for%20International%20Students.pdf",
+      "accessed_at": "2026-10-06",
+      "confidence": "medium"
+    },
+    {
+      "field": "work_during_study",
+      "url": "https://migration.gov.az/en/page/75",
+      "accessed_at": "2026-10-06",
+      "confidence": "medium"
+    }
+  ],
+  "notes_for_reviewer": "From the Ministry of Foreign Affairs guide and State Migration Service pages (via search snippets). The e-visa / fee details may change: check. Cost of living, post-study visa and recognition not found. academic_year_start 09 is general knowledge."
+}

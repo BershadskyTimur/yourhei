@@ -53,6 +53,8 @@ export const institutionDraftSchema = z.object({
     type: z.enum(['university', 'college', 'school', 'language_school', 'foundation', 'vocational']),
     country: z.string().regex(/^[A-Z]{2}$/),
     city: text.default({}),
+    // Only needed when the institution is not in the database yet: it is then created from this card.
+    location: z.object({ lat: z.number().min(-90).max(90), lng: z.number().min(-180).max(180) }).nullable().optional(),
     ownership: z.enum(['public', 'private']).nullable(),
     founded_year: z.number().int().min(800).max(2100).nullable(),
     website: url.nullable(),
@@ -135,7 +137,16 @@ export function institutionDraftToSql(d: InstitutionDraft, slug: string, { publi
   const lines: string[] = [];
   lines.push(`do $draft$`, `declare v uuid;`, `begin`);
   lines.push(`  select id into v from public.institutions where country = ${q(i.country)} and slug = ${q(slug)};`);
-  lines.push(`  if v is null then raise exception 'Institution ${i.country}/${slug} is not in the database: run the institutions import first'; end if;`);
+  if (i.location) {
+    // The institution may be new (not among the Wikidata imports): create it from the card.
+    lines.push(
+      `  if v is null then`,
+      `    insert into public.institutions (slug, type, country, city, names, location, website, status) values (${q(slug)}, ${q(i.type)}, ${q(i.country)}, ${j(i.city)}, ${j(i.names)}, extensions.ST_SetSRID(extensions.ST_MakePoint(${i.location.lng}, ${i.location.lat}), 4326)::extensions.geography, ${q(i.website)}, 'draft') returning id into v;`,
+      `  end if;`,
+    );
+  } else {
+    lines.push(`  if v is null then raise exception 'Institution ${i.country}/${slug} is not in the database: run the institutions import first'; end if;`);
+  }
   lines.push(
     `  update public.institutions set`,
     `    website = coalesce(${q(i.website)}, website), ownership = ${q(i.ownership)}, founded_year = coalesce(${q(i.founded_year)}, founded_year),`,

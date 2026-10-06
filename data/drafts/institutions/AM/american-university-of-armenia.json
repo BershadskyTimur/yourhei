@@ -1,0 +1,554 @@
+{
+  "schema_version": 1,
+  "collected_at": "2026-10-06",
+  "academic_year": "2027/2028",
+  "institution": {
+    "external_ids": {},
+    "description": {
+      "en": "A private, US-style university in Yerevan affiliated with the University of California. Bachelor programmes cover business, economics, computing, engineering and the humanities.",
+      "ru": "Частный университет в Ереване с американской системой обучения. Бакалавриат: бизнес, экономика, информатика, инженерия, гуманитарные науки."
+    },
+    "rankings": [],
+    "dormitory": null,
+    "ownership": "private",
+    "founded_year": null,
+    "names": {
+      "original": "American University of Armenia",
+      "en": "American University of Armenia",
+      "ru": "Американский университет Армении"
+    },
+    "type": "university",
+    "city": {
+      "original": "Yerevan",
+      "en": "Yerevan",
+      "ru": "Ереван"
+    },
+    "website": "https://aua.am",
+    "city_size": "medium",
+    "climate": "temperate",
+    "size": "small",
+    "features": [
+      "exchange"
+    ],
+    "country": "AM"
+  },
+  "programs": [
+    {
+      "names": {
+        "original": "Business",
+        "en": "Business",
+        "ru": "Бизнес"
+      },
+      "level": "bachelor",
+      "isced_f": "0413",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 4950000,
+          "currency": "AMD",
+          "period": "year",
+          "applies_to": "international"
+        },
+        {
+          "amount": 2950000,
+          "currency": "AMD",
+          "period": "year",
+          "applies_to": "domestic"
+        }
+      ],
+      "requirements": {
+        "documents": [],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [
+        {
+          "intake": "2027-09",
+          "applies_to": "international",
+          "date": "2027-04-30"
+        }
+      ],
+      "application_fee": null,
+      "application_url": "https://apply.aua.am/"
+    },
+    {
+      "names": {
+        "original": "Economics",
+        "en": "Economics",
+        "ru": "Экономика"
+      },
+      "level": "bachelor",
+      "isced_f": "0311",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 4950000,
+          "currency": "AMD",
+          "period": "year",
+          "applies_to": "international"
+        },
+        {
+          "amount": 2950000,
+          "currency": "AMD",
+          "period": "year",
+          "applies_to": "domestic"
+        }
+      ],
+      "requirements": {
+        "documents": [],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [
+        {
+          "intake": "2027-09",
+          "applies_to": "international",
+          "date": "2027-04-30"
+        }
+      ],
+      "application_fee": null,
+      "application_url": "https://apply.aua.am/"
+    },
+    {
+      "names": {
+        "original": "English and Communications",
+        "en": "English and Communications",
+        "ru": "Английский язык и коммуникации"
+      },
+      "level": "bachelor",
+      "isced_f": "0231",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 4450000,
+          "currency": "AMD",
+          "period": "year",
+          "applies_to": "international"
+        },
+        {
+          "amount": 2450000,
+          "currency": "AMD",
+          "period": "year",
+          "applies_to": "domestic"
+        }
+      ],
+      "requirements": {
+        "documents": [],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [
+        {
+          "intake": "2027-09",
+          "applies_to": "international",
+          "date": "2027-04-30"
+        }
+      ],
+      "application_fee": null,
+      "application_url": "https://apply.aua.am/"
+    },
+    {
+      "names": {
+        "original": "Politics and Governance",
+        "en": "Politics and Governance",
+        "ru": "Политика и государственное управление"
+      },
+      "level": "bachelor",
+      "isced_f": "0312",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 4450000,
+          "currency": "AMD",
+          "period": "year",
+          "applies_to": "international"
+        },
+        {
+          "amount": 2450000,
+          "currency": "AMD",
+          "period": "year",
+          "applies_to": "domestic"
+        }
+      ],
+      "requirements": {
+        "documents": [],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [
+        {
+          "intake": "2027-09",
+          "applies_to": "international",
+          "date": "2027-04-30"
+        }
+      ],
+      "application_fee": null,
+      "application_url": "https://apply.aua.am/"
+    },
+    {
+      "names": {
+        "original": "Computer Science",
+        "en": "Computer Science",
+        "ru": "Информатика"
+      },
+      "level": "bachelor",
+      "isced_f": "0613",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 4450000,
+          "currency": "AMD",
+          "period": "year",
+          "applies_to": "international"
+        },
+        {
+          "amount": 2450000,
+          "currency": "AMD",
+          "period": "year",
+          "applies_to": "domestic"
+        }
+      ],
+      "requirements": {
+        "documents": [],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [
+        {
+          "intake": "2027-09",
+          "applies_to": "international",
+          "date": "2027-04-30"
+        }
+      ],
+      "application_fee": null,
+      "application_url": "https://apply.aua.am/"
+    },
+    {
+      "names": {
+        "original": "Data Science",
+        "en": "Data Science",
+        "ru": "Наука о данных"
+      },
+      "level": "bachelor",
+      "isced_f": "0613",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 4450000,
+          "currency": "AMD",
+          "period": "year",
+          "applies_to": "international"
+        },
+        {
+          "amount": 2450000,
+          "currency": "AMD",
+          "period": "year",
+          "applies_to": "domestic"
+        }
+      ],
+      "requirements": {
+        "documents": [],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [
+        {
+          "intake": "2027-09",
+          "applies_to": "international",
+          "date": "2027-04-30"
+        }
+      ],
+      "application_fee": null,
+      "application_url": "https://apply.aua.am/"
+    },
+    {
+      "names": {
+        "original": "Engineering Sciences",
+        "en": "Engineering Sciences",
+        "ru": "Инженерные науки"
+      },
+      "level": "bachelor",
+      "isced_f": "0710",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 4450000,
+          "currency": "AMD",
+          "period": "year",
+          "applies_to": "international"
+        },
+        {
+          "amount": 2450000,
+          "currency": "AMD",
+          "period": "year",
+          "applies_to": "domestic"
+        }
+      ],
+      "requirements": {
+        "documents": [],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [
+        {
+          "intake": "2027-09",
+          "applies_to": "international",
+          "date": "2027-04-30"
+        }
+      ],
+      "application_fee": null,
+      "application_url": "https://apply.aua.am/"
+    },
+    {
+      "names": {
+        "original": "Environmental and Sustainability Sciences",
+        "en": "Environmental and Sustainability Sciences",
+        "ru": "Экологические науки и устойчивое развитие"
+      },
+      "level": "bachelor",
+      "isced_f": "0521",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 4450000,
+          "currency": "AMD",
+          "period": "year",
+          "applies_to": "international"
+        },
+        {
+          "amount": 2450000,
+          "currency": "AMD",
+          "period": "year",
+          "applies_to": "domestic"
+        }
+      ],
+      "requirements": {
+        "documents": [],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [
+        {
+          "intake": "2027-09",
+          "applies_to": "international",
+          "date": "2027-04-30"
+        }
+      ],
+      "application_fee": null,
+      "application_url": "https://apply.aua.am/"
+    },
+    {
+      "names": {
+        "original": "Nursing (three-year bridging programme)",
+        "en": "Nursing (three-year bridging programme)",
+        "ru": "Сестринское дело (трёхлетняя программа)"
+      },
+      "level": "bachelor",
+      "isced_f": "0913",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 3,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 4450000,
+          "currency": "AMD",
+          "period": "year",
+          "applies_to": "international"
+        },
+        {
+          "amount": 2450000,
+          "currency": "AMD",
+          "period": "year",
+          "applies_to": "domestic"
+        }
+      ],
+      "requirements": {
+        "documents": [],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://apply.aua.am/"
+    }
+  ],
+  "scholarships": [],
+  "sources": [
+    {
+      "field": "programs[0].deadlines[0].date",
+      "url": "https://admissions.aua.am/ugrad/",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[0].tuition[0].amount",
+      "url": "https://admissions.aua.am/ugrad/tuition-and-fees/",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[0].tuition[1].amount",
+      "url": "https://admissions.aua.am/ugrad/tuition-and-fees/",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[1].tuition[0].amount",
+      "url": "https://admissions.aua.am/ugrad/tuition-and-fees/",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[1].tuition[1].amount",
+      "url": "https://admissions.aua.am/ugrad/tuition-and-fees/",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[2].tuition[0].amount",
+      "url": "https://admissions.aua.am/ugrad/tuition-and-fees/",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[2].tuition[1].amount",
+      "url": "https://admissions.aua.am/ugrad/tuition-and-fees/",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[3].tuition[0].amount",
+      "url": "https://admissions.aua.am/ugrad/tuition-and-fees/",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[3].tuition[1].amount",
+      "url": "https://admissions.aua.am/ugrad/tuition-and-fees/",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[4].tuition[0].amount",
+      "url": "https://admissions.aua.am/ugrad/tuition-and-fees/",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[4].tuition[1].amount",
+      "url": "https://admissions.aua.am/ugrad/tuition-and-fees/",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[5].tuition[0].amount",
+      "url": "https://admissions.aua.am/ugrad/tuition-and-fees/",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[5].tuition[1].amount",
+      "url": "https://admissions.aua.am/ugrad/tuition-and-fees/",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[6].tuition[0].amount",
+      "url": "https://admissions.aua.am/ugrad/tuition-and-fees/",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[6].tuition[1].amount",
+      "url": "https://admissions.aua.am/ugrad/tuition-and-fees/",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[7].tuition[0].amount",
+      "url": "https://admissions.aua.am/ugrad/tuition-and-fees/",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[7].tuition[1].amount",
+      "url": "https://admissions.aua.am/ugrad/tuition-and-fees/",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[8].tuition[0].amount",
+      "url": "https://admissions.aua.am/ugrad/tuition-and-fees/",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[8].tuition[1].amount",
+      "url": "https://admissions.aua.am/ugrad/tuition-and-fees/",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    }
+  ],
+  "notes_for_reviewer": "Official admissions.aua.am pages read 2026-10-06. The page names the cycle \"Fall 2027\" (so the academic year is 2027/2028; the search snippet called it 2026-2027, I followed the page). Annual tuition before aid: business and economics 4,950,000 AMD international / 2,950,000 AMD for citizens of Armenia, ethnic Armenians and holders of an Armenian special passport; all other programmes 4,450,000 / 2,450,000 AMD. Plus student services fee 25,000 AMD and health insurance 10,000 AMD per month (not encoded). Merit scholarships for international students cover up to 50% (not encoded as amounts). Deadlines Fall 2027: early 15 Jan, regular 30 Apr (stored), rolling 1 Jun. English test minimums, document list, application fee and housing costs were NOT on the pages I read: left empty. Language of instruction is English (assumed from the programme descriptions, not stated). Please check them on admissions.aua.am. ISCED-F codes are my assignment. The ownership \"private\" is general knowledge, please confirm."
+}

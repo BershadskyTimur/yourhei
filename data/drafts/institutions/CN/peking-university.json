@@ -1,0 +1,155 @@
+{
+  "schema_version": 1,
+  "collected_at": "2026-10-06",
+  "academic_year": "2026/2027",
+  "institution": {
+    "external_ids": {},
+    "description": {
+      "en": "China's oldest national university in Beijing, with 137 undergraduate majors. International undergraduate teaching is in Chinese and needs HSK level 6.",
+      "ru": "Старейший национальный университет Китая в Пекине, 137 бакалаврских специальностей. Для иностранцев обучение на китайском, нужен HSK 6."
+    },
+    "rankings": [],
+    "dormitory": null,
+    "ownership": "public",
+    "founded_year": null,
+    "names": {
+      "original": "北京大学",
+      "en": "Peking University",
+      "ru": "Пекинский университет"
+    },
+    "type": "university",
+    "city": {
+      "original": "北京",
+      "en": "Beijing",
+      "ru": "Пекин"
+    },
+    "website": "https://english.pku.edu.cn",
+    "city_size": "megapolis",
+    "climate": "cold",
+    "size": "large",
+    "features": [
+      "exchange"
+    ],
+    "country": "CN"
+  },
+  "programs": [
+    {
+      "names": {
+        "original": "Undergraduate programmes: humanities and social sciences (taught in Chinese)",
+        "en": "Undergraduate programmes: humanities and social sciences (taught in Chinese)",
+        "ru": "Бакалавриат: гуманитарные и социальные науки (на китайском)"
+      },
+      "level": "bachelor",
+      "isced_f": null,
+      "languages": [
+        "zh"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 26000,
+          "currency": "CNY",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [
+          {
+            "exam": "hsk",
+            "min": 6
+          }
+        ],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 800,
+        "currency": "CNY"
+      },
+      "application_url": "http://www.studyatpku.com"
+    },
+    {
+      "names": {
+        "original": "Undergraduate programmes: sciences and engineering (taught in Chinese)",
+        "en": "Undergraduate programmes: sciences and engineering (taught in Chinese)",
+        "ru": "Бакалавриат: естественные науки и инженерия (на китайском)"
+      },
+      "level": "bachelor",
+      "isced_f": null,
+      "languages": [
+        "zh"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 30000,
+          "currency": "CNY",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [
+          {
+            "exam": "hsk",
+            "min": 6
+          }
+        ],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 800,
+        "currency": "CNY"
+      },
+      "application_url": "http://www.studyatpku.com"
+    }
+  ],
+  "scholarships": [],
+  "sources": [
+    {
+      "field": "programs[0].requirements.min_scores",
+      "url": "https://isd.pku.edu.cn/en/detail.php?id=816",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[0].application_fee",
+      "url": "https://isd.pku.edu.cn/en/detail.php?id=813",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[0].tuition[0].amount",
+      "url": "https://isd.pku.edu.cn/en/campus_detail.php?id=700",
+      "accessed_at": "2026-10-06",
+      "confidence": "medium"
+    },
+    {
+      "field": "programs[1].tuition[0].amount",
+      "url": "https://isd.pku.edu.cn/en/campus_detail.php?id=700",
+      "accessed_at": "2026-10-06",
+      "confidence": "medium"
+    }
+  ],
+  "notes_for_reviewer": "Official isd.pku.edu.cn pages read 2026-10-06. Undergraduate tuition RMB 26,000 per year (humanities) and 30,000 (science) comes from the \"Academic Guidance\" page (no academic year stated, confidence medium); the 2026 admission notices say the tuition for the new intake \"will be announced after approval\". HSK level 6 with score 210 or higher is the standard Chinese requirement (alternatives for IB/A-level students: not encoded); the programme is taught in Chinese. Application fee RMB 800. 2026 rounds were 19 Dec 2025 - 28 Feb 2026 and 12 Jun - 10 Jul 2026 (written-exam route 1 Jan - 28 Feb 2026): they have passed and the 2027 dates are not published yet, so deadlines are empty. 4-6 years duration is quoted on the site; 4 years used. These two cards are generic: PKU lists 137 majors but the pages I read did not name them, so no ISCED-F field is set (the field match will be skipped). I did not invent majors."
+}
