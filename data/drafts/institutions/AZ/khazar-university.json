@@ -9,7 +9,10 @@
       "ru": "Частный университет в Баку с обучением на английском. Для иностранных студентов почти на всех программах одна цена."
     },
     "rankings": [],
-    "dormitory": true,
+    "dormitory": {
+      "available": true,
+      "cost": null
+    },
     "ownership": "private",
     "founded_year": null,
     "names": {
