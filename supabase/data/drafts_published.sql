@@ -1020,6 +1020,29 @@ begin
 end
 $draft$;
 
+-- KZ/kazakh-british-technical-university
+do $draft$
+declare v uuid;
+begin
+  select id into v from public.institutions where country = 'KZ' and slug = 'kazakh-british-technical-university';
+  if v is null then raise exception 'Institution KZ/kazakh-british-technical-university is not in the database: run the institutions import first'; end if;
+  update public.institutions set
+    website = coalesce('https://kbtu.kz/en', website), ownership = 'private', founded_year = coalesce(null, founded_year),
+    dormitory = null, description = '{"en":"A technical university in Almaty with English-taught IT, engineering and economics programmes.","ru":"Технический университет в Алматы с программами по ИТ, инженерии и экономике на английском."}'::jsonb, city_size = 'megapolis',
+    climate = 'temperate', size = 'small', features = array['exchange', 'double_degree']::text[],
+    status = 'published', verified_at = now()
+  where id = v;
+  delete from public.programs where institution_id = v;
+  insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
+    v, '{"original":"International School of Economics (bachelor, joint programme with the University of London)","en":"International School of Economics (bachelor, joint programme with the University of London)","ru":"Международная школа экономики (бакалавриат)"}'::jsonb, 'bachelor', '0311', array['en']::text[], 4, 'on_campus', array[]::text[],
+    '[{"amount":10000,"currency":"USD","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[{"exam":"ielts","min":5.5},{"exam":"toefl","min":70}],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://www.kbtu.kz/en/internationalization/international-admissions-internationalization', '2026/2027', 'published', now());
+  delete from public.scholarships where institution_id = v;
+  delete from public.rankings where institution_id = v;
+  delete from public.sources where entity = 'institution' and entity_id = v::text;
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[0].tuition[0].amount', 'https://ise.kbtu.kz/index.php?ID=8', '2026-10-06', 'medium');
+end
+$draft$;
+
 -- KZ/nazarbayev-university
 do $draft$
 declare v uuid;
@@ -1100,6 +1123,29 @@ begin
   insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[12].tuition[0].amount', 'https://nu.edu.kz/admissions/fees-and-funding/', '2026-10-06', 'high');
   insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[13].tuition[0].amount', 'https://nu.edu.kz/admissions/fees-and-funding/', '2026-10-06', 'high');
   insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[14].tuition[0].amount', 'https://nu.edu.kz/admissions/fees-and-funding/', '2026-10-06', 'high');
+end
+$draft$;
+
+-- KZ/satbayev-university
+do $draft$
+declare v uuid;
+begin
+  select id into v from public.institutions where country = 'KZ' and slug = 'satbayev-university';
+  if v is null then raise exception 'Institution KZ/satbayev-university is not in the database: run the institutions import first'; end if;
+  update public.institutions set
+    website = coalesce('https://satbayev.university', website), ownership = 'public', founded_year = coalesce(null, founded_year),
+    dormitory = null, description = '{"en":"The leading technical university of Kazakhstan, in Almaty. Foreign citizens study on a fee-paying basis; the fee depends on the programme.","ru":"Ведущий технический университет Казахстана, в Алматы. Иностранцы учатся на платной основе; цена зависит от программы."}'::jsonb, city_size = 'megapolis',
+    climate = 'temperate', size = 'large', features = array['exchange', 'double_degree']::text[],
+    status = 'published', verified_at = now()
+  where id = v;
+  delete from public.programs where institution_id = v;
+  insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
+    v, '{"original":"Bachelor programmes (price from)","en":"Bachelor programmes (price from)","ru":"Бакалавриат (цена «от»)"}'::jsonb, 'bachelor', null, array['ru', 'kk', 'en']::text[], 4, 'on_campus', array[]::text[],
+    '[{"amount":2630,"currency":"USD","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://satbayev.university/en/foreignApplicants-guide', '2026/2027', 'published', now());
+  delete from public.scholarships where institution_id = v;
+  delete from public.rankings where institution_id = v;
+  delete from public.sources where entity = 'institution' and entity_id = v::text;
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[0].tuition[0].amount', 'https://official.satbayev.university/en/dlya-studentov/stoimost-obucheniya', '2026-10-06', 'medium');
 end
 $draft$;
 
