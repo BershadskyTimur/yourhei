@@ -114,7 +114,7 @@ export interface ProgramFilter {
 }
 
 const PAGE = 1000;
-const MAX_PAGES = 30;
+const MAX_PAGES = 20; // at most 20 000 programmes: more would make the page slow
 
 /** The published programmes (that fit `filter`) and the facts about their countries. Throws if the database cannot be read. */
 export async function loadMatchData(supabase: SupabaseClient, filter: ProgramFilter = {}): Promise<{ programs: MatchProgram[]; countries: Record<string, CountryFacts> }> {

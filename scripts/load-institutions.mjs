@@ -24,6 +24,15 @@ const supabase = createClient(url, key, { auth: { persistSession: false } });
 const files = process.argv.slice(2).length ? process.argv.slice(2) : ['data/seed/wikidata-world.json'];
 const institutions = files.flatMap((f) => JSON.parse(readFileSync(f, 'utf8')).institutions);
 const extId = (r) => (r.wikidata ? { wikidata: r.wikidata } : { osm: r.osm });
+const slugOf = (s) => s.normalize('NFKD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 60);
+// a record without a slug (a collection that was stopped before the end) gets one here; a slug must be unique per country
+const seenSlugs = new Set();
+for (const r of institutions) {
+  let slug = r.slug || slugOf(r.names?.en ?? '') || (r.osm ? `osm-${r.osm.replace('/', '-')}` : `wd-${(r.wikidata ?? '').toLowerCase()}`);
+  if (seenSlugs.has(`${r.country}/${slug}`)) slug = `${slug}-${(r.osm ?? r.wikidata ?? '').toString().replace('/', '-').toLowerCase()}`;
+  seenSlugs.add(`${r.country}/${slug}`);
+  r.slug = slug;
+}
 
 // Wikidata / OpenStreetMap ids that are already in the database
 const have = new Set();
