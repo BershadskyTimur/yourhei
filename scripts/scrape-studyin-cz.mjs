@@ -111,7 +111,8 @@ for (const f of ['data/seed/wikidata-region.json', 'data/seed/wikidata-world.jso
     for (const n of Object.values(i.names)) known.set(norm(n), i.slug);
   }
 }
-const LEVEL = { B: 'bachelor', N: 'master', M: 'master', D: 'phd' };
+// The first letter of the Czech programme code is the type: B bachelor, N follow-up master, M long master, P doctoral.
+const LEVEL = { B: 'bachelor', N: 'master', M: 'master', P: 'phd' };
 const byUni = new Map();
 for (const p of Object.values(cache)) {
   const arr = byUni.get(p.university) ?? [];
@@ -129,9 +130,9 @@ for (const [name, ps] of byUni) {
   }
   const first = ps.find((p) => p.lat !== null) ?? ps[0];
   const programs = ps
-    .filter((p) => LEVEL[(p.code ?? '')[5]] ?? null)
+    .filter((p) => LEVEL[(p.code ?? '')[0]] ?? null)
     .map((p) => {
-      const level = LEVEL[p.code[5]];
+      const level = LEVEL[p.code[0]];
       const years = p.duration ? Number(/([\d.]+)/.exec(p.duration)?.[1]) || null : null;
       const per = p.tuition?.period === 'semester' ? 'semester' : 'year';
       const tuition = p.tuition ? [{ amount: p.tuition.min, currency: p.tuition.currency, period: per, applies_to: 'international' }] : [];
@@ -140,7 +141,8 @@ for (const [name, ps] of byUni) {
         names: { original: title, en: title },
         level,
         isced_f: p.isced && /^\d{2,4}$/.test(p.isced) ? p.isced : null,
-        languages: (p.language ?? '').split(/[,;/ ]+/).map((l) => l.toLowerCase()).filter((l) => /^[a-z]{2}$/.test(l)).map((l) => (l === 'cs' ? 'cs' : l)),
+        languages: (p.language ?? '').split(/[,;/ ]+/).map((l) => l.toLowerCase()).filter((l) => /^[a-z]{2}$/.test(l)).map((l) => (l === 'cz' ? 'cs' : l)), // the portal writes CZ for Czech; the ISO 639-1 code is cs
+
         duration_years: years && years > 0 && years <= 12 ? years : null,
         tuition,
         deadlines: p.deadline ? [{ intake: `${p.deadline.slice(0, 4)}-09`, applies_to: 'international', date: p.deadline }] : [],
