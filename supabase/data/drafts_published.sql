@@ -636,6 +636,37 @@ begin
 end
 $draft$;
 
+-- GE/georgian-technical-university
+do $draft$
+declare v uuid;
+begin
+  select id into v from public.institutions where country = 'GE' and slug = 'georgian-technical-university';
+  if v is null then raise exception 'Institution GE/georgian-technical-university is not in the database: run the institutions import first'; end if;
+  update public.institutions set
+    website = coalesce('http://gtu.ge', website), ownership = 'public', founded_year = coalesce(null, founded_year),
+    dormitory = null, description = '{"en":"The largest technical university in Georgia, in Tbilisi, with a few English-taught bachelor programmes.","ru":"Крупнейший технический университет Грузии, в Тбилиси; есть несколько бакалаврских программ на английском."}'::jsonb, city_size = 'medium',
+    climate = 'temperate', size = 'large', features = array[]::text[],
+    status = 'published', verified_at = now()
+  where id = v;
+  delete from public.programs where institution_id = v;
+  insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
+    v, '{"original":"Computer Science (English)","en":"Computer Science (English)","ru":"Информатика (на английском)"}'::jsonb, 'bachelor', '0613', array['en']::text[], 4, 'on_campus', array[]::text[],
+    '[{"amount":12500,"currency":"GEL","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://gtu.ge/en/apply/bachelor/ims/eng.php', '2026/2027', 'published', now());
+  insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
+    v, '{"original":"Computer Engineering (English)","en":"Computer Engineering (English)","ru":"Компьютерная инженерия (на английском)"}'::jsonb, 'bachelor', '0714', array['en']::text[], 4, 'on_campus', array[]::text[],
+    '[{"amount":12500,"currency":"GEL","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://gtu.ge/en/apply/bachelor/ims/eng.php', '2026/2027', 'published', now());
+  insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
+    v, '{"original":"Biomedical Engineering (English)","en":"Biomedical Engineering (English)","ru":"Биомедицинская инженерия (на английском)"}'::jsonb, 'bachelor', '0719', array['en']::text[], 4, 'on_campus', array[]::text[],
+    '[{"amount":12500,"currency":"GEL","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://gtu.ge/en/apply/bachelor/ims/eng.php', '2026/2027', 'published', now());
+  delete from public.scholarships where institution_id = v;
+  delete from public.rankings where institution_id = v;
+  delete from public.sources where entity = 'institution' and entity_id = v::text;
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[0].tuition[0].amount', 'https://gtu.ge/en/apply/faq.php', '2026-10-06', 'medium');
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[1].tuition[0].amount', 'https://gtu.ge/en/apply/faq.php', '2026-10-06', 'medium');
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[2].tuition[0].amount', 'https://gtu.ge/en/apply/faq.php', '2026-10-06', 'medium');
+end
+$draft$;
+
 -- GE/ilia-state-university
 do $draft$
 declare v uuid;
@@ -837,6 +868,66 @@ begin
 end
 $draft$;
 
+-- GE/kutaisi-international-university
+do $draft$
+declare v uuid;
+begin
+  select id into v from public.institutions where country = 'GE' and slug = 'kutaisi-international-university';
+  if v is null then
+    insert into public.institutions (slug, type, country, city, names, location, website, status) values ('kutaisi-international-university', 'university', 'GE', '{"en":"Kutaisi","ru":"Кутаиси"}'::jsonb, '{"original":"ქუთაისის საერთაშორისო უნივერსიტეტი","en":"Kutaisi International University","ru":"Международный университет Кутаиси"}'::jsonb, extensions.ST_SetSRID(extensions.ST_MakePoint(42.712603, 42.206686), 4326)::extensions.geography, 'https://kiu.edu.ge', 'draft') returning id into v;
+  end if;
+  update public.institutions set
+    website = coalesce('https://kiu.edu.ge', website), ownership = 'public', founded_year = coalesce(null, founded_year),
+    dormitory = null, description = '{"en":"A public university in Kutaisi with English-taught bachelor programmes in management, mathematics and computer science.","ru":"Государственный университет в Кутаиси с бакалаврскими программами на английском: менеджмент, математика, информатика."}'::jsonb, city_size = 'small_student',
+    climate = 'temperate', size = 'small', features = array[]::text[],
+    status = 'published', verified_at = now()
+  where id = v;
+  delete from public.programs where institution_id = v;
+  insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
+    v, '{"original":"Management (BSc)","en":"Management (BSc)","ru":"Менеджмент (BSc)"}'::jsonb, 'bachelor', '0413', array['en']::text[], 4, 'on_campus', array[]::text[],
+    '[{"amount":3220,"currency":"EUR","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://www.kiu.edu.ge/eng/program/detailed/167/Tuition-Fee-and-Living-Cost', '2025/2026', 'published', now());
+  insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
+    v, '{"original":"Mathematics (BSc)","en":"Mathematics (BSc)","ru":"Математика (BSc)"}'::jsonb, 'bachelor', '0541', array['en']::text[], 4, 'on_campus', array[]::text[],
+    '[{"amount":3220,"currency":"EUR","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://www.kiu.edu.ge/eng/program/detailed/167/Tuition-Fee-and-Living-Cost', '2025/2026', 'published', now());
+  insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
+    v, '{"original":"Computer Science (BSc)","en":"Computer Science (BSc)","ru":"Информатика (BSc)"}'::jsonb, 'bachelor', '0613', array['en']::text[], 4, 'on_campus', array[]::text[],
+    '[{"amount":3220,"currency":"EUR","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://www.kiu.edu.ge/eng/program/detailed/167/Tuition-Fee-and-Living-Cost', '2025/2026', 'published', now());
+  delete from public.scholarships where institution_id = v;
+  delete from public.rankings where institution_id = v;
+  delete from public.sources where entity = 'institution' and entity_id = v::text;
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[0].tuition[0].amount', 'https://www.kiu.edu.ge/eng/program/detailed/167/Tuition-Fee-and-Living-Cost', '2026-10-06', 'high');
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[1].tuition[0].amount', 'https://www.kiu.edu.ge/eng/program/detailed/167/Tuition-Fee-and-Living-Cost', '2026-10-06', 'high');
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[2].tuition[0].amount', 'https://www.kiu.edu.ge/eng/program/detailed/167/Tuition-Fee-and-Living-Cost', '2026-10-06', 'high');
+end
+$draft$;
+
+-- GE/shota-rustaveli-state-university
+do $draft$
+declare v uuid;
+begin
+  select id into v from public.institutions where country = 'GE' and slug = 'shota-rustaveli-state-university';
+  if v is null then raise exception 'Institution GE/shota-rustaveli-state-university is not in the database: run the institutions import first'; end if;
+  update public.institutions set
+    website = coalesce('http://bsu.edu.ge', website), ownership = 'public', founded_year = coalesce(null, founded_year),
+    dormitory = null, description = '{"en":"A state university on the Black Sea coast. Most programmes are taught in Georgian; medicine is also taught in English.","ru":"Государственный университет на побережье Чёрного моря. Большинство программ на грузинском; лечебное дело есть и на английском."}'::jsonb, city_size = 'medium',
+    climate = 'warm', size = 'large', features = array[]::text[],
+    status = 'published', verified_at = now()
+  where id = v;
+  delete from public.programs where institution_id = v;
+  insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
+    v, '{"original":"Medical Doctor (single-cycle, English)","en":"Medical Doctor (single-cycle, English)","ru":"Лечебное дело (единый цикл, на английском)"}'::jsonb, 'bachelor', '0912', array['en']::text[], 6, 'on_campus', array[]::text[],
+    '[{"amount":5000,"currency":"USD","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://bsu.edu.ge/sub-34/page/3-164/index.html?lang=en', '2026/2027', 'published', now());
+  insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
+    v, '{"original":"Bachelor programmes taught in Georgian (fee from)","en":"Bachelor programmes taught in Georgian (fee from)","ru":"Бакалавриат на грузинском языке (цена «от»)"}'::jsonb, 'bachelor', null, array['ka']::text[], 4, 'on_campus', array[]::text[],
+    '[{"amount":2000,"currency":"USD","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://www.bsu.edu.ge/sub-34/page/3-161/index.html?lang=en', '2026/2027', 'published', now());
+  delete from public.scholarships where institution_id = v;
+  delete from public.rankings where institution_id = v;
+  delete from public.sources where entity = 'institution' and entity_id = v::text;
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[0].tuition[0].amount', 'https://www.bsu.edu.ge/sub-34/page/3-161/index.html?lang=en', '2026-10-06', 'high');
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[1].tuition[0].amount', 'https://www.bsu.edu.ge/sub-34/page/3-161/index.html?lang=en', '2026-10-06', 'high');
+end
+$draft$;
+
 -- GE/tbilisi-state-medical-university
 do $draft$
 declare v uuid;
@@ -904,6 +995,81 @@ begin
   delete from public.sources where entity = 'institution' and entity_id = v::text;
   insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[0].requirements.min_scores', 'https://computing.tsu.ge/en/for-enrollee', '2026-10-06', 'medium');
   insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[0].tuition[0].amount', 'https://computing.tsu.ge/en/for-enrollee', '2026-10-06', 'high');
+end
+$draft$;
+
+-- GE/the-university-of-georgia
+do $draft$
+declare v uuid;
+begin
+  select id into v from public.institutions where country = 'GE' and slug = 'the-university-of-georgia';
+  if v is null then raise exception 'Institution GE/the-university-of-georgia is not in the database: run the institutions import first'; end if;
+  update public.institutions set
+    website = coalesce('http://www.ug.edu.ge', website), ownership = 'private', founded_year = coalesce(null, founded_year),
+    dormitory = null, description = '{"en":"A private university in Tbilisi with many English-taught bachelor programmes and a medical school.","ru":"Частный университет в Тбилиси с множеством бакалаврских программ на английском и медицинским факультетом."}'::jsonb, city_size = 'medium',
+    climate = 'temperate', size = 'large', features = array[]::text[],
+    status = 'published', verified_at = now()
+  where id = v;
+  delete from public.programs where institution_id = v;
+  insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
+    v, '{"original":"Business Administration (4 years)","en":"Business Administration (4 years)","ru":"Управление бизнесом (4 года)"}'::jsonb, 'bachelor', '0413', array['en']::text[], 4, 'on_campus', array[]::text[],
+    '[{"amount":4000,"currency":"USD","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://www.ug.edu.ge/en/for-applicants', '2026/2027', 'published', now());
+  insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
+    v, '{"original":"Business Administration (3 years)","en":"Business Administration (3 years)","ru":"Управление бизнесом (3 года)"}'::jsonb, 'bachelor', '0413', array['en']::text[], 3, 'on_campus', array[]::text[],
+    '[{"amount":4500,"currency":"USD","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://www.ug.edu.ge/en/for-applicants', '2026/2027', 'published', now());
+  insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
+    v, '{"original":"Business Analytics (4 years)","en":"Business Analytics (4 years)","ru":"Бизнес-аналитика (4 года)"}'::jsonb, 'bachelor', '0413', array['en']::text[], 4, 'on_campus', array[]::text[],
+    '[{"amount":4000,"currency":"USD","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://www.ug.edu.ge/en/for-applicants', '2026/2027', 'published', now());
+  insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
+    v, '{"original":"Computer Engineering","en":"Computer Engineering","ru":"Компьютерная инженерия"}'::jsonb, 'bachelor', '0714', array['en']::text[], 4, 'on_campus', array[]::text[],
+    '[{"amount":4500,"currency":"USD","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://www.ug.edu.ge/en/for-applicants', '2026/2027', 'published', now());
+  insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
+    v, '{"original":"Computer Science","en":"Computer Science","ru":"Информатика"}'::jsonb, 'bachelor', '0613', array['en']::text[], 4, 'on_campus', array[]::text[],
+    '[{"amount":4000,"currency":"USD","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://www.ug.edu.ge/en/for-applicants', '2026/2027', 'published', now());
+  insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
+    v, '{"original":"Artificial Intelligence","en":"Artificial Intelligence","ru":"Искусственный интеллект"}'::jsonb, 'bachelor', '0610', array['en']::text[], 4, 'on_campus', array[]::text[],
+    '[{"amount":4000,"currency":"USD","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://www.ug.edu.ge/en/for-applicants', '2026/2027', 'published', now());
+  insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
+    v, '{"original":"Cybersecurity Engineering","en":"Cybersecurity Engineering","ru":"Кибербезопасность"}'::jsonb, 'bachelor', '0613', array['en']::text[], 4, 'on_campus', array[]::text[],
+    '[{"amount":5000,"currency":"USD","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://www.ug.edu.ge/en/for-applicants', '2026/2027', 'published', now());
+  insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
+    v, '{"original":"Electronic and Communication Engineering","en":"Electronic and Communication Engineering","ru":"Электроника и связь"}'::jsonb, 'bachelor', '0714', array['en']::text[], 4, 'on_campus', array[]::text[],
+    '[{"amount":4500,"currency":"USD","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://www.ug.edu.ge/en/for-applicants', '2026/2027', 'published', now());
+  insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
+    v, '{"original":"Civil Engineering","en":"Civil Engineering","ru":"Гражданское строительство"}'::jsonb, 'bachelor', '0732', array['en']::text[], 4, 'on_campus', array[]::text[],
+    '[{"amount":4500,"currency":"USD","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://www.ug.edu.ge/en/for-applicants', '2026/2027', 'published', now());
+  insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
+    v, '{"original":"Nursing","en":"Nursing","ru":"Сестринское дело"}'::jsonb, 'bachelor', '0913', array['en']::text[], 4, 'on_campus', array[]::text[],
+    '[{"amount":4000,"currency":"USD","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://www.ug.edu.ge/en/for-applicants', '2026/2027', 'published', now());
+  insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
+    v, '{"original":"Pharmacy","en":"Pharmacy","ru":"Фармация"}'::jsonb, 'bachelor', '0916', array['en']::text[], 4, 'on_campus', array[]::text[],
+    '[{"amount":4500,"currency":"USD","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://www.ug.edu.ge/en/for-applicants', '2026/2027', 'published', now());
+  insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
+    v, '{"original":"English Philology","en":"English Philology","ru":"Английская филология"}'::jsonb, 'bachelor', '0232', array['en']::text[], 4, 'on_campus', array[]::text[],
+    '[{"amount":4000,"currency":"USD","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://www.ug.edu.ge/en/for-applicants', '2026/2027', 'published', now());
+  insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
+    v, '{"original":"Dentistry (single-cycle, English)","en":"Dentistry (single-cycle, English)","ru":"Стоматология (единый цикл, на английском)"}'::jsonb, 'bachelor', '0911', array['en']::text[], 5, 'on_campus', array[]::text[],
+    '[{"amount":6000,"currency":"USD","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://www.ug.edu.ge/en/for-applicants', '2026/2027', 'published', now());
+  insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
+    v, '{"original":"Medical Doctor (single-cycle, English)","en":"Medical Doctor (single-cycle, English)","ru":"Лечебное дело (единый цикл, на английском)"}'::jsonb, 'bachelor', '0912', array['en']::text[], 6, 'on_campus', array[]::text[],
+    '[{"amount":6500,"currency":"USD","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://www.ug.edu.ge/en/for-applicants', '2026/2027', 'published', now());
+  delete from public.scholarships where institution_id = v;
+  delete from public.rankings where institution_id = v;
+  delete from public.sources where entity = 'institution' and entity_id = v::text;
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[0].tuition[0].amount', 'https://www.ug.edu.ge/en/tuition-and-fees', '2026-10-06', 'high');
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[1].tuition[0].amount', 'https://www.ug.edu.ge/en/tuition-and-fees', '2026-10-06', 'high');
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[2].tuition[0].amount', 'https://www.ug.edu.ge/en/tuition-and-fees', '2026-10-06', 'high');
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[3].tuition[0].amount', 'https://www.ug.edu.ge/en/tuition-and-fees', '2026-10-06', 'high');
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[4].tuition[0].amount', 'https://www.ug.edu.ge/en/tuition-and-fees', '2026-10-06', 'high');
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[5].tuition[0].amount', 'https://www.ug.edu.ge/en/tuition-and-fees', '2026-10-06', 'high');
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[6].tuition[0].amount', 'https://www.ug.edu.ge/en/tuition-and-fees', '2026-10-06', 'high');
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[7].tuition[0].amount', 'https://www.ug.edu.ge/en/tuition-and-fees', '2026-10-06', 'high');
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[8].tuition[0].amount', 'https://www.ug.edu.ge/en/tuition-and-fees', '2026-10-06', 'high');
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[9].tuition[0].amount', 'https://www.ug.edu.ge/en/tuition-and-fees', '2026-10-06', 'high');
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[10].tuition[0].amount', 'https://www.ug.edu.ge/en/tuition-and-fees', '2026-10-06', 'high');
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[11].tuition[0].amount', 'https://www.ug.edu.ge/en/tuition-and-fees', '2026-10-06', 'high');
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[12].tuition[0].amount', 'https://www.ug.edu.ge/en/tuition-and-fees', '2026-10-06', 'high');
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[13].tuition[0].amount', 'https://www.ug.edu.ge/en/tuition-and-fees', '2026-10-06', 'high');
 end
 $draft$;
 

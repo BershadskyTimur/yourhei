@@ -1,0 +1,161 @@
+{
+  "schema_version": 1,
+  "collected_at": "2026-10-06",
+  "academic_year": "2026/2027",
+  "institution": {
+    "external_ids": {},
+    "description": {
+      "en": "The largest technical university in Georgia, in Tbilisi, with a few English-taught bachelor programmes.",
+      "ru": "Крупнейший технический университет Грузии, в Тбилиси; есть несколько бакалаврских программ на английском."
+    },
+    "rankings": [],
+    "dormitory": null,
+    "ownership": "public",
+    "founded_year": null,
+    "names": {
+      "original": "საქართველოს ტექნიკური უნივერსიტეტი",
+      "en": "Georgian Technical University",
+      "ru": "Грузинский технический университет"
+    },
+    "type": "university",
+    "city": {
+      "en": "Tbilisi",
+      "ru": "Тбилиси"
+    },
+    "website": "http://gtu.ge",
+    "city_size": "medium",
+    "climate": "temperate",
+    "size": "large",
+    "features": [],
+    "country": "GE"
+  },
+  "programs": [
+    {
+      "names": {
+        "original": "Computer Science (English)",
+        "en": "Computer Science (English)",
+        "ru": "Информатика (на английском)"
+      },
+      "level": "bachelor",
+      "isced_f": "0613",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 12500,
+          "currency": "GEL",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://gtu.ge/en/apply/bachelor/ims/eng.php"
+    },
+    {
+      "names": {
+        "original": "Computer Engineering (English)",
+        "en": "Computer Engineering (English)",
+        "ru": "Компьютерная инженерия (на английском)"
+      },
+      "level": "bachelor",
+      "isced_f": "0714",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 12500,
+          "currency": "GEL",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://gtu.ge/en/apply/bachelor/ims/eng.php"
+    },
+    {
+      "names": {
+        "original": "Biomedical Engineering (English)",
+        "en": "Biomedical Engineering (English)",
+        "ru": "Биомедицинская инженерия (на английском)"
+      },
+      "level": "bachelor",
+      "isced_f": "0719",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 12500,
+          "currency": "GEL",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://gtu.ge/en/apply/bachelor/ims/eng.php"
+    }
+  ],
+  "scholarships": [],
+  "sources": [
+    {
+      "field": "programs[0].tuition[0].amount",
+      "url": "https://gtu.ge/en/apply/faq.php",
+      "accessed_at": "2026-10-06",
+      "confidence": "medium"
+    },
+    {
+      "field": "programs[1].tuition[0].amount",
+      "url": "https://gtu.ge/en/apply/faq.php",
+      "accessed_at": "2026-10-06",
+      "confidence": "medium"
+    },
+    {
+      "field": "programs[2].tuition[0].amount",
+      "url": "https://gtu.ge/en/apply/faq.php",
+      "accessed_at": "2026-10-06",
+      "confidence": "medium"
+    }
+  ],
+  "notes_for_reviewer": "MEDIUM confidence. The FAQ page of gtu.ge (read 2026-10-08) says international students in English-language programmes pay GEL 12,500 per year. The individual programme pages list GEL 2,250 per semester (about GEL 4,500 per year) for local students, so the international figure is the one stored: please confirm with the university. The three programmes come from a search summary of the English-programmes page (not opened). Duration 4 years is stated there. English requirements, deadlines and documents not found."
+}

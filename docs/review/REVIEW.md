@@ -361,6 +361,23 @@
 - Заметки сборщика: Official cu.edu.ge pages read 2026-10-06. Fees are USD per year for international students; the page does not say which academic year they are for (treated as 2026/2027, please confirm). Entry: IELTS 6.0 or TOEFL 78, notarised passport and school certificate copies, CV, photo, video interview. Application deadlines: fall semester 20 August, spring semester 20 October (intake months 09 and 02; I did not store dates because the year is unclear). Application fee exists but no amount; accommodation is not described. The page also lists joint programmes with Kean University (USA) at USD 10,000 and with Rennes School of Business at EUR 10,000: NOT included. Durations are as published (many are 3-year). ISCED-F codes are my assignment. Location is the Wikidata coordinate (Tbilisi); ownership "private" is general knowledge, please confirm.
 - Источников: 12; главные: https://cu.edu.ge/en/cu-international-students/international-how-to-apply · https://www.cu.edu.ge/en/cu-international-students/programs-english/ba-international-students
 
+### Georgian Technical University (GE/georgian-technical-university)
+
+- Сайт: http://gtu.ge · форма: public · основано: ? · общежитие: нет данных
+- Учебный год данных: 2026/2027; собрано: 2026-10-06
+- **Программа 1:** Computer Science (English) — bachelor, ISCED-F 0613, языки: en, 4 лет, on_campus, набор: ?
+  - Стоимость: 12500 GEL / year (international)
+  - Требования: требования не найдены
+- **Программа 2:** Computer Engineering (English) — bachelor, ISCED-F 0714, языки: en, 4 лет, on_campus, набор: ?
+  - Стоимость: 12500 GEL / year (international)
+  - Требования: требования не найдены
+- **Программа 3:** Biomedical Engineering (English) — bachelor, ISCED-F 0719, языки: en, 4 лет, on_campus, набор: ?
+  - Стоимость: 12500 GEL / year (international)
+  - Требования: требования не найдены
+- Значения с неполной уверенностью: programs[0].tuition[0].amount (medium), programs[1].tuition[0].amount (medium), programs[2].tuition[0].amount (medium)
+- Заметки сборщика: MEDIUM confidence. The FAQ page of gtu.ge (read 2026-10-08) says international students in English-language programmes pay GEL 12,500 per year. The individual programme pages list GEL 2,250 per semester (about GEL 4,500 per year) for local students, so the international figure is the one stored: please confirm with the university. The three programmes come from a search summary of the English-programmes page (not opened). Duration 4 years is stated there. English requirements, deadlines and documents not found.
+- Источников: 3; главные: https://gtu.ge/en/apply/faq.php
+
 ### Ilia State University (GE/ilia-state-university)
 
 - Сайт: https://iliauni.edu.ge · форма: public · основано: ? · общежитие: нет данных
@@ -437,6 +454,35 @@
 - Заметки сборщика: The fees page names no academic year (2026/2027 assumed): CHECK. The page lists GEL fees per programme and, for "International Students (Bachelor)", the line "$4900 Scholarship Up to $1000" (medicine: "$5900 ... Up to $500"): read as a tuition of 4900 / 5900 USD per year with a scholarship of up to 1000 / 500 USD, so the international amount is medium confidence. The GEL amounts are treated as the price for Georgian citizens (domestic). Only English-taught bachelor programmes were collected. Duration, intakes, deadlines, application fee and dormitory are not stated on the pages read. IELTS 6.0 / TOEFL 78 is the general requirement for international applicants.
 - Источников: 70; главные: https://ibsu.edu.ge/en/entrant/tuition-fees/ · https://ibsu.edu.ge/en/programs/bachelors/ · https://ibsu.edu.ge/en/iro/admission/
 
+### Kutaisi International University (GE/kutaisi-international-university)
+
+- Сайт: https://kiu.edu.ge · форма: public · основано: ? · общежитие: нет данных
+- Учебный год данных: 2025/2026; собрано: 2026-10-06
+- **Программа 1:** Management (BSc) — bachelor, ISCED-F 0413, языки: en, 4 лет, on_campus, набор: ?
+  - Стоимость: 3220 EUR / year (international)
+  - Требования: требования не найдены
+- **Программа 2:** Mathematics (BSc) — bachelor, ISCED-F 0541, языки: en, 4 лет, on_campus, набор: ?
+  - Стоимость: 3220 EUR / year (international)
+  - Требования: требования не найдены
+- **Программа 3:** Computer Science (BSc) — bachelor, ISCED-F 0613, языки: en, 4 лет, on_campus, набор: ?
+  - Стоимость: 3220 EUR / year (international)
+  - Требования: требования не найдены
+- Заметки сборщика: Official kiu.edu.ge page read 2026-10-08 (academic year 2025-2026): tuition EUR 3,220 per year for international students (includes teaching materials); living costs about EUR 5,000 per year (not stored). Three English-language undergraduate programmes: Management, Mathematics, Computer Science. Duration 4 years is my assumption. English requirements, deadlines and dormitory cost not on the page. Coordinates from Wikidata. ISCED-F codes are my assignment.
+- Источников: 3; главные: https://www.kiu.edu.ge/eng/program/detailed/167/Tuition-Fee-and-Living-Cost
+
+### Batumi Shota Rustaveli State University (GE/shota-rustaveli-state-university)
+
+- Сайт: http://bsu.edu.ge · форма: public · основано: ? · общежитие: нет данных
+- Учебный год данных: 2026/2027; собрано: 2026-10-06
+- **Программа 1:** Medical Doctor (single-cycle, English) — bachelor, ISCED-F 0912, языки: en, 6 лет, on_campus, набор: ?
+  - Стоимость: 5000 USD / year (international)
+  - Требования: требования не найдены
+- **Программа 2:** Bachelor programmes taught in Georgian (fee from) — bachelor, ISCED-F ?, языки: ka, 4 лет, on_campus, набор: ?
+  - Стоимость: 2000 USD / year (international)
+  - Требования: требования не найдены
+- Заметки сборщика: Official bsu.edu.ge fee page read 2026-10-08: the English-taught Medical Doctor (one-cycle) programme is USD 5,000 per year (a search summary said 4,000: the page itself was followed). Georgian-taught bachelor programmes are USD 2,000-2,250 per year (stored as a generic "from" line; master 2,250-2,750 not stored). The page names no academic year and no separate rate for international students: the fees are shown for foreign citizens in this table by the university. Duration of 6 years for medicine is my assumption.
+- Источников: 2; главные: https://www.bsu.edu.ge/sub-34/page/3-161/index.html?lang=en
+
 ### Tbilisi State Medical University (GE/tbilisi-state-medical-university)
 
 - Сайт: https://tsmu.edu · форма: ? · основано: ? · общежитие: нет данных
@@ -470,6 +516,55 @@
 - Значения с неполной уверенностью: programs[0].requirements.min_scores (medium)
 - Заметки сборщика: Official computing.tsu.ge page read 2026-10-06: USD 4,000 per year (2,000 per semester), 4 years / 240 ECTS. English requirement is a B1-level certificate: the page gives "IELTS 4.0 - 5.0" (I stored 4.0, medium confidence) or PET pass with merit, TOEFL, TOEIC, PTE. Documents: translated and notarised school certificate and passport, proof that maths and English were passed at school; faculty interview. Deadline, application fee and a direct application URL were not found. Other TSU programmes (e.g. Chemistry, 10,000 GEL per year in a search snippet) were NOT verified and are not included. Coordinates are from Wikidata (the main building).
 - Источников: 2; главные: https://computing.tsu.ge/en/for-enrollee
+
+### The University of Georgia (GE/the-university-of-georgia)
+
+- Сайт: http://www.ug.edu.ge · форма: private · основано: ? · общежитие: нет данных
+- Учебный год данных: 2026/2027; собрано: 2026-10-06
+- **Программа 1:** Business Administration (4 years) — bachelor, ISCED-F 0413, языки: en, 4 лет, on_campus, набор: ?
+  - Стоимость: 4000 USD / year (international)
+  - Требования: требования не найдены
+- **Программа 2:** Business Administration (3 years) — bachelor, ISCED-F 0413, языки: en, 3 лет, on_campus, набор: ?
+  - Стоимость: 4500 USD / year (international)
+  - Требования: требования не найдены
+- **Программа 3:** Business Analytics (4 years) — bachelor, ISCED-F 0413, языки: en, 4 лет, on_campus, набор: ?
+  - Стоимость: 4000 USD / year (international)
+  - Требования: требования не найдены
+- **Программа 4:** Computer Engineering — bachelor, ISCED-F 0714, языки: en, 4 лет, on_campus, набор: ?
+  - Стоимость: 4500 USD / year (international)
+  - Требования: требования не найдены
+- **Программа 5:** Computer Science — bachelor, ISCED-F 0613, языки: en, 4 лет, on_campus, набор: ?
+  - Стоимость: 4000 USD / year (international)
+  - Требования: требования не найдены
+- **Программа 6:** Artificial Intelligence — bachelor, ISCED-F 0610, языки: en, 4 лет, on_campus, набор: ?
+  - Стоимость: 4000 USD / year (international)
+  - Требования: требования не найдены
+- **Программа 7:** Cybersecurity Engineering — bachelor, ISCED-F 0613, языки: en, 4 лет, on_campus, набор: ?
+  - Стоимость: 5000 USD / year (international)
+  - Требования: требования не найдены
+- **Программа 8:** Electronic and Communication Engineering — bachelor, ISCED-F 0714, языки: en, 4 лет, on_campus, набор: ?
+  - Стоимость: 4500 USD / year (international)
+  - Требования: требования не найдены
+- **Программа 9:** Civil Engineering — bachelor, ISCED-F 0732, языки: en, 4 лет, on_campus, набор: ?
+  - Стоимость: 4500 USD / year (international)
+  - Требования: требования не найдены
+- **Программа 10:** Nursing — bachelor, ISCED-F 0913, языки: en, 4 лет, on_campus, набор: ?
+  - Стоимость: 4000 USD / year (international)
+  - Требования: требования не найдены
+- **Программа 11:** Pharmacy — bachelor, ISCED-F 0916, языки: en, 4 лет, on_campus, набор: ?
+  - Стоимость: 4500 USD / year (international)
+  - Требования: требования не найдены
+- **Программа 12:** English Philology — bachelor, ISCED-F 0232, языки: en, 4 лет, on_campus, набор: ?
+  - Стоимость: 4000 USD / year (international)
+  - Требования: требования не найдены
+- **Программа 13:** Dentistry (single-cycle, English) — bachelor, ISCED-F 0911, языки: en, 5 лет, on_campus, набор: ?
+  - Стоимость: 6000 USD / year (international)
+  - Требования: требования не найдены
+- **Программа 14:** Medical Doctor (single-cycle, English) — bachelor, ISCED-F 0912, языки: en, 6 лет, on_campus, набор: ?
+  - Стоимость: 6500 USD / year (international)
+  - Требования: требования не найдены
+- Заметки сборщика: Official ug.edu.ge page read 2026-10-08: annual fees in USD for international students on English-taught programmes (list as published: BA 4,000-5,000; Dentistry 6,000; MD 6,500). The page gives no academic year, no duration (3 or 4 years for Business Administration is on the page, the others are my assumption of 4 years; Dentistry 5 and MD 6 are my assumption), no English requirements, no deadlines. ISCED-F codes are my assignment. Master programmes (MBA 4,000, International Business Law 4,000, Cybersecurity 5,000) are on the page but not included.
+- Источников: 14; главные: https://www.ug.edu.ge/en/tuition-and-fees
 
 ### Trinity College Dublin (IE/trinity-college-dublin)
 

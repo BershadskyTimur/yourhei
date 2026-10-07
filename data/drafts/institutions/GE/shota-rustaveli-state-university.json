@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "collected_at": "2026-10-06",
+  "academic_year": "2026/2027",
+  "institution": {
+    "external_ids": {},
+    "description": {
+      "en": "A state university on the Black Sea coast. Most programmes are taught in Georgian; medicine is also taught in English.",
+      "ru": "Государственный университет на побережье Чёрного моря. Большинство программ на грузинском; лечебное дело есть и на английском."
+    },
+    "rankings": [],
+    "dormitory": null,
+    "ownership": "public",
+    "founded_year": null,
+    "names": {
+      "original": "ბათუმის შოთა რუსთაველის სახელმწიფო უნივერსიტეტი",
+      "en": "Batumi Shota Rustaveli State University",
+      "ru": "Батумский государственный университет имени Шота Руставели"
+    },
+    "type": "university",
+    "city": {
+      "en": "Batumi",
+      "ru": "Батуми"
+    },
+    "website": "http://bsu.edu.ge",
+    "city_size": "medium",
+    "climate": "warm",
+    "size": "large",
+    "features": [],
+    "country": "GE"
+  },
+  "programs": [
+    {
+      "names": {
+        "original": "Medical Doctor (single-cycle, English)",
+        "en": "Medical Doctor (single-cycle, English)",
+        "ru": "Лечебное дело (единый цикл, на английском)"
+      },
+      "level": "bachelor",
+      "isced_f": "0912",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 6,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 5000,
+          "currency": "USD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://bsu.edu.ge/sub-34/page/3-164/index.html?lang=en"
+    },
+    {
+      "names": {
+        "original": "Bachelor programmes taught in Georgian (fee from)",
+        "en": "Bachelor programmes taught in Georgian (fee from)",
+        "ru": "Бакалавриат на грузинском языке (цена «от»)"
+      },
+      "level": "bachelor",
+      "isced_f": null,
+      "languages": [
+        "ka"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 2000,
+          "currency": "USD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.bsu.edu.ge/sub-34/page/3-161/index.html?lang=en"
+    }
+  ],
+  "scholarships": [],
+  "sources": [
+    {
+      "field": "programs[0].tuition[0].amount",
+      "url": "https://www.bsu.edu.ge/sub-34/page/3-161/index.html?lang=en",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[1].tuition[0].amount",
+      "url": "https://www.bsu.edu.ge/sub-34/page/3-161/index.html?lang=en",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    }
+  ],
+  "notes_for_reviewer": "Official bsu.edu.ge fee page read 2026-10-08: the English-taught Medical Doctor (one-cycle) programme is USD 5,000 per year (a search summary said 4,000: the page itself was followed). Georgian-taught bachelor programmes are USD 2,000-2,250 per year (stored as a generic \"from\" line; master 2,250-2,750 not stored). The page names no academic year and no separate rate for international students: the fees are shown for foreign citizens in this table by the university. Duration of 6 years for medicine is my assumption."
+}

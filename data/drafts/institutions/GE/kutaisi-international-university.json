@@ -1,0 +1,165 @@
+{
+  "schema_version": 1,
+  "collected_at": "2026-10-06",
+  "academic_year": "2025/2026",
+  "institution": {
+    "external_ids": {},
+    "description": {
+      "en": "A public university in Kutaisi with English-taught bachelor programmes in management, mathematics and computer science.",
+      "ru": "Государственный университет в Кутаиси с бакалаврскими программами на английском: менеджмент, математика, информатика."
+    },
+    "rankings": [],
+    "dormitory": null,
+    "ownership": "public",
+    "founded_year": null,
+    "names": {
+      "original": "ქუთაისის საერთაშორისო უნივერსიტეტი",
+      "en": "Kutaisi International University",
+      "ru": "Международный университет Кутаиси"
+    },
+    "type": "university",
+    "city": {
+      "en": "Kutaisi",
+      "ru": "Кутаиси"
+    },
+    "website": "https://kiu.edu.ge",
+    "location": {
+      "lat": 42.206686,
+      "lng": 42.712603
+    },
+    "city_size": "small_student",
+    "climate": "temperate",
+    "size": "small",
+    "features": [],
+    "country": "GE"
+  },
+  "programs": [
+    {
+      "names": {
+        "original": "Management (BSc)",
+        "en": "Management (BSc)",
+        "ru": "Менеджмент (BSc)"
+      },
+      "level": "bachelor",
+      "isced_f": "0413",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 3220,
+          "currency": "EUR",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.kiu.edu.ge/eng/program/detailed/167/Tuition-Fee-and-Living-Cost"
+    },
+    {
+      "names": {
+        "original": "Mathematics (BSc)",
+        "en": "Mathematics (BSc)",
+        "ru": "Математика (BSc)"
+      },
+      "level": "bachelor",
+      "isced_f": "0541",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 3220,
+          "currency": "EUR",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.kiu.edu.ge/eng/program/detailed/167/Tuition-Fee-and-Living-Cost"
+    },
+    {
+      "names": {
+        "original": "Computer Science (BSc)",
+        "en": "Computer Science (BSc)",
+        "ru": "Информатика (BSc)"
+      },
+      "level": "bachelor",
+      "isced_f": "0613",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 3220,
+          "currency": "EUR",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.kiu.edu.ge/eng/program/detailed/167/Tuition-Fee-and-Living-Cost"
+    }
+  ],
+  "scholarships": [],
+  "sources": [
+    {
+      "field": "programs[0].tuition[0].amount",
+      "url": "https://www.kiu.edu.ge/eng/program/detailed/167/Tuition-Fee-and-Living-Cost",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[1].tuition[0].amount",
+      "url": "https://www.kiu.edu.ge/eng/program/detailed/167/Tuition-Fee-and-Living-Cost",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[2].tuition[0].amount",
+      "url": "https://www.kiu.edu.ge/eng/program/detailed/167/Tuition-Fee-and-Living-Cost",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    }
+  ],
+  "notes_for_reviewer": "Official kiu.edu.ge page read 2026-10-08 (academic year 2025-2026): tuition EUR 3,220 per year for international students (includes teaching materials); living costs about EUR 5,000 per year (not stored). Three English-language undergraduate programmes: Management, Mathematics, Computer Science. Duration 4 years is my assumption. English requirements, deadlines and dormitory cost not on the page. Coordinates from Wikidata. ISCED-F codes are my assignment."
+}
