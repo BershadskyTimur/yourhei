@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "collected_at": "2026-10-06",
+  "academic_year": "2026/2027",
+  "institution": {
+    "external_ids": {},
+    "description": {
+      "en": "The leading technical university of Kazakhstan, in Almaty. Foreign citizens study on a fee-paying basis; the fee depends on the programme.",
+      "ru": "Ведущий технический университет Казахстана, в Алматы. Иностранцы учатся на платной основе; цена зависит от программы."
+    },
+    "rankings": [],
+    "dormitory": null,
+    "ownership": "public",
+    "founded_year": null,
+    "names": {
+      "original": "Satbayev University",
+      "en": "Satbayev University",
+      "ru": "Satbayev University (КазНИТУ имени К. И. Сатпаева)"
+    },
+    "type": "university",
+    "city": {
+      "en": "Almaty",
+      "ru": "Алматы"
+    },
+    "website": "https://satbayev.university",
+    "city_size": "megapolis",
+    "climate": "temperate",
+    "size": "large",
+    "features": [
+      "exchange",
+      "double_degree"
+    ],
+    "country": "KZ"
+  },
+  "programs": [
+    {
+      "names": {
+        "original": "Bachelor programmes (price from)",
+        "en": "Bachelor programmes (price from)",
+        "ru": "Бакалавриат (цена «от»)"
+      },
+      "level": "bachelor",
+      "isced_f": null,
+      "languages": [
+        "ru",
+        "kk",
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 2630,
+          "currency": "USD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://satbayev.university/en/foreignApplicants-guide"
+    }
+  ],
+  "scholarships": [],
+  "sources": [
+    {
+      "field": "programs[0].tuition[0].amount",
+      "url": "https://official.satbayev.university/en/dlya-studentov/stoimost-obucheniya",
+      "accessed_at": "2026-10-06",
+      "confidence": "medium"
+    }
+  ],
+  "notes_for_reviewer": "From search summaries of the official pages (satbayev.university, read 2026-10-07; the pages themselves did not open, certificate error): tuition is counted per year of study (36 credits for a bachelor) and \"starts from USD 2,630\"; the price depends on the programme. This card is GENERIC and the amount is a LOWER BOUND, not the price of a specific programme. Foreigners can enrol during the year, only on a fee-paying basis; 40% of the fee is paid after the application is approved. Languages ru/kk/en are my assumption (the university teaches in Kazakh, Russian and English). Programme names, English requirements, deadlines and dormitory cost not collected."
+}

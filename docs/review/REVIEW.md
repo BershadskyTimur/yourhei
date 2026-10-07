@@ -529,6 +529,17 @@
 - Заметки сборщика: Official int.astanait.edu.kz page read 2026-10-06 (international bachelor): USD 5,000 per academic year, 3 years, English. 16 programmes are listed, 8 are included. Accepted English tests are listed (IELTS, TOEFL, Duolingo ...) but no minimum scores: left empty. Other requirements: medical certificate, 6 photos, interview. Student residence USD 70 per month (cost per month does not fit the format). Deadline and application fee not stated. LOCATION IS APPROXIMATE (centre of Astana): the institution is not in the Wikidata import and has no coordinates there; please move the pin. Duration of 3 years is as published for international students.
 - Источников: 9; главные: https://int.astanait.edu.kz/
 
+### Kazakh-British Technical University (KZ/kazakh-british-technical-university)
+
+- Сайт: https://kbtu.kz/en · форма: private · основано: ? · общежитие: нет данных
+- Учебный год данных: 2026/2027; собрано: 2026-10-06
+- **Программа 1:** International School of Economics (bachelor, joint programme with the University of London) — bachelor, ISCED-F 0311, языки: en, 4 лет, on_campus, набор: ?
+  - Стоимость: 10000 USD / year (international)
+  - Требования: ielts ≥ 5.5, toefl ≥ 70
+- Значения с неполной уверенностью: programs[0].tuition[0].amount (medium)
+- Заметки сборщика: From search summaries of kbtu.kz pages (read 2026-10-07; the pages themselves did not open, certificate error). For the International School of Economics, international students pay USD 10,000 in year 1 (11,000 / 11,500 / 12,100 in years 2-4); the cost of one credit is KZT 60,000. I stored year 1. Bachelor applicants need IELTS 5.5+ or TOEFL 70+ (or equivalent). The price document for the other bachelor programmes was not readable. Please check on kbtu.kz.
+- Источников: 1; главные: https://ise.kbtu.kz/index.php?ID=8
+
 ### Nazarbayev University (KZ/nazarbayev-university)
 
 - Сайт: https://nu.edu.kz · форма: ? · основано: ? · общежитие: есть
@@ -580,6 +591,17 @@
   - Требования: ielts ≥ 6, sat ≥ 1240, act ≥ 26
 - Заметки сборщика: Source: official nu.edu.kz pages (fees, regular admissions, programme list), read 2026-10-06. Tuition is the same for foreign and Kazakh citizens (USD 15,000 / year undergraduate, 12,000 foundation); Kazakh residents pay in tenge at 486 KZT per USD. Accepted alternatives to IELTS 6.0: SAT 1240, ACT 26 (also UNT in English 85, IB 27, A-level BBB: not encoded). TOEFL "equivalent" is not given as a number, so it is left out. Mid-year intake 2026-27: application deadline 2026-11-28; the main intake month and the 2027-28 dates were not published ("to be announced"), so intakes and deadlines are empty. Application fee 10,000 KZT (30,000 in the last two weeks): not encoded, other currency. On-campus dormitory about USD 55 per month (cost per month does not fit the format: left out). Programme level and ISCED-F codes are my assignment, please check. Only 14 of the 22 listed bachelor programmes are included (the others have the same fee and rules).
 - Источников: 19; главные: https://nu.edu.kz/admissions/how-to-apply/foundation-undergraduate/regular-admissions/ · https://nu.edu.kz/admissions/programs/ · https://nu.edu.kz/admissions/fees-and-funding/
+
+### Satbayev University (KZ/satbayev-university)
+
+- Сайт: https://satbayev.university · форма: public · основано: ? · общежитие: нет данных
+- Учебный год данных: 2026/2027; собрано: 2026-10-06
+- **Программа 1:** Bachelor programmes (price from) — bachelor, ISCED-F ?, языки: ru, kk, en, 4 лет, on_campus, набор: ?
+  - Стоимость: 2630 USD / year (international)
+  - Требования: требования не найдены
+- Значения с неполной уверенностью: programs[0].tuition[0].amount (medium)
+- Заметки сборщика: From search summaries of the official pages (satbayev.university, read 2026-10-07; the pages themselves did not open, certificate error): tuition is counted per year of study (36 credits for a bachelor) and "starts from USD 2,630"; the price depends on the programme. This card is GENERIC and the amount is a LOWER BOUND, not the price of a specific programme. Foreigners can enrol during the year, only on a fee-paying basis; 40% of the fee is paid after the application is approved. Languages ru/kk/en are my assumption (the university teaches in Kazakh, Russian and English). Programme names, English requirements, deadlines and dormitory cost not collected.
+- Источников: 1; главные: https://official.satbayev.university/en/dlya-studentov/stoimost-obucheniya
 
 ### Delft University of Technology (NL/delft-university-of-technology)
 

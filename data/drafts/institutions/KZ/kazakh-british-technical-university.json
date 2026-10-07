@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "collected_at": "2026-10-06",
+  "academic_year": "2026/2027",
+  "institution": {
+    "external_ids": {},
+    "description": {
+      "en": "A technical university in Almaty with English-taught IT, engineering and economics programmes.",
+      "ru": "Технический университет в Алматы с программами по ИТ, инженерии и экономике на английском."
+    },
+    "rankings": [],
+    "dormitory": null,
+    "ownership": "private",
+    "founded_year": null,
+    "names": {
+      "original": "Kazakh-British Technical University",
+      "en": "Kazakh-British Technical University",
+      "ru": "Казахстанско-Британский технический университет"
+    },
+    "type": "university",
+    "city": {
+      "en": "Almaty",
+      "ru": "Алматы"
+    },
+    "website": "https://kbtu.kz/en",
+    "city_size": "megapolis",
+    "climate": "temperate",
+    "size": "small",
+    "features": [
+      "exchange",
+      "double_degree"
+    ],
+    "country": "KZ"
+  },
+  "programs": [
+    {
+      "names": {
+        "original": "International School of Economics (bachelor, joint programme with the University of London)",
+        "en": "International School of Economics (bachelor, joint programme with the University of London)",
+        "ru": "Международная школа экономики (бакалавриат)"
+      },
+      "level": "bachelor",
+      "isced_f": "0311",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 10000,
+          "currency": "USD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [
+          {
+            "exam": "ielts",
+            "min": 5.5
+          },
+          {
+            "exam": "toefl",
+            "min": 70
+          }
+        ],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.kbtu.kz/en/internationalization/international-admissions-internationalization"
+    }
+  ],
+  "scholarships": [],
+  "sources": [
+    {
+      "field": "programs[0].tuition[0].amount",
+      "url": "https://ise.kbtu.kz/index.php?ID=8",
+      "accessed_at": "2026-10-06",
+      "confidence": "medium"
+    }
+  ],
+  "notes_for_reviewer": "From search summaries of kbtu.kz pages (read 2026-10-07; the pages themselves did not open, certificate error). For the International School of Economics, international students pay USD 10,000 in year 1 (11,000 / 11,500 / 12,100 in years 2-4); the cost of one credit is KZT 60,000. I stored year 1. Bachelor applicants need IELTS 5.5+ or TOEFL 70+ (or equivalent). The price document for the other bachelor programmes was not readable. Please check on kbtu.kz."
+}
