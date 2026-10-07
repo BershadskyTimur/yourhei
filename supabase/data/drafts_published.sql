@@ -215,6 +215,36 @@ begin
 end
 $draft$;
 
+-- AZ/khazar-university
+do $draft$
+declare v uuid;
+begin
+  select id into v from public.institutions where country = 'AZ' and slug = 'khazar-university';
+  if v is null then
+    insert into public.institutions (slug, type, country, city, names, location, website, status) values ('khazar-university', 'university', 'AZ', '{"original":"Bakı","en":"Baku","ru":"Баку"}'::jsonb, '{"original":"Xəzər Universiteti","en":"Khazar University","ru":"Университет Хазар"}'::jsonb, extensions.ST_SetSRID(extensions.ST_MakePoint(49.8508, 40.3786), 4326)::extensions.geography, 'https://www.khazar.org', 'draft') returning id into v;
+  end if;
+  update public.institutions set
+    website = coalesce('https://www.khazar.org', website), ownership = 'private', founded_year = coalesce(null, founded_year),
+    dormitory = true, description = '{"en":"A private university in Baku where the medium of instruction is English. International students pay the same fee for almost all programmes.","ru":"Частный университет в Баку с обучением на английском. Для иностранных студентов почти на всех программах одна цена."}'::jsonb, city_size = 'megapolis',
+    climate = 'temperate', size = 'small', features = array[]::text[],
+    status = 'published', verified_at = now()
+  where id = v;
+  delete from public.programs where institution_id = v and requirements ->> 'source' is null;
+  insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
+    v, '{"original":"Bachelor programmes (all fields except veterinary medicine)","en":"Bachelor programmes (all fields except veterinary medicine)","ru":"Бакалавриат (все направления, кроме ветеринарии)"}'::jsonb, 'bachelor', null, array['en']::text[], 4, 'on_campus', array['09']::text[],
+    '[{"amount":5000,"currency":"USD","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript","notarized_translation"],"min_scores":[],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[{"intake":"2026-09","applies_to":"international","date":"2026-08-31"}]'::jsonb, null, 'https://www.khazar.org/en/item/495/international_admissions', '2026/2027', 'published', now());
+  insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
+    v, '{"original":"Veterinary Medicine (BS)","en":"Veterinary Medicine (BS)","ru":"Ветеринарная медицина (BS)"}'::jsonb, 'bachelor', '0841', array['en']::text[], 4, 'on_campus', array['09']::text[],
+    '[{"amount":6000,"currency":"USD","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript","notarized_translation"],"min_scores":[],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[{"intake":"2026-09","applies_to":"international","date":"2026-08-31"}]'::jsonb, null, 'https://www.khazar.org/en/item/495/international_admissions', '2026/2027', 'published', now());
+  delete from public.scholarships where institution_id = v;
+  delete from public.rankings where institution_id = v;
+  delete from public.sources where entity = 'institution' and entity_id = v::text;
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'institution.dormitory', 'https://international.khazar.org/en/faq', '2026-10-08', 'medium');
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[0].tuition[0].amount', 'https://international.khazar.org/en/faq', '2026-10-06', 'high');
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[1].tuition[0].amount', 'https://international.khazar.org/en/faq', '2026-10-06', 'high');
+end
+$draft$;
+
 -- CA/university-of-toronto
 do $draft$
 declare v uuid;

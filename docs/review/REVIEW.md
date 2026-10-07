@@ -117,6 +117,20 @@
 - Заметки сборщика: Official ada.edu.az pages read 2026-10-06. FEES are for 2025 (the tuition page says "2025", no later table found): confidence medium, check the 2026-27 numbers. Fee shown = tuition + 750 AZN student fee, as published (e.g. non-citizen 8500 = 7750 + 750). Citizen rates 6000-8000 AZN by school. English minimums are the exemption scores from the English preparatory programme (IELTS 6.0, TOEFL iBT 75), not strict entry scores; PTE 50 and Duolingo 105 are also accepted (not encoded). Early deadline 2026-04-08, late deadline 2026-07-01 (I stored the late one). Application fee 100 AZN. Language of instruction is not stated explicitly on the page; "en" is my assumption from the English-language documents and test requirements. Dormitory costs not found. Programme codes (BAIS, BBA...) are from the fee table; ISCED-F codes are my assignment. The database record uses Wikidata name "Azerbaijan Diplomatic Academy" (ADA University is its present name).
 - Источников: 40; главные: https://www.ada.edu.az/en/admission/undergraduate · https://www.ada.edu.az/en/admission/tuition-costs
 
+### Khazar University (AZ/khazar-university)
+
+- Сайт: https://www.khazar.org · форма: private · основано: ? · общежитие: есть
+- Учебный год данных: 2026/2027; собрано: 2026-10-06
+- **Программа 1:** Bachelor programmes (all fields except veterinary medicine) — bachelor, ISCED-F ?, языки: en, 4 лет, on_campus, набор: 09
+  - Стоимость: 5000 USD / year (international)
+  - Требования: требования не найдены
+- **Программа 2:** Veterinary Medicine (BS) — bachelor, ISCED-F 0841, языки: en, 4 лет, on_campus, набор: 09
+  - Стоимость: 6000 USD / year (international)
+  - Требования: требования не найдены
+- Значения с неполной уверенностью: institution.dormitory (medium)
+- Заметки сборщика: Official international.khazar.org FAQ read 2026-10-08 (the university site khazar.org did not open, error 500): tuition USD 5,000 per year for all programmes and USD 6,000 for Veterinary Medicine (BS); early-bird tuition USD 3,750 / 4,500 (applications 9 Jan - 1 Jun 2026; not encoded); second cycle 2 Jun - 31 Aug 2026 at the full price. Medium of instruction: English. Bachelor 4 years. No entrance exams for international students. Documents: transcripts and diplomas apostilled, translated and notarised. The page lists NO programme names, so the main line is generic (no ISCED-F code) and only veterinary medicine is named; English requirements and application fee not published there. On-campus housing exists (cost not given). LOCATION IS APPROXIMATE (Baku): the institution is not in the Wikidata import with coordinates; please move the pin. Intake month 09 and the deadline 2026-08-31 are as stated for 2026-27; the 2027-28 dates are not published yet.
+- Источников: 3; главные: https://international.khazar.org/en/faq
+
 ### University of Toronto (CA/university-of-toronto)
 
 - Сайт: https://www.utoronto.ca · форма: public · основано: ? · общежитие: нет данных
