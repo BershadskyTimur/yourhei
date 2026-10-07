@@ -3,7 +3,7 @@
 // Run: node scripts/build-other-sql.mjs
 import { existsSync, mkdirSync, readFileSync, readdirSync, rmSync, writeFileSync } from 'node:fs';
 
-const FILES = ['data/seed/wikidata-other.json', 'data/seed/osm-language-schools.json'];
+const FILES = ['data/seed/wikidata-other.json', 'data/seed/osm-language-schools.json', 'data/seed/osm-region.json'];
 const institutions = FILES.filter(existsSync).flatMap((f) => JSON.parse(readFileSync(f, 'utf8')).institutions);
 const CHUNK = 400;
 const q = (s) => (s == null ? 'null' : `'${String(s).replace(/'/g, "''")}'`);

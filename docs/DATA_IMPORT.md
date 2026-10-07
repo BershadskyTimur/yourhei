@@ -19,6 +19,7 @@
 3. **Загрузка в Supabase** (нужен секретный ключ в `.env.local` на время загрузки, потом удалить):
    - `node scripts/load-programs.mjs data/generated/scorecard.json`
    - `node scripts/load-programs.mjs data/generated/cricos.json`
-4. Школы, техникумы, колледжи, языковые школы из Wikidata и OpenStreetMap: `node scripts/load-institutions.mjs data/seed/wikidata-other.json data/seed/osm-language-schools.json`.
+   - `node scripts/load-programs.mjs data/generated/studyin-cz.json` (Чехия, официальный портал Study in Czechia)
+4. Школы, техникумы, колледжи, языковые школы из Wikidata и OpenStreetMap: `node scripts/load-institutions.mjs data/seed/wikidata-other.json data/seed/osm-language-schools.json data/seed/osm-region.json`.
 
 Сайт сам читает только те программы, которые подходят под уровень, страны и направления пользователя, поэтому большое число программ не тормозит подборку.
