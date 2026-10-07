@@ -2,6 +2,7 @@ import { getLocale, getTranslations } from 'next-intl/server';
 import { pickLocalized } from '@/lib/institutions/localized';
 import type { Money, ProgramDetail, TuitionLine } from '@/lib/institutions/detail';
 import { profileDocType } from '@/lib/documents';
+import { PriceInMyCurrency } from './PriceInMyCurrency';
 import { CERTIFICATES, EXAMS, labelFor } from '@/lib/survey/references';
 
 const fmtMoney = (m: Money, locale: string): string => {
@@ -19,7 +20,7 @@ export function examLabel(id: string, locale: string): string {
 }
 
 /** One programme: name, basic facts, price, requirements, deadlines and the link to apply. */
-export async function ProgramCard({ program }: { program: ProgramDetail }) {
+export async function ProgramCard({ program, country, city }: { program: ProgramDetail; country: string; city: Partial<Record<string, string>> }) {
   const locale = await getLocale();
   const t = await getTranslations('Institution');
   const tCard = await getTranslations('Matches.card');
@@ -42,6 +43,7 @@ export async function ProgramCard({ program }: { program: ProgramDetail }) {
   return (
     <li className="rounded-lg border border-line bg-surface p-5">
       <h3 className="text-lg font-semibold text-text">{name}</h3>
+      {program.byInstitution && <p className="mt-0.5 text-xs font-medium text-accent-text">{t('byInstitution')}</p>}
       {original && original !== name && <p className="text-sm text-muted">{original}</p>}
       <p className="mt-1 text-sm text-muted">
         {[
@@ -67,6 +69,9 @@ export async function ProgramCard({ program }: { program: ProgramDetail }) {
                   <li key={i}>{priceLine(x)}</li>
                 ))}
               </ul>
+            )}
+            {!program.free && program.tuition.some((x) => x.amount !== null) && (
+              <PriceInMyCurrency tuition={program.tuition} durationYears={program.durationYears} free={program.free} country={country} city={city} />
             )}
             {program.applicationFee?.amount != null && (
               <p className="mt-1 text-muted">

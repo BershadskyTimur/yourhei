@@ -16,7 +16,10 @@
     "profile": "Perfil",
     "logout": "Cerrar sesión",
     "matches": "Mis resultados",
-    "favorites": "Mi lista"
+    "favorites": "Mi lista",
+    "navLabel": "Secciones principales",
+    "catalog": "Catálogo",
+    "scholarships": "Becas"
   },
   "Footer": {
     "navLabel": "Información del sitio",
@@ -155,7 +158,8 @@
     "programsCount": "{count, plural, one {# programa} other {# programas}}",
     "favoriteAdd": "Guardar",
     "favoriteRemove": "Guardado",
-    "favoriteLogin": "Inicia sesión para guardar"
+    "favoriteLogin": "Inicia sesión para guardar",
+    "byInstitution": "Introducido por el propio centro"
   },
   "Pages": {
     "about": {
@@ -967,6 +971,21 @@
         "prep_year": "Se imparte en {languages}: necesitarías un año preparatorio de idioma.",
         "over_budget": "La matrícula ronda {cost} {currency} al año, por encima de tu presupuesto de {budget} {currency}."
       }
+    },
+    "saved": {
+      "title": "Guardar estos resultados",
+      "text": "Guarda una copia de esta lista. Puedes abrirla más tarde o enviar un enlace privado a tus padres o a un amigo.",
+      "save": "Guardar esta lista",
+      "failed": "No se pudo guardar. Inténtalo de nuevo.",
+      "item": "Lista del {date} · {count, plural, one {# programa} other {# programas}}",
+      "open": "Abrir",
+      "share": "Crear un enlace",
+      "stopSharing": "Dejar de compartir",
+      "delete": "Eliminar",
+      "linkLabel": "Enlace a esta lista",
+      "copy": "Copiar",
+      "copied": "Copiado",
+      "anyoneWithLink": "Cualquiera que tenga este enlace verá la lista (sin tu nombre)."
     }
   },
   "Ads": {
@@ -1020,5 +1039,175 @@
     "decline": "Solo las necesarias",
     "policy": "Política de privacidad",
     "settings": "Ajustes de cookies"
+  },
+  "Catalog": {
+    "title": "Catálogo",
+    "intro": "Todos los programas y centros de la base de datos. Filtra por país, nivel, idioma de estudio, área y precio. Los precios se muestran en la moneda que elijas.",
+    "modeLabel": "Qué mostrar",
+    "mode": {
+      "programs": "Programas",
+      "institutions": "Centros"
+    },
+    "search": "El nombre contiene",
+    "searchPlaceholder": "p. ej. derecho, diseño, medicina",
+    "country": "País",
+    "type": "Tipo",
+    "level": "Nivel",
+    "language": "Idioma de estudio",
+    "field": "Área de estudio",
+    "any": "Cualquiera",
+    "maxPrice": "Matrícula hasta ({currency} al año)",
+    "freeOnly": "Solo sin matrícula",
+    "apply": "Mostrar",
+    "reset": "Restablecer",
+    "currency": "Moneda",
+    "loading": "Cargando…",
+    "failed": "No se pudo cargar el catálogo. Inténtalo de nuevo en un minuto.",
+    "empty": "No se encontró nada. Prueba con menos filtros.",
+    "more": "Mostrar más",
+    "years": "{count, plural, one {# año} other {# años}}",
+    "perYear": "{price} al año",
+    "approx": "convertido, aproximado",
+    "priceUnknown": "Precio no publicado",
+    "total": "≈ {total} al año con gastos de vida ({living})",
+    "livingUnknown": "Aún no tenemos los gastos de vida de este país",
+    "ratesNote": "Los precios se convierten a los tipos de cambio diarios y son aproximados. Lo que vale es la página del centro y su web oficial."
+  },
+  "Scholarships": {
+    "title": "Becas: dónde estudiar gratis o más barato",
+    "intro": "Programas públicos e internacionales que pagan los estudios en el extranjero y becas de cada centro. Comprueba siempre la página oficial: los importes, países y plazos cambian cada año.",
+    "nationalTitle": "Programas públicos e internacionales",
+    "institutionalTitle": "Becas de los centros",
+    "severalCountries": "Varios países",
+    "official": "Página oficial",
+    "empty": "La lista se está completando.",
+    "disclaimer": "Enumeramos programas y te enviamos a la página oficial; no garantizamos que recibas una beca."
+  },
+  "Reviews": {
+    "title": "Opiniones de estudiantes",
+    "summary": "{rating} / 5 · {count, plural, one {# opinión} other {# opiniones}}",
+    "none": "Aún no hay opiniones. Sé el primero en compartir tu experiencia.",
+    "stars": "{count, plural, one {# estrella} other {# estrellas}} de 5",
+    "relations": {
+      "student": "Estudiante",
+      "graduate": "Egresado",
+      "applicant": "Aspirante"
+    },
+    "loginToWrite": "Inicia sesión para escribir una opinión",
+    "mine": {
+      "pending": "¡Gracias! Tu opinión espera la revisión de nuestro equipo y aparecerá después.",
+      "published": "Tu opinión está publicada. ¡Gracias!",
+      "rejected": "Tu opinión anterior no se publicó. Puedes escribir una nueva."
+    },
+    "formTitle": "Escribir una opinión",
+    "rating": "Tu valoración",
+    "relation": "Eres",
+    "body": "Tu experiencia",
+    "counter": "{count} caracteres (de {min} a {max})",
+    "rules": "Cuenta tu propia experiencia con sinceridad y educación. Sin insultos, datos de contacto, publicidad ni datos personales de otras personas. Las opiniones se muestran sin tu nombre y aparecen tras una revisión.",
+    "errors": {
+      "rating": "Elige una valoración de 1 a 5.",
+      "short": "La opinión es demasiado corta.",
+      "long": "La opinión es demasiado larga.",
+      "failed": "No se pudo enviar la opinión. Inténtalo de nuevo."
+    },
+    "send": "Enviar a revisión"
+  },
+  "Shared": {
+    "title": "Resultados compartidos",
+    "loading": "Cargando…",
+    "missing": "Esta lista no existe o su dueño ha dejado de compartirla.",
+    "from": "Lista de resultados guardada el {date}. Solo muestra datos públicos de los programas.",
+    "cta": "¿Quieres tus propios resultados? Responde una encuesta breve y obtén una lista a tu medida.",
+    "ctaButton": "Hacer la encuesta"
+  },
+  "Cabinet": {
+    "title": "Cuenta del centro",
+    "intro": "Si representas a una escuela, un colegio o una universidad, puedes mantener tú mismo su ficha, precios y plazos al día.",
+    "loading": "Cargando…",
+    "failed": "No se pudo cargar tu cuenta. Inténtalo de nuevo.",
+    "none": "Todavía no gestionas ningún centro. Abre la página de tu centro y pulsa «Represento este centro». Cuando nuestro equipo revise la solicitud, podrás editarlo aquí.",
+    "findInstitution": "Buscar mi centro",
+    "institution": "Centro",
+    "request": {
+      "pending": "{name}: la solicitud espera la revisión de nuestro equipo.",
+      "rejected": "{name}: la solicitud no fue aprobada. Escríbenos si es un error."
+    },
+    "claim": {
+      "title": "¿Trabajas en este centro?",
+      "text": "Pide acceso para actualizar tú mismo sus precios, plazos y descripción. Nuestro equipo revisa cada solicitud.",
+      "login": "Inicia sesión para enviar una solicitud",
+      "openCabinet": "Abrir la cuenta del centro",
+      "pending": "Tu solicitud espera la revisión de nuestro equipo.",
+      "rejected": "Tu solicitud no fue aprobada. Escríbenos si es un error.",
+      "ask": "Represento este centro",
+      "position": "Tu cargo",
+      "message": "¿Cómo podemos comprobar que lo representas?",
+      "messageHint": "Por ejemplo, un correo de trabajo que figure en la web del centro o el teléfono de admisiones.",
+      "failed": "No se pudo enviar la solicitud. Inténtalo de nuevo.",
+      "send": "Enviar la solicitud"
+    },
+    "card": {
+      "title": "Ficha del centro",
+      "website": "Web oficial",
+      "dormitory": "Residencia",
+      "unknown": "No indicado",
+      "yes": "Sí",
+      "no": "No",
+      "description": {
+        "en": "Descripción (inglés)",
+        "ru": "Descripción (ruso)",
+        "original": "Descripción (idioma local)"
+      },
+      "message": {
+        "saved": "Guardado.",
+        "failed": "No se pudo guardar. Inténtalo de nuevo.",
+        "url": "La dirección web debe empezar por https://"
+      },
+      "save": "Guardar la ficha"
+    },
+    "programmes": {
+      "title": "Programas",
+      "add": "Añadir un programa",
+      "note": "Los precios son para aspirantes del extranjero. Un programa que guardes aparece en el sitio como introducido por el propio centro.",
+      "loading": "Cargando…",
+      "empty": "Aún no hay programas.",
+      "more": "Mostrar más",
+      "free": "Sin matrícula",
+      "noPrice": "Sin precio",
+      "byYou": "introducido por ti",
+      "close": "Cerrar",
+      "edit": "Editar",
+      "delete": "Eliminar",
+      "confirmDelete": "¿Eliminar el programa «{name}»?",
+      "nameEn": "Nombre (inglés)",
+      "nameOriginal": "Nombre (idioma local)",
+      "level": "Nivel",
+      "languages": "Idiomas de estudio (códigos)",
+      "duration": "Duración, años",
+      "amount": "Importe de la matrícula",
+      "currency": "Moneda (3 letras)",
+      "period": "Por",
+      "periods": {
+        "year": "año",
+        "semester": "semestre",
+        "total": "todo el programa"
+      },
+      "deadline": "Plazo de solicitud",
+      "applicationUrl": "Enlace de solicitud",
+      "errors": {
+        "name": "Escribe el nombre del programa.",
+        "level": "Elige un nivel.",
+        "languages": "Escribe los idiomas con códigos de dos letras, p. ej. en, ru.",
+        "duration": "La duración debe estar entre 0 y 12 años.",
+        "amount": "El importe debe ser un número.",
+        "currency": "La moneda es un código de tres letras mayúsculas, p. ej. USD.",
+        "deadline": "Elige la fecha del plazo.",
+        "url": "El enlace debe empezar por https://",
+        "failed": "No se pudo guardar. Inténtalo de nuevo."
+      },
+      "save": "Guardar",
+      "cancel": "Cancelar"
+    }
   }
 }

@@ -3,6 +3,8 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { FavoriteButton } from '@/components/FavoriteButton';
 import { ProgramCard } from '@/components/ProgramCard';
+import { ReviewForm } from '@/components/ReviewForm';
+import { ClaimInstitution } from '@/components/cabinet/ClaimInstitution';
 import { SideAds } from '@/components/SideAds';
 import { TypeDot } from '@/components/TypeDot';
 import { Link } from '@/i18n/navigation';
@@ -30,6 +32,7 @@ export default async function InstitutionPage({ params }: { params: Params }) {
 
   const t = await getTranslations('Institution');
   const tTypes = await getTranslations('Types');
+  const tReviews = await getTranslations('Reviews');
   const tSurvey = await getTranslations('Survey.q.level.options');
   const name = pickLocalized(institution.names, locale).text;
   const original = institution.names.original;
@@ -102,7 +105,7 @@ export default async function InstitutionPage({ params }: { params: Params }) {
                 <h3 className="text-sm font-semibold uppercase tracking-wide text-muted">{tSurvey.has(g.level as 'bachelor') ? tSurvey(g.level as 'bachelor') : g.level}</h3>
                 <ul className="mt-2 space-y-4">
                   {g.items.map((p) => (
-                    <ProgramCard key={p.id} program={p} />
+                    <ProgramCard key={p.id} program={p} country={institution.country} city={institution.city} />
                   ))}
                 </ul>
               </div>
@@ -138,6 +141,35 @@ export default async function InstitutionPage({ params }: { params: Params }) {
             </ul>
           </section>
         )}
+
+        <section className="mt-10" aria-labelledby="reviews-title">
+          <h2 id="reviews-title" className="text-xl font-semibold text-text">
+            {tReviews('title')}
+            {institution.reviewSummary && (
+              <span className="ms-2 text-base font-normal text-muted">{tReviews('summary', { rating: institution.reviewSummary.rating.toFixed(1), count: institution.reviewSummary.count })}</span>
+            )}
+          </h2>
+          {institution.reviews.length === 0 ? (
+            <p className="mt-3 text-muted">{tReviews('none')}</p>
+          ) : (
+            <ul className="mt-3 space-y-3">
+              {institution.reviews.map((r, i) => (
+                <li key={i} className="rounded-lg border border-line bg-surface p-4">
+                  <p className="text-sm text-muted">
+                    <span className="text-accent-text" aria-label={tReviews('stars', { count: r.rating })}>{'★'.repeat(r.rating)}{'☆'.repeat(5 - r.rating)}</span>
+                    {' · '}
+                    {tReviews.has(`relations.${r.relation}` as 'relations.student') ? tReviews(`relations.${r.relation}` as 'relations.student') : r.relation}
+                    {r.createdAt ? ` · ${new Intl.DateTimeFormat(locale, { dateStyle: 'long' }).format(new Date(r.createdAt))}` : ''}
+                  </p>
+                  <p className="mt-1 whitespace-pre-line">{r.body}</p>
+                </li>
+              ))}
+            </ul>
+          )}
+          <ReviewForm institutionId={institution.id} />
+        </section>
+
+        <ClaimInstitution institutionId={institution.id} />
 
         {institution.programs.length === 0 && <p className="mt-6 text-muted">{t('comingSoon')}</p>}
 

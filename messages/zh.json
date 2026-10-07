@@ -16,7 +16,10 @@
     "profile": "个人资料",
     "logout": "退出登录",
     "matches": "我的匹配",
-    "favorites": "我的清单"
+    "favorites": "我的清单",
+    "navLabel": "主要栏目",
+    "catalog": "目录",
+    "scholarships": "奖学金"
   },
   "Footer": {
     "navLabel": "网站信息",
@@ -155,7 +158,8 @@
     "programsCount": "{count, plural, other {# 个专业}}",
     "favoriteAdd": "收藏",
     "favoriteRemove": "已收藏",
-    "favoriteLogin": "登录后收藏"
+    "favoriteLogin": "登录后收藏",
+    "byInstitution": "由院校本身填写"
   },
   "Pages": {
     "about": {
@@ -967,6 +971,21 @@
         "prep_year": "授课语言为 {languages}：你需要先读一年语言预科。",
         "over_budget": "学费约每年 {cost} {currency}，超出你 {budget} {currency} 的预算。"
       }
+    },
+    "saved": {
+      "title": "保存这些结果",
+      "text": "保存此列表的副本，之后可以再次打开，也可以把私密链接发给家长或朋友。",
+      "save": "保存此列表",
+      "failed": "无法保存，请重试。",
+      "item": "{date} 的列表 · {count, plural, other {# 个专业}}",
+      "open": "打开",
+      "share": "创建链接",
+      "stopSharing": "停止分享",
+      "delete": "删除",
+      "linkLabel": "此列表的链接",
+      "copy": "复制",
+      "copied": "已复制",
+      "anyoneWithLink": "任何拥有此链接的人都能看到该列表（不含您的姓名）。"
     }
   },
   "Ads": {
@@ -1020,5 +1039,175 @@
     "decline": "仅必要项",
     "policy": "隐私政策",
     "settings": "Cookie 设置"
+  },
+  "Catalog": {
+    "title": "目录",
+    "intro": "数据库中的所有专业和院校。可按国家、层次、授课语言、学科和价格筛选。价格以您选择的货币显示。",
+    "modeLabel": "显示内容",
+    "mode": {
+      "programs": "专业",
+      "institutions": "院校"
+    },
+    "search": "名称包含",
+    "searchPlaceholder": "例如：法律、设计、医学",
+    "country": "国家",
+    "type": "类型",
+    "level": "层次",
+    "language": "授课语言",
+    "field": "学科领域",
+    "any": "不限",
+    "maxPrice": "学费上限（{currency}/年）",
+    "freeOnly": "仅免学费",
+    "apply": "显示",
+    "reset": "重置",
+    "currency": "货币",
+    "loading": "加载中…",
+    "failed": "无法加载目录，请稍后再试。",
+    "empty": "未找到结果，请减少筛选条件。",
+    "more": "显示更多",
+    "years": "{count, plural, other {#年}}",
+    "perYear": "每年 {price}",
+    "approx": "已换算，仅供参考",
+    "priceUnknown": "未公布价格",
+    "total": "≈ 每年 {total}，含生活费（{living}）",
+    "livingUnknown": "我们的数据中暂无该国的生活费",
+    "ratesNote": "价格按每日汇率换算，仅为大致数额，以院校页面和官方网站为准。"
+  },
+  "Scholarships": {
+    "title": "奖学金：哪里可以免费或低价留学",
+    "intro": "资助海外留学的政府和国际项目，以及各院校自己的奖学金。请务必查看官方页面：金额、适用国家和截止日期每年都会变化。",
+    "nationalTitle": "政府和国际项目",
+    "institutionalTitle": "院校奖学金",
+    "severalCountries": "多个国家",
+    "official": "官方页面",
+    "empty": "列表正在补充中。",
+    "disclaimer": "我们列出项目并引导您前往官方页面，但不保证您一定能获得奖学金。"
+  },
+  "Reviews": {
+    "title": "学生评价",
+    "summary": "{rating} / 5 · {count, plural, other {# 条评价}}",
+    "none": "暂无评价，来分享您的经历吧。",
+    "stars": "{count, plural, other {# 星}}（满分 5 星）",
+    "relations": {
+      "student": "在读学生",
+      "graduate": "毕业生",
+      "applicant": "申请者"
+    },
+    "loginToWrite": "登录后撰写评价",
+    "mine": {
+      "pending": "谢谢！您的评价正在等待我们团队审核，通过后会显示。",
+      "published": "您的评价已发布，谢谢！",
+      "rejected": "您之前的评价未通过发布，您可以重新撰写。"
+    },
+    "formTitle": "撰写评价",
+    "rating": "您的评分",
+    "relation": "您是",
+    "body": "您的经历",
+    "counter": "{count} 字（需 {min} 至 {max} 字）",
+    "rules": "请真实、礼貌地讲述您自己的经历。不得包含辱骂、联系方式、广告或他人的个人信息。评价不会显示您的姓名，审核后才会发布。",
+    "errors": {
+      "rating": "请选择 1 到 5 的评分。",
+      "short": "评价太短。",
+      "long": "评价太长。",
+      "failed": "无法发送评价，请重试。"
+    },
+    "send": "提交审核"
+  },
+  "Shared": {
+    "title": "分享的匹配结果",
+    "loading": "加载中…",
+    "missing": "此列表不存在，或所有者已停止分享。",
+    "from": "保存于 {date} 的匹配结果列表，仅包含专业的公开信息。",
+    "cta": "想要属于您自己的匹配结果？回答一份简短问卷，即可获得适合您的列表。",
+    "ctaButton": "开始问卷"
+  },
+  "Cabinet": {
+    "title": "院校账户",
+    "intro": "如果您代表某所学校、学院或大学，可以自己维护其资料、价格和截止日期。",
+    "loading": "加载中…",
+    "failed": "无法加载账户，请重试。",
+    "none": "您目前没有管理任何院校。请打开您所在院校的页面并点击“我代表这所院校”。我们团队审核申请后，您就可以在此编辑。",
+    "findInstitution": "查找我的院校",
+    "institution": "院校",
+    "request": {
+      "pending": "{name}：申请正在等待我们团队审核。",
+      "rejected": "{name}：申请未获批准。如有误，请联系我们。"
+    },
+    "claim": {
+      "title": "您在这所院校工作吗？",
+      "text": "申请权限，即可自行更新价格、截止日期和简介。我们会审核每一份申请。",
+      "login": "登录后发送申请",
+      "openCabinet": "打开院校账户",
+      "pending": "您的申请正在等待我们团队审核。",
+      "rejected": "您的申请未获批准。如有误，请联系我们。",
+      "ask": "我代表这所院校",
+      "position": "您的职务",
+      "message": "我们如何核实您代表该院校？",
+      "messageHint": "例如：院校网站上列出的工作邮箱，或招生办电话。",
+      "failed": "无法发送申请，请重试。",
+      "send": "发送申请"
+    },
+    "card": {
+      "title": "院校资料",
+      "website": "官方网站",
+      "dormitory": "宿舍",
+      "unknown": "未说明",
+      "yes": "有",
+      "no": "无",
+      "description": {
+        "en": "简介（英语）",
+        "ru": "简介（俄语）",
+        "original": "简介（当地语言）"
+      },
+      "message": {
+        "saved": "已保存。",
+        "failed": "无法保存，请重试。",
+        "url": "网址必须以 https:// 开头"
+      },
+      "save": "保存资料"
+    },
+    "programmes": {
+      "title": "专业",
+      "add": "添加专业",
+      "note": "价格适用于来自国外的申请者。您保存的专业会在网站上标注为由院校本身填写。",
+      "loading": "加载中…",
+      "empty": "暂无专业。",
+      "more": "显示更多",
+      "free": "免学费",
+      "noPrice": "无价格",
+      "byYou": "由您填写",
+      "close": "关闭",
+      "edit": "编辑",
+      "delete": "删除",
+      "confirmDelete": "删除专业“{name}”？",
+      "nameEn": "名称（英语）",
+      "nameOriginal": "名称（当地语言）",
+      "level": "层次",
+      "languages": "授课语言（代码）",
+      "duration": "学制（年）",
+      "amount": "学费金额",
+      "currency": "货币（3 个字母）",
+      "period": "每",
+      "periods": {
+        "year": "年",
+        "semester": "学期",
+        "total": "整个专业"
+      },
+      "deadline": "申请截止日期",
+      "applicationUrl": "申请链接",
+      "errors": {
+        "name": "请输入专业名称。",
+        "level": "请选择层次。",
+        "languages": "语言请用两个字母的代码，例如 en, zh。",
+        "duration": "学制必须在 0 到 12 年之间。",
+        "amount": "金额必须是数字。",
+        "currency": "货币为三个大写字母的代码，例如 USD。",
+        "deadline": "请选择截止日期。",
+        "url": "链接必须以 https:// 开头",
+        "failed": "无法保存，请重试。"
+      },
+      "save": "保存",
+      "cancel": "取消"
+    }
   }
 }

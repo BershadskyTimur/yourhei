@@ -28,6 +28,8 @@ export interface ProgramDetail {
   applicationFee: Money | null;
   applicationUrl: string | null;
   academicYear: string | null;
+  /** the numbers were entered by the institution itself (through its account) */
+  byInstitution: boolean;
 }
 export type Row = Record<string, unknown>;
 export const str = (v: unknown): string | null => (typeof v === 'string' && v !== '' ? v : null);
@@ -73,5 +75,6 @@ export function toProgramDetail(r: Row): ProgramDetail | null {
     applicationFee: money(r.application_fee),
     applicationUrl: safeHttpUrl(r.application_url),
     academicYear: str(r.academic_year),
+    byInstitution: req.source === 'institution',
   };
 }

@@ -9,7 +9,7 @@ import { getSupabaseBrowser, isSupabaseConfigured } from '@/lib/supabase/client'
 // Real protection is in the database (supabase/migrations/0006_admin.sql): without the "admin" role
 // every request below is refused by Row Level Security, whatever this page shows.
 
-type Tab = 'dashboard' | 'users' | 'traffic' | 'institutions' | 'programs' | 'countries' | 'log';
+type Tab = 'dashboard' | 'users' | 'traffic' | 'institutions' | 'programs' | 'reviews' | 'reps' | 'countries' | 'log';
 type Access = 'loading' | 'guest' | 'denied' | 'admin' | 'unconfigured';
 type Row = Record<string, unknown>;
 
@@ -19,6 +19,8 @@ const TABS: { id: Tab; label: string }[] = [
   { id: 'traffic', label: 'Посещаемость' },
   { id: 'institutions', label: 'Вузы и школы' },
   { id: 'programs', label: 'Программы на проверке' },
+  { id: 'reviews', label: 'Отзывы' },
+  { id: 'reps', label: 'Заявки заведений' },
   { id: 'countries', label: 'Данные стран' },
   { id: 'log', label: 'Журнал изменений' },
 ];
@@ -95,6 +97,8 @@ export function AdminApp() {
         {tab === 'traffic' && <Traffic />}
         {tab === 'institutions' && <Institutions />}
         {tab === 'programs' && <Programs />}
+        {tab === 'reviews' && <Reviews />}
+        {tab === 'reps' && <RepRequests />}
         {tab === 'countries' && <Countries />}
         {tab === 'log' && <AuditLog />}
       </div>
@@ -129,8 +133,21 @@ function Status({ error, loading }: { error: string | null; loading: boolean }) 
   return null;
 }
 
+const COMMUNITY_LABELS: [string, string][] = [
+  ['reviews_pending', 'Отзывов ждёт проверки'],
+  ['reviews_published', 'Отзывов опубликовано'],
+  ['reps_pending', 'Заявок заведений ждёт решения'],
+  ['reps_approved', 'Заведений с кабинетом'],
+  ['saved_results', 'Сохранённых подборок'],
+  ['shared_results', 'Подборок со ссылкой'],
+  ['scholarships_country', 'Государственных стипендий'],
+];
+
 function Dashboard() {
-  const { data, error, loading } = useLoad<Record<string, number>>(async () => {
+  const community = useLoad<Record<string, number>>(async () => {
+    const res = await getSupabaseBrowser()!.rpc('admin_community_stats');
+    return { data: res.data as Record<string, number> | null, error: res.error };
+  });  const { data, error, loading } = useLoad<Record<string, number>>(async () => {
     const res = await getSupabaseBrowser()!.rpc('admin_stats');
     return { data: res.data as Record<string, number> | null, error: res.error };
   });
@@ -148,6 +165,17 @@ function Dashboard() {
           ))}
         </dl>
       )}
+      {community.data && (
+        <dl className="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          {COMMUNITY_LABELS.map(([key, label]) => (
+            <div key={key} className="rounded-xl border border-line bg-surface p-4">
+              <dt className="text-sm text-muted">{label}</dt>
+              <dd className="mt-1 text-3xl font-semibold text-text">{community.data?.[key] ?? 0}</dd>
+            </div>
+          ))}
+        </dl>
+      )}
+      {community.error && <p className="mt-3 text-sm text-muted">Сообщество (отзывы, кабинеты, подборки): запустите файл 0011_community.sql.</p>}
     </section>
   );
 }
@@ -439,6 +467,120 @@ function Programs() {
             </li>
           );
         })}
+      </ul>
+    </section>
+  );
+}
+
+const REVIEW_STATUS: Record<string, string> = { pending: 'ждёт проверки', published: 'опубликован', rejected: 'отклонён' };
+const RELATION: Record<string, string> = { student: 'студент', graduate: 'выпускник', applicant: 'абитуриент' };
+
+function Reviews() {
+  const [filter, setFilter] = useState<'pending' | 'published' | 'rejected'>('pending');
+  const { data, error, loading, reload } = useLoad<Row[]>(async () => {
+    const res = await getSupabaseBrowser()!
+      .from('reviews')
+      .select('id, rating, relation, body, status, created_at, institutions(names, country, slug)')
+      .eq('status', filter)
+      .order('created_at', { ascending: filter === 'pending' })
+      .limit(100);
+    return { data: res.data as unknown as Row[] | null, error: res.error };
+  });
+  const [actionError, setActionError] = useState<string | null>(null);
+
+  // the list is read again when the filter changes
+  useEffect(() => {
+    void reload();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [filter]);
+
+  async function act(id: string, kind: 'published' | 'rejected' | 'delete') {
+    const table = getSupabaseBrowser()!.from('reviews');
+    const { error: err } = kind === 'delete' ? await table.delete().eq('id', id) : await table.update({ status: kind }).eq('id', id);
+    setActionError(err?.message ?? null);
+    if (!err) await reload();
+  }
+
+  return (
+    <section>
+      <h2 className="text-xl font-semibold">Отзывы</h2>
+      <p className="mt-1 text-sm text-muted">
+        Публикуйте только честные отзывы по делу. Отклоняйте оскорбления, рекламу, чужие контакты и личные данные. Имя автора на сайте не показывается.
+      </p>
+      <div className="mt-3 flex flex-wrap gap-2">
+        {(['pending', 'published', 'rejected'] as const).map((s) => (
+          <button key={s} type="button" className={filter === s ? btnPrimary : btn} onClick={() => setFilter(s)}>
+            {REVIEW_STATUS[s]}
+          </button>
+        ))}
+      </div>
+      <Status error={error ?? actionError} loading={loading} />
+      {data && data.length === 0 && <p className="mt-4">Здесь пусто.</p>}
+      <ul className="mt-4 divide-y divide-line rounded-xl border border-line">
+        {(data ?? []).map((r) => {
+          const inst = (r.institutions ?? {}) as Row;
+          return (
+            <li key={String(r.id)} className="p-3">
+              <div className="text-sm text-muted">
+                {nameOf(inst.names)} · {String(inst.country ?? '')} · {'★'.repeat(Number(r.rating))}{'☆'.repeat(5 - Number(r.rating))} · {RELATION[String(r.relation)] ?? String(r.relation)} ·{' '}
+                {new Date(String(r.created_at)).toLocaleDateString('ru-RU')}
+              </div>
+              <p className="mt-1 whitespace-pre-line">{String(r.body)}</p>
+              <div className="mt-2 flex flex-wrap gap-2">
+                {filter !== 'published' && (
+                  <button type="button" className={btnPrimary} onClick={() => act(String(r.id), 'published')}>Опубликовать</button>
+                )}
+                {filter !== 'rejected' && (
+                  <button type="button" className={btn} onClick={() => act(String(r.id), 'rejected')}>{filter === 'published' ? 'Скрыть' : 'Отклонить'}</button>
+                )}
+                <button type="button" className={btn} onClick={() => act(String(r.id), 'delete')}>Удалить</button>
+              </div>
+            </li>
+          );
+        })}
+      </ul>
+    </section>
+  );
+}
+
+function RepRequests() {
+  const { data, error, loading, reload } = useLoad<Row[]>(async () => {
+    const res = await getSupabaseBrowser()!.rpc('admin_rep_requests');
+    return { data: res.data as unknown as Row[] | null, error: res.error };
+  });
+  const [actionError, setActionError] = useState<string | null>(null);
+
+  async function decide(id: string, status: 'approved' | 'rejected' | 'delete') {
+    const table = getSupabaseBrowser()!.from('institution_reps');
+    const { error: err } = status === 'delete' ? await table.delete().eq('id', id) : await table.update({ status, decided_at: new Date().toISOString() }).eq('id', id);
+    setActionError(err?.message ?? null);
+    if (!err) await reload();
+  }
+
+  return (
+    <section>
+      <h2 className="text-xl font-semibold">Заявки заведений</h2>
+      <p className="mt-1 text-sm text-muted">
+        Человек просит право менять карточку и программы своего заведения. Одобряйте, только убедившись, что он действительно оттуда: например, напишите на почту с официального сайта заведения. Одобренный сможет менять цены, сроки, описание и сайт, а также добавлять программы; всё это попадёт в журнал изменений.
+      </p>
+      <Status error={error ?? actionError} loading={loading} />
+      {data && data.length === 0 && <p className="mt-4">Заявок нет.</p>}
+      <ul className="mt-4 divide-y divide-line rounded-xl border border-line">
+        {(data ?? []).map((r) => (
+          <li key={String(r.id)} className="p-3">
+            <div className="font-medium">{nameOf(r.institution_names)} · {String(r.institution_country ?? '')}</div>
+            <div className="text-sm text-muted">
+              {String(r.email ?? '—')} · {String(r.position ?? 'должность не указана')} · {new Date(String(r.created_at)).toLocaleDateString('ru-RU')} ·{' '}
+              {r.status === 'pending' ? 'ждёт решения' : r.status === 'approved' ? 'одобрена' : 'отклонена'}
+            </div>
+            {typeof r.message === 'string' && r.message && <p className="mt-1 whitespace-pre-line text-sm">{r.message}</p>}
+            <div className="mt-2 flex flex-wrap gap-2">
+              {r.status !== 'approved' && <button type="button" className={btnPrimary} onClick={() => decide(String(r.id), 'approved')}>Одобрить</button>}
+              {r.status !== 'rejected' && <button type="button" className={btn} onClick={() => decide(String(r.id), 'rejected')}>{r.status === 'approved' ? 'Снять доступ' : 'Отклонить'}</button>}
+              <button type="button" className={btn} onClick={() => decide(String(r.id), 'delete')}>Удалить</button>
+            </div>
+          </li>
+        ))}
       </ul>
     </section>
   );

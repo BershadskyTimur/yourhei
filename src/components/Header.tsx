@@ -15,6 +15,11 @@ export function Header() {
           <Logo />
         </Link>
 
+        <nav aria-label={t('navLabel')} className="order-last flex w-full gap-5 text-sm font-medium md:order-none md:w-auto">
+          <Link href="/catalog" className="py-1 underline-offset-4 hover:underline">{t('catalog')}</Link>
+          <Link href="/scholarships" className="py-1 underline-offset-4 hover:underline">{t('scholarships')}</Link>
+        </nav>
+
         <div className="flex flex-wrap items-center gap-2">
           <LocaleSwitcher />
           <ThemeToggle />
