@@ -221,12 +221,26 @@ describe('scoring', () => {
     expect(marginScore(0, 0)).toBe(100);
   });
 
-  it('components without data are left out and the weights re-normalised', () => {
+  it('components without data are left out; only what the person asked for counts as missing data', () => {
     const p = program();
     const i = input({ fields: ['0613'], budget: null, grade: null });
     const s = scoreProgram(p, i, ctx, academicFit(p, i));
-    expect(s.missing).toEqual(expect.arrayContaining(['academic', 'prestige', 'preferences', 'extras', 'life', 'budget']));
-    expect(s.score).toBe(100); // only "field" has data and it is an exact match
+    // the person asked for a field (known) and implicitly for the requirements (unknown): nothing else was asked
+    expect(s.missing).toEqual(['academic']);
+    expect(s.components.find((c) => c.id === 'field')!.score).toBe(100);
+    // an exact field match, but a quarter of what was asked is unknown: the score is pulled down
+    expect(s.score).toBeLessThan(100);
+    expect(s.score).toBeGreaterThan(70);
+  });
+
+  it('a programme checked on every point the person cares about beats one with an unknown price', () => {
+    const i = input({ fields: ['0613'], budget: { currency: 'GEL', tuition: 20000, living: null } });
+    const known = program({ tuition: [{ amount: 9000, currency: 'GEL', period: 'year', appliesTo: 'international' }] });
+    const unknown = program({ tuition: [] });
+    const a = scoreProgram(known, i, ctx, academicFit(known, i));
+    const b = scoreProgram(unknown, i, ctx, academicFit(unknown, i));
+    expect(b.missing).toContain('budget');
+    expect(a.score).toBeGreaterThan(b.score);
   });
 
   it('a programme with no data at all scores 0 instead of failing', () => {

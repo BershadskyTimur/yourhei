@@ -183,6 +183,34 @@ export interface Scored {
   fieldKind?: string;
 }
 
+/** Does the person's answer ask for this component at all? (A component nobody asked for is not "missing data".) */
+function asked(id: ComponentId, input: MatchInput): boolean {
+  const set = (v: string | null) => v !== null && v !== 'any';
+  switch (id) {
+    case 'academic':
+      return true;
+    case 'field':
+      return input.fields.length > 0;
+    case 'prestige':
+      return set(input.rating);
+    case 'preferences':
+      return set(input.ownership) || set(input.size) || set(input.citySize) || set(input.climate);
+    case 'extras':
+      return input.extras.length > 0;
+    case 'life':
+      return input.dorm === 'yes' || input.workDuring === 'yes' || input.workDuring === 'maybe' || input.after === 'stay' || input.recognition === 'yes';
+    case 'budget':
+      return input.budget !== null && (input.budget.tuition !== null || input.budget.living !== null);
+  }
+}
+
+/**
+ * How strongly missing data pulls a score towards the neutral 50: a programme whose price, requirements or
+ * ranking are unknown must not beat one that was checked on every point the person cares about.
+ */
+export const MISSING_DATA_PULL = 0.8;
+const NEUTRAL = 50;
+
 export function scoreProgram(program: MatchProgram, input: MatchInput, ctx: MatchContext, fit: AcademicFit): Scored {
   const weights = weightsFor(input.priorities);
   const field = fieldScore(program, input);
@@ -197,17 +225,22 @@ export function scoreProgram(program: MatchProgram, input: MatchInput, ctx: Matc
   };
   const components = (Object.keys(raw) as ComponentId[]).map((id) => ({ id, score: raw[id], weight: weights[id] }));
   const present = components.filter((c) => c.score !== null);
-  // A component without data is left out and the weights of the others are re-normalised.
+  // A component without data is left out and the weights of the others are re-normalised ...
   const total = present.reduce((s, c) => s + c.weight, 0);
-  const score = total === 0 ? 0 : clamp(round1(present.reduce((s, c) => s + (c.score as number) * c.weight, 0) / total));
+  const base = total === 0 ? 0 : present.reduce((s, c) => s + (c.score as number) * c.weight, 0) / total;
+  // ... but the more of what the person asked for is unknown, the less the score can be trusted.
+  const wanted = components.filter((c) => asked(c.id, input));
+  const wantedWeight = wanted.reduce((s, c) => s + c.weight, 0);
+  const unknownWeight = wanted.filter((c) => c.score === null).reduce((s, c) => s + c.weight, 0);
+  const pull = wantedWeight === 0 ? 0 : MISSING_DATA_PULL * (unknownWeight / wantedWeight);
+  const score = total === 0 ? 0 : clamp(round1(base * (1 - pull) + NEUTRAL * pull));
   return {
     components,
     score,
-    missing: components.filter((c) => c.score === null).map((c) => c.id),
+    missing: wanted.filter((c) => c.score === null).map((c) => c.id),
     fieldKind: field.kind,
   };
 }
-
 /** The three components that contributed most (and are good): the "why this fits" of the result. */
 export function whyNotes(scored: Scored): Note[] {
   return scored.components
