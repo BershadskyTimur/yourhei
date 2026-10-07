@@ -13,7 +13,7 @@ begin
     climate = 'temperate', size = 'small', features = array['exchange']::text[],
     status = 'draft', verified_at = null
   where id = v;
-  delete from public.programs where institution_id = v;
+  delete from public.programs where institution_id = v and requirements ->> 'source' is null;
   insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
     v, '{"original":"Business","en":"Business","ru":"Бизнес"}'::jsonb, 'bachelor', '0413', array['en']::text[], 4, 'on_campus', array['09']::text[],
     '[{"amount":4950000,"currency":"AMD","period":"year","applies_to":"international"},{"amount":2950000,"currency":"AMD","period":"year","applies_to":"domestic"}]'::jsonb, false, '{"documents":[],"min_scores":[],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[{"intake":"2027-09","applies_to":"international","date":"2027-04-30"}]'::jsonb, null, 'https://apply.aua.am/', '2027/2028', 'draft', null);
@@ -80,7 +80,7 @@ begin
     climate = 'temperate', size = 'large', features = array[]::text[],
     status = 'draft', verified_at = null
   where id = v;
-  delete from public.programs where institution_id = v;
+  delete from public.programs where institution_id = v and requirements ->> 'source' is null;
   insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
     v, '{"original":"General Medicine (MD, English)","en":"General Medicine (MD, English)","ru":"Лечебное дело (на английском)"}'::jsonb, 'bachelor', '0912', array['en']::text[], 6, 'on_campus', array[]::text[],
     '[{"amount":2600000,"currency":"AMD","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":[],"min_scores":[],"min_gpa":null,"entrance_exams":"Two of three entrance exams: physics, chemistry, biology (exams on 1-2 October 2026)","interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://ysmu.am/en/admission-foreign-citizens/', '2026/2027', 'draft', null);
@@ -111,7 +111,7 @@ begin
     climate = 'temperate', size = 'small', features = array[]::text[],
     status = 'draft', verified_at = null
   where id = v;
-  delete from public.programs where institution_id = v;
+  delete from public.programs where institution_id = v and requirements ->> 'source' is null;
   insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
     v, '{"original":"International Studies (BAIS)","en":"International Studies (BAIS)","ru":"Международные отношения (BAIS)"}'::jsonb, 'bachelor', '0312', array['en']::text[], 4, 'on_campus', array['09']::text[],
     '[{"amount":8500,"currency":"AZN","period":"year","applies_to":"international"},{"amount":6000,"currency":"AZN","period":"year","applies_to":"domestic"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript","notarized_translation"],"min_scores":[{"exam":"ielts","min":6},{"exam":"toefl","min":75}],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[{"intake":"2026-09","applies_to":"international","date":"2026-07-01"}]'::jsonb, '{"amount":100,"currency":"AZN"}'::jsonb, 'https://www.ada.edu.az/en/admission/undergraduate', '2026/2027', 'draft', null);
@@ -227,7 +227,7 @@ begin
     climate = 'cold', size = 'large', features = array['internship', 'exchange']::text[],
     status = 'draft', verified_at = null
   where id = v;
-  delete from public.programs where institution_id = v;
+  delete from public.programs where institution_id = v and requirements ->> 'source' is null;
   insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
     v, '{"original":"Arts and Science (first year)","en":"Arts and Science (first year)","ru":"Искусства и науки (первый год)"}'::jsonb, 'bachelor', '0500', array['en']::text[], null, 'on_campus', array[]::text[],
     '[{"amount":66110,"currency":"CAD","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://future.utoronto.ca/', '2026/2027', 'draft', null);
@@ -255,7 +255,7 @@ begin
     climate = 'cold', size = 'large', features = array['exchange']::text[],
     status = 'draft', verified_at = null
   where id = v;
-  delete from public.programs where institution_id = v;
+  delete from public.programs where institution_id = v and requirements ->> 'source' is null;
   insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
     v, '{"original":"Undergraduate programmes: humanities and social sciences (taught in Chinese)","en":"Undergraduate programmes: humanities and social sciences (taught in Chinese)","ru":"Бакалавриат: гуманитарные и социальные науки (на китайском)"}'::jsonb, 'bachelor', null, array['zh']::text[], 4, 'on_campus', array['09']::text[],
     '[{"amount":26000,"currency":"CNY","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[{"exam":"hsk","min":6}],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, '{"amount":800,"currency":"CNY"}'::jsonb, 'http://www.studyatpku.com', '2026/2027', 'draft', null);
@@ -284,7 +284,7 @@ begin
     climate = 'cold', size = 'large', features = array['exchange', 'double_degree']::text[],
     status = 'draft', verified_at = null
   where id = v;
-  delete from public.programs where institution_id = v;
+  delete from public.programs where institution_id = v and requirements ->> 'source' is null;
   insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
     v, '{"original":"Computer Science (Chinese-English taught)","en":"Computer Science (Chinese-English taught)","ru":"Информатика (китайский + английский)"}'::jsonb, 'bachelor', '0613', array['zh']::text[], 4, 'on_campus', array['09']::text[],
     '[{"amount":30000,"currency":"CNY","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[{"intake":"2027-09","applies_to":"international","date":"2026-11-20"},{"intake":"2027-09","applies_to":"international","date":"2027-02-28"}]'::jsonb, '{"amount":800,"currency":"CNY"}'::jsonb, 'https://international.join-tsinghua.edu.cn/', '2027/2028', 'draft', null);
@@ -337,7 +337,7 @@ begin
     climate = 'warm', size = 'large', features = array['exchange']::text[],
     status = 'draft', verified_at = null
   where id = v;
-  delete from public.programs where institution_id = v;
+  delete from public.programs where institution_id = v and requirements ->> 'source' is null;
   insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
     v, '{"original":"Engineering (Faculty of Engineering)","en":"Engineering (Faculty of Engineering)","ru":"Инженерия"}'::jsonb, 'bachelor', '0710', array['en']::text[], null, 'on_campus', array[]::text[],
     '[{"amount":249000,"currency":"HKD","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[{"exam":"ielts","min":6.5}],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://admissions.hku.hk/', '2026/2027', 'draft', null);
@@ -401,7 +401,7 @@ begin
     climate = 'temperate', size = 'large', features = array['double_degree', 'exchange']::text[],
     status = 'draft', verified_at = null
   where id = v;
-  delete from public.programs where institution_id = v;
+  delete from public.programs where institution_id = v and requirements ->> 'source' is null;
   insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
     v, '{"original":"Computer Science and Technology (BEng Hons)","en":"Computer Science and Technology (BEng Hons)","ru":"Информатика и технологии (BEng)"}'::jsonb, 'bachelor', '0613', array['en']::text[], 4, 'on_campus', array['09']::text[],
     '[{"amount":99000,"currency":"CNY","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[{"intake":"2027-09","applies_to":"international","date":"2027-05-31"}]'::jsonb, null, 'https://www.xjtlu.edu.cn/en/admissions/global/how-to-apply', '2027/2028', 'draft', null);
@@ -510,7 +510,7 @@ begin
     climate = 'temperate', size = 'large', features = array['exchange']::text[],
     status = 'draft', verified_at = null
   where id = v;
-  delete from public.programs where institution_id = v;
+  delete from public.programs where institution_id = v and requirements ->> 'source' is null;
   insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
     v, '{"original":"Liberal Arts and Humanities (Faculty of Humanities)","en":"Liberal Arts and Humanities (Faculty of Humanities)","ru":"Свободные искусства и гуманитарные науки (факультет гуманитарных наук)"}'::jsonb, 'bachelor', '0220', array['en']::text[], 3, 'on_campus', array[]::text[],
     '[{"amount":5000,"currency":"EUR","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate"],"min_scores":[],"min_gpa":null,"entrance_exams":"General Academic Prerequisites (GAP) test: critical thinking, text analysis, logical reasoning","interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://fhs.cuni.cz/FHSENG-524.html', '2026/2027', 'draft', null);
@@ -538,7 +538,7 @@ begin
     climate = 'temperate', size = 'large', features = array['internship', 'exchange']::text[],
     status = 'draft', verified_at = null
   where id = v;
-  delete from public.programs where institution_id = v;
+  delete from public.programs where institution_id = v and requirements ->> 'source' is null;
   insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
     v, '{"original":"Management and Technology (B.Sc.)","en":"Management and Technology (B.Sc.)","ru":"Менеджмент и технологии (B.Sc.)"}'::jsonb, 'bachelor', '0413', array['en', 'de']::text[], 3, 'on_campus', array['10']::text[],
     '[{"amount":2000,"currency":"EUR","period":"semester","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[],"min_gpa":null,"entrance_exams":"Aptitude assessment procedure (school grades and subject performance)","interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://www.tum.de/en/studies/degree-programs/detail/management-and-technology-bachelor-of-science-bsc', '2026/2027', 'draft', null);
@@ -562,7 +562,7 @@ begin
     climate = 'cold', size = 'large', features = array['internship', 'exchange']::text[],
     status = 'draft', verified_at = null
   where id = v;
-  delete from public.programs where institution_id = v;
+  delete from public.programs where institution_id = v and requirements ->> 'source' is null;
   insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
     v, '{"original":"International Business (BSc)","en":"International Business (BSc)","ru":"Международный бизнес (бакалавр)"}'::jsonb, 'bachelor', '0413', array['en']::text[], null, 'on_campus', array[]::text[],
     '[{"amount":12000,"currency":"EUR","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://www.aalto.fi/en/study-options/international-business-bachelor-of-science-and-master-of-science-economics-and-business', '2026/2027', 'draft', null);
@@ -587,7 +587,7 @@ begin
     climate = 'temperate', size = 'small', features = array['double_degree', 'exchange']::text[],
     status = 'draft', verified_at = null
   where id = v;
-  delete from public.programs where institution_id = v;
+  delete from public.programs where institution_id = v and requirements ->> 'source' is null;
   insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
     v, '{"original":"Business Administration (finance, marketing, management)","en":"Business Administration (finance, marketing, management)","ru":"Управление бизнесом (финансы, маркетинг, менеджмент)"}'::jsonb, 'bachelor', '0413', array['en']::text[], 3, 'on_campus', array['09', '02']::text[],
     '[{"amount":5500,"currency":"USD","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","notarized_translation"],"min_scores":[{"exam":"ielts","min":6},{"exam":"toefl","min":78}],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://cu.edu.ge/en/cu-international-students/international-how-to-apply', '2026/2027', 'draft', null);
@@ -648,7 +648,7 @@ begin
     climate = 'temperate', size = 'large', features = array[]::text[],
     status = 'draft', verified_at = null
   where id = v;
-  delete from public.programs where institution_id = v;
+  delete from public.programs where institution_id = v and requirements ->> 'source' is null;
   insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
     v, '{"original":"Computer Science (English)","en":"Computer Science (English)","ru":"Информатика (на английском)"}'::jsonb, 'bachelor', '0613', array['en']::text[], 4, 'on_campus', array[]::text[],
     '[{"amount":12500,"currency":"GEL","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://gtu.ge/en/apply/bachelor/ims/eng.php', '2026/2027', 'draft', null);
@@ -679,7 +679,7 @@ begin
     climate = null, size = null, features = array[]::text[],
     status = 'draft', verified_at = null
   where id = v;
-  delete from public.programs where institution_id = v;
+  delete from public.programs where institution_id = v and requirements ->> 'source' is null;
   insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
     v, '{"original":"Computer Engineering","en":"Computer Engineering"}'::jsonb, 'bachelor', '0714', array['en']::text[], 4.5, 'on_campus', array['09', '02']::text[],
     '[{"amount":5000,"currency":"USD","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":[],"min_scores":[],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[{"intake":"2027-02","applies_to":"international","date":null}]'::jsonb, '{"amount":150,"currency":"USD"}'::jsonb, 'https://international.iliauni.edu.ge/for-degree-seeking-applicants/', '2026/2027', 'draft', null);
@@ -749,7 +749,7 @@ begin
     climate = null, size = null, features = array[]::text[],
     status = 'draft', verified_at = null
   where id = v;
-  delete from public.programs where institution_id = v;
+  delete from public.programs where institution_id = v and requirements ->> 'source' is null;
   insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
     v, '{"original":"Business Administration - Management","en":"Business Administration - Management"}'::jsonb, 'bachelor', '0413', array['en']::text[], null, 'on_campus', array[]::text[],
     '[{"amount":4490,"currency":"GEL","period":"year","applies_to":"domestic"},{"amount":4900,"currency":"USD","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript","notarized_translation"],"min_scores":[{"exam":"ielts","min":6},{"exam":"toefl","min":78}],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://ibsu.edu.ge/en/iro/admission/', '2026/2027', 'draft', null);
@@ -882,7 +882,7 @@ begin
     climate = 'temperate', size = 'small', features = array[]::text[],
     status = 'draft', verified_at = null
   where id = v;
-  delete from public.programs where institution_id = v;
+  delete from public.programs where institution_id = v and requirements ->> 'source' is null;
   insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
     v, '{"original":"Management (BSc)","en":"Management (BSc)","ru":"Менеджмент (BSc)"}'::jsonb, 'bachelor', '0413', array['en']::text[], 4, 'on_campus', array[]::text[],
     '[{"amount":3220,"currency":"EUR","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://www.kiu.edu.ge/eng/program/detailed/167/Tuition-Fee-and-Living-Cost', '2025/2026', 'draft', null);
@@ -913,7 +913,7 @@ begin
     climate = 'warm', size = 'large', features = array[]::text[],
     status = 'draft', verified_at = null
   where id = v;
-  delete from public.programs where institution_id = v;
+  delete from public.programs where institution_id = v and requirements ->> 'source' is null;
   insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
     v, '{"original":"Medical Doctor (single-cycle, English)","en":"Medical Doctor (single-cycle, English)","ru":"Лечебное дело (единый цикл, на английском)"}'::jsonb, 'bachelor', '0912', array['en']::text[], 6, 'on_campus', array[]::text[],
     '[{"amount":5000,"currency":"USD","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://bsu.edu.ge/sub-34/page/3-164/index.html?lang=en', '2026/2027', 'draft', null);
@@ -940,7 +940,7 @@ begin
     climate = null, size = null, features = array[]::text[],
     status = 'draft', verified_at = null
   where id = v;
-  delete from public.programs where institution_id = v;
+  delete from public.programs where institution_id = v and requirements ->> 'source' is null;
   insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
     v, '{"original":"Medical Doctor (English medium)","en":"Medical Doctor (English medium)"}'::jsonb, 'bachelor', '0912', array['en']::text[], null, 'on_campus', array[]::text[],
     '[{"amount":8000,"currency":"USD","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":[],"min_scores":[],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://tsmu.edu/ts/content.php?id=7&aid=135&bid=92&cid=327&did=0&eid=0&lang=en', '2026/2027', 'draft', null);
@@ -986,7 +986,7 @@ begin
     climate = 'temperate', size = 'large', features = array[]::text[],
     status = 'draft', verified_at = null
   where id = v;
-  delete from public.programs where institution_id = v;
+  delete from public.programs where institution_id = v and requirements ->> 'source' is null;
   insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
     v, '{"original":"Computer Science (English)","en":"Computer Science (English)","ru":"Информатика (на английском)"}'::jsonb, 'bachelor', '0613', array['en']::text[], 4, 'on_campus', array[]::text[],
     '[{"amount":4000,"currency":"USD","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","notarized_translation"],"min_scores":[{"exam":"ielts","min":4}],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://computing.tsu.ge/en/for-enrollee', '2026/2027', 'draft', null);
@@ -1010,7 +1010,7 @@ begin
     climate = 'temperate', size = 'large', features = array[]::text[],
     status = 'draft', verified_at = null
   where id = v;
-  delete from public.programs where institution_id = v;
+  delete from public.programs where institution_id = v and requirements ->> 'source' is null;
   insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
     v, '{"original":"Business Administration (4 years)","en":"Business Administration (4 years)","ru":"Управление бизнесом (4 года)"}'::jsonb, 'bachelor', '0413', array['en']::text[], 4, 'on_campus', array[]::text[],
     '[{"amount":4000,"currency":"USD","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://www.ug.edu.ge/en/for-applicants', '2026/2027', 'draft', null);
@@ -1087,7 +1087,7 @@ begin
     climate = 'temperate', size = 'large', features = array['exchange']::text[],
     status = 'draft', verified_at = null
   where id = v;
-  delete from public.programs where institution_id = v;
+  delete from public.programs where institution_id = v and requirements ->> 'source' is null;
   insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
     v, '{"original":"Business, Economic and Social Studies (B.E.S.S.)","en":"Business, Economic and Social Studies (B.E.S.S.)","ru":"Бизнес, экономика и социальные науки (B.E.S.S.)"}'::jsonb, 'bachelor', '0310', array['en']::text[], null, 'on_campus', array[]::text[],
     '[{"amount":22580,"currency":"EUR","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[{"exam":"ielts","min":6.5}],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://www.tcd.ie/study/apply/making-an-application/undergraduate/', '2026/2027', 'draft', null);
@@ -1121,7 +1121,7 @@ begin
     climate = 'temperate', size = 'large', features = array['exchange']::text[],
     status = 'draft', verified_at = null
   where id = v;
-  delete from public.programs where institution_id = v;
+  delete from public.programs where institution_id = v and requirements ->> 'source' is null;
   insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
     v, '{"original":"Undergraduate programmes (taught in Japanese)","en":"Undergraduate programmes (taught in Japanese)","ru":"Бакалавриат (на японском языке)"}'::jsonb, 'bachelor', null, array['ja']::text[], null, 'on_campus', array[]::text[],
     '[{"amount":642960,"currency":"JPY","period":"year","applies_to":"all"}]'::jsonb, false, '{"documents":["passport","school_certificate"],"min_scores":[],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://www.u-tokyo.ac.jp/adm/inbound/en/programs-admissions-u.html', '2026/2027', 'draft', null);
@@ -1146,7 +1146,7 @@ begin
     climate = 'cold', size = 'small', features = array[]::text[],
     status = 'draft', verified_at = null
   where id = v;
-  delete from public.programs where institution_id = v;
+  delete from public.programs where institution_id = v and requirements ->> 'source' is null;
   insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
     v, '{"original":"Software Engineering","en":"Software Engineering","ru":"Программная инженерия"}'::jsonb, 'bachelor', '0613', array['en']::text[], 3, 'on_campus', array[]::text[],
     '[{"amount":5000,"currency":"USD","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate"],"min_scores":[],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://forms.gle/m4m1UKkCwf74bRuy9', '2026/2027', 'draft', null);
@@ -1198,7 +1198,7 @@ begin
     climate = 'temperate', size = 'small', features = array['exchange', 'double_degree']::text[],
     status = 'draft', verified_at = null
   where id = v;
-  delete from public.programs where institution_id = v;
+  delete from public.programs where institution_id = v and requirements ->> 'source' is null;
   insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
     v, '{"original":"International School of Economics (bachelor, joint programme with the University of London)","en":"International School of Economics (bachelor, joint programme with the University of London)","ru":"Международная школа экономики (бакалавриат)"}'::jsonb, 'bachelor', '0311', array['en']::text[], 4, 'on_campus', array[]::text[],
     '[{"amount":10000,"currency":"USD","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[{"exam":"ielts","min":5.5},{"exam":"toefl","min":70}],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://www.kbtu.kz/en/internationalization/international-admissions-internationalization', '2026/2027', 'draft', null);
@@ -1221,7 +1221,7 @@ begin
     climate = 'cold', size = 'large', features = array['exchange', 'double_degree']::text[],
     status = 'draft', verified_at = null
   where id = v;
-  delete from public.programs where institution_id = v;
+  delete from public.programs where institution_id = v and requirements ->> 'source' is null;
   insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
     v, '{"original":"Foundation Year Program (NUFYP)","en":"Foundation Year Program (NUFYP)","ru":"Подготовительный год (NUFYP)"}'::jsonb, 'foundation', null, array['en']::text[], 1, 'on_campus', array[]::text[],
     '[{"amount":12000,"currency":"USD","period":"year","applies_to":"all"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[{"exam":"ielts","min":5.5},{"exam":"sat","min":1140},{"exam":"act","min":24}],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://admissions.nu.edu.kz', '2026/2027', 'draft', null);
@@ -1304,7 +1304,7 @@ begin
     climate = 'temperate', size = 'large', features = array['exchange', 'double_degree']::text[],
     status = 'draft', verified_at = null
   where id = v;
-  delete from public.programs where institution_id = v;
+  delete from public.programs where institution_id = v and requirements ->> 'source' is null;
   insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
     v, '{"original":"Bachelor programmes (price from)","en":"Bachelor programmes (price from)","ru":"Бакалавриат (цена «от»)"}'::jsonb, 'bachelor', null, array['ru', 'kk', 'en']::text[], 4, 'on_campus', array[]::text[],
     '[{"amount":2630,"currency":"USD","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://satbayev.university/en/foreignApplicants-guide', '2026/2027', 'draft', null);
@@ -1327,7 +1327,7 @@ begin
     climate = 'temperate', size = 'large', features = array['internship', 'exchange']::text[],
     status = 'draft', verified_at = null
   where id = v;
-  delete from public.programs where institution_id = v;
+  delete from public.programs where institution_id = v and requirements ->> 'source' is null;
   insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
     v, '{"original":"Bachelor programmes (non-EU tuition fee)","en":"Bachelor programmes (non-EU tuition fee)","ru":"Бакалаврские программы (плата для студентов не из ЕС)"}'::jsonb, 'bachelor', null, array['en', 'nl']::text[], 3, 'on_campus', array[]::text[],
     '[{"amount":19906,"currency":"EUR","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://www.tudelft.nl/en/education/admission-and-application/bachelors-programmes', '2026/2027', 'draft', null);
@@ -1350,7 +1350,7 @@ begin
     climate = 'temperate', size = 'large', features = array['exchange']::text[],
     status = 'draft', verified_at = null
   where id = v;
-  delete from public.programs where institution_id = v;
+  delete from public.programs where institution_id = v and requirements ->> 'source' is null;
   insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
     v, '{"original":"Humanities (Faculty of Humanities)","en":"Humanities (Faculty of Humanities)","ru":"Гуманитарные науки"}'::jsonb, 'bachelor', '0220', array['en']::text[], null, 'on_campus', array[]::text[],
     '[{"amount":17500,"currency":"EUR","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://www.uva.nl/en/education/bachelor-s', '2026/2027', 'draft', null);
@@ -1393,7 +1393,7 @@ begin
     climate = 'temperate', size = 'large', features = array['exchange']::text[],
     status = 'draft', verified_at = null
   where id = v;
-  delete from public.programs where institution_id = v;
+  delete from public.programs where institution_id = v and requirements ->> 'source' is null;
   insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
     v, '{"original":"Bachelor of Engineering (Honours)","en":"Bachelor of Engineering (Honours)","ru":"Бакалавр инженерии (Honours)"}'::jsonb, 'bachelor', '0710', array['en']::text[], null, 'on_campus', array[]::text[],
     '[{"amount":58009,"currency":"NZD","period":"year","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://www.auckland.ac.nz/en/study/applications-and-admissions.html', '2026/2027', 'draft', null);
@@ -1464,7 +1464,7 @@ begin
     climate = 'cold', size = 'large', features = array['exchange']::text[],
     status = 'draft', verified_at = null
   where id = v;
-  delete from public.programs where institution_id = v;
+  delete from public.programs where institution_id = v and requirements ->> 'source' is null;
   insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
     v, '{"original":"Information and Communication Technology (bachelor)","en":"Information and Communication Technology (bachelor)","ru":"Информационные и коммуникационные технологии (бакалавриат)"}'::jsonb, 'bachelor', '0613', array['en']::text[], 3, 'on_campus', array[]::text[],
     '[{"amount":423000,"currency":"SEK","period":"total","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, '{"amount":900,"currency":"SEK"}'::jsonb, 'https://www.kth.se/en/studies/bachelor/fees-1.646274', '2026/2027', 'draft', null);
@@ -1488,7 +1488,7 @@ begin
     climate = 'cold', size = 'large', features = array['internship', 'exchange']::text[],
     status = 'draft', verified_at = null
   where id = v;
-  delete from public.programs where institution_id = v;
+  delete from public.programs where institution_id = v and requirements ->> 'source' is null;
   insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
     v, '{"original":"Undergraduate degree programmes (SB)","en":"Undergraduate degree programmes (SB)","ru":"Бакалавриат (SB)"}'::jsonb, 'bachelor', null, array['en']::text[], 4, 'on_campus', array[]::text[],
     '[{"amount":66720,"currency":"USD","period":"year","applies_to":"all"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://mitadmissions.org/', '2026/2027', 'draft', null);

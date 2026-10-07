@@ -133,6 +133,8 @@ describe('institutionDraftToSql', () => {
   it('replaces the earlier version of the card instead of duplicating it', () => {
     const s = sql(false);
     expect(s).toContain('delete from public.programs where institution_id = v');
+    // programmes that came from an official register must survive a curated card
+    expect(s).toContain("requirements ->> 'source' is null");
     expect(s).toContain('delete from public.sources');
     expect(s).toContain("insert into public.rankings");
     expect(s).toContain("insert into public.scholarships");
