@@ -156,7 +156,9 @@ export function institutionDraftToSql(d: InstitutionDraft, slug: string, { publi
     `  where id = v;`,
   );
 
-  lines.push(`  delete from public.programs where institution_id = v;`);
+  // Only the programmes of earlier cards are replaced: programmes loaded from an official register (they carry
+  // requirements->>'source') stay, so a curated card never wipes hundreds of register programmes.
+  lines.push(`  delete from public.programs where institution_id = v and requirements ->> 'source' is null;`);
   for (const p of d.programs) {
     const free = p.tuition.length > 0 && p.tuition.every((t) => t.amount === 0);
     const req = {
