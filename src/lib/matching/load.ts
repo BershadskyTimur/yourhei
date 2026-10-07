@@ -104,16 +104,36 @@ export function toCountryFacts(row: Row): CountryFacts | null {
 const PROGRAM_COLUMNS = `id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, application_fee, application_url,
   institutions!inner (id, slug, type, country, city, names, ownership, size, city_size, climate, dormitory, features, verified_at, rankings (name, year, position, scope))`;
 
-/** All published programmes and the facts about their countries. Throws if the database cannot be read. */
-export async function loadMatchData(supabase: SupabaseClient): Promise<{ programs: MatchProgram[]; countries: Record<string, CountryFacts> }> {
-  const [programs, countries] = await Promise.all([
-    supabase.from('programs').select(PROGRAM_COLUMNS).eq('status', 'published').limit(2000),
-    supabase.from('country_data').select('country, currency, work_during_study, post_study_work_visa, recognition, cost_of_living').eq('status', 'published'),
-  ]);
-  if (programs.error) throw programs.error;
+/** Only programmes that can pass the hard filters of the matcher are read: the database holds many thousands. */
+export interface ProgramFilter {
+  level?: string;
+  countries?: string[];
+  types?: string[];
+  /** ISCED-F code starts (e.g. "061"): only programmes in these fields are read. Empty = every field. */
+  fieldPrefixes?: string[];
+}
+
+const PAGE = 1000;
+const MAX_PAGES = 30;
+
+/** The published programmes (that fit `filter`) and the facts about their countries. Throws if the database cannot be read. */
+export async function loadMatchData(supabase: SupabaseClient, filter: ProgramFilter = {}): Promise<{ programs: MatchProgram[]; countries: Record<string, CountryFacts> }> {
+  const rows: Row[] = [];
+  for (let page = 0; page < MAX_PAGES; page++) {
+    let query = supabase.from('programs').select(PROGRAM_COLUMNS).eq('status', 'published').order('id');
+    if (filter.level) query = query.eq('level', filter.level);
+    if (filter.countries?.length) query = query.in('institutions.country', filter.countries);
+    if (filter.types?.length) query = query.in('institutions.type', filter.types);
+    if (filter.fieldPrefixes?.length) query = query.or(filter.fieldPrefixes.map((p) => `isced_f.like.${p}%`).join(','));
+    const res = await query.range(page * PAGE, page * PAGE + PAGE - 1);
+    if (res.error) throw res.error;
+    rows.push(...(res.data as unknown as Row[]));
+    if (res.data.length < PAGE) break;
+  }
+  const countries = await supabase.from('country_data').select('country, currency, work_during_study, post_study_work_visa, recognition, cost_of_living').eq('status', 'published');
   if (countries.error) throw countries.error;
   return {
-    programs: (programs.data as unknown as Row[]).flatMap((r) => toProgram(r) ?? []),
+    programs: rows.flatMap((r) => toProgram(r) ?? []),
     countries: Object.fromEntries((countries.data as Row[]).flatMap((r) => toCountryFacts(r) ?? []).map((c) => [c.code, c])),
   };
 }
