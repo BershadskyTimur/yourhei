@@ -39,10 +39,9 @@ export function MatchesApp() {
           router.replace('/login?next=%2Fmatches');
           return;
         }
-        const [attempts, profileRow, data2, ratesRes] = await Promise.all([
+        const [attempts, profileRow, ratesRes] = await Promise.all([
           listAttempts(supabase),
           supabase.from('profiles').select('residence_country, citizenships, target_countries, target_types').eq('id', data.user.id).maybeSingle(),
-          loadMatchData(supabase),
           fetch('/api/rates').then((r) => (r.ok ? r.json() : null)).catch(() => null),
         ]);
         const attempt = attempts.find((a) => a.status === 'completed'); // newest first
@@ -51,6 +50,16 @@ export function MatchesApp() {
           return;
         }
         const p = (profileRow.data ?? {}) as Record<string, unknown>;
+        const facts = {
+          residence: (p.residence_country as string) ?? null,
+          citizenships: (p.citizenships as string[]) ?? [],
+          countries: (p.target_countries as string[]) ?? [],
+          types: (p.target_types as string[]) ?? [],
+        };
+        // Only the programmes that can pass the hard filters (level, countries, institution types) are read.
+        const wanted = buildMatchInput(attempt.answers, facts);
+        const prefixes = [...new Set(wanted.fields.filter((f) => /^\d{2,4}$/.test(f)).map((f) => f.slice(0, 3)))];
+        const data2 = await loadMatchData(supabase, { level: wanted.level, countries: wanted.countries, types: wanted.types, fieldPrefixes: prefixes });
         setState({
           kind: 'ready',
           attempt,
