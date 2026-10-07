@@ -16,7 +16,10 @@
     "profile": "Profile",
     "logout": "Log out",
     "matches": "My matches",
-    "favorites": "My list"
+    "favorites": "My list",
+    "navLabel": "Main sections",
+    "catalog": "Catalog",
+    "scholarships": "Scholarships"
   },
   "Footer": {
     "navLabel": "Site information",
@@ -155,7 +158,8 @@
     "programsCount": "{count, plural, one {# programme} other {# programmes}}",
     "favoriteAdd": "Save",
     "favoriteRemove": "Saved",
-    "favoriteLogin": "Log in to save"
+    "favoriteLogin": "Log in to save",
+    "byInstitution": "Entered by the institution"
   },
   "Pages": {
     "about": {
@@ -967,6 +971,21 @@
         "prep_year": "Taught in {languages}: you would need a preparatory language year.",
         "over_budget": "Tuition is about {cost} {currency} a year, above your budget of {budget} {currency}."
       }
+    },
+    "saved": {
+      "title": "Save these results",
+      "text": "Keep a copy of this list. You can open it later or send a private link to a parent or a friend.",
+      "save": "Save this list",
+      "failed": "Could not save. Please try again.",
+      "item": "List of {date} · {count, plural, one {# programme} other {# programmes}}",
+      "open": "Open",
+      "share": "Create a link",
+      "stopSharing": "Stop sharing",
+      "delete": "Delete",
+      "linkLabel": "Link to this list",
+      "copy": "Copy",
+      "copied": "Copied",
+      "anyoneWithLink": "Anyone who has this link can see the list (without your name)."
     }
   },
   "Ads": {
@@ -1020,5 +1039,175 @@
     "decline": "Only necessary",
     "policy": "Privacy Policy",
     "settings": "Cookie settings"
+  },
+  "Catalog": {
+    "title": "Catalog",
+    "intro": "Every programme and institution in the database. Narrow it down by country, level, study language, field and price. Prices are shown in the currency you choose.",
+    "modeLabel": "What to show",
+    "mode": {
+      "programs": "Programmes",
+      "institutions": "Institutions"
+    },
+    "search": "Name contains",
+    "searchPlaceholder": "e.g. law, design, medicine",
+    "country": "Country",
+    "type": "Type",
+    "level": "Level",
+    "language": "Study language",
+    "field": "Field of study",
+    "any": "Any",
+    "maxPrice": "Tuition up to ({currency} per year)",
+    "freeOnly": "Free of tuition only",
+    "apply": "Show",
+    "reset": "Reset",
+    "currency": "Currency",
+    "loading": "Loading…",
+    "failed": "Could not load the catalog. Please try again in a minute.",
+    "empty": "Nothing found. Try fewer filters.",
+    "more": "Show more",
+    "years": "{count, plural, one {# year} other {# years}}",
+    "perYear": "{price} per year",
+    "approx": "converted, approximate",
+    "priceUnknown": "Price not published",
+    "total": "≈ {total} per year with living costs ({living})",
+    "livingUnknown": "Living costs for this country are not in our data yet",
+    "ratesNote": "Prices are converted at daily exchange rates and are approximate. The institution's own page and the official site are the final word."
+  },
+  "Scholarships": {
+    "title": "Scholarships: where to study free or cheaper",
+    "intro": "Government and international programmes that pay for studies abroad, and scholarships of single institutions. Always check the official page: amounts, countries and deadlines change every year.",
+    "nationalTitle": "Government and international programmes",
+    "institutionalTitle": "Scholarships of institutions",
+    "severalCountries": "Several countries",
+    "official": "Official page",
+    "empty": "The list is being filled in.",
+    "disclaimer": "We list programmes and send you to the official page; we do not guarantee that you will receive a scholarship."
+  },
+  "Reviews": {
+    "title": "Student reviews",
+    "summary": "{rating} / 5 · {count, plural, one {# review} other {# reviews}}",
+    "none": "No reviews yet. Be the first to share your experience.",
+    "stars": "{count, plural, one {# star} other {# stars}} out of 5",
+    "relations": {
+      "student": "Student",
+      "graduate": "Graduate",
+      "applicant": "Applicant"
+    },
+    "loginToWrite": "Log in to write a review",
+    "mine": {
+      "pending": "Thank you! Your review is waiting for a check by our team and will appear after it.",
+      "published": "Your review is published. Thank you!",
+      "rejected": "Your previous review was not published. You can write a new one."
+    },
+    "formTitle": "Write a review",
+    "rating": "Your rating",
+    "relation": "You are",
+    "body": "Your experience",
+    "counter": "{count} characters (from {min} to {max})",
+    "rules": "Write about your own experience, honestly and politely. No insults, contact details, advertising or personal data of other people. Reviews are shown without your name and appear after a check.",
+    "errors": {
+      "rating": "Choose a rating from 1 to 5.",
+      "short": "The review is too short.",
+      "long": "The review is too long.",
+      "failed": "Could not send the review. Please try again."
+    },
+    "send": "Send for review"
+  },
+  "Shared": {
+    "title": "Shared matches",
+    "loading": "Loading…",
+    "missing": "This list does not exist or the owner has stopped sharing it.",
+    "from": "A list of matching results saved on {date}. It shows public facts about programmes only.",
+    "cta": "Want your own matches? Answer a short survey and get a list that fits you.",
+    "ctaButton": "Take the survey"
+  },
+  "Cabinet": {
+    "title": "Institution account",
+    "intro": "If you represent a school, college or university, you can keep its card, prices and deadlines up to date yourself.",
+    "loading": "Loading…",
+    "failed": "Could not load your account. Please try again.",
+    "none": "You do not manage any institution yet. Open the page of your institution and press “I represent this institution”. After our team checks the request, you will be able to edit it here.",
+    "findInstitution": "Find my institution",
+    "institution": "Institution",
+    "request": {
+      "pending": "{name}: the request is waiting for a check by our team.",
+      "rejected": "{name}: the request was not approved. Write to us if this is a mistake."
+    },
+    "claim": {
+      "title": "Do you work at this institution?",
+      "text": "Ask for access to update its prices, deadlines and description yourself. Our team checks every request.",
+      "login": "Log in to send a request",
+      "openCabinet": "Open the institution account",
+      "pending": "Your request is waiting for a check by our team.",
+      "rejected": "Your request was not approved. Write to us if this is a mistake.",
+      "ask": "I represent this institution",
+      "position": "Your position",
+      "message": "How can we check that you represent it?",
+      "messageHint": "For example, a work e-mail address on the institution's website or a phone number of the admissions office.",
+      "failed": "Could not send the request. Please try again.",
+      "send": "Send the request"
+    },
+    "card": {
+      "title": "Institution card",
+      "website": "Official website",
+      "dormitory": "Dormitory",
+      "unknown": "Not specified",
+      "yes": "Yes",
+      "no": "No",
+      "description": {
+        "en": "Description (English)",
+        "ru": "Description (Russian)",
+        "original": "Description (local language)"
+      },
+      "message": {
+        "saved": "Saved.",
+        "failed": "Could not save. Please try again.",
+        "url": "The website address must start with https://"
+      },
+      "save": "Save the card"
+    },
+    "programmes": {
+      "title": "Programmes",
+      "add": "Add a programme",
+      "note": "Prices are for applicants from abroad. A programme you save is marked on the site as entered by the institution.",
+      "loading": "Loading…",
+      "empty": "No programmes yet.",
+      "more": "Show more",
+      "free": "Free of tuition",
+      "noPrice": "No price",
+      "byYou": "entered by you",
+      "close": "Close",
+      "edit": "Edit",
+      "delete": "Delete",
+      "confirmDelete": "Delete the programme “{name}”?",
+      "nameEn": "Name (English)",
+      "nameOriginal": "Name (local language)",
+      "level": "Level",
+      "languages": "Study languages (codes)",
+      "duration": "Duration, years",
+      "amount": "Tuition amount",
+      "currency": "Currency (3 letters)",
+      "period": "Per",
+      "periods": {
+        "year": "year",
+        "semester": "semester",
+        "total": "whole programme"
+      },
+      "deadline": "Application deadline",
+      "applicationUrl": "Application link",
+      "errors": {
+        "name": "Enter the name of the programme.",
+        "level": "Choose a level.",
+        "languages": "Write languages as two-letter codes, e.g. en, ru.",
+        "duration": "The duration must be from 0 to 12 years.",
+        "amount": "The amount must be a number.",
+        "currency": "The currency is a code of three capital letters, e.g. USD.",
+        "deadline": "Choose the deadline date.",
+        "url": "The link must start with https://",
+        "failed": "Could not save. Please try again."
+      },
+      "save": "Save",
+      "cancel": "Cancel"
+    }
   }
 }

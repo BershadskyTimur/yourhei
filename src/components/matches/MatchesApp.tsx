@@ -3,9 +3,11 @@
 import { useLocale, useTranslations } from 'next-intl';
 import { useEffect, useMemo, useState } from 'react';
 import { TypeDot } from '@/components/TypeDot';
+import { SavedResults } from '@/components/matches/SavedResults';
 import { primaryButton, secondaryButton } from '@/components/forms/ui';
 import { Link, useRouter } from '@/i18n/navigation';
 import { pickLocalized } from '@/lib/institutions/localized';
+import { buildSnapshot } from '@/lib/matches/snapshot';
 import { buildMatchInput } from '@/lib/matching/input';
 import { matchPrograms } from '@/lib/matching/engine';
 import { loadMatchData } from '@/lib/matching/load';
@@ -110,6 +112,7 @@ function Results({ attempt, programs, countries, rates, ratesSource, profile }: 
   );
   const date = new Intl.DateTimeFormat(locale, { dateStyle: 'long' }).format(new Date(attempt.completed_at ?? attempt.updated_at));
   const total = matches.safe.length + matches.suitable.length + matches.ambitious.length;
+  const snapshot = useMemo(() => buildSnapshot(matches), [matches]);
 
   return (
     <div className="space-y-10">
@@ -148,6 +151,8 @@ function Results({ attempt, programs, countries, rates, ratesSource, profile }: 
           </section>
         ),
       )}
+
+      <SavedResults items={snapshot} />
 
       <div className="flex flex-wrap gap-3 border-t border-line pt-6">
         <Link href="/survey" className={secondaryButton}>{t('retake')}</Link>

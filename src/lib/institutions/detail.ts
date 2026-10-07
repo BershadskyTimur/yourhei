@@ -26,6 +26,9 @@ export interface InstitutionDetail {
   programs: ProgramDetail[];
   rankings: { name: string; year: number; position: string }[];
   scholarships: { names: LocalizedText; covers: string | null; url: string | null }[];
+  /** published student reviews (newest first, at most 20) and the average of all published ones */
+  reviews: { rating: number; relation: string; body: string; createdAt: string | null }[];
+  reviewSummary: { count: number; rating: number } | null;
 }
 
 const COLUMNS = `id, slug, type, country, city, names, website, ownership, founded_year, dormitory, features, description, verified_at, status,
@@ -44,7 +47,7 @@ export async function getInstitutionDetail(country: string, slug: string): Promi
     const { items } = await getMapInstitutions();
     const i = items.find((x) => x.country === cc && x.slug === slug);
     return i
-      ? { id: null, slug: i.slug, type: i.type, country: i.country, city: i.city, names: i.names, website: safeHttpUrl(i.website), foundedYear: i.foundedYear, ownership: null, dormitory: null, features: [], description: {}, verifiedAt: null, programs: [], rankings: [], scholarships: [] }
+      ? { id: null, slug: i.slug, type: i.type, country: i.country, city: i.city, names: i.names, website: safeHttpUrl(i.website), foundedYear: i.foundedYear, ownership: null, dormitory: null, features: [], description: {}, verifiedAt: null, programs: [], rankings: [], scholarships: [], reviews: [], reviewSummary: null }
       : null;
   }
 
@@ -58,6 +61,9 @@ export async function getInstitutionDetail(country: string, slug: string): Promi
   const r = data as unknown as Row;
   const type = str(r.type);
   if (!type || !isInstitutionType(type)) return null;
+  const id = str(r.id);
+  const reviewRows = id ? await supabase.from('reviews').select('rating, relation, body, created_at').eq('institution_id', id).eq('status', 'published').order('created_at', { ascending: false }).limit(20) : null;
+  const summaryRow = id ? await supabase.from('review_summary').select('reviews, rating').eq('institution_id', id).maybeSingle() : null;
   const published = (rows: unknown) => arr(rows).map(rec).filter((x) => x.status === undefined || x.status === 'published');
   return {
     id: str(r.id),
@@ -79,5 +85,12 @@ export async function getInstitutionDetail(country: string, slug: string): Promi
       return str(k.name) && num(k.year) !== null && str(k.position) ? [{ name: k.name as string, year: num(k.year) as number, position: k.position as string }] : [];
     }),
     scholarships: published(r.scholarships).map((s) => ({ names: texts(s.names), covers: str(s.covers), url: safeHttpUrl(s.url) })),
+    // before migration 0011 the table does not exist: the section is then simply empty
+    reviews: reviewRows?.error ? [] : arr(reviewRows?.data).flatMap((x) => {
+      const k = rec(x);
+      const rating = num(k.rating);
+      return rating !== null && str(k.body) ? [{ rating, relation: str(k.relation) ?? 'student', body: k.body as string, createdAt: str(k.created_at) }] : [];
+    }),
+    reviewSummary: summaryRow?.error || !summaryRow?.data ? null : num(rec(summaryRow.data).reviews) ? { count: num(rec(summaryRow.data).reviews) as number, rating: num(rec(summaryRow.data).rating) as number } : null,
   };
 }

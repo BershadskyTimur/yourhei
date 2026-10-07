@@ -1,0 +1,84 @@
+{
+  "_note": "Government and international scholarship programmes for foreign students. Only the programme, who runs it and the official link are given; amounts, countries and deadlines change every year, so the site always sends the reader to the official page.",
+  "accessed": "2026-10-07",
+  "items": [
+    {
+      "country": "TR", "covers": "full", "levels": ["bachelor", "master", "phd"], "url": "https://turkiyeburslari.gov.tr/",
+      "names": { "en": "Türkiye Scholarships", "ru": "Стипендия «Türkiye Burslari»" },
+      "funder": { "en": "Government of Türkiye", "ru": "Правительство Турции" },
+      "eligibility": { "en": "For international students; usually covers tuition, accommodation and a monthly allowance. Check the official page for the countries, levels and the application window.", "ru": "Для иностранных студентов; обычно покрывает обучение, проживание и ежемесячную стипендию. Страны, уровни и сроки подачи — на официальной странице." }
+    },
+    {
+      "country": "HU", "covers": "full", "levels": ["bachelor", "master", "phd"], "url": "https://stipendiumhungaricum.hu/",
+      "names": { "en": "Stipendium Hungaricum", "ru": "Stipendium Hungaricum" },
+      "funder": { "en": "Government of Hungary", "ru": "Правительство Венгрии" },
+      "eligibility": { "en": "For students from partner countries; usually covers tuition and a monthly stipend, with accommodation support. Applications go through the national agency of your country.", "ru": "Для студентов из стран-партнёров; обычно покрывает обучение и ежемесячную стипендию, помогает с жильём. Заявки подаются через ведомство вашей страны." }
+    },
+    {
+      "country": "DE", "covers": "partial", "levels": ["master", "phd"], "url": "https://www.daad.de/en/",
+      "names": { "en": "DAAD scholarships", "ru": "Стипендии DAAD" },
+      "funder": { "en": "German Academic Exchange Service (DAAD)", "ru": "Германская служба академических обменов (DAAD)" },
+      "eligibility": { "en": "Many programmes for different countries and levels; the DAAD scholarship database shows the ones open to you.", "ru": "Много программ для разных стран и уровней; база стипендий DAAD показывает те, что доступны вам." }
+    },
+    {
+      "country": "PL", "covers": "partial", "levels": ["bachelor", "master", "phd"], "url": "https://nawa.gov.pl/en",
+      "names": { "en": "NAWA scholarships", "ru": "Стипендии NAWA" },
+      "funder": { "en": "Polish National Agency for Academic Exchange (NAWA)", "ru": "Национальное агентство академических обменов Польши (NAWA)" },
+      "eligibility": { "en": "Several programmes for foreign students and researchers; the conditions differ by programme.", "ru": "Несколько программ для иностранных студентов и исследователей; условия зависят от программы." }
+    },
+    {
+      "country": "CN", "covers": "full", "levels": ["bachelor", "master", "phd"], "url": "https://www.campuschina.org/",
+      "names": { "en": "Chinese Government Scholarship (CSC)", "ru": "Правительственная стипендия Китая (CSC)" },
+      "funder": { "en": "China Scholarship Council", "ru": "Китайский стипендиальный совет" },
+      "eligibility": { "en": "For international students; the types differ in what they cover. Applications and deadlines are on the official portal.", "ru": "Для иностранных студентов; разные типы покрывают разные расходы. Заявки и сроки — на официальном портале." }
+    },
+    {
+      "country": "KR", "covers": "full", "levels": ["bachelor", "master", "phd"], "url": "https://www.studyinkorea.go.kr/",
+      "names": { "en": "Global Korea Scholarship (GKS)", "ru": "Global Korea Scholarship (GKS)" },
+      "funder": { "en": "Government of the Republic of Korea", "ru": "Правительство Республики Корея" },
+      "eligibility": { "en": "For international students; covers tuition and a living allowance. Applications through the Korean embassy or a chosen university.", "ru": "Для иностранных студентов; покрывает обучение и проживание. Заявки — через посольство Кореи или выбранный университет." }
+    },
+    {
+      "country": "JP", "covers": "full", "levels": ["bachelor", "master", "phd"], "url": "https://www.studyinjapan.go.jp/",
+      "names": { "en": "MEXT scholarship", "ru": "Стипендия MEXT" },
+      "funder": { "en": "Ministry of Education (MEXT), Japan", "ru": "Министерство образования Японии (MEXT)" },
+      "eligibility": { "en": "Japanese Government scholarship for international students; the application route is through the Japanese embassy or a university.", "ru": "Стипендия правительства Японии для иностранцев; заявки — через посольство Японии или университет." }
+    },
+    {
+      "country": "FR", "covers": "living", "levels": ["master", "phd"], "url": "https://www.campusfrance.org/",
+      "names": { "en": "Eiffel Excellence Scholarship", "ru": "Стипендия Эйфеля (Eiffel Excellence)" },
+      "funder": { "en": "French Ministry for Europe and Foreign Affairs", "ru": "Министерство Европы и иностранных дел Франции" },
+      "eligibility": { "en": "For master's and PhD students; the application is made by the French institution, not by the student.", "ru": "Для магистров и докторантов; заявку подаёт французское учебное заведение, а не студент." }
+    },
+    {
+      "country": "RU", "covers": "full", "levels": ["bachelor", "master", "phd"], "url": "https://education-in-russia.com/",
+      "names": { "en": "Russian Government Scholarship (quota)", "ru": "Квота правительства России на бесплатное обучение" },
+      "funder": { "en": "Government of the Russian Federation", "ru": "Правительство Российской Федерации" },
+      "eligibility": { "en": "Free places in Russian universities for foreign citizens; the application is made on the official portal.", "ru": "Бесплатные места в российских вузах для иностранных граждан; заявка подаётся на официальном портале." }
+    },
+    {
+      "country": "GB", "covers": "full", "levels": ["master"], "url": "https://www.chevening.org/",
+      "names": { "en": "Chevening Scholarships", "ru": "Стипендии Chevening" },
+      "funder": { "en": "UK Government (FCDO)", "ru": "Правительство Великобритании (FCDO)" },
+      "eligibility": { "en": "One-year master's in the UK for future leaders from eligible countries; work experience is required.", "ru": "Годичная магистратура в Великобритании для будущих лидеров из подходящих стран; нужен опыт работы." }
+    },
+    {
+      "country": "US", "covers": "full", "levels": ["master", "phd"], "url": "https://foreign.fulbrightonline.org/",
+      "names": { "en": "Fulbright Foreign Student Program", "ru": "Программа Фулбрайта для иностранных студентов" },
+      "funder": { "en": "US Department of State", "ru": "Госдепартамент США" },
+      "eligibility": { "en": "Graduate study in the USA; applications go through the Fulbright commission or the US embassy of your country.", "ru": "Обучение в магистратуре и аспирантуре США; заявки — через комиссию Фулбрайта или посольство США в вашей стране." }
+    },
+    {
+      "country": "AU", "covers": "full", "levels": ["master", "phd"], "url": "https://www.dfat.gov.au/people-to-people/australia-awards",
+      "names": { "en": "Australia Awards", "ru": "Australia Awards" },
+      "funder": { "en": "Australian Government", "ru": "Правительство Австралии" },
+      "eligibility": { "en": "Postgraduate scholarships for people from eligible countries; check the official page for your country.", "ru": "Стипендии для магистратуры и аспирантуры для жителей подходящих стран; свою страну проверьте на официальной странице." }
+    },
+    {
+      "country": null, "covers": "full", "levels": ["master"], "url": "https://erasmus-plus.ec.europa.eu/",
+      "names": { "en": "Erasmus Mundus Joint Masters", "ru": "Erasmus Mundus (совместные магистерские программы)" },
+      "funder": { "en": "European Union", "ru": "Европейский союз" },
+      "eligibility": { "en": "Joint master's programmes in several European countries; scholarships are given by the programme itself, apply on the programme's website.", "ru": "Совместные магистерские программы в нескольких странах Европы; стипендии выдаёт сама программа, заявка — на её сайте." }
+    }
+  ]
+}
