@@ -18,7 +18,12 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations('Home');
-  const { items, error } = await getMapInstitutions();
+  const { items: all, error } = await getMapInstitutions();
+  // The map needs only the names in the visitor's language (plus English and the original) and no website:
+  // with thousands of institutions this keeps the page small.
+  const keep = new Set(['original', 'en', locale]);
+  const only = (t: Record<string, string | undefined>) => Object.fromEntries(Object.entries(t).filter(([k]) => keep.has(k)));
+  const items = all.map((i) => ({ ...i, names: only(i.names), city: only(i.city), website: null, foundedYear: null }));
 
   // Institutions per country, biggest first, for the "where you can study" chips.
   const perCountry = new Map<string, number>();

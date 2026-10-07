@@ -88,6 +88,7 @@ for (const c of courses) {
 }
 
 const out = [];
+const claimed = new Set();
 let skippedNoGeo = 0;
 for (const p of inst) {
   const code = p['CRICOS Provider Code'];
@@ -108,7 +109,9 @@ for (const p of inst) {
     : 'vocational';
 
   const nameEn = (p['Trading Name'] || p['Institution Name']).replace(/\s*\(.*?\)\s*$/, '').trim();
-  const matched = known.get(norm(nameEn)) ?? known.get(norm(p['Institution Name']));
+  let matched = known.get(norm(nameEn)) ?? known.get(norm(p['Institution Name']));
+  if (matched && claimed.has(matched)) matched = undefined; // two providers must not share one institution
+  if (matched) claimed.add(matched);
   let slug = matched;
   if (!slug) {
     slug = slugify(nameEn) || `au-${code.toLowerCase()}`;

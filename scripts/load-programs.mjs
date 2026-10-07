@@ -7,7 +7,8 @@
 //   - its programmes that came from the same source earlier are replaced (so it is safe to run again);
 //   - each programme gets a source row with a link to the official register (see DATA_COLLECTION.md rule 3).
 // Programmes are saved as published, with confidence "medium": they come from an official register, but entry
-// requirements and deadlines are not in it.
+// requirements and deadlines are not always in it.
+// Speed: institutions are processed in groups of 100 and several groups at the same time.
 import { readFileSync } from 'node:fs';
 import { createClient } from '@supabase/supabase-js';
 
@@ -30,9 +31,11 @@ const supabase = createClient(env.NEXT_PUBLIC_SUPABASE_URL, env.SUPABASE_SERVICE
 
 const data = JSON.parse(readFileSync(file, 'utf8'));
 const SOURCE = data.source ?? file;
-const KEY = (data.sourceKey ?? 'cricos');
+const KEY = data.sourceKey ?? 'cricos';
 const today = new Date().toISOString().slice(0, 10);
 const now = new Date().toISOString();
+const GROUP = 100;
+const PARALLEL = 4;
 const check = (label, error) => {
   if (error) {
     console.error(`${label}: ${error.message}`);
@@ -44,18 +47,19 @@ const chunks = (list, n) => Array.from({ length: Math.ceil(list.length / n) }, (
 let institutions = 0;
 let created = 0;
 let programs = 0;
-for (const group of chunks(data.institutions, 25)) {
+
+async function processGroup(group) {
   // 1. ids of the institutions that exist already
+  const idOf = new Map();
   const slugsByCountry = {};
   for (const i of group) (slugsByCountry[i.country] ??= []).push(i.slug);
-  const idOf = new Map();
   for (const [country, slugs] of Object.entries(slugsByCountry)) {
-    const { data: rows, error } = await supabase.from('institutions').select('id, slug').eq('country', country).in('slug', slugs);
+    const { data: rows, error } = await supabase.from('institutions').select('id, slug, ownership, size, website').eq('country', country).in('slug', slugs);
     check('read institutions', error);
-    for (const r of rows) idOf.set(`${country}/${r.slug}`, r.id);
+    for (const r of rows) idOf.set(`${country}/${r.slug}`, r);
   }
 
-  // 2. create the missing ones
+  // 2. create the missing ones (one request)
   const missing = group.filter((i) => !idOf.has(`${i.country}/${i.slug}`));
   if (missing.length) {
     const { data: rows, error } = await supabase
@@ -67,53 +71,70 @@ for (const group of chunks(data.institutions, 25)) {
           external_ids: i.externalIds ?? { [KEY]: i.cricos }, status: 'published', verified_at: now,
         })),
       )
-      .select('id, country, slug');
+      .select('id, country, slug, ownership, size, website');
     check('create institutions', error);
-    for (const r of rows) idOf.set(`${r.country}/${r.slug}`, r.id);
+    for (const r of rows) idOf.set(`${r.country}/${r.slug}`, r);
     created += missing.length;
   }
+  const withId = group.filter((i) => idOf.has(`${i.country}/${i.slug}`)).map((i) => ({ i, row: idOf.get(`${i.country}/${i.slug}`) }));
+  const ids = withId.map((x) => x.row.id);
 
-  for (const i of group) {
-    const id = idOf.get(`${i.country}/${i.slug}`);
-    if (!id) continue;
-    // 3. publish the institution card; fill what is empty (never overwrite what a person has edited)
-    const { data: cur } = await supabase.from('institutions').select('ownership, size, website').eq('id', id).single();
-    const patch = { status: 'published', verified_at: now };
-    if (cur && !cur.ownership && i.ownership) patch.ownership = i.ownership;
-    if (cur && !cur.size && i.size) patch.size = i.size;
-    if (cur && !cur.website && i.website) patch.website = i.website;
-    check('update institution', (await supabase.from('institutions').update(patch).eq('id', id)).error);
+  // 3. publish the institution cards (one request) and fill what is empty (never overwrite what a person has edited)
+  check('publish institutions', (await supabase.from('institutions').update({ status: 'published', verified_at: now }).in('id', ids)).error);
+  for (const { i, row } of withId) {
+    const patch = {};
+    if (!row.ownership && i.ownership) patch.ownership = i.ownership;
+    if (!row.size && i.size) patch.size = i.size;
+    if (!row.website && i.website) patch.website = i.website;
+    if (Object.keys(patch).length) check('fill institution', (await supabase.from('institutions').update(patch).eq('id', row.id)).error);
+  }
 
-    // 4. replace the programmes that came from this source
-    const { data: old, error: oldError } = await supabase.from('programs').select('id').eq('institution_id', id).eq('requirements->>source', KEY);
-    check('read old programmes', oldError);
-    if (old.length) {
-      const ids = old.map((o) => o.id);
-      check('delete old sources', (await supabase.from('sources').delete().eq('entity', 'program').in('entity_id', ids)).error);
-      check('delete old programmes', (await supabase.from('programs').delete().in('id', ids)).error);
+  // 4. remove the programmes that came from this source earlier (and their source rows)
+  const { data: old, error: oldError } = await supabase.from('programs').select('id').in('institution_id', ids).eq('requirements->>source', KEY).limit(20000);
+  check('read old programmes', oldError);
+  for (const part of chunks(old.map((o) => o.id), 200)) {
+    check('delete old sources', (await supabase.from('sources').delete().eq('entity', 'program').in('entity_id', part)).error);
+    check('delete old programmes', (await supabase.from('programs').delete().in('id', part)).error);
+  }
+
+  // 5. new programmes (chunks of 1000) and one source row per programme with a price
+  const rows = [];
+  for (const { i, row } of withId) {
+    for (const p of i.programs) {
+      rows.push({
+        meta: p,
+        row: {
+          institution_id: row.id,
+          names: p.names, level: p.level, isced_f: p.isced_f, languages: p.languages, duration_years: p.duration_years,
+          format: 'on_campus', intakes: [], tuition: p.tuition,
+          free: p.tuition.length > 0 && p.tuition.every((t) => t.amount === 0),
+          requirements: { source: KEY, source_code: p.cricos ?? p.code ?? null, faculty: p.faculty ?? null, documents: [], min_scores: [] },
+          deadlines: p.deadlines ?? [], application_fee: p.applicationFee ?? null,
+          application_url: p.applicationUrl ?? i.website ?? p.sourceUrl ?? null,
+          academic_year: p.academic_year ?? String(new Date().getFullYear()),
+          status: 'published', verified_at: now,
+        },
+      });
     }
-    if (!i.programs.length) continue;
-    const rows = i.programs.map((p) => ({
-      institution_id: id,
-      names: p.names, level: p.level, isced_f: p.isced_f, languages: p.languages, duration_years: p.duration_years,
-      format: 'on_campus', intakes: [], tuition: p.tuition,
-      free: p.tuition.length > 0 && p.tuition.every((t) => t.amount === 0),
-      requirements: { source: KEY, source_code: p.cricos ?? p.code ?? null, faculty: p.faculty ?? null, documents: [], min_scores: [] },
-      deadlines: p.deadlines ?? [], application_fee: p.applicationFee ?? null,
-      application_url: p.applicationUrl ?? i.website ?? p.sourceUrl ?? null, academic_year: p.academic_year ?? String(new Date().getFullYear()),
-      status: 'published', verified_at: now,
-    }));
-    const { data: inserted, error } = await supabase.from('programs').insert(rows).select('id, requirements');
+  }
+  for (const part of chunks(rows, 1000)) {
+    const { data: inserted, error } = await supabase.from('programs').insert(part.map((x) => x.row)).select('id');
     check('insert programmes', error);
     programs += inserted.length;
-    // 5. one source row per programme with a price
-    const sources = inserted.flatMap((row, k) => {
-      const p = i.programs[k];
-      return p.sourceUrl && p.tuition.length ? [{ entity: 'program', entity_id: row.id, field: 'tuition', url: p.sourceUrl, accessed_at: today, confidence: 'medium' }] : [];
+    const sources = inserted.flatMap((r, k) => {
+      const p = part[k].meta;
+      return p.sourceUrl && p.tuition.length ? [{ entity: 'program', entity_id: r.id, field: 'tuition', url: p.sourceUrl, accessed_at: today, confidence: 'medium' }] : [];
     });
-    if (sources.length) check('insert sources', (await supabase.from('sources').insert(sources)).error);
+    for (const s of chunks(sources, 1000)) check('insert sources', (await supabase.from('sources').insert(s)).error);
   }
   institutions += group.length;
   console.log(`  ${institutions}/${data.institutions.length} institutions, ${programs} programmes (${created} institutions created)`);
 }
+
+const queue = chunks(data.institutions, GROUP);
+await Promise.all(
+  Array.from({ length: PARALLEL }, async () => {
+    while (queue.length) await processGroup(queue.shift());
+  }),
+);
 console.log(`Done. Source: ${SOURCE}`);
