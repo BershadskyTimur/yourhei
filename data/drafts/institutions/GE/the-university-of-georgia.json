@@ -1,0 +1,612 @@
+{
+  "schema_version": 1,
+  "collected_at": "2026-10-06",
+  "academic_year": "2026/2027",
+  "institution": {
+    "external_ids": {},
+    "description": {
+      "en": "A private university in Tbilisi with many English-taught bachelor programmes and a medical school.",
+      "ru": "Частный университет в Тбилиси с множеством бакалаврских программ на английском и медицинским факультетом."
+    },
+    "rankings": [],
+    "dormitory": null,
+    "ownership": "private",
+    "founded_year": null,
+    "names": {
+      "original": "საქართველოს უნივერსიტეტი",
+      "en": "The University of Georgia",
+      "ru": "Университет Грузии"
+    },
+    "type": "university",
+    "city": {
+      "en": "Tbilisi",
+      "ru": "Тбилиси"
+    },
+    "website": "http://www.ug.edu.ge",
+    "city_size": "medium",
+    "climate": "temperate",
+    "size": "large",
+    "features": [],
+    "country": "GE"
+  },
+  "programs": [
+    {
+      "names": {
+        "original": "Business Administration (4 years)",
+        "en": "Business Administration (4 years)",
+        "ru": "Управление бизнесом (4 года)"
+      },
+      "level": "bachelor",
+      "isced_f": "0413",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 4000,
+          "currency": "USD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.ug.edu.ge/en/for-applicants"
+    },
+    {
+      "names": {
+        "original": "Business Administration (3 years)",
+        "en": "Business Administration (3 years)",
+        "ru": "Управление бизнесом (3 года)"
+      },
+      "level": "bachelor",
+      "isced_f": "0413",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 3,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 4500,
+          "currency": "USD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.ug.edu.ge/en/for-applicants"
+    },
+    {
+      "names": {
+        "original": "Business Analytics (4 years)",
+        "en": "Business Analytics (4 years)",
+        "ru": "Бизнес-аналитика (4 года)"
+      },
+      "level": "bachelor",
+      "isced_f": "0413",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 4000,
+          "currency": "USD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.ug.edu.ge/en/for-applicants"
+    },
+    {
+      "names": {
+        "original": "Computer Engineering",
+        "en": "Computer Engineering",
+        "ru": "Компьютерная инженерия"
+      },
+      "level": "bachelor",
+      "isced_f": "0714",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 4500,
+          "currency": "USD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.ug.edu.ge/en/for-applicants"
+    },
+    {
+      "names": {
+        "original": "Computer Science",
+        "en": "Computer Science",
+        "ru": "Информатика"
+      },
+      "level": "bachelor",
+      "isced_f": "0613",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 4000,
+          "currency": "USD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.ug.edu.ge/en/for-applicants"
+    },
+    {
+      "names": {
+        "original": "Artificial Intelligence",
+        "en": "Artificial Intelligence",
+        "ru": "Искусственный интеллект"
+      },
+      "level": "bachelor",
+      "isced_f": "0610",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 4000,
+          "currency": "USD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.ug.edu.ge/en/for-applicants"
+    },
+    {
+      "names": {
+        "original": "Cybersecurity Engineering",
+        "en": "Cybersecurity Engineering",
+        "ru": "Кибербезопасность"
+      },
+      "level": "bachelor",
+      "isced_f": "0613",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 5000,
+          "currency": "USD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.ug.edu.ge/en/for-applicants"
+    },
+    {
+      "names": {
+        "original": "Electronic and Communication Engineering",
+        "en": "Electronic and Communication Engineering",
+        "ru": "Электроника и связь"
+      },
+      "level": "bachelor",
+      "isced_f": "0714",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 4500,
+          "currency": "USD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.ug.edu.ge/en/for-applicants"
+    },
+    {
+      "names": {
+        "original": "Civil Engineering",
+        "en": "Civil Engineering",
+        "ru": "Гражданское строительство"
+      },
+      "level": "bachelor",
+      "isced_f": "0732",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 4500,
+          "currency": "USD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.ug.edu.ge/en/for-applicants"
+    },
+    {
+      "names": {
+        "original": "Nursing",
+        "en": "Nursing",
+        "ru": "Сестринское дело"
+      },
+      "level": "bachelor",
+      "isced_f": "0913",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 4000,
+          "currency": "USD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.ug.edu.ge/en/for-applicants"
+    },
+    {
+      "names": {
+        "original": "Pharmacy",
+        "en": "Pharmacy",
+        "ru": "Фармация"
+      },
+      "level": "bachelor",
+      "isced_f": "0916",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 4500,
+          "currency": "USD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.ug.edu.ge/en/for-applicants"
+    },
+    {
+      "names": {
+        "original": "English Philology",
+        "en": "English Philology",
+        "ru": "Английская филология"
+      },
+      "level": "bachelor",
+      "isced_f": "0232",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 4000,
+          "currency": "USD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.ug.edu.ge/en/for-applicants"
+    },
+    {
+      "names": {
+        "original": "Dentistry (single-cycle, English)",
+        "en": "Dentistry (single-cycle, English)",
+        "ru": "Стоматология (единый цикл, на английском)"
+      },
+      "level": "bachelor",
+      "isced_f": "0911",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 5,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 6000,
+          "currency": "USD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.ug.edu.ge/en/for-applicants"
+    },
+    {
+      "names": {
+        "original": "Medical Doctor (single-cycle, English)",
+        "en": "Medical Doctor (single-cycle, English)",
+        "ru": "Лечебное дело (единый цикл, на английском)"
+      },
+      "level": "bachelor",
+      "isced_f": "0912",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 6,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 6500,
+          "currency": "USD",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.ug.edu.ge/en/for-applicants"
+    }
+  ],
+  "scholarships": [],
+  "sources": [
+    {
+      "field": "programs[0].tuition[0].amount",
+      "url": "https://www.ug.edu.ge/en/tuition-and-fees",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[1].tuition[0].amount",
+      "url": "https://www.ug.edu.ge/en/tuition-and-fees",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[2].tuition[0].amount",
+      "url": "https://www.ug.edu.ge/en/tuition-and-fees",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[3].tuition[0].amount",
+      "url": "https://www.ug.edu.ge/en/tuition-and-fees",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[4].tuition[0].amount",
+      "url": "https://www.ug.edu.ge/en/tuition-and-fees",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[5].tuition[0].amount",
+      "url": "https://www.ug.edu.ge/en/tuition-and-fees",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[6].tuition[0].amount",
+      "url": "https://www.ug.edu.ge/en/tuition-and-fees",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[7].tuition[0].amount",
+      "url": "https://www.ug.edu.ge/en/tuition-and-fees",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[8].tuition[0].amount",
+      "url": "https://www.ug.edu.ge/en/tuition-and-fees",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[9].tuition[0].amount",
+      "url": "https://www.ug.edu.ge/en/tuition-and-fees",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[10].tuition[0].amount",
+      "url": "https://www.ug.edu.ge/en/tuition-and-fees",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[11].tuition[0].amount",
+      "url": "https://www.ug.edu.ge/en/tuition-and-fees",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[12].tuition[0].amount",
+      "url": "https://www.ug.edu.ge/en/tuition-and-fees",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[13].tuition[0].amount",
+      "url": "https://www.ug.edu.ge/en/tuition-and-fees",
+      "accessed_at": "2026-10-06",
+      "confidence": "high"
+    }
+  ],
+  "notes_for_reviewer": "Official ug.edu.ge page read 2026-10-08: annual fees in USD for international students on English-taught programmes (list as published: BA 4,000-5,000; Dentistry 6,000; MD 6,500). The page gives no academic year, no duration (3 or 4 years for Business Administration is on the page, the others are my assumption of 4 years; Dentistry 5 and MD 6 are my assumption), no English requirements, no deadlines. ISCED-F codes are my assignment. Master programmes (MBA 4,000, International Business Law 4,000, Cybersecurity 5,000) are on the page but not included."
+}

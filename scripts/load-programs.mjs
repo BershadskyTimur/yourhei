@@ -96,9 +96,11 @@ for (const group of chunks(data.institutions, 25)) {
     const rows = i.programs.map((p) => ({
       institution_id: id,
       names: p.names, level: p.level, isced_f: p.isced_f, languages: p.languages, duration_years: p.duration_years,
-      format: 'on_campus', intakes: [], tuition: p.tuition, free: false,
-      requirements: { source: KEY, source_code: p.cricos ?? p.code ?? null, documents: [], min_scores: [] },
-      deadlines: [], application_url: i.website, academic_year: p.academic_year ?? String(new Date().getFullYear()),
+      format: 'on_campus', intakes: [], tuition: p.tuition,
+      free: p.tuition.length > 0 && p.tuition.every((t) => t.amount === 0),
+      requirements: { source: KEY, source_code: p.cricos ?? p.code ?? null, faculty: p.faculty ?? null, documents: [], min_scores: [] },
+      deadlines: p.deadlines ?? [], application_fee: p.applicationFee ?? null,
+      application_url: p.applicationUrl ?? i.website ?? p.sourceUrl ?? null, academic_year: p.academic_year ?? String(new Date().getFullYear()),
       status: 'published', verified_at: now,
     }));
     const { data: inserted, error } = await supabase.from('programs').insert(rows).select('id, requirements');
