@@ -1,0 +1,1213 @@
+{
+  "Meta": {
+    "title": "YourHEI — məktəbini, kollecini və ya universitetini tap",
+    "description": "Avropa, Asiya, Amerika, Okeaniya, Qafqaz və Mərkəzi Asiyadakı universitetlər, kolleclər və məktəblər üçün xəritə və şəxsi uyğunlaşdırma."
+  },
+  "Common": {
+    "siteName": "YourHEI",
+    "skipToContent": "Əsas məzmuna keç",
+    "translationUnavailable": "tərcümə yoxdur"
+  },
+  "Header": {
+    "homeLabel": "YourHEI — ana səhifə",
+    "login": "Daxil ol",
+    "language": "Dil",
+    "toggleTheme": "Açıq / tünd mövzunu dəyiş",
+    "profile": "Profil",
+    "logout": "Çıxış",
+    "matches": "Uyğunluqlarım",
+    "favorites": "Siyahım",
+    "navLabel": "Əsas bölmələr",
+    "catalog": "Kataloq",
+    "scholarships": "Təqaüdlər"
+  },
+  "Footer": {
+    "navLabel": "Sayt haqqında məlumat",
+    "about": "Haqqında",
+    "contacts": "Əlaqə və dəstək",
+    "privacy": "Məxfilik siyasəti",
+    "terms": "İstifadə şərtləri",
+    "dataCredit": "Xəritə məlumatları © OpenStreetMap iştirakçıları, OpenFreeMap.",
+    "rights": "© {year} YourHEI",
+    "tagline": "Harada oxuyacağını tap: universitetlər, kolleclər və məktəblər bir xəritədə, özünü izah edən uyğunluqlarla."
+  },
+  "Types": {
+    "university": "Universitet",
+    "college": "Kollec",
+    "school": "Məktəb",
+    "language_school": "Dil məktəbi",
+    "foundation": "Hazırlıq proqramları",
+    "vocational": "Peşə məktəbi"
+  },
+  "Home": {
+    "map": {
+      "title": "Oxuyacağın yeri tap",
+      "mapLabel": "Təhsil müəssisələrinin xəritəsi",
+      "searchLabel": "Ad və ya şəhər üzrə axtar",
+      "searchPlaceholder": "Ad və ya şəhər",
+      "noResults": "Heç nə tapılmadı",
+      "legendLabel": "Müəssisə növləri (göstərmək və ya gizlətmək üçün toxun)",
+      "shown": "{total} müəssisədən {shown} göstərilir",
+      "loadError": "Müəssisələr yüklənmədi. Zəhmət olmasa, bir az sonra yenidən cəhd et.",
+      "more": "Ətraflı",
+      "close": "Bağla",
+      "noWebgl": "Brauzerin xəritəni göstərə bilmir. Başqa brauzer sına və ya aparat sürətləndirilməsini aktivləşdir.",
+      "zoomIn": "Yaxınlaşdır",
+      "zoomOut": "Uzaqlaşdır",
+      "toggleAttribution": "Xəritə məlumatlarının mənbələri",
+      "mapFeedback": "Xəritədəki problemi bildir",
+      "heading": "Müəssisələrin xəritəsi"
+    },
+    "how": {
+      "title": "Necə işləyir",
+      "step1Title": "Qeydiyyatdan keç",
+      "step1Text": "Hesab yarat və ölkəni, yaşını və sənədlərini bizə bildir.",
+      "step2Title": "Sorğunu doldur",
+      "step2Text": "Məqsədlərin, qiymətlərin, dillərin və büdcən barədə suallara cavab ver.",
+      "step3Title": "Uyğunluqlarını al",
+      "step3Text": "Təhlükəsiz, uyğun və iddialı variantlardan ibarət siyahı əldə et.",
+      "cta": "Uyğunlaşdırmağa başla"
+    },
+    "hero": {
+      "badge": "Xaricdə təhsil, sadələşdirilmiş",
+      "subtitle": "Xəritədə {count} universitet və kolleci kəşf et, qısa sorğuya cavab ver və həqiqətən harada uyğun olduğunu gör — aydın səbəblərlə və hələ nəyin çatışmadığı ilə.",
+      "ctaMap": "Xəritəni kəşf et"
+    },
+    "stats": {
+      "institutions": "{count, plural, one {# müəssisə} other {# müəssisə}}",
+      "countries": "{count, plural, one {# ölkə} other {# ölkə}}",
+      "languages": "{count} dil",
+      "free": "İstifadəsi pulsuzdur"
+    },
+    "why": {
+      "title": "Niyə YourHEI",
+      "f1Title": "Hər şey bir xəritədə",
+      "f1Text": "Avropa, Asiya, Amerika, Okeaniya və Qafqazdakı universitetlər, kolleclər və məktəblər bir xəritədə.",
+      "f2Title": "Özünü izah edən uyğunluqlar",
+      "f2Text": "Hər nəticə nə üçün uyğun olduğunu və hələ nəyə ehtiyacın olduğunu göstərir, məsələn, daha yüksək dil balı.",
+      "f3Title": "Mənbəli məlumatlar",
+      "f3Text": "Qiymətlər, tələblər və son tarixlər rəsmi saytlardan götürülür; keçid və yoxladığımız tarixlə birlikdə.",
+      "f4Title": "Sənin dilində",
+      "f4Text": "Sayt {languages} dildə danışır və qiymətləri sənin valyutanda göstərir."
+    },
+    "countries": {
+      "title": "Harada oxuya bilərsən",
+      "text": "Xəritədə müəssisəsi olan ölkələr."
+    },
+    "cta": {
+      "title": "Yerini tapmağa hazırsan?",
+      "text": "Pulsuz hesab yarat, sorğuya cavab ver və uyğunluqlarını bir neçə dəqiqəyə al."
+    }
+  },
+  "Institution": {
+    "comingSoon": "Ətraflı məlumat tezliklə əlavə olunacaq.",
+    "officialSite": "Rəsmi vebsayt",
+    "founded": "Əsası qoyulub: {year}",
+    "back": "Xəritəyə qayıt",
+    "factsTitle": "Əsas faktlar",
+    "ownership": "Mülkiyyət",
+    "public": "Dövlət",
+    "private": "Özəl",
+    "dormitory": "Yataqxana",
+    "dormitoryYes": "Var",
+    "dormitoryNo": "Yoxdur",
+    "featuresTitle": "İmkanlar",
+    "features": {
+      "internship": "Təcrübə proqramları",
+      "double_degree": "İkili diplom",
+      "exchange": "Mübadilə proqramları"
+    },
+    "programsTitle": "Proqramlar",
+    "noPrograms": "Bu müəssisənin proqramları barədə ətraflı məlumat toplanır. Zəhmət olmasa, rəsmi vebsayta bax.",
+    "for": {
+      "international": "beynəlxalq tələbələr",
+      "domestic": "vətəndaşlar",
+      "eu": "Aİ vətəndaşları",
+      "all": "bütün tələbələr"
+    },
+    "per": {
+      "year": "ildə",
+      "semester": "semestrdə",
+      "credit": "kredit üçün",
+      "total": "bütün proqram üçün"
+    },
+    "tuitionTitle": "Təhsil haqqı",
+    "free": "Pulsuz",
+    "requirementsTitle": "Tələblər",
+    "minScore": "Minimum {exam}: {score}",
+    "documentsTitle": "Sənədlər",
+    "entranceTitle": "Qəbul prosesi",
+    "noRequirements": "Tələblər hələ dərc olunmayıb.",
+    "intake": "Qəbul dövrü",
+    "deadline": "Son tarix",
+    "applicationFee": "Müraciət haqqı",
+    "deadlinesTitle": "Son tarixlər",
+    "rankingsTitle": "Reytinqlər",
+    "rankingLine": "{name} ({year}): {position}",
+    "scholarshipsTitle": "Təqaüdlər",
+    "covers": {
+      "tuition": "təhsil haqqını ödəyir",
+      "living": "yaşayış xərclərini ödəyir",
+      "full": "tam maliyyələşdirmə",
+      "partial": "qismən maliyyələşdirmə"
+    },
+    "checked": "Məlumatlar {date} tarixində yoxlanılıb.",
+    "disclaimer": "Müraciət etməzdən əvvəl qiymətləri və son tarixləri həmişə rəsmi vebsaytda təsdiqlə.",
+    "report": "Bu səhifədəki səhvi bildir",
+    "duration": "Müddət",
+    "programsCount": "{count, plural, one {# proqram} other {# proqram}}",
+    "favoriteAdd": "Saxla",
+    "favoriteRemove": "Saxlanılıb",
+    "favoriteLogin": "Saxlamaq üçün daxil ol",
+    "byInstitution": "Müəssisənin özü tərəfindən daxil edilib"
+  },
+  "Pages": {
+    "about": {
+      "title": "Layihə haqqında",
+      "body": "YourHEI abituriyentlərə və ailələrinə harada oxuyacaqlarını seçməkdə kömək edir: universitetlərin, kolleclərin və məktəblərin interaktiv xəritəsi, məqsədlərin, nəticələrin və büdcən barədə qısa sorğu və nə üçün uyğun olduğunu izah edən uyğunluqlar. Xidmət abituriyentlər üçün pulsuzdur."
+    },
+    "contact": {
+      "title": "Əlaqə və dəstək",
+      "body": "Xidmət barədə sualınız, müəssisənin səhifəsində düzəlişiniz və ya şəxsi məlumatlarınızla bağlı müraciətiniz var? Bizə yazın.",
+      "emailLabel": "E-poçt"
+    },
+    "privacy": {
+      "title": "Məxfilik siyasəti"
+    },
+    "terms": {
+      "title": "İstifadə şərtləri"
+    },
+    "notFound": {
+      "title": "Səhifə tapılmadı",
+      "body": "Axtardığın səhifə mövcud deyil.",
+      "home": "Ana səhifəyə get"
+    }
+  },
+  "Subregions": {
+    "eastern-europe": "Şərqi Avropa",
+    "northern-europe": "Şimali Avropa",
+    "southern-europe": "Cənubi Avropa",
+    "western-europe": "Qərbi Avropa",
+    "central-asia": "Mərkəzi Asiya",
+    "eastern-asia": "Şərqi Asiya",
+    "south-eastern-asia": "Cənub-Şərqi Asiya",
+    "southern-asia": "Cənubi Asiya",
+    "western-asia": "Qərbi Asiya",
+    "northern-america": "Şimali Amerika",
+    "central-america": "Mərkəzi Amerika",
+    "caribbean": "Karib hövzəsi",
+    "south-america": "Cənubi Amerika",
+    "australia-nz": "Avstraliya və Yeni Zelandiya",
+    "melanesia": "Melaneziya",
+    "micronesia": "Mikroneziya",
+    "polynesia": "Polineziya"
+  },
+  "Register": {
+    "title": "Hesabını yarat",
+    "intro": "İki qısa addım. Qalan hər şeyi (ölkələr, sənədlər, nə axtardığın) istədiyin vaxt profilində doldurursan.",
+    "progressLabel": "Qeydiyyatın gedişi",
+    "stepOf": "Addım {current} / {total}",
+    "steps": {
+      "account": "Hesab",
+      "age": "Yaşın"
+    },
+    "back": "Geri",
+    "next": "Növbəti",
+    "create": "Hesab yarat",
+    "creating": "Hesab yaradılır…",
+    "alreadyHave": "Artıq hesabın var?",
+    "loginLink": "Daxil ol",
+    "search": {
+      "regionsTitle": "Bölgələr",
+      "regionsHint": "Bir və ya bir neçəsini seç. Ölkələri aşağıda dəqiqləşdirə bilərsən.",
+      "regions": {
+        "caucasus-ca-ee": "Qafqaz, Mərkəzi Asiya və Şərqi Avropa",
+        "europe": "Avropa",
+        "asia": "Asiya",
+        "americas": "Amerika",
+        "oceania": "Okeaniya"
+      },
+      "countriesTitle": "Ölkələr",
+      "countriesHint": "Seçilmiş bölgələrin bütün ölkələri işarələnib. Lazım olmayanların işarəsini götür.",
+      "pickRegion": "Əvvəlcə bölgə seç.",
+      "selectAll": "Hamısını seç",
+      "clearAll": "Hamısını təmizlə",
+      "groupLabel": "Ölkələr: {group}",
+      "typesTitle": "Müəssisə növləri",
+      "typesHint": "Bir və ya bir neçəsini seç."
+    },
+    "about": {
+      "birthDate": "Doğum tarixi",
+      "birthDateWhy": "Ölkəndəki minimum yaşı yoxlamaq və uyğun proqramları göstərmək üçün.",
+      "gender": "Cins",
+      "genderWhy": "Tək cinsli məktəblər və yataqxanalar üçün lazımdır. Deməməyi seçə bilərsən.",
+      "male": "Kişi",
+      "female": "Qadın",
+      "undisclosed": "Deməməyi üstün tuturam",
+      "residence": "Yaşadığın ölkə",
+      "residenceWhy": "Minimum yaşı, göstərilən valyutanı və diplomların tanınması qaydalarını müəyyən edir.",
+      "residencePlaceholder": "Ölkə seç",
+      "citizenship": "Vətəndaşlıq (bir və ya bir neçə)",
+      "citizenshipWhy": "Viza qaydaları və qəbul tələbləri vətəndaşlıqdan asılıdır.",
+      "countrySearch": "Ölkənin adını yaz",
+      "remove": "{name} sil",
+      "noMatches": "Uyğun ölkə yoxdur",
+      "ageCheck": "Ən azı {age} yaşım var",
+      "ageCheckWhy": "Minimum yaş yaşadığın ölkədən asılıdır."
+    },
+    "documents": {
+      "intro": "Hansı sənədlərin artıq olduğunu bizə de. Bu, sadəcə statusdur: səndən heç nə yükləmək istəmirik.",
+      "why": "Qəbul üçün hələ nəyin çatışmadığını göstərmək üçün istifadə edirik.",
+      "status": {
+        "have": "Var",
+        "in_progress": "Hazırlanır",
+        "none": "Yoxdur"
+      },
+      "visaCountries": "Hansı ölkələrdə etibarlıdır?",
+      "expectedDate": "Gözlənilən alma tarixi",
+      "eduKind": "Hansı sənəd?",
+      "eduSchool": "Məktəb attestatı",
+      "eduDiploma": "Diplom (kollec və ya universitet)",
+      "items": {
+        "passport": "Beynəlxalq pasport",
+        "study_visa": "Təhsil vizası və ya yaşayış icazəsi",
+        "education": "Məktəb attestatı / diplom",
+        "transcript": "Qiymətlər cədvəli (transkript)",
+        "apostille": "Apostil və ya konsulluq leqallaşdırılması",
+        "notarized_translation": "Sənədlərin notarial təsdiqli tərcüməsi",
+        "recognition": "Təhsil sənədlərinin tanınması (nostrifikasiya)",
+        "proof_of_funds": "Maliyyə təminatı sənədi (çıxarış, sponsor məktubu, bloklanmış hesab)",
+        "health_insurance": "Tibbi sığorta",
+        "parental_consent": "Xaricdə oxumaq üçün valideynlərin notarial razılığı (18 yaşdan kiçiklər üçün)"
+      }
+    },
+    "account": {
+      "email": "E-poçt",
+      "emailWhy": "Daxil olmaq və xidmət mesajları üçün.",
+      "password": "Parol",
+      "passwordHint": "Ən azı 10 simvol, bir hərf və bir rəqəm ilə.",
+      "show": "Parolu göstər",
+      "hide": "Parolu gizlət",
+      "consent": "<privacy>Məxfilik siyasəti</privacy> və <terms>istifadə şərtləri</terms> ilə tanış oldum və qəbul edirəm.",
+      "marketing": "Mənə e-poçtla xəbərlər və məsləhətlər göndərin (könüllü).",
+      "checkEmailTitle": "E-poçtunu yoxla",
+      "checkEmailText": "{email} ünvanına təsdiq keçidi göndərdik. Qeydiyyatı tamamlamaq üçün onu aç. Spam qovluğuna da bax.",
+      "resend": "Keçidi yenidən göndər",
+      "resent": "Keçid yenidən göndərildi.",
+      "notConfigured": "Qeydiyyat hazırda mümkün deyil: xidmət hələ konfiqurasiya olunmayıb."
+    },
+    "underage": {
+      "title": "Üzr istəyirik",
+      "text": "Hələ qeydiyyatdan keçə bilməzsən: ölkəndə minimum yaş {age}-dir. Hesab yaradılmadı və yazdığın heç nə saxlanılmadı.",
+      "home": "Ana səhifəyə qayıt"
+    },
+    "errors": {
+      "required": "Zəhmət olmasa, bu sahəni doldur",
+      "birthInvalid": "Düzgün doğum tarixi daxil et",
+      "dateInvalid": "Düzgün tarix daxil et",
+      "residenceRequired": "Yaşadığın ölkəni seç",
+      "ageCheckRequired": "Zəhmət olmasa, yaşını təsdiqlə",
+      "emailInvalid": "Düzgün e-poçt ünvanı daxil et",
+      "consentRequired": "Bu razılıq vacibdir",
+      "passwordTooShort": "Ən azı 10 simvol istifadə et",
+      "passwordNeedsLetter": "Bir hərf əlavə et",
+      "passwordNeedsDigit": "Bir rəqəm əlavə et",
+      "passwordCommon": "Bu parol çox yayılıb",
+      "passwordLikeEmail": "Parolda e-poçtundakı ad olmamalıdır",
+      "signUpFailed": "Hesab yaradıla bilmədi. Zəhmət olmasa, yenidən cəhd et.",
+      "rateLimit": "Çox cəhd edildi. Zəhmət olmasa, bir neçə dəqiqə gözləyib yenidən cəhd et.",
+      "network": "Bağlantı yoxdur. İnterneti yoxlayıb yenidən cəhd et."
+    }
+  },
+  "Login": {
+    "title": "Daxil ol",
+    "email": "E-poçt",
+    "password": "Parol",
+    "submit": "Daxil ol",
+    "submitting": "Daxil olunur…",
+    "forgot": "Parolu unutmusan?",
+    "noAccount": "Hələ hesabın yoxdur?",
+    "register": "Yarat",
+    "resend": "Təsdiq keçidini yenidən göndər",
+    "resent": "Keçid yenidən göndərildi. E-poçtunu yoxla.",
+    "notConfigured": "Giriş hazırda mümkün deyil: xidmət hələ konfiqurasiya olunmayıb.",
+    "notices": {
+      "link": "Bu keçidin vaxtı bitib və ya başqa brauzerdə açılıb. E-poçtunu artıq təsdiqləmisənsə, sadəcə daxil ol."
+    },
+    "errors": {
+      "invalid": "E-poçt və ya parol yanlışdır.",
+      "notConfirmed": "Əvvəlcə e-poçtunu təsdiqlə: sənə göndərdiyimiz keçidi aç.",
+      "generic": "Daxil olmaq mümkün olmadı. Zəhmət olmasa, yenidən cəhd et.",
+      "rateLimit": "Çox cəhd edildi. Zəhmət olmasa, bir neçə dəqiqə gözləyib yenidən cəhd et.",
+      "google": "Google ilə daxil olmaq mümkün olmadı. Zəhmət olmasa, yenidən cəhd et.",
+      "captcha": "Zəhmət olmasa, təhlükəsizlik yoxlamasını tamamla."
+    },
+    "google": "Google ilə davam et",
+    "googleNotice": "Google ilə davam etməklə <privacy>Məxfilik siyasətini</privacy> və <terms>İstifadə şərtlərini</terms> qəbul edirsən.",
+    "or": "və ya e-poçtla"
+  },
+  "Forgot": {
+    "title": "Parolu sıfırla",
+    "text": "E-poçtunu daxil et, yeni parol təyin etmək üçün keçid göndərək.",
+    "email": "E-poçt",
+    "submit": "Keçidi göndər",
+    "sent": "Bu ünvanda hesab varsa, keçid yoldadır. E-poçtunu yoxla.",
+    "back": "Girişə qayıt"
+  },
+  "Reset": {
+    "title": "Yeni parol təyin et",
+    "newPassword": "Yeni parol",
+    "submit": "Parolu saxla",
+    "done": "Parol dəyişdirildi. Növbəti girişdə ondan istifadə et.",
+    "toProfile": "Profilinə keç",
+    "noSession": "Bu keçidin vaxtı bitib. Zəhmət olmasa, yenisini tələb et.",
+    "requestNew": "Yeni keçid tələb et"
+  },
+  "Profile": {
+    "title": "Profilin",
+    "loading": "Yüklənir…",
+    "loadFailed": "Profilin yüklənmədi. Səhifəni yenilə və ya sonra yenidən cəhd et.",
+    "welcome": "E-poçtun təsdiqləndi. YourHEI-yə xoş gəldin!",
+    "email": "E-poçt",
+    "plan": "Plan",
+    "planFree": "Pulsuz",
+    "planPremium": "Premium",
+    "sections": {
+      "search": "Nə axtarırsan",
+      "about": "Sənin haqqında",
+      "documents": "Sənədlər",
+      "privacy": "E-poçt və məxfilik"
+    },
+    "save": "Saxla",
+    "saving": "Saxlanılır…",
+    "saved": "Saxlanıldı",
+    "saveFailed": "Saxlamaq mümkün olmadı. Zəhmət olmasa, yenidən cəhd et.",
+    "ageBlocked": "Bu doğum tarixi və ya ölkə minimum yaşa ({age}) uyğun gəlmir.",
+    "marketing": "Mənə e-poçtla xəbərlər və məsləhətlər göndərin",
+    "survey": {
+      "title": "Uyğunlaşdırma sorğusunu doldur",
+      "text": "Uyğun müəssisələr əldə etmək üçün məqsədlərin, nəticələrin və büdcən barədə suallara cavab ver.",
+      "open": "Sorğuya keç"
+    },
+    "data": {
+      "title": "Məlumatların",
+      "exportText": "Sənin haqqında saxladığımız hər şeyi fayl kimi yüklə.",
+      "export": "Məlumatlarımı yüklə",
+      "exportFailed": "Fayl hazırlanmadı. Zəhmət olmasa, yenidən cəhd et.",
+      "deleteText": "Hesabını və bütün məlumatlarını sil. Bunu geri qaytarmaq olmaz.",
+      "delete": "Hesabı və bütün məlumatları sil",
+      "confirmText": "Əminsən? Profilin, sənədlərin və girişin dərhal silinəcək.",
+      "confirm": "Bəli, hamısını sil",
+      "cancel": "Ləğv et",
+      "deleteFailed": "Hesabı silmək mümkün olmadı. Zəhmət olmasa, yenidən cəhd et."
+    },
+    "complete": {
+      "title": "Profilini tamamla",
+      "text": "Vətəndaşlığını, axtardığın bölgələri və müəssisə növlərini, həmçinin sənədlərini əlavə et. Bunların hamısını istənilən vaxt dəyişə bilərsən."
+    },
+    "ageNeeded": "Davam etmək üçün doğum tarixini və yaşadığın ölkəni əlavə et: minimum yaşı yoxlamaq üçün onlara ehtiyacımız var."
+  },
+  "Legal": {
+    "privacy": {
+      "s1Title": "Biz kimik",
+      "s1Text": "YourHEI abituriyentlərə harada oxuyacaqlarını seçməkdə kömək edən xidmətdir. Bu siyasət hansı məlumatları topladığımızı və onlardan necə istifadə etdiyimizi izah edir. Saytdan istifadə etməklə onunla razılaşırsan.",
+      "s2Title": "Nə toplayırıq",
+      "s2Text": "Hesab məlumatları (e-poçt və parolun qorunan forması); profil məlumatları (doğum tarixi, versən cins, yaşadığın ölkə, vətəndaşlıqlar, nə axtardığın, sənədlərinin statusu); sorğu cavabların; həmçinin kukilər və oxşar texnologiyalar vasitəsilə texniki və istifadə məlumatları (baxdığın səhifələr, saytdakı hərəkətlər, cihaz, brauzer, dil, IP ünvanı, təxmini yer, gəldiyin sayt).",
+      "s3Title": "Nə üçün toplayırıq",
+      "s3Text": "Xidməti işlətmək və təkmilləşdirmək, minimum yaşı yoxlamaq, uyğunluqlarını yaratmaq, səninlə əlaqə saxlamaq, saytın necə istifadə olunduğunu ölçmək, reklam göstərmək, tədqiqat aparmaq, xidmətin təhlükəsizliyini təmin etmək və qanuni öhdəlikləri yerinə yetirmək üçün.",
+      "s4Title": "Analitika və paylaşma",
+      "s4Text": "Analitika və reklam alətlərindən istifadə edə bilərik. Analitika və istifadə məlumatlarını, həmçinin topladığımız digər məlumatları harada olmasından asılı olmayaraq, o cümlədən başqa ölkələrdə yerləşən analitika, reklam, hostinq və digər provayderlərə və tərəfdaşlara göndərə bilərik.",
+      "s5Title": "Məlumatlardan necə istifadə edə bilərik",
+      "s5Text": "Qanunun icazə verdiyi həddə topladığımız məlumatlardan münasib bildiyimiz kimi istifadə edə bilərik: xidməti işlətmək, fərdiləşdirmək, təhlil etmək və təkmilləşdirmək, yeni məhsul və xidmətlər hazırlamaq, reklam etmək, statistika və tədqiqat nəticələrini, o cümlədən ümumiləşdirilmiş və ya anonimləşdirilmiş şəkildə, dərc etmək və ya paylaşmaq üçün.",
+      "s6Title": "Saxlanma",
+      "s6Text": "Məlumatlar sən hesabını silənə qədər provayderlərimizdə (məsələn, verilənlər bazası provayderində) saxlanılır. Texniki jurnallar və ehtiyat nüsxələr bundan sonra da bir müddət saxlanıla bilər.",
+      "s7Title": "Hüquqların",
+      "s7Text": "Profilində məlumatlarını redaktə edə, onların surətini yükləyə, e-poçt göndərilməsini söndürə və hesabını bütün məlumatlarla birlikdə silə bilərsən. Qanunun sənə daha çox hüquq verdiyi yerlərdə, məsələn, Aİ, Avropa İqtisadi Məkanı və ya Birləşmiş Krallıqda, onlara əməl edirik.",
+      "s8Title": "Minimum yaş",
+      "s8Text": "Yalnız yaşadıqları ölkənin minimum yaşına çatmış şəxsləri qeydiyyata alırıq (ölkədən asılı olaraq 14, 16 və ya 18). Daha gənc olsan, hesab yaradılmır və yazdığın heç nə saxlanılmır.",
+      "s9Title": "Kukilər və oxşar texnologiyalar",
+      "s9Text": "Dilin, mövzun və girişin üçün, həmçinin analitika və reklam üçün kukilərdən və oxşar texnologiyalardan istifadə edirik. Qanun tələb etdiyi yerlərdə əvvəlcə razılığını soruşuruq.",
+      "s10Title": "Dəyişikliklər",
+      "s10Text": "Bu siyasəti dəyişə bilərik. Yuxarıdakı tarix ən son versiyanı göstərir; dəyişiklikdən sonra saytdan istifadə etməyə davam etsən, yeni versiyanı qəbul etmiş olursan."
+    },
+    "terms": {
+      "s1Title": "Xidmət",
+      "s1Text": "YourHEI təhsil müəssisələrini xəritədə göstərir və cavablarına əsasən variantlar təklif edir. Abituriyentlər üçün pulsuzdur.",
+      "s2Title": "Hesabın",
+      "s2Text": "Doğru məlumat ver və parolunu gizli saxla. Bir şəxs, bir hesab. Yaşadığın ölkənin minimum yaşına çatmış olmalısan.",
+      "s3Title": "Məlumat, məsləhət deyil",
+      "s3Text": "Müəssisələr haqqında məlumatlar açıq və rəsmi mənbələrdən götürülür, köhnəlmiş və ya natamam ola bilər. Müraciət etməzdən əvvəl həmişə rəsmi vebsayta bax. Təklif qəbul vədi deyil.",
+      "s4Title": "Ədalətli istifadə",
+      "s4Text": "Xidmətdən sui-istifadə etmə: məlumatların avtomatik kütləvi toplanması, onu pozmağa cəhdlər, yalan bildirişlər qadağandır.",
+      "s5Title": "Məlumatlar və analitika",
+      "s5Text": "Xidmətdən istifadə etməklə analitika və istifadə məlumatlarını toplaya biləcəyimizlə, onları harada olmasından asılı olmayaraq seçdiyimiz üçüncü tərəflərə göndərə biləcəyimizlə və topladığımız bütün məlumatlardan Məxfilik siyasətində təsvir olunduğu kimi, qanunun icazə verdiyi həddə münasib bildiyimiz qaydada istifadə edə biləcəyimizlə razılaşırsan.",
+      "s6Title": "Reklam və üçüncü tərəflər",
+      "s6Text": "Sayt reklam göstərir və üçüncü tərəflərin saytlarına keçid verə bilər. Onların məzmununa və təkliflərinə görə məsuliyyət daşımırıq.",
+      "s7Title": "Dəyişikliklər və dayandırma",
+      "s7Text": "Xidməti və bu şərtləri dəyişə bilərik; dəyişiklikdən sonra xidmətdən istifadə etməyə davam etsən, onu qəbul etmiş olursan. Hesabını istənilən vaxt silə bilərsən.",
+      "s8Title": "Məsuliyyət",
+      "s8Text": "Xidmət olduğu kimi, zəmanətsiz təqdim olunur və qanunun icazə verdiyi həddə ondan istifadədən yaranan itkilərə görə məsuliyyət daşımırıq."
+    },
+    "updated": "Son yenilənmə: {date}"
+  },
+  "Survey": {
+    "title": "Uyğunlaşdırma sorğun",
+    "intro": "Məqsədlərin, nəticələrin, dillərin və büdcən barədə suallara cavab ver. Təxminən 15 sual məcburidir; qalanları könüllüdür və bir kliklə keçilə bilər. Cavabların irəlilədikcə saxlanılır.",
+    "hub": {
+      "start": "Sorğuya başla",
+      "continue": "Qaldığın yerdən davam et",
+      "discard": "Ləğv et və yenidən başla",
+      "startedOn": "Bu sorğuya {date} tarixində başlamısan.",
+      "again": "Sorğunu yenidən doldur",
+      "past": "Tamamladığın sorğular",
+      "pastItem": "{date} tarixində tamamlanıb",
+      "noteRetake": "Tamamlanmış sorğunu dəyişmək olmaz. Planların dəyişərsə, sorğunu yenidən doldur: yeni cavablardan istifadə olunacaq.",
+      "profileHint": "Məsləhət: daha yaxşı nəticə üçün əvvəlcə profilini doldur (vətəndaşlıq, bölgələr, sənədlər)."
+    },
+    "done": {
+      "title": "Təşəkkürlər! Sorğu tamamlandı.",
+      "text": "Cavabların saxlanıldı. Sənə ən yaxşı uyğun gələn müəssisələrə bax.",
+      "toProfile": "Profilimə qayıt",
+      "toMatches": "Uyğunluqlarımı gör"
+    },
+    "ui": {
+      "loading": "Yüklənir…",
+      "loadFailed": "Sorğu yüklənmədi. Zəhmət olmasa, səhifəni yenilə və ya sonra yenidən cəhd et.",
+      "questionOf": "Sual {current} / {total}",
+      "requiredLeft": "{count, plural, one {# məcburi sual qalıb} other {# məcburi sual qalıb}}",
+      "optional": "Könüllü",
+      "back": "Geri",
+      "next": "Növbəti",
+      "skip": "Keç",
+      "skipAll": "Bütün könüllü sualları keç",
+      "finish": "Bitir",
+      "saving": "Saxlanılır…",
+      "saveFailed": "Cavabın saxlanılmadı. Bağlantını yoxlayıb yenidən cəhd et.",
+      "saveAndExit": "Saxla və sonra davam et",
+      "progressLabel": "Sorğunun gedişi",
+      "add": "Əlavə et",
+      "remove": "Sil",
+      "search": "Ad üzrə axtar",
+      "choose": "Seç…",
+      "approximate": "Qiymətləndirmə sistemləri arasındakı çevirmələr təxminidir.",
+      "noMatches": "Heç nə tapılmadı",
+      "moveUp": "Yuxarı apar",
+      "moveDown": "Aşağı apar",
+      "counter": "{count} variantdan {chosen} seçilib",
+      "range": "{min} ilə {max} arasında"
+    },
+    "errors": {
+      "required": "Zəhmət olmasa, bu suala cavab ver",
+      "invalid": "Zəhmət olmasa, bu cavabı yoxla",
+      "outOfRange": "Bu dəyər icazə verilən aralıqdan kənardadır",
+      "tooMany": "Çox seçim",
+      "priorities": "Tam olaraq 3 fərqli element seç"
+    },
+    "education": {
+      "level": "Hazırkı təhsil",
+      "year": "Bitirmə ili (və ya gözlənilən)",
+      "levels": {
+        "school_9": "Məktəb, 9-cu sinfə qədər",
+        "school_11": "Məktəb, 10–12-ci siniflər",
+        "college": "Kollec",
+        "bachelor": "Bakalavr",
+        "master": "Magistr",
+        "other": "Digər"
+      }
+    },
+    "grade": {
+      "none": "Hələ qiymətlərim yoxdur",
+      "system": "Qiymətləndirmə sistemi",
+      "value": "Orta qiymətin",
+      "range": "{min} ilə {max} arasında"
+    },
+    "subjects": {
+      "subject": "Fənn",
+      "grade": "Qiymət"
+    },
+    "exams": {
+      "exam": "İmtahan",
+      "score": "Bal",
+      "range": "Mümkün aralıq: {min} ilə {max} arası"
+    },
+    "languages": {
+      "language": "Dil",
+      "level": "Səviyyən",
+      "certificate": "Sertifikat (könüllü)",
+      "certValue": "Bal və ya səviyyə",
+      "none": "Sertifikat yoxdur",
+      "addLanguage": "Dil əlavə et"
+    },
+    "selfLevels": {
+      "a1": "Bir neçə ifadə bilirəm",
+      "a2": "Sadə gündəlik mövzular",
+      "b1": "Səyahətdə və işdə özümü ifadə edə bilirəm",
+      "b2": "Əksər mövzularda sərbəst danışıram",
+      "c1": "Bu dildə oxuya bilərəm",
+      "c2": "Ana dili daşıyıcısı kimi",
+      "native": "Ana dilim"
+    },
+    "studyLanguages": {
+      "languages": "Oxumağa hazır olduğum dillər",
+      "prepYear": "Dil hazırlığı ili keçərdinmi?",
+      "yes": "Bəli",
+      "no": "Xeyr"
+    },
+    "budget": {
+      "currency": "Valyuta",
+      "tuition": "İllik təhsil haqqı",
+      "living": "İllik yaşayış xərcləri"
+    },
+    "olympiads": {
+      "subject": "Fənn",
+      "level": "Səviyyə",
+      "place": "Yer"
+    },
+    "olympiadLevels": {
+      "school": "Məktəb",
+      "regional": "Regional",
+      "national": "Milli",
+      "international": "Beynəlxalq"
+    },
+    "priorities": {
+      "price": "Qiymət",
+      "prestige": "Nüfuz",
+      "location": "Ölkə və şəhər",
+      "chances": "Qəbul şansları",
+      "field": "Təhsil sahəsi",
+      "career": "Karyera perspektivləri"
+    },
+    "riasec": {
+      "intro": "Hər bir ifadəni 1-dən 5-ə qədər qiymətləndir. Düzgün və ya yanlış cavab yoxdur.",
+      "scale": {
+        "1": "mənlik deyil",
+        "2": "daha çox yox",
+        "3": "neytral",
+        "4": "daha çox bəli",
+        "5": "tam mənəm"
+      },
+      "items": {
+        "0": "Əllərimlə və ya alətlərlə nəyisə təmir etməyi və ya düzəltməyi sevirəm.",
+        "1": "Nəyinsə necə işlədiyini təcrübə və ya məlumat təhlili ilə anlamağı sevirəm.",
+        "2": "Orijinal bir şey yaratmağı sevirəm: yazmaq, çəkmək, dizayn etmək və ya bəstələmək.",
+        "3": "Başqalarına kömək etməyi, öyrətməyi və ya onlara qayğı göstərməyi sevirəm.",
+        "4": "Komandaya rəhbərlik etməyi və ya başqalarını fikrimə inandırmağı sevirəm.",
+        "5": "Məlumatı sistemləşdirməyi, qeydlər aparmağı və aydın prosedurlara əməl etməyi sevirəm.",
+        "6": "Açıq havada, maşınlarla, heyvanlarla və ya bitkilərlə işləməkdən zövq alıram.",
+        "7": "Çətin tapmaca və ya riyaziyyat məsələsi həll etməkdən zövq alıram.",
+        "8": "Fikirləri musiqi, teatr və ya vizual media ilə ifadə etməyi sevirəm.",
+        "9": "İnsanları dinləməkdə və çətin anlarında onlara dəstək olmaqda yaxşıyam.",
+        "10": "Layihə və ya biznes qurmağı və risk etməyi sevirəm.",
+        "11": "Hər şey tam lazım olduğu kimi getsin deyə büdcələri, cədvəlləri və təfərrüatları planlaşdırmağı sevirəm."
+      },
+      "suggestions": "Sənə uyğun ola biləcək istiqamətlər",
+      "suggestionsHint": "Xoşuna gələnləri saxla. Ən azı biri lazımdır.",
+      "answerAll": "Təklif olunan istiqamətləri görmək üçün 12 ifadənin hamısına cavab ver."
+    },
+    "q": {
+      "level": {
+        "title": "Nə oxumaq istəyirsən?",
+        "options": {
+          "school": "Məktəb",
+          "college": "Kollec",
+          "foundation": "Hazırlıq ili",
+          "bachelor": "Bakalavr",
+          "master": "Magistr",
+          "phd": "Doktorantura",
+          "language_course": "Dil kursları"
+        }
+      },
+      "situation": {
+        "title": "Vəziyyətin necədir?",
+        "options": {
+          "first": "İlk dəfə müraciət edirəm",
+          "transfer": "Kreditlərimi saxlayaraq köçmək istəyirəm",
+          "second_degree": "İkinci diplom"
+        }
+      },
+      "start": {
+        "title": "Nə vaxt başlamaq istəyirsən?"
+      },
+      "format": {
+        "title": "Hansı təhsil formatı?",
+        "options": {
+          "on_campus": "Kampusda",
+          "online": "Onlayn",
+          "blended": "Qarışıq",
+          "any": "Fərqi yoxdur"
+        }
+      },
+      "field_certainty": {
+        "title": "Sahənə nə qədər əminsən?",
+        "options": {
+          "sure": "Dəqiq bilirəm",
+          "few": "Bir neçə variantım var",
+          "unknown": "Bilmirəm, zəhmət olmasa, kömək edin"
+        }
+      },
+      "fields": {
+        "title": "Hansı sahələr səni maraqlandırır?",
+        "hint": "3-dək seç; birincisi ən vacibidir. Konkret ixtisasa qədər enə bilərsən."
+      },
+      "riasec": {
+        "title": "Sənə uyğun istiqamətləri tapaq",
+        "hint": "Nə etməyi xoşladığın barədə on iki qısa ifadə."
+      },
+      "diploma_field": {
+        "title": "Əvvəlki diplomun hansı sahədə idi?",
+        "hint": "Bakalavr və ya magistr diplomunun sahəsini seç."
+      },
+      "school_profile": {
+        "title": "Hansı məktəb profilini istəyirsən?"
+      },
+      "school_grade": {
+        "title": "Hansı sinfə daxil olmaq istəyirsən?"
+      },
+      "school_program": {
+        "title": "Hansı proqram?",
+        "options": {
+          "national": "Milli",
+          "ib": "IB",
+          "alevel": "A-levels",
+          "american": "Amerika"
+        }
+      },
+      "school_boarding": {
+        "title": "Internat, yoxsa ailə ilə yaşamaq?",
+        "options": {
+          "boarding": "Internat",
+          "family": "Ailəmlə yaşamaq",
+          "any": "Fərqi yoxdur"
+        }
+      },
+      "school_coed": {
+        "title": "Qarışıq, yoxsa tək cinsli məktəb?",
+        "options": {
+          "coed": "Qarışıq",
+          "single_sex": "Tək cinsli",
+          "any": "Seçimim yoxdur"
+        }
+      },
+      "profession": {
+        "title": "Hansı peşəni öyrənmək istəyirsən?"
+      },
+      "college_to_uni": {
+        "title": "Sonradan universitetə keçmək istərdinmi?",
+        "options": {
+          "yes": "Bəli",
+          "no": "Xeyr",
+          "maybe": "Bəlkə"
+        }
+      },
+      "education": {
+        "title": "Hazırkı təhsilin"
+      },
+      "grade": {
+        "title": "Orta qiymətin",
+        "hint": "Ən yaxşı bildiyin qiymətləndirmə sistemini seç."
+      },
+      "subjects": {
+        "title": "Ən yaxşı fənlərin və qiymətlərin",
+        "hint": "5-dək. Qiymətlər əvvəl seçdiyin qiymətləndirmə sisteminə əsasən verilir."
+      },
+      "exams": {
+        "title": "Verdiyin və ya verəcəyin imtahanlar",
+        "hint": "Ballarınla birlikdə milli və ya beynəlxalq imtahanlar."
+      },
+      "languages": {
+        "title": "Hansı dillərdə və nə qədər yaxşı danışırsan?",
+        "hint": "Hər bir dili əlavə et və özünü dürüstcəsinə qiymətləndir. Sertifikat könüllüdür."
+      },
+      "study_languages": {
+        "title": "Hansı dillərdə oxuya bilərsən?"
+      },
+      "olympiads": {
+        "title": "Olimpiadalar və müsabiqələr",
+        "hint": "Fənn, səviyyə və tutduğun yer."
+      },
+      "achievements": {
+        "title": "Nailiyyətlərin",
+        "options": {
+          "projects": "Layihələr",
+          "publications": "Nəşrlər",
+          "sport": "İdman",
+          "creative": "Yaradıcılıq portfeli",
+          "volunteering": "Könüllülük"
+        }
+      },
+      "work_years": {
+        "title": "Neçə il işləmisən?"
+      },
+      "research_topic": {
+        "title": "Tədqiqat mövzun",
+        "hint": "Artıq varsa."
+      },
+      "entrance": {
+        "title": "Nəyə hazırsan?",
+        "options": {
+          "entrance_exams": "Müəssisədə qəbul imtahanları",
+          "interview": "Müsahibə",
+          "creative_contest": "Yaradıcılıq müsabiqəsi"
+        }
+      },
+      "funding": {
+        "title": "Təhsil haqqını necə ödəməyi planlaşdırırsan?",
+        "options": {
+          "free": "Yalnız pulsuz (təhsil haqqı olmayan) yerlər",
+          "paid": "Ödənişli yerlər",
+          "both": "Hər ikisi"
+        }
+      },
+      "budget": {
+        "title": "İllik büdcən",
+        "hint": "İllik təhsil haqqı və yaşayış xərcləri, bir valyutada."
+      },
+      "scholarship": {
+        "title": "Təqaüdə ehtiyacın var?",
+        "options": {
+          "yes": "Bəli, ehtiyacım var",
+          "no": "Xeyr",
+          "maybe": "Kömək edərdi"
+        }
+      },
+      "loan": {
+        "title": "Təhsil krediti haqqında düşünərdinmi?",
+        "options": {
+          "yes": "Bəli",
+          "no": "Xeyr"
+        }
+      },
+      "rating": {
+        "title": "Müəssisənin reytinqi nə qədər vacibdir?",
+        "options": {
+          "top_world": "Dünyanın ən yaxşıları sırasında",
+          "top_country": "Ölkənin ən yaxşıları sırasında",
+          "any": "Vacib deyil"
+        }
+      },
+      "ownership": {
+        "title": "Dövlət, yoxsa özəl?",
+        "options": {
+          "public": "Dövlət",
+          "private": "Özəl",
+          "any": "Vacib deyil"
+        }
+      },
+      "size": {
+        "title": "Böyük, yoxsa kiçik müəssisə?",
+        "options": {
+          "large": "Böyük",
+          "small": "Kiçik",
+          "any": "Vacib deyil"
+        }
+      },
+      "strategy": {
+        "title": "Uyğunluqların nə qədər iddialı olsun?",
+        "options": {
+          "safe": "Yalnız təhlükəsiz şanslar",
+          "balanced": "Balanslı",
+          "ambitious": "İddialı"
+        }
+      },
+      "extras": {
+        "title": "Diplomdan başqa nə vacibdir?",
+        "options": {
+          "internship": "Təcrübə və praktika",
+          "double_degree": "İkili diplom",
+          "exchange": "Mübadilə semestri"
+        }
+      },
+      "recognition": {
+        "title": "Diplom ölkəndə tanınmalıdırmı?",
+        "options": {
+          "yes": "Bəli",
+          "no": "Xeyr",
+          "any": "Vacib deyil"
+        }
+      },
+      "city_size": {
+        "title": "Hansı şəhər tipini üstün tutursan?",
+        "options": {
+          "megapolis": "Böyük metropol",
+          "medium": "Orta ölçülü şəhər",
+          "small_student": "Kiçik tələbə şəhərciyi",
+          "any": "Vacib deyil"
+        }
+      },
+      "climate": {
+        "title": "Hansı iqlimi üstün tutursan?",
+        "options": {
+          "warm": "İsti",
+          "temperate": "Mülayim",
+          "cold": "Soyuq",
+          "any": "Vacib deyil"
+        }
+      },
+      "dorm": {
+        "title": "Yataqxanaya ehtiyacın var?",
+        "options": {
+          "yes": "Bəli",
+          "no": "Xeyr",
+          "any": "Vacib deyil"
+        }
+      },
+      "work_during": {
+        "title": "Oxuyarkən işləmək istəyirsən?",
+        "options": {
+          "yes": "Bəli",
+          "no": "Xeyr",
+          "maybe": "Bəlkə"
+        }
+      },
+      "after": {
+        "title": "Təhsildən sonrakı planların",
+        "options": {
+          "stay": "Ölkədə qalmaq",
+          "return": "Evə qayıtmaq",
+          "unknown": "Hələ əmin deyiləm"
+        }
+      },
+      "family": {
+        "title": "Kiminləsə səyahət edirsən?",
+        "hint": "Könüllü.",
+        "options": {
+          "partner": "Həyat yoldaşı ilə",
+          "children": "Uşaqlarla"
+        }
+      },
+      "accessibility": {
+        "title": "Əlçatan mühitə ehtiyacın var?",
+        "options": {
+          "yes": "Bəli",
+          "no": "Xeyr",
+          "prefer_not": "Deməməyi üstün tuturam"
+        }
+      },
+      "priorities": {
+        "title": "Ən vacib 3 şeyi seç",
+        "hint": "Bu, uyğunluqlarını sıralayarkən nəyin ən çox nəzərə alınacağını müəyyən edir."
+      }
+    }
+  },
+  "Matches": {
+    "title": "Uyğunluqların",
+    "loading": "Ən yaxşı uyğunluqlar axtarılır…",
+    "failed": "Uyğunluqlar yüklənmədi. Zəhmət olmasa, səhifəni yenilə və ya sonra yenidən cəhd et.",
+    "noSurvey": {
+      "title": "Əvvəlcə sorğunu doldur",
+      "text": "Uyğunluqlar sorğu cavablarından və profilindən qurulur.",
+      "cta": "Sorğuya keç"
+    },
+    "basedOn": "{date} tarixli sorğuna və profilinə əsasən.",
+    "noData": {
+      "title": "Proqram məlumatları əlavə olunur",
+      "text": "Proqramlar barədə məlumatları (təhsil haqqı, dillər, tələblər) toplayır və yoxlayırıq. Yoxlanmış proqramlar dərc olunan kimi uyğunluqlar burada görünəcək."
+    },
+    "summary": "{checked} proqramı yoxladıq; {passed} proqram tələblərinə uyğundur.",
+    "nothing": {
+      "title": "Hələ heç bir proqram bütün tələblərinə uyğun deyil",
+      "text": "Daha geniş seçimlər sına: profilində daha çox ölkə və ya növ, başqa büdcə və ya hazırlıq ili. Yeni proqramlar mütəmadi olaraq əlavə olunur.",
+      "profile": "Profilimi redaktə et",
+      "survey": "Sorğunu yenidən doldur"
+    },
+    "groups": {
+      "safe": {
+        "title": "Təhlükəsiz seçimlər",
+        "text": "Tələbləri ehtiyatla ödəyirsən."
+      },
+      "suitable": {
+        "title": "Uyğun seçimlər",
+        "text": "Tələbləri ödəyirsən."
+      },
+      "ambitious": {
+        "title": "İddialı seçimlər",
+        "text": "Bəzi tələblərdən bir az aşağı, amma cəhd etməyə dəyər."
+      }
+    },
+    "retake": "Sorğunu yenidən doldur",
+    "editProfile": "Profilimi redaktə et",
+    "credits": {
+      "live": "Valyuta məzənnələri:",
+      "fallback": "Valyuta məzənnələri təxminidir (canlı məzənnələr əlçatan deyil). Mənbə:"
+    },
+    "card": {
+      "score": "Uyğunluq balı 100-dən {score}",
+      "languages": "Təhsil dili",
+      "duration": "Müddət",
+      "years": "{count, plural, one {# il} other {# il}}",
+      "tuition": "Təhsil haqqı",
+      "free": "Pulsuz",
+      "perYear": "il",
+      "tuitionUnknown": "məlumat yoxdur",
+      "why": "Niyə uyğundur",
+      "gaps": "Nə çatışmır",
+      "noData": "Məlumat yoxdur:",
+      "apply": "Rəsmi saytda müraciət et"
+    },
+    "components": {
+      "academic": "tələblər",
+      "field": "ixtisas",
+      "prestige": "reytinq",
+      "preferences": "şəhər və müəssisə",
+      "extras": "əlavələr",
+      "life": "mənzil və iş",
+      "budget": "büdcə"
+    },
+    "notes": {
+      "why": {
+        "academic": "Qiymətlərin və sertifikatların tələbləri ödəyir.",
+        "field": "{match, select, exact {Dəqiq sənin ixtisasın.} narrow {İxtisasına yaxın.} broad {Eyni geniş təhsil sahəsi.} other {Sahənlə əlaqəli.}}",
+        "prestige": "İstədiyin kimi, reytinqdə yüksək yerdədir.",
+        "preferences": "Müəssisə və şəhərlə bağlı istəklərinə uyğundur.",
+        "extras": "İstədiyin əlavələri təklif edir.",
+        "life": "Yaxşı şərait: mənzil və iş qaydaları.",
+        "budget": "Büdcənə uyğundur."
+      },
+      "gap": {
+        "gpa": "Orta qiymət: {need} tələb olunur, səndə {have} var.",
+        "language": "{exam}: {need} tələb olunur, səndə {have} var.",
+        "exam": "{exam}: {need} tələb olunur, səndə {have} var.",
+        "exam_missing": "{exam} {need} tələb olunur və səndə hələ nəticə yoxdur.",
+        "prep_year": "{languages} dilində tədris olunur: dil hazırlığı iline ehtiyacın olacaq.",
+        "over_budget": "Təhsil haqqı ildə təxminən {cost} {currency}-dir, bu da {budget} {currency} olan büdcəndən yüksəkdir."
+      }
+    },
+    "saved": {
+      "title": "Bu nəticələri saxla",
+      "text": "Bu siyahının surətini saxla. Onu sonra aça və ya valideynə, ya da dosta şəxsi keçid göndərə bilərsən.",
+      "save": "Bu siyahını saxla",
+      "failed": "Saxlamaq mümkün olmadı. Zəhmət olmasa, yenidən cəhd et.",
+      "item": "{date} tarixli siyahı · {count, plural, one {# proqram} other {# proqram}}",
+      "open": "Aç",
+      "share": "Keçid yarat",
+      "stopSharing": "Paylaşmanı dayandır",
+      "delete": "Sil",
+      "linkLabel": "Bu siyahıya keçid",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı",
+      "anyoneWithLink": "Bu keçidi olan hər kəs siyahını görə bilər (adın olmadan)."
+    }
+  },
+  "Ads": {
+    "label": "Reklam"
+  },
+  "Compare": {
+    "title": "Proqramları müqayisə et",
+    "intro": "3-dək proqram yan-yana. Qiymətlər müəssisənin dərc etdiyi kimidir.",
+    "add": "Müqayisə et",
+    "remove": "Müqayisədən çıxar",
+    "bar": "{count, plural, one {# proqram seçilib} other {# proqram seçilib}}",
+    "open": "Müqayisə et",
+    "clear": "Təmizlə",
+    "empty": "Hələ müqayisə ediləcək bir şey yoxdur. Uyğunluqlarında Müqayisə et düyməsi ilə proqramları seç.",
+    "needTwo": "Müqayisə üçün ən azı iki proqram seç.",
+    "loading": "Yüklənir…",
+    "failed": "Proqramlar yüklənmədi. Zəhmət olmasa, yenidən cəhd et.",
+    "back": "Uyğunluqlarıma qayıt",
+    "max": "3-dək proqramı müqayisə edə bilərsən.",
+    "rows": {
+      "institution": "Müəssisə",
+      "location": "Yer",
+      "level": "Səviyyə",
+      "duration": "Müddət",
+      "languages": "Tədris dili",
+      "tuition": "Təhsil haqqı",
+      "requirements": "Tələblər",
+      "deadlines": "Son tarixlər",
+      "apply": "Müraciət et"
+    }
+  },
+  "Favorites": {
+    "title": "Siyahım",
+    "intro": "Saxladığın müəssisələr; son tarixlər və lazım olan sənədlərlə birlikdə.",
+    "empty": "Hələ heç nə saxlanılmayıb. Müəssisə aç və Saxla düyməsinə bas.",
+    "emptyCta": "Xəritəni aç",
+    "remove": "Sil",
+    "nextDeadline": "Növbəti son tarix: {date}",
+    "noDeadline": "Yaxınlaşan son tarix dərc olunmayıb",
+    "docsTitle": "Hazırlanacaq sənədlər",
+    "docHave": "hazırdır",
+    "docMissing": "hələ yox",
+    "loading": "Yüklənir…",
+    "failed": "Siyahın yüklənmədi. Zəhmət olmasa, yenidən cəhd et.",
+    "open": "Kartı aç"
+  },
+  "Consent": {
+    "title": "Kukilər və analitika",
+    "text": "Saytın işləməsi üçün zəruri kukilərdən istifadə edirik (dil, mövzu, giriş). İcazən olarsa, analitika və reklam texnologiyalarından da istifadə edirik və bu məlumatları Məxfilik siyasətində təsvir olunduğu kimi tərəfdaşlarımızla paylaşa bilərik.",
+    "accept": "Hamısını qəbul et",
+    "decline": "Yalnız zəruriləri",
+    "policy": "Məxfilik siyasəti",
+    "settings": "Kuki parametrləri"
+  },
+  "Catalog": {
+    "title": "Kataloq",
+    "intro": "Verilənlər bazasındakı bütün proqramlar və müəssisələr. Ölkə, səviyyə, təhsil dili, sahə və qiymətə görə daralt. Qiymətlər seçdiyin valyutada göstərilir.",
+    "modeLabel": "Nə göstərilsin",
+    "mode": {
+      "programs": "Proqramlar",
+      "institutions": "Müəssisələr"
+    },
+    "search": "Adında var",
+    "searchPlaceholder": "məs.: hüquq, dizayn, tibb",
+    "country": "Ölkə",
+    "type": "Növ",
+    "level": "Səviyyə",
+    "language": "Təhsil dili",
+    "field": "Təhsil sahəsi",
+    "any": "Fərqi yoxdur",
+    "maxPrice": "Təhsil haqqı ən çox ({currency}, illik)",
+    "freeOnly": "Yalnız pulsuz təhsil",
+    "apply": "Göstər",
+    "reset": "Sıfırla",
+    "currency": "Valyuta",
+    "loading": "Yüklənir…",
+    "failed": "Kataloq yüklənmədi. Zəhmət olmasa, bir dəqiqə sonra yenidən cəhd et.",
+    "empty": "Heç nə tapılmadı. Daha az filtr sına.",
+    "more": "Daha çox göstər",
+    "years": "{count, plural, one {# il} other {# il}}",
+    "perYear": "ildə {price}",
+    "approx": "çevrilib, təxmini",
+    "priceUnknown": "Qiymət dərc olunmayıb",
+    "total": "≈ yaşayış xərcləri ilə ildə {total} ({living})",
+    "livingUnknown": "Bu ölkənin yaşayış xərcləri hələ məlumatlarımızda yoxdur",
+    "ratesNote": "Qiymətlər gündəlik məzənnə ilə çevrilir və təxminidir. Son söz müəssisənin səhifəsi və rəsmi saytındadır."
+  },
+  "Scholarships": {
+    "title": "Təqaüdlər: harada pulsuz və ya ucuz oxumaq olar",
+    "intro": "Xaricdə təhsili ödəyən dövlət və beynəlxalq proqramlar, həmçinin ayrı-ayrı müəssisələrin təqaüdləri. Həmişə rəsmi səhifəni yoxla: məbləğlər, ölkələr və son tarixlər hər il dəyişir.",
+    "nationalTitle": "Dövlət və beynəlxalq proqramlar",
+    "institutionalTitle": "Müəssisələrin təqaüdləri",
+    "severalCountries": "Bir neçə ölkə",
+    "official": "Rəsmi səhifə",
+    "empty": "Siyahı doldurulur.",
+    "disclaimer": "Proqramları sadalayır və səni rəsmi səhifəyə yönləndiririk; təqaüd alacağına zəmanət vermirik."
+  },
+  "Reviews": {
+    "title": "Tələbə rəyləri",
+    "summary": "{rating} / 5 · {count, plural, one {# rəy} other {# rəy}}",
+    "none": "Hələ rəy yoxdur. Təcrübəsini bölüşən ilk şəxs ol.",
+    "stars": "5-dən {count, plural, one {# ulduz} other {# ulduz}}",
+    "relations": {
+      "student": "Tələbə",
+      "graduate": "Məzun",
+      "applicant": "Abituriyent"
+    },
+    "loginToWrite": "Rəy yazmaq üçün daxil ol",
+    "mine": {
+      "pending": "Təşəkkürlər! Rəyin komandamızın yoxlamasını gözləyir və yoxlanışdan sonra görünəcək.",
+      "published": "Rəyin dərc olundu. Təşəkkürlər!",
+      "rejected": "Əvvəlki rəyin dərc olunmadı. Yenisini yaza bilərsən."
+    },
+    "formTitle": "Rəy yaz",
+    "rating": "Qiymətin",
+    "relation": "Sən",
+    "body": "Təcrübən",
+    "counter": "{count} simvol ({min} ilə {max} arasında)",
+    "rules": "Öz təcrübən barədə dürüst və nəzakətlə yaz. Təhqir, əlaqə məlumatları, reklam və başqalarının şəxsi məlumatları olmasın. Rəylər adın olmadan göstərilir və yoxlanışdan sonra görünür.",
+    "errors": {
+      "rating": "1-dən 5-ə qədər qiymət seç.",
+      "short": "Rəy çox qısadır.",
+      "long": "Rəy çox uzundur.",
+      "failed": "Rəy göndərilmədi. Zəhmət olmasa, yenidən cəhd et."
+    },
+    "send": "Yoxlanışa göndər"
+  },
+  "Shared": {
+    "title": "Paylaşılmış uyğunluqlar",
+    "loading": "Yüklənir…",
+    "missing": "Bu siyahı mövcud deyil və ya sahibi paylaşmanı dayandırıb.",
+    "from": "{date} tarixində saxlanılmış uyğunlaşdırma nəticələri siyahısı. Yalnız proqramlar barədə açıq məlumatları göstərir.",
+    "cta": "Öz uyğunluqlarını istəyirsən? Qısa sorğuya cavab ver və sənə uyğun siyahı əldə et.",
+    "ctaButton": "Sorğuya başla"
+  },
+  "Cabinet": {
+    "title": "Müəssisə hesabı",
+    "intro": "Məktəbi, kolleci və ya universiteti təmsil edirsənsə, onun kartını, qiymətlərini və son tarixlərini özün aktual saxlaya bilərsən.",
+    "loading": "Yüklənir…",
+    "failed": "Hesabın yüklənmədi. Zəhmət olmasa, yenidən cəhd et.",
+    "none": "Hələ heç bir müəssisəni idarə etmirsən. Müəssisənin səhifəsini aç və “Bu müəssisəni təmsil edirəm” düyməsinə bas. Komandamız müraciəti yoxladıqdan sonra onu burada redaktə edə biləcəksən.",
+    "findInstitution": "Müəssisəmi tap",
+    "institution": "Müəssisə",
+    "request": {
+      "pending": "{name}: müraciət komandamızın yoxlamasını gözləyir.",
+      "rejected": "{name}: müraciət təsdiqlənmədi. Səhvdirsə, bizə yaz."
+    },
+    "claim": {
+      "title": "Bu müəssisədə işləyirsən?",
+      "text": "Qiymətləri, son tarixləri və təsviri özün yeniləmək üçün giriş istə. Komandamız hər müraciəti yoxlayır.",
+      "login": "Müraciət göndərmək üçün daxil ol",
+      "openCabinet": "Müəssisə hesabını aç",
+      "pending": "Müraciətin komandamızın yoxlamasını gözləyir.",
+      "rejected": "Müraciətin təsdiqlənmədi. Səhvdirsə, bizə yaz.",
+      "ask": "Bu müəssisəni təmsil edirəm",
+      "position": "Vəzifən",
+      "message": "Onu təmsil etdiyini necə yoxlaya bilərik?",
+      "messageHint": "Məsələn, müəssisənin saytında göstərilən iş e-poçtu və ya qəbul komissiyasının telefonu.",
+      "failed": "Müraciət göndərilmədi. Zəhmət olmasa, yenidən cəhd et.",
+      "send": "Müraciəti göndər"
+    },
+    "card": {
+      "title": "Müəssisə kartı",
+      "website": "Rəsmi vebsayt",
+      "dormitory": "Yataqxana",
+      "unknown": "Göstərilməyib",
+      "yes": "Var",
+      "no": "Yoxdur",
+      "description": {
+        "en": "Təsvir (ingiliscə)",
+        "ru": "Təsvir (rusca)",
+        "original": "Təsvir (yerli dildə)"
+      },
+      "message": {
+        "saved": "Saxlanıldı.",
+        "failed": "Saxlamaq mümkün olmadı. Zəhmət olmasa, yenidən cəhd et.",
+        "url": "Vebsayt ünvanı https:// ilə başlamalıdır"
+      },
+      "save": "Kartı saxla"
+    },
+    "programmes": {
+      "title": "Proqramlar",
+      "add": "Proqram əlavə et",
+      "note": "Qiymətlər xaricdən gələn abituriyentlər üçündür. Saxladığın proqram saytda müəssisənin özü tərəfindən daxil edilmiş kimi qeyd olunur.",
+      "loading": "Yüklənir…",
+      "empty": "Hələ proqram yoxdur.",
+      "more": "Daha çox göstər",
+      "free": "Təhsil haqqı yoxdur",
+      "noPrice": "Qiymət yoxdur",
+      "byYou": "sən daxil etmisən",
+      "close": "Bağla",
+      "edit": "Dəyiş",
+      "delete": "Sil",
+      "confirmDelete": "“{name}” proqramı silinsin?",
+      "nameEn": "Ad (ingiliscə)",
+      "nameOriginal": "Ad (yerli dildə)",
+      "level": "Səviyyə",
+      "languages": "Təhsil dilləri (kodlar)",
+      "duration": "Müddət, il",
+      "amount": "Təhsil haqqının məbləği",
+      "currency": "Valyuta (3 hərf)",
+      "period": "Hər",
+      "periods": {
+        "year": "il",
+        "semester": "semestr",
+        "total": "bütün proqram"
+      },
+      "deadline": "Müraciət üçün son tarix",
+      "applicationUrl": "Müraciət keçidi",
+      "errors": {
+        "name": "Proqramın adını daxil et.",
+        "level": "Səviyyə seç.",
+        "languages": "Dilləri iki hərfli kodlarla yaz, məs.: en, az.",
+        "duration": "Müddət 0 ilə 12 il arasında olmalıdır.",
+        "amount": "Məbləğ rəqəm olmalıdır.",
+        "currency": "Valyuta üç böyük hərfdən ibarət koddur, məs.: USD.",
+        "deadline": "Son tarixin gününü seç.",
+        "url": "Keçid https:// ilə başlamalıdır",
+        "failed": "Saxlamaq mümkün olmadı. Zəhmət olmasa, yenidən cəhd et."
+      },
+      "save": "Saxla",
+      "cancel": "Ləğv et"
+    }
+  }
+}

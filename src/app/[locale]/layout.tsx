@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from 'next';
-import { Noto_Sans, Noto_Sans_Armenian, Noto_Sans_Georgian, Noto_Sans_SC } from 'next/font/google';
+import { Noto_Sans, Noto_Sans_Arabic, Noto_Sans_Armenian, Noto_Sans_Georgian, Noto_Sans_SC } from 'next/font/google';
 import { hasLocale, NextIntlClientProvider } from 'next-intl';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
@@ -14,7 +14,8 @@ import { routing } from '@/i18n/routing';
 import { siteUrl } from '@/lib/site-url';
 import '../globals.css';
 
-// Latin + Cyrillic (incl. Kazakh letters), Armenian, Georgian (Mkhedruli) and Simplified Chinese.
+// Latin (incl. Turkish, Azerbaijani, Polish, Uzbek letters) + Cyrillic (incl. Kazakh and Kyrgyz letters), Armenian,
+// Georgian (Mkhedruli), Arabic and Simplified Chinese.
 const notoSans = Noto_Sans({
   subsets: ['latin', 'latin-ext', 'cyrillic', 'cyrillic-ext'],
   variable: '--font-noto',
@@ -29,6 +30,12 @@ const notoGeorgian = Noto_Sans_Georgian({
 const notoArmenian = Noto_Sans_Armenian({
   subsets: ['armenian'],
   variable: '--font-noto-hy',
+  display: 'swap',
+  preload: false,
+});
+const notoArabic = Noto_Sans_Arabic({
+  subsets: ['arabic'],
+  variable: '--font-noto-ar',
   display: 'swap',
   preload: false,
 });
@@ -80,6 +87,7 @@ export default async function LocaleLayout({
     notoSans.variable,
     notoGeorgian.variable,
     notoArmenian.variable,
+    notoArabic.variable,
     locale === 'zh' ? notoChinese.variable : '',
   ].join(' ');
 

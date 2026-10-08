@@ -124,7 +124,7 @@
 
   /* Fallbacks matter: a font variable that is not loaded (e.g. Chinese outside /zh) must not break the stack. */
   --font-sans:
-    var(--font-noto, system-ui), var(--font-noto-ka, system-ui), var(--font-noto-hy, system-ui), var(--font-noto-sc, system-ui),
+    var(--font-noto, system-ui), var(--font-noto-ka, system-ui), var(--font-noto-hy, system-ui), var(--font-noto-ar, system-ui), var(--font-noto-sc, system-ui),
     system-ui, sans-serif;
 }
 

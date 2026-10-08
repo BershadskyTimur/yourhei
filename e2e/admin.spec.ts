@@ -29,7 +29,7 @@ test.describe('admin panel', () => {
       }),
     );
     await page.goto('/en/admin');
-    await expect(page.getByRole('tab')).toHaveCount(7);
+    await expect(page.getByRole('tab')).toHaveCount(9);
     await expect(page.getByText('42')).toBeVisible();
     await expect(page.getByRole('link', { name: 'Admin' })).toBeVisible();
   });

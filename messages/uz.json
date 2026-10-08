@@ -1,0 +1,1213 @@
+{
+  "Meta": {
+    "title": "YourHEI — maktab, kollej yoki universitetingizni toping",
+    "description": "Yevropa, Osiyo, Amerika, Okeaniya, Kavkaz va Markaziy Osiyodagi universitetlar, kollejlar va maktablar uchun xarita va shaxsiy tanlov."
+  },
+  "Common": {
+    "siteName": "YourHEI",
+    "skipToContent": "Asosiy mazmunga o‘tish",
+    "translationUnavailable": "tarjima mavjud emas"
+  },
+  "Header": {
+    "homeLabel": "YourHEI — bosh sahifa",
+    "login": "Kirish",
+    "language": "Til",
+    "toggleTheme": "Och / to‘q mavzuni almashtirish",
+    "profile": "Profil",
+    "logout": "Chiqish",
+    "matches": "Mening natijalarim",
+    "favorites": "Mening ro‘yxatim",
+    "navLabel": "Asosiy bo‘limlar",
+    "catalog": "Katalog",
+    "scholarships": "Stipendiyalar"
+  },
+  "Footer": {
+    "navLabel": "Sayt haqida ma’lumot",
+    "about": "Loyiha haqida",
+    "contacts": "Aloqa va yordam",
+    "privacy": "Maxfiylik siyosati",
+    "terms": "Foydalanish shartlari",
+    "dataCredit": "Xarita ma’lumotlari © OpenStreetMap hissadorlari, OpenFreeMap.",
+    "rights": "© {year} YourHEI",
+    "tagline": "Qayerda o‘qishni toping: universitetlar, kollejlar va maktablar bitta xaritada, o‘zini tushuntiradigan natijalar bilan."
+  },
+  "Types": {
+    "university": "Universitet",
+    "college": "Kollej",
+    "school": "Maktab",
+    "language_school": "Til maktabi",
+    "foundation": "Tayyorlov dasturlari",
+    "vocational": "Kasb-hunar maktabi"
+  },
+  "Home": {
+    "map": {
+      "title": "O‘qiydigan joyingizni toping",
+      "mapLabel": "Ta’lim muassasalari xaritasi",
+      "searchLabel": "Nomi yoki shahri bo‘yicha qidirish",
+      "searchPlaceholder": "Nomi yoki shahri",
+      "noResults": "Hech narsa topilmadi",
+      "legendLabel": "Muassasa turlari (ko‘rsatish yoki yashirish uchun bosing)",
+      "shown": "{total} tadan {shown} tasi ko‘rsatilgan",
+      "loadError": "Muassasalarni yuklab bo‘lmadi. Iltimos, keyinroq qayta urinib ko‘ring.",
+      "more": "Batafsil",
+      "close": "Yopish",
+      "noWebgl": "Brauzeringiz xaritani ko‘rsata olmaydi. Boshqa brauzerni sinab ko‘ring yoki apparat tezlatishni yoqing.",
+      "zoomIn": "Yaqinlashtirish",
+      "zoomOut": "Uzoqlashtirish",
+      "toggleAttribution": "Xarita ma’lumotlari manbalari",
+      "mapFeedback": "Xaritadagi muammo haqida xabar berish",
+      "heading": "Muassasalar xaritasi"
+    },
+    "how": {
+      "title": "Qanday ishlaydi",
+      "step1Title": "Ro‘yxatdan o‘ting",
+      "step1Text": "Hisob yarating va davlatingiz, yoshingiz hamda hujjatlaringiz haqida ayting.",
+      "step2Title": "So‘rovnomani to‘ldiring",
+      "step2Text": "Maqsadlaringiz, baholaringiz, tillaringiz va byudjetingiz haqidagi savollarga javob bering.",
+      "step3Title": "Natijalaringizni oling",
+      "step3Text": "Xavfsiz, mos va intiluvchan variantlar ro‘yxatini oling.",
+      "cta": "Tanlovni boshlash"
+    },
+    "hero": {
+      "badge": "Chet elda o‘qish, osonlashtirilgan",
+      "subtitle": "Xaritada {count} ta universitet va kollejni o‘rganing, qisqa so‘rovnomaga javob bering va haqiqatan qayerga mos kelishingizni ko‘ring — aniq sabablar va yana nima yetishmasligi bilan.",
+      "ctaMap": "Xaritani o‘rganish"
+    },
+    "stats": {
+      "institutions": "{count, plural, one {# ta muassasa} other {# ta muassasa}}",
+      "countries": "{count, plural, one {# ta davlat} other {# ta davlat}}",
+      "languages": "{count} ta til",
+      "free": "Foydalanish bepul"
+    },
+    "why": {
+      "title": "Nega YourHEI",
+      "f1Title": "Hammasi bitta xaritada",
+      "f1Text": "Yevropa, Osiyo, Amerika, Okeaniya va Kavkazdagi universitetlar, kollejlar va maktablar bitta xaritada.",
+      "f2Title": "O‘zini tushuntiradigan natijalar",
+      "f2Text": "Har bir natija nega mos kelishini va yana nima kerakligini ko‘rsatadi, masalan, tilning yuqoriroq bahosi.",
+      "f3Title": "Manbali ma’lumotlar",
+      "f3Text": "Narxlar, talablar va muddatlar rasmiy saytlardan olinadi; havola va tekshirgan sanamiz bilan birga.",
+      "f4Title": "O‘z tilingizda",
+      "f4Text": "Sayt {languages} ta tilda so‘zlashadi va narxlarni sizning valyutangizda ko‘rsatadi."
+    },
+    "countries": {
+      "title": "Qayerda o‘qish mumkin",
+      "text": "Xaritada muassasalari bor davlatlar."
+    },
+    "cta": {
+      "title": "O‘z joyingizni topishga tayyormisiz?",
+      "text": "Bepul hisob yarating, so‘rovnomaga javob bering va natijalaringizni bir necha daqiqada oling."
+    }
+  },
+  "Institution": {
+    "comingSoon": "Batafsil ma’lumotlar tez orada qo‘shiladi.",
+    "officialSite": "Rasmiy veb-sayt",
+    "founded": "Tashkil etilgan: {year}",
+    "back": "Xaritaga qaytish",
+    "factsTitle": "Asosiy ma’lumotlar",
+    "ownership": "Mulkchilik",
+    "public": "Davlat",
+    "private": "Xususiy",
+    "dormitory": "Yotoqxona",
+    "dormitoryYes": "Mavjud",
+    "dormitoryNo": "Mavjud emas",
+    "featuresTitle": "Imkoniyatlar",
+    "features": {
+      "internship": "Amaliyotlar",
+      "double_degree": "Qo‘sh diplom",
+      "exchange": "Almashinuv dasturlari"
+    },
+    "programsTitle": "Dasturlar",
+    "noPrograms": "Ushbu muassasaning dasturlari haqidagi batafsil ma’lumotlar to‘planmoqda. Iltimos, rasmiy veb-saytni ko‘ring.",
+    "for": {
+      "international": "xalqaro talabalar",
+      "domestic": "fuqarolar",
+      "eu": "Yevropa Ittifoqi fuqarolari",
+      "all": "barcha talabalar"
+    },
+    "per": {
+      "year": "yiliga",
+      "semester": "semestriga",
+      "credit": "kreditiga",
+      "total": "butun dastur uchun"
+    },
+    "tuitionTitle": "O‘qish narxi",
+    "free": "Bepul",
+    "requirementsTitle": "Talablar",
+    "minScore": "Eng kamida {exam}: {score}",
+    "documentsTitle": "Hujjatlar",
+    "entranceTitle": "Qabul tartibi",
+    "noRequirements": "Talablar hali e’lon qilinmagan.",
+    "intake": "Qabul davri",
+    "deadline": "Muddat",
+    "applicationFee": "Ariza to‘lovi",
+    "deadlinesTitle": "Muddatlar",
+    "rankingsTitle": "Reytinglar",
+    "rankingLine": "{name} ({year}): {position}",
+    "scholarshipsTitle": "Stipendiyalar",
+    "covers": {
+      "tuition": "o‘qish narxini qoplaydi",
+      "living": "yashash xarajatlarini qoplaydi",
+      "full": "to‘liq moliyalashtirish",
+      "partial": "qisman moliyalashtirish"
+    },
+    "checked": "Ma’lumotlar {date} kuni tekshirilgan.",
+    "disclaimer": "Ariza topshirishdan oldin narxlar va muddatlarni doimo rasmiy veb-saytda tasdiqlang.",
+    "report": "Ushbu sahifadagi xato haqida xabar berish",
+    "duration": "Davomiyligi",
+    "programsCount": "{count, plural, one {# ta dastur} other {# ta dastur}}",
+    "favoriteAdd": "Saqlash",
+    "favoriteRemove": "Saqlangan",
+    "favoriteLogin": "Saqlash uchun kiring",
+    "byInstitution": "Muassasaning o‘zi kiritgan"
+  },
+  "Pages": {
+    "about": {
+      "title": "Loyiha haqida",
+      "body": "YourHEI abituriyentlar va ularning oilalariga qayerda o‘qishni tanlashda yordam beradi: universitetlar, kollejlar va maktablarning interaktiv xaritasi, maqsadlaringiz, natijalaringiz va byudjetingiz haqida qisqa so‘rovnoma hamda nega mos kelishini tushuntiradigan natijalar. Xizmat abituriyentlar uchun bepul."
+    },
+    "contact": {
+      "title": "Aloqa va yordam",
+      "body": "Xizmat haqida savollaringiz, muassasa sahifasiga tuzatishlar yoki shaxsiy ma’lumotlaringizga oid murojaat bormi? Bizga yozing.",
+      "emailLabel": "E-pochta"
+    },
+    "privacy": {
+      "title": "Maxfiylik siyosati"
+    },
+    "terms": {
+      "title": "Foydalanish shartlari"
+    },
+    "notFound": {
+      "title": "Sahifa topilmadi",
+      "body": "Siz izlayotgan sahifa mavjud emas.",
+      "home": "Bosh sahifaga o‘tish"
+    }
+  },
+  "Subregions": {
+    "eastern-europe": "Sharqiy Yevropa",
+    "northern-europe": "Shimoliy Yevropa",
+    "southern-europe": "Janubiy Yevropa",
+    "western-europe": "G‘arbiy Yevropa",
+    "central-asia": "Markaziy Osiyo",
+    "eastern-asia": "Sharqiy Osiyo",
+    "south-eastern-asia": "Janubi-Sharqiy Osiyo",
+    "southern-asia": "Janubiy Osiyo",
+    "western-asia": "G‘arbiy Osiyo",
+    "northern-america": "Shimoliy Amerika",
+    "central-america": "Markaziy Amerika",
+    "caribbean": "Karib havzasi",
+    "south-america": "Janubiy Amerika",
+    "australia-nz": "Avstraliya va Yangi Zelandiya",
+    "melanesia": "Melaneziya",
+    "micronesia": "Mikroneziya",
+    "polynesia": "Polineziya"
+  },
+  "Register": {
+    "title": "Hisobingizni yarating",
+    "intro": "Ikkita qisqa qadam. Qolgan hamma narsani (davlatlar, hujjatlar, nimani izlayotganingiz) keyinroq profilingizda xohlagan vaqtda to‘ldirasiz.",
+    "progressLabel": "Ro‘yxatdan o‘tish jarayoni",
+    "stepOf": "{total} qadamdan {current}-qadam",
+    "steps": {
+      "account": "Hisob",
+      "age": "Yoshingiz"
+    },
+    "back": "Orqaga",
+    "next": "Keyingisi",
+    "create": "Hisob yaratish",
+    "creating": "Hisob yaratilmoqda…",
+    "alreadyHave": "Hisobingiz bormi?",
+    "loginLink": "Kirish",
+    "search": {
+      "regionsTitle": "Hududlar",
+      "regionsHint": "Bir yoki bir nechtasini tanlang. Davlatlarni quyida aniqlashtirishingiz mumkin.",
+      "regions": {
+        "caucasus-ca-ee": "Kavkaz, Markaziy Osiyo va Sharqiy Yevropa",
+        "europe": "Yevropa",
+        "asia": "Osiyo",
+        "americas": "Amerika",
+        "oceania": "Okeaniya"
+      },
+      "countriesTitle": "Davlatlar",
+      "countriesHint": "Tanlangan hududlarning barcha davlatlari belgilangan. Keraksizlarining belgisini olib tashlang.",
+      "pickRegion": "Avval hududni tanlang.",
+      "selectAll": "Hammasini tanlash",
+      "clearAll": "Hammasini tozalash",
+      "groupLabel": "Davlatlar: {group}",
+      "typesTitle": "Muassasa turlari",
+      "typesHint": "Bir yoki bir nechtasini tanlang."
+    },
+    "about": {
+      "birthDate": "Tug‘ilgan sana",
+      "birthDateWhy": "Davlatingizdagi eng kam yoshni tekshirish va mos dasturlarni ko‘rsatish uchun.",
+      "gender": "Jins",
+      "genderWhy": "Bir jinsli maktablar va yotoqxonalar uchun kerak. Aytmaslikni tanlashingiz mumkin.",
+      "male": "Erkak",
+      "female": "Ayol",
+      "undisclosed": "Aytmaslikni afzal ko‘raman",
+      "residence": "Yashash davlati",
+      "residenceWhy": "Eng kam yoshni, ko‘rsatiladigan valyutani va diplomlarni tan olish qoidalarini belgilaydi.",
+      "residencePlaceholder": "Davlatni tanlang",
+      "citizenship": "Fuqarolik (bir yoki bir nechta)",
+      "citizenshipWhy": "Viza qoidalari va qabul talablari fuqarolikka bog‘liq.",
+      "countrySearch": "Davlat nomini kiriting",
+      "remove": "{name} ni olib tashlash",
+      "noMatches": "Mos davlat yo‘q",
+      "ageCheck": "Men kamida {age} yoshdaman",
+      "ageCheckWhy": "Eng kam yosh yashash davlatingizga bog‘liq."
+    },
+    "documents": {
+      "intro": "Qaysi hujjatlar sizda allaqachon borligini ayting. Bu faqat holat: sizdan hech narsa yuklashni so‘ramaymiz.",
+      "why": "Qabul uchun yana nima yetishmasligini ko‘rsatish uchun foydalanamiz.",
+      "status": {
+        "have": "Bor",
+        "in_progress": "Tayyorlanmoqda",
+        "none": "Yo‘q"
+      },
+      "visaCountries": "Qaysi davlatlarda amal qiladi?",
+      "expectedDate": "Olinishi kutilayotgan sana",
+      "eduKind": "Qaysi hujjat?",
+      "eduSchool": "Maktab attestati",
+      "eduDiploma": "Diplom (kollej yoki universitet)",
+      "items": {
+        "passport": "Xalqaro pasport",
+        "study_visa": "O‘qish vizasi yoki yashash ruxsatnomasi",
+        "education": "Maktab attestati / diplom",
+        "transcript": "Baholar ko‘chirmasi (transkript)",
+        "apostille": "Apostil yoki konsullik legallashtiruvi",
+        "notarized_translation": "Hujjatlarning notarial tasdiqlangan tarjimasi",
+        "recognition": "Ta’lim hujjatlarini tan olish (nostrifikatsiya)",
+        "proof_of_funds": "Mablag‘ borligini tasdiqlovchi hujjat (ko‘chirma, homiy xati, bloklangan hisob)",
+        "health_insurance": "Tibbiy sug‘urta",
+        "parental_consent": "Chet elda o‘qish uchun ota-onaning notarial roziligi (18 yoshgacha)"
+      }
+    },
+    "account": {
+      "email": "E-pochta",
+      "emailWhy": "Kirish va xizmat xabarlari uchun.",
+      "password": "Parol",
+      "passwordHint": "Kamida 10 ta belgi, bitta harf va bitta raqam bilan.",
+      "show": "Parolni ko‘rsatish",
+      "hide": "Parolni yashirish",
+      "consent": "Men <privacy>maxfiylik siyosati</privacy> va <terms>foydalanish shartlari</terms> bilan tanishdim va ularni qabul qilaman.",
+      "marketing": "Menga e-pochta orqali yangiliklar va maslahatlar yuborilsin (ixtiyoriy).",
+      "checkEmailTitle": "E-pochtangizni tekshiring",
+      "checkEmailText": "{email} manziliga tasdiqlash havolasini yubordik. Ro‘yxatdan o‘tishni yakunlash uchun uni oching. Spam jildini ham ko‘ring.",
+      "resend": "Havolani qayta yuborish",
+      "resent": "Havola qayta yuborildi.",
+      "notConfigured": "Ro‘yxatdan o‘tish hozir mavjud emas: xizmat hali sozlanmagan."
+    },
+    "underage": {
+      "title": "Kechirasiz",
+      "text": "Siz hali ro‘yxatdan o‘ta olmaysiz: davlatingizda eng kam yosh {age}. Hisob yaratilmadi va kiritganlaringizdan hech biri saqlanmadi.",
+      "home": "Bosh sahifaga qaytish"
+    },
+    "errors": {
+      "required": "Iltimos, bu maydonni to‘ldiring",
+      "birthInvalid": "To‘g‘ri tug‘ilgan sanani kiriting",
+      "dateInvalid": "To‘g‘ri sanani kiriting",
+      "residenceRequired": "Yashash davlatingizni tanlang",
+      "ageCheckRequired": "Iltimos, yoshingizni tasdiqlang",
+      "emailInvalid": "To‘g‘ri e-pochta manzilini kiriting",
+      "consentRequired": "Bu rozilik majburiy",
+      "passwordTooShort": "Kamida 10 ta belgi ishlating",
+      "passwordNeedsLetter": "Harf qo‘shing",
+      "passwordNeedsDigit": "Raqam qo‘shing",
+      "passwordCommon": "Bu parol juda keng tarqalgan",
+      "passwordLikeEmail": "Parolda e-pochtangizdagi ism bo‘lmasligi kerak",
+      "signUpFailed": "Hisobni yaratib bo‘lmadi. Iltimos, qayta urinib ko‘ring.",
+      "rateLimit": "Juda ko‘p urinish. Iltimos, bir necha daqiqa kutib, qayta urinib ko‘ring.",
+      "network": "Aloqa yo‘q. Internetni tekshirib, qayta urinib ko‘ring."
+    }
+  },
+  "Login": {
+    "title": "Kirish",
+    "email": "E-pochta",
+    "password": "Parol",
+    "submit": "Kirish",
+    "submitting": "Kirilmoqda…",
+    "forgot": "Parolni unutdingizmi?",
+    "noAccount": "Hali hisobingiz yo‘qmi?",
+    "register": "Yaratish",
+    "resend": "Tasdiqlash havolasini qayta yuborish",
+    "resent": "Havola qayta yuborildi. E-pochtangizni tekshiring.",
+    "notConfigured": "Kirish hozir mavjud emas: xizmat hali sozlanmagan.",
+    "notices": {
+      "link": "Bu havolaning muddati tugagan yoki u boshqa brauzerda ochilgan. E-pochtangizni allaqachon tasdiqlagan bo‘lsangiz, shunchaki kiring."
+    },
+    "errors": {
+      "invalid": "E-pochta yoki parol noto‘g‘ri.",
+      "notConfirmed": "Avval e-pochtangizni tasdiqlang: biz yuborgan havolani oching.",
+      "generic": "Kirib bo‘lmadi. Iltimos, qayta urinib ko‘ring.",
+      "rateLimit": "Juda ko‘p urinish. Iltimos, bir necha daqiqa kutib, qayta urinib ko‘ring.",
+      "google": "Google orqali kirib bo‘lmadi. Iltimos, qayta urinib ko‘ring.",
+      "captcha": "Iltimos, xavfsizlik tekshiruvini yakunlang."
+    },
+    "google": "Google bilan davom etish",
+    "googleNotice": "Google bilan davom etib, siz <privacy>maxfiylik siyosati</privacy> va <terms>foydalanish shartlarini</terms> qabul qilasiz.",
+    "or": "yoki e-pochta bilan"
+  },
+  "Forgot": {
+    "title": "Parolni tiklash",
+    "text": "E-pochtangizni kiriting, yangi parol o‘rnatish uchun havola yuboramiz.",
+    "email": "E-pochta",
+    "submit": "Havolani yuborish",
+    "sent": "Agar bu manzilda hisob bo‘lsa, havola yo‘lda. E-pochtangizni tekshiring.",
+    "back": "Kirishga qaytish"
+  },
+  "Reset": {
+    "title": "Yangi parol o‘rnatish",
+    "newPassword": "Yangi parol",
+    "submit": "Parolni saqlash",
+    "done": "Parol o‘zgartirildi. Keyingi kirishda undan foydalaning.",
+    "toProfile": "Profilga o‘tish",
+    "noSession": "Bu havolaning muddati tugagan. Iltimos, yangisini so‘rang.",
+    "requestNew": "Yangi havola so‘rash"
+  },
+  "Profile": {
+    "title": "Sizning profilingiz",
+    "loading": "Yuklanmoqda…",
+    "loadFailed": "Profilingizni yuklab bo‘lmadi. Sahifani yangilang yoki keyinroq qayta urinib ko‘ring.",
+    "welcome": "E-pochtangiz tasdiqlandi. YourHEI ga xush kelibsiz!",
+    "email": "E-pochta",
+    "plan": "Tarif",
+    "planFree": "Bepul",
+    "planPremium": "Premium",
+    "sections": {
+      "search": "Nimani izlayapsiz",
+      "about": "Siz haqingizda",
+      "documents": "Hujjatlar",
+      "privacy": "E-pochta va maxfiylik"
+    },
+    "save": "Saqlash",
+    "saving": "Saqlanmoqda…",
+    "saved": "Saqlandi",
+    "saveFailed": "Saqlab bo‘lmadi. Iltimos, qayta urinib ko‘ring.",
+    "ageBlocked": "Bu tug‘ilgan sana yoki davlat eng kam yosh talabiga ({age}) javob bermaydi.",
+    "marketing": "Menga e-pochta orqali yangiliklar va maslahatlar yuborilsin",
+    "survey": {
+      "title": "Tanlov so‘rovnomasini to‘ldirish",
+      "text": "Mos muassasalarni olish uchun maqsadlaringiz, natijalaringiz va byudjetingiz haqidagi savollarga javob bering.",
+      "open": "So‘rovnomaga o‘tish"
+    },
+    "data": {
+      "title": "Sizning ma’lumotlaringiz",
+      "exportText": "Biz siz haqingizda saqlayotgan hamma narsani fayl sifatida yuklab oling.",
+      "export": "Ma’lumotlarimni yuklab olish",
+      "exportFailed": "Faylni tayyorlab bo‘lmadi. Iltimos, qayta urinib ko‘ring.",
+      "deleteText": "Hisobingizni va barcha ma’lumotlaringizni o‘chiring. Buni ortga qaytarib bo‘lmaydi.",
+      "delete": "Hisobni va barcha ma’lumotlarni o‘chirish",
+      "confirmText": "Ishonchingiz komilmi? Profilingiz, hujjatlaringiz va kirishingiz darhol o‘chiriladi.",
+      "confirm": "Ha, hammasini o‘chirish",
+      "cancel": "Bekor qilish",
+      "deleteFailed": "Hisobni o‘chirib bo‘lmadi. Iltimos, qayta urinib ko‘ring."
+    },
+    "complete": {
+      "title": "Profilingizni to‘ldiring",
+      "text": "Fuqaroligingiz, izlayotgan hududlar va muassasa turlarini hamda hujjatlaringizni qo‘shing. Bularning hammasini istalgan vaqtda o‘zgartirishingiz mumkin."
+    },
+    "ageNeeded": "Davom etish uchun tug‘ilgan sana va yashash davlatingizni qo‘shing: eng kam yoshni tekshirish uchun ular kerak."
+  },
+  "Legal": {
+    "privacy": {
+      "s1Title": "Biz kimmiz",
+      "s1Text": "YourHEI abituriyentlarga qayerda o‘qishni tanlashda yordam beradigan xizmatdir. Ushbu siyosat qanday ma’lumotlarni to‘plashimiz va ulardan qanday foydalanishimizni tushuntiradi. Saytdan foydalanib, siz unga rozilik bildirasiz.",
+      "s2Title": "Nimalarni to‘playmiz",
+      "s2Text": "Hisob ma’lumotlari (e-pochta va parolning himoyalangan shakli); profil ma’lumotlari (tug‘ilgan sana, bersangiz jins, yashash davlati, fuqarolik, nimani izlayotganingiz, hujjatlaringiz holati); so‘rovnoma javoblaringiz; hamda kukilar va shunga o‘xshash texnologiyalar orqali texnik va foydalanish ma’lumotlari (ko‘rgan sahifalaringiz, saytdagi harakatlar, qurilma, brauzer, til, IP-manzil, taxminiy joylashuv, qayerdan kelganingiz).",
+      "s3Title": "Nima uchun to‘playmiz",
+      "s3Text": "Xizmatni yuritish va yaxshilash, eng kam yoshni tekshirish, natijalaringizni tuzish, siz bilan aloqa qilish, saytdan foydalanishni o‘lchash, reklama ko‘rsatish, tadqiqot o‘tkazish, xizmat xavfsizligini ta’minlash va qonuniy majburiyatlarni bajarish uchun.",
+      "s4Title": "Tahlil va ulashish",
+      "s4Text": "Biz tahlil va reklama vositalaridan foydalanishimiz mumkin. Tahlil va foydalanish ma’lumotlarini hamda to‘plangan boshqa ma’lumotlarni qayerda bo‘lishidan qat’i nazar, jumladan boshqa davlatlardagi tahlil, reklama, xosting va boshqa provayderlar hamda hamkorlarga yuborishimiz mumkin.",
+      "s5Title": "Ma’lumotlardan qanday foydalanishimiz mumkin",
+      "s5Text": "Qonun ruxsat bergan darajada, to‘plangan ma’lumotlardan o‘zimiz ma’qul ko‘rgan tarzda foydalanishimiz mumkin: xizmatni yuritish, shaxsiylashtirish, tahlil qilish va yaxshilash, yangi mahsulot va xizmatlar ishlab chiqish, reklama qilish hamda statistika va tadqiqot natijalarini, jumladan umumlashtirilgan yoki anonimlashtirilgan shaklda, e’lon qilish yoki ulashish uchun.",
+      "s6Title": "Saqlash",
+      "s6Text": "Ma’lumotlar siz hisobingizni o‘chirguningizcha provayderlarimizda (masalan, ma’lumotlar bazasi provayderida) saqlanadi. Texnik jurnallar va zaxira nusxalar bundan keyin ham bir muddat saqlanishi mumkin.",
+      "s7Title": "Sizning huquqlaringiz",
+      "s7Text": "Profilingizda ma’lumotlaringizni tahrirlashingiz, nusxasini yuklab olishingiz, e-pochta xabarlarini o‘chirishingiz va hisobingizni barcha ma’lumotlar bilan birga o‘chirishingiz mumkin. Qonun sizga ko‘proq huquq bergan joylarda, masalan, Yevropa Ittifoqi, Yevropa iqtisodiy hududi yoki Buyuk Britaniyada, biz ularga rioya qilamiz.",
+      "s8Title": "Eng kam yosh",
+      "s8Text": "Biz faqat yashash davlatining eng kam yoshiga yetgan shaxslarni ro‘yxatdan o‘tkazamiz (davlatga qarab 14, 16 yoki 18). Agar yoshingiz kichik bo‘lsa, hisob yaratilmaydi va kiritganlaringizdan hech biri saqlanmaydi.",
+      "s9Title": "Kukilar va shunga o‘xshash texnologiyalar",
+      "s9Text": "Tilingiz, mavzuingiz va kirishingiz uchun hamda tahlil va reklama uchun kukilar va shunga o‘xshash texnologiyalardan foydalanamiz. Qonun talab qilgan joylarda avval roziligingizni so‘raymiz.",
+      "s10Title": "O‘zgarishlar",
+      "s10Text": "Biz ushbu siyosatni o‘zgartirishimiz mumkin. Yuqoridagi sana eng so‘nggi versiyani ko‘rsatadi; o‘zgarishdan keyin saytdan foydalanishda davom etsangiz, yangi versiyani qabul qilgan hisoblanasiz."
+    },
+    "terms": {
+      "s1Title": "Xizmat",
+      "s1Text": "YourHEI ta’lim muassasalarini xaritada ko‘rsatadi va javoblaringizga asoslanib variantlar taklif qiladi. U abituriyentlar uchun bepul.",
+      "s2Title": "Sizning hisobingiz",
+      "s2Text": "To‘g‘ri ma’lumot bering va parolingizni sir saqlang. Bir shaxs — bitta hisob. Siz yashash davlatingizning eng kam yoshiga yetgan bo‘lishingiz kerak.",
+      "s3Title": "Ma’lumot, maslahat emas",
+      "s3Text": "Muassasalar haqidagi ma’lumotlar ochiq va rasmiy manbalardan olinadi, eskirgan yoki to‘liq bo‘lmasligi mumkin. Ariza topshirishdan oldin doimo rasmiy veb-saytni tekshiring. Taklif qabul qilinish va’dasi emas.",
+      "s4Title": "Adolatli foydalanish",
+      "s4Text": "Xizmatdan suiiste’mol qilmang: ma’lumotlarni avtomatik ommaviy yig‘ish, uni buzishga urinishlar, yolg‘on xabarlar taqiqlanadi.",
+      "s5Title": "Ma’lumotlar va tahlil",
+      "s5Text": "Xizmatdan foydalanib, siz tahlil va foydalanish ma’lumotlarini to‘plashimiz, ularni qayerda bo‘lishidan qat’i nazar o‘zimiz tanlagan uchinchi shaxslarga yuborishimiz va to‘plangan barcha ma’lumotlardan Maxfiylik siyosatida bayon etilganidek, qonun ruxsat bergan darajada o‘zimiz ma’qul ko‘rgan tarzda foydalanishimiz mumkinligiga rozilik bildirasiz.",
+      "s6Title": "Reklama va uchinchi shaxslar",
+      "s6Text": "Sayt reklama ko‘rsatadi va uchinchi shaxslar saytlariga havolalar berishi mumkin. Ularning mazmuni yoki takliflari uchun javobgar emasmiz.",
+      "s7Title": "O‘zgarishlar va tugatish",
+      "s7Text": "Biz xizmatni va ushbu shartlarni o‘zgartirishimiz mumkin; o‘zgarishdan keyin xizmatdan foydalanishda davom etsangiz, uni qabul qilgan hisoblanasiz. Hisobingizni istalgan vaqtda o‘chirishingiz mumkin.",
+      "s8Title": "Javobgarlik",
+      "s8Text": "Xizmat “borligicha”, kafolatlarsiz taqdim etiladi va qonun ruxsat bergan darajada undan foydalanishdan kelib chiqadigan yo‘qotishlar uchun javobgar emasmiz."
+    },
+    "updated": "Oxirgi yangilanish: {date}"
+  },
+  "Survey": {
+    "title": "Sizning tanlov so‘rovnomangiz",
+    "intro": "Maqsadlaringiz, natijalaringiz, tillaringiz va byudjetingiz haqidagi savollarga javob bering. Taxminan 15 ta savol majburiy, qolganlari ixtiyoriy va bir bosishda o‘tkazib yuborilishi mumkin. Javoblaringiz borgan sari saqlanadi.",
+    "hub": {
+      "start": "So‘rovnomani boshlash",
+      "continue": "To‘xtagan joyingizdan davom etish",
+      "discard": "Bekor qilib, boshidan boshlash",
+      "startedOn": "Ushbu so‘rovnomani {date} kuni boshlagansiz.",
+      "again": "So‘rovnomani qayta to‘ldirish",
+      "past": "Siz yakunlagan so‘rovnomalar",
+      "pastItem": "{date} kuni yakunlangan",
+      "noteRetake": "Yakunlangan so‘rovnomani o‘zgartirib bo‘lmaydi. Rejalaringiz o‘zgarsa, so‘rovnomani qayta to‘ldiring: yangi javoblardan foydalaniladi.",
+      "profileHint": "Maslahat: yaxshiroq natija uchun avval profilingizni to‘ldiring (fuqarolik, hududlar, hujjatlar)."
+    },
+    "done": {
+      "title": "Rahmat! So‘rovnoma yakunlandi.",
+      "text": "Javoblaringiz saqlandi. Sizga eng mos muassasalarni ko‘ring.",
+      "toProfile": "Profilimga qaytish",
+      "toMatches": "Natijalarimni ko‘rish"
+    },
+    "ui": {
+      "loading": "Yuklanmoqda…",
+      "loadFailed": "So‘rovnomani yuklab bo‘lmadi. Iltimos, sahifani yangilang yoki keyinroq qayta urinib ko‘ring.",
+      "questionOf": "{total} savoldan {current}-savol",
+      "requiredLeft": "{count, plural, one {# ta majburiy savol qoldi} other {# ta majburiy savol qoldi}}",
+      "optional": "Ixtiyoriy",
+      "back": "Orqaga",
+      "next": "Keyingisi",
+      "skip": "O‘tkazib yuborish",
+      "skipAll": "Barcha ixtiyoriy savollarni o‘tkazib yuborish",
+      "finish": "Yakunlash",
+      "saving": "Saqlanmoqda…",
+      "saveFailed": "Javobingizni saqlab bo‘lmadi. Aloqani tekshirib, qayta urinib ko‘ring.",
+      "saveAndExit": "Saqlab, keyinroq davom etish",
+      "progressLabel": "So‘rovnoma jarayoni",
+      "add": "Qo‘shish",
+      "remove": "Olib tashlash",
+      "search": "Nomi bo‘yicha qidirish",
+      "choose": "Tanlang…",
+      "approximate": "Baholash tizimlari orasidagi o‘girishlar taxminiy.",
+      "noMatches": "Hech narsa topilmadi",
+      "moveUp": "Yuqoriga",
+      "moveDown": "Pastga",
+      "counter": "{count} tadan {chosen} tasi tanlandi",
+      "range": "{min} dan {max} gacha"
+    },
+    "errors": {
+      "required": "Iltimos, bu savolga javob bering",
+      "invalid": "Iltimos, bu javobni tekshiring",
+      "outOfRange": "Bu qiymat ruxsat etilgan oraliqdan tashqarida",
+      "tooMany": "Juda ko‘p tanlov",
+      "priorities": "Aynan 3 ta turli bandni tanlang"
+    },
+    "education": {
+      "level": "Hozirgi ta’lim",
+      "year": "Bitirish yili (yoki kutilayotgan)",
+      "levels": {
+        "school_9": "Maktab, 9-sinfgacha",
+        "school_11": "Maktab, 10–12-sinflar",
+        "college": "Kollej",
+        "bachelor": "Bakalavr",
+        "master": "Magistr",
+        "other": "Boshqa"
+      }
+    },
+    "grade": {
+      "none": "Hali baholarim yo‘q",
+      "system": "Baholash tizimi",
+      "value": "O‘rtacha bahoyingiz",
+      "range": "{min} dan {max} gacha"
+    },
+    "subjects": {
+      "subject": "Fan",
+      "grade": "Baho"
+    },
+    "exams": {
+      "exam": "Imtihon",
+      "score": "Ball",
+      "range": "Mumkin oraliq: {min} dan {max} gacha"
+    },
+    "languages": {
+      "language": "Til",
+      "level": "Darajangiz",
+      "certificate": "Sertifikat (ixtiyoriy)",
+      "certValue": "Ball yoki daraja",
+      "none": "Sertifikat yo‘q",
+      "addLanguage": "Til qo‘shish"
+    },
+    "selfLevels": {
+      "a1": "Bir necha ibora bilaman",
+      "a2": "Oddiy kundalik mavzular",
+      "b1": "Sayohatda va ishda o‘zimni tushuntira olaman",
+      "b2": "Ko‘pchilik mavzularda erkin gaplashaman",
+      "c1": "Bu tilda o‘qiy olaman",
+      "c2": "Ona tili egasidek",
+      "native": "Ona tilim"
+    },
+    "studyLanguages": {
+      "languages": "O‘qishga tayyor bo‘lgan tillarim",
+      "prepYear": "Til tayyorlov yilini o‘tarmidingiz?",
+      "yes": "Ha",
+      "no": "Yo‘q"
+    },
+    "budget": {
+      "currency": "Valyuta",
+      "tuition": "Yillik o‘qish narxi",
+      "living": "Yillik yashash xarajatlari"
+    },
+    "olympiads": {
+      "subject": "Fan",
+      "level": "Daraja",
+      "place": "O‘rin"
+    },
+    "olympiadLevels": {
+      "school": "Maktab",
+      "regional": "Hududiy",
+      "national": "Respublika",
+      "international": "Xalqaro"
+    },
+    "priorities": {
+      "price": "Narx",
+      "prestige": "Nufuz",
+      "location": "Davlat va shahar",
+      "chances": "Qabul qilinish imkoniyati",
+      "field": "O‘qish yo‘nalishi",
+      "career": "Kasbiy istiqbollar"
+    },
+    "riasec": {
+      "intro": "Har bir gapni 1 dan 5 gacha baholang. To‘g‘ri yoki noto‘g‘ri javob yo‘q.",
+      "scale": {
+        "1": "menga mos emas",
+        "2": "ko‘proq yo‘q",
+        "3": "neytral",
+        "4": "ko‘proq ha",
+        "5": "aynan men"
+      },
+      "items": {
+        "0": "Qo‘llarim yoki asboblar bilan biror narsani ta’mirlash yoki yasashni yaxshi ko‘raman.",
+        "1": "Biror narsaning qanday ishlashini tajriba yoki ma’lumotlarni tahlil qilish orqali aniqlashni yaxshi ko‘raman.",
+        "2": "Original narsa yaratishni yaxshi ko‘raman: yozish, chizish, loyihalash yoki bastalash.",
+        "3": "Boshqalarga yordam berish, o‘rgatish yoki ularga g‘amxo‘rlik qilishni yaxshi ko‘raman.",
+        "4": "Jamoani boshqarish yoki boshqalarni o‘z g‘oyamga ishontirishni yaxshi ko‘raman.",
+        "5": "Ma’lumotlarni tartibga solish, hisob yuritish va aniq tartiblarga amal qilishni yaxshi ko‘raman.",
+        "6": "Ochiq havoda, mashinalar, hayvonlar yoki o‘simliklar bilan ishlashdan zavqlanaman.",
+        "7": "Qiyin jumboq yoki matematik masalani yechishdan zavqlanaman.",
+        "8": "G‘oyalarni musiqa, teatr yoki vizual vositalar orqali ifodalashni yaxshi ko‘raman.",
+        "9": "Odamlarni tinglash va ularni qiyin damlarda qo‘llab-quvvatlashga yaxshiman.",
+        "10": "Loyiha yoki biznes boshlashni va tavakkal qilishni yaxshi ko‘raman.",
+        "11": "Hammasi aniq ishlashi uchun byudjet, jadval va tafsilotlarni rejalashtirishni yaxshi ko‘raman."
+      },
+      "suggestions": "Sizga mos kelishi mumkin bo‘lgan yo‘nalishlar",
+      "suggestionsHint": "Yoqqanlarini qoldiring. Kamida bittasi kerak.",
+      "answerAll": "Tavsiya etilgan yo‘nalishlarni ko‘rish uchun barcha 12 ta gapga javob bering."
+    },
+    "q": {
+      "level": {
+        "title": "Nimani o‘qimoqchisiz?",
+        "options": {
+          "school": "Maktab",
+          "college": "Kollej",
+          "foundation": "Tayyorlov yili",
+          "bachelor": "Bakalavr",
+          "master": "Magistr",
+          "phd": "Doktorantura",
+          "language_course": "Til kurslari"
+        }
+      },
+      "situation": {
+        "title": "Vaziyatingiz qanday?",
+        "options": {
+          "first": "Birinchi marta ariza topshiryapman",
+          "transfer": "Kreditlarimni saqlab, ko‘chib o‘tmoqchiman",
+          "second_degree": "Ikkinchi diplom"
+        }
+      },
+      "start": {
+        "title": "Qachon boshlamoqchisiz?"
+      },
+      "format": {
+        "title": "Qaysi o‘qish shakli?",
+        "options": {
+          "on_campus": "Kampusda",
+          "online": "Onlayn",
+          "blended": "Aralash",
+          "any": "Farqi yo‘q"
+        }
+      },
+      "field_certainty": {
+        "title": "Yo‘nalishingizga qanchalik amin siz?",
+        "options": {
+          "sure": "Aniq bilaman",
+          "few": "Bir nechta variantim bor",
+          "unknown": "Bilmayman, iltimos, yordam bering"
+        }
+      },
+      "fields": {
+        "title": "Qaysi sohalar sizni qiziqtiradi?",
+        "hint": "3 tagacha tanlang; birinchisi eng muhimi. Aniq mutaxassislikkacha tushishingiz mumkin."
+      },
+      "riasec": {
+        "title": "Sizga mos yo‘nalishlarni topaylik",
+        "hint": "Nima qilishni yoqtirishingiz haqida o‘n ikkita qisqa gap."
+      },
+      "diploma_field": {
+        "title": "Oldingi diplomingiz qaysi sohada edi?",
+        "hint": "Bakalavr yoki magistr diplomingiz sohasini tanlang."
+      },
+      "school_profile": {
+        "title": "Qaysi maktab profilini xohlaysiz?"
+      },
+      "school_grade": {
+        "title": "Qaysi sinfga kirmoqchisiz?"
+      },
+      "school_program": {
+        "title": "Qaysi dastur?",
+        "options": {
+          "national": "Milliy",
+          "ib": "IB",
+          "alevel": "A-levels",
+          "american": "Amerika"
+        }
+      },
+      "school_boarding": {
+        "title": "Internatmi yoki oila bilan yashashmi?",
+        "options": {
+          "boarding": "Internat",
+          "family": "Oilam bilan yashash",
+          "any": "Farqi yo‘q"
+        }
+      },
+      "school_coed": {
+        "title": "Aralash yoki bir jinsli maktabmi?",
+        "options": {
+          "coed": "Aralash",
+          "single_sex": "Bir jinsli",
+          "any": "Afzalligim yo‘q"
+        }
+      },
+      "profession": {
+        "title": "Qaysi kasbni o‘rganmoqchisiz?"
+      },
+      "college_to_uni": {
+        "title": "Keyin universitetga o‘tishni xohlaysizmi?",
+        "options": {
+          "yes": "Ha",
+          "no": "Yo‘q",
+          "maybe": "Balki"
+        }
+      },
+      "education": {
+        "title": "Hozirgi ta’limingiz"
+      },
+      "grade": {
+        "title": "O‘rtacha bahoyingiz",
+        "hint": "Eng yaxshi biladigan baholash tizimingizni tanlang."
+      },
+      "subjects": {
+        "title": "Eng yaxshi fanlaringiz va baholaringiz",
+        "hint": "5 tagacha. Baholar avval tanlagan baholash tizimingiz bo‘yicha."
+      },
+      "exams": {
+        "title": "Topshirgan yoki topshiradigan imtihonlaringiz",
+        "hint": "Ballaringiz bilan milliy yoki xalqaro imtihonlar."
+      },
+      "languages": {
+        "title": "Qaysi tillarda va qanchalik yaxshi gaplashasiz?",
+        "hint": "Har bir tilni qo‘shing va o‘zingizni halol baholang. Sertifikat ixtiyoriy."
+      },
+      "study_languages": {
+        "title": "Qaysi tillarda o‘qiy olasiz?"
+      },
+      "olympiads": {
+        "title": "Olimpiadalar va tanlovlar",
+        "hint": "Fan, daraja va egallagan o‘rningiz."
+      },
+      "achievements": {
+        "title": "Yutuqlaringiz",
+        "options": {
+          "projects": "Loyihalar",
+          "publications": "Nashrlar",
+          "sport": "Sport",
+          "creative": "Ijodiy portfolio",
+          "volunteering": "Volontyorlik"
+        }
+      },
+      "work_years": {
+        "title": "Necha yil ishlagansiz?"
+      },
+      "research_topic": {
+        "title": "Tadqiqot mavzuingiz",
+        "hint": "Agar allaqachon bo‘lsa."
+      },
+      "entrance": {
+        "title": "Nimaga tayyorsiz?",
+        "options": {
+          "entrance_exams": "Muassasadagi kirish imtihonlari",
+          "interview": "Suhbat",
+          "creative_contest": "Ijodiy tanlov"
+        }
+      },
+      "funding": {
+        "title": "O‘qishni qanday to‘lashni rejalashtiryapsiz?",
+        "options": {
+          "free": "Faqat bepul (o‘qish narxisiz) o‘rinlar",
+          "paid": "Pullik o‘rinlar",
+          "both": "Ikkalasi ham"
+        }
+      },
+      "budget": {
+        "title": "Yillik byudjetingiz",
+        "hint": "Yillik o‘qish narxi va yashash xarajatlari, bitta valyutada."
+      },
+      "scholarship": {
+        "title": "Stipendiya kerakmi?",
+        "options": {
+          "yes": "Ha, kerak",
+          "no": "Yo‘q",
+          "maybe": "Yordam bo‘lardi"
+        }
+      },
+      "loan": {
+        "title": "Ta’lim kreditini ko‘rib chiqarmidingiz?",
+        "options": {
+          "yes": "Ha",
+          "no": "Yo‘q"
+        }
+      },
+      "rating": {
+        "title": "Muassasa reytingi qanchalik muhim?",
+        "options": {
+          "top_world": "Dunyoning eng yaxshilari qatorida",
+          "top_country": "Mamlakatning eng yaxshilari qatorida",
+          "any": "Muhim emas"
+        }
+      },
+      "ownership": {
+        "title": "Davlat yoki xususiy?",
+        "options": {
+          "public": "Davlat",
+          "private": "Xususiy",
+          "any": "Muhim emas"
+        }
+      },
+      "size": {
+        "title": "Katta yoki kichik muassasa?",
+        "options": {
+          "large": "Katta",
+          "small": "Kichik",
+          "any": "Muhim emas"
+        }
+      },
+      "strategy": {
+        "title": "Natijalaringiz qanchalik intiluvchan bo‘lsin?",
+        "options": {
+          "safe": "Faqat xavfsiz imkoniyatlar",
+          "balanced": "Muvozanatli",
+          "ambitious": "Intiluvchan"
+        }
+      },
+      "extras": {
+        "title": "Diplomdan tashqari nima muhim?",
+        "options": {
+          "internship": "Amaliyot va tajriba",
+          "double_degree": "Qo‘sh diplom",
+          "exchange": "Almashinuv semestri"
+        }
+      },
+      "recognition": {
+        "title": "Diplom davlatingizda tan olinishi kerakmi?",
+        "options": {
+          "yes": "Ha",
+          "no": "Yo‘q",
+          "any": "Muhim emas"
+        }
+      },
+      "city_size": {
+        "title": "Qanday shaharni afzal ko‘rasiz?",
+        "options": {
+          "megapolis": "Katta megapolis",
+          "medium": "O‘rta kattalikdagi shahar",
+          "small_student": "Kichik talabalar shaharchasi",
+          "any": "Muhim emas"
+        }
+      },
+      "climate": {
+        "title": "Qaysi iqlimni afzal ko‘rasiz?",
+        "options": {
+          "warm": "Issiq",
+          "temperate": "Mo‘tadil",
+          "cold": "Sovuq",
+          "any": "Muhim emas"
+        }
+      },
+      "dorm": {
+        "title": "Yotoqxona kerakmi?",
+        "options": {
+          "yes": "Ha",
+          "no": "Yo‘q",
+          "any": "Muhim emas"
+        }
+      },
+      "work_during": {
+        "title": "O‘qish davomida ishlamoqchimisiz?",
+        "options": {
+          "yes": "Ha",
+          "no": "Yo‘q",
+          "maybe": "Balki"
+        }
+      },
+      "after": {
+        "title": "O‘qishdan keyingi rejalaringiz",
+        "options": {
+          "stay": "Mamlakatda qolish",
+          "return": "Uyga qaytish",
+          "unknown": "Hali aniq emas"
+        }
+      },
+      "family": {
+        "title": "Kimdir bilan birga borasizmi?",
+        "hint": "Ixtiyoriy.",
+        "options": {
+          "partner": "Turmush o‘rtog‘im bilan",
+          "children": "Bolalar bilan"
+        }
+      },
+      "accessibility": {
+        "title": "Qulay muhit kerakmi?",
+        "options": {
+          "yes": "Ha",
+          "no": "Yo‘q",
+          "prefer_not": "Aytmaslikni afzal ko‘raman"
+        }
+      },
+      "priorities": {
+        "title": "Eng muhim 3 narsani tanlang",
+        "hint": "Bu natijalaringizni saralashda nimaga ko‘proq e’tibor berilishini belgilaydi."
+      }
+    }
+  },
+  "Matches": {
+    "title": "Sizning natijalaringiz",
+    "loading": "Eng yaxshi natijalar qidirilmoqda…",
+    "failed": "Natijalarni yuklab bo‘lmadi. Iltimos, sahifani yangilang yoki keyinroq qayta urinib ko‘ring.",
+    "noSurvey": {
+      "title": "Avval so‘rovnomani to‘ldiring",
+      "text": "Natijalar so‘rovnoma javoblaringiz va profilingiz asosida tuziladi.",
+      "cta": "So‘rovnomaga o‘tish"
+    },
+    "basedOn": "{date} dagi so‘rovnomangiz va profilingiz asosida.",
+    "noData": {
+      "title": "Dastur ma’lumotlari qo‘shilmoqda",
+      "text": "Dasturlar haqidagi ma’lumotlarni (o‘qish narxi, tillar, talablar) to‘plab, tekshirmoqdamiz. Tekshirilgan dasturlar e’lon qilinishi bilan natijalar shu yerda paydo bo‘ladi."
+    },
+    "summary": "{checked} ta dasturni tekshirdik; {passed} tasi talablaringizga mos.",
+    "nothing": {
+      "title": "Hali birorta dastur barcha talablaringizga mos kelmaydi",
+      "text": "Kengroq tanlovlarni sinab ko‘ring: profilingizda ko‘proq davlat yoki tur, boshqa byudjet yoki tayyorlov yili. Yangi dasturlar muntazam qo‘shilib turadi.",
+      "profile": "Profilimni tahrirlash",
+      "survey": "So‘rovnomani qayta to‘ldirish"
+    },
+    "groups": {
+      "safe": {
+        "title": "Xavfsiz tanlovlar",
+        "text": "Talablarga zaxira bilan javob berasiz."
+      },
+      "suitable": {
+        "title": "Mos tanlovlar",
+        "text": "Talablarga javob berasiz."
+      },
+      "ambitious": {
+        "title": "Intiluvchan tanlovlar",
+        "text": "Ba’zi talablardan biroz pastroq, ammo urinib ko‘rishga arziydi."
+      }
+    },
+    "retake": "So‘rovnomani qayta to‘ldirish",
+    "editProfile": "Profilimni tahrirlash",
+    "credits": {
+      "live": "Valyuta kurslari:",
+      "fallback": "Valyuta kurslari taxminiy (jonli kurslar mavjud emas). Manba:"
+    },
+    "card": {
+      "score": "Moslik bahosi 100 dan {score}",
+      "languages": "O‘qish tili",
+      "duration": "Davomiyligi",
+      "years": "{count, plural, one {# yil} other {# yil}}",
+      "tuition": "O‘qish narxi",
+      "free": "Bepul",
+      "perYear": "yil",
+      "tuitionUnknown": "ma’lumot yo‘q",
+      "why": "Nega mos keladi",
+      "gaps": "Nima yetishmaydi",
+      "noData": "Ma’lumot yo‘q:",
+      "apply": "Rasmiy saytda ariza topshirish"
+    },
+    "components": {
+      "academic": "talablar",
+      "field": "mutaxassislik",
+      "prestige": "reyting",
+      "preferences": "shahar va muassasa",
+      "extras": "qo‘shimchalar",
+      "life": "turar joy va ish",
+      "budget": "byudjet"
+    },
+    "notes": {
+      "why": {
+        "academic": "Baholaringiz va sertifikatlaringiz talablarga javob beradi.",
+        "field": "{match, select, exact {Aynan sizning mutaxassisligingiz.} narrow {Mutaxassisligingizga yaqin.} broad {Xuddi shu keng o‘qish sohasi.} other {Sohangizga aloqador.}}",
+        "prestige": "Siz xohlaganingizdek, reytingda yuqori o‘rinda.",
+        "preferences": "Muassasa va shahar bo‘yicha istaklaringizga mos.",
+        "extras": "So‘ragan qo‘shimchalaringizni taklif qiladi.",
+        "life": "Yaxshi sharoitlar: turar joy va ishlash qoidalari.",
+        "budget": "Byudjetingizga mos."
+      },
+      "gap": {
+        "gpa": "O‘rtacha baho: {need} talab qilinadi, sizda {have}.",
+        "language": "{exam}: {need} talab qilinadi, sizda {have}.",
+        "exam": "{exam}: {need} talab qilinadi, sizda {have}.",
+        "exam_missing": "{exam} {need} talab qilinadi, sizda esa hali natija yo‘q.",
+        "prep_year": "{languages} tilida o‘qitiladi: sizga til tayyorlov yili kerak bo‘ladi.",
+        "over_budget": "O‘qish narxi yiliga taxminan {cost} {currency}, bu {budget} {currency} byudjetingizdan yuqori."
+      }
+    },
+    "saved": {
+      "title": "Ushbu natijalarni saqlash",
+      "text": "Ushbu ro‘yxatning nusxasini saqlang. Uni keyinroq ochishingiz yoki ota-onangizga yoki do‘stingizga maxfiy havola yuborishingiz mumkin.",
+      "save": "Ushbu ro‘yxatni saqlash",
+      "failed": "Saqlab bo‘lmadi. Iltimos, qayta urinib ko‘ring.",
+      "item": "{date} dagi ro‘yxat · {count, plural, one {# ta dastur} other {# ta dastur}}",
+      "open": "Ochish",
+      "share": "Havola yaratish",
+      "stopSharing": "Ulashishni to‘xtatish",
+      "delete": "O‘chirish",
+      "linkLabel": "Ushbu ro‘yxatga havola",
+      "copy": "Nusxalash",
+      "copied": "Nusxalandi",
+      "anyoneWithLink": "Ushbu havolaga ega har bir kishi ro‘yxatni (ismingizsiz) ko‘ra oladi."
+    }
+  },
+  "Ads": {
+    "label": "Reklama"
+  },
+  "Compare": {
+    "title": "Dasturlarni solishtirish",
+    "intro": "Yonma-yon 3 tagacha dastur. Narxlar muassasa e’lon qilganidek.",
+    "add": "Solishtirish",
+    "remove": "Solishtirishdan olib tashlash",
+    "bar": "{count, plural, one {# ta dastur tanlandi} other {# ta dastur tanlandi}}",
+    "open": "Solishtirish",
+    "clear": "Tozalash",
+    "empty": "Hali solishtiradigan narsa yo‘q. Natijalaringizda Solishtirish tugmasi bilan dasturlarni tanlang.",
+    "needTwo": "Solishtirish uchun kamida ikkita dastur tanlang.",
+    "loading": "Yuklanmoqda…",
+    "failed": "Dasturlarni yuklab bo‘lmadi. Iltimos, qayta urinib ko‘ring.",
+    "back": "Natijalarimga qaytish",
+    "max": "3 tagacha dasturni solishtirishingiz mumkin.",
+    "rows": {
+      "institution": "Muassasa",
+      "location": "Joylashuvi",
+      "level": "Daraja",
+      "duration": "Davomiyligi",
+      "languages": "O‘qitish tili",
+      "tuition": "O‘qish narxi",
+      "requirements": "Talablar",
+      "deadlines": "Muddatlar",
+      "apply": "Ariza topshirish"
+    }
+  },
+  "Favorites": {
+    "title": "Mening ro‘yxatim",
+    "intro": "Siz saqlagan muassasalar, muddatlar va kerakli hujjatlar bilan.",
+    "empty": "Hali hech narsa saqlanmagan. Muassasani oching va Saqlash tugmasini bosing.",
+    "emptyCta": "Xaritani ochish",
+    "remove": "Olib tashlash",
+    "nextDeadline": "Keyingi muddat: {date}",
+    "noDeadline": "Yaqinlashayotgan muddat e’lon qilinmagan",
+    "docsTitle": "Tayyorlanadigan hujjatlar",
+    "docHave": "tayyor",
+    "docMissing": "hali yo‘q",
+    "loading": "Yuklanmoqda…",
+    "failed": "Ro‘yxatingizni yuklab bo‘lmadi. Iltimos, qayta urinib ko‘ring.",
+    "open": "Kartani ochish"
+  },
+  "Consent": {
+    "title": "Kukilar va tahlil",
+    "text": "Saytning ishlashi uchun zarur kukilardan foydalanamiz (til, mavzu, kirish). Ruxsatingiz bilan tahlil va reklama texnologiyalaridan ham foydalanamiz va bu ma’lumotlarni Maxfiylik siyosatida bayon etilganidek hamkorlarimiz bilan ulashishimiz mumkin.",
+    "accept": "Hammasini qabul qilish",
+    "decline": "Faqat zaruriylari",
+    "policy": "Maxfiylik siyosati",
+    "settings": "Kuki sozlamalari"
+  },
+  "Catalog": {
+    "title": "Katalog",
+    "intro": "Ma’lumotlar bazasidagi barcha dasturlar va muassasalar. Davlat, daraja, o‘qish tili, soha va narx bo‘yicha toraytiring. Narxlar siz tanlagan valyutada ko‘rsatiladi.",
+    "modeLabel": "Nimani ko‘rsatish",
+    "mode": {
+      "programs": "Dasturlar",
+      "institutions": "Muassasalar"
+    },
+    "search": "Nomida bor",
+    "searchPlaceholder": "masalan: huquq, dizayn, tibbiyot",
+    "country": "Davlat",
+    "type": "Turi",
+    "level": "Daraja",
+    "language": "O‘qish tili",
+    "field": "O‘qish sohasi",
+    "any": "Farqi yo‘q",
+    "maxPrice": "O‘qish narxi eng ko‘pi bilan ({currency}, yiliga)",
+    "freeOnly": "Faqat bepul o‘qish",
+    "apply": "Ko‘rsatish",
+    "reset": "Tozalash",
+    "currency": "Valyuta",
+    "loading": "Yuklanmoqda…",
+    "failed": "Katalogni yuklab bo‘lmadi. Iltimos, bir daqiqadan keyin qayta urinib ko‘ring.",
+    "empty": "Hech narsa topilmadi. Filtrlarni kamaytirib ko‘ring.",
+    "more": "Yana ko‘rsatish",
+    "years": "{count, plural, one {# yil} other {# yil}}",
+    "perYear": "yiliga {price}",
+    "approx": "o‘girilgan, taxminiy",
+    "priceUnknown": "Narx e’lon qilinmagan",
+    "total": "≈ yashash xarajatlari bilan yiliga {total} ({living})",
+    "livingUnknown": "Bu davlatning yashash xarajatlari hali ma’lumotlarimizda yo‘q",
+    "ratesNote": "Narxlar kundalik kurs bo‘yicha o‘giriladi va taxminiy. Yakuniy so‘z muassasa sahifasi va uning rasmiy saytida."
+  },
+  "Scholarships": {
+    "title": "Stipendiyalar: qayerda bepul yoki arzonroq o‘qish mumkin",
+    "intro": "Chet elda o‘qishni to‘lab beradigan davlat va xalqaro dasturlar hamda alohida muassasalarning stipendiyalari. Doimo rasmiy sahifani tekshiring: summalar, davlatlar va muddatlar har yili o‘zgaradi.",
+    "nationalTitle": "Davlat va xalqaro dasturlar",
+    "institutionalTitle": "Muassasalar stipendiyalari",
+    "severalCountries": "Bir nechta davlat",
+    "official": "Rasmiy sahifa",
+    "empty": "Ro‘yxat to‘ldirilmoqda.",
+    "disclaimer": "Biz dasturlarni sanab o‘tamiz va sizni rasmiy sahifaga yo‘naltiramiz; stipendiya olishingizga kafolat bermaymiz."
+  },
+  "Reviews": {
+    "title": "Talabalar sharhlari",
+    "summary": "{rating} / 5 · {count, plural, one {# ta sharh} other {# ta sharh}}",
+    "none": "Hali sharhlar yo‘q. Tajribangiz bilan bo‘lishgan birinchi kishi bo‘ling.",
+    "stars": "5 tadan {count, plural, one {# ta yulduz} other {# ta yulduz}}",
+    "relations": {
+      "student": "Talaba",
+      "graduate": "Bitiruvchi",
+      "applicant": "Abituriyent"
+    },
+    "loginToWrite": "Sharh yozish uchun kiring",
+    "mine": {
+      "pending": "Rahmat! Sharhingiz jamoamiz tekshiruvini kutmoqda va tekshiruvdan keyin paydo bo‘ladi.",
+      "published": "Sharhingiz e’lon qilindi. Rahmat!",
+      "rejected": "Oldingi sharhingiz e’lon qilinmadi. Yangisini yozishingiz mumkin."
+    },
+    "formTitle": "Sharh yozish",
+    "rating": "Sizning bahoyingiz",
+    "relation": "Siz",
+    "body": "Sizning tajribangiz",
+    "counter": "{count} ta belgi ({min} dan {max} gacha)",
+    "rules": "O‘z tajribangiz haqida halol va odob bilan yozing. Haqorat, aloqa ma’lumotlari, reklama va boshqa odamlarning shaxsiy ma’lumotlarisiz. Sharhlar ismingizsiz ko‘rsatiladi va tekshiruvdan keyin paydo bo‘ladi.",
+    "errors": {
+      "rating": "1 dan 5 gacha baho tanlang.",
+      "short": "Sharh juda qisqa.",
+      "long": "Sharh juda uzun.",
+      "failed": "Sharhni yuborib bo‘lmadi. Iltimos, qayta urinib ko‘ring."
+    },
+    "send": "Tekshiruvga yuborish"
+  },
+  "Shared": {
+    "title": "Ulashilgan natijalar",
+    "loading": "Yuklanmoqda…",
+    "missing": "Bunday ro‘yxat yo‘q yoki egasi ulashishni to‘xtatgan.",
+    "from": "{date} da saqlangan tanlov natijalari ro‘yxati. Unda faqat dasturlar haqidagi ochiq ma’lumotlar bor.",
+    "cta": "O‘z natijalaringizni xohlaysizmi? Qisqa so‘rovnomaga javob bering va o‘zingizga mos ro‘yxatni oling.",
+    "ctaButton": "So‘rovnomani to‘ldirish"
+  },
+  "Cabinet": {
+    "title": "Muassasa hisobi",
+    "intro": "Agar maktab, kollej yoki universitetni vakillik qilsangiz, uning kartasi, narxlari va muddatlarini o‘zingiz dolzarb saqlay olasiz.",
+    "loading": "Yuklanmoqda…",
+    "failed": "Hisobingizni yuklab bo‘lmadi. Iltimos, qayta urinib ko‘ring.",
+    "none": "Siz hali birorta muassasani boshqarmaysiz. Muassasangiz sahifasini oching va “Men ushbu muassasani vakillik qilaman” tugmasini bosing. Jamoamiz so‘rovni tekshirgach, uni shu yerda tahrirlay olasiz.",
+    "findInstitution": "Muassasamni topish",
+    "institution": "Muassasa",
+    "request": {
+      "pending": "{name}: so‘rov jamoamiz tekshiruvini kutmoqda.",
+      "rejected": "{name}: so‘rov tasdiqlanmadi. Agar xato bo‘lsa, bizga yozing."
+    },
+    "claim": {
+      "title": "Ushbu muassasada ishlaysizmi?",
+      "text": "Narxlar, muddatlar va tavsifni o‘zingiz yangilash uchun kirish so‘rang. Jamoamiz har bir so‘rovni tekshiradi.",
+      "login": "So‘rov yuborish uchun kiring",
+      "openCabinet": "Muassasa hisobini ochish",
+      "pending": "So‘rovingiz jamoamiz tekshiruvini kutmoqda.",
+      "rejected": "So‘rovingiz tasdiqlanmadi. Agar xato bo‘lsa, bizga yozing.",
+      "ask": "Men ushbu muassasani vakillik qilaman",
+      "position": "Lavozimingiz",
+      "message": "Uni vakillik qilishingizni qanday tekshira olamiz?",
+      "messageHint": "Masalan, muassasa saytida ko‘rsatilgan ish e-pochtasi yoki qabul komissiyasi telefoni.",
+      "failed": "So‘rovni yuborib bo‘lmadi. Iltimos, qayta urinib ko‘ring.",
+      "send": "So‘rovni yuborish"
+    },
+    "card": {
+      "title": "Muassasa kartasi",
+      "website": "Rasmiy veb-sayt",
+      "dormitory": "Yotoqxona",
+      "unknown": "Ko‘rsatilmagan",
+      "yes": "Bor",
+      "no": "Yo‘q",
+      "description": {
+        "en": "Tavsif (inglizcha)",
+        "ru": "Tavsif (ruscha)",
+        "original": "Tavsif (mahalliy tilda)"
+      },
+      "message": {
+        "saved": "Saqlandi.",
+        "failed": "Saqlab bo‘lmadi. Iltimos, qayta urinib ko‘ring.",
+        "url": "Veb-sayt manzili https:// bilan boshlanishi kerak"
+      },
+      "save": "Kartani saqlash"
+    },
+    "programmes": {
+      "title": "Dasturlar",
+      "add": "Dastur qo‘shish",
+      "note": "Narxlar chet eldan keladigan abituriyentlar uchun. Siz saqlagan dastur saytda muassasaning o‘zi kiritgan deb belgilanadi.",
+      "loading": "Yuklanmoqda…",
+      "empty": "Hali dasturlar yo‘q.",
+      "more": "Yana ko‘rsatish",
+      "free": "O‘qish bepul",
+      "noPrice": "Narx yo‘q",
+      "byYou": "siz kiritgansiz",
+      "close": "Yopish",
+      "edit": "Tahrirlash",
+      "delete": "O‘chirish",
+      "confirmDelete": "“{name}” dasturi o‘chirilsinmi?",
+      "nameEn": "Nomi (inglizcha)",
+      "nameOriginal": "Nomi (mahalliy tilda)",
+      "level": "Daraja",
+      "languages": "O‘qish tillari (kodlar)",
+      "duration": "Davomiyligi, yil",
+      "amount": "O‘qish narxi summasi",
+      "currency": "Valyuta (3 harf)",
+      "period": "Har",
+      "periods": {
+        "year": "yil",
+        "semester": "semestr",
+        "total": "butun dastur"
+      },
+      "deadline": "Ariza muddati",
+      "applicationUrl": "Ariza havolasi",
+      "errors": {
+        "name": "Dastur nomini kiriting.",
+        "level": "Darajani tanlang.",
+        "languages": "Tillarni ikki harfli kodlar bilan yozing, masalan: en, uz.",
+        "duration": "Davomiylik 0 dan 12 yilgacha bo‘lishi kerak.",
+        "amount": "Summa son bo‘lishi kerak.",
+        "currency": "Valyuta uchta bosh harfdan iborat kod, masalan: USD.",
+        "deadline": "Muddat sanasini tanlang.",
+        "url": "Havola https:// bilan boshlanishi kerak",
+        "failed": "Saqlab bo‘lmadi. Iltimos, qayta urinib ko‘ring."
+      },
+      "save": "Saqlash",
+      "cancel": "Bekor qilish"
+    }
+  }
+}

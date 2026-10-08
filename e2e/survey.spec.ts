@@ -1,4 +1,4 @@
-﻿import { expect, test, type Page } from '@playwright/test';
+import { expect, test, type Page } from '@playwright/test';
 import { attempts, fakeSignIn, type FakeAttempt } from './helpers';
 
 // The survey runs against fakes of Supabase (see helpers.ts): no real data is touched.
@@ -246,7 +246,7 @@ test.describe('survey', () => {
 });
 
 test.describe('survey in every language', () => {
-  for (const locale of ['ru', 'ka', 'es', 'zh', 'uk', 'hy', 'kk'] as const) {
+  for (const locale of ['ru', 'ka', 'es', 'zh', 'uk', 'hy', 'kk', 'tr', 'az', 'uz', 'ky', 'pl', 'ar', 'fr', 'de'] as const) {
     test(`/${locale}: hub and questions fit the screen`, async ({ page }) => {
       const overflow = () =>
         page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
