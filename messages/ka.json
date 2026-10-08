@@ -494,7 +494,8 @@
       "moveUp": "ზემოთ",
       "moveDown": "ქვემოთ",
       "counter": "არჩეულია {chosen} / {count}",
-      "range": "{min}-დან {max}-მდე"
+      "range": "{min}-დან {max}-მდე",
+      "popular": "პოპულარული მიმართულებები"
     },
     "errors": {
       "required": "უპასუხეთ ამ კითხვას",

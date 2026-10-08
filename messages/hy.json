@@ -494,7 +494,8 @@
       "moveUp": "Վերև",
       "moveDown": "Ներքև",
       "counter": "Ընտրված է {chosen}՝ {count}-ից",
-      "range": "{min}-ից մինչև {max}"
+      "range": "{min}-ից մինչև {max}",
+      "popular": "Հայտնի ուղղություններ"
     },
     "errors": {
       "required": "Պատասխանեք այս հարցին",

@@ -62,7 +62,7 @@ interface InstitutionRow {
 type Row = Record<string, unknown>;
 const rec = (v: unknown): Row => (typeof v === 'object' && v !== null && !Array.isArray(v) ? (v as Row) : {});
 
-const BROAD_FIELDS = ISCED.filter((e) => e.c.length === 2);
+const BROAD_FIELDS = ISCED.filter((e) => e.c.length === 2).map((broad) => ({ broad, narrow: ISCED.filter((e) => e.c.length === 3 && e.c.startsWith(broad.c)) }));
 
 /** The catalog: every published programme or institution, with filters and prices in the visitor's currency. */
 export function CatalogApp() {
@@ -286,8 +286,13 @@ export function CatalogApp() {
               {t('field')}
               <select value={filters.field} onChange={(e) => set('field', e.target.value)} className={`${inputClass} mt-1 font-normal`}>
                 <option value="">{t('any')}</option>
-                {BROAD_FIELDS.map((x) => (
-                  <option key={x.c} value={x.c}>{labelFor(x, locale)}</option>
+                {BROAD_FIELDS.map(({ broad, narrow }) => (
+                  <optgroup key={broad.c} label={labelFor(broad, locale)}>
+                    <option value={broad.c}>{labelFor(broad, locale)}</option>
+                    {narrow.filter((n) => n.en !== broad.en).map((n) => (
+                      <option key={n.c} value={n.c}>{labelFor(n, locale)}</option>
+                    ))}
+                  </optgroup>
                 ))}
               </select>
             </label>

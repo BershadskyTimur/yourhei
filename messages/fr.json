@@ -494,7 +494,8 @@
       "moveUp": "Monter",
       "moveDown": "Descendre",
       "counter": "{chosen} sur {count} choisis",
-      "range": "De {min} à {max}"
+      "range": "De {min} à {max}",
+      "popular": "Domaines populaires"
     },
     "errors": {
       "required": "Veuillez répondre à cette question",

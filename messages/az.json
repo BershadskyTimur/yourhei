@@ -494,7 +494,8 @@
       "moveUp": "Yuxarı apar",
       "moveDown": "Aşağı apar",
       "counter": "{count} variantdan {chosen} seçilib",
-      "range": "{min} ilə {max} arasında"
+      "range": "{min} ilə {max} arasında",
+      "popular": "Populyar istiqamətlər"
     },
     "errors": {
       "required": "Zəhmət olmasa, bu suala cavab ver",

@@ -494,7 +494,8 @@
       "moveUp": "Выше",
       "moveDown": "Ниже",
       "counter": "Выбрано {chosen} из {count}",
-      "range": "От {min} до {max}"
+      "range": "От {min} до {max}",
+      "popular": "Популярные направления"
     },
     "errors": {
       "required": "Ответьте на этот вопрос",

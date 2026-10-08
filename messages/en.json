@@ -494,7 +494,8 @@
       "moveUp": "Move up",
       "moveDown": "Move down",
       "counter": "{chosen} of {count} chosen",
-      "range": "From {min} to {max}"
+      "range": "From {min} to {max}",
+      "popular": "Popular directions"
     },
     "errors": {
       "required": "Please answer this question",
