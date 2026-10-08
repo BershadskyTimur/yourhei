@@ -2,7 +2,7 @@
 
 import { useLocale, useTranslations } from 'next-intl';
 import { useMemo, useState } from 'react';
-import { normalizeSearch } from '@/lib/institutions/filter';
+import { POPULAR_FIELDS, popularLabel, searchIsced } from '@/lib/survey/isced-search';
 import { ISCED, iscedEntry, iscedLevel, iscedPath, type IscedEntry } from '@/lib/survey/references';
 import { inputClass, secondaryButton } from '../forms/ui';
 
@@ -37,10 +37,8 @@ export function SpecialtyPicker({
   }, []);
   const broad = ISCED.filter((e) => e.c.length === 2);
 
-  const q = normalizeSearch(query);
-  const matches = q
-    ? ISCED.filter((e) => normalizeSearch(pick(e, locale) + ' ' + e.en).includes(q)).slice(0, 14)
-    : [];
+  const q = query.trim();
+  const matches = q ? searchIsced(q, locale) : [];
 
   const full = value.length >= max;
   const add = (code: string) => !value.includes(code) && !full && onChange([...value, code]);
@@ -156,10 +154,10 @@ export function SpecialtyPicker({
           <p className="text-muted">{t('noMatches')}</p>
         ) : (
           <ul className="divide-y divide-line rounded-xl border border-line">
-            {matches.map((e) => (
+            {matches.map(({ entry: e, via }) => (
               <li key={e.c} className="flex items-center gap-2 p-2">
                 <span className="min-w-0 flex-1">
-                  <span className="block text-text">{pick(e, locale)}</span>
+                  <span className="block text-text">{pick(e, locale)}{via && <span className="text-muted"> · {via}</span>}</span>
                   <span className="block text-xs text-muted">
                     {iscedPath(e.c)
                       .slice(0, -1)
@@ -175,7 +173,30 @@ export function SpecialtyPicker({
           </ul>
         )
       ) : (
-        <ul className="rounded-xl border border-line p-2">{broad.map((e) => renderNode(e, 0))}</ul>
+        <>
+          <div>
+            <h3 className="text-sm font-semibold text-text">{t('popular')}</h3>
+            <ul className="mt-2 flex flex-wrap gap-2">
+              {POPULAR_FIELDS.map((p) => {
+                const chosen = value.includes(p.code);
+                return (
+                  <li key={p.code}>
+                    <button
+                      type="button"
+                      aria-pressed={chosen}
+                      disabled={!chosen && full}
+                      onClick={() => (chosen ? remove(p.code) : add(p.code))}
+                      className={`min-h-9 rounded-full border px-3 py-1 text-sm ${chosen ? 'border-line-strong bg-accent-soft font-medium text-text' : 'border-line-strong bg-bg text-text hover:bg-surface-strong'} disabled:opacity-40`}
+                    >
+                      {chosen ? '✓ ' : ''}{popularLabel(p, locale)}
+                    </button>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+          <ul className="rounded-xl border border-line p-2">{broad.map((e) => renderNode(e, 0))}</ul>
+        </>
       )}
     </div>
   );

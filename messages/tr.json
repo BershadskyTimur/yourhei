@@ -494,7 +494,8 @@
       "moveUp": "Yukarı taşı",
       "moveDown": "Aşağı taşı",
       "counter": "{count} seçenekten {chosen} tanesi seçildi",
-      "range": "{min} ile {max} arasında"
+      "range": "{min} ile {max} arasında",
+      "popular": "Popüler alanlar"
     },
     "errors": {
       "required": "Lütfen bu soruyu yanıtla",

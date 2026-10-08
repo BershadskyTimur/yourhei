@@ -27,7 +27,7 @@ export function sanitizeMeta(event: unknown, raw: unknown): EventMeta | null {
         ['country', code(m.country, /^[A-Z]{2}$/, 2)],
         ['level', code(m.level, /^[a-z_]{3,20}$/, 20)],
         ['language', code(m.language, /^[a-z]{2}$/, 2)],
-        ['field', code(m.field, /^\d{2}$/, 2)],
+        ['field', code(m.field, /^\d{2,4}$/, 4)],
         ['type', code(m.type, /^[a-z_]{3,20}$/, 20)],
         ['free', m.free === true ? true : undefined],
         ['price', m.price === true ? true : undefined],

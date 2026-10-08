@@ -494,7 +494,8 @@
       "moveUp": "Yuqoriga",
       "moveDown": "Pastga",
       "counter": "{count} tadan {chosen} tasi tanlandi",
-      "range": "{min} dan {max} gacha"
+      "range": "{min} dan {max} gacha",
+      "popular": "Mashhur yo‘nalishlar"
     },
     "errors": {
       "required": "Iltimos, bu savolga javob bering",

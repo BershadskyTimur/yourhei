@@ -494,7 +494,8 @@
       "moveUp": "W górę",
       "moveDown": "W dół",
       "counter": "Wybrano {chosen} z {count}",
-      "range": "Od {min} do {max}"
+      "range": "Od {min} do {max}",
+      "popular": "Popularne kierunki"
     },
     "errors": {
       "required": "Odpowiedz na to pytanie",

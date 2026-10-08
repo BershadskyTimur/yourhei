@@ -494,7 +494,8 @@
       "moveUp": "Вище",
       "moveDown": "Нижче",
       "counter": "Обрано {chosen} із {count}",
-      "range": "Від {min} до {max}"
+      "range": "Від {min} до {max}",
+      "popular": "Популярні напрями"
     },
     "errors": {
       "required": "Дайте відповідь на це запитання",

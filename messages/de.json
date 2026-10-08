@@ -494,7 +494,8 @@
       "moveUp": "Nach oben",
       "moveDown": "Nach unten",
       "counter": "{chosen} von {count} gewählt",
-      "range": "Von {min} bis {max}"
+      "range": "Von {min} bis {max}",
+      "popular": "Beliebte Fachrichtungen"
     },
     "errors": {
       "required": "Bitte beantworte diese Frage",

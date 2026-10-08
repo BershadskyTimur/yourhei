@@ -494,7 +494,8 @@
       "moveUp": "上移",
       "moveDown": "下移",
       "counter": "已选 {chosen} / {count}",
-      "range": "范围 {min} 至 {max}"
+      "range": "范围 {min} 至 {max}",
+      "popular": "热门方向"
     },
     "errors": {
       "required": "请回答此问题",
