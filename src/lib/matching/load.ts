@@ -119,18 +119,49 @@ const MAX_PAGES = 20; // at most 20 000 programmes: more would make the page slo
 /** The published programmes (that fit `filter`) and the facts about their countries. Throws if the database cannot be read. */
 export async function loadMatchData(supabase: SupabaseClient, filter: ProgramFilter = {}): Promise<{ programs: MatchProgram[]; countries: Record<string, CountryFacts> }> {
   const rows: Row[] = [];
-  for (let page = 0; page < MAX_PAGES; page++) {
-    let query = supabase.from('programs').select(PROGRAM_COLUMNS).eq('status', 'published').order('id');
-    if (filter.level) query = query.eq('level', filter.level);
-    if (filter.countries?.length) query = query.in('institutions.country', filter.countries);
-    if (filter.types?.length) query = query.in('institutions.type', filter.types);
-    if (filter.fieldPrefixes?.length) query = query.or(filter.fieldPrefixes.map((p) => `isced_f.like.${p}%`).join(','));
-    const res = await query.range(page * PAGE, page * PAGE + PAGE - 1);
-    if (res.error) throw res.error;
-    rows.push(...(res.data as unknown as Row[]));
-    if (res.data.length < PAGE) break;
+  // The fast way: a database function that starts from the institutions of the chosen countries and pages by keyset
+  // (migration 0014). Before it is installed the older query below is used.
+  let after: { institution: string; program: string } | null = null;
+  let useFunction = true;
+  for (let page = 0; page < MAX_PAGES && useFunction; page++) {
+    const res = await supabase.rpc('match_programs', {
+      p_level: filter.level || null,
+      p_countries: filter.countries?.length ? filter.countries : null,
+      p_types: filter.types?.length ? filter.types : null,
+      p_prefixes: filter.fieldPrefixes?.length ? filter.fieldPrefixes : null,
+      p_after_institution: after?.institution ?? null,
+      p_after_program: after?.program ?? null,
+      p_limit: PAGE,
+    });
+    if (res.error) {
+      if (page === 0 && /match_programs|PGRST202/.test(`${res.error.code} ${res.error.message}`)) {
+        useFunction = false;
+        break;
+      }
+      throw res.error;
+    }
+    const list = (Array.isArray(res.data) ? res.data : []) as Row[];
+    rows.push(...list);
+    const last = list[list.length - 1];
+    if (list.length < PAGE || !last) {
+      page = MAX_PAGES;
+      break;
+    }
+    after = { institution: String(rec(last.institutions).id), program: String(last.id) };
   }
-  const countries = await supabase.from('country_data').select('country, currency, work_during_study, post_study_work_visa, recognition, cost_of_living').eq('status', 'published');
+  if (!useFunction) {
+    for (let page = 0; page < MAX_PAGES; page++) {
+      let query = supabase.from('programs').select(PROGRAM_COLUMNS).eq('status', 'published').order('id');
+      if (filter.level) query = query.eq('level', filter.level);
+      if (filter.countries?.length) query = query.in('institutions.country', filter.countries);
+      if (filter.types?.length) query = query.in('institutions.type', filter.types);
+      if (filter.fieldPrefixes?.length) query = query.or(filter.fieldPrefixes.map((p) => `isced_f.like.${p}%`).join(','));
+      const res = await query.range(page * PAGE, page * PAGE + PAGE - 1);
+      if (res.error) throw res.error;
+      rows.push(...(res.data as unknown as Row[]));
+      if (res.data.length < PAGE) break;
+    }
+  }  const countries = await supabase.from('country_data').select('country, currency, work_during_study, post_study_work_visa, recognition, cost_of_living').eq('status', 'published');
   if (countries.error) throw countries.error;
   return {
     programs: rows.flatMap((r) => toProgram(r) ?? []),

@@ -73,6 +73,7 @@ export async function fakeSignIn(
   });
   // Published programmes and country facts for the matches page.
   await page.route(`${url}/rest/v1/programs**`, (route) => route.fulfill(json(data.programs ?? [])));
+  await page.route(`${url}/rest/v1/rpc/match_programs**`, (route) => route.fulfill(json(data.programs ?? [])));
   await page.route(`${url}/rest/v1/country_data**`, (route) => route.fulfill(json(data.countries ?? [])));
 
   // The survey table: a tiny in-memory copy of survey_attempts.
