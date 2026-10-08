@@ -570,7 +570,7 @@ function RepRequests() {
           <li key={String(r.id)} className="p-3">
             <div className="font-medium">{nameOf(r.institution_names)} · {String(r.institution_country ?? '')}</div>
             <div className="text-sm text-muted">
-              {String(r.email ?? '—')} · {String(r.position ?? 'должность не указана')} · {new Date(String(r.created_at)).toLocaleDateString('ru-RU')} ·{' '}
+              {String(r.email ?? '—')} · {String(r.job_title ?? 'должность не указана')} · {new Date(String(r.created_at)).toLocaleDateString('ru-RU')} ·{' '}
               {r.status === 'pending' ? 'ждёт решения' : r.status === 'approved' ? 'одобрена' : 'отклонена'}
             </div>
             {typeof r.message === 'string' && r.message && <p className="mt-1 whitespace-pre-line text-sm">{r.message}</p>}

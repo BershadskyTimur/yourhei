@@ -250,7 +250,7 @@ grant execute on function public.admin_community_stats() to authenticated;
 create or replace function public.admin_rep_requests()
 returns table (
   id uuid, user_id uuid, email text, institution_id uuid, institution_names jsonb, institution_country text,
-  position text, message text, status text, created_at timestamptz
+  job_title text, message text, status text, created_at timestamptz
 )
 language plpgsql
 stable
@@ -262,7 +262,7 @@ begin
     raise exception 'admin only' using errcode = '42501';
   end if;
   return query
-    select r.id, r.user_id, u.email::text, r.institution_id, i.names, i.country::text, r.position, r.message, r.status, r.created_at
+    select r.id, r.user_id, u.email::text, r.institution_id, i.names, i.country::text, r.position as job_title, r.message, r.status, r.created_at
     from public.institution_reps r
     join auth.users u on u.id = r.user_id
     join public.institutions i on i.id = r.institution_id
