@@ -909,7 +909,16 @@
       "title": "No programme fits all your requirements yet",
       "text": "Try wider choices: more countries or types in your profile, another budget, or a preparatory year. New programmes are added regularly.",
       "profile": "Edit my profile",
-      "survey": "Take the survey again"
+      "survey": "Take the survey again",
+      "whyTitle": "What removed the programmes",
+      "reasons": {
+        "language": "{count, plural, one {# programme is} other {# programmes are}} taught in a language you can not study in yet (add a language or agree to a preparatory year).",
+        "budget": "{count, plural, one {# programme costs} other {# programmes cost}} more than your budget.",
+        "free": "{count, plural, one {# programme is} other {# programmes are}} not confirmed as free of tuition.",
+        "format": "{count, plural, one {# programme has} other {# programmes have}} a different study format.",
+        "intake": "{count, plural, one {# programme starts} other {# programmes start}} in a different month.",
+        "academic": "{count, plural, one {# programme asks} other {# programmes ask}} for much higher grades or scores than yours."
+      }
     },
     "groups": {
       "safe": {

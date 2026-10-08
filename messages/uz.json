@@ -909,7 +909,16 @@
       "title": "Hali birorta dastur barcha talablaringizga mos kelmaydi",
       "text": "Kengroq tanlovlarni sinab ko‘ring: profilingizda ko‘proq davlat yoki tur, boshqa byudjet yoki tayyorlov yili. Yangi dasturlar muntazam qo‘shilib turadi.",
       "profile": "Profilimni tahrirlash",
-      "survey": "So‘rovnomani qayta to‘ldirish"
+      "survey": "So‘rovnomani qayta to‘ldirish",
+      "whyTitle": "Dasturlarni nima chiqarib tashladi",
+      "reasons": {
+        "language": "{count, plural, one {# ta dastur} other {# ta dastur}} siz hali o‘qiy olmaydigan tilda olib boriladi (til qo‘shing yoki tayyorlov yiliga rozi bo‘ling).",
+        "budget": "{count, plural, one {# ta dasturning} other {# ta dasturning}} narxi byudjetingizdan yuqori.",
+        "free": "{count, plural, one {# ta dastur} other {# ta dastur}} bepul ekani tasdiqlanmagan.",
+        "format": "{count, plural, one {# ta dasturning} other {# ta dasturning}} o‘qish shakli boshqacha.",
+        "intake": "{count, plural, one {# ta dastur} other {# ta dastur}} boshqa oyda boshlanadi.",
+        "academic": "{count, plural, one {# ta dastur} other {# ta dastur}} sizdagidan ancha yuqori baho yoki ball talab qiladi."
+      }
     },
     "groups": {
       "safe": {

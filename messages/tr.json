@@ -909,7 +909,16 @@
       "title": "Henüz hiçbir program tüm koşullarına uymuyor",
       "text": "Daha geniş seçimler dene: profilinde daha fazla ülke veya tür, farklı bir bütçe ya da hazırlık yılı. Yeni programlar düzenli olarak ekleniyor.",
       "profile": "Profilimi düzenle",
-      "survey": "Anketi yeniden doldur"
+      "survey": "Anketi yeniden doldur",
+      "whyTitle": "Programları ne eledi",
+      "reasons": {
+        "language": "{count, plural, one {# program} other {# program}} henüz eğitim alamadığın bir dilde veriliyor (bir dil ekle veya hazırlık yılını kabul et).",
+        "budget": "{count, plural, one {# programın} other {# programın}} ücreti bütçenden yüksek.",
+        "free": "{count, plural, one {# programın} other {# programın}} ücretsiz olduğu doğrulanmadı.",
+        "format": "{count, plural, one {# programın} other {# programın}} eğitim biçimi farklı.",
+        "intake": "{count, plural, one {# program} other {# program}} başka bir ayda başlıyor.",
+        "academic": "{count, plural, one {# program} other {# program}} seninkinden çok daha yüksek not veya puan istiyor."
+      }
     },
     "groups": {
       "safe": {

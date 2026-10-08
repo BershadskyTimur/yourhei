@@ -1,7 +1,7 @@
 // The matching engine (SPEC.md section 11): hard filters, scores 0-100, three groups, reasons and gaps.
 // Pure functions only: the same input always gives the same result, and it is covered by tests.
 import { academicFit } from './academic';
-import { BUDGET_TOLERANCE, failedFilter, usableLanguages } from './filters';
+import { BUDGET_TOLERANCE, failedFilter, usableLanguages, type FilterFailure } from './filters';
 import { scoreProgram, tuitionYearly, whyNotes } from './scoring';
 import type { Group, MatchContext, MatchInput, MatchProgram, MatchResult, Matches, Note } from './types';
 
@@ -14,6 +14,9 @@ export const GROUP_LIMITS: Record<MatchInput['strategy'], Record<Group, number>>
   balanced: { safe: 6, suitable: 6, ambitious: 4 },
   ambitious: { safe: 3, suitable: 6, ambitious: 8 },
 };
+
+/** At most this many programmes of one institution are shown in one group, so the list is varied. */
+export const MAX_PER_INSTITUTION = 2;
 
 export function groupFor(minMargin: number | null, met: boolean): Group {
   if (!met) return 'ambitious';
@@ -36,12 +39,20 @@ function extraGaps(program: MatchProgram, input: MatchInput, ctx: MatchContext):
 /** Runs the whole matching for one person over the given (published, verified) programmes. */
 export function matchPrograms(programs: readonly MatchProgram[], input: MatchInput, ctx: MatchContext): Matches {
   const results: MatchResult[] = [];
+  const rejected: Partial<Record<FilterFailure | 'academic', number>> = {};
   let passed = 0;
 
   for (const program of programs) {
-    if (failedFilter(program, input, ctx) !== null) continue;
+    const failed = failedFilter(program, input, ctx);
+    if (failed !== null) {
+      rejected[failed] = (rejected[failed] ?? 0) + 1;
+      continue;
+    }
     const fit = academicFit(program, input);
-    if (fit.hardFail) continue; // far below the requirements: not realistic, not even "ambitious"
+    if (fit.hardFail) {
+      rejected.academic = (rejected.academic ?? 0) + 1; // far below the requirements: not realistic, not even "ambitious"
+      continue;
+    }
     passed++;
 
     const scored = scoreProgram(program, input, ctx, fit);
@@ -59,11 +70,18 @@ export function matchPrograms(programs: readonly MatchProgram[], input: MatchInp
   }
 
   const limits = GROUP_LIMITS[input.strategy];
-  const pick = (group: Group) =>
-    results
+  const pick = (group: Group) => {
+    const perInstitution = new Map<string, number>();
+    return results
       .filter((r) => r.group === group)
       .sort((a, b) => b.score - a.score || a.program.id.localeCompare(b.program.id))
+      .filter((r) => {
+        const n = perInstitution.get(r.program.institution.id) ?? 0;
+        perInstitution.set(r.program.institution.id, n + 1);
+        return n < MAX_PER_INSTITUTION;
+      })
       .slice(0, limits[group]);
+  };
 
-  return { safe: pick('safe'), suitable: pick('suitable'), ambitious: pick('ambitious'), checked: programs.length, passed };
+  return { safe: pick('safe'), suitable: pick('suitable'), ambitious: pick('ambitious'), checked: programs.length, passed, rejected };
 }

@@ -10,7 +10,7 @@ const result = (n: number, group: MatchResult['group']): MatchResult =>
   }) as unknown as MatchResult;
 
 describe('buildSnapshot', () => {
-  const matches = { safe: [result(1, 'safe'), result(2, 'safe')], suitable: [result(3, 'suitable')], ambitious: [], checked: 10, passed: 3 } as Matches;
+  const matches = { safe: [result(1, 'safe'), result(2, 'safe')], suitable: [result(3, 'suitable')], ambitious: [], checked: 10, passed: 3, rejected: {} } as Matches;
   it('keeps the order of the groups and rounds the score', () => {
     const items = buildSnapshot(matches);
     expect(items.map((i) => i.group)).toEqual(['safe', 'safe', 'suitable']);
@@ -23,7 +23,7 @@ describe('buildSnapshot', () => {
 
 describe('parseSnapshot', () => {
   it('round-trips and drops broken rows', () => {
-    const items = buildSnapshot({ safe: [result(1, 'safe')], suitable: [], ambitious: [], checked: 1, passed: 1 } as Matches);
+    const items = buildSnapshot({ safe: [result(1, 'safe')], suitable: [], ambitious: [], checked: 1, passed: 1, rejected: {} } as Matches);
     expect(parseSnapshot(JSON.parse(JSON.stringify(items)))).toEqual(items);
     expect(parseSnapshot([{ group: 'nope' }, null, 5, { ...items[0], score: 'x' }])).toEqual([]);
     expect(parseSnapshot('text')).toEqual([]);

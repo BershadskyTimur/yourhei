@@ -114,6 +114,11 @@ function Results({ attempt, programs, countries, rates, ratesSource, profile }: 
   );
   const date = new Intl.DateTimeFormat(locale, { dateStyle: 'long' }).format(new Date(attempt.completed_at ?? attempt.updated_at));
   const total = matches.safe.length + matches.suitable.length + matches.ambitious.length;
+  // the rules that removed programmes, most effective first (only those a person can change)
+  const reasons = (['language', 'budget', 'free', 'format', 'intake', 'academic'] as const)
+    .map((k) => [k, matches.rejected[k] ?? 0] as const)
+    .filter(([, n]) => n > 0)
+    .sort((x, y) => y[1] - x[1]);
   const snapshot = useMemo(() => buildSnapshot(matches), [matches]);
 
   // how good the matching is for real people: how many programmes passed (anonymous, only with consent)
@@ -138,6 +143,16 @@ function Results({ attempt, programs, countries, rates, ratesSource, profile }: 
         <section className="rounded-2xl border border-line bg-surface p-6">
           <h2 className="text-xl font-semibold text-text">{t('nothing.title')}</h2>
           <p className="mt-2">{t('nothing.text')}</p>
+          {reasons.length > 0 && (
+            <div className="mt-3">
+              <p className="text-sm font-semibold text-text">{t('nothing.whyTitle')}</p>
+              <ul className="mt-1 list-disc space-y-1 ps-5 text-sm">
+                {reasons.map(([key, count]) => (
+                  <li key={key}>{t(`nothing.reasons.${key}` as 'nothing.reasons.language', { count })}</li>
+                ))}
+              </ul>
+            </div>
+          )}
           <div className="mt-4 flex flex-wrap gap-3">
             <Link href="/profile" className={secondaryButton}>{t('nothing.profile')}</Link>
             <Link href="/survey" className={secondaryButton}>{t('nothing.survey')}</Link>
