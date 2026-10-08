@@ -100,3 +100,29 @@ test.describe('new languages', () => {
     });
   }
 });
+
+test.describe('anonymous usage events', () => {
+  test('a search is counted only after the visitor accepted analytics, with cleaned values', async ({ page }) => {
+    const sent: Record<string, unknown>[] = [];
+    await page.route('**/api/track', async (route) => {
+      sent.push(route.request().postDataJSON());
+      await route.fulfill({ status: 204 });
+    });
+    await page.route(`${supabaseUrl()}/rest/v1/rpc/catalog_programs**`, (route) => route.fulfill({ status: 200, contentType: 'application/json', body: '[]' }));
+    await page.route(`${supabaseUrl()}/rest/v1/country_data**`, (route) => route.fulfill({ status: 200, contentType: 'application/json', body: '[]' }));
+
+    // no consent: nothing is sent
+    await page.goto('/en/catalog');
+    await page.getByLabel('Country').selectOption('GE');
+    await page.getByRole('button', { name: 'Show', exact: true }).click();
+    await expect(page.getByText('Nothing found. Try fewer filters.')).toBeVisible();
+    expect(sent.filter((b) => b.event === 'catalog_search')).toHaveLength(0);
+
+    // consent given: the empty search is reported
+    await page.evaluate(() => window.localStorage.setItem('yourhei-consent', 'all'));
+    await page.reload();
+    await page.getByLabel('Country').selectOption('AM');
+    await page.getByRole('button', { name: 'Show', exact: true }).click();
+    await expect.poll(() => sent.find((b) => b.event === 'catalog_search')).toMatchObject({ event: 'catalog_search', meta: { country: 'AM', results: 0 } });
+  });
+});

@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import { FavoriteButton } from '@/components/FavoriteButton';
 import { ProgramCard } from '@/components/ProgramCard';
 import { ReviewForm } from '@/components/ReviewForm';
+import { TrackedLink } from '@/components/TrackedLink';
 import { ClaimInstitution } from '@/components/cabinet/ClaimInstitution';
 import { SideAds } from '@/components/SideAds';
 import { TypeDot } from '@/components/TypeDot';
@@ -63,9 +64,9 @@ export default async function InstitutionPage({ params }: { params: Params }) {
 
         <div className="mt-5 flex flex-wrap items-center gap-3">
           {institution.website && (
-            <a href={institution.website} target="_blank" rel="noopener noreferrer" className="inline-flex h-10 items-center rounded-lg bg-accent px-4 text-sm font-medium text-on-accent hover:opacity-90">
+            <TrackedLink href={institution.website} meta={{ kind: 'website', country: institution.country, slug: institution.slug }} className="inline-flex h-10 items-center rounded-lg bg-accent px-4 text-sm font-medium text-on-accent hover:opacity-90">
               {t('officialSite')}
-            </a>
+            </TrackedLink>
           )}
           <FavoriteButton institutionId={institution.id} />
         </div>
@@ -105,7 +106,7 @@ export default async function InstitutionPage({ params }: { params: Params }) {
                 <h3 className="text-sm font-semibold uppercase tracking-wide text-muted">{tSurvey.has(g.level as 'bachelor') ? tSurvey(g.level as 'bachelor') : g.level}</h3>
                 <ul className="mt-2 space-y-4">
                   {g.items.map((p) => (
-                    <ProgramCard key={p.id} program={p} country={institution.country} city={institution.city} />
+                    <ProgramCard key={p.id} program={p} country={institution.country} slug={institution.slug} city={institution.city} />
                   ))}
                 </ul>
               </div>

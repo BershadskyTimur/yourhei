@@ -1071,7 +1071,8 @@
     "priceUnknown": "Precio no publicado",
     "total": "≈ {total} al año con gastos de vida ({living})",
     "livingUnknown": "Aún no tenemos los gastos de vida de este país",
-    "ratesNote": "Los precios se convierten a los tipos de cambio diarios y son aproximados. Lo que vale es la página del centro y su web oficial."
+    "ratesNote": "Los precios se convierten a los tipos de cambio diarios y son aproximados. Lo que vale es la página del centro y su web oficial.",
+    "livingNote": "Los gastos de vida son el importe mínimo que un país exige acreditar para el visado de estudiante. El gasto real suele ser mayor, sobre todo en las grandes ciudades."
   },
   "Scholarships": {
     "title": "Becas: dónde estudiar gratis o más barato",

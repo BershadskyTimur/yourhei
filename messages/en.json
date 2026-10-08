@@ -1071,7 +1071,8 @@
     "priceUnknown": "Price not published",
     "total": "≈ {total} per year with living costs ({living})",
     "livingUnknown": "Living costs for this country are not in our data yet",
-    "ratesNote": "Prices are converted at daily exchange rates and are approximate. The institution's own page and the official site are the final word."
+    "ratesNote": "Prices are converted at daily exchange rates and are approximate. The institution's own page and the official site are the final word.",
+    "livingNote": "Living costs are the minimum amount a country requires you to show for a student visa. Real spending is usually higher, especially in big cities."
   },
   "Scholarships": {
     "title": "Scholarships: where to study free or cheaper",

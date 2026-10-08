@@ -1,7 +1,8 @@
 import { createClient } from '@supabase/supabase-js';
 import { NextResponse, type NextRequest } from 'next/server';
+import { EVENT_NAMES, sanitizeMeta } from '@/lib/analytics/events';
 
-// Records one anonymous page view (only sent by browsers whose visitor pressed "Accept all" in the cookie banner).
+// Records one anonymous page view or usage event (searches, clicks on "apply", matches; only sent by browsers whose visitor pressed "Accept all" in the cookie banner).
 // Stored: the page address, language, device type, the visitor's country (from the hosting network, the IP address
 // itself is never stored), the referring site and a random per-tab id. No names, no e-mails.
 
@@ -42,10 +43,17 @@ export async function POST(request: NextRequest) {
   if (!/^\/[A-Za-z0-9/_\-.]*$/.test(path) || path.length > 200) return new NextResponse(null, { status: 400 });
   if (/^\/[a-z]{2}\/admin/.test(path)) return new NextResponse(null, { status: 204 }); // the admin panel is not counted
 
+  // a usage event instead of a page view: only the known events, with their values checked and cut
+  const named = typeof body?.event === 'string' ? body.event : 'page_view';
+  const isEvent = (EVENT_NAMES as readonly string[]).includes(named);
+  const meta = isEvent ? sanitizeMeta(named, body?.meta) : null;
+  if (named !== 'page_view' && !meta) return new NextResponse(null, { status: 400 });
+
   const country = request.headers.get('x-vercel-ip-country')?.toUpperCase() ?? null;
   const supabase = createClient(url, key, { auth: { persistSession: false } });
   const { error } = await supabase.from('site_events').insert({
-    event: 'page_view',
+    event: meta ? named : 'page_view',
+    ...(meta ? { meta } : {}),
     path,
     locale: typeof body?.locale === 'string' ? body.locale.slice(0, 8) : null,
     country: country && /^[A-Z]{2}$/.test(country) ? country : null,

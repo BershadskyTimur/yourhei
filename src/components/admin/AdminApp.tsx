@@ -3,13 +3,14 @@
 import { useCallback, useEffect, useState } from 'react';
 import { Link } from '@/i18n/navigation';
 import { safeHttpUrl } from '@/lib/safe-url';
+import { iscedEntry } from '@/lib/survey/references';
 import { getSupabaseBrowser, isSupabaseConfigured } from '@/lib/supabase/client';
 
 // The admin panel is an internal tool for the site owner, so it is in Russian only (not translated).
 // Real protection is in the database (supabase/migrations/0006_admin.sql): without the "admin" role
 // every request below is refused by Row Level Security, whatever this page shows.
 
-type Tab = 'dashboard' | 'users' | 'traffic' | 'institutions' | 'programs' | 'reviews' | 'reps' | 'countries' | 'log';
+type Tab = 'dashboard' | 'users' | 'traffic' | 'insights' | 'institutions' | 'programs' | 'reviews' | 'reps' | 'countries' | 'log';
 type Access = 'loading' | 'guest' | 'denied' | 'admin' | 'unconfigured';
 type Row = Record<string, unknown>;
 
@@ -17,6 +18,7 @@ const TABS: { id: Tab; label: string }[] = [
   { id: 'dashboard', label: 'Обзор' },
   { id: 'users', label: 'Пользователи' },
   { id: 'traffic', label: 'Посещаемость' },
+  { id: 'insights', label: 'Аналитика' },
   { id: 'institutions', label: 'Вузы и школы' },
   { id: 'programs', label: 'Программы на проверке' },
   { id: 'reviews', label: 'Отзывы' },
@@ -95,6 +97,7 @@ export function AdminApp() {
         {tab === 'dashboard' && <Dashboard />}
         {tab === 'users' && <UsersStats />}
         {tab === 'traffic' && <Traffic />}
+        {tab === 'insights' && <Insights />}
         {tab === 'institutions' && <Institutions />}
         {tab === 'programs' && <Programs />}
         {tab === 'reviews' && <Reviews />}
@@ -809,6 +812,106 @@ function Traffic() {
             <BarList title="Устройства" rows={objRows(d.devices, { mobile: 'телефон', tablet: 'планшет', desktop: 'компьютер', unknown: 'нет данных' })} />
             <BarList title="Языки сайта" rows={objRows(d.locales)} />
             <BarList title="Откуда пришли" rows={rows(d.referrers, (r) => String(r.host))} hint="Сайты, с которых перешли по ссылке" />
+          </div>
+        </div>
+      )}
+    </section>
+  );
+}
+
+const LEVEL_RU: Record<string, string> = { school: 'школа', college: 'колледж', foundation: 'подготовительный', bachelor: 'бакалавриат', master: 'магистратура', phd: 'докторантура', language_course: 'языковые курсы' };
+const KIND_RU: Record<string, string> = { program: 'программы', scholarship: 'стипендии', website: 'сайты заведений', other: 'другое' };
+
+function Insights() {
+  const [days, setDays] = useState(30);
+  const [state, setState] = useState<{ data: Row | null; error: string | null; loading: boolean }>({ data: null, error: null, loading: true });
+  useEffect(() => {
+    let live = true;
+    getSupabaseBrowser()!
+      .rpc('admin_insights', { p_days: days })
+      .then((res) => {
+        if (live) setState({ data: res.data as Row | null, error: res.error?.message ?? null, loading: false });
+      });
+    return () => {
+      live = false;
+    };
+  }, [days]);
+  const d = state.data ?? {};
+  const funnel = (d.funnel ?? {}) as Record<string, number>;
+  const searches = (d.searches ?? {}) as Row;
+  const applies = (d.applies ?? {}) as Row;
+  const matches = (d.matches ?? {}) as Row;
+  const visitors = Number(funnel.visitors ?? 0);
+  const pct = (n: number) => (visitors > 0 ? `${Math.round((n / visitors) * 100)}%` : '—');
+  const steps: [string, string][] = [
+    ['visitors', 'Посетители (сессии)'],
+    ['catalog', 'Открыли каталог'],
+    ['institution', 'Открыли страницу заведения'],
+    ['register', 'Открыли регистрацию'],
+    ['survey', 'Открыли опрос'],
+    ['matches', 'Открыли подбор'],
+  ];
+  const total = Number(searches.total ?? 0);
+  const empty = Number(searches.empty ?? 0);
+  return (
+    <section>
+      <div className="flex flex-wrap items-center justify-between gap-3">
+        <h2 className="text-xl font-semibold">Аналитика</h2>
+        <select className={input} aria-label="Период" value={days} onChange={(e) => { setDays(Number(e.target.value)); setState((s) => ({ ...s, loading: true })); }}>
+          <option value={7}>7 дней</option>
+          <option value={30}>30 дней</option>
+          <option value={90}>90 дней</option>
+          <option value={365}>Год</option>
+        </select>
+      </div>
+      <p className="mt-1 text-sm text-muted">
+        Что люди делают на сайте. Считаются только те, кто нажал «Принять все» в баннере cookie, поэтому реальные цифры выше. Без имён и адресов IP. Поисковые фразы хранятся до 40 символов.
+      </p>
+      {state.error && !state.loading && <p role="alert" className="mt-3 text-danger">Ошибка: {state.error}. Если написано про функцию — запустите файл 0013_insights.sql в Supabase.</p>}
+      {state.loading && <p className="mt-3">Загрузка…</p>}
+      {state.data && (
+        <div className="mt-4 space-y-4">
+          <div className="rounded-xl border border-line bg-surface p-4">
+            <h3 className="font-semibold text-text">Воронка: сколько посетителей дошло до каждого шага</h3>
+            <ul className="mt-3 space-y-2 text-sm">
+              {steps.map(([key, label]) => (
+                <li key={key}>
+                  <div className="flex justify-between gap-2">
+                    <span>{label}</span>
+                    <span className="font-medium tabular-nums">{funnel[key] ?? 0} <span className="text-muted">({pct(Number(funnel[key] ?? 0))})</span></span>
+                  </div>
+                  <div className="mt-1 h-1.5 rounded-full bg-surface-strong" aria-hidden="true">
+                    <div className="h-1.5 rounded-full bg-accent" style={{ width: `${visitors > 0 ? Math.max(2, (Number(funnel[key] ?? 0) / visitors) * 100) : 0}%` }} />
+                  </div>
+                </li>
+              ))}
+            </ul>
+            <dl className="mt-4 grid gap-3 sm:grid-cols-2">
+              <Stat label="Новых аккаунтов за период" value={String(funnel.new_accounts ?? 0)} />
+              <Stat label="Опросов завершено за период" value={String(funnel.surveys_done ?? 0)} />
+            </dl>
+          </div>
+
+          <dl className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+            <Stat label="Поисков в каталоге" value={String(total)} />
+            <Stat label="Поисков без результата" value={total > 0 ? `${empty} (${Math.round((empty / total) * 100)}%)` : '0'} />
+            <Stat label="Подборов открыто" value={String(matches.views ?? 0)} />
+            <Stat label="Подборов без единой программы" value={String(matches.empty ?? 0)} />
+            <Stat label="Среднее число подходящих программ в подборе" value={matches.avg_passed == null ? '—' : String(matches.avg_passed)} />
+            <Stat label="Нажатий «Подать заявку» и «Сайт»" value={String(applies.total ?? 0)} />
+            <Stat label="Поисков «только бесплатно»" value={String(searches.free_only ?? 0)} />
+            <Stat label="Поисков по тексту" value={String(searches.with_text ?? 0)} />
+          </dl>
+
+          <div className="grid gap-4 lg:grid-cols-2">
+            <BarList title="Что не нашлось (нужны данные)" hint="Сочетания фильтров, по которым ничего не нашли" rows={rows(searches.empty_list, (r) => String(r.label))} />
+            <BarList title="Что ищут по тексту" rows={rows(searches.queries, (r) => String(r.label))} />
+            <BarList title="Страны в поиске" rows={rows(searches.countries, (r) => countryName(r.label))} />
+            <BarList title="Уровни в поиске" rows={rows(searches.levels, (r) => LEVEL_RU[String(r.label)] ?? String(r.label))} />
+            <BarList title="Языки обучения в поиске" rows={rows(searches.languages, (r) => String(r.label))} />
+            <BarList title="Направления в поиске" rows={rows(searches.fields, (r) => iscedEntry(String(r.label))?.ru ?? String(r.label))} />
+            <BarList title="Куда нажимают «Подать заявку»" hint="Страна / заведение" rows={rows(applies.top, (r) => String(r.label))} />
+            <BarList title="Что открывают для заявки" rows={objRows(applies.kinds, KIND_RU)} />
           </div>
         </div>
       )}

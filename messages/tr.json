@@ -1071,7 +1071,8 @@
     "priceUnknown": "Fiyat yayımlanmadı",
     "total": "≈ yaşam giderleriyle birlikte yılda {total} ({living})",
     "livingUnknown": "Bu ülkenin yaşam giderleri henüz verilerimizde yok",
-    "ratesNote": "Fiyatlar günlük döviz kurlarıyla dönüştürülür ve yaklaşıktır. Son söz kurumun sayfasında ve resmî sitesindedir."
+    "ratesNote": "Fiyatlar günlük döviz kurlarıyla dönüştürülür ve yaklaşıktır. Son söz kurumun sayfasında ve resmî sitesindedir.",
+    "livingNote": "Yaşam giderleri, bir ülkenin öğrenci vizesi için göstermeni istediği asgari tutardır. Gerçek harcamalar, özellikle büyük şehirlerde, genellikle daha yüksektir."
   },
   "Scholarships": {
     "title": "Burslar: nerede ücretsiz veya daha ucuza okunur",

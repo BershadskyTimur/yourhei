@@ -3,6 +3,7 @@ import { pickLocalized } from '@/lib/institutions/localized';
 import type { Money, ProgramDetail, TuitionLine } from '@/lib/institutions/detail';
 import { profileDocType } from '@/lib/documents';
 import { PriceInMyCurrency } from './PriceInMyCurrency';
+import { TrackedLink } from './TrackedLink';
 import { CERTIFICATES, EXAMS, labelFor } from '@/lib/survey/references';
 
 const fmtMoney = (m: Money, locale: string): string => {
@@ -20,7 +21,7 @@ export function examLabel(id: string, locale: string): string {
 }
 
 /** One programme: name, basic facts, price, requirements, deadlines and the link to apply. */
-export async function ProgramCard({ program, country, city }: { program: ProgramDetail; country: string; city: Partial<Record<string, string>> }) {
+export async function ProgramCard({ program, country, slug, city }: { program: ProgramDetail; country: string; slug: string; city: Partial<Record<string, string>> }) {
   const locale = await getLocale();
   const t = await getTranslations('Institution');
   const tCard = await getTranslations('Matches.card');
@@ -116,9 +117,9 @@ export async function ProgramCard({ program, country, city }: { program: Program
       )}
 
       {program.applicationUrl && (
-        <a href={program.applicationUrl} target="_blank" rel="noopener noreferrer" className="mt-4 inline-flex h-10 items-center rounded-lg bg-accent px-4 text-sm font-medium text-on-accent hover:opacity-90">
+        <TrackedLink href={program.applicationUrl} meta={{ kind: 'program', country, slug }} className="mt-4 inline-flex h-10 items-center rounded-lg bg-accent px-4 text-sm font-medium text-on-accent hover:opacity-90">
           {tCard('apply')}
-        </a>
+        </TrackedLink>
       )}
     </li>
   );

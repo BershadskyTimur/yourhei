@@ -6,6 +6,7 @@ import { TypeDot } from '@/components/TypeDot';
 import { inputClass, secondaryButton } from '@/components/forms/ui';
 import { Link } from '@/i18n/navigation';
 import { CATALOG_CURRENCIES, totalYearly, yearlyLiving, yearlyTuition } from '@/lib/catalog/cost';
+import { trackEvent } from '@/lib/analytics/track';
 import { chooseCurrency, loadCountryFacts, loadRates, useChosenCurrency, useMounted } from '@/lib/catalog/currency-store';
 import { CATALOG_LEVELS, nameFilter, searchTerm } from '@/lib/catalog/query';
 import { COUNTRIES } from '@/lib/countries';
@@ -31,6 +32,24 @@ interface Filters {
   maxPrice: string;
 }
 const EMPTY: Filters = { q: '', country: '', level: '', language: '', field: '', type: '', freeOnly: false, maxPrice: '' };
+
+/** Counts a search that has any filter (anonymous, only with consent): what people look for and what finds nothing. */
+function reportSearch(f: Filters, mode: Mode, results: number) {
+  const used = f.q.trim() !== '' || f.country !== '' || f.level !== '' || f.language !== '' || f.field !== '' || f.type !== '' || f.freeOnly || f.maxPrice !== '';
+  if (!used) return;
+  trackEvent('catalog_search', {
+    results,
+    mode,
+    ...(f.country ? { country: f.country } : {}),
+    ...(f.level && mode === 'programs' ? { level: f.level } : {}),
+    ...(f.language && mode === 'programs' ? { language: f.language } : {}),
+    ...(f.field && mode === 'programs' ? { field: f.field } : {}),
+    ...(f.type && mode === 'institutions' ? { type: f.type } : {}),
+    ...(f.freeOnly && mode === 'programs' ? { free: true } : {}),
+    ...(f.maxPrice && mode === 'programs' ? { price: true } : {}),
+    ...(f.q.trim() ? { q: f.q } : {}),
+  });
+}
 
 interface InstitutionRow {
   id: string;
@@ -171,6 +190,7 @@ export function CatalogApp() {
         else setInstitutions((old) => (reset ? foundInstitutions : [...old, ...foundInstitutions]));
         setMore(!exhausted);
         setResult({ key, status: 'ready' });
+        if (reset) reportSearch(f, m, m === 'programs' ? found.length : foundInstitutions.length);
       } catch (error) {
         if (ticket !== run.current) return;
         console.error('[catalog] could not load', error);
@@ -320,6 +340,7 @@ export function CatalogApp() {
             </ul>
           )}
           <p className="text-sm text-muted">{t('ratesNote')}</p>
+          <p className="text-sm text-muted">{t('livingNote')}</p>
         </>
       )}
 
