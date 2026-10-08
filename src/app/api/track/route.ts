@@ -7,6 +7,7 @@ import { EVENT_NAMES, sanitizeMeta } from '@/lib/analytics/events';
 // itself is never stored), the referring site and a random per-tab id. No names, no e-mails.
 
 const hits = new Map<string, { n: number; reset: number }>();
+const MAX_BODY = 4096;
 const LIMIT = 120; // per address per minute: stops a script from filling the table
 
 function tooMany(ip: string): boolean {
@@ -33,9 +34,13 @@ export async function POST(request: NextRequest) {
   if (tooMany(ip)) return new NextResponse(null, { status: 429 });
   if (BOT.test(request.headers.get('user-agent') ?? '')) return new NextResponse(null, { status: 204 });
 
+  // a real event is a few hundred bytes: refuse anything big before it is read
+  if (Number(request.headers.get('content-length') ?? 0) > MAX_BODY) return new NextResponse(null, { status: 413 });
   let body: Record<string, unknown> | null = null;
   try {
-    body = (await request.json()) as Record<string, unknown>;
+    const text = await request.text();
+    if (text.length > MAX_BODY) return new NextResponse(null, { status: 413 });
+    body = JSON.parse(text) as Record<string, unknown>;
   } catch {
     return new NextResponse(null, { status: 400 });
   }
