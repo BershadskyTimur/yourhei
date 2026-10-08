@@ -1,4 +1,4 @@
-﻿import { expect, test } from '@playwright/test';
+import { expect, test } from '@playwright/test';
 import { fakeSignIn, type FakeAttempt } from './helpers';
 
 // The matches page runs on fake database answers (see helpers.ts).
@@ -93,7 +93,7 @@ test.describe('matches page', () => {
   });
 
   test('is readable in every language without horizontal scroll', async ({ page }) => {
-    for (const locale of ['ru', 'ka', 'es', 'zh', 'uk', 'hy', 'kk']) {
+    for (const locale of ['ru', 'ka', 'es', 'zh', 'uk', 'hy', 'kk', 'tr', 'az', 'uz', 'ky', 'pl', 'ar', 'fr', 'de']) {
       await fakeSignIn(page, profile, [survey], data);
       await page.goto(`/${locale}/matches`);
       await expect(page.locator('article').first()).toBeVisible();

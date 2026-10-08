@@ -1,5 +1,5 @@
 // To add a language: add a line here and a messages/<code>.json file.
-// `dir` is ready for right-to-left languages ("rtl") later.
+// `dir` is "rtl" for right-to-left languages (Arabic).
 export const LOCALES = [
   { code: 'ru', label: 'Русский', dir: 'ltr' },
   { code: 'en', label: 'English', dir: 'ltr' },
@@ -9,6 +9,14 @@ export const LOCALES = [
   { code: 'uk', label: 'Українська', dir: 'ltr' },
   { code: 'hy', label: 'Հայերեն', dir: 'ltr' },
   { code: 'kk', label: 'Қазақша', dir: 'ltr' },
+  { code: 'tr', label: 'Türkçe', dir: 'ltr' },
+  { code: 'az', label: 'Azərbaycanca', dir: 'ltr' },
+  { code: 'uz', label: 'Oʻzbekcha', dir: 'ltr' },
+  { code: 'ky', label: 'Кыргызча', dir: 'ltr' },
+  { code: 'pl', label: 'Polski', dir: 'ltr' },
+  { code: 'ar', label: 'العربية', dir: 'rtl' },
+  { code: 'fr', label: 'Français', dir: 'ltr' },
+  { code: 'de', label: 'Deutsch', dir: 'ltr' },
 ] as const;
 
 export type LocaleCode = (typeof LOCALES)[number]['code'];

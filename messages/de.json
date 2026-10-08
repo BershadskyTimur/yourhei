@@ -1,0 +1,1213 @@
+{
+  "Meta": {
+    "title": "YourHEI — finde deine Schule, dein College oder deine Universität",
+    "description": "Eine Karte und ein persönlicher Abgleich von Universitäten, Colleges und Schulen in Europa, Asien, Amerika, Ozeanien, im Kaukasus und in Zentralasien."
+  },
+  "Common": {
+    "siteName": "YourHEI",
+    "skipToContent": "Zum Hauptinhalt springen",
+    "translationUnavailable": "Übersetzung nicht verfügbar"
+  },
+  "Header": {
+    "homeLabel": "YourHEI — Startseite",
+    "login": "Anmelden",
+    "language": "Sprache",
+    "toggleTheme": "Zwischen hellem und dunklem Design wechseln",
+    "profile": "Profil",
+    "logout": "Abmelden",
+    "matches": "Meine Treffer",
+    "favorites": "Meine Liste",
+    "navLabel": "Hauptbereiche",
+    "catalog": "Katalog",
+    "scholarships": "Stipendien"
+  },
+  "Footer": {
+    "navLabel": "Informationen zur Website",
+    "about": "Über uns",
+    "contacts": "Kontakt & Support",
+    "privacy": "Datenschutzerklärung",
+    "terms": "Nutzungsbedingungen",
+    "dataCredit": "Kartendaten © OpenStreetMap-Mitwirkende, OpenFreeMap.",
+    "rights": "© {year} YourHEI",
+    "tagline": "Finde, wo du studieren kannst: Universitäten, Colleges und Schulen auf einer Karte, mit Treffern, die sich selbst erklären."
+  },
+  "Types": {
+    "university": "Universität",
+    "college": "College",
+    "school": "Schule",
+    "language_school": "Sprachschule",
+    "foundation": "Studienkolleg / Vorbereitungsprogramme",
+    "vocational": "Berufsschule"
+  },
+  "Home": {
+    "map": {
+      "title": "Finde deinen Studienort",
+      "mapLabel": "Karte der Bildungseinrichtungen",
+      "searchLabel": "Suche nach Name oder Stadt",
+      "searchPlaceholder": "Name oder Stadt",
+      "noResults": "Nichts gefunden",
+      "legendLabel": "Arten von Einrichtungen (antippen zum Ein- oder Ausblenden)",
+      "shown": "{shown} von {total} angezeigt",
+      "loadError": "Die Einrichtungen konnten nicht geladen werden. Bitte versuche es später erneut.",
+      "more": "Details",
+      "close": "Schließen",
+      "noWebgl": "Dein Browser kann die Karte nicht anzeigen. Probiere einen anderen Browser oder aktiviere die Hardwarebeschleunigung.",
+      "zoomIn": "Vergrößern",
+      "zoomOut": "Verkleinern",
+      "toggleAttribution": "Quellen der Kartendaten",
+      "mapFeedback": "Ein Problem mit der Karte melden",
+      "heading": "Karte der Einrichtungen"
+    },
+    "how": {
+      "title": "So funktioniert es",
+      "step1Title": "Registrieren",
+      "step1Text": "Lege ein Konto an und nenne uns dein Land, dein Alter und deine Dokumente.",
+      "step2Title": "Fragebogen ausfüllen",
+      "step2Text": "Beantworte Fragen zu deinen Zielen, Noten, Sprachen und deinem Budget.",
+      "step3Title": "Treffer erhalten",
+      "step3Text": "Erhalte eine Liste sicherer, passender und anspruchsvoller Möglichkeiten.",
+      "cta": "Abgleich starten"
+    },
+    "hero": {
+      "badge": "Studieren im Ausland, einfach gemacht",
+      "subtitle": "Entdecke {count} Universitäten und Colleges auf der Karte, beantworte einen kurzen Fragebogen und sieh, wo du wirklich hinpasst — mit klaren Gründen und dem, was noch fehlt.",
+      "ctaMap": "Karte erkunden"
+    },
+    "stats": {
+      "institutions": "{count, plural, one {# Einrichtung} other {# Einrichtungen}}",
+      "countries": "{count, plural, one {# Land} other {# Länder}}",
+      "languages": "{count} Sprachen",
+      "free": "Kostenlos nutzbar"
+    },
+    "why": {
+      "title": "Warum YourHEI",
+      "f1Title": "Alles auf einer Karte",
+      "f1Text": "Universitäten, Colleges und Schulen in Europa, Asien, Amerika, Ozeanien und im Kaukasus auf einer Karte.",
+      "f2Title": "Treffer, die sich selbst erklären",
+      "f2Text": "Jedes Ergebnis zeigt, warum es passt und was dir noch fehlt, zum Beispiel ein höheres Sprachniveau.",
+      "f3Title": "Daten mit Quellen",
+      "f3Text": "Preise, Anforderungen und Fristen stammen von offiziellen Seiten, mit Link und dem Datum unserer Prüfung.",
+      "f4Title": "In deiner Sprache",
+      "f4Text": "Die Website spricht {languages} Sprachen und zeigt Preise in deiner Währung."
+    },
+    "countries": {
+      "title": "Wo du studieren kannst",
+      "text": "Länder mit Einrichtungen auf der Karte."
+    },
+    "cta": {
+      "title": "Bereit, deinen Platz zu finden?",
+      "text": "Lege ein kostenloses Konto an, beantworte den Fragebogen und erhalte deine Treffer in wenigen Minuten."
+    }
+  },
+  "Institution": {
+    "comingSoon": "Detaillierte Daten folgen in Kürze.",
+    "officialSite": "Offizielle Website",
+    "founded": "Gegründet: {year}",
+    "back": "Zurück zur Karte",
+    "factsTitle": "Wichtige Fakten",
+    "ownership": "Trägerschaft",
+    "public": "Öffentlich",
+    "private": "Privat",
+    "dormitory": "Wohnheim",
+    "dormitoryYes": "Vorhanden",
+    "dormitoryNo": "Nicht vorhanden",
+    "featuresTitle": "Möglichkeiten",
+    "features": {
+      "internship": "Praktika",
+      "double_degree": "Doppelabschluss",
+      "exchange": "Austauschprogramme"
+    },
+    "programsTitle": "Studiengänge",
+    "noPrograms": "Detaillierte Studiengangsdaten dieser Einrichtung werden gerade erfasst. Bitte prüfe die offizielle Website.",
+    "for": {
+      "international": "internationale Studierende",
+      "domestic": "Staatsbürger",
+      "eu": "EU-Bürger",
+      "all": "alle Studierenden"
+    },
+    "per": {
+      "year": "pro Jahr",
+      "semester": "pro Semester",
+      "credit": "pro Credit",
+      "total": "für den gesamten Studiengang"
+    },
+    "tuitionTitle": "Studiengebühren",
+    "free": "Kostenlos",
+    "requirementsTitle": "Anforderungen",
+    "minScore": "Mindestens {exam}: {score}",
+    "documentsTitle": "Dokumente",
+    "entranceTitle": "Aufnahmeverfahren",
+    "noRequirements": "Noch keine Anforderungen veröffentlicht.",
+    "intake": "Studienbeginn",
+    "deadline": "Frist",
+    "applicationFee": "Bewerbungsgebühr",
+    "deadlinesTitle": "Fristen",
+    "rankingsTitle": "Rankings",
+    "rankingLine": "{name} ({year}): {position}",
+    "scholarshipsTitle": "Stipendien",
+    "covers": {
+      "tuition": "deckt die Studiengebühren",
+      "living": "deckt die Lebenshaltungskosten",
+      "full": "Vollfinanzierung",
+      "partial": "Teilfinanzierung"
+    },
+    "checked": "Daten geprüft am {date}.",
+    "disclaimer": "Bestätige Preise und Fristen vor der Bewerbung immer auf der offiziellen Website.",
+    "report": "Einen Fehler auf dieser Seite melden",
+    "duration": "Dauer",
+    "programsCount": "{count, plural, one {# Studiengang} other {# Studiengänge}}",
+    "favoriteAdd": "Merken",
+    "favoriteRemove": "Gemerkt",
+    "favoriteLogin": "Anmelden zum Merken",
+    "byInstitution": "Von der Einrichtung selbst eingetragen"
+  },
+  "Pages": {
+    "about": {
+      "title": "Über das Projekt",
+      "body": "YourHEI hilft Studieninteressierten und ihren Familien bei der Wahl des Studienorts: eine interaktive Karte von Universitäten, Colleges und Schulen, ein kurzer Fragebogen zu deinen Zielen, Ergebnissen und deinem Budget sowie Treffer, die erklären, warum sie passen. Der Dienst ist für Studieninteressierte kostenlos."
+    },
+    "contact": {
+      "title": "Kontakt & Support",
+      "body": "Fragen zum Dienst, Korrekturen zur Seite einer Einrichtung oder zu deinen persönlichen Daten? Schreib uns.",
+      "emailLabel": "E-Mail"
+    },
+    "privacy": {
+      "title": "Datenschutzerklärung"
+    },
+    "terms": {
+      "title": "Nutzungsbedingungen"
+    },
+    "notFound": {
+      "title": "Seite nicht gefunden",
+      "body": "Die gesuchte Seite existiert nicht.",
+      "home": "Zur Startseite"
+    }
+  },
+  "Subregions": {
+    "eastern-europe": "Osteuropa",
+    "northern-europe": "Nordeuropa",
+    "southern-europe": "Südeuropa",
+    "western-europe": "Westeuropa",
+    "central-asia": "Zentralasien",
+    "eastern-asia": "Ostasien",
+    "south-eastern-asia": "Südostasien",
+    "southern-asia": "Südasien",
+    "western-asia": "Westasien",
+    "northern-america": "Nordamerika",
+    "central-america": "Mittelamerika",
+    "caribbean": "Karibik",
+    "south-america": "Südamerika",
+    "australia-nz": "Australien und Neuseeland",
+    "melanesia": "Melanesien",
+    "micronesia": "Mikronesien",
+    "polynesia": "Polynesien"
+  },
+  "Register": {
+    "title": "Konto erstellen",
+    "intro": "Zwei kurze Schritte. Alles Weitere (Länder, Dokumente, wonach du suchst) trägst du später in deinem Profil ein, wann du möchtest.",
+    "progressLabel": "Fortschritt der Registrierung",
+    "stepOf": "Schritt {current} von {total}",
+    "steps": {
+      "account": "Konto",
+      "age": "Dein Alter"
+    },
+    "back": "Zurück",
+    "next": "Weiter",
+    "create": "Konto erstellen",
+    "creating": "Konto wird erstellt…",
+    "alreadyHave": "Du hast schon ein Konto?",
+    "loginLink": "Anmelden",
+    "search": {
+      "regionsTitle": "Regionen",
+      "regionsHint": "Wähle eine oder mehrere. Die Länder kannst du unten genauer festlegen.",
+      "regions": {
+        "caucasus-ca-ee": "Kaukasus, Zentralasien und Osteuropa",
+        "europe": "Europa",
+        "asia": "Asien",
+        "americas": "Amerika",
+        "oceania": "Ozeanien"
+      },
+      "countriesTitle": "Länder",
+      "countriesHint": "Alle Länder der gewählten Regionen sind ausgewählt. Entferne die Haken bei denen, die du nicht brauchst.",
+      "pickRegion": "Wähle zuerst eine Region.",
+      "selectAll": "Alle auswählen",
+      "clearAll": "Alle abwählen",
+      "groupLabel": "Länder: {group}",
+      "typesTitle": "Arten von Einrichtungen",
+      "typesHint": "Wähle eine oder mehrere."
+    },
+    "about": {
+      "birthDate": "Geburtsdatum",
+      "birthDateWhy": "Um das Mindestalter in deinem Land zu prüfen und passende Studiengänge zu zeigen.",
+      "gender": "Geschlecht",
+      "genderWhy": "Wird für nach Geschlechtern getrennte Schulen und Wohnheime benötigt. Du kannst die Angabe verweigern.",
+      "male": "Männlich",
+      "female": "Weiblich",
+      "undisclosed": "Keine Angabe",
+      "residence": "Wohnsitzland",
+      "residenceWhy": "Legt das Mindestalter, die Anzeigewährung und die Regeln zur Anerkennung von Abschlüssen fest.",
+      "residencePlaceholder": "Land wählen",
+      "citizenship": "Staatsangehörigkeit (eine oder mehrere)",
+      "citizenshipWhy": "Visa-Regeln und Zulassungsvoraussetzungen hängen von der Staatsangehörigkeit ab.",
+      "countrySearch": "Ländernamen eingeben",
+      "remove": "{name} entfernen",
+      "noMatches": "Kein passendes Land",
+      "ageCheck": "Ich bin mindestens {age} Jahre alt",
+      "ageCheckWhy": "Das Mindestalter hängt von deinem Wohnsitzland ab."
+    },
+    "documents": {
+      "intro": "Sag uns, welche Dokumente du schon hast. Das ist nur ein Status: Du musst nichts hochladen.",
+      "why": "Wir nutzen es, um zu zeigen, was für die Zulassung noch fehlt.",
+      "status": {
+        "have": "Habe ich",
+        "in_progress": "In Arbeit",
+        "none": "Habe ich nicht"
+      },
+      "visaCountries": "Für welche Länder gültig?",
+      "expectedDate": "Voraussichtliches Erhaltsdatum",
+      "eduKind": "Welches Dokument?",
+      "eduSchool": "Schulzeugnis",
+      "eduDiploma": "Abschlusszeugnis (College oder Universität)",
+      "items": {
+        "passport": "Reisepass",
+        "study_visa": "Studienvisum oder Aufenthaltstitel",
+        "education": "Schulzeugnis / Abschlusszeugnis",
+        "transcript": "Notenübersicht",
+        "apostille": "Apostille oder konsularische Legalisation",
+        "notarized_translation": "Beglaubigte Übersetzung der Dokumente",
+        "recognition": "Anerkennung (Nostrifikation) der Bildungsdokumente",
+        "proof_of_funds": "Finanzierungsnachweis (Kontoauszug, Sponsorenbrief, Sperrkonto)",
+        "health_insurance": "Krankenversicherung",
+        "parental_consent": "Notariell beglaubigte Einverständniserklärung der Eltern zum Auslandsstudium (unter 18)"
+      }
+    },
+    "account": {
+      "email": "E-Mail",
+      "emailWhy": "Zum Anmelden und für Servicenachrichten.",
+      "password": "Passwort",
+      "passwordHint": "Mindestens 10 Zeichen, mit einem Buchstaben und einer Ziffer.",
+      "show": "Passwort anzeigen",
+      "hide": "Passwort verbergen",
+      "consent": "Ich habe die <privacy>Datenschutzerklärung</privacy> und die <terms>Nutzungsbedingungen</terms> gelesen und akzeptiere sie.",
+      "marketing": "Ich möchte Neuigkeiten und Tipps per E-Mail erhalten (optional).",
+      "checkEmailTitle": "Prüfe dein E-Mail-Postfach",
+      "checkEmailText": "Wir haben einen Bestätigungslink an {email} gesendet. Öffne ihn, um die Registrierung abzuschließen. Schau auch im Spam-Ordner nach.",
+      "resend": "Link erneut senden",
+      "resent": "Der Link wurde erneut gesendet.",
+      "notConfigured": "Die Registrierung ist derzeit nicht verfügbar: Der Dienst ist noch nicht eingerichtet."
+    },
+    "underage": {
+      "title": "Das tut uns leid",
+      "text": "Du kannst dich noch nicht registrieren: In deinem Land liegt das Mindestalter bei {age}. Es wurde kein Konto erstellt und nichts von dem, was du eingegeben hast, wurde gespeichert.",
+      "home": "Zurück zur Startseite"
+    },
+    "errors": {
+      "required": "Bitte fülle dieses Feld aus",
+      "birthInvalid": "Gib ein gültiges Geburtsdatum ein",
+      "dateInvalid": "Gib ein gültiges Datum ein",
+      "residenceRequired": "Wähle dein Wohnsitzland",
+      "ageCheckRequired": "Bitte bestätige dein Alter",
+      "emailInvalid": "Gib eine gültige E-Mail-Adresse ein",
+      "consentRequired": "Diese Zustimmung ist erforderlich",
+      "passwordTooShort": "Verwende mindestens 10 Zeichen",
+      "passwordNeedsLetter": "Füge einen Buchstaben hinzu",
+      "passwordNeedsDigit": "Füge eine Ziffer hinzu",
+      "passwordCommon": "Dieses Passwort ist zu häufig",
+      "passwordLikeEmail": "Das Passwort darf nicht den Namen aus deiner E-Mail-Adresse enthalten",
+      "signUpFailed": "Das Konto konnte nicht erstellt werden. Bitte versuche es erneut.",
+      "rateLimit": "Zu viele Versuche. Bitte warte einige Minuten und versuche es erneut.",
+      "network": "Keine Verbindung. Prüfe dein Internet und versuche es erneut."
+    }
+  },
+  "Login": {
+    "title": "Anmelden",
+    "email": "E-Mail",
+    "password": "Passwort",
+    "submit": "Anmelden",
+    "submitting": "Anmeldung läuft…",
+    "forgot": "Passwort vergessen?",
+    "noAccount": "Noch kein Konto?",
+    "register": "Jetzt erstellen",
+    "resend": "Bestätigungslink erneut senden",
+    "resent": "Der Link wurde erneut gesendet. Prüfe dein E-Mail-Postfach.",
+    "notConfigured": "Die Anmeldung ist derzeit nicht verfügbar: Der Dienst ist noch nicht eingerichtet.",
+    "notices": {
+      "link": "Dieser Link ist abgelaufen oder wurde in einem anderen Browser geöffnet. Wenn du deine E-Mail-Adresse schon bestätigt hast, melde dich einfach an."
+    },
+    "errors": {
+      "invalid": "Falsche E-Mail-Adresse oder falsches Passwort.",
+      "notConfirmed": "Bestätige zuerst deine E-Mail-Adresse: Öffne den Link, den wir dir geschickt haben.",
+      "generic": "Anmeldung nicht möglich. Bitte versuche es erneut.",
+      "rateLimit": "Zu viele Versuche. Bitte warte einige Minuten und versuche es erneut.",
+      "google": "Anmeldung mit Google nicht möglich. Bitte versuche es erneut.",
+      "captcha": "Bitte schließe die Sicherheitsprüfung ab."
+    },
+    "google": "Weiter mit Google",
+    "googleNotice": "Mit „Weiter mit Google“ akzeptierst du die <privacy>Datenschutzerklärung</privacy> und die <terms>Nutzungsbedingungen</terms>.",
+    "or": "oder mit E-Mail"
+  },
+  "Forgot": {
+    "title": "Passwort zurücksetzen",
+    "text": "Gib deine E-Mail-Adresse ein, wir senden dir einen Link zum Festlegen eines neuen Passworts.",
+    "email": "E-Mail",
+    "submit": "Link senden",
+    "sent": "Wenn zu dieser Adresse ein Konto existiert, ist ein Link unterwegs. Prüfe dein E-Mail-Postfach.",
+    "back": "Zurück zur Anmeldung"
+  },
+  "Reset": {
+    "title": "Neues Passwort festlegen",
+    "newPassword": "Neues Passwort",
+    "submit": "Passwort speichern",
+    "done": "Passwort geändert. Verwende es bei deiner nächsten Anmeldung.",
+    "toProfile": "Zu deinem Profil",
+    "noSession": "Dieser Link ist abgelaufen. Bitte fordere einen neuen an.",
+    "requestNew": "Neuen Link anfordern"
+  },
+  "Profile": {
+    "title": "Dein Profil",
+    "loading": "Wird geladen…",
+    "loadFailed": "Dein Profil konnte nicht geladen werden. Lade die Seite neu oder versuche es später erneut.",
+    "welcome": "Deine E-Mail-Adresse ist bestätigt. Willkommen bei YourHEI!",
+    "email": "E-Mail",
+    "plan": "Tarif",
+    "planFree": "Kostenlos",
+    "planPremium": "Premium",
+    "sections": {
+      "search": "Wonach du suchst",
+      "about": "Über dich",
+      "documents": "Dokumente",
+      "privacy": "E-Mail und Datenschutz"
+    },
+    "save": "Speichern",
+    "saving": "Wird gespeichert…",
+    "saved": "Gespeichert",
+    "saveFailed": "Speichern nicht möglich. Bitte versuche es erneut.",
+    "ageBlocked": "Dieses Geburtsdatum oder Land erfüllt das Mindestalter nicht ({age}).",
+    "marketing": "Ich möchte Neuigkeiten und Tipps per E-Mail erhalten",
+    "survey": {
+      "title": "Fragebogen für den Abgleich ausfüllen",
+      "text": "Beantworte Fragen zu deinen Zielen, Ergebnissen und deinem Budget, um passende Einrichtungen zu erhalten.",
+      "open": "Zum Fragebogen"
+    },
+    "data": {
+      "title": "Deine Daten",
+      "exportText": "Lade alles, was wir über dich speichern, als Datei herunter.",
+      "export": "Meine Daten herunterladen",
+      "exportFailed": "Die Datei konnte nicht erstellt werden. Bitte versuche es erneut.",
+      "deleteText": "Lösche dein Konto und alle deine Daten. Das kann nicht rückgängig gemacht werden.",
+      "delete": "Konto und alle Daten löschen",
+      "confirmText": "Bist du sicher? Dein Profil, deine Dokumente und dein Zugang werden sofort entfernt.",
+      "confirm": "Ja, alles löschen",
+      "cancel": "Abbrechen",
+      "deleteFailed": "Das Konto konnte nicht gelöscht werden. Bitte versuche es erneut."
+    },
+    "complete": {
+      "title": "Vervollständige dein Profil",
+      "text": "Ergänze deine Staatsangehörigkeit, die Regionen und Arten von Einrichtungen, nach denen du suchst, und deine Dokumente. Das alles kannst du jederzeit ändern."
+    },
+    "ageNeeded": "Ergänze dein Geburtsdatum und dein Wohnsitzland, um fortzufahren: Wir brauchen sie, um das Mindestalter zu prüfen."
+  },
+  "Legal": {
+    "privacy": {
+      "s1Title": "Wer wir sind",
+      "s1Text": "YourHEI ist ein Dienst, der Studieninteressierten bei der Wahl ihres Studienorts hilft. Diese Erklärung beschreibt, welche Daten wir erheben und wie wir sie verwenden. Mit der Nutzung der Website stimmst du ihr zu.",
+      "s2Title": "Was wir erheben",
+      "s2Text": "Kontodaten (E-Mail-Adresse und eine geschützte Form deines Passworts); Profildaten (Geburtsdatum, Geschlecht, falls angegeben, Wohnsitzland, Staatsangehörigkeiten, wonach du suchst, Status deiner Dokumente); deine Antworten im Fragebogen; sowie technische und Nutzungsdaten (besuchte Seiten, Aktionen auf der Website, Gerät, Browser, Sprache, IP-Adresse, ungefährer Standort, die Website, von der du kamst), auch durch Cookies und ähnliche Technologien.",
+      "s3Title": "Warum wir sie erheben",
+      "s3Text": "Um den Dienst zu betreiben und zu verbessern, das Mindestalter zu prüfen, deine Treffer zu erstellen, mit dir zu kommunizieren, die Nutzung der Website zu messen, Werbung anzuzeigen, Forschung zu betreiben, den Dienst sicher zu halten und gesetzliche Pflichten zu erfüllen.",
+      "s4Title": "Analyse und Weitergabe",
+      "s4Text": "Wir können Analyse- und Werbewerkzeuge einsetzen. Wir können Analyse- und Nutzungsdaten sowie andere erhobene Daten an Analyse-, Werbe-, Hosting- und andere Anbieter und Partner weitergeben, unabhängig davon, wo sie sich befinden, auch in anderen Ländern.",
+      "s5Title": "Wie wir die Daten verwenden können",
+      "s5Text": "Soweit das Gesetz es erlaubt, können wir die erhobenen Daten nach eigenem Ermessen verwenden: um den Dienst zu betreiben, zu personalisieren, zu analysieren und zu verbessern, neue Produkte und Dienste zu entwickeln, zu werben sowie Statistiken und Forschungsergebnisse zu veröffentlichen oder weiterzugeben, auch in aggregierter oder anonymisierter Form.",
+      "s6Title": "Speicherung",
+      "s6Text": "Die Daten werden bei unseren Anbietern (zum Beispiel unserem Datenbankanbieter) gespeichert, bis du dein Konto löschst. Technische Protokolle und Sicherungen können danach noch einige Zeit aufbewahrt werden.",
+      "s7Title": "Deine Rechte",
+      "s7Text": "In deinem Profil kannst du deine Daten bearbeiten, eine Kopie herunterladen, E-Mails abbestellen und dein Konto mit allen Daten löschen. Wo das Gesetz dir weitere Rechte gibt, zum Beispiel in der EU, im EWR oder im Vereinigten Königreich, beachten wir sie.",
+      "s8Title": "Mindestalter",
+      "s8Text": "Wir registrieren Personen nur ab dem Mindestalter ihres Wohnsitzlandes (14, 16 oder 18, je nach Land). Wenn du jünger bist, wird kein Konto erstellt und nichts von dem, was du eingegeben hast, wird gespeichert.",
+      "s9Title": "Cookies und ähnliche Technologien",
+      "s9Text": "Wir verwenden Cookies und ähnliche Technologien für Sprache, Design und Anmeldung sowie für Analyse und Werbung. Wo das Gesetz es verlangt, fragen wir zuvor nach deiner Einwilligung.",
+      "s10Title": "Änderungen",
+      "s10Text": "Wir können diese Erklärung ändern. Das Datum oben zeigt die neueste Fassung; wenn du die Website nach einer Änderung weiter nutzt, akzeptierst du die neue Fassung."
+    },
+    "terms": {
+      "s1Title": "Der Dienst",
+      "s1Text": "YourHEI zeigt Bildungseinrichtungen auf einer Karte und schlägt anhand deiner Antworten Möglichkeiten vor. Der Dienst ist für Studieninteressierte kostenlos.",
+      "s2Title": "Dein Konto",
+      "s2Text": "Mache wahrheitsgemäße Angaben und halte dein Passwort geheim. Eine Person, ein Konto. Du musst das Mindestalter deines Wohnsitzlandes erreicht haben.",
+      "s3Title": "Information, keine Beratung",
+      "s3Text": "Die Daten über Einrichtungen stammen aus offenen und offiziellen Quellen und können veraltet oder unvollständig sein. Prüfe vor jeder Bewerbung immer die offizielle Website. Ein Vorschlag ist kein Zulassungsversprechen.",
+      "s4Title": "Faire Nutzung",
+      "s4Text": "Missbrauche den Dienst nicht: keine automatisierte Massenerfassung von Daten, keine Versuche, ihn zu stören, keine falschen Meldungen.",
+      "s5Title": "Daten und Analyse",
+      "s5Text": "Mit der Nutzung des Dienstes stimmst du zu, dass wir Analyse- und Nutzungsdaten erheben, an beliebige Dritte unserer Wahl, wo auch immer sie sich befinden, weitergeben und alle erhobenen Daten nach eigenem Ermessen verwenden dürfen, wie in der Datenschutzerklärung beschrieben, soweit das Gesetz es erlaubt.",
+      "s6Title": "Werbung und Dritte",
+      "s6Text": "Die Website zeigt Werbung und kann auf Websites Dritter verlinken. Für deren Inhalte oder Angebote sind wir nicht verantwortlich.",
+      "s7Title": "Änderungen und Beendigung",
+      "s7Text": "Wir können den Dienst und diese Bedingungen ändern; wenn du den Dienst nach einer Änderung weiter nutzt, akzeptierst du sie. Du kannst dein Konto jederzeit löschen.",
+      "s8Title": "Haftung",
+      "s8Text": "Der Dienst wird so bereitgestellt, wie er ist, ohne Garantien, und wir haften nicht für Verluste aus seiner Nutzung, soweit das Gesetz es erlaubt."
+    },
+    "updated": "Zuletzt aktualisiert: {date}"
+  },
+  "Survey": {
+    "title": "Dein Fragebogen für den Abgleich",
+    "intro": "Beantworte Fragen zu deinen Zielen, Ergebnissen, Sprachen und deinem Budget. Etwa 15 Fragen sind Pflicht, die übrigen sind optional und lassen sich mit einem Klick überspringen. Deine Antworten werden laufend gespeichert.",
+    "hub": {
+      "start": "Fragebogen starten",
+      "continue": "Dort weitermachen, wo du aufgehört hast",
+      "discard": "Verwerfen und von vorn beginnen",
+      "startedOn": "Du hast diesen Fragebogen am {date} begonnen.",
+      "again": "Fragebogen erneut ausfüllen",
+      "past": "Deine abgeschlossenen Fragebögen",
+      "pastItem": "Abgeschlossen am {date}",
+      "noteRetake": "Ein abgeschlossener Fragebogen kann nicht geändert werden. Wenn sich deine Pläne ändern, fülle ihn erneut aus: Es werden dann die neuen Antworten verwendet.",
+      "profileHint": "Tipp: Fülle zuerst dein Profil aus (Staatsangehörigkeit, Regionen, Dokumente), dann werden die Ergebnisse besser."
+    },
+    "done": {
+      "title": "Danke! Der Fragebogen ist abgeschlossen.",
+      "text": "Deine Antworten sind gespeichert. Sieh dir die Einrichtungen an, die am besten zu dir passen.",
+      "toProfile": "Zurück zu meinem Profil",
+      "toMatches": "Meine Treffer ansehen"
+    },
+    "ui": {
+      "loading": "Wird geladen…",
+      "loadFailed": "Der Fragebogen konnte nicht geladen werden. Lade die Seite neu oder versuche es später erneut.",
+      "questionOf": "Frage {current} von {total}",
+      "requiredLeft": "{count, plural, one {# Pflichtfrage übrig} other {# Pflichtfragen übrig}}",
+      "optional": "Optional",
+      "back": "Zurück",
+      "next": "Weiter",
+      "skip": "Überspringen",
+      "skipAll": "Alle optionalen Fragen überspringen",
+      "finish": "Abschließen",
+      "saving": "Wird gespeichert…",
+      "saveFailed": "Deine Antwort konnte nicht gespeichert werden. Prüfe deine Verbindung und versuche es erneut.",
+      "saveAndExit": "Speichern und später fortsetzen",
+      "progressLabel": "Fortschritt im Fragebogen",
+      "add": "Hinzufügen",
+      "remove": "Entfernen",
+      "search": "Nach Namen suchen",
+      "choose": "Auswählen…",
+      "approximate": "Umrechnungen zwischen Notensystemen sind ungefähr.",
+      "noMatches": "Nichts gefunden",
+      "moveUp": "Nach oben",
+      "moveDown": "Nach unten",
+      "counter": "{chosen} von {count} gewählt",
+      "range": "Von {min} bis {max}"
+    },
+    "errors": {
+      "required": "Bitte beantworte diese Frage",
+      "invalid": "Bitte prüfe diese Antwort",
+      "outOfRange": "Dieser Wert liegt außerhalb des zulässigen Bereichs",
+      "tooMany": "Zu viele Auswahlen",
+      "priorities": "Wähle genau 3 verschiedene Punkte"
+    },
+    "education": {
+      "level": "Aktuelle Bildung",
+      "year": "Abschlussjahr (oder erwartetes Jahr)",
+      "levels": {
+        "school_9": "Schule, bis Klasse 9",
+        "school_11": "Schule, Klassen 10–12",
+        "college": "College",
+        "bachelor": "Bachelor",
+        "master": "Master",
+        "other": "Andere"
+      }
+    },
+    "grade": {
+      "none": "Ich habe noch keine Noten",
+      "system": "Notensystem",
+      "value": "Dein Notendurchschnitt",
+      "range": "Von {min} bis {max}"
+    },
+    "subjects": {
+      "subject": "Fach",
+      "grade": "Note"
+    },
+    "exams": {
+      "exam": "Prüfung",
+      "score": "Ergebnis",
+      "range": "Möglicher Bereich: {min} bis {max}"
+    },
+    "languages": {
+      "language": "Sprache",
+      "level": "Dein Niveau",
+      "certificate": "Zertifikat (optional)",
+      "certValue": "Punktzahl oder Niveau",
+      "none": "Kein Zertifikat",
+      "addLanguage": "Sprache hinzufügen"
+    },
+    "selfLevels": {
+      "a1": "Ich kenne ein paar Sätze",
+      "a2": "Einfache Alltagsthemen",
+      "b1": "Ich komme auf Reisen und bei der Arbeit zurecht",
+      "b2": "Ich unterhalte mich fließend über die meisten Themen",
+      "c1": "Ich kann in dieser Sprache studieren",
+      "c2": "Wie ein Muttersprachler",
+      "native": "Muttersprache"
+    },
+    "studyLanguages": {
+      "languages": "Sprachen, in denen ich bereit bin zu studieren",
+      "prepYear": "Würdest du ein Sprachvorbereitungsjahr machen?",
+      "yes": "Ja",
+      "no": "Nein"
+    },
+    "budget": {
+      "currency": "Währung",
+      "tuition": "Studiengebühren pro Jahr",
+      "living": "Lebenshaltungskosten pro Jahr"
+    },
+    "olympiads": {
+      "subject": "Fach",
+      "level": "Ebene",
+      "place": "Platz"
+    },
+    "olympiadLevels": {
+      "school": "Schule",
+      "regional": "Regional",
+      "national": "National",
+      "international": "International"
+    },
+    "priorities": {
+      "price": "Preis",
+      "prestige": "Prestige",
+      "location": "Land und Stadt",
+      "chances": "Zulassungschancen",
+      "field": "Das Studienfach",
+      "career": "Karriereaussichten"
+    },
+    "riasec": {
+      "intro": "Bewerte jede Aussage von 1 bis 5. Es gibt keine richtigen oder falschen Antworten.",
+      "scale": {
+        "1": "nichts für mich",
+        "2": "eher nicht",
+        "3": "neutral",
+        "4": "eher ja",
+        "5": "sehr typisch für mich"
+      },
+      "items": {
+        "0": "Ich repariere oder baue gern Dinge mit den Händen oder mit Werkzeugen.",
+        "1": "Ich finde gern durch Experimente oder Datenanalyse heraus, wie etwas funktioniert.",
+        "2": "Ich schaffe gern etwas Originelles: schreiben, zeichnen, gestalten oder komponieren.",
+        "3": "Ich helfe, unterrichte oder kümmere mich gern um andere Menschen.",
+        "4": "Ich leite gern ein Team oder überzeuge andere von meiner Idee.",
+        "5": "Ich ordne gern Informationen, führe Aufzeichnungen und halte mich an klare Abläufe.",
+        "6": "Ich arbeite gern draußen, mit Maschinen, Tieren oder Pflanzen.",
+        "7": "Ich löse gern ein schwieriges Rätsel oder eine Mathematikaufgabe.",
+        "8": "Ich drücke Ideen gern durch Musik, Theater oder visuelle Medien aus.",
+        "9": "Ich kann gut zuhören und Menschen in schwierigen Zeiten unterstützen.",
+        "10": "Ich starte gern ein Projekt oder ein Unternehmen und gehe Risiken ein.",
+        "11": "Ich plane gern Budgets, Zeitpläne und Details, damit alles genau stimmt."
+      },
+      "suggestions": "Richtungen, die zu dir passen könnten",
+      "suggestionsHint": "Behalte die, die dir gefallen. Du brauchst mindestens eine.",
+      "answerAll": "Beantworte alle 12 Aussagen, um Richtungsvorschläge zu sehen."
+    },
+    "q": {
+      "level": {
+        "title": "Was möchtest du studieren?",
+        "options": {
+          "school": "Schule",
+          "college": "College",
+          "foundation": "Studienkolleg (Vorbereitungsjahr)",
+          "bachelor": "Bachelor",
+          "master": "Master",
+          "phd": "Promotion",
+          "language_course": "Sprachkurse"
+        }
+      },
+      "situation": {
+        "title": "Wie ist deine Situation?",
+        "options": {
+          "first": "Ich bewerbe mich zum ersten Mal",
+          "transfer": "Ich möchte wechseln und meine Credits behalten",
+          "second_degree": "Ein zweiter Abschluss"
+        }
+      },
+      "start": {
+        "title": "Wann möchtest du beginnen?"
+      },
+      "format": {
+        "title": "Welches Studienformat?",
+        "options": {
+          "on_campus": "Präsenz",
+          "online": "Online",
+          "blended": "Gemischt",
+          "any": "Egal"
+        }
+      },
+      "field_certainty": {
+        "title": "Wie sicher bist du bei deinem Fachgebiet?",
+        "options": {
+          "sure": "Ich weiß es genau",
+          "few": "Ich habe ein paar Optionen",
+          "unknown": "Ich weiß es nicht, bitte helft mir"
+        }
+      },
+      "fields": {
+        "title": "Welche Fachgebiete interessieren dich?",
+        "hint": "Wähle bis zu 3; das erste ist das wichtigste. Du kannst bis zu einem konkreten Fach in die Tiefe gehen."
+      },
+      "riasec": {
+        "title": "Finden wir Richtungen, die zu dir passen",
+        "hint": "Zwölf kurze Aussagen darüber, was du gern tust."
+      },
+      "diploma_field": {
+        "title": "In welchem Fach war dein vorheriger Abschluss?",
+        "hint": "Wähle das Fachgebiet deines Bachelor- oder Masterabschlusses."
+      },
+      "school_profile": {
+        "title": "Welches Schulprofil möchtest du?"
+      },
+      "school_grade": {
+        "title": "In welche Klasse möchtest du eintreten?"
+      },
+      "school_program": {
+        "title": "Welches Programm?",
+        "options": {
+          "national": "National",
+          "ib": "IB",
+          "alevel": "A-Levels",
+          "american": "Amerikanisch"
+        }
+      },
+      "school_boarding": {
+        "title": "Internat oder Leben bei der Familie?",
+        "options": {
+          "boarding": "Internat",
+          "family": "Leben bei meiner Familie",
+          "any": "Egal"
+        }
+      },
+      "school_coed": {
+        "title": "Gemischte Schule oder Schule nur für ein Geschlecht?",
+        "options": {
+          "coed": "Gemischt",
+          "single_sex": "Nur ein Geschlecht",
+          "any": "Keine Präferenz"
+        }
+      },
+      "profession": {
+        "title": "Welchen Beruf möchtest du lernen?"
+      },
+      "college_to_uni": {
+        "title": "Möchtest du danach an eine Universität wechseln?",
+        "options": {
+          "yes": "Ja",
+          "no": "Nein",
+          "maybe": "Vielleicht"
+        }
+      },
+      "education": {
+        "title": "Deine aktuelle Bildung"
+      },
+      "grade": {
+        "title": "Dein Notendurchschnitt",
+        "hint": "Wähle das Notensystem, das du am besten kennst."
+      },
+      "subjects": {
+        "title": "Deine besten Fächer und Noten",
+        "hint": "Bis zu 5. Die Noten richten sich nach dem zuvor gewählten Notensystem."
+      },
+      "exams": {
+        "title": "Prüfungen, die du abgelegt hast oder ablegen wirst",
+        "hint": "Nationale oder internationale Prüfungen mit deinen Ergebnissen."
+      },
+      "languages": {
+        "title": "Welche Sprachen sprichst du, und wie gut?",
+        "hint": "Füge jede Sprache hinzu und schätze dich ehrlich ein. Ein Zertifikat ist optional."
+      },
+      "study_languages": {
+        "title": "In welchen Sprachen könntest du studieren?"
+      },
+      "olympiads": {
+        "title": "Olympiaden und Wettbewerbe",
+        "hint": "Fach, Ebene und der erreichte Platz."
+      },
+      "achievements": {
+        "title": "Deine Erfolge",
+        "options": {
+          "projects": "Projekte",
+          "publications": "Veröffentlichungen",
+          "sport": "Sport",
+          "creative": "Kreatives Portfolio",
+          "volunteering": "Ehrenamt"
+        }
+      },
+      "work_years": {
+        "title": "Wie viele Jahre hast du gearbeitet?"
+      },
+      "research_topic": {
+        "title": "Dein Forschungsthema",
+        "hint": "Falls du schon eines hast."
+      },
+      "entrance": {
+        "title": "Worauf bist du vorbereitet?",
+        "options": {
+          "entrance_exams": "Aufnahmeprüfungen an der Einrichtung",
+          "interview": "Ein Gespräch",
+          "creative_contest": "Ein kreativer Wettbewerb"
+        }
+      },
+      "funding": {
+        "title": "Wie planst du, dein Studium zu bezahlen?",
+        "options": {
+          "free": "Nur kostenlose (gebührenfreie) Plätze",
+          "paid": "Kostenpflichtige Plätze",
+          "both": "Beides"
+        }
+      },
+      "budget": {
+        "title": "Dein Jahresbudget",
+        "hint": "Studiengebühren und Lebenshaltungskosten pro Jahr, in einer Währung."
+      },
+      "scholarship": {
+        "title": "Brauchst du ein Stipendium?",
+        "options": {
+          "yes": "Ja, ich brauche eines",
+          "no": "Nein",
+          "maybe": "Es würde helfen"
+        }
+      },
+      "loan": {
+        "title": "Würdest du einen Studienkredit in Betracht ziehen?",
+        "options": {
+          "yes": "Ja",
+          "no": "Nein"
+        }
+      },
+      "rating": {
+        "title": "Wie wichtig ist das Ranking der Einrichtung?",
+        "options": {
+          "top_world": "Weltspitze",
+          "top_country": "Landesspitze",
+          "any": "Nicht wichtig"
+        }
+      },
+      "ownership": {
+        "title": "Öffentlich oder privat?",
+        "options": {
+          "public": "Öffentlich",
+          "private": "Privat",
+          "any": "Nicht wichtig"
+        }
+      },
+      "size": {
+        "title": "Große oder kleine Einrichtung?",
+        "options": {
+          "large": "Groß",
+          "small": "Klein",
+          "any": "Nicht wichtig"
+        }
+      },
+      "strategy": {
+        "title": "Wie ehrgeizig sollen deine Treffer sein?",
+        "options": {
+          "safe": "Nur sichere Chancen",
+          "balanced": "Ausgewogen",
+          "ambitious": "Ehrgeizig"
+        }
+      },
+      "extras": {
+        "title": "Was ist neben dem Abschluss wichtig?",
+        "options": {
+          "internship": "Praktika und Praxis",
+          "double_degree": "Doppelabschluss",
+          "exchange": "Austauschsemester"
+        }
+      },
+      "recognition": {
+        "title": "Muss der Abschluss in deinem Land anerkannt werden?",
+        "options": {
+          "yes": "Ja",
+          "no": "Nein",
+          "any": "Nicht wichtig"
+        }
+      },
+      "city_size": {
+        "title": "Welche Art von Stadt bevorzugst du?",
+        "options": {
+          "megapolis": "Eine große Metropole",
+          "medium": "Eine mittelgroße Stadt",
+          "small_student": "Eine kleine Studentenstadt",
+          "any": "Nicht wichtig"
+        }
+      },
+      "climate": {
+        "title": "Welches Klima bevorzugst du?",
+        "options": {
+          "warm": "Warm",
+          "temperate": "Gemäßigt",
+          "cold": "Kalt",
+          "any": "Nicht wichtig"
+        }
+      },
+      "dorm": {
+        "title": "Brauchst du ein Wohnheim?",
+        "options": {
+          "yes": "Ja",
+          "no": "Nein",
+          "any": "Nicht wichtig"
+        }
+      },
+      "work_during": {
+        "title": "Möchtest du neben dem Studium arbeiten?",
+        "options": {
+          "yes": "Ja",
+          "no": "Nein",
+          "maybe": "Vielleicht"
+        }
+      },
+      "after": {
+        "title": "Deine Pläne nach dem Studium",
+        "options": {
+          "stay": "Im Land bleiben",
+          "return": "Nach Hause zurückkehren",
+          "unknown": "Noch unsicher"
+        }
+      },
+      "family": {
+        "title": "Reist du mit jemandem?",
+        "hint": "Optional.",
+        "options": {
+          "partner": "Mit einem Partner",
+          "children": "Mit Kindern"
+        }
+      },
+      "accessibility": {
+        "title": "Brauchst du eine barrierefreie Umgebung?",
+        "options": {
+          "yes": "Ja",
+          "no": "Nein",
+          "prefer_not": "Keine Angabe"
+        }
+      },
+      "priorities": {
+        "title": "Wähle die 3 wichtigsten Dinge",
+        "hint": "Das entscheidet, was bei der Rangfolge deiner Treffer am meisten zählt."
+      }
+    }
+  },
+  "Matches": {
+    "title": "Deine Treffer",
+    "loading": "Die besten Treffer werden gesucht…",
+    "failed": "Die Treffer konnten nicht geladen werden. Lade die Seite neu oder versuche es später erneut.",
+    "noSurvey": {
+      "title": "Fülle zuerst den Fragebogen aus",
+      "text": "Die Treffer werden aus deinen Antworten im Fragebogen und deinem Profil erstellt.",
+      "cta": "Zum Fragebogen"
+    },
+    "basedOn": "Basierend auf deinem Fragebogen vom {date} und deinem Profil.",
+    "noData": {
+      "title": "Studiengangsdaten werden ergänzt",
+      "text": "Wir sammeln und prüfen Daten zu Studiengängen (Gebühren, Sprachen, Anforderungen). Treffer erscheinen hier, sobald geprüfte Studiengänge veröffentlicht sind."
+    },
+    "summary": "Wir haben {checked} Studiengänge geprüft; {passed} erfüllen deine Anforderungen.",
+    "nothing": {
+      "title": "Noch kein Studiengang erfüllt alle deine Anforderungen",
+      "text": "Probiere weitere Auswahlen: mehr Länder oder Arten in deinem Profil, ein anderes Budget oder ein Vorbereitungsjahr. Neue Studiengänge kommen regelmäßig hinzu.",
+      "profile": "Mein Profil bearbeiten",
+      "survey": "Fragebogen erneut ausfüllen"
+    },
+    "groups": {
+      "safe": {
+        "title": "Sichere Wahl",
+        "text": "Du erfüllst die Anforderungen mit Spielraum."
+      },
+      "suitable": {
+        "title": "Passende Wahl",
+        "text": "Du erfüllst die Anforderungen."
+      },
+      "ambitious": {
+        "title": "Ehrgeizige Wahl",
+        "text": "Knapp unter einigen Anforderungen, aber einen Versuch wert."
+      }
+    },
+    "retake": "Fragebogen erneut ausfüllen",
+    "editProfile": "Mein Profil bearbeiten",
+    "credits": {
+      "live": "Wechselkurse:",
+      "fallback": "Die Wechselkurse sind ungefähr (aktuelle Kurse nicht verfügbar). Quelle:"
+    },
+    "card": {
+      "score": "Übereinstimmung {score} von 100",
+      "languages": "Unterrichtssprache",
+      "duration": "Dauer",
+      "years": "{count, plural, one {# Jahr} other {# Jahre}}",
+      "tuition": "Studiengebühren",
+      "free": "Kostenlos",
+      "perYear": "Jahr",
+      "tuitionUnknown": "keine Daten",
+      "why": "Warum es passt",
+      "gaps": "Was fehlt",
+      "noData": "Keine Daten zu",
+      "apply": "Auf der offiziellen Website bewerben"
+    },
+    "components": {
+      "academic": "Anforderungen",
+      "field": "Fachrichtung",
+      "prestige": "Ranking",
+      "preferences": "Stadt und Einrichtung",
+      "extras": "Extras",
+      "life": "Wohnen und Arbeit",
+      "budget": "Budget"
+    },
+    "notes": {
+      "why": {
+        "academic": "Deine Noten und Zertifikate erfüllen die Anforderungen.",
+        "field": "{match, select, exact {Genau deine Fachrichtung.} narrow {Nah an deiner Fachrichtung.} broad {Dasselbe große Fachgebiet.} other {Verwandt mit deinem Fachgebiet.}}",
+        "prestige": "Hoch platziert, wie du es wolltest.",
+        "preferences": "Passt zu deinen Wünschen an Einrichtung und Stadt.",
+        "extras": "Bietet die gewünschten Extras.",
+        "life": "Gute Bedingungen: Wohnen und Regeln für das Arbeiten.",
+        "budget": "Passt zu deinem Budget."
+      },
+      "gap": {
+        "gpa": "Notendurchschnitt: {need} erforderlich, du hast {have}.",
+        "language": "{exam}: {need} erforderlich, du hast {have}.",
+        "exam": "{exam}: {need} erforderlich, du hast {have}.",
+        "exam_missing": "{exam} {need} ist erforderlich und du hast noch kein Ergebnis.",
+        "prep_year": "Unterricht auf {languages}: Du bräuchtest ein Sprachvorbereitungsjahr.",
+        "over_budget": "Die Studiengebühren betragen etwa {cost} {currency} pro Jahr und liegen über deinem Budget von {budget} {currency}."
+      }
+    },
+    "saved": {
+      "title": "Diese Ergebnisse speichern",
+      "text": "Speichere eine Kopie dieser Liste. Du kannst sie später öffnen oder einen privaten Link an Eltern oder Freunde senden.",
+      "save": "Diese Liste speichern",
+      "failed": "Speichern nicht möglich. Bitte versuche es erneut.",
+      "item": "Liste vom {date} · {count, plural, one {# Studiengang} other {# Studiengänge}}",
+      "open": "Öffnen",
+      "share": "Link erstellen",
+      "stopSharing": "Teilen beenden",
+      "delete": "Löschen",
+      "linkLabel": "Link zu dieser Liste",
+      "copy": "Kopieren",
+      "copied": "Kopiert",
+      "anyoneWithLink": "Jeder, der diesen Link hat, kann die Liste sehen (ohne deinen Namen)."
+    }
+  },
+  "Ads": {
+    "label": "Werbung"
+  },
+  "Compare": {
+    "title": "Studiengänge vergleichen",
+    "intro": "Bis zu 3 Studiengänge nebeneinander. Die Preise sind so, wie die Einrichtung sie veröffentlicht.",
+    "add": "Vergleichen",
+    "remove": "Aus dem Vergleich entfernen",
+    "bar": "{count, plural, one {# Studiengang ausgewählt} other {# Studiengänge ausgewählt}}",
+    "open": "Vergleichen",
+    "clear": "Leeren",
+    "empty": "Noch nichts zu vergleichen. Wähle Studiengänge in deinen Treffern mit der Schaltfläche „Vergleichen“.",
+    "needTwo": "Wähle mindestens zwei Studiengänge zum Vergleichen aus.",
+    "loading": "Wird geladen…",
+    "failed": "Die Studiengänge konnten nicht geladen werden. Bitte versuche es erneut.",
+    "back": "Zurück zu meinen Treffern",
+    "max": "Du kannst bis zu 3 Studiengänge vergleichen.",
+    "rows": {
+      "institution": "Einrichtung",
+      "location": "Standort",
+      "level": "Abschluss",
+      "duration": "Dauer",
+      "languages": "Unterrichtssprache",
+      "tuition": "Studiengebühren",
+      "requirements": "Anforderungen",
+      "deadlines": "Fristen",
+      "apply": "Bewerben"
+    }
+  },
+  "Favorites": {
+    "title": "Meine Liste",
+    "intro": "Einrichtungen, die du gemerkt hast, mit Fristen und den Dokumenten, die du brauchst.",
+    "empty": "Noch nichts gemerkt. Öffne eine Einrichtung und klicke auf „Merken“.",
+    "emptyCta": "Karte öffnen",
+    "remove": "Entfernen",
+    "nextDeadline": "Nächste Frist: {date}",
+    "noDeadline": "Keine bevorstehende Frist veröffentlicht",
+    "docsTitle": "Vorzubereitende Dokumente",
+    "docHave": "vorhanden",
+    "docMissing": "noch nicht",
+    "loading": "Wird geladen…",
+    "failed": "Deine Liste konnte nicht geladen werden. Bitte versuche es erneut.",
+    "open": "Karte öffnen"
+  },
+  "Consent": {
+    "title": "Cookies und Analyse",
+    "text": "Wir verwenden notwendige Cookies, um die Website zu betreiben (Sprache, Design, Anmeldung). Mit deiner Erlaubnis nutzen wir auch Analyse- und Werbetechnologien und können diese Daten mit unseren Partnern teilen, wie in der Datenschutzerklärung beschrieben.",
+    "accept": "Alle akzeptieren",
+    "decline": "Nur notwendige",
+    "policy": "Datenschutzerklärung",
+    "settings": "Cookie-Einstellungen"
+  },
+  "Catalog": {
+    "title": "Katalog",
+    "intro": "Alle Studiengänge und Einrichtungen der Datenbank. Filtere nach Land, Abschluss, Studiensprache, Fachgebiet und Preis. Die Preise werden in der von dir gewählten Währung angezeigt.",
+    "modeLabel": "Was angezeigt werden soll",
+    "mode": {
+      "programs": "Studiengänge",
+      "institutions": "Einrichtungen"
+    },
+    "search": "Name enthält",
+    "searchPlaceholder": "z. B. Recht, Design, Medizin",
+    "country": "Land",
+    "type": "Art",
+    "level": "Abschluss",
+    "language": "Studiensprache",
+    "field": "Fachgebiet",
+    "any": "Beliebig",
+    "maxPrice": "Studiengebühren bis ({currency} pro Jahr)",
+    "freeOnly": "Nur gebührenfrei",
+    "apply": "Anzeigen",
+    "reset": "Zurücksetzen",
+    "currency": "Währung",
+    "loading": "Wird geladen…",
+    "failed": "Der Katalog konnte nicht geladen werden. Bitte versuche es in einer Minute erneut.",
+    "empty": "Nichts gefunden. Verwende weniger Filter.",
+    "more": "Mehr anzeigen",
+    "years": "{count, plural, one {# Jahr} other {# Jahre}}",
+    "perYear": "{price} pro Jahr",
+    "approx": "umgerechnet, ungefähr",
+    "priceUnknown": "Preis nicht veröffentlicht",
+    "total": "≈ {total} pro Jahr mit Lebenshaltungskosten ({living})",
+    "livingUnknown": "Die Lebenshaltungskosten dieses Landes sind noch nicht in unseren Daten",
+    "ratesNote": "Die Preise werden zu täglichen Wechselkursen umgerechnet und sind ungefähr. Maßgeblich sind die Seite der Einrichtung und ihre offizielle Website."
+  },
+  "Scholarships": {
+    "title": "Stipendien: wo du kostenlos oder günstiger studieren kannst",
+    "intro": "Staatliche und internationale Programme, die ein Studium im Ausland bezahlen, und Stipendien einzelner Einrichtungen. Prüfe immer die offizielle Seite: Beträge, Länder und Fristen ändern sich jedes Jahr.",
+    "nationalTitle": "Staatliche und internationale Programme",
+    "institutionalTitle": "Stipendien der Einrichtungen",
+    "severalCountries": "Mehrere Länder",
+    "official": "Offizielle Seite",
+    "empty": "Die Liste wird gerade ergänzt.",
+    "disclaimer": "Wir listen Programme auf und verweisen dich auf die offizielle Seite; wir garantieren nicht, dass du ein Stipendium erhältst."
+  },
+  "Reviews": {
+    "title": "Bewertungen von Studierenden",
+    "summary": "{rating} / 5 · {count, plural, one {# Bewertung} other {# Bewertungen}}",
+    "none": "Noch keine Bewertungen. Sei der Erste, der seine Erfahrung teilt.",
+    "stars": "{count, plural, one {# Stern} other {# Sterne}} von 5",
+    "relations": {
+      "student": "Studierende(r)",
+      "graduate": "Absolvent(in)",
+      "applicant": "Bewerber(in)"
+    },
+    "loginToWrite": "Melde dich an, um eine Bewertung zu schreiben",
+    "mine": {
+      "pending": "Danke! Deine Bewertung wartet auf die Prüfung durch unser Team und erscheint danach.",
+      "published": "Deine Bewertung ist veröffentlicht. Danke!",
+      "rejected": "Deine vorherige Bewertung wurde nicht veröffentlicht. Du kannst eine neue schreiben."
+    },
+    "formTitle": "Bewertung schreiben",
+    "rating": "Deine Bewertung",
+    "relation": "Du bist",
+    "body": "Deine Erfahrung",
+    "counter": "{count} Zeichen (von {min} bis {max})",
+    "rules": "Schreibe ehrlich und höflich über deine eigene Erfahrung. Keine Beleidigungen, Kontaktdaten, Werbung oder persönlichen Daten anderer. Bewertungen werden ohne deinen Namen angezeigt und erscheinen nach einer Prüfung.",
+    "errors": {
+      "rating": "Wähle eine Bewertung von 1 bis 5.",
+      "short": "Die Bewertung ist zu kurz.",
+      "long": "Die Bewertung ist zu lang.",
+      "failed": "Die Bewertung konnte nicht gesendet werden. Bitte versuche es erneut."
+    },
+    "send": "Zur Prüfung senden"
+  },
+  "Shared": {
+    "title": "Geteilte Treffer",
+    "loading": "Wird geladen…",
+    "missing": "Diese Liste existiert nicht oder der Besitzer teilt sie nicht mehr.",
+    "from": "Eine am {date} gespeicherte Liste mit Ergebnissen. Sie zeigt nur öffentliche Fakten zu Studiengängen.",
+    "cta": "Möchtest du eigene Treffer? Beantworte einen kurzen Fragebogen und erhalte eine Liste, die zu dir passt.",
+    "ctaButton": "Fragebogen ausfüllen"
+  },
+  "Cabinet": {
+    "title": "Konto der Einrichtung",
+    "intro": "Wenn du eine Schule, ein College oder eine Universität vertrittst, kannst du deren Karte, Preise und Fristen selbst aktuell halten.",
+    "loading": "Wird geladen…",
+    "failed": "Dein Konto konnte nicht geladen werden. Bitte versuche es erneut.",
+    "none": "Du verwaltest noch keine Einrichtung. Öffne die Seite deiner Einrichtung und klicke auf „Ich vertrete diese Einrichtung“. Sobald unser Team die Anfrage geprüft hat, kannst du sie hier bearbeiten.",
+    "findInstitution": "Meine Einrichtung finden",
+    "institution": "Einrichtung",
+    "request": {
+      "pending": "{name}: Die Anfrage wartet auf die Prüfung durch unser Team.",
+      "rejected": "{name}: Die Anfrage wurde nicht genehmigt. Schreib uns, falls das ein Irrtum ist."
+    },
+    "claim": {
+      "title": "Arbeitest du an dieser Einrichtung?",
+      "text": "Beantrage Zugriff, um Preise, Fristen und Beschreibung selbst zu aktualisieren. Unser Team prüft jede Anfrage.",
+      "login": "Melde dich an, um eine Anfrage zu senden",
+      "openCabinet": "Konto der Einrichtung öffnen",
+      "pending": "Deine Anfrage wartet auf die Prüfung durch unser Team.",
+      "rejected": "Deine Anfrage wurde nicht genehmigt. Schreib uns, falls das ein Irrtum ist.",
+      "ask": "Ich vertrete diese Einrichtung",
+      "position": "Deine Position",
+      "message": "Wie können wir prüfen, dass du sie vertrittst?",
+      "messageHint": "Zum Beispiel eine dienstliche E-Mail-Adresse, die auf der Website der Einrichtung steht, oder die Telefonnummer des Zulassungsbüros.",
+      "failed": "Die Anfrage konnte nicht gesendet werden. Bitte versuche es erneut.",
+      "send": "Anfrage senden"
+    },
+    "card": {
+      "title": "Karte der Einrichtung",
+      "website": "Offizielle Website",
+      "dormitory": "Wohnheim",
+      "unknown": "Nicht angegeben",
+      "yes": "Ja",
+      "no": "Nein",
+      "description": {
+        "en": "Beschreibung (Englisch)",
+        "ru": "Beschreibung (Russisch)",
+        "original": "Beschreibung (Landessprache)"
+      },
+      "message": {
+        "saved": "Gespeichert.",
+        "failed": "Speichern nicht möglich. Bitte versuche es erneut.",
+        "url": "Die Webadresse muss mit https:// beginnen"
+      },
+      "save": "Karte speichern"
+    },
+    "programmes": {
+      "title": "Studiengänge",
+      "add": "Studiengang hinzufügen",
+      "note": "Die Preise gelten für Bewerber aus dem Ausland. Ein von dir gespeicherter Studiengang wird auf der Website als von der Einrichtung selbst eingetragen gekennzeichnet.",
+      "loading": "Wird geladen…",
+      "empty": "Noch keine Studiengänge.",
+      "more": "Mehr anzeigen",
+      "free": "Gebührenfrei",
+      "noPrice": "Kein Preis",
+      "byYou": "von dir eingetragen",
+      "close": "Schließen",
+      "edit": "Bearbeiten",
+      "delete": "Löschen",
+      "confirmDelete": "Studiengang „{name}“ löschen?",
+      "nameEn": "Name (Englisch)",
+      "nameOriginal": "Name (Landessprache)",
+      "level": "Abschluss",
+      "languages": "Studiensprachen (Codes)",
+      "duration": "Dauer in Jahren",
+      "amount": "Höhe der Studiengebühren",
+      "currency": "Währung (3 Buchstaben)",
+      "period": "Pro",
+      "periods": {
+        "year": "Jahr",
+        "semester": "Semester",
+        "total": "gesamten Studiengang"
+      },
+      "deadline": "Bewerbungsfrist",
+      "applicationUrl": "Link zur Bewerbung",
+      "errors": {
+        "name": "Gib den Namen des Studiengangs ein.",
+        "level": "Wähle einen Abschluss.",
+        "languages": "Schreibe Sprachen als Zwei-Buchstaben-Codes, z. B. en, de.",
+        "duration": "Die Dauer muss zwischen 0 und 12 Jahren liegen.",
+        "amount": "Der Betrag muss eine Zahl sein.",
+        "currency": "Die Währung ist ein Code aus drei Großbuchstaben, z. B. USD.",
+        "deadline": "Wähle das Datum der Frist.",
+        "url": "Der Link muss mit https:// beginnen",
+        "failed": "Speichern nicht möglich. Bitte versuche es erneut."
+      },
+      "save": "Speichern",
+      "cancel": "Abbrechen"
+    }
+  }
+}

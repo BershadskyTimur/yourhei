@@ -1,6 +1,6 @@
 import { expect, test } from '@playwright/test';
 
-const LOCALES = ['ru', 'en', 'ka', 'es', 'zh', 'uk', 'hy', 'kk'] as const;
+const LOCALES = ['ru', 'en', 'ka', 'es', 'zh', 'uk', 'hy', 'kk', 'tr', 'az', 'uz', 'ky', 'pl', 'ar', 'fr', 'de'] as const;
 
 test.describe('home page in every language', () => {
   for (const locale of LOCALES) {

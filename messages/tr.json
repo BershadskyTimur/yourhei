@@ -1,0 +1,1213 @@
+{
+  "Meta": {
+    "title": "YourHEI — okulunu, kolejini veya üniversiteni bul",
+    "description": "Avrupa, Asya, Amerika, Okyanusya, Kafkasya ve Orta Asya'daki üniversiteler, kolejler ve okullar için harita ve kişisel eşleştirme."
+  },
+  "Common": {
+    "siteName": "YourHEI",
+    "skipToContent": "Ana içeriğe geç",
+    "translationUnavailable": "çeviri yok"
+  },
+  "Header": {
+    "homeLabel": "YourHEI — ana sayfa",
+    "login": "Giriş yap",
+    "language": "Dil",
+    "toggleTheme": "Açık / koyu temayı değiştir",
+    "profile": "Profil",
+    "logout": "Çıkış yap",
+    "matches": "Eşleşmelerim",
+    "favorites": "Listem",
+    "navLabel": "Ana bölümler",
+    "catalog": "Katalog",
+    "scholarships": "Burslar"
+  },
+  "Footer": {
+    "navLabel": "Site bilgileri",
+    "about": "Hakkımızda",
+    "contacts": "İletişim ve destek",
+    "privacy": "Gizlilik politikası",
+    "terms": "Kullanım koşulları",
+    "dataCredit": "Harita verileri © OpenStreetMap katkıda bulunanlar, OpenFreeMap.",
+    "rights": "© {year} YourHEI",
+    "tagline": "Nerede okuyacağını bul: üniversiteler, kolejler ve okullar tek haritada, kendini açıklayan eşleşmelerle."
+  },
+  "Types": {
+    "university": "Üniversite",
+    "college": "Kolej",
+    "school": "Okul",
+    "language_school": "Dil okulu",
+    "foundation": "Hazırlık programları",
+    "vocational": "Meslek okulu"
+  },
+  "Home": {
+    "map": {
+      "title": "Okuyacağın yeri bul",
+      "mapLabel": "Eğitim kurumları haritası",
+      "searchLabel": "Ada veya şehre göre ara",
+      "searchPlaceholder": "Ad veya şehir",
+      "noResults": "Hiçbir şey bulunamadı",
+      "legendLabel": "Kurum türleri (göstermek veya gizlemek için dokun)",
+      "shown": "{total} kurumdan {shown} tanesi gösteriliyor",
+      "loadError": "Kurumlar yüklenemedi. Lütfen daha sonra tekrar dene.",
+      "more": "Ayrıntılar",
+      "close": "Kapat",
+      "noWebgl": "Tarayıcın haritayı gösteremiyor. Başka bir tarayıcı dene veya donanım hızlandırmayı aç.",
+      "zoomIn": "Yakınlaştır",
+      "zoomOut": "Uzaklaştır",
+      "toggleAttribution": "Harita verisi kaynakları",
+      "mapFeedback": "Harita sorunu bildir",
+      "heading": "Kurumlar haritası"
+    },
+    "how": {
+      "title": "Nasıl çalışır",
+      "step1Title": "Kaydol",
+      "step1Text": "Hesap oluştur ve ülkeni, yaşını ve belgelerini bize söyle.",
+      "step2Title": "Anketi doldur",
+      "step2Text": "Hedeflerin, notların, dillerin ve bütçen hakkındaki soruları yanıtla.",
+      "step3Title": "Eşleşmelerini al",
+      "step3Text": "Güvenli, uygun ve iddialı seçeneklerden oluşan bir liste al.",
+      "cta": "Eşleştirmeye başla"
+    },
+    "hero": {
+      "badge": "Yurt dışında eğitim, kolaylaştırıldı",
+      "subtitle": "Haritada {count} üniversite ve koleji keşfet, kısa bir anketi yanıtla ve gerçekten nereye uyduğunu gör — net gerekçelerle ve hâlâ neyin eksik olduğuyla.",
+      "ctaMap": "Haritayı keşfet"
+    },
+    "stats": {
+      "institutions": "{count, plural, one {# kurum} other {# kurum}}",
+      "countries": "{count, plural, one {# ülke} other {# ülke}}",
+      "languages": "{count} dil",
+      "free": "Kullanımı ücretsiz"
+    },
+    "why": {
+      "title": "Neden YourHEI",
+      "f1Title": "Her şey tek haritada",
+      "f1Text": "Avrupa, Asya, Amerika, Okyanusya ve Kafkasya'daki üniversiteler, kolejler ve okullar tek haritada.",
+      "f2Title": "Kendini açıklayan eşleşmeler",
+      "f2Text": "Her sonuç neden uyduğunu ve hâlâ neye ihtiyacın olduğunu gösterir; örneğin daha yüksek bir dil puanı.",
+      "f3Title": "Kaynaklı veriler",
+      "f3Text": "Ücretler, koşullar ve son tarihler resmî sitelerden gelir; bağlantı ve kontrol ettiğimiz tarihle birlikte.",
+      "f4Title": "Senin dilinde",
+      "f4Text": "Site {languages} dilde konuşur ve ücretleri senin para biriminde gösterir."
+    },
+    "countries": {
+      "title": "Nerede okuyabilirsin",
+      "text": "Haritada kurumu bulunan ülkeler."
+    },
+    "cta": {
+      "title": "Yerini bulmaya hazır mısın?",
+      "text": "Ücretsiz hesap oluştur, anketi yanıtla ve eşleşmelerini dakikalar içinde al."
+    }
+  },
+  "Institution": {
+    "comingSoon": "Ayrıntılı veriler yakında eklenecek.",
+    "officialSite": "Resmî web sitesi",
+    "founded": "Kuruluş: {year}",
+    "back": "Haritaya dön",
+    "factsTitle": "Temel bilgiler",
+    "ownership": "Mülkiyet",
+    "public": "Devlet",
+    "private": "Özel",
+    "dormitory": "Yurt",
+    "dormitoryYes": "Var",
+    "dormitoryNo": "Yok",
+    "featuresTitle": "Olanaklar",
+    "features": {
+      "internship": "Stajlar",
+      "double_degree": "Çift diploma",
+      "exchange": "Değişim programları"
+    },
+    "programsTitle": "Programlar",
+    "noPrograms": "Bu kurumun ayrıntılı program verileri toplanıyor. Lütfen resmî web sitesine bak.",
+    "for": {
+      "international": "uluslararası öğrenciler",
+      "domestic": "vatandaşlar",
+      "eu": "AB vatandaşları",
+      "all": "tüm öğrenciler"
+    },
+    "per": {
+      "year": "yıllık",
+      "semester": "dönemlik",
+      "credit": "kredi başına",
+      "total": "tüm program için"
+    },
+    "tuitionTitle": "Eğitim ücreti",
+    "free": "Ücretsiz",
+    "requirementsTitle": "Koşullar",
+    "minScore": "En az {exam}: {score}",
+    "documentsTitle": "Belgeler",
+    "entranceTitle": "Kabul süreci",
+    "noRequirements": "Henüz koşul yayımlanmadı.",
+    "intake": "Dönem başlangıcı",
+    "deadline": "Son tarih",
+    "applicationFee": "Başvuru ücreti",
+    "deadlinesTitle": "Son tarihler",
+    "rankingsTitle": "Sıralamalar",
+    "rankingLine": "{name} ({year}): {position}",
+    "scholarshipsTitle": "Burslar",
+    "covers": {
+      "tuition": "eğitim ücretini karşılar",
+      "living": "yaşam giderlerini karşılar",
+      "full": "tam finansman",
+      "partial": "kısmi finansman"
+    },
+    "checked": "Veriler {date} tarihinde kontrol edildi.",
+    "disclaimer": "Başvurmadan önce ücretleri ve son tarihleri her zaman resmî web sitesinden doğrula.",
+    "report": "Bu sayfadaki bir hatayı bildir",
+    "duration": "Süre",
+    "programsCount": "{count, plural, one {# program} other {# program}}",
+    "favoriteAdd": "Kaydet",
+    "favoriteRemove": "Kaydedildi",
+    "favoriteLogin": "Kaydetmek için giriş yap",
+    "byInstitution": "Kurumun kendisi tarafından girildi"
+  },
+  "Pages": {
+    "about": {
+      "title": "Proje hakkında",
+      "body": "YourHEI, adayların ve ailelerinin nerede okuyacaklarını seçmelerine yardımcı olur: üniversiteler, kolejler ve okulların etkileşimli haritası, hedeflerin, sonuçların ve bütçen hakkında kısa bir anket ve neden uyduklarını açıklayan eşleşmeler. Hizmet adaylar için ücretsizdir."
+    },
+    "contact": {
+      "title": "İletişim ve destek",
+      "body": "Hizmet hakkında sorular, bir kurumun sayfasında düzeltmeler ya da kişisel verilerinle ilgili talepler mi var? Bize yaz.",
+      "emailLabel": "E-posta"
+    },
+    "privacy": {
+      "title": "Gizlilik politikası"
+    },
+    "terms": {
+      "title": "Kullanım koşulları"
+    },
+    "notFound": {
+      "title": "Sayfa bulunamadı",
+      "body": "Aradığın sayfa mevcut değil.",
+      "home": "Ana sayfaya git"
+    }
+  },
+  "Subregions": {
+    "eastern-europe": "Doğu Avrupa",
+    "northern-europe": "Kuzey Avrupa",
+    "southern-europe": "Güney Avrupa",
+    "western-europe": "Batı Avrupa",
+    "central-asia": "Orta Asya",
+    "eastern-asia": "Doğu Asya",
+    "south-eastern-asia": "Güneydoğu Asya",
+    "southern-asia": "Güney Asya",
+    "western-asia": "Batı Asya",
+    "northern-america": "Kuzey Amerika",
+    "central-america": "Orta Amerika",
+    "caribbean": "Karayipler",
+    "south-america": "Güney Amerika",
+    "australia-nz": "Avustralya ve Yeni Zelanda",
+    "melanesia": "Melanezya",
+    "micronesia": "Mikronezya",
+    "polynesia": "Polinezya"
+  },
+  "Register": {
+    "title": "Hesabını oluştur",
+    "intro": "İki kısa adım. Geri kalan her şeyi (ülkeler, belgeler, aradığın şey) istediğin zaman profilinde doldurursun.",
+    "progressLabel": "Kayıt ilerlemesi",
+    "stepOf": "Adım {current} / {total}",
+    "steps": {
+      "account": "Hesap",
+      "age": "Yaşın"
+    },
+    "back": "Geri",
+    "next": "İleri",
+    "create": "Hesap oluştur",
+    "creating": "Hesap oluşturuluyor…",
+    "alreadyHave": "Zaten hesabın var mı?",
+    "loginLink": "Giriş yap",
+    "search": {
+      "regionsTitle": "Bölgeler",
+      "regionsHint": "Bir veya daha fazlasını seç. Ülkeleri aşağıda ayrıca düzenleyebilirsin.",
+      "regions": {
+        "caucasus-ca-ee": "Kafkasya, Orta Asya ve Doğu Avrupa",
+        "europe": "Avrupa",
+        "asia": "Asya",
+        "americas": "Amerika",
+        "oceania": "Okyanusya"
+      },
+      "countriesTitle": "Ülkeler",
+      "countriesHint": "Seçilen bölgelerin tüm ülkeleri işaretli. İhtiyacın olmayanların işaretini kaldır.",
+      "pickRegion": "Önce bir bölge seç.",
+      "selectAll": "Tümünü seç",
+      "clearAll": "Tümünü temizle",
+      "groupLabel": "Ülkeler: {group}",
+      "typesTitle": "Kurum türleri",
+      "typesHint": "Bir veya daha fazlasını seç."
+    },
+    "about": {
+      "birthDate": "Doğum tarihi",
+      "birthDateWhy": "Ülkendeki asgari yaşı kontrol etmek ve uygun programları göstermek için.",
+      "gender": "Cinsiyet",
+      "genderWhy": "Tek cinsiyetli okullar ve yurtlar için gerekir. Söylememeyi seçebilirsin.",
+      "male": "Erkek",
+      "female": "Kadın",
+      "undisclosed": "Söylememeyi tercih ederim",
+      "residence": "İkamet edilen ülke",
+      "residenceWhy": "Asgari yaşı, görüntülenen para birimini ve diploma tanınma kurallarını belirler.",
+      "residencePlaceholder": "Bir ülke seç",
+      "citizenship": "Vatandaşlık (bir veya birkaç)",
+      "citizenshipWhy": "Vize kuralları ve kabul koşulları vatandaşlığa bağlıdır.",
+      "countrySearch": "Bir ülke adı yaz",
+      "remove": "{name} öğesini kaldır",
+      "noMatches": "Eşleşen ülke yok",
+      "ageCheck": "En az {age} yaşındayım",
+      "ageCheckWhy": "Asgari yaş, ikamet ettiğin ülkeye bağlıdır."
+    },
+    "documents": {
+      "intro": "Hangi belgelere zaten sahip olduğunu söyle. Bu yalnızca bir durum bilgisidir: senden bir şey yüklemeni istemiyoruz.",
+      "why": "Kabul için hâlâ neyin eksik olduğunu göstermek için kullanırız.",
+      "status": {
+        "have": "Var",
+        "in_progress": "Hazırlanıyor",
+        "none": "Yok"
+      },
+      "visaCountries": "Hangi ülkelerde geçerli?",
+      "expectedDate": "Beklenen alım tarihi",
+      "eduKind": "Hangi belge?",
+      "eduSchool": "Okul belgesi (lise diploması)",
+      "eduDiploma": "Diploma (kolej veya üniversite)",
+      "items": {
+        "passport": "Uluslararası pasaport",
+        "study_visa": "Öğrenci vizesi veya oturum izni",
+        "education": "Okul belgesi / diploma",
+        "transcript": "Not dökümü",
+        "apostille": "Apostil veya konsolosluk onayı",
+        "notarized_translation": "Belgelerin noter onaylı tercümesi",
+        "recognition": "Eğitim belgelerinin tanınması (denklik)",
+        "proof_of_funds": "Mali yeterlilik belgesi (hesap dökümü, sponsor mektubu, bloke hesap)",
+        "health_insurance": "Sağlık sigortası",
+        "parental_consent": "Yurt dışında okumak için noter onaylı veli izni (18 yaş altı)"
+      }
+    },
+    "account": {
+      "email": "E-posta",
+      "emailWhy": "Giriş yapmak ve hizmet mesajları için.",
+      "password": "Parola",
+      "passwordHint": "En az 10 karakter; bir harf ve bir rakam içermeli.",
+      "show": "Parolayı göster",
+      "hide": "Parolayı gizle",
+      "consent": "<privacy>Gizlilik politikasını</privacy> ve <terms>kullanım koşullarını</terms> okudum ve kabul ediyorum.",
+      "marketing": "Bana e-postayla haberler ve ipuçları gönderin (isteğe bağlı).",
+      "checkEmailTitle": "E-postanı kontrol et",
+      "checkEmailText": "{email} adresine bir onay bağlantısı gönderdik. Kaydı tamamlamak için aç. Spam klasörüne de bak.",
+      "resend": "Bağlantıyı yeniden gönder",
+      "resent": "Bağlantı yeniden gönderildi.",
+      "notConfigured": "Kayıt şu anda kullanılamıyor: hizmet henüz yapılandırılmadı."
+    },
+    "underage": {
+      "title": "Üzgünüz",
+      "text": "Henüz kayıt olamazsın: ülkende asgari yaş {age}. Hesap oluşturulmadı ve girdiğin hiçbir şey kaydedilmedi.",
+      "home": "Ana sayfaya dön"
+    },
+    "errors": {
+      "required": "Lütfen bu alanı doldur",
+      "birthInvalid": "Geçerli bir doğum tarihi gir",
+      "dateInvalid": "Geçerli bir tarih gir",
+      "residenceRequired": "İkamet ettiğin ülkeyi seç",
+      "ageCheckRequired": "Lütfen yaşını onayla",
+      "emailInvalid": "Geçerli bir e-posta adresi gir",
+      "consentRequired": "Bu onay gereklidir",
+      "passwordTooShort": "En az 10 karakter kullan",
+      "passwordNeedsLetter": "Bir harf ekle",
+      "passwordNeedsDigit": "Bir rakam ekle",
+      "passwordCommon": "Bu parola çok yaygın",
+      "passwordLikeEmail": "Parola, e-postandaki adı içermemelidir",
+      "signUpFailed": "Hesap oluşturulamadı. Lütfen tekrar dene.",
+      "rateLimit": "Çok fazla deneme. Lütfen birkaç dakika bekleyip tekrar dene.",
+      "network": "Bağlantı yok. İnternetini kontrol edip tekrar dene."
+    }
+  },
+  "Login": {
+    "title": "Giriş yap",
+    "email": "E-posta",
+    "password": "Parola",
+    "submit": "Giriş yap",
+    "submitting": "Giriş yapılıyor…",
+    "forgot": "Parolanı mı unuttun?",
+    "noAccount": "Henüz hesabın yok mu?",
+    "register": "Oluştur",
+    "resend": "Onay bağlantısını yeniden gönder",
+    "resent": "Bağlantı yeniden gönderildi. E-postanı kontrol et.",
+    "notConfigured": "Giriş şu anda kullanılamıyor: hizmet henüz yapılandırılmadı.",
+    "notices": {
+      "link": "Bu bağlantının süresi doldu veya başka bir tarayıcıda açıldı. E-postanı zaten onayladıysan doğrudan giriş yap."
+    },
+    "errors": {
+      "invalid": "E-posta veya parola hatalı.",
+      "notConfirmed": "Önce e-postanı onayla: sana gönderdiğimiz bağlantıyı aç.",
+      "generic": "Giriş yapılamadı. Lütfen tekrar dene.",
+      "rateLimit": "Çok fazla deneme. Lütfen birkaç dakika bekleyip tekrar dene.",
+      "google": "Google ile giriş yapılamadı. Lütfen tekrar dene.",
+      "captcha": "Lütfen güvenlik doğrulamasını tamamla."
+    },
+    "google": "Google ile devam et",
+    "googleNotice": "Google ile devam ederek <privacy>gizlilik politikasını</privacy> ve <terms>kullanım koşullarını</terms> kabul etmiş olursun.",
+    "or": "veya e-posta ile"
+  },
+  "Forgot": {
+    "title": "Parolanı sıfırla",
+    "text": "E-postanı gir, yeni parola belirlemen için bir bağlantı gönderelim.",
+    "email": "E-posta",
+    "submit": "Bağlantıyı gönder",
+    "sent": "Bu adreste bir hesap varsa bağlantı yolda. E-postanı kontrol et.",
+    "back": "Girişe dön"
+  },
+  "Reset": {
+    "title": "Yeni parola belirle",
+    "newPassword": "Yeni parola",
+    "submit": "Parolayı kaydet",
+    "done": "Parola değiştirildi. Bir sonraki girişte bunu kullan.",
+    "toProfile": "Profiline git",
+    "noSession": "Bu bağlantının süresi doldu. Lütfen yenisini iste.",
+    "requestNew": "Yeni bağlantı iste"
+  },
+  "Profile": {
+    "title": "Profilin",
+    "loading": "Yükleniyor…",
+    "loadFailed": "Profilin yüklenemedi. Sayfayı yenile veya daha sonra tekrar dene.",
+    "welcome": "E-postan onaylandı. YourHEI'ye hoş geldin!",
+    "email": "E-posta",
+    "plan": "Plan",
+    "planFree": "Ücretsiz",
+    "planPremium": "Premium",
+    "sections": {
+      "search": "Aradığın şey",
+      "about": "Hakkında",
+      "documents": "Belgeler",
+      "privacy": "E-posta ve gizlilik"
+    },
+    "save": "Kaydet",
+    "saving": "Kaydediliyor…",
+    "saved": "Kaydedildi",
+    "saveFailed": "Kaydedilemedi. Lütfen tekrar dene.",
+    "ageBlocked": "Bu doğum tarihi veya ülke asgari yaşı ({age}) karşılamıyor.",
+    "marketing": "Bana e-postayla haberler ve ipuçları gönderin",
+    "survey": {
+      "title": "Eşleştirme anketini doldur",
+      "text": "Uygun kurumları almak için hedeflerin, sonuçların ve bütçen hakkındaki soruları yanıtla.",
+      "open": "Ankete git"
+    },
+    "data": {
+      "title": "Verilerin",
+      "exportText": "Hakkında sakladığımız her şeyi dosya olarak indir.",
+      "export": "Verilerimi indir",
+      "exportFailed": "Dosya hazırlanamadı. Lütfen tekrar dene.",
+      "deleteText": "Hesabını ve tüm verilerini sil. Bu işlem geri alınamaz.",
+      "delete": "Hesabı ve tüm verileri sil",
+      "confirmText": "Emin misin? Profilin, belgelerin ve girişin hemen silinecek.",
+      "confirm": "Evet, hepsini sil",
+      "cancel": "İptal",
+      "deleteFailed": "Hesap silinemedi. Lütfen tekrar dene."
+    },
+    "complete": {
+      "title": "Profilini tamamla",
+      "text": "Vatandaşlığını, aradığın bölgeleri ve kurum türlerini ve belgelerini ekle. Bunların hepsini istediğin zaman değiştirebilirsin."
+    },
+    "ageNeeded": "Devam etmek için doğum tarihini ve ikamet ettiğin ülkeyi ekle: asgari yaşı kontrol etmek için bunlara ihtiyacımız var."
+  },
+  "Legal": {
+    "privacy": {
+      "s1Title": "Biz kimiz",
+      "s1Text": "YourHEI, adayların nerede okuyacaklarını seçmelerine yardımcı olan bir hizmettir. Bu politika hangi verileri topladığımızı ve nasıl kullandığımızı açıklar. Siteyi kullanarak bunu kabul etmiş olursun.",
+      "s2Title": "Ne topluyoruz",
+      "s2Text": "Hesap verileri (e-posta ve parolanın korunmuş biçimi); profil verileri (doğum tarihi, verirsen cinsiyet, ikamet edilen ülke, vatandaşlıklar, aradığın şey, belgelerinin durumu); anket yanıtların; ayrıca çerezler ve benzeri teknolojiler dahil teknik ve kullanım verileri (ziyaret ettiğin sayfalar, sitedeki eylemler, cihaz, tarayıcı, dil, IP adresi, yaklaşık konum, geldiğin site).",
+      "s3Title": "Neden topluyoruz",
+      "s3Text": "Hizmeti işletmek ve geliştirmek, asgari yaşı kontrol etmek, eşleşmelerini oluşturmak, seninle iletişim kurmak, sitenin nasıl kullanıldığını ölçmek, reklam göstermek, araştırma yapmak, hizmeti güvende tutmak ve yasal yükümlülükleri yerine getirmek için.",
+      "s4Title": "Analiz ve paylaşım",
+      "s4Text": "Analiz ve reklam araçları kullanabiliriz. Analiz ve kullanım verilerini ve topladığımız diğer verileri, nerede olurlarsa olsunlar, diğer ülkeler dahil, analiz, reklam, barındırma ve diğer sağlayıcılara ve iş ortaklarına gönderebiliriz.",
+      "s5Title": "Verileri nasıl kullanabiliriz",
+      "s5Text": "Yasaların izin verdiği ölçüde, topladığımız verileri uygun gördüğümüz şekilde kullanabiliriz: hizmeti işletmek, kişiselleştirmek, analiz etmek ve geliştirmek, yeni ürün ve hizmetler geliştirmek, reklam yapmak ve istatistik ile araştırma sonuçlarını, toplulaştırılmış veya anonimleştirilmiş biçim dahil, yayımlamak veya paylaşmak için.",
+      "s6Title": "Saklama",
+      "s6Text": "Veriler, sen hesabını silene kadar sağlayıcılarımızda (örneğin veritabanı sağlayıcımızda) saklanır. Teknik kayıtlar ve yedekler bundan sonra bir süre daha tutulabilir.",
+      "s7Title": "Hakların",
+      "s7Text": "Profilinde verilerini düzenleyebilir, bir kopyasını indirebilir, e-postaları kapatabilir ve hesabını tüm verilerle birlikte silebilirsin. Yasanın sana daha fazla hak tanıdığı yerlerde, örneğin AB, AEA veya Birleşik Krallık'ta, bunlara uyarız.",
+      "s8Title": "Asgari yaş",
+      "s8Text": "Yalnızca ikamet ettikleri ülkenin asgari yaşına ulaşmış kişileri kaydediyoruz (ülkeye göre 14, 16 veya 18). Daha gençsen hesap oluşturulmaz ve yazdığın hiçbir şey saklanmaz.",
+      "s9Title": "Çerezler ve benzeri teknolojiler",
+      "s9Text": "Dilin, temanın ve girişin için ve ayrıca analiz ve reklam için çerezler ve benzeri teknolojiler kullanıyoruz. Yasanın gerektirdiği yerlerde önce onayını isteriz.",
+      "s10Title": "Değişiklikler",
+      "s10Text": "Bu politikayı değiştirebiliriz. En üstteki tarih son sürümü gösterir; bir değişiklikten sonra siteyi kullanmaya devam edersen yeni sürümü kabul etmiş olursun."
+    },
+    "terms": {
+      "s1Title": "Hizmet",
+      "s1Text": "YourHEI, eğitim kurumlarını haritada gösterir ve yanıtlarına göre seçenekler önerir. Adaylar için ücretsizdir.",
+      "s2Title": "Hesabın",
+      "s2Text": "Doğru bilgi ver ve parolanı gizli tut. Bir kişi, bir hesap. İkamet ettiğin ülkenin asgari yaşına ulaşmış olmalısın.",
+      "s3Title": "Bilgi, tavsiye değil",
+      "s3Text": "Kurumlarla ilgili veriler açık ve resmî kaynaklardan gelir ve güncel olmayabilir veya eksik olabilir. Başvurmadan önce her zaman resmî web sitesine bak. Bir öneri, kabul vaadi değildir.",
+      "s4Title": "Adil kullanım",
+      "s4Text": "Hizmeti kötüye kullanma: otomatik toplu veri toplama, hizmeti bozma girişimleri ve sahte bildirimler yasaktır.",
+      "s5Title": "Veriler ve analiz",
+      "s5Text": "Hizmeti kullanarak, analiz ve kullanım verilerini toplayabileceğimizi, bunları nerede olurlarsa olsunlar seçtiğimiz üçüncü taraflara gönderebileceğimizi ve topladığımız tüm verileri, Gizlilik politikasında açıklandığı gibi, yasaların izin verdiği ölçüde uygun gördüğümüz şekilde kullanabileceğimizi kabul edersin.",
+      "s6Title": "Reklam ve üçüncü taraflar",
+      "s6Text": "Site reklam gösterir ve üçüncü taraf sitelerine bağlantı verebilir. Onların içeriğinden veya tekliflerinden sorumlu değiliz.",
+      "s7Title": "Değişiklikler ve sona erme",
+      "s7Text": "Hizmeti ve bu koşulları değiştirebiliriz; bir değişiklikten sonra hizmeti kullanmaya devam edersen bunu kabul etmiş olursun. Hesabını istediğin zaman silebilirsin.",
+      "s8Title": "Sorumluluk",
+      "s8Text": "Hizmet olduğu gibi, garanti verilmeden sunulur ve yasaların izin verdiği ölçüde, kullanımından doğan zararlardan sorumlu değiliz."
+    },
+    "updated": "Son güncelleme: {date}"
+  },
+  "Survey": {
+    "title": "Eşleştirme anketin",
+    "intro": "Hedeflerin, sonuçların, dillerin ve bütçen hakkındaki soruları yanıtla. Yaklaşık 15 soru zorunludur; diğerleri isteğe bağlıdır ve tek tıkla atlanabilir. Yanıtların ilerledikçe kaydedilir.",
+    "hub": {
+      "start": "Ankete başla",
+      "continue": "Bıraktığın yerden devam et",
+      "discard": "Vazgeç ve baştan başla",
+      "startedOn": "Bu ankete {date} tarihinde başladın.",
+      "again": "Anketi yeniden doldur",
+      "past": "Tamamladığın anketler",
+      "pastItem": "{date} tarihinde tamamlandı",
+      "noteRetake": "Tamamlanmış bir anket değiştirilemez. Planların değişirse anketi yeniden doldur: yeni yanıtlar kullanılır.",
+      "profileHint": "İpucu: daha iyi sonuçlar için önce profilini doldur (vatandaşlık, bölgeler, belgeler)."
+    },
+    "done": {
+      "title": "Teşekkürler! Anket tamamlandı.",
+      "text": "Yanıtların kaydedildi. Sana en uygun kurumları gör.",
+      "toProfile": "Profilime dön",
+      "toMatches": "Eşleşmelerimi gör"
+    },
+    "ui": {
+      "loading": "Yükleniyor…",
+      "loadFailed": "Anket yüklenemedi. Lütfen sayfayı yenile veya daha sonra tekrar dene.",
+      "questionOf": "Soru {current} / {total}",
+      "requiredLeft": "{count, plural, one {# zorunlu soru kaldı} other {# zorunlu soru kaldı}}",
+      "optional": "İsteğe bağlı",
+      "back": "Geri",
+      "next": "İleri",
+      "skip": "Atla",
+      "skipAll": "Tüm isteğe bağlı soruları atla",
+      "finish": "Bitir",
+      "saving": "Kaydediliyor…",
+      "saveFailed": "Yanıtın kaydedilemedi. Bağlantını kontrol edip tekrar dene.",
+      "saveAndExit": "Kaydet ve sonra devam et",
+      "progressLabel": "Anket ilerlemesi",
+      "add": "Ekle",
+      "remove": "Kaldır",
+      "search": "Ada göre ara",
+      "choose": "Seç…",
+      "approximate": "Not sistemleri arasındaki dönüşümler yaklaşıktır.",
+      "noMatches": "Hiçbir şey bulunamadı",
+      "moveUp": "Yukarı taşı",
+      "moveDown": "Aşağı taşı",
+      "counter": "{count} seçenekten {chosen} tanesi seçildi",
+      "range": "{min} ile {max} arasında"
+    },
+    "errors": {
+      "required": "Lütfen bu soruyu yanıtla",
+      "invalid": "Lütfen bu yanıtı kontrol et",
+      "outOfRange": "Bu değer izin verilen aralığın dışında",
+      "tooMany": "Çok fazla seçim",
+      "priorities": "Tam olarak 3 farklı öğe seç"
+    },
+    "education": {
+      "level": "Mevcut eğitim",
+      "year": "Mezuniyet yılı (veya beklenen)",
+      "levels": {
+        "school_9": "Okul, 9. sınıfa kadar",
+        "school_11": "Okul, 10-12. sınıflar",
+        "college": "Kolej",
+        "bachelor": "Lisans",
+        "master": "Yüksek lisans",
+        "other": "Diğer"
+      }
+    },
+    "grade": {
+      "none": "Henüz notum yok",
+      "system": "Not sistemi",
+      "value": "Not ortalaman",
+      "range": "{min} ile {max} arasında"
+    },
+    "subjects": {
+      "subject": "Ders",
+      "grade": "Not"
+    },
+    "exams": {
+      "exam": "Sınav",
+      "score": "Puan",
+      "range": "Olası aralık: {min} ile {max} arası"
+    },
+    "languages": {
+      "language": "Dil",
+      "level": "Seviyen",
+      "certificate": "Sertifika (isteğe bağlı)",
+      "certValue": "Puan veya seviye",
+      "none": "Sertifika yok",
+      "addLanguage": "Dil ekle"
+    },
+    "selfLevels": {
+      "a1": "Birkaç cümle biliyorum",
+      "a2": "Basit günlük konular",
+      "b1": "Seyahatte ve işte idare ederim",
+      "b2": "Çoğu konuyu akıcı biçimde konuşurum",
+      "c1": "Bu dilde okuyabilirim",
+      "c2": "Ana dil konuşuru gibi",
+      "native": "Ana dilim"
+    },
+    "studyLanguages": {
+      "languages": "Eğitim görmeye hazır olduğum diller",
+      "prepYear": "Bir dil hazırlık yılı alır mıydın?",
+      "yes": "Evet",
+      "no": "Hayır"
+    },
+    "budget": {
+      "currency": "Para birimi",
+      "tuition": "Yıllık eğitim ücreti",
+      "living": "Yıllık yaşam giderleri"
+    },
+    "olympiads": {
+      "subject": "Ders",
+      "level": "Düzey",
+      "place": "Derece"
+    },
+    "olympiadLevels": {
+      "school": "Okul",
+      "regional": "Bölgesel",
+      "national": "Ulusal",
+      "international": "Uluslararası"
+    },
+    "priorities": {
+      "price": "Fiyat",
+      "prestige": "Prestij",
+      "location": "Ülke ve şehir",
+      "chances": "Kabul şansı",
+      "field": "Okunacak alan",
+      "career": "Kariyer olanakları"
+    },
+    "riasec": {
+      "intro": "Her ifadeyi 1 ile 5 arasında puanla. Doğru ya da yanlış cevap yoktur.",
+      "scale": {
+        "1": "bana göre değil",
+        "2": "pek değil",
+        "3": "kararsızım",
+        "4": "biraz evet",
+        "5": "tam ben"
+      },
+      "items": {
+        "0": "Elimle veya aletlerle bir şeyler onarmayı ya da yapmayı severim.",
+        "1": "Bir şeyin nasıl çalıştığını deney yaparak veya veri analiz ederek çözmeyi severim.",
+        "2": "Özgün bir şey yaratmayı severim: yazmak, çizmek, tasarlamak ya da beste yapmak.",
+        "3": "Başkalarına yardım etmeyi, onlara öğretmeyi ya da bakmayı severim.",
+        "4": "Bir ekibi yönetmeyi veya başkalarını fikrime inandırmayı severim.",
+        "5": "Bilgileri düzenlemeyi, kayıt tutmayı ve net prosedürleri izlemeyi severim.",
+        "6": "Açık havada, makinelerle, hayvanlarla veya bitkilerle çalışmaktan hoşlanırım.",
+        "7": "Zor bir bulmacayı veya matematik problemini çözmekten hoşlanırım.",
+        "8": "Fikirlerimi müzik, tiyatro veya görsel medya yoluyla ifade etmeyi severim.",
+        "9": "İnsanları dinlemekte ve zor zamanlarında onlara destek olmakta iyiyimdir.",
+        "10": "Bir proje veya iş başlatmayı ve risk almayı severim.",
+        "11": "Her şey tam olması gerektiği gibi işlesin diye bütçeleri, programları ve ayrıntıları planlamayı severim."
+      },
+      "suggestions": "Sana uyabilecek yönler",
+      "suggestionsHint": "Hoşuna gidenleri tut. En az bir tane gerekli.",
+      "answerAll": "Önerilen yönleri görmek için 12 ifadenin hepsini yanıtla."
+    },
+    "q": {
+      "level": {
+        "title": "Ne okumak istiyorsun?",
+        "options": {
+          "school": "Okul",
+          "college": "Kolej",
+          "foundation": "Hazırlık yılı",
+          "bachelor": "Lisans",
+          "master": "Yüksek lisans",
+          "phd": "Doktora",
+          "language_course": "Dil kursları"
+        }
+      },
+      "situation": {
+        "title": "Durumun nedir?",
+        "options": {
+          "first": "İlk kez başvuruyorum",
+          "transfer": "Kredilerimi koruyarak geçiş yapmak istiyorum",
+          "second_degree": "İkinci bir diploma"
+        }
+      },
+      "start": {
+        "title": "Ne zaman başlamak istiyorsun?"
+      },
+      "format": {
+        "title": "Hangi eğitim biçimi?",
+        "options": {
+          "on_campus": "Kampüste",
+          "online": "Çevrimiçi",
+          "blended": "Karma",
+          "any": "Fark etmez"
+        }
+      },
+      "field_certainty": {
+        "title": "Alanından ne kadar eminsin?",
+        "options": {
+          "sure": "Tam olarak biliyorum",
+          "few": "Birkaç seçeneğim var",
+          "unknown": "Bilmiyorum, lütfen yardım edin"
+        }
+      },
+      "fields": {
+        "title": "Hangi alanlar ilgini çekiyor?",
+        "hint": "En fazla 3 seç; ilki en önemlisidir. Belirli bir uzmanlığa kadar inebilirsin."
+      },
+      "riasec": {
+        "title": "Sana uygun yönleri bulalım",
+        "hint": "Yapmaktan hoşlandığın şeyler hakkında on iki kısa ifade."
+      },
+      "diploma_field": {
+        "title": "Önceki diplomanın alanı neydi?",
+        "hint": "Lisans veya yüksek lisans diplomanın alanını seç."
+      },
+      "school_profile": {
+        "title": "Hangi okul profilini istiyorsun?"
+      },
+      "school_grade": {
+        "title": "Hangi sınıfa girmek istiyorsun?"
+      },
+      "school_program": {
+        "title": "Hangi program?",
+        "options": {
+          "national": "Ulusal",
+          "ib": "IB",
+          "alevel": "A-levels",
+          "american": "Amerikan"
+        }
+      },
+      "school_boarding": {
+        "title": "Yatılı okul mu, ailenle yaşamak mı?",
+        "options": {
+          "boarding": "Yatılı okul",
+          "family": "Ailemle yaşamak",
+          "any": "Fark etmez"
+        }
+      },
+      "school_coed": {
+        "title": "Karma okul mu, tek cinsiyetli okul mu?",
+        "options": {
+          "coed": "Karma",
+          "single_sex": "Tek cinsiyetli",
+          "any": "Tercihim yok"
+        }
+      },
+      "profession": {
+        "title": "Hangi mesleği öğrenmek istiyorsun?"
+      },
+      "college_to_uni": {
+        "title": "Sonrasında üniversiteye geçmek ister misin?",
+        "options": {
+          "yes": "Evet",
+          "no": "Hayır",
+          "maybe": "Belki"
+        }
+      },
+      "education": {
+        "title": "Mevcut eğitimin"
+      },
+      "grade": {
+        "title": "Not ortalaman",
+        "hint": "En iyi bildiğin not sistemini seç."
+      },
+      "subjects": {
+        "title": "En iyi derslerin ve notların",
+        "hint": "En fazla 5. Notlar daha önce seçtiğin not sistemine göredir."
+      },
+      "exams": {
+        "title": "Girdiğin veya gireceğin sınavlar",
+        "hint": "Puanlarınla birlikte ulusal veya uluslararası sınavlar."
+      },
+      "languages": {
+        "title": "Hangi dilleri, ne kadar iyi konuşuyorsun?",
+        "hint": "Her dili ekle ve kendini dürüstçe değerlendir. Sertifika isteğe bağlıdır."
+      },
+      "study_languages": {
+        "title": "Hangi dillerde eğitim görebilirsin?"
+      },
+      "olympiads": {
+        "title": "Olimpiyatlar ve yarışmalar",
+        "hint": "Ders, düzey ve aldığın derece."
+      },
+      "achievements": {
+        "title": "Başarıların",
+        "options": {
+          "projects": "Projeler",
+          "publications": "Yayınlar",
+          "sport": "Spor",
+          "creative": "Yaratıcı portfolyo",
+          "volunteering": "Gönüllülük"
+        }
+      },
+      "work_years": {
+        "title": "Kaç yıl çalıştın?"
+      },
+      "research_topic": {
+        "title": "Araştırma konun",
+        "hint": "Zaten varsa."
+      },
+      "entrance": {
+        "title": "Neye hazırsın?",
+        "options": {
+          "entrance_exams": "Kurumdaki giriş sınavları",
+          "interview": "Mülakat",
+          "creative_contest": "Yaratıcı yarışma"
+        }
+      },
+      "funding": {
+        "title": "Eğitimini nasıl finanse etmeyi planlıyorsun?",
+        "options": {
+          "free": "Yalnızca ücretsiz (eğitim ücretsiz) kontenjanlar",
+          "paid": "Ücretli kontenjanlar",
+          "both": "İkisi de"
+        }
+      },
+      "budget": {
+        "title": "Yıllık bütçen",
+        "hint": "Yıllık eğitim ücreti ve yaşam giderleri, tek bir para biriminde."
+      },
+      "scholarship": {
+        "title": "Burs ihtiyacın var mı?",
+        "options": {
+          "yes": "Evet, ihtiyacım var",
+          "no": "Hayır",
+          "maybe": "Yardımcı olurdu"
+        }
+      },
+      "loan": {
+        "title": "Eğitim kredisini düşünür müsün?",
+        "options": {
+          "yes": "Evet",
+          "no": "Hayır"
+        }
+      },
+      "rating": {
+        "title": "Kurumun sıralaması ne kadar önemli?",
+        "options": {
+          "top_world": "Dünyanın en iyileri arasında",
+          "top_country": "Ülkenin en iyileri arasında",
+          "any": "Önemli değil"
+        }
+      },
+      "ownership": {
+        "title": "Devlet mi, özel mi?",
+        "options": {
+          "public": "Devlet",
+          "private": "Özel",
+          "any": "Önemli değil"
+        }
+      },
+      "size": {
+        "title": "Büyük mü, küçük kurum mu?",
+        "options": {
+          "large": "Büyük",
+          "small": "Küçük",
+          "any": "Önemli değil"
+        }
+      },
+      "strategy": {
+        "title": "Eşleşmelerin ne kadar iddialı olsun?",
+        "options": {
+          "safe": "Yalnızca güvenli şanslar",
+          "balanced": "Dengeli",
+          "ambitious": "İddialı"
+        }
+      },
+      "extras": {
+        "title": "Diplomanın yanında ne önemli?",
+        "options": {
+          "internship": "Staj ve uygulama",
+          "double_degree": "Çift diploma",
+          "exchange": "Değişim dönemi"
+        }
+      },
+      "recognition": {
+        "title": "Diploma ülkende tanınmalı mı?",
+        "options": {
+          "yes": "Evet",
+          "no": "Hayır",
+          "any": "Önemli değil"
+        }
+      },
+      "city_size": {
+        "title": "Nasıl bir şehir tercih edersin?",
+        "options": {
+          "megapolis": "Büyük bir metropol",
+          "medium": "Orta büyüklükte bir şehir",
+          "small_student": "Küçük bir öğrenci kasabası",
+          "any": "Önemli değil"
+        }
+      },
+      "climate": {
+        "title": "Hangi iklimi tercih edersin?",
+        "options": {
+          "warm": "Sıcak",
+          "temperate": "Ilıman",
+          "cold": "Soğuk",
+          "any": "Önemli değil"
+        }
+      },
+      "dorm": {
+        "title": "Yurt ihtiyacın var mı?",
+        "options": {
+          "yes": "Evet",
+          "no": "Hayır",
+          "any": "Önemli değil"
+        }
+      },
+      "work_during": {
+        "title": "Okurken çalışmak ister misin?",
+        "options": {
+          "yes": "Evet",
+          "no": "Hayır",
+          "maybe": "Belki"
+        }
+      },
+      "after": {
+        "title": "Okulu bitirdikten sonraki planların",
+        "options": {
+          "stay": "Ülkede kalmak",
+          "return": "Eve dönmek",
+          "unknown": "Henüz emin değilim"
+        }
+      },
+      "family": {
+        "title": "Biriyle birlikte mi gidiyorsun?",
+        "hint": "İsteğe bağlı.",
+        "options": {
+          "partner": "Eşimle",
+          "children": "Çocuklarımla"
+        }
+      },
+      "accessibility": {
+        "title": "Erişilebilir bir ortama ihtiyacın var mı?",
+        "options": {
+          "yes": "Evet",
+          "no": "Hayır",
+          "prefer_not": "Söylememeyi tercih ederim"
+        }
+      },
+      "priorities": {
+        "title": "En önemli 3 şeyi seç",
+        "hint": "Bu, eşleşmelerini sıralarken en çok neyin sayılacağını belirler."
+      }
+    }
+  },
+  "Matches": {
+    "title": "Eşleşmelerin",
+    "loading": "En iyi eşleşmeler aranıyor…",
+    "failed": "Eşleşmeler yüklenemedi. Lütfen sayfayı yenile veya daha sonra tekrar dene.",
+    "noSurvey": {
+      "title": "Önce anketi doldur",
+      "text": "Eşleşmeler anket yanıtlarından ve profilinden oluşturulur.",
+      "cta": "Ankete git"
+    },
+    "basedOn": "{date} tarihli anketine ve profiline göre.",
+    "noData": {
+      "title": "Program verileri ekleniyor",
+      "text": "Programlarla ilgili verileri (eğitim ücreti, diller, koşullar) topluyor ve kontrol ediyoruz. Doğrulanmış programlar yayımlanır yayımlanmaz eşleşmeler burada görünür."
+    },
+    "summary": "{checked} programı kontrol ettik; {passed} tanesi koşullarına uyuyor.",
+    "nothing": {
+      "title": "Henüz hiçbir program tüm koşullarına uymuyor",
+      "text": "Daha geniş seçimler dene: profilinde daha fazla ülke veya tür, farklı bir bütçe ya da hazırlık yılı. Yeni programlar düzenli olarak ekleniyor.",
+      "profile": "Profilimi düzenle",
+      "survey": "Anketi yeniden doldur"
+    },
+    "groups": {
+      "safe": {
+        "title": "Güvenli seçimler",
+        "text": "Koşulları rahatça karşılıyorsun."
+      },
+      "suitable": {
+        "title": "Uygun seçimler",
+        "text": "Koşulları karşılıyorsun."
+      },
+      "ambitious": {
+        "title": "İddialı seçimler",
+        "text": "Bazı koşulların biraz altında, ama denemeye değer."
+      }
+    },
+    "retake": "Anketi yeniden doldur",
+    "editProfile": "Profilimi düzenle",
+    "credits": {
+      "live": "Döviz kurları:",
+      "fallback": "Döviz kurları yaklaşıktır (canlı kurlar kullanılamıyor). Kaynak:"
+    },
+    "card": {
+      "score": "Eşleşme puanı 100 üzerinden {score}",
+      "languages": "Eğitim dili",
+      "duration": "Süre",
+      "years": "{count, plural, one {# yıl} other {# yıl}}",
+      "tuition": "Eğitim ücreti",
+      "free": "Ücretsiz",
+      "perYear": "yıl",
+      "tuitionUnknown": "veri yok",
+      "why": "Neden uyuyor",
+      "gaps": "Neler eksik",
+      "noData": "Veri yok:",
+      "apply": "Resmî sitede başvur"
+    },
+    "components": {
+      "academic": "koşullar",
+      "field": "uzmanlık",
+      "prestige": "sıralama",
+      "preferences": "şehir ve kurum",
+      "extras": "ekstralar",
+      "life": "konut ve çalışma",
+      "budget": "bütçe"
+    },
+    "notes": {
+      "why": {
+        "academic": "Notların ve sertifikaların koşulları karşılıyor.",
+        "field": "{match, select, exact {Tam olarak senin uzmanlığın.} narrow {Uzmanlığına yakın.} broad {Aynı geniş çalışma alanı.} other {Alanınla ilgili.}}",
+        "prestige": "İstediğin gibi, sıralamada üst sıralarda.",
+        "preferences": "Kurum ve şehir konusundaki isteklerine uyuyor.",
+        "extras": "İstediğin ekstraları sunuyor.",
+        "life": "İyi koşullar: konut ve çalışma kuralları.",
+        "budget": "Bütçene uyuyor."
+      },
+      "gap": {
+        "gpa": "Not ortalaması: {need} gerekli, sende {have} var.",
+        "language": "{exam}: {need} gerekli, sende {have} var.",
+        "exam": "{exam}: {need} gerekli, sende {have} var.",
+        "exam_missing": "{exam} {need} gerekli ve henüz sonucun yok.",
+        "prep_year": "{languages} dilinde veriliyor: bir dil hazırlık yılına ihtiyacın olurdu.",
+        "over_budget": "Eğitim ücreti yılda yaklaşık {cost} {currency}; {budget} {currency} olan bütçenin üzerinde."
+      }
+    },
+    "saved": {
+      "title": "Bu sonuçları kaydet",
+      "text": "Bu listenin bir kopyasını sakla. Daha sonra açabilir veya bir ebeveynine ya da arkadaşına özel bir bağlantı gönderebilirsin.",
+      "save": "Bu listeyi kaydet",
+      "failed": "Kaydedilemedi. Lütfen tekrar dene.",
+      "item": "{date} tarihli liste · {count, plural, one {# program} other {# program}}",
+      "open": "Aç",
+      "share": "Bağlantı oluştur",
+      "stopSharing": "Paylaşımı durdur",
+      "delete": "Sil",
+      "linkLabel": "Bu listenin bağlantısı",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı",
+      "anyoneWithLink": "Bu bağlantıya sahip olan herkes listeyi görebilir (adın olmadan)."
+    }
+  },
+  "Ads": {
+    "label": "Reklam"
+  },
+  "Compare": {
+    "title": "Programları karşılaştır",
+    "intro": "En fazla 3 program yan yana. Ücretler kurumun yayımladığı gibidir.",
+    "add": "Karşılaştır",
+    "remove": "Karşılaştırmadan çıkar",
+    "bar": "{count, plural, one {# program seçildi} other {# program seçildi}}",
+    "open": "Karşılaştır",
+    "clear": "Temizle",
+    "empty": "Henüz karşılaştıracak bir şey yok. Eşleşmelerinde Karşılaştır düğmesiyle programları seç.",
+    "needTwo": "Karşılaştırmak için en az iki program seç.",
+    "loading": "Yükleniyor…",
+    "failed": "Programlar yüklenemedi. Lütfen tekrar dene.",
+    "back": "Eşleşmelerime dön",
+    "max": "En fazla 3 programı karşılaştırabilirsin.",
+    "rows": {
+      "institution": "Kurum",
+      "location": "Konum",
+      "level": "Düzey",
+      "duration": "Süre",
+      "languages": "Eğitim dili",
+      "tuition": "Eğitim ücreti",
+      "requirements": "Koşullar",
+      "deadlines": "Son tarihler",
+      "apply": "Başvur"
+    }
+  },
+  "Favorites": {
+    "title": "Listem",
+    "intro": "Kaydettiğin kurumlar; son tarihler ve ihtiyacın olan belgelerle birlikte.",
+    "empty": "Henüz bir şey kaydedilmedi. Bir kurum aç ve Kaydet'e bas.",
+    "emptyCta": "Haritayı aç",
+    "remove": "Kaldır",
+    "nextDeadline": "Sonraki son tarih: {date}",
+    "noDeadline": "Yaklaşan bir son tarih yayımlanmadı",
+    "docsTitle": "Hazırlanacak belgeler",
+    "docHave": "hazır",
+    "docMissing": "henüz değil",
+    "loading": "Yükleniyor…",
+    "failed": "Listen yüklenemedi. Lütfen tekrar dene.",
+    "open": "Kartı aç"
+  },
+  "Consent": {
+    "title": "Çerezler ve analiz",
+    "text": "Siteyi çalıştırmak için gerekli çerezleri kullanıyoruz (dil, tema, giriş). İznin olursa analiz ve reklam teknolojilerini de kullanırız ve bu verileri Gizlilik politikasında anlatıldığı gibi iş ortaklarımızla paylaşabiliriz.",
+    "accept": "Hepsini kabul et",
+    "decline": "Yalnızca gerekli olanlar",
+    "policy": "Gizlilik politikası",
+    "settings": "Çerez ayarları"
+  },
+  "Catalog": {
+    "title": "Katalog",
+    "intro": "Veritabanındaki tüm programlar ve kurumlar. Ülke, düzey, eğitim dili, alan ve fiyata göre daralt. Fiyatlar seçtiğin para biriminde gösterilir.",
+    "modeLabel": "Ne gösterilsin",
+    "mode": {
+      "programs": "Programlar",
+      "institutions": "Kurumlar"
+    },
+    "search": "Adında geçen",
+    "searchPlaceholder": "ör. hukuk, tasarım, tıp",
+    "country": "Ülke",
+    "type": "Tür",
+    "level": "Düzey",
+    "language": "Eğitim dili",
+    "field": "Çalışma alanı",
+    "any": "Fark etmez",
+    "maxPrice": "Eğitim ücreti en çok ({currency} yıllık)",
+    "freeOnly": "Yalnızca ücretsiz eğitim",
+    "apply": "Göster",
+    "reset": "Sıfırla",
+    "currency": "Para birimi",
+    "loading": "Yükleniyor…",
+    "failed": "Katalog yüklenemedi. Lütfen bir dakika sonra tekrar dene.",
+    "empty": "Hiçbir şey bulunamadı. Daha az filtre dene.",
+    "more": "Daha fazla göster",
+    "years": "{count, plural, one {# yıl} other {# yıl}}",
+    "perYear": "yıllık {price}",
+    "approx": "dönüştürüldü, yaklaşık",
+    "priceUnknown": "Fiyat yayımlanmadı",
+    "total": "≈ yaşam giderleriyle birlikte yılda {total} ({living})",
+    "livingUnknown": "Bu ülkenin yaşam giderleri henüz verilerimizde yok",
+    "ratesNote": "Fiyatlar günlük döviz kurlarıyla dönüştürülür ve yaklaşıktır. Son söz kurumun sayfasında ve resmî sitesindedir."
+  },
+  "Scholarships": {
+    "title": "Burslar: nerede ücretsiz veya daha ucuza okunur",
+    "intro": "Yurt dışında eğitimi karşılayan devlet ve uluslararası programlar ile tek tek kurumların bursları. Her zaman resmî sayfaya bak: tutarlar, ülkeler ve son tarihler her yıl değişir.",
+    "nationalTitle": "Devlet ve uluslararası programlar",
+    "institutionalTitle": "Kurumların bursları",
+    "severalCountries": "Birkaç ülke",
+    "official": "Resmî sayfa",
+    "empty": "Liste dolduruluyor.",
+    "disclaimer": "Programları listeliyor ve seni resmî sayfaya yönlendiriyoruz; burs alacağını garanti etmiyoruz."
+  },
+  "Reviews": {
+    "title": "Öğrenci yorumları",
+    "summary": "{rating} / 5 · {count, plural, one {# yorum} other {# yorum}}",
+    "none": "Henüz yorum yok. Deneyimini paylaşan ilk kişi ol.",
+    "stars": "5 üzerinden {count, plural, one {# yıldız} other {# yıldız}}",
+    "relations": {
+      "student": "Öğrenci",
+      "graduate": "Mezun",
+      "applicant": "Aday"
+    },
+    "loginToWrite": "Yorum yazmak için giriş yap",
+    "mine": {
+      "pending": "Teşekkürler! Yorumun ekibimizin kontrolünü bekliyor ve kontrolden sonra yayımlanacak.",
+      "published": "Yorumun yayımlandı. Teşekkürler!",
+      "rejected": "Önceki yorumun yayımlanmadı. Yenisini yazabilirsin."
+    },
+    "formTitle": "Yorum yaz",
+    "rating": "Puanın",
+    "relation": "Sen",
+    "body": "Deneyimin",
+    "counter": "{count} karakter ({min} ile {max} arasında)",
+    "rules": "Kendi deneyiminden, dürüstçe ve nezaketle bahset. Hakaret, iletişim bilgisi, reklam veya başkalarının kişisel verileri olmasın. Yorumlar adın olmadan gösterilir ve kontrolden sonra yayımlanır.",
+    "errors": {
+      "rating": "1 ile 5 arasında bir puan seç.",
+      "short": "Yorum çok kısa.",
+      "long": "Yorum çok uzun.",
+      "failed": "Yorum gönderilemedi. Lütfen tekrar dene."
+    },
+    "send": "Kontrole gönder"
+  },
+  "Shared": {
+    "title": "Paylaşılan eşleşmeler",
+    "loading": "Yükleniyor…",
+    "missing": "Bu liste yok veya sahibi paylaşımı durdurmuş.",
+    "from": "{date} tarihinde kaydedilen eşleşme sonuçları listesi. Yalnızca programlarla ilgili herkese açık bilgileri gösterir.",
+    "cta": "Kendi eşleşmelerini mi istiyorsun? Kısa bir anketi yanıtla ve sana uygun bir liste al.",
+    "ctaButton": "Ankete katıl"
+  },
+  "Cabinet": {
+    "title": "Kurum hesabı",
+    "intro": "Bir okulu, koleji veya üniversiteyi temsil ediyorsan kurumun kartını, fiyatlarını ve son tarihlerini kendin güncel tutabilirsin.",
+    "loading": "Yükleniyor…",
+    "failed": "Hesabın yüklenemedi. Lütfen tekrar dene.",
+    "none": "Henüz hiçbir kurumu yönetmiyorsun. Kurumunun sayfasını aç ve “Bu kurumu temsil ediyorum” düğmesine bas. Ekibimiz başvuruyu kontrol ettikten sonra burada düzenleyebileceksin.",
+    "findInstitution": "Kurumumu bul",
+    "institution": "Kurum",
+    "request": {
+      "pending": "{name}: başvuru ekibimizin kontrolünü bekliyor.",
+      "rejected": "{name}: başvuru onaylanmadı. Bir hata varsa bize yaz."
+    },
+    "claim": {
+      "title": "Bu kurumda mı çalışıyorsun?",
+      "text": "Fiyatlarını, son tarihlerini ve açıklamasını kendin güncellemek için erişim iste. Ekibimiz her başvuruyu kontrol eder.",
+      "login": "Başvuru göndermek için giriş yap",
+      "openCabinet": "Kurum hesabını aç",
+      "pending": "Başvurun ekibimizin kontrolünü bekliyor.",
+      "rejected": "Başvurun onaylanmadı. Bir hata varsa bize yaz.",
+      "ask": "Bu kurumu temsil ediyorum",
+      "position": "Görevin",
+      "message": "Kurumu temsil ettiğini nasıl doğrulayabiliriz?",
+      "messageHint": "Örneğin kurumun sitesinde yer alan bir kurumsal e-posta adresi veya kabul ofisinin telefonu.",
+      "failed": "Başvuru gönderilemedi. Lütfen tekrar dene.",
+      "send": "Başvuruyu gönder"
+    },
+    "card": {
+      "title": "Kurum kartı",
+      "website": "Resmî web sitesi",
+      "dormitory": "Yurt",
+      "unknown": "Belirtilmedi",
+      "yes": "Var",
+      "no": "Yok",
+      "description": {
+        "en": "Açıklama (İngilizce)",
+        "ru": "Açıklama (Rusça)",
+        "original": "Açıklama (yerel dil)"
+      },
+      "message": {
+        "saved": "Kaydedildi.",
+        "failed": "Kaydedilemedi. Lütfen tekrar dene.",
+        "url": "Web sitesi adresi https:// ile başlamalı"
+      },
+      "save": "Kartı kaydet"
+    },
+    "programmes": {
+      "title": "Programlar",
+      "add": "Program ekle",
+      "note": "Fiyatlar yurt dışından gelen adaylar içindir. Kaydettiğin program sitede kurumun kendisi tarafından girilmiş olarak işaretlenir.",
+      "loading": "Yükleniyor…",
+      "empty": "Henüz program yok.",
+      "more": "Daha fazla göster",
+      "free": "Eğitim ücretsiz",
+      "noPrice": "Fiyat yok",
+      "byYou": "sen girdin",
+      "close": "Kapat",
+      "edit": "Düzenle",
+      "delete": "Sil",
+      "confirmDelete": "“{name}” programı silinsin mi?",
+      "nameEn": "Ad (İngilizce)",
+      "nameOriginal": "Ad (yerel dil)",
+      "level": "Düzey",
+      "languages": "Eğitim dilleri (kodlar)",
+      "duration": "Süre, yıl",
+      "amount": "Eğitim ücreti tutarı",
+      "currency": "Para birimi (3 harf)",
+      "period": "Dönem",
+      "periods": {
+        "year": "yıl",
+        "semester": "dönem",
+        "total": "tüm program"
+      },
+      "deadline": "Başvuru son tarihi",
+      "applicationUrl": "Başvuru bağlantısı",
+      "errors": {
+        "name": "Programın adını gir.",
+        "level": "Bir düzey seç.",
+        "languages": "Dilleri iki harfli kodlarla yaz, ör. en, tr.",
+        "duration": "Süre 0 ile 12 yıl arasında olmalı.",
+        "amount": "Tutar bir sayı olmalı.",
+        "currency": "Para birimi üç büyük harften oluşan bir koddur, ör. USD.",
+        "deadline": "Son tarih gününü seç.",
+        "url": "Bağlantı https:// ile başlamalı",
+        "failed": "Kaydedilemedi. Lütfen tekrar dene."
+      },
+      "save": "Kaydet",
+      "cancel": "İptal"
+    }
+  }
+}
