@@ -3,7 +3,7 @@ import { getMapInstitutions } from '@/lib/institutions/get';
 import { siteUrl } from '@/lib/site-url';
 
 export const revalidate = 86400;
-const SITEMAP_CHUNK = 1000; // keep in step with src/app/sitemap.ts
+const SITEMAP_CHUNK = 300; // keep in step with src/app/sitemap.ts
 
 export default async function robots(): Promise<MetadataRoute.Robots> {
   const base = siteUrl();

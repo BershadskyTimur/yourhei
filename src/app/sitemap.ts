@@ -6,8 +6,8 @@ import { siteUrl } from '@/lib/site-url';
 export const revalidate = 86400;
 
 // A sitemap file may hold at most 50 000 addresses (and about 50 MB). Every institution has one address per
-// language, so the institutions are split into several files of 1 000 institutions each (/sitemap/0.xml, /sitemap/1.xml ...).
-export const SITEMAP_CHUNK = 1000;
+// language, so the institutions are split into several files of 300 institutions each (/sitemap/0.xml, /sitemap/1.xml ...).
+export const SITEMAP_CHUNK = 300;
 const STATIC_PAGES = ['', '/catalog', '/scholarships', '/about', '/contact', '/privacy', '/terms'];
 
 export async function generateSitemaps() {
