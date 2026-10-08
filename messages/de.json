@@ -1071,7 +1071,8 @@
     "priceUnknown": "Preis nicht veröffentlicht",
     "total": "≈ {total} pro Jahr mit Lebenshaltungskosten ({living})",
     "livingUnknown": "Die Lebenshaltungskosten dieses Landes sind noch nicht in unseren Daten",
-    "ratesNote": "Die Preise werden zu täglichen Wechselkursen umgerechnet und sind ungefähr. Maßgeblich sind die Seite der Einrichtung und ihre offizielle Website."
+    "ratesNote": "Die Preise werden zu täglichen Wechselkursen umgerechnet und sind ungefähr. Maßgeblich sind die Seite der Einrichtung und ihre offizielle Website.",
+    "livingNote": "Die Lebenshaltungskosten sind der Mindestbetrag, den ein Land für das Studierendenvisum nachgewiesen haben will. Die tatsächlichen Ausgaben sind meist höher, besonders in Großstädten."
   },
   "Scholarships": {
     "title": "Stipendien: wo du kostenlos oder günstiger studieren kannst",

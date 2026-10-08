@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { SideAds } from '@/components/SideAds';
+import { TrackedLink } from '@/components/TrackedLink';
 import { Link } from '@/i18n/navigation';
 import { pickLocalized } from '@/lib/institutions/localized';
 import { getScholarships, type Scholarship } from '@/lib/scholarships/get';
@@ -50,9 +51,9 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
                   {meta(s) && <p className="mt-2 text-sm font-medium">{meta(s)}</p>}
                   {pickLocalized(s.eligibility, locale).text && <p className="mt-2 text-sm">{pickLocalized(s.eligibility, locale).text}</p>}
                   {s.url && (
-                    <a href={s.url} target="_blank" rel="noopener noreferrer" className="mt-3 inline-flex h-10 items-center rounded-lg bg-accent px-4 text-sm font-medium text-on-accent hover:opacity-90">
+                    <TrackedLink href={s.url} meta={{ kind: 'scholarship', ...(s.country ? { country: s.country } : {}) }} className="mt-3 inline-flex h-10 items-center rounded-lg bg-accent px-4 text-sm font-medium text-on-accent hover:opacity-90">
                       {t('official')}
-                    </a>
+                    </TrackedLink>
                   )}
                 </li>
               ))}

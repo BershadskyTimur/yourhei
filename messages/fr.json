@@ -1071,7 +1071,8 @@
     "priceUnknown": "Prix non publié",
     "total": "≈ {total} par an avec les frais de vie ({living})",
     "livingUnknown": "Les frais de vie de ce pays ne figurent pas encore dans nos données",
-    "ratesNote": "Les prix sont convertis aux taux de change du jour et sont approximatifs. La page de l’établissement et son site officiel font foi."
+    "ratesNote": "Les prix sont convertis aux taux de change du jour et sont approximatifs. La page de l’établissement et son site officiel font foi.",
+    "livingNote": "Les frais de vie sont le montant minimum qu’un pays exige de justifier pour le visa étudiant. Les dépenses réelles sont généralement plus élevées, surtout dans les grandes villes."
   },
   "Scholarships": {
     "title": "Bourses : où étudier gratuitement ou à moindre coût",

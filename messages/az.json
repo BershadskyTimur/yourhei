@@ -1071,7 +1071,8 @@
     "priceUnknown": "Qiymət dərc olunmayıb",
     "total": "≈ yaşayış xərcləri ilə ildə {total} ({living})",
     "livingUnknown": "Bu ölkənin yaşayış xərcləri hələ məlumatlarımızda yoxdur",
-    "ratesNote": "Qiymətlər gündəlik məzənnə ilə çevrilir və təxminidir. Son söz müəssisənin səhifəsi və rəsmi saytındadır."
+    "ratesNote": "Qiymətlər gündəlik məzənnə ilə çevrilir və təxminidir. Son söz müəssisənin səhifəsi və rəsmi saytındadır.",
+    "livingNote": "Yaşayış xərcləri ölkənin tələbə vizası üçün təsdiq etməyi tələb etdiyi minimum məbləğdir. Real xərclər, xüsusilə böyük şəhərlərdə, adətən daha yüksək olur."
   },
   "Scholarships": {
     "title": "Təqaüdlər: harada pulsuz və ya ucuz oxumaq olar",

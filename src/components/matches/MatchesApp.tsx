@@ -4,6 +4,8 @@ import { useLocale, useTranslations } from 'next-intl';
 import { useEffect, useMemo, useState } from 'react';
 import { TypeDot } from '@/components/TypeDot';
 import { SavedResults } from '@/components/matches/SavedResults';
+import { TrackedLink } from '@/components/TrackedLink';
+import { trackEvent } from '@/lib/analytics/track';
 import { primaryButton, secondaryButton } from '@/components/forms/ui';
 import { Link, useRouter } from '@/i18n/navigation';
 import { pickLocalized } from '@/lib/institutions/localized';
@@ -113,6 +115,11 @@ function Results({ attempt, programs, countries, rates, ratesSource, profile }: 
   const date = new Intl.DateTimeFormat(locale, { dateStyle: 'long' }).format(new Date(attempt.completed_at ?? attempt.updated_at));
   const total = matches.safe.length + matches.suitable.length + matches.ambitious.length;
   const snapshot = useMemo(() => buildSnapshot(matches), [matches]);
+
+  // how good the matching is for real people: how many programmes passed (anonymous, only with consent)
+  useEffect(() => {
+    trackEvent('matches_view', { passed: matches.passed, safe: matches.safe.length, suitable: matches.suitable.length, ambitious: matches.ambitious.length });
+  }, [matches]);
 
   return (
     <div className="space-y-10">
@@ -258,9 +265,9 @@ function ResultCard({ result, selected, full, onToggle }: { result: MatchResult;
 
       <div className="mt-4 flex flex-wrap gap-2">
         {program.applicationUrl && (
-          <a href={program.applicationUrl} target="_blank" rel="noopener noreferrer" className={`${secondaryButton} !h-10`}>
+          <TrackedLink href={program.applicationUrl} meta={{ kind: 'program', country: program.institution.country, slug: program.institution.slug }} className={`${secondaryButton} !h-10`}>
             {t('card.apply')}
-          </a>
+          </TrackedLink>
         )}
         <button
           type="button"

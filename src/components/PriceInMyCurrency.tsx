@@ -36,6 +36,7 @@ export function PriceInMyCurrency({ tuition, durationYears, free, country, city 
     <p className="mt-1 text-sm text-muted">
       {showPrice && price && <span>≈ {t('perYear', { price: money(price.amount, price.currency) })}. </span>}
       {total && <span>{t('total', { total: money(total.total, total.currency), living: money(total.living, total.currency) })}</span>}
+      {total && <span className="block text-xs">{t('livingNote')}</span>}
     </p>
   );
 }

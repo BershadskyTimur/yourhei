@@ -1071,7 +1071,8 @@
     "priceUnknown": "Narx e’lon qilinmagan",
     "total": "≈ yashash xarajatlari bilan yiliga {total} ({living})",
     "livingUnknown": "Bu davlatning yashash xarajatlari hali ma’lumotlarimizda yo‘q",
-    "ratesNote": "Narxlar kundalik kurs bo‘yicha o‘giriladi va taxminiy. Yakuniy so‘z muassasa sahifasi va uning rasmiy saytida."
+    "ratesNote": "Narxlar kundalik kurs bo‘yicha o‘giriladi va taxminiy. Yakuniy so‘z muassasa sahifasi va uning rasmiy saytida.",
+    "livingNote": "Yashash xarajatlari — davlat talaba vizasi uchun tasdiqlashni talab qiladigan eng kam summa. Haqiqiy xarajatlar, ayniqsa yirik shaharlarda, odatda yuqoriroq bo‘ladi."
   },
   "Scholarships": {
     "title": "Stipendiyalar: qayerda bepul yoki arzonroq o‘qish mumkin",
