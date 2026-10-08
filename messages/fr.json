@@ -909,7 +909,16 @@
       "title": "Aucun programme ne répond encore à tous vos critères",
       "text": "Essayez des choix plus larges : plus de pays ou de types dans votre profil, un autre budget ou une année préparatoire. De nouveaux programmes sont ajoutés régulièrement.",
       "profile": "Modifier mon profil",
-      "survey": "Refaire le questionnaire"
+      "survey": "Refaire le questionnaire",
+      "whyTitle": "Ce qui a écarté les programmes",
+      "reasons": {
+        "language": "{count, plural, one {# programme est enseigné} other {# programmes sont enseignés}} dans une langue dans laquelle vous ne pouvez pas encore étudier (ajoutez une langue ou acceptez une année préparatoire).",
+        "budget": "{count, plural, one {# programme coûte} other {# programmes coûtent}} plus que votre budget.",
+        "free": "{count, plural, one {# programme n’est pas confirmé} other {# programmes ne sont pas confirmés}} comme gratuit.",
+        "format": "{count, plural, one {# programme a} other {# programmes ont}} un autre format d’études.",
+        "intake": "{count, plural, one {# programme commence} other {# programmes commencent}} un autre mois.",
+        "academic": "{count, plural, one {# programme demande} other {# programmes demandent}} des notes ou des scores bien plus élevés que les vôtres."
+      }
     },
     "groups": {
       "safe": {

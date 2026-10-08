@@ -909,7 +909,16 @@
       "title": "Noch kein Studiengang erfüllt alle deine Anforderungen",
       "text": "Probiere weitere Auswahlen: mehr Länder oder Arten in deinem Profil, ein anderes Budget oder ein Vorbereitungsjahr. Neue Studiengänge kommen regelmäßig hinzu.",
       "profile": "Mein Profil bearbeiten",
-      "survey": "Fragebogen erneut ausfüllen"
+      "survey": "Fragebogen erneut ausfüllen",
+      "whyTitle": "Was die Studiengänge aussortiert hat",
+      "reasons": {
+        "language": "{count, plural, one {# Studiengang wird} other {# Studiengänge werden}} in einer Sprache unterrichtet, in der du noch nicht studieren kannst (füge eine Sprache hinzu oder stimme einem Vorbereitungsjahr zu).",
+        "budget": "{count, plural, one {# Studiengang kostet} other {# Studiengänge kosten}} mehr als dein Budget.",
+        "free": "{count, plural, one {# Studiengang ist} other {# Studiengänge sind}} nicht als gebührenfrei bestätigt.",
+        "format": "{count, plural, one {# Studiengang hat} other {# Studiengänge haben}} ein anderes Studienformat.",
+        "intake": "{count, plural, one {# Studiengang beginnt} other {# Studiengänge beginnen}} in einem anderen Monat.",
+        "academic": "{count, plural, one {# Studiengang verlangt} other {# Studiengänge verlangen}} deutlich bessere Noten oder Ergebnisse als deine."
+      }
     },
     "groups": {
       "safe": {

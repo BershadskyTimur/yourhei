@@ -909,7 +909,16 @@
       "title": "Hələ heç bir proqram bütün tələblərinə uyğun deyil",
       "text": "Daha geniş seçimlər sına: profilində daha çox ölkə və ya növ, başqa büdcə və ya hazırlıq ili. Yeni proqramlar mütəmadi olaraq əlavə olunur.",
       "profile": "Profilimi redaktə et",
-      "survey": "Sorğunu yenidən doldur"
+      "survey": "Sorğunu yenidən doldur",
+      "whyTitle": "Proqramları nə kənarlaşdırdı",
+      "reasons": {
+        "language": "{count, plural, one {# proqram} other {# proqram}} hələ oxuya bilmədiyin dildə tədris olunur (dil əlavə et və ya hazırlıq ilinə razılaş).",
+        "budget": "{count, plural, one {# proqramın} other {# proqramın}} qiyməti büdcəndən yüksəkdir.",
+        "free": "{count, plural, one {# proqramın} other {# proqramın}} pulsuz olduğu təsdiqlənməyib.",
+        "format": "{count, plural, one {# proqramın} other {# proqramın}} təhsil formatı fərqlidir.",
+        "intake": "{count, plural, one {# proqram} other {# proqram}} başqa ayda başlayır.",
+        "academic": "{count, plural, one {# proqram} other {# proqram}} səninkindən xeyli yüksək qiymət və ya bal tələb edir."
+      }
     },
     "groups": {
       "safe": {

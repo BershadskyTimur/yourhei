@@ -168,6 +168,8 @@ export interface Matches {
   /** how many programmes were checked, and how many passed the hard filters */
   checked: number;
   passed: number;
+  /** how many of the checked programmes each rule removed (the first rule a programme failed) */
+  rejected: Partial<Record<'level' | 'country' | 'type' | 'language' | 'format' | 'free' | 'budget' | 'intake' | 'academic', number>>;
 }
 
 /** Later (paid plan) an AI can write the explanations: it only has to implement this. */

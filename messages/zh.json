@@ -909,7 +909,16 @@
       "title": "暂时没有专业满足你的全部要求",
       "text": "试试放宽条件：在个人资料中增加国家或机构类型、调整预算，或接受预科年。我们会定期添加新专业。",
       "profile": "修改个人资料",
-      "survey": "重新做问卷"
+      "survey": "重新做问卷",
+      "whyTitle": "哪些条件排除了专业",
+      "reasons": {
+        "language": "{count, plural, other {# 个专业}}的授课语言是您暂时无法使用的语言（可添加语言或接受预科年）。",
+        "budget": "{count, plural, other {# 个专业}}的费用高于您的预算。",
+        "free": "{count, plural, other {# 个专业}}未被确认为免学费。",
+        "format": "{count, plural, other {# 个专业}}的学习形式不同。",
+        "intake": "{count, plural, other {# 个专业}}在其他月份开学。",
+        "academic": "{count, plural, other {# 个专业}}要求的成绩或分数远高于您的水平。"
+      }
     },
     "groups": {
       "safe": {

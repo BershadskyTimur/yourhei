@@ -909,7 +909,16 @@
       "title": "Ningún programa cumple todavía todos tus requisitos",
       "text": "Prueba con opciones más amplias: más países o tipos en tu perfil, otro presupuesto o un año preparatorio. Se añaden programas nuevos con regularidad.",
       "profile": "Editar mi perfil",
-      "survey": "Hacer la encuesta de nuevo"
+      "survey": "Hacer la encuesta de nuevo",
+      "whyTitle": "Qué descartó los programas",
+      "reasons": {
+        "language": "{count, plural, one {# programa se imparte} other {# programas se imparten}} en un idioma en el que aún no puedes estudiar (añade un idioma o acepta un año preparatorio).",
+        "budget": "{count, plural, one {# programa cuesta} other {# programas cuestan}} más que tu presupuesto.",
+        "free": "{count, plural, one {# programa no está confirmado} other {# programas no están confirmados}} como gratuito.",
+        "format": "{count, plural, one {# programa tiene} other {# programas tienen}} otro formato de estudio.",
+        "intake": "{count, plural, one {# programa empieza} other {# programas empiezan}} en otro mes.",
+        "academic": "{count, plural, one {# programa pide} other {# programas piden}} notas o puntuaciones mucho más altas que las tuyas."
+      }
     },
     "groups": {
       "safe": {

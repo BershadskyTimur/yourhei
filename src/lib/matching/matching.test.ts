@@ -335,16 +335,16 @@ describe('groups and results', () => {
 
   it('sorts by score within a group, best first', () => {
     const m = matchPrograms([
-      program({ id: 'a', iscedF: '0711' }),
-      program({ id: 'b', iscedF: '0613' }),
-      program({ id: 'c', iscedF: '0612' }),
+      program({ id: 'a', iscedF: '0711', institution: institution({ id: 'ia' }) }),
+      program({ id: 'b', iscedF: '0613', institution: institution({ id: 'ib' }) }),
+      program({ id: 'c', iscedF: '0612', institution: institution({ id: 'ic' }) }),
     ], input(), ctx);
     expect(m.suitable.map((r) => r.program.id)).toEqual(['b', 'c', 'a']);
     expect(m.suitable[0].score).toBeGreaterThan(m.suitable[1].score);
   });
 
   it('the strategy changes how many results each group shows', () => {
-    const many = Array.from({ length: 12 }, (_, i) => program({ id: `s${i}`, requirements: gpa(10) }));
+    const many = Array.from({ length: 12 }, (_, i) => program({ id: `s${i}`, institution: institution({ id: `i${i}` }), requirements: gpa(10) }));
     expect(matchPrograms(many, input({ strategy: 'safe' }), ctx).safe).toHaveLength(GROUP_LIMITS.safe.safe);
     expect(matchPrograms(many, input({ strategy: 'balanced' }), ctx).safe).toHaveLength(GROUP_LIMITS.balanced.safe);
     expect(matchPrograms(many, input({ strategy: 'ambitious' }), ctx).safe).toHaveLength(GROUP_LIMITS.ambitious.safe);
@@ -383,7 +383,31 @@ describe('groups and results', () => {
   });
 
   it('works with no programmes at all', () => {
-    expect(matchPrograms([], input(), ctx)).toEqual({ safe: [], suitable: [], ambitious: [], checked: 0, passed: 0 });
+    expect(matchPrograms([], input(), ctx)).toEqual({ safe: [], suitable: [], ambitious: [], checked: 0, passed: 0, rejected: {} });
+  });
+
+  it('shows at most two programmes of one institution in a group', () => {
+    const same = Array.from({ length: 5 }, (_, i) => program({ id: `x${i}`, requirements: gpa(10) }));
+    const other = program({ id: 'y', institution: institution({ id: 'other' }), requirements: gpa(10) });
+    const m = matchPrograms([...same, other], input(), ctx);
+    expect(m.safe).toHaveLength(3);
+    expect(m.safe.filter((r) => r.program.institution.id === 'i1')).toHaveLength(2);
+  });
+
+  it('counts how many programmes each rule removed', () => {
+    const m = matchPrograms(
+      [
+        program({ id: 'ok' }),
+        program({ id: 'l1', languages: ['de'] }),
+        program({ id: 'l2', languages: ['de'] }),
+        program({ id: 'm', level: 'master' }),
+        program({ id: 'b', tuition: [{ amount: 90000, currency: 'GEL', period: 'year', appliesTo: 'international' }] }),
+      ],
+      input(),
+      ctx,
+    );
+    expect(m.rejected).toEqual({ language: 2, level: 1, budget: 1 });
+    expect(m.passed).toBe(1);
   });
 });
 

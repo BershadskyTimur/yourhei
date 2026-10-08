@@ -909,7 +909,16 @@
       "title": "Żaden program nie spełnia jeszcze wszystkich Twoich wymagań",
       "text": "Spróbuj szerszych wyborów: więcej krajów lub typów w profilu, inny budżet albo rok przygotowawczy. Nowe programy są dodawane regularnie.",
       "profile": "Edytuj mój profil",
-      "survey": "Wypełnij ankietę ponownie"
+      "survey": "Wypełnij ankietę ponownie",
+      "whyTitle": "Co odrzuciło programy",
+      "reasons": {
+        "language": "{count, plural, one {# program jest prowadzony} few {# programy są prowadzone} many {# programów jest prowadzonych} other {# programu jest prowadzone}} w języku, w którym jeszcze nie możesz studiować (dodaj język lub zgódź się na rok przygotowawczy).",
+        "budget": "{count, plural, one {# program kosztuje} few {# programy kosztują} many {# programów kosztuje} other {# programu kosztuje}} więcej niż Twój budżet.",
+        "free": "{count, plural, one {# program nie jest potwierdzony} few {# programy nie są potwierdzone} many {# programów nie jest potwierdzonych} other {# programu nie jest potwierdzone}} jako bezpłatne.",
+        "format": "{count, plural, one {# program ma} few {# programy mają} many {# programów ma} other {# programu ma}} inną formę studiów.",
+        "intake": "{count, plural, one {# program zaczyna się} few {# programy zaczynają się} many {# programów zaczyna się} other {# programu zaczyna się}} w innym miesiącu.",
+        "academic": "{count, plural, one {# program wymaga} few {# programy wymagają} many {# programów wymaga} other {# programu wymaga}} znacznie wyższych ocen lub wyników niż Twoje."
+      }
     },
     "groups": {
       "safe": {
