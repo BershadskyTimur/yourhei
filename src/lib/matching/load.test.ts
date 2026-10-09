@@ -59,6 +59,14 @@ describe('loadMatchData', () => {
     expect(r.programs.map((p) => p.id)).toEqual(['p7']);
   });
 
+  it('tries again when the first read hits the time limit (cold cache)', async () => {
+    let call = 0;
+    const timeout = { code: '57014', message: 'canceling statement due to statement timeout' };
+    const { client } = fakeClient({ rpc: () => (call++ === 0 ? { error: timeout } : { data: [row(1)] }) });
+    const r = await loadMatchData(client, { level: 'bachelor' });
+    expect(r.programs.map((p) => p.id)).toEqual(['p1']);
+  });
+
   it('shows a real database error instead of hiding it', async () => {
     const { client } = fakeClient({ rpc: () => ({ error: { code: '57014', message: 'canceling statement due to statement timeout' } }) });
     await expect(loadMatchData(client, { level: 'bachelor' })).rejects.toMatchObject({ code: '57014' });

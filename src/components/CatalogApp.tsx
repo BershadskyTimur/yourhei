@@ -122,7 +122,7 @@ export function CatalogApp() {
             let page: Row[] | null = null;
             if (!legacy.current) {
               // the fast way: a database function that pages by keyset (migration 0011)
-              const res = await supabase.rpc('catalog_programs', {
+              const args = {
                 p_country: f.country || null,
                 p_level: f.level || null,
                 p_language: f.language || null,
@@ -132,7 +132,10 @@ export function CatalogApp() {
                 p_after_institution: after.current?.institution ?? null,
                 p_after_program: after.current?.program ?? null,
                 p_limit: PAGE,
-              });
+              };
+              let res = await supabase.rpc('catalog_programs', args);
+              // the first read after a quiet period can hit the database time limit (cold cache); the second one is fast
+              if (res.error?.code === '57014') res = await supabase.rpc('catalog_programs', args);
               if (res.error && /catalog_programs|PGRST202/.test(`${res.error.code} ${res.error.message}`)) legacy.current = true;
               else if (res.error) throw res.error;
               else {
