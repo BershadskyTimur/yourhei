@@ -124,7 +124,7 @@ export async function loadMatchData(supabase: SupabaseClient, filter: ProgramFil
   let after: { institution: string; program: string } | null = null;
   let useFunction = true;
   for (let page = 0; page < MAX_PAGES && useFunction; page++) {
-    const res = await supabase.rpc('match_programs', {
+    const args = {
       p_level: filter.level || null,
       p_countries: filter.countries?.length ? filter.countries : null,
       p_types: filter.types?.length ? filter.types : null,
@@ -132,7 +132,10 @@ export async function loadMatchData(supabase: SupabaseClient, filter: ProgramFil
       p_after_institution: after?.institution ?? null,
       p_after_program: after?.program ?? null,
       p_limit: PAGE,
-    });
+    };
+    let res = await supabase.rpc('match_programs', args);
+    // the first read after a quiet period can hit the database time limit (cold cache); the second one is fast
+    for (let retry = 0; retry < 2 && res.error?.code === '57014'; retry++) res = await supabase.rpc('match_programs', args);
     if (res.error) {
       if (page === 0 && /match_programs|PGRST202/.test(`${res.error.code} ${res.error.message}`)) {
         useFunction = false;
