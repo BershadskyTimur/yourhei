@@ -9,8 +9,16 @@ const yearsAgo = (years: number) => {
   return d.toISOString().slice(0, 10);
 };
 
+/** The birth date is three drop-downs (day, month, year); the first one carries the id. */
+async function fillBirthDate(page: Page, iso: string) {
+  const [y, m, d] = iso.split('-').map(Number);
+  await page.locator('#birthDate').selectOption(String(d));
+  await page.locator('#birthDate ~ select').nth(0).selectOption(String(m));
+  await page.locator('#birthDate ~ select').nth(1).selectOption(String(y));
+}
+
 async function fillAge(page: Page, birthDate: string, residence: string) {
-  await page.getByLabel('Date of birth').fill(birthDate);
+  await fillBirthDate(page, birthDate);
   await page.getByLabel('Country of residence', { exact: true }).selectOption(residence);
   await page.getByLabel(/I am at least/).check();
 }
@@ -256,7 +264,7 @@ test.describe('every language: registration and profile fit the screen', () => {
 
       await page.goto(`/${locale}/register`);
       expect(await overflow()).toBeLessThanOrEqual(0);
-      await page.locator('#birthDate').fill('2000-05-05');
+      await fillBirthDate(page, '2000-05-05');
       await page.locator('#residenceCountry').selectOption('GE');
       await page.locator('input[type="checkbox"]').check();
       await page.locator('form button:not([type="submit"])').last().click();

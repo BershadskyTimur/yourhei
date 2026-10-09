@@ -239,6 +239,9 @@
     "about": {
       "birthDate": "Date of birth",
       "birthDateWhy": "To check the minimum age in your country and to show suitable programmes.",
+      "day": "Day",
+      "month": "Month",
+      "year": "Year",
       "gender": "Gender",
       "genderWhy": "Needed for single-sex schools and dormitories. You may choose not to say.",
       "male": "Male",

@@ -239,6 +239,9 @@
     "about": {
       "birthDate": "Doğum tarihi",
       "birthDateWhy": "Ülkendeki asgari yaşı kontrol etmek ve uygun programları göstermek için.",
+      "day": "Gün",
+      "month": "Ay",
+      "year": "Yıl",
       "gender": "Cinsiyet",
       "genderWhy": "Tek cinsiyetli okullar ve yurtlar için gerekir. Söylememeyi seçebilirsin.",
       "male": "Erkek",

@@ -6,6 +6,7 @@ import { calcAge } from '@/lib/age';
 import { DOC_KEYS, DOC_STATUSES, defaultDocuments, type DocEntry, type DocKey } from '@/lib/registration/documents';
 import type { RegistrationForm } from '@/lib/registration/schema';
 import { CountryMultiSelect } from './CountryMultiSelect';
+import { DateSelect } from './DateSelect';
 import { ErrorText, inputClass } from './ui';
 
 /** Step 3: a status for every document: have / in progress / do not have. */
@@ -82,12 +83,13 @@ export function StepDocuments({ form }: { form: UseFormReturn<RegistrationForm> 
                     <label htmlFor="edu-date" className="mb-1 block text-sm font-medium">
                       {t('expectedDate')}
                     </label>
-                    <input
+                    <DateSelect
                       id="edu-date"
-                      type="date"
                       value={entry.expectedDate ?? ''}
-                      onChange={(e) => update(key, { expectedDate: e.target.value })}
-                      className={inputClass}
+                      onChange={(iso) => update(key, { expectedDate: iso })}
+                      yearFrom={new Date().getFullYear()}
+                      yearTo={new Date().getFullYear() + 8}
+                      descending={false}
                     />
                     <ErrorText code={dateErrors?.[key]?.expectedDate?.message} />
                   </div>
