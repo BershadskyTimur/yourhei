@@ -239,6 +239,9 @@
     "about": {
       "birthDate": "出生日期",
       "birthDateWhy": "用于核对你所在国家的最低年龄，并展示合适的专业。",
+      "day": "日",
+      "month": "月",
+      "year": "年",
       "gender": "性别",
       "genderWhy": "用于单一性别学校和宿舍。你也可以选择不透露。",
       "male": "男",

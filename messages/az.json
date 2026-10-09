@@ -239,6 +239,9 @@
     "about": {
       "birthDate": "Doğum tarixi",
       "birthDateWhy": "Ölkəndəki minimum yaşı yoxlamaq və uyğun proqramları göstərmək üçün.",
+      "day": "Gün",
+      "month": "Ay",
+      "year": "İl",
       "gender": "Cins",
       "genderWhy": "Tək cinsli məktəblər və yataqxanalar üçün lazımdır. Deməməyi seçə bilərsən.",
       "male": "Kişi",

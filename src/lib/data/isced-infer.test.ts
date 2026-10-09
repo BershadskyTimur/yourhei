@@ -1,5 +1,4 @@
 import { describe, expect, it } from 'vitest';
-// @ts-expect-error plain JavaScript module without types
 import { broadFromLabel, inferIsced } from '../../../scripts/lib/isced-infer.mjs';
 
 describe('inferIsced', () => {

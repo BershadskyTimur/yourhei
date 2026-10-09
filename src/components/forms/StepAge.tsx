@@ -6,19 +6,14 @@ import type { UseFormReturn } from 'react-hook-form';
 import { minAgeFor } from '@/lib/age';
 import { sortedCountryNames } from '@/lib/countries';
 import type { RegistrationForm } from '@/lib/registration/schema';
+import { DateSelect } from './DateSelect';
 import { ErrorText, Field, inputClass } from './ui';
-
-function todayIso(): string {
-  const d = new Date();
-  const pad = (n: number) => String(n).padStart(2, '0');
-  return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
-}
 
 /** Registration step 1: only what is needed to apply the minimum age before the account exists. */
 export function StepAge({ form }: { form: UseFormReturn<RegistrationForm> }) {
   const t = useTranslations('Register.about');
   const locale = useLocale();
-  const { register, watch, formState } = form;
+  const { register, watch, setValue, formState } = form;
   const errors = formState.errors;
   const residence = watch('residenceCountry');
   const countries = useMemo(() => sortedCountryNames(locale), [locale]);
@@ -26,15 +21,14 @@ export function StepAge({ form }: { form: UseFormReturn<RegistrationForm> }) {
   return (
     <div className="space-y-8">
       <Field label={t('birthDate')} why={t('birthDateWhy')} error={errors.birthDate?.message} htmlFor="birthDate">
-        <input
+        <DateSelect
           id="birthDate"
-          type="date"
-          max={todayIso()}
-          min="1900-01-01"
+          value={watch('birthDate')}
+          onChange={(iso) => setValue('birthDate', iso, { shouldValidate: formState.isSubmitted })}
+          yearFrom={1900}
+          yearTo={new Date().getFullYear()}
           autoComplete="bday"
-          aria-describedby="birthDate-error"
-          className={inputClass}
-          {...register('birthDate')}
+          describedBy="birthDate-error"
         />
       </Field>
 

@@ -239,6 +239,9 @@
     "about": {
       "birthDate": "Tug‘ilgan sana",
       "birthDateWhy": "Davlatingizdagi eng kam yoshni tekshirish va mos dasturlarni ko‘rsatish uchun.",
+      "day": "Kun",
+      "month": "Oy",
+      "year": "Yil",
       "gender": "Jins",
       "genderWhy": "Bir jinsli maktablar va yotoqxonalar uchun kerak. Aytmaslikni tanlashingiz mumkin.",
       "male": "Erkak",

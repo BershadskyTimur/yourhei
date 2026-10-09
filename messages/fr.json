@@ -239,6 +239,9 @@
     "about": {
       "birthDate": "Date de naissance",
       "birthDateWhy": "Pour vérifier l’âge minimum dans votre pays et afficher les programmes adaptés.",
+      "day": "Jour",
+      "month": "Mois",
+      "year": "Année",
       "gender": "Genre",
       "genderWhy": "Utile pour les écoles et résidences non mixtes. Vous pouvez choisir de ne pas répondre.",
       "male": "Homme",

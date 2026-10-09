@@ -239,6 +239,9 @@
     "about": {
       "birthDate": "Geburtsdatum",
       "birthDateWhy": "Um das Mindestalter in deinem Land zu prüfen und passende Studiengänge zu zeigen.",
+      "day": "Tag",
+      "month": "Monat",
+      "year": "Jahr",
       "gender": "Geschlecht",
       "genderWhy": "Wird für nach Geschlechtern getrennte Schulen und Wohnheime benötigt. Du kannst die Angabe verweigern.",
       "male": "Männlich",

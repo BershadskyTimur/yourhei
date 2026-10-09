@@ -239,6 +239,9 @@
     "about": {
       "birthDate": "Data urodzenia",
       "birthDateWhy": "Aby sprawdzić minimalny wiek w Twoim kraju i pokazać odpowiednie programy.",
+      "day": "Dzień",
+      "month": "Miesiąc",
+      "year": "Rok",
       "gender": "Płeć",
       "genderWhy": "Potrzebna w przypadku szkół i akademików jednopłciowych. Możesz jej nie podawać.",
       "male": "Mężczyzna",
