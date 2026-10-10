@@ -8,6 +8,12 @@
     "skipToContent": "Zum Hauptinhalt springen",
     "translationUnavailable": "Übersetzung nicht verfügbar"
   },
+  "ErrorPage": {
+    "title": "Etwas ist schiefgelaufen",
+    "text": "Diese Seite konnte nicht angezeigt werden. Versuche es erneut und komm später wieder, falls es weiter auftritt.",
+    "retry": "Erneut versuchen",
+    "home": "Zur Startseite"
+  },
   "Header": {
     "homeLabel": "YourHEI — Startseite",
     "login": "Anmelden",

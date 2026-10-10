@@ -8,6 +8,12 @@
     "skipToContent": "Əsas məzmuna keç",
     "translationUnavailable": "tərcümə yoxdur"
   },
+  "ErrorPage": {
+    "title": "Nəsə səhv getdi",
+    "text": "Bu səhifəni göstərmək mümkün olmadı. Yenidən cəhd edin, səhv təkrarlanarsa bir az sonra daxil olun.",
+    "retry": "Yenidən cəhd et",
+    "home": "Ana səhifəyə"
+  },
   "Header": {
     "homeLabel": "YourHEI — ana səhifə",
     "login": "Daxil ol",

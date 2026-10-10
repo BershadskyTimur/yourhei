@@ -27,6 +27,7 @@ const csp = [
   "base-uri 'self'",
   "form-action 'self'",
   "frame-ancestors 'self'",
+  ...(isProd ? ['upgrade-insecure-requests'] : []),
 ].join('; ');
 
 const securityHeaders = [
@@ -39,6 +40,8 @@ const securityHeaders = [
   ...(isProd ? [{ key: 'Content-Security-Policy', value: csp }] : []),
 ];
 const nextConfig: NextConfig = {
+  // Do not tell everybody which framework the site runs on.
+  poweredByHeader: false,
   async headers() {
     return [{ source: '/:path*', headers: securityHeaders }];
   },

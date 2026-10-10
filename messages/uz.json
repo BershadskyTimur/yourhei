@@ -8,6 +8,12 @@
     "skipToContent": "Asosiy mazmunga o‘tish",
     "translationUnavailable": "tarjima mavjud emas"
   },
+  "ErrorPage": {
+    "title": "Nimadir xato ketdi",
+    "text": "Bu sahifani ko‘rsatib bo‘lmadi. Qayta urinib ko‘ring, xato takrorlansa, birozdan keyin kiring.",
+    "retry": "Qayta urinish",
+    "home": "Bosh sahifaga"
+  },
   "Header": {
     "homeLabel": "YourHEI — bosh sahifa",
     "login": "Kirish",

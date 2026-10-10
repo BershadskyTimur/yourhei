@@ -8,6 +8,12 @@
     "skipToContent": "Saltar al contenido principal",
     "translationUnavailable": "traducción no disponible"
   },
+  "ErrorPage": {
+    "title": "Algo salió mal",
+    "text": "No pudimos mostrar esta página. Inténtalo de nuevo y, si sigue ocurriendo, vuelve un poco más tarde.",
+    "retry": "Reintentar",
+    "home": "Ir a la página principal"
+  },
   "Header": {
     "homeLabel": "YourHEI — inicio",
     "login": "Iniciar sesión",

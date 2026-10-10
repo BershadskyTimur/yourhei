@@ -8,6 +8,12 @@
     "skipToContent": "Skip to main content",
     "translationUnavailable": "translation unavailable"
   },
+  "ErrorPage": {
+    "title": "Something went wrong",
+    "text": "We could not show this page. Try again, and if it keeps happening, come back a bit later.",
+    "retry": "Try again",
+    "home": "Go to the home page"
+  },
   "Header": {
     "homeLabel": "YourHEI — home",
     "login": "Log in",
