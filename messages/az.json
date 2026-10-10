@@ -79,6 +79,12 @@
       "languages": "{count} dil",
       "free": "İstifadəsi pulsuzdur"
     },
+    "sample": {
+      "label": "Seçim nümunəsi",
+      "languageText": "Tədris dili seçiminizə uyğundur: {language}",
+      "deadlineText": "Sənədləri {date} tarixinədək təqdim edin",
+      "source": "Mənbə: {name}"
+    },
     "why": {
       "title": "Niyə YourHEI",
       "f1Title": "Hər şey bir xəritədə",

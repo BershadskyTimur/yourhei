@@ -79,6 +79,12 @@
       "languages": "{count} languages",
       "free": "Free to use"
     },
+    "sample": {
+      "label": "Example match",
+      "languageText": "The study language matches your choice: {language}",
+      "deadlineText": "Apply by {date}",
+      "source": "Source: {name}"
+    },
     "why": {
       "title": "Why YourHEI",
       "f1Title": "Everything on one map",

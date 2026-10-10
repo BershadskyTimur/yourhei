@@ -79,6 +79,12 @@
       "languages": "{count} ენა",
       "free": "უფასოა"
     },
+    "sample": {
+      "label": "შერჩევის მაგალითი",
+      "languageText": "სწავლების ენა თქვენს არჩევანს ემთხვევა: {language}",
+      "deadlineText": "მიმართეთ {date}-მდე",
+      "source": "წყარო: {name}"
+    },
     "why": {
       "title": "რატომ YourHEI",
       "f1Title": "ყველაფერი ერთ რუკაზე",

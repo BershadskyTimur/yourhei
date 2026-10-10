@@ -1,5 +1,6 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { AdSlot } from '@/components/AdSlot';
+import { HeroSample } from '@/components/HeroSample';
 import { InstitutionExplorer } from '@/components/InstitutionExplorer';
 import { GlobeIcon, MapIcon, ShieldIcon, SparkIcon } from '@/components/icons';
 import { LOCALES } from '@/config/locales';
@@ -10,9 +11,10 @@ import { getMapInstitutions } from '@/lib/institutions/get';
 export const revalidate = 3600;
 
 const primary =
-  'inline-flex h-12 items-center justify-center rounded-lg bg-accent px-7 text-base font-medium text-on-accent hover:opacity-90';
+  'inline-flex h-14 items-center justify-center rounded-lg bg-accent px-8 text-base font-medium text-on-accent hover:opacity-90';
 const secondary =
-  'inline-flex h-12 items-center justify-center rounded-lg border border-line-strong px-7 text-base font-medium text-text hover:bg-surface-strong';
+  'inline-flex h-14 items-center justify-center rounded-lg border border-line-strong px-8 text-base font-medium text-text hover:bg-surface-strong';
+const sectionTitle = 'text-3xl font-medium tracking-tight text-text sm:text-4xl';
 
 export default async function HomePage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -46,33 +48,35 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
   return (
     <>
       <section className="hero-bg">
-        <div className="mx-auto max-w-[1500px] px-4 py-14 sm:py-20">
+        <div className="mx-auto grid max-w-[1500px] items-center gap-12 px-4 py-14 sm:py-20 lg:grid-cols-[minmax(0,1fr)_minmax(0,460px)] lg:gap-20 lg:py-24">
           <div>
-            <p className="text-sm font-medium uppercase tracking-[0.18em] text-accent-text">{t('hero.badge')}</p>
-            <h1 className="mt-4 max-w-4xl text-4xl font-semibold leading-[1.1] tracking-tight text-text sm:text-5xl lg:text-6xl">
+            <p className="text-base font-medium text-accent-text">{t('hero.badge')}</p>
+            <h1 className="mt-4 max-w-4xl text-4xl font-normal leading-[1.05] tracking-[-0.03em] text-text sm:text-6xl lg:text-7xl">
               {t('map.title')}
             </h1>
-            <div className="mt-6 h-px w-16 bg-gold" aria-hidden="true" />
-            <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted">
+            <p className="mt-8 max-w-xl text-lg leading-relaxed text-muted sm:text-xl">
               {t('hero.subtitle', { count: items.length })}
             </p>
-            <div className="mt-8 flex flex-wrap gap-3">
+            <div className="mt-10 flex flex-wrap items-center gap-x-8 gap-y-4">
               <Link href="/register" className={primary}>{t('how.cta')}</Link>
-              <a href="#map" className={secondary}>{t('hero.ctaMap')}</a>
+              <a href="#map" className="border-b border-gold pb-1 text-lg font-medium text-text hover:opacity-80">
+                {t('hero.ctaMap')}
+              </a>
             </div>
-            <ul className="mt-10 flex flex-wrap gap-x-8 gap-y-2 text-sm text-muted">
+            <ul className="mt-12 flex max-w-xl flex-wrap gap-x-10 gap-y-3 border-t border-line pt-5 text-base text-muted">
               {[
                 t('stats.institutions', { count: items.length }),
                 t('stats.countries', { count: perCountry.size }),
                 t('stats.languages', { count: LOCALES.length }),
                 t('stats.free'),
               ].map((s) => (
-                <li key={s} className="border-s border-line-strong ps-3">
+                <li key={s} className="font-serif text-lg text-text">
                   {s}
                 </li>
               ))}
             </ul>
           </div>
+          <HeroSample />
         </div>
       </section>
 
@@ -86,44 +90,39 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
         </div>
       </div>
 
-      <section aria-labelledby="why-title" className="mx-auto mt-16 max-w-[1500px] px-4">
-        <h2 id="why-title" className="text-2xl font-semibold text-text">{t('why.title')}</h2>
-        <div className="mt-3 h-px w-12 bg-gold" aria-hidden="true" />
-        <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      <section aria-labelledby="why-title" className="mx-auto mt-24 max-w-[1500px] px-4">
+        <h2 id="why-title" className={sectionTitle}>{t('why.title')}</h2>
+        <ul className="mt-10 grid gap-x-10 gap-y-10 sm:grid-cols-2 lg:grid-cols-4">
           {features.map((f) => (
-            <li key={f.title} className="rounded-lg border border-line bg-surface p-6">
-              <span className="flex h-10 w-10 items-center justify-center rounded-lg border border-line-strong text-accent-text">
-                {f.icon}
-              </span>
-              <h3 className="mt-4 text-lg font-semibold">{f.title}</h3>
-              <p className="mt-2 text-muted">{f.text}</p>
+            <li key={f.title} className="border-t border-text pt-5">
+              <span className="text-gold-text">{f.icon}</span>
+              <h3 className="mt-4 text-xl font-medium">{f.title}</h3>
+              <p className="mt-2 leading-relaxed text-muted">{f.text}</p>
             </li>
           ))}
         </ul>
       </section>
 
-      <section aria-labelledby="how-title" className="mx-auto mt-16 max-w-[1500px] px-4">
-        <h2 id="how-title" className="text-2xl font-semibold text-text">{t('how.title')}</h2>
-        <div className="mt-3 h-px w-12 bg-gold" aria-hidden="true" />
-        <ol className="mt-8 grid gap-4 sm:grid-cols-3">
+      <section aria-labelledby="how-title" className="mx-auto mt-24 max-w-[1500px] px-4">
+        <h2 id="how-title" className={sectionTitle}>{t('how.title')}</h2>
+        <ol className="mt-10 grid gap-x-10 gap-y-10 sm:grid-cols-3">
           {steps.map((s, idx) => (
-            <li key={s.title} className="rounded-lg border border-line bg-surface p-6">
-              <span aria-hidden="true" className="relative flex h-9 w-9 items-center justify-center rounded-full border border-line-strong font-medium text-accent-text">
+            <li key={s.title} className="border-t border-text pt-5">
+              <span aria-hidden="true" className="font-serif text-5xl font-normal text-gold-text">
                 {idx + 1}
               </span>
-              <h3 className="relative mt-4 text-xl font-semibold">{s.title}</h3>
-              <p className="relative mt-2 text-muted">{s.text}</p>
+              <h3 className="mt-4 text-xl font-medium">{s.title}</h3>
+              <p className="mt-2 leading-relaxed text-muted">{s.text}</p>
             </li>
           ))}
         </ol>
       </section>
 
       {countries.length > 0 && (
-        <section aria-labelledby="countries-title" className="mx-auto mt-16 max-w-[1500px] px-4">
-          <h2 id="countries-title" className="text-2xl font-semibold text-text">{t('countries.title')}</h2>
-          <div className="mt-3 h-px w-12 bg-gold" aria-hidden="true" />
-          <p className="mt-3 text-muted">{t('countries.text')}</p>
-          <ul className="mt-6 flex flex-wrap gap-2">
+        <section aria-labelledby="countries-title" className="mx-auto mt-24 max-w-[1500px] px-4">
+          <h2 id="countries-title" className={sectionTitle}>{t('countries.title')}</h2>
+          <p className="mt-4 text-lg text-muted">{t('countries.text')}</p>
+          <ul className="mt-8 flex flex-wrap gap-2">
             {countries.map(([code, count]) => (
               <li key={code} className="rounded-lg border border-line bg-surface px-3 py-1.5 text-sm">
                 {regionNames.of(code) ?? code}
@@ -134,11 +133,11 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
         </section>
       )}
 
-      <section className="band-dark mx-4 mt-12 overflow-hidden rounded-lg border border-line xl:mx-auto xl:max-w-[1500px]">
-        <div className="flex flex-col items-start gap-6 px-6 py-10 sm:px-10 lg:flex-row lg:items-center lg:justify-between">
+      <section className="band-dark mx-4 mt-24 overflow-hidden rounded-lg border border-line xl:mx-auto xl:max-w-[1500px]">
+        <div className="flex flex-col items-start gap-6 px-6 py-12 sm:px-12 lg:flex-row lg:items-center lg:justify-between">
           <div>
-            <h2 className="text-2xl font-semibold text-text">{t('cta.title')}</h2>
-            <p className="mt-2 max-w-2xl text-lg text-muted">{t('cta.text')}</p>
+            <h2 className="text-3xl font-normal tracking-tight text-text sm:text-4xl">{t('cta.title')}</h2>
+            <p className="mt-3 max-w-2xl text-lg text-muted">{t('cta.text')}</p>
           </div>
           <Link href="/register" className={primary}>{t('how.cta')}</Link>
         </div>

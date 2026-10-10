@@ -79,6 +79,12 @@
       "languages": "{count} langues",
       "free": "Utilisation gratuite"
     },
+    "sample": {
+      "label": "Exemple de résultat",
+      "languageText": "La langue d’études correspond à votre choix : {language}",
+      "deadlineText": "Déposez votre dossier avant le {date}",
+      "source": "Source : {name}"
+    },
     "why": {
       "title": "Pourquoi YourHEI",
       "f1Title": "Tout sur une seule carte",

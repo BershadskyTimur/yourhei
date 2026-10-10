@@ -79,6 +79,12 @@
       "languages": "{count} тіл",
       "free": "Тегін"
     },
+    "sample": {
+      "label": "Іріктеу үлгісі",
+      "languageText": "Оқу тілі таңдауыңызға сәйкес: {language}",
+      "deadlineText": "Құжаттарды {date} дейін тапсырыңыз",
+      "source": "Дереккөз: {name}"
+    },
     "why": {
       "title": "Неге YourHEI",
       "f1Title": "Бәрі бір картада",

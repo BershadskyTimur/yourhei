@@ -79,6 +79,12 @@
       "languages": "{count} 种语言",
       "free": "免费使用"
     },
+    "sample": {
+      "label": "匹配示例",
+      "languageText": "授课语言符合你的选择：{language}",
+      "deadlineText": "请在 {date} 前申请",
+      "source": "来源：{name}"
+    },
     "why": {
       "title": "为什么选择 YourHEI",
       "f1Title": "一张地图看全部",
