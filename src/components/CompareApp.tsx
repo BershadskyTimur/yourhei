@@ -8,6 +8,7 @@ import { profileDocType } from '@/lib/documents';
 import { pickLocalized } from '@/lib/institutions/localized';
 import { rec, toProgramDetail, type Money, type ProgramDetail } from '@/lib/institutions/program-detail';
 import { getSupabaseBrowser } from '@/lib/supabase/client';
+import { visibleDeadlines } from '@/lib/institutions/deadlines';
 import { CERTIFICATES, EXAMS, labelFor } from '@/lib/survey/references';
 
 interface Item {
@@ -110,7 +111,7 @@ function Table({ items }: { items: Item[] }) {
         return lines.length ? <ul className="space-y-0.5">{lines.map((l) => <li key={l}>{l}</li>)}</ul> : '—';
       },
     },
-    { id: 'deadlines', label: t('rows.deadlines'), cell: (i) => { const d = i.program.deadlines.filter((x) => x.date); return d.length ? <ul>{d.map((x) => <li key={`${x.intake}${x.date}`}>{date(x.date as string)}</li>)}</ul> : '—'; } },
+    { id: 'deadlines', label: t('rows.deadlines'), cell: (i) => { const d = visibleDeadlines(i.program.deadlines); return d.length ? <ul>{d.map((x) => <li key={`${x.intake}${x.appliesTo}${x.date}`}>{date(x.date as string)}</li>)}</ul> : '—'; } },
     { id: 'apply', label: t('rows.apply'), cell: (i) => (i.program.applicationUrl ? <a href={i.program.applicationUrl} target="_blank" rel="noopener noreferrer" className="font-medium underline underline-offset-4">{tCard('apply')}</a> : '—') },
   ];
 
