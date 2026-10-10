@@ -1,5 +1,12 @@
 import type { Metadata, Viewport } from 'next';
-import { Noto_Sans, Noto_Sans_Arabic, Noto_Sans_Armenian, Noto_Sans_Georgian, Noto_Sans_SC } from 'next/font/google';
+import {
+  IBM_Plex_Sans,
+  Noto_Sans_Arabic,
+  Noto_Sans_Armenian,
+  Noto_Sans_Georgian,
+  Noto_Sans_SC,
+  Source_Serif_4,
+} from 'next/font/google';
 import { hasLocale, NextIntlClientProvider } from 'next-intl';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
@@ -16,9 +23,17 @@ import '../globals.css';
 
 // Latin (incl. Turkish, Azerbaijani, Polish, Uzbek letters) + Cyrillic (incl. Kazakh and Kyrgyz letters), Armenian,
 // Georgian (Mkhedruli), Arabic and Simplified Chinese.
-const notoSans = Noto_Sans({
+const plexSans = IBM_Plex_Sans({
   subsets: ['latin', 'latin-ext', 'cyrillic', 'cyrillic-ext'],
-  variable: '--font-noto',
+  weight: ['400', '500', '600'],
+  variable: '--font-plex',
+  display: 'swap',
+});
+// Headings: a serif with an optical-size axis (Latin and Cyrillic; other scripts use the sans stack).
+const sourceSerif = Source_Serif_4({
+  subsets: ['latin', 'latin-ext', 'cyrillic', 'cyrillic-ext'],
+  axes: ['opsz'],
+  variable: '--font-source-serif',
   display: 'swap',
 });
 const notoGeorgian = Noto_Sans_Georgian({
@@ -84,7 +99,8 @@ export default async function LocaleLayout({
   const t = await getTranslations('Common');
   const dir = LOCALES.find((l) => l.code === locale)?.dir ?? 'ltr';
   const fonts = [
-    notoSans.variable,
+    plexSans.variable,
+    sourceSerif.variable,
     notoGeorgian.variable,
     notoArmenian.variable,
     notoArabic.variable,
