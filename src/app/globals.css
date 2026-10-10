@@ -53,9 +53,12 @@
   --ad-border: #c9d3cf;
 
   /* Map: clusters and type dots (the same in both themes; each dot also has an icon) */
-  --cluster: #0f2d26;
-  --on-cluster: #f4f6f5;
-  --map-ring: #ffffff;
+  /* The map is always the dark green stage (both themes), so its dots use fixed colours. */
+  --cluster: #e7b94b;
+  --on-cluster: #0a211c;
+  --map-ring: #ffffff; /* ring of the round type badges in the legend */
+  --map-dot-ring: #0a211c; /* ring of the dots drawn on the map */
+  --map-focus: #f4f1e6;
   --type-university: #e0a100;
   --type-university-on: #1c1917;
   --type-college: #c0392b;
@@ -104,8 +107,6 @@
   --ad-bg: #0d211b;
   --ad-border: #2a4339;
 
-  --cluster: #e7b94b;
-  --on-cluster: #0a1a16;
   --map-ring: #11271f;
 }
 @theme inline {
@@ -204,18 +205,26 @@ li {
 .maplibregl-ctrl-attrib {
   font-family: inherit;
 }
-[data-theme="dark"] .maplibregl-ctrl-attrib,
-[data-theme="dark"] .maplibregl-ctrl-attrib a {
-  background: rgb(10 26 22 / 0.8);
-  color: #edf1ee;
+/* The map is always the dark green stage, so its controls are dark in both themes. */
+.map-stage .maplibregl-ctrl-attrib,
+.map-stage .maplibregl-ctrl-attrib a {
+  background: rgb(10 33 28 / 0.8);
+  color: #b9c8c1;
 }
-[data-theme="dark"] .maplibregl-ctrl-group {
-  background: #11271f;
+.map-stage .maplibregl-ctrl-group {
+  background: rgb(10 33 28 / 0.85);
+  border: 1px solid rgb(237 232 218 / 0.4);
+  box-shadow: none;
+  border-radius: 2px;
 }
-[data-theme="dark"] .maplibregl-ctrl-group button + button {
-  border-top-color: #2a4339;
+.map-stage .maplibregl-ctrl-group button {
+  width: 44px;
+  height: 44px;
 }
-[data-theme="dark"] .maplibregl-ctrl-icon {
+.map-stage .maplibregl-ctrl-group button + button {
+  border-top-color: rgb(237 232 218 / 0.4);
+}
+.map-stage .maplibregl-ctrl-icon {
   filter: invert(1);
 }
 
@@ -233,6 +242,28 @@ li {
 .gold-rule {
   height: 1px;
   background: var(--border);
+}
+/* The map stage: always dark green, in both themes; every token inside is switched to its dark value. */
+.map-stage {
+  color-scheme: dark;
+  background: #0a211c;
+  color: #f4f1e6;
+  --bg: #0a211c;
+  --surface: #10302a;
+  --surface-strong: #17382f;
+  --text: #f4f1e6;
+  --text-muted: #b9c8c1;
+  --brand-text: #f4f1e6;
+  --accent: #e7b94b;
+  --on-accent: #0a211c;
+  --accent-text: #e7b94b;
+  --accent-soft: #17382f;
+  --gold: #e7b94b;
+  --gold-text: #e7b94b;
+  --border: #2f4a40;
+  --border-strong: #8aa398;
+  --focus: #e7b94b;
+  --map-ring: #0a211c;
 }
 /* A dark band inside the light theme: the text tokens are switched to light ones for everything inside. */
 .band-dark {

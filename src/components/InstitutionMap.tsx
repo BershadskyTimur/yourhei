@@ -9,14 +9,13 @@ import {
 } from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import { useTranslations } from 'next-intl';
-import { useTheme } from 'next-themes';
 import { useEffect, useRef, useState } from 'react';
 import { TYPE_ICON_PATHS } from '@/lib/institutions/icons';
 import { INSTITUTION_TYPES, type MapInstitution } from '@/lib/institutions/types';
 
 // OpenFreeMap: free, no key, OpenStreetMap data (attribution is shown by the map itself).
-const STYLE_LIGHT = 'https://tiles.openfreemap.org/styles/positron';
-const STYLE_DARK = 'https://tiles.openfreemap.org/styles/dark';
+// The map is always drawn on the dark base style, recoloured to the site's green stage (see applyStage).
+const STYLE_URL = 'https://tiles.openfreemap.org/styles/dark';
 
 // The worker file is copied to public/ by scripts/copy-maplibre-worker.mjs.
 setWorkerUrl('/maplibre/maplibre-gl-worker.mjs');
@@ -58,6 +57,32 @@ function token(name: string): string {
   return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
 }
 
+/** Recolours the base style: green land, deep green sea, brass-free quiet roads, ivory labels. */
+function applyStage(map: MapLibreMap) {
+  const set = (layer: string, prop: string, value: string) => {
+    try {
+      if (map.getLayer(layer)) map.setPaintProperty(layer, prop as never, value as never);
+    } catch {
+      /* a layer of another style version: leave it as it is */
+    }
+  };
+  set('background', 'background-color', '#1d4b3f');
+  set('water', 'fill-color', '#0a211c');
+  set('waterway', 'line-color', '#0a211c');
+  for (const id of ['landcover_wood', 'landuse_park']) set(id, 'fill-color', '#235245');
+  set('landuse_residential', 'fill-color', '#1f4f42');
+  for (const id of ['landcover_ice_shelf', 'landcover_glacier']) set(id, 'fill-color', '#24564a');
+  set('building', 'fill-color', '#194236');
+  for (const layer of map.getStyle().layers) {
+    if (layer.type === 'line' && /^(highway|railway|aeroway|road)/.test(layer.id)) set(layer.id, 'line-color', '#2f6657');
+    if (layer.type === 'line' && /^boundary/.test(layer.id)) set(layer.id, 'line-color', '#4b8472');
+    if (layer.type === 'symbol') {
+      set(layer.id, 'text-color', '#e8e4d4');
+      set(layer.id, 'text-halo-color', '#0a211c');
+    }
+  }
+}
+
 /** Draws one round dot (ring, type colour, white/dark icon) for the map. */
 function drawDot(type: (typeof INSTITUTION_TYPES)[number]): ImageData {
   const size = 64;
@@ -67,7 +92,7 @@ function drawDot(type: (typeof INSTITUTION_TYPES)[number]): ImageData {
   const ctx = canvas.getContext('2d')!;
   ctx.beginPath();
   ctx.arc(32, 32, 30, 0, Math.PI * 2);
-  ctx.fillStyle = token('--map-ring');
+  ctx.fillStyle = token('--map-dot-ring');
   ctx.fill();
   ctx.beginPath();
   ctx.arc(32, 32, 26, 0, Math.PI * 2);
@@ -86,10 +111,8 @@ function drawDot(type: (typeof INSTITUTION_TYPES)[number]): ImageData {
 
 export function InstitutionMap({ items, selectedId, focus, onSelect, label, onUnsupported }: Props) {
   const t = useTranslations('Home.map');
-  const { resolvedTheme } = useTheme();
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<MapLibreMap | null>(null);
-  const styleUrlRef = useRef<string>('');
   const [ready, setReady] = useState(false);
 
   // Latest values for map callbacks (they are registered once, so they must not capture stale props).
@@ -121,15 +144,11 @@ export function InstitutionMap({ items, selectedId, focus, onSelect, label, onUn
     const container = containerRef.current;
     if (!container) return;
 
-    const dark = document.documentElement.getAttribute('data-theme') === 'dark';
-    const styleUrl = dark ? STYLE_DARK : STYLE_LIGHT;
-    styleUrlRef.current = styleUrl;
-
     let map: MapLibreMap;
     try {
       map = new MapLibreMap({
         container,
-        style: styleUrl,
+        style: STYLE_URL,
         center: [55, 44],
         zoom: 3,
         minZoom: 1.5,
@@ -159,6 +178,7 @@ export function InstitutionMap({ items, selectedId, focus, onSelect, label, onUn
 
     // (Re)adds icons, data and layers. A style change wipes them, so this runs on every style load.
     const setup = () => {
+      applyStage(map);
       for (const type of INSTITUTION_TYPES) {
         const id = `inst-${type}`;
         if (!map.hasImage(id)) map.addImage(id, drawDot(type), { pixelRatio: 2 });
@@ -172,7 +192,7 @@ export function InstitutionMap({ items, selectedId, focus, onSelect, label, onUn
           clusterMaxZoom: 11,
         });
       }
-      const ring = token('--map-ring');
+      const ring = token('--map-dot-ring');
       map.addLayer({
         id: L_CLUSTER,
         type: 'circle',
@@ -207,7 +227,7 @@ export function InstitutionMap({ items, selectedId, focus, onSelect, label, onUn
           'circle-radius': 23,
           'circle-color': 'rgba(0,0,0,0)',
           'circle-stroke-width': 4,
-          'circle-stroke-color': token('--focus'),
+          'circle-stroke-color': token('--map-focus'),
         },
       });
       map.addLayer({
@@ -254,16 +274,6 @@ export function InstitutionMap({ items, selectedId, focus, onSelect, label, onUn
       setReady(false);
     };
   }, []);
-
-  // Theme switch: load the other map style (setup re-adds the layers).
-  useEffect(() => {
-    const map = mapRef.current;
-    if (!map || !resolvedTheme) return;
-    const next = resolvedTheme === 'dark' ? STYLE_DARK : STYLE_LIGHT;
-    if (next === styleUrlRef.current) return;
-    styleUrlRef.current = next;
-    map.setStyle(next);
-  }, [resolvedTheme]);
 
   // Filters / search changed: update the points.
   useEffect(() => {
