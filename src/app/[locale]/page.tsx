@@ -5,6 +5,7 @@ import { InstitutionExplorer } from '@/components/InstitutionExplorer';
 import { GlobeIcon, MapIcon, ShieldIcon, SparkIcon } from '@/components/icons';
 import { LOCALES } from '@/config/locales';
 import { Link } from '@/i18n/navigation';
+import { countByType } from '@/lib/institutions/filter';
 import { getMapInstitutions } from '@/lib/institutions/get';
 
 // The list of institutions is refreshed at most once an hour.
@@ -19,11 +20,9 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
   setRequestLocale(locale);
   const t = await getTranslations('Home');
   const { items: all, error } = await getMapInstitutions();
-  // The map needs only the names in the visitor's language (plus English and the original) and no website:
-  // with thousands of institutions this keeps the page small.
-  const keep = new Set(['original', 'en', locale]);
-  const only = (t: Record<string, string | undefined>) => Object.fromEntries(Object.entries(t).filter(([k]) => keep.has(k)));
-  const items = all.map((i) => ({ ...i, names: only(i.names), city: only(i.city), website: null, foundedYear: null }));
+  // Only counts go into the page; the map loads the list itself from /api/institutions (cached, compact),
+  // so the home page stays small instead of carrying about 1 MB of institutions.
+  const items = all;
 
   // Institutions per country, biggest first, for the "where you can study" chips.
   const perCountry = new Map<string, number>();
@@ -84,7 +83,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
           <div className="hidden xl:block">
             <div className="sticky top-24 pt-16"><AdSlot kind="rail" /></div>
           </div>
-          <InstitutionExplorer items={items} loadError={error} />
+          <InstitutionExplorer typeCounts={countByType(items)} loadError={error} />
           <div className="hidden xl:block">
             <div className="sticky top-24 pt-16"><AdSlot kind="rail" /></div>
           </div>

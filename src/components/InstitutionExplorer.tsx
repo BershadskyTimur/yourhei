@@ -1,9 +1,10 @@
 'use client';
 
 import { useLocale, useTranslations } from 'next-intl';
-import { useMemo, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { Link } from '@/i18n/navigation';
-import { countByType, filterInstitutions } from '@/lib/institutions/filter';
+import { decodeInstitutions, type CompactInstitutions } from '@/lib/institutions/compact';
+import { filterInstitutions } from '@/lib/institutions/filter';
 import { pickLocalized } from '@/lib/institutions/localized';
 import {
   INSTITUTION_TYPES,
@@ -14,15 +15,18 @@ import { InstitutionMap, type FocusRequest } from './InstitutionMap';
 import { TypeDot } from './TypeDot';
 
 interface Props {
-  items: MapInstitution[];
+  /** Number of institutions of each type (counted on the server, so the filter buttons do not jump when the list arrives). */
+  typeCounts: Record<InstitutionType, number>;
+  /** The server could not read the institutions. */
   loadError: boolean;
 }
 
 const MAX_SUGGESTIONS = 6;
 
-export function InstitutionExplorer({ items, loadError }: Props) {
+export function InstitutionExplorer({ typeCounts, loadError }: Props) {
   const t = useTranslations('Home.map');
   const tTypes = useTranslations('Types');
+  const tCatalog = useTranslations('Catalog');
   const locale = useLocale();
 
   const [types, setTypes] = useState<ReadonlySet<InstitutionType>>(() => new Set(INSTITUTION_TYPES));
@@ -33,8 +37,25 @@ export function InstitutionExplorer({ items, loadError }: Props) {
   const [unsupported, setUnsupported] = useState(false);
   const focusCounter = useRef(0);
 
-  const counts = useMemo(() => countByType(items), [items]);
-  const filtered = useMemo(() => filterInstitutions(items, { types, query }), [items, types, query]);
+  // The list is not part of the page (it would weigh about 1 MB): it is loaded from a cached, compact answer.
+  const [items, setItems] = useState<MapInstitution[] | null>(null);
+  const [fetchFailed, setFetchFailed] = useState(false);
+  useEffect(() => {
+    const controller = new AbortController();
+    (async () => {
+      try {
+        const res = await fetch(`/api/institutions?locale=${locale}`, { signal: controller.signal });
+        if (!res.ok) throw new Error(String(res.status));
+        setItems(decodeInstitutions((await res.json()) as CompactInstitutions));
+      } catch {
+        if (!controller.signal.aborted) setFetchFailed(true);
+      }
+    })();
+    return () => controller.abort();
+  }, [locale]);
+  const list = useMemo(() => items ?? [], [items]);
+  const counts = typeCounts;
+  const filtered = useMemo(() => filterInstitutions(list, { types, query }), [list, types, query]);
   // The card closes by itself when its institution is filtered out.
   const selected = filtered.find((i) => i.id === selectedId) ?? null;
 
@@ -204,7 +225,7 @@ export function InstitutionExplorer({ items, loadError }: Props) {
             {t('noWebgl')}
           </p>
         )}
-        {loadError && (
+        {(loadError || fetchFailed) && (
           <p
             role="alert"
             className="absolute inset-x-4 top-4 z-10 rounded-xl border border-line-strong bg-bg p-3 text-center text-text"
@@ -262,7 +283,9 @@ export function InstitutionExplorer({ items, loadError }: Props) {
       </div>
 
       <div className="mx-auto max-w-[1500px] px-4 py-4 text-sm text-muted">
-        <p aria-live="polite">{t('shown', { shown: filtered.length, total: items.length })}</p>
+        <p aria-live="polite">
+          {items ? t('shown', { shown: filtered.length, total: items.length }) : fetchFailed ? '' : tCatalog('loading')}
+        </p>
       </div>
     </section>
   );

@@ -8,7 +8,8 @@ export default async function RegisterPage({ params }: { params: Promise<{ local
   return (
     <div className="mx-auto max-w-2xl px-4 py-10">
       <h1 className="text-3xl font-semibold text-text">{t('title')}</h1>
-      <div className="mt-4">
+      {/* The form appears after the saved draft is read; the reserved height keeps the footer from jumping. */}
+      <div className="mt-4 min-h-[70svh]">
         <RegisterWizard />
       </div>
     </div>
