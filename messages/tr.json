@@ -8,6 +8,12 @@
     "skipToContent": "Ana içeriğe geç",
     "translationUnavailable": "çeviri yok"
   },
+  "ErrorPage": {
+    "title": "Bir şeyler ters gitti",
+    "text": "Bu sayfa gösterilemedi. Tekrar deneyin; sorun sürerse biraz sonra tekrar gelin.",
+    "retry": "Tekrar dene",
+    "home": "Ana sayfaya git"
+  },
   "Header": {
     "homeLabel": "YourHEI — ana sayfa",
     "login": "Giriş yap",

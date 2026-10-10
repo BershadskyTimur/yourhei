@@ -8,6 +8,12 @@
     "skipToContent": "Przejdź do głównej treści",
     "translationUnavailable": "tłumaczenie niedostępne"
   },
+  "ErrorPage": {
+    "title": "Coś poszło nie tak",
+    "text": "Nie udało się wyświetlić tej strony. Spróbuj ponownie, a jeśli problem się powtarza, wróć nieco później.",
+    "retry": "Spróbuj ponownie",
+    "home": "Przejdź na stronę główną"
+  },
   "Header": {
     "homeLabel": "YourHEI — strona główna",
     "login": "Zaloguj się",

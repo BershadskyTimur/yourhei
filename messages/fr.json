@@ -8,6 +8,12 @@
     "skipToContent": "Aller au contenu principal",
     "translationUnavailable": "traduction indisponible"
   },
+  "ErrorPage": {
+    "title": "Un problème est survenu",
+    "text": "Cette page n’a pas pu être affichée. Réessayez et, si le problème persiste, revenez un peu plus tard.",
+    "retry": "Réessayer",
+    "home": "Retour à l’accueil"
+  },
   "Header": {
     "homeLabel": "YourHEI — accueil",
     "login": "Se connecter",

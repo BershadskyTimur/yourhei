@@ -8,6 +8,12 @@
     "skipToContent": "跳到主要内容",
     "translationUnavailable": "暂无翻译"
   },
+  "ErrorPage": {
+    "title": "出了点问题",
+    "text": "无法显示此页面。请重试，如果问题持续，请稍后再来。",
+    "retry": "重试",
+    "home": "返回首页"
+  },
   "Header": {
     "homeLabel": "YourHEI — 返回首页",
     "login": "登录",
