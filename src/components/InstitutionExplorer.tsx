@@ -71,7 +71,7 @@ export function InstitutionExplorer({ items, loadError }: Props) {
     <section
       id="map"
       aria-labelledby="map-title"
-      className="overflow-hidden rounded-lg border border-line bg-bg"
+      className="map-stage"
       onKeyDown={(e) => {
         if (e.key === 'Escape') {
           setSelectedId(null);
@@ -79,9 +79,9 @@ export function InstitutionExplorer({ items, loadError }: Props) {
         }
       }}
     >
-      <div className="border-b border-line bg-surface">
-        <div className="flex flex-col gap-3 px-4 py-3 sm:py-4 lg:flex-row lg:items-end lg:justify-between">
-          <h2 id="map-title" className="text-xl font-semibold text-text sm:text-2xl">
+      <div className="mx-auto max-w-[1500px] px-4 pb-6 pt-16">
+        <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
+          <h2 id="map-title" className="text-3xl font-normal tracking-tight text-text sm:text-5xl">
             {t('heading')}
           </h2>
 
@@ -105,7 +105,7 @@ export function InstitutionExplorer({ items, loadError }: Props) {
                 setShowSuggestions(true);
               }}
               onFocus={() => setShowSuggestions(true)}
-              className="h-11 w-full rounded-lg border border-line-strong bg-bg px-4 text-text placeholder:text-muted"
+              className="h-12 w-full rounded-none border-0 border-b border-line-strong bg-transparent px-1 text-lg text-text placeholder:text-muted"
             />
             {showSuggestions && query.trim() !== '' && (
               <ul className="absolute inset-x-0 top-full z-20 mt-1 overflow-hidden rounded-lg border border-line-strong bg-bg">
@@ -135,7 +135,7 @@ export function InstitutionExplorer({ items, loadError }: Props) {
           </div>
         </div>
 
-        <div className="px-4 pb-4">
+        <div className="mt-6">
           <p id="legend-label" className="mb-2 text-sm text-muted">
             {t('legendLabel')}
           </p>
@@ -152,9 +152,9 @@ export function InstitutionExplorer({ items, loadError }: Props) {
                     type="button"
                     aria-pressed={on}
                     onClick={() => toggleType(type)}
-                    className={`inline-flex min-h-10 items-center gap-2 whitespace-nowrap rounded-full border px-3 py-1 text-sm ${
+                    className={`inline-flex min-h-11 items-center gap-2 whitespace-nowrap rounded-lg border px-3 py-1 text-sm ${
                       on
-                        ? 'border-line-strong bg-bg text-text'
+                        ? 'border-text bg-text/10 text-text'
                         : 'border-dashed border-line-strong bg-surface text-muted opacity-75'
                     }`}
                   >
@@ -187,7 +187,7 @@ export function InstitutionExplorer({ items, loadError }: Props) {
       </div>
 
       {/* On phones the map fills the rest of the first screen, so its bottom card is never off-screen. */}
-      <div className="relative h-[70svh] min-h-[420px] max-h-[760px] w-full bg-surface-strong">
+      <div className="relative h-[72svh] min-h-[460px] max-h-[780px] w-full border-y border-line bg-surface-strong">
         {!unsupported && (
           <InstitutionMap
             items={filtered}
@@ -261,7 +261,7 @@ export function InstitutionExplorer({ items, loadError }: Props) {
         )}
       </div>
 
-      <div className="px-4 py-3 text-sm text-muted">
+      <div className="mx-auto max-w-[1500px] px-4 py-4 text-sm text-muted">
         <p aria-live="polite">{t('shown', { shown: filtered.length, total: items.length })}</p>
       </div>
     </section>

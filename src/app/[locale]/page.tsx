@@ -12,8 +12,6 @@ export const revalidate = 3600;
 
 const primary =
   'inline-flex h-14 items-center justify-center rounded-lg bg-accent px-8 text-base font-medium text-on-accent hover:opacity-90';
-const secondary =
-  'inline-flex h-14 items-center justify-center rounded-lg border border-line-strong px-8 text-base font-medium text-text hover:bg-surface-strong';
 const sectionTitle = 'text-3xl font-medium tracking-tight text-text sm:text-4xl';
 
 export default async function HomePage({ params }: { params: Promise<{ locale: string }> }) {
@@ -80,14 +78,9 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
         </div>
       </section>
 
-      <div className="mx-auto mt-6 grid max-w-[1500px] gap-4 px-4 xl:grid-cols-[160px_minmax(0,1fr)_160px]">
-        <div className="hidden xl:block">
-          <div className="sticky top-24"><AdSlot kind="skyscraper" /></div>
-        </div>
-        <InstitutionExplorer items={items} loadError={error} />
-        <div className="hidden xl:block">
-          <div className="sticky top-24"><AdSlot kind="skyscraper" /></div>
-        </div>
+      <InstitutionExplorer items={items} loadError={error} />
+      <div className="mx-auto mt-8 max-w-[1500px] px-4">
+        <AdSlot kind="banner" />
       </div>
 
       <section aria-labelledby="why-title" className="mx-auto mt-24 max-w-[1500px] px-4">
