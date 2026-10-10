@@ -4,6 +4,7 @@ import type { Money, ProgramDetail, TuitionLine } from '@/lib/institutions/detai
 import { profileDocType } from '@/lib/documents';
 import { PriceInMyCurrency } from './PriceInMyCurrency';
 import { TrackedLink } from './TrackedLink';
+import { visibleDeadlines } from '@/lib/institutions/deadlines';
 import { CERTIFICATES, EXAMS, labelFor } from '@/lib/survey/references';
 
 const fmtMoney = (m: Money, locale: string): string => {
@@ -100,15 +101,15 @@ export async function ProgramCard({ program, country, slug, city }: { program: P
         </div>
       </dl>
 
-      {(program.intakes.length > 0 || program.deadlines.length > 0) && (
+      {(program.intakes.length > 0 || visibleDeadlines(program.deadlines).length > 0) && (
         <p className="mt-3 text-sm">
           {program.intakes.length > 0 && (
             <span>
               <span className="font-semibold">{t('intake')}:</span> {program.intakes.map(monthName).join(', ')}.{' '}
             </span>
           )}
-          {program.deadlines.filter((d) => d.date).map((d) => (
-            <span key={`${d.intake}-${d.date}`}>
+          {visibleDeadlines(program.deadlines).map((d) => (
+            <span key={`${d.intake}-${d.appliesTo}-${d.date}`}>
               <span className="font-semibold">{t('deadline')}:</span>{' '}
               {new Intl.DateTimeFormat(locale, { dateStyle: 'long', timeZone: 'UTC' }).format(new Date(`${d.date}T00:00:00Z`))}.{' '}
             </span>
