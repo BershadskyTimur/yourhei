@@ -79,6 +79,12 @@
       "languages": "{count} ta til",
       "free": "Foydalanish bepul"
     },
+    "sample": {
+      "label": "Tanlov namunasi",
+      "languageText": "Ta’lim tili tanlovingizga mos: {language}",
+      "deadlineText": "Hujjatlarni {date} gacha topshiring",
+      "source": "Manba: {name}"
+    },
     "why": {
       "title": "Nega YourHEI",
       "f1Title": "Hammasi bitta xaritada",

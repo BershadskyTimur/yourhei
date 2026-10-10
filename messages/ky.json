@@ -79,6 +79,12 @@
       "languages": "{count} тил",
       "free": "Колдонуу акысыз"
     },
+    "sample": {
+      "label": "Тандоо үлгүсү",
+      "languageText": "Окуу тили тандооңузга дал келет: {language}",
+      "deadlineText": "Документтерди {date} чейин тапшырыңыз",
+      "source": "Булак: {name}"
+    },
     "why": {
       "title": "Эмне үчүн YourHEI",
       "f1Title": "Баары бир картада",

@@ -79,6 +79,12 @@
       "languages": "{count} języków",
       "free": "Bezpłatny dostęp"
     },
+    "sample": {
+      "label": "Przykład dopasowania",
+      "languageText": "Język nauczania zgadza się z Twoim wyborem: {language}",
+      "deadlineText": "Złóż dokumenty do {date}",
+      "source": "Źródło: {name}"
+    },
     "why": {
       "title": "Dlaczego YourHEI",
       "f1Title": "Wszystko na jednej mapie",

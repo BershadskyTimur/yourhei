@@ -79,6 +79,12 @@
       "languages": "{count} لغات",
       "free": "الاستخدام مجاني"
     },
+    "sample": {
+      "label": "مثال على نتيجة",
+      "languageText": "لغة الدراسة تطابق اختيارك: {language}",
+      "deadlineText": "قدّم طلبك قبل {date}",
+      "source": "المصدر: {name}"
+    },
     "why": {
       "title": "لماذا YourHEI",
       "f1Title": "كل شيء على خريطة واحدة",

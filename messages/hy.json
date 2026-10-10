@@ -79,6 +79,12 @@
       "languages": "{count} լեզու",
       "free": "Անվճար է"
     },
+    "sample": {
+      "label": "Ընտրանու օրինակ",
+      "languageText": "Ուսուցման լեզուն համընկնում է ձեր ընտրության հետ՝ {language}",
+      "deadlineText": "Դիմեք մինչև {date}",
+      "source": "Աղբյուր՝ {name}"
+    },
     "why": {
       "title": "Ինչու՞ YourHEI",
       "f1Title": "Ամեն ինչ մեկ քարտեզի վրա",

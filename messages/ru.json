@@ -79,6 +79,12 @@
       "languages": "{count} языков",
       "free": "Бесплатно"
     },
+    "sample": {
+      "label": "Пример подборки",
+      "languageText": "Язык обучения совпадает с вашим выбором: {language}",
+      "deadlineText": "Подайте документы до {date}",
+      "source": "Источник: {name}"
+    },
     "why": {
       "title": "Почему YourHEI",
       "f1Title": "Всё на одной карте",

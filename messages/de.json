@@ -79,6 +79,12 @@
       "languages": "{count} Sprachen",
       "free": "Kostenlos nutzbar"
     },
+    "sample": {
+      "label": "Beispiel für einen Treffer",
+      "languageText": "Die Unterrichtssprache entspricht deiner Wahl: {language}",
+      "deadlineText": "Bewirb dich bis zum {date}",
+      "source": "Quelle: {name}"
+    },
     "why": {
       "title": "Warum YourHEI",
       "f1Title": "Alles auf einer Karte",

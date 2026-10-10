@@ -79,6 +79,12 @@
       "languages": "{count} dil",
       "free": "Kullanımı ücretsiz"
     },
+    "sample": {
+      "label": "Eşleşme örneği",
+      "languageText": "Eğitim dili seçiminizle uyuşuyor: {language}",
+      "deadlineText": "Başvuru son tarihi: {date}",
+      "source": "Kaynak: {name}"
+    },
     "why": {
       "title": "Neden YourHEI",
       "f1Title": "Her şey tek haritada",
