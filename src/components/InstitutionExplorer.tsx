@@ -71,7 +71,7 @@ export function InstitutionExplorer({ items, loadError }: Props) {
     <section
       id="map"
       aria-labelledby="map-title"
-      className="map-stage"
+      className="min-w-0"
       onKeyDown={(e) => {
         if (e.key === 'Escape') {
           setSelectedId(null);

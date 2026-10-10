@@ -264,6 +264,8 @@ li {
   --border-strong: #8aa398;
   --focus: #e7b94b;
   --map-ring: #0a211c;
+  --ad-bg: #0d2a24;
+  --ad-border: #2f4a40;
 }
 /* A dark band inside the light theme: the text tokens are switched to light ones for everything inside. */
 .band-dark {

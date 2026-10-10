@@ -78,9 +78,20 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
         </div>
       </section>
 
-      <InstitutionExplorer items={items} loadError={error} />
-      <div className="mx-auto mt-8 max-w-[1500px] px-4">
-        <AdSlot kind="banner" />
+      {/* On wide screens the map takes the middle three fifths and an ad column stands on each side. */}
+      <div className="map-stage">
+        <div className="mx-auto grid max-w-[1800px] gap-6 px-4 xl:grid-cols-[minmax(0,1fr)_minmax(0,3fr)_minmax(0,1fr)]">
+          <div className="hidden xl:block">
+            <div className="sticky top-24 pt-16"><AdSlot kind="rail" /></div>
+          </div>
+          <InstitutionExplorer items={items} loadError={error} />
+          <div className="hidden xl:block">
+            <div className="sticky top-24 pt-16"><AdSlot kind="rail" /></div>
+          </div>
+        </div>
+        <div className="mx-auto max-w-[1500px] px-4 pb-8 pt-6 xl:hidden">
+          <AdSlot kind="banner" />
+        </div>
       </div>
 
       <section aria-labelledby="why-title" className="mx-auto mt-24 max-w-[1500px] px-4">
