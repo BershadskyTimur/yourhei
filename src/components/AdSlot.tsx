@@ -10,6 +10,8 @@ const SIZES = {
   banner: { box: 'min-h-[100px] w-full', label: '970 × 100' },
   rectangle: { box: 'min-h-[250px] w-full max-w-[300px]', label: '300 × 250' },
   skyscraper: { box: 'min-h-[600px] w-[160px]', label: '160 × 600' },
+  /** A tall column that fills the side of a wide section (up to 300 px). */
+  rail: { box: 'min-h-[600px] w-full max-w-[300px]', label: '300 × 600' },
 } as const;
 
 export type AdKind = keyof typeof SIZES;
