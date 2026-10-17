@@ -12,6 +12,8 @@ test.describe('home page in every language', () => {
       await expect(page.locator('html')).toHaveAttribute('lang', locale);
       await expect(page.getByRole('heading', { level: 1 })).toBeVisible();
       await expect(page.locator('#legend-label + ul > li')).toHaveCount(6);
+      // the map loads when it comes near the screen
+      await page.locator('#map').scrollIntoViewIfNeeded();
       await expect(page.locator('[data-map-ready="true"]')).toBeVisible();
       await expect(page.locator('footer a')).toHaveCount(4);
 
@@ -51,11 +53,13 @@ test('theme toggle switches light and dark', async ({ page }) => {
   await page.getByRole('button', { name: /Switch light/ }).click();
   await expect(html).toHaveAttribute('data-theme', 'dark');
   expect(await bg()).toBe('rgb(10, 26, 22)');
+  await page.locator('#map').scrollIntoViewIfNeeded();
   await expect(page.locator('[data-map-ready="true"]')).toBeVisible();
 });
 
 test('type filter hides and shows institutions', async ({ page }) => {
   await page.goto('/en');
+  await page.locator('#map').scrollIntoViewIfNeeded();
   const status = page.locator('[aria-live="polite"]');
   // The number of institutions depends on what is in the database, so read it instead of assuming it.
   await expect(status).toContainText(/\d+ of \d+ shown/);

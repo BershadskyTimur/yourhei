@@ -36,10 +36,16 @@ describe('compact institutions', () => {
     expect(decodeInstitutions(data)[0].names.en).toBe('Tbilisi State University');
   });
 
-  it('gives every institution its own id and shares the country list', () => {
+  it('gives every institution its own id', () => {
     const data = encodeInstitutions([inst(), inst({ slug: 'b' }), inst({ slug: 'c', country: 'AM' })], 'en');
-    expect(data.countries).toEqual(['GE', 'AM']);
     expect(decodeInstitutions(data).map((i) => i.id)).toEqual(['0', '1', '2']);
+    expect(decodeInstitutions(data).map((i) => i.country)).toEqual(['GE', 'GE', 'AM']);
+  });
+
+  it('still reads the older format that sent an index into a country list', () => {
+    const data = encodeInstitutions([inst(), inst({ country: 'AM' })], 'en');
+    const old = { ...data, v: 1 as const, countries: ['GE', 'AM'], rows: data.rows.map((r, n) => [r[0], n, ...r.slice(2)] as typeof r) };
+    expect(decodeInstitutions(old).map((i) => i.country)).toEqual(['GE', 'AM']);
   });
 
   it('is much smaller than the full objects', () => {

@@ -4,10 +4,13 @@ import { INSTITUTION_TYPES, type InstitutionType, type MapInstitution } from './
  * A small wire format for the list of institutions on the home page. The full list (about 12,500 institutions) used to be
  * embedded in the page itself (1 MB). Now the page is tiny and the map loads this compact list from /api/institutions:
  * each row is an array instead of an object and the long ids are dropped, which makes it about three times smaller.
+ * The database builds the same format itself (function map_points, migration 0024), so the server does not have to
+ * read every name in every language.
  */
 export type CompactRow = [
   type: number,
-  country: number,
+  /** ISO country code (version 1 sent an index into `countries` instead) */
+  country: string | number,
   lat: number,
   lng: number,
   slug: string,
@@ -18,32 +21,25 @@ export type CompactRow = [
 ];
 
 export interface CompactInstitutions {
-  v: 1;
+  v: 1 | 2;
   locale: string;
-  countries: string[];
+  /** version 1 only */
+  countries?: string[];
   rows: CompactRow[];
 }
 
 const round = (n: number) => Math.round(n * 1e5) / 1e5;
 
 export function encodeInstitutions(items: readonly MapInstitution[], locale: string): CompactInstitutions {
-  const countries: string[] = [];
-  const countryIndex = new Map<string, number>();
   const rows = items.map((i): CompactRow => {
-    let c = countryIndex.get(i.country);
-    if (c === undefined) {
-      c = countries.length;
-      countries.push(i.country);
-      countryIndex.set(i.country, c);
-    }
     const triple = (t: Partial<Record<string, string>>): [string, string, string] => [
       t.original ?? '',
       t.en ?? '',
       locale === 'en' ? '' : (t[locale] ?? ''),
     ];
-    return [INSTITUTION_TYPES.indexOf(i.type), c, round(i.lat), round(i.lng), i.slug, triple(i.names), triple(i.city)];
+    return [INSTITUTION_TYPES.indexOf(i.type), i.country, round(i.lat), round(i.lng), i.slug, triple(i.names), triple(i.city)];
   });
-  return { v: 1, locale, countries, rows };
+  return { v: 2, locale, rows };
 }
 
 export function decodeInstitutions(data: CompactInstitutions): MapInstitution[] {
@@ -56,7 +52,7 @@ export function decodeInstitutions(data: CompactInstitutions): MapInstitution[] 
   };
   return data.rows.flatMap((r, idx) => {
     const type: InstitutionType | undefined = INSTITUTION_TYPES[r[0]];
-    const country = data.countries[r[1]];
+    const country = typeof r[1] === 'number' ? data.countries?.[r[1]] : r[1];
     if (!type || !country) return [];
     return [
       {

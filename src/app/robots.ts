@@ -1,5 +1,6 @@
 import type { MetadataRoute } from 'next';
-import { SITEMAP_CHUNK, sitemapInstitutions } from '@/lib/institutions/sitemap';
+import { SITEMAP_CHUNK } from '@/lib/institutions/sitemap';
+import { getSitemapPoints } from '@/lib/institutions/summaries';
 import { siteUrl } from '@/lib/site-url';
 
 export const revalidate = 86400;
@@ -29,7 +30,7 @@ const GREEDY_BOTS = [
 
 export default async function robots(): Promise<MetadataRoute.Robots> {
   const base = siteUrl();
-  const items = await sitemapInstitutions();
+  const items = await getSitemapPoints();
   const files = Math.max(1, Math.ceil(items.length / SITEMAP_CHUNK));
   return {
     rules: [

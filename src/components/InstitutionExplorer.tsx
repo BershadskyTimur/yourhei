@@ -1,5 +1,6 @@
 'use client';
 
+import dynamic from 'next/dynamic';
 import { useLocale, useTranslations } from 'next-intl';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { Link } from '@/i18n/navigation';
@@ -11,8 +12,12 @@ import {
   type InstitutionType,
   type MapInstitution,
 } from '@/lib/institutions/types';
-import { InstitutionMap, type FocusRequest } from './InstitutionMap';
+import type { FocusRequest } from './InstitutionMap';
 import { TypeDot } from './TypeDot';
+
+// The map library is about 280 KB: it is downloaded only when the map comes near the screen (or a visitor starts using
+// the search), not for everybody who opens the home page and leaves.
+const InstitutionMap = dynamic(() => import('./InstitutionMap').then((m) => m.InstitutionMap), { ssr: false });
 
 interface Props {
   /** Number of institutions of each type (counted on the server, so the filter buttons do not jump when the list arrives). */
@@ -37,10 +42,34 @@ export function InstitutionExplorer({ typeCounts, loadError }: Props) {
   const [unsupported, setUnsupported] = useState(false);
   const focusCounter = useRef(0);
 
+  // The map and its list load when the section comes near the screen, or when the visitor starts to search.
+  const sectionRef = useRef<HTMLElement>(null);
+  const [armed, setArmed] = useState(false);
+  useEffect(() => {
+    const el = sectionRef.current;
+    if (!el || armed) return;
+    if (typeof IntersectionObserver === 'undefined') {
+      const timer = setTimeout(() => setArmed(true), 0);
+      return () => clearTimeout(timer);
+    }
+    const io = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((e) => e.isIntersecting)) {
+          setArmed(true);
+          io.disconnect();
+        }
+      },
+      { rootMargin: '700px' },
+    );
+    io.observe(el);
+    return () => io.disconnect();
+  }, [armed]);
+
   // The list is not part of the page (it would weigh about 1 MB): it is loaded from a cached, compact answer.
   const [items, setItems] = useState<MapInstitution[] | null>(null);
   const [fetchFailed, setFetchFailed] = useState(false);
   useEffect(() => {
+    if (!armed) return;
     const controller = new AbortController();
     (async () => {
       try {
@@ -52,7 +81,7 @@ export function InstitutionExplorer({ typeCounts, loadError }: Props) {
       }
     })();
     return () => controller.abort();
-  }, [locale]);
+  }, [locale, armed]);
   const list = useMemo(() => items ?? [], [items]);
   const counts = typeCounts;
   const filtered = useMemo(() => filterInstitutions(list, { types, query }), [list, types, query]);
@@ -91,6 +120,7 @@ export function InstitutionExplorer({ typeCounts, loadError }: Props) {
   return (
     <section
       id="map"
+      ref={sectionRef}
       aria-labelledby="map-title"
       className="min-w-0"
       onKeyDown={(e) => {
@@ -125,7 +155,10 @@ export function InstitutionExplorer({ typeCounts, loadError }: Props) {
                 setQuery(e.target.value);
                 setShowSuggestions(true);
               }}
-              onFocus={() => setShowSuggestions(true)}
+              onFocus={() => {
+                setShowSuggestions(true);
+                setArmed(true);
+              }}
               className="h-12 w-full rounded-none border-0 border-b border-line-strong bg-transparent px-1 text-lg text-text placeholder:text-muted"
             />
             {showSuggestions && query.trim() !== '' && (
@@ -209,7 +242,7 @@ export function InstitutionExplorer({ typeCounts, loadError }: Props) {
 
       {/* On phones the map fills the rest of the first screen, so its bottom card is never off-screen. */}
       <div className="relative h-[72svh] min-h-[460px] max-h-[780px] w-full border-y border-line bg-surface-strong">
-        {!unsupported && (
+        {armed && !unsupported && (
           <InstitutionMap
             items={filtered}
             selectedId={selected?.id ?? null}
@@ -284,7 +317,7 @@ export function InstitutionExplorer({ typeCounts, loadError }: Props) {
 
       <div className="mx-auto max-w-[1500px] px-4 py-4 text-sm text-muted">
         <p aria-live="polite">
-          {items ? t('shown', { shown: filtered.length, total: items.length }) : fetchFailed ? '' : tCatalog('loading')}
+          {items ? t('shown', { shown: filtered.length, total: items.length }) : armed && !fetchFailed ? tCatalog('loading') : ''}
         </p>
       </div>
     </section>

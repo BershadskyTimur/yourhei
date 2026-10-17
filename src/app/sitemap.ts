@@ -1,6 +1,7 @@
 import type { MetadataRoute } from 'next';
 import { LOCALE_CODES } from '@/config/locales';
-import { SITEMAP_CHUNK, sitemapInstitutions } from '@/lib/institutions/sitemap';
+import { SITEMAP_CHUNK } from '@/lib/institutions/sitemap';
+import { getSitemapPoints } from '@/lib/institutions/summaries';
 import { siteUrl } from '@/lib/site-url';
 
 export const revalidate = 86400;
@@ -11,7 +12,7 @@ export const revalidate = 86400;
 const STATIC_PAGES = ['', '/catalog', '/scholarships', '/about', '/contact', '/privacy', '/terms'];
 
 export async function generateSitemaps() {
-  const items = await sitemapInstitutions();
+  const items = await getSitemapPoints();
   return Array.from({ length: Math.max(1, Math.ceil(items.length / SITEMAP_CHUNK)) }, (_, id) => ({ id }));
 }
 
@@ -20,7 +21,7 @@ export default async function sitemap(props: { id: Promise<string> }): Promise<M
   const id = Number(await props.id);
   const base = siteUrl();
   const alternates = (path: string) => ({ languages: Object.fromEntries(LOCALE_CODES.map((l) => [l, `${base}/${l}${path}`])) });
-  const items = await sitemapInstitutions();
+  const items = await getSitemapPoints();
   const slice = items.slice(id * SITEMAP_CHUNK, (id + 1) * SITEMAP_CHUNK);
   const paths = [...(id === 0 ? STATIC_PAGES : []), ...slice.map((i) => `/institutions/${i.country.toLowerCase()}/${i.slug}`)];
   return paths.flatMap((path) => LOCALE_CODES.map((l) => ({ url: `${base}/${l}${path}`, alternates: alternates(path) })));

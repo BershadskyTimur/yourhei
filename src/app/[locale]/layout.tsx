@@ -29,10 +29,10 @@ const plexSans = IBM_Plex_Sans({
   variable: '--font-plex',
   display: 'swap',
 });
-// Headings: a serif with an optical-size axis (Latin and Cyrillic; other scripts use the sans stack).
+// Headings: a serif (Latin and Cyrillic; other scripts use the sans stack). Only the weight axis is loaded: the optical-size
+// axis made each file about twice as large (200 KB for a Russian page), which is too much for a heading font.
 const sourceSerif = Source_Serif_4({
   subsets: ['latin', 'latin-ext', 'cyrillic', 'cyrillic-ext'],
-  axes: ['opsz'],
   variable: '--font-source-serif',
   display: 'swap',
 });

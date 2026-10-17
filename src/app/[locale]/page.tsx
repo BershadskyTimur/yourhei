@@ -1,12 +1,12 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { preconnect } from 'react-dom';
 import { AdSlot } from '@/components/AdSlot';
 import { HeroSample } from '@/components/HeroSample';
 import { InstitutionExplorer } from '@/components/InstitutionExplorer';
 import { GlobeIcon, MapIcon, ShieldIcon, SparkIcon } from '@/components/icons';
 import { LOCALES } from '@/config/locales';
 import { Link } from '@/i18n/navigation';
-import { countByType } from '@/lib/institutions/filter';
-import { getMapInstitutions } from '@/lib/institutions/get';
+import { getMapCounts } from '@/lib/institutions/summaries';
 
 // The home page is rebuilt at most twice a day (the counts on it change slowly); every rebuild reads the database.
 export const revalidate = 43200;
@@ -18,17 +18,17 @@ const sectionTitle = 'text-3xl font-medium tracking-tight text-text sm:text-4xl'
 export default async function HomePage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
+  // The map will ask this server for its style and tiles: open the connection while the page is still loading.
+  preconnect('https://tiles.openfreemap.org', { crossOrigin: 'anonymous' });
   const t = await getTranslations('Home');
-  const { items: all, error } = await getMapInstitutions();
-  // Only counts go into the page; the map loads the list itself from /api/institutions (cached, compact),
-  // so the home page stays small instead of carrying about 1 MB of institutions.
-  const items = all;
+  // Only numbers go into the page (read by a small database function); the map loads the list itself from
+  // /api/institutions (cached, compact), so the home page stays small.
+  const counts = await getMapCounts();
+  const error = counts.error;
 
   // Institutions per country, biggest first, for the "where you can study" chips.
-  const perCountry = new Map<string, number>();
-  for (const i of items) perCountry.set(i.country, (perCountry.get(i.country) ?? 0) + 1);
   const regionNames = new Intl.DisplayNames([locale], { type: 'region' });
-  const countries = [...perCountry.entries()].sort((a, b) => b[1] - a[1]);
+  const countries = Object.entries(counts.countries).sort((a, b) => b[1] - a[1]);
 
   const steps = [
     { title: t('how.step1Title'), text: t('how.step1Text') },
@@ -52,7 +52,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
               {t('map.title')}
             </h1>
             <p className="mt-8 max-w-xl text-lg leading-relaxed text-muted sm:text-xl">
-              {t('hero.subtitle', { count: items.length })}
+              {t('hero.subtitle', { count: counts.total })}
             </p>
             <div className="mt-10 flex flex-wrap items-center gap-x-8 gap-y-4">
               <Link href="/register" className={primary}>{t('how.cta')}</Link>
@@ -62,8 +62,8 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
             </div>
             <ul className="mt-12 flex max-w-xl flex-wrap gap-x-10 gap-y-3 border-t border-line pt-5 text-base text-muted">
               {[
-                t('stats.institutions', { count: items.length }),
-                t('stats.countries', { count: perCountry.size }),
+                t('stats.institutions', { count: counts.total }),
+                t('stats.countries', { count: countries.length }),
                 t('stats.languages', { count: LOCALES.length }),
                 t('stats.free'),
               ].map((s) => (
@@ -83,7 +83,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
           <div className="hidden xl:block">
             <div className="sticky top-24 pt-16"><AdSlot kind="rail" /></div>
           </div>
-          <InstitutionExplorer typeCounts={countByType(items)} loadError={error} />
+          <InstitutionExplorer typeCounts={counts.types} loadError={error} />
           <div className="hidden xl:block">
             <div className="sticky top-24 pt-16"><AdSlot kind="rail" /></div>
           </div>
