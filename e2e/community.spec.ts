@@ -105,7 +105,9 @@ test.describe('anonymous usage events', () => {
   test('a search is counted only after the visitor accepted analytics, with cleaned values', async ({ page }) => {
     const sent: Record<string, unknown>[] = [];
     await page.route('**/api/track', async (route) => {
-      sent.push(route.request().postDataJSON());
+      // events are sent in batches: { events: [...] }
+      const body = route.request().postDataJSON() as { events?: Record<string, unknown>[] } & Record<string, unknown>;
+      sent.push(...(body.events ?? [body]));
       await route.fulfill({ status: 204 });
     });
     await page.route(`${supabaseUrl()}/rest/v1/rpc/catalog_programs**`, (route) => route.fulfill({ status: 200, contentType: 'application/json', body: '[]' }));

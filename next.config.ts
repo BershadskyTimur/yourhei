@@ -43,7 +43,11 @@ const nextConfig: NextConfig = {
   // Do not tell everybody which framework the site runs on.
   poweredByHeader: false,
   async headers() {
-    return [{ source: '/:path*', headers: securityHeaders }];
+    return [
+      { source: '/:path*', headers: securityHeaders },
+      // The map's worker files (half a megabyte) do not change between releases: let browsers and the CDN keep them.
+      { source: '/maplibre/:path*', headers: [{ key: 'Cache-Control', value: 'public, max-age=604800, stale-while-revalidate=2592000' }] },
+    ];
   },
   turbopack: {
     resolveAlias: { 'next-intl/config': REQUEST_CONFIG },

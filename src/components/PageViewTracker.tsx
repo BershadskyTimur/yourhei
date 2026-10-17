@@ -2,6 +2,7 @@
 
 import { usePathname } from 'next/navigation';
 import { useEffect } from 'react';
+import { queueEvent } from '@/lib/analytics/queue';
 
 const CONSENT_KEY = 'yourhei-consent';
 
@@ -45,8 +46,7 @@ export function PageViewTracker() {
     } catch {
       referrer = null;
     }
-    const body = JSON.stringify({ path: pathname, locale: document.documentElement.lang, device: deviceType(), referrer, session: sessionId() });
-    fetch('/api/track', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body, keepalive: true }).catch(() => {});
+    queueEvent({ path: pathname, locale: document.documentElement.lang, device: deviceType(), referrer, session: sessionId() });
   }, [pathname]);
 
   return null;

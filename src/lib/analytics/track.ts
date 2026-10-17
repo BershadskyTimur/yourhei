@@ -1,6 +1,7 @@
 'use client';
 
 import type { EventMeta, EventName } from './events';
+import { queueEvent } from './queue';
 
 const CONSENT_KEY = 'yourhei-consent';
 
@@ -26,9 +27,8 @@ export function analyticsAllowed(): boolean {
   }
 }
 
-/** Sends one anonymous usage event (see src/lib/analytics/events.ts). Never throws and never waits for the answer. */
+/** Queues one anonymous usage event (see src/lib/analytics/events.ts); events are sent in batches. Never throws. */
 export function trackEvent(event: EventName, meta: EventMeta) {
   if (typeof window === 'undefined' || !analyticsAllowed()) return;
-  const body = JSON.stringify({ event, meta, path: window.location.pathname, locale: document.documentElement.lang, session: sessionId() });
-  fetch('/api/track', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body, keepalive: true }).catch(() => {});
+  queueEvent({ event, meta, path: window.location.pathname, locale: document.documentElement.lang, session: sessionId() });
 }
