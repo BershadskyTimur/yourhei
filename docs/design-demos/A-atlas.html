@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>YourHEI: вариант А, Атлас</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Geologica:wght@400;600;800&family=Golos+Text:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+body{margin:0;font-family:'Golos Text',system-ui,sans-serif;color:#10243A;background:#F3F7F6}
+a{color:#10243A;text-decoration:none}
+a:hover{color:#C2410C}
+.pin{transition:transform .2s ease}
+.pin:hover{transform:scale(1.25)}
+@keyframes drift{0%{transform:rotate(-1.2deg)}50%{transform:rotate(1.2deg)}100%{transform:rotate(-1.2deg)}}
+.card-float{animation:drift 9s ease-in-out infinite;transform-origin:50% 100%}
+@media (prefers-reduced-motion: reduce){.card-float{animation:none}}
+</style>
+
+</head>
+<body>
+
+
+<div style="min-height:2480px;background:#F3F7F6;color:#10243A">
+
+<!-- header -->
+<header style="max-width:1240px;margin:0 auto;padding:28px 40px 0;display:flex;flex-wrap:wrap;align-items:center;gap:20px 36px">
+<a href="#" style="display:flex;align-items:center;gap:12px;font-family:'Geologica',sans-serif;font-weight:800;font-size:26px;letter-spacing:-0.02em">
+<svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><circle cx="17" cy="17" r="15" fill="#10243A"/><ellipse cx="17" cy="17" rx="6.5" ry="15" fill="none" stroke="#F3F7F6" stroke-width="1.6"/><path d="M2 17h30M5 9.5h24M5 24.5h24" stroke="#F3F7F6" stroke-width="1.6" fill="none"/><circle cx="23" cy="11" r="3.4" fill="#E0A100"/></svg>
+<span>YourHEI</span>
+</a>
+<nav aria-label="Основное меню" style="display:flex;gap:28px;font-weight:500;font-size:16px;flex-grow:1">
+<a href="#">Каталог</a>
+<a href="#">Стипендии</a>
+<a href="#">О проекте</a>
+</nav>
+<div style="display:flex;align-items:center;gap:14px">
+<button type="button" style="height:44px;padding:0 16px;border-radius:999px;border:1.5px solid #10243A;background:transparent;font:500 15px 'Golos Text',sans-serif;color:#10243A;cursor:pointer">Русский</button>
+<a href="#" style="height:44px;padding:0 24px;border-radius:999px;background:#10243A;color:#F3F7F6;display:inline-flex;align-items:center;font-weight:600;font-size:15px">Войти</a>
+</div>
+</header>
+
+<!-- hero -->
+<section style="max-width:1240px;margin:0 auto;padding:56px 40px 24px;display:flex;flex-wrap:wrap;align-items:center;gap:40px 56px">
+<div style="flex:1 1 460px;min-width:0">
+<h1 style="margin:0;font-family:'Geologica',sans-serif;font-weight:800;font-size:68px;line-height:1.02;letter-spacing:-0.035em">Где учиться? Всё мировое образование на одной карте</h1>
+<p style="margin:26px 0 0;font-size:20px;line-height:1.5;max-width:520px;color:#2F4558">Университеты, колледжи и школы мира. Ответьте на несколько вопросов, и подборка не просто покажет варианты, а объяснит, почему они подходят именно вам.</p>
+<div role="search" style="margin-top:34px;display:flex;flex-wrap:wrap;gap:10px;max-width:560px;padding:8px;border-radius:999px;background:#FFFFFF;border:1.5px solid #10243A">
+<label for="q" style="position:absolute;left:-9999px">Что вы хотите изучать</label>
+<input id="q" type="text" placeholder="Что хотите изучать? Например, дизайн" style="flex:1 1 220px;min-width:0;height:48px;border:0;background:transparent;padding:0 20px;font:400 17px 'Golos Text',sans-serif;color:#10243A;outline-offset:2px">
+<button type="button" style="height:48px;padding:0 28px;border:0;border-radius:999px;background:#C2410C;color:#FFFFFF;font:600 16px 'Golos Text',sans-serif;cursor:pointer">Найти программу</button>
+</div>
+<div style="margin-top:22px;display:flex;flex-wrap:wrap;gap:12px;align-items:center;font-size:15px;color:#2F4558">
+<a href="#" style="font-weight:600;border-bottom:2px solid #10243A">Пройти опрос и получить подборку</a>
+<span>на 16 языках</span>
+</div>
+</div>
+
+<!-- globe -->
+<div style="flex:1 1 440px;min-width:0;position:relative;display:flex;justify-content:center">
+<svg viewBox="0 0 560 560" role="img" aria-label="Схема мира с отмеченными заведениями" style="width:100%;max-width:560px;height:auto;display:block">
+<circle cx="280" cy="280" r="252" fill="#DCE8E6" stroke="#10243A" stroke-width="2"/>
+<g fill="none" stroke="#10243A" stroke-opacity="0.22" stroke-width="1.2">
+<ellipse cx="280" cy="280" rx="62" ry="252"/>
+<ellipse cx="280" cy="280" rx="124" ry="252"/>
+<ellipse cx="280" cy="280" rx="188" ry="252"/>
+<path d="M28 280h504"/>
+<ellipse cx="280" cy="170" rx="226" ry="22"/>
+<ellipse cx="280" cy="390" rx="226" ry="22"/>
+<ellipse cx="280" cy="85" rx="148" ry="14"/>
+<ellipse cx="280" cy="475" rx="148" ry="14"/>
+</g>
+<g font-family="Golos Text, sans-serif" font-size="13" font-weight="600" fill="#10243A">
+<g class="pin"><circle cx="205" cy="146" r="9" fill="#E0A100" stroke="#FFFFFF" stroke-width="3"/><rect x="162" y="112" width="86" height="22" rx="11" fill="#FFFFFF"/><text x="205" y="127" text-anchor="middle">Лондон</text></g>
+<g class="pin"><circle cx="236" cy="128" r="9" fill="#E0A100" stroke="#FFFFFF" stroke-width="3"/></g>
+<g class="pin"><circle cx="270" cy="143" r="9" fill="#2F6FD0" stroke="#FFFFFF" stroke-width="3"/><rect x="248" y="162" width="78" height="22" rx="11" fill="#FFFFFF"/><text x="287" y="177" text-anchor="middle">Берлин</text></g>
+<g class="pin"><circle cx="322" cy="96" r="9" fill="#E0A100" stroke="#FFFFFF" stroke-width="3"/><rect x="334" y="82" width="92" height="22" rx="11" fill="#FFFFFF"/><text x="380" y="97" text-anchor="middle">Хельсинки</text></g>
+<g class="pin"><circle cx="303" cy="214" r="9" fill="#C0392B" stroke="#FFFFFF" stroke-width="3"/><rect x="252" y="228" width="86" height="22" rx="11" fill="#FFFFFF"/><text x="295" y="243" text-anchor="middle">Стамбул</text></g>
+<g class="pin"><circle cx="357" cy="226" r="9" fill="#E0A100" stroke="#FFFFFF" stroke-width="3"/><rect x="358" y="198" width="84" height="22" rx="11" fill="#FFFFFF"/><text x="400" y="213" text-anchor="middle">Тбилиси</text></g>
+<g class="pin"><circle cx="350" cy="248" r="9" fill="#2E8B57" stroke="#FFFFFF" stroke-width="3"/><rect x="298" y="262" width="80" height="22" rx="11" fill="#FFFFFF"/><text x="338" y="277" text-anchor="middle">Ереван</text></g>
+<g class="pin"><circle cx="388" cy="238" r="9" fill="#7B4FC0" stroke="#FFFFFF" stroke-width="3"/><rect x="376" y="252" width="64" height="22" rx="11" fill="#FFFFFF"/><text x="408" y="267" text-anchor="middle">Баку</text></g>
+<g class="pin"><circle cx="436" cy="162" r="9" fill="#E0A100" stroke="#FFFFFF" stroke-width="3"/><rect x="408" y="128" width="84" height="22" rx="11" fill="#FFFFFF"/><text x="450" y="143" text-anchor="middle">Астана</text></g>
+<g class="pin"><circle cx="446" cy="218" r="9" fill="#159A9C" stroke="#FFFFFF" stroke-width="3"/><rect x="438" y="232" width="90" height="22" rx="11" fill="#FFFFFF"/><text x="483" y="247" text-anchor="middle">Ташкент</text></g>
+<g class="pin"><circle cx="160" cy="330" r="9" fill="#2F6FD0" stroke="#FFFFFF" stroke-width="3"/></g>
+<g class="pin"><circle cx="478" cy="330" r="9" fill="#2E8B57" stroke="#FFFFFF" stroke-width="3"/></g>
+</g>
+</svg>
+
+<div class="card-float" style="position:absolute;left:-4px;bottom:20px;width:300px;max-width:78%;padding:18px 20px;border-radius:18px;background:#FFFFFF;border:1.5px solid #10243A;box-shadow:6px 6px 0 #10243A">
+<div style="font-family:'Geologica',sans-serif;font-weight:600;font-size:17px;line-height:1.25">Industrial Engineering &amp; Management</div>
+<div style="margin-top:4px;font-size:14px;color:#2F4558">University of Twente, Нидерланды</div>
+<ul style="list-style:none;margin:14px 0 0;padding:0;display:flex;flex-direction:column;gap:7px;font-size:14px">
+<li style="display:flex;gap:9px;align-items:center"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.8" fill="none" stroke="#2E8B57" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Учёба на английском</li>
+<li style="display:flex;gap:9px;align-items:center"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.8" fill="none" stroke="#2E8B57" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Цена укладывается в бюджет</li>
+<li style="display:flex;gap:9px;align-items:center"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 3v6M8 12.2v.3" fill="none" stroke="#C2410C" stroke-width="2.2" stroke-linecap="round"/></svg>Срок подачи 1 мая 2027</li>
+</ul>
+</div>
+</div>
+</section>
+
+<!-- legend of institution types -->
+<section aria-label="Виды заведений" style="max-width:1240px;margin:0 auto;padding:8px 40px 0;display:flex;flex-wrap:wrap;gap:10px 14px">
+<span style="display:inline-flex;align-items:center;gap:8px;height:40px;padding:0 16px;border-radius:999px;background:#FFFFFF;border:1.5px solid #10243A;font-weight:500;font-size:15px"><i style="width:12px;height:12px;border-radius:50%;background:#E0A100;display:inline-block"></i>Университеты</span>
+<span style="display:inline-flex;align-items:center;gap:8px;height:40px;padding:0 16px;border-radius:999px;background:#FFFFFF;border:1.5px solid #10243A;font-weight:500;font-size:15px"><i style="width:12px;height:12px;border-radius:50%;background:#C0392B;display:inline-block"></i>Колледжи</span>
+<span style="display:inline-flex;align-items:center;gap:8px;height:40px;padding:0 16px;border-radius:999px;background:#FFFFFF;border:1.5px solid #10243A;font-weight:500;font-size:15px"><i style="width:12px;height:12px;border-radius:50%;background:#2F6FD0;display:inline-block"></i>Школы</span>
+<span style="display:inline-flex;align-items:center;gap:8px;height:40px;padding:0 16px;border-radius:999px;background:#FFFFFF;border:1.5px solid #10243A;font-weight:500;font-size:15px"><i style="width:12px;height:12px;border-radius:50%;background:#2E8B57;display:inline-block"></i>Языковые школы</span>
+<span style="display:inline-flex;align-items:center;gap:8px;height:40px;padding:0 16px;border-radius:999px;background:#FFFFFF;border:1.5px solid #10243A;font-weight:500;font-size:15px"><i style="width:12px;height:12px;border-radius:50%;background:#7B4FC0;display:inline-block"></i>Подготовительные</span>
+<span style="display:inline-flex;align-items:center;gap:8px;height:40px;padding:0 16px;border-radius:999px;background:#FFFFFF;border:1.5px solid #10243A;font-weight:500;font-size:15px"><i style="width:12px;height:12px;border-radius:50%;background:#159A9C;display:inline-block"></i>Профессиональные</span>
+</section>
+
+<!-- how it works -->
+<section style="max-width:1240px;margin:0 auto;padding:110px 40px 0">
+<h2 style="margin:0;font-family:'Geologica',sans-serif;font-weight:800;font-size:44px;letter-spacing:-0.03em;max-width:760px;line-height:1.08">От вопроса «куда?» до заявки за один вечер</h2>
+<div style="margin-top:44px;display:flex;flex-wrap:wrap;gap:20px">
+<div style="flex:1 1 300px;min-width:0;padding:28px;border-radius:24px;background:#FFFFFF;border:1.5px solid #10243A">
+<div style="font-family:'Geologica',sans-serif;font-weight:800;font-size:64px;line-height:1;color:#E0A100">1</div>
+<h3 style="margin:18px 0 8px;font-family:'Geologica',sans-serif;font-weight:600;font-size:22px">Расскажите о себе</h3>
+<p style="margin:0;font-size:16px;line-height:1.55;color:#2F4558">Страна, язык обучения, бюджет, что хотите изучать. Около 14 коротких вопросов, ответы можно менять.</p>
+</div>
+<div style="flex:1 1 300px;min-width:0;padding:28px;border-radius:24px;background:#10243A;color:#F3F7F6">
+<div style="font-family:'Geologica',sans-serif;font-weight:800;font-size:64px;line-height:1;color:#E0A100">2</div>
+<h3 style="margin:18px 0 8px;font-family:'Geologica',sans-serif;font-weight:600;font-size:22px">Получите подборку с объяснением</h3>
+<p style="margin:0;font-size:16px;line-height:1.55;color:#C9D6DD">К каждой программе: что подошло, что нет и на сколько вы близки к бюджету или сроку.</p>
+</div>
+<div style="flex:1 1 300px;min-width:0;padding:28px;border-radius:24px;background:#FFFFFF;border:1.5px solid #10243A">
+<div style="font-family:'Geologica',sans-serif;font-weight:800;font-size:64px;line-height:1;color:#E0A100">3</div>
+<h3 style="margin:18px 0 8px;font-family:'Geologica',sans-serif;font-weight:600;font-size:22px">Перейдите на сайт вуза</h3>
+<p style="margin:0;font-size:16px;line-height:1.55;color:#2F4558">Каждая программа ссылается на официальную страницу заведения. Там вы подаёте заявку.</p>
+</div>
+</div>
+</section>
+
+<!-- catalog by country -->
+<section style="max-width:1240px;margin:0 auto;padding:110px 40px 0">
+<div style="display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:16px">
+<h2 style="margin:0;font-family:'Geologica',sans-serif;font-weight:800;font-size:44px;letter-spacing:-0.03em;line-height:1.08">Более 100 000 программ</h2>
+<a href="#" style="font-weight:600;font-size:16px;border-bottom:2px solid #10243A">Открыть весь каталог</a>
+</div>
+<div style="margin-top:36px;display:flex;flex-wrap:wrap;gap:14px">
+<a href="#" style="flex:1 1 220px;min-width:0;display:block;padding:22px;border-radius:20px;background:#DCE8E6;border:1.5px solid #10243A"><div style="font-family:'Geologica',sans-serif;font-weight:600;font-size:22px">Германия</div><div style="margin-top:6px;font-size:14px;color:#2F4558">Многие вузы без платы за обучение</div></a>
+<a href="#" style="flex:1 1 220px;min-width:0;display:block;padding:22px;border-radius:20px;background:#DCE8E6;border:1.5px solid #10243A"><div style="font-family:'Geologica',sans-serif;font-weight:600;font-size:22px">Нидерланды</div><div style="margin-top:6px;font-size:14px;color:#2F4558">Программы на английском</div></a>
+<a href="#" style="flex:1 1 220px;min-width:0;display:block;padding:22px;border-radius:20px;background:#DCE8E6;border:1.5px solid #10243A"><div style="font-family:'Geologica',sans-serif;font-weight:600;font-size:22px">Великобритания</div><div style="margin-top:6px;font-size:14px;color:#2F4558">Бакалавриат со ссылкой на курс</div></a>
+<a href="#" style="flex:1 1 220px;min-width:0;display:block;padding:22px;border-radius:20px;background:#DCE8E6;border:1.5px solid #10243A"><div style="font-family:'Geologica',sans-serif;font-weight:600;font-size:22px">Финляндия</div><div style="margin-top:6px;font-size:14px;color:#2F4558">Точные сроки подачи</div></a>
+<a href="#" style="flex:1 1 220px;min-width:0;display:block;padding:22px;border-radius:20px;background:#DCE8E6;border:1.5px solid #10243A"><div style="font-family:'Geologica',sans-serif;font-weight:600;font-size:22px">США и Австралия</div><div style="margin-top:6px;font-size:14px;color:#2F4558">Десятки тысяч программ</div></a>
+<a href="#" style="flex:1 1 220px;min-width:0;display:block;padding:22px;border-radius:20px;background:#DCE8E6;border:1.5px solid #10243A"><div style="font-family:'Geologica',sans-serif;font-weight:600;font-size:22px">Чехия</div><div style="margin-top:6px;font-size:14px;color:#2F4558">Рядом и доступно</div></a>
+</div>
+</section>
+
+<!-- scholarships band -->
+<section style="max-width:1240px;margin:0 auto;padding:110px 40px 0">
+<div style="padding:44px;border-radius:32px;background:#C2410C;color:#FFFFFF;display:flex;flex-wrap:wrap;align-items:center;gap:24px 48px">
+<div style="flex:1 1 420px;min-width:0">
+<h2 style="margin:0;font-family:'Geologica',sans-serif;font-weight:800;font-size:40px;letter-spacing:-0.03em;line-height:1.1">Стипендии и гранты для вашей страны</h2>
+<p style="margin:14px 0 0;font-size:18px;line-height:1.5;max-width:560px">Национальные программы и стипендии конкретных вузов, с условиями и ссылками на официальные страницы.</p>
+</div>
+<a href="#" style="height:56px;padding:0 32px;border-radius:999px;background:#FFFFFF;color:#10243A;display:inline-flex;align-items:center;font-weight:600;font-size:17px">Смотреть стипендии</a>
+</div>
+</section>
+
+<!-- footer -->
+<footer style="margin-top:110px;background:#10243A;color:#C9D6DD">
+<div style="max-width:1240px;margin:0 auto;padding:44px 40px;display:flex;flex-wrap:wrap;gap:24px 56px;font-size:15px;line-height:1.6">
+<div style="flex:1 1 280px;min-width:0">
+<div style="font-family:'Geologica',sans-serif;font-weight:800;font-size:22px;color:#F3F7F6">YourHEI</div>
+<p style="margin:8px 0 0">Найдите, где учиться: университеты, колледжи и школы на одной карте.</p>
+</div>
+<nav aria-label="О сайте" style="display:flex;flex-direction:column;gap:6px">
+<a href="#" style="color:#F3F7F6">О проекте</a>
+<a href="#" style="color:#F3F7F6">Контакты и поддержка</a>
+<a href="#" style="color:#F3F7F6">Политика конфиденциальности</a>
+<a href="#" style="color:#F3F7F6">Условия использования</a>
+</nav>
+<p style="flex:1 1 320px;min-width:0;margin:0;font-size:13px">Данные карты © участники OpenStreetMap, OpenFreeMap. Данные о программах: Discover Uni (HESA, CC BY 4.0), Study in NL, DAAD, Opintopolku.</p>
+</div>
+</footer>
+</div>
+
+
+</body>
+</html>

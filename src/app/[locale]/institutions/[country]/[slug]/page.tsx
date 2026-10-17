@@ -12,7 +12,8 @@ import { Link } from '@/i18n/navigation';
 import { getInstitutionDetail } from '@/lib/institutions/detail';
 import { pickLocalized } from '@/lib/institutions/localized';
 
-export const revalidate = 3600;
+// The data of one institution changes rarely; a page is rebuilt at most once a day (bots visit thousands of these pages).
+export const revalidate = 86400;
 
 type Params = Promise<{ locale: string; country: string; slug: string }>;
 
@@ -22,7 +23,11 @@ const CONTACT = process.env.NEXT_PUBLIC_CONTACT_EMAIL;
 export async function generateMetadata({ params }: { params: Params }): Promise<Metadata> {
   const { locale, country, slug } = await params;
   const institution = await getInstitutionDetail(country, slug);
-  return { title: institution ? pickLocalized(institution.names, locale).text : undefined };
+  return {
+    title: institution ? pickLocalized(institution.names, locale).text : undefined,
+    // A page without programmes is a thin page: keep it out of the search results (visitors can still open it).
+    robots: institution && institution.programs.length === 0 ? { index: false, follow: true } : undefined,
+  };
 }
 
 export default async function InstitutionPage({ params }: { params: Params }) {
