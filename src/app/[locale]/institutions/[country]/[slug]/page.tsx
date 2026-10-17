@@ -15,6 +15,12 @@ import { pickLocalized } from '@/lib/institutions/localized';
 // The data of one institution changes rarely; a page is rebuilt at most once a day (bots visit thousands of these pages).
 export const revalidate = 86400;
 
+// No institution page is built in advance (there are thousands), but with this line each page is built on the first visit,
+// kept in the page cache and rebuilt once a day (revalidate above), instead of being built again for every visitor.
+export function generateStaticParams() {
+  return [];
+}
+
 type Params = Promise<{ locale: string; country: string; slug: string }>;
 
 const LEVEL_ORDER = ['school', 'college', 'foundation', 'bachelor', 'master', 'phd', 'language_course'];
