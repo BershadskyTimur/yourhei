@@ -22,7 +22,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
   preconnect('https://tiles.openfreemap.org', { crossOrigin: 'anonymous' });
   const t = await getTranslations('Home');
   // Only numbers go into the page (read by a small database function); the map loads the list itself from
-  // /api/institutions (cached, compact), so the home page stays small.
+  // /api/map-list (cached, compact), so the home page stays small.
   const counts = await getMapCounts();
   const error = counts.error;
 

@@ -2,7 +2,7 @@ import { INSTITUTION_TYPES, type InstitutionType, type MapInstitution } from './
 
 /**
  * A small wire format for the list of institutions on the home page. The full list (about 12,500 institutions) used to be
- * embedded in the page itself (1 MB). Now the page is tiny and the map loads this compact list from /api/institutions:
+ * embedded in the page itself (1 MB). Now the page is tiny and the map loads this compact list from /api/map-list:
  * each row is an array instead of an object and the long ids are dropped, which makes it about three times smaller.
  * The database builds the same format itself (function map_points, migration 0024), so the server does not have to
  * read every name in every language.

@@ -73,7 +73,7 @@ export function InstitutionExplorer({ typeCounts, loadError }: Props) {
     const controller = new AbortController();
     (async () => {
       try {
-        const res = await fetch(`/api/institutions/${locale}`, { signal: controller.signal });
+        const res = await fetch(`/api/map-list/${locale}`, { signal: controller.signal });
         if (!res.ok) throw new Error(String(res.status));
         setItems(decodeInstitutions((await res.json()) as CompactInstitutions));
       } catch {
