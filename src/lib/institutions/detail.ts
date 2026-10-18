@@ -1,4 +1,5 @@
 import { createClient } from '@supabase/supabase-js';
+import { publicReadOptions } from '@/lib/supabase/read-options';
 import { safeHttpUrl } from '../safe-url';
 import { getMapInstitutions } from './get';
 import { arr, num, oneOf, rec, str, texts, toProgramDetail, type ProgramDetail, type Row } from './program-detail';
@@ -51,7 +52,7 @@ export async function getInstitutionDetail(country: string, slug: string): Promi
       : null;
   }
 
-  const supabase = createClient(url, key, { auth: { persistSession: false } });
+  const supabase = createClient(url, key, publicReadOptions);
   const { data, error } = await supabase.from('institutions').select(COLUMNS).eq('country', cc).eq('slug', slug).maybeSingle();
   if (error) {
     console.error('[institution] Supabase error:', error.message);

@@ -1,4 +1,5 @@
 import { createClient } from '@supabase/supabase-js';
+import { publicReadOptions } from '@/lib/supabase/read-options';
 import { encodeInstitutions, type CompactInstitutions } from './compact';
 import { countByType } from './filter';
 import { getMapInstitutions } from './get';
@@ -22,7 +23,7 @@ export interface MapCounts {
 function client() {
   const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
   const key = process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY;
-  return url && key ? createClient(url, key, { auth: { persistSession: false } }) : null;
+  return url && key ? createClient(url, key, publicReadOptions) : null;
 }
 
 async function rpc<T>(name: string, args?: Record<string, unknown>): Promise<T | null> {

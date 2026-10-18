@@ -1,4 +1,5 @@
 import { createClient } from '@supabase/supabase-js';
+import { publicReadOptions } from '@/lib/supabase/read-options';
 import { safeHttpUrl } from '../safe-url';
 import seed from '../../../data/seed/institutions.json';
 import { isInstitutionType, type MapInstitution } from './types';
@@ -71,7 +72,7 @@ export async function getMapInstitutions(): Promise<InstitutionsResult> {
     return { items, source: 'seed', error: false };
   }
 
-  const supabase = createClient(url, key, { auth: { persistSession: false } });
+  const supabase = createClient(url, key, publicReadOptions);
   // Supabase returns at most 1000 rows per request, so the list is read page by page.
   const PAGE = 1000;
   const data: unknown[] = [];

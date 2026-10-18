@@ -1,4 +1,5 @@
 import { createClient } from '@supabase/supabase-js';
+import { publicReadOptions } from '@/lib/supabase/read-options';
 import { getMapInstitutions } from './get';
 import type { MapInstitution } from './types';
 
@@ -16,7 +17,7 @@ export async function sitemapInstitutions(): Promise<MapInstitution[]> {
   const key = process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY;
   if (!url || !key) return items;
   try {
-    const supabase = createClient(url, key, { auth: { persistSession: false } });
+    const supabase = createClient(url, key, publicReadOptions);
     const { data, error } = await supabase.rpc('institution_ids_with_programmes');
     if (error || !Array.isArray(data) || data.length === 0) return items;
     const withProgrammes = new Set(data as string[]);

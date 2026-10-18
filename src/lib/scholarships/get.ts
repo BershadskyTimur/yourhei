@@ -1,4 +1,5 @@
 import { createClient } from '@supabase/supabase-js';
+import { publicReadOptions } from '@/lib/supabase/read-options';
 import { safeHttpUrl } from '../safe-url';
 import { arr, rec, str, texts, type Row } from '../institutions/program-detail';
 import type { LocalizedText } from '../institutions/types';
@@ -22,7 +23,7 @@ export async function getScholarships(): Promise<{ national: Scholarship[]; inst
   const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
   const key = process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY;
   if (!url || !key) return { national: [], institutional: [] };
-  const supabase = createClient(url, key, { auth: { persistSession: false } });
+  const supabase = createClient(url, key, publicReadOptions);
   const { data, error } = await supabase.from('scholarships').select(COLUMNS).eq('status', 'published').order('verified_at', { ascending: false }).limit(400);
   if (error) {
     console.error('[scholarships] Supabase error:', error.message);
