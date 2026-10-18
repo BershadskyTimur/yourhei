@@ -9,7 +9,7 @@ import { Link } from '@/i18n/navigation';
 import { getMapCounts } from '@/lib/institutions/summaries';
 
 // The home page is rebuilt at most twice a day (the counts on it change slowly); every rebuild reads the database.
-export const revalidate = 43200;
+export const revalidate = 60; // TEMPORARY (cache reset), back to 43200
 
 const primary =
   'inline-flex h-14 items-center justify-center rounded-lg bg-accent px-8 text-base font-medium text-on-accent hover:opacity-90';
