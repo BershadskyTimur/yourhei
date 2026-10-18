@@ -81,7 +81,15 @@ export async function generateMetadata({
     metadataBase: new URL(siteUrl()),
     title: t('title'),
     description: t('description'),
-    openGraph: { title: t('title'), description: t('description'), siteName: 'YourHEI', locale, type: 'website' },
+    openGraph: {
+      title: t('title'),
+      description: t('description'),
+      siteName: 'YourHEI',
+      locale,
+      type: 'website',
+      images: [{ url: '/og.png', width: 1200, height: 630, alt: 'YourHEI' }],
+    },
+    twitter: { card: 'summary_large_image', title: t('title'), description: t('description'), images: ['/og.png'] },
   };
 }
 
