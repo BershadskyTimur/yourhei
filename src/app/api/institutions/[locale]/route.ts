@@ -8,7 +8,7 @@ import { getCompactPoints } from '@/lib/institutions/summaries';
  * It is built in advance and rebuilt every six hours like a page, so the database is read a few times a day and a
  * visitor gets a ready file. It lists ALL institutions (cards and base data). The names of the visitor's language, English and the original are included.
  */
-export const revalidate = 21600;
+export const revalidate = 60; // TEMPORARY (cache reset), back to 21600
 export const dynamicParams = false;
 
 export function generateStaticParams() {
