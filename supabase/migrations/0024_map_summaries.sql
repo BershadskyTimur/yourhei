@@ -7,7 +7,8 @@
 --   map_counts()    numbers only (how many of each type and in each country),
 --   map_points(loc) the map list in a compact form with only the names in the visitor's language, English and the original,
 --   sitemap_points() address parts of the institutions that have programmes.
--- They return published institutions only, i.e. what everybody may see anyway.
+-- map_counts and map_points return ALL institutions (published cards and drafts alike: the base data is public, see
+-- the policy in 0001); sitemap_points returns only published institutions that have programmes.
 
 create or replace function public.map_counts()
 returns jsonb
@@ -17,11 +18,11 @@ security definer
 set search_path = public
 as $$
   select jsonb_build_object(
-    'total', (select count(*) from public.institutions where status = 'published'),
+    'total', (select count(*) from public.institutions),
     'types', (select coalesce(jsonb_object_agg(type, n), '{}'::jsonb)
-              from (select type, count(*) as n from public.institutions where status = 'published' group by type) t),
+              from (select type, count(*) as n from public.institutions group by type) t),
     'countries', (select coalesce(jsonb_object_agg(country, n), '{}'::jsonb)
-                  from (select country, count(*) as n from public.institutions where status = 'published' group by country) c)
+                  from (select country, count(*) as n from public.institutions group by country) c)
   );
 $$;
 
@@ -48,8 +49,7 @@ as $$
                       case when p_locale = 'en' then '' else coalesce(city ->> p_locale, '') end)
   ) order by id), '[]'::jsonb)
   from public.institutions
-  where status = 'published'
-    and location is not null
+  where location is not null
     and type in ('university', 'college', 'school', 'language_school', 'foundation', 'vocational');
 $$;
 
