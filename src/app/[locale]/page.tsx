@@ -1,4 +1,6 @@
+import { hasLocale } from 'next-intl';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { notFound } from 'next/navigation';
 import { preconnect } from 'react-dom';
 import { AdSlot } from '@/components/AdSlot';
 import { HeroSample } from '@/components/HeroSample';
@@ -6,6 +8,7 @@ import { InstitutionExplorer } from '@/components/InstitutionExplorer';
 import { GlobeIcon, MapIcon, ShieldIcon, SparkIcon } from '@/components/icons';
 import { LOCALES } from '@/config/locales';
 import { Link } from '@/i18n/navigation';
+import { routing } from '@/i18n/routing';
 import { getMapCounts } from '@/lib/institutions/summaries';
 
 // The home page is rebuilt at most twice a day (the counts on it change slowly); every rebuild reads the database.
@@ -17,6 +20,7 @@ const sectionTitle = 'text-3xl font-medium tracking-tight text-text sm:text-4xl'
 
 export default async function HomePage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
+  if (!hasLocale(routing.locales, locale)) notFound();
   setRequestLocale(locale);
   // The map will ask this server for its style and tiles: open the connection while the page is still loading.
   preconnect('https://tiles.openfreemap.org', { crossOrigin: 'anonymous' });

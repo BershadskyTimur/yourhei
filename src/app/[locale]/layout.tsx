@@ -76,6 +76,8 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
+  // An address that is not a language (/wp-login.php ...) gets the plain 404 page, not an error from the translations.
+  if (!hasLocale(routing.locales, locale)) return {};
   const t = await getTranslations({ locale, namespace: 'Meta' });
   return {
     metadataBase: new URL(siteUrl()),

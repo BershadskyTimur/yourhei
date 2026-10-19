@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { hasLocale } from 'next-intl';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { FavoriteButton } from '@/components/FavoriteButton';
@@ -9,6 +10,7 @@ import { ClaimInstitution } from '@/components/cabinet/ClaimInstitution';
 import { SideAds } from '@/components/SideAds';
 import { TypeDot } from '@/components/TypeDot';
 import { Link } from '@/i18n/navigation';
+import { routing } from '@/i18n/routing';
 import { getInstitutionDetail } from '@/lib/institutions/detail';
 import { pickLocalized } from '@/lib/institutions/localized';
 
@@ -38,6 +40,7 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
 
 export default async function InstitutionPage({ params }: { params: Params }) {
   const { locale, country, slug } = await params;
+  if (!hasLocale(routing.locales, locale)) notFound();
   setRequestLocale(locale);
   const institution = await getInstitutionDetail(country, slug);
   if (!institution) notFound();

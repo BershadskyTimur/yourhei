@@ -1,8 +1,11 @@
 import type { Metadata } from 'next';
+import { hasLocale } from 'next-intl';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { notFound } from 'next/navigation';
 import { SideAds } from '@/components/SideAds';
 import { TrackedLink } from '@/components/TrackedLink';
 import { Link } from '@/i18n/navigation';
+import { routing } from '@/i18n/routing';
 import { pickLocalized } from '@/lib/institutions/localized';
 import { getScholarships, type Scholarship } from '@/lib/scholarships/get';
 
@@ -10,12 +13,14 @@ export const revalidate = 86400;
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
+  if (!hasLocale(routing.locales, locale)) return {};
   const t = await getTranslations({ locale, namespace: 'Scholarships' });
   return { title: t('title'), description: t('intro') };
 }
 
 export default async function Page({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
+  if (!hasLocale(routing.locales, locale)) notFound();
   setRequestLocale(locale);
   const t = await getTranslations('Scholarships');
   const tInst = await getTranslations('Institution');
