@@ -120,7 +120,8 @@ function Wizard({ draft }: { draft: ReturnType<typeof loadDraft> }) {
         email: values.email.trim(),
         password: values.password,
         options: {
-          data: buildSignUpMetadata(values),
+          // ui_locale lets the e-mail templates (docs/email-templates) write to the person in their language.
+          data: { ...buildSignUpMetadata(values), ui_locale: locale },
           emailRedirectTo: emailRedirect(`/${locale}/profile?welcome=1`),
           captchaToken: captcha ?? undefined,
         },

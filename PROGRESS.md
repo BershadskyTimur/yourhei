@@ -249,3 +249,9 @@
 - Картинка для превью ссылок `public/og.png` (рисуется `scripts/make-og-image.mjs`), иконка вкладки в цветах сайта.
 - Файлы `_next/static` кэшируются на год (`public/_headers`): раньше проверялись заново при каждом визите.
 - Открыто (нужен владелец): свой SMTP (Resend) для писем регистрации, капча Turnstile, редирект yourhei.com → www, UptimeRobot.
+
+## Письма на 16 языках, проверка безопасности (19 октября 2026)
+- Шаблоны писем Supabase на 16 языках: `docs/email-templates/`, инструкция `docs/EMAIL_TEMPLATES.md`, генератор `scripts/make-email-templates.mjs`. Форма регистрации сохраняет язык в аккаунте (`ui_locale`).
+- Resend (почта с `noreply@yourhei.com`) и капча Turnstile подключены; редирект `yourhei.com` → `www`.
+- Проверка безопасности: секретов в репозитории нет; таблицы все с RLS; функции `security definer` все с `search_path`; анонимная запись в базу закрыта политиками (у `programs` для анонима только чтение опубликованного); `.env`, `.git`, карты исходников не отдаются; `npm audit`: 4 «high» в `glob` внутри инструментов сборки (`@opennextjs/cloudflare` → `@node-minify`), в работающий сайт не попадают.
+- Данные для сервера читаются с ограничением кэша на 6 часов и номером версии (`src/lib/supabase/read-options.ts`).
