@@ -33,6 +33,7 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   const institution = await getInstitutionDetail(country, slug);
   return {
     title: institution ? pickLocalized(institution.names, locale).text : undefined,
+    alternates: { canonical: `/${locale}/institutions/${country}/${slug}` },
     // A page without programmes is a thin page: keep it out of the search results (visitors can still open it).
     robots: institution && institution.programs.length === 0 ? { index: false, follow: true } : undefined,
   };
@@ -64,8 +65,20 @@ export default async function InstitutionPage({ params }: { params: Params }) {
   if (institution.dormitory !== null) facts.push([t('dormitory'), institution.dormitory ? t('dormitoryYes') : t('dormitoryNo')]);
   const features = institution.features.filter((f) => t.has(`features.${f}` as 'features.exchange'));
 
+  // Structured data for search engines (an institution with its place and site).
+  const structured = {
+    '@context': 'https://schema.org',
+    '@type': institution.type === 'university' || institution.type === 'college' ? 'CollegeOrUniversity' : 'EducationalOrganization',
+    name,
+    ...(original && original !== name ? { alternateName: original } : {}),
+    ...(institution.website ? { url: institution.website } : {}),
+    address: { '@type': 'PostalAddress', addressCountry: institution.country, ...(city ? { addressLocality: city } : {}) },
+    ...(institution.foundedYear ? { foundingDate: String(institution.foundedYear) } : {}),
+  };
+
   return (
     <SideAds>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structured).replace(/</g, '\\u003c') }} />
       <article className="mx-auto max-w-3xl py-12">
         <p className="flex items-center gap-3 text-sm font-medium uppercase tracking-wide text-muted">
           <TypeDot type={institution.type} />

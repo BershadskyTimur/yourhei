@@ -1,4 +1,5 @@
 import { hasLocale } from 'next-intl';
+import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { preconnect } from 'react-dom';
@@ -17,6 +18,11 @@ export const revalidate = 43200;
 const primary =
   'inline-flex h-14 items-center justify-center rounded-lg bg-accent px-8 text-base font-medium text-on-accent hover:opacity-90';
 const sectionTitle = 'text-3xl font-medium tracking-tight text-text sm:text-4xl';
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  return { alternates: { canonical: `/${locale}` } };
+}
 
 export default async function HomePage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
