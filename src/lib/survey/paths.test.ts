@@ -6,8 +6,8 @@ import { describe, expect, it } from 'vitest';
 import { GROUP_LIMITS, MAX_PER_INSTITUTION, matchPrograms } from '../matching/engine';
 import { buildMatchInput } from '../matching/input';
 import type { MatchContext, MatchInput, MatchInstitution, MatchProgram, Matches } from '../matching/types';
-import { EDUCATION_LEVELS, PRIORITIES_COUNT, PRIORITY_OPTIONS, QUESTIONS, type Question } from './config';
-import { intakeOptions, isComplete, isDone, nextQuestion, pruneAnswers, skipAllOptional, stepAfter, validateAnswer, visibleQuestions, type Answers } from './engine';
+import { PRIORITIES_COUNT, PRIORITY_OPTIONS, QUESTIONS, type Question } from './config';
+import { educationLevelsFor, intakeOptions, isComplete, isDone, nextQuestion, optionsFor, pruneAnswers, skipAllOptional, stepAfter, validateAnswer, visibleQuestions, type Answers } from './engine';
 import { CERTIFICATES, CURRENCIES, EXAMS, GRADING_SYSTEMS, ISCED, LANGUAGE_CODES, OLYMPIAD_LEVELS, SELF_LEVELS, SUBJECTS } from './references';
 import { RIASEC_FIELDS } from './riasec';
 
@@ -42,7 +42,7 @@ const DETAILED = ISCED.filter((e) => e.c.length === 4).map((e) => e.c);
 function answerFor(q: Question, a: Answers, r: Rng): unknown {
   switch (q.type) {
     case 'single':
-      return r.pick(q.options!);
+      return r.pick(optionsFor(q, a));
     case 'multi': {
       const all = q.options!;
       const picked = r.some(all, q.required ? 1 : 0, Math.min(all.length, q.max ?? all.length));
@@ -57,7 +57,7 @@ function answerFor(q: Question, a: Answers, r: Rng): unknown {
     case 'specialty':
       return r.some(DETAILED, 1, q.max ?? 3);
     case 'education':
-      return { level: r.pick(EDUCATION_LEVELS), year: TODAY.getFullYear() + Math.floor(r.between(-6, 4)) };
+      return { level: r.pick(educationLevelsFor(a)), year: TODAY.getFullYear() + Math.floor(r.between(-6, 4)) };
     case 'grade': {
       if (r.chance(0.1)) return { none: true };
       const s = r.pick(GRADING_SYSTEMS);
@@ -200,12 +200,30 @@ function checkMatches(input: MatchInput, m: Matches, programs: readonly MatchPro
 describe('every question accepts every one of its own options', () => {
   it('each option of each choice question is a valid answer', () => {
     for (const q of QUESTIONS) {
-      if (q.type === 'single') for (const o of q.options!) expect(validateAnswer(q, o, {}, TODAY), `${q.id}=${o}`).toBeNull();
+      if (q.type === 'single') {
+        // an option that depends on the level is checked with a level it is offered for
+        for (const o of q.options!) {
+          const level = q.optionLevels?.[o]?.[0];
+          expect(validateAnswer(q, o, level ? { level } : {}, TODAY), `${q.id}=${o}`).toBeNull();
+        }
+      }
       if (q.type === 'multi') {
         for (const o of q.options!) expect(validateAnswer(q, [o], {}, TODAY), `${q.id}=[${o}]`).toBeNull();
         if (!q.max || q.max >= q.options!.length) expect(validateAnswer(q, [...q.options!], {}, TODAY), `${q.id}=all`).toBeNull();
       }
     }
+  });
+  it('options that depend on the level: second degree only for a bachelor, education levels for school and college', () => {
+    const situation = QUESTIONS.find((x) => x.id === 'situation')!;
+    expect(optionsFor(situation, { level: 'college' })).toEqual(['first', 'transfer']);
+    expect(optionsFor(situation, { level: 'bachelor' })).toEqual(['first', 'transfer', 'second_degree']);
+    expect(validateAnswer(situation, 'second_degree', { level: 'college' }, TODAY)).toBe('invalid');
+    expect(validateAnswer(situation, 'second_degree', { level: 'bachelor' }, TODAY)).toBeNull();
+    const education = QUESTIONS.find((x) => x.id === 'education')!;
+    expect(validateAnswer(education, { level: 'master', year: 2026 }, { level: 'school' }, TODAY)).toBe('invalid');
+    expect(validateAnswer(education, { level: 'school_9', year: 2026 }, { level: 'school' }, TODAY)).toBeNull();
+    expect(validateAnswer(education, { level: 'bachelor', year: 2026 }, { level: 'master' }, TODAY)).toBeNull();
+    expect(visibleQuestions({ level: 'foundation' }).some((x) => x.id === 'olympiads')).toBe(true);
   });
   it('all 120 ordered triples of priorities are valid, and nothing else is', () => {
     const q = QUESTIONS.find((x) => x.id === 'priorities')!;

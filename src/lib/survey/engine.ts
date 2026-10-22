@@ -1,6 +1,7 @@
 // The survey engine: pure functions over the config (config.ts) and the answers.
 // No browser or database code here, so everything can be tested.
 import {
+  EDUCATION_BY_LEVEL,
   EDUCATION_LEVELS,
   PRIORITIES_COUNT,
   PRIORITY_OPTIONS,
@@ -65,12 +66,26 @@ export function intakeOptions(today: Date = new Date()): string[] {
   return out.slice(0, 6);
 }
 
+/** The options of a choice question that are offered to this person (some depend on the level). */
+export function optionsFor(q: Question, answers: Answers): readonly string[] {
+  const options = q.options ?? [];
+  if (!q.optionLevels) return options;
+  const level = typeof answers.level === 'string' ? answers.level : '';
+  return options.filter((o) => !q.optionLevels![o] || q.optionLevels![o].includes(level));
+}
+
+/** The education levels offered in "your current education" for the level the person applies to. */
+export function educationLevelsFor(answers: Answers): readonly (typeof EDUCATION_LEVELS)[number][] {
+  const level = typeof answers.level === 'string' ? answers.level : '';
+  return EDUCATION_BY_LEVEL[level] ?? EDUCATION_LEVELS;
+}
+
 /** The error code of an invalid answer (a key of Survey.errors.*), or null when it is fine. */
 export function validateAnswer(q: Question, value: unknown, answers: Answers, today: Date = new Date()): string | null {
   if (value === undefined || value === null || value === '') return 'required';
   switch (q.type) {
     case 'single':
-      return isStr(value) && q.options?.includes(value) ? null : 'invalid';
+      return isStr(value) && optionsFor(q, answers).includes(value) ? null : 'invalid';
     case 'multi': {
       if (!Array.isArray(value) || !value.every((v) => isStr(v) && q.options?.includes(v))) return 'invalid';
       if (new Set(value).size !== value.length) return 'invalid';
@@ -92,7 +107,7 @@ export function validateAnswer(q: Question, value: unknown, answers: Answers, to
     case 'education': {
       if (!record(value)) return 'invalid';
       const year = value.year;
-      const levelOk = isStr(value.level) && (EDUCATION_LEVELS as readonly string[]).includes(value.level);
+      const levelOk = isStr(value.level) && (educationLevelsFor(answers) as readonly string[]).includes(value.level);
       return levelOk && isNum(year) && Number.isInteger(year) && year >= 1980 && year <= today.getFullYear() + 12
         ? null
         : 'invalid';

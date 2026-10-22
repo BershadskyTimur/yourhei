@@ -2,8 +2,8 @@
 
 import { useLocale, useTranslations } from 'next-intl';
 import { useMemo, type ReactNode } from 'react';
-import { EDUCATION_LEVELS, PRIORITIES_COUNT, PRIORITY_OPTIONS, type Question } from '@/lib/survey/config';
-import { intakeOptions, type Answers } from '@/lib/survey/engine';
+import { PRIORITIES_COUNT, PRIORITY_OPTIONS, type Question } from '@/lib/survey/config';
+import { educationLevelsFor, intakeOptions, optionsFor, type Answers } from '@/lib/survey/engine';
 import {
   CERTIFICATES,
   COMMON_LANGUAGES,
@@ -136,7 +136,7 @@ export function QuestionView({ q, value, answers, onChange }: Props) {
     case 'single':
       return (
         <div role="radiogroup" aria-labelledby="question-title" className="grid gap-2 sm:grid-cols-2">
-          {q.options!.map((o) => (
+          {optionsFor(q, answers).map((o) => (
             <label key={o} className={`flex min-h-12 cursor-pointer items-center gap-3 rounded-xl border p-3 ${value === o ? 'border-accent bg-accent-soft' : 'border-line-strong bg-bg'}`}>
               <input type="radio" name={q.id} checked={value === o} onChange={() => onChange(o)} className="h-5 w-5 accent-accent" />
               <span>{optionLabel(o)}</span>
@@ -212,7 +212,7 @@ export function QuestionView({ q, value, answers, onChange }: Props) {
             <SmallLabel htmlFor="edu-level">{t('education.level')}</SmallLabel>
             <select id="edu-level" value={textOf(v.level)} onChange={(e) => onChange({ ...v, level: e.target.value })} className={inputClass}>
               <option value="">{tUi('choose')}</option>
-              {EDUCATION_LEVELS.map((l) => (
+              {educationLevelsFor(answers).map((l) => (
                 <option key={l} value={l}>{t(`education.levels.${l}` as never)}</option>
               ))}
             </select>

@@ -47,6 +47,8 @@ export interface Question {
   max?: number; // multi / specialty: how many may be chosen
   min?: number; // number
   showIf?: Condition | Condition[];
+  /** options that are offered only for some levels: value -> the levels it is offered for (see optionsFor in engine.ts) */
+  optionLevels?: Record<string, string[]>;
 }
 
 const HIGHER = ['college', 'foundation', 'bachelor', 'master', 'phd'];
@@ -57,7 +59,9 @@ export const QUESTIONS: readonly Question[] = [
   { id: 'level', block: 'goal', type: 'single', required: true, purpose: 'filter',
     options: ['school', 'college', 'foundation', 'bachelor', 'master', 'phd', 'language_course'] },
   { id: 'situation', block: 'goal', type: 'single', required: false, purpose: 'info',
-    options: ['first', 'transfer', 'second_degree'], showIf: { q: 'level', in: ['college', 'bachelor'] } },
+    options: ['first', 'transfer', 'second_degree'], showIf: { q: 'level', in: ['college', 'bachelor'] },
+    // a second higher education only makes sense for a bachelor's degree
+    optionLevels: { second_degree: ['bachelor'] } },
   { id: 'start', block: 'goal', type: 'intake', required: true, purpose: 'filter' },
   // Several formats may be chosen (for example on campus and blended); all three chosen means "any".
   { id: 'format', block: 'goal', type: 'multi', required: true, purpose: 'filter',
@@ -100,7 +104,7 @@ export const QUESTIONS: readonly Question[] = [
   { id: 'languages', block: 'results', type: 'languages', required: true, purpose: 'filter', max: 8 },
   { id: 'study_languages', block: 'results', type: 'studyLanguages', required: true, purpose: 'filter' },
   { id: 'olympiads', block: 'results', type: 'olympiads', required: false, purpose: 'score', max: 5,
-    showIf: { q: 'level', in: ['school', 'college', 'bachelor'] } },
+    showIf: { q: 'level', in: ['school', 'college', 'foundation', 'bachelor'] } },
   { id: 'achievements', block: 'results', type: 'multi', required: false, purpose: 'score',
     options: ['projects', 'publications', 'sport', 'creative', 'volunteering'], showIf: NOT_LANG_COURSE },
   // Work experience and the research topic, together in one step (both optional, for information only).
@@ -156,5 +160,11 @@ export const PRIORITY_OPTIONS = ['price', 'prestige', 'location', 'chances', 'fi
 export const PRIORITIES_COUNT = 3;
 
 export const EDUCATION_LEVELS = ['school_9', 'school_11', 'college', 'bachelor', 'master', 'other'] as const;
+
+/** What a person applying for each level can have finished (someone who goes to a school cannot have a degree yet). */
+export const EDUCATION_BY_LEVEL: Record<string, readonly (typeof EDUCATION_LEVELS)[number][]> = {
+  school: ['school_9', 'other'],
+  college: ['school_9', 'school_11', 'college', 'other'],
+};
 
 export const QUESTION_BY_ID = new Map(QUESTIONS.map((q) => [q.id, q]));
