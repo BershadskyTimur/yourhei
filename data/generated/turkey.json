@@ -1,0 +1,2055 @@
+{
+ "source": "Official websites of the universities (checked 2026-10-22): METU, Boğaziçi, Bilkent, Sabancı",
+ "sourceKey": "tr_university_sites",
+ "institutions": [
+  {
+   "externalIds": {
+    "tr_university_sites": "middle-east-technical-university"
+   },
+   "slug": "middle-east-technical-university",
+   "existing": true,
+   "country": "TR",
+   "type": "university",
+   "names": {
+    "original": "Orta Doğu Teknik Üniversitesi",
+    "en": "Middle East Technical University"
+   },
+   "city": {
+    "en": "Ankara"
+   },
+   "lat": 39.88567,
+   "lng": 32.78403,
+   "website": "https://www.metu.edu.tr/",
+   "ownership": null,
+   "size": null,
+   "programs": [
+    {
+     "names": {
+      "original": "Architecture",
+      "en": "Architecture"
+     },
+     "level": "bachelor",
+     "isced_f": "073",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://catalog.metu.edu.tr/program.php?fac_prog=120",
+     "faculty": "Faculty of Architecture"
+    },
+    {
+     "names": {
+      "original": "City and Regional Planning",
+      "en": "City and Regional Planning"
+     },
+     "level": "bachelor",
+     "isced_f": "073",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://catalog.metu.edu.tr/program.php?fac_prog=121",
+     "faculty": "Faculty of Architecture"
+    },
+    {
+     "names": {
+      "original": "Industrial Design",
+      "en": "Industrial Design"
+     },
+     "level": "bachelor",
+     "isced_f": "021",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://catalog.metu.edu.tr/program.php?fac_prog=125",
+     "faculty": "Faculty of Architecture"
+    },
+    {
+     "names": {
+      "original": "Biology",
+      "en": "Biology"
+     },
+     "level": "bachelor",
+     "isced_f": "051",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://catalog.metu.edu.tr/program.php?fac_prog=238",
+     "faculty": "Faculty of Arts and Sciences"
+    },
+    {
+     "names": {
+      "original": "Chemistry",
+      "en": "Chemistry"
+     },
+     "level": "bachelor",
+     "isced_f": "053",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://catalog.metu.edu.tr/program.php?fac_prog=234",
+     "faculty": "Faculty of Arts and Sciences"
+    },
+    {
+     "names": {
+      "original": "History",
+      "en": "History"
+     },
+     "level": "bachelor",
+     "isced_f": "022",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://catalog.metu.edu.tr/program.php?fac_prog=240",
+     "faculty": "Faculty of Arts and Sciences"
+    },
+    {
+     "names": {
+      "original": "Mathematics",
+      "en": "Mathematics"
+     },
+     "level": "bachelor",
+     "isced_f": "054",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://catalog.metu.edu.tr/program.php?fac_prog=236",
+     "faculty": "Faculty of Arts and Sciences"
+    },
+    {
+     "names": {
+      "original": "Molecular Biology and Genetics",
+      "en": "Molecular Biology and Genetics"
+     },
+     "level": "bachelor",
+     "isced_f": "051",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://catalog.metu.edu.tr/program.php?fac_prog=219",
+     "faculty": "Faculty of Arts and Sciences"
+    },
+    {
+     "names": {
+      "original": "Philosophy",
+      "en": "Philosophy"
+     },
+     "level": "bachelor",
+     "isced_f": "022",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://catalog.metu.edu.tr/program.php?fac_prog=241",
+     "faculty": "Faculty of Arts and Sciences"
+    },
+    {
+     "names": {
+      "original": "Physics",
+      "en": "Physics"
+     },
+     "level": "bachelor",
+     "isced_f": "053",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://catalog.metu.edu.tr/program.php?fac_prog=230",
+     "faculty": "Faculty of Arts and Sciences"
+    },
+    {
+     "names": {
+      "original": "Psychology",
+      "en": "Psychology"
+     },
+     "level": "bachelor",
+     "isced_f": "031",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://catalog.metu.edu.tr/program.php?fac_prog=233",
+     "faculty": "Faculty of Arts and Sciences"
+    },
+    {
+     "names": {
+      "original": "Sociology",
+      "en": "Sociology"
+     },
+     "level": "bachelor",
+     "isced_f": "031",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://catalog.metu.edu.tr/program.php?fac_prog=232",
+     "faculty": "Faculty of Arts and Sciences"
+    },
+    {
+     "names": {
+      "original": "Statistics",
+      "en": "Statistics"
+     },
+     "level": "bachelor",
+     "isced_f": "054",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://catalog.metu.edu.tr/program.php?fac_prog=246",
+     "faculty": "Faculty of Arts and Sciences"
+    },
+    {
+     "names": {
+      "original": "Business Administration",
+      "en": "Business Administration"
+     },
+     "level": "bachelor",
+     "isced_f": "041",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://catalog.metu.edu.tr/program.php?fac_prog=312",
+     "faculty": "Faculty of Economic and Administrative Sciences"
+    },
+    {
+     "names": {
+      "original": "Economics",
+      "en": "Economics"
+     },
+     "level": "bachelor",
+     "isced_f": "031",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://catalog.metu.edu.tr/program.php?fac_prog=311",
+     "faculty": "Faculty of Economic and Administrative Sciences"
+    },
+    {
+     "names": {
+      "original": "International Relations",
+      "en": "International Relations"
+     },
+     "level": "bachelor",
+     "isced_f": "031",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://catalog.metu.edu.tr/program.php?fac_prog=314",
+     "faculty": "Faculty of Economic and Administrative Sciences"
+    },
+    {
+     "names": {
+      "original": "Political Science and Public Administration",
+      "en": "Political Science and Public Administration"
+     },
+     "level": "bachelor",
+     "isced_f": "031",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://catalog.metu.edu.tr/program.php?fac_prog=310",
+     "faculty": "Faculty of Economic and Administrative Sciences"
+    },
+    {
+     "names": {
+      "original": "Chemistry Education",
+      "en": "Chemistry Education"
+     },
+     "level": "bachelor",
+     "isced_f": "053",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://catalog.metu.edu.tr/program.php?fac_prog=422",
+     "faculty": "Faculty of Education"
+    },
+    {
+     "names": {
+      "original": "Computer Education and Instructional Technology",
+      "en": "Computer Education and Instructional Technology"
+     },
+     "level": "bachelor",
+     "isced_f": "011",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://catalog.metu.edu.tr/program.php?fac_prog=430",
+     "faculty": "Faculty of Education"
+    },
+    {
+     "names": {
+      "original": "Early Childhood Education",
+      "en": "Early Childhood Education"
+     },
+     "level": "bachelor",
+     "isced_f": "011",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://catalog.metu.edu.tr/program.php?fac_prog=411",
+     "faculty": "Faculty of Education"
+    },
+    {
+     "names": {
+      "original": "Elementary Mathematics Education",
+      "en": "Elementary Mathematics Education"
+     },
+     "level": "bachelor",
+     "isced_f": "054",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://catalog.metu.edu.tr/program.php?fac_prog=413",
+     "faculty": "Faculty of Education"
+    },
+    {
+     "names": {
+      "original": "Elementary Science Education",
+      "en": "Elementary Science Education"
+     },
+     "level": "bachelor",
+     "isced_f": "011",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://catalog.metu.edu.tr/program.php?fac_prog=412",
+     "faculty": "Faculty of Education"
+    },
+    {
+     "names": {
+      "original": "English Language Teaching",
+      "en": "English Language Teaching"
+     },
+     "level": "bachelor",
+     "isced_f": "023",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://catalog.metu.edu.tr/program.php?fac_prog=450",
+     "faculty": "Faculty of Education"
+    },
+    {
+     "names": {
+      "original": "Mathematics Education",
+      "en": "Mathematics Education"
+     },
+     "level": "bachelor",
+     "isced_f": "054",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://catalog.metu.edu.tr/program.php?fac_prog=423",
+     "faculty": "Faculty of Education"
+    },
+    {
+     "names": {
+      "original": "Physics Education",
+      "en": "Physics Education"
+     },
+     "level": "bachelor",
+     "isced_f": "053",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://catalog.metu.edu.tr/program.php?fac_prog=421",
+     "faculty": "Faculty of Education"
+    },
+    {
+     "names": {
+      "original": "Physical Education and Sports",
+      "en": "Physical Education and Sports"
+     },
+     "level": "bachelor",
+     "isced_f": "101",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://catalog.metu.edu.tr/program.php?fac_prog=453",
+     "faculty": "Faculty of Education"
+    },
+    {
+     "names": {
+      "original": "Aerospace Engineering",
+      "en": "Aerospace Engineering"
+     },
+     "level": "bachelor",
+     "isced_f": "071",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://catalog.metu.edu.tr/program.php?fac_prog=572",
+     "faculty": "Faculty of Engineering"
+    },
+    {
+     "names": {
+      "original": "Chemical Engineering",
+      "en": "Chemical Engineering"
+     },
+     "level": "bachelor",
+     "isced_f": "071",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://catalog.metu.edu.tr/program.php?fac_prog=563",
+     "faculty": "Faculty of Engineering"
+    },
+    {
+     "names": {
+      "original": "Civil Engineering",
+      "en": "Civil Engineering"
+     },
+     "level": "bachelor",
+     "isced_f": "073",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://catalog.metu.edu.tr/program.php?fac_prog=562",
+     "faculty": "Faculty of Engineering"
+    },
+    {
+     "names": {
+      "original": "Computer Engineering",
+      "en": "Computer Engineering"
+     },
+     "level": "bachelor",
+     "isced_f": "061",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://catalog.metu.edu.tr/program.php?fac_prog=571",
+     "faculty": "Faculty of Engineering"
+    },
+    {
+     "names": {
+      "original": "Electrical and Electronics Engineering",
+      "en": "Electrical and Electronics Engineering"
+     },
+     "level": "bachelor",
+     "isced_f": "071",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://catalog.metu.edu.tr/program.php?fac_prog=567",
+     "faculty": "Faculty of Engineering"
+    },
+    {
+     "names": {
+      "original": "Environmental Engineering",
+      "en": "Environmental Engineering"
+     },
+     "level": "bachelor",
+     "isced_f": "071",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://catalog.metu.edu.tr/program.php?fac_prog=560",
+     "faculty": "Faculty of Engineering"
+    },
+    {
+     "names": {
+      "original": "Food Engineering",
+      "en": "Food Engineering"
+     },
+     "level": "bachelor",
+     "isced_f": "072",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://catalog.metu.edu.tr/program.php?fac_prog=573",
+     "faculty": "Faculty of Engineering"
+    },
+    {
+     "names": {
+      "original": "Geological Engineering",
+      "en": "Geological Engineering"
+     },
+     "level": "bachelor",
+     "isced_f": "071",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://catalog.metu.edu.tr/program.php?fac_prog=564",
+     "faculty": "Faculty of Engineering"
+    },
+    {
+     "names": {
+      "original": "Industrial Engineering",
+      "en": "Industrial Engineering"
+     },
+     "level": "bachelor",
+     "isced_f": "071",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://catalog.metu.edu.tr/program.php?fac_prog=568",
+     "faculty": "Faculty of Engineering"
+    },
+    {
+     "names": {
+      "original": "Mechanical Engineering",
+      "en": "Mechanical Engineering"
+     },
+     "level": "bachelor",
+     "isced_f": "071",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://catalog.metu.edu.tr/program.php?fac_prog=569",
+     "faculty": "Faculty of Engineering"
+    },
+    {
+     "names": {
+      "original": "Metallurgical and Materials Engineering",
+      "en": "Metallurgical and Materials Engineering"
+     },
+     "level": "bachelor",
+     "isced_f": "071",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://catalog.metu.edu.tr/program.php?fac_prog=570",
+     "faculty": "Faculty of Engineering"
+    },
+    {
+     "names": {
+      "original": "Mining Engineering",
+      "en": "Mining Engineering"
+     },
+     "level": "bachelor",
+     "isced_f": "072",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://catalog.metu.edu.tr/program.php?fac_prog=565",
+     "faculty": "Faculty of Engineering"
+    },
+    {
+     "names": {
+      "original": "Petroleum and Natural Gas Engineering",
+      "en": "Petroleum and Natural Gas Engineering"
+     },
+     "level": "bachelor",
+     "isced_f": "071",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://catalog.metu.edu.tr/program.php?fac_prog=566",
+     "faculty": "Faculty of Engineering"
+    }
+   ]
+  },
+  {
+   "externalIds": {
+    "tr_university_sites": "bogazici-university"
+   },
+   "slug": "bogazici-university",
+   "existing": true,
+   "country": "TR",
+   "type": "university",
+   "names": {
+    "original": "Boğaziçi Üniversitesi",
+    "en": "Boğaziçi University"
+   },
+   "city": {
+    "en": "Istanbul"
+   },
+   "lat": 41.08356,
+   "lng": 29.0506,
+   "website": "https://bogazici.edu.tr/",
+   "ownership": null,
+   "size": null,
+   "programs": [
+    {
+     "names": {
+      "original": "Computer Education and Educational Technology",
+      "en": "Computer Education and Educational Technology"
+     },
+     "level": "bachelor",
+     "isced_f": "011",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://bogazici.edu.tr/en/pages/lisans-programlari/604",
+     "faculty": "Faculty of Education"
+    },
+    {
+     "names": {
+      "original": "Educational Sciences",
+      "en": "Educational Sciences"
+     },
+     "level": "bachelor",
+     "isced_f": "011",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://bogazici.edu.tr/en/pages/lisans-programlari/605",
+     "faculty": "Faculty of Education"
+    },
+    {
+     "names": {
+      "original": "Elementary Education",
+      "en": "Elementary Education"
+     },
+     "level": "bachelor",
+     "isced_f": "011",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://bogazici.edu.tr/en/pages/lisans-programlari/606",
+     "faculty": "Faculty of Education"
+    },
+    {
+     "names": {
+      "original": "Mathematics and Science Education",
+      "en": "Mathematics and Science Education"
+     },
+     "level": "bachelor",
+     "isced_f": "054",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://bogazici.edu.tr/en/pages/lisans-programlari/607",
+     "faculty": "Faculty of Education"
+    },
+    {
+     "names": {
+      "original": "Foreign Language Education",
+      "en": "Foreign Language Education"
+     },
+     "level": "bachelor",
+     "isced_f": "011",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://bogazici.edu.tr/en/pages/lisans-programlari/608",
+     "faculty": "Faculty of Education"
+    },
+    {
+     "names": {
+      "original": "Physics",
+      "en": "Physics"
+     },
+     "level": "bachelor",
+     "isced_f": "053",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://bogazici.edu.tr/en/pages/lisans-programlari/614",
+     "faculty": "Faculty of Science"
+    },
+    {
+     "names": {
+      "original": "Chemistry",
+      "en": "Chemistry"
+     },
+     "level": "bachelor",
+     "isced_f": "053",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://bogazici.edu.tr/en/pages/lisans-programlari/615",
+     "faculty": "Faculty of Science"
+    },
+    {
+     "names": {
+      "original": "Mathematics",
+      "en": "Mathematics"
+     },
+     "level": "bachelor",
+     "isced_f": "054",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://bogazici.edu.tr/en/pages/lisans-programlari/616",
+     "faculty": "Faculty of Science"
+    },
+    {
+     "names": {
+      "original": "Molecular Biology and Genetics",
+      "en": "Molecular Biology and Genetics"
+     },
+     "level": "bachelor",
+     "isced_f": "051",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://bogazici.edu.tr/en/pages/lisans-programlari/617",
+     "faculty": "Faculty of Science"
+    },
+    {
+     "names": {
+      "original": "Economics",
+      "en": "Economics"
+     },
+     "level": "bachelor",
+     "isced_f": "031",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://bogazici.edu.tr/en/pages/lisans-programlari/626",
+     "faculty": "Faculty of Economics and Administrative Sciences"
+    },
+    {
+     "names": {
+      "original": "Management",
+      "en": "Management"
+     },
+     "level": "bachelor",
+     "isced_f": "041",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://bogazici.edu.tr/en/pages/lisans-programlari/627",
+     "faculty": "Faculty of Economics and Administrative Sciences"
+    },
+    {
+     "names": {
+      "original": "Political Science and International Relations",
+      "en": "Political Science and International Relations"
+     },
+     "level": "bachelor",
+     "isced_f": "031",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://bogazici.edu.tr/en/pages/lisans-programlari/628",
+     "faculty": "Faculty of Economics and Administrative Sciences"
+    },
+    {
+     "names": {
+      "original": "Tourism Administration",
+      "en": "Tourism Administration"
+     },
+     "level": "bachelor",
+     "isced_f": "101",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://bogazici.edu.tr/en/pages/lisans-programlari/637",
+     "faculty": "Faculty of Economics and Administrative Sciences"
+    },
+    {
+     "names": {
+      "original": "International Trade",
+      "en": "International Trade"
+     },
+     "level": "bachelor",
+     "isced_f": "041",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://bogazici.edu.tr/en/pages/lisans-programlari/638",
+     "faculty": "Faculty of Economics and Administrative Sciences"
+    },
+    {
+     "names": {
+      "original": "Management Information Systems",
+      "en": "Management Information Systems"
+     },
+     "level": "bachelor",
+     "isced_f": "061",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://bogazici.edu.tr/en/pages/lisans-programlari/639",
+     "faculty": "Faculty of Economics and Administrative Sciences"
+    },
+    {
+     "names": {
+      "original": "Computer Engineering",
+      "en": "Computer Engineering"
+     },
+     "level": "bachelor",
+     "isced_f": "061",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://bogazici.edu.tr/en/pages/lisans-programlari/630",
+     "faculty": "Faculty of Engineering"
+    },
+    {
+     "names": {
+      "original": "Electrical and Electronics Engineering",
+      "en": "Electrical and Electronics Engineering"
+     },
+     "level": "bachelor",
+     "isced_f": "071",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://bogazici.edu.tr/en/pages/lisans-programlari/631",
+     "faculty": "Faculty of Engineering"
+    },
+    {
+     "names": {
+      "original": "Industrial Engineering",
+      "en": "Industrial Engineering"
+     },
+     "level": "bachelor",
+     "isced_f": "071",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://bogazici.edu.tr/en/pages/lisans-programlari/632",
+     "faculty": "Faculty of Engineering"
+    },
+    {
+     "names": {
+      "original": "Civil Engineering",
+      "en": "Civil Engineering"
+     },
+     "level": "bachelor",
+     "isced_f": "073",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://bogazici.edu.tr/en/pages/lisans-programlari/633",
+     "faculty": "Faculty of Engineering"
+    },
+    {
+     "names": {
+      "original": "Chemical Engineering",
+      "en": "Chemical Engineering"
+     },
+     "level": "bachelor",
+     "isced_f": "071",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://bogazici.edu.tr/en/pages/lisans-programlari/634",
+     "faculty": "Faculty of Engineering"
+    },
+    {
+     "names": {
+      "original": "Mechanical Engineering",
+      "en": "Mechanical Engineering"
+     },
+     "level": "bachelor",
+     "isced_f": "071",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://bogazici.edu.tr/en/pages/lisans-programlari/635",
+     "faculty": "Faculty of Engineering"
+    },
+    {
+     "names": {
+      "original": "Western Languages and Literatures",
+      "en": "Western Languages and Literatures"
+     },
+     "level": "bachelor",
+     "isced_f": "023",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://bogazici.edu.tr/en/pages/lisans-programlari/610",
+     "faculty": "Faculty of Humanities and Social Sciences"
+    },
+    {
+     "names": {
+      "original": "Translation and Interpreting Studies",
+      "en": "Translation and Interpreting Studies"
+     },
+     "level": "bachelor",
+     "isced_f": "023",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://bogazici.edu.tr/en/pages/lisans-programlari/611",
+     "faculty": "Faculty of Humanities and Social Sciences"
+    },
+    {
+     "names": {
+      "original": "Linguistics",
+      "en": "Linguistics"
+     },
+     "level": "bachelor",
+     "isced_f": "023",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://bogazici.edu.tr/en/pages/lisans-programlari/612",
+     "faculty": "Faculty of Humanities and Social Sciences"
+    },
+    {
+     "names": {
+      "original": "Philosophy",
+      "en": "Philosophy"
+     },
+     "level": "bachelor",
+     "isced_f": "022",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://bogazici.edu.tr/en/pages/lisans-programlari/613",
+     "faculty": "Faculty of Humanities and Social Sciences"
+    },
+    {
+     "names": {
+      "original": "Psychology",
+      "en": "Psychology"
+     },
+     "level": "bachelor",
+     "isced_f": "031",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://bogazici.edu.tr/en/pages/lisans-programlari/618",
+     "faculty": "Faculty of Humanities and Social Sciences"
+    },
+    {
+     "names": {
+      "original": "Sociology",
+      "en": "Sociology"
+     },
+     "level": "bachelor",
+     "isced_f": "031",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://bogazici.edu.tr/en/pages/lisans-programlari/619",
+     "faculty": "Faculty of Humanities and Social Sciences"
+    },
+    {
+     "names": {
+      "original": "History",
+      "en": "History"
+     },
+     "level": "bachelor",
+     "isced_f": "022",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://bogazici.edu.tr/en/pages/lisans-programlari/620",
+     "faculty": "Faculty of Humanities and Social Sciences"
+    }
+   ]
+  },
+  {
+   "externalIds": {
+    "tr_university_sites": "bilkent-university"
+   },
+   "slug": "bilkent-university",
+   "existing": true,
+   "country": "TR",
+   "type": "university",
+   "names": {
+    "original": "Bilkent Üniversitesi",
+    "en": "Bilkent University"
+   },
+   "city": {
+    "en": "Ankara"
+   },
+   "lat": 39.86735,
+   "lng": 32.75077,
+   "website": "https://w3.bilkent.edu.tr/bilkent/",
+   "ownership": null,
+   "size": null,
+   "programs": [
+    {
+     "names": {
+      "original": "Architecture",
+      "en": "Architecture"
+     },
+     "level": "bachelor",
+     "isced_f": "073",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "http://catalog.bilkent.edu.tr/current/dep/d70.html",
+     "faculty": "Faculty of Art, Design and Architecture"
+    },
+    {
+     "names": {
+      "original": "Communication and Design",
+      "en": "Communication and Design"
+     },
+     "level": "bachelor",
+     "isced_f": "032",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "http://catalog.bilkent.edu.tr/current/dep/d77.html",
+     "faculty": "Faculty of Art, Design and Architecture"
+    },
+    {
+     "names": {
+      "original": "Graphic Design",
+      "en": "Graphic Design"
+     },
+     "level": "bachelor",
+     "isced_f": "021",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "http://catalog.bilkent.edu.tr/current/dep/d72.html",
+     "faculty": "Faculty of Art, Design and Architecture"
+    },
+    {
+     "names": {
+      "original": "Interior Architecture and Environmental Design",
+      "en": "Interior Architecture and Environmental Design"
+     },
+     "level": "bachelor",
+     "isced_f": "073",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "http://catalog.bilkent.edu.tr/current/dep/d71.html",
+     "faculty": "Faculty of Art, Design and Architecture"
+    },
+    {
+     "names": {
+      "original": "Urban Design and Landscape Architecture",
+      "en": "Urban Design and Landscape Architecture"
+     },
+     "level": "bachelor",
+     "isced_f": "073",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "http://catalog.bilkent.edu.tr/current/dep/d75.html",
+     "faculty": "Faculty of Art, Design and Architecture"
+    },
+    {
+     "names": {
+      "original": "Management",
+      "en": "Management"
+     },
+     "level": "bachelor",
+     "isced_f": "041",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "http://catalog.bilkent.edu.tr/current/dep/d31.html",
+     "faculty": "Faculty of Business Administration"
+    },
+    {
+     "names": {
+      "original": "Economics",
+      "en": "Economics"
+     },
+     "level": "bachelor",
+     "isced_f": "031",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "http://catalog.bilkent.edu.tr/current/dep/d32.html",
+     "faculty": "Faculty of Economics, Administrative and Social Sciences"
+    },
+    {
+     "names": {
+      "original": "International Relations",
+      "en": "International Relations"
+     },
+     "level": "bachelor",
+     "isced_f": "031",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "http://catalog.bilkent.edu.tr/current/dep/d33.html",
+     "faculty": "Faculty of Economics, Administrative and Social Sciences"
+    },
+    {
+     "names": {
+      "original": "Political Science and Public Administration",
+      "en": "Political Science and Public Administration"
+     },
+     "level": "bachelor",
+     "isced_f": "031",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "http://catalog.bilkent.edu.tr/current/dep/d34.html",
+     "faculty": "Faculty of Economics, Administrative and Social Sciences"
+    },
+    {
+     "names": {
+      "original": "Psychology",
+      "en": "Psychology"
+     },
+     "level": "bachelor",
+     "isced_f": "031",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "http://catalog.bilkent.edu.tr/current/dep/d92.html",
+     "faculty": "Faculty of Economics, Administrative and Social Sciences"
+    },
+    {
+     "names": {
+      "original": "Computer Engineering",
+      "en": "Computer Engineering"
+     },
+     "level": "bachelor",
+     "isced_f": "061",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "http://catalog.bilkent.edu.tr/current/dep/d11.html",
+     "faculty": "Faculty of Engineering"
+    },
+    {
+     "names": {
+      "original": "Electrical and Electronics Engineering",
+      "en": "Electrical and Electronics Engineering"
+     },
+     "level": "bachelor",
+     "isced_f": "071",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "http://catalog.bilkent.edu.tr/current/dep/d12.html",
+     "faculty": "Faculty of Engineering"
+    },
+    {
+     "names": {
+      "original": "Industrial Engineering",
+      "en": "Industrial Engineering"
+     },
+     "level": "bachelor",
+     "isced_f": "071",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "http://catalog.bilkent.edu.tr/current/dep/d13.html",
+     "faculty": "Faculty of Engineering"
+    },
+    {
+     "names": {
+      "original": "Mechanical Engineering",
+      "en": "Mechanical Engineering"
+     },
+     "level": "bachelor",
+     "isced_f": "071",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "http://www.me.bilkent.edu.tr/",
+     "faculty": "Faculty of Engineering"
+    },
+    {
+     "names": {
+      "original": "American Culture and Literature",
+      "en": "American Culture and Literature"
+     },
+     "level": "bachelor",
+     "isced_f": "023",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "http://catalog.bilkent.edu.tr/current/dep/d22.html",
+     "faculty": "Faculty of Humanities and Letters"
+    },
+    {
+     "names": {
+      "original": "Archaeology",
+      "en": "Archaeology"
+     },
+     "level": "bachelor",
+     "isced_f": "022",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "http://catalog.bilkent.edu.tr/current/dep/d23.html",
+     "faculty": "Faculty of Humanities and Letters"
+    },
+    {
+     "names": {
+      "original": "English Language and Literature",
+      "en": "English Language and Literature"
+     },
+     "level": "bachelor",
+     "isced_f": "023",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "http://catalog.bilkent.edu.tr/current/dep/d21.html",
+     "faculty": "Faculty of Humanities and Letters"
+    },
+    {
+     "names": {
+      "original": "Philosophy",
+      "en": "Philosophy"
+     },
+     "level": "bachelor",
+     "isced_f": "022",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "http://catalog.bilkent.edu.tr/current/dep/d25.html",
+     "faculty": "Faculty of Humanities and Letters"
+    },
+    {
+     "names": {
+      "original": "Chemistry",
+      "en": "Chemistry"
+     },
+     "level": "bachelor",
+     "isced_f": "053",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "http://catalog.bilkent.edu.tr/current/dep/d02.html",
+     "faculty": "Faculty of Science"
+    },
+    {
+     "names": {
+      "original": "Mathematics",
+      "en": "Mathematics"
+     },
+     "level": "bachelor",
+     "isced_f": "054",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "http://catalog.bilkent.edu.tr/current/dep/d03.html",
+     "faculty": "Faculty of Science"
+    },
+    {
+     "names": {
+      "original": "Molecular Biology and Genetics",
+      "en": "Molecular Biology and Genetics"
+     },
+     "level": "bachelor",
+     "isced_f": "051",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "http://catalog.bilkent.edu.tr/current/dep/d04.html",
+     "faculty": "Faculty of Science"
+    },
+    {
+     "names": {
+      "original": "Physics",
+      "en": "Physics"
+     },
+     "level": "bachelor",
+     "isced_f": "053",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "http://catalog.bilkent.edu.tr/current/dep/d01.html",
+     "faculty": "Faculty of Science"
+    },
+    {
+     "names": {
+      "original": "Information Systems and Technologies",
+      "en": "Information Systems and Technologies"
+     },
+     "level": "bachelor",
+     "isced_f": "061",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://catalog.bilkent.edu.tr/dep/d18.html",
+     "faculty": "Faculty of Applied Sciences"
+    },
+    {
+     "names": {
+      "original": "Tourism and Hotel Management",
+      "en": "Tourism and Hotel Management"
+     },
+     "level": "bachelor",
+     "isced_f": "101",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://catalog.bilkent.edu.tr/dep/d19.html",
+     "faculty": "Faculty of Applied Sciences"
+    }
+   ]
+  },
+  {
+   "externalIds": {
+    "tr_university_sites": "sabanc-university"
+   },
+   "slug": "sabanc-university",
+   "existing": true,
+   "country": "TR",
+   "type": "university",
+   "names": {
+    "original": "Sabancı Üniversitesi",
+    "en": "Sabancı University"
+   },
+   "city": {
+    "en": "Istanbul"
+   },
+   "lat": 40.89055,
+   "lng": 29.37839,
+   "website": "https://www.sabanciuniv.edu/en",
+   "ownership": null,
+   "size": null,
+   "programs": [
+    {
+     "names": {
+      "original": "Computer Science and Engineering",
+      "en": "Computer Science and Engineering"
+     },
+     "level": "bachelor",
+     "isced_f": "061",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://iro.sabanciuniv.edu/en/all-programs",
+     "faculty": "Faculty of Engineering and Natural Sciences"
+    },
+    {
+     "names": {
+      "original": "Economics",
+      "en": "Economics"
+     },
+     "level": "bachelor",
+     "isced_f": "031",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://iro.sabanciuniv.edu/en/all-programs",
+     "faculty": "Faculty of Arts and Social Sciences"
+    },
+    {
+     "names": {
+      "original": "Electronics Engineering",
+      "en": "Electronics Engineering"
+     },
+     "level": "bachelor",
+     "isced_f": "071",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://iro.sabanciuniv.edu/en/all-programs",
+     "faculty": "Faculty of Engineering and Natural Sciences"
+    },
+    {
+     "names": {
+      "original": "Data Science and Analytics",
+      "en": "Data Science and Analytics"
+     },
+     "level": "bachelor",
+     "isced_f": "061",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://iro.sabanciuniv.edu/en/all-programs",
+     "faculty": "Faculty of Engineering and Natural Sciences"
+    },
+    {
+     "names": {
+      "original": "Industrial Engineering",
+      "en": "Industrial Engineering"
+     },
+     "level": "bachelor",
+     "isced_f": "071",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://iro.sabanciuniv.edu/en/all-programs",
+     "faculty": "Faculty of Engineering and Natural Sciences"
+    },
+    {
+     "names": {
+      "original": "Management",
+      "en": "Management"
+     },
+     "level": "bachelor",
+     "isced_f": "041",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://iro.sabanciuniv.edu/en/all-programs",
+     "faculty": "Sabancı Business School"
+    },
+    {
+     "names": {
+      "original": "Materials Science and Nano Engineering",
+      "en": "Materials Science and Nano Engineering"
+     },
+     "level": "bachelor",
+     "isced_f": "072",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://iro.sabanciuniv.edu/en/all-programs",
+     "faculty": "Faculty of Engineering and Natural Sciences"
+    },
+    {
+     "names": {
+      "original": "Mechatronics Engineering",
+      "en": "Mechatronics Engineering"
+     },
+     "level": "bachelor",
+     "isced_f": "071",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://iro.sabanciuniv.edu/en/all-programs",
+     "faculty": "Faculty of Engineering and Natural Sciences"
+    },
+    {
+     "names": {
+      "original": "Molecular Biology, Genetics and Bioengineering",
+      "en": "Molecular Biology, Genetics and Bioengineering"
+     },
+     "level": "bachelor",
+     "isced_f": "051",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://iro.sabanciuniv.edu/en/all-programs",
+     "faculty": "Faculty of Engineering and Natural Sciences"
+    },
+    {
+     "names": {
+      "original": "Political Science and International Relations",
+      "en": "Political Science and International Relations"
+     },
+     "level": "bachelor",
+     "isced_f": "031",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://iro.sabanciuniv.edu/en/all-programs",
+     "faculty": "Faculty of Arts and Social Sciences"
+    },
+    {
+     "names": {
+      "original": "Psychology",
+      "en": "Psychology"
+     },
+     "level": "bachelor",
+     "isced_f": "031",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://iro.sabanciuniv.edu/en/all-programs",
+     "faculty": "Faculty of Arts and Social Sciences"
+    },
+    {
+     "names": {
+      "original": "Visual Arts and Visual Communication Design",
+      "en": "Visual Arts and Visual Communication Design"
+     },
+     "level": "bachelor",
+     "isced_f": "021",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://iro.sabanciuniv.edu/en/all-programs",
+     "faculty": "Faculty of Arts and Social Sciences"
+    }
+   ]
+  }
+ ]
+}
