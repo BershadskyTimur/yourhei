@@ -211,17 +211,20 @@ function Runner({ attempt, onDone, onExit }: { attempt: Attempt; onDone: () => v
       const following = mode === 'step' ? (after.slice(at + 1).find((x) => !isDone(x, next)) ?? null) : null;
       const pending = nextQuestion(next);
 
-      if (!following && !pending) {
-        // Everything required is answered and we are past the last question: freeze the attempt.
-        if (!isComplete(next)) return;
+      // Past the last question and every required answer is valid: freeze the attempt. An optional question that was
+      // left open earlier (for example after the person went back and changed an answer) must not hold the "Finish"
+      // button back: it used to send the person back to that question instead of finishing.
+      if (!following && isComplete(next)) {
         const ok = await completeAttempt(supabase, attempt.id, pruneAnswers(next));
         if (!ok) throw new Error('attempt is frozen');
         onDone();
         return;
       }
+      const target = following ?? pending;
+      if (!target) throw new Error('nothing left to ask, but the survey is not complete');
       if (!(await saveAnswers(supabase, attempt.id, next))) throw new Error('attempt is frozen');
       setAnswers(next);
-      go((following ?? pending!).id);
+      go(target.id);
     } catch (error) {
       console.error('[survey] save failed', error);
       setSaveError(true);
