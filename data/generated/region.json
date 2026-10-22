@@ -1,0 +1,2408 @@
+{
+ "source": "Official websites of the universities (checked 2026-10-22): Nazarbayev University, American University of Armenia, American University of Central Asia, Westminster International University in Tashkent",
+ "sourceKey": "official_university_sites_region",
+ "institutions": [
+  {
+   "externalIds": {
+    "official_university_sites_region": "nazarbayev-university"
+   },
+   "slug": "nazarbayev-university",
+   "existing": true,
+   "country": "KZ",
+   "type": "university",
+   "names": {
+    "original": "Nazarbayev University",
+    "en": "Nazarbayev University"
+   },
+   "city": {
+    "en": "Astana"
+   },
+   "lat": 51.09,
+   "lng": 71.39944,
+   "website": "https://nu.edu.kz/",
+   "ownership": null,
+   "size": null,
+   "programs": [
+    {
+     "names": {
+      "original": "Bachelor in Nursing",
+      "en": "Bachelor in Nursing"
+     },
+     "level": "bachelor",
+     "isced_f": "091",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://nusom.nu.edu.kz/bn",
+     "faculty": "School of Medicine"
+    },
+    {
+     "names": {
+      "original": "Bachelor of Science in Biological Sciences",
+      "en": "Bachelor of Science in Biological Sciences"
+     },
+     "level": "bachelor",
+     "isced_f": "051",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://nusom.nu.edu.kz/bbs",
+     "faculty": "School of Medicine"
+    },
+    {
+     "names": {
+      "original": "Bachelor of Business Administration",
+      "en": "Bachelor of Business Administration"
+     },
+     "level": "bachelor",
+     "isced_f": "041",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://gsb.nu.edu.kz/bba",
+     "faculty": "Graduate School of Business"
+    },
+    {
+     "names": {
+      "original": "Bachelor of Arts in Economics",
+      "en": "Bachelor of Arts in Economics"
+     },
+     "level": "bachelor",
+     "isced_f": "031",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://gsb.nu.edu.kz/econ",
+     "faculty": "Graduate School of Business"
+    },
+    {
+     "names": {
+      "original": "Bachelor of Business Administration in Eurasian Business (Joint Degree with HKUST)",
+      "en": "Bachelor of Business Administration in Eurasian Business (Joint Degree with HKUST)"
+     },
+     "level": "bachelor",
+     "isced_f": "041",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://gsb.nu.edu.kz/bbaeabu",
+     "faculty": "Graduate School of Business"
+    },
+    {
+     "names": {
+      "original": "Bachelor of Science in Geology",
+      "en": "Bachelor of Science in Geology"
+     },
+     "level": "bachelor",
+     "isced_f": "053",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://soe.nu.edu.kz/bachelor_of_geology",
+     "faculty": "School of Engineering"
+    },
+    {
+     "names": {
+      "original": "Bachelor of Science in Mining and Minerals Engineering",
+      "en": "Bachelor of Science in Mining and Minerals Engineering"
+     },
+     "level": "bachelor",
+     "isced_f": "071",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://soe.nu.edu.kz/bachelor_of_me",
+     "faculty": "School of Engineering"
+    },
+    {
+     "names": {
+      "original": "Bachelor of Science in Petroleum Engineering",
+      "en": "Bachelor of Science in Petroleum Engineering"
+     },
+     "level": "bachelor",
+     "isced_f": "071",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://soe.nu.edu.kz/bachelor_of_pe",
+     "faculty": "School of Engineering"
+    },
+    {
+     "names": {
+      "original": "Bachelor of Engineering in Chemical and Materials Engineering",
+      "en": "Bachelor of Engineering in Chemical and Materials Engineering"
+     },
+     "level": "bachelor",
+     "isced_f": "071",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://soe.nu.edu.kz/bachelor_of_cme",
+     "faculty": "School of Engineering"
+    },
+    {
+     "names": {
+      "original": "Bachelor of Engineering in Electrical and Computer Engineering",
+      "en": "Bachelor of Engineering in Electrical and Computer Engineering"
+     },
+     "level": "bachelor",
+     "isced_f": "061",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://soe.nu.edu.kz/bachelor_of_ece",
+     "faculty": "School of Engineering"
+    },
+    {
+     "names": {
+      "original": "Bachelor of Engineering in Civil and Environmental Engineering",
+      "en": "Bachelor of Engineering in Civil and Environmental Engineering"
+     },
+     "level": "bachelor",
+     "isced_f": "071",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://soe.nu.edu.kz/bachelor_of_cee",
+     "faculty": "School of Engineering"
+    },
+    {
+     "names": {
+      "original": "Bachelor of Engineering in Mechanical and Aerospace Engineering",
+      "en": "Bachelor of Engineering in Mechanical and Aerospace Engineering"
+     },
+     "level": "bachelor",
+     "isced_f": "071",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://soe.nu.edu.kz/bachelor_of_mae",
+     "faculty": "School of Engineering"
+    },
+    {
+     "names": {
+      "original": "Bachelor of Science in Mathematics",
+      "en": "Bachelor of Science in Mathematics"
+     },
+     "level": "bachelor",
+     "isced_f": "054",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://scai.nu.edu.kz/bsc-math",
+     "faculty": "School of Computing and Artificial Intelligence"
+    },
+    {
+     "names": {
+      "original": "Bachelor of Science in Computer Science",
+      "en": "Bachelor of Science in Computer Science"
+     },
+     "level": "bachelor",
+     "isced_f": "061",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://scai.nu.edu.kz/bsc-cs",
+     "faculty": "School of Computing and Artificial Intelligence"
+    },
+    {
+     "names": {
+      "original": "Bachelor of Science in Robotics Engineering",
+      "en": "Bachelor of Science in Robotics Engineering"
+     },
+     "level": "bachelor",
+     "isced_f": "061",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://scai.nu.edu.kz/bsc-rob",
+     "faculty": "School of Computing and Artificial Intelligence"
+    },
+    {
+     "names": {
+      "original": "Bachelor of Science in Physics",
+      "en": "Bachelor of Science in Physics"
+     },
+     "level": "bachelor",
+     "isced_f": "053",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://ssh.nu.edu.kz/bscphysics",
+     "faculty": "School of Sciences and Humanities"
+    },
+    {
+     "names": {
+      "original": "Bachelor of Science in Chemistry",
+      "en": "Bachelor of Science in Chemistry"
+     },
+     "level": "bachelor",
+     "isced_f": "053",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://ssh.nu.edu.kz/bscchem",
+     "faculty": "School of Sciences and Humanities"
+    },
+    {
+     "names": {
+      "original": "Bachelor of Arts in Sociology",
+      "en": "Bachelor of Arts in Sociology"
+     },
+     "level": "bachelor",
+     "isced_f": "031",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://ssh.nu.edu.kz/basociology",
+     "faculty": "School of Sciences and Humanities"
+    },
+    {
+     "names": {
+      "original": "Bachelor of Arts in Political Science and International Relations",
+      "en": "Bachelor of Arts in Political Science and International Relations"
+     },
+     "level": "bachelor",
+     "isced_f": "031",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://ssh.nu.edu.kz/bapsir",
+     "faculty": "School of Sciences and Humanities"
+    },
+    {
+     "names": {
+      "original": "Master of Science in Biomedicine",
+      "en": "Master of Science in Biomedicine"
+     },
+     "level": "master",
+     "isced_f": "051",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://nusom.nu.edu.kz/msbm",
+     "faculty": "School of Medicine"
+    },
+    {
+     "names": {
+      "original": "Master of Science in Nursing",
+      "en": "Master of Science in Nursing"
+     },
+     "level": "master",
+     "isced_f": "091",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://nusom.nu.edu.kz/msn",
+     "faculty": "School of Medicine"
+    },
+    {
+     "names": {
+      "original": "Master of Public Health",
+      "en": "Master of Public Health"
+     },
+     "level": "master",
+     "isced_f": "091",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://nusom.nu.edu.kz/mph",
+     "faculty": "School of Medicine"
+    },
+    {
+     "names": {
+      "original": "Master of Science in Life Sciences",
+      "en": "Master of Science in Life Sciences"
+     },
+     "level": "master",
+     "isced_f": "051",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://nusom.nu.edu.kz/mls",
+     "faculty": "School of Medicine"
+    },
+    {
+     "names": {
+      "original": "Executive Master of Business Administration",
+      "en": "Executive Master of Business Administration"
+     },
+     "level": "master",
+     "isced_f": "041",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://gsb.nu.edu.kz/executivemba",
+     "faculty": "Graduate School of Business"
+    },
+    {
+     "names": {
+      "original": "Master of Science in Finance",
+      "en": "Master of Science in Finance"
+     },
+     "level": "master",
+     "isced_f": "041",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://gsb.nu.edu.kz/msc_in_finance",
+     "faculty": "Graduate School of Business"
+    },
+    {
+     "names": {
+      "original": "Master of Business Administration",
+      "en": "Master of Business Administration"
+     },
+     "level": "master",
+     "isced_f": "041",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://gsb.nu.edu.kz/mba",
+     "faculty": "Graduate School of Business"
+    },
+    {
+     "names": {
+      "original": "Master of Arts in Economics",
+      "en": "Master of Arts in Economics"
+     },
+     "level": "master",
+     "isced_f": "031",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://gsb.nu.edu.kz/maecon",
+     "faculty": "Graduate School of Business"
+    },
+    {
+     "names": {
+      "original": "Master of Arts in Global Affairs and Eurasian Studies (Joint Degree with SOAS)",
+      "en": "Master of Arts in Global Affairs and Eurasian Studies (Joint Degree with SOAS)"
+     },
+     "level": "master",
+     "isced_f": "031",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://ssh.nu.edu.kz/nusoas",
+     "faculty": "School of Sciences and Humanities"
+    },
+    {
+     "names": {
+      "original": "Master of Science in Chemistry",
+      "en": "Master of Science in Chemistry"
+     },
+     "level": "master",
+     "isced_f": "053",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://ssh.nu.edu.kz/mscchem",
+     "faculty": "School of Sciences and Humanities"
+    },
+    {
+     "names": {
+      "original": "Master of Science in Physics",
+      "en": "Master of Science in Physics"
+     },
+     "level": "master",
+     "isced_f": "053",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://ssh.nu.edu.kz/mscphysics",
+     "faculty": "School of Sciences and Humanities"
+    },
+    {
+     "names": {
+      "original": "Master of Arts in Political Science and International Relations",
+      "en": "Master of Arts in Political Science and International Relations"
+     },
+     "level": "master",
+     "isced_f": "031",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://ssh.nu.edu.kz/mapsirgr",
+     "faculty": "School of Sciences and Humanities"
+    },
+    {
+     "names": {
+      "original": "Master of Arts in Eurasian Studies",
+      "en": "Master of Arts in Eurasian Studies"
+     },
+     "level": "master",
+     "isced_f": "031",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://ssh.nu.edu.kz/maeurasian",
+     "faculty": "School of Sciences and Humanities"
+    },
+    {
+     "names": {
+      "original": "Master of Arts in Multilingual Education",
+      "en": "Master of Arts in Multilingual Education"
+     },
+     "level": "master",
+     "isced_f": "011",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://gse.nu.edu.kz/maprogram",
+     "faculty": "Graduate School of Education"
+    },
+    {
+     "names": {
+      "original": "Master of Science in Educational Leadership",
+      "en": "Master of Science in Educational Leadership"
+     },
+     "level": "master",
+     "isced_f": "011",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://gse.nu.edu.kz/mscprograms",
+     "faculty": "Graduate School of Education"
+    },
+    {
+     "names": {
+      "original": "Master in Public Administration",
+      "en": "Master in Public Administration"
+     },
+     "level": "master",
+     "isced_f": "031",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://gspp.nu.edu.kz/gsppmpa",
+     "faculty": "Graduate School of Public Policy"
+    },
+    {
+     "names": {
+      "original": "Master in Public Policy",
+      "en": "Master in Public Policy"
+     },
+     "level": "master",
+     "isced_f": "031",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://gspp.nu.edu.kz/gsppmpp",
+     "faculty": "Graduate School of Public Policy"
+    },
+    {
+     "names": {
+      "original": "Master of Applied Artificial Intelligence and Data Science",
+      "en": "Master of Applied Artificial Intelligence and Data Science"
+     },
+     "level": "master",
+     "isced_f": "061",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://scai.nu.edu.kz/msc-ai",
+     "faculty": "School of Computing and Artificial Intelligence"
+    },
+    {
+     "names": {
+      "original": "Master of Science in Data Science",
+      "en": "Master of Science in Data Science"
+     },
+     "level": "master",
+     "isced_f": "061",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://scai.nu.edu.kz/msc-ds",
+     "faculty": "School of Computing and Artificial Intelligence"
+    },
+    {
+     "names": {
+      "original": "Master of Science in Computer Science",
+      "en": "Master of Science in Computer Science"
+     },
+     "level": "master",
+     "isced_f": "061",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://scai.nu.edu.kz/msc-cs",
+     "faculty": "School of Computing and Artificial Intelligence"
+    },
+    {
+     "names": {
+      "original": "Master of Science in Applied Mathematics",
+      "en": "Master of Science in Applied Mathematics"
+     },
+     "level": "master",
+     "isced_f": "054",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://scai.nu.edu.kz/msc-math",
+     "faculty": "School of Computing and Artificial Intelligence"
+    },
+    {
+     "names": {
+      "original": "Master of Science in Robotics",
+      "en": "Master of Science in Robotics"
+     },
+     "level": "master",
+     "isced_f": "061",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://scai.nu.edu.kz/msc-rob",
+     "faculty": "School of Computing and Artificial Intelligence"
+    },
+    {
+     "names": {
+      "original": "Master of Science in Geosciences",
+      "en": "Master of Science in Geosciences"
+     },
+     "level": "master",
+     "isced_f": "053",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://soe.nu.edu.kz/msc_in_geosciences",
+     "faculty": "School of Engineering"
+    },
+    {
+     "names": {
+      "original": "Master of Science in Petroleum Engineering",
+      "en": "Master of Science in Petroleum Engineering"
+     },
+     "level": "master",
+     "isced_f": "071",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://soe.nu.edu.kz/msc_in_pe",
+     "faculty": "School of Engineering"
+    },
+    {
+     "names": {
+      "original": "Master of Science in Mining Engineering",
+      "en": "Master of Science in Mining Engineering"
+     },
+     "level": "master",
+     "isced_f": "071",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://soe.nu.edu.kz/msc_in_me",
+     "faculty": "School of Engineering"
+    },
+    {
+     "names": {
+      "original": "Master of Science in Biomedical Engineering",
+      "en": "Master of Science in Biomedical Engineering"
+     },
+     "level": "master",
+     "isced_f": "071",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://soe.nu.edu.kz/msc_in_be",
+     "faculty": "School of Engineering"
+    },
+    {
+     "names": {
+      "original": "Master of Science in Civil and Environmental Engineering",
+      "en": "Master of Science in Civil and Environmental Engineering"
+     },
+     "level": "master",
+     "isced_f": "071",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://soe.nu.edu.kz/msc_in_cee",
+     "faculty": "School of Engineering"
+    },
+    {
+     "names": {
+      "original": "Master of Science in Chemical and Materials Engineering",
+      "en": "Master of Science in Chemical and Materials Engineering"
+     },
+     "level": "master",
+     "isced_f": "071",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://soe.nu.edu.kz/msc_in_cme",
+     "faculty": "School of Engineering"
+    },
+    {
+     "names": {
+      "original": "Master of Science in Electrical and Computer Engineering",
+      "en": "Master of Science in Electrical and Computer Engineering"
+     },
+     "level": "master",
+     "isced_f": "061",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://soe.nu.edu.kz/msc_in_ece",
+     "faculty": "School of Engineering"
+    },
+    {
+     "names": {
+      "original": "MSc in Mechanical and Aerospace Engineering",
+      "en": "MSc in Mechanical and Aerospace Engineering"
+     },
+     "level": "master",
+     "isced_f": "071",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://soe.nu.edu.kz/msc_in_mae",
+     "faculty": "School of Engineering"
+    },
+    {
+     "names": {
+      "original": "Master of Engineering Management",
+      "en": "Master of Engineering Management"
+     },
+     "level": "master",
+     "isced_f": "041",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://soe.nu.edu.kz/master_of_em",
+     "faculty": "School of Engineering"
+    },
+    {
+     "names": {
+      "original": "Ph.D. in Global Health",
+      "en": "Ph.D. in Global Health"
+     },
+     "level": "phd",
+     "isced_f": "091",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://nusom.nu.edu.kz/phd-in-global-health",
+     "faculty": "School of Medicine"
+    },
+    {
+     "names": {
+      "original": "Ph.D. in Biomedical Sciences",
+      "en": "Ph.D. in Biomedical Sciences"
+     },
+     "level": "phd",
+     "isced_f": "051",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://nusom.nu.edu.kz/phd-in-biomedical-sciences",
+     "faculty": "School of Medicine"
+    },
+    {
+     "names": {
+      "original": "Ph.D. in Life Sciences",
+      "en": "Ph.D. in Life Sciences"
+     },
+     "level": "phd",
+     "isced_f": "051",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://nusom.nu.edu.kz/phd-in-life-sciences",
+     "faculty": "School of Medicine"
+    },
+    {
+     "names": {
+      "original": "Doctor of Business Administration",
+      "en": "Doctor of Business Administration"
+     },
+     "level": "phd",
+     "isced_f": "041",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://gsb.nu.edu.kz/dba",
+     "faculty": "Graduate School of Business"
+    },
+    {
+     "names": {
+      "original": "PhD in Business Administration",
+      "en": "PhD in Business Administration"
+     },
+     "level": "phd",
+     "isced_f": "041",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://gsb.nu.edu.kz/phd_in_ba",
+     "faculty": "Graduate School of Business"
+    },
+    {
+     "names": {
+      "original": "Ph.D. in Geosciences",
+      "en": "Ph.D. in Geosciences"
+     },
+     "level": "phd",
+     "isced_f": "053",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://soe.nu.edu.kz/phd_in_geosciences",
+     "faculty": "School of Engineering"
+    },
+    {
+     "names": {
+      "original": "PhD in Mining Engineering",
+      "en": "PhD in Mining Engineering"
+     },
+     "level": "phd",
+     "isced_f": "071",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://soe.nu.edu.kz/phd_in_me",
+     "faculty": "School of Engineering"
+    },
+    {
+     "names": {
+      "original": "PhD in Petroleum Engineering",
+      "en": "PhD in Petroleum Engineering"
+     },
+     "level": "phd",
+     "isced_f": "071",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://soe.nu.edu.kz/phd_in_pe",
+     "faculty": "School of Engineering"
+    },
+    {
+     "names": {
+      "original": "PhD in Science, Engineering and Technology",
+      "en": "PhD in Science, Engineering and Technology"
+     },
+     "level": "phd",
+     "isced_f": "071",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://soe.nu.edu.kz/phd_in_set",
+     "faculty": "School of Engineering"
+    },
+    {
+     "names": {
+      "original": "Ph.D. in Chemical Engineering",
+      "en": "Ph.D. in Chemical Engineering"
+     },
+     "level": "phd",
+     "isced_f": "071",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://soe.nu.edu.kz/phd_in_che",
+     "faculty": "School of Engineering"
+    },
+    {
+     "names": {
+      "original": "Ph.D. in Mechanical Engineering",
+      "en": "Ph.D. in Mechanical Engineering"
+     },
+     "level": "phd",
+     "isced_f": "071",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://soe.nu.edu.kz/phd_in_mae",
+     "faculty": "School of Engineering"
+    },
+    {
+     "names": {
+      "original": "Ph.D. in Electrical Engineering",
+      "en": "Ph.D. in Electrical Engineering"
+     },
+     "level": "phd",
+     "isced_f": "071",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://soe.nu.edu.kz/phd_in_ee",
+     "faculty": "School of Engineering"
+    },
+    {
+     "names": {
+      "original": "Ph.D. in Civil Engineering",
+      "en": "Ph.D. in Civil Engineering"
+     },
+     "level": "phd",
+     "isced_f": "073",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://soe.nu.edu.kz/phd_in_ce",
+     "faculty": "School of Engineering"
+    },
+    {
+     "names": {
+      "original": "Ph.D. in Chemistry",
+      "en": "Ph.D. in Chemistry"
+     },
+     "level": "phd",
+     "isced_f": "053",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://ssh.nu.edu.kz/phd_chem",
+     "faculty": "School of Sciences and Humanities"
+    },
+    {
+     "names": {
+      "original": "Ph.D. in Physics",
+      "en": "Ph.D. in Physics"
+     },
+     "level": "phd",
+     "isced_f": "053",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://ssh.nu.edu.kz/phys_graduate_programs",
+     "faculty": "School of Sciences and Humanities"
+    },
+    {
+     "names": {
+      "original": "PhD in Eurasian Studies",
+      "en": "PhD in Eurasian Studies"
+     },
+     "level": "phd",
+     "isced_f": "031",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://ssh.nu.edu.kz/c_eas",
+     "faculty": "School of Sciences and Humanities"
+    },
+    {
+     "names": {
+      "original": "Ph.D. in Mathematics",
+      "en": "Ph.D. in Mathematics"
+     },
+     "level": "phd",
+     "isced_f": "054",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://scai.nu.edu.kz/phd-math",
+     "faculty": "School of Computing and Artificial Intelligence"
+    },
+    {
+     "names": {
+      "original": "Ph.D. in Computer Science",
+      "en": "Ph.D. in Computer Science"
+     },
+     "level": "phd",
+     "isced_f": "061",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://scai.nu.edu.kz/phd-cs",
+     "faculty": "School of Computing and Artificial Intelligence"
+    },
+    {
+     "names": {
+      "original": "Ph.D. in Robotics Engineering",
+      "en": "Ph.D. in Robotics Engineering"
+     },
+     "level": "phd",
+     "isced_f": "061",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://scai.nu.edu.kz/phd-rob",
+     "faculty": "School of Computing and Artificial Intelligence"
+    },
+    {
+     "names": {
+      "original": "Doctor of Philosophy in Education",
+      "en": "Doctor of Philosophy in Education"
+     },
+     "level": "phd",
+     "isced_f": "011",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://gse.nu.edu.kz/phdprogram",
+     "faculty": "Graduate School of Education"
+    },
+    {
+     "names": {
+      "original": "Doctor of Public Management",
+      "en": "Doctor of Public Management"
+     },
+     "level": "phd",
+     "isced_f": "031",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://gspp.nu.edu.kz/gsppdpm",
+     "faculty": "Graduate School of Public Policy"
+    },
+    {
+     "names": {
+      "original": "Ph.D. in Public Policy",
+      "en": "Ph.D. in Public Policy"
+     },
+     "level": "phd",
+     "isced_f": "031",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://gspp.nu.edu.kz/gsppphd",
+     "faculty": "Graduate School of Public Policy"
+    }
+   ]
+  },
+  {
+   "externalIds": {
+    "official_university_sites_region": "american-university-of-armenia"
+   },
+   "slug": "american-university-of-armenia",
+   "existing": true,
+   "country": "AM",
+   "type": "university",
+   "names": {
+    "original": "American University of Armenia",
+    "en": "American University of Armenia"
+   },
+   "city": {
+    "en": "Yerevan"
+   },
+   "lat": 40.1932,
+   "lng": 44.5045,
+   "website": "https://aua.am/",
+   "ownership": null,
+   "size": null,
+   "programs": [
+    {
+     "names": {
+      "original": "BA in Business",
+      "en": "BA in Business"
+     },
+     "level": "bachelor",
+     "isced_f": "041",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://cbe.aua.am/ba-business/",
+     "faculty": null
+    },
+    {
+     "names": {
+      "original": "BS in Economics",
+      "en": "BS in Economics"
+     },
+     "level": "bachelor",
+     "isced_f": "031",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://cbe.aua.am/bs-in-economics/",
+     "faculty": null
+    },
+    {
+     "names": {
+      "original": "BA in English and Communications",
+      "en": "BA in English and Communications"
+     },
+     "level": "bachelor",
+     "isced_f": "023",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://baec.aua.am/",
+     "faculty": null
+    },
+    {
+     "names": {
+      "original": "BA in Politics and Governance",
+      "en": "BA in Politics and Governance"
+     },
+     "level": "bachelor",
+     "isced_f": "031",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://bapg.aua.am/",
+     "faculty": null
+    },
+    {
+     "names": {
+      "original": "BS in Computer Science",
+      "en": "BS in Computer Science"
+     },
+     "level": "bachelor",
+     "isced_f": "061",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://cse.aua.am/cs/",
+     "faculty": null
+    },
+    {
+     "names": {
+      "original": "BS in Data Science",
+      "en": "BS in Data Science"
+     },
+     "level": "bachelor",
+     "isced_f": "061",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "http://cse.aua.am/ds/",
+     "faculty": null
+    },
+    {
+     "names": {
+      "original": "BS in Engineering Sciences",
+      "en": "BS in Engineering Sciences"
+     },
+     "level": "bachelor",
+     "isced_f": "071",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "http://cse.aua.am/es/",
+     "faculty": null
+    },
+    {
+     "names": {
+      "original": "BS in Environmental and Sustainability Sciences",
+      "en": "BS in Environmental and Sustainability Sciences"
+     },
+     "level": "bachelor",
+     "isced_f": "052",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://cse.aua.am/ess/",
+     "faculty": null
+    },
+    {
+     "names": {
+      "original": "BS in Nursing",
+      "en": "BS in Nursing"
+     },
+     "level": "bachelor",
+     "isced_f": "091",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://chs.aua.am/bachelor-of-science-in-nursing/",
+     "faculty": null
+    },
+    {
+     "names": {
+      "original": "Master of Business Administration (MBA)",
+      "en": "Master of Business Administration (MBA)"
+     },
+     "level": "master",
+     "isced_f": "041",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "http://cbe.aua.am/mba/",
+     "faculty": null
+    },
+    {
+     "names": {
+      "original": "Master of Science in Management and Analytics (MSMA)",
+      "en": "Master of Science in Management and Analytics (MSMA)"
+     },
+     "level": "master",
+     "isced_f": "041",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://cbe.aua.am/msma/",
+     "faculty": null
+    },
+    {
+     "names": {
+      "original": "Master of Science in Economics (MSE)",
+      "en": "Master of Science in Economics (MSE)"
+     },
+     "level": "master",
+     "isced_f": "031",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "http://cbe.aua.am/ms-economics/",
+     "faculty": null
+    },
+    {
+     "names": {
+      "original": "Master of Arts in Teaching English as a Foreign Language (MATEFL)",
+      "en": "Master of Arts in Teaching English as a Foreign Language (MATEFL)"
+     },
+     "level": "master",
+     "isced_f": "011",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "http://tefl.aua.am/matefl/",
+     "faculty": null
+    },
+    {
+     "names": {
+      "original": "Master of Laws (LL.M.)",
+      "en": "Master of Laws (LL.M.)"
+     },
+     "level": "master",
+     "isced_f": "038",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "http://law.aua.am/llm/",
+     "faculty": null
+    },
+    {
+     "names": {
+      "original": "Master of Arts in Human Rights and Social Justice (MAHRSJ)",
+      "en": "Master of Arts in Human Rights and Social Justice (MAHRSJ)"
+     },
+     "level": "master",
+     "isced_f": "031",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://hrsj.aua.am/",
+     "faculty": null
+    },
+    {
+     "names": {
+      "original": "Master of Arts in International Relations and Diplomacy (MAIRD)",
+      "en": "Master of Arts in International Relations and Diplomacy (MAIRD)"
+     },
+     "level": "master",
+     "isced_f": "031",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://psia.aua.am/maird/",
+     "faculty": null
+    },
+    {
+     "names": {
+      "original": "Master of Public Affairs (MPA)",
+      "en": "Master of Public Affairs (MPA)"
+     },
+     "level": "master",
+     "isced_f": "031",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://psia.aua.am/mpa/",
+     "faculty": null
+    },
+    {
+     "names": {
+      "original": "Master of Arts in Multiplatform Journalism (MAMJ)",
+      "en": "Master of Arts in Multiplatform Journalism (MAMJ)"
+     },
+     "level": "master",
+     "isced_f": "032",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://chss.aua.am/mamj/",
+     "faculty": null
+    },
+    {
+     "names": {
+      "original": "Master of Arts in Education (MAED)",
+      "en": "Master of Arts in Education (MAED)"
+     },
+     "level": "master",
+     "isced_f": "011",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://chss.aua.am/maed/",
+     "faculty": null
+    },
+    {
+     "names": {
+      "original": "Master of Public Health (MPH)",
+      "en": "Master of Public Health (MPH)"
+     },
+     "level": "master",
+     "isced_f": "091",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "http://chs.aua.am/mph/",
+     "faculty": null
+    },
+    {
+     "names": {
+      "original": "Master of Engineering in Industrial Engineering and Systems Management (MEIESM)",
+      "en": "Master of Engineering in Industrial Engineering and Systems Management (MEIESM)"
+     },
+     "level": "master",
+     "isced_f": "071",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "http://cse.aua.am/graduate-programs/iesm/",
+     "faculty": null
+    },
+    {
+     "names": {
+      "original": "Master of Science in Computer and Information Science (MSCIS)",
+      "en": "Master of Science in Computer and Information Science (MSCIS)"
+     },
+     "level": "master",
+     "isced_f": "061",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "http://cse.aua.am/graduate-programs/cis/",
+     "faculty": null
+    }
+   ]
+  },
+  {
+   "externalIds": {
+    "official_university_sites_region": "american-university-of-central-asia"
+   },
+   "slug": "american-university-of-central-asia",
+   "existing": true,
+   "country": "KG",
+   "type": "university",
+   "names": {
+    "original": "American University of Central Asia",
+    "en": "American University of Central Asia"
+   },
+   "city": {
+    "en": "Bishkek"
+   },
+   "lat": 42.81119,
+   "lng": 74.62721,
+   "website": "https://auca.kg/",
+   "ownership": null,
+   "size": null,
+   "programs": [
+    {
+     "names": {
+      "original": "Anthropology, Technology and International Development",
+      "en": "Anthropology, Technology and International Development"
+     },
+     "level": "bachelor",
+     "isced_f": "031",
+     "languages": [],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://dss.auca.kg/bachelor-degree-in-anthropology/",
+     "faculty": null
+    },
+    {
+     "names": {
+      "original": "Applied Geology",
+      "en": "Applied Geology"
+     },
+     "level": "bachelor",
+     "isced_f": "053",
+     "languages": [],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://auca.kg/en/applied_geology/",
+     "faculty": null
+    },
+    {
+     "names": {
+      "original": "Applied Mathematics and Informatics",
+      "en": "Applied Mathematics and Informatics"
+     },
+     "level": "bachelor",
+     "isced_f": "054",
+     "languages": [],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://auca.kg/en/app_math/",
+     "faculty": null
+    },
+    {
+     "names": {
+      "original": "Business Administration",
+      "en": "Business Administration"
+     },
+     "level": "bachelor",
+     "isced_f": "041",
+     "languages": [],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://seba.auca.kg/undergraduate/",
+     "faculty": null
+    },
+    {
+     "names": {
+      "original": "Economics",
+      "en": "Economics"
+     },
+     "level": "bachelor",
+     "isced_f": "031",
+     "languages": [],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "http://economics.auca.kg/",
+     "faculty": null
+    },
+    {
+     "names": {
+      "original": "European Studies",
+      "en": "European Studies"
+     },
+     "level": "bachelor",
+     "isced_f": "031",
+     "languages": [],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://auca.kg/en/european_studies_/",
+     "faculty": null
+    },
+    {
+     "names": {
+      "original": "International and Business Law",
+      "en": "International and Business Law"
+     },
+     "level": "bachelor",
+     "isced_f": "038",
+     "languages": [],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://auca.kg/en/international_and_business_law_department/",
+     "faculty": null
+    },
+    {
+     "names": {
+      "original": "International and Comparative Politics",
+      "en": "International and Comparative Politics"
+     },
+     "level": "bachelor",
+     "isced_f": "031",
+     "languages": [],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://auca.kg/en/icp/",
+     "faculty": null
+    },
+    {
+     "names": {
+      "original": "Journalism and Mass Communication",
+      "en": "Journalism and Mass Communication"
+     },
+     "level": "bachelor",
+     "isced_f": "032",
+     "languages": [],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://dss.auca.kg/bachelor-in-journalism-and-mass-communications/",
+     "faculty": null
+    },
+    {
+     "names": {
+      "original": "Liberal Arts and Sciences",
+      "en": "Liberal Arts and Sciences"
+     },
+     "level": "bachelor",
+     "isced_f": "00",
+     "languages": [],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://las.auca.kg/",
+     "faculty": null
+    },
+    {
+     "names": {
+      "original": "Psychology",
+      "en": "Psychology"
+     },
+     "level": "bachelor",
+     "isced_f": "031",
+     "languages": [],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://dss.auca.kg/bachelor-in-psychology/",
+     "faculty": null
+    },
+    {
+     "names": {
+      "original": "Sociology",
+      "en": "Sociology"
+     },
+     "level": "bachelor",
+     "isced_f": "031",
+     "languages": [],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://dss.auca.kg/bachelor-in-sociology/",
+     "faculty": null
+    },
+    {
+     "names": {
+      "original": "Software Engineering",
+      "en": "Software Engineering"
+     },
+     "level": "bachelor",
+     "isced_f": "061",
+     "languages": [],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://auca.kg/en/software_engineering_/",
+     "faculty": null
+    },
+    {
+     "names": {
+      "original": "Television, Cinema and Media Arts",
+      "en": "Television, Cinema and Media Arts"
+     },
+     "level": "bachelor",
+     "isced_f": "021",
+     "languages": [],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://dss.auca.kg/bachelor-in-tv-cinema-and-media-arts/",
+     "faculty": null
+    },
+    {
+     "names": {
+      "original": "Master of Arts in Anthropology, Urbanism and International Development",
+      "en": "Master of Arts in Anthropology, Urbanism and International Development"
+     },
+     "level": "master",
+     "isced_f": "031",
+     "languages": [],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://dss.auca.kg/master-in-anthropology/",
+     "faculty": null
+    },
+    {
+     "names": {
+      "original": "Master of Arts in Applied Psychology",
+      "en": "Master of Arts in Applied Psychology"
+     },
+     "level": "master",
+     "isced_f": "031",
+     "languages": [],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://dss.auca.kg/master-in-applied-psychology/",
+     "faculty": null
+    },
+    {
+     "names": {
+      "original": "Master of Arts in Central Asian Studies",
+      "en": "Master of Arts in Central Asian Studies"
+     },
+     "level": "master",
+     "isced_f": "031",
+     "languages": [],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://auca.kg/en/macas/",
+     "faculty": null
+    },
+    {
+     "names": {
+      "original": "Master of Arts in Journalism",
+      "en": "Master of Arts in Journalism"
+     },
+     "level": "master",
+     "isced_f": "032",
+     "languages": [],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://dss.auca.kg/master-in-journalism-and-mass-communications/",
+     "faculty": null
+    },
+    {
+     "names": {
+      "original": "Master of Arts in Sociology",
+      "en": "Master of Arts in Sociology"
+     },
+     "level": "master",
+     "isced_f": "031",
+     "languages": [],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://dss.auca.kg/master-in-sociology/",
+     "faculty": null
+    },
+    {
+     "names": {
+      "original": "Master of Arts in Teaching",
+      "en": "Master of Arts in Teaching"
+     },
+     "level": "master",
+     "isced_f": "011",
+     "languages": [],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://ioe.auca.kg/",
+     "faculty": null
+    },
+    {
+     "names": {
+      "original": "Master of Laws (LL.M.)",
+      "en": "Master of Laws (LL.M.)"
+     },
+     "level": "master",
+     "isced_f": "038",
+     "languages": [],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://auca.kg/en/llm/",
+     "faculty": null
+    },
+    {
+     "names": {
+      "original": "Masters of Business Administration",
+      "en": "Masters of Business Administration"
+     },
+     "level": "master",
+     "isced_f": "041",
+     "languages": [],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "http://business.auca.kg/?page_id=379",
+     "faculty": null
+    },
+    {
+     "names": {
+      "original": "MSc in Economics Program",
+      "en": "MSc in Economics Program"
+     },
+     "level": "master",
+     "isced_f": "031",
+     "languages": [],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "http://economics.auca.kg/",
+     "faculty": null
+    }
+   ]
+  },
+  {
+   "externalIds": {
+    "official_university_sites_region": "westminster-international-university-in-tashkent"
+   },
+   "slug": "westminster-international-university-in-tashkent",
+   "existing": true,
+   "country": "UZ",
+   "type": "university",
+   "names": {
+    "original": "Westminster International University in Tashkent",
+    "en": "Westminster International University in Tashkent"
+   },
+   "city": {
+    "en": "Tashkent"
+   },
+   "lat": 41.30694,
+   "lng": 69.28333,
+   "website": "https://www.wiut.uz/",
+   "ownership": null,
+   "size": null,
+   "programs": [
+    {
+     "names": {
+      "original": "BA (Hons) in International Relations and Law",
+      "en": "BA (Hons) in International Relations and Law"
+     },
+     "level": "bachelor",
+     "isced_f": "031",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://www.wiut.uz/international-relations-and-law",
+     "faculty": null
+    },
+    {
+     "names": {
+      "original": "BSc (Hons) in Economics and its Pathways",
+      "en": "BSc (Hons) in Economics and its Pathways"
+     },
+     "level": "bachelor",
+     "isced_f": "031",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://www.wiut.uz/economics",
+     "faculty": null
+    },
+    {
+     "names": {
+      "original": "BSc (Hons) in Computer Science",
+      "en": "BSc (Hons) in Computer Science"
+     },
+     "level": "bachelor",
+     "isced_f": "061",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://www.wiut.uz/bsc-hons-in-computer-science",
+     "faculty": null
+    },
+    {
+     "names": {
+      "original": "BA (Hons) in Commercial Law",
+      "en": "BA (Hons) in Commercial Law"
+     },
+     "level": "bachelor",
+     "isced_f": "038",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://www.wiut.uz/commercial-law",
+     "faculty": null
+    },
+    {
+     "names": {
+      "original": "BSc (Hons) in Finance",
+      "en": "BSc (Hons) in Finance"
+     },
+     "level": "bachelor",
+     "isced_f": "041",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://www.wiut.uz/finance",
+     "faculty": null
+    },
+    {
+     "names": {
+      "original": "BA (Hons) in Business Management and its Pathways",
+      "en": "BA (Hons) in Business Management and its Pathways"
+     },
+     "level": "bachelor",
+     "isced_f": "041",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://www.wiut.uz/business-management",
+     "faculty": null
+    },
+    {
+     "names": {
+      "original": "BSc (Hons) in Business Information Systems",
+      "en": "BSc (Hons) in Business Information Systems"
+     },
+     "level": "bachelor",
+     "isced_f": "061",
+     "languages": [
+      "en"
+     ],
+     "duration_years": null,
+     "tuition": [],
+     "deadlines": [],
+     "applicationFee": null,
+     "applicationUrl": null,
+     "code": null,
+     "sourceUrl": "https://www.wiut.uz/business-information-systems",
+     "faculty": null
+    }
+   ]
+  }
+ ]
+}
