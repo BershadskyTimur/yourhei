@@ -101,8 +101,12 @@ function Hub({ attempts, onStart, onChanged }: { attempts: Attempt[]; onStart: (
   const finished = attempts.filter((a) => a.status === 'completed');
   const date = new Intl.DateTimeFormat(locale, { dateStyle: 'long' });
   const [continuing, setContinuing] = useState<Attempt | null>(null);
+  const [finishedNow, setFinishedNow] = useState(false);
 
-  if (continuing) return <Runner attempt={continuing} onDone={onChanged} onExit={onChanged} />;
+  // Finishing an attempt that was continued shows the same end screen as a new one (it used to drop back to the list,
+  // which looked as if the "Finish" button did nothing).
+  if (finishedNow) return <Done onAgain={onStart} />;
+  if (continuing) return <Runner attempt={continuing} onDone={() => setFinishedNow(true)} onExit={onChanged} />;
 
   const discard = async () => {
     const supabase = getSupabaseBrowser();

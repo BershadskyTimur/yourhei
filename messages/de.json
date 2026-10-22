@@ -649,9 +649,9 @@
         "options": {
           "on_campus": "Präsenz",
           "online": "Online",
-          "blended": "Gemischt",
-          "any": "Egal"
-        }
+          "blended": "Gemischt"
+        },
+        "hint": "Du kannst mehrere Optionen wählen."
       },
       "field_certainty": {
         "title": "Wie sicher bist du bei deinem Fachgebiet?",
@@ -750,13 +750,6 @@
           "creative": "Kreatives Portfolio",
           "volunteering": "Ehrenamt"
         }
-      },
-      "work_years": {
-        "title": "Wie viele Jahre hast du gearbeitet?"
-      },
-      "research_topic": {
-        "title": "Dein Forschungsthema",
-        "hint": "Falls du schon eines hast."
       },
       "entrance": {
         "title": "Worauf bist du vorbereitet?",
@@ -902,6 +895,12 @@
       "priorities": {
         "title": "Wähle die 3 wichtigsten Dinge",
         "hint": "Das entscheidet, was bei der Rangfolge deiner Treffer am meisten zählt."
+      },
+      "research": {
+        "title": "Berufserfahrung und Forschung",
+        "hint": "Beide Felder sind freiwillig.",
+        "years": "Wie viele Jahre hast du gearbeitet?",
+        "topic": "Dein Forschungsthema"
       }
     }
   },

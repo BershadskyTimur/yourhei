@@ -649,9 +649,9 @@
         "options": {
           "on_campus": "线下",
           "online": "线上",
-          "blended": "混合",
-          "any": "都可以"
-        }
+          "blended": "混合"
+        },
+        "hint": "可以选择多个选项。"
       },
       "field_certainty": {
         "title": "你对专业方向有多确定？",
@@ -750,13 +750,6 @@
           "creative": "创意作品集",
           "volunteering": "志愿服务"
         }
-      },
-      "work_years": {
-        "title": "你有几年工作经验？"
-      },
-      "research_topic": {
-        "title": "你的研究课题",
-        "hint": "如果已经有的话。"
       },
       "entrance": {
         "title": "你愿意接受什么？",
@@ -902,6 +895,12 @@
       "priorities": {
         "title": "请选择最重要的 3 项",
         "hint": "这决定了我们在为你的匹配排序时更看重什么。"
+      },
+      "research": {
+        "title": "工作经历与研究",
+        "hint": "两个栏目均为选填。",
+        "years": "你有几年工作经验？",
+        "topic": "你的研究课题"
       }
     }
   },

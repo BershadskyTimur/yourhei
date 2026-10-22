@@ -21,6 +21,7 @@ export type QuestionType =
   | 'budget'
   | 'olympiads'
   | 'riasec'
+  | 'research'
   | 'priorities';
 
 /** What the answer is used for when matching (stage 5): a hard filter, a score component, or just information. */
@@ -58,8 +59,9 @@ export const QUESTIONS: readonly Question[] = [
   { id: 'situation', block: 'goal', type: 'single', required: false, purpose: 'info',
     options: ['first', 'transfer', 'second_degree'], showIf: { q: 'level', in: ['college', 'bachelor'] } },
   { id: 'start', block: 'goal', type: 'intake', required: true, purpose: 'filter' },
-  { id: 'format', block: 'goal', type: 'single', required: true, purpose: 'filter',
-    options: ['on_campus', 'online', 'blended', 'any'] },
+  // Several formats may be chosen (for example on campus and blended); all three chosen means "any".
+  { id: 'format', block: 'goal', type: 'multi', required: true, purpose: 'filter',
+    options: ['on_campus', 'online', 'blended'] },
 
   // B. Direction
   { id: 'field_certainty', block: 'direction', type: 'single', required: true, purpose: 'info',
@@ -68,8 +70,6 @@ export const QUESTIONS: readonly Question[] = [
     showIf: { q: 'field_certainty', in: ['sure', 'few'] } },
   { id: 'riasec', block: 'direction', type: 'riasec', required: true, purpose: 'score',
     showIf: { q: 'field_certainty', in: ['unknown'] } },
-  { id: 'diploma_field', block: 'direction', type: 'specialty', required: false, purpose: 'info', max: 1,
-    showIf: { q: 'level', in: ['master', 'phd'] } },
 
   // G. Schools only
   { id: 'school_profile', block: 'school', type: 'single', required: true, purpose: 'score',
@@ -91,6 +91,8 @@ export const QUESTIONS: readonly Question[] = [
 
   // C. Studies and results
   { id: 'education', block: 'results', type: 'education', required: true, purpose: 'info', showIf: NOT_LANG_COURSE },
+  { id: 'diploma_field', block: 'results', type: 'specialty', required: false, purpose: 'info', max: 1,
+    showIf: { q: 'level', in: ['master', 'phd'] } },
   { id: 'grade', block: 'results', type: 'grade', required: true, purpose: 'score', showIf: NOT_LANG_COURSE },
   { id: 'subjects', block: 'results', type: 'subjects', required: false, purpose: 'score', max: 5,
     showIf: { q: 'level', in: ['school', 'college', 'foundation', 'bachelor'] } },
@@ -101,9 +103,8 @@ export const QUESTIONS: readonly Question[] = [
     showIf: { q: 'level', in: ['school', 'college', 'bachelor'] } },
   { id: 'achievements', block: 'results', type: 'multi', required: false, purpose: 'score',
     options: ['projects', 'publications', 'sport', 'creative', 'volunteering'], showIf: NOT_LANG_COURSE },
-  { id: 'work_years', block: 'results', type: 'number', required: false, purpose: 'info', min: 0, max: 60,
-    showIf: { q: 'level', in: ['master', 'phd'] } },
-  { id: 'research_topic', block: 'results', type: 'text', required: false, purpose: 'info',
+  // Work experience and the research topic, together in one step (both optional, for information only).
+  { id: 'research', block: 'results', type: 'research', required: false, purpose: 'info',
     showIf: { q: 'level', in: ['master', 'phd'] } },
   { id: 'entrance', block: 'results', type: 'multi', required: false, purpose: 'filter',
     options: ['entrance_exams', 'interview', 'creative_contest'], showIf: NOT_LANG_COURSE },

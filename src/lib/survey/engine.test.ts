@@ -20,7 +20,7 @@ const required = (answers: Answers) => visibleQuestions(answers).filter((q) => q
 const bachelor = (): Answers => ({
   level: 'bachelor',
   start: '2027-09',
-  format: 'on_campus',
+  format: ['on_campus', 'blended'],
   field_certainty: 'sure',
   fields: ['0613'],
   education: { level: 'school_11', year: 2026 },
@@ -91,7 +91,31 @@ describe('adaptive questions', () => {
 
   it('master and PhD applicants also get the research questions', () => {
     const a: Answers = { ...bachelor(), level: 'master' };
-    expect(ids(a)).toEqual(expect.arrayContaining(['diploma_field', 'work_years', 'research_topic']));
+    expect(ids(a)).toEqual(expect.arrayContaining(['diploma_field', 'research']));
+  });
+
+  it('the previous diploma is asked right after the current education, and work and research are one question', () => {
+    const a: Answers = { ...bachelor(), level: 'master' };
+    const order = ids(a);
+    expect(order.indexOf('diploma_field')).toBe(order.indexOf('education') + 1);
+    expect(order).not.toContain('work_years');
+    expect(order).not.toContain('research_topic');
+  });
+
+  it('study format: several can be chosen, at least one', () => {
+    const q = visibleQuestions({}).find((x) => x.id === 'format')!;
+    expect(validateAnswer(q, ['on_campus', 'blended'], {}, today)).toBeNull();
+    expect(validateAnswer(q, [], {}, today)).toBe('required');
+    expect(validateAnswer(q, ['online', 'online'], {}, today)).toBe('invalid');
+    expect(validateAnswer(q, ['any'], {}, today)).toBe('invalid');
+  });
+
+  it('work experience and research topic: both optional, but valid when given', () => {
+    const q = { ...visibleQuestions({ level: 'master' }).find((x) => x.id === 'research')! };
+    expect(validateAnswer(q, { years: 3, topic: 'Graph theory' }, {}, today)).toBeNull();
+    expect(validateAnswer(q, { years: 3 }, {}, today)).toBeNull();
+    expect(validateAnswer(q, { topic: 'x' }, {}, today)).toBeNull();
+    expect(validateAnswer(q, { years: 99 }, {}, today)).toBe('outOfRange');
   });
 
   it('"I do not know" leads to the interests test instead of the specialty list', () => {

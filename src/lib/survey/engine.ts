@@ -175,6 +175,13 @@ export function validateAnswer(q: Question, value: unknown, answers: Answers, to
       if (!Array.isArray(accepted) || accepted.length === 0) return 'required';
       return accepted.length <= 3 && accepted.every((c) => isStr(c) && iscedEntry(c)) ? null : 'invalid';
     }
+    case 'research': {
+      if (!record(value)) return 'invalid';
+      const { years, topic } = value;
+      if (years !== undefined && years !== null && !(isNum(years) && years >= 0 && years <= 60)) return 'outOfRange';
+      if (topic !== undefined && topic !== null && !(isStr(topic) && topic.length <= 500)) return 'invalid';
+      return null;
+    }
     case 'priorities': {
       if (!Array.isArray(value) || value.length !== PRIORITIES_COUNT) return 'priorities';
       const ok = value.every((v) => isStr(v) && (PRIORITY_OPTIONS as readonly string[]).includes(v));

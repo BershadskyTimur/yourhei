@@ -649,9 +649,9 @@
         "options": {
           "on_campus": "Kampüste",
           "online": "Çevrimiçi",
-          "blended": "Karma",
-          "any": "Fark etmez"
-        }
+          "blended": "Karma"
+        },
+        "hint": "Birden fazla seçenek seçebilirsiniz."
       },
       "field_certainty": {
         "title": "Alanından ne kadar eminsin?",
@@ -750,13 +750,6 @@
           "creative": "Yaratıcı portfolyo",
           "volunteering": "Gönüllülük"
         }
-      },
-      "work_years": {
-        "title": "Kaç yıl çalıştın?"
-      },
-      "research_topic": {
-        "title": "Araştırma konun",
-        "hint": "Zaten varsa."
       },
       "entrance": {
         "title": "Neye hazırsın?",
@@ -902,6 +895,12 @@
       "priorities": {
         "title": "En önemli 3 şeyi seç",
         "hint": "Bu, eşleşmelerini sıralarken en çok neyin sayılacağını belirler."
+      },
+      "research": {
+        "title": "Deneyim ve araştırma",
+        "hint": "Her iki alan da isteğe bağlıdır.",
+        "years": "Kaç yıl çalıştın?",
+        "topic": "Araştırma konun"
       }
     }
   },

@@ -2,12 +2,19 @@ import { normalizeExam, normalizeGrade } from '../survey/normalize';
 import { chosenFields, type Answers } from '../survey/engine';
 import type { SelfLevel } from '../survey/references';
 import type { InstitutionType } from '../institutions/types';
-import type { Level, MatchInput } from './types';
+import type { Level, MatchInput, StudyFormat } from './types';
 
 const isStr = (v: unknown): v is string => typeof v === 'string';
 const rec = (v: unknown): Record<string, unknown> => (typeof v === 'object' && v !== null && !Array.isArray(v) ? (v as Record<string, unknown>) : {});
 const arr = (v: unknown): unknown[] => (Array.isArray(v) ? v : []);
 const oneOf = <T extends string>(v: unknown, allowed: readonly T[]): T | null => (isStr(v) && (allowed as readonly string[]).includes(v) ? (v as T) : null);
+
+const FORMATS = ['on_campus', 'online', 'blended'] as const;
+/** The study formats the person accepts. An older survey saved one text ("any" or a single format); all three = any. */
+function formatsOf(v: unknown): StudyFormat[] {
+  const chosen = (isStr(v) ? [v] : arr(v)).filter((f): f is StudyFormat => isStr(f) && (FORMATS as readonly string[]).includes(f));
+  return chosen.length === FORMATS.length ? [] : [...new Set(chosen)];
+}
 
 export interface ProfileFacts {
   residence: string | null;
@@ -59,7 +66,7 @@ export function buildMatchInput(answers: Answers, profile: ProfileFacts): MatchI
   return {
     level,
     start: isStr(answers.start) ? answers.start : null,
-    format: oneOf(answers.format, ['on_campus', 'online', 'blended', 'any'] as const),
+    format: formatsOf(answers.format),
     funding: oneOf(answers.funding, ['free', 'paid', 'both'] as const) ?? 'both',
     budget: isStr(budget.currency) ? { currency: budget.currency, tuition: money(budget.tuition), living: money(budget.living) } : null,
     countries: profile.countries,

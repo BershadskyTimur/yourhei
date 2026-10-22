@@ -31,7 +31,7 @@ const program = (over: Partial<MatchProgram> = {}): MatchProgram => ({
 });
 
 const input = (over: Partial<MatchInput> = {}): MatchInput => ({
-  level: 'bachelor', start: '2027-09', format: 'on_campus', funding: 'both',
+  level: 'bachelor', start: '2027-09', format: ['on_campus'], funding: 'both',
   budget: { currency: 'USD', tuition: 4000, living: 6000 }, countries: [], types: [], citizenships: ['KZ'], residence: 'KZ',
   languages: [{ lang: 'en', level: 'b2', cert: null }], studyLanguages: ['en'], prepYear: false, fields: ['0613'],
   grade: { normalized: 80, system: 'hundred', value: 80 }, exams: [], rating: null, ownership: null, size: null, citySize: null,
@@ -89,7 +89,9 @@ describe('hard filters', () => {
   });
   it('format must match unless the person accepts any or the programme is blended', () => {
     expect(fail(program({ format: 'online' }), input())).toBe('format');
-    expect(fail(program({ format: 'online' }), input({ format: 'any' }))).toBeNull();
+    expect(fail(program({ format: 'online' }), input({ format: [] }))).toBeNull();
+    expect(fail(program({ format: 'online' }), input({ format: ['on_campus', 'online'] }))).toBeNull();
+    expect(fail(program({ format: 'online' }), input({ format: ['on_campus', 'blended'] }))).toBe('format');
     expect(fail(program({ format: 'blended' }), input())).toBeNull();
     expect(fail(program({ format: null }), input())).toBeNull();
   });
@@ -413,7 +415,7 @@ describe('groups and results', () => {
 
 describe('buildMatchInput', () => {
   const answers = {
-    level: 'master', start: '2027-09', format: 'any', funding: 'paid',
+    level: 'master', start: '2027-09', format: [], funding: 'paid',
     budget: { currency: 'EUR', tuition: 6000, living: 9000 },
     fields: ['0613', '0612'],
     grade: { system: 'gpa4', value: 3.5 },

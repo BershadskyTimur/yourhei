@@ -649,9 +649,9 @@
         "options": {
           "on_campus": "On campus",
           "online": "Online",
-          "blended": "Blended",
-          "any": "Any"
-        }
+          "blended": "Blended"
+        },
+        "hint": "You can choose several options."
       },
       "field_certainty": {
         "title": "How sure are you about your field?",
@@ -750,13 +750,6 @@
           "creative": "Creative portfolio",
           "volunteering": "Volunteering"
         }
-      },
-      "work_years": {
-        "title": "How many years have you worked?"
-      },
-      "research_topic": {
-        "title": "Your research topic",
-        "hint": "If you already have one."
       },
       "entrance": {
         "title": "What are you ready for?",
@@ -902,6 +895,12 @@
       "priorities": {
         "title": "Choose the 3 most important things",
         "hint": "This decides what counts most when we rank your matches."
+      },
+      "research": {
+        "title": "Experience and research",
+        "hint": "Both fields are optional.",
+        "years": "How many years have you worked?",
+        "topic": "Your research topic"
       }
     }
   },

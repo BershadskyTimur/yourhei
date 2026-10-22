@@ -649,9 +649,9 @@
         "options": {
           "on_campus": "Sur le campus",
           "online": "En ligne",
-          "blended": "Hybride",
-          "any": "Peu importe"
-        }
+          "blended": "Hybride"
+        },
+        "hint": "Vous pouvez choisir plusieurs options."
       },
       "field_certainty": {
         "title": "Êtes-vous sûr de votre domaine ?",
@@ -750,13 +750,6 @@
           "creative": "Portfolio créatif",
           "volunteering": "Bénévolat"
         }
-      },
-      "work_years": {
-        "title": "Combien d’années avez-vous travaillé ?"
-      },
-      "research_topic": {
-        "title": "Votre sujet de recherche",
-        "hint": "Si vous en avez déjà un."
       },
       "entrance": {
         "title": "À quoi êtes-vous prêt ?",
@@ -902,6 +895,12 @@
       "priorities": {
         "title": "Choisissez les 3 choses les plus importantes",
         "hint": "Cela détermine ce qui compte le plus pour classer vos résultats."
+      },
+      "research": {
+        "title": "Expérience et recherche",
+        "hint": "Les deux champs sont facultatifs.",
+        "years": "Combien d’années avez-vous travaillé ?",
+        "topic": "Votre sujet de recherche"
       }
     }
   },

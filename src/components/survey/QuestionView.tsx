@@ -546,6 +546,37 @@ export function QuestionView({ q, value, answers, onChange }: Props) {
       );
     }
 
+    case 'research': {
+      const v = asRecord(value);
+      const years = v.years === undefined || v.years === null ? null : (v.years as number);
+      const topic = typeof v.topic === 'string' ? v.topic : '';
+      // Both fields are optional: with both empty the answer is empty (the question counts as skipped).
+      const change = (next: { years: number | null; topic: string }) =>
+        onChange(next.years === null && next.topic.trim() === '' ? undefined : { ...(next.years === null ? {} : { years: next.years }), ...(next.topic.trim() === '' ? {} : { topic: next.topic }) });
+      return (
+        <div className="space-y-5">
+          <div className="max-w-xs">
+            <label htmlFor="q-research-years" className="mb-1 block text-sm font-medium">{t('q.research.years' as never)}</label>
+            <input
+              id="q-research-years"
+              type="number"
+              inputMode="numeric"
+              min={0}
+              max={60}
+              value={textOf(years)}
+              onChange={(e) => change({ years: numberOrNull(e.target.value), topic })}
+              className={inputClass}
+            />
+            <p className="mt-1 text-sm text-muted">{tUi('range', { min: 0, max: 60 })}</p>
+          </div>
+          <div>
+            <label htmlFor="q-research-topic" className="mb-1 block text-sm font-medium">{t('q.research.topic' as never)}</label>
+            <textarea id="q-research-topic" rows={3} maxLength={500} value={topic} onChange={(e) => change({ years, topic: e.target.value })} className={`${inputClass} !h-auto py-2`} />
+          </div>
+        </div>
+      );
+    }
+
     case 'priorities': {
       const chosen = asArray<string>(value);
       const full = chosen.length >= PRIORITIES_COUNT;

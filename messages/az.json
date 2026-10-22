@@ -649,9 +649,9 @@
         "options": {
           "on_campus": "Kampusda",
           "online": "Onlayn",
-          "blended": "Qarışıq",
-          "any": "Fərqi yoxdur"
-        }
+          "blended": "Qarışıq"
+        },
+        "hint": "Bir neçə variant seçə bilərsiniz."
       },
       "field_certainty": {
         "title": "Sahənə nə qədər əminsən?",
@@ -750,13 +750,6 @@
           "creative": "Yaradıcılıq portfeli",
           "volunteering": "Könüllülük"
         }
-      },
-      "work_years": {
-        "title": "Neçə il işləmisən?"
-      },
-      "research_topic": {
-        "title": "Tədqiqat mövzun",
-        "hint": "Artıq varsa."
       },
       "entrance": {
         "title": "Nəyə hazırsan?",
@@ -902,6 +895,12 @@
       "priorities": {
         "title": "Ən vacib 3 şeyi seç",
         "hint": "Bu, uyğunluqlarını sıralayarkən nəyin ən çox nəzərə alınacağını müəyyən edir."
+      },
+      "research": {
+        "title": "Təcrübə və tədqiqat",
+        "hint": "Hər iki sahə könüllüdür.",
+        "years": "Neçə il işləmisən?",
+        "topic": "Tədqiqat mövzun"
       }
     }
   },

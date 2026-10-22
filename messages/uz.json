@@ -649,9 +649,9 @@
         "options": {
           "on_campus": "Kampusda",
           "online": "Onlayn",
-          "blended": "Aralash",
-          "any": "Farqi yo‘q"
-        }
+          "blended": "Aralash"
+        },
+        "hint": "Bir nechta variantni tanlash mumkin."
       },
       "field_certainty": {
         "title": "Yo‘nalishingizga qanchalik amin siz?",
@@ -750,13 +750,6 @@
           "creative": "Ijodiy portfolio",
           "volunteering": "Volontyorlik"
         }
-      },
-      "work_years": {
-        "title": "Necha yil ishlagansiz?"
-      },
-      "research_topic": {
-        "title": "Tadqiqot mavzuingiz",
-        "hint": "Agar allaqachon bo‘lsa."
       },
       "entrance": {
         "title": "Nimaga tayyorsiz?",
@@ -902,6 +895,12 @@
       "priorities": {
         "title": "Eng muhim 3 narsani tanlang",
         "hint": "Bu natijalaringizni saralashda nimaga ko‘proq e’tibor berilishini belgilaydi."
+      },
+      "research": {
+        "title": "Tajriba va tadqiqot",
+        "hint": "Ikkala maydon ham majburiy emas.",
+        "years": "Necha yil ishlagansiz?",
+        "topic": "Tadqiqot mavzuingiz"
       }
     }
   },

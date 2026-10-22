@@ -649,9 +649,9 @@
         "options": {
           "on_campus": "Stacjonarnie",
           "online": "Online",
-          "blended": "Mieszana",
-          "any": "Dowolna"
-        }
+          "blended": "Mieszana"
+        },
+        "hint": "Możesz wybrać kilka opcji."
       },
       "field_certainty": {
         "title": "Jak bardzo jesteś pewien(-na) swojego kierunku?",
@@ -750,13 +750,6 @@
           "creative": "Portfolio twórcze",
           "volunteering": "Wolontariat"
         }
-      },
-      "work_years": {
-        "title": "Ile lat pracowałeś(-aś)?"
-      },
-      "research_topic": {
-        "title": "Twój temat badawczy",
-        "hint": "Jeśli już go masz."
       },
       "entrance": {
         "title": "Na co jesteś gotów(-owa)?",
@@ -902,6 +895,12 @@
       "priorities": {
         "title": "Wybierz 3 najważniejsze rzeczy",
         "hint": "To decyduje, co liczy się najbardziej przy ustalaniu kolejności Twoich dopasowań."
+      },
+      "research": {
+        "title": "Doświadczenie i badania",
+        "hint": "Oba pola są nieobowiązkowe.",
+        "years": "Ile lat pracowałeś(-aś)?",
+        "topic": "Twój temat badawczy"
       }
     }
   },

@@ -40,7 +40,7 @@ export function failedFilter(program: MatchProgram, input: MatchInput, ctx: Matc
     if (!program.languages.some((l) => usable.has(l))) return 'language';
   }
 
-  if (input.format && input.format !== 'any' && program.format && program.format !== 'blended' && program.format !== input.format) {
+  if (input.format.length > 0 && program.format && program.format !== 'blended' && !input.format.includes(program.format)) {
     return 'format';
   }
 

@@ -92,7 +92,8 @@ export interface MatchInput {
   level: Level;
   /** "YYYY-MM" the person wants to start */
   start: string | null;
-  format: StudyFormat | 'any' | null;
+  /** the formats the person accepts; empty = any */
+  format: StudyFormat[];
   funding: 'free' | 'paid' | 'both';
   budget: { currency: string; tuition: number | null; living: number | null } | null;
   /** countries the person chose (empty = no restriction) */

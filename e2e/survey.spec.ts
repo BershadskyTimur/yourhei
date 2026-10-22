@@ -78,7 +78,10 @@ test.describe('survey', () => {
     await page.locator('input[name="start"]').first().check();
     await next(page);
 
-    await page.getByLabel('On campus').check();
+    // several formats can be chosen
+    await expect(page.getByText('You can choose several options.')).toBeVisible();
+    await page.getByRole('button', { name: 'On campus' }).click();
+    await page.getByRole('button', { name: 'Blended' }).click();
     await next(page);
 
     await page.getByLabel('I know exactly').check();
@@ -142,6 +145,7 @@ test.describe('survey', () => {
     const saved = attempts[0];
     expect(saved.status).toBe('completed');
     expect(saved.answers.level).toBe('bachelor');
+    expect(saved.answers.format).toEqual(['on_campus', 'blended']);
     expect(saved.answers.fields).toEqual(['0613']);
     expect(saved.answers.grade).toEqual({ system: 'five', value: 4.5 });
     expect(saved.answers.priorities).toEqual(['price', 'field', 'chances']);
@@ -155,7 +159,7 @@ test.describe('survey', () => {
     await page.getByRole('button', { name: 'Skip all optional questions' }).click();
     await page.locator('input[name="start"]').first().check();
     await next(page);
-    await page.getByLabel('Online', { exact: true }).check();
+    await page.getByRole('button', { name: 'Online', exact: true }).click();
     await next(page);
     await page.getByLabel('I do not know, please help').check();
     await next(page);
@@ -183,10 +187,33 @@ test.describe('survey', () => {
     await expect(title(page)).toHaveText('When do you want to start?');
     await page.locator('input[name="start"]').first().check();
     await next(page);
-    await page.getByLabel('Any', { exact: true }).check();
+    await page.getByRole('button', { name: 'On campus' }).click();
     await next(page);
     await expect(title(page)).toHaveText('Which school profile do you want?');
     await expect(page.getByLabel('Physics and mathematics')).toBeVisible();
+  });
+
+  test('finishing a survey that was continued shows the end screen', async ({ page }) => {
+    await open(page, [
+      attempt({
+        id: 'c2',
+        answers: {
+          level: 'bachelor', start: '2027-09', format: ['on_campus'], field_certainty: 'sure', fields: ['0613'],
+          education: { level: 'school_11', year: 2026 }, grade: { system: 'five', value: 4.5 },
+          languages: [{ lang: 'en', level: 'b2' }], study_languages: { languages: ['en'], prepYear: false },
+          funding: 'free', budget: { currency: 'EUR', living: 8000 }, strategy: 'balanced', dorm: 'yes',
+          _skipped: ['situation', 'diploma_field', 'subjects', 'exams', 'olympiads', 'achievements', 'entrance', 'rating', 'ownership', 'size', 'extras', 'recognition', 'city_size', 'climate', 'work_during', 'after', 'family', 'accessibility'],
+        },
+      }),
+    ]);
+    await page.getByRole('button', { name: 'Continue where you stopped' }).click();
+    await expect(title(page)).toHaveText('Choose the 3 most important things');
+    await page.getByRole('button', { name: 'Price' }).click();
+    await page.getByRole('button', { name: 'The field of study' }).click();
+    await page.getByRole('button', { name: 'Chances of admission' }).click();
+    await next(page);
+    await expect(page.getByRole('heading', { name: 'Thank you! The survey is complete.' })).toBeVisible();
+    expect(attempts.find((a) => a.id === 'c2')?.status).toBe('completed');
   });
 
   test('stopping and coming back continues the same attempt', async ({ page }) => {
