@@ -1010,7 +1010,8 @@
       "copy": "Kopieren",
       "copied": "Kopiert",
       "anyoneWithLink": "Jeder, der diesen Link hat, kann die Liste sehen (ohne deinen Namen)."
-    }
+    },
+    "widened": "In den Ländern und Einrichtungsarten aus deinem Profil gibt es noch keine Programme zu deiner Stufe und deinem Fachgebiet. Wir zeigen dir Vorschläge aus allen Ländern."
   },
   "Ads": {
     "label": "Werbung"

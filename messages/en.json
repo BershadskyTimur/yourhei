@@ -1010,7 +1010,8 @@
       "copy": "Copy",
       "copied": "Copied",
       "anyoneWithLink": "Anyone who has this link can see the list (without your name)."
-    }
+    },
+    "widened": "There are no programmes yet in the countries or types of institutions chosen in your profile that fit your level and field. Showing matches from all countries."
   },
   "Ads": {
     "label": "Advertisement"

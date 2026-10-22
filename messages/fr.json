@@ -1010,7 +1010,8 @@
       "copy": "Copier",
       "copied": "Copié",
       "anyoneWithLink": "Toute personne disposant de ce lien peut voir la liste (sans votre nom)."
-    }
+    },
+    "widened": "Il n’y a pas encore de programmes correspondant à votre niveau et à votre domaine dans les pays ou types d’établissements choisis dans votre profil. Nous affichons la sélection pour tous les pays."
   },
   "Ads": {
     "label": "Publicité"

@@ -1010,7 +1010,8 @@
       "copy": "Copiar",
       "copied": "Copiado",
       "anyoneWithLink": "Cualquiera que tenga este enlace verá la lista (sin tu nombre)."
-    }
+    },
+    "widened": "Aún no hay programas de tu nivel y campo en los países o tipos de centro elegidos en tu perfil. Te mostramos la selección de todos los países."
   },
   "Ads": {
     "label": "Publicidad"
