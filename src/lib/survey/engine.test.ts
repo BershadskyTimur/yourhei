@@ -8,6 +8,7 @@ import {
   progress,
   pruneAnswers,
   skipAllOptional,
+  stepAfter,
   validateAnswer,
   visibleQuestions,
   type Answers,
@@ -177,6 +178,26 @@ describe('progress and completion', () => {
     expect(nextQuestion(skipAllOptional(a, today), today)!.id).toBe('priorities');
   });
 });
+describe('what happens after an answer (the Finish button)', () => {
+  it('on the last question "Finish" finishes, even if an optional question earlier was left open', () => {
+    const a = bachelor(); // every required answer is there; the optional questions were neither answered nor skipped
+    expect(nextQuestion(a, today)?.id).not.toBeNull();
+    expect(stepAfter(a, 'priorities', 'step', today)).toEqual({ kind: 'finish' });
+  });
+  it('in the middle it moves to the next open question, and "skip all" goes to the first required one still open', () => {
+    const a = bachelor();
+    const open = { ...a };
+    delete open.dorm;
+    expect(stepAfter(open, 'strategy', 'step', today)).toEqual({ kind: 'go', id: 'extras' }); // the next one in order, optional too
+    expect(stepAfter(skipAllOptional(open, today), 'level', 'forward', today)).toEqual({ kind: 'go', id: 'dorm' });
+  });
+  it('a required answer missing: the last question does not finish but goes back to it', () => {
+    const open = { ...bachelor() };
+    delete open.grade;
+    expect(stepAfter(open, 'priorities', 'step', today)).toEqual({ kind: 'go', id: 'grade' });
+  });
+});
+
 describe('prune and chosen fields', () => {
   it('drops answers of questions that are no longer shown', () => {
     const a: Answers = { ...bachelor(), school_profile: 'physmath', _skipped: ['situation', 'school_coed'] };

@@ -210,6 +210,24 @@ export function isComplete(answers: Answers, today?: Date): boolean {
   return visibleQuestions(answers).every((q) => !q.required || validateAnswer(q, answers[q.id], answers, today) === null);
 }
 
+/**
+ * What the page does after an answer was saved: finish the survey, or go to another question. `current` is the
+ * question just answered or skipped; 'step' = the next open question after it, 'forward' = "skip all the rest".
+ * (The decision lives here, not in the page, so that every route can be tested.)
+ */
+export type NextStep = { kind: 'finish' } | { kind: 'go'; id: string } | { kind: 'stuck' };
+export function stepAfter(next: Answers, currentId: string, mode: 'step' | 'forward' = 'step', today?: Date): NextStep {
+  const after = visibleQuestions(next);
+  const at = after.findIndex((x) => x.id === currentId);
+  const following = mode === 'step' ? (after.slice(at + 1).find((x) => !isDone(x, next, today)) ?? null) : null;
+  // Past the last question and every required answer is valid: finished. An optional question left open earlier must
+  // not hold the "Finish" button back.
+  if (!following && isComplete(next, today)) return { kind: 'finish' };
+  // Nothing open after this question but something required is missing: go to that one (not to an optional one).
+  const target = following ?? after.find((x) => x.required && !isDone(x, next, today)) ?? nextQuestion(next, today);
+  return target ? { kind: 'go', id: target.id } : { kind: 'stuck' };
+}
+
 export interface Progress {
   done: number;
   total: number;

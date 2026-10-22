@@ -4,12 +4,12 @@ import { useLocale, useTranslations } from 'next-intl';
 import { useEffect, useRef, useState } from 'react';
 import { Link, useRouter } from '@/i18n/navigation';
 import {
-  isComplete,
   isDone,
   nextQuestion,
   progress,
   pruneAnswers,
   skipAllOptional,
+  stepAfter,
   validateAnswer,
   visibleQuestions,
   type Answers,
@@ -208,27 +208,17 @@ function Runner({ attempt, onDone, onExit }: { attempt: Attempt; onDone: () => v
     setBusy(true);
     setSaveError(false);
     try {
-      const after = visibleQuestions(next);
-      // 'step': the next question in order that is not done yet (answered or skipped ones are passed over);
-      // 'forward' (skip all): straight to the first one still open.
-      const at = after.findIndex((x) => x.id === q.id);
-      const following = mode === 'step' ? (after.slice(at + 1).find((x) => !isDone(x, next)) ?? null) : null;
-      const pending = nextQuestion(next);
-
-      // Past the last question and every required answer is valid: freeze the attempt. An optional question that was
-      // left open earlier (for example after the person went back and changed an answer) must not hold the "Finish"
-      // button back: it used to send the person back to that question instead of finishing.
-      if (!following && isComplete(next)) {
+      const step = stepAfter(next, q.id, mode);
+      if (step.kind === 'finish') {
         const ok = await completeAttempt(supabase, attempt.id, pruneAnswers(next));
         if (!ok) throw new Error('attempt is frozen');
         onDone();
         return;
       }
-      const target = following ?? pending;
-      if (!target) throw new Error('nothing left to ask, but the survey is not complete');
+      if (step.kind === 'stuck') throw new Error('nothing left to ask, but the survey is not complete');
       if (!(await saveAnswers(supabase, attempt.id, next))) throw new Error('attempt is frozen');
       setAnswers(next);
-      go(target.id);
+      go(step.id);
     } catch (error) {
       console.error('[survey] save failed', error);
       setSaveError(true);
