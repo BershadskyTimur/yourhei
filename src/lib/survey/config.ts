@@ -3,7 +3,7 @@
 //
 // Bump SURVEY_VERSION whenever a question is added, removed or changes meaning; every attempt
 // stores the version it was answered with.
-export const SURVEY_VERSION = 1;
+export const SURVEY_VERSION = 2;
 
 export type QuestionType =
   | 'single'
