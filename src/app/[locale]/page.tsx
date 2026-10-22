@@ -89,16 +89,16 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
 
       {/* On wide screens the map takes the middle three fifths and an ad column stands on each side. */}
       <div className="map-stage">
-        <div className="mx-auto grid max-w-[1800px] gap-6 px-4 xl:grid-cols-[minmax(0,1fr)_minmax(0,3fr)_minmax(0,1fr)]">
-          <div className="hidden xl:block">
+        <div className="ads-home-grid mx-auto grid max-w-[1800px] gap-6 px-4">
+          <div data-ad-column className="hidden xl:block">
             <div className="sticky top-24 pt-16"><AdSlot kind="rail" /></div>
           </div>
           <InstitutionExplorer typeCounts={counts.types} loadError={error} />
-          <div className="hidden xl:block">
+          <div data-ad-column className="hidden xl:block">
             <div className="sticky top-24 pt-16"><AdSlot kind="rail" /></div>
           </div>
         </div>
-        <div className="mx-auto max-w-[1500px] px-4 pb-8 pt-6 xl:hidden">
+        <div data-ad-column className="mx-auto max-w-[1500px] px-4 pb-8 pt-6 xl:hidden">
           <AdSlot kind="banner" />
         </div>
       </div>

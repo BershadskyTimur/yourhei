@@ -284,3 +284,18 @@ li {
 [data-theme="dark"] .band-dark {
   background: #11271f;
 }
+
+/* Ad places: until they are filled with real ads they are shown to administrators only (AdsFlag sets data-ads="on" on
+   <html> for an administrator). For everybody else they are hidden and the content takes the whole width. */
+:root:not([data-ads='on']) [data-ad-slot],
+:root:not([data-ads='on']) [data-ad-column] {
+  display: none !important;
+}
+@media (min-width: 80rem) {
+  :root[data-ads='on'] .ads-side-grid {
+    grid-template-columns: 160px minmax(0, 1fr) 160px;
+  }
+  :root[data-ads='on'] .ads-home-grid {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 3fr) minmax(0, 1fr);
+  }
+}
