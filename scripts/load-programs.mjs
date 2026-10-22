@@ -106,7 +106,7 @@ async function processGroup(group) {
         row: {
           institution_id: row.id,
           names: p.names, level: p.level, isced_f: p.isced_f, languages: p.languages, duration_years: p.duration_years,
-          format: 'on_campus', intakes: [], tuition: p.tuition,
+          format: p.format ?? null, intakes: [], tuition: p.tuition, // the study format is saved only when the source states it
           free: p.tuition.length > 0 && p.tuition.every((t) => t.amount === 0),
           requirements: { source: KEY, source_code: p.cricos ?? p.code ?? null, faculty: p.faculty ?? null, documents: [], min_scores: [] },
           deadlines: p.deadlines ?? [], application_fee: p.applicationFee ?? null,
