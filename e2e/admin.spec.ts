@@ -83,11 +83,14 @@ test.describe('admin panel', () => {
 
   test('the data health tab shows coverage by country', async ({ page }) => {
     await asAdmin(page);
-    await page.route(`${supabaseUrl()}/rest/v1/rpc/admin_data_health**`, (route) =>
+    await page.route(`${supabaseUrl()}/rest/v1/rpc/admin_data_health_summary**`, (route) =>
       route.fulfill(json({
-        countries: [{ country: 'DE', institutions_with_programmes: 120, programmes: 1000, priced: 700, with_deadline: 50, with_language: 900, with_field: 950 }],
         institutions: { DE: 400 }, levels: { bachelor: 600, master: 400 }, programmes_draft: 3, institutions_total: 12549, institutions_without_programmes: 9000,
+        countries_with_programmes: ['DE'],
       })),
+    );
+    await page.route(`${supabaseUrl()}/rest/v1/rpc/admin_data_health_country**`, (route) =>
+      route.fulfill(json({ country: 'DE', institutions_with_programmes: 120, programmes: 1000, priced: 700, with_deadline: 50, with_language: 900, with_field: 950 })),
     );
     await page.goto('/en/admin');
     await page.getByRole('tab', { name: 'Здоровье данных' }).click();

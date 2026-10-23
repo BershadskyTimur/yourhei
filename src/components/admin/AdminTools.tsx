@@ -75,31 +75,74 @@ function Bar({ value }: { value: number }) {
 }
 
 // ------------------------------------------------------------------ data health
-interface Health {
-  countries: { country: string; institutions_with_programmes: number; programmes: number; priced: number; with_deadline: number; with_language: number; with_field: number }[];
+interface HealthSummary {
   institutions: Record<string, number>;
+  institutions_total: number;
   levels: Record<string, number>;
   programmes_draft: number;
-  institutions_total: number;
+  countries_with_programmes: string[];
   institutions_without_programmes: number;
+}
+interface HealthCountry {
+  country: string;
+  institutions_with_programmes: number;
+  programmes: number;
+  priced: number;
+  with_deadline: number;
+  with_language: number;
+  with_field: number;
 }
 const LEVEL_RU: Record<string, string> = { school: 'школа', college: 'колледж', foundation: 'подготовительные', bachelor: 'бакалавриат', master: 'магистратура', phd: 'докторантура', language_course: 'языковые курсы' };
 
 export function DataHealth() {
-  const { data, error, loading, reload } = useRpc<Health>(() => getSupabaseBrowser()!.rpc('admin_data_health'), []);
-  const total = data?.countries.reduce((n, c) => n + c.programmes, 0) ?? 0;
+  // The summary first, then one country at a time: one big query would hit the time limit of a request.
+  const { data, error, loading, reload } = useRpc<HealthSummary>(() => getSupabaseBrowser()!.rpc('admin_data_health_summary'), []);
+  const [rows, setRows] = useState<HealthCountry[]>([]);
+  const [done, setDone] = useState(0);
+  const [problem, setProblem] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (!data) return;
+    let live = true;
+    (async () => {
+      const list = data.countries_with_programmes;
+      const collected: HealthCountry[] = [];
+      setRows([]);
+      setDone(0);
+      setProblem(null);
+      for (let i = 0; i < list.length; i++) {
+        let res = await getSupabaseBrowser()!.rpc('admin_data_health_country', { p_country: list[i] });
+        for (let retry = 0; retry < 3 && res.error && /timeout/i.test(res.error.message); retry++) res = await getSupabaseBrowser()!.rpc('admin_data_health_country', { p_country: list[i] });
+        if (!live) return;
+        if (res.error) {
+          setProblem(`${countryRu(list[i])}: ${res.error.message}${needMigration(res.error.message).replace('0029_admin_tools', '0030_admin_data_health_by_country')}`);
+        } else if (res.data) {
+          collected.push(res.data as HealthCountry);
+          setRows([...collected].sort((a, b) => b.programmes - a.programmes));
+        }
+        setDone(i + 1);
+      }
+    })();
+    return () => {
+      live = false;
+    };
+  }, [data]);
+
+  const total = rows.reduce((n, c) => n + c.programmes, 0);
+  const all = data?.countries_with_programmes.length ?? 0;
   return (
     <section>
       <div className="flex flex-wrap items-center justify-between gap-3">
         <h2 className="text-xl font-semibold">Здоровье данных</h2>
         <button type="button" className={btn} onClick={reload}>Обновить</button>
       </div>
-      <p className="mt-1 text-sm text-muted">Насколько полны данные по странам: у какой доли программ есть цена, срок подачи, язык и направление. Красный — мало: туда стоит добавлять данные.</p>
-      <Status error={error} loading={loading} />
+      <p className="mt-1 text-sm text-muted">Насколько полны данные по странам: у какой доли программ есть цена, срок подачи, язык и направление. Красный — мало: туда стоит добавлять данные. Страны считаются по очереди, это занимает несколько секунд.</p>
+      <Status error={error?.replace('0029_admin_tools', '0030_admin_data_health_by_country') ?? null} loading={loading} />
+      {problem && <p role="alert" className="mt-3 text-danger">Ошибка: {problem}</p>}
       {data && (
         <div className="mt-4 space-y-4">
           <dl className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-            <Stat label="Программ опубликовано" value={nf.format(total)} />
+            <Stat label="Программ опубликовано" value={done < all ? `${nf.format(total)}…` : nf.format(total)} />
             <Stat label="Заведений всего" value={nf.format(data.institutions_total)} />
             <Stat label="Заведений без программ" value={`${nf.format(data.institutions_without_programmes)} (${pct(data.institutions_without_programmes, data.institutions_total)}%)`} />
             <Stat label="Программ ждёт проверки" value={nf.format(data.programmes_draft)} />
@@ -112,10 +155,11 @@ export function DataHealth() {
               ))}
             </ul>
           </div>
+          {done < all && <p role="status" className="text-sm text-muted">Считаю страны: {done} из {all}…</p>}
           <div className="overflow-x-auto rounded-xl border border-line bg-surface">
             <table className="w-full min-w-[760px] text-sm">
               <thead>
-                <tr className="border-b border-line text-start text-muted">
+                <tr className="border-b border-line text-muted">
                   <th className="p-3 text-start font-medium">Страна</th>
                   <th className="p-3 text-end font-medium">Заведений (с программами / всего)</th>
                   <th className="p-3 text-end font-medium">Программ</th>
@@ -126,7 +170,7 @@ export function DataHealth() {
                 </tr>
               </thead>
               <tbody>
-                {data.countries.map((c) => (
+                {rows.map((c) => (
                   <tr key={c.country} className="border-b border-line last:border-0">
                     <td className="p-3 font-medium">{countryRu(c.country)}</td>
                     <td className="p-3 text-end tabular-nums">{nf.format(c.institutions_with_programmes)} / {nf.format(data.institutions[c.country] ?? 0)}</td>
