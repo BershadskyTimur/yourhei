@@ -44,7 +44,7 @@ export async function getStudyInstitutions(country: string, code: string, limit 
       p_after_program: after?.program ?? null,
       p_limit: 1000,
     });
-    for (let retry = 0; retry < 2 && res.error?.code === '57014'; retry++) {
+    for (let retry = 0; retry < 4 && res.error?.code === '57014'; retry++) {
       res = await supabase.rpc('match_programs', {
         p_level: null, p_countries: [country.toUpperCase()], p_types: null, p_prefixes: [code],
         p_after_institution: after?.institution ?? null, p_after_program: after?.program ?? null, p_limit: 1000,

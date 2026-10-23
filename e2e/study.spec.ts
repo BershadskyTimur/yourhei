@@ -13,7 +13,11 @@ test.describe('study pages', () => {
     expect(await fields.count()).toBe(de.length);
     await fields.first().click();
     await expect(page).toHaveURL(/\/en\/study\/de\/\d{3}-/);
-    await expect(page.locator('h1')).toContainText('in Germany');
+    // the first read of a field after a quiet period can hit the database time limit: the page is then an error, and a reload works
+    await expect(async () => {
+      await page.reload();
+      await expect(page.locator('h1')).toContainText('in Germany', { timeout: 20_000 });
+    }).toPass({ timeout: 90_000 });
     const institutions = page.locator('main section ul li a');
     await expect(institutions.first()).toBeVisible();
     await institutions.first().click();
