@@ -179,6 +179,23 @@ test.describe('survey', () => {
     expect(saved.accepted).toHaveLength(3);
   });
 
+  test('after "Next" the new question starts at its title, not at the bottom of the page', async ({ page }) => {
+    // iPhone Safari does not scroll when an element gets the focus: simulate that, on a short screen
+    await page.addInitScript(() => {
+      HTMLElement.prototype.focus = function () {};
+    });
+    await page.setViewportSize({ width: 390, height: 500 });
+    await startSurvey(page);
+    await page.getByLabel('Bachelor', { exact: false }).first().check();
+    // the person is at the bottom of the page, where the "Next" button is
+    await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
+    await next(page);
+    await expect(title(page)).not.toHaveText('What do you want to study?');
+    const top = await title(page).evaluate((el) => el.getBoundingClientRect().top);
+    expect(top).toBeGreaterThanOrEqual(0);
+    expect(top).toBeLessThan(400);
+  });
+
   test('a school applicant gets the school questions', async ({ page }) => {
     await startSurvey(page);
     await page.getByLabel('School', { exact: true }).check();

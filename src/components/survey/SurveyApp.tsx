@@ -198,8 +198,21 @@ function Runner({ attempt, onDone, onExit }: { attempt: Attempt; onDone: () => v
   const go = (id: string) => {
     setQid(id);
     setErrorCode(null);
-    requestAnimationFrame(() => titleRef.current?.focus());
   };
+
+  // A new question starts at its title. The page is as long as the old question was, so without this a phone stays at the
+  // bottom ("Next" was pressed there) and shows the end of the new question. Not on the first screen (no jump on opening).
+  const opened = useRef(false);
+  useEffect(() => {
+    if (!opened.current) {
+      opened.current = true;
+      return;
+    }
+    const title = titleRef.current;
+    if (!title) return;
+    title.focus({ preventScroll: true });
+    title.scrollIntoView({ block: 'start' });
+  }, [qid]);
 
   /** Saves, then moves on (or finishes when nothing is left). */
   const commit = async (next: Answers, mode: 'step' | 'forward' = 'step') => {
@@ -269,7 +282,7 @@ function Runner({ attempt, onDone, onExit }: { attempt: Attempt; onDone: () => v
         </p>
       </div>
 
-      <h2 id="question-title" ref={titleRef} tabIndex={-1} className="text-2xl font-semibold text-text outline-none">
+      <h2 id="question-title" ref={titleRef} tabIndex={-1} className="scroll-mt-24 text-2xl font-semibold text-text outline-none">
         {t(`q.${q.id}.title` as never)}
       </h2>
       {!q.required && <p className="mt-1 text-sm font-medium text-muted">{tUi('optional')}</p>}
