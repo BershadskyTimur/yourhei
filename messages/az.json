@@ -1021,7 +1021,8 @@
       "copied": "Kopyalandı",
       "anyoneWithLink": "Bu keçidi olan hər kəs siyahını görə bilər (adın olmadan)."
     },
-    "widened": "Profilinizdə seçdiyiniz ölkələrdə və qurum növlərində səviyyənizə və istiqamətinizə uyğun proqram hələ yoxdur. Bütün ölkələr üzrə seçim göstərilir."
+    "widened": "Profilinizdə seçdiyiniz ölkələrdə və qurum növlərində səviyyənizə və istiqamətinizə uyğun proqram hələ yoxdur. Bütün ölkələr üzrə seçim göstərilir.",
+    "partial": "Server yavaş cavab verdi, buna görə proqramların yalnız bir hissəsi yoxlandı. Hamısını görmək üçün bir neçə dəqiqədən sonra səhifəni yeniləyin."
   },
   "Ads": {
     "label": "Reklam"

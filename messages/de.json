@@ -1021,7 +1021,8 @@
       "copied": "Kopiert",
       "anyoneWithLink": "Jeder, der diesen Link hat, kann die Liste sehen (ohne deinen Namen)."
     },
-    "widened": "In den Ländern und Einrichtungsarten aus deinem Profil gibt es noch keine Programme zu deiner Stufe und deinem Fachgebiet. Wir zeigen dir Vorschläge aus allen Ländern."
+    "widened": "In den Ländern und Einrichtungsarten aus deinem Profil gibt es noch keine Programme zu deiner Stufe und deinem Fachgebiet. Wir zeigen dir Vorschläge aus allen Ländern.",
+    "partial": "Der Server hat langsam geantwortet, daher wurde nur ein Teil der Programme geprüft. Lade die Seite in ein paar Minuten neu, um alles zu sehen."
   },
   "Ads": {
     "label": "Werbung"

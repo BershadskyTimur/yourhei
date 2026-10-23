@@ -1021,7 +1021,8 @@
       "copied": "Skopiowano",
       "anyoneWithLink": "Każdy, kto ma ten link, zobaczy listę (bez Twojego imienia i nazwiska)."
     },
-    "widened": "W krajach i typach uczelni wybranych w profilu nie ma jeszcze programów odpowiadających Twojemu poziomowi i kierunkowi. Pokazujemy propozycje ze wszystkich krajów."
+    "widened": "W krajach i typach uczelni wybranych w profilu nie ma jeszcze programów odpowiadających Twojemu poziomowi i kierunkowi. Pokazujemy propozycje ze wszystkich krajów.",
+    "partial": "Serwer odpowiadał wolno, więc sprawdzono tylko część programów. Odśwież stronę za kilka minut, aby zobaczyć wszystko."
   },
   "Ads": {
     "label": "Reklama"

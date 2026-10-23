@@ -1021,7 +1021,8 @@
       "copied": "Copiado",
       "anyoneWithLink": "Cualquiera que tenga este enlace verá la lista (sin tu nombre)."
     },
-    "widened": "Aún no hay programas de tu nivel y campo en los países o tipos de centro elegidos en tu perfil. Te mostramos la selección de todos los países."
+    "widened": "Aún no hay programas de tu nivel y campo en los países o tipos de centro elegidos en tu perfil. Te mostramos la selección de todos los países.",
+    "partial": "El servidor respondió despacio, así que solo se comprobó una parte de los programas. Actualiza la página en unos minutos para verlo todo."
   },
   "Ads": {
     "label": "Publicidad"

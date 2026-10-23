@@ -1021,7 +1021,8 @@
       "copied": "Copié",
       "anyoneWithLink": "Toute personne disposant de ce lien peut voir la liste (sans votre nom)."
     },
-    "widened": "Il n’y a pas encore de programmes correspondant à votre niveau et à votre domaine dans les pays ou types d’établissements choisis dans votre profil. Nous affichons la sélection pour tous les pays."
+    "widened": "Il n’y a pas encore de programmes correspondant à votre niveau et à votre domaine dans les pays ou types d’établissements choisis dans votre profil. Nous affichons la sélection pour tous les pays.",
+    "partial": "Le serveur a répondu lentement : seule une partie des programmes a été vérifiée. Actualisez la page dans quelques minutes pour tout voir."
   },
   "Ads": {
     "label": "Publicité"

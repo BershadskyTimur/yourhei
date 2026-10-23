@@ -117,8 +117,14 @@ const PAGE = 1000;
 const MAX_PAGES = 20; // at most 20 000 programmes: more would make the page slow
 
 /** The published programmes (that fit `filter`) and the facts about their countries. Throws if the database cannot be read. */
-export async function loadMatchData(supabase: SupabaseClient, filter: ProgramFilter = {}): Promise<{ programs: MatchProgram[]; countries: Record<string, CountryFacts> }> {
+export async function loadMatchData(
+  supabase: SupabaseClient,
+  filter: ProgramFilter = {},
+  /** the moment (Date.now()) after which no further page is requested: what was read so far is used (`partial`) */
+  deadline = Date.now() + 40_000,
+): Promise<{ programs: MatchProgram[]; countries: Record<string, CountryFacts>; partial: boolean }> {
   const rows: Row[] = [];
+  let partial = false;
   // The fast way: a database function that starts from the institutions of the chosen countries and pages by keyset
   // (migration 0014). Before it is installed the older query below is used.
   let after: { institution: string; program: string } | null = null;
@@ -133,12 +139,21 @@ export async function loadMatchData(supabase: SupabaseClient, filter: ProgramFil
       p_after_program: after?.program ?? null,
       p_limit: PAGE,
     };
+    // the database is slow right now (for example while it cleans up after a big load): stop and use what we have
+    if (page > 0 && Date.now() > deadline) {
+      partial = true;
+      break;
+    }
     let res = await supabase.rpc('match_programs', args);
     // the first read after a quiet period can hit the database time limit (cold cache); the second one is fast
-    for (let retry = 0; retry < 2 && res.error?.code === '57014'; retry++) res = await supabase.rpc('match_programs', args);
+    for (let retry = 0; retry < 3 && res.error?.code === '57014' && Date.now() < deadline; retry++) res = await supabase.rpc('match_programs', args);
     if (res.error) {
       if (page === 0 && /match_programs|PGRST202/.test(`${res.error.code} ${res.error.message}`)) {
         useFunction = false;
+        break;
+      }
+      if (page > 0) {
+        partial = true; // a later page failed: the earlier ones are still good
         break;
       }
       throw res.error;
@@ -167,6 +182,7 @@ export async function loadMatchData(supabase: SupabaseClient, filter: ProgramFil
   }  const countries = await supabase.from('country_data').select('country, currency, work_during_study, post_study_work_visa, recognition, cost_of_living').eq('status', 'published');
   if (countries.error) throw countries.error;
   return {
+    partial,
     programs: rows.flatMap((r) => toProgram(r) ?? []),
     countries: Object.fromEntries((countries.data as Row[]).flatMap((r) => toCountryFacts(r) ?? []).map((c) => [c.code, c])),
   };

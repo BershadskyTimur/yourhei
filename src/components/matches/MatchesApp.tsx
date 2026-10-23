@@ -21,7 +21,7 @@ type State =
   | { kind: 'loading' }
   | { kind: 'failed' }
   | { kind: 'no-survey' }
-  | { kind: 'ready'; attempt: Attempt; programs: MatchProgram[]; countries: Record<string, CountryFacts>; rates: Rates; ratesSource: string; widened: boolean; profile: { residence: string | null; citizenships: string[]; countries: string[]; types: string[] } };
+  | { kind: 'ready'; attempt: Attempt; programs: MatchProgram[]; countries: Record<string, CountryFacts>; rates: Rates; ratesSource: string; widened: boolean; partial: boolean; profile: { residence: string | null; citizenships: string[]; countries: string[]; types: string[] } };
 
 const GROUPS: Group[] = ['safe', 'suitable', 'ambitious'];
 
@@ -63,12 +63,13 @@ export function MatchesApp() {
         // Only the programmes that can pass the hard filters (level, countries, institution types) are read.
         const wanted = buildMatchInput(attempt.answers, facts);
         const prefixes = [...new Set(wanted.fields.filter((f) => /^\d{2,4}$/.test(f)).map((f) => f.slice(0, 3)))];
-        let data2 = await loadMatchData(supabase, { level: wanted.level, countries: wanted.countries, types: wanted.types, fieldPrefixes: prefixes });
+        const deadline = Date.now() + 40_000; // one time budget for everything the page reads
+        let data2 = await loadMatchData(supabase, { level: wanted.level, countries: wanted.countries, types: wanted.types, fieldPrefixes: prefixes }, deadline);
         // Nothing in the countries / institution types chosen in the profile: look in all countries instead (and say so),
         // otherwise the person only sees "data is being added" and does not know what to change.
         let widened = false;
         if (data2.programs.length === 0 && (wanted.countries.length > 0 || wanted.types.length > 0)) {
-          const wide = await loadMatchData(supabase, { level: wanted.level, fieldPrefixes: prefixes });
+          const wide = await loadMatchData(supabase, { level: wanted.level, fieldPrefixes: prefixes }, deadline);
           if (wide.programs.length > 0) {
             data2 = wide;
             widened = true;
@@ -82,6 +83,7 @@ export function MatchesApp() {
           rates: (ratesRes?.rates as Rates) ?? { USD: 1 },
           ratesSource: ratesRes?.source ?? 'none',
           widened,
+          partial: data2.partial,
           profile: {
             residence: (p.residence_country as string) ?? null,
             citizenships: (p.citizenships as string[]) ?? [],
@@ -112,7 +114,7 @@ export function MatchesApp() {
   return <Results {...state} />;
 }
 
-function Results({ attempt, programs, countries, rates, ratesSource, widened, profile }: Extract<State, { kind: 'ready' }>) {
+function Results({ attempt, programs, countries, rates, ratesSource, widened, partial, profile }: Extract<State, { kind: 'ready' }>) {
   const t = useTranslations('Matches');
   const tCmp = useTranslations('Compare');
   const locale = useLocale();
@@ -140,6 +142,11 @@ function Results({ attempt, programs, countries, rates, ratesSource, widened, pr
   return (
     <div className="space-y-10">
       <p className="text-lg">{t('basedOn', { date })}</p>
+      {partial && (
+        <p role="status" className="rounded-xl border border-line-strong bg-accent-soft p-4">
+          {t('partial')}
+        </p>
+      )}
       {widened && (
         <p role="status" className="rounded-xl border border-line-strong bg-accent-soft p-4">
           {t('widened')}

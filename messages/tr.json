@@ -1021,7 +1021,8 @@
       "copied": "Kopyalandı",
       "anyoneWithLink": "Bu bağlantıya sahip olan herkes listeyi görebilir (adın olmadan)."
     },
-    "widened": "Profilinde seçtiğin ülkelerde ve kurum türlerinde seviyene ve alanına uygun program henüz yok. Tüm ülkelerden öneriler gösteriliyor."
+    "widened": "Profilinde seçtiğin ülkelerde ve kurum türlerinde seviyene ve alanına uygun program henüz yok. Tüm ülkelerden öneriler gösteriliyor.",
+    "partial": "Sunucu yavaş yanıt verdi, bu yüzden programların yalnızca bir kısmı kontrol edildi. Hepsini görmek için birkaç dakika sonra sayfayı yenile."
   },
   "Ads": {
     "label": "Reklam"

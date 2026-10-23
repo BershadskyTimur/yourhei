@@ -1021,7 +1021,8 @@
       "copied": "Copied",
       "anyoneWithLink": "Anyone who has this link can see the list (without your name)."
     },
-    "widened": "There are no programmes yet in the countries or types of institutions chosen in your profile that fit your level and field. Showing matches from all countries."
+    "widened": "There are no programmes yet in the countries or types of institutions chosen in your profile that fit your level and field. Showing matches from all countries.",
+    "partial": "The server answered slowly, so only some of the programmes were checked. Refresh the page in a few minutes to see everything."
   },
   "Ads": {
     "label": "Advertisement"

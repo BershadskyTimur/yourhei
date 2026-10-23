@@ -71,4 +71,28 @@ describe('loadMatchData', () => {
     const { client } = fakeClient({ rpc: () => ({ error: { code: '57014', message: 'canceling statement due to statement timeout' } }) });
     await expect(loadMatchData(client, { level: 'bachelor' })).rejects.toMatchObject({ code: '57014' });
   });
+
+  it('keeps what it has read when a later page keeps timing out, and says the result is partial', async () => {
+    const full = Array.from({ length: 1000 }, (_, n) => row(n));
+    let call = 0;
+    const timeout = { code: '57014', message: 'canceling statement due to statement timeout' };
+    const { client } = fakeClient({ rpc: () => (call++ === 0 ? { data: full } : { error: timeout }) });
+    const r = await loadMatchData(client, { level: 'bachelor' });
+    expect(r.programs).toHaveLength(1000);
+    expect(r.partial).toBe(true);
+  });
+
+  it('stops asking for more pages when the time budget is used up', async () => {
+    const full = Array.from({ length: 1000 }, (_, n) => row(n));
+    const { client, calls } = fakeClient({ rpc: () => ({ data: full }) });
+    const r = await loadMatchData(client, { level: 'bachelor' }, Date.now() - 1); // the budget is over from the start
+    expect(calls).toHaveLength(1); // the first page is always read
+    expect(r.programs).toHaveLength(1000);
+    expect(r.partial).toBe(true);
+  });
+
+  it('a complete read is not marked partial', async () => {
+    const { client } = fakeClient({ rpc: () => ({ data: [row(1)] }) });
+    expect((await loadMatchData(client, { level: 'bachelor' })).partial).toBe(false);
+  });
 });

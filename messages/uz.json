@@ -1021,7 +1021,8 @@
       "copied": "Nusxalandi",
       "anyoneWithLink": "Ushbu havolaga ega har bir kishi ro‘yxatni (ismingizsiz) ko‘ra oladi."
     },
-    "widened": "Profilingizda tanlangan mamlakatlar va muassasa turlarida darajangiz va yo‘nalishingizga mos dasturlar hozircha yo‘q. Barcha mamlakatlar bo‘yicha tanlov ko‘rsatilmoqda."
+    "widened": "Profilingizda tanlangan mamlakatlar va muassasa turlarida darajangiz va yo‘nalishingizga mos dasturlar hozircha yo‘q. Barcha mamlakatlar bo‘yicha tanlov ko‘rsatilmoqda.",
+    "partial": "Server sekin javob berdi, shuning uchun dasturlarning faqat bir qismi tekshirildi. Hammasini ko‘rish uchun bir necha daqiqadan keyin sahifani yangilang."
   },
   "Ads": {
     "label": "Reklama"
