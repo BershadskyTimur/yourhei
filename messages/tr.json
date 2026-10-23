@@ -40,7 +40,8 @@
     "rights": "© {year} YourHEI",
     "tagline": "Nerede okuyacağını bul: üniversiteler, kolejler ve okullar tek haritada, kendini açıklayan eşleşmelerle.",
     "methodology": "Veri kaynakları",
-    "countries": "Eğitim ülkeleri"
+    "countries": "Eğitim ülkeleri",
+    "forInstitutions": "Kurumlar için"
   },
   "Types": {
     "university": "Üniversite",
@@ -1299,5 +1300,21 @@
     "programmesCount": "Programlar: {count}",
     "examples": "Örneğin:",
     "allFields": "{country} ülkesindeki tüm alanlar"
+  },
+  "ForInstitutions": {
+    "title": "Üniversiteler, kolejler ve okullar için",
+    "intro": "Adaylar YourHEI’de kurumları karşılaştırır. Sayfanı doğru tut: kontrolünü almak ücretsiz.",
+    "whatTitle": "Neler yapabilirsin",
+    "what1": "Kartı güncelle: açıklama, web sitesi ve olanaklar.",
+    "what2": "Programlarını yabancı adaylar için ücretleri, dilleri, dönemleri ve son tarihleriyle gir.",
+    "what3": "Verilerin “Kurum tarafından girildi” diye işaretlenir; adaylar bunların senden geldiğini bilir.",
+    "howTitle": "Nasıl çalışır",
+    "how1": "Kurumunun sayfasını aç ve “Bu kurumu temsil ediyorum” düğmesine bas.",
+    "how2": "Orada çalıştığını nasıl doğrulayabileceğimizi bize söyle. Ekibimiz her talebi kontrol eder.",
+    "how3": "Onaydan sonra kurum hesabını aç ve verilerini düzenle.",
+    "findCta": "Kurumumu bul",
+    "cabinetCta": "Kurum hesabımı aç",
+    "contactText": "Sorun mu var, yoksa programlarını kendi veri dosyandan eklememizi mi istersin? Bize yaz.",
+    "contactCta": "İletişim"
   }
 }

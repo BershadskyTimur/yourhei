@@ -40,7 +40,8 @@
     "rights": "© {year} YourHEI",
     "tagline": "找到求学之地：大学、学院和学校尽在一张地图，匹配结果自带解释。",
     "methodology": "数据来源",
-    "countries": "留学目的地"
+    "countries": "留学目的地",
+    "forInstitutions": "面向院校"
   },
   "Types": {
     "university": "大学",
@@ -1299,5 +1300,21 @@
     "programmesCount": "项目：{count}",
     "examples": "例如：",
     "allFields": "{country}的所有领域"
+  },
+  "ForInstitutions": {
+    "title": "面向大学、学院和学校",
+    "intro": "申请者在 YourHEI 上比较院校。请保持您的页面准确：接管页面是免费的。",
+    "whatTitle": "您可以做什么",
+    "what1": "更新院校卡片：简介、网站和设施。",
+    "what2": "录入您的项目，包括国际申请者的费用、授课语言、入学时间和截止日期。",
+    "what3": "您的数据会标注“由院校填写”，让申请者知道这是您提供的。",
+    "howTitle": "如何操作",
+    "how1": "打开您院校的页面，点击“我代表这所院校”。",
+    "how2": "告诉我们如何核实您在那里工作。我们的团队会审核每一份申请。",
+    "how3": "获批后，打开院校账户并编辑您的数据。",
+    "findCta": "查找我的院校",
+    "cabinetCta": "打开我的院校账户",
+    "contactText": "有疑问，或希望我们根据您自己的数据文件添加项目？请联系我们。",
+    "contactCta": "联系我们"
   }
 }

@@ -11,7 +11,7 @@ export const revalidate = 86400;
 // A sitemap file may hold at most 50 000 addresses (and about 50 MB). Every institution has one address per
 // language, so the institutions are split into several files of 300 institutions each (/sitemap/0.xml, /sitemap/1.xml ...).
 // Only institutions that have programmes are listed (see lib/institutions/sitemap.ts).
-const STATIC_PAGES = ['', '/catalog', '/scholarships', '/countries', '/methodology', '/about', '/contact', '/privacy', '/terms'];
+const STATIC_PAGES = ['', '/catalog', '/scholarships', '/countries', '/for-institutions', '/methodology', '/about', '/contact', '/privacy', '/terms'];
 
 export async function generateSitemaps() {
   const items = await getSitemapPoints();

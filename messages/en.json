@@ -40,7 +40,8 @@
     "rights": "© {year} YourHEI",
     "tagline": "Find where to study: universities, colleges and schools on one map, with matches that explain themselves.",
     "methodology": "Data sources",
-    "countries": "Study destinations"
+    "countries": "Study destinations",
+    "forInstitutions": "For institutions"
   },
   "Types": {
     "university": "University",
@@ -1299,5 +1300,21 @@
     "programmesCount": "Programmes: {count}",
     "examples": "For example:",
     "allFields": "All fields in {country}"
+  },
+  "ForInstitutions": {
+    "title": "For universities, colleges and schools",
+    "intro": "Applicants compare institutions on YourHEI. Keep your page accurate: taking control of it is free.",
+    "whatTitle": "What you can do",
+    "what1": "Update the card: description, website and facilities.",
+    "what2": "Enter your programmes with fees for international applicants, languages, intakes and deadlines.",
+    "what3": "Your data is marked “Entered by the institution”, so applicants know it comes from you.",
+    "howTitle": "How it works",
+    "how1": "Open the page of your institution and press “I represent this institution”.",
+    "how2": "Tell us how we can check that you work there. Our team checks every request.",
+    "how3": "After approval, open the institution account and edit your data.",
+    "findCta": "Find my institution",
+    "cabinetCta": "Open my institution account",
+    "contactText": "Questions, or would you like us to add your programmes from your own data file? Write to us.",
+    "contactCta": "Contact"
   }
 }

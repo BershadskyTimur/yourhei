@@ -43,4 +43,13 @@ test.describe('trust: data sources page and the machine-translation notice', () 
       expect(overflow, l).toBeLessThanOrEqual(1);
     }
   });
+
+  test('the page for institutions opens from the footer and leads to the institution account', async ({ page }) => {
+    await page.goto('/en');
+    await page.getByRole('link', { name: 'For institutions' }).click();
+    await expect(page).toHaveURL(/\/en\/for-institutions$/);
+    await expect(page.getByRole('heading', { name: 'For universities, colleges and schools' })).toBeVisible();
+    await page.getByRole('link', { name: 'Open my institution account' }).click();
+    await expect(page).toHaveURL(/\/en\/(cabinet|login)/);
+  });
 });

@@ -40,7 +40,8 @@
     "rights": "© {year} YourHEI",
     "tagline": "Znajdź, gdzie studiować: uniwersytety, college’e i szkoły na jednej mapie, z dopasowaniami, które same się tłumaczą.",
     "methodology": "Źródła danych",
-    "countries": "Kierunki studiów za granicą"
+    "countries": "Kierunki studiów za granicą",
+    "forInstitutions": "Dla instytucji"
   },
   "Types": {
     "university": "Uniwersytet",
@@ -1299,5 +1300,21 @@
     "programmesCount": "Programy: {count}",
     "examples": "Na przykład:",
     "allFields": "Wszystkie kierunki: {country}"
+  },
+  "ForInstitutions": {
+    "title": "Dla uniwersytetów, college’ów i szkół",
+    "intro": "Kandydaci porównują instytucje w YourHEI. Dbaj o dokładność swojej strony: przejęcie jej jest bezpłatne.",
+    "whatTitle": "Co możesz zrobić",
+    "what1": "Zaktualizować kartę: opis, stronę internetową i udogodnienia.",
+    "what2": "Wprowadzić swoje programy z opłatami dla kandydatów zagranicznych, językami, naborami i terminami.",
+    "what3": "Twoje dane są oznaczone „Wprowadzone przez uczelnię”, aby kandydaci wiedzieli, że pochodzą od Ciebie.",
+    "howTitle": "Jak to działa",
+    "how1": "Otwórz stronę swojej instytucji i naciśnij „Reprezentuję tę instytucję”.",
+    "how2": "Powiedz nam, jak możemy sprawdzić, że tam pracujesz. Nasz zespół sprawdza każde zgłoszenie.",
+    "how3": "Po zatwierdzeniu otwórz konto instytucji i edytuj swoje dane.",
+    "findCta": "Znajdź moją instytucję",
+    "cabinetCta": "Otwórz konto mojej instytucji",
+    "contactText": "Pytania, albo chcesz, żebyśmy dodali Twoje programy z Twojego pliku danych? Napisz do nas.",
+    "contactCta": "Kontakt"
   }
 }

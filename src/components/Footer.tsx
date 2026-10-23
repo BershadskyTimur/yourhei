@@ -9,6 +9,7 @@ export function Footer() {
 
   const links = [
     { href: '/about', label: t('about') },
+    { href: '/for-institutions', label: t('forInstitutions') },
     { href: '/countries', label: t('countries') },
     { href: '/methodology', label: t('methodology') },
     { href: '/contact', label: t('contacts') },

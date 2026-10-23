@@ -40,7 +40,8 @@
     "rights": "© {year} YourHEI",
     "tagline": "Encuentra dónde estudiar: universidades, colegios y escuelas en un mapa, con recomendaciones que se explican solas.",
     "methodology": "Fuentes de datos",
-    "countries": "Destinos de estudio"
+    "countries": "Destinos de estudio",
+    "forInstitutions": "Para instituciones"
   },
   "Types": {
     "university": "Universidad",
@@ -1299,5 +1300,21 @@
     "programmesCount": "Programas: {count}",
     "examples": "Por ejemplo:",
     "allFields": "Todas las áreas en {country}"
+  },
+  "ForInstitutions": {
+    "title": "Para universidades, colegios y escuelas",
+    "intro": "Los solicitantes comparan instituciones en YourHEI. Mantén tu página al día: tomar el control es gratis.",
+    "whatTitle": "Qué puedes hacer",
+    "what1": "Actualizar la ficha: descripción, sitio web y servicios.",
+    "what2": "Introducir tus programas con tasas para solicitantes extranjeros, idiomas, convocatorias y plazos.",
+    "what3": "Tus datos se marcan como «Introducido por la institución», para que los solicitantes sepan que vienen de ti.",
+    "howTitle": "Cómo funciona",
+    "how1": "Abre la página de tu institución y pulsa «Represento a esta institución».",
+    "how2": "Cuéntanos cómo podemos comprobar que trabajas allí. Nuestro equipo revisa cada solicitud.",
+    "how3": "Tras la aprobación, abre la cuenta de la institución y edita tus datos.",
+    "findCta": "Buscar mi institución",
+    "cabinetCta": "Abrir la cuenta de mi institución",
+    "contactText": "¿Preguntas, o quieres que añadamos tus programas desde tu propio archivo de datos? Escríbenos.",
+    "contactCta": "Contacto"
   }
 }

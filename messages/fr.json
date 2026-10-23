@@ -40,7 +40,8 @@
     "rights": "© {year} YourHEI",
     "tagline": "Trouvez où étudier : universités, collèges et écoles sur une seule carte, avec des résultats qui s’expliquent.",
     "methodology": "Sources des données",
-    "countries": "Destinations d’études"
+    "countries": "Destinations d’études",
+    "forInstitutions": "Pour les établissements"
   },
   "Types": {
     "university": "Université",
@@ -1299,5 +1300,21 @@
     "programmesCount": "Programmes : {count}",
     "examples": "Par exemple :",
     "allFields": "Tous les domaines en {country}"
+  },
+  "ForInstitutions": {
+    "title": "Pour les universités, collèges et écoles",
+    "intro": "Les candidats comparent les établissements sur YourHEI. Gardez votre page exacte : en prendre le contrôle est gratuit.",
+    "whatTitle": "Ce que vous pouvez faire",
+    "what1": "Mettre à jour la fiche : description, site web et équipements.",
+    "what2": "Saisir vos programmes avec les frais pour les candidats internationaux, les langues, les rentrées et les dates limites.",
+    "what3": "Vos données sont marquées « Saisi par l’établissement », pour que les candidats sachent qu’elles viennent de vous.",
+    "howTitle": "Comment ça marche",
+    "how1": "Ouvrez la page de votre établissement et appuyez sur « Je représente cet établissement ».",
+    "how2": "Dites-nous comment vérifier que vous y travaillez. Notre équipe examine chaque demande.",
+    "how3": "Après approbation, ouvrez le compte de l’établissement et modifiez vos données.",
+    "findCta": "Trouver mon établissement",
+    "cabinetCta": "Ouvrir mon compte d’établissement",
+    "contactText": "Des questions, ou souhaitez-vous que nous ajoutions vos programmes à partir de votre propre fichier de données ? Écrivez-nous.",
+    "contactCta": "Contact"
   }
 }

@@ -40,7 +40,8 @@
     "rights": "© {year} YourHEI",
     "tagline": "Finde, wo du studieren kannst: Universitäten, Colleges und Schulen auf einer Karte, mit Treffern, die sich selbst erklären.",
     "methodology": "Datenquellen",
-    "countries": "Studienziele"
+    "countries": "Studienziele",
+    "forInstitutions": "Für Einrichtungen"
   },
   "Types": {
     "university": "Universität",
@@ -1299,5 +1300,21 @@
     "programmesCount": "Programme: {count}",
     "examples": "Zum Beispiel:",
     "allFields": "Alle Fachgebiete in {country}"
+  },
+  "ForInstitutions": {
+    "title": "Für Universitäten, Hochschulen und Schulen",
+    "intro": "Bewerber vergleichen Einrichtungen auf YourHEI. Halte deine Seite aktuell: Die Übernahme ist kostenlos.",
+    "whatTitle": "Was du tun kannst",
+    "what1": "Die Karte aktualisieren: Beschreibung, Website und Ausstattung.",
+    "what2": "Deine Programme mit Gebühren für internationale Bewerber, Sprachen, Starttermine und Fristen eintragen.",
+    "what3": "Deine Daten sind mit „Von der Einrichtung eingetragen“ gekennzeichnet, damit Bewerber wissen, dass sie von dir stammen.",
+    "howTitle": "So funktioniert es",
+    "how1": "Öffne die Seite deiner Einrichtung und drücke „Ich vertrete diese Einrichtung“.",
+    "how2": "Sag uns, wie wir prüfen können, dass du dort arbeitest. Unser Team prüft jede Anfrage.",
+    "how3": "Nach der Freigabe öffnest du das Einrichtungskonto und bearbeitest deine Daten.",
+    "findCta": "Meine Einrichtung finden",
+    "cabinetCta": "Mein Einrichtungskonto öffnen",
+    "contactText": "Fragen, oder sollen wir deine Programme aus deiner eigenen Datendatei ergänzen? Schreib uns.",
+    "contactCta": "Kontakt"
   }
 }

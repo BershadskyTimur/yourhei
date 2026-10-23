@@ -40,7 +40,8 @@
     "rights": "© {year} YourHEI",
     "tagline": "Harada oxuyacağını tap: universitetlər, kolleclər və məktəblər bir xəritədə, özünü izah edən uyğunluqlarla.",
     "methodology": "Məlumat mənbələri",
-    "countries": "Təhsil istiqamətləri"
+    "countries": "Təhsil istiqamətləri",
+    "forInstitutions": "Müəssisələr üçün"
   },
   "Types": {
     "university": "Universitet",
@@ -1299,5 +1300,21 @@
     "programmesCount": "Proqramlar: {count}",
     "examples": "Məsələn:",
     "allFields": "{country} ölkəsində bütün sahələr"
+  },
+  "ForInstitutions": {
+    "title": "Universitetlər, kolleclər və məktəblər üçün",
+    "intro": "Abituriyentlər YourHEI-də müəssisələri müqayisə edirlər. Səhifənizin dəqiqliyini qoruyun: onu idarə etmək pulsuzdur.",
+    "whatTitle": "Nə edə bilərsiniz",
+    "what1": "Kartı yeniləyin: təsvir, sayt və şərait.",
+    "what2": "Proqramlarınızı xarici abituriyentlər üçün ödənişlər, dillər, qəbullar və müddətlərlə daxil edin.",
+    "what3": "Məlumatlarınız «Müəssisə tərəfindən daxil edilib» kimi işarələnir, abituriyentlər bunun sizdən olduğunu bilirlər.",
+    "howTitle": "Necə işləyir",
+    "how1": "Müəssisənizin səhifəsini açın və «Bu müəssisəni təmsil edirəm» düyməsini basın.",
+    "how2": "Orada işlədiyinizi necə yoxlaya biləcəyimizi bizə bildirin. Komandamız hər sorğunu yoxlayır.",
+    "how3": "Təsdiqdən sonra müəssisə hesabını açın və məlumatlarınızı redaktə edin.",
+    "findCta": "Müəssisəmi tap",
+    "cabinetCta": "Müəssisə hesabımı aç",
+    "contactText": "Sualınız var, yoxsa proqramlarınızı öz məlumat faylınızdan əlavə etməyimizi istəyirsiniz? Bizə yazın.",
+    "contactCta": "Əlaqə"
   }
 }

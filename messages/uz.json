@@ -40,7 +40,8 @@
     "rights": "© {year} YourHEI",
     "tagline": "Qayerda o‘qishni toping: universitetlar, kollejlar va maktablar bitta xaritada, o‘zini tushuntiradigan natijalar bilan.",
     "methodology": "Ma’lumot manbalari",
-    "countries": "Ta’lim yo‘nalishlari"
+    "countries": "Ta’lim yo‘nalishlari",
+    "forInstitutions": "Muassasalar uchun"
   },
   "Types": {
     "university": "Universitet",
@@ -1299,5 +1300,21 @@
     "programmesCount": "Dasturlar: {count}",
     "examples": "Masalan:",
     "allFields": "{country} mamlakatidagi barcha yo‘nalishlar"
+  },
+  "ForInstitutions": {
+    "title": "Universitetlar, kollejlar va maktablar uchun",
+    "intro": "Abituriyentlar YourHEI’da muassasalarni solishtiradi. Sahifangiz aniqligini saqlang: uni nazoratga olish bepul.",
+    "whatTitle": "Nima qilish mumkin",
+    "what1": "Kartani yangilash: tavsif, sayt va sharoitlar.",
+    "what2": "Dasturlaringizni xorijiy abituriyentlar uchun to‘lovlar, tillar, qabullar va muddatlar bilan kiriting.",
+    "what3": "Ma’lumotlaringiz «Muassasa kiritgan» deb belgilanadi, shuning uchun abituriyentlar ularning sizdan ekanini bilishadi.",
+    "howTitle": "Qanday ishlaydi",
+    "how1": "Muassasangiz sahifasini oching va «Men bu muassasani vakil qilaman» tugmasini bosing.",
+    "how2": "U yerda ishlayotganingizni qanday tekshirishimiz mumkinligini ayting. Jamoamiz har bir so‘rovni tekshiradi.",
+    "how3": "Tasdiqlangandan keyin muassasa kabinetini oching va ma’lumotlaringizni tahrirlang.",
+    "findCta": "Muassasamni topish",
+    "cabinetCta": "Muassasa kabinetimni ochish",
+    "contactText": "Savollaringiz bormi yoki dasturlaringizni o‘z ma’lumot faylingizdan qo‘shishimizni xohlaysizmi? Bizga yozing.",
+    "contactCta": "Aloqa"
   }
 }
