@@ -5,6 +5,7 @@ import { arr, rec, str, texts, type Row } from '../institutions/program-detail';
 import type { LocalizedText } from '../institutions/types';
 
 export interface Scholarship {
+  id: string;
   names: LocalizedText;
   covers: string | null;
   funder: LocalizedText;
@@ -14,9 +15,11 @@ export interface Scholarship {
   /** ISO code of the country that gives it (null: several countries) */
   country: string | null;
   institution: { slug: string; country: string; names: LocalizedText } | null;
+  /** citizens of these countries may apply (as the official page says); null = not listed, check the official page */
+  eligibleCountries: string[] | null;
 }
 
-const COLUMNS = 'names, covers, funder, eligibility, levels, url, scope, host_country, institutions (slug, country, names)';
+const COLUMNS = 'id, names, covers, funder, eligibility, levels, url, scope, host_country, institutions (slug, country, names)';
 
 /** Published scholarships: those of whole countries first, then those of single institutions (the first 200). */
 export async function getScholarships(): Promise<{ national: Scholarship[]; institutional: Scholarship[] }> {
@@ -24,7 +27,10 @@ export async function getScholarships(): Promise<{ national: Scholarship[]; inst
   const key = process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY;
   if (!url || !key) return { national: [], institutional: [] };
   const supabase = createClient(url, key, publicReadOptions);
-  const { data, error } = await supabase.from('scholarships').select(COLUMNS).eq('status', 'published').order('verified_at', { ascending: false }).limit(400);
+  const read = (columns: string) => supabase.from('scholarships').select(columns).eq('status', 'published').order('verified_at', { ascending: false }).limit(400);
+  // eligible_countries comes with migration 0026; before it is run the older columns are read
+  let { data, error } = await read(`${COLUMNS}, eligible_countries`);
+  if (error && /eligible_countries|42703/.test(`${error.code} ${error.message}`)) ({ data, error } = await read(COLUMNS));
   if (error) {
     console.error('[scholarships] Supabase error:', error.message);
     return { national: [], institutional: [] };
@@ -32,7 +38,9 @@ export async function getScholarships(): Promise<{ national: Scholarship[]; inst
   const all = (data as unknown as Row[]).map((r): Scholarship & { scope: string | null } => {
     const inst = rec(r.institutions);
     return {
+      id: str(r.id) ?? '',
       scope: str(r.scope),
+      eligibleCountries: Array.isArray(r.eligible_countries) ? r.eligible_countries.filter((c): c is string => typeof c === 'string') : null,
       names: texts(r.names),
       covers: str(r.covers),
       funder: texts(r.funder),

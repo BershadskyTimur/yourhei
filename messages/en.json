@@ -1114,7 +1114,16 @@
     "severalCountries": "Several countries",
     "official": "Official page",
     "empty": "The list is being filled in.",
-    "disclaimer": "We list programmes and send you to the official page; we do not guarantee that you will receive a scholarship."
+    "disclaimer": "We list programmes and send you to the official page; we do not guarantee that you will receive a scholarship.",
+    "citizenshipLabel": "Your citizenship",
+    "citizenshipAny": "Choose a country",
+    "levelLabel": "Level",
+    "levelAny": "Any level",
+    "eligibleYes": "Open to citizens of your country",
+    "eligibleNo": "Not open to citizens of your country",
+    "eligibleCheck": "Check on the official page whether your country is eligible",
+    "hideClosed": "Hide programmes that are closed to my citizenship",
+    "noMatch": "No scholarships match these filters."
   },
   "Reviews": {
     "title": "Student reviews",

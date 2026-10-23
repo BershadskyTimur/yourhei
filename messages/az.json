@@ -1114,7 +1114,16 @@
     "severalCountries": "Bir neçə ölkə",
     "official": "Rəsmi səhifə",
     "empty": "Siyahı doldurulur.",
-    "disclaimer": "Proqramları sadalayır və səni rəsmi səhifəyə yönləndiririk; təqaüd alacağına zəmanət vermirik."
+    "disclaimer": "Proqramları sadalayır və səni rəsmi səhifəyə yönləndiririk; təqaüd alacağına zəmanət vermirik.",
+    "citizenshipLabel": "Vətəndaşlığınız",
+    "citizenshipAny": "Ölkə seçin",
+    "levelLabel": "Səviyyə",
+    "levelAny": "İstənilən səviyyə",
+    "eligibleYes": "Ölkənizin vətəndaşları üçün açıqdır",
+    "eligibleNo": "Ölkənizin vətəndaşları üçün açıq deyil",
+    "eligibleCheck": "Ölkənizin uyğun olub-olmadığını rəsmi səhifədə yoxlayın",
+    "hideClosed": "Vətəndaşlığım üçün bağlı olan proqramları gizlət",
+    "noMatch": "Bu filtrlərə uyğun təqaüd yoxdur."
   },
   "Reviews": {
     "title": "Tələbə rəyləri",

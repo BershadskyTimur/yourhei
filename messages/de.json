@@ -1114,7 +1114,16 @@
     "severalCountries": "Mehrere Länder",
     "official": "Offizielle Seite",
     "empty": "Die Liste wird gerade ergänzt.",
-    "disclaimer": "Wir listen Programme auf und verweisen dich auf die offizielle Seite; wir garantieren nicht, dass du ein Stipendium erhältst."
+    "disclaimer": "Wir listen Programme auf und verweisen dich auf die offizielle Seite; wir garantieren nicht, dass du ein Stipendium erhältst.",
+    "citizenshipLabel": "Deine Staatsbürgerschaft",
+    "citizenshipAny": "Land wählen",
+    "levelLabel": "Stufe",
+    "levelAny": "Jede Stufe",
+    "eligibleYes": "Offen für Staatsangehörige deines Landes",
+    "eligibleNo": "Nicht offen für Staatsangehörige deines Landes",
+    "eligibleCheck": "Prüfe auf der offiziellen Seite, ob dein Land berechtigt ist",
+    "hideClosed": "Programme ausblenden, die für meine Staatsbürgerschaft geschlossen sind",
+    "noMatch": "Keine Stipendien passen zu diesen Filtern."
   },
   "Reviews": {
     "title": "Bewertungen von Studierenden",

@@ -1114,7 +1114,16 @@
     "severalCountries": "多个国家",
     "official": "官方页面",
     "empty": "列表正在补充中。",
-    "disclaimer": "我们列出项目并引导您前往官方页面，但不保证您一定能获得奖学金。"
+    "disclaimer": "我们列出项目并引导您前往官方页面，但不保证您一定能获得奖学金。",
+    "citizenshipLabel": "您的国籍",
+    "citizenshipAny": "选择国家",
+    "levelLabel": "层次",
+    "levelAny": "任何层次",
+    "eligibleYes": "对您所在国家的公民开放",
+    "eligibleNo": "不对您所在国家的公民开放",
+    "eligibleCheck": "请在官方页面确认您的国家是否符合条件",
+    "hideClosed": "隐藏对我的国籍关闭的项目",
+    "noMatch": "没有符合这些筛选条件的奖学金。"
   },
   "Reviews": {
     "title": "学生评价",

@@ -1114,7 +1114,16 @@
     "severalCountries": "Bir nechta davlat",
     "official": "Rasmiy sahifa",
     "empty": "Ro‘yxat to‘ldirilmoqda.",
-    "disclaimer": "Biz dasturlarni sanab o‘tamiz va sizni rasmiy sahifaga yo‘naltiramiz; stipendiya olishingizga kafolat bermaymiz."
+    "disclaimer": "Biz dasturlarni sanab o‘tamiz va sizni rasmiy sahifaga yo‘naltiramiz; stipendiya olishingizga kafolat bermaymiz.",
+    "citizenshipLabel": "Fuqaroligingiz",
+    "citizenshipAny": "Mamlakatni tanlang",
+    "levelLabel": "Daraja",
+    "levelAny": "Istalgan daraja",
+    "eligibleYes": "Mamlakatingiz fuqarolari uchun ochiq",
+    "eligibleNo": "Mamlakatingiz fuqarolari uchun ochiq emas",
+    "eligibleCheck": "Mamlakatingiz mos kelishini rasmiy sahifada tekshiring",
+    "hideClosed": "Fuqaroligim uchun yopiq dasturlarni yashirish",
+    "noMatch": "Bu filtrlarga mos stipendiya yo‘q."
   },
   "Reviews": {
     "title": "Talabalar sharhlari",

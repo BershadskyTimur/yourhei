@@ -1114,7 +1114,16 @@
     "severalCountries": "Plusieurs pays",
     "official": "Page officielle",
     "empty": "La liste est en cours de constitution.",
-    "disclaimer": "Nous recensons des programmes et vous renvoyons vers la page officielle ; nous ne garantissons pas que vous obtiendrez une bourse."
+    "disclaimer": "Nous recensons des programmes et vous renvoyons vers la page officielle ; nous ne garantissons pas que vous obtiendrez une bourse.",
+    "citizenshipLabel": "Votre nationalité",
+    "citizenshipAny": "Choisir un pays",
+    "levelLabel": "Niveau",
+    "levelAny": "Tous les niveaux",
+    "eligibleYes": "Ouverte aux ressortissants de votre pays",
+    "eligibleNo": "Non ouverte aux ressortissants de votre pays",
+    "eligibleCheck": "Vérifiez sur la page officielle si votre pays est éligible",
+    "hideClosed": "Masquer les programmes fermés à ma nationalité",
+    "noMatch": "Aucune bourse ne correspond à ces filtres."
   },
   "Reviews": {
     "title": "Avis d’étudiants",

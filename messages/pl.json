@@ -1114,7 +1114,16 @@
     "severalCountries": "Kilka krajów",
     "official": "Oficjalna strona",
     "empty": "Lista jest uzupełniana.",
-    "disclaimer": "Wymieniamy programy i odsyłamy na oficjalną stronę; nie gwarantujemy, że otrzymasz stypendium."
+    "disclaimer": "Wymieniamy programy i odsyłamy na oficjalną stronę; nie gwarantujemy, że otrzymasz stypendium.",
+    "citizenshipLabel": "Twoje obywatelstwo",
+    "citizenshipAny": "Wybierz kraj",
+    "levelLabel": "Poziom",
+    "levelAny": "Dowolny poziom",
+    "eligibleYes": "Otwarty dla obywateli Twojego kraju",
+    "eligibleNo": "Niedostępny dla obywateli Twojego kraju",
+    "eligibleCheck": "Sprawdź na oficjalnej stronie, czy Twój kraj się kwalifikuje",
+    "hideClosed": "Ukryj programy zamknięte dla mojego obywatelstwa",
+    "noMatch": "Żadne stypendia nie pasują do tych filtrów."
   },
   "Reviews": {
     "title": "Opinie studentów",

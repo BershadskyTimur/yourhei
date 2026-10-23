@@ -1114,7 +1114,16 @@
     "severalCountries": "Varios países",
     "official": "Página oficial",
     "empty": "La lista se está completando.",
-    "disclaimer": "Enumeramos programas y te enviamos a la página oficial; no garantizamos que recibas una beca."
+    "disclaimer": "Enumeramos programas y te enviamos a la página oficial; no garantizamos que recibas una beca.",
+    "citizenshipLabel": "Tu nacionalidad",
+    "citizenshipAny": "Elige un país",
+    "levelLabel": "Nivel",
+    "levelAny": "Cualquier nivel",
+    "eligibleYes": "Abierta a ciudadanos de tu país",
+    "eligibleNo": "No abierta a ciudadanos de tu país",
+    "eligibleCheck": "Comprueba en la página oficial si tu país es elegible",
+    "hideClosed": "Ocultar programas cerrados a mi nacionalidad",
+    "noMatch": "Ninguna beca coincide con estos filtros."
   },
   "Reviews": {
     "title": "Opiniones de estudiantes",

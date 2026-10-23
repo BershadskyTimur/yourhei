@@ -1114,7 +1114,16 @@
     "severalCountries": "Birkaç ülke",
     "official": "Resmî sayfa",
     "empty": "Liste dolduruluyor.",
-    "disclaimer": "Programları listeliyor ve seni resmî sayfaya yönlendiriyoruz; burs alacağını garanti etmiyoruz."
+    "disclaimer": "Programları listeliyor ve seni resmî sayfaya yönlendiriyoruz; burs alacağını garanti etmiyoruz.",
+    "citizenshipLabel": "Vatandaşlığın",
+    "citizenshipAny": "Ülke seç",
+    "levelLabel": "Seviye",
+    "levelAny": "Herhangi bir seviye",
+    "eligibleYes": "Ülkenin vatandaşlarına açık",
+    "eligibleNo": "Ülkenin vatandaşlarına açık değil",
+    "eligibleCheck": "Ülkenin uygun olup olmadığını resmî sayfada kontrol et",
+    "hideClosed": "Vatandaşlığıma kapalı programları gizle",
+    "noMatch": "Bu filtrelere uyan burs yok."
   },
   "Reviews": {
     "title": "Öğrenci yorumları",
