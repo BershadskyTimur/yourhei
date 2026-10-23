@@ -6,7 +6,10 @@
   "Common": {
     "siteName": "YourHEI",
     "skipToContent": "跳到主要内容",
-    "translationUnavailable": "暂无翻译"
+    "translationUnavailable": "暂无翻译",
+    "translationNotice": "本页面已借助机器翻译成您的语言。如发现错误，请告诉我们。",
+    "translationReport": "告诉我们",
+    "dismiss": "关闭"
   },
   "ErrorPage": {
     "title": "出了点问题",
@@ -35,7 +38,8 @@
     "terms": "使用条款",
     "dataCredit": "地图数据 © OpenStreetMap 贡献者，OpenFreeMap。 课程数据: Discover Uni dataset, HESA (CC BY 4.0); Study in NL, Nuffic; DAAD; Opintopolku.",
     "rights": "© {year} YourHEI",
-    "tagline": "找到求学之地：大学、学院和学校尽在一张地图，匹配结果自带解释。"
+    "tagline": "找到求学之地：大学、学院和学校尽在一张地图，匹配结果自带解释。",
+    "methodology": "数据来源"
   },
   "Types": {
     "university": "大学",
@@ -171,7 +175,10 @@
     "favoriteAdd": "收藏",
     "favoriteRemove": "已收藏",
     "favoriteLogin": "登录后收藏",
-    "byInstitution": "由院校本身填写"
+    "byInstitution": "由院校本身填写",
+    "sourceLine": "来源：{source}",
+    "dataYear": "{year} 学年的数据",
+    "methodologyLinkShort": "我们如何收集数据"
   },
   "Pages": {
     "about": {
@@ -1235,5 +1242,23 @@
       "save": "保存",
       "cancel": "取消"
     }
+  },
+  "Methodology": {
+    "title": "我们的数据来自哪里",
+    "intro": "YourHEI 只展示来自官方公开来源和院校自身的数据。我们从不编造数值：凡是未公布的内容，页面上会显示“未说明”。",
+    "sourcesTitle": "我们使用的来源",
+    "sourcesNote": "每个项目卡片都会注明其来源。费用和截止日期每年都会变化，申请前请务必在官方页面核实。",
+    "howTitle": "我们如何处理数据",
+    "how1": "项目名称、费用和日期按来源公布的内容原样复制。我们不估算、不取整，也不换算。",
+    "how2": "如果来源没有说明某项内容（例如授课方式或项目语言），该栏保持为空，而不是猜测。",
+    "how3": "院校可以在院校账户中核对并更新自己的数据；此类数据会标注“由院校填写”。",
+    "gapsTitle": "可能缺少什么",
+    "gaps1": "并非所有院校都已有项目信息。我们从官方登记册开始，逐步增加国家和院校。",
+    "gaps2": "并非每个登记册都公布国际学生学费；缺失时，卡片会如实说明。",
+    "transTitle": "翻译",
+    "trans": "本站提供 16 种语言。大部分翻译借助机器完成，并正在逐步审校。",
+    "errorTitle": "发现错误？",
+    "error": "请通过联系页面告诉我们，或在院校页面使用“报告此页面的错误”。经确认的错误我们会尽快更正。",
+    "contact": "联系我们"
   }
 }

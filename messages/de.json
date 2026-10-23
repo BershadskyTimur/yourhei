@@ -6,7 +6,10 @@
   "Common": {
     "siteName": "YourHEI",
     "skipToContent": "Zum Hauptinhalt springen",
-    "translationUnavailable": "Übersetzung nicht verfügbar"
+    "translationUnavailable": "Übersetzung nicht verfügbar",
+    "translationNotice": "Diese Seite wurde mit maschineller Hilfe in deine Sprache übersetzt. Wenn dir ein Fehler auffällt, sag uns bitte Bescheid.",
+    "translationReport": "Melden",
+    "dismiss": "Schließen"
   },
   "ErrorPage": {
     "title": "Etwas ist schiefgelaufen",
@@ -35,7 +38,8 @@
     "terms": "Nutzungsbedingungen",
     "dataCredit": "Kartendaten © OpenStreetMap-Mitwirkende, OpenFreeMap. Studiengangsdaten: Discover Uni dataset, HESA (CC BY 4.0); Study in NL, Nuffic; DAAD; Opintopolku.",
     "rights": "© {year} YourHEI",
-    "tagline": "Finde, wo du studieren kannst: Universitäten, Colleges und Schulen auf einer Karte, mit Treffern, die sich selbst erklären."
+    "tagline": "Finde, wo du studieren kannst: Universitäten, Colleges und Schulen auf einer Karte, mit Treffern, die sich selbst erklären.",
+    "methodology": "Datenquellen"
   },
   "Types": {
     "university": "Universität",
@@ -171,7 +175,10 @@
     "favoriteAdd": "Merken",
     "favoriteRemove": "Gemerkt",
     "favoriteLogin": "Anmelden zum Merken",
-    "byInstitution": "Von der Einrichtung selbst eingetragen"
+    "byInstitution": "Von der Einrichtung selbst eingetragen",
+    "sourceLine": "Quelle: {source}",
+    "dataYear": "Daten für das Studienjahr {year}",
+    "methodologyLinkShort": "Wie wir Daten sammeln"
   },
   "Pages": {
     "about": {
@@ -1235,5 +1242,23 @@
       "save": "Speichern",
       "cancel": "Abbrechen"
     }
+  },
+  "Methodology": {
+    "title": "Woher unsere Daten stammen",
+    "intro": "YourHEI zeigt nur Daten aus offiziellen offenen Quellen und von den Einrichtungen selbst. Wir erfinden niemals Werte: Wenn etwas nicht veröffentlicht ist, steht auf der Seite „nicht angegeben“.",
+    "sourcesTitle": "Die Quellen, die wir nutzen",
+    "sourcesNote": "Jede Programmkarte nennt ihre Quelle. Preise und Fristen ändern sich jedes Jahr, prüfe sie daher vor der Bewerbung immer auf der offiziellen Seite.",
+    "howTitle": "Wie wir mit den Daten umgehen",
+    "how1": "Programmnamen, Gebühren und Termine werden so aus der Quelle übernommen, wie sie veröffentlicht sind. Wir schätzen, runden oder rechnen sie nicht um.",
+    "how2": "Nennt eine Quelle etwas nicht (zum Beispiel die Studienform oder die Sprache eines Programms), bleibt das Feld leer, statt geraten zu werden.",
+    "how3": "Einrichtungen können ihre eigenen Daten in einem Einrichtungskonto prüfen und aktualisieren; solche Daten sind mit „Von der Einrichtung eingetragen“ gekennzeichnet.",
+    "gapsTitle": "Was fehlen kann",
+    "gaps1": "Noch nicht jede Einrichtung hat Programme. Wir ergänzen Länder und Einrichtungen Schritt für Schritt, beginnend mit offiziellen Registern.",
+    "gaps2": "Studiengebühren für internationale Studierende werden nicht in jedem Register veröffentlicht; fehlen sie, steht das auf der Karte.",
+    "transTitle": "Übersetzungen",
+    "trans": "Die Seite ist in 16 Sprachen verfügbar. Die meisten Übersetzungen entstehen mit maschineller Hilfe und werden Schritt für Schritt geprüft.",
+    "errorTitle": "Einen Fehler gefunden?",
+    "error": "Schreib uns auf der Kontaktseite oder nutze auf einer Einrichtungsseite „Fehler auf dieser Seite melden“. Bestätigte Fehler korrigieren wir schnell.",
+    "contact": "Kontakt"
   }
 }

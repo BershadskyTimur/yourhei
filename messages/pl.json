@@ -6,7 +6,10 @@
   "Common": {
     "siteName": "YourHEI",
     "skipToContent": "Przejdź do głównej treści",
-    "translationUnavailable": "tłumaczenie niedostępne"
+    "translationUnavailable": "tłumaczenie niedostępne",
+    "translationNotice": "Ta strona została przetłumaczona na Twój język przy pomocy maszyny. Jeśli zauważysz błąd, daj nam znać.",
+    "translationReport": "Zgłoś",
+    "dismiss": "Zamknij"
   },
   "ErrorPage": {
     "title": "Coś poszło nie tak",
@@ -35,7 +38,8 @@
     "terms": "Regulamin",
     "dataCredit": "Dane mapy © współtwórcy OpenStreetMap, OpenFreeMap. Dane o programach: Discover Uni dataset, HESA (CC BY 4.0); Study in NL, Nuffic; DAAD; Opintopolku.",
     "rights": "© {year} YourHEI",
-    "tagline": "Znajdź, gdzie studiować: uniwersytety, college’e i szkoły na jednej mapie, z dopasowaniami, które same się tłumaczą."
+    "tagline": "Znajdź, gdzie studiować: uniwersytety, college’e i szkoły na jednej mapie, z dopasowaniami, które same się tłumaczą.",
+    "methodology": "Źródła danych"
   },
   "Types": {
     "university": "Uniwersytet",
@@ -171,7 +175,10 @@
     "favoriteAdd": "Zapisz",
     "favoriteRemove": "Zapisano",
     "favoriteLogin": "Zaloguj się, aby zapisać",
-    "byInstitution": "Wprowadzone przez samą placówkę"
+    "byInstitution": "Wprowadzone przez samą placówkę",
+    "sourceLine": "Źródło: {source}",
+    "dataYear": "Dane za rok akademicki {year}",
+    "methodologyLinkShort": "Jak zbieramy dane"
   },
   "Pages": {
     "about": {
@@ -1235,5 +1242,23 @@
       "save": "Zapisz",
       "cancel": "Anuluj"
     }
+  },
+  "Methodology": {
+    "title": "Skąd pochodzą nasze dane",
+    "intro": "YourHEI pokazuje tylko dane z oficjalnych otwartych źródeł i od samych uczelni. Nigdy nie zmyślamy wartości: gdy coś nie jest opublikowane, strona pisze „nie podano”.",
+    "sourcesTitle": "Źródła, z których korzystamy",
+    "sourcesNote": "Każda karta programu podaje swoje źródło. Ceny i terminy zmieniają się co roku, więc przed złożeniem wniosku zawsze sprawdź je na oficjalnej stronie.",
+    "howTitle": "Jak postępujemy z danymi",
+    "how1": "Nazwy programów, opłaty i daty są kopiowane ze źródła tak, jak zostały opublikowane. Nie szacujemy ich, nie zaokrąglamy ani nie przeliczamy.",
+    "how2": "Jeśli źródło czegoś nie podaje (na przykład trybu studiów lub języka programu), pole zostaje puste zamiast być zgadywane.",
+    "how3": "Uczelnie mogą sprawdzać i aktualizować własne dane na koncie uczelni; takie dane są oznaczone „Wprowadzone przez uczelnię”.",
+    "gapsTitle": "Czego może brakować",
+    "gaps1": "Nie każda uczelnia ma już programy. Dodajemy kraje i uczelnie krok po kroku, zaczynając od oficjalnych rejestrów.",
+    "gaps2": "Czesne dla studentów zagranicznych nie jest publikowane w każdym rejestrze; gdy go brakuje, karta to zaznacza.",
+    "transTitle": "Tłumaczenia",
+    "trans": "Strona jest dostępna w 16 językach. Większość tłumaczeń powstała przy pomocy maszyny i jest stopniowo sprawdzana.",
+    "errorTitle": "Znalazłeś błąd?",
+    "error": "Napisz do nas na stronie kontaktowej lub użyj „Zgłoś błąd na tej stronie” na stronie uczelni. Potwierdzone błędy szybko poprawiamy.",
+    "contact": "Kontakt"
   }
 }

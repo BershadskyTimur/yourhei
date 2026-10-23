@@ -6,7 +6,10 @@
   "Common": {
     "siteName": "YourHEI",
     "skipToContent": "Asosiy mazmunga o‘tish",
-    "translationUnavailable": "tarjima mavjud emas"
+    "translationUnavailable": "tarjima mavjud emas",
+    "translationNotice": "Bu sahifa mashina yordamida sizning tilingizga tarjima qilingan. Xato sezsangiz, iltimos, bizga xabar bering.",
+    "translationReport": "Xabar berish",
+    "dismiss": "Yopish"
   },
   "ErrorPage": {
     "title": "Nimadir xato ketdi",
@@ -35,7 +38,8 @@
     "terms": "Foydalanish shartlari",
     "dataCredit": "Xarita ma’lumotlari © OpenStreetMap hissadorlari, OpenFreeMap. Dastur ma’lumotlari: Discover Uni dataset, HESA (CC BY 4.0); Study in NL, Nuffic; DAAD; Opintopolku.",
     "rights": "© {year} YourHEI",
-    "tagline": "Qayerda o‘qishni toping: universitetlar, kollejlar va maktablar bitta xaritada, o‘zini tushuntiradigan natijalar bilan."
+    "tagline": "Qayerda o‘qishni toping: universitetlar, kollejlar va maktablar bitta xaritada, o‘zini tushuntiradigan natijalar bilan.",
+    "methodology": "Ma’lumot manbalari"
   },
   "Types": {
     "university": "Universitet",
@@ -171,7 +175,10 @@
     "favoriteAdd": "Saqlash",
     "favoriteRemove": "Saqlangan",
     "favoriteLogin": "Saqlash uchun kiring",
-    "byInstitution": "Muassasaning o‘zi kiritgan"
+    "byInstitution": "Muassasaning o‘zi kiritgan",
+    "sourceLine": "Manba: {source}",
+    "dataYear": "{year} o‘quv yili ma’lumotlari",
+    "methodologyLinkShort": "Ma’lumotlarni qanday yig‘amiz"
   },
   "Pages": {
     "about": {
@@ -1235,5 +1242,23 @@
       "save": "Saqlash",
       "cancel": "Bekor qilish"
     }
+  },
+  "Methodology": {
+    "title": "Ma’lumotlarimiz qayerdan",
+    "intro": "YourHEI faqat rasmiy ochiq manbalardan va muassasalarning o‘zidan olingan ma’lumotlarni ko‘rsatadi. Biz hech qachon qiymatlarni to‘qib chiqarmaymiz: biror narsa e’lon qilinmagan bo‘lsa, sahifada «ko‘rsatilmagan» deb yoziladi.",
+    "sourcesTitle": "Biz foydalanadigan manbalar",
+    "sourcesNote": "Dasturning har bir kartasida uning manbasi ko‘rsatilgan. Narxlar va muddatlar har yili o‘zgaradi, shuning uchun ariza berishdan oldin ularni doim rasmiy sahifada tekshiring.",
+    "howTitle": "Ma’lumotlar bilan qanday ishlaymiz",
+    "how1": "Dastur nomlari, to‘lovlar va sanalar manbadan e’lon qilinganidek ko‘chiriladi. Biz ularni baholamaymiz, yaxlitlamaymiz va konvertatsiya qilmaymiz.",
+    "how2": "Agar manba biror narsani ko‘rsatmasa (masalan, ta’lim shakli yoki dastur tili), maydon taxmin qilinmasdan bo‘sh qoladi.",
+    "how3": "Muassasalar o‘z ma’lumotlarini muassasa kabinetida tekshirib, yangilashi mumkin; bunday ma’lumotlar «Muassasa kiritgan» deb belgilanadi.",
+    "gapsTitle": "Nimalar yetishmasligi mumkin",
+    "gaps1": "Dasturlar hali hamma muassasada yo‘q. Mamlakatlar va muassasalarni rasmiy reyestrlardan boshlab bosqichma-bosqich qo‘shamiz.",
+    "gaps2": "Xorijiy talabalar uchun o‘qish narxi har bir reyestrda e’lon qilinmaydi; bo‘lmasa, kartada shunday yoziladi.",
+    "transTitle": "Tarjimalar",
+    "trans": "Sayt 16 tilda mavjud. Tarjimalarning ko‘pchiligi mashina yordamida qilingan va bosqichma-bosqich tekshirilmoqda.",
+    "errorTitle": "Xato topdingizmi?",
+    "error": "Bizga aloqa sahifasida yozing yoki muassasa sahifasida «Bu sahifadagi xatoni xabar qilish» havolasidan foydalaning. Tasdiqlangan xatolarni tez tuzatamiz.",
+    "contact": "Aloqa"
   }
 }

@@ -15,6 +15,7 @@ import { ConsentBannerSlot } from '@/components/ConsentBannerSlot';
 import { Footer } from '@/components/Footer';
 import { Header } from '@/components/Header';
 import { AdsFlag } from '@/components/AdsFlag';
+import { TranslationNotice } from '@/components/TranslationNotice';
 import { PageViewTracker } from '@/components/PageViewTracker';
 import { ThemeProvider } from '@/components/ThemeProvider';
 import { LOCALES } from '@/config/locales';
@@ -130,6 +131,7 @@ export default async function LocaleLayout({
               {t('skipToContent')}
             </a>
             <Header />
+            <TranslationNotice />
             <main id="main-content" className="flex-1">
               {children}
             </main>

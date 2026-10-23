@@ -6,6 +6,8 @@ import { PriceInMyCurrency } from './PriceInMyCurrency';
 import { TrackedLink } from './TrackedLink';
 import { visibleDeadlines } from '@/lib/institutions/deadlines';
 import { CERTIFICATES, EXAMS, labelFor } from '@/lib/survey/references';
+import { sourceOf } from '@/lib/institutions/sources';
+import { Link } from '@/i18n/navigation';
 
 const fmtMoney = (m: Money, locale: string): string => {
   if (m.amount === null) return '—';
@@ -41,6 +43,7 @@ export async function ProgramCard({ program, country, slug, city }: { program: P
   const level = tSurvey.has(program.level as 'bachelor') ? tSurvey(program.level as 'bachelor') : program.level;
 
   const hasReq = program.minScores.length > 0 || program.documents.length > 0 || program.entrance;
+  const source = sourceOf(program.byInstitution ? 'institution' : program.source);
 
   return (
     <li className="rounded-lg border border-line bg-surface p-5">
@@ -114,6 +117,25 @@ export async function ProgramCard({ program, country, slug, city }: { program: P
               {new Intl.DateTimeFormat(locale, { dateStyle: 'long', timeZone: 'UTC' }).format(new Date(`${d.date}T00:00:00Z`))}.{' '}
             </span>
           ))}
+        </p>
+      )}
+
+      {(source || program.academicYear) && (
+        <p className="mt-3 text-xs text-muted">
+          {source && (
+            <>
+              {t('sourceLine', { source: source.name })}
+              {source.url && (
+                <>
+                  {' '}
+                  (<a href={source.url} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{new URL(source.url).hostname.replace(/^www\./, '')}</a>)
+                </>
+              )}
+              {'. '}
+            </>
+          )}
+          {program.academicYear && <>{t('dataYear', { year: program.academicYear })}. </>}
+          <Link href="/methodology" className="underline underline-offset-2">{t('methodologyLinkShort')}</Link>
         </p>
       )}
 

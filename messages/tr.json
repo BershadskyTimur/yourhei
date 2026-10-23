@@ -6,7 +6,10 @@
   "Common": {
     "siteName": "YourHEI",
     "skipToContent": "Ana içeriğe geç",
-    "translationUnavailable": "çeviri yok"
+    "translationUnavailable": "çeviri yok",
+    "translationNotice": "Bu sayfa makine yardımıyla senin diline çevrildi. Bir hata fark edersen lütfen bize bildir.",
+    "translationReport": "Bize bildir",
+    "dismiss": "Kapat"
   },
   "ErrorPage": {
     "title": "Bir şeyler ters gitti",
@@ -35,7 +38,8 @@
     "terms": "Kullanım koşulları",
     "dataCredit": "Harita verileri © OpenStreetMap katkıda bulunanlar, OpenFreeMap. Program verileri: Discover Uni dataset, HESA (CC BY 4.0); Study in NL, Nuffic; DAAD; Opintopolku.",
     "rights": "© {year} YourHEI",
-    "tagline": "Nerede okuyacağını bul: üniversiteler, kolejler ve okullar tek haritada, kendini açıklayan eşleşmelerle."
+    "tagline": "Nerede okuyacağını bul: üniversiteler, kolejler ve okullar tek haritada, kendini açıklayan eşleşmelerle.",
+    "methodology": "Veri kaynakları"
   },
   "Types": {
     "university": "Üniversite",
@@ -171,7 +175,10 @@
     "favoriteAdd": "Kaydet",
     "favoriteRemove": "Kaydedildi",
     "favoriteLogin": "Kaydetmek için giriş yap",
-    "byInstitution": "Kurumun kendisi tarafından girildi"
+    "byInstitution": "Kurumun kendisi tarafından girildi",
+    "sourceLine": "Kaynak: {source}",
+    "dataYear": "{year} akademik yılı verileri",
+    "methodologyLinkShort": "Verileri nasıl topluyoruz"
   },
   "Pages": {
     "about": {
@@ -1235,5 +1242,23 @@
       "save": "Kaydet",
       "cancel": "İptal"
     }
+  },
+  "Methodology": {
+    "title": "Verilerimiz nereden geliyor",
+    "intro": "YourHEI yalnızca resmî açık kaynaklardan ve kurumların kendisinden gelen verileri gösterir. Hiçbir zaman değer uydurmayız: bir şey yayımlanmamışsa sayfada “belirtilmemiş” yazar.",
+    "sourcesTitle": "Kullandığımız kaynaklar",
+    "sourcesNote": "Her program kartı kaynağını belirtir. Ücretler ve tarihler her yıl değişir; bu yüzden başvurmadan önce her zaman resmî sayfadan doğrula.",
+    "howTitle": "Verilerle nasıl çalışıyoruz",
+    "how1": "Program adları, ücretler ve tarihler kaynaktan yayımlandığı gibi kopyalanır. Onları tahmin etmeyiz, yuvarlamayız veya çevirmeyiz.",
+    "how2": "Bir kaynak bir şeyi belirtmiyorsa (örneğin öğretim biçimini veya programın dilini), alan tahmin edilmek yerine boş kalır.",
+    "how3": "Kurumlar kendi verilerini kurum hesabında kontrol edip güncelleyebilir; bu veriler “Kurum tarafından girildi” olarak işaretlenir.",
+    "gapsTitle": "Neler eksik olabilir",
+    "gaps1": "Her kurumun henüz programı yok. Ülkeleri ve kurumları resmî sicillerden başlayarak adım adım ekliyoruz.",
+    "gaps2": "Uluslararası öğrenciler için öğrenim ücreti her sicilde yayımlanmaz; eksikse kart bunu belirtir.",
+    "transTitle": "Çeviriler",
+    "trans": "Site 16 dilde kullanılabilir. Çevirilerin çoğu makine yardımıyla yapıldı ve adım adım gözden geçiriliyor.",
+    "errorTitle": "Bir hata mı buldun?",
+    "error": "Bize iletişim sayfasından yaz veya bir kurum sayfasında “Bu sayfadaki hatayı bildir” bağlantısını kullan. Doğrulanan hataları hızla düzeltiriz.",
+    "contact": "İletişim"
   }
 }

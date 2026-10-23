@@ -6,7 +6,10 @@
   "Common": {
     "siteName": "YourHEI",
     "skipToContent": "Əsas məzmuna keç",
-    "translationUnavailable": "tərcümə yoxdur"
+    "translationUnavailable": "tərcümə yoxdur",
+    "translationNotice": "Bu səhifə maşın köməyi ilə sizin dilinizə tərcümə olunub. Səhv görsəniz, xahiş edirik bizə bildirin.",
+    "translationReport": "Bildirin",
+    "dismiss": "Bağla"
   },
   "ErrorPage": {
     "title": "Nəsə səhv getdi",
@@ -35,7 +38,8 @@
     "terms": "İstifadə şərtləri",
     "dataCredit": "Xəritə məlumatları © OpenStreetMap iştirakçıları, OpenFreeMap. Proqram məlumatları: Discover Uni dataset, HESA (CC BY 4.0); Study in NL, Nuffic; DAAD; Opintopolku.",
     "rights": "© {year} YourHEI",
-    "tagline": "Harada oxuyacağını tap: universitetlər, kolleclər və məktəblər bir xəritədə, özünü izah edən uyğunluqlarla."
+    "tagline": "Harada oxuyacağını tap: universitetlər, kolleclər və məktəblər bir xəritədə, özünü izah edən uyğunluqlarla.",
+    "methodology": "Məlumat mənbələri"
   },
   "Types": {
     "university": "Universitet",
@@ -171,7 +175,10 @@
     "favoriteAdd": "Saxla",
     "favoriteRemove": "Saxlanılıb",
     "favoriteLogin": "Saxlamaq üçün daxil ol",
-    "byInstitution": "Müəssisənin özü tərəfindən daxil edilib"
+    "byInstitution": "Müəssisənin özü tərəfindən daxil edilib",
+    "sourceLine": "Mənbə: {source}",
+    "dataYear": "{year} tədris ili üzrə məlumatlar",
+    "methodologyLinkShort": "Məlumatı necə toplayırıq"
   },
   "Pages": {
     "about": {
@@ -1235,5 +1242,23 @@
       "save": "Saxla",
       "cancel": "Ləğv et"
     }
+  },
+  "Methodology": {
+    "title": "Məlumatlarımız haradandır",
+    "intro": "YourHEI yalnız rəsmi açıq mənbələrdən və təhsil müəssisələrinin özlərindən məlumat göstərir. Biz heç vaxt dəyər uydurmuruq: nəsə dərc olunmayıbsa, səhifədə «göstərilməyib» yazılır.",
+    "sourcesTitle": "İstifadə etdiyimiz mənbələr",
+    "sourcesNote": "Hər proqram kartında onun mənbəyi göstərilir. Qiymətlər və müddətlər hər il dəyişir, ona görə müraciətdən əvvəl onları həmişə rəsmi səhifədə yoxlayın.",
+    "howTitle": "Məlumatlarla necə işləyirik",
+    "how1": "Proqram adları, ödənişlər və tarixlər mənbədən dərc olunduğu kimi köçürülür. Biz onları təxmin etmir, yuvarlaqlaşdırmır və çevirmirik.",
+    "how2": "Mənbə nəyisə göstərmirsə (məsələn, təhsil forması və ya proqramın dili), sahə təxmin olunmur, boş qalır.",
+    "how3": "Müəssisələr öz məlumatlarını müəssisə hesabında yoxlaya və yeniləyə bilərlər; belə məlumatlar «Müəssisə tərəfindən daxil edilib» kimi işarələnir.",
+    "gapsTitle": "Nə çatışmaya bilər",
+    "gaps1": "Proqramlar hələ hər müəssisədə yoxdur. Ölkələri və müəssisələri rəsmi reyestrlərdən başlayaraq mərhələ-mərhələ əlavə edirik.",
+    "gaps2": "Beynəlxalq tələbələr üçün təhsil haqqı hər reyestrdə dərc olunmur; olmadıqda kartda bu qeyd edilir.",
+    "transTitle": "Tərcümələr",
+    "trans": "Sayt 16 dildə mövcuddur. Tərcümələrin çoxu maşın köməyi ilə edilib və mərhələ-mərhələ yoxlanılır.",
+    "errorTitle": "Səhv tapdınız?",
+    "error": "Bizə əlaqə səhifəsində yazın və ya müəssisə səhifəsində «Bu səhifədəki səhvi bildirin» keçidindən istifadə edin. Təsdiqlənmiş səhvləri tez düzəldirik.",
+    "contact": "Əlaqə"
   }
 }

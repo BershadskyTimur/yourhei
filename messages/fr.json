@@ -6,7 +6,10 @@
   "Common": {
     "siteName": "YourHEI",
     "skipToContent": "Aller au contenu principal",
-    "translationUnavailable": "traduction indisponible"
+    "translationUnavailable": "traduction indisponible",
+    "translationNotice": "Cette page est traduite dans votre langue avec une aide automatique. Si vous remarquez une erreur, dites-le-nous.",
+    "translationReport": "Nous écrire",
+    "dismiss": "Fermer"
   },
   "ErrorPage": {
     "title": "Un problème est survenu",
@@ -35,7 +38,8 @@
     "terms": "Conditions d’utilisation",
     "dataCredit": "Données cartographiques © contributeurs d’OpenStreetMap, OpenFreeMap. Données des programmes: Discover Uni dataset, HESA (CC BY 4.0); Study in NL, Nuffic; DAAD; Opintopolku.",
     "rights": "© {year} YourHEI",
-    "tagline": "Trouvez où étudier : universités, collèges et écoles sur une seule carte, avec des résultats qui s’expliquent."
+    "tagline": "Trouvez où étudier : universités, collèges et écoles sur une seule carte, avec des résultats qui s’expliquent.",
+    "methodology": "Sources des données"
   },
   "Types": {
     "university": "Université",
@@ -171,7 +175,10 @@
     "favoriteAdd": "Enregistrer",
     "favoriteRemove": "Enregistré",
     "favoriteLogin": "Connectez-vous pour enregistrer",
-    "byInstitution": "Saisi par l’établissement lui-même"
+    "byInstitution": "Saisi par l’établissement lui-même",
+    "sourceLine": "Source : {source}",
+    "dataYear": "Données de l’année universitaire {year}",
+    "methodologyLinkShort": "Comment nous collectons les données"
   },
   "Pages": {
     "about": {
@@ -1235,5 +1242,23 @@
       "save": "Enregistrer",
       "cancel": "Annuler"
     }
+  },
+  "Methodology": {
+    "title": "D’où viennent nos données",
+    "intro": "YourHEI n’affiche que des données issues de sources officielles ouvertes et des établissements eux-mêmes. Nous n’inventons jamais de valeurs : lorsqu’une information n’est pas publiée, la page indique « non précisé ».",
+    "sourcesTitle": "Les sources que nous utilisons",
+    "sourcesNote": "Chaque fiche de programme indique sa source. Les prix et les dates changent chaque année : vérifiez-les toujours sur la page officielle avant de candidater.",
+    "howTitle": "Comment nous traitons les données",
+    "how1": "Les noms des programmes, les frais et les dates sont copiés de la source tels qu’ils sont publiés. Nous ne les estimons, ne les arrondissons ni ne les convertissons.",
+    "how2": "Si une source n’indique pas quelque chose (par exemple le mode d’études ou la langue d’un programme), le champ reste vide au lieu d’être deviné.",
+    "how3": "Les établissements peuvent vérifier et mettre à jour leurs propres données dans un compte d’établissement ; ces données sont marquées « Saisi par l’établissement ».",
+    "gapsTitle": "Ce qui peut manquer",
+    "gaps1": "Tous les établissements n’ont pas encore de programmes. Nous ajoutons des pays et des établissements pas à pas, en partant des registres officiels.",
+    "gaps2": "Les frais de scolarité pour les étudiants internationaux ne sont pas publiés dans tous les registres ; lorsqu’ils manquent, la fiche le dit.",
+    "transTitle": "Traductions",
+    "trans": "Le site est disponible en 16 langues. La plupart des traductions sont faites avec une aide automatique et sont relues peu à peu.",
+    "errorTitle": "Une erreur ?",
+    "error": "Écrivez-nous sur la page de contact ou utilisez « Signaler une erreur sur cette page » sur la page d’un établissement. Nous corrigeons rapidement les erreurs confirmées.",
+    "contact": "Contact"
   }
 }

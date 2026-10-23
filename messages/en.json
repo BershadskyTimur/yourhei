@@ -6,7 +6,10 @@
   "Common": {
     "siteName": "YourHEI",
     "skipToContent": "Skip to main content",
-    "translationUnavailable": "translation unavailable"
+    "translationUnavailable": "translation unavailable",
+    "translationNotice": "This page is translated into your language with machine help. If you notice a mistake, please tell us.",
+    "translationReport": "Tell us",
+    "dismiss": "Close"
   },
   "ErrorPage": {
     "title": "Something went wrong",
@@ -35,7 +38,8 @@
     "terms": "Terms of use",
     "dataCredit": "Map data © OpenStreetMap contributors, OpenFreeMap. Programme data: Discover Uni dataset, HESA (CC BY 4.0); Study in NL, Nuffic; DAAD; Opintopolku.",
     "rights": "© {year} YourHEI",
-    "tagline": "Find where to study: universities, colleges and schools on one map, with matches that explain themselves."
+    "tagline": "Find where to study: universities, colleges and schools on one map, with matches that explain themselves.",
+    "methodology": "Data sources"
   },
   "Types": {
     "university": "University",
@@ -171,7 +175,10 @@
     "favoriteAdd": "Save",
     "favoriteRemove": "Saved",
     "favoriteLogin": "Log in to save",
-    "byInstitution": "Entered by the institution"
+    "byInstitution": "Entered by the institution",
+    "sourceLine": "Source: {source}",
+    "dataYear": "Data for the {year} academic year",
+    "methodologyLinkShort": "How we collect data"
   },
   "Pages": {
     "about": {
@@ -1235,5 +1242,23 @@
       "save": "Save",
       "cancel": "Cancel"
     }
+  },
+  "Methodology": {
+    "title": "Where our data comes from",
+    "intro": "YourHEI shows only data from official open sources and from the institutions themselves. We never invent values: when something is not published, the page says “not specified”.",
+    "sourcesTitle": "Sources we use",
+    "sourcesNote": "Every programme card names its source. Prices and deadlines change every year, so always confirm them on the official page before you apply.",
+    "howTitle": "How we handle the data",
+    "how1": "Programme names, fees and dates are copied from the source as published. We do not estimate, round or convert them.",
+    "how2": "If a source does not state something (for example the way of study or the language of a programme), the field stays empty instead of being guessed.",
+    "how3": "Institutions can check and update their own data in an institution account; such data is marked “Entered by the institution”.",
+    "gapsTitle": "What may be missing",
+    "gaps1": "Not every institution has programmes yet. We add countries and institutions step by step, starting from official registers.",
+    "gaps2": "Tuition for international students is not published in every register; where it is missing, the card says so.",
+    "transTitle": "Translations",
+    "trans": "The site is available in 16 languages. Most translations are made with machine help and are being reviewed step by step.",
+    "errorTitle": "Found a mistake?",
+    "error": "Write to us on the contact page or use “Report an error on this page” on an institution page. We correct confirmed errors quickly.",
+    "contact": "Contact"
   }
 }

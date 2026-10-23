@@ -44,7 +44,7 @@ const FIELD_BY_NAME = {
 };
 const fieldOf = (name) => FIELD_BY_NAME[name] ?? inferIsced(name);
 
-const nu = (names, level, base) => names.map(([name, school, url]) => ({ name, level, faculty: school, url }));
+const nu = (names, level) => names.map(([name, school, url]) => ({ name, level, faculty: school, url }));
 const NU = [
   // undergraduate (the 6-year medical programme and the Doctor of Medicine are not included: their level is not clear)
   ...nu([

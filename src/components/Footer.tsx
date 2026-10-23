@@ -9,6 +9,7 @@ export function Footer() {
 
   const links = [
     { href: '/about', label: t('about') },
+    { href: '/methodology', label: t('methodology') },
     { href: '/contact', label: t('contacts') },
     { href: '/privacy', label: t('privacy') },
     { href: '/terms', label: t('terms') },

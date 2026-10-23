@@ -30,6 +30,8 @@ export interface ProgramDetail {
   academicYear: string | null;
   /** the numbers were entered by the institution itself (through its account) */
   byInstitution: boolean;
+  /** where the programme came from (a key of SOURCES in sources.ts) */
+  source: string | null;
 }
 export type Row = Record<string, unknown>;
 export const str = (v: unknown): string | null => (typeof v === 'string' && v !== '' ? v : null);
@@ -76,5 +78,6 @@ export function toProgramDetail(r: Row): ProgramDetail | null {
     applicationUrl: safeHttpUrl(r.application_url),
     academicYear: str(r.academic_year),
     byInstitution: req.source === 'institution',
+    source: str(req.source),
   };
 }
