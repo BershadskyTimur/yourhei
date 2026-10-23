@@ -39,7 +39,8 @@
     "dataCredit": "Map data © OpenStreetMap contributors, OpenFreeMap. Programme data: Discover Uni dataset, HESA (CC BY 4.0); Study in NL, Nuffic; DAAD; Opintopolku.",
     "rights": "© {year} YourHEI",
     "tagline": "Find where to study: universities, colleges and schools on one map, with matches that explain themselves.",
-    "methodology": "Data sources"
+    "methodology": "Data sources",
+    "countries": "Study destinations"
   },
   "Types": {
     "university": "University",
@@ -178,7 +179,8 @@
     "byInstitution": "Entered by the institution",
     "sourceLine": "Source: {source}",
     "dataYear": "Data for the {year} academic year",
-    "methodologyLinkShort": "How we collect data"
+    "methodologyLinkShort": "How we collect data",
+    "countryGuide": "Guide: studying in {country}"
   },
   "Pages": {
     "about": {
@@ -1269,5 +1271,23 @@
     "errorTitle": "Found a mistake?",
     "error": "Write to us on the contact page or use “Report an error on this page” on an institution page. We correct confirmed errors quickly.",
     "contact": "Contact"
+  },
+  "Countries": {
+    "listTitle": "Study destinations",
+    "listIntro": "Short guides to the rules that matter before you apply: study visa, working while you study, staying after graduation. Rules change: always confirm them on the official pages we link to.",
+    "pageTitle": "Studying in {country}",
+    "visaTitle": "Study visa and residence permit",
+    "workTitle": "Working while you study",
+    "afterTitle": "After graduation",
+    "livingTitle": "Cost of living",
+    "livingText": "The study visa requires you to show at least {amount} per month ({year}). This is the official minimum, not an average: real costs are usually higher, especially in big cities.",
+    "recognitionTitle": "Recognition of your diploma",
+    "recognitionText": "Recognition of foreign diplomas is handled by the national information centres of the ENIC-NARIC network.",
+    "recognitionLink": "ENIC-NARIC network",
+    "officialPage": "Official page",
+    "checked": "Information checked on {date}. Rules change: confirm them on the official page before you apply.",
+    "notCollected": "Not collected yet. Please check the official page.",
+    "catalogLink": "Browse the catalogue",
+    "backToList": "All destinations"
   }
 }

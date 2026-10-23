@@ -39,7 +39,8 @@
     "dataCredit": "Données cartographiques © contributeurs d’OpenStreetMap, OpenFreeMap. Données des programmes: Discover Uni dataset, HESA (CC BY 4.0); Study in NL, Nuffic; DAAD; Opintopolku.",
     "rights": "© {year} YourHEI",
     "tagline": "Trouvez où étudier : universités, collèges et écoles sur une seule carte, avec des résultats qui s’expliquent.",
-    "methodology": "Sources des données"
+    "methodology": "Sources des données",
+    "countries": "Destinations d’études"
   },
   "Types": {
     "university": "Université",
@@ -178,7 +179,8 @@
     "byInstitution": "Saisi par l’établissement lui-même",
     "sourceLine": "Source : {source}",
     "dataYear": "Données de l’année universitaire {year}",
-    "methodologyLinkShort": "Comment nous collectons les données"
+    "methodologyLinkShort": "Comment nous collectons les données",
+    "countryGuide": "Guide : étudier en {country}"
   },
   "Pages": {
     "about": {
@@ -1269,5 +1271,23 @@
     "errorTitle": "Une erreur ?",
     "error": "Écrivez-nous sur la page de contact ou utilisez « Signaler une erreur sur cette page » sur la page d’un établissement. Nous corrigeons rapidement les erreurs confirmées.",
     "contact": "Contact"
+  },
+  "Countries": {
+    "listTitle": "Destinations d’études",
+    "listIntro": "De courts guides sur les règles qui comptent avant de candidater : visa d’études, travailler pendant ses études, rester après le diplôme. Les règles changent : vérifiez-les toujours sur les pages officielles que nous indiquons.",
+    "pageTitle": "Étudier en {country}",
+    "visaTitle": "Visa d’études et titre de séjour",
+    "workTitle": "Travailler pendant ses études",
+    "afterTitle": "Après le diplôme",
+    "livingTitle": "Coût de la vie",
+    "livingText": "Le visa d’études exige de justifier d’au moins {amount} par mois ({year}). C’est le minimum officiel, pas une moyenne : les dépenses réelles sont généralement plus élevées, surtout dans les grandes villes.",
+    "recognitionTitle": "Reconnaissance de votre diplôme",
+    "recognitionText": "La reconnaissance des diplômes étrangers est assurée par les centres nationaux d’information du réseau ENIC-NARIC.",
+    "recognitionLink": "Réseau ENIC-NARIC",
+    "officialPage": "Page officielle",
+    "checked": "Informations vérifiées le {date}. Les règles changent : confirmez-les sur la page officielle avant de candidater.",
+    "notCollected": "Pas encore collecté. Consultez la page officielle.",
+    "catalogLink": "Parcourir le catalogue",
+    "backToList": "Toutes les destinations"
   }
 }

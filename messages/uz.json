@@ -39,7 +39,8 @@
     "dataCredit": "Xarita ma’lumotlari © OpenStreetMap hissadorlari, OpenFreeMap. Dastur ma’lumotlari: Discover Uni dataset, HESA (CC BY 4.0); Study in NL, Nuffic; DAAD; Opintopolku.",
     "rights": "© {year} YourHEI",
     "tagline": "Qayerda o‘qishni toping: universitetlar, kollejlar va maktablar bitta xaritada, o‘zini tushuntiradigan natijalar bilan.",
-    "methodology": "Ma’lumot manbalari"
+    "methodology": "Ma’lumot manbalari",
+    "countries": "Ta’lim yo‘nalishlari"
   },
   "Types": {
     "university": "Universitet",
@@ -178,7 +179,8 @@
     "byInstitution": "Muassasaning o‘zi kiritgan",
     "sourceLine": "Manba: {source}",
     "dataYear": "{year} o‘quv yili ma’lumotlari",
-    "methodologyLinkShort": "Ma’lumotlarni qanday yig‘amiz"
+    "methodologyLinkShort": "Ma’lumotlarni qanday yig‘amiz",
+    "countryGuide": "Qo‘llanma: {country} mamlakatida o‘qish"
   },
   "Pages": {
     "about": {
@@ -1269,5 +1271,23 @@
     "errorTitle": "Xato topdingizmi?",
     "error": "Bizga aloqa sahifasida yozing yoki muassasa sahifasida «Bu sahifadagi xatoni xabar qilish» havolasidan foydalaning. Tasdiqlangan xatolarni tez tuzatamiz.",
     "contact": "Aloqa"
+  },
+  "Countries": {
+    "listTitle": "Ta’lim yo‘nalishlari",
+    "listIntro": "Ariza berishdan oldin muhim qoidalar haqida qisqa qo‘llanmalar: talaba vizasi, o‘qish paytida ishlash, bitirgandan keyin qolish. Qoidalar o‘zgaradi: ularni har doim biz havola qilgan rasmiy sahifalarda tekshiring.",
+    "pageTitle": "{country} mamlakatida o‘qish",
+    "visaTitle": "Talaba vizasi va yashash ruxsatnomasi",
+    "workTitle": "O‘qish paytida ishlash",
+    "afterTitle": "Bitirgandan keyin",
+    "livingTitle": "Yashash narxi",
+    "livingText": "Talaba vizasi uchun oyiga kamida {amount} ko‘rsatish talab qilinadi ({year}). Bu rasmiy minimum, o‘rtacha ko‘rsatkich emas: haqiqiy xarajatlar, ayniqsa katta shaharlarda, odatda yuqoriroq.",
+    "recognitionTitle": "Diplomni tan olish",
+    "recognitionText": "Xorijiy diplomlarni tan olish bilan ENIC-NARIC tarmog‘ining milliy axborot markazlari shug‘ullanadi.",
+    "recognitionLink": "ENIC-NARIC tarmog‘i",
+    "officialPage": "Rasmiy sahifa",
+    "checked": "Ma’lumot {date} sanasida tekshirilgan. Qoidalar o‘zgaradi: ariza berishdan oldin rasmiy sahifada tekshiring.",
+    "notCollected": "Hali yig‘ilmagan. Rasmiy sahifani tekshiring.",
+    "catalogLink": "Katalogni ochish",
+    "backToList": "Barcha yo‘nalishlar"
   }
 }

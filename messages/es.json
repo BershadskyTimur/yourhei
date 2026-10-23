@@ -39,7 +39,8 @@
     "dataCredit": "Datos del mapa © colaboradores de OpenStreetMap, OpenFreeMap. Datos de programas: Discover Uni dataset, HESA (CC BY 4.0); Study in NL, Nuffic; DAAD; Opintopolku.",
     "rights": "© {year} YourHEI",
     "tagline": "Encuentra dónde estudiar: universidades, colegios y escuelas en un mapa, con recomendaciones que se explican solas.",
-    "methodology": "Fuentes de datos"
+    "methodology": "Fuentes de datos",
+    "countries": "Destinos de estudio"
   },
   "Types": {
     "university": "Universidad",
@@ -178,7 +179,8 @@
     "byInstitution": "Introducido por el propio centro",
     "sourceLine": "Fuente: {source}",
     "dataYear": "Datos del curso académico {year}",
-    "methodologyLinkShort": "Cómo recopilamos los datos"
+    "methodologyLinkShort": "Cómo recopilamos los datos",
+    "countryGuide": "Guía: estudiar en {country}"
   },
   "Pages": {
     "about": {
@@ -1269,5 +1271,23 @@
     "errorTitle": "¿Has encontrado un error?",
     "error": "Escríbenos en la página de contacto o usa «Informar de un error en esta página» en la página de una institución. Corregimos rápidamente los errores confirmados.",
     "contact": "Contacto"
+  },
+  "Countries": {
+    "listTitle": "Destinos de estudio",
+    "listIntro": "Guías breves sobre las normas que importan antes de solicitar: visado de estudios, trabajar mientras estudias y quedarte tras graduarte. Las normas cambian: confírmalas siempre en las páginas oficiales que enlazamos.",
+    "pageTitle": "Estudiar en {country}",
+    "visaTitle": "Visado de estudios y permiso de residencia",
+    "workTitle": "Trabajar mientras estudias",
+    "afterTitle": "Después de graduarte",
+    "livingTitle": "Coste de la vida",
+    "livingText": "El visado de estudios exige demostrar al menos {amount} al mes ({year}). Es el mínimo oficial, no un promedio: los gastos reales suelen ser mayores, sobre todo en las grandes ciudades.",
+    "recognitionTitle": "Reconocimiento de tu título",
+    "recognitionText": "El reconocimiento de títulos extranjeros lo gestionan los centros nacionales de información de la red ENIC-NARIC.",
+    "recognitionLink": "Red ENIC-NARIC",
+    "officialPage": "Página oficial",
+    "checked": "Información comprobada el {date}. Las normas cambian: confírmalas en la página oficial antes de solicitar.",
+    "notCollected": "Aún no recopilado. Consulta la página oficial.",
+    "catalogLink": "Ver el catálogo",
+    "backToList": "Todos los destinos"
   }
 }

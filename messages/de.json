@@ -39,7 +39,8 @@
     "dataCredit": "Kartendaten © OpenStreetMap-Mitwirkende, OpenFreeMap. Studiengangsdaten: Discover Uni dataset, HESA (CC BY 4.0); Study in NL, Nuffic; DAAD; Opintopolku.",
     "rights": "© {year} YourHEI",
     "tagline": "Finde, wo du studieren kannst: Universitäten, Colleges und Schulen auf einer Karte, mit Treffern, die sich selbst erklären.",
-    "methodology": "Datenquellen"
+    "methodology": "Datenquellen",
+    "countries": "Studienziele"
   },
   "Types": {
     "university": "Universität",
@@ -178,7 +179,8 @@
     "byInstitution": "Von der Einrichtung selbst eingetragen",
     "sourceLine": "Quelle: {source}",
     "dataYear": "Daten für das Studienjahr {year}",
-    "methodologyLinkShort": "Wie wir Daten sammeln"
+    "methodologyLinkShort": "Wie wir Daten sammeln",
+    "countryGuide": "Leitfaden: Studieren in {country}"
   },
   "Pages": {
     "about": {
@@ -1269,5 +1271,23 @@
     "errorTitle": "Einen Fehler gefunden?",
     "error": "Schreib uns auf der Kontaktseite oder nutze auf einer Einrichtungsseite „Fehler auf dieser Seite melden“. Bestätigte Fehler korrigieren wir schnell.",
     "contact": "Kontakt"
+  },
+  "Countries": {
+    "listTitle": "Studienziele",
+    "listIntro": "Kurze Leitfäden zu den Regeln, die vor der Bewerbung wichtig sind: Studienvisum, Arbeiten während des Studiums, Bleiben nach dem Abschluss. Regeln ändern sich: prüfe sie immer auf den offiziellen Seiten, auf die wir verlinken.",
+    "pageTitle": "Studieren in {country}",
+    "visaTitle": "Studienvisum und Aufenthaltserlaubnis",
+    "workTitle": "Arbeiten während des Studiums",
+    "afterTitle": "Nach dem Abschluss",
+    "livingTitle": "Lebenshaltungskosten",
+    "livingText": "Für das Studienvisum musst du mindestens {amount} pro Monat nachweisen ({year}). Das ist das offizielle Minimum, kein Durchschnitt: Die tatsächlichen Kosten sind meist höher, besonders in Großstädten.",
+    "recognitionTitle": "Anerkennung deines Abschlusses",
+    "recognitionText": "Die Anerkennung ausländischer Abschlüsse übernehmen die nationalen Informationszentren des ENIC-NARIC-Netzwerks.",
+    "recognitionLink": "ENIC-NARIC-Netzwerk",
+    "officialPage": "Offizielle Seite",
+    "checked": "Informationen geprüft am {date}. Regeln ändern sich: bestätige sie vor der Bewerbung auf der offiziellen Seite.",
+    "notCollected": "Noch nicht erfasst. Bitte prüfe die offizielle Seite.",
+    "catalogLink": "Katalog öffnen",
+    "backToList": "Alle Studienziele"
   }
 }

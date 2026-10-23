@@ -2,6 +2,7 @@ import type { MetadataRoute } from 'next';
 import { LOCALE_CODES } from '@/config/locales';
 import { SITEMAP_CHUNK } from '@/lib/institutions/sitemap';
 import { getSitemapPoints } from '@/lib/institutions/summaries';
+import { GUIDES } from '@/lib/countries-guide/guides';
 import { siteUrl } from '@/lib/site-url';
 
 export const revalidate = 86400;
@@ -9,7 +10,7 @@ export const revalidate = 86400;
 // A sitemap file may hold at most 50 000 addresses (and about 50 MB). Every institution has one address per
 // language, so the institutions are split into several files of 300 institutions each (/sitemap/0.xml, /sitemap/1.xml ...).
 // Only institutions that have programmes are listed (see lib/institutions/sitemap.ts).
-const STATIC_PAGES = ['', '/catalog', '/scholarships', '/methodology', '/about', '/contact', '/privacy', '/terms'];
+const STATIC_PAGES = ['', '/catalog', '/scholarships', '/countries', '/methodology', '/about', '/contact', '/privacy', '/terms'];
 
 export async function generateSitemaps() {
   const items = await getSitemapPoints();
@@ -23,6 +24,6 @@ export default async function sitemap(props: { id: Promise<string> }): Promise<M
   const alternates = (path: string) => ({ languages: Object.fromEntries(LOCALE_CODES.map((l) => [l, `${base}/${l}${path}`])) });
   const items = await getSitemapPoints();
   const slice = items.slice(id * SITEMAP_CHUNK, (id + 1) * SITEMAP_CHUNK);
-  const paths = [...(id === 0 ? STATIC_PAGES : []), ...slice.map((i) => `/institutions/${i.country.toLowerCase()}/${i.slug}`)];
+  const paths = [...(id === 0 ? [...STATIC_PAGES, ...GUIDES.map((g) => `/countries/${g.country.toLowerCase()}`)] : []), ...slice.map((i) => `/institutions/${i.country.toLowerCase()}/${i.slug}`)];
   return paths.flatMap((path) => LOCALE_CODES.map((l) => ({ url: `${base}/${l}${path}`, alternates: alternates(path) })));
 }

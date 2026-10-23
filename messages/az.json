@@ -39,7 +39,8 @@
     "dataCredit": "Xəritə məlumatları © OpenStreetMap iştirakçıları, OpenFreeMap. Proqram məlumatları: Discover Uni dataset, HESA (CC BY 4.0); Study in NL, Nuffic; DAAD; Opintopolku.",
     "rights": "© {year} YourHEI",
     "tagline": "Harada oxuyacağını tap: universitetlər, kolleclər və məktəblər bir xəritədə, özünü izah edən uyğunluqlarla.",
-    "methodology": "Məlumat mənbələri"
+    "methodology": "Məlumat mənbələri",
+    "countries": "Təhsil istiqamətləri"
   },
   "Types": {
     "university": "Universitet",
@@ -178,7 +179,8 @@
     "byInstitution": "Müəssisənin özü tərəfindən daxil edilib",
     "sourceLine": "Mənbə: {source}",
     "dataYear": "{year} tədris ili üzrə məlumatlar",
-    "methodologyLinkShort": "Məlumatı necə toplayırıq"
+    "methodologyLinkShort": "Məlumatı necə toplayırıq",
+    "countryGuide": "Bələdçi: {country} ölkəsində təhsil"
   },
   "Pages": {
     "about": {
@@ -1269,5 +1271,23 @@
     "errorTitle": "Səhv tapdınız?",
     "error": "Bizə əlaqə səhifəsində yazın və ya müəssisə səhifəsində «Bu səhifədəki səhvi bildirin» keçidindən istifadə edin. Təsdiqlənmiş səhvləri tez düzəldirik.",
     "contact": "Əlaqə"
+  },
+  "Countries": {
+    "listTitle": "Təhsil istiqamətləri",
+    "listIntro": "Müraciətdən əvvəl vacib qaydalar haqqında qısa bələdçilər: təhsil vizası, təhsil zamanı iş, məzun olduqdan sonra qalmaq. Qaydalar dəyişir: onları həmişə göstərdiyimiz rəsmi səhifələrdə yoxlayın.",
+    "pageTitle": "{country} ölkəsində təhsil",
+    "visaTitle": "Təhsil vizası və yaşayış icazəsi",
+    "workTitle": "Təhsil zamanı iş",
+    "afterTitle": "Məzun olduqdan sonra",
+    "livingTitle": "Yaşayış xərcləri",
+    "livingText": "Təhsil vizası üçün ayda ən azı {amount} göstərmək tələb olunur ({year}). Bu, rəsmi minimumdur, orta göstərici deyil: real xərclər, xüsusilə böyük şəhərlərdə, adətən daha yüksəkdir.",
+    "recognitionTitle": "Diplomunuzun tanınması",
+    "recognitionText": "Xarici diplomların tanınması ENIC-NARIC şəbəkəsinin milli məlumat mərkəzləri tərəfindən həyata keçirilir.",
+    "recognitionLink": "ENIC-NARIC şəbəkəsi",
+    "officialPage": "Rəsmi səhifə",
+    "checked": "Məlumat {date} tarixində yoxlanılıb. Qaydalar dəyişir: müraciətdən əvvəl rəsmi səhifədə yoxlayın.",
+    "notCollected": "Hələ toplanmayıb. Rəsmi səhifəni yoxlayın.",
+    "catalogLink": "Kataloqa bax",
+    "backToList": "Bütün istiqamətlər"
   }
 }

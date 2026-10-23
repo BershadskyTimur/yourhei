@@ -11,6 +11,7 @@ import { SideAds } from '@/components/SideAds';
 import { TypeDot } from '@/components/TypeDot';
 import { Link } from '@/i18n/navigation';
 import { routing } from '@/i18n/routing';
+import { guideOf } from '@/lib/countries-guide/guides';
 import { getInstitutionDetail } from '@/lib/institutions/detail';
 import { pickLocalized } from '@/lib/institutions/localized';
 
@@ -87,6 +88,13 @@ export default async function InstitutionPage({ params }: { params: Params }) {
         <h1 className="mt-3 text-3xl font-semibold tracking-tight text-text">{name}</h1>
         {original && original !== name && <p className="mt-1 text-lg text-muted">{original}</p>}
         <p className="mt-3 text-lg">{[city, countryName].filter(Boolean).join(', ')}</p>
+        {guideOf(institution.country) && (
+          <p className="mt-1 text-sm">
+            <Link href={`/countries/${institution.country.toLowerCase()}`} className="font-medium text-accent-text underline underline-offset-4">
+              {t('countryGuide', { country: countryName ?? institution.country })}
+            </Link>
+          </p>
+        )}
         {institution.foundedYear && <p className="mt-1 text-muted">{t('founded', { year: institution.foundedYear })}</p>}
 
         <div className="mt-5 flex flex-wrap items-center gap-3">

@@ -39,7 +39,8 @@
     "dataCredit": "地图数据 © OpenStreetMap 贡献者，OpenFreeMap。 课程数据: Discover Uni dataset, HESA (CC BY 4.0); Study in NL, Nuffic; DAAD; Opintopolku.",
     "rights": "© {year} YourHEI",
     "tagline": "找到求学之地：大学、学院和学校尽在一张地图，匹配结果自带解释。",
-    "methodology": "数据来源"
+    "methodology": "数据来源",
+    "countries": "留学目的地"
   },
   "Types": {
     "university": "大学",
@@ -178,7 +179,8 @@
     "byInstitution": "由院校本身填写",
     "sourceLine": "来源：{source}",
     "dataYear": "{year} 学年的数据",
-    "methodologyLinkShort": "我们如何收集数据"
+    "methodologyLinkShort": "我们如何收集数据",
+    "countryGuide": "指南：在{country}留学"
   },
   "Pages": {
     "about": {
@@ -1269,5 +1271,23 @@
     "errorTitle": "发现错误？",
     "error": "请通过联系页面告诉我们，或在院校页面使用“报告此页面的错误”。经确认的错误我们会尽快更正。",
     "contact": "联系我们"
+  },
+  "Countries": {
+    "listTitle": "留学目的地",
+    "listIntro": "申请前需要了解的规则简明指南：学习签证、学习期间工作、毕业后留下。规则会变化：请务必在我们链接的官方页面核实。",
+    "pageTitle": "在{country}留学",
+    "visaTitle": "学习签证与居留许可",
+    "workTitle": "学习期间工作",
+    "afterTitle": "毕业之后",
+    "livingTitle": "生活费用",
+    "livingText": "学习签证要求证明每月至少有 {amount}（{year}）。这是官方最低标准，不是平均值：实际花费通常更高，尤其是在大城市。",
+    "recognitionTitle": "学历认证",
+    "recognitionText": "外国学历的认证由 ENIC-NARIC 网络的各国信息中心负责。",
+    "recognitionLink": "ENIC-NARIC 网络",
+    "officialPage": "官方页面",
+    "checked": "信息核查日期：{date}。规则会变化：申请前请在官方页面核实。",
+    "notCollected": "尚未收集。请查看官方页面。",
+    "catalogLink": "浏览目录",
+    "backToList": "所有目的地"
   }
 }

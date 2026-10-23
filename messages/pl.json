@@ -39,7 +39,8 @@
     "dataCredit": "Dane mapy © współtwórcy OpenStreetMap, OpenFreeMap. Dane o programach: Discover Uni dataset, HESA (CC BY 4.0); Study in NL, Nuffic; DAAD; Opintopolku.",
     "rights": "© {year} YourHEI",
     "tagline": "Znajdź, gdzie studiować: uniwersytety, college’e i szkoły na jednej mapie, z dopasowaniami, które same się tłumaczą.",
-    "methodology": "Źródła danych"
+    "methodology": "Źródła danych",
+    "countries": "Kierunki studiów za granicą"
   },
   "Types": {
     "university": "Uniwersytet",
@@ -178,7 +179,8 @@
     "byInstitution": "Wprowadzone przez samą placówkę",
     "sourceLine": "Źródło: {source}",
     "dataYear": "Dane za rok akademicki {year}",
-    "methodologyLinkShort": "Jak zbieramy dane"
+    "methodologyLinkShort": "Jak zbieramy dane",
+    "countryGuide": "Przewodnik: studia w kraju {country}"
   },
   "Pages": {
     "about": {
@@ -1269,5 +1271,23 @@
     "errorTitle": "Znalazłeś błąd?",
     "error": "Napisz do nas na stronie kontaktowej lub użyj „Zgłoś błąd na tej stronie” na stronie uczelni. Potwierdzone błędy szybko poprawiamy.",
     "contact": "Kontakt"
+  },
+  "Countries": {
+    "listTitle": "Kierunki studiów za granicą",
+    "listIntro": "Krótkie przewodniki po zasadach ważnych przed złożeniem wniosku: wiza studencka, praca w czasie studiów, pozostanie po ukończeniu. Przepisy się zmieniają: zawsze sprawdzaj je na oficjalnych stronach, do których linkujemy.",
+    "pageTitle": "Studia: {country}",
+    "visaTitle": "Wiza studencka i zezwolenie na pobyt",
+    "workTitle": "Praca w czasie studiów",
+    "afterTitle": "Po ukończeniu studiów",
+    "livingTitle": "Koszty życia",
+    "livingText": "Wiza studencka wymaga wykazania co najmniej {amount} miesięcznie ({year}). To oficjalne minimum, a nie średnia: rzeczywiste koszty są zwykle wyższe, zwłaszcza w dużych miastach.",
+    "recognitionTitle": "Uznanie dyplomu",
+    "recognitionText": "Uznawaniem zagranicznych dyplomów zajmują się krajowe ośrodki informacji sieci ENIC-NARIC.",
+    "recognitionLink": "Sieć ENIC-NARIC",
+    "officialPage": "Oficjalna strona",
+    "checked": "Informacje sprawdzone dnia {date}. Przepisy się zmieniają: potwierdź je na oficjalnej stronie przed złożeniem wniosku.",
+    "notCollected": "Jeszcze nie zebrano. Sprawdź oficjalną stronę.",
+    "catalogLink": "Przeglądaj katalog",
+    "backToList": "Wszystkie kierunki"
   }
 }

@@ -1,0 +1,147 @@
+{
+ "_note": "Short guides to the rules that matter before applying. Every statement is taken from the official page it links to (the visa and work rules change often), so the page always sends the reader to the official source.",
+ "accessed": "2026-10-23",
+ "items": [
+  {
+   "country": "DE",
+   "visa": {
+    "summary": null,
+    "url": "https://www.bamf.de/EN/Themen/MigrationAufenthalt/ZuwandererDrittstaaten/Bildung/Studium/studium-node.html"
+   },
+   "work": {
+    "summary": {
+     "en": "Students from outside the EU/EEA may work up to 140 full days or 280 half days a year without asking the Employment Agency for approval. Student assistant jobs at a university are an exception; more days need permission.",
+     "ru": "Студенты из стран вне ЕС/ЕЭЗ могут работать до 140 полных или 280 половинных дней в год без разрешения Агентства занятости. Работа студенческим ассистентом в вузе — исключение; для большего числа дней нужно разрешение."
+    },
+    "url": "https://www.daad.de/en/studying-in-germany/work-career/side-jobs/"
+   },
+   "after": {
+    "summary": {
+     "en": "Graduates of a German institution can get a residence permit of up to 18 months to look for a job that fits their qualification; any job is allowed during this time. The permit cannot be renewed. You need proof of completed studies, health insurance and enough money to live; apply before your study permit expires.",
+     "ru": "Выпускники немецкого вуза могут получить вид на жительство до 18 месяцев для поиска работы по специальности; в это время разрешена любая работа. Продлить его нельзя. Нужны подтверждение окончания учёбы, медицинская страховка и средства на жизнь; подавать нужно до окончания срока студенческого разрешения."
+    },
+    "url": "https://www.make-it-in-germany.com/en/study-training/study/prospects/seeking-employment"
+   }
+  },
+  {
+   "country": "GB",
+   "visa": {
+    "summary": null,
+    "url": "https://www.gov.uk/student-visa"
+   },
+   "work": {
+    "summary": {
+     "en": "On a Student visa, students on a degree-level course may work up to 20 hours a week in term time and full time outside term time; below degree level the limit is 10 hours. Your university may set its own limits.",
+     "ru": "По студенческой визе студенты программ уровня бакалавриата и выше могут работать до 20 часов в неделю в учебное время и полный день вне его; на программах ниже этого уровня — до 10 часов. Университет может установить свои ограничения."
+    },
+    "url": "https://www.ukcisa.org.uk/student-advice/working/student-work/"
+   },
+   "after": {
+    "summary": {
+     "en": "The Graduate route lets graduates of UK higher education work or look for work for 2 years after graduation (3 years for PhD graduates). It is not tied to an employer, and you can have only one Graduate visa.",
+     "ru": "Маршрут Graduate позволяет выпускникам британских вузов работать или искать работу 2 года после выпуска (3 года для выпускников PhD). Он не привязан к работодателю; Graduate-визу можно получить только один раз."
+    },
+    "url": "https://www.ukcisa.org.uk/student-advice/working/working-after-studies/"
+   }
+  },
+  {
+   "country": "NL",
+   "visa": {
+    "summary": null,
+    "url": "https://ind.nl/en/residence-permits/study"
+   },
+   "work": {
+    "summary": {
+     "en": "Students with a study permit may work up to 16 hours a week alongside their studies, or full time in June, July and August. The employer usually needs a work permit (TWV); an internship that is part of the course does not.",
+     "ru": "Студенты с разрешением на учёбу могут работать до 16 часов в неделю параллельно с учёбой или полный день в июне, июле и августе. Работодателю обычно нужно разрешение на работу (TWV); для стажировки, входящей в программу, оно не нужно."
+    },
+    "url": "https://ind.nl/en/about-us/background-articles/international-students-and-the-ind"
+   },
+   "after": {
+    "summary": {
+     "en": "The orientation year for highly educated persons gives up to 1 year to look for work or start a business, and you can work freely during it. Apply within 3 years after graduating in the Netherlands; conditions for foreign degrees differ.",
+     "ru": "Год ориентации для лиц с высшим образованием даёт до 1 года на поиск работы или открытие бизнеса; в это время можно свободно работать. Подавать нужно в течение 3 лет после выпуска из нидерландского вуза; для иностранных дипломов условия другие."
+    },
+    "url": "https://www.government.nl/themes/migration-and-travel/immigration-to-the-netherlands/options-for-entrepreneurs-and-employees-from-abroad/orientation-year-highly-educated-persons"
+   }
+  },
+  {
+   "country": "FI",
+   "visa": {
+    "summary": null,
+    "url": "https://migri.fi/en/studying-in-finland"
+   },
+   "work": {
+    "summary": {
+     "en": "Students may work in paid jobs in any field, averaging 30 hours a week (the yearly average counts). Internships and thesis work that are part of the degree are not limited.",
+     "ru": "Студенты могут работать на оплачиваемой работе в любой сфере в среднем до 30 часов в неделю (считается среднее за год). Стажировки и дипломная работа, входящие в программу, не ограничены."
+    },
+    "url": "https://migri.fi/en/working-and-internships-during-studies"
+   },
+   "after": {
+    "summary": {
+     "en": "Graduates of a Finnish degree can apply for a residence permit to look for work or start a business, for up to two years. Apply within five years after the study permit expired; you may work without restrictions on this permit.",
+     "ru": "Выпускники финской программы могут подать заявление на вид на жительство для поиска работы или открытия бизнеса — до двух лет. Подавать нужно в течение пяти лет после окончания студенческого разрешения; на этом разрешении можно работать без ограничений."
+    },
+    "url": "https://migri.fi/en/-/are-you-about-to-complete-your-studies-you-can-apply-online-for-a-residence-permit-to-look-for-work"
+   }
+  },
+  {
+   "country": "CZ",
+   "visa": {
+    "summary": null,
+    "url": "https://studyin.gov.cz/get-ready-for-czechia/visas-and-permits/"
+   },
+   "work": {
+    "summary": {
+     "en": "Non-EU students in a full-time programme accredited by the Czech Ministry of Education may work without a separate work permit; the employer must report the employment to the Labour Office. Studies must remain the main purpose of the stay.",
+     "ru": "Студенты из стран вне ЕС на очных программах, аккредитованных министерством образования Чехии, могут работать без отдельного разрешения на работу; работодатель обязан сообщить о найме в трудовое ведомство. Учёба должна оставаться главной целью пребывания."
+    },
+    "url": "https://studyin.gov.cz/get-ready-for-czechia/work-during-studies/"
+   },
+   "after": {
+    "summary": {
+     "en": "Graduates can apply for a long-term residence permit to look for work or start a business, valid up to 9 months; apply before your current permit expires.",
+     "ru": "Выпускники могут подать заявление на долгосрочный вид на жительство для поиска работы или открытия бизнеса сроком до 9 месяцев; подавать нужно до окончания текущего разрешения."
+    },
+    "url": "https://www.studyin.cz/alumni/work-in-the-czech-republic/getting-work-visa/"
+   }
+  },
+  {
+   "country": "PL",
+   "visa": {
+    "summary": null,
+    "url": "https://study.gov.pl/work-and-internships"
+   },
+   "work": {
+    "summary": {
+     "en": "Sources differ. The official Study in Poland portal says full-time students with a student visa or a temporary residence permit do not need a work permit; check with the voivode's office or your university before you rely on this.",
+     "ru": "Источники расходятся. Официальный портал Study in Poland пишет, что очным студентам со студенческой визой или временным видом на жительство разрешение на работу не нужно; перед тем как на это полагаться, уточните в воеводском управлении или в вузе."
+    },
+    "url": "https://study.gov.pl/work-and-internships"
+   },
+   "after": {
+    "summary": {
+     "en": "Graduates of a Polish university can get a temporary residence permit to look for work or start a business: it is granted once, for 9 months, and you must apply right after graduation while you are still in Poland for studies. Graduates of full-time studies can work without a work permit.",
+     "ru": "Выпускники польского вуза могут получить временный вид на жительство для поиска работы или открытия бизнеса: он выдаётся один раз на 9 месяцев, и подавать нужно сразу после выпуска, пока вы ещё находитесь в Польше по учёбе. Выпускники очных программ могут работать без разрешения на работу."
+    },
+    "url": "https://www.gov.pl/web/udsc-en/permit-for-temporary-residence--graduate"
+   }
+  },
+  {
+   "country": "TR",
+   "visa": {
+    "summary": null,
+    "url": "https://e-ikamet.goc.gov.tr/"
+   },
+   "work": {
+    "summary": {
+     "en": "A student residence permit does not include the right to work. Students of formal programmes may work with a separate work permit (for associate and bachelor's students after the first year); internships that are part of the programme may not need one.",
+     "ru": "Студенческий вид на жительство не даёт права работать. Студенты очных программ могут работать по отдельному разрешению на работу (студенты колледжей и бакалавриата — после первого курса); для стажировок, входящих в программу, оно может не требоваться."
+    },
+    "url": "https://www.studyinturkiye.gov.tr/StudyinTurkey/ShowDetail?rID=rlsyTUzKZzY%3D&cId=PE4Nr0mMoY4%3D"
+   },
+   "after": null
+  }
+ ]
+}
