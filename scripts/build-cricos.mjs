@@ -53,6 +53,9 @@ function programLevel(c) {
   if (l === 'Senior Secondary Certificate of Education' || l === 'Primary School Studies' || l === 'Junior Secondary Studies') return 'school';
   if (/english|elicos/i.test(name)) return 'language_course';
   if (/foundation/i.test(name) && l === 'Non AQF Award') return 'foundation';
+  // the register marks foundation studies itself; and tertiary preparation / bridging courses are preparatory too
+  if (c['Foundation Studies'] === 'Yes') return 'foundation';
+  if (/tertiary preparation|university preparation|preparation for .*studies|bridging/i.test(name) && (l === 'Non AQF Award' || l === 'Certificate IV' || l === 'Certificate III')) return 'foundation';
   return 'college'; // diplomas, certificates, associate degrees, other short courses
 }
 const lang = { English: 'en', Korean: 'ko', Mandarin: 'zh', Chinese: 'zh', French: 'fr' };
@@ -105,7 +108,7 @@ for (const p of inst) {
     raw.includes('Doctoral Degree') || (p['Institution Type'] === 'Government' && (levels.has('bachelor') || levels.has('master'))) ? 'university'
     : levels.has('bachelor') || levels.has('master') ? 'college'
     : levels.has('school') && !levels.has('bachelor') ? 'school'
-    : [...levels].every((l) => l === 'language_course' || l === 'foundation') ? 'language_school'
+    : [...levels].every((l) => l === 'language_course' || l === 'foundation') ? (levels.has('foundation') ? 'foundation' : 'language_school')
     : 'vocational';
 
   const nameEn = (p['Trading Name'] || p['Institution Name']).replace(/\s*\(.*?\)\s*$/, '').trim();

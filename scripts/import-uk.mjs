@@ -85,6 +85,14 @@ for (const c of courses) {
   };
   const list = byPrn.get(c.PUBUKPRN) ?? [];
   if (!list.some((p) => p.code === prog.code)) list.push(prog);
+  // FOUNDATION = 2: the course is a degree that includes a foundation year ("... with Foundation Year", 4 years instead of 3).
+  // It is also listed as a foundation programme, for people who need a preparatory year before the degree. (1 = a foundation
+  // year is only possible, not part of this course: not listed.)
+  if (c.FOUNDATION === '2' && !list.some((p) => p.code === `${prog.code}-F`)) {
+    const base = c.TITLE.replace(/\s*\(?\s*with (an )?(integrated )?foundation( year)?\s*\)?\s*$/i, '').trim();
+    const title = /foundation/i.test(c.TITLE) ? c.TITLE.trim() : `${c.TITLE.trim()} (with foundation year)`;
+    list.push({ ...prog, names: { original: title, en: title }, level: 'foundation', isced_f: inferIsced(base) ?? prog.isced_f, duration_years: null, code: `${prog.code}-F` });
+  }
   byPrn.set(c.PUBUKPRN, list);
 }
 
