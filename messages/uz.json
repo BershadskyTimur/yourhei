@@ -1107,7 +1107,9 @@
     "total": "≈ yashash xarajatlari bilan yiliga {total} ({living})",
     "livingUnknown": "Bu davlatning yashash xarajatlari hali ma’lumotlarimizda yo‘q",
     "ratesNote": "Narxlar kundalik kurs bo‘yicha o‘giriladi va taxminiy. Yakuniy so‘z muassasa sahifasi va uning rasmiy saytida.",
-    "livingNote": "Yashash xarajatlari — davlat talaba vizasi uchun tasdiqlashni talab qiladigan eng kam summa. Haqiqiy xarajatlar, ayniqsa yirik shaharlarda, odatda yuqoriroq bo‘ladi."
+    "livingNote": "Yashash xarajatlari — davlat talaba vizasi uchun tasdiqlashni talab qiladigan eng kam summa. Haqiqiy xarajatlar, ayniqsa yirik shaharlarda, odatda yuqoriroq bo‘ladi.",
+    "emptyProgrammes": "Dasturlar topilmadi. Ko‘p mamlakatlarning dasturlari bazamizda hali yo‘q, lekin ularning muassasalari bor.",
+    "showInstitutions": "Muassasalarni ko‘rsatish"
   },
   "Scholarships": {
     "title": "Stipendiyalar: qayerda bepul yoki arzonroq o‘qish mumkin",

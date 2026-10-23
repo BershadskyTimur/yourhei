@@ -172,7 +172,7 @@ export function CatalogApp() {
             }
             if (found.length >= PAGE / 2) break;
           } else {
-            let q = supabase.from('institutions').select('id, slug, type, country, city, names').eq('status', 'published').order('id');
+            let q = supabase.from('institutions').select('id, slug, type, country, city, names').order('id'); // all institutions: the base data is public, as on the map (a "published" card is only one with detailed data)
             if (f.type) q = q.eq('type', f.type);
             if (f.country) q = q.eq('country', f.country);
             const or = nameFilter(f.q, ['en', 'original']);
@@ -339,7 +339,15 @@ export function CatalogApp() {
       {status === 'ready' && mode === 'programs' && (
         <>
           {programs.length === 0 ? (
-            <p className="rounded-lg border border-line bg-surface p-5">{t('empty')}</p>
+            <div className="rounded-lg border border-line bg-surface p-5">
+              {/* many countries have institutions but no programme data yet: offer the institutions of the country */}
+              <p>{applied.country ? t('emptyProgrammes') : t('empty')}</p>
+              {applied.country && (
+                <button type="button" className={`${secondaryButton} mt-3`} onClick={() => setMode('institutions')}>
+                  {t('showInstitutions')}
+                </button>
+              )}
+            </div>
           ) : (
             <ul className="space-y-3">
               {programs.map((p) => (

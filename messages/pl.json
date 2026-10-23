@@ -1107,7 +1107,9 @@
     "total": "≈ {total} rocznie z kosztami utrzymania ({living})",
     "livingUnknown": "Kosztów utrzymania w tym kraju nie ma jeszcze w naszych danych",
     "ratesNote": "Ceny są przeliczane po dziennych kursach i są przybliżone. Ostatecznie liczy się strona placówki i jej oficjalna witryna.",
-    "livingNote": "Koszty utrzymania to minimalna kwota, jaką kraj wymaga udokumentować przy wizie studenckiej. Rzeczywiste wydatki są zwykle wyższe, zwłaszcza w dużych miastach."
+    "livingNote": "Koszty utrzymania to minimalna kwota, jaką kraj wymaga udokumentować przy wizie studenckiej. Rzeczywiste wydatki są zwykle wyższe, zwłaszcza w dużych miastach.",
+    "emptyProgrammes": "Nie znaleziono programów. Wiele krajów nie ma jeszcze w naszej bazie danych o programach, ale mamy ich instytucje.",
+    "showInstitutions": "Pokaż instytucje"
   },
   "Scholarships": {
     "title": "Stypendia: gdzie studiować za darmo lub taniej",
