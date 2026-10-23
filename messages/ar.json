@@ -1289,5 +1289,15 @@
     "notCollected": "لم تُجمع بعد. يُرجى مراجعة الصفحة الرسمية.",
     "catalogLink": "تصفح الدليل",
     "backToList": "كل الوجهات"
+  },
+  "Study": {
+    "hubTitle": "الدراسة في {country}: البرامج حسب المجال",
+    "hubIntro": "المجالات: {fields}. البرامج: {programmes}. البيانات من مصادر رسمية.",
+    "pageTitle": "دراسة {field} في {country}",
+    "pageIntro": "البرامج: {programmes}. المؤسسات: {institutions}. البيانات من مصادر رسمية؛ تأكد من الرسوم والمواعيد في الصفحة الرسمية قبل التقديم.",
+    "institutionsTitle": "المؤسسات التي تدرّس {field}",
+    "programmesCount": "البرامج: {count}",
+    "examples": "مثلًا:",
+    "allFields": "كل المجالات في {country}"
   }
 }

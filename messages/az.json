@@ -1289,5 +1289,15 @@
     "notCollected": "Hələ toplanmayıb. Rəsmi səhifəni yoxlayın.",
     "catalogLink": "Kataloqa bax",
     "backToList": "Bütün istiqamətlər"
+  },
+  "Study": {
+    "hubTitle": "{country} ölkəsində təhsil: sahələr üzrə proqramlar",
+    "hubIntro": "Sahələr: {fields}. Proqramlar: {programmes}. Məlumatlar rəsmi mənbələrdəndir.",
+    "pageTitle": "{country} ölkəsində {field} təhsili",
+    "pageIntro": "Proqramlar: {programmes}. Müəssisələr: {institutions}. Məlumatlar rəsmi mənbələrdəndir; müraciətdən əvvəl qiymətləri və müddətləri rəsmi səhifədə yoxlayın.",
+    "institutionsTitle": "{field} tədris edən müəssisələr",
+    "programmesCount": "Proqramlar: {count}",
+    "examples": "Məsələn:",
+    "allFields": "{country} ölkəsində bütün sahələr"
   }
 }

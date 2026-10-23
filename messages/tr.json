@@ -1289,5 +1289,15 @@
     "notCollected": "Henüz toplanmadı. Lütfen resmî sayfayı kontrol et.",
     "catalogLink": "Kataloğa göz at",
     "backToList": "Tüm ülkeler"
+  },
+  "Study": {
+    "hubTitle": "{country} ülkesinde eğitim: alanlara göre programlar",
+    "hubIntro": "Alanlar: {fields}. Programlar: {programmes}. Veriler resmî kaynaklardan gelir.",
+    "pageTitle": "{country} ülkesinde {field} eğitimi",
+    "pageIntro": "Programlar: {programmes}. Kurumlar: {institutions}. Veriler resmî kaynaklardan gelir; başvurmadan önce fiyatları ve tarihleri resmî sayfada doğrula.",
+    "institutionsTitle": "{field} okutulan kurumlar",
+    "programmesCount": "Programlar: {count}",
+    "examples": "Örneğin:",
+    "allFields": "{country} ülkesindeki tüm alanlar"
   }
 }

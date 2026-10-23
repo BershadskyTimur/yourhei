@@ -1289,5 +1289,15 @@
     "notCollected": "Jeszcze nie zebrano. Sprawdź oficjalną stronę.",
     "catalogLink": "Przeglądaj katalog",
     "backToList": "Wszystkie kierunki"
+  },
+  "Study": {
+    "hubTitle": "Studia: {country}. Programy według kierunków",
+    "hubIntro": "Kierunki: {fields}. Programy: {programmes}. Dane pochodzą z oficjalnych źródeł.",
+    "pageTitle": "Studia: {field}. {country}",
+    "pageIntro": "Programy: {programmes}. Uczelnie: {institutions}. Dane pochodzą z oficjalnych źródeł; przed złożeniem wniosku sprawdź ceny i terminy na oficjalnej stronie.",
+    "institutionsTitle": "Uczelnie oferujące: {field}",
+    "programmesCount": "Programy: {count}",
+    "examples": "Na przykład:",
+    "allFields": "Wszystkie kierunki: {country}"
   }
 }

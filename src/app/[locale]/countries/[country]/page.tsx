@@ -7,6 +7,7 @@ import { Link } from '@/i18n/navigation';
 import { routing } from '@/i18n/routing';
 import { GUIDES, GUIDE_ACCESSED, guideOf, livingMinimum, type GuideBlock } from '@/lib/countries-guide/guides';
 import { pickLocalized } from '@/lib/institutions/localized';
+import { combosOfCountry } from '@/lib/study/combos';
 
 type Params = Promise<{ locale: string; country: string }>;
 
@@ -38,6 +39,7 @@ export default async function CountryPage({ params }: { params: Params }) {
   if (!guide) notFound();
   setRequestLocale(locale);
   const t = await getTranslations('Countries');
+  const tStudy = await getTranslations('Study');
   const name = new Intl.DisplayNames([locale], { type: 'region' }).of(guide.country) ?? guide.country;
   const living = livingMinimum(guide.country);
   const date = new Intl.DateTimeFormat(locale, { dateStyle: 'long', timeZone: 'UTC' }).format(new Date(`${GUIDE_ACCESSED}T00:00:00Z`));
@@ -84,6 +86,9 @@ export default async function CountryPage({ params }: { params: Params }) {
 
       <p className="text-sm text-muted">{t('checked', { date })}</p>
       <p className="flex flex-wrap gap-x-6 gap-y-2 text-base">
+        {combosOfCountry(guide.country).length > 0 && (
+          <Link href={`/study/${guide.country.toLowerCase()}`} className="font-semibold text-accent-text underline underline-offset-4">{tStudy('hubTitle', { country: name })}</Link>
+        )}
         <Link href="/catalog" className="font-semibold text-accent-text underline underline-offset-4">{t('catalogLink')}</Link>
         <Link href="/countries" className="font-semibold text-accent-text underline underline-offset-4">{t('backToList')}</Link>
       </p>

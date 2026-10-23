@@ -1289,5 +1289,15 @@
     "notCollected": "Hali yig‘ilmagan. Rasmiy sahifani tekshiring.",
     "catalogLink": "Katalogni ochish",
     "backToList": "Barcha yo‘nalishlar"
+  },
+  "Study": {
+    "hubTitle": "{country} mamlakatida o‘qish: yo‘nalishlar bo‘yicha dasturlar",
+    "hubIntro": "Yo‘nalishlar: {fields}. Dasturlar: {programmes}. Ma’lumotlar rasmiy manbalardan olingan.",
+    "pageTitle": "{country} mamlakatida {field} o‘qish",
+    "pageIntro": "Dasturlar: {programmes}. Muassasalar: {institutions}. Ma’lumotlar rasmiy manbalardan olingan; ariza berishdan oldin narxlar va muddatlarni rasmiy sahifada tekshiring.",
+    "institutionsTitle": "{field} o‘qitiladigan muassasalar",
+    "programmesCount": "Dasturlar: {count}",
+    "examples": "Masalan:",
+    "allFields": "{country} mamlakatidagi barcha yo‘nalishlar"
   }
 }

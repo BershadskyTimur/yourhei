@@ -1289,5 +1289,15 @@
     "notCollected": "Пока не собрано. Проверьте на официальной странице.",
     "catalogLink": "Открыть каталог",
     "backToList": "Все страны"
+  },
+  "Study": {
+    "hubTitle": "Учёба: {country}. Программы по направлениям",
+    "hubIntro": "Направлений: {fields}. Программ: {programmes}. Данные взяты из официальных источников.",
+    "pageTitle": "Учёба: {field}. {country}",
+    "pageIntro": "Программ: {programmes}. Заведений: {institutions}. Данные взяты из официальных источников; перед подачей проверьте цены и сроки на официальной странице.",
+    "institutionsTitle": "Заведения, где преподают: {field}",
+    "programmesCount": "Программ: {count}",
+    "examples": "Например:",
+    "allFields": "Все направления: {country}"
   }
 }

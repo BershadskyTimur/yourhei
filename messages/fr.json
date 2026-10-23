@@ -1289,5 +1289,15 @@
     "notCollected": "Pas encore collecté. Consultez la page officielle.",
     "catalogLink": "Parcourir le catalogue",
     "backToList": "Toutes les destinations"
+  },
+  "Study": {
+    "hubTitle": "Étudier en {country} : programmes par domaine",
+    "hubIntro": "Domaines : {fields}. Programmes : {programmes}. Les données proviennent de sources officielles.",
+    "pageTitle": "Étudier {field} en {country}",
+    "pageIntro": "Programmes : {programmes}. Établissements : {institutions}. Les données proviennent de sources officielles ; vérifiez les prix et les dates sur la page officielle avant de candidater.",
+    "institutionsTitle": "Établissements enseignant {field}",
+    "programmesCount": "Programmes : {count}",
+    "examples": "Par exemple :",
+    "allFields": "Tous les domaines en {country}"
   }
 }

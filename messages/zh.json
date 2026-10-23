@@ -1289,5 +1289,15 @@
     "notCollected": "尚未收集。请查看官方页面。",
     "catalogLink": "浏览目录",
     "backToList": "所有目的地"
+  },
+  "Study": {
+    "hubTitle": "在{country}留学：按专业领域查看项目",
+    "hubIntro": "领域：{fields}。项目：{programmes}。数据来自官方来源。",
+    "pageTitle": "在{country}学习{field}",
+    "pageIntro": "项目：{programmes}。院校：{institutions}。数据来自官方来源；申请前请在官方页面核实费用和截止日期。",
+    "institutionsTitle": "开设{field}的院校",
+    "programmesCount": "项目：{count}",
+    "examples": "例如：",
+    "allFields": "{country}的所有领域"
   }
 }

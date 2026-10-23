@@ -1289,5 +1289,15 @@
     "notCollected": "Noch nicht erfasst. Bitte prüfe die offizielle Seite.",
     "catalogLink": "Katalog öffnen",
     "backToList": "Alle Studienziele"
+  },
+  "Study": {
+    "hubTitle": "Studieren in {country}: Programme nach Fachgebiet",
+    "hubIntro": "Fachgebiete: {fields}. Programme: {programmes}. Die Daten stammen aus offiziellen Quellen.",
+    "pageTitle": "{field} studieren in {country}",
+    "pageIntro": "Programme: {programmes}. Einrichtungen: {institutions}. Die Daten stammen aus offiziellen Quellen; prüfe Preise und Fristen vor der Bewerbung auf der offiziellen Seite.",
+    "institutionsTitle": "Einrichtungen mit {field}",
+    "programmesCount": "Programme: {count}",
+    "examples": "Zum Beispiel:",
+    "allFields": "Alle Fachgebiete in {country}"
   }
 }

@@ -3,6 +3,7 @@ import { LOCALE_CODES } from '@/config/locales';
 import { SITEMAP_CHUNK } from '@/lib/institutions/sitemap';
 import { getSitemapPoints } from '@/lib/institutions/summaries';
 import { GUIDES } from '@/lib/countries-guide/guides';
+import { COMBOS, fieldSlug, studyCountries } from '@/lib/study/combos';
 import { siteUrl } from '@/lib/site-url';
 
 export const revalidate = 86400;
@@ -24,6 +25,6 @@ export default async function sitemap(props: { id: Promise<string> }): Promise<M
   const alternates = (path: string) => ({ languages: Object.fromEntries(LOCALE_CODES.map((l) => [l, `${base}/${l}${path}`])) });
   const items = await getSitemapPoints();
   const slice = items.slice(id * SITEMAP_CHUNK, (id + 1) * SITEMAP_CHUNK);
-  const paths = [...(id === 0 ? [...STATIC_PAGES, ...GUIDES.map((g) => `/countries/${g.country.toLowerCase()}`)] : []), ...slice.map((i) => `/institutions/${i.country.toLowerCase()}/${i.slug}`)];
+  const paths = [...(id === 0 ? [...STATIC_PAGES, ...GUIDES.map((g) => `/countries/${g.country.toLowerCase()}`), ...studyCountries().map((c) => `/study/${c.toLowerCase()}`), ...COMBOS.map((c) => `/study/${c.country.toLowerCase()}/${fieldSlug(c.code)}`)] : []), ...slice.map((i) => `/institutions/${i.country.toLowerCase()}/${i.slug}`)];
   return paths.flatMap((path) => LOCALE_CODES.map((l) => ({ url: `${base}/${l}${path}`, alternates: alternates(path) })));
 }

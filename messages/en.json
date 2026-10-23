@@ -1289,5 +1289,15 @@
     "notCollected": "Not collected yet. Please check the official page.",
     "catalogLink": "Browse the catalogue",
     "backToList": "All destinations"
+  },
+  "Study": {
+    "hubTitle": "Study in {country}: programmes by field",
+    "hubIntro": "Fields: {fields}. Programmes: {programmes}. The data comes from official sources.",
+    "pageTitle": "Study {field} in {country}",
+    "pageIntro": "Programmes: {programmes}. Institutions: {institutions}. The data comes from official sources; confirm prices and deadlines on the official page before you apply.",
+    "institutionsTitle": "Institutions teaching {field}",
+    "programmesCount": "Programmes: {count}",
+    "examples": "For example:",
+    "allFields": "All fields in {country}"
   }
 }

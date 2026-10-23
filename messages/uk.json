@@ -1289,5 +1289,15 @@
     "notCollected": "Поки не зібрано. Перевірте на офіційній сторінці.",
     "catalogLink": "Відкрити каталог",
     "backToList": "Усі країни"
+  },
+  "Study": {
+    "hubTitle": "Навчання: {country}. Програми за напрямами",
+    "hubIntro": "Напрямів: {fields}. Програм: {programmes}. Дані взято з офіційних джерел.",
+    "pageTitle": "Навчання: {field}. {country}",
+    "pageIntro": "Програм: {programmes}. Закладів: {institutions}. Дані взято з офіційних джерел; перед подачею перевірте ціни й терміни на офіційній сторінці.",
+    "institutionsTitle": "Заклади, де викладають: {field}",
+    "programmesCount": "Програм: {count}",
+    "examples": "Наприклад:",
+    "allFields": "Усі напрями: {country}"
   }
 }
