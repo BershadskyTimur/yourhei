@@ -5,12 +5,13 @@ import { Link } from '@/i18n/navigation';
 import { safeHttpUrl } from '@/lib/safe-url';
 import { iscedEntry } from '@/lib/survey/references';
 import { getSupabaseBrowser, isSupabaseConfigured } from '@/lib/supabase/client';
+import { DataHealth, Duplicates, ErrorReports, ExportData, SystemStatus, TopInstitutions } from './AdminTools';
 
 // The admin panel is an internal tool for the site owner, so it is in Russian only (not translated).
 // Real protection is in the database (supabase/migrations/0006_admin.sql): without the "admin" role
 // every request below is refused by Row Level Security, whatever this page shows.
 
-type Tab = 'dashboard' | 'users' | 'traffic' | 'insights' | 'institutions' | 'programs' | 'reviews' | 'reps' | 'countries' | 'log';
+type Tab = 'dashboard' | 'users' | 'traffic' | 'insights' | 'topinst' | 'health' | 'institutions' | 'duplicates' | 'programs' | 'reviews' | 'reports' | 'reps' | 'countries' | 'export' | 'system' | 'log';
 type Access = 'loading' | 'guest' | 'denied' | 'admin' | 'unconfigured';
 type Row = Record<string, unknown>;
 
@@ -19,11 +20,17 @@ const TABS: { id: Tab; label: string }[] = [
   { id: 'users', label: 'Пользователи' },
   { id: 'traffic', label: 'Посещаемость' },
   { id: 'insights', label: 'Аналитика' },
+  { id: 'topinst', label: 'Популярные заведения' },
+  { id: 'health', label: 'Здоровье данных' },
   { id: 'institutions', label: 'Вузы и школы' },
+  { id: 'duplicates', label: 'Дубликаты' },
   { id: 'programs', label: 'Программы на проверке' },
   { id: 'reviews', label: 'Отзывы' },
+  { id: 'reports', label: 'Жалобы на ошибки' },
   { id: 'reps', label: 'Заявки заведений' },
   { id: 'countries', label: 'Данные стран' },
+  { id: 'export', label: 'Экспорт' },
+  { id: 'system', label: 'Состояние сайта' },
   { id: 'log', label: 'Журнал изменений' },
 ];
 
@@ -98,11 +105,17 @@ export function AdminApp() {
         {tab === 'users' && <UsersStats />}
         {tab === 'traffic' && <Traffic />}
         {tab === 'insights' && <Insights />}
+        {tab === 'topinst' && <TopInstitutions />}
+        {tab === 'health' && <DataHealth />}
         {tab === 'institutions' && <Institutions />}
+        {tab === 'duplicates' && <Duplicates />}
         {tab === 'programs' && <Programs />}
         {tab === 'reviews' && <Reviews />}
+        {tab === 'reports' && <ErrorReports />}
         {tab === 'reps' && <RepRequests />}
         {tab === 'countries' && <Countries />}
+        {tab === 'export' && <ExportData />}
+        {tab === 'system' && <SystemStatus />}
         {tab === 'log' && <AuditLog />}
       </div>
     </div>

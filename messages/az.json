@@ -1316,5 +1316,13 @@
     "cabinetCta": "Müəssisə hesabımı aç",
     "contactText": "Sualınız var, yoxsa proqramlarınızı öz məlumat faylınızdan əlavə etməyimizi istəyirsiniz? Bizə yazın.",
     "contactCta": "Əlaqə"
+  },
+  "ReportError": {
+    "prompt": "Bu səhifədə nə səhvdir?",
+    "contactLabel": "E-poçtunuz (könüllü, cavab istəyirsinizsə)",
+    "send": "Göndər",
+    "sent": "Təşəkkür edirik! Yoxlayacağıq.",
+    "failed": "Göndərmək alınmadı. Yenidən cəhd edin və ya bizə e-poçtla yazın.",
+    "cancel": "Ləğv et"
   }
 }

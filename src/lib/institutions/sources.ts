@@ -13,7 +13,7 @@ export const SOURCES: Record<string, DataSource> = {
   studyin_cz: { name: 'Study in Czechia, Ministry of Education of the Czech Republic', url: 'https://studyin.gov.cz/', countries: ['CZ'] },
   opintopolku: { name: 'Studyinfo (Opintopolku), Finnish National Agency for Education', url: 'https://opintopolku.fi/', countries: ['FI'] },
   studyinnl: { name: 'Study in NL, Nuffic', url: 'https://www.studyinnl.org/', countries: ['NL'] },
-  daad: { name: 'DAAD, International Programmes in Germany', url: 'https://www2.daad.de/deutschland/studienangebote/', countries: ['DE'] },
+  daad: { name: 'DAAD, International Programmes in Germany', url: 'https://www2.daad.de/deutschland/studienangebote/international-programmes/en/', countries: ['DE'] },
   discoveruni: { name: 'Discover Uni, HESA (CC BY 4.0)', url: 'https://discoveruni.gov.uk/', countries: ['GB'] },
   tr_university_sites: { name: "The universities' own websites", url: '', countries: ['TR'] },
   official_university_sites_region: { name: "The universities' own websites", url: '', countries: ['KZ', 'AM', 'KG', 'UZ'] },

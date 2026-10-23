@@ -1316,5 +1316,13 @@
     "cabinetCta": "Mein Einrichtungskonto öffnen",
     "contactText": "Fragen, oder sollen wir deine Programme aus deiner eigenen Datendatei ergänzen? Schreib uns.",
     "contactCta": "Kontakt"
+  },
+  "ReportError": {
+    "prompt": "Was stimmt auf dieser Seite nicht?",
+    "contactLabel": "Deine E-Mail (freiwillig, wenn du eine Antwort möchtest)",
+    "send": "Senden",
+    "sent": "Danke! Wir prüfen das.",
+    "failed": "Senden nicht möglich. Versuche es erneut oder schreib uns per E-Mail.",
+    "cancel": "Abbrechen"
   }
 }

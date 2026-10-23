@@ -1316,5 +1316,13 @@
     "cabinetCta": "Open my institution account",
     "contactText": "Questions, or would you like us to add your programmes from your own data file? Write to us.",
     "contactCta": "Contact"
+  },
+  "ReportError": {
+    "prompt": "What is wrong on this page?",
+    "contactLabel": "Your e-mail (optional, if you want an answer)",
+    "send": "Send",
+    "sent": "Thank you! We will check it.",
+    "failed": "Could not send. Please try again or write to us by e-mail.",
+    "cancel": "Cancel"
   }
 }

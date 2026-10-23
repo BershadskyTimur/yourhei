@@ -1316,5 +1316,13 @@
     "cabinetCta": "打开我的院校账户",
     "contactText": "有疑问，或希望我们根据您自己的数据文件添加项目？请联系我们。",
     "contactCta": "联系我们"
+  },
+  "ReportError": {
+    "prompt": "此页面有什么问题？",
+    "contactLabel": "您的邮箱（选填，如需回复）",
+    "send": "发送",
+    "sent": "谢谢！我们会核实。",
+    "failed": "发送失败。请重试，或通过邮件联系我们。",
+    "cancel": "取消"
   }
 }

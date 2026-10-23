@@ -1,4 +1,15 @@
 import { expect, test } from '@playwright/test';
+import { readFileSync } from 'node:fs';
+
+const supabaseUrl = () => /^NEXT_PUBLIC_SUPABASE_URL=(.+)$/m.exec(readFileSync('.env.local', 'utf8'))?.[1].trim() ?? 'https://example.supabase.co';
+
+// the button works only after the page has loaded its scripts: click until the form is there
+async function openReportForm(page: import('@playwright/test').Page) {
+  await expect(async () => {
+    await page.getByRole('button', { name: 'Report an error on this page' }).click();
+    await expect(page.getByLabel('What is wrong on this page?')).toBeVisible({ timeout: 1500 });
+  }).toPass({ timeout: 20_000 });
+}
 
 test.describe('trust: data sources page and the machine-translation notice', () => {
   test('the data sources page opens, lists the sources and is linked from the footer', async ({ page }) => {
@@ -51,5 +62,31 @@ test.describe('trust: data sources page and the machine-translation notice', () 
     await expect(page.getByRole('heading', { name: 'For universities, colleges and schools' })).toBeVisible();
     await page.getByRole('link', { name: 'Open my institution account' }).click();
     await expect(page).toHaveURL(/\/en\/(cabinet|login)/);
+  });
+
+  test('an error on an institution page can be reported from the page', async ({ page }) => {
+    const sent: unknown[] = [];
+    await page.route(`${supabaseUrl()}/rest/v1/rpc/submit_error_report**`, (route) => {
+      sent.push(route.request().postDataJSON());
+      return route.fulfill({ status: 204, body: '' });
+    });
+    await page.goto('/en/institutions/tr/bilkent-university');
+    await openReportForm(page);
+    await page.getByLabel('What is wrong on this page?').fill('The website address is wrong');
+    await page.getByLabel(/Your e-mail/).fill('visitor@example.com');
+    await page.getByRole('button', { name: 'Send' }).click();
+    await expect(page.getByText('Thank you! We will check it.')).toBeVisible();
+    expect(sent[0]).toMatchObject({ p_path: '/en/institutions/tr/bilkent-university', p_note: 'The website address is wrong', p_contact: 'visitor@example.com', p_locale: 'en' });
+  });
+
+  test('a failed report offers the e-mail instead', async ({ page }) => {
+    await page.route(`${supabaseUrl()}/rest/v1/rpc/submit_error_report**`, (route) =>
+      route.fulfill({ status: 404, contentType: 'application/json', body: JSON.stringify({ message: 'function not found' }) }),
+    );
+    await page.goto('/en/institutions/tr/bilkent-university');
+    await openReportForm(page);
+    await page.getByLabel('What is wrong on this page?').fill('Something is wrong here');
+    await page.getByRole('button', { name: 'Send' }).click();
+    await expect(page.getByText(/Could not send/)).toBeVisible();
   });
 });

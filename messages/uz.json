@@ -1316,5 +1316,13 @@
     "cabinetCta": "Muassasa kabinetimni ochish",
     "contactText": "Savollaringiz bormi yoki dasturlaringizni o‘z ma’lumot faylingizdan qo‘shishimizni xohlaysizmi? Bizga yozing.",
     "contactCta": "Aloqa"
+  },
+  "ReportError": {
+    "prompt": "Bu sahifada nima noto‘g‘ri?",
+    "contactLabel": "Elektron pochtangiz (ixtiyoriy, javob istasangiz)",
+    "send": "Yuborish",
+    "sent": "Rahmat! Tekshiramiz.",
+    "failed": "Yuborib bo‘lmadi. Qayta urinib ko‘ring yoki bizga pochta orqali yozing.",
+    "cancel": "Bekor qilish"
   }
 }

@@ -1316,5 +1316,13 @@
     "cabinetCta": "Otwórz konto mojej instytucji",
     "contactText": "Pytania, albo chcesz, żebyśmy dodali Twoje programy z Twojego pliku danych? Napisz do nas.",
     "contactCta": "Kontakt"
+  },
+  "ReportError": {
+    "prompt": "Co jest nie tak na tej stronie?",
+    "contactLabel": "Twój e-mail (opcjonalnie, jeśli chcesz odpowiedź)",
+    "send": "Wyślij",
+    "sent": "Dziękujemy! Sprawdzimy to.",
+    "failed": "Nie udało się wysłać. Spróbuj ponownie lub napisz do nas e-mailem.",
+    "cancel": "Anuluj"
   }
 }

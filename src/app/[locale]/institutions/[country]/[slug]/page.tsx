@@ -4,6 +4,7 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { FavoriteButton } from '@/components/FavoriteButton';
 import { ProgramCard } from '@/components/ProgramCard';
+import { ReportError } from '@/components/ReportError';
 import { ReviewForm } from '@/components/ReviewForm';
 import { TrackedLink } from '@/components/TrackedLink';
 import { ClaimInstitution } from '@/components/cabinet/ClaimInstitution';
@@ -212,13 +213,12 @@ export default async function InstitutionPage({ params }: { params: Params }) {
         <footer className="mt-10 space-y-1 border-t border-line pt-4 text-sm text-muted">
           {checked && <p>{t('checked', { date: checked })}</p>}
           <p>{t('disclaimer')}</p>
-          {CONTACT && (
-            <p>
-              <a href={`mailto:${CONTACT}?subject=${encodeURIComponent(`${name} (${institution.country}/${institution.slug})`)}`} className="underline underline-offset-4">
-                {t('report')}
-              </a>
-            </p>
-          )}
+          <div>
+            <ReportError
+              label={t('report')}
+              mailto={CONTACT ? `mailto:${CONTACT}?subject=${encodeURIComponent(`${name} (${institution.country}/${institution.slug})`)}` : undefined}
+            />
+          </div>
         </footer>
 
         <p className="mt-8">

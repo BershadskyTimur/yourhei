@@ -1316,5 +1316,13 @@
     "cabinetCta": "Kurum hesabımı aç",
     "contactText": "Sorun mu var, yoksa programlarını kendi veri dosyandan eklememizi mi istersin? Bize yaz.",
     "contactCta": "İletişim"
+  },
+  "ReportError": {
+    "prompt": "Bu sayfada ne yanlış?",
+    "contactLabel": "E-postan (isteğe bağlı, yanıt istiyorsan)",
+    "send": "Gönder",
+    "sent": "Teşekkürler! Kontrol edeceğiz.",
+    "failed": "Gönderilemedi. Tekrar dene veya bize e-postayla yaz.",
+    "cancel": "İptal"
   }
 }
