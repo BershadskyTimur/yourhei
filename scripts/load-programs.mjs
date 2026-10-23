@@ -35,7 +35,7 @@ const KEY = data.sourceKey ?? 'cricos';
 const today = new Date().toISOString().slice(0, 10);
 const now = new Date().toISOString();
 const GROUP = 100;
-const PARALLEL = 4;
+const PARALLEL = 2;
 const check = (label, error) => {
   if (error) {
     console.error(`${label}: ${error.message}`);
@@ -117,7 +117,7 @@ async function processGroup(group) {
       });
     }
   }
-  for (const part of chunks(rows, 1000)) {
+  for (const part of chunks(rows, 300)) {
     const { data: inserted, error } = await supabase.from('programs').insert(part.map((x) => x.row)).select('id');
     check('insert programmes', error);
     programs += inserted.length;

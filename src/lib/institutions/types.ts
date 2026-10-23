@@ -25,6 +25,8 @@ export interface MapInstitution {
   lng: number;
   website: string | null;
   foundedYear: number | null;
+  /** the institution has a published foundation (preparatory) programme: the "Foundation programmes" filter finds it too */
+  hasFoundation?: boolean;
 }
 
 export function isInstitutionType(value: string): value is InstitutionType {

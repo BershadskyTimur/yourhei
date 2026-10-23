@@ -43,6 +43,21 @@ describe('pickLocalized', () => {
   });
 });
 
+describe('the foundation filter', () => {
+  const uni = make({ id: 'u', type: 'university' });
+  const uniWithFoundation = make({ id: 'uf', type: 'university', hasFoundation: true });
+  const college = make({ id: 'f', type: 'foundation' });
+  const list = [uni, uniWithFoundation, college];
+  it('finds institutions of that type and those that have a foundation programme', () => {
+    const r = filterInstitutions(list, { types: new Set<InstitutionType>(['foundation']), query: '' });
+    expect(r.map((x) => x.id)).toEqual(['uf', 'f']);
+  });
+  it('shows everything when all types are on, and the flag does not add anything else', () => {
+    expect(filterInstitutions(list, { types: all, query: '' })).toHaveLength(3);
+    expect(filterInstitutions(list, { types: new Set<InstitutionType>(['university']), query: '' }).map((x) => x.id)).toEqual(['u', 'uf']);
+  });
+});
+
 describe('filterInstitutions', () => {
   const items = [
     make({ id: '1', names: { original: 'A', en: 'Alpha University' }, city: { en: 'Tbilisi' } }),

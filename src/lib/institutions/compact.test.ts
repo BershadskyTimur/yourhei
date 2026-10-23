@@ -30,6 +30,15 @@ describe('compact institutions', () => {
     expect(back.foundedYear).toBeNull();
   });
 
+  it('carries the foundation flag, and reads rows without it', () => {
+    const data = encodeInstitutions([inst({ hasFoundation: true }), inst({ slug: 'b' })], 'en');
+    expect(data.rows[0][7]).toBe(1);
+    expect(data.rows[1][7]).toBeUndefined();
+    const back = decodeInstitutions(data);
+    expect(back[0].hasFoundation).toBe(true);
+    expect(back[1].hasFoundation).toBeUndefined();
+  });
+
   it('does not repeat English when the visitor reads English', () => {
     const data = encodeInstitutions([inst()], 'en');
     expect(data.rows[0][5][2]).toBe('');

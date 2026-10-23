@@ -25,7 +25,9 @@ export function filterInstitutions(
   { types, query }: InstitutionFilter,
 ): MapInstitution[] {
   const q = normalizeSearch(query);
-  return items.filter((i) => types.has(i.type) && (q === '' || haystack(i).includes(q)));
+  // an institution that has a foundation programme is also found by the "Foundation programmes" filter
+  const wanted = (i: MapInstitution) => types.has(i.type) || (i.hasFoundation === true && types.has('foundation'));
+  return items.filter((i) => wanted(i) && (q === '' || haystack(i).includes(q)));
 }
 
 export function countByType(items: readonly MapInstitution[]): Record<InstitutionType, number> {

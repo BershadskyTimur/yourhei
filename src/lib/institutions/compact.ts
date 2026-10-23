@@ -18,6 +18,8 @@ export type CompactRow = [
   names: [string, string, string],
   /** city in the original language, in English, in the visitor's language ("" = none) */
   city: [string, string, string],
+  /** 1 = the institution has a foundation programme (added by migration 0028; older answers have no such element) */
+  foundation?: 0 | 1,
 ];
 
 export interface CompactInstitutions {
@@ -37,7 +39,9 @@ export function encodeInstitutions(items: readonly MapInstitution[], locale: str
       t.en ?? '',
       locale === 'en' ? '' : (t[locale] ?? ''),
     ];
-    return [INSTITUTION_TYPES.indexOf(i.type), i.country, round(i.lat), round(i.lng), i.slug, triple(i.names), triple(i.city)];
+    const row: CompactRow = [INSTITUTION_TYPES.indexOf(i.type), i.country, round(i.lat), round(i.lng), i.slug, triple(i.names), triple(i.city)];
+    if (i.hasFoundation) row.push(1);
+    return row;
   });
   return { v: 2, locale, rows };
 }
@@ -66,6 +70,7 @@ export function decodeInstitutions(data: CompactInstitutions): MapInstitution[] 
         lng: r[3],
         website: null,
         foundedYear: null,
+        ...(r[7] === 1 ? { hasFoundation: true } : {}),
       },
     ];
   });
