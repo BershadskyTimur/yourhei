@@ -10,10 +10,12 @@ const isced = JSON.parse(readFileSync('data/reference/isced-f.json', 'utf8'));
 const NARROW = new Set(isced.filter((e) => e.c.length === 3).map((e) => e.c));
 
 const programmes = new Map(); // "AU|061" -> count
+const withProgrammes = new Set(); // every country that has at least one programme (for the admin panel)
 const institutions = new Map(); // "AU|061" -> Set of slugs
-for (const file of readdirSync(DIR).filter((f) => f.endsWith('.json') && f !== 'study-combos.json')) {
+for (const file of readdirSync(DIR).filter((f) => f.endsWith('.json') && f !== 'study-combos.json' && f !== 'programme-countries.json')) {
   const data = JSON.parse(readFileSync(path.join(DIR, file), 'utf8'));
   for (const inst of data.institutions ?? []) {
+    if ((inst.programs ?? []).length > 0) withProgrammes.add(inst.country);
     for (const p of inst.programs ?? []) {
       const code = typeof p.isced_f === 'string' ? p.isced_f.slice(0, 3) : '';
       if (!NARROW.has(code)) continue;
@@ -33,5 +35,6 @@ const combos = [...programmes.entries()]
   .sort((a, b) => a.country.localeCompare(b.country) || b.programmes - a.programmes);
 
 writeFileSync('data/generated/study-combos.json', JSON.stringify({ built: new Date().toISOString().slice(0, 10), combos }) + '\n');
+writeFileSync('data/generated/programme-countries.json', JSON.stringify({ countries: [...withProgrammes].sort() }) + '\n');
 const countries = new Set(combos.map((c) => c.country));
 console.log(`${combos.length} pages for ${countries.size} countries`);

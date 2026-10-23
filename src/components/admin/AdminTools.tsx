@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import { Link } from '@/i18n/navigation';
+import programmeCountries from '../../../data/generated/programme-countries.json';
 import { getSupabaseBrowser } from '@/lib/supabase/client';
 
 // More tools of the admin panel (data health, popular institutions, system status, duplicates, error reports, export).
@@ -9,6 +10,9 @@ import { getSupabaseBrowser } from '@/lib/supabase/client';
 // table used here refuses anyone who is not an administrator (supabase/migrations/0029_admin_tools.sql).
 
 type Row = Record<string, unknown>;
+
+/** The countries for which programmes were loaded from our data files (a few more may exist: the tab can check all). */
+const KNOWN_COUNTRIES: string[] = [...new Set([...(programmeCountries as { countries: string[] }).countries, 'GE', 'CN', 'JP'])];
 
 const btn = 'inline-flex h-9 items-center rounded-lg border border-line-strong px-3 text-sm font-medium text-text hover:bg-surface-strong disabled:opacity-50';
 const btnPrimary = 'inline-flex h-9 items-center rounded-lg bg-accent px-3 text-sm font-semibold text-on-accent hover:opacity-90 disabled:opacity-50';
@@ -75,14 +79,6 @@ function Bar({ value }: { value: number }) {
 }
 
 // ------------------------------------------------------------------ data health
-interface HealthSummary {
-  institutions: Record<string, number>;
-  institutions_total: number;
-  levels: Record<string, number>;
-  programmes_draft: number;
-  countries_with_programmes: string[];
-  institutions_without_programmes: number;
-}
 interface HealthCountry {
   country: string;
   institutions_with_programmes: number;
@@ -93,99 +89,156 @@ interface HealthCountry {
   with_field: number;
 }
 const LEVEL_RU: Record<string, string> = { school: 'школа', college: 'колледж', foundation: 'подготовительные', bachelor: 'бакалавриат', master: 'магистратура', phd: 'докторантура', language_course: 'языковые курсы' };
+const LEVELS = Object.keys(LEVEL_RU);
+const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
+
+/** One small request; when the database says "too slow" (it can be busy cleaning up after a big load) it tries again a few times. */
+async function ask<T>(name: string, args?: Record<string, unknown>): Promise<{ data: T | null; error: string | null }> {
+  let message = '';
+  for (let attempt = 0; attempt < 4; attempt++) {
+    const res = await getSupabaseBrowser()!.rpc(name, args);
+    if (!res.error) return { data: res.data as T, error: null };
+    message = res.error.message;
+    if (!/timeout/i.test(message)) break;
+    await sleep(1500 * (attempt + 1));
+  }
+  return { data: null, error: message + needMigration(message).replace('0029_admin_tools', '0031_admin_data_health_small') };
+}
 
 export function DataHealth() {
-  // The summary first, then one country at a time: one big query would hit the time limit of a request.
-  const { data, error, loading, reload } = useRpc<HealthSummary>(() => getSupabaseBrowser()!.rpc('admin_data_health_summary'), []);
+  // Every number is its own small request (one big one hits the time limit of a request), so what is ready is shown at once.
+  const [institutions, setInstitutions] = useState<{ total: number; by_country: Record<string, number> } | null>(null);
+  const [levels, setLevels] = useState<Record<string, number | null>>({});
+  const [drafts, setDrafts] = useState<number | null | undefined>(undefined);
   const [rows, setRows] = useState<HealthCountry[]>([]);
-  const [done, setDone] = useState(0);
-  const [problem, setProblem] = useState<string | null>(null);
+  const [checked, setChecked] = useState<Set<string>>(new Set());
+  const [errors, setErrors] = useState<string[]>([]);
+  const [running, setRunning] = useState(false);
+  const [round, setRound] = useState(0);
+
+  const loadCountry = useCallback(async (code: string) => {
+    const res = await ask<HealthCountry>('admin_data_health_country', { p_country: code });
+    setChecked((c) => new Set(c).add(code));
+    if (res.error) setErrors((e) => [...e, `${countryRu(code)}: ${res.error}`]);
+    else if (res.data && res.data.programmes > 0) setRows((r) => [...r.filter((x) => x.country !== code), res.data!].sort((a, b) => b.programmes - a.programmes));
+  }, []);
 
   useEffect(() => {
-    if (!data) return;
     let live = true;
     (async () => {
-      const list = data.countries_with_programmes;
-      const collected: HealthCountry[] = [];
+      setRunning(true);
+      setErrors([]);
       setRows([]);
-      setDone(0);
-      setProblem(null);
-      for (let i = 0; i < list.length; i++) {
-        let res = await getSupabaseBrowser()!.rpc('admin_data_health_country', { p_country: list[i] });
-        for (let retry = 0; retry < 3 && res.error && /timeout/i.test(res.error.message); retry++) res = await getSupabaseBrowser()!.rpc('admin_data_health_country', { p_country: list[i] });
+      setChecked(new Set());
+      setLevels({});
+      setDrafts(undefined);
+      const inst = await ask<{ total: number; by_country: Record<string, number> }>('admin_dh_institutions');
+      if (!live) return;
+      if (inst.error) setErrors((e) => [...e, `Заведения: ${inst.error}`]);
+      else setInstitutions(inst.data);
+      for (const level of LEVELS) {
+        const res = await ask<number>('admin_dh_level', { p_level: level });
         if (!live) return;
-        if (res.error) {
-          setProblem(`${countryRu(list[i])}: ${res.error.message}${needMigration(res.error.message).replace('0029_admin_tools', '0030_admin_data_health_by_country')}`);
-        } else if (res.data) {
-          collected.push(res.data as HealthCountry);
-          setRows([...collected].sort((a, b) => b.programmes - a.programmes));
-        }
-        setDone(i + 1);
+        setLevels((l) => ({ ...l, [level]: res.error ? null : Number(res.data) }));
       }
+      const d = await ask<number>('admin_dh_drafts');
+      if (!live) return;
+      setDrafts(d.error ? null : Number(d.data));
+      for (const code of KNOWN_COUNTRIES) {
+        if (!live) return;
+        await loadCountry(code);
+      }
+      if (live) setRunning(false);
     })();
     return () => {
       live = false;
     };
-  }, [data]);
+  }, [round, loadCountry]);
+
+  // The list of countries above comes from the data files; this checks all the others (one request per country).
+  const [checkingOthers, setCheckingOthers] = useState(false);
+  const checkOthers = async () => {
+    if (!institutions) return;
+    setCheckingOthers(true);
+    for (const code of Object.keys(institutions.by_country)) if (!checked.has(code)) await loadCountry(code);
+    setCheckingOthers(false);
+  };
 
   const total = rows.reduce((n, c) => n + c.programmes, 0);
-  const all = data?.countries_with_programmes.length ?? 0;
+  const withProgrammes = rows.reduce((n, c) => n + c.institutions_with_programmes, 0);
+  const allChecked = institutions ? Object.keys(institutions.by_country).every((c) => checked.has(c)) : false;
+  const num = (v: number | null | undefined) => (v === undefined ? '…' : v === null ? '—' : nf.format(v));
   return (
     <section>
       <div className="flex flex-wrap items-center justify-between gap-3">
         <h2 className="text-xl font-semibold">Здоровье данных</h2>
-        <button type="button" className={btn} onClick={reload}>Обновить</button>
+        <button type="button" className={btn} disabled={running} onClick={() => setRound((n) => n + 1)}>Обновить</button>
       </div>
-      <p className="mt-1 text-sm text-muted">Насколько полны данные по странам: у какой доли программ есть цена, срок подачи, язык и направление. Красный — мало: туда стоит добавлять данные. Страны считаются по очереди, это занимает несколько секунд.</p>
-      <Status error={error?.replace('0029_admin_tools', '0030_admin_data_health_by_country') ?? null} loading={loading} />
-      {problem && <p role="alert" className="mt-3 text-danger">Ошибка: {problem}</p>}
-      {data && (
-        <div className="mt-4 space-y-4">
-          <dl className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-            <Stat label="Программ опубликовано" value={done < all ? `${nf.format(total)}…` : nf.format(total)} />
-            <Stat label="Заведений всего" value={nf.format(data.institutions_total)} />
-            <Stat label="Заведений без программ" value={`${nf.format(data.institutions_without_programmes)} (${pct(data.institutions_without_programmes, data.institutions_total)}%)`} />
-            <Stat label="Программ ждёт проверки" value={nf.format(data.programmes_draft)} />
-          </dl>
-          <div className="rounded-xl border border-line bg-surface p-4">
-            <h3 className="font-semibold">По уровням</h3>
-            <ul className="mt-2 flex flex-wrap gap-x-6 gap-y-1 text-sm">
-              {Object.entries(data.levels).sort((a, b) => b[1] - a[1]).map(([l, n]) => (
-                <li key={l}>{LEVEL_RU[l] ?? l}: <span className="font-medium tabular-nums">{nf.format(n)}</span></li>
-              ))}
-            </ul>
-          </div>
-          {done < all && <p role="status" className="text-sm text-muted">Считаю страны: {done} из {all}…</p>}
-          <div className="overflow-x-auto rounded-xl border border-line bg-surface">
-            <table className="w-full min-w-[760px] text-sm">
-              <thead>
-                <tr className="border-b border-line text-muted">
-                  <th className="p-3 text-start font-medium">Страна</th>
-                  <th className="p-3 text-end font-medium">Заведений (с программами / всего)</th>
-                  <th className="p-3 text-end font-medium">Программ</th>
-                  <th className="p-3 text-start font-medium">Цена</th>
-                  <th className="p-3 text-start font-medium">Срок подачи</th>
-                  <th className="p-3 text-start font-medium">Язык</th>
-                  <th className="p-3 text-start font-medium">Направление</th>
-                </tr>
-              </thead>
-              <tbody>
-                {rows.map((c) => (
-                  <tr key={c.country} className="border-b border-line last:border-0">
-                    <td className="p-3 font-medium">{countryRu(c.country)}</td>
-                    <td className="p-3 text-end tabular-nums">{nf.format(c.institutions_with_programmes)} / {nf.format(data.institutions[c.country] ?? 0)}</td>
-                    <td className="p-3 text-end tabular-nums">{nf.format(c.programmes)}</td>
-                    <td className="p-3"><Bar value={pct(c.priced, c.programmes)} /></td>
-                    <td className="p-3"><Bar value={pct(c.with_deadline, c.programmes)} /></td>
-                    <td className="p-3"><Bar value={pct(c.with_language, c.programmes)} /></td>
-                    <td className="p-3"><Bar value={pct(c.with_field, c.programmes)} /></td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
+      <p className="mt-1 text-sm text-muted">Насколько полны данные по странам: у какой доли программ есть цена, срок подачи, язык и направление. Красный — мало: туда стоит добавлять данные. Цифры приходят по одной: если база занята, часть покажется позже или будет «—».</p>
+      {errors.length > 0 && (
+        <div role="alert" className="mt-3 text-sm text-danger">
+          <p>Не удалось прочитать (база сейчас может быть занята, нажмите «Обновить» через несколько минут):</p>
+          <ul className="list-disc ps-5">
+            {errors.slice(0, 4).map((e) => (
+              <li key={e}>{e}</li>
+            ))}
+            {errors.length > 4 && <li>…и ещё {errors.length - 4}</li>}
+          </ul>
         </div>
       )}
+      <div className="mt-4 space-y-4">
+        <dl className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+          <Stat label="Программ опубликовано (по странам ниже)" value={running ? `${nf.format(total)}…` : nf.format(total)} />
+          <Stat label="Заведений всего" value={institutions ? nf.format(institutions.total) : '…'} />
+          <Stat label="Заведений без программ" value={institutions && allChecked ? `${nf.format(institutions.total - withProgrammes)} (${pct(institutions.total - withProgrammes, institutions.total)}%)` : institutions && !running ? `около ${nf.format(institutions.total - withProgrammes)}` : '…'} />
+          <Stat label="Программ ждёт проверки" value={num(drafts)} />
+        </dl>
+        <div className="rounded-xl border border-line bg-surface p-4">
+          <h3 className="font-semibold">По уровням</h3>
+          <ul className="mt-2 flex flex-wrap gap-x-6 gap-y-1 text-sm">
+            {LEVELS.map((l) => (
+              <li key={l}>{LEVEL_RU[l]}: <span className="font-medium tabular-nums">{num(levels[l])}</span></li>
+            ))}
+          </ul>
+        </div>
+        {running && <p role="status" className="text-sm text-muted">Считаю страны: {checked.size} из {KNOWN_COUNTRIES.length}…</p>}
+        <div className="overflow-x-auto rounded-xl border border-line bg-surface">
+          <table className="w-full min-w-[760px] text-sm">
+            <thead>
+              <tr className="border-b border-line text-muted">
+                <th className="p-3 text-start font-medium">Страна</th>
+                <th className="p-3 text-end font-medium">Заведений (с программами / всего)</th>
+                <th className="p-3 text-end font-medium">Программ</th>
+                <th className="p-3 text-start font-medium">Цена</th>
+                <th className="p-3 text-start font-medium">Срок подачи</th>
+                <th className="p-3 text-start font-medium">Язык</th>
+                <th className="p-3 text-start font-medium">Направление</th>
+              </tr>
+            </thead>
+            <tbody>
+              {rows.map((c) => (
+                <tr key={c.country} className="border-b border-line last:border-0">
+                  <td className="p-3 font-medium">{countryRu(c.country)}</td>
+                  <td className="p-3 text-end tabular-nums">{nf.format(c.institutions_with_programmes)} / {nf.format(institutions?.by_country[c.country] ?? 0)}</td>
+                  <td className="p-3 text-end tabular-nums">{nf.format(c.programmes)}</td>
+                  <td className="p-3"><Bar value={pct(c.priced, c.programmes)} /></td>
+                  <td className="p-3"><Bar value={pct(c.with_deadline, c.programmes)} /></td>
+                  <td className="p-3"><Bar value={pct(c.with_language, c.programmes)} /></td>
+                  <td className="p-3"><Bar value={pct(c.with_field, c.programmes)} /></td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        {!running && institutions && !allChecked && (
+          <p>
+            <button type="button" className={btn} disabled={checkingOthers} onClick={checkOthers}>
+              {checkingOthers ? 'Проверяю остальные страны…' : 'Проверить остальные страны (около минуты)'}
+            </button>
+            <span className="ms-3 text-sm text-muted">Выше только страны, для которых мы загружали программы; здесь проверятся все.</span>
+          </p>
+        )}
+      </div>
     </section>
   );
 }

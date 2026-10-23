@@ -83,21 +83,24 @@ test.describe('admin panel', () => {
 
   test('the data health tab shows coverage by country', async ({ page }) => {
     await asAdmin(page);
-    await page.route(`${supabaseUrl()}/rest/v1/rpc/admin_data_health_summary**`, (route) =>
-      route.fulfill(json({
-        institutions: { DE: 400 }, levels: { bachelor: 600, master: 400 }, programmes_draft: 3, institutions_total: 12549, institutions_without_programmes: 9000,
-        countries_with_programmes: ['DE'],
-      })),
+    await page.route(`${supabaseUrl()}/rest/v1/rpc/admin_dh_institutions**`, (route) =>
+      route.fulfill(json({ total: 12549, by_country: { DE: 400, CZ: 50 } })),
     );
-    await page.route(`${supabaseUrl()}/rest/v1/rpc/admin_data_health_country**`, (route) =>
-      route.fulfill(json({ country: 'DE', institutions_with_programmes: 120, programmes: 1000, priced: 700, with_deadline: 50, with_language: 900, with_field: 950 })),
-    );
+    await page.route(`${supabaseUrl()}/rest/v1/rpc/admin_dh_level**`, (route) => route.fulfill(json(600)));
+    await page.route(`${supabaseUrl()}/rest/v1/rpc/admin_dh_drafts**`, (route) => route.fulfill(json(3)));
+    await page.route(`${supabaseUrl()}/rest/v1/rpc/admin_data_health_country**`, (route) => {
+      const country = (route.request().postDataJSON() as { p_country: string }).p_country;
+      return route.fulfill(json(country === 'DE'
+        ? { country: 'DE', institutions_with_programmes: 120, programmes: 1000, priced: 700, with_deadline: 50, with_language: 900, with_field: 950 }
+        : { country, institutions_with_programmes: 0, programmes: 0, priced: 0, with_deadline: 0, with_language: 0, with_field: 0 }));
+    });
     await page.goto('/en/admin');
     await page.getByRole('tab', { name: 'Здоровье данных' }).click();
     await expect(page.getByRole('cell', { name: 'Германия' })).toBeVisible();
     await expect(page.getByText('70%', { exact: true })).toBeVisible(); // prices: 700 of 1000
     await expect(page.getByText('5%', { exact: true })).toBeVisible(); // deadlines: 50 of 1000
     await expect(page.getByText('120 / 400')).toBeVisible();
+    await expect(page.getByText('12 549')).toBeVisible(); // institutions in total
   });
 
   test('the popular institutions, duplicates and system tabs show their data', async ({ page }) => {
