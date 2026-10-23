@@ -149,6 +149,12 @@ html {
   color: var(--text);
   font-family: var(--font-sans);
   -webkit-text-size-adjust: 100%;
+  overflow-anchor: none; /* the page must not jump to the bottom when the content changes */
+}
+
+/* Android phones render the same CSS larger than iPhones: a rem-based interface is scaled down by 12%. */
+html.android {
+  font-size: 14px;
 }
 
 body {

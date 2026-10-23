@@ -122,6 +122,8 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} dir={dir} className={fonts} suppressHydrationWarning>
       <body className="flex min-h-svh flex-col">
+        {/* Android phones show the interface larger than iPhones: a class on <html> lets the CSS scale it down a little. */}
+        <script dangerouslySetInnerHTML={{ __html: "if(/Android/i.test(navigator.userAgent))document.documentElement.classList.add('android')" }} />
         <NextIntlClientProvider>
           <ThemeProvider>
             <a

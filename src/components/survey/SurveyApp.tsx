@@ -211,7 +211,16 @@ function Runner({ attempt, onDone, onExit }: { attempt: Attempt; onDone: () => v
     const title = titleRef.current;
     if (!title) return;
     title.focus({ preventScroll: true });
-    title.scrollIntoView({ block: 'start' });
+    // Android moves the page while the new question is drawn and the browser bar slides in or out, so the position is set
+    // again a few times until the layout has settled.
+    const toTitle = () => titleRef.current?.scrollIntoView({ block: 'start' });
+    toTitle();
+    const frame = requestAnimationFrame(toTitle);
+    const timers = [120, 350, 700].map((ms) => window.setTimeout(toTitle, ms));
+    return () => {
+      cancelAnimationFrame(frame);
+      timers.forEach(clearTimeout);
+    };
   }, [qid]);
 
   /** Saves, then moves on (or finishes when nothing is left). */
