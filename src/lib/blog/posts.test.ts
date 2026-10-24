@@ -63,7 +63,7 @@ describe('blog articles', () => {
 
   it('link only to real pages of the site or to https addresses', () => {
     const known = new Set(ARTICLES.map((a) => a.slug));
-    const pages = ['/catalog', '/scholarships', '/countries', '/register', '/deadlines', '/deadlines/nl', '/checklist'];
+    const pages = ['/catalog', '/scholarships', '/countries', '/register', '/deadlines', '/deadlines/nl', '/deadlines/de', '/deadlines/fi', '/deadlines/cz', '/checklist'];
     for (const a of ARTICLES) {
       for (const lang of BLOG_LANGS) {
         const hrefs = [...texts(a[lang].blocks).flatMap((t) => parseInline(t).flatMap((p) => (p.kind === 'link' ? [p.href] : []))), ...a[lang].blocks.flatMap((b) => (b.t === 'cta' ? [b.href] : []))];
