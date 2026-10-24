@@ -10,7 +10,7 @@ export const chooseCountry: Article = {
     blocks: [
       { t: 'p', text: 'Страну для учёбы часто выбирают по принципу «где красивее» или «где дешевле», а потом сталкиваются с визой, деньгами или признанием диплома. Мы собрали семь вопросов, на которые лучше ответить заранее. К каждому — что смотреть и где это есть на сайте.' },
       { t: 'h2', id: 'budget', text: '1. Сколько вы можете потратить?' },
-      { t: 'p', text: 'Учитывайте два числа: плату за обучение и минимум на жизнь, который страна требует подтвердить для визы. Реальные траты выше. В [каталоге](/catalog) можно ограничить цену обучения или оставить только бесплатные программы, а минимумы 14 стран собраны в статье [Сколько денег нужно показать для студенческой визы](/blog/proof-of-funds-student-visa).' },
+      { t: 'p', text: 'Учитывайте два числа: плату за обучение и минимум на жизнь, который страна требует подтвердить для визы. Реальные траты выше. В [каталоге](/catalog) можно ограничить цену обучения или оставить только бесплатные программы, минимумы 14 стран собраны в статье [Сколько денег нужно показать для студенческой визы](/blog/proof-of-funds-student-visa), а где обучение бесплатно, разобрано в статье [Бесплатно ли учиться в Германии, Чехии и Финляндии](/blog/free-tuition-germany-czechia-finland).' },
       { t: 'h2', id: 'language', text: '2. На каком языке вы готовы учиться?' },
       { t: 'p', text: 'В каталоге можно выбрать язык обучения. Требования к уровню языка и документам у каждой программы свои: они указаны на странице программы и на официальном сайте вуза.' },
       { t: 'h2', id: 'work', text: '3. Нужна ли вам подработка?' },
@@ -34,7 +34,7 @@ export const chooseCountry: Article = {
     blocks: [
       { t: 'p', text: 'People often choose a study country by “where it is nicer” or “where it is cheaper”, and then run into the visa, the money or the recognition of the degree. We collected seven questions that are better answered in advance. For each one: what to look at and where to find it on the site.' },
       { t: 'h2', id: 'budget', text: '1. How much can you spend?' },
-      { t: 'p', text: 'Count two numbers: tuition and the living minimum that a country requires you to prove for the visa. Real costs are higher. In the [catalogue](/catalog) you can limit the tuition price or keep only free programmes, and the minimums of 14 countries are collected in [How much money you must show for a student visa](/blog/proof-of-funds-student-visa).' },
+      { t: 'p', text: 'Count two numbers: tuition and the living minimum that a country requires you to prove for the visa. Real costs are higher. In the [catalogue](/catalog) you can limit the tuition price or keep only free programmes, the minimums of 14 countries are collected in [How much money you must show for a student visa](/blog/proof-of-funds-student-visa), and where tuition is free is covered in [Is study free in Germany, Czechia and Finland?](/blog/free-tuition-germany-czechia-finland).' },
       { t: 'h2', id: 'language', text: '2. In which language are you ready to study?' },
       { t: 'p', text: 'The catalogue lets you choose the language of instruction. The language level and documents required differ by programme: they are on the programme page and on the university’s official website.' },
       { t: 'h2', id: 'work', text: '3. Do you need a part-time job?' },
