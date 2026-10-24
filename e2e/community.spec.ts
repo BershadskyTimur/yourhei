@@ -117,7 +117,8 @@ test.describe('anonymous usage events', () => {
     await page.goto('/en/catalog');
     await page.getByLabel('Country').selectOption('GE');
     await page.getByRole('button', { name: 'Show', exact: true }).click();
-    await expect(page.getByText('Nothing found. Try fewer filters.')).toBeVisible();
+    // with a country chosen the catalogue explains that many countries have institutions but no programmes yet
+    await expect(page.getByText(/No programmes found\./)).toBeVisible();
     expect(sent.filter((b) => b.event === 'catalog_search')).toHaveLength(0);
 
     // consent given: the empty search is reported
