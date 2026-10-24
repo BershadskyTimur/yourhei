@@ -1,4 +1,6 @@
 import { JsonLd } from '@/components/JsonLd';
+import { isIndexedLocale } from '@/config/seo';
+import { bodyOf, publishedArticles } from '@/lib/blog/posts';
 import { organizationLd, websiteLd } from '@/lib/seo/structured';
 import { seoMetadata } from '@/lib/seo/metadata';
 import { hasLocale } from 'next-intl';
@@ -57,6 +59,9 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
   ];
 
   const tMeta = await getTranslations('Meta');
+  const tBlog = await getTranslations('Blog');
+  const tDeadlines = await getTranslations('Deadlines');
+  const tChecklist = await getTranslations('Checklist');
   return (
     <>
       <JsonLd data={organizationLd()} />
@@ -136,6 +141,33 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
             </li>
           ))}
         </ol>
+      </section>
+
+      <section aria-labelledby="resources-title" className="mx-auto mt-24 max-w-[1500px] px-4">
+        <h2 id="resources-title" className={sectionTitle}>{t('resources.title')}</h2>
+        <ul className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {isIndexedLocale(locale) &&
+            publishedArticles().slice(0, 2).map((a) => (
+              <li key={a.slug}>
+                <Link href={`/blog/${a.slug}`} className="block h-full rounded-lg border border-line bg-surface p-5 hover:bg-surface-strong">
+                  <span className="text-sm font-medium text-gold-text">{tBlog('title')}</span>
+                  <span className="mt-2 block text-lg font-semibold leading-snug text-text">{bodyOf(a, locale).title}</span>
+                </Link>
+              </li>
+            ))}
+          <li>
+            <Link href="/deadlines" className="block h-full rounded-lg border border-line bg-surface p-5 hover:bg-surface-strong">
+              <span className="text-lg font-semibold text-text">{tDeadlines('title')}</span>
+              <span className="mt-2 block text-muted">{tDeadlines('intro')}</span>
+            </Link>
+          </li>
+          <li>
+            <Link href="/checklist" className="block h-full rounded-lg border border-line bg-surface p-5 hover:bg-surface-strong">
+              <span className="text-lg font-semibold text-text">{tChecklist('title')}</span>
+              <span className="mt-2 block text-muted">{tChecklist('intro')}</span>
+            </Link>
+          </li>
+        </ul>
       </section>
 
       {countries.length > 0 && (

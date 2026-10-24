@@ -118,6 +118,9 @@
     "cta": {
       "title": "Prêt à trouver votre place ?",
       "text": "Créez un compte gratuit, répondez au questionnaire et obtenez vos résultats en quelques minutes."
+    },
+    "resources": {
+      "title": "Guides et outils"
     }
   },
   "Institution": {
