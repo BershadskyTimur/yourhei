@@ -91,8 +91,15 @@ describe('loadMatchData', () => {
   });
 
   it('shows a real database error instead of hiding it', async () => {
+    const { client } = fakeClient({ rpc: () => ({ error: { code: '42501', message: 'permission denied' } }) });
+    await expect(loadMatchData(client, { level: 'bachelor', countries: ['GE'] })).rejects.toMatchObject({ code: '42501' });
+  });
+
+  it('a search that always runs into the time limit gives an empty, partial result (the page then says the server is slow)', async () => {
     const { client } = fakeClient({ rpc: () => ({ error: { code: '57014', message: 'canceling statement due to statement timeout' } }) });
-    await expect(loadMatchData(client, { level: 'bachelor', countries: ['GE'] })).rejects.toMatchObject({ code: '57014' });
+    const r = await loadMatchData(client, { level: 'bachelor', countries: ['GE'] });
+    expect(r.programs).toHaveLength(0);
+    expect(r.partial).toBe(true);
   });
 
   it('keeps what it has read when a later page keeps timing out, and says the result is partial', async () => {
@@ -160,6 +167,14 @@ describe('loadMatchData', () => {
       expect(calls.some((c) => c.p_prefixes === null)).toBe(true);
     });
 
+    it('leaves out a country the database cannot answer in time and marks the result partial', async () => {
+      const timeout = { code: '57014', message: 'canceling statement due to statement timeout' };
+      const { client } = fakeClient({ counts, rpc: (a) => ((a.p_countries as string[])[0] === 'US' ? { error: timeout } : { data: [inCountry((a.p_countries as string[])[0], 1)] }) });
+      const r = await loadMatchData(client, { level: 'bachelor' });
+      expect(r.programs.map((p) => p.institution.country).sort()).toEqual(['DE', 'GE']);
+      expect(r.partial).toBe(true);
+    });
+
     it('reuses what was read a moment ago and does not read twice', async () => {
       const { client, calls } = fakeClient({ counts, rpc: (a) => ({ data: [inCountry((a.p_countries as string[])[0], 1)] }) });
       await loadMatchData(client, { level: 'bachelor' });
@@ -183,7 +198,7 @@ describe('loadMatchData', () => {
       const big = [{ country: 'US', n: 50000 }];
       const a = fakeClient({ counts: big, rpc: () => ({ data: full }) });
       await loadMatchData(a.client, { level: 'bachelor' });
-      expect(a.calls).toHaveLength(5);
+      expect(a.calls).toHaveLength(3);
       clearMatchCache();
       const b = fakeClient({ counts: big, rpc: () => ({ data: full }) });
       await loadMatchData(b.client, { level: 'bachelor', countries: ['US'] });
