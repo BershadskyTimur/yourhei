@@ -1,6 +1,6 @@
 import { beforeEach, describe, expect, it } from 'vitest';
 import type { SupabaseClient } from '@supabase/supabase-js';
-import { clearMatchCache, loadMatchData, resetSlimCheck } from './load';
+import { clearMatchCache, loadMatchData, resetFieldCheck, resetSlimCheck } from './load';
 
 const row = (n: number) => ({
   id: `p${n}`, names: { en: `Programme ${n}` }, level: 'bachelor', languages: ['en'], tuition: [], free: false,
@@ -8,7 +8,7 @@ const row = (n: number) => ({
 });
 
 /** A tiny fake of the database client: rpc() answers by pages, from() answers the older query and the country table. */
-function fakeClient(options: { rpc: (args: Record<string, unknown>) => { data?: unknown; error?: { code: string; message: string } }; table?: unknown[]; counts?: { country: string; n: number }[]; slim?: boolean }) {
+function fakeClient(options: { rpc: (args: Record<string, unknown>) => { data?: unknown; error?: { code: string; message: string } }; table?: unknown[]; counts?: { country: string; n: number }[]; slim?: boolean; field?: boolean }) {
   const calls: Record<string, unknown>[] = [];
   const table = {
     select: () => table,
@@ -27,9 +27,10 @@ function fakeClient(options: { rpc: (args: Record<string, unknown>) => { data?: 
       }
       // the lighter function (migration 0037) is "not installed" unless a test asks for it
       if (name === 'match_programs_slim' && !options.slim) return { data: null, error: { code: 'PGRST202', message: 'Could not find the function public.match_programs_slim' } };
+      if (name === 'match_programs_field' && !options.field) return { data: null, error: { code: 'PGRST202', message: 'Could not find the function public.match_programs_field' } };
       calls.push({ name, ...args });
       const answer = { data: null, error: null, ...options.rpc(args) };
-      if (name === 'match_programs_slim' && Array.isArray(answer.data)) {
+      if ((name === 'match_programs_slim' || name === 'match_programs_field') && Array.isArray(answer.data)) {
         // turn the older rows into the lighter shape: the institutions once, the programmes pointing to them
         const rows = answer.data as { institutions: { id: string } }[];
         const institutions = Object.fromEntries(rows.map((r) => [r.institutions.id, r.institutions]));
@@ -46,6 +47,7 @@ describe('loadMatchData', () => {
   beforeEach(() => {
     clearMatchCache();
     resetSlimCheck();
+    resetFieldCheck();
   });
 
   it('asks the database function with the filters and returns the programmes', async () => {
@@ -225,6 +227,29 @@ describe('loadMatchData', () => {
       await loadMatchData(client, { level: 'bachelor' });
       expect(calls.filter((c) => c.name === 'match_programs_slim')).toHaveLength(0);
       expect(calls.filter((c) => c.name === 'match_programs').length).toBeGreaterThan(0);
+    });
+
+    it('reads each chosen field of a big country from its index (migration 0039), and only the big ones', async () => {
+      const mk = (id: string, f: string, c: string) => ({ ...inCountry(c, 1), id, isced_f: f });
+      const { client, calls } = fakeClient({
+        counts: [{ country: 'US', n: 9000 }, { country: 'GE', n: 5 }],
+        field: true,
+        rpc: (a) => ((a.p_countries as string[])[0] === 'US' ? { data: [mk(`us-${a.p_prefix ?? 'x'}`, `${a.p_prefix}1`, 'US')] } : { data: [mk('ge1', '0613', 'GE'), mk('ge2', '0231', 'GE')] }),
+      });
+      const r = await loadMatchData(client, { level: 'bachelor', fieldPrefixes: ['041', '061', '04'] });
+      const field = calls.filter((c) => c.name === 'match_programs_field');
+      // "041" lies inside "04": only "04" and "061" are asked
+      expect(field.map((c) => c.p_prefix).sort()).toEqual(['04', '061']);
+      expect(calls.filter((c) => c.p_countries?.toString() === 'GE' && c.name !== 'match_programs_field')[0]).toMatchObject({ p_prefixes: null });
+      expect(r.programs.map((p) => p.id).sort()).toEqual(['ge1', 'us-04', 'us-061']);
+    });
+
+    it('goes back to the older field search when the field function is not installed', async () => {
+      const mk = (id: string, f: string) => ({ ...inCountry('US', 1), id, isced_f: f });
+      const { client, calls } = fakeClient({ counts: [{ country: 'US', n: 9000 }], rpc: () => ({ data: [mk('a', '0613')] }) });
+      const r = await loadMatchData(client, { level: 'bachelor', fieldPrefixes: ['061'] });
+      expect(calls.some((c) => c.name !== 'match_programs_field' && c.p_prefixes?.toString() === '061')).toBe(true);
+      expect(r.programs.map((p) => p.id)).toEqual(['a']);
     });
   });
 });

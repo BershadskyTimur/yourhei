@@ -81,7 +81,7 @@ export async function fakeSignIn(
     const list = ((data.programs ?? []) as { institutions?: { country?: string } }[]).filter((p) => !country || p.institutions?.country === country);
     return route.fulfill(json(list));
   });
-  for (const missing of ['match_programs_slim', 'programme_country_counts']) {
+  for (const missing of ['match_programs_slim', 'match_programs_field', 'programme_country_counts']) {
     await page.route(`${url}/rest/v1/rpc/${missing}**`, (route) => route.fulfill(json({ code: 'PGRST202', message: `Could not find the function public.${missing}` }, 404)));
   }
   await page.route(`${url}/rest/v1/country_data**`, (route) => route.fulfill(json(data.countries ?? [])));

@@ -200,6 +200,61 @@ async function readStream(supabase: SupabaseClient, base: StreamArgs, deadline: 
   return { rows, partial: false, missingFunction: false };
 }
 
+// Reading ONE field prefix of a big country straight from an index in the right order (migration 0039): fast however big the field is.
+let fieldAvailable: boolean | null = null;
+export const resetFieldCheck = () => {
+  fieldAvailable = null;
+};
+
+async function readFieldStream(supabase: SupabaseClient, base: { level: string | null; country: string; types: string[] | null; prefix: string }, deadline: number, maxPages: number): Promise<StreamResult> {
+  const rows: Row[] = [];
+  let after: { field: string; institution: string; program: string } | null = null;
+  for (let page = 0; page < maxPages; page++) {
+    const args = {
+      p_level: base.level,
+      p_prefix: base.prefix,
+      p_countries: [base.country],
+      p_types: base.types,
+      p_after_field: after?.field ?? null,
+      p_after_institution: after?.institution ?? null,
+      p_after_program: after?.program ?? null,
+      p_limit: PAGE,
+    };
+    if (page > 0 && Date.now() > deadline) return { rows, partial: true, missingFunction: false };
+    let res = await supabase.rpc('match_programs_field', args);
+    for (let retry = 0; retry < 3 && res.error?.code === '57014' && Date.now() < deadline; retry++) res = await supabase.rpc('match_programs_field', args);
+    if (res.error) {
+      if (page === 0 && /match_programs_field|PGRST202/.test(`${res.error.code} ${res.error.message}`)) {
+        fieldAvailable = false;
+        return { rows, partial: false, missingFunction: true };
+      }
+      if (page > 0) return { rows, partial: true, missingFunction: false };
+      throw res.error;
+    }
+    fieldAvailable = true;
+    const list = expandSlim(res.data);
+    rows.push(...list);
+    const last = list[list.length - 1];
+    if (list.length < PAGE || !last) return { rows, partial: false, missingFunction: false };
+    after = { field: String(last.isced_f), institution: String(rec(last.institutions).id), program: String(last.id) };
+  }
+  return { rows, partial: false, missingFunction: false };
+}
+
+/** The programmes of the given field prefixes in one country, each prefix read on its own (a prefix inside another is read once). */
+async function readFields(supabase: SupabaseClient, base: { level: string | null; country: string; types: string[] | null; prefixes: string[] }, deadline: number, maxPages: number): Promise<StreamResult> {
+  const prefixes = base.prefixes.filter((p) => !base.prefixes.some((o) => o !== p && p.startsWith(o)));
+  const rows: Row[] = [];
+  let partial = false;
+  for (const prefix of prefixes) {
+    const r = await readFieldStream(supabase, { ...base, prefix }, deadline, maxPages);
+    if (r.missingFunction) return r;
+    rows.push(...r.rows);
+    if (r.partial) partial = true;
+  }
+  return { rows, partial, missingFunction: false };
+}
+
 /** How many published programmes each country has at this level (migration 0036), or null when the function is not installed. */
 async function countryCounts(supabase: SupabaseClient, level: string | null): Promise<Map<string, number> | null> {
   const res = await supabase.rpc('programme_country_counts', { p_level: level });
@@ -272,7 +327,9 @@ export async function loadMatchData(
         const maxPages = filter.countries?.length ? MAX_PAGES : SAMPLE_PAGES;
         let r: StreamResult & { cutHere?: boolean };
         try {
-          r = await readStream(supabase, base, deadline, maxPages);
+          // a big country with chosen fields: each field straight from its index (migration 0039); without it, the older field search
+          const byField = big && prefixes && fieldAvailable !== false ? await readFields(supabase, { level, country, types, prefixes }, deadline, maxPages) : null;
+          r = byField && !byField.missingFunction ? byField : await readStream(supabase, base, deadline, maxPages);
         } catch (error) {
           try {
             if (!big) throw error;
