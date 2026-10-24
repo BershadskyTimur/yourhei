@@ -1,3 +1,4 @@
+import { seoMetadata, trimDescription } from '@/lib/seo/metadata';
 import type { Metadata } from 'next';
 import { hasLocale } from 'next-intl';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
@@ -13,7 +14,7 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   const { locale } = await params;
   if (!hasLocale(routing.locales, locale)) return {};
   const t = await getTranslations({ locale, namespace: 'ForInstitutions' });
-  return { title: t('title'), description: t('intro'), alternates: { canonical: `/${locale}/for-institutions` } };
+  return seoMetadata({ locale, path: '/for-institutions', title: t('title'), description: trimDescription(t('intro')) });
 }
 
 /** For universities, colleges and schools: how to take over and keep their own page accurate (the institution account). */

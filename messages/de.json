@@ -1327,5 +1327,10 @@
     "sent": "Danke! Wir prüfen das.",
     "failed": "Senden nicht möglich. Versuche es erneut oder schreib uns per E-Mail.",
     "cancel": "Abbrechen"
+  },
+  "Seo": {
+    "institutionTitle": "{name}: Programme, Kosten und Fristen",
+    "institutionDescription": "{name} ({place}). Programme: {count}; Stufen: {levels}. Kosten, Fristen, Voraussetzungen und Bewerbungslink aus offiziellen Quellen.",
+    "countryDescription": "Studienvisum, Arbeiten neben dem Studium, Bleiben nach dem Abschluss, Lebenshaltungskosten und Anerkennung des Abschlusses in {country}: ein kurzer Leitfaden mit Links zu den offiziellen Seiten."
   }
 }

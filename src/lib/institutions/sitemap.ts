@@ -3,8 +3,8 @@ import { publicReadOptions } from '@/lib/supabase/read-options';
 import { getMapInstitutions } from './get';
 import type { MapInstitution } from './types';
 
-/** A sitemap file holds this many institutions (each has one address per language). */
-export const SITEMAP_CHUNK = 300;
+/** A sitemap file holds this many institutions (each has one address per indexed language; a file may hold 50 000 addresses). */
+export const SITEMAP_CHUNK = 10000;
 
 /**
  * The institutions offered to search engines: the ones that have programmes (migration 0023). The others are bare map

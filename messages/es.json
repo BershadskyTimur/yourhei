@@ -1327,5 +1327,10 @@
     "sent": "¡Gracias! Lo revisaremos.",
     "failed": "No se pudo enviar. Inténtalo de nuevo o escríbenos por correo.",
     "cancel": "Cancelar"
+  },
+  "Seo": {
+    "institutionTitle": "{name}: programas, precios y plazos",
+    "institutionDescription": "{name} ({place}). Programas: {count}; niveles: {levels}. Precios, plazos, requisitos y enlace para solicitar, de fuentes oficiales.",
+    "countryDescription": "Visado de estudios, trabajar mientras estudias, quedarse tras graduarte, coste de vida y reconocimiento del título en {country}: una guía breve con enlaces a las páginas oficiales."
   }
 }

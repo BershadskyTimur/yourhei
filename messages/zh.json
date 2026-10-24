@@ -1327,5 +1327,10 @@
     "sent": "谢谢！我们会核实。",
     "failed": "发送失败。请重试，或通过邮件联系我们。",
     "cancel": "取消"
+  },
+  "Seo": {
+    "institutionTitle": "{name}：项目、学费与截止日期",
+    "institutionDescription": "{name}（{place}）。项目数量：{count}；层次：{levels}。学费、截止日期、申请要求和申请链接，均来自官方来源。",
+    "countryDescription": "{country}的学习签证、学习期间工作、毕业后留下、生活费用和文凭认可：附官方页面链接的简明指南。"
   }
 }

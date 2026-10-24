@@ -1327,5 +1327,10 @@
     "sent": "Rahmat! Tekshiramiz.",
     "failed": "Yuborib bo‘lmadi. Qayta urinib ko‘ring yoki bizga pochta orqali yozing.",
     "cancel": "Bekor qilish"
+  },
+  "Seo": {
+    "institutionTitle": "{name}: dasturlar, narxlar va muddatlar",
+    "institutionDescription": "{name} ({place}). Dasturlar: {count}; darajalar: {levels}. Narxlar, muddatlar, talablar va ariza havolasi rasmiy manbalardan.",
+    "countryDescription": "Talaba vizasi, o‘qish davrida ishlash, bitirgandan keyin qolish, yashash narxi va diplomni tan olish: {country}. Rasmiy sahifalarga havolali qisqa qo‘llanma."
   }
 }

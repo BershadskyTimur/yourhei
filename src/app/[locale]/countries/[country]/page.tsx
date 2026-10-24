@@ -1,3 +1,6 @@
+import { JsonLd } from '@/components/JsonLd';
+import { breadcrumbList } from '@/lib/seo/structured';
+import { seoMetadata, trimDescription } from '@/lib/seo/metadata';
 import type { Metadata } from 'next';
 import { hasLocale } from 'next-intl';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
@@ -20,8 +23,9 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   const { locale, country } = await params;
   if (!hasLocale(routing.locales, locale) || !guideOf(country)) return {};
   const t = await getTranslations({ locale, namespace: 'Countries' });
+  const tSeo = await getTranslations({ locale, namespace: 'Seo' });
   const name = new Intl.DisplayNames([locale], { type: 'region' }).of(country.toUpperCase()) ?? country;
-  return { title: t('pageTitle', { country: name }), alternates: { canonical: `/${locale}/countries/${country.toLowerCase()}` } };
+  return seoMetadata({ locale, path: `/countries/${country.toLowerCase()}`, title: t('pageTitle', { country: name }), description: trimDescription(tSeo('countryDescription', { country: name })) });
 }
 
 function formatMoney(amount: number, currency: string, locale: string): string {
@@ -62,6 +66,7 @@ export default async function CountryPage({ params }: { params: Params }) {
 
   return (
     <PageShell title={t('pageTitle', { country: name })}>
+      <JsonLd data={breadcrumbList(locale, [{ name: 'YourHEI', path: '' }, { name, path: `/countries/${country.toLowerCase()}` }])} />
       {section('visa-title', t('visaTitle'), guide.visa)}
       {section('work-title', t('workTitle'), guide.work)}
       {section('after-title', t('afterTitle'), guide.after)}

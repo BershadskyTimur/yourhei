@@ -1327,5 +1327,10 @@
     "sent": "Teşekkürler! Kontrol edeceğiz.",
     "failed": "Gönderilemedi. Tekrar dene veya bize e-postayla yaz.",
     "cancel": "İptal"
+  },
+  "Seo": {
+    "institutionTitle": "{name}: programlar, ücretler ve son tarihler",
+    "institutionDescription": "{name} ({place}). Programlar: {count}; düzeyler: {levels}. Ücretler, son tarihler, koşullar ve başvuru bağlantısı, resmî kaynaklardan.",
+    "countryDescription": "Öğrenci vizesi, öğrenirken çalışma, mezuniyetten sonra kalma, yaşam maliyeti ve diploma denkliği: {country}. Resmî sayfalara bağlantılar içeren kısa rehber."
   }
 }

@@ -1,3 +1,4 @@
+import { seoMetadata, trimDescription } from '@/lib/seo/metadata';
 import type { Metadata } from 'next';
 import { hasLocale } from 'next-intl';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
@@ -15,7 +16,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale } = await params;
   if (!hasLocale(routing.locales, locale)) return {};
   const t = await getTranslations({ locale, namespace: 'Scholarships' });
-  return { title: t('title'), description: t('intro') };
+  return seoMetadata({ locale, path: '/scholarships', title: t('title'), description: trimDescription(t('intro')) });
 }
 
 export default async function Page({ params }: { params: Promise<{ locale: string }> }) {

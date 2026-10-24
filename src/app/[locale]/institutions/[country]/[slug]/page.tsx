@@ -15,6 +15,10 @@ import { routing } from '@/i18n/routing';
 import { guideOf } from '@/lib/countries-guide/guides';
 import { getInstitutionDetail } from '@/lib/institutions/detail';
 import { pickLocalized } from '@/lib/institutions/localized';
+import { JsonLd } from '@/components/JsonLd';
+import { seoMetadata, trimDescription } from '@/lib/seo/metadata';
+import { breadcrumbList } from '@/lib/seo/structured';
+import { studyCountries } from '@/lib/study/combos';
 
 // The data of one institution changes rarely; a page is rebuilt at most once a day (bots visit thousands of these pages).
 export const revalidate = 86400;
@@ -33,12 +37,21 @@ const CONTACT = process.env.NEXT_PUBLIC_CONTACT_EMAIL;
 export async function generateMetadata({ params }: { params: Params }): Promise<Metadata> {
   const { locale, country, slug } = await params;
   const institution = await getInstitutionDetail(country, slug);
-  return {
-    title: institution ? pickLocalized(institution.names, locale).text : undefined,
-    alternates: { canonical: `/${locale}/institutions/${country}/${slug}` },
+  if (!institution || !hasLocale(routing.locales, locale)) return { title: undefined };
+  const t = await getTranslations({ locale, namespace: 'Seo' });
+  const tLevel = await getTranslations({ locale, namespace: 'Survey.q.level.options' });
+  const name = pickLocalized(institution.names, locale).text;
+  const city = pickLocalized(institution.city, locale).text;
+  const countryName = new Intl.DisplayNames([locale], { type: 'region' }).of(institution.country) ?? institution.country;
+  const levels = LEVEL_ORDER.filter((l) => institution.programs.some((p) => p.level === l)).map((l) => tLevel(l as 'bachelor'));
+  return seoMetadata({
+    locale,
+    path: `/institutions/${country}/${slug}`,
+    title: t('institutionTitle', { name }),
+    description: trimDescription(t('institutionDescription', { name, place: [city, countryName].filter(Boolean).join(', '), count: institution.programs.length, levels: levels.join(', ') })),
     // A page without programmes is a thin page: keep it out of the search results (visitors can still open it).
-    robots: institution && institution.programs.length === 0 ? { index: false, follow: true } : undefined,
-  };
+    noindex: institution.programs.length === 0,
+  });
 }
 
 export default async function InstitutionPage({ params }: { params: Params }) {
@@ -80,7 +93,14 @@ export default async function InstitutionPage({ params }: { params: Params }) {
 
   return (
     <SideAds>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structured).replace(/</g, '\\u003c') }} />
+      <JsonLd data={structured} />
+      <JsonLd
+        data={breadcrumbList(locale, [
+          { name: 'YourHEI', path: '' },
+          ...(studyCountries().includes(institution.country) ? [{ name: countryName ?? institution.country, path: `/study/${institution.country.toLowerCase()}` }] : []),
+          { name, path: `/institutions/${country}/${slug}` },
+        ])}
+      />
       <article className="mx-auto max-w-3xl py-12">
         <p className="flex items-center gap-3 text-sm font-medium uppercase tracking-wide text-muted">
           <TypeDot type={institution.type} />

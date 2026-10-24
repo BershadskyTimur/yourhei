@@ -1,3 +1,4 @@
+import { seoMetadata, trimDescription } from '@/lib/seo/metadata';
 import type { Metadata } from 'next';
 import { hasLocale } from 'next-intl';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
@@ -13,7 +14,7 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   const { locale } = await params;
   if (!hasLocale(routing.locales, locale)) return {};
   const t = await getTranslations({ locale, namespace: 'Methodology' });
-  return { title: t('title'), description: t('intro'), alternates: { canonical: `/${locale}/methodology` } };
+  return seoMetadata({ locale, path: '/methodology', title: t('title'), description: trimDescription(t('intro')) });
 }
 
 /** Where the data comes from and how it is handled (the trust page). */

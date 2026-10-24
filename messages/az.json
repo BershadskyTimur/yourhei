@@ -1327,5 +1327,10 @@
     "sent": "Təşəkkür edirik! Yoxlayacağıq.",
     "failed": "Göndərmək alınmadı. Yenidən cəhd edin və ya bizə e-poçtla yazın.",
     "cancel": "Ləğv et"
+  },
+  "Seo": {
+    "institutionTitle": "{name}: proqramlar, qiymətlər və müddətlər",
+    "institutionDescription": "{name} ({place}). Proqramlar: {count}; səviyyələr: {levels}. Qiymətlər, müddətlər, tələblər və müraciət linki rəsmi mənbələrdən.",
+    "countryDescription": "Tələbə vizası, təhsil zamanı iş, məzun olduqdan sonra qalmaq, yaşayış xərcləri və diplomun tanınması: {country}. Rəsmi səhifələrə keçidlərlə qısa bələdçi."
   }
 }

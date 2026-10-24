@@ -1327,5 +1327,10 @@
     "sent": "Thank you! We will check it.",
     "failed": "Could not send. Please try again or write to us by e-mail.",
     "cancel": "Cancel"
+  },
+  "Seo": {
+    "institutionTitle": "{name}: programmes, tuition and deadlines",
+    "institutionDescription": "{name} ({place}). Programmes: {count}; levels: {levels}. Tuition, deadlines, requirements and the application link, from official sources.",
+    "countryDescription": "Study visa, working while you study, staying after graduation, cost of living and diploma recognition in {country}: a short guide with links to the official pages."
   }
 }

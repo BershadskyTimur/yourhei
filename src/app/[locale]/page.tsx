@@ -1,3 +1,6 @@
+import { JsonLd } from '@/components/JsonLd';
+import { organizationLd, websiteLd } from '@/lib/seo/structured';
+import { seoMetadata } from '@/lib/seo/metadata';
 import { hasLocale } from 'next-intl';
 import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
@@ -21,7 +24,8 @@ const sectionTitle = 'text-3xl font-medium tracking-tight text-text sm:text-4xl'
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
-  return { alternates: { canonical: `/${locale}` } };
+  const t = await getTranslations({ locale, namespace: 'Meta' });
+  return seoMetadata({ locale, path: '', title: t('title'), description: t('description') });
 }
 
 export default async function HomePage({ params }: { params: Promise<{ locale: string }> }) {
@@ -52,8 +56,11 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
     { icon: <GlobeIcon />, title: t('why.f4Title'), text: t('why.f4Text', { languages: LOCALES.length }) },
   ];
 
+  const tMeta = await getTranslations('Meta');
   return (
     <>
+      <JsonLd data={organizationLd()} />
+      <JsonLd data={websiteLd(locale, tMeta('description'))} />
       <section className="hero-bg">
         <div className="mx-auto grid max-w-[1500px] items-center gap-12 px-4 py-14 sm:py-20 lg:grid-cols-[minmax(0,1fr)_minmax(0,460px)] lg:gap-20 lg:py-24">
           <div>

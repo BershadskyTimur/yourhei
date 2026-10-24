@@ -1,5 +1,5 @@
 import type { MetadataRoute } from 'next';
-import { LOCALE_CODES } from '@/config/locales';
+import { INDEXED_LOCALES, X_DEFAULT_LOCALE } from '@/config/seo';
 import { SITEMAP_CHUNK } from '@/lib/institutions/sitemap';
 import { getSitemapPoints } from '@/lib/institutions/summaries';
 import { GUIDES } from '@/lib/countries-guide/guides';
@@ -9,7 +9,7 @@ import { siteUrl } from '@/lib/site-url';
 export const revalidate = 86400;
 
 // A sitemap file may hold at most 50 000 addresses (and about 50 MB). Every institution has one address per
-// language, so the institutions are split into several files of 300 institutions each (/sitemap/0.xml, /sitemap/1.xml ...).
+// indexed language (see config/seo.ts), so the institutions are split into files of SITEMAP_CHUNK institutions (/sitemap/0.xml, /sitemap/1.xml ...).
 // Only institutions that have programmes are listed (see lib/institutions/sitemap.ts).
 const STATIC_PAGES = ['', '/catalog', '/scholarships', '/countries', '/for-institutions', '/methodology', '/about', '/contact', '/privacy', '/terms'];
 
@@ -18,13 +18,13 @@ export async function generateSitemaps() {
   return Array.from({ length: Math.max(1, Math.ceil(items.length / SITEMAP_CHUNK)) }, (_, id) => ({ id }));
 }
 
-/** Every page in every language, with links between the language versions (hreflang). */
+/** Every page in the languages offered to search engines, with links between the language versions (hreflang). */
 export default async function sitemap(props: { id: Promise<string> }): Promise<MetadataRoute.Sitemap> {
   const id = Number(await props.id);
   const base = siteUrl();
-  const alternates = (path: string) => ({ languages: Object.fromEntries(LOCALE_CODES.map((l) => [l, `${base}/${l}${path}`])) });
+  const alternates = (path: string) => ({ languages: { ...Object.fromEntries(INDEXED_LOCALES.map((l) => [l, `${base}/${l}${path}`])), 'x-default': `${base}/${X_DEFAULT_LOCALE}${path}` } });
   const items = await getSitemapPoints();
   const slice = items.slice(id * SITEMAP_CHUNK, (id + 1) * SITEMAP_CHUNK);
   const paths = [...(id === 0 ? [...STATIC_PAGES, ...GUIDES.map((g) => `/countries/${g.country.toLowerCase()}`), ...studyCountries().map((c) => `/study/${c.toLowerCase()}`), ...COMBOS.map((c) => `/study/${c.country.toLowerCase()}/${fieldSlug(c.code)}`)] : []), ...slice.map((i) => `/institutions/${i.country.toLowerCase()}/${i.slug}`)];
-  return paths.flatMap((path) => LOCALE_CODES.map((l) => ({ url: `${base}/${l}${path}`, alternates: alternates(path) })));
+  return paths.flatMap((path) => INDEXED_LOCALES.map((l) => ({ url: `${base}/${l}${path}`, alternates: alternates(path) })));
 }

@@ -1327,5 +1327,10 @@
     "sent": "Merci ! Nous allons vérifier.",
     "failed": "Envoi impossible. Réessayez ou écrivez-nous par e-mail.",
     "cancel": "Annuler"
+  },
+  "Seo": {
+    "institutionTitle": "{name} : programmes, frais et dates limites",
+    "institutionDescription": "{name} ({place}). Programmes : {count} ; niveaux : {levels}. Frais, dates limites, conditions et lien de candidature, issus de sources officielles.",
+    "countryDescription": "Visa d’études, travailler pendant les études, rester après le diplôme, coût de la vie et reconnaissance du diplôme en {country} : un guide court avec des liens vers les pages officielles."
   }
 }

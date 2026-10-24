@@ -1,3 +1,6 @@
+import { JsonLd } from '@/components/JsonLd';
+import { breadcrumbList } from '@/lib/seo/structured';
+import { seoMetadata, trimDescription } from '@/lib/seo/metadata';
 import type { Metadata } from 'next';
 import { hasLocale } from 'next-intl';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
@@ -19,7 +22,10 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   if (!hasLocale(routing.locales, locale) || !COUNTRY_CODES.has(code) || combosOfCountry(code).length === 0) return {};
   const t = await getTranslations({ locale, namespace: 'Study' });
   const name = new Intl.DisplayNames([locale], { type: 'region' }).of(code) ?? code;
-  return { title: t('hubTitle', { country: name }), alternates: { canonical: `/${locale}/study/${country.toLowerCase()}` } };
+  const combos = combosOfCountry(code);
+  const fields = combos.length;
+  const programmes = combos.reduce((n, c) => n + c.programmes, 0);
+  return seoMetadata({ locale, path: `/study/${country.toLowerCase()}`, title: t('hubTitle', { country: name }), description: trimDescription(t('hubIntro', { fields, programmes })) });
 }
 
 /** Every field of study with programmes in a country. */
@@ -39,6 +45,7 @@ export default async function StudyCountryPage({ params }: { params: Params }) {
   const programmes = combos.reduce((n, c) => n + c.programmes, 0);
   return (
     <PageShell title={t('hubTitle', { country: name })}>
+      <JsonLd data={breadcrumbList(locale, [{ name: 'YourHEI', path: '' }, { name, path: `/study/${country.toLowerCase()}` }])} />
       <p>{t('hubIntro', { fields: combos.length, programmes })}</p>
       <ul className="grid gap-3 text-base sm:grid-cols-2">
         {fields.map((f) => (

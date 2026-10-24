@@ -1327,5 +1327,10 @@
     "sent": "Dziękujemy! Sprawdzimy to.",
     "failed": "Nie udało się wysłać. Spróbuj ponownie lub napisz do nas e-mailem.",
     "cancel": "Anuluj"
+  },
+  "Seo": {
+    "institutionTitle": "{name}: programy, czesne i terminy",
+    "institutionDescription": "{name} ({place}). Programy: {count}; poziomy: {levels}. Czesne, terminy, wymagania i link do aplikowania z oficjalnych źródeł.",
+    "countryDescription": "Wiza studencka, praca podczas studiów, pozostanie po ukończeniu, koszty życia i uznanie dyplomu: {country}. Krótki przewodnik z odnośnikami do oficjalnych stron."
   }
 }

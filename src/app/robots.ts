@@ -9,14 +9,14 @@ export const revalidate = 86400;
 const PRIVATE = ['/api/', '/auth/', '/*/admin', '/*/profile', '/*/survey', '/*/matches', '/*/favorites', '/*/compare', '/*/shared', '/*/cabinet', '/*?_rsc='];
 
 // Crawlers that copy content for AI training or sell SEO data. They bring no visitors, and their visits to thousands of
-// pages use up the hosting plan, so they are asked to stay away. (Search engines are not on this list.)
+// pages use up the hosting plan, so they are asked to stay away. (Search engines and the crawlers of AI search that
+// show a link to the page - OAI-SearchBot, PerplexityBot, Claude-SearchBot - are not on this list.)
 const GREEDY_BOTS = [
   'GPTBot',
   'CCBot',
   'ClaudeBot',
   'anthropic-ai',
   'Bytespider',
-  'PerplexityBot',
   'Amazonbot',
   'meta-externalagent',
   'AhrefsBot',
@@ -35,8 +35,7 @@ export default async function robots(): Promise<MetadataRoute.Robots> {
   return {
     rules: [
       { userAgent: GREEDY_BOTS, disallow: '/' },
-      // Search engines are welcome, but not too fast.
-      { userAgent: '*', allow: '/', disallow: PRIVATE, crawlDelay: 5 },
+      { userAgent: '*', allow: '/', disallow: PRIVATE },
     ],
     sitemap: Array.from({ length: files }, (_, i) => `${base}/sitemap/${i}.xml`),
   };

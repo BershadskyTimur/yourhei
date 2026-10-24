@@ -4,6 +4,7 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { PageShell } from '@/components/PageShell';
 import { Link } from '@/i18n/navigation';
+import { seoMetadata, trimDescription } from '@/lib/seo/metadata';
 import { routing } from '@/i18n/routing';
 import { GUIDES } from '@/lib/countries-guide/guides';
 
@@ -13,7 +14,7 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   const { locale } = await params;
   if (!hasLocale(routing.locales, locale)) return {};
   const t = await getTranslations({ locale, namespace: 'Countries' });
-  return { title: t('listTitle'), description: t('listIntro'), alternates: { canonical: `/${locale}/countries` } };
+  return seoMetadata({ locale, path: '/countries', title: t('listTitle'), description: trimDescription(t('listIntro')) });
 }
 
 export default async function CountriesPage({ params }: { params: Params }) {
