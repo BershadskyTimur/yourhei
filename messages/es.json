@@ -43,7 +43,8 @@
     "methodology": "Fuentes de datos",
     "countries": "Destinos de estudio",
     "forInstitutions": "Para instituciones",
-    "blog": "Blog"
+    "blog": "Blog",
+    "deadlines": "Plazos"
   },
   "Types": {
     "university": "Universidad",
@@ -1359,5 +1360,37 @@
     "noneConfirmed": "Todavía no hay en nuestros datos programas con una lista publicada de países que incluya este país. Consulta la lista completa de becas.",
     "severalCountries": "Varios países",
     "programmeDetails": "Detalles de los programas"
+  },
+  "Deadlines": {
+    "title": "Plazos de solicitud",
+    "seoTitle": "Plazos de solicitud para estudiantes internacionales",
+    "intro": "Las fechas en que se cierran las solicitudes en las universidades, según las páginas oficiales de los programas. Elige un país para ver todos los plazos por mes.",
+    "soonTitle": "Se cierran en los próximos 30 días",
+    "nothingSoon": "No hay plazos en los próximos 30 días. Elige un país abajo.",
+    "countriesTitle": "Por país",
+    "countryCount": "Plazos: {count} · instituciones: {institutions} · próximo: {date}",
+    "countryTitle": "Plazos de solicitud: {country}",
+    "countryIntro": "Próximos plazos en instituciones de {country}: {count} fechas en {institutions} instituciones. Abre una institución para ver sus programas y el enlace para solicitar.",
+    "programmes": "Programas: {count}",
+    "intake": "Inicio: {month}",
+    "appliesInternational": "Estudiantes internacionales",
+    "appliesEu": "Estudiantes de la UE",
+    "appliesAll": "Todos los solicitantes",
+    "note": "Las fechas proceden de las páginas oficiales de los programas en el momento de cargar los datos. Una universidad puede cambiar una fecha: confírmala siempre en la página oficial del programa antes de solicitar.",
+    "checkedAt": "Datos cargados el {date}",
+    "backToAll": "Todos los países",
+    "empty": "Todavía no hay plazos próximos para este país.",
+    "checklistCta": "Prepara tus documentos: lista de comprobación"
+  },
+  "Checklist": {
+    "title": "Lista de documentos",
+    "seoTitle": "Lista de documentos para estudiar en el extranjero",
+    "intro": "Los documentos que suelen hacer falta para solicitar plaza y el visado de estudiante. Marca los que ya tienes: la lista se guarda solo en este navegador.",
+    "progress": "{done} de {total} listos",
+    "reset": "Borrar",
+    "note": "Los documentos necesarios dependen del país y del programa: consulta la página del programa y la página oficial del servicio de inmigración del país. Esta lista es un punto de partida, no una garantía.",
+    "profileHint": "¿Has iniciado sesión? Tus documentos también se guardan en tu perfil.",
+    "profileLink": "Abrir perfil",
+    "calendarCta": "Ver los plazos de solicitud"
   }
 }

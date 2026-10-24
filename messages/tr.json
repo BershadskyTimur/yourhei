@@ -43,7 +43,8 @@
     "methodology": "Veri kaynakları",
     "countries": "Eğitim ülkeleri",
     "forInstitutions": "Kurumlar için",
-    "blog": "Blog"
+    "blog": "Blog",
+    "deadlines": "Son tarihler"
   },
   "Types": {
     "university": "Üniversite",
@@ -1359,5 +1360,37 @@
     "noneConfirmed": "Verilerimizde henüz bu ülkeyi içeren yayımlanmış ülke listesi olan bir program yok. Tüm burs listesine bakın.",
     "severalCountries": "Birkaç ülke",
     "programmeDetails": "Programların ayrıntıları"
+  },
+  "Deadlines": {
+    "title": "Başvuru son tarihleri",
+    "seoTitle": "Uluslararası öğrenciler için başvuru son tarihleri",
+    "intro": "Üniversitelerde başvuruların kapandığı tarihler, programların resmî sayfalarından alınmıştır. Tüm tarihleri aya göre görmek için bir ülke seçin.",
+    "soonTitle": "Önümüzdeki 30 günde kapanıyor",
+    "nothingSoon": "Önümüzdeki 30 günde son tarih yok. Aşağıdan bir ülke seçin.",
+    "countriesTitle": "Ülkeye göre",
+    "countryCount": "Son tarihler: {count} · kurumlar: {institutions} · en yakın: {date}",
+    "countryTitle": "Başvuru son tarihleri: {country}",
+    "countryIntro": "{country} kurumlarındaki yaklaşan son tarihler: {institutions} kurumda {count} tarih. Programları ve başvuru bağlantısını görmek için bir kurumu açın.",
+    "programmes": "Programlar: {count}",
+    "intake": "Dönem: {month}",
+    "appliesInternational": "Uluslararası öğrenciler",
+    "appliesEu": "AB öğrencileri",
+    "appliesAll": "Tüm adaylar",
+    "note": "Tarihler, veriler yüklendiği sırada programların resmî sayfalarından alınmıştır. Üniversite bir tarihi değiştirebilir: başvurmadan önce her zaman programın resmî sayfasından doğrulayın.",
+    "checkedAt": "Veriler {date} tarihinde yüklendi",
+    "backToAll": "Tüm ülkeler",
+    "empty": "Bu ülke için henüz yaklaşan son tarih yok.",
+    "checklistCta": "Belgelerinizi hazırlayın: kontrol listesi"
+  },
+  "Checklist": {
+    "title": "Belge kontrol listesi",
+    "seoTitle": "Yurt dışında eğitim için belge kontrol listesi",
+    "intro": "Başvuru ve öğrenci vizesi için genellikle gereken belgeler. Elinizde olanları işaretleyin: liste yalnızca bu tarayıcıda saklanır.",
+    "progress": "{total} belgeden {done} hazır",
+    "reset": "Temizle",
+    "note": "Gereken belgeler ülkeye ve programa bağlıdır: program sayfasına ve ülkenin göç idaresinin resmî sayfasına bakın. Bu liste bir başlangıç noktasıdır, garanti değildir.",
+    "profileHint": "Giriş yaptınız mı? Belgeleriniz profilinizde de saklanır.",
+    "profileLink": "Profili aç",
+    "calendarCta": "Başvuru son tarihlerine bak"
   }
 }

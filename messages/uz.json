@@ -43,7 +43,8 @@
     "methodology": "Ma’lumot manbalari",
     "countries": "Ta’lim yo‘nalishlari",
     "forInstitutions": "Muassasalar uchun",
-    "blog": "Blog"
+    "blog": "Blog",
+    "deadlines": "Muddatlar"
   },
   "Types": {
     "university": "Universitet",
@@ -1359,5 +1360,37 @@
     "noneConfirmed": "Ma’lumotlarimizda bu davlat kiritilgan e’lon qilingan davlatlar ro‘yxatli dastur hali yo‘q. To‘liq stipendiyalar ro‘yxatini ko‘ring.",
     "severalCountries": "Bir nechta davlat",
     "programmeDetails": "Dasturlar haqida batafsil"
+  },
+  "Deadlines": {
+    "title": "Hujjat topshirish muddatlari",
+    "seoTitle": "Xalqaro talabalar uchun hujjat topshirish muddatlari",
+    "intro": "Universitetlarda arizalar qabuli tugaydigan sanalar, dasturlarning rasmiy sahifalaridan olingan. Barcha muddatlarni oylar bo‘yicha ko‘rish uchun davlatni tanlang.",
+    "soonTitle": "Keyingi 30 kunda tugaydi",
+    "nothingSoon": "Keyingi 30 kunda muddatlar yo‘q. Quyida davlatni tanlang.",
+    "countriesTitle": "Davlatlar bo‘yicha",
+    "countryCount": "Muddatlar: {count} · muassasalar: {institutions} · eng yaqini: {date}",
+    "countryTitle": "Hujjat topshirish muddatlari: {country}",
+    "countryIntro": "{country} muassasalaridagi yaqinlashayotgan muddatlar: {institutions} ta muassasada {count} ta sana. Dasturlar va ariza havolasini ko‘rish uchun muassasani oching.",
+    "programmes": "Dasturlar: {count}",
+    "intake": "Qabul: {month}",
+    "appliesInternational": "Xalqaro talabalar",
+    "appliesEu": "Yevropa Ittifoqi talabalari",
+    "appliesAll": "Barcha abituriyentlar",
+    "note": "Sanalar ma’lumotlar yuklangan paytda dasturlarning rasmiy sahifalaridan olingan. Universitet sanani o‘zgartirishi mumkin: ariza berishdan oldin uni doim dasturning rasmiy sahifasida tekshiring.",
+    "checkedAt": "Ma’lumotlar {date} da yuklangan",
+    "backToAll": "Barcha davlatlar",
+    "empty": "Bu davlat uchun hali yaqinlashayotgan muddat yo‘q.",
+    "checklistCta": "Hujjatlarni tayyorlang: nazorat ro‘yxati"
+  },
+  "Checklist": {
+    "title": "Hujjatlar ro‘yxati",
+    "seoTitle": "Chet elda o‘qish uchun hujjatlar ro‘yxati",
+    "intro": "Ariza berish va talaba vizasi uchun odatda kerak bo‘ladigan hujjatlar. Sizda bor hujjatlarni belgilang: ro‘yxat faqat shu brauzerda saqlanadi.",
+    "progress": "{total} tadan {done} tayyor",
+    "reset": "Tozalash",
+    "note": "Qaysi hujjatlar kerakligi davlat va dasturga bog‘liq: dastur sahifasini va davlat migratsiya xizmatining rasmiy sahifasini ko‘ring. Bu ro‘yxat boshlang‘ich nuqta, kafolat emas.",
+    "profileHint": "Tizimga kirdingizmi? Hujjatlaringiz profilda ham saqlanadi.",
+    "profileLink": "Profilni ochish",
+    "calendarCta": "Topshirish muddatlarini ko‘rish"
   }
 }

@@ -43,7 +43,8 @@
     "methodology": "Źródła danych",
     "countries": "Kierunki studiów za granicą",
     "forInstitutions": "Dla instytucji",
-    "blog": "Blog"
+    "blog": "Blog",
+    "deadlines": "Terminy"
   },
   "Types": {
     "university": "Uniwersytet",
@@ -1359,5 +1360,37 @@
     "noneConfirmed": "W naszych danych nie ma jeszcze programu z opublikowaną listą krajów obejmującą ten kraj. Sprawdź pełną listę stypendiów.",
     "severalCountries": "Kilka krajów",
     "programmeDetails": "Szczegóły programów"
+  },
+  "Deadlines": {
+    "title": "Terminy składania dokumentów",
+    "seoTitle": "Terminy składania dokumentów dla studentów zagranicznych",
+    "intro": "Daty zamknięcia rekrutacji na uczelniach, według oficjalnych stron programów. Wybierz kraj, aby zobaczyć wszystkie terminy według miesięcy.",
+    "soonTitle": "Kończą się w ciągu 30 dni",
+    "nothingSoon": "W ciągu 30 dni nie ma terminów. Wybierz kraj poniżej.",
+    "countriesTitle": "Według krajów",
+    "countryCount": "Terminy: {count} · placówki: {institutions} · najbliższy: {date}",
+    "countryTitle": "Terminy składania dokumentów: {country}",
+    "countryIntro": "Nadchodzące terminy w placówkach w kraju {country}: {count} dat w {institutions} placówkach. Otwórz placówkę, aby zobaczyć programy i link do aplikowania.",
+    "programmes": "Programy: {count}",
+    "intake": "Nabór: {month}",
+    "appliesInternational": "Studenci zagraniczni",
+    "appliesEu": "Studenci z UE",
+    "appliesAll": "Wszyscy kandydaci",
+    "note": "Daty pochodzą z oficjalnych stron programów z chwili wczytania danych. Uczelnia może zmienić termin: zawsze potwierdź go na oficjalnej stronie programu przed złożeniem wniosku.",
+    "checkedAt": "Dane wczytano {date}",
+    "backToAll": "Wszystkie kraje",
+    "empty": "Dla tego kraju nie ma jeszcze nadchodzących terminów.",
+    "checklistCta": "Przygotuj dokumenty: lista kontrolna"
+  },
+  "Checklist": {
+    "title": "Lista dokumentów",
+    "seoTitle": "Lista dokumentów na studia za granicą",
+    "intro": "Dokumenty zwykle potrzebne do aplikowania i do wizy studenckiej. Zaznacz te, które już masz: lista zapisuje się tylko w tej przeglądarce.",
+    "progress": "Gotowe: {done} z {total}",
+    "reset": "Wyczyść",
+    "note": "Wymagane dokumenty zależą od kraju i programu: sprawdź stronę programu i oficjalną stronę urzędu migracyjnego kraju. Ta lista to punkt wyjścia, a nie gwarancja.",
+    "profileHint": "Zalogowany? Twoje dokumenty są też zapisane w profilu.",
+    "profileLink": "Otwórz profil",
+    "calendarCta": "Zobacz terminy składania dokumentów"
   }
 }

@@ -43,7 +43,8 @@
     "methodology": "Sources des données",
     "countries": "Destinations d’études",
     "forInstitutions": "Pour les établissements",
-    "blog": "Blog"
+    "blog": "Blog",
+    "deadlines": "Dates limites"
   },
   "Types": {
     "university": "Université",
@@ -1359,5 +1360,37 @@
     "noneConfirmed": "Nos données ne contiennent pas encore de programme avec une liste de pays publiée qui inclut ce pays. Consultez la liste complète des bourses.",
     "severalCountries": "Plusieurs pays",
     "programmeDetails": "Détails des programmes"
+  },
+  "Deadlines": {
+    "title": "Dates limites de candidature",
+    "seoTitle": "Dates limites de candidature pour les étudiants internationaux",
+    "intro": "Les dates de clôture des candidatures dans les universités, d’après les pages officielles des programmes. Choisissez un pays pour voir toutes les dates par mois.",
+    "soonTitle": "Clôture dans les 30 prochains jours",
+    "nothingSoon": "Aucune date limite dans les 30 prochains jours. Choisissez un pays ci-dessous.",
+    "countriesTitle": "Par pays",
+    "countryCount": "Dates : {count} · établissements : {institutions} · prochaine : {date}",
+    "countryTitle": "Dates limites de candidature : {country}",
+    "countryIntro": "Prochaines dates limites dans les établissements de {country} : {count} dates dans {institutions} établissements. Ouvrez un établissement pour voir ses programmes et le lien de candidature.",
+    "programmes": "Programmes : {count}",
+    "intake": "Rentrée : {month}",
+    "appliesInternational": "Étudiants internationaux",
+    "appliesEu": "Étudiants de l’UE",
+    "appliesAll": "Tous les candidats",
+    "note": "Les dates proviennent des pages officielles des programmes au moment du chargement des données. Une université peut changer une date : confirmez-la toujours sur la page officielle du programme avant de candidater.",
+    "checkedAt": "Données chargées le {date}",
+    "backToAll": "Tous les pays",
+    "empty": "Aucune date limite à venir pour ce pays pour l’instant.",
+    "checklistCta": "Préparez vos documents : liste de contrôle"
+  },
+  "Checklist": {
+    "title": "Liste de documents",
+    "seoTitle": "Liste de documents pour étudier à l’étranger",
+    "intro": "Les documents généralement demandés pour candidater et obtenir un visa étudiant. Cochez ceux que vous avez déjà : la liste est enregistrée uniquement dans ce navigateur.",
+    "progress": "{done} sur {total} prêts",
+    "reset": "Effacer",
+    "note": "Les documents nécessaires dépendent du pays et du programme : consultez la page du programme et la page officielle du service d’immigration du pays. Cette liste est un point de départ, pas une garantie.",
+    "profileHint": "Connecté ? Vos documents sont aussi conservés dans votre profil.",
+    "profileLink": "Ouvrir le profil",
+    "calendarCta": "Voir les dates limites"
   }
 }

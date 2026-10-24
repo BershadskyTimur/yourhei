@@ -43,7 +43,8 @@
     "methodology": "Məlumat mənbələri",
     "countries": "Təhsil istiqamətləri",
     "forInstitutions": "Müəssisələr üçün",
-    "blog": "Bloq"
+    "blog": "Bloq",
+    "deadlines": "Müddətlər"
   },
   "Types": {
     "university": "Universitet",
@@ -1359,5 +1360,37 @@
     "noneConfirmed": "Məlumatlarımızda bu ölkənin daxil olduğu dərc edilmiş ölkə siyahısı olan proqram hələ yoxdur. Tam təqaüd siyahısına baxın.",
     "severalCountries": "Bir neçə ölkə",
     "programmeDetails": "Proqramlar haqqında ətraflı"
+  },
+  "Deadlines": {
+    "title": "Müraciət müddətləri",
+    "seoTitle": "Beynəlxalq tələbələr üçün müraciət müddətləri",
+    "intro": "Universitetlərdə müraciətlərin bağlandığı tarixlər, proqramların rəsmi səhifələrindən götürülüb. Bütün müddətləri aylar üzrə görmək üçün ölkə seçin.",
+    "soonTitle": "Növbəti 30 gündə bağlanır",
+    "nothingSoon": "Növbəti 30 gündə müddət yoxdur. Aşağıdan ölkə seçin.",
+    "countriesTitle": "Ölkələr üzrə",
+    "countryCount": "Müddətlər: {count} · müəssisələr: {institutions} · ən yaxın: {date}",
+    "countryTitle": "Müraciət müddətləri: {country}",
+    "countryIntro": "{country} müəssisələrində yaxınlaşan müddətlər: {institutions} müəssisədə {count} tarix. Proqramları və müraciət linkini görmək üçün müəssisəni açın.",
+    "programmes": "Proqramlar: {count}",
+    "intake": "Qəbul: {month}",
+    "appliesInternational": "Beynəlxalq tələbələr",
+    "appliesEu": "Aİ tələbələri",
+    "appliesAll": "Bütün abituriyentlər",
+    "note": "Tarixlər məlumatların yükləndiyi vaxt proqramların rəsmi səhifələrindən götürülüb. Universitet tarixi dəyişə bilər: müraciətdən əvvəl həmişə proqramın rəsmi səhifəsində yoxlayın.",
+    "checkedAt": "Məlumatlar {date} tarixində yüklənib",
+    "backToAll": "Bütün ölkələr",
+    "empty": "Bu ölkə üçün hələ yaxınlaşan müddət yoxdur.",
+    "checklistCta": "Sənədləri hazırlayın: yoxlama siyahısı"
+  },
+  "Checklist": {
+    "title": "Sənədlərin siyahısı",
+    "seoTitle": "Xaricdə təhsil üçün sənədlərin siyahısı",
+    "intro": "Müraciət və tələbə vizası üçün adətən lazım olan sənədlər. Artıq sahib olduqlarınızı işarələyin: siyahı yalnız bu brauzerdə saxlanılır.",
+    "progress": "{total} sənəddən {done} hazırdır",
+    "reset": "Təmizlə",
+    "note": "Lazım olan sənədlər ölkədən və proqramdan asılıdır: proqram səhifəsinə və ölkənin miqrasiya xidmətinin rəsmi səhifəsinə baxın. Bu siyahı başlanğıc nöqtəsidir, zəmanət deyil.",
+    "profileHint": "Daxil olmusunuz? Sənədləriniz profildə də saxlanılır.",
+    "profileLink": "Profili aç",
+    "calendarCta": "Müraciət müddətlərinə bax"
   }
 }

@@ -43,7 +43,8 @@
     "methodology": "数据来源",
     "countries": "留学目的地",
     "forInstitutions": "面向院校",
-    "blog": "博客"
+    "blog": "博客",
+    "deadlines": "截止日期"
   },
   "Types": {
     "university": "大学",
@@ -1359,5 +1360,37 @@
     "noneConfirmed": "我们的数据中暂无公布了国家名单且包含该国的项目。请查看完整奖学金列表。",
     "severalCountries": "多个国家",
     "programmeDetails": "项目详情"
+  },
+  "Deadlines": {
+    "title": "申请截止日期",
+    "seoTitle": "国际学生申请截止日期",
+    "intro": "各大学的申请截止日期，来自项目的官方页面。选择国家，按月份查看所有截止日期。",
+    "soonTitle": "未来 30 天内截止",
+    "nothingSoon": "未来 30 天内没有截止日期。请在下方选择国家。",
+    "countriesTitle": "按国家",
+    "countryCount": "截止日期：{count} · 院校：{institutions} · 最近：{date}",
+    "countryTitle": "申请截止日期：{country}",
+    "countryIntro": "{country}院校即将到来的截止日期：{institutions} 所院校共 {count} 个日期。打开院校可查看其项目和申请链接。",
+    "programmes": "项目：{count}",
+    "intake": "入学批次：{month}",
+    "appliesInternational": "国际学生",
+    "appliesEu": "欧盟学生",
+    "appliesAll": "所有申请人",
+    "note": "日期来自数据加载时项目的官方页面。大学可能更改日期：申请前请务必在项目官方页面确认。",
+    "checkedAt": "数据加载于 {date}",
+    "backToAll": "所有国家",
+    "empty": "该国暂时没有即将到来的截止日期。",
+    "checklistCta": "准备材料：清单"
+  },
+  "Checklist": {
+    "title": "材料清单",
+    "seoTitle": "留学材料清单",
+    "intro": "申请和办理学生签证通常需要的材料。勾选您已有的材料：清单仅保存在此浏览器中。",
+    "progress": "已准备 {done}/{total}",
+    "reset": "清除",
+    "note": "所需材料取决于国家和项目：请查看项目页面和该国移民部门的官方页面。此清单只是起点，不作保证。",
+    "profileHint": "已登录？您的材料状态也保存在个人资料中。",
+    "profileLink": "打开个人资料",
+    "calendarCta": "查看申请截止日期"
   }
 }

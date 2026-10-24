@@ -12,7 +12,7 @@ const NARROW = new Set(isced.filter((e) => e.c.length === 3).map((e) => e.c));
 const programmes = new Map(); // "AU|061" -> count
 const withProgrammes = new Set(); // every country that has at least one programme (for the admin panel)
 const institutions = new Map(); // "AU|061" -> Set of slugs
-for (const file of readdirSync(DIR).filter((f) => f.endsWith('.json') && f !== 'study-combos.json' && f !== 'programme-countries.json')) {
+for (const file of readdirSync(DIR).filter((f) => f.endsWith('.json') && f !== 'study-combos.json' && f !== 'programme-countries.json' && f !== 'deadlines.json')) {
   const data = JSON.parse(readFileSync(path.join(DIR, file), 'utf8'));
   for (const inst of data.institutions ?? []) {
     if ((inst.programs ?? []).length > 0) withProgrammes.add(inst.country);

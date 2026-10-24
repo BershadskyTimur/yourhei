@@ -43,7 +43,8 @@
     "methodology": "Data sources",
     "countries": "Study destinations",
     "forInstitutions": "For institutions",
-    "blog": "Blog"
+    "blog": "Blog",
+    "deadlines": "Deadlines"
   },
   "Types": {
     "university": "University",
@@ -1359,5 +1360,37 @@
     "noneConfirmed": "No programme with a published list of countries that includes this country is in our data yet. Check the full scholarship list.",
     "severalCountries": "Several countries",
     "programmeDetails": "About the programmes"
+  },
+  "Deadlines": {
+    "title": "Application deadlines",
+    "seoTitle": "Application deadlines for international students",
+    "intro": "The dates when applications close at universities, taken from the official pages of the programmes. Choose a country to see every deadline by month.",
+    "soonTitle": "Closing in the next 30 days",
+    "nothingSoon": "No deadlines in the next 30 days. Choose a country below.",
+    "countriesTitle": "By country",
+    "countryCount": "Deadlines: {count} · institutions: {institutions} · next: {date}",
+    "countryTitle": "Application deadlines: {country}",
+    "countryIntro": "Upcoming deadlines at institutions in {country}: {count} dates at {institutions} institutions. Open an institution to see its programmes and the link to apply.",
+    "programmes": "Programmes: {count}",
+    "intake": "Intake: {month}",
+    "appliesInternational": "International students",
+    "appliesEu": "EU students",
+    "appliesAll": "All applicants",
+    "note": "The dates are taken from the official pages of the programmes when the data was loaded. A university can change a date: always confirm it on the official page of the programme before you apply.",
+    "checkedAt": "Data loaded on {date}",
+    "backToAll": "All countries",
+    "empty": "There are no upcoming deadlines for this country yet.",
+    "checklistCta": "Prepare your documents: checklist"
+  },
+  "Checklist": {
+    "title": "Document checklist",
+    "seoTitle": "Document checklist for studying abroad",
+    "intro": "The documents that are usually needed to apply and to get a student visa. Tick what you already have: the list is saved only in this browser.",
+    "progress": "{done} of {total} ready",
+    "reset": "Clear",
+    "note": "Which documents you need depends on the country and the programme: check the programme page and the official page of the country’s migration service. This list is a starting point, not a guarantee.",
+    "profileHint": "Signed in? Your documents are also kept in your profile.",
+    "profileLink": "Open profile",
+    "calendarCta": "See the application deadlines"
   }
 }

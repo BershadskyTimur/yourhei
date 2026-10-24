@@ -43,7 +43,8 @@
     "methodology": "Datenquellen",
     "countries": "Studienziele",
     "forInstitutions": "Für Einrichtungen",
-    "blog": "Blog"
+    "blog": "Blog",
+    "deadlines": "Fristen"
   },
   "Types": {
     "university": "Universität",
@@ -1359,5 +1360,37 @@
     "noneConfirmed": "In unseren Daten gibt es noch kein Programm mit veröffentlichter Länderliste, die dieses Land enthält. Sehen Sie die vollständige Stipendienliste.",
     "severalCountries": "Mehrere Länder",
     "programmeDetails": "Details zu den Programmen"
+  },
+  "Deadlines": {
+    "title": "Bewerbungsfristen",
+    "seoTitle": "Bewerbungsfristen für internationale Studierende",
+    "intro": "Die Termine, zu denen die Bewerbung an Hochschulen endet, nach den offiziellen Seiten der Studiengänge. Wählen Sie ein Land, um alle Fristen nach Monat zu sehen.",
+    "soonTitle": "Enden in den nächsten 30 Tagen",
+    "nothingSoon": "In den nächsten 30 Tagen enden keine Fristen. Wählen Sie unten ein Land.",
+    "countriesTitle": "Nach Land",
+    "countryCount": "Fristen: {count} · Einrichtungen: {institutions} · nächste: {date}",
+    "countryTitle": "Bewerbungsfristen: {country}",
+    "countryIntro": "Kommende Fristen an Einrichtungen in {country}: {count} Termine an {institutions} Einrichtungen. Öffnen Sie eine Einrichtung, um ihre Studiengänge und den Bewerbungslink zu sehen.",
+    "programmes": "Studiengänge: {count}",
+    "intake": "Studienbeginn: {month}",
+    "appliesInternational": "Internationale Studierende",
+    "appliesEu": "EU-Studierende",
+    "appliesAll": "Alle Bewerber",
+    "note": "Die Termine stammen von den offiziellen Seiten der Studiengänge zum Zeitpunkt des Datenimports. Eine Hochschule kann einen Termin ändern: Bestätigen Sie ihn vor der Bewerbung immer auf der offiziellen Seite des Studiengangs.",
+    "checkedAt": "Daten geladen am {date}",
+    "backToAll": "Alle Länder",
+    "empty": "Für dieses Land gibt es noch keine kommenden Fristen.",
+    "checklistCta": "Unterlagen vorbereiten: Checkliste"
+  },
+  "Checklist": {
+    "title": "Checkliste Unterlagen",
+    "seoTitle": "Checkliste der Unterlagen für das Studium im Ausland",
+    "intro": "Die Unterlagen, die für die Bewerbung und das Studentenvisum meist nötig sind. Haken Sie ab, was Sie schon haben: Die Liste wird nur in diesem Browser gespeichert.",
+    "progress": "{done} von {total} bereit",
+    "reset": "Zurücksetzen",
+    "note": "Welche Unterlagen nötig sind, hängt vom Land und vom Studiengang ab: Sehen Sie auf der Seite des Studiengangs und der offiziellen Seite der Migrationsbehörde nach. Diese Liste ist ein Ausgangspunkt, keine Garantie.",
+    "profileHint": "Angemeldet? Ihre Unterlagen werden auch im Profil gespeichert.",
+    "profileLink": "Profil öffnen",
+    "calendarCta": "Bewerbungsfristen ansehen"
   }
 }
