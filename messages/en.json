@@ -28,7 +28,8 @@
     "favorites": "My list",
     "navLabel": "Main sections",
     "catalog": "Catalog",
-    "scholarships": "Scholarships"
+    "scholarships": "Scholarships",
+    "blog": "Blog"
   },
   "Footer": {
     "navLabel": "Site information",
@@ -41,7 +42,8 @@
     "tagline": "Find where to study: universities, colleges and schools on one map, with matches that explain themselves.",
     "methodology": "Data sources",
     "countries": "Study destinations",
-    "forInstitutions": "For institutions"
+    "forInstitutions": "For institutions",
+    "blog": "Blog"
   },
   "Types": {
     "university": "University",
@@ -1332,5 +1334,30 @@
     "institutionTitle": "{name}: programmes, tuition and deadlines",
     "institutionDescription": "{name} ({place}). Programmes: {count}; levels: {levels}. Tuition, deadlines, requirements and the application link, from official sources.",
     "countryDescription": "Study visa, working while you study, staying after graduation, cost of living and diploma recognition in {country}: a short guide with links to the official pages."
+  },
+  "Blog": {
+    "title": "Blog",
+    "seoTitle": "YourHEI blog: studying abroad, visas and scholarships",
+    "intro": "Guides for applicants: visa and work rules, money, scholarships and how to choose a country. Every fact is taken from official pages and dated.",
+    "empty": "The first articles are coming soon.",
+    "readMinutes": "{count} min read",
+    "readArticle": "Read",
+    "published": "Published {date}",
+    "updated": "Updated {date}",
+    "author": "YourHEI editorial team",
+    "toc": "Contents",
+    "related": "Read next",
+    "backToList": "All articles",
+    "onlyRuEn": "Blog articles are available in Russian and English for now. You are reading the English version.",
+    "rss": "RSS feed",
+    "disclaimer": "This article is general information, not legal or immigration advice. Rules and amounts change: check the official pages linked in the text before you apply.",
+    "officialPage": "Official page",
+    "notCollected": "We have not collected this yet: look at the official pages of the country.",
+    "checked": "Checked on {date}",
+    "perMonth": "{amount} per month",
+    "citizensOf": "Citizens of {country}",
+    "noneConfirmed": "No programme with a published list of countries that includes this country is in our data yet. Check the full scholarship list.",
+    "severalCountries": "Several countries",
+    "programmeDetails": "About the programmes"
   }
 }

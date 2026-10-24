@@ -9,7 +9,7 @@ import { PageShell } from '@/components/PageShell';
 import { Link } from '@/i18n/navigation';
 import { routing } from '@/i18n/routing';
 import { GUIDES, GUIDE_ACCESSED, guideOf, livingMinimum, type GuideBlock } from '@/lib/countries-guide/guides';
-import { pickLocalized } from '@/lib/institutions/localized';
+import { pickText } from '@/lib/institutions/localized';
 import { combosOfCountry } from '@/lib/study/combos';
 
 type Params = Promise<{ locale: string; country: string }>;
@@ -53,7 +53,7 @@ export default async function CountryPage({ params }: { params: Params }) {
       <h2 id={id} className="text-xl font-semibold text-text">{title}</h2>
       {block ? (
         <>
-          {block.summary && <p className="mt-2 text-base">{pickLocalized(block.summary, locale).text}</p>}
+          {block.summary && <p className="mt-2 text-base">{pickText(block.summary, locale).text}</p>}
           <p className="mt-2 text-base">
             <a href={block.url} target="_blank" rel="noopener noreferrer" className="font-semibold text-accent-text underline underline-offset-4">{t('officialPage')}</a>
           </p>

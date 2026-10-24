@@ -29,6 +29,34 @@ export function websiteLd(locale: string, description: string) {
   return { '@context': 'https://schema.org', '@type': 'WebSite', name: 'YourHEI', url: `${base}/${locale}`, inLanguage: locale, description };
 }
 
+export interface ArticleLdInput {
+  locale: string;
+  path: string;
+  title: string;
+  description: string;
+  published: string;
+  modified: string;
+}
+
+/** A blog article: who wrote it (the editorial team of the site), when, and in which language. */
+export function articleLd(a: ArticleLdInput) {
+  const base = siteUrl();
+  const url = `${base}/${a.locale}${a.path}`;
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: a.title,
+    description: a.description,
+    inLanguage: a.locale,
+    datePublished: a.published,
+    dateModified: a.modified,
+    mainEntityOfPage: url,
+    image: `${base}/og.png`,
+    author: { '@type': 'Organization', name: 'YourHEI', url: base },
+    publisher: { '@type': 'Organization', name: 'YourHEI', url: base, logo: { '@type': 'ImageObject', url: `${base}/og.png` } },
+  };
+}
+
 /** The text put into the <script> tag: "<" is escaped so that the data can never close the tag. */
 export function jsonLdText(data: unknown): string {
   return JSON.stringify(data).replace(/</g, '\\u003c');

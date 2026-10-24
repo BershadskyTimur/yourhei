@@ -28,7 +28,8 @@
     "favorites": "Meine Liste",
     "navLabel": "Hauptbereiche",
     "catalog": "Katalog",
-    "scholarships": "Stipendien"
+    "scholarships": "Stipendien",
+    "blog": "Blog"
   },
   "Footer": {
     "navLabel": "Informationen zur Website",
@@ -41,7 +42,8 @@
     "tagline": "Finde, wo du studieren kannst: Universitäten, Colleges und Schulen auf einer Karte, mit Treffern, die sich selbst erklären.",
     "methodology": "Datenquellen",
     "countries": "Studienziele",
-    "forInstitutions": "Für Einrichtungen"
+    "forInstitutions": "Für Einrichtungen",
+    "blog": "Blog"
   },
   "Types": {
     "university": "Universität",
@@ -1332,5 +1334,30 @@
     "institutionTitle": "{name}: Programme, Kosten und Fristen",
     "institutionDescription": "{name} ({place}). Programme: {count}; Stufen: {levels}. Kosten, Fristen, Voraussetzungen und Bewerbungslink aus offiziellen Quellen.",
     "countryDescription": "Studienvisum, Arbeiten neben dem Studium, Bleiben nach dem Abschluss, Lebenshaltungskosten und Anerkennung des Abschlusses in {country}: ein kurzer Leitfaden mit Links zu den offiziellen Seiten."
+  },
+  "Blog": {
+    "title": "Blog",
+    "seoTitle": "YourHEI-Blog: Studium im Ausland, Visa und Stipendien",
+    "intro": "Ratgeber für Bewerber: Visa- und Arbeitsregeln, Geld, Stipendien und Länderwahl. Jede Angabe stammt von offiziellen Seiten und ist datiert.",
+    "empty": "Die ersten Artikel erscheinen bald.",
+    "readMinutes": "{count} Min. Lesezeit",
+    "readArticle": "Lesen",
+    "published": "Veröffentlicht am {date}",
+    "updated": "Aktualisiert am {date}",
+    "author": "Redaktion YourHEI",
+    "toc": "Inhalt",
+    "related": "Weiterlesen",
+    "backToList": "Alle Artikel",
+    "onlyRuEn": "Blogartikel gibt es vorerst auf Russisch und Englisch. Sie lesen die englische Version.",
+    "rss": "RSS-Feed",
+    "disclaimer": "Dieser Artikel ist eine allgemeine Information, keine Rechts- oder Migrationsberatung. Regeln und Beträge ändern sich: Prüfen Sie vor der Bewerbung die verlinkten offiziellen Seiten.",
+    "officialPage": "Offizielle Seite",
+    "notCollected": "Das haben wir noch nicht zusammengetragen: Sehen Sie auf den offiziellen Seiten des Landes nach.",
+    "checked": "Geprüft am {date}",
+    "perMonth": "{amount} pro Monat",
+    "citizensOf": "Staatsangehörige von {country}",
+    "noneConfirmed": "In unseren Daten gibt es noch kein Programm mit veröffentlichter Länderliste, die dieses Land enthält. Sehen Sie die vollständige Stipendienliste.",
+    "severalCountries": "Mehrere Länder",
+    "programmeDetails": "Details zu den Programmen"
   }
 }

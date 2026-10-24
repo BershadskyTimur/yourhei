@@ -1,4 +1,5 @@
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
+import { isIndexedLocale } from '@/config/seo';
 import { Link } from '@/i18n/navigation';
 import { AuthButton } from './AuthButton';
 import { LocaleSwitcher } from './LocaleSwitcher';
@@ -11,6 +12,7 @@ const navLink =
 
 export function Header() {
   const t = useTranslations('Header');
+  const locale = useLocale();
 
   return (
     <header className="sticky top-0 z-30 bg-bg/95 backdrop-blur">
@@ -22,6 +24,8 @@ export function Header() {
         <nav aria-label={t('navLabel')} className="order-last flex w-full gap-7 text-base md:order-none md:w-auto">
           <Link href="/catalog" className={navLink}>{t('catalog')}</Link>
           <Link href="/scholarships" className={navLink}>{t('scholarships')}</Link>
+          {/* the blog is written in the languages offered to search engines (see config/seo.ts) */}
+          {isIndexedLocale(locale) && <Link href="/blog" className={navLink}>{t('blog')}</Link>}
         </nav>
 
         <div className="flex flex-wrap items-center gap-2">

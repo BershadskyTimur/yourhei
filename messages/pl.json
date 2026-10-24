@@ -28,7 +28,8 @@
     "favorites": "Moja lista",
     "navLabel": "Główne sekcje",
     "catalog": "Katalog",
-    "scholarships": "Stypendia"
+    "scholarships": "Stypendia",
+    "blog": "Blog"
   },
   "Footer": {
     "navLabel": "Informacje o serwisie",
@@ -41,7 +42,8 @@
     "tagline": "Znajdź, gdzie studiować: uniwersytety, college’e i szkoły na jednej mapie, z dopasowaniami, które same się tłumaczą.",
     "methodology": "Źródła danych",
     "countries": "Kierunki studiów za granicą",
-    "forInstitutions": "Dla instytucji"
+    "forInstitutions": "Dla instytucji",
+    "blog": "Blog"
   },
   "Types": {
     "university": "Uniwersytet",
@@ -1332,5 +1334,30 @@
     "institutionTitle": "{name}: programy, czesne i terminy",
     "institutionDescription": "{name} ({place}). Programy: {count}; poziomy: {levels}. Czesne, terminy, wymagania i link do aplikowania z oficjalnych źródeł.",
     "countryDescription": "Wiza studencka, praca podczas studiów, pozostanie po ukończeniu, koszty życia i uznanie dyplomu: {country}. Krótki przewodnik z odnośnikami do oficjalnych stron."
+  },
+  "Blog": {
+    "title": "Blog",
+    "seoTitle": "Blog YourHEI: studia za granicą, wizy i stypendia",
+    "intro": "Poradniki dla kandydatów: zasady wizowe i pracy, pieniądze, stypendia i wybór kraju. Każda informacja pochodzi z oficjalnych stron i ma datę.",
+    "empty": "Pierwsze artykuły pojawią się wkrótce.",
+    "readMinutes": "{count} min czytania",
+    "readArticle": "Czytaj",
+    "published": "Opublikowano {date}",
+    "updated": "Zaktualizowano {date}",
+    "author": "Redakcja YourHEI",
+    "toc": "Spis treści",
+    "related": "Czytaj dalej",
+    "backToList": "Wszystkie artykuły",
+    "onlyRuEn": "Artykuły na blogu są na razie po rosyjsku i angielsku. Czytasz wersję angielską.",
+    "rss": "Kanał RSS",
+    "disclaimer": "Ten artykuł to informacja ogólna, a nie porada prawna ani imigracyjna. Zasady i kwoty się zmieniają: przed złożeniem wniosku sprawdź oficjalne strony podane w tekście.",
+    "officialPage": "Strona oficjalna",
+    "notCollected": "Jeszcze tego nie zebraliśmy: sprawdź oficjalne strony kraju.",
+    "checked": "Sprawdzono: {date}",
+    "perMonth": "{amount} miesięcznie",
+    "citizensOf": "Obywatele: {country}",
+    "noneConfirmed": "W naszych danych nie ma jeszcze programu z opublikowaną listą krajów obejmującą ten kraj. Sprawdź pełną listę stypendiów.",
+    "severalCountries": "Kilka krajów",
+    "programmeDetails": "Szczegóły programów"
   }
 }

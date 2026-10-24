@@ -28,7 +28,8 @@
     "favorites": "Listem",
     "navLabel": "Ana bölümler",
     "catalog": "Katalog",
-    "scholarships": "Burslar"
+    "scholarships": "Burslar",
+    "blog": "Blog"
   },
   "Footer": {
     "navLabel": "Site bilgileri",
@@ -41,7 +42,8 @@
     "tagline": "Nerede okuyacağını bul: üniversiteler, kolejler ve okullar tek haritada, kendini açıklayan eşleşmelerle.",
     "methodology": "Veri kaynakları",
     "countries": "Eğitim ülkeleri",
-    "forInstitutions": "Kurumlar için"
+    "forInstitutions": "Kurumlar için",
+    "blog": "Blog"
   },
   "Types": {
     "university": "Üniversite",
@@ -1332,5 +1334,30 @@
     "institutionTitle": "{name}: programlar, ücretler ve son tarihler",
     "institutionDescription": "{name} ({place}). Programlar: {count}; düzeyler: {levels}. Ücretler, son tarihler, koşullar ve başvuru bağlantısı, resmî kaynaklardan.",
     "countryDescription": "Öğrenci vizesi, öğrenirken çalışma, mezuniyetten sonra kalma, yaşam maliyeti ve diploma denkliği: {country}. Resmî sayfalara bağlantılar içeren kısa rehber."
+  },
+  "Blog": {
+    "title": "Blog",
+    "seoTitle": "YourHEI blogu: yurt dışında eğitim, vize ve burslar",
+    "intro": "Adaylar için rehberler: vize ve çalışma kuralları, para, burslar ve ülke seçimi. Her bilgi resmî sayfalardan alınır ve tarihlidir.",
+    "empty": "İlk yazılar yakında geliyor.",
+    "readMinutes": "{count} dk okuma",
+    "readArticle": "Oku",
+    "published": "{date} tarihinde yayımlandı",
+    "updated": "{date} tarihinde güncellendi",
+    "author": "YourHEI editör ekibi",
+    "toc": "İçindekiler",
+    "related": "Bunları da oku",
+    "backToList": "Tüm yazılar",
+    "onlyRuEn": "Blog yazıları şimdilik Rusça ve İngilizce. İngilizce sürümü okuyorsunuz.",
+    "rss": "RSS akışı",
+    "disclaimer": "Bu yazı genel bilgidir; hukuki veya göç danışmanlığı değildir. Kurallar ve tutarlar değişir: başvurmadan önce metindeki resmî sayfaları kontrol edin.",
+    "officialPage": "Resmî sayfa",
+    "notCollected": "Bunu henüz derlemedik: ülkenin resmî sayfalarına bakın.",
+    "checked": "{date} tarihinde kontrol edildi",
+    "perMonth": "ayda {amount}",
+    "citizensOf": "{country} vatandaşları",
+    "noneConfirmed": "Verilerimizde henüz bu ülkeyi içeren yayımlanmış ülke listesi olan bir program yok. Tüm burs listesine bakın.",
+    "severalCountries": "Birkaç ülke",
+    "programmeDetails": "Programların ayrıntıları"
   }
 }

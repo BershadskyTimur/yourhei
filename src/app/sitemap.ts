@@ -4,6 +4,7 @@ import { SITEMAP_CHUNK } from '@/lib/institutions/sitemap';
 import { getSitemapPoints } from '@/lib/institutions/summaries';
 import { GUIDES } from '@/lib/countries-guide/guides';
 import { COMBOS, fieldSlug, studyCountries } from '@/lib/study/combos';
+import { publishedArticles } from '@/lib/blog/posts';
 import { siteUrl } from '@/lib/site-url';
 
 export const revalidate = 86400;
@@ -25,6 +26,14 @@ export default async function sitemap(props: { id: Promise<string> }): Promise<M
   const alternates = (path: string) => ({ languages: { ...Object.fromEntries(INDEXED_LOCALES.map((l) => [l, `${base}/${l}${path}`])), 'x-default': `${base}/${X_DEFAULT_LOCALE}${path}` } });
   const items = await getSitemapPoints();
   const slice = items.slice(id * SITEMAP_CHUNK, (id + 1) * SITEMAP_CHUNK);
-  const paths = [...(id === 0 ? [...STATIC_PAGES, ...GUIDES.map((g) => `/countries/${g.country.toLowerCase()}`), ...studyCountries().map((c) => `/study/${c.toLowerCase()}`), ...COMBOS.map((c) => `/study/${c.country.toLowerCase()}/${fieldSlug(c.code)}`)] : []), ...slice.map((i) => `/institutions/${i.country.toLowerCase()}/${i.slug}`)];
-  return paths.flatMap((path) => INDEXED_LOCALES.map((l) => ({ url: `${base}/${l}${path}`, alternates: alternates(path) })));
+  const pages: { path: string; lastModified?: string }[] = [
+    ...(id === 0
+      ? [
+          ...[...STATIC_PAGES, '/blog', ...GUIDES.map((g) => `/countries/${g.country.toLowerCase()}`), ...studyCountries().map((c) => `/study/${c.toLowerCase()}`), ...COMBOS.map((c) => `/study/${c.country.toLowerCase()}/${fieldSlug(c.code)}`)].map((path) => ({ path })),
+          ...publishedArticles().map((a) => ({ path: `/blog/${a.slug}`, lastModified: a.updated })),
+        ]
+      : []),
+    ...slice.map((i) => ({ path: `/institutions/${i.country.toLowerCase()}/${i.slug}` })),
+  ];
+  return pages.flatMap(({ path, lastModified }) => INDEXED_LOCALES.map((l) => ({ url: `${base}/${l}${path}`, alternates: alternates(path), ...(lastModified ? { lastModified } : {}) })));
 }

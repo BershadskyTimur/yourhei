@@ -28,7 +28,8 @@
     "favorites": "我的清单",
     "navLabel": "主要栏目",
     "catalog": "目录",
-    "scholarships": "奖学金"
+    "scholarships": "奖学金",
+    "blog": "博客"
   },
   "Footer": {
     "navLabel": "网站信息",
@@ -41,7 +42,8 @@
     "tagline": "找到求学之地：大学、学院和学校尽在一张地图，匹配结果自带解释。",
     "methodology": "数据来源",
     "countries": "留学目的地",
-    "forInstitutions": "面向院校"
+    "forInstitutions": "面向院校",
+    "blog": "博客"
   },
   "Types": {
     "university": "大学",
@@ -1332,5 +1334,30 @@
     "institutionTitle": "{name}：项目、学费与截止日期",
     "institutionDescription": "{name}（{place}）。项目数量：{count}；层次：{levels}。学费、截止日期、申请要求和申请链接，均来自官方来源。",
     "countryDescription": "{country}的学习签证、学习期间工作、毕业后留下、生活费用和文凭认可：附官方页面链接的简明指南。"
+  },
+  "Blog": {
+    "title": "博客",
+    "seoTitle": "YourHEI 博客：留学、签证与奖学金",
+    "intro": "为申请者准备的指南：签证与打工规定、费用、奖学金以及如何选择国家。所有信息均来自官方页面并标注日期。",
+    "empty": "首批文章即将发布。",
+    "readMinutes": "阅读约 {count} 分钟",
+    "readArticle": "阅读",
+    "published": "发布于 {date}",
+    "updated": "更新于 {date}",
+    "author": "YourHEI 编辑部",
+    "toc": "目录",
+    "related": "继续阅读",
+    "backToList": "全部文章",
+    "onlyRuEn": "博客文章目前仅提供俄语和英语版本。您正在阅读英语版本。",
+    "rss": "RSS 订阅",
+    "disclaimer": "本文仅为一般信息，不构成法律或移民建议。规定和金额会变化：申请前请查看文中链接的官方页面。",
+    "officialPage": "官方页面",
+    "notCollected": "我们尚未收集这部分内容：请查看该国的官方页面。",
+    "checked": "核对日期：{date}",
+    "perMonth": "每月 {amount}",
+    "citizensOf": "{country}公民",
+    "noneConfirmed": "我们的数据中暂无公布了国家名单且包含该国的项目。请查看完整奖学金列表。",
+    "severalCountries": "多个国家",
+    "programmeDetails": "项目详情"
   }
 }

@@ -28,7 +28,8 @@
     "favorites": "Ma liste",
     "navLabel": "Rubriques principales",
     "catalog": "Catalogue",
-    "scholarships": "Bourses"
+    "scholarships": "Bourses",
+    "blog": "Blog"
   },
   "Footer": {
     "navLabel": "Informations sur le site",
@@ -41,7 +42,8 @@
     "tagline": "Trouvez où étudier : universités, collèges et écoles sur une seule carte, avec des résultats qui s’expliquent.",
     "methodology": "Sources des données",
     "countries": "Destinations d’études",
-    "forInstitutions": "Pour les établissements"
+    "forInstitutions": "Pour les établissements",
+    "blog": "Blog"
   },
   "Types": {
     "university": "Université",
@@ -1332,5 +1334,30 @@
     "institutionTitle": "{name} : programmes, frais et dates limites",
     "institutionDescription": "{name} ({place}). Programmes : {count} ; niveaux : {levels}. Frais, dates limites, conditions et lien de candidature, issus de sources officielles.",
     "countryDescription": "Visa d’études, travailler pendant les études, rester après le diplôme, coût de la vie et reconnaissance du diplôme en {country} : un guide court avec des liens vers les pages officielles."
+  },
+  "Blog": {
+    "title": "Blog",
+    "seoTitle": "Blog YourHEI : études à l’étranger, visas et bourses",
+    "intro": "Des guides pour les candidats : règles de visa et de travail, argent, bourses et choix du pays. Chaque information vient de pages officielles et est datée.",
+    "empty": "Les premiers articles arrivent bientôt.",
+    "readMinutes": "{count} min de lecture",
+    "readArticle": "Lire",
+    "published": "Publié le {date}",
+    "updated": "Mis à jour le {date}",
+    "author": "Rédaction de YourHEI",
+    "toc": "Sommaire",
+    "related": "À lire aussi",
+    "backToList": "Tous les articles",
+    "onlyRuEn": "Les articles du blog sont pour l’instant en russe et en anglais. Vous lisez la version anglaise.",
+    "rss": "Flux RSS",
+    "disclaimer": "Cet article donne des informations générales, pas un conseil juridique ou en immigration. Les règles et les montants changent : vérifiez les pages officielles indiquées avant de candidater.",
+    "officialPage": "Page officielle",
+    "notCollected": "Nous n’avons pas encore rassemblé ces informations : consultez les pages officielles du pays.",
+    "checked": "Vérifié le {date}",
+    "perMonth": "{amount} par mois",
+    "citizensOf": "Citoyens de {country}",
+    "noneConfirmed": "Nos données ne contiennent pas encore de programme avec une liste de pays publiée qui inclut ce pays. Consultez la liste complète des bourses.",
+    "severalCountries": "Plusieurs pays",
+    "programmeDetails": "Détails des programmes"
   }
 }

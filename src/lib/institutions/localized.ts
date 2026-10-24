@@ -15,11 +15,17 @@ export interface PickedText {
 const firstName = (s: string): string => (s.includes(';') ? s.split(';')[0].trim() : s);
 
 export function pickLocalized(value: LocalizedText | undefined, locale: string): PickedText {
+  const picked = pickText(value, locale);
+  return { text: firstName(picked.text), isFallback: picked.isFallback };
+}
+
+/** The same choice of language for running text (descriptions, rules, eligibility): the text is never cut at a ";". */
+export function pickText(value: LocalizedText | undefined, locale: string): PickedText {
   const direct = value?.[locale];
-  if (direct) return { text: firstName(direct), isFallback: false };
+  if (direct) return { text: direct, isFallback: false };
   for (const code of [...FALLBACK_ORDER, 'original']) {
     const v = value?.[code];
-    if (v) return { text: firstName(v), isFallback: true };
+    if (v) return { text: v, isFallback: true };
   }
   return { text: '', isFallback: true };
 }

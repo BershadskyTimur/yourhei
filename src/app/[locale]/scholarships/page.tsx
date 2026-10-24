@@ -7,7 +7,7 @@ import { ScholarshipBrowser } from '@/components/ScholarshipBrowser';
 import { SideAds } from '@/components/SideAds';
 import { Link } from '@/i18n/navigation';
 import { routing } from '@/i18n/routing';
-import { pickLocalized } from '@/lib/institutions/localized';
+import { pickLocalized, pickText } from '@/lib/institutions/localized';
 import { getScholarships, type Scholarship } from '@/lib/scholarships/get';
 
 export const revalidate = 86400;
@@ -56,9 +56,9 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
                 country: s.country,
                 countryLabel: s.country ? (regionNames.of(s.country) ?? s.country) : t('severalCountries'),
                 name: pickLocalized(s.names, locale).text,
-                funder: pickLocalized(s.funder, locale).text,
+                funder: pickText(s.funder, locale).text,
                 meta: meta(s),
-                eligibility: pickLocalized(s.eligibility, locale).text,
+                eligibility: pickText(s.eligibility, locale).text,
                 url: s.url,
                 levels: s.levels,
                 eligibleCountries: s.eligibleCountries,

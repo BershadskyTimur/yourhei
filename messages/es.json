@@ -28,7 +28,8 @@
     "favorites": "Mi lista",
     "navLabel": "Secciones principales",
     "catalog": "Catálogo",
-    "scholarships": "Becas"
+    "scholarships": "Becas",
+    "blog": "Blog"
   },
   "Footer": {
     "navLabel": "Información del sitio",
@@ -41,7 +42,8 @@
     "tagline": "Encuentra dónde estudiar: universidades, colegios y escuelas en un mapa, con recomendaciones que se explican solas.",
     "methodology": "Fuentes de datos",
     "countries": "Destinos de estudio",
-    "forInstitutions": "Para instituciones"
+    "forInstitutions": "Para instituciones",
+    "blog": "Blog"
   },
   "Types": {
     "university": "Universidad",
@@ -1332,5 +1334,30 @@
     "institutionTitle": "{name}: programas, precios y plazos",
     "institutionDescription": "{name} ({place}). Programas: {count}; niveles: {levels}. Precios, plazos, requisitos y enlace para solicitar, de fuentes oficiales.",
     "countryDescription": "Visado de estudios, trabajar mientras estudias, quedarse tras graduarte, coste de vida y reconocimiento del título en {country}: una guía breve con enlaces a las páginas oficiales."
+  },
+  "Blog": {
+    "title": "Blog",
+    "seoTitle": "Blog de YourHEI: estudiar en el extranjero, visados y becas",
+    "intro": "Guías para candidatos: normas de visado y trabajo, dinero, becas y cómo elegir país. Cada dato procede de páginas oficiales y lleva fecha.",
+    "empty": "Los primeros artículos llegarán pronto.",
+    "readMinutes": "{count} min de lectura",
+    "readArticle": "Leer",
+    "published": "Publicado el {date}",
+    "updated": "Actualizado el {date}",
+    "author": "Equipo editorial de YourHEI",
+    "toc": "Contenido",
+    "related": "Sigue leyendo",
+    "backToList": "Todos los artículos",
+    "onlyRuEn": "Por ahora los artículos del blog están en ruso e inglés. Estás leyendo la versión en inglés.",
+    "rss": "Canal RSS",
+    "disclaimer": "Este artículo es información general, no asesoramiento jurídico ni migratorio. Las normas y las cantidades cambian: consulta las páginas oficiales enlazadas antes de solicitar.",
+    "officialPage": "Página oficial",
+    "notCollected": "Aún no hemos recopilado esto: consulta las páginas oficiales del país.",
+    "checked": "Comprobado el {date}",
+    "perMonth": "{amount} al mes",
+    "citizensOf": "Ciudadanos de {country}",
+    "noneConfirmed": "Todavía no hay en nuestros datos programas con una lista publicada de países que incluya este país. Consulta la lista completa de becas.",
+    "severalCountries": "Varios países",
+    "programmeDetails": "Detalles de los programas"
   }
 }

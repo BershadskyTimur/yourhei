@@ -21,6 +21,8 @@ export default defineConfig({
     command: `node scripts/copy-maplibre-worker.mjs && node node_modules/next/dist/bin/next dev -p ${PORT}`,
     url: `http://localhost:${PORT}/en`,
     reuseExistingServer: true,
+    // scheduled blog articles are shown too (the tests read them before their day)
+    env: { BLOG_SHOW_ALL: '1' },
     timeout: 120_000,
   },
 });

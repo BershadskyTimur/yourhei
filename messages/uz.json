@@ -28,7 +28,8 @@
     "favorites": "Mening ro‘yxatim",
     "navLabel": "Asosiy bo‘limlar",
     "catalog": "Katalog",
-    "scholarships": "Stipendiyalar"
+    "scholarships": "Stipendiyalar",
+    "blog": "Blog"
   },
   "Footer": {
     "navLabel": "Sayt haqida ma’lumot",
@@ -41,7 +42,8 @@
     "tagline": "Qayerda o‘qishni toping: universitetlar, kollejlar va maktablar bitta xaritada, o‘zini tushuntiradigan natijalar bilan.",
     "methodology": "Ma’lumot manbalari",
     "countries": "Ta’lim yo‘nalishlari",
-    "forInstitutions": "Muassasalar uchun"
+    "forInstitutions": "Muassasalar uchun",
+    "blog": "Blog"
   },
   "Types": {
     "university": "Universitet",
@@ -1332,5 +1334,30 @@
     "institutionTitle": "{name}: dasturlar, narxlar va muddatlar",
     "institutionDescription": "{name} ({place}). Dasturlar: {count}; darajalar: {levels}. Narxlar, muddatlar, talablar va ariza havolasi rasmiy manbalardan.",
     "countryDescription": "Talaba vizasi, o‘qish davrida ishlash, bitirgandan keyin qolish, yashash narxi va diplomni tan olish: {country}. Rasmiy sahifalarga havolali qisqa qo‘llanma."
+  },
+  "Blog": {
+    "title": "Blog",
+    "seoTitle": "YourHEI blogi: chet elda o‘qish, vizalar va stipendiyalar",
+    "intro": "Abituriyentlar uchun qo‘llanmalar: viza va ish qoidalari, pul, stipendiyalar va davlat tanlash. Har bir ma’lumot rasmiy sahifalardan olingan va sanasi qo‘yilgan.",
+    "empty": "Birinchi maqolalar tez orada chiqadi.",
+    "readMinutes": "{count} daqiqalik o‘qish",
+    "readArticle": "O‘qish",
+    "published": "{date} da e’lon qilingan",
+    "updated": "{date} da yangilangan",
+    "author": "YourHEI tahririyati",
+    "toc": "Mundarija",
+    "related": "Yana o‘qing",
+    "backToList": "Barcha maqolalar",
+    "onlyRuEn": "Blog maqolalari hozircha rus va ingliz tillarida. Siz inglizcha versiyani o‘qiyapsiz.",
+    "rss": "RSS tasma",
+    "disclaimer": "Bu maqola umumiy ma’lumot, yuridik yoki migratsiya maslahati emas. Qoidalar va summalar o‘zgaradi: ariza berishdan oldin matndagi rasmiy sahifalarni tekshiring.",
+    "officialPage": "Rasmiy sahifa",
+    "notCollected": "Buni hali to‘plamadik: davlatning rasmiy sahifalariga qarang.",
+    "checked": "{date} da tekshirilgan",
+    "perMonth": "oyiga {amount}",
+    "citizensOf": "{country} fuqarolari",
+    "noneConfirmed": "Ma’lumotlarimizda bu davlat kiritilgan e’lon qilingan davlatlar ro‘yxatli dastur hali yo‘q. To‘liq stipendiyalar ro‘yxatini ko‘ring.",
+    "severalCountries": "Bir nechta davlat",
+    "programmeDetails": "Dasturlar haqida batafsil"
   }
 }

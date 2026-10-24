@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { countByType, filterInstitutions } from './filter';
-import { pickLocalized } from './localized';
+import { pickLocalized, pickText } from './localized';
 import type { InstitutionType, MapInstitution } from './types';
 
 const make = (over: Partial<MapInstitution>): MapInstitution => ({
@@ -94,5 +94,14 @@ describe('countByType', () => {
     expect(c.university).toBe(2);
     expect(c.school).toBe(1);
     expect(c.vocational).toBe(0);
+  });
+});
+
+describe('running text is never cut', () => {
+  it('a name with several places keeps the first one, a description with a semicolon stays whole', () => {
+    const v = { en: 'ILSC - Australia; ILSC - Brisbane' };
+    expect(pickLocalized(v, 'en').text).toBe('ILSC - Australia');
+    expect(pickText(v, 'en').text).toBe('ILSC - Australia; ILSC - Brisbane');
+    expect(pickText({ en: 'Rule one; rule two.' }, 'ru')).toEqual({ text: 'Rule one; rule two.', isFallback: true });
   });
 });

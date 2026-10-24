@@ -17,6 +17,8 @@ export interface SeoInput {
   /** ISO date of the article (published / changed) */
   published?: string;
   modified?: string;
+  /** the address of the RSS feed offered on this page (inside the language, e.g. "/blog/feed.xml") */
+  feed?: string;
 }
 
 /** The languages a page of this path is offered in (for hreflang). */
@@ -33,7 +35,11 @@ export function seoMetadata(input: SeoInput): Metadata {
   return {
     title,
     ...(description ? { description } : {}),
-    alternates: { canonical: url, ...(indexable ? { languages: languageLinks(path) } : {}) },
+    alternates: {
+      canonical: url,
+      ...(indexable ? { languages: languageLinks(path) } : {}),
+      ...(input.feed ? { types: { 'application/rss+xml': `/${locale}${input.feed}` } } : {}),
+    },
     // a page that is not offered to search engines still lets them follow its links
     robots: indexable ? undefined : { index: false, follow: true },
     openGraph: {

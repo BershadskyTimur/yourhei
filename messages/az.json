@@ -28,7 +28,8 @@
     "favorites": "Siyahım",
     "navLabel": "Əsas bölmələr",
     "catalog": "Kataloq",
-    "scholarships": "Təqaüdlər"
+    "scholarships": "Təqaüdlər",
+    "blog": "Bloq"
   },
   "Footer": {
     "navLabel": "Sayt haqqında məlumat",
@@ -41,7 +42,8 @@
     "tagline": "Harada oxuyacağını tap: universitetlər, kolleclər və məktəblər bir xəritədə, özünü izah edən uyğunluqlarla.",
     "methodology": "Məlumat mənbələri",
     "countries": "Təhsil istiqamətləri",
-    "forInstitutions": "Müəssisələr üçün"
+    "forInstitutions": "Müəssisələr üçün",
+    "blog": "Bloq"
   },
   "Types": {
     "university": "Universitet",
@@ -1332,5 +1334,30 @@
     "institutionTitle": "{name}: proqramlar, qiymətlər və müddətlər",
     "institutionDescription": "{name} ({place}). Proqramlar: {count}; səviyyələr: {levels}. Qiymətlər, müddətlər, tələblər və müraciət linki rəsmi mənbələrdən.",
     "countryDescription": "Tələbə vizası, təhsil zamanı iş, məzun olduqdan sonra qalmaq, yaşayış xərcləri və diplomun tanınması: {country}. Rəsmi səhifələrə keçidlərlə qısa bələdçi."
+  },
+  "Blog": {
+    "title": "Bloq",
+    "seoTitle": "YourHEI bloqu: xaricdə təhsil, vizalar və təqaüdlər",
+    "intro": "Abituriyentlər üçün bələdçilər: viza və iş qaydaları, pul, təqaüdlər və ölkə seçimi. Hər məlumat rəsmi səhifələrdən götürülüb və tarixlidir.",
+    "empty": "İlk məqalələr tezliklə gələcək.",
+    "readMinutes": "{count} dəq oxu",
+    "readArticle": "Oxu",
+    "published": "{date} tarixində dərc olunub",
+    "updated": "{date} tarixində yenilənib",
+    "author": "YourHEI redaksiyası",
+    "toc": "Mündəricat",
+    "related": "Həmçinin oxuyun",
+    "backToList": "Bütün məqalələr",
+    "onlyRuEn": "Bloq məqalələri hələlik rus və ingilis dillərindədir. İngilis versiyasını oxuyursunuz.",
+    "rss": "RSS lenti",
+    "disclaimer": "Bu məqalə ümumi məlumatdır, hüquqi və ya miqrasiya məsləhəti deyil. Qaydalar və məbləğlər dəyişir: müraciətdən əvvəl mətndəki rəsmi səhifələri yoxlayın.",
+    "officialPage": "Rəsmi səhifə",
+    "notCollected": "Bunu hələ toplamamışıq: ölkənin rəsmi səhifələrinə baxın.",
+    "checked": "{date} tarixində yoxlanılıb",
+    "perMonth": "ayda {amount}",
+    "citizensOf": "{country} vətəndaşları",
+    "noneConfirmed": "Məlumatlarımızda bu ölkənin daxil olduğu dərc edilmiş ölkə siyahısı olan proqram hələ yoxdur. Tam təqaüd siyahısına baxın.",
+    "severalCountries": "Bir neçə ölkə",
+    "programmeDetails": "Proqramlar haqqında ətraflı"
   }
 }

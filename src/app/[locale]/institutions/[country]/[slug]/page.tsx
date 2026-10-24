@@ -14,7 +14,7 @@ import { Link } from '@/i18n/navigation';
 import { routing } from '@/i18n/routing';
 import { guideOf } from '@/lib/countries-guide/guides';
 import { getInstitutionDetail } from '@/lib/institutions/detail';
-import { pickLocalized } from '@/lib/institutions/localized';
+import { pickLocalized, pickText } from '@/lib/institutions/localized';
 import { JsonLd } from '@/components/JsonLd';
 import { seoMetadata, trimDescription } from '@/lib/seo/metadata';
 import { breadcrumbList } from '@/lib/seo/structured';
@@ -69,7 +69,7 @@ export default async function InstitutionPage({ params }: { params: Params }) {
   const original = institution.names.original;
   const city = pickLocalized(institution.city, locale).text;
   const countryName = new Intl.DisplayNames([locale], { type: 'region' }).of(institution.country);
-  const description = pickLocalized(institution.description, locale);
+  const description = pickText(institution.description, locale);
 
   const byLevel = LEVEL_ORDER.map((level) => ({ level, items: institution.programs.filter((p) => p.level === level) })).filter((g) => g.items.length > 0);
   const checked = institution.verifiedAt
