@@ -118,13 +118,13 @@ export interface ProgramFilter {
 const PAGE = 1000;
 const MAX_PAGES = 20; // at most 20 000 programmes in one search: more would make the page slow
 /**
- * When no country was chosen, each country is read only up to this many pages (5000 programmes). The big countries have tens of
+ * When no country was chosen, each country is read only up to this many pages (3000 programmes). The big countries have tens of
  * thousands (the US about 70 000 at bachelor level): reading them whole would take half a minute and make the page heavy, and a person who
  * did not choose a country gets the best of what is read from every country. When countries were chosen, they are read up to MAX_PAGES.
  */
-const SAMPLE_PAGES = 5;
-/** how many countries are read at the same time */
-const PARALLEL = 5;
+const SAMPLE_PAGES = 3;
+/** how many countries are read at the same time (tried on the live database: more at once made the pages slower and cancelled them) */
+const PARALLEL = 2;
 /** a country with more programmes than this is asked for the chosen fields in the database; the others are read whole and cut here (faster, and without the time limit of the field search) */
 const BIG_STREAM = 3000;
 
@@ -274,8 +274,14 @@ export async function loadMatchData(
         try {
           r = await readStream(supabase, base, deadline, maxPages);
         } catch (error) {
-          if (!big) throw error;
-          r = { ...(await readStream(supabase, { ...base, prefixes: null }, deadline, maxPages)), cutHere: true }; // the field search timed out: read the country whole
+          try {
+            if (!big) throw error;
+            r = { ...(await readStream(supabase, { ...base, prefixes: null }, deadline, maxPages)), cutHere: true }; // the field search timed out: read the country whole
+          } catch (second) {
+            // one country that the database cannot answer in time must not spoil the others: it is left out and the result is marked partial
+            if ((second as { code?: string }).code !== '57014') throw second;
+            r = { rows: [], partial: true, missingFunction: false };
+          }
         }
         // the database already cut the fields of a big country; the others were read whole and are cut here
         const cutHere = prefixes !== null && (!big || r.cutHere);
