@@ -2,8 +2,8 @@ import type { Article } from '@/lib/blog/types';
 
 export const afterGraduation: Article = {
   slug: 'after-graduation-work-permits-by-country',
-  published: '2026-11-02',
-  updated: '2026-11-02',
+  published: '2026-10-24',
+  updated: '2026-10-24',
   ru: {
     title: 'Что делать после диплома: разрешение на поиск работы в 6 странах',
     description: 'Сколько времени дают выпускнику Германия, Великобритания, Нидерланды, Финляндия, Чехия и Польша, чтобы остаться и найти работу: сроки и условия подачи.',

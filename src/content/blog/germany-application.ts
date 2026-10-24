@@ -2,8 +2,8 @@ import type { Article } from '@/lib/blog/types';
 
 export const germanyApplication: Article = {
   slug: 'germany-how-to-apply-uni-assist',
-  published: '2026-11-26',
-  updated: '2026-11-26',
+  published: '2026-10-24',
+  updated: '2026-10-24',
   ru: {
     title: 'Как подать заявку в университет Германии: сроки и uni-assist',
     description: 'Куда подавать документы в Германии: uni-assist, сам вуз или Stiftung für Hochschulzulassung. Сроки на зимний и летний семестр, сборы и требования к документам.',

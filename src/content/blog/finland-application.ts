@@ -2,8 +2,8 @@ import type { Article } from '@/lib/blog/types';
 
 export const finlandApplication: Article = {
   slug: 'finland-how-to-apply-studyinfo',
-  published: '2026-11-30',
-  updated: '2026-11-30',
+  published: '2026-10-24',
+  updated: '2026-10-24',
   ru: {
     title: 'Как подать заявку в Финляндию: Studyinfo и совместный набор',
     description: 'Как поступить в финский вуз через Studyinfo: совместный набор в январе, набор на январский старт, требования для бакалавриата и магистратуры и сбор для студентов вне ЕС.',

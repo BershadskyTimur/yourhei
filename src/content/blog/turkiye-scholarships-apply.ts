@@ -2,8 +2,8 @@ import type { Article } from '@/lib/blog/types';
 
 export const turkiyeScholarshipsApply: Article = {
   slug: 'turkiye-scholarships-how-to-apply',
-  published: '2026-11-19',
-  updated: '2026-11-19',
+  published: '2026-10-24',
+  updated: '2026-10-24',
   ru: {
     title: 'Türkiye Burslari: как подать заявку на стипендию Турции',
     description: 'Как устроена стипендия правительства Турции: уровни, сроки приёма заявок по календарю, список документов, требование к турецкому языку и подача на официальном портале.',

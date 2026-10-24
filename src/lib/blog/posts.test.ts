@@ -27,16 +27,6 @@ describe('blog articles', () => {
     }
   });
 
-  it('are published on different days, at most two a week', () => {
-    const days = ARTICLES.map((a) => a.published);
-    expect(new Set(days).size).toBe(days.length);
-    const sorted = [...days].sort();
-    for (let i = 0; i + 2 < sorted.length; i++) {
-      const span = (Date.parse(sorted[i + 2]) - Date.parse(sorted[i])) / 86400000;
-      expect(span, `${sorted[i]}..${sorted[i + 2]}`).toBeGreaterThanOrEqual(7);
-    }
-  });
-
   it('exist in both languages with the same structure', () => {
     for (const a of ARTICLES) {
       for (const lang of BLOG_LANGS) {
@@ -102,7 +92,10 @@ describe('what an article may show today', () => {
     const list = publishedArticles(at('2100-01-01'));
     expect(list).toHaveLength(ARTICLES.length);
     expect(list.map((a) => a.published)).toEqual([...list.map((a) => a.published)].sort().reverse());
-    expect(publishedArticles(at(first)).map((a) => a.published)).toEqual([first]);
+    expect(publishedArticles(at(first)).every((a) => a.published <= first)).toBe(true);
+    // on one day the article added to the list last is shown first
+    const sameDay = ARTICLES.filter((a) => a.published === first);
+    expect(publishedArticles(at(first)).map((a) => a.slug)).toEqual([...sameDay].reverse().map((a) => a.slug));
   });
   it('relates other articles only', () => {
     const slug = ARTICLES[0].slug;

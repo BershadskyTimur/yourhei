@@ -2,8 +2,8 @@ import type { Article } from '@/lib/blog/types';
 
 export const fullyFundedScholarships: Article = {
   slug: 'fully-funded-scholarships-for-international-students',
-  published: '2026-11-05',
-  updated: '2026-11-05',
+  published: '2026-10-24',
+  updated: '2026-10-24',
   ru: {
     title: 'Стипендии с полным финансированием для иностранцев',
     description: 'Государственные и международные программы с полным финансированием: на какой уровень, кто платит и как подаётся заявка. Ссылки на официальные страницы.',

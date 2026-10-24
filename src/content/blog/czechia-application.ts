@@ -2,8 +2,8 @@ import type { Article } from '@/lib/blog/types';
 
 export const czechiaApplication: Article = {
   slug: 'czechia-how-to-apply-universities',
-  published: '2026-12-03',
-  updated: '2026-12-03',
+  published: '2026-10-24',
+  updated: '2026-10-24',
   ru: {
     title: 'Как поступить в университет Чехии: сроки, документы, нострификация',
     description: 'В Чехии нет единой системы подачи: каждый вуз принимает заявки сам. Сроки с февраля по апрель, список документов, признание диплома, вступительные экзамены и сборы.',

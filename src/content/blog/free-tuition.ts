@@ -2,8 +2,8 @@ import type { Article } from '@/lib/blog/types';
 
 export const freeTuition: Article = {
   slug: 'free-tuition-germany-czechia-finland',
-  published: '2026-11-16',
-  updated: '2026-11-16',
+  published: '2026-10-24',
+  updated: '2026-10-24',
   ru: {
     title: 'Бесплатно ли учиться в Германии, Чехии и Финляндии',
     description: 'Что на самом деле бесплатно в Германии, Чехии и Финляндии, а за что придётся платить: правила платы за обучение по официальным страницам, с исключениями.',

@@ -2,8 +2,8 @@ import type { Article } from '@/lib/blog/types';
 
 export const workDuringStudies: Article = {
   slug: 'work-during-studies-rules-by-country',
-  published: '2026-10-26',
-  updated: '2026-10-26',
+  published: '2026-10-24',
+  updated: '2026-10-24',
   ru: {
     title: 'Работа во время учёбы за границей: правила 7 стран',
     description: 'Сколько можно работать студенту-иностранцу в Германии, Великобритании, Нидерландах, Финляндии, Чехии, Польше и Турции. Правила по официальным источникам.',

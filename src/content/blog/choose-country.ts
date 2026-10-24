@@ -2,8 +2,8 @@ import type { Article } from '@/lib/blog/types';
 
 export const chooseCountry: Article = {
   slug: 'how-to-choose-a-country-to-study',
-  published: '2026-11-12',
-  updated: '2026-11-12',
+  published: '2026-10-24',
+  updated: '2026-10-24',
   ru: {
     title: 'Как выбрать страну для учёбы: 7 вопросов до выбора вуза',
     description: 'Бюджет, язык, подработка, жизнь после диплома, стипендии, признание диплома и сроки: семь вопросов, на которые нужно ответить до выбора страны и вуза.',

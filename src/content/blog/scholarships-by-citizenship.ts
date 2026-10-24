@@ -2,8 +2,8 @@ import type { Article } from '@/lib/blog/types';
 
 export const scholarshipsByCitizenship: Article = {
   slug: 'scholarships-by-citizenship-caucasus-central-asia',
-  published: '2026-11-09',
-  updated: '2026-11-09',
+  published: '2026-10-24',
+  updated: '2026-10-24',
   ru: {
     title: 'Стипендии по гражданству: Кавказ, Украина, Центральная Азия',
     description: 'Какие стипендии открыты гражданам Грузии, Армении, Азербайджана, Украины, Казахстана и Узбекистана: списки стран сверены с официальными страницами программ.',

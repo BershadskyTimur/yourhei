@@ -2,8 +2,8 @@ import type { Article } from '@/lib/blog/types';
 
 export const netherlandsApplication: Article = {
   slug: 'netherlands-application-deadlines-studielink',
-  published: '2026-11-23',
-  updated: '2026-11-23',
+  published: '2026-10-24',
+  updated: '2026-10-24',
   ru: {
     title: 'Поступление в Нидерланды: Studielink и сроки подачи',
     description: 'Как подать заявку в нидерландский вуз через Studielink: общие сроки 1 мая и 15 января, чем они отличаются для программ, и что проверить у самого вуза.',

@@ -2,8 +2,8 @@ import type { Article } from '@/lib/blog/types';
 
 export const proofOfFunds: Article = {
   slug: 'proof-of-funds-student-visa',
-  published: '2026-10-29',
-  updated: '2026-10-29',
+  published: '2026-10-24',
+  updated: '2026-10-24',
   ru: {
     title: 'Сколько денег нужно показать для студенческой визы: 14 стран',
     description: 'Минимальные суммы на жизнь, которые 14 стран требуют подтвердить студенту-иностранцу для визы. Это не средние расходы. Данные по официальным источникам.',

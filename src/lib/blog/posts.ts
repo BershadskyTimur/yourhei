@@ -26,7 +26,11 @@ export function publishedArticles(today: Date = new Date()): Article[] {
   const day = today.toISOString().slice(0, 10);
   // BLOG_SHOW_ALL=1 (in .env.local, never in production) shows the scheduled articles too, to read them before their day
   const all = process.env.BLOG_SHOW_ALL === '1';
-  return ARTICLES.filter((a) => all || a.published <= day).sort((a, b) => (a.published < b.published ? 1 : a.published > b.published ? -1 : 0));
+  return ARTICLES.map((a, index) => ({ a, index }))
+    .filter(({ a }) => all || a.published <= day)
+    // newest first; articles of one day: the one added later to the list comes first
+    .sort((x, y) => (x.a.published < y.a.published ? 1 : x.a.published > y.a.published ? -1 : y.index - x.index))
+    .map(({ a }) => a);
 }
 
 export function getArticle(slug: string, today: Date = new Date()): Article | null {
