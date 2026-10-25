@@ -1,0 +1,1341 @@
+{
+  "schema_version": 1,
+  "collected_at": "2026-10-25",
+  "academic_year": "2026/2027",
+  "institution": {
+    "external_ids": {},
+    "description": {
+      "en": "A public technical university in Łódź. Its International Faculty of Engineering and several other faculties teach programmes in English; tuition for foreign candidates is paid in PLN per semester.",
+      "ru": "Государственный технический университет в Лодзи. Международный инженерный факультет и ряд других факультетов преподают на английском; иностранные кандидаты платят за обучение в злотых за семестр."
+    },
+    "rankings": [],
+    "dormitory": null,
+    "ownership": "public",
+    "founded_year": null,
+    "names": {
+      "original": "Politechnika Łódzka",
+      "en": "Łódź University of Technology",
+      "ru": "Лодзинский политехнический университет"
+    },
+    "type": "university",
+    "city": {
+      "original": "Łódź",
+      "en": "Łódź",
+      "ru": "Лодзь"
+    },
+    "website": "https://p.lodz.pl",
+    "city_size": "medium",
+    "climate": "temperate",
+    "size": "large",
+    "features": [
+      "exchange"
+    ],
+    "country": "PL"
+  },
+  "programs": [
+    {
+      "names": {
+        "original": "Textile and Fashion Industry (Bachelor)",
+        "en": "Textile and Fashion Industry (Bachelor)",
+        "ru": "Текстильная и модная индустрия (бакалавриат)"
+      },
+      "level": "bachelor",
+      "isced_f": "0722",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 8000,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 85,
+        "currency": "PLN"
+      },
+      "application_url": "https://apply.p.lodz.pl/en/enrollment/enroll/fees-and-scholarships"
+    },
+    {
+      "names": {
+        "original": "Architecture (Bachelor)",
+        "en": "Architecture (Bachelor)",
+        "ru": "Архитектура (бакалавриат)"
+      },
+      "level": "bachelor",
+      "isced_f": "0731",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 8000,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 150,
+        "currency": "PLN"
+      },
+      "application_url": "https://apply.p.lodz.pl/en/enrollment/enroll/fees-and-scholarships"
+    },
+    {
+      "names": {
+        "original": "Digital Management (Bachelor)",
+        "en": "Digital Management (Bachelor)",
+        "ru": "Цифровой менеджмент (бакалавриат)"
+      },
+      "level": "bachelor",
+      "isced_f": "0413",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 3200,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 85,
+        "currency": "PLN"
+      },
+      "application_url": "https://apply.p.lodz.pl/en/enrollment/enroll/fees-and-scholarships"
+    },
+    {
+      "names": {
+        "original": "Advanced Biobased and Bioinspired Materials (Bachelor, International Faculty of Engineering)",
+        "en": "Advanced Biobased and Bioinspired Materials (Bachelor, International Faculty of Engineering)",
+        "ru": "Передовые биоматериалы и биовдохновлённые материалы (бакалавриат, Международный инженерный факультет)"
+      },
+      "level": "bachelor",
+      "isced_f": "0722",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 9000,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 85,
+        "currency": "PLN"
+      },
+      "application_url": "https://apply.p.lodz.pl/en/enrollment/enroll/fees-and-scholarships"
+    },
+    {
+      "names": {
+        "original": "Biomedical Engineering and Technologies (Bachelor, International Faculty of Engineering)",
+        "en": "Biomedical Engineering and Technologies (Bachelor, International Faculty of Engineering)",
+        "ru": "Биомедицинская инженерия и технологии (бакалавриат, Международный инженерный факультет)"
+      },
+      "level": "bachelor",
+      "isced_f": "0719",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 9000,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 85,
+        "currency": "PLN"
+      },
+      "application_url": "https://apply.p.lodz.pl/en/enrollment/enroll/fees-and-scholarships"
+    },
+    {
+      "names": {
+        "original": "Business, Society and Technology (Bachelor, International Faculty of Engineering)",
+        "en": "Business, Society and Technology (Bachelor, International Faculty of Engineering)",
+        "ru": "Бизнес, общество и технологии (бакалавриат, Международный инженерный факультет)"
+      },
+      "level": "bachelor",
+      "isced_f": "0413",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 9000,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 85,
+        "currency": "PLN"
+      },
+      "application_url": "https://apply.p.lodz.pl/en/enrollment/enroll/fees-and-scholarships"
+    },
+    {
+      "names": {
+        "original": "Computer Science (Bachelor, International Faculty of Engineering)",
+        "en": "Computer Science (Bachelor, International Faculty of Engineering)",
+        "ru": "Информатика (бакалавриат, Международный инженерный факультет)"
+      },
+      "level": "bachelor",
+      "isced_f": "0613",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 9000,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 85,
+        "currency": "PLN"
+      },
+      "application_url": "https://apply.p.lodz.pl/en/enrollment/enroll/fees-and-scholarships"
+    },
+    {
+      "names": {
+        "original": "Electronic and Telecommunication Engineering (Bachelor, International Faculty of Engineering)",
+        "en": "Electronic and Telecommunication Engineering (Bachelor, International Faculty of Engineering)",
+        "ru": "Электроника и телекоммуникации (бакалавриат, Международный инженерный факультет)"
+      },
+      "level": "bachelor",
+      "isced_f": "0714",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 9000,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 85,
+        "currency": "PLN"
+      },
+      "application_url": "https://apply.p.lodz.pl/en/enrollment/enroll/fees-and-scholarships"
+    },
+    {
+      "names": {
+        "original": "Industrial Biotechnology (Bachelor, International Faculty of Engineering)",
+        "en": "Industrial Biotechnology (Bachelor, International Faculty of Engineering)",
+        "ru": "Промышленная биотехнология (бакалавриат, Международный инженерный факультет)"
+      },
+      "level": "bachelor",
+      "isced_f": "0512",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 9000,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 85,
+        "currency": "PLN"
+      },
+      "application_url": "https://apply.p.lodz.pl/en/enrollment/enroll/fees-and-scholarships"
+    },
+    {
+      "names": {
+        "original": "Information Technology (Bachelor, International Faculty of Engineering)",
+        "en": "Information Technology (Bachelor, International Faculty of Engineering)",
+        "ru": "Информационные технологии (бакалавриат, Международный инженерный факультет)"
+      },
+      "level": "bachelor",
+      "isced_f": "0613",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 9000,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 85,
+        "currency": "PLN"
+      },
+      "application_url": "https://apply.p.lodz.pl/en/enrollment/enroll/fees-and-scholarships"
+    },
+    {
+      "names": {
+        "original": "Mathematical Methods in Data Analysis (Bachelor, International Faculty of Engineering)",
+        "en": "Mathematical Methods in Data Analysis (Bachelor, International Faculty of Engineering)",
+        "ru": "Математические методы анализа данных (бакалавриат, Международный инженерный факультет)"
+      },
+      "level": "bachelor",
+      "isced_f": "0541",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 9000,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 85,
+        "currency": "PLN"
+      },
+      "application_url": "https://apply.p.lodz.pl/en/enrollment/enroll/fees-and-scholarships"
+    },
+    {
+      "names": {
+        "original": "Mechanical Engineering (Bachelor, International Faculty of Engineering)",
+        "en": "Mechanical Engineering (Bachelor, International Faculty of Engineering)",
+        "ru": "Машиностроение (бакалавриат, Международный инженерный факультет)"
+      },
+      "level": "bachelor",
+      "isced_f": "0715",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 9000,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 85,
+        "currency": "PLN"
+      },
+      "application_url": "https://apply.p.lodz.pl/en/enrollment/enroll/fees-and-scholarships"
+    },
+    {
+      "names": {
+        "original": "Modelling and Data Science (Bachelor, International Faculty of Engineering)",
+        "en": "Modelling and Data Science (Bachelor, International Faculty of Engineering)",
+        "ru": "Моделирование и наука о данных (бакалавриат, Международный инженерный факультет)"
+      },
+      "level": "bachelor",
+      "isced_f": "0541",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 9000,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 85,
+        "currency": "PLN"
+      },
+      "application_url": "https://apply.p.lodz.pl/en/enrollment/enroll/fees-and-scholarships"
+    },
+    {
+      "names": {
+        "original": "Business Studies (Bachelor, International Faculty of Engineering)",
+        "en": "Business Studies (Bachelor, International Faculty of Engineering)",
+        "ru": "Бизнес-исследования (бакалавриат, Международный инженерный факультет)"
+      },
+      "level": "bachelor",
+      "isced_f": "0413",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 9000,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 85,
+        "currency": "PLN"
+      },
+      "application_url": "https://apply.p.lodz.pl/en/enrollment/enroll/fees-and-scholarships"
+    },
+    {
+      "names": {
+        "original": "Applied Electronics (Master)",
+        "en": "Applied Electronics (Master)",
+        "ru": "Прикладная электроника (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0714",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 6300,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 85,
+        "currency": "PLN"
+      },
+      "application_url": "https://apply.p.lodz.pl/en/enrollment/enroll/fees-and-scholarships"
+    },
+    {
+      "names": {
+        "original": "Nanotechnology (Master)",
+        "en": "Nanotechnology (Master)",
+        "ru": "Нанотехнологии (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0719",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 5500,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 85,
+        "currency": "PLN"
+      },
+      "application_url": "https://apply.p.lodz.pl/en/enrollment/enroll/fees-and-scholarships"
+    },
+    {
+      "names": {
+        "original": "Design (Master)",
+        "en": "Design (Master)",
+        "ru": "Дизайн (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0212",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 8000,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 150,
+        "currency": "PLN"
+      },
+      "application_url": "https://apply.p.lodz.pl/en/enrollment/enroll/fees-and-scholarships"
+    },
+    {
+      "names": {
+        "original": "Textile Engineering (Master)",
+        "en": "Textile Engineering (Master)",
+        "ru": "Текстильная инженерия (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0722",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 8000,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 85,
+        "currency": "PLN"
+      },
+      "application_url": "https://apply.p.lodz.pl/en/enrollment/enroll/fees-and-scholarships"
+    },
+    {
+      "names": {
+        "original": "Architecture (Master)",
+        "en": "Architecture (Master)",
+        "ru": "Архитектура (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0731",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 8000,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 150,
+        "currency": "PLN"
+      },
+      "application_url": "https://apply.p.lodz.pl/en/enrollment/enroll/fees-and-scholarships"
+    },
+    {
+      "names": {
+        "original": "Energy Systems in the Built Environment (Master)",
+        "en": "Energy Systems in the Built Environment (Master)",
+        "ru": "Энергетические системы в застроенной среде (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0713",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 5400,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 85,
+        "currency": "PLN"
+      },
+      "application_url": "https://apply.p.lodz.pl/en/enrollment/enroll/fees-and-scholarships"
+    },
+    {
+      "names": {
+        "original": "Computer Science and Information Technology (Master, International Faculty of Engineering)",
+        "en": "Computer Science and Information Technology (Master, International Faculty of Engineering)",
+        "ru": "Информатика и информационные технологии (магистратура, Международный инженерный факультет)"
+      },
+      "level": "master",
+      "isced_f": "0613",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 9000,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 85,
+        "currency": "PLN"
+      },
+      "application_url": "https://apply.p.lodz.pl/en/enrollment/enroll/fees-and-scholarships"
+    },
+    {
+      "names": {
+        "original": "Human-Computer Interaction (Master, International Faculty of Engineering)",
+        "en": "Human-Computer Interaction (Master, International Faculty of Engineering)",
+        "ru": "Взаимодействие человека и компьютера (магистратура, Международный инженерный факультет)"
+      },
+      "level": "master",
+      "isced_f": "0613",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 9000,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 85,
+        "currency": "PLN"
+      },
+      "application_url": "https://apply.p.lodz.pl/en/enrollment/enroll/fees-and-scholarships"
+    },
+    {
+      "names": {
+        "original": "Mechanical Engineering (Master, International Faculty of Engineering)",
+        "en": "Mechanical Engineering (Master, International Faculty of Engineering)",
+        "ru": "Машиностроение (магистратура, Международный инженерный факультет)"
+      },
+      "level": "master",
+      "isced_f": "0715",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 9000,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 85,
+        "currency": "PLN"
+      },
+      "application_url": "https://apply.p.lodz.pl/en/enrollment/enroll/fees-and-scholarships"
+    },
+    {
+      "names": {
+        "original": "Business Studies (Master, International Faculty of Engineering)",
+        "en": "Business Studies (Master, International Faculty of Engineering)",
+        "ru": "Бизнес-исследования (магистратура, Международный инженерный факультет)"
+      },
+      "level": "master",
+      "isced_f": "0413",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 9000,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 85,
+        "currency": "PLN"
+      },
+      "application_url": "https://apply.p.lodz.pl/en/enrollment/enroll/fees-and-scholarships"
+    },
+    {
+      "names": {
+        "original": "Molecular Biotechnology and Bioinformatics (Master, International Faculty of Engineering)",
+        "en": "Molecular Biotechnology and Bioinformatics (Master, International Faculty of Engineering)",
+        "ru": "Молекулярная биотехнология и биоинформатика (магистратура, Международный инженерный факультет)"
+      },
+      "level": "master",
+      "isced_f": "0512",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 9000,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 85,
+        "currency": "PLN"
+      },
+      "application_url": "https://apply.p.lodz.pl/en/enrollment/enroll/fees-and-scholarships"
+    },
+    {
+      "names": {
+        "original": "Smart Manufacturing and Management (Master, International Faculty of Engineering)",
+        "en": "Smart Manufacturing and Management (Master, International Faculty of Engineering)",
+        "ru": "Умное производство и управление (магистратура, Международный инженерный факультет)"
+      },
+      "level": "master",
+      "isced_f": "0715",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 9000,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 85,
+        "currency": "PLN"
+      },
+      "application_url": "https://apply.p.lodz.pl/en/enrollment/enroll/fees-and-scholarships"
+    }
+  ],
+  "scholarships": [],
+  "sources": [
+    {
+      "field": "programs[0].tuition[0].amount",
+      "url": "https://apply.p.lodz.pl/en/enrollment/enroll/fees-and-scholarships",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[0].application_fee",
+      "url": "https://apply.p.lodz.pl/en/enrollment/enroll/fees-and-scholarships",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[1].tuition[0].amount",
+      "url": "https://apply.p.lodz.pl/en/enrollment/enroll/fees-and-scholarships",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[1].application_fee",
+      "url": "https://apply.p.lodz.pl/en/enrollment/enroll/fees-and-scholarships",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[2].tuition[0].amount",
+      "url": "https://apply.p.lodz.pl/en/enrollment/enroll/fees-and-scholarships",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[2].application_fee",
+      "url": "https://apply.p.lodz.pl/en/enrollment/enroll/fees-and-scholarships",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[3].tuition[0].amount",
+      "url": "https://apply.p.lodz.pl/en/enrollment/enroll/fees-and-scholarships",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[3].application_fee",
+      "url": "https://apply.p.lodz.pl/en/enrollment/enroll/fees-and-scholarships",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[4].tuition[0].amount",
+      "url": "https://apply.p.lodz.pl/en/enrollment/enroll/fees-and-scholarships",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[4].application_fee",
+      "url": "https://apply.p.lodz.pl/en/enrollment/enroll/fees-and-scholarships",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[5].tuition[0].amount",
+      "url": "https://apply.p.lodz.pl/en/enrollment/enroll/fees-and-scholarships",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[5].application_fee",
+      "url": "https://apply.p.lodz.pl/en/enrollment/enroll/fees-and-scholarships",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[6].tuition[0].amount",
+      "url": "https://apply.p.lodz.pl/en/enrollment/enroll/fees-and-scholarships",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[6].application_fee",
+      "url": "https://apply.p.lodz.pl/en/enrollment/enroll/fees-and-scholarships",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[7].tuition[0].amount",
+      "url": "https://apply.p.lodz.pl/en/enrollment/enroll/fees-and-scholarships",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[7].application_fee",
+      "url": "https://apply.p.lodz.pl/en/enrollment/enroll/fees-and-scholarships",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[8].tuition[0].amount",
+      "url": "https://apply.p.lodz.pl/en/enrollment/enroll/fees-and-scholarships",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[8].application_fee",
+      "url": "https://apply.p.lodz.pl/en/enrollment/enroll/fees-and-scholarships",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[9].tuition[0].amount",
+      "url": "https://apply.p.lodz.pl/en/enrollment/enroll/fees-and-scholarships",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[9].application_fee",
+      "url": "https://apply.p.lodz.pl/en/enrollment/enroll/fees-and-scholarships",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[10].tuition[0].amount",
+      "url": "https://apply.p.lodz.pl/en/enrollment/enroll/fees-and-scholarships",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[10].application_fee",
+      "url": "https://apply.p.lodz.pl/en/enrollment/enroll/fees-and-scholarships",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[11].tuition[0].amount",
+      "url": "https://apply.p.lodz.pl/en/enrollment/enroll/fees-and-scholarships",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[11].application_fee",
+      "url": "https://apply.p.lodz.pl/en/enrollment/enroll/fees-and-scholarships",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[12].tuition[0].amount",
+      "url": "https://apply.p.lodz.pl/en/enrollment/enroll/fees-and-scholarships",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[12].application_fee",
+      "url": "https://apply.p.lodz.pl/en/enrollment/enroll/fees-and-scholarships",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[13].tuition[0].amount",
+      "url": "https://apply.p.lodz.pl/en/enrollment/enroll/fees-and-scholarships",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[13].application_fee",
+      "url": "https://apply.p.lodz.pl/en/enrollment/enroll/fees-and-scholarships",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[14].tuition[0].amount",
+      "url": "https://apply.p.lodz.pl/en/enrollment/enroll/fees-and-scholarships",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[14].application_fee",
+      "url": "https://apply.p.lodz.pl/en/enrollment/enroll/fees-and-scholarships",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[15].tuition[0].amount",
+      "url": "https://apply.p.lodz.pl/en/enrollment/enroll/fees-and-scholarships",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[15].application_fee",
+      "url": "https://apply.p.lodz.pl/en/enrollment/enroll/fees-and-scholarships",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[16].tuition[0].amount",
+      "url": "https://apply.p.lodz.pl/en/enrollment/enroll/fees-and-scholarships",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[16].application_fee",
+      "url": "https://apply.p.lodz.pl/en/enrollment/enroll/fees-and-scholarships",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[17].tuition[0].amount",
+      "url": "https://apply.p.lodz.pl/en/enrollment/enroll/fees-and-scholarships",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[17].application_fee",
+      "url": "https://apply.p.lodz.pl/en/enrollment/enroll/fees-and-scholarships",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[18].tuition[0].amount",
+      "url": "https://apply.p.lodz.pl/en/enrollment/enroll/fees-and-scholarships",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[18].application_fee",
+      "url": "https://apply.p.lodz.pl/en/enrollment/enroll/fees-and-scholarships",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[19].tuition[0].amount",
+      "url": "https://apply.p.lodz.pl/en/enrollment/enroll/fees-and-scholarships",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[19].application_fee",
+      "url": "https://apply.p.lodz.pl/en/enrollment/enroll/fees-and-scholarships",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[20].tuition[0].amount",
+      "url": "https://apply.p.lodz.pl/en/enrollment/enroll/fees-and-scholarships",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[20].application_fee",
+      "url": "https://apply.p.lodz.pl/en/enrollment/enroll/fees-and-scholarships",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[21].tuition[0].amount",
+      "url": "https://apply.p.lodz.pl/en/enrollment/enroll/fees-and-scholarships",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[21].application_fee",
+      "url": "https://apply.p.lodz.pl/en/enrollment/enroll/fees-and-scholarships",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[22].tuition[0].amount",
+      "url": "https://apply.p.lodz.pl/en/enrollment/enroll/fees-and-scholarships",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[22].application_fee",
+      "url": "https://apply.p.lodz.pl/en/enrollment/enroll/fees-and-scholarships",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[23].tuition[0].amount",
+      "url": "https://apply.p.lodz.pl/en/enrollment/enroll/fees-and-scholarships",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[23].application_fee",
+      "url": "https://apply.p.lodz.pl/en/enrollment/enroll/fees-and-scholarships",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[24].tuition[0].amount",
+      "url": "https://apply.p.lodz.pl/en/enrollment/enroll/fees-and-scholarships",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[24].application_fee",
+      "url": "https://apply.p.lodz.pl/en/enrollment/enroll/fees-and-scholarships",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[25].tuition[0].amount",
+      "url": "https://apply.p.lodz.pl/en/enrollment/enroll/fees-and-scholarships",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[25].application_fee",
+      "url": "https://apply.p.lodz.pl/en/enrollment/enroll/fees-and-scholarships",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    }
+  ],
+  "notes_for_reviewer": "Official apply.p.lodz.pl fees-and-scholarships page read 2026-10-25 (tuition per semester in PLN for foreign candidates, academic year 2026/2027; the language is taken from the flag icons and the programme names). Only the programmes taught in English are collected (14 bachelor and 11 master); the Polish-language programmes of the same page are not. The business programme \"Business, Society and Technology\" also exists in a joint English-French version at the same fee. The page does not give programme durations, intake months, deadlines or entrance requirements, so those fields are empty (the documents list is a standard guess). Application fee: PLN 150 for Architecture and Design, PLN 85 for the others (per programme). Tuition is not charged to the exempt groups listed on the page (EU/EEA/EFTA and UK citizens, permanent residents, holders of the Polish C1 certificate, Karta Polaka and others); the page also mentions 20 fee-free places a year (two per faculty) and NAWA scholarships. Master Nanotechnology and the other Chemistry programmes in Polish are not collected."
+}

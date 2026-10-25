@@ -887,6 +887,34 @@
 - Заметки сборщика: Official international.agh.edu.pl pages read 2026-10-25 (fees, bachelor offer, master offer, all for 2026/2027). Tuition is EUR per semester for international students (the page says they are admitted on a fee-payment basis and does not use the term non-EU); it is stored as period semester. Durations are given in semesters on the page (7 semesters = 3.5 years, 6 = 3, 3 = 1.5, 4 = 2). Recruitment windows are June-September (start 1 October) and January-February (start 1 March) with no exact dates or calendar year, so deadlines are empty. Raw Materials Value Chain is EUR 0 (project financed from EIT RawMaterials structural funds). The master Mechanical Engineering is NOT included: its fee is shown as available soon. Chemical Technology: the bridging semester is in Polish only. Application (recruitment) fee: PLN 85 per field without an entrance exam, PLN 100 with one (page); for bachelor programmes the page does not say whether an exam applies, so PLN 85 is stored. The part-time Metalcasting Engineering (PLN 4300 per semester) is not collected. The page does not state language level requirements or the required prior education of bachelor programmes (documents are a standard guess and should be checked). Faculty names are not stored.
 - Источников: 58; главные: https://www.international.agh.edu.pl/en/studies/fees · https://www.international.agh.edu.pl/en/studies/education-offer-bachelor-studies · https://www.international.agh.edu.pl/en/studies/education-offer-master-studies
 
+### Gdańsk University of Technology (PL/gdansk-university-of-technology)
+
+- Сайт: https://pg.edu.pl · форма: public · основано: ? · общежитие: нет данных
+- Учебный год данных: 2026/2027; собрано: 2026-10-25
+- **Программа 1:** Architecture (BSc) — bachelor, ISCED-F 0731, языки: en, 4 лет, on_campus, набор: 10
+  - Стоимость: 9500 PLN / semester (international)
+  - Требования: требования не найдены
+- **Программа 2:** Data Engineering (BSc) — bachelor, ISCED-F 0613, языки: en, 3.5 лет, on_campus, набор: 10
+  - Стоимость: 10000 PLN / semester (international)
+  - Требования: требования не найдены
+- **Программа 3:** Green Technologies (BSc) — bachelor, ISCED-F 0712, языки: en, 3.5 лет, on_campus, набор: 10
+  - Стоимость: 10000 PLN / semester (international)
+  - Требования: требования не найдены
+- **Программа 4:** Management (Bachelor) — bachelor, ISCED-F 0413, языки: en, 3 лет, on_campus, набор: 10
+  - Стоимость: 8600 PLN / semester (international)
+  - Требования: требования не найдены
+- **Программа 5:** Mechanical Engineering (BSc) — bachelor, ISCED-F 0715, языки: en, 3.5 лет, on_campus, набор: 10
+  - Стоимость: 10000 PLN / semester (international)
+  - Требования: требования не найдены
+- **Программа 6:** Power Engineering (BSc) — bachelor, ISCED-F 0713, языки: en, 3.5 лет, on_campus, набор: 10
+  - Стоимость: 10000 PLN / semester (international)
+  - Требования: требования не найдены
+- **Программа 7:** Engineering Management (BSc) — bachelor, ISCED-F 0413, языки: en, 3.5 лет, on_campus, набор: 10
+  - Стоимость: 10000 PLN / semester (international)
+  - Требования: требования не найдены
+- Заметки сборщика: Official pg.edu.pl pages read 2026-10-25: tuition fee (academic year 2026/2027, non-EU candidates, PLN per semester), study programs in English (seven bachelor programmes, durations in semesters) and dates and deadlines. Admission is once a year for the winter semester (October). The 2026 dates (applications 26.05-09.07.2026, tuition payment 02.08.2026, registration 14-25.09.2026) are in the past and the 2027 dates are not on the page, so deadlines are empty. Application (registration) fee: PLN 85 (PLN 100 with the Mathematics Entrance Examination track; PLN 150 for Architecture with the aptitude test). Bachelor programmes run only if enough candidates apply. EU candidates are mentioned as eligible for study on a non-tuition basis on the same pages (the amounts for EU citizens are not stored). Master programmes in English (for example Master in Economic Analytics and Master in International Management of the Faculty of Management and Economics) are NOT collected: only a faculty page shows PLN 10,750 per semester without a clear academic year. The documents list is a standard guess and the entrance requirements are not on the pages used.
+- Источников: 21; главные: https://pg.edu.pl/en/admission/bachelor-studies-international-students/tuition-fee · https://pg.edu.pl/en/admission/bachelor-studies-international-students/study-programs-english · https://pg.edu.pl/en/admission/bachelor-studies-international-students/dates-and-deadlines
+
 ### Jagiellonian University (PL/jagiellonian-university)
 
 - Сайт: https://www.uj.edu.pl · форма: public · основано: ? · общежитие: нет данных
@@ -902,6 +930,91 @@
   - Требования: требования не найдены
 - Заметки сборщика: Official uj.edu.pl pages read 2026-10-25. Medicine in English: EUR 16,000 per year for each of 6 years (EUR 96,000 in total), application fee PLN 100; round 1 of 2026 was 23.02-29.04.2026 (passed), no 2027 dates found, so deadlines are empty; the entrance exam, IELTS 6.5 / TOEFL iBT 87 and the chemistry plus biology-or-physics requirement are from the programme page. The page lists the level as 'undergraduate (long-cycle)': stored as master with 6 years. European Studies BA (3 years) and MA (2 years) at the Institute of European Studies: the page gives only totals for 2026/27 (EUR 13,200 = 6 instalments of 2,200; EUR 9,000 = 4 instalments of 2,250), the same for non-EU and EU students; stored as period 'total'. Other English programmes of the university (Erasmus Mundus, joint masters with partner universities, Business and Finance Management and others) are NOT collected: their fees and dates differ or are paid to partner universities. Application deadlines for the Institute programmes and the general English-taught master's schedule (first round 23.02-24.06, second round until 02.09; academic year not named on the page) were not stored. Founding year, rankings and dormitory are left empty.
 - Источников: 5; главные: https://irk.uj.edu.pl/en-gb/offer/SMO_PC_26/programme/medici_sjm_PC_en/ · https://welcome.uj.edu.pl/en_GB/admission/fees · https://ces.uj.edu.pl/prospective-students/tuition-and-fees
+
+### Łódź University of Technology (PL/odz-university-of-technology)
+
+- Сайт: https://p.lodz.pl · форма: public · основано: ? · общежитие: нет данных
+- Учебный год данных: 2026/2027; собрано: 2026-10-25
+- **Программа 1:** Textile and Fashion Industry (Bachelor) — bachelor, ISCED-F 0722, языки: en, ? лет, on_campus, набор: ?
+  - Стоимость: 8000 PLN / semester (international)
+  - Требования: требования не найдены
+- **Программа 2:** Architecture (Bachelor) — bachelor, ISCED-F 0731, языки: en, ? лет, on_campus, набор: ?
+  - Стоимость: 8000 PLN / semester (international)
+  - Требования: требования не найдены
+- **Программа 3:** Digital Management (Bachelor) — bachelor, ISCED-F 0413, языки: en, ? лет, on_campus, набор: ?
+  - Стоимость: 3200 PLN / semester (international)
+  - Требования: требования не найдены
+- **Программа 4:** Advanced Biobased and Bioinspired Materials (Bachelor, International Faculty of Engineering) — bachelor, ISCED-F 0722, языки: en, ? лет, on_campus, набор: ?
+  - Стоимость: 9000 PLN / semester (international)
+  - Требования: требования не найдены
+- **Программа 5:** Biomedical Engineering and Technologies (Bachelor, International Faculty of Engineering) — bachelor, ISCED-F 0719, языки: en, ? лет, on_campus, набор: ?
+  - Стоимость: 9000 PLN / semester (international)
+  - Требования: требования не найдены
+- **Программа 6:** Business, Society and Technology (Bachelor, International Faculty of Engineering) — bachelor, ISCED-F 0413, языки: en, ? лет, on_campus, набор: ?
+  - Стоимость: 9000 PLN / semester (international)
+  - Требования: требования не найдены
+- **Программа 7:** Computer Science (Bachelor, International Faculty of Engineering) — bachelor, ISCED-F 0613, языки: en, ? лет, on_campus, набор: ?
+  - Стоимость: 9000 PLN / semester (international)
+  - Требования: требования не найдены
+- **Программа 8:** Electronic and Telecommunication Engineering (Bachelor, International Faculty of Engineering) — bachelor, ISCED-F 0714, языки: en, ? лет, on_campus, набор: ?
+  - Стоимость: 9000 PLN / semester (international)
+  - Требования: требования не найдены
+- **Программа 9:** Industrial Biotechnology (Bachelor, International Faculty of Engineering) — bachelor, ISCED-F 0512, языки: en, ? лет, on_campus, набор: ?
+  - Стоимость: 9000 PLN / semester (international)
+  - Требования: требования не найдены
+- **Программа 10:** Information Technology (Bachelor, International Faculty of Engineering) — bachelor, ISCED-F 0613, языки: en, ? лет, on_campus, набор: ?
+  - Стоимость: 9000 PLN / semester (international)
+  - Требования: требования не найдены
+- **Программа 11:** Mathematical Methods in Data Analysis (Bachelor, International Faculty of Engineering) — bachelor, ISCED-F 0541, языки: en, ? лет, on_campus, набор: ?
+  - Стоимость: 9000 PLN / semester (international)
+  - Требования: требования не найдены
+- **Программа 12:** Mechanical Engineering (Bachelor, International Faculty of Engineering) — bachelor, ISCED-F 0715, языки: en, ? лет, on_campus, набор: ?
+  - Стоимость: 9000 PLN / semester (international)
+  - Требования: требования не найдены
+- **Программа 13:** Modelling and Data Science (Bachelor, International Faculty of Engineering) — bachelor, ISCED-F 0541, языки: en, ? лет, on_campus, набор: ?
+  - Стоимость: 9000 PLN / semester (international)
+  - Требования: требования не найдены
+- **Программа 14:** Business Studies (Bachelor, International Faculty of Engineering) — bachelor, ISCED-F 0413, языки: en, ? лет, on_campus, набор: ?
+  - Стоимость: 9000 PLN / semester (international)
+  - Требования: требования не найдены
+- **Программа 15:** Applied Electronics (Master) — master, ISCED-F 0714, языки: en, ? лет, on_campus, набор: ?
+  - Стоимость: 6300 PLN / semester (international)
+  - Требования: требования не найдены
+- **Программа 16:** Nanotechnology (Master) — master, ISCED-F 0719, языки: en, ? лет, on_campus, набор: ?
+  - Стоимость: 5500 PLN / semester (international)
+  - Требования: требования не найдены
+- **Программа 17:** Design (Master) — master, ISCED-F 0212, языки: en, ? лет, on_campus, набор: ?
+  - Стоимость: 8000 PLN / semester (international)
+  - Требования: требования не найдены
+- **Программа 18:** Textile Engineering (Master) — master, ISCED-F 0722, языки: en, ? лет, on_campus, набор: ?
+  - Стоимость: 8000 PLN / semester (international)
+  - Требования: требования не найдены
+- **Программа 19:** Architecture (Master) — master, ISCED-F 0731, языки: en, ? лет, on_campus, набор: ?
+  - Стоимость: 8000 PLN / semester (international)
+  - Требования: требования не найдены
+- **Программа 20:** Energy Systems in the Built Environment (Master) — master, ISCED-F 0713, языки: en, ? лет, on_campus, набор: ?
+  - Стоимость: 5400 PLN / semester (international)
+  - Требования: требования не найдены
+- **Программа 21:** Computer Science and Information Technology (Master, International Faculty of Engineering) — master, ISCED-F 0613, языки: en, ? лет, on_campus, набор: ?
+  - Стоимость: 9000 PLN / semester (international)
+  - Требования: требования не найдены
+- **Программа 22:** Human-Computer Interaction (Master, International Faculty of Engineering) — master, ISCED-F 0613, языки: en, ? лет, on_campus, набор: ?
+  - Стоимость: 9000 PLN / semester (international)
+  - Требования: требования не найдены
+- **Программа 23:** Mechanical Engineering (Master, International Faculty of Engineering) — master, ISCED-F 0715, языки: en, ? лет, on_campus, набор: ?
+  - Стоимость: 9000 PLN / semester (international)
+  - Требования: требования не найдены
+- **Программа 24:** Business Studies (Master, International Faculty of Engineering) — master, ISCED-F 0413, языки: en, ? лет, on_campus, набор: ?
+  - Стоимость: 9000 PLN / semester (international)
+  - Требования: требования не найдены
+- **Программа 25:** Molecular Biotechnology and Bioinformatics (Master, International Faculty of Engineering) — master, ISCED-F 0512, языки: en, ? лет, on_campus, набор: ?
+  - Стоимость: 9000 PLN / semester (international)
+  - Требования: требования не найдены
+- **Программа 26:** Smart Manufacturing and Management (Master, International Faculty of Engineering) — master, ISCED-F 0715, языки: en, ? лет, on_campus, набор: ?
+  - Стоимость: 9000 PLN / semester (international)
+  - Требования: требования не найдены
+- Заметки сборщика: Official apply.p.lodz.pl fees-and-scholarships page read 2026-10-25 (tuition per semester in PLN for foreign candidates, academic year 2026/2027; the language is taken from the flag icons and the programme names). Only the programmes taught in English are collected (14 bachelor and 11 master); the Polish-language programmes of the same page are not. The business programme "Business, Society and Technology" also exists in a joint English-French version at the same fee. The page does not give programme durations, intake months, deadlines or entrance requirements, so those fields are empty (the documents list is a standard guess). Application fee: PLN 150 for Architecture and Design, PLN 85 for the others (per programme). Tuition is not charged to the exempt groups listed on the page (EU/EEA/EFTA and UK citizens, permanent residents, holders of the Polish C1 certificate, Karta Polaka and others); the page also mentions 20 fee-free places a year (two per faculty) and NAWA scholarships. Master Nanotechnology and the other Chemistry programmes in Polish are not collected.
+- Источников: 52; главные: https://apply.p.lodz.pl/en/enrollment/enroll/fees-and-scholarships
 
 ### Warsaw University of Technology (PL/warsaw-university-of-technology)
 
@@ -1014,6 +1127,97 @@
   - Требования: требования не найдены
 - Заметки сборщика: Official students.pw.edu.pl pages (WUT International Students Office: B.Sc. offer and M.Sc. offer, both for the academic year 2026/2027, M.Sc. page updated 19 October 2026) read 2026-10-25. Tuition for non-EU citizens is EUR and the column is headed "TUITION FEE (one semester)" on both pages, so it is stored per semester; EU/EFTA fees (PLN) are not stored. The pages do not say that the programmes are taught in English (it is the offer of the International Students Office): English is stored as the language and should be confirmed on the programme pages. Durations are in semesters on the pages (1 semester = 1/2 year). Intakes: October and/or February; no application dates, entrance requirements or application fees are on the pages (documents are a standard guess and should be checked). Aerospace Engineering: Aerospace Propulsion Systems (M.Sc.) is NOT included (no fee or duration on the page). "Applied Computer Science" (M.Sc.) is hybrid/part-time and is stored as blended. The B.Sc. specialisations Photonic Engineering and Telecommunications appear in the sidebar but not in the 2026/2027 table and are not included. The actual semester fee follows the ECTS plan of each student (WUT regulations), so the amount is the official non-EU tuition for the offer.
 - Источников: 70; главные: https://www.students.pw.edu.pl/Studies-Offer/B.Sc.-offer · https://www.students.pw.edu.pl/Studies-Offer/M.Sc.-offer
+
+### Wrocław University of Science and Technology (PL/wroc-aw-university-of-science-and-technology)
+
+- Сайт: https://pwr.edu.pl · форма: public · основано: ? · общежитие: нет данных
+- Учебный год данных: 2026/2027; собрано: 2026-10-25
+- **Программа 1:** Applied Computer Science (BSc) — bachelor, ISCED-F 0613, языки: en, 3.5 лет, on_campus, набор: 10
+  - Стоимость: 8900 PLN / semester (international)
+  - Требования: требования не найдены
+- **Программа 2:** Management: Organizational Management (BSc) — bachelor, ISCED-F 0413, языки: en, 3 лет, on_campus, набор: 10
+  - Стоимость: 8600 PLN / semester (international)
+  - Требования: требования не найдены
+- **Программа 3:** Mechanical Engineering: Mechanical Engineering Design (BSc) — bachelor, ISCED-F 0715, языки: en, 3.5 лет, on_campus, набор: 10
+  - Стоимость: 9300 PLN / semester (international)
+  - Требования: требования не найдены
+- **Программа 4:** Medical Informatics (BSc) — bachelor, ISCED-F 0613, языки: en, 3.5 лет, on_campus, набор: 10
+  - Стоимость: 12700 PLN / semester (international)
+  - Требования: требования не найдены
+- **Программа 5:** Electronic and Computer Engineering (BSc) — bachelor, ISCED-F 0714, языки: en, 3.5 лет, on_campus, набор: 10
+  - Стоимость: 8800 PLN / semester (international)
+  - Требования: требования не найдены
+- **Программа 6:** Architecture (MSc) — master, ISCED-F 0731, языки: en, ? лет, on_campus, набор: ?
+  - Стоимость: 10600 PLN / semester (international)
+  - Требования: требования не найдены
+- **Программа 7:** Civil Engineering (MSc) — master, ISCED-F 0732, языки: en, ? лет, on_campus, набор: ?
+  - Стоимость: 21200 PLN / semester (international)
+  - Требования: требования не найдены
+- **Программа 8:** Advanced Nano and Biomaterials MONABIPHOT (MSc, October intake) — master, ISCED-F 0719, языки: en, ? лет, on_campus, набор: 10
+  - Стоимость: 23400 PLN / semester (international)
+  - Требования: требования не найдены
+- **Программа 9:** Advanced Nano and Biomaterials MONABIPHOT (MSc, February intake) — master, ISCED-F 0719, языки: en, ? лет, on_campus, набор: 02
+  - Стоимость: 15500 PLN / semester (international)
+  - Требования: требования не найдены
+- **Программа 10:** Biosciences (MSc, October intake) — master, ISCED-F 0511, языки: en, ? лет, on_campus, набор: 10
+  - Стоимость: 21500 PLN / semester (international)
+  - Требования: требования не найдены
+- **Программа 11:** Biosciences (MSc, February intake) — master, ISCED-F 0511, языки: en, ? лет, on_campus, набор: 02
+  - Стоимость: 22200 PLN / semester (international)
+  - Требования: требования не найдены
+- **Программа 12:** Chemical Engineering and Technology (MSc, October intake) — master, ISCED-F 0711, языки: en, ? лет, on_campus, набор: 10
+  - Стоимость: 32500 PLN / semester (international)
+  - Требования: требования не найдены
+- **Программа 13:** Chemical Engineering and Technology (MSc, February intake) — master, ISCED-F 0711, языки: en, ? лет, on_campus, набор: 02
+  - Стоимость: 23600 PLN / semester (international)
+  - Требования: требования не найдены
+- **Программа 14:** Chemical Nano-Engineering (MSc) — master, ISCED-F 0719, языки: en, ? лет, on_campus, набор: ?
+  - Стоимость: 14800 PLN / semester (international)
+  - Требования: требования не найдены
+- **Программа 15:** Applied Computer Science (MSc) — master, ISCED-F 0613, языки: en, ? лет, on_campus, набор: ?
+  - Стоимость: 9800 PLN / semester (international)
+  - Требования: требования не найдены
+- **Программа 16:** Computer Engineering (MSc) — master, ISCED-F 0613, языки: en, ? лет, on_campus, набор: ?
+  - Стоимость: 7900 PLN / semester (international)
+  - Требования: требования не найдены
+- **Программа 17:** Electrical Engineering (MSc) — master, ISCED-F 0713, языки: en, ? лет, on_campus, набор: ?
+  - Стоимость: 9700 PLN / semester (international)
+  - Требования: требования не найдены
+- **Программа 18:** Geodesy and Cartography (MSc) — master, ISCED-F 0732, языки: en, ? лет, on_campus, набор: ?
+  - Стоимость: 14000 PLN / semester (international)
+  - Требования: требования не найдены
+- **Программа 19:** Mining and Geology (MSc) — master, ISCED-F 0724, языки: en, ? лет, on_campus, набор: 10/02
+  - Стоимость: 8600 PLN / semester (international)
+  - Требования: требования не найдены
+- **Программа 20:** Environmental Quality Management (MSc) — master, ISCED-F 0712, языки: en, ? лет, on_campus, набор: ?
+  - Стоимость: 13800 PLN / semester (international)
+  - Требования: требования не найдены
+- **Программа 21:** Business Engineering (MSc) — master, ISCED-F 0413, языки: en, ? лет, on_campus, набор: ?
+  - Стоимость: 10800 PLN / semester (international)
+  - Требования: требования не найдены
+- **Программа 22:** Management (MSc) — master, ISCED-F 0413, языки: en, ? лет, on_campus, набор: ?
+  - Стоимость: 11100 PLN / semester (international)
+  - Требования: требования не найдены
+- **Программа 23:** Power Engineering (MSc) — master, ISCED-F 0713, языки: en, ? лет, on_campus, набор: ?
+  - Стоимость: 14820 PLN / semester (international)
+  - Требования: требования не найдены
+- **Программа 24:** Mechanical Engineering (MSc) — master, ISCED-F 0715, языки: en, ? лет, on_campus, набор: ?
+  - Стоимость: 10800 PLN / semester (international)
+  - Требования: требования не найдены
+- **Программа 25:** Management and Manufacturing Engineering (MSc) — master, ISCED-F 0715, языки: en, ? лет, on_campus, набор: ?
+  - Стоимость: 10300 PLN / semester (international)
+  - Требования: требования не найдены
+- **Программа 26:** Control Engineering and Robotics (MSc) — master, ISCED-F 0714, языки: en, ? лет, on_campus, набор: ?
+  - Стоимость: 11600 PLN / semester (international)
+  - Требования: требования не найдены
+- **Программа 27:** Electronics (MSc) — master, ISCED-F 0714, языки: en, ? лет, on_campus, набор: ?
+  - Стоимость: 14700 PLN / semester (international)
+  - Требования: требования не найдены
+- **Программа 28:** Applied Mathematics (MSc) — master, ISCED-F 0541, языки: en, ? лет, on_campus, набор: ?
+  - Стоимость: 9200 PLN / semester (international)
+  - Требования: требования не найдены
+- Заметки сборщика: Official rekrutacja.pwr.edu.pl payments page ("English-taught programmes, 2026/27, students admitted in 2026/27") and the official Prospectus 2026/27 read 2026-10-25. Tuition is in PLN per semester (the page gives no annual totals and says the amount is unchanged for the whole study period); it is stored for international students as period semester. Bachelor: duration, English and the October 2026 start are from the prospectus (7 semesters = 3.5 years, 6 = 3). Master: the duration differs between tracks (3 or 4 semesters, different by intake and double-degree tracks), so it is NOT stored; the fee page lists one fee per field, and the master programmes of one field (for example the many Mining and Geology specialisations and the double degrees) are therefore merged into one programme per field. Fields with a different fee per intake (MONABIPHOT, Biosciences, Chemical Engineering and Technology) are stored as two programmes, one per intake. No application deadline dates, application fee (the 2024/25 table showed EUR 20 = PLN 85; not stored) or language-level requirements are on the pages used; the documents list is a standard guess and should be checked. Doctoral studies are tuition-free (page of the admission section) and are not collected.
+- Источников: 33; главные: https://rekrutacja.pwr.edu.pl/en/for-foreigners/fee-paying-basis-of-studies-and-scholarship-holders/after-admission/payments/ · https://rekrutacja.pwr.edu.pl/wp-content/uploads/2026/04/prospectus_2026_27.pdf
 
 ### KTH Royal Institute of Technology (SE/royal-institute-of-technology)
 

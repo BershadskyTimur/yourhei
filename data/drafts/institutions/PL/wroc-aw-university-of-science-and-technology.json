@@ -1,0 +1,1245 @@
+{
+  "schema_version": 1,
+  "collected_at": "2026-10-25",
+  "academic_year": "2026/2027",
+  "institution": {
+    "external_ids": {},
+    "description": {
+      "en": "A large public technical university in Wrocław. For 2026/2027 it lists 5 bachelor and 23 master programmes in English with tuition in PLN per semester.",
+      "ru": "Крупный государственный технический университет во Вроцлаве. На 2026/2027 год в списке 5 программ бакалавриата и 23 магистерские на английском; цена указана в злотых за семестр."
+    },
+    "rankings": [],
+    "dormitory": null,
+    "ownership": "public",
+    "founded_year": null,
+    "names": {
+      "original": "Politechnika Wrocławska",
+      "en": "Wrocław University of Science and Technology",
+      "ru": "Вроцлавский технический университет"
+    },
+    "type": "university",
+    "city": {
+      "original": "Wrocław",
+      "en": "Wrocław",
+      "ru": "Вроцлав"
+    },
+    "website": "https://pwr.edu.pl",
+    "city_size": "medium",
+    "climate": "temperate",
+    "size": "large",
+    "features": [
+      "double_degree",
+      "exchange"
+    ],
+    "country": "PL"
+  },
+  "programs": [
+    {
+      "names": {
+        "original": "Applied Computer Science (BSc)",
+        "en": "Applied Computer Science (BSc)",
+        "ru": "Прикладная информатика (бакалавриат)"
+      },
+      "level": "bachelor",
+      "isced_f": "0613",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 3.5,
+      "format": "on_campus",
+      "intakes": [
+        "10"
+      ],
+      "tuition": [
+        {
+          "amount": 8900,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://admission.pwr.edu.pl"
+    },
+    {
+      "names": {
+        "original": "Management: Organizational Management (BSc)",
+        "en": "Management: Organizational Management (BSc)",
+        "ru": "Менеджмент: организационное управление (бакалавриат)"
+      },
+      "level": "bachelor",
+      "isced_f": "0413",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 3,
+      "format": "on_campus",
+      "intakes": [
+        "10"
+      ],
+      "tuition": [
+        {
+          "amount": 8600,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://admission.pwr.edu.pl"
+    },
+    {
+      "names": {
+        "original": "Mechanical Engineering: Mechanical Engineering Design (BSc)",
+        "en": "Mechanical Engineering: Mechanical Engineering Design (BSc)",
+        "ru": "Машиностроение: проектирование машин (бакалавриат)"
+      },
+      "level": "bachelor",
+      "isced_f": "0715",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 3.5,
+      "format": "on_campus",
+      "intakes": [
+        "10"
+      ],
+      "tuition": [
+        {
+          "amount": 9300,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://admission.pwr.edu.pl"
+    },
+    {
+      "names": {
+        "original": "Medical Informatics (BSc)",
+        "en": "Medical Informatics (BSc)",
+        "ru": "Медицинская информатика (бакалавриат)"
+      },
+      "level": "bachelor",
+      "isced_f": "0613",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 3.5,
+      "format": "on_campus",
+      "intakes": [
+        "10"
+      ],
+      "tuition": [
+        {
+          "amount": 12700,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://admission.pwr.edu.pl"
+    },
+    {
+      "names": {
+        "original": "Electronic and Computer Engineering (BSc)",
+        "en": "Electronic and Computer Engineering (BSc)",
+        "ru": "Электронная и компьютерная инженерия (бакалавриат)"
+      },
+      "level": "bachelor",
+      "isced_f": "0714",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 3.5,
+      "format": "on_campus",
+      "intakes": [
+        "10"
+      ],
+      "tuition": [
+        {
+          "amount": 8800,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://admission.pwr.edu.pl"
+    },
+    {
+      "names": {
+        "original": "Architecture (MSc)",
+        "en": "Architecture (MSc)",
+        "ru": "Архитектура (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0731",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 10600,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://admission.pwr.edu.pl"
+    },
+    {
+      "names": {
+        "original": "Civil Engineering (MSc)",
+        "en": "Civil Engineering (MSc)",
+        "ru": "Строительство (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0732",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 21200,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://admission.pwr.edu.pl"
+    },
+    {
+      "names": {
+        "original": "Advanced Nano and Biomaterials MONABIPHOT (MSc, October intake)",
+        "en": "Advanced Nano and Biomaterials MONABIPHOT (MSc, October intake)",
+        "ru": "Передовые нано- и биоматериалы MONABIPHOT (магистратура, набор в октябре)"
+      },
+      "level": "master",
+      "isced_f": "0719",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [
+        "10"
+      ],
+      "tuition": [
+        {
+          "amount": 23400,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://admission.pwr.edu.pl"
+    },
+    {
+      "names": {
+        "original": "Advanced Nano and Biomaterials MONABIPHOT (MSc, February intake)",
+        "en": "Advanced Nano and Biomaterials MONABIPHOT (MSc, February intake)",
+        "ru": "Передовые нано- и биоматериалы MONABIPHOT (магистратура, набор в феврале)"
+      },
+      "level": "master",
+      "isced_f": "0719",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [
+        "02"
+      ],
+      "tuition": [
+        {
+          "amount": 15500,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://admission.pwr.edu.pl"
+    },
+    {
+      "names": {
+        "original": "Biosciences (MSc, October intake)",
+        "en": "Biosciences (MSc, October intake)",
+        "ru": "Биологические науки (магистратура, набор в октябре)"
+      },
+      "level": "master",
+      "isced_f": "0511",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [
+        "10"
+      ],
+      "tuition": [
+        {
+          "amount": 21500,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://admission.pwr.edu.pl"
+    },
+    {
+      "names": {
+        "original": "Biosciences (MSc, February intake)",
+        "en": "Biosciences (MSc, February intake)",
+        "ru": "Биологические науки (магистратура, набор в феврале)"
+      },
+      "level": "master",
+      "isced_f": "0511",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [
+        "02"
+      ],
+      "tuition": [
+        {
+          "amount": 22200,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://admission.pwr.edu.pl"
+    },
+    {
+      "names": {
+        "original": "Chemical Engineering and Technology (MSc, October intake)",
+        "en": "Chemical Engineering and Technology (MSc, October intake)",
+        "ru": "Химическая инженерия и технология (магистратура, набор в октябре)"
+      },
+      "level": "master",
+      "isced_f": "0711",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [
+        "10"
+      ],
+      "tuition": [
+        {
+          "amount": 32500,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://admission.pwr.edu.pl"
+    },
+    {
+      "names": {
+        "original": "Chemical Engineering and Technology (MSc, February intake)",
+        "en": "Chemical Engineering and Technology (MSc, February intake)",
+        "ru": "Химическая инженерия и технология (магистратура, набор в феврале)"
+      },
+      "level": "master",
+      "isced_f": "0711",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [
+        "02"
+      ],
+      "tuition": [
+        {
+          "amount": 23600,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://admission.pwr.edu.pl"
+    },
+    {
+      "names": {
+        "original": "Chemical Nano-Engineering (MSc)",
+        "en": "Chemical Nano-Engineering (MSc)",
+        "ru": "Химическая нанотехнология (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0719",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 14800,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://admission.pwr.edu.pl"
+    },
+    {
+      "names": {
+        "original": "Applied Computer Science (MSc)",
+        "en": "Applied Computer Science (MSc)",
+        "ru": "Прикладная информатика (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0613",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 9800,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://admission.pwr.edu.pl"
+    },
+    {
+      "names": {
+        "original": "Computer Engineering (MSc)",
+        "en": "Computer Engineering (MSc)",
+        "ru": "Компьютерная инженерия (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0613",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 7900,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://admission.pwr.edu.pl"
+    },
+    {
+      "names": {
+        "original": "Electrical Engineering (MSc)",
+        "en": "Electrical Engineering (MSc)",
+        "ru": "Электротехника (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0713",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 9700,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://admission.pwr.edu.pl"
+    },
+    {
+      "names": {
+        "original": "Geodesy and Cartography (MSc)",
+        "en": "Geodesy and Cartography (MSc)",
+        "ru": "Геодезия и картография (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0732",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 14000,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://admission.pwr.edu.pl"
+    },
+    {
+      "names": {
+        "original": "Mining and Geology (MSc)",
+        "en": "Mining and Geology (MSc)",
+        "ru": "Горное дело и геология (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0724",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [
+        "10",
+        "02"
+      ],
+      "tuition": [
+        {
+          "amount": 8600,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://admission.pwr.edu.pl"
+    },
+    {
+      "names": {
+        "original": "Environmental Quality Management (MSc)",
+        "en": "Environmental Quality Management (MSc)",
+        "ru": "Управление качеством окружающей среды (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0712",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 13800,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://admission.pwr.edu.pl"
+    },
+    {
+      "names": {
+        "original": "Business Engineering (MSc)",
+        "en": "Business Engineering (MSc)",
+        "ru": "Бизнес-инженерия (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0413",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 10800,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://admission.pwr.edu.pl"
+    },
+    {
+      "names": {
+        "original": "Management (MSc)",
+        "en": "Management (MSc)",
+        "ru": "Менеджмент (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0413",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 11100,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://admission.pwr.edu.pl"
+    },
+    {
+      "names": {
+        "original": "Power Engineering (MSc)",
+        "en": "Power Engineering (MSc)",
+        "ru": "Энергетика (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0713",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 14820,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://admission.pwr.edu.pl"
+    },
+    {
+      "names": {
+        "original": "Mechanical Engineering (MSc)",
+        "en": "Mechanical Engineering (MSc)",
+        "ru": "Машиностроение (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0715",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 10800,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://admission.pwr.edu.pl"
+    },
+    {
+      "names": {
+        "original": "Management and Manufacturing Engineering (MSc)",
+        "en": "Management and Manufacturing Engineering (MSc)",
+        "ru": "Менеджмент и производственная инженерия (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0715",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 10300,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://admission.pwr.edu.pl"
+    },
+    {
+      "names": {
+        "original": "Control Engineering and Robotics (MSc)",
+        "en": "Control Engineering and Robotics (MSc)",
+        "ru": "Автоматика и робототехника (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0714",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 11600,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://admission.pwr.edu.pl"
+    },
+    {
+      "names": {
+        "original": "Electronics (MSc)",
+        "en": "Electronics (MSc)",
+        "ru": "Электроника (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0714",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 14700,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://admission.pwr.edu.pl"
+    },
+    {
+      "names": {
+        "original": "Applied Mathematics (MSc)",
+        "en": "Applied Mathematics (MSc)",
+        "ru": "Прикладная математика (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0541",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 9200,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://admission.pwr.edu.pl"
+    }
+  ],
+  "scholarships": [],
+  "sources": [
+    {
+      "field": "programs[0].tuition[0].amount",
+      "url": "https://rekrutacja.pwr.edu.pl/en/for-foreigners/fee-paying-basis-of-studies-and-scholarship-holders/after-admission/payments/",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[0].duration_years",
+      "url": "https://rekrutacja.pwr.edu.pl/wp-content/uploads/2026/04/prospectus_2026_27.pdf",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[1].tuition[0].amount",
+      "url": "https://rekrutacja.pwr.edu.pl/en/for-foreigners/fee-paying-basis-of-studies-and-scholarship-holders/after-admission/payments/",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[1].duration_years",
+      "url": "https://rekrutacja.pwr.edu.pl/wp-content/uploads/2026/04/prospectus_2026_27.pdf",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[2].tuition[0].amount",
+      "url": "https://rekrutacja.pwr.edu.pl/en/for-foreigners/fee-paying-basis-of-studies-and-scholarship-holders/after-admission/payments/",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[2].duration_years",
+      "url": "https://rekrutacja.pwr.edu.pl/wp-content/uploads/2026/04/prospectus_2026_27.pdf",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[3].tuition[0].amount",
+      "url": "https://rekrutacja.pwr.edu.pl/en/for-foreigners/fee-paying-basis-of-studies-and-scholarship-holders/after-admission/payments/",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[3].duration_years",
+      "url": "https://rekrutacja.pwr.edu.pl/wp-content/uploads/2026/04/prospectus_2026_27.pdf",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[4].tuition[0].amount",
+      "url": "https://rekrutacja.pwr.edu.pl/en/for-foreigners/fee-paying-basis-of-studies-and-scholarship-holders/after-admission/payments/",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[4].duration_years",
+      "url": "https://rekrutacja.pwr.edu.pl/wp-content/uploads/2026/04/prospectus_2026_27.pdf",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[5].tuition[0].amount",
+      "url": "https://rekrutacja.pwr.edu.pl/en/for-foreigners/fee-paying-basis-of-studies-and-scholarship-holders/after-admission/payments/",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[6].tuition[0].amount",
+      "url": "https://rekrutacja.pwr.edu.pl/en/for-foreigners/fee-paying-basis-of-studies-and-scholarship-holders/after-admission/payments/",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[7].tuition[0].amount",
+      "url": "https://rekrutacja.pwr.edu.pl/en/for-foreigners/fee-paying-basis-of-studies-and-scholarship-holders/after-admission/payments/",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[8].tuition[0].amount",
+      "url": "https://rekrutacja.pwr.edu.pl/en/for-foreigners/fee-paying-basis-of-studies-and-scholarship-holders/after-admission/payments/",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[9].tuition[0].amount",
+      "url": "https://rekrutacja.pwr.edu.pl/en/for-foreigners/fee-paying-basis-of-studies-and-scholarship-holders/after-admission/payments/",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[10].tuition[0].amount",
+      "url": "https://rekrutacja.pwr.edu.pl/en/for-foreigners/fee-paying-basis-of-studies-and-scholarship-holders/after-admission/payments/",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[11].tuition[0].amount",
+      "url": "https://rekrutacja.pwr.edu.pl/en/for-foreigners/fee-paying-basis-of-studies-and-scholarship-holders/after-admission/payments/",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[12].tuition[0].amount",
+      "url": "https://rekrutacja.pwr.edu.pl/en/for-foreigners/fee-paying-basis-of-studies-and-scholarship-holders/after-admission/payments/",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[13].tuition[0].amount",
+      "url": "https://rekrutacja.pwr.edu.pl/en/for-foreigners/fee-paying-basis-of-studies-and-scholarship-holders/after-admission/payments/",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[14].tuition[0].amount",
+      "url": "https://rekrutacja.pwr.edu.pl/en/for-foreigners/fee-paying-basis-of-studies-and-scholarship-holders/after-admission/payments/",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[15].tuition[0].amount",
+      "url": "https://rekrutacja.pwr.edu.pl/en/for-foreigners/fee-paying-basis-of-studies-and-scholarship-holders/after-admission/payments/",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[16].tuition[0].amount",
+      "url": "https://rekrutacja.pwr.edu.pl/en/for-foreigners/fee-paying-basis-of-studies-and-scholarship-holders/after-admission/payments/",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[17].tuition[0].amount",
+      "url": "https://rekrutacja.pwr.edu.pl/en/for-foreigners/fee-paying-basis-of-studies-and-scholarship-holders/after-admission/payments/",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[18].tuition[0].amount",
+      "url": "https://rekrutacja.pwr.edu.pl/en/for-foreigners/fee-paying-basis-of-studies-and-scholarship-holders/after-admission/payments/",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[19].tuition[0].amount",
+      "url": "https://rekrutacja.pwr.edu.pl/en/for-foreigners/fee-paying-basis-of-studies-and-scholarship-holders/after-admission/payments/",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[20].tuition[0].amount",
+      "url": "https://rekrutacja.pwr.edu.pl/en/for-foreigners/fee-paying-basis-of-studies-and-scholarship-holders/after-admission/payments/",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[21].tuition[0].amount",
+      "url": "https://rekrutacja.pwr.edu.pl/en/for-foreigners/fee-paying-basis-of-studies-and-scholarship-holders/after-admission/payments/",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[22].tuition[0].amount",
+      "url": "https://rekrutacja.pwr.edu.pl/en/for-foreigners/fee-paying-basis-of-studies-and-scholarship-holders/after-admission/payments/",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[23].tuition[0].amount",
+      "url": "https://rekrutacja.pwr.edu.pl/en/for-foreigners/fee-paying-basis-of-studies-and-scholarship-holders/after-admission/payments/",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[24].tuition[0].amount",
+      "url": "https://rekrutacja.pwr.edu.pl/en/for-foreigners/fee-paying-basis-of-studies-and-scholarship-holders/after-admission/payments/",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[25].tuition[0].amount",
+      "url": "https://rekrutacja.pwr.edu.pl/en/for-foreigners/fee-paying-basis-of-studies-and-scholarship-holders/after-admission/payments/",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[26].tuition[0].amount",
+      "url": "https://rekrutacja.pwr.edu.pl/en/for-foreigners/fee-paying-basis-of-studies-and-scholarship-holders/after-admission/payments/",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[27].tuition[0].amount",
+      "url": "https://rekrutacja.pwr.edu.pl/en/for-foreigners/fee-paying-basis-of-studies-and-scholarship-holders/after-admission/payments/",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    }
+  ],
+  "notes_for_reviewer": "Official rekrutacja.pwr.edu.pl payments page (\"English-taught programmes, 2026/27, students admitted in 2026/27\") and the official Prospectus 2026/27 read 2026-10-25. Tuition is in PLN per semester (the page gives no annual totals and says the amount is unchanged for the whole study period); it is stored for international students as period semester. Bachelor: duration, English and the October 2026 start are from the prospectus (7 semesters = 3.5 years, 6 = 3). Master: the duration differs between tracks (3 or 4 semesters, different by intake and double-degree tracks), so it is NOT stored; the fee page lists one fee per field, and the master programmes of one field (for example the many Mining and Geology specialisations and the double degrees) are therefore merged into one programme per field. Fields with a different fee per intake (MONABIPHOT, Biosciences, Chemical Engineering and Technology) are stored as two programmes, one per intake. No application deadline dates, application fee (the 2024/25 table showed EUR 20 = PLN 85; not stored) or language-level requirements are on the pages used; the documents list is a standard guess and should be checked. Doctoral studies are tuition-free (page of the admission section) and are not collected."
+}

@@ -1,0 +1,448 @@
+{
+  "schema_version": 1,
+  "collected_at": "2026-10-25",
+  "academic_year": "2026/2027",
+  "institution": {
+    "external_ids": {},
+    "description": {
+      "en": "A public technical university in Gdańsk on the Baltic coast. It offers 7 bachelor programmes in English; non-EU candidates pay tuition in PLN per semester.",
+      "ru": "Государственный технический университет в Гданьске на побережье Балтики. На английском доступны 7 программ бакалавриата; кандидаты из-за пределов ЕС платят за обучение в злотых за семестр."
+    },
+    "rankings": [],
+    "dormitory": null,
+    "ownership": "public",
+    "founded_year": null,
+    "names": {
+      "original": "Politechnika Gdańska",
+      "en": "Gdańsk University of Technology",
+      "ru": "Гданьский политехнический университет"
+    },
+    "type": "university",
+    "city": {
+      "original": "Gdańsk",
+      "en": "Gdańsk",
+      "ru": "Гданьск"
+    },
+    "website": "https://pg.edu.pl",
+    "city_size": "medium",
+    "climate": "temperate",
+    "size": "large",
+    "features": [
+      "exchange"
+    ],
+    "country": "PL"
+  },
+  "programs": [
+    {
+      "names": {
+        "original": "Architecture (BSc)",
+        "en": "Architecture (BSc)",
+        "ru": "Архитектура (бакалавриат)"
+      },
+      "level": "bachelor",
+      "isced_f": "0731",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4.0,
+      "format": "on_campus",
+      "intakes": [
+        "10"
+      ],
+      "tuition": [
+        {
+          "amount": 9500,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null,
+        "portfolio": "Architectural aptitude test (one day, stationary and online)"
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 150,
+        "currency": "PLN"
+      },
+      "application_url": "https://pg.edu.pl/en/admission/bachelor-studies-international-students/study-programs-english"
+    },
+    {
+      "names": {
+        "original": "Data Engineering (BSc)",
+        "en": "Data Engineering (BSc)",
+        "ru": "Инженерия данных (бакалавриат)"
+      },
+      "level": "bachelor",
+      "isced_f": "0613",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 3.5,
+      "format": "on_campus",
+      "intakes": [
+        "10"
+      ],
+      "tuition": [
+        {
+          "amount": 10000,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 85,
+        "currency": "PLN"
+      },
+      "application_url": "https://pg.edu.pl/en/admission/bachelor-studies-international-students/study-programs-english"
+    },
+    {
+      "names": {
+        "original": "Green Technologies (BSc)",
+        "en": "Green Technologies (BSc)",
+        "ru": "Зелёные технологии (бакалавриат)"
+      },
+      "level": "bachelor",
+      "isced_f": "0712",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 3.5,
+      "format": "on_campus",
+      "intakes": [
+        "10"
+      ],
+      "tuition": [
+        {
+          "amount": 10000,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 85,
+        "currency": "PLN"
+      },
+      "application_url": "https://pg.edu.pl/en/admission/bachelor-studies-international-students/study-programs-english"
+    },
+    {
+      "names": {
+        "original": "Management (Bachelor)",
+        "en": "Management (Bachelor)",
+        "ru": "Менеджмент (бакалавриат)"
+      },
+      "level": "bachelor",
+      "isced_f": "0413",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 3.0,
+      "format": "on_campus",
+      "intakes": [
+        "10"
+      ],
+      "tuition": [
+        {
+          "amount": 8600,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 85,
+        "currency": "PLN"
+      },
+      "application_url": "https://pg.edu.pl/en/admission/bachelor-studies-international-students/study-programs-english"
+    },
+    {
+      "names": {
+        "original": "Mechanical Engineering (BSc)",
+        "en": "Mechanical Engineering (BSc)",
+        "ru": "Машиностроение (бакалавриат)"
+      },
+      "level": "bachelor",
+      "isced_f": "0715",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 3.5,
+      "format": "on_campus",
+      "intakes": [
+        "10"
+      ],
+      "tuition": [
+        {
+          "amount": 10000,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 85,
+        "currency": "PLN"
+      },
+      "application_url": "https://pg.edu.pl/en/admission/bachelor-studies-international-students/study-programs-english"
+    },
+    {
+      "names": {
+        "original": "Power Engineering (BSc)",
+        "en": "Power Engineering (BSc)",
+        "ru": "Энергетика (бакалавриат)"
+      },
+      "level": "bachelor",
+      "isced_f": "0713",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 3.5,
+      "format": "on_campus",
+      "intakes": [
+        "10"
+      ],
+      "tuition": [
+        {
+          "amount": 10000,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 85,
+        "currency": "PLN"
+      },
+      "application_url": "https://pg.edu.pl/en/admission/bachelor-studies-international-students/study-programs-english"
+    },
+    {
+      "names": {
+        "original": "Engineering Management (BSc)",
+        "en": "Engineering Management (BSc)",
+        "ru": "Инженерный менеджмент (бакалавриат)"
+      },
+      "level": "bachelor",
+      "isced_f": "0413",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 3.5,
+      "format": "on_campus",
+      "intakes": [
+        "10"
+      ],
+      "tuition": [
+        {
+          "amount": 10000,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 85,
+        "currency": "PLN"
+      },
+      "application_url": "https://pg.edu.pl/en/admission/bachelor-studies-international-students/study-programs-english"
+    }
+  ],
+  "scholarships": [],
+  "sources": [
+    {
+      "field": "programs[0].tuition[0].amount",
+      "url": "https://pg.edu.pl/en/admission/bachelor-studies-international-students/tuition-fee",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[0].duration_years",
+      "url": "https://pg.edu.pl/en/admission/bachelor-studies-international-students/study-programs-english",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[0].application_fee",
+      "url": "https://pg.edu.pl/en/admission/bachelor-studies-international-students/dates-and-deadlines",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[1].tuition[0].amount",
+      "url": "https://pg.edu.pl/en/admission/bachelor-studies-international-students/tuition-fee",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[1].duration_years",
+      "url": "https://pg.edu.pl/en/admission/bachelor-studies-international-students/study-programs-english",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[1].application_fee",
+      "url": "https://pg.edu.pl/en/admission/bachelor-studies-international-students/dates-and-deadlines",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[2].tuition[0].amount",
+      "url": "https://pg.edu.pl/en/admission/bachelor-studies-international-students/tuition-fee",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[2].duration_years",
+      "url": "https://pg.edu.pl/en/admission/bachelor-studies-international-students/study-programs-english",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[2].application_fee",
+      "url": "https://pg.edu.pl/en/admission/bachelor-studies-international-students/dates-and-deadlines",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[3].tuition[0].amount",
+      "url": "https://pg.edu.pl/en/admission/bachelor-studies-international-students/tuition-fee",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[3].duration_years",
+      "url": "https://pg.edu.pl/en/admission/bachelor-studies-international-students/study-programs-english",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[3].application_fee",
+      "url": "https://pg.edu.pl/en/admission/bachelor-studies-international-students/dates-and-deadlines",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[4].tuition[0].amount",
+      "url": "https://pg.edu.pl/en/admission/bachelor-studies-international-students/tuition-fee",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[4].duration_years",
+      "url": "https://pg.edu.pl/en/admission/bachelor-studies-international-students/study-programs-english",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[4].application_fee",
+      "url": "https://pg.edu.pl/en/admission/bachelor-studies-international-students/dates-and-deadlines",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[5].tuition[0].amount",
+      "url": "https://pg.edu.pl/en/admission/bachelor-studies-international-students/tuition-fee",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[5].duration_years",
+      "url": "https://pg.edu.pl/en/admission/bachelor-studies-international-students/study-programs-english",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[5].application_fee",
+      "url": "https://pg.edu.pl/en/admission/bachelor-studies-international-students/dates-and-deadlines",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[6].tuition[0].amount",
+      "url": "https://pg.edu.pl/en/admission/bachelor-studies-international-students/tuition-fee",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[6].duration_years",
+      "url": "https://pg.edu.pl/en/admission/bachelor-studies-international-students/study-programs-english",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[6].application_fee",
+      "url": "https://pg.edu.pl/en/admission/bachelor-studies-international-students/dates-and-deadlines",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    }
+  ],
+  "notes_for_reviewer": "Official pg.edu.pl pages read 2026-10-25: tuition fee (academic year 2026/2027, non-EU candidates, PLN per semester), study programs in English (seven bachelor programmes, durations in semesters) and dates and deadlines. Admission is once a year for the winter semester (October). The 2026 dates (applications 26.05-09.07.2026, tuition payment 02.08.2026, registration 14-25.09.2026) are in the past and the 2027 dates are not on the page, so deadlines are empty. Application (registration) fee: PLN 85 (PLN 100 with the Mathematics Entrance Examination track; PLN 150 for Architecture with the aptitude test). Bachelor programmes run only if enough candidates apply. EU candidates are mentioned as eligible for study on a non-tuition basis on the same pages (the amounts for EU citizens are not stored). Master programmes in English (for example Master in Economic Analytics and Master in International Management of the Faculty of Management and Economics) are NOT collected: only a faculty page shows PLN 10,750 per semester without a clear academic year. The documents list is a standard guess and the entrance requirements are not on the pages used."
+}
