@@ -71,17 +71,6 @@ test.describe('blog', () => {
     await expect(page.getByRole('heading', { level: 3, name: 'Visegrad Scholarship Programme' })).toHaveCount(1);
   });
 
-  test('a language without a translation reads the English text, says so and stays out of the search results', async ({ page }) => {
-    await needArticles(page);
-    await page.goto('/de/blog/proof-of-funds-student-visa');
-    await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content', /noindex/);
-    await expect(page.locator('div[lang="en"]').first()).toBeVisible();
-    await expect(page.getByText(/englische Version/)).toBeVisible();
-    await expect(page.locator('link[rel="alternate"][hreflang="ru"]')).toHaveCount(0);
-    // the top menu offers the blog only in the languages that have their own text
-    await expect(page.getByRole('navigation', { name: /./ }).first().getByRole('link', { name: 'Blog' })).toHaveCount(0);
-  });
-
   for (const [lang, title, notice, menu] of [
     ['zh', '办理学生签证需要证明多少资金', '机器翻译', '博客'],
     ['es', 'Cuánto dinero debes demostrar', 'traducción automática', 'Blog'],
@@ -94,6 +83,9 @@ test.describe('blog', () => {
     ['az', 'Tələbə vizası üçün nə qədər pul göstərmək lazımdır', 'maşın tərcüməsidir', 'Bloq'],
     ['hy', 'Որքան գումար ցույց տալ ուսանողական վիզայի համար', 'մեքենայական թարգմանությունն է', 'Բլոգ'],
     ['ky', 'Студенттик виза үчүн канча акча көрсөтүү керек', 'машиналык котормосу', 'Блог'],
+    ['pl', 'Ile pieniędzy trzeba wykazać', 'tłumaczenie maszynowe', 'Blog'],
+    ['de', 'Wie viel Geld für das Studentenvisum', 'maschinelle Übersetzung', 'Blog'],
+    ['ar', 'كم من المال يجب إثباته', 'ترجمة آلية', 'المدونة'],
   ] as const) {
     test(`${lang}: a machine translation with its own text and data, marked as such and kept out of the search results`, async ({ page }) => {
       await needArticles(page);

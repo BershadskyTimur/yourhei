@@ -28,7 +28,10 @@
         "uz": "Bloklangan hisob: yiliga 11 904 yevro, oyiga 992 yevrodan to‘lanadi.",
         "az": "Bloklanmış hesab: ildə 11 904 avro, ayda 992 avro olaraq ödənilir.",
         "hy": "Արգելափակված հաշիվ՝ տարեկան 11 904 եվրո, վճարվում է ամսական 992 եվրո։",
-        "ky": "Бөгөттөлгөн эсеп: жылына 11 904 евро, айына 992 евродон төлөнөт."
+        "ky": "Бөгөттөлгөн эсеп: жылына 11 904 евро, айына 992 евродон төлөнөт.",
+        "pl": "Konto blokowane: 11 904 euro rocznie, wypłacane w kwocie 992 euro miesięcznie.",
+        "de": "Sperrkonto: 11 904 Euro im Jahr, ausgezahlt mit 992 Euro im Monat.",
+        "ar": "حساب مجمّد: 11 904 يورو سنويًا، يُصرف بمعدل 992 يورو شهريًا."
       }
     },
     {
@@ -50,7 +53,10 @@
             "uz": "London tashqarisi",
             "az": "London xaricində",
             "hy": "Լոնդոնից դուրս",
-            "ky": "Лондондон тышкары"
+            "ky": "Лондондон тышкары",
+            "pl": "Poza Londynem",
+            "de": "Außerhalb Londons",
+            "ar": "خارج لندن"
           }
         },
         {
@@ -68,7 +74,10 @@
             "uz": "London",
             "az": "London",
             "hy": "Լոնդոն",
-            "ky": "Лондон"
+            "ky": "Лондон",
+            "pl": "Londyn",
+            "de": "London",
+            "ar": "لندن"
           }
         }
       ],
@@ -87,7 +96,10 @@
         "uz": "9 oygacha; 2026-yil 30-noyabrdan keyingi arizalar uchun 1 203 va 1 570 funtgacha oshadi.",
         "az": "9 aya qədər; 30 noyabr 2026-dan etibarən verilən müraciətlər üçün 1 203 və 1 570 funt sterlinqə qədər artır.",
         "hy": "Մինչև 9 ամիս. 2026 թվականի նոյեմբերի 30-ից ներկայացվող դիմումների համար աճում է մինչև 1 203 և 1 570 ֆունտ ստեռլինգ։",
-        "ky": "9 айга чейин; 2026-жылдын 30-ноябрынан тартып берилген арыздар үчүн 1 203 жана 1 570 фунт стерлингге чейин өсөт."
+        "ky": "9 айга чейин; 2026-жылдын 30-ноябрынан тартып берилген арыздар үчүн 1 203 жана 1 570 фунт стерлингге чейин өсөт.",
+        "pl": "Do 9 miesięcy; wzrasta do 1 203 i 1 570 funtów dla wniosków składanych od 30 listopada 2026 r.",
+        "de": "Bis zu 9 Monate; steigt auf 1 203 und 1 570 Pfund für Anträge ab dem 30. November 2026.",
+        "ar": "حتى 9 أشهر؛ ترتفع إلى 1 203 و1 570 جنيهًا إسترلينيًا للطلبات المقدمة من 30 نوفمبر 2026."
       }
     },
     {
@@ -115,7 +127,10 @@
         "uz": "Yalpi oylik eng kam ish haqining 47 %i, 2026-yil 1-avgustdan keyingi arizalar uchun amal qiladi.",
         "az": "Aylıq ümumi minimum əmək haqqının 47%-i, 1 avqust 2026-dan etibarən verilən müraciətlər üçün qüvvədədir.",
         "hy": "Ամսական համախառն նվազագույն աշխատավարձի 47%-ը, գործում է 2026 թվականի օգոստոսի 1-ից ներկայացվող դիմումների համար։",
-        "ky": "Айлык жалпы минималдуу эмгек акынын 47%ы, 2026-жылдын 1-августунан тартып берилген арыздар үчүн күчүндө."
+        "ky": "Айлык жалпы минималдуу эмгек акынын 47%ы, 2026-жылдын 1-августунан тартып берилген арыздар үчүн күчүндө.",
+        "pl": "47% miesięcznego brutto minimalnego wynagrodzenia, obowiązuje dla wniosków składanych od 1 sierpnia 2026 r.",
+        "de": "47 % des monatlichen Brutto-Mindestlohns, gültig für Anträge ab dem 1. August 2026.",
+        "ar": "47% من الحد الأدنى الإجمالي الشهري للأجور، ساري للطلبات المقدمة من 1 أغسطس 2026."
       }
     },
     {
@@ -143,7 +158,10 @@
         "uz": "IND’ning talabalik normasi.",
         "az": "IND-nin təhsil norması.",
         "hy": "IND-ի ուսման նորմը։",
-        "ky": "IND окуу нормасы."
+        "ky": "IND окуу нормасы.",
+        "pl": "Norma studencka IND.",
+        "de": "Die Studiennorm der IND.",
+        "ar": "معيار IND للدراسة."
       }
     },
     {
@@ -171,7 +189,10 @@
         "uz": "O‘qish haqiga qo‘shimcha ravishda yiliga 10 000 yevro.",
         "az": "Təhsil haqqına əlavə olaraq ildə 10 000 avro.",
         "hy": "Տարեկան 10 000 եվրո՝ ուսման վարձավճարից բացի։",
-        "ky": "Окуу акысынан тышкары жылына 10 000 евро."
+        "ky": "Окуу акысынан тышкары жылына 10 000 евро.",
+        "pl": "10 000 euro rocznie, oprócz czesnego.",
+        "de": "10 000 Euro im Jahr, zusätzlich zu den Studiengebühren.",
+        "ar": "10 000 يورو سنويًا، إضافةً إلى رسوم الدراسة."
       }
     },
     {
@@ -199,7 +220,10 @@
         "uz": "IPREM’ning 100 %i (yiliga 7 200 yevro).",
         "az": "IPREM-in 100%-i (ildə 7 200 avro).",
         "hy": "IPREM-ի 100%-ը (տարեկան 7 200 եվրո)։",
-        "ky": "IPREMдин 100%ы (жылына 7 200 евро)."
+        "ky": "IPREMдин 100%ы (жылына 7 200 евро).",
+        "pl": "100% wskaźnika IPREM (7 200 euro rocznie).",
+        "de": "100 % des IPREM (7 200 Euro im Jahr).",
+        "ar": "100% من مؤشر IPREM (7 200 يورو سنويًا)."
       }
     },
     {
@@ -227,7 +251,10 @@
         "uz": "2026/27 va 2027/28 o‘quv yillari uchun yiliga 10 179,85 yevro.",
         "az": "2026/27 və 2027/28 üçün ildə 10 179,85 avro.",
         "hy": "Տարեկան 10 179,85 եվրո 2026/27 և 2027/28 ուստարիների համար։",
-        "ky": "2026/27 жана 2027/28 үчүн жылына 10 179,85 евро."
+        "ky": "2026/27 жана 2027/28 үчүн жылына 10 179,85 евро.",
+        "pl": "10 179,85 euro rocznie na lata 2026/27 i 2027/28.",
+        "de": "10 179,85 Euro im Jahr für 2026/27 und 2027/28.",
+        "ar": "10 179٫85 يورو سنويًا للعامين 2026/27 و2027/28."
       }
     },
     {
@@ -255,7 +282,10 @@
         "uz": "24 yoshgacha talabalar uchun; 24 yoshdan boshlab 1 308,39 yevro. Oyiga 386,43 yevrodan qimmat uy-joy ko‘proq mablag‘ talab qiladi.",
         "az": "24 yaşadək tələbələr üçün; 24 yaşdan 1 308,39 avro. Ayda 386,43 avrodan yuxarı mənzil üçün daha çox lazımdır.",
         "hy": "Մինչև 24 տարեկան ուսանողների համար. 24 տարեկանից՝ 1 308,39 եվրո։ Ամսական 386,43 եվրոյից ավելի բնակարանի համար ավելին է պետք։",
-        "ky": "24 жашка чейинки студенттер үчүн; 24 жаштан 1 308,39 евро. Айына 386,43 евродон жогору турак жай үчүн көбүрөөк керек."
+        "ky": "24 жашка чейинки студенттер үчүн; 24 жаштан 1 308,39 евро. Айына 386,43 евродон жогору турак жай үчүн көбүрөөк керек.",
+        "pl": "Dla studentów do 24. roku życia; od 24 lat 1 308,39 euro. Mieszkanie powyżej 386,43 euro miesięcznie wymaga więcej.",
+        "de": "Für Studierende bis 24 Jahre; ab 24 Jahren 1 308,39 Euro. Wohnkosten über 386,43 Euro im Monat erfordern mehr.",
+        "ar": "للطلاب حتى سن 24؛ ومن 24 سنة 1 308٫39 يورو. السكن فوق 386٫43 يورو شهريًا يتطلب أكثر."
       }
     },
     {
@@ -283,7 +313,10 @@
         "uz": "Bir o‘quv yili uchun 9 600 yevro.",
         "az": "Bir illik təhsil üçün 9 600 avro.",
         "hy": "Մեկ տարվա ուսման համար 9 600 եվրո։",
-        "ky": "Бир жылдык окуу үчүн 9 600 евро."
+        "ky": "Бир жылдык окуу үчүн 9 600 евро.",
+        "pl": "9 600 euro na rok studiów.",
+        "de": "9 600 Euro für ein Studienjahr.",
+        "ar": "9 600 يورو لسنة دراسية."
       }
     },
     {
@@ -311,7 +344,10 @@
         "uz": "2026-yilgi arizalar uchun yashash mablag‘iga talab.",
         "az": "2026-cı ildə verilən müraciətlər üçün yaşayış təminatı tələbi.",
         "hy": "Ապրուստի պահանջ՝ 2026 թվականին ներկայացվող դիմումների համար։",
-        "ky": "2026-жылы берилген арыздар үчүн жашоо камсыздоо талабы."
+        "ky": "2026-жылы берилген арыздар үчүн жашоо камсыздоо талабы.",
+        "pl": "Wymóg środków na utrzymanie dla wniosków składanych w 2026 r.",
+        "de": "Anforderung an den Lebensunterhalt für Anträge im Jahr 2026.",
+        "ar": "شرط تكاليف المعيشة للطلبات المقدمة في 2026."
       }
     },
     {
@@ -339,7 +375,10 @@
         "uz": "2025/26 o‘quv yili uchun 166 859 Norvegiya kronasi (2026/27 summasi tasdiqlanmagan).",
         "az": "2025/26 tədris ili üçün 166 859 Norveç kronu (2026/27 məbləği təsdiqlənməyib).",
         "hy": "166 859 նորվեգական կրոն 2025/26 ուստարվա համար (2026/27-ի գումարը չի հաստատվել)։",
-        "ky": "2025/26 окуу жылы үчүн 166 859 Норвегия кронасы (2026/27 суммасы тастыкталган жок)."
+        "ky": "2025/26 окуу жылы үчүн 166 859 Норвегия кронасы (2026/27 суммасы тастыкталган жок).",
+        "pl": "166 859 koron norweskich na rok akademicki 2025/26 (kwota na 2026/27 nie została potwierdzona).",
+        "de": "166 859 norwegische Kronen für das Studienjahr 2025/26 (der Betrag für 2026/27 wurde nicht bestätigt).",
+        "ar": "166 859 كرونة نرويجية للعام الدراسي 2025/26 (لم يتم تأكيد رقم 2026/27)."
       }
     },
     {
@@ -367,7 +406,10 @@
         "uz": "Bitta talaba uchun yiliga 29 710 Avstraliya dollari.",
         "az": "Subay tələbə üçün ildə 29 710 Avstraliya dolları.",
         "hy": "Տարեկան 29 710 ավստրալական դոլար միայնակ ուսանողի համար։",
-        "ky": "Бойдок студент үчүн жылына 29 710 Австралия доллары."
+        "ky": "Бойдок студент үчүн жылына 29 710 Австралия доллары.",
+        "pl": "29 710 dolarów australijskich rocznie dla studenta bez rodziny.",
+        "de": "29 710 australische Dollar im Jahr für einen alleinstehenden Studierenden.",
+        "ar": "29 710 دولارًا أستراليًا سنويًا للطالب الأعزب."
       }
     },
     {
@@ -395,7 +437,10 @@
         "uz": "Kvebekdan tashqarida yiliga 23 448 Kanada dollari (2026-yil 1-sentabrdan); Kvebek 24 617 so‘raydi.",
         "az": "Kvebekdən kənarda ildə 23 448 Kanada dolları (1 sentyabr 2026-dan); Kvebek 24 617 Kanada dolları tələb edir.",
         "hy": "Տարեկան 23 448 կանադական դոլար Քվեբեկից դուրս (2026 թվականի սեպտեմբերի 1-ից). Քվեբեկը պահանջում է 24 617 կանադական դոլար։",
-        "ky": "Квебектен тышкары жылына 23 448 Канада доллары (2026-жылдын 1-сентябрынан); Квебек 24 617 Канада долларын талап кылат."
+        "ky": "Квебектен тышкары жылына 23 448 Канада доллары (2026-жылдын 1-сентябрынан); Квебек 24 617 Канада долларын талап кылат.",
+        "pl": "23 448 dolarów kanadyjskich rocznie poza Quebekiem (od 1 września 2026 r.); Quebec wymaga 24 617 dolarów kanadyjskich.",
+        "de": "23 448 kanadische Dollar im Jahr außerhalb von Québec (ab dem 1. September 2026); Québec verlangt 24 617 kanadische Dollar.",
+        "ar": "23 448 دولارًا كنديًا سنويًا خارج كيبيك (من 1 سبتمبر 2026)؛ وتطلب كيبيك 24 617 دولارًا كنديًا."
       }
     },
     {
@@ -423,7 +468,10 @@
         "uz": "Yiliga 20 000 Yangi Zelandiya dollari.",
         "az": "İldə 20 000 Yeni Zelandiya dolları.",
         "hy": "Տարեկան 20 000 նոր զելանդական դոլար։",
-        "ky": "Жылына 20 000 Жаңы Зеландия доллары."
+        "ky": "Жылына 20 000 Жаңы Зеландия доллары.",
+        "pl": "20 000 dolarów nowozelandzkich rocznie.",
+        "de": "20 000 neuseeländische Dollar im Jahr.",
+        "ar": "20 000 دولار نيوزيلندي سنويًا."
       }
     }
   ]
