@@ -116,6 +116,9 @@ export interface ProgramFilter {
 }
 
 const PAGE = 1000;
+// A page of the field index function is smaller: a page of 1000 programmes of a big country (700-900 KB) sometimes takes longer than the
+// 3 s limit of the database, a page of 500 takes about 0.8 s.
+const FIELD_PAGE = 500;
 const MAX_PAGES = 20; // at most 20 000 programmes in one search: more would make the page slow
 /**
  * When no country was chosen, each country is read only up to this many pages (3000 programmes). The big countries have tens of
@@ -218,7 +221,7 @@ async function readFieldStream(supabase: SupabaseClient, base: { level: string |
       p_after_field: after?.field ?? null,
       p_after_institution: after?.institution ?? null,
       p_after_program: after?.program ?? null,
-      p_limit: PAGE,
+      p_limit: FIELD_PAGE,
     };
     if (page > 0 && Date.now() > deadline) return { rows, partial: true, missingFunction: false };
     let res = await supabase.rpc('match_programs_field', args);
@@ -235,7 +238,7 @@ async function readFieldStream(supabase: SupabaseClient, base: { level: string |
     const list = expandSlim(res.data);
     rows.push(...list);
     const last = list[list.length - 1];
-    if (list.length < PAGE || !last) return { rows, partial: false, missingFunction: false };
+    if (list.length < FIELD_PAGE || !last) return { rows, partial: false, missingFunction: false };
     after = { field: String(last.isced_f), institution: String(rec(last.institutions).id), program: String(last.id) };
   }
   return { rows, partial: false, missingFunction: false };
