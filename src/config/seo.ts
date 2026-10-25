@@ -3,6 +3,9 @@
 // "noindex" until a person has read the translation. To open a language, add its code here (nothing else needs to change).
 export const INDEXED_LOCALES: readonly string[] = ['ru', 'en'];
 
+/** The languages the blog has its own text in (written by hand, or machine translated and marked as such). */
+export const BLOG_LOCALES: readonly string[] = ['ru', 'en', 'zh', 'es', 'fr', 'ka'];
+
 /** The language shown to search engines (and to people from everywhere) when no better version exists: hreflang "x-default". */
 export const X_DEFAULT_LOCALE = 'en';
 

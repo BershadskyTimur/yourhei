@@ -1,475 +1,595 @@
 {
- "_note": "Government and international scholarship programmes for foreign students. Only the programme, who runs it and the official link are given; amounts, countries and deadlines change every year, so the site always sends the reader to the official page.",
- "accessed": "2026-10-07",
- "items": [
-  {
-   "country": "TR",
-   "covers": "full",
-   "levels": [
-    "bachelor",
-    "master",
-    "phd"
-   ],
-   "url": "https://turkiyeburslari.gov.tr/",
-   "names": {
-    "en": "Türkiye Scholarships",
-    "ru": "Стипендия «Türkiye Burslari»"
-   },
-   "funder": {
-    "en": "Government of Türkiye",
-    "ru": "Правительство Турции"
-   },
-   "eligibility": {
-    "en": "For international students; usually covers tuition, accommodation and a monthly allowance. Check the official page for the countries, levels and the application window.",
-    "ru": "Для иностранных студентов; обычно покрывает обучение, проживание и ежемесячную стипендию. Страны, уровни и сроки подачи — на официальной странице."
-   }
-  },
-  {
-   "country": "HU",
-   "covers": "full",
-   "levels": [
-    "bachelor",
-    "master",
-    "phd"
-   ],
-   "url": "https://stipendiumhungaricum.hu/",
-   "names": {
-    "en": "Stipendium Hungaricum",
-    "ru": "Stipendium Hungaricum"
-   },
-   "funder": {
-    "en": "Government of Hungary",
-    "ru": "Правительство Венгрии"
-   },
-   "eligibility": {
-    "en": "For students from partner countries; usually covers tuition and a monthly stipend, with accommodation support. Applications go through the national agency of your country.",
-    "ru": "Для студентов из стран-партнёров; обычно покрывает обучение и ежемесячную стипендию, помогает с жильём. Заявки подаются через ведомство вашей страны."
-   }
-  },
-  {
-   "country": "DE",
-   "covers": "partial",
-   "levels": [
-    "master",
-    "phd"
-   ],
-   "url": "https://www.daad.de/en/",
-   "names": {
-    "en": "DAAD scholarships",
-    "ru": "Стипендии DAAD"
-   },
-   "funder": {
-    "en": "German Academic Exchange Service (DAAD)",
-    "ru": "Германская служба академических обменов (DAAD)"
-   },
-   "eligibility": {
-    "en": "Many programmes for different countries and levels; the DAAD scholarship database shows the ones open to you.",
-    "ru": "Много программ для разных стран и уровней; база стипендий DAAD показывает те, что доступны вам."
-   }
-  },
-  {
-   "country": "PL",
-   "covers": "partial",
-   "levels": [
-    "bachelor",
-    "master",
-    "phd"
-   ],
-   "url": "https://nawa.gov.pl/en",
-   "names": {
-    "en": "NAWA scholarships",
-    "ru": "Стипендии NAWA"
-   },
-   "funder": {
-    "en": "Polish National Agency for Academic Exchange (NAWA)",
-    "ru": "Национальное агентство академических обменов Польши (NAWA)"
-   },
-   "eligibility": {
-    "en": "Several programmes for foreign students and researchers; the conditions differ by programme.",
-    "ru": "Несколько программ для иностранных студентов и исследователей; условия зависят от программы."
-   }
-  },
-  {
-   "country": "CN",
-   "covers": "full",
-   "levels": [
-    "bachelor",
-    "master",
-    "phd"
-   ],
-   "url": "https://www.campuschina.org/",
-   "names": {
-    "en": "Chinese Government Scholarship (CSC)",
-    "ru": "Правительственная стипендия Китая (CSC)"
-   },
-   "funder": {
-    "en": "China Scholarship Council",
-    "ru": "Китайский стипендиальный совет"
-   },
-   "eligibility": {
-    "en": "For international students; the types differ in what they cover. Applications and deadlines are on the official portal.",
-    "ru": "Для иностранных студентов; разные типы покрывают разные расходы. Заявки и сроки — на официальном портале."
-   }
-  },
-  {
-   "country": "KR",
-   "covers": "full",
-   "levels": [
-    "bachelor",
-    "master",
-    "phd"
-   ],
-   "url": "https://www.studyinkorea.go.kr/",
-   "names": {
-    "en": "Global Korea Scholarship (GKS)",
-    "ru": "Global Korea Scholarship (GKS)"
-   },
-   "funder": {
-    "en": "Government of the Republic of Korea",
-    "ru": "Правительство Республики Корея"
-   },
-   "eligibility": {
-    "en": "For international students; covers tuition and a living allowance. Applications through the Korean embassy or a chosen university.",
-    "ru": "Для иностранных студентов; покрывает обучение и проживание. Заявки — через посольство Кореи или выбранный университет."
-   }
-  },
-  {
-   "country": "JP",
-   "covers": "full",
-   "levels": [
-    "bachelor",
-    "master",
-    "phd"
-   ],
-   "url": "https://www.studyinjapan.go.jp/",
-   "names": {
-    "en": "MEXT scholarship",
-    "ru": "Стипендия MEXT"
-   },
-   "funder": {
-    "en": "Ministry of Education (MEXT), Japan",
-    "ru": "Министерство образования Японии (MEXT)"
-   },
-   "eligibility": {
-    "en": "Japanese Government scholarship for international students; the application route is through the Japanese embassy or a university.",
-    "ru": "Стипендия правительства Японии для иностранцев; заявки — через посольство Японии или университет."
-   }
-  },
-  {
-   "country": "FR",
-   "covers": "living",
-   "levels": [
-    "master",
-    "phd"
-   ],
-   "url": "https://www.campusfrance.org/",
-   "names": {
-    "en": "Eiffel Excellence Scholarship",
-    "ru": "Стипендия Эйфеля (Eiffel Excellence)"
-   },
-   "funder": {
-    "en": "French Ministry for Europe and Foreign Affairs",
-    "ru": "Министерство Европы и иностранных дел Франции"
-   },
-   "eligibility": {
-    "en": "For master's and PhD students; the application is made by the French institution, not by the student.",
-    "ru": "Для магистров и докторантов; заявку подаёт французское учебное заведение, а не студент."
-   }
-  },
-  {
-   "country": "RU",
-   "covers": "full",
-   "levels": [
-    "bachelor",
-    "master",
-    "phd"
-   ],
-   "url": "https://education-in-russia.com/",
-   "names": {
-    "en": "Russian Government Scholarship (quota)",
-    "ru": "Квота правительства России на бесплатное обучение"
-   },
-   "funder": {
-    "en": "Government of the Russian Federation",
-    "ru": "Правительство Российской Федерации"
-   },
-   "eligibility": {
-    "en": "Free places in Russian universities for foreign citizens; the application is made on the official portal.",
-    "ru": "Бесплатные места в российских вузах для иностранных граждан; заявка подаётся на официальном портале."
-   }
-  },
-  {
-   "country": "GB",
-   "covers": "full",
-   "levels": [
-    "master"
-   ],
-   "url": "https://www.chevening.org/",
-   "names": {
-    "en": "Chevening Scholarships",
-    "ru": "Стипендии Chevening"
-   },
-   "funder": {
-    "en": "UK Government (FCDO)",
-    "ru": "Правительство Великобритании (FCDO)"
-   },
-   "eligibility": {
-    "en": "One-year master's in the UK for future leaders from eligible countries; work experience is required.",
-    "ru": "Годичная магистратура в Великобритании для будущих лидеров из подходящих стран; нужен опыт работы."
-   }
-  },
-  {
-   "country": "US",
-   "covers": "full",
-   "levels": [
-    "master",
-    "phd"
-   ],
-   "url": "https://foreign.fulbrightonline.org/",
-   "names": {
-    "en": "Fulbright Foreign Student Program",
-    "ru": "Программа Фулбрайта для иностранных студентов"
-   },
-   "funder": {
-    "en": "US Department of State",
-    "ru": "Госдепартамент США"
-   },
-   "eligibility": {
-    "en": "Graduate study in the USA; applications go through the Fulbright commission or the US embassy of your country.",
-    "ru": "Обучение в магистратуре и аспирантуре США; заявки — через комиссию Фулбрайта или посольство США в вашей стране."
-   }
-  },
-  {
-   "country": "AU",
-   "covers": "full",
-   "levels": [
-    "master",
-    "phd"
-   ],
-   "url": "https://www.dfat.gov.au/people-to-people/australia-awards",
-   "names": {
-    "en": "Australia Awards",
-    "ru": "Australia Awards"
-   },
-   "funder": {
-    "en": "Australian Government",
-    "ru": "Правительство Австралии"
-   },
-   "eligibility": {
-    "en": "Postgraduate scholarships for people from eligible countries; check the official page for your country.",
-    "ru": "Стипендии для магистратуры и аспирантуры для жителей подходящих стран; свою страну проверьте на официальной странице."
-   }
-  },
-  {
-   "country": null,
-   "covers": "full",
-   "levels": [
-    "master"
-   ],
-   "url": "https://erasmus-plus.ec.europa.eu/",
-   "names": {
-    "en": "Erasmus Mundus Joint Masters",
-    "ru": "Erasmus Mundus (совместные магистерские программы)"
-   },
-   "funder": {
-    "en": "European Union",
-    "ru": "Европейский союз"
-   },
-   "eligibility": {
-    "en": "Joint master's programmes in several European countries; scholarships are given by the programme itself, apply on the programme's website.",
-    "ru": "Совместные магистерские программы в нескольких странах Европы; стипендии выдаёт сама программа, заявка — на её сайте."
-   }
-  },
-  {
-   "country": "NL",
-   "names": {
-    "en": "NL Scholarship (formerly Holland Scholarship)",
-    "ru": "Стипендия NL (бывшая Holland Scholarship)"
-   },
-   "funder": {
-    "en": "Nuffic and the participating Dutch institutions",
-    "ru": "Nuffic и участвующие нидерландские вузы"
-   },
-   "covers": "partial",
-   "levels": [
-    "bachelor",
-    "master"
-   ],
-   "eligibility": {
-    "en": "For students from outside the EEA who start a full-time bachelor's or master's programme at a participating Dutch institution and do not already hold a degree from a Dutch institution. The amount and the list of institutions are on the official page.",
-    "ru": "Для студентов из стран вне ЕЭЗ, которые начинают очную программу бакалавриата или магистратуры в участвующем нидерландском вузе и ещё не имеют диплома нидерландского вуза. Сумма и список вузов — на официальной странице."
-   },
-   "url": "https://www.studyinnl.org/finances/nl-scholarship",
-   "eligible_countries": null,
-   "accessed": "2026-10-23"
-  },
-  {
-   "country": "CH",
-   "names": {
-    "en": "Swiss Government Excellence Scholarships",
-    "ru": "Стипендии правительства Швейцарии (Excellence Scholarships)"
-   },
-   "funder": {
-    "en": "Swiss State Secretariat for Education, Research and Innovation (SERI)",
-    "ru": "Государственный секретариат Швейцарии по образованию, исследованиям и инновациям (SERI)"
-   },
-   "covers": "living",
-   "levels": [
-    "master",
-    "phd"
-   ],
-   "eligibility": {
-    "en": "Mainly for early-career researchers who already hold a master's degree (doctoral research), and for first master's studies in an artistic field. Open to applicants from 183 countries; every application needs the support of a professor at a Swiss institution. Applications go through Swiss diplomatic representations.",
-    "ru": "В основном для молодых исследователей, у которых уже есть магистерская степень (докторские исследования), а также для первой магистратуры в области искусства. Открыты для заявителей из 183 стран; для каждой заявки нужна поддержка профессора швейцарского вуза. Заявки подаются через дипломатические представительства Швейцарии."
-   },
-   "url": "https://www.sbfi.admin.ch/en/swiss-government-excellence-scholarships",
-   "eligible_countries": null,
-   "accessed": "2026-10-23"
-  },
-  {
-   "country": null,
-   "names": {
-    "en": "Visegrad Scholarship Programme",
-    "ru": "Стипендиальная программа Вышеградского фонда"
-   },
-   "funder": {
-    "en": "International Visegrad Fund",
-    "ru": "Международный Вышеградский фонд"
-   },
-   "covers": "partial",
-   "levels": [
-    "master",
-    "phd"
-   ],
-   "eligibility": {
-    "en": "Master's and post-master's study or research for 1-2 semesters in Czechia, Hungary, Poland or Slovakia. Citizens of the Eastern Partnership and Western Balkans countries listed on the official page can apply; you cannot study in your own country of citizenship. The list of countries and the amounts are on the official page.",
-    "ru": "Обучение или исследование в магистратуре и после неё на 1–2 семестра в Чехии, Венгрии, Польше или Словакии. Подать заявку могут граждане стран Восточного партнёрства и Западных Балкан, указанных на официальной странице; учиться в стране своего гражданства нельзя. Список стран и суммы — на официальной странице."
-   },
-   "url": "https://www.visegradfund.org/apply/mobilities/visegrad-scholarships/",
-   "eligible_countries": [
-    "AL",
-    "AM",
-    "AZ",
-    "BA",
-    "BY",
-    "GE",
-    "MD",
-    "ME",
-    "MK",
-    "RS",
-    "UA"
-   ],
-   "accessed": "2026-10-23"
-  },
-  {
-   "country": "KZ",
-   "names": {
-    "en": "Bolashak International Scholarship",
-    "ru": "Международная стипендия «Болашак»"
-   },
-   "funder": {
-    "en": "Government of Kazakhstan",
-    "ru": "Правительство Казахстана"
-   },
-   "covers": null,
-   "levels": [
-    "bachelor",
-    "master",
-    "phd"
-   ],
-   "eligibility": {
-    "en": "For citizens of Kazakhstan who study abroad (bachelor's, master's, doctoral level) or do scientific internships. It is awarded once for each level; independent master's applicants need an offer from a university on the list of recommended universities. Check the official page for the current competition.",
-    "ru": "Для граждан Казахстана, которые учатся за границей (бакалавриат, магистратура, докторантура) или проходят научные стажировки. Присуждается один раз на каждый уровень; для магистрантов-«самостоятельных» нужно приглашение вуза из перечня рекомендуемых. Условия текущего конкурса — на официальной странице."
-   },
-   "url": "https://bolashak.gov.kz/en/scholarship-program",
-   "eligible_countries": [
-    "KZ"
-   ],
-   "accessed": "2026-10-23"
-  },
-  {
-   "country": "UZ",
-   "names": {
-    "en": "El-Yurt Umidi Foundation scholarships",
-    "ru": "Стипендии фонда «Эл-юрт умиди»"
-   },
-   "funder": {
-    "en": "El-Yurt Umidi Foundation (Uzbekistan)",
-    "ru": "Фонд «Эл-юрт умиди» (Узбекистан)"
-   },
-   "covers": "full",
-   "levels": [
-    "bachelor",
-    "master",
-    "phd"
-   ],
-   "eligibility": {
-    "en": "Only for citizens of Uzbekistan studying abroad (bachelor's, master's and doctoral level). The funding can cover tuition, accommodation, meals, travel once a year each way, textbooks and medical insurance. Check the official site for the current admission period.",
-    "ru": "Только для граждан Узбекистана, которые учатся за границей (бакалавриат, магистратура, докторантура). Финансирование может покрывать обучение, проживание, питание, дорогу раз в год в обе стороны, учебники и медицинскую страховку. Сроки приёма — на официальном сайте."
-   },
-   "url": "https://admission.eyuf.uz/",
-   "eligible_countries": [
-    "UZ"
-   ],
-   "accessed": "2026-10-23"
-  },
-  {
-   "country": "CZ",
-   "names": {
-    "en": "Czech Government Scholarships (development cooperation)",
-    "ru": "Стипендии правительства Чехии (программа содействия развитию)"
-   },
-   "funder": {
-    "en": "Ministry of Education and Ministry of Foreign Affairs of the Czech Republic",
-    "ru": "Министерство образования и Министерство иностранных дел Чехии"
-   },
-   "covers": null,
-   "levels": [
-    "master",
-    "phd"
-   ],
-   "eligibility": {
-    "en": "For citizens of selected developing countries (not EU citizens and not residents of the Czech Republic); English-taught follow-up master's and doctoral programmes. The list of countries changes with each call: the list used here is the call for 2027/2028, check the official page for the current one.",
-    "ru": "Для граждан отдельных развивающихся стран (не граждан ЕС и не жителей Чехии); магистратура (вторая ступень) и докторантура на английском. Список стран меняется с каждым конкурсом: использован список конкурса на 2027/2028, актуальный — на официальной странице."
-   },
-   "url": "https://studyin.gov.cz/en/scholarships/scholarship-detail/?id=339",
-   "eligible_countries": [
-    "BA",
-    "GE",
-    "UA",
-    "ET",
-    "GA",
-    "MR",
-    "ZM",
-    "BD",
-    "KH",
-    "PS",
-    "GT",
-    "HN"
-   ],
-   "accessed": "2026-10-23"
-  },
-  {
-   "country": "SE",
-   "names": {
-    "en": "Swedish Institute Scholarships for Global Professionals",
-    "ru": "Стипендии Шведского института для глобальных специалистов"
-   },
-   "funder": {
-    "en": "Swedish Institute",
-    "ru": "Шведский институт"
-   },
-   "covers": "full",
-   "levels": [
-    "master"
-   ],
-   "eligibility": {
-    "en": "Fully funded master's studies in Sweden for citizens of the eligible countries (about 34; the list is on the official page). Work experience and leadership are required.",
-    "ru": "Полностью оплачиваемая магистратура в Швеции для граждан стран из списка (около 34; список — на официальной странице). Нужен опыт работы и лидерские качества."
-   },
-   "url": "https://si.se/en/apply/scholarships/swedish-institute-scholarships-for-global-professionals/",
-   "eligible_countries": null,
-   "accessed": "2026-10-23"
-  }
- ]
+  "_note": "Government and international scholarship programmes for foreign students. Only the programme, who runs it and the official link are given; amounts, countries and deadlines change every year, so the site always sends the reader to the official page.",
+  "accessed": "2026-10-07",
+  "items": [
+    {
+      "country": "TR",
+      "covers": "full",
+      "levels": [
+        "bachelor",
+        "master",
+        "phd"
+      ],
+      "url": "https://turkiyeburslari.gov.tr/",
+      "names": {
+        "en": "Türkiye Scholarships",
+        "ru": "Стипендия «Türkiye Burslari»"
+      },
+      "funder": {
+        "en": "Government of Türkiye",
+        "ru": "Правительство Турции"
+      },
+      "eligibility": {
+        "en": "For international students; usually covers tuition, accommodation and a monthly allowance. Check the official page for the countries, levels and the application window.",
+        "ru": "Для иностранных студентов; обычно покрывает обучение, проживание и ежемесячную стипендию. Страны, уровни и сроки подачи — на официальной странице."
+      },
+      "eligibilityTr": {
+        "zh": "面向国际学生；通常涵盖学费、住宿和每月津贴。国家、层次和申请窗口请查看官方页面。",
+        "es": "Para estudiantes internacionales; suele cubrir matrícula, alojamiento y una asignación mensual. Consulta en la página oficial los países, los niveles y el plazo de solicitud.",
+        "fr": "Pour les étudiants internationaux ; couvre généralement les frais de scolarité, le logement et une allocation mensuelle. Consultez la page officielle pour les pays, les niveaux et la période de candidature.",
+        "ka": "საერთაშორისო სტუდენტებისთვის; როგორც წესი, მოიცავს სწავლის საფასურს, საცხოვრებელს და ყოველთვიურ დახმარებას. ქვეყნები, დონეები და განაცხადის ვადა იხილეთ ოფიციალურ გვერდზე."
+      }
+    },
+    {
+      "country": "HU",
+      "covers": "full",
+      "levels": [
+        "bachelor",
+        "master",
+        "phd"
+      ],
+      "url": "https://stipendiumhungaricum.hu/",
+      "names": {
+        "en": "Stipendium Hungaricum",
+        "ru": "Stipendium Hungaricum"
+      },
+      "funder": {
+        "en": "Government of Hungary",
+        "ru": "Правительство Венгрии"
+      },
+      "eligibility": {
+        "en": "For students from partner countries; usually covers tuition and a monthly stipend, with accommodation support. Applications go through the national agency of your country.",
+        "ru": "Для студентов из стран-партнёров; обычно покрывает обучение и ежемесячную стипендию, помогает с жильём. Заявки подаются через ведомство вашей страны."
+      },
+      "eligibilityTr": {
+        "zh": "面向合作国家的学生；通常涵盖学费和每月奖学金，并提供住宿支持。申请通过您所在国家的国家机构提交。",
+        "es": "Para estudiantes de países socios; suele cubrir la matrícula y una beca mensual, con ayuda para el alojamiento. Las solicitudes se tramitan a través de la agencia nacional de tu país.",
+        "fr": "Pour les étudiants de pays partenaires ; couvre généralement les frais de scolarité et une bourse mensuelle, avec une aide au logement. Les candidatures passent par l’agence nationale de votre pays.",
+        "ka": "პარტნიორი ქვეყნების სტუდენტებისთვის; როგორც წესი, მოიცავს სწავლის საფასურს და ყოველთვიურ სტიპენდიას, საცხოვრებლის მხარდაჭერით. განაცხადები გადის თქვენი ქვეყნის ეროვნულ სააგენტოში."
+      }
+    },
+    {
+      "country": "DE",
+      "covers": "partial",
+      "levels": [
+        "master",
+        "phd"
+      ],
+      "url": "https://www.daad.de/en/",
+      "names": {
+        "en": "DAAD scholarships",
+        "ru": "Стипендии DAAD"
+      },
+      "funder": {
+        "en": "German Academic Exchange Service (DAAD)",
+        "ru": "Германская служба академических обменов (DAAD)"
+      },
+      "eligibility": {
+        "en": "Many programmes for different countries and levels; the DAAD scholarship database shows the ones open to you.",
+        "ru": "Много программ для разных стран и уровней; база стипендий DAAD показывает те, что доступны вам."
+      },
+      "eligibilityTr": {
+        "zh": "面向不同国家和层次的多个项目；DAAD 奖学金数据库会显示向您开放的项目。",
+        "es": "Muchos programas para distintos países y niveles; la base de datos de becas del DAAD muestra los que están abiertos para ti.",
+        "fr": "De nombreux programmes pour différents pays et niveaux ; la base de données de bourses du DAAD montre ceux qui vous sont ouverts.",
+        "ka": "მრავალი პროგრამა სხვადასხვა ქვეყნისა და დონისთვის; DAAD-ის სტიპენდიების მონაცემთა ბაზა გაჩვენებთ თქვენთვის ღია პროგრამებს."
+      }
+    },
+    {
+      "country": "PL",
+      "covers": "partial",
+      "levels": [
+        "bachelor",
+        "master",
+        "phd"
+      ],
+      "url": "https://nawa.gov.pl/en",
+      "names": {
+        "en": "NAWA scholarships",
+        "ru": "Стипендии NAWA"
+      },
+      "funder": {
+        "en": "Polish National Agency for Academic Exchange (NAWA)",
+        "ru": "Национальное агентство академических обменов Польши (NAWA)"
+      },
+      "eligibility": {
+        "en": "Several programmes for foreign students and researchers; the conditions differ by programme.",
+        "ru": "Несколько программ для иностранных студентов и исследователей; условия зависят от программы."
+      },
+      "eligibilityTr": {
+        "zh": "面向外国学生和研究人员的多个项目；条件因项目而异。",
+        "es": "Varios programas para estudiantes e investigadores extranjeros; las condiciones varían según el programa.",
+        "fr": "Plusieurs programmes pour étudiants et chercheurs étrangers ; les conditions diffèrent selon le programme.",
+        "ka": "რამდენიმე პროგრამა უცხოელი სტუდენტებისა და მკვლევრებისთვის; პირობები პროგრამების მიხედვით განსხვავდება."
+      }
+    },
+    {
+      "country": "CN",
+      "covers": "full",
+      "levels": [
+        "bachelor",
+        "master",
+        "phd"
+      ],
+      "url": "https://www.campuschina.org/",
+      "names": {
+        "en": "Chinese Government Scholarship (CSC)",
+        "ru": "Правительственная стипендия Китая (CSC)"
+      },
+      "funder": {
+        "en": "China Scholarship Council",
+        "ru": "Китайский стипендиальный совет"
+      },
+      "eligibility": {
+        "en": "For international students; the types differ in what they cover. Applications and deadlines are on the official portal.",
+        "ru": "Для иностранных студентов; разные типы покрывают разные расходы. Заявки и сроки — на официальном портале."
+      },
+      "eligibilityTr": {
+        "zh": "面向国际学生；各类型涵盖的内容不同。申请和截止日期见官方门户。",
+        "es": "Para estudiantes internacionales; los tipos difieren en lo que cubren. Las solicitudes y los plazos están en el portal oficial.",
+        "fr": "Pour les étudiants internationaux ; les types diffèrent par ce qu’ils couvrent. Les candidatures et les dates limites sont sur le portail officiel.",
+        "ka": "საერთაშორისო სტუდენტებისთვის; ტიპები განსხვავდება იმით, რასაც მოიცავს. განაცხადები და ვადები ოფიციალურ პორტალზეა."
+      }
+    },
+    {
+      "country": "KR",
+      "covers": "full",
+      "levels": [
+        "bachelor",
+        "master",
+        "phd"
+      ],
+      "url": "https://www.studyinkorea.go.kr/",
+      "names": {
+        "en": "Global Korea Scholarship (GKS)",
+        "ru": "Global Korea Scholarship (GKS)"
+      },
+      "funder": {
+        "en": "Government of the Republic of Korea",
+        "ru": "Правительство Республики Корея"
+      },
+      "eligibility": {
+        "en": "For international students; covers tuition and a living allowance. Applications through the Korean embassy or a chosen university.",
+        "ru": "Для иностранных студентов; покрывает обучение и проживание. Заявки — через посольство Кореи или выбранный университет."
+      },
+      "eligibilityTr": {
+        "zh": "面向国际学生；涵盖学费和生活津贴。通过韩国大使馆或所选大学申请。",
+        "es": "Para estudiantes internacionales; cubre la matrícula y una asignación de manutención. Solicitud a través de la embajada de Corea o de una universidad elegida.",
+        "fr": "Pour les étudiants internationaux ; couvre les frais de scolarité et une allocation de subsistance. Candidature via l’ambassade de Corée ou une université choisie.",
+        "ka": "საერთაშორისო სტუდენტებისთვის; მოიცავს სწავლის საფასურს და საარსებო დახმარებას. განაცხადი კორეის საელჩოს ან არჩეული უნივერსიტეტის მეშვეობით."
+      }
+    },
+    {
+      "country": "JP",
+      "covers": "full",
+      "levels": [
+        "bachelor",
+        "master",
+        "phd"
+      ],
+      "url": "https://www.studyinjapan.go.jp/",
+      "names": {
+        "en": "MEXT scholarship",
+        "ru": "Стипендия MEXT"
+      },
+      "funder": {
+        "en": "Ministry of Education (MEXT), Japan",
+        "ru": "Министерство образования Японии (MEXT)"
+      },
+      "eligibility": {
+        "en": "Japanese Government scholarship for international students; the application route is through the Japanese embassy or a university.",
+        "ru": "Стипендия правительства Японии для иностранцев; заявки — через посольство Японии или университет."
+      },
+      "eligibilityTr": {
+        "zh": "日本政府面向国际学生的奖学金；申请途径是日本大使馆或大学。",
+        "es": "Beca del Gobierno de Japón para estudiantes internacionales; la solicitud se realiza a través de la embajada japonesa o de una universidad.",
+        "fr": "Bourse du gouvernement japonais pour étudiants internationaux ; la candidature passe par l’ambassade du Japon ou une université.",
+        "ka": "იაპონიის მთავრობის სტიპენდია საერთაშორისო სტუდენტებისთვის; განაცხადის გზა გადის იაპონიის საელჩოს ან უნივერსიტეტის მეშვეობით."
+      }
+    },
+    {
+      "country": "FR",
+      "covers": "living",
+      "levels": [
+        "master",
+        "phd"
+      ],
+      "url": "https://www.campusfrance.org/",
+      "names": {
+        "en": "Eiffel Excellence Scholarship",
+        "ru": "Стипендия Эйфеля (Eiffel Excellence)"
+      },
+      "funder": {
+        "en": "French Ministry for Europe and Foreign Affairs",
+        "ru": "Министерство Европы и иностранных дел Франции"
+      },
+      "eligibility": {
+        "en": "For master's and PhD students; the application is made by the French institution, not by the student.",
+        "ru": "Для магистров и докторантов; заявку подаёт французское учебное заведение, а не студент."
+      },
+      "eligibilityTr": {
+        "zh": "面向硕士和博士生；申请由法国院校提出，而不是由学生本人提出。",
+        "es": "Para estudiantes de máster y doctorado; la solicitud la presenta la institución francesa, no el estudiante.",
+        "fr": "Pour les étudiants de master et de doctorat ; la candidature est déposée par l’établissement français, pas par l’étudiant.",
+        "ka": "მაგისტრატურისა და დოქტორანტურის სტუდენტებისთვის; განაცხადს აკეთებს საფრანგეთის დაწესებულება და არა სტუდენტი."
+      }
+    },
+    {
+      "country": "RU",
+      "covers": "full",
+      "levels": [
+        "bachelor",
+        "master",
+        "phd"
+      ],
+      "url": "https://education-in-russia.com/",
+      "names": {
+        "en": "Russian Government Scholarship (quota)",
+        "ru": "Квота правительства России на бесплатное обучение"
+      },
+      "funder": {
+        "en": "Government of the Russian Federation",
+        "ru": "Правительство Российской Федерации"
+      },
+      "eligibility": {
+        "en": "Free places in Russian universities for foreign citizens; the application is made on the official portal.",
+        "ru": "Бесплатные места в российских вузах для иностранных граждан; заявка подаётся на официальном портале."
+      },
+      "eligibilityTr": {
+        "zh": "为外国公民提供俄罗斯大学的免费名额；在官方门户上申请。",
+        "es": "Plazas gratuitas en universidades rusas para ciudadanos extranjeros; la solicitud se presenta en el portal oficial.",
+        "fr": "Places gratuites dans les universités russes pour les citoyens étrangers ; la candidature se fait sur le portail officiel.",
+        "ka": "უფასო ადგილები რუსეთის უნივერსიტეტებში უცხო ქვეყნის მოქალაქეებისთვის; განაცხადი კეთდება ოფიციალურ პორტალზე."
+      }
+    },
+    {
+      "country": "GB",
+      "covers": "full",
+      "levels": [
+        "master"
+      ],
+      "url": "https://www.chevening.org/",
+      "names": {
+        "en": "Chevening Scholarships",
+        "ru": "Стипендии Chevening"
+      },
+      "funder": {
+        "en": "UK Government (FCDO)",
+        "ru": "Правительство Великобритании (FCDO)"
+      },
+      "eligibility": {
+        "en": "One-year master's in the UK for future leaders from eligible countries; work experience is required.",
+        "ru": "Годичная магистратура в Великобритании для будущих лидеров из подходящих стран; нужен опыт работы."
+      },
+      "eligibilityTr": {
+        "zh": "面向符合条件国家的未来领导者的英国一年制硕士；需要工作经验。",
+        "es": "Máster de un año en el Reino Unido para futuros líderes de países elegibles; se exige experiencia laboral.",
+        "fr": "Master d’un an au Royaume-Uni pour de futurs dirigeants de pays éligibles ; une expérience professionnelle est exigée.",
+        "ka": "ერთწლიანი მაგისტრატურა დიდ ბრიტანეთში შესაბამისი ქვეყნების მომავალი ლიდერებისთვის; საჭიროა სამუშაო გამოცდილება."
+      }
+    },
+    {
+      "country": "US",
+      "covers": "full",
+      "levels": [
+        "master",
+        "phd"
+      ],
+      "url": "https://foreign.fulbrightonline.org/",
+      "names": {
+        "en": "Fulbright Foreign Student Program",
+        "ru": "Программа Фулбрайта для иностранных студентов"
+      },
+      "funder": {
+        "en": "US Department of State",
+        "ru": "Госдепартамент США"
+      },
+      "eligibility": {
+        "en": "Graduate study in the USA; applications go through the Fulbright commission or the US embassy of your country.",
+        "ru": "Обучение в магистратуре и аспирантуре США; заявки — через комиссию Фулбрайта или посольство США в вашей стране."
+      },
+      "eligibilityTr": {
+        "zh": "在美国的研究生阶段学习；申请通过富布赖特委员会或您所在国家的美国大使馆提交。",
+        "es": "Estudios de posgrado en Estados Unidos; las solicitudes se tramitan a través de la comisión Fulbright o de la embajada de EE. UU. de tu país.",
+        "fr": "Études de troisième cycle aux États-Unis ; les candidatures passent par la commission Fulbright ou l’ambassade des États-Unis de votre pays.",
+        "ka": "სამაგისტრო და სადოქტორო სწავლა აშშ-ში; განაცხადები გადის ფულბრაიტის კომისიის ან თქვენი ქვეყნის აშშ-ის საელჩოს მეშვეობით."
+      }
+    },
+    {
+      "country": "AU",
+      "covers": "full",
+      "levels": [
+        "master",
+        "phd"
+      ],
+      "url": "https://www.dfat.gov.au/people-to-people/australia-awards",
+      "names": {
+        "en": "Australia Awards",
+        "ru": "Australia Awards"
+      },
+      "funder": {
+        "en": "Australian Government",
+        "ru": "Правительство Австралии"
+      },
+      "eligibility": {
+        "en": "Postgraduate scholarships for people from eligible countries; check the official page for your country.",
+        "ru": "Стипендии для магистратуры и аспирантуры для жителей подходящих стран; свою страну проверьте на официальной странице."
+      },
+      "eligibilityTr": {
+        "zh": "面向符合条件国家人员的研究生奖学金；请在官方页面查看您所在的国家。",
+        "es": "Becas de posgrado para personas de países elegibles; consulta en la página oficial tu país.",
+        "fr": "Bourses de troisième cycle pour des personnes de pays éligibles ; consultez la page officielle pour votre pays.",
+        "ka": "სამაგისტრო სტიპენდიები შესაბამისი ქვეყნების მოქალაქეებისთვის; თქვენი ქვეყანა იხილეთ ოფიციალურ გვერდზე."
+      }
+    },
+    {
+      "country": null,
+      "covers": "full",
+      "levels": [
+        "master"
+      ],
+      "url": "https://erasmus-plus.ec.europa.eu/",
+      "names": {
+        "en": "Erasmus Mundus Joint Masters",
+        "ru": "Erasmus Mundus (совместные магистерские программы)"
+      },
+      "funder": {
+        "en": "European Union",
+        "ru": "Европейский союз"
+      },
+      "eligibility": {
+        "en": "Joint master's programmes in several European countries; scholarships are given by the programme itself, apply on the programme's website.",
+        "ru": "Совместные магистерские программы в нескольких странах Европы; стипендии выдаёт сама программа, заявка — на её сайте."
+      },
+      "eligibilityTr": {
+        "zh": "在多个欧洲国家的联合硕士项目；奖学金由项目本身提供，请在项目网站上申请。",
+        "es": "Másteres conjuntos en varios países europeos; las becas las concede el propio programa, solicita en el sitio web del programa.",
+        "fr": "Masters conjoints dans plusieurs pays européens ; les bourses sont accordées par le programme lui-même, candidatez sur le site du programme.",
+        "ka": "ერთობლივი სამაგისტრო პროგრამები რამდენიმე ევროპულ ქვეყანაში; სტიპენდიებს პროგრამა თავად გასცემს, განაცხადი შეიტანეთ პროგრამის ვებგვერდზე."
+      }
+    },
+    {
+      "country": "NL",
+      "names": {
+        "en": "NL Scholarship (formerly Holland Scholarship)",
+        "ru": "Стипендия NL (бывшая Holland Scholarship)"
+      },
+      "funder": {
+        "en": "Nuffic and the participating Dutch institutions",
+        "ru": "Nuffic и участвующие нидерландские вузы"
+      },
+      "covers": "partial",
+      "levels": [
+        "bachelor",
+        "master"
+      ],
+      "eligibility": {
+        "en": "For students from outside the EEA who start a full-time bachelor's or master's programme at a participating Dutch institution and do not already hold a degree from a Dutch institution. The amount and the list of institutions are on the official page.",
+        "ru": "Для студентов из стран вне ЕЭЗ, которые начинают очную программу бакалавриата или магистратуры в участвующем нидерландском вузе и ещё не имеют диплома нидерландского вуза. Сумма и список вузов — на официальной странице."
+      },
+      "url": "https://www.studyinnl.org/finances/nl-scholarship",
+      "eligible_countries": null,
+      "accessed": "2026-10-23",
+      "eligibilityTr": {
+        "zh": "面向来自欧洲经济区以外、在参与项目的荷兰院校开始全日制本科或硕士学习、且尚未持有荷兰院校学位的学生。金额和院校名单见官方页面。",
+        "es": "Para estudiantes de fuera del EEE que empiezan un grado o máster a tiempo completo en una institución neerlandesa participante y que aún no tienen un título de una institución neerlandesa. El importe y la lista de instituciones están en la página oficial.",
+        "fr": "Pour les étudiants hors EEE qui commencent une licence ou un master à temps plein dans un établissement néerlandais participant et ne détiennent pas déjà un diplôme d’un établissement néerlandais. Le montant et la liste des établissements figurent sur la page officielle.",
+        "ka": "ევროპის ეკონომიკური ზონის გარეთ მყოფი სტუდენტებისთვის, რომლებიც იწყებენ სრულ განაკვეთზე ბაკალავრიატის ან მაგისტრატურის პროგრამას ჰოლანდიურ მონაწილე დაწესებულებაში და ჯერ არ აქვთ ჰოლანდიური დაწესებულების ხარისხი. თანხა და დაწესებულებების სია ოფიციალურ გვერდზეა."
+      }
+    },
+    {
+      "country": "CH",
+      "names": {
+        "en": "Swiss Government Excellence Scholarships",
+        "ru": "Стипендии правительства Швейцарии (Excellence Scholarships)"
+      },
+      "funder": {
+        "en": "Swiss State Secretariat for Education, Research and Innovation (SERI)",
+        "ru": "Государственный секретариат Швейцарии по образованию, исследованиям и инновациям (SERI)"
+      },
+      "covers": "living",
+      "levels": [
+        "master",
+        "phd"
+      ],
+      "eligibility": {
+        "en": "Mainly for early-career researchers who already hold a master's degree (doctoral research), and for first master's studies in an artistic field. Open to applicants from 183 countries; every application needs the support of a professor at a Swiss institution. Applications go through Swiss diplomatic representations.",
+        "ru": "В основном для молодых исследователей, у которых уже есть магистерская степень (докторские исследования), а также для первой магистратуры в области искусства. Открыты для заявителей из 183 стран; для каждой заявки нужна поддержка профессора швейцарского вуза. Заявки подаются через дипломатические представительства Швейцарии."
+      },
+      "url": "https://www.sbfi.admin.ch/en/swiss-government-excellence-scholarships",
+      "eligible_countries": null,
+      "accessed": "2026-10-23",
+      "eligibilityTr": {
+        "zh": "主要面向已持有硕士学位的早期职业研究人员（博士研究），以及艺术领域的首个硕士学习。向来自 183 个国家的申请人开放；每份申请都需要瑞士院校一位教授的支持。申请通过瑞士外交代表机构提交。",
+        "es": "Principalmente para investigadores en inicio de carrera que ya tienen un máster (investigación doctoral) y para un primer máster en un campo artístico. Abierta a candidatos de 183 países; cada solicitud necesita el apoyo de un profesor de una institución suiza. Las solicitudes se tramitan a través de las representaciones diplomáticas suizas.",
+        "fr": "Principalement pour des chercheurs en début de carrière déjà titulaires d’un master (recherche doctorale), et pour un premier master dans un domaine artistique. Ouverte aux candidats de 183 pays ; chaque candidature nécessite le soutien d’un professeur d’un établissement suisse. Les candidatures passent par les représentations diplomatiques suisses.",
+        "ka": "ძირითადად კარიერის დასაწყისში მყოფი მკვლევრებისთვის, რომლებსაც უკვე აქვთ მაგისტრის ხარისხი (სადოქტორო კვლევა), და ხელოვნების სფეროში პირველი მაგისტრატურისთვის. ღიაა 183 ქვეყნის განმცხადებლებისთვის; ყველა განაცხადს სჭირდება შვეიცარიის დაწესებულების პროფესორის მხარდაჭერა. განაცხადები გადის შვეიცარიის დიპლომატიური წარმომადგენლობების მეშვეობით."
+      }
+    },
+    {
+      "country": null,
+      "names": {
+        "en": "Visegrad Scholarship Programme",
+        "ru": "Стипендиальная программа Вышеградского фонда"
+      },
+      "funder": {
+        "en": "International Visegrad Fund",
+        "ru": "Международный Вышеградский фонд"
+      },
+      "covers": "partial",
+      "levels": [
+        "master",
+        "phd"
+      ],
+      "eligibility": {
+        "en": "Master's and post-master's study or research for 1-2 semesters in Czechia, Hungary, Poland or Slovakia. Citizens of the Eastern Partnership and Western Balkans countries listed on the official page can apply; you cannot study in your own country of citizenship. The list of countries and the amounts are on the official page.",
+        "ru": "Обучение или исследование в магистратуре и после неё на 1–2 семестра в Чехии, Венгрии, Польше или Словакии. Подать заявку могут граждане стран Восточного партнёрства и Западных Балкан, указанных на официальной странице; учиться в стране своего гражданства нельзя. Список стран и суммы — на официальной странице."
+      },
+      "url": "https://www.visegradfund.org/apply/mobilities/visegrad-scholarships/",
+      "eligible_countries": [
+        "AL",
+        "AM",
+        "AZ",
+        "BA",
+        "BY",
+        "GE",
+        "MD",
+        "ME",
+        "MK",
+        "RS",
+        "UA"
+      ],
+      "accessed": "2026-10-23",
+      "eligibilityTr": {
+        "zh": "在捷克、匈牙利、波兰或斯洛伐克进行 1-2 个学期的硕士及硕士后学习或研究。官方页面所列东部伙伴关系国家和西巴尔干国家的公民可以申请；不能在自己的国籍国学习。国家名单和金额见官方页面。",
+        "es": "Estudios o investigación de máster y posmáster de 1-2 semestres en Chequia, Hungría, Polonia o Eslovaquia. Pueden solicitarla los ciudadanos de los países de la Asociación Oriental y los Balcanes Occidentales que figuran en la página oficial; no se puede estudiar en el país de la propia nacionalidad. La lista de países y los importes están en la página oficial.",
+        "fr": "Études ou recherche de master et post-master de 1 à 2 semestres en Tchéquie, en Hongrie, en Pologne ou en Slovaquie. Les citoyens des pays du Partenariat oriental et des Balkans occidentaux figurant sur la page officielle peuvent candidater ; on ne peut pas étudier dans son propre pays de nationalité. La liste des pays et les montants figurent sur la page officielle.",
+        "ka": "მაგისტრატურისა და პოსტმაგისტრატურის სწავლა ან კვლევა 1-2 სემესტრის განმავლობაში ჩეხეთში, უნგრეთში, პოლონეთში ან სლოვაკეთში. შეუძლიათ მიმართონ აღმოსავლეთ პარტნიორობისა და დასავლეთ ბალკანეთის იმ ქვეყნების მოქალაქეებმა, რომლებიც ოფიციალურ გვერდზეა მითითებული; საკუთარი მოქალაქეობის ქვეყანაში სწავლა არ შეიძლება. ქვეყნების სია და თანხები ოფიციალურ გვერდზეა."
+      }
+    },
+    {
+      "country": "KZ",
+      "names": {
+        "en": "Bolashak International Scholarship",
+        "ru": "Международная стипендия «Болашак»"
+      },
+      "funder": {
+        "en": "Government of Kazakhstan",
+        "ru": "Правительство Казахстана"
+      },
+      "covers": null,
+      "levels": [
+        "bachelor",
+        "master",
+        "phd"
+      ],
+      "eligibility": {
+        "en": "For citizens of Kazakhstan who study abroad (bachelor's, master's, doctoral level) or do scientific internships. It is awarded once for each level; independent master's applicants need an offer from a university on the list of recommended universities. Check the official page for the current competition.",
+        "ru": "Для граждан Казахстана, которые учатся за границей (бакалавриат, магистратура, докторантура) или проходят научные стажировки. Присуждается один раз на каждый уровень; для магистрантов-«самостоятельных» нужно приглашение вуза из перечня рекомендуемых. Условия текущего конкурса — на официальной странице."
+      },
+      "url": "https://bolashak.gov.kz/en/scholarship-program",
+      "eligible_countries": [
+        "KZ"
+      ],
+      "accessed": "2026-10-23",
+      "eligibilityTr": {
+        "zh": "面向在国外学习（本科、硕士、博士层次）或从事科研实习的哈萨克斯坦公民。每个层次只授予一次；独立申请硕士者需要推荐大学名单上某所大学的录取通知。当前评选请查看官方页面。",
+        "es": "Para ciudadanos de Kazajistán que estudian en el extranjero (grado, máster, doctorado) o realizan prácticas científicas. Se concede una vez por cada nivel; quienes solicitan un máster por su cuenta necesitan una oferta de una universidad de la lista de universidades recomendadas. Consulta en la página oficial el concurso en curso.",
+        "fr": "Pour les citoyens du Kazakhstan qui étudient à l’étranger (licence, master, doctorat) ou font des stages scientifiques. Elle est attribuée une fois par niveau ; les candidats au master à titre individuel ont besoin d’une offre d’une université figurant sur la liste des universités recommandées. Consultez la page officielle pour le concours en cours.",
+        "ka": "ყაზახეთის მოქალაქეებისთვის, რომლებიც საზღვარგარეთ სწავლობენ (ბაკალავრიატი, მაგისტრატურა, დოქტორანტურა) ან გადიან სამეცნიერო სტაჟირებას. გაიცემა თითო დონეზე ერთხელ; დამოუკიდებელ მაგისტრანტებს სჭირდებათ შეთავაზება რეკომენდებული უნივერსიტეტების სიაში შემავალი უნივერსიტეტიდან. მიმდინარე კონკურსი იხილეთ ოფიციალურ გვერდზე."
+      }
+    },
+    {
+      "country": "UZ",
+      "names": {
+        "en": "El-Yurt Umidi Foundation scholarships",
+        "ru": "Стипендии фонда «Эл-юрт умиди»"
+      },
+      "funder": {
+        "en": "El-Yurt Umidi Foundation (Uzbekistan)",
+        "ru": "Фонд «Эл-юрт умиди» (Узбекистан)"
+      },
+      "covers": "full",
+      "levels": [
+        "bachelor",
+        "master",
+        "phd"
+      ],
+      "eligibility": {
+        "en": "Only for citizens of Uzbekistan studying abroad (bachelor's, master's and doctoral level). The funding can cover tuition, accommodation, meals, travel once a year each way, textbooks and medical insurance. Check the official site for the current admission period.",
+        "ru": "Только для граждан Узбекистана, которые учатся за границей (бакалавриат, магистратура, докторантура). Финансирование может покрывать обучение, проживание, питание, дорогу раз в год в обе стороны, учебники и медицинскую страховку. Сроки приёма — на официальном сайте."
+      },
+      "url": "https://admission.eyuf.uz/",
+      "eligible_countries": [
+        "UZ"
+      ],
+      "accessed": "2026-10-23",
+      "eligibilityTr": {
+        "zh": "仅面向在国外学习的乌兹别克斯坦公民（本科、硕士和博士层次）。资助可涵盖学费、住宿、膳食、每年一次往返旅费、教材和医疗保险。当前招生期请查看官方网站。",
+        "es": "Solo para ciudadanos de Uzbekistán que estudian en el extranjero (grado, máster y doctorado). La financiación puede cubrir matrícula, alojamiento, comidas, un viaje de ida y vuelta al año, libros de texto y seguro médico. Consulta en el sitio oficial el periodo de admisión en curso.",
+        "fr": "Uniquement pour les citoyens d’Ouzbékistan qui étudient à l’étranger (licence, master et doctorat). Le financement peut couvrir les frais de scolarité, le logement, les repas, un voyage aller-retour par an, les manuels et l’assurance maladie. Consultez le site officiel pour la période d’admission en cours.",
+        "ka": "მხოლოდ უზბეკეთის მოქალაქეებისთვის, რომლებიც საზღვარგარეთ სწავლობენ (ბაკალავრიატი, მაგისტრატურა და დოქტორანტურა). დაფინანსებამ შეიძლება მოიცვას სწავლის საფასური, საცხოვრებელი, კვება, წელიწადში ერთხელ მგზავრობა ორივე მიმართულებით, სახელმძღვანელოები და სამედიცინო დაზღვევა. მიმდინარე მიღების პერიოდი იხილეთ ოფიციალურ საიტზე."
+      }
+    },
+    {
+      "country": "CZ",
+      "names": {
+        "en": "Czech Government Scholarships (development cooperation)",
+        "ru": "Стипендии правительства Чехии (программа содействия развитию)"
+      },
+      "funder": {
+        "en": "Ministry of Education and Ministry of Foreign Affairs of the Czech Republic",
+        "ru": "Министерство образования и Министерство иностранных дел Чехии"
+      },
+      "covers": null,
+      "levels": [
+        "master",
+        "phd"
+      ],
+      "eligibility": {
+        "en": "For citizens of selected developing countries (not EU citizens and not residents of the Czech Republic); English-taught follow-up master's and doctoral programmes. The list of countries changes with each call: the list used here is the call for 2027/2028, check the official page for the current one.",
+        "ru": "Для граждан отдельных развивающихся стран (не граждан ЕС и не жителей Чехии); магистратура (вторая ступень) и докторантура на английском. Список стран меняется с каждым конкурсом: использован список конкурса на 2027/2028, актуальный — на официальной странице."
+      },
+      "url": "https://studyin.gov.cz/en/scholarships/scholarship-detail/?id=339",
+      "eligible_countries": [
+        "BA",
+        "GE",
+        "UA",
+        "ET",
+        "GA",
+        "MR",
+        "ZM",
+        "BD",
+        "KH",
+        "PS",
+        "GT",
+        "HN"
+      ],
+      "accessed": "2026-10-23",
+      "eligibilityTr": {
+        "zh": "面向选定发展中国家的公民（非欧盟公民，也非捷克居民）；以英语授课的后续硕士和博士项目。国家名单随每次征集而变化：此处使用的是 2027/2028 年度的名单，当前名单请查看官方页面。",
+        "es": "Para ciudadanos de países en desarrollo seleccionados (no ciudadanos de la UE ni residentes de la República Checa); másteres y doctorados de continuación impartidos en inglés. La lista de países cambia con cada convocatoria: la lista usada aquí es la de la convocatoria 2027/2028; consulta en la página oficial la vigente.",
+        "fr": "Pour les citoyens de pays en développement sélectionnés (ni citoyens de l’UE ni résidents de la République tchèque) ; masters et doctorats de suite enseignés en anglais. La liste des pays change à chaque appel : la liste utilisée ici est celle de l’appel 2027/2028, consultez la page officielle pour la liste actuelle.",
+        "ka": "არჩეული განვითარებადი ქვეყნების მოქალაქეებისთვის (არა ევროკავშირის მოქალაქეები და არა ჩეხეთის რესპუბლიკის რეზიდენტები); ინგლისურენოვანი გაგრძელებითი სამაგისტრო და სადოქტორო პროგრამები. ქვეყნების სია იცვლება თითოეულ კონკურსზე: აქ გამოყენებულია 2027/2028 წლის კონკურსის სია, მიმდინარე სია იხილეთ ოფიციალურ გვერდზე."
+      }
+    },
+    {
+      "country": "SE",
+      "names": {
+        "en": "Swedish Institute Scholarships for Global Professionals",
+        "ru": "Стипендии Шведского института для глобальных специалистов"
+      },
+      "funder": {
+        "en": "Swedish Institute",
+        "ru": "Шведский институт"
+      },
+      "covers": "full",
+      "levels": [
+        "master"
+      ],
+      "eligibility": {
+        "en": "Fully funded master's studies in Sweden for citizens of the eligible countries (about 34; the list is on the official page). Work experience and leadership are required.",
+        "ru": "Полностью оплачиваемая магистратура в Швеции для граждан стран из списка (около 34; список — на официальной странице). Нужен опыт работы и лидерские качества."
+      },
+      "url": "https://si.se/en/apply/scholarships/swedish-institute-scholarships-for-global-professionals/",
+      "eligible_countries": null,
+      "accessed": "2026-10-23",
+      "eligibilityTr": {
+        "zh": "为符合条件国家（约 34 个；名单见官方页面）的公民提供瑞典全额资助的硕士学习。需要工作经验和领导力。",
+        "es": "Estudios de máster en Suecia con financiación completa para ciudadanos de los países elegibles (unos 34; la lista está en la página oficial). Se exigen experiencia laboral y liderazgo.",
+        "fr": "Études de master entièrement financées en Suède pour les citoyens des pays éligibles (environ 34 ; la liste figure sur la page officielle). Une expérience professionnelle et du leadership sont exigés.",
+        "ka": "მთლიანად დაფინანსებული მაგისტრატურა შვედეთში შესაბამისი ქვეყნების მოქალაქეებისთვის (დაახლოებით 34; სია ოფიციალურ გვერდზეა). საჭიროა სამუშაო გამოცდილება და ლიდერობა."
+      }
+    }
+  ]
 }

@@ -1362,7 +1362,8 @@
     "citizensOf": "{country} fuqarolari",
     "noneConfirmed": "Ma’lumotlarimizda bu davlat kiritilgan e’lon qilingan davlatlar ro‘yxatli dastur hali yo‘q. To‘liq stipendiyalar ro‘yxatini ko‘ring.",
     "severalCountries": "Bir nechta davlat",
-    "programmeDetails": "Dasturlar haqida batafsil"
+    "programmeDetails": "Dasturlar haqida batafsil",
+    "machineTranslated": "Bu maqola inglizcha asl nusxaning mashina tarjimasi bo‘lib, uni hali inson o‘qib chiqmagan. Matndagi rasmiy sahifalarni tekshiring."
   },
   "Deadlines": {
     "title": "Hujjat topshirish muddatlari",

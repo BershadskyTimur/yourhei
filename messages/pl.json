@@ -1362,7 +1362,8 @@
     "citizensOf": "Obywatele: {country}",
     "noneConfirmed": "W naszych danych nie ma jeszcze programu z opublikowaną listą krajów obejmującą ten kraj. Sprawdź pełną listę stypendiów.",
     "severalCountries": "Kilka krajów",
-    "programmeDetails": "Szczegóły programów"
+    "programmeDetails": "Szczegóły programów",
+    "machineTranslated": "Ten artykuł to tłumaczenie maszynowe angielskiego oryginału i nie przeczytała go jeszcze żadna osoba. Sprawdź oficjalne strony podane w tekście."
   },
   "Deadlines": {
     "title": "Terminy składania dokumentów",

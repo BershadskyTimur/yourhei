@@ -1362,7 +1362,8 @@
     "citizensOf": "{country}公民",
     "noneConfirmed": "我们的数据中暂无公布了国家名单且包含该国的项目。请查看完整奖学金列表。",
     "severalCountries": "多个国家",
-    "programmeDetails": "项目详情"
+    "programmeDetails": "项目详情",
+    "machineTranslated": "本文是英文原文的机器翻译，尚未经人工审阅。请核对文中链接的官方页面。"
   },
   "Deadlines": {
     "title": "申请截止日期",

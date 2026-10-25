@@ -1362,7 +1362,8 @@
     "citizensOf": "Citoyens de {country}",
     "noneConfirmed": "Nos données ne contiennent pas encore de programme avec une liste de pays publiée qui inclut ce pays. Consultez la liste complète des bourses.",
     "severalCountries": "Plusieurs pays",
-    "programmeDetails": "Détails des programmes"
+    "programmeDetails": "Détails des programmes",
+    "machineTranslated": "Cet article est une traduction automatique de l’original anglais et n’a pas encore été relu par une personne. Vérifiez les pages officielles indiquées dans le texte."
   },
   "Deadlines": {
     "title": "Dates limites de candidature",

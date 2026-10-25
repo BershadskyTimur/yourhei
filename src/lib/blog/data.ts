@@ -28,7 +28,7 @@ export interface FundsRow {
 
 interface LivingJson {
   accessed: string;
-  items: { country: string; currency: string; cities: { en: string; ru?: string; amount: number }[]; year: string; url: string; note: string; noteRu?: string }[];
+  items: { country: string; currency: string; cities: { en: string; ru?: string; tr?: Record<string, string>; amount: number }[]; year: string; url: string; note: string; noteRu?: string; noteTr?: Record<string, string> }[];
 }
 const living = livingData as unknown as LivingJson;
 
@@ -38,12 +38,12 @@ export function fundsRows(): FundsRow[] {
     currency: i.currency,
     cities: i.cities.map((c) => ({
       // "Any city" says nothing: the label is only kept where the amount depends on the place
-      label: i.cities.length > 1 ? { en: c.en, ...(c.ru ? { ru: c.ru } : {}) } : null,
+      label: i.cities.length > 1 ? { en: c.en, ...(c.ru ? { ru: c.ru } : {}), ...(c.tr ?? {}) } : null,
       amount: c.amount,
     })),
     year: i.year,
     url: i.url,
-    note: { en: i.note, ...(i.noteRu ? { ru: i.noteRu } : {}) },
+    note: { en: i.note, ...(i.noteRu ? { ru: i.noteRu } : {}), ...(i.noteTr ?? {}) },
   }));
 }
 export const FUNDS_CHECKED: string = living.accessed;
@@ -61,7 +61,7 @@ export interface ScholarshipRow {
 
 interface ScholarshipJson {
   accessed: string;
-  items: { names: LocalizedText | string; funder: LocalizedText | string; eligibility: LocalizedText | string; covers: string | null; levels: string[]; url: string; country: string | null; eligible_countries?: string[] | null; accessed?: string }[];
+  items: { names: LocalizedText | string; funder: LocalizedText | string; eligibility: LocalizedText | string; eligibilityTr?: Record<string, string>; covers: string | null; levels: string[]; url: string; country: string | null; eligible_countries?: string[] | null; accessed?: string }[];
 }
 const sch = scholarshipData as unknown as ScholarshipJson;
 const text = (v: LocalizedText | string): LocalizedText => (typeof v === 'string' ? { en: v } : v);
@@ -69,7 +69,7 @@ const text = (v: LocalizedText | string): LocalizedText => (typeof v === 'string
 export const SCHOLARSHIPS: ScholarshipRow[] = sch.items.map((i) => ({
   names: text(i.names),
   funder: text(i.funder),
-  eligibility: text(i.eligibility),
+  eligibility: { ...text(i.eligibility), ...(i.eligibilityTr ?? {}) },
   covers: i.covers,
   levels: i.levels,
   url: i.url,

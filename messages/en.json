@@ -1362,7 +1362,8 @@
     "citizensOf": "Citizens of {country}",
     "noneConfirmed": "No programme with a published list of countries that includes this country is in our data yet. Check the full scholarship list.",
     "severalCountries": "Several countries",
-    "programmeDetails": "About the programmes"
+    "programmeDetails": "About the programmes",
+    "machineTranslated": "This article is a machine translation of the English original and has not been read by a person yet. Check the official pages linked in the text."
   },
   "Deadlines": {
     "title": "Application deadlines",

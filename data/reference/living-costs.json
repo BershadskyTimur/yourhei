@@ -16,7 +16,13 @@
       "year": "2026",
       "url": "https://www.auswaertiges-amt.de/en/visa-service",
       "note": "Blocked account: EUR 11,904 a year, paid out as EUR 992 a month.",
-      "noteRu": "Заблокированный счёт: 11 904 евро в год, выплачивается по 992 евро в месяц."
+      "noteRu": "Заблокированный счёт: 11 904 евро в год, выплачивается по 992 евро в месяц.",
+      "noteTr": {
+        "zh": "冻结账户：每年 11,904 欧元，按每月 992 欧元发放。",
+        "es": "Cuenta bloqueada: 11 904 EUR al año, pagados a razón de 992 EUR al mes.",
+        "fr": "Compte bloqué : 11 904 EUR par an, versés à raison de 992 EUR par mois.",
+        "ka": "დაბლოკილი ანგარიში: წელიწადში 11 904 ევრო, გაიცემა თვეში 992 ევროს სახით."
+      }
     },
     {
       "country": "GB",
@@ -25,18 +31,36 @@
         {
           "en": "Outside London",
           "amount": 1171,
-          "ru": "Вне Лондона"
+          "ru": "Вне Лондона",
+          "tr": {
+            "zh": "伦敦以外",
+            "es": "Fuera de Londres",
+            "fr": "Hors de Londres",
+            "ka": "ლონდონის გარეთ"
+          }
         },
         {
           "en": "London",
           "amount": 1529,
-          "ru": "Лондон"
+          "ru": "Лондон",
+          "tr": {
+            "zh": "伦敦",
+            "es": "Londres",
+            "fr": "Londres",
+            "ka": "ლონდონი"
+          }
         }
       ],
       "year": "2026",
       "url": "https://www.gov.uk/student-visa/money",
       "note": "Up to 9 months; rises to GBP 1,203 and GBP 1,570 for applications from 30 November 2026.",
-      "noteRu": "До 9 месяцев; для заявок с 30 ноября 2026 года вырастет до 1 203 и 1 570 фунтов."
+      "noteRu": "До 9 месяцев; для заявок с 30 ноября 2026 года вырастет до 1 203 и 1 570 фунтов.",
+      "noteTr": {
+        "zh": "最长 9 个月；对于 2026 年 11 月 30 日起的申请，将上调至 1,203 英镑和 1,570 英镑。",
+        "es": "Hasta 9 meses; sube a 1 203 GBP y 1 570 GBP para las solicitudes a partir del 30 de noviembre de 2026.",
+        "fr": "Jusqu’à 9 mois ; passe à 1 203 GBP et 1 570 GBP pour les demandes à partir du 30 novembre 2026.",
+        "ka": "9 თვემდე; 2026 წლის 30 ნოემბრიდან შეტანილი განაცხადებისთვის იზრდება 1 203 და 1 570 გირვანქა სტერლინგამდე."
+      }
     },
     {
       "country": "FR",
@@ -51,7 +75,13 @@
       "year": "2026",
       "url": "https://france-visas.gouv.fr/",
       "note": "47% of the gross monthly minimum wage, in force for applications from 1 August 2026.",
-      "noteRu": "47 % от валового месячного минимального размера оплаты труда, действует для заявок с 1 августа 2026 года."
+      "noteRu": "47 % от валового месячного минимального размера оплаты труда, действует для заявок с 1 августа 2026 года.",
+      "noteTr": {
+        "zh": "为月度法定最低工资总额的 47%，适用于 2026 年 8 月 1 日起的申请。",
+        "es": "El 47 % del salario mínimo mensual bruto, en vigor para las solicitudes desde el 1 de agosto de 2026.",
+        "fr": "47 % du salaire minimum mensuel brut, en vigueur pour les demandes à partir du 1er août 2026.",
+        "ka": "ყოველთვიური ბრუტო მინიმალური ხელფასის 47%, მოქმედებს 2026 წლის 1 აგვისტოდან შეტანილი განაცხადებისთვის."
+      }
     },
     {
       "country": "NL",
@@ -66,7 +96,13 @@
       "year": "2026",
       "url": "https://ind.nl/en/required-amounts-income-requirements",
       "note": "The IND study norm.",
-      "noteRu": "Норма IND для студентов."
+      "noteRu": "Норма IND для студентов.",
+      "noteTr": {
+        "zh": "IND 的留学标准金额。",
+        "es": "La norma de estudios del IND.",
+        "fr": "La norme d’études de l’IND.",
+        "ka": "IND-ის სასწავლო ნორმა."
+      }
     },
     {
       "country": "IE",
@@ -81,7 +117,13 @@
       "year": "2026",
       "url": "https://www.irishimmigration.ie/coming-to-study-in-ireland/",
       "note": "EUR 10,000 a year, in addition to the course fees.",
-      "noteRu": "10 000 евро в год сверх платы за обучение."
+      "noteRu": "10 000 евро в год сверх платы за обучение.",
+      "noteTr": {
+        "zh": "每年 10,000 欧元，另加课程费用。",
+        "es": "10 000 EUR al año, además de las tasas del curso.",
+        "fr": "10 000 EUR par an, en plus des frais de scolarité.",
+        "ka": "წელიწადში 10 000 ევრო, კურსის საფასურის გარდა."
+      }
     },
     {
       "country": "ES",
@@ -96,7 +138,13 @@
       "year": "2026",
       "url": "https://www.exteriores.gob.es/",
       "note": "100% of the IPREM (EUR 7,200 a year).",
-      "noteRu": "100 % показателя IPREM (7 200 евро в год)."
+      "noteRu": "100 % показателя IPREM (7 200 евро в год).",
+      "noteTr": {
+        "zh": "IPREM 的 100%（每年 7,200 欧元）。",
+        "es": "El 100 % del IPREM (7 200 EUR al año).",
+        "fr": "100 % de l’IPREM (7 200 EUR par an).",
+        "ka": "IPREM-ის 100% (წელიწადში 7 200 ევრო)."
+      }
     },
     {
       "country": "IT",
@@ -111,7 +159,13 @@
       "year": "2026/27",
       "url": "https://www.universitaly.it/",
       "note": "EUR 10,179.85 a year for 2026/27 and 2027/28.",
-      "noteRu": "10 179,85 евро в год на 2026/27 и 2027/28 учебные годы."
+      "noteRu": "10 179,85 евро в год на 2026/27 и 2027/28 учебные годы.",
+      "noteTr": {
+        "zh": "2026/27 和 2027/28 学年为每年 10,179.85 欧元。",
+        "es": "10 179,85 EUR al año para 2026/27 y 2027/28.",
+        "fr": "10 179,85 EUR par an pour 2026/27 et 2027/28.",
+        "ka": "წელიწადში 10 179,85 ევრო 2026/27 და 2027/28 წლებისთვის."
+      }
     },
     {
       "country": "AT",
@@ -126,7 +180,13 @@
       "year": "2026",
       "url": "https://www.migration.gv.at/en/",
       "note": "For students up to 24 years old; EUR 1,308.39 from 24. Housing above EUR 386.43 a month needs more.",
-      "noteRu": "Для студентов до 24 лет; с 24 лет — 1 308,39 евро. Если жильё стоит больше 386,43 евро в месяц, нужна большая сумма."
+      "noteRu": "Для студентов до 24 лет; с 24 лет — 1 308,39 евро. Если жильё стоит больше 386,43 евро в месяц, нужна большая сумма.",
+      "noteTr": {
+        "zh": "适用于 24 岁以下的学生；24 岁起为 1,308.39 欧元。每月超过 386.43 欧元的住房需要更多资金。",
+        "es": "Para estudiantes de hasta 24 años; 1 308,39 EUR desde los 24. Un alojamiento de más de 386,43 EUR al mes exige más.",
+        "fr": "Pour les étudiants jusqu’à 24 ans ; 1 308,39 EUR à partir de 24 ans. Un logement au-delà de 386,43 EUR par mois exige davantage.",
+        "ka": "24 წლამდე ასაკის სტუდენტებისთვის; 24 წლიდან — 1 308,39 ევრო. თვეში 386,43 ევროზე მეტი საცხოვრებელი მეტ თანხას მოითხოვს."
+      }
     },
     {
       "country": "FI",
@@ -141,7 +201,13 @@
       "year": "2026",
       "url": "https://migri.fi/en/income-requirement-for-students",
       "note": "EUR 9,600 for a year of studies.",
-      "noteRu": "9 600 евро на год обучения."
+      "noteRu": "9 600 евро на год обучения.",
+      "noteTr": {
+        "zh": "一学年 9,600 欧元。",
+        "es": "9 600 EUR para un año de estudios.",
+        "fr": "9 600 EUR pour une année d’études.",
+        "ka": "9 600 ევრო ერთი სასწავლო წლისთვის."
+      }
     },
     {
       "country": "SE",
@@ -156,7 +222,13 @@
       "year": "2026",
       "url": "https://www.migrationsverket.se/en/you-want-to-apply/study/higher-education",
       "note": "Maintenance requirement for applications in 2026.",
-      "noteRu": "Требование о средствах на содержание для заявок 2026 года."
+      "noteRu": "Требование о средствах на содержание для заявок 2026 года.",
+      "noteTr": {
+        "zh": "2026 年申请适用的生活费要求。",
+        "es": "Requisito de manutención para las solicitudes de 2026.",
+        "fr": "Exigence de ressources pour les demandes de 2026.",
+        "ka": "საარსებო თანხის მოთხოვნა 2026 წლის განაცხადებისთვის."
+      }
     },
     {
       "country": "NO",
@@ -171,7 +243,13 @@
       "year": "2025/26",
       "url": "https://www.udi.no/en/want-to-apply/studies/",
       "note": "NOK 166,859 for the academic year 2025/26 (the 2026/27 figure was not confirmed).",
-      "noteRu": "166 859 норвежских крон на 2025/26 учебный год (сумма на 2026/27 не подтверждена)."
+      "noteRu": "166 859 норвежских крон на 2025/26 учебный год (сумма на 2026/27 не подтверждена).",
+      "noteTr": {
+        "zh": "2025/26 学年为 166,859 挪威克朗（2026/27 年的数额尚未确认）。",
+        "es": "166 859 NOK para el curso 2025/26 (la cifra de 2026/27 no se confirmó).",
+        "fr": "166 859 NOK pour l’année universitaire 2025/26 (le chiffre 2026/27 n’a pas été confirmé).",
+        "ka": "166 859 ნორვეგიული კრონა 2025/26 სასწავლო წლისთვის (2026/27 წლის ციფრი დადასტურებული არ იყო)."
+      }
     },
     {
       "country": "AU",
@@ -186,7 +264,13 @@
       "year": "2026",
       "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500",
       "note": "AUD 29,710 a year for a single student.",
-      "noteRu": "29 710 австралийских долларов в год для одного студента."
+      "noteRu": "29 710 австралийских долларов в год для одного студента.",
+      "noteTr": {
+        "zh": "单身学生每年 29,710 澳元。",
+        "es": "29 710 AUD al año para un estudiante soltero.",
+        "fr": "29 710 AUD par an pour un étudiant seul.",
+        "ka": "წელიწადში 29 710 ავსტრალიური დოლარი ერთი სტუდენტისთვის."
+      }
     },
     {
       "country": "CA",
@@ -201,7 +285,13 @@
       "year": "2026",
       "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/get-documents.html",
       "note": "CAD 23,448 a year outside Quebec (from 1 September 2026); Quebec asks CAD 24,617.",
-      "noteRu": "23 448 канадских долларов в год вне Квебека (с 1 сентября 2026 года); Квебек требует 24 617."
+      "noteRu": "23 448 канадских долларов в год вне Квебека (с 1 сентября 2026 года); Квебек требует 24 617.",
+      "noteTr": {
+        "zh": "魁北克以外每年 23,448 加元（自 2026 年 9 月 1 日起）；魁北克要求 24,617 加元。",
+        "es": "23 448 CAD al año fuera de Quebec (desde el 1 de septiembre de 2026); Quebec pide 24 617 CAD.",
+        "fr": "23 448 CAD par an hors Québec (à partir du 1er septembre 2026) ; le Québec demande 24 617 CAD.",
+        "ka": "კვებეკის გარეთ წელიწადში 23 448 კანადური დოლარი (2026 წლის 1 სექტემბრიდან); კვებეკი ითხოვს 24 617 კანადურ დოლარს."
+      }
     },
     {
       "country": "NZ",
@@ -216,7 +306,13 @@
       "year": "2026",
       "url": "https://www.immigration.govt.nz/",
       "note": "NZD 20,000 a year.",
-      "noteRu": "20 000 новозеландских долларов в год."
+      "noteRu": "20 000 новозеландских долларов в год.",
+      "noteTr": {
+        "zh": "每年 20,000 新西兰元。",
+        "es": "20 000 NZD al año.",
+        "fr": "20 000 NZD par an.",
+        "ka": "წელიწადში 20 000 ახალი ზელანდიური დოლარი."
+      }
     }
   ]
 }

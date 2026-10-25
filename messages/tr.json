@@ -1362,7 +1362,8 @@
     "citizensOf": "{country} vatandaşları",
     "noneConfirmed": "Verilerimizde henüz bu ülkeyi içeren yayımlanmış ülke listesi olan bir program yok. Tüm burs listesine bakın.",
     "severalCountries": "Birkaç ülke",
-    "programmeDetails": "Programların ayrıntıları"
+    "programmeDetails": "Programların ayrıntıları",
+    "machineTranslated": "Bu yazı İngilizce özgün metnin makine çevirisidir ve henüz bir insan tarafından okunmamıştır. Metinde bağlantısı verilen resmî sayfaları kontrol edin."
   },
   "Deadlines": {
     "title": "Başvuru son tarihleri",

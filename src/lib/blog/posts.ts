@@ -1,5 +1,7 @@
 import { plainText } from './inline';
 import type { Article, ArticleBody, Block, BlogLang } from './types';
+import { TRANSLATED_LANGS } from './types';
+import { TRANSLATIONS } from '@/content/blog/i18n';
 import { workDuringStudies } from '@/content/blog/work-during-studies';
 import { afterGraduation } from '@/content/blog/after-graduation';
 import { proofOfFunds } from '@/content/blog/proof-of-funds';
@@ -16,9 +18,15 @@ import { turkiyeScholarshipsApply } from '@/content/blog/turkiye-scholarships-ap
 // The list of articles, in the order they were planned. To add an article: write src/content/blog/<name>.ts and add it here.
 export const ARTICLES: Article[] = [workDuringStudies, proofOfFunds, afterGraduation, fullyFundedScholarships, scholarshipsByCitizenship, chooseCountry, freeTuition, turkiyeScholarshipsApply, netherlandsApplication, germanyApplication, finlandApplication, czechiaApplication];
 
-/** The language of the text shown for a site language: Russian and English have their own, the others read the English one. */
+/** The language of the text shown for a site language: Russian and English are written by hand, the translated ones have their own text, the rest read English. */
 export function blogLang(locale: string): BlogLang {
-  return locale === 'ru' ? 'ru' : 'en';
+  if (locale === 'ru') return 'ru';
+  return (TRANSLATED_LANGS as readonly string[]).includes(locale) ? (locale as BlogLang) : 'en';
+}
+
+/** True when the articles of this language are machine translations of the English text. */
+export function isMachineTranslated(locale: string): boolean {
+  return (TRANSLATED_LANGS as readonly string[]).includes(locale);
 }
 
 /** Articles that may be shown on this day, the newest first. */
@@ -38,7 +46,9 @@ export function getArticle(slug: string, today: Date = new Date()): Article | nu
 }
 
 export function bodyOf(article: Article, locale: string): ArticleBody {
-  return article[blogLang(locale)];
+  const lang = blogLang(locale);
+  if (lang === 'ru' || lang === 'en') return article[lang];
+  return TRANSLATIONS[lang]?.[article.slug] ?? article.en;
 }
 
 /** Other articles to read next: the newest ones, never the article itself. */

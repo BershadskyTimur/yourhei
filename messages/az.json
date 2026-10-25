@@ -1362,7 +1362,8 @@
     "citizensOf": "{country} vətəndaşları",
     "noneConfirmed": "Məlumatlarımızda bu ölkənin daxil olduğu dərc edilmiş ölkə siyahısı olan proqram hələ yoxdur. Tam təqaüd siyahısına baxın.",
     "severalCountries": "Bir neçə ölkə",
-    "programmeDetails": "Proqramlar haqqında ətraflı"
+    "programmeDetails": "Proqramlar haqqında ətraflı",
+    "machineTranslated": "Bu məqalə ingilis dilindəki orijinalın maşın tərcüməsidir və hələ insan tərəfindən oxunmayıb. Mətndəki rəsmi səhifələri yoxlayın."
   },
   "Deadlines": {
     "title": "Müraciət müddətləri",

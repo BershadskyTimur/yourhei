@@ -71,16 +71,38 @@ test.describe('blog', () => {
     await expect(page.getByRole('heading', { level: 3, name: 'Visegrad Scholarship Programme' })).toHaveCount(1);
   });
 
-  test('another language reads the English text, says so and stays out of the search results', async ({ page }) => {
+  test('a language without a translation reads the English text, says so and stays out of the search results', async ({ page }) => {
     await needArticles(page);
-    await page.goto('/ka/blog/proof-of-funds-student-visa');
+    await page.goto('/de/blog/proof-of-funds-student-visa');
     await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content', /noindex/);
     await expect(page.locator('div[lang="en"]').first()).toBeVisible();
-    await expect(page.getByText(/ინგლისურ ვერსიას/)).toBeVisible();
+    await expect(page.getByText(/englische Version/)).toBeVisible();
     await expect(page.locator('link[rel="alternate"][hreflang="ru"]')).toHaveCount(0);
-    // the top menu offers the blog only in the languages it is written in
-    await expect(page.getByRole('navigation', { name: /./ }).first().getByRole('link', { name: 'ბლოგი' })).toHaveCount(0);
+    // the top menu offers the blog only in the languages that have their own text
+    await expect(page.getByRole('navigation', { name: /./ }).first().getByRole('link', { name: 'Blog' })).toHaveCount(0);
   });
+
+  for (const [lang, title, notice, menu] of [
+    ['zh', '办理学生签证需要证明多少资金', '机器翻译', '博客'],
+    ['es', 'Cuánto dinero debes demostrar', 'traducción automática', 'Blog'],
+    ['fr', 'Combien d’argent faut-il prouver', 'traduction automatique', 'Blog'],
+    ['ka', 'რამდენი თანხა უნდა დაადასტუროთ', 'მანქანური თარგმანია', 'ბლოგი'],
+  ] as const) {
+    test(`${lang}: a machine translation with its own text and data, marked as such and kept out of the search results`, async ({ page }) => {
+      await needArticles(page);
+      await page.goto(`/${lang}/blog/proof-of-funds-student-visa`);
+      await expect(page.getByRole('heading', { level: 1 })).toContainText(title);
+      await expect(page.locator(`div[lang="${lang}"]`).first()).toBeVisible();
+      await expect(page.getByText(notice).first()).toBeVisible();
+      await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content', /noindex/);
+      await expect(page.locator('link[rel="alternate"][hreflang="ru"]')).toHaveCount(0);
+      // the data under the article is translated too (the note of Germany), and the menu offers the blog
+      await expect(page.getByRole('heading', { level: 3 }).first()).toBeVisible();
+      await expect(page.getByRole('navigation', { name: /./ }).first().getByRole('link', { name: menu })).toBeVisible();
+      const overflow = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
+      expect(overflow).toBeLessThanOrEqual(0);
+    });
+  }
 
   test('an unknown article is a 404', async ({ page }) => {
     const response = await page.goto('/en/blog/no-such-article');

@@ -1,8 +1,11 @@
 // The blog: articles are written as plain data (a list of blocks per language), so that nothing in them can run code, the pages
 // stay in the site's design, and tests can check every article (both languages, dates, links, the data blocks).
 
+// Russian and English are written by hand; the other languages are machine translations of the English text (src/content/blog/i18n),
+// shown with a notice and kept out of the search results until a person has read them (config/seo.ts).
 export const BLOG_LANGS = ['ru', 'en'] as const;
-export type BlogLang = (typeof BLOG_LANGS)[number];
+export const TRANSLATED_LANGS = ['zh', 'es', 'fr', 'ka'] as const;
+export type BlogLang = (typeof BLOG_LANGS)[number] | (typeof TRANSLATED_LANGS)[number];
 
 export type Block =
   | { t: 'p'; text: string }
@@ -40,3 +43,6 @@ export interface Article {
   ru: ArticleBody;
   en: ArticleBody;
 }
+
+/** The translated articles of one language, by the address of the article. */
+export type Translations = Record<string, ArticleBody>;

@@ -4,7 +4,9 @@ import { SCHOLARSHIPS, fundsRows, scholarshipsOpenTo, selectScholarships } from 
 import { buildFeed, rssDate } from './feed';
 import { linkKind, parseInline, plainText } from './inline';
 import { ARTICLES, blogLang, getArticle, publishedArticles, readingMinutes, relatedArticles, sectionsOf } from './posts';
-import { BLOG_LANGS, type Block } from './types';
+import { BLOG_LANGS, TRANSLATED_LANGS, type Block } from './types';
+import { TRANSLATIONS } from '@/content/blog/i18n';
+import { BLOG_LOCALES } from '@/config/seo';
 
 const ISO = /^\d{4}-\d{2}-\d{2}$/;
 const SLUG = /^[a-z0-9]+(-[a-z0-9]+)*$/;
@@ -108,7 +110,8 @@ describe('what an article may show today', () => {
 describe('language and reading time', () => {
   it('Russian reads Russian, every other language reads English', () => {
     expect(blogLang('ru')).toBe('ru');
-    for (const l of ['en', 'ka', 'zh', 'ar']) expect(blogLang(l)).toBe('en');
+    for (const l of ['en', 'de', 'ar', 'tr']) expect(blogLang(l)).toBe('en');
+    for (const l of ['zh', 'es', 'fr', 'ka']) expect(blogLang(l)).toBe(l);
   });
   it('is at least one minute and counts data blocks', () => {
     expect(readingMinutes([])).toBe(1);
@@ -163,5 +166,34 @@ describe('the RSS feed', () => {
   });
   it('writes dates the way RSS wants them', () => {
     expect(rssDate('2026-10-26')).toBe('Mon, 26 Oct 2026 12:00:00 GMT');
+  });
+});
+
+const shapeOf = (blocks: Block[]) => blocks.map((b) => (b.t === 'h2' ? `h2:${b.id}` : b.t === 'ul' || b.t === 'ol' ? `${b.t}:${b.items.length}` : b.t === 'cta' ? `cta:${b.href}` : b.t === 'rules' || b.t === 'scholarships' || b.t === 'scholarshipsFor' ? JSON.stringify(b) : b.t));
+const linksOf = (blocks: Block[]) => blocks.flatMap((b) => (b.t === 'cta' ? [b.href] : texts([b]).flatMap((t) => parseInline(t).flatMap((x) => (x.kind === 'link' ? [x.href] : []))))).sort();
+
+describe('machine translations of the articles', () => {
+  it('cover every article in every translated language, and the menu knows the languages', () => {
+    expect([...BLOG_LANGS, ...TRANSLATED_LANGS].sort()).toEqual([...BLOG_LOCALES].sort());
+    for (const lang of TRANSLATED_LANGS) {
+      const tr = TRANSLATIONS[lang] ?? {};
+      expect(Object.keys(tr).sort(), lang).toEqual(ARTICLES.map((a) => a.slug).sort());
+    }
+  });
+  it('have the same structure, sections, data blocks and links as the English article', () => {
+    for (const lang of TRANSLATED_LANGS) {
+      for (const a of ARTICLES) {
+        const body = TRANSLATIONS[lang]?.[a.slug];
+        expect(body, `${lang} ${a.slug}`).toBeDefined();
+        if (!body) continue;
+        expect(shapeOf(body.blocks), `${lang} ${a.slug}`).toEqual(shapeOf(a.en.blocks));
+        expect(linksOf(body.blocks), `${lang} ${a.slug} links`).toEqual(linksOf(a.en.blocks));
+        expect(body.title.length, `${lang} ${a.slug} title`).toBeGreaterThan(5);
+        expect(body.title.length, `${lang} ${a.slug} title`).toBeLessThanOrEqual(90);
+        expect(body.description.length, `${lang} ${a.slug} description`).toBeGreaterThan(30);
+        expect(body.description.length, `${lang} ${a.slug} description`).toBeLessThanOrEqual(200);
+        for (const t of texts(body.blocks)) expect(plainText(t), `${lang} ${a.slug}`).not.toMatch(/\]\(|\*\*/);
+      }
+    }
   });
 });

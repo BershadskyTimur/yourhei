@@ -5,7 +5,7 @@ import { notFound } from 'next/navigation';
 import { JsonLd } from '@/components/JsonLd';
 import { Link } from '@/i18n/navigation';
 import { routing } from '@/i18n/routing';
-import { bodyOf, publishedArticles, readingMinutes } from '@/lib/blog/posts';
+import { bodyOf, isMachineTranslated, publishedArticles, readingMinutes } from '@/lib/blog/posts';
 import { seoMetadata, trimDescription } from '@/lib/seo/metadata';
 import { breadcrumbList } from '@/lib/seo/structured';
 
@@ -32,7 +32,7 @@ export default async function BlogIndexPage({ params }: { params: Promise<{ loca
       <JsonLd data={breadcrumbList(locale, [{ name: 'YourHEI', path: '' }, { name: t('title'), path: '/blog' }])} />
       <h1 className="text-3xl font-semibold tracking-tight text-text sm:text-4xl">{t('title')}</h1>
       <p className="mt-3 max-w-2xl text-lg text-muted">{t('intro')}</p>
-      {locale !== 'ru' && locale !== 'en' && <p className="mt-4 rounded-lg border border-line bg-accent-soft px-4 py-3 text-sm font-medium text-text">{t('onlyRuEn')}</p>}
+      {locale !== 'ru' && locale !== 'en' && <p className="mt-4 rounded-lg border border-line bg-accent-soft px-4 py-3 text-sm font-medium text-text">{isMachineTranslated(locale) ? t('machineTranslated') : t('onlyRuEn')}</p>}
 
       {articles.length === 0 ? (
         <p className="mt-8 rounded-lg border border-line bg-surface p-5">{t('empty')}</p>
