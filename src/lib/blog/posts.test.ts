@@ -110,8 +110,8 @@ describe('what an article may show today', () => {
 describe('language and reading time', () => {
   it('Russian reads Russian, every other language reads English', () => {
     expect(blogLang('ru')).toBe('ru');
-    for (const l of ['en', 'de', 'ar', 'tr']) expect(blogLang(l)).toBe('en');
-    for (const l of ['zh', 'es', 'fr', 'ka']) expect(blogLang(l)).toBe(l);
+    for (const l of ['en', 'de', 'ar', 'pl']) expect(blogLang(l)).toBe('en');
+    for (const l of ['zh', 'es', 'fr', 'ka', 'uk', 'tr']) expect(blogLang(l)).toBe(l);
   });
   it('is at least one minute and counts data blocks', () => {
     expect(readingMinutes([])).toBe(1);

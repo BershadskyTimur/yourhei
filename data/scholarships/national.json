@@ -27,7 +27,9 @@
         "zh": "面向国际学生；通常涵盖学费、住宿和每月津贴。国家、层次和申请窗口请查看官方页面。",
         "es": "Para estudiantes internacionales; suele cubrir matrícula, alojamiento y una asignación mensual. Consulta en la página oficial los países, los niveles y el plazo de solicitud.",
         "fr": "Pour les étudiants internationaux ; couvre généralement les frais de scolarité, le logement et une allocation mensuelle. Consultez la page officielle pour les pays, les niveaux et la période de candidature.",
-        "ka": "საერთაშორისო სტუდენტებისთვის; როგორც წესი, მოიცავს სწავლის საფასურს, საცხოვრებელს და ყოველთვიურ დახმარებას. ქვეყნები, დონეები და განაცხადის ვადა იხილეთ ოფიციალურ გვერდზე."
+        "ka": "საერთაშორისო სტუდენტებისთვის; როგორც წესი, მოიცავს სწავლის საფასურს, საცხოვრებელს და ყოველთვიურ დახმარებას. ქვეყნები, დონეები და განაცხადის ვადა იხილეთ ოფიციალურ გვერდზე.",
+        "uk": "Для іноземних студентів; зазвичай покриває навчання, проживання та щомісячну допомогу. Країни, рівні та строки подання дивіться на офіційній сторінці.",
+        "tr": "Uluslararası öğrenciler için; genellikle öğrenim ücretini, konaklamayı ve aylık harçlığı karşılar. Ülkeler, düzeyler ve başvuru dönemi için resmî sayfaya bakın."
       }
     },
     {
@@ -55,7 +57,9 @@
         "zh": "面向合作国家的学生；通常涵盖学费和每月奖学金，并提供住宿支持。申请通过您所在国家的国家机构提交。",
         "es": "Para estudiantes de países socios; suele cubrir la matrícula y una beca mensual, con ayuda para el alojamiento. Las solicitudes se tramitan a través de la agencia nacional de tu país.",
         "fr": "Pour les étudiants de pays partenaires ; couvre généralement les frais de scolarité et une bourse mensuelle, avec une aide au logement. Les candidatures passent par l’agence nationale de votre pays.",
-        "ka": "პარტნიორი ქვეყნების სტუდენტებისთვის; როგორც წესი, მოიცავს სწავლის საფასურს და ყოველთვიურ სტიპენდიას, საცხოვრებლის მხარდაჭერით. განაცხადები გადის თქვენი ქვეყნის ეროვნულ სააგენტოში."
+        "ka": "პარტნიორი ქვეყნების სტუდენტებისთვის; როგორც წესი, მოიცავს სწავლის საფასურს და ყოველთვიურ სტიპენდიას, საცხოვრებლის მხარდაჭერით. განაცხადები გადის თქვენი ქვეყნის ეროვნულ სააგენტოში.",
+        "uk": "Для студентів із країн-партнерів; зазвичай покриває навчання та щомісячну стипендію, із підтримкою на проживання. Заяви подаються через національне агентство вашої країни.",
+        "tr": "Ortak ülkelerden gelen öğrenciler için; genellikle öğrenim ücretini ve aylık bursu karşılar, konaklama desteği de verir. Başvurular, ülkenizin ulusal ajansı üzerinden yapılır."
       }
     },
     {
@@ -82,7 +86,9 @@
         "zh": "面向不同国家和层次的多个项目；DAAD 奖学金数据库会显示向您开放的项目。",
         "es": "Muchos programas para distintos países y niveles; la base de datos de becas del DAAD muestra los que están abiertos para ti.",
         "fr": "De nombreux programmes pour différents pays et niveaux ; la base de données de bourses du DAAD montre ceux qui vous sont ouverts.",
-        "ka": "მრავალი პროგრამა სხვადასხვა ქვეყნისა და დონისთვის; DAAD-ის სტიპენდიების მონაცემთა ბაზა გაჩვენებთ თქვენთვის ღია პროგრამებს."
+        "ka": "მრავალი პროგრამა სხვადასხვა ქვეყნისა და დონისთვის; DAAD-ის სტიპენდიების მონაცემთა ბაზა გაჩვენებთ თქვენთვის ღია პროგრამებს.",
+        "uk": "Багато програм для різних країн і рівнів; база стипендій DAAD показує ті, що відкриті для вас.",
+        "tr": "Farklı ülkeler ve düzeyler için birçok program; DAAD burs veri tabanı size açık olanları gösterir."
       }
     },
     {
@@ -110,7 +116,9 @@
         "zh": "面向外国学生和研究人员的多个项目；条件因项目而异。",
         "es": "Varios programas para estudiantes e investigadores extranjeros; las condiciones varían según el programa.",
         "fr": "Plusieurs programmes pour étudiants et chercheurs étrangers ; les conditions diffèrent selon le programme.",
-        "ka": "რამდენიმე პროგრამა უცხოელი სტუდენტებისა და მკვლევრებისთვის; პირობები პროგრამების მიხედვით განსხვავდება."
+        "ka": "რამდენიმე პროგრამა უცხოელი სტუდენტებისა და მკვლევრებისთვის; პირობები პროგრამების მიხედვით განსხვავდება.",
+        "uk": "Кілька програм для іноземних студентів і дослідників; умови залежать від програми.",
+        "tr": "Yabancı öğrenciler ve araştırmacılar için birkaç program; koşullar programa göre değişir."
       }
     },
     {
@@ -138,7 +146,9 @@
         "zh": "面向国际学生；各类型涵盖的内容不同。申请和截止日期见官方门户。",
         "es": "Para estudiantes internacionales; los tipos difieren en lo que cubren. Las solicitudes y los plazos están en el portal oficial.",
         "fr": "Pour les étudiants internationaux ; les types diffèrent par ce qu’ils couvrent. Les candidatures et les dates limites sont sur le portail officiel.",
-        "ka": "საერთაშორისო სტუდენტებისთვის; ტიპები განსხვავდება იმით, რასაც მოიცავს. განაცხადები და ვადები ოფიციალურ პორტალზეა."
+        "ka": "საერთაშორისო სტუდენტებისთვის; ტიპები განსხვავდება იმით, რასაც მოიცავს. განაცხადები და ვადები ოფიციალურ პორტალზეა.",
+        "uk": "Для іноземних студентів; види відрізняються тим, що вони покривають. Заяви й строки — на офіційному порталі.",
+        "tr": "Uluslararası öğrenciler için; türler neyi karşıladıkları bakımından farklıdır. Başvurular ve son tarihler resmî portaldadır."
       }
     },
     {
@@ -166,7 +176,9 @@
         "zh": "面向国际学生；涵盖学费和生活津贴。通过韩国大使馆或所选大学申请。",
         "es": "Para estudiantes internacionales; cubre la matrícula y una asignación de manutención. Solicitud a través de la embajada de Corea o de una universidad elegida.",
         "fr": "Pour les étudiants internationaux ; couvre les frais de scolarité et une allocation de subsistance. Candidature via l’ambassade de Corée ou une université choisie.",
-        "ka": "საერთაშორისო სტუდენტებისთვის; მოიცავს სწავლის საფასურს და საარსებო დახმარებას. განაცხადი კორეის საელჩოს ან არჩეული უნივერსიტეტის მეშვეობით."
+        "ka": "საერთაშორისო სტუდენტებისთვის; მოიცავს სწავლის საფასურს და საარსებო დახმარებას. განაცხადი კორეის საელჩოს ან არჩეული უნივერსიტეტის მეშვეობით.",
+        "uk": "Для іноземних студентів; покриває навчання та допомогу на життя. Подання через посольство Кореї або обраний університет.",
+        "tr": "Uluslararası öğrenciler için; öğrenim ücretini ve geçim harçlığını karşılar. Kore büyükelçiliği veya seçilen bir üniversite üzerinden başvurulur."
       }
     },
     {
@@ -194,7 +206,9 @@
         "zh": "日本政府面向国际学生的奖学金；申请途径是日本大使馆或大学。",
         "es": "Beca del Gobierno de Japón para estudiantes internacionales; la solicitud se realiza a través de la embajada japonesa o de una universidad.",
         "fr": "Bourse du gouvernement japonais pour étudiants internationaux ; la candidature passe par l’ambassade du Japon ou une université.",
-        "ka": "იაპონიის მთავრობის სტიპენდია საერთაშორისო სტუდენტებისთვის; განაცხადის გზა გადის იაპონიის საელჩოს ან უნივერსიტეტის მეშვეობით."
+        "ka": "იაპონიის მთავრობის სტიპენდია საერთაშორისო სტუდენტებისთვის; განაცხადის გზა გადის იაპონიის საელჩოს ან უნივერსიტეტის მეშვეობით.",
+        "uk": "Стипендія уряду Японії для іноземних студентів; подання через посольство Японії або університет.",
+        "tr": "Japon Hükümeti’nin uluslararası öğrenciler için bursu; başvuru yolu Japon büyükelçiliği veya bir üniversite üzerindendir."
       }
     },
     {
@@ -221,7 +235,9 @@
         "zh": "面向硕士和博士生；申请由法国院校提出，而不是由学生本人提出。",
         "es": "Para estudiantes de máster y doctorado; la solicitud la presenta la institución francesa, no el estudiante.",
         "fr": "Pour les étudiants de master et de doctorat ; la candidature est déposée par l’établissement français, pas par l’étudiant.",
-        "ka": "მაგისტრატურისა და დოქტორანტურის სტუდენტებისთვის; განაცხადს აკეთებს საფრანგეთის დაწესებულება და არა სტუდენტი."
+        "ka": "მაგისტრატურისა და დოქტორანტურის სტუდენტებისთვის; განაცხადს აკეთებს საფრანგეთის დაწესებულება და არა სტუდენტი.",
+        "uk": "Для студентів магістратури та докторантури; заяву подає французький заклад, а не студент.",
+        "tr": "Yüksek lisans ve doktora öğrencileri için; başvuruyu öğrenci değil, Fransız kurum yapar."
       }
     },
     {
@@ -249,7 +265,9 @@
         "zh": "为外国公民提供俄罗斯大学的免费名额；在官方门户上申请。",
         "es": "Plazas gratuitas en universidades rusas para ciudadanos extranjeros; la solicitud se presenta en el portal oficial.",
         "fr": "Places gratuites dans les universités russes pour les citoyens étrangers ; la candidature se fait sur le portail officiel.",
-        "ka": "უფასო ადგილები რუსეთის უნივერსიტეტებში უცხო ქვეყნის მოქალაქეებისთვის; განაცხადი კეთდება ოფიციალურ პორტალზე."
+        "ka": "უფასო ადგილები რუსეთის უნივერსიტეტებში უცხო ქვეყნის მოქალაქეებისთვის; განაცხადი კეთდება ოფიციალურ პორტალზე.",
+        "uk": "Безкоштовні місця в російських університетах для іноземних громадян; заява подається на офіційному порталі.",
+        "tr": "Rus üniversitelerinde yabancı vatandaşlar için ücretsiz kontenjanlar; başvuru resmî portalda yapılır."
       }
     },
     {
@@ -275,7 +293,9 @@
         "zh": "面向符合条件国家的未来领导者的英国一年制硕士；需要工作经验。",
         "es": "Máster de un año en el Reino Unido para futuros líderes de países elegibles; se exige experiencia laboral.",
         "fr": "Master d’un an au Royaume-Uni pour de futurs dirigeants de pays éligibles ; une expérience professionnelle est exigée.",
-        "ka": "ერთწლიანი მაგისტრატურა დიდ ბრიტანეთში შესაბამისი ქვეყნების მომავალი ლიდერებისთვის; საჭიროა სამუშაო გამოცდილება."
+        "ka": "ერთწლიანი მაგისტრატურა დიდ ბრიტანეთში შესაბამისი ქვეყნების მომავალი ლიდერებისთვის; საჭიროა სამუშაო გამოცდილება.",
+        "uk": "Однорічна магістратура у Великій Британії для майбутніх лідерів із відповідних країн; потрібен досвід роботи.",
+        "tr": "Uygun ülkelerden gelecekteki liderler için Birleşik Krallık’ta bir yıllık yüksek lisans; iş deneyimi gereklidir."
       }
     },
     {
@@ -302,7 +322,9 @@
         "zh": "在美国的研究生阶段学习；申请通过富布赖特委员会或您所在国家的美国大使馆提交。",
         "es": "Estudios de posgrado en Estados Unidos; las solicitudes se tramitan a través de la comisión Fulbright o de la embajada de EE. UU. de tu país.",
         "fr": "Études de troisième cycle aux États-Unis ; les candidatures passent par la commission Fulbright ou l’ambassade des États-Unis de votre pays.",
-        "ka": "სამაგისტრო და სადოქტორო სწავლა აშშ-ში; განაცხადები გადის ფულბრაიტის კომისიის ან თქვენი ქვეყნის აშშ-ის საელჩოს მეშვეობით."
+        "ka": "სამაგისტრო და სადოქტორო სწავლა აშშ-ში; განაცხადები გადის ფულბრაიტის კომისიის ან თქვენი ქვეყნის აშშ-ის საელჩოს მეშვეობით.",
+        "uk": "Навчання в аспірантурі та магістратурі в США; заяви подаються через комісію Фулбрайта або посольство США у вашій країні.",
+        "tr": "ABD’de lisansüstü öğrenim; başvurular Fulbright komisyonu veya ülkenizdeki ABD büyükelçiliği üzerinden yapılır."
       }
     },
     {
@@ -329,7 +351,9 @@
         "zh": "面向符合条件国家人员的研究生奖学金；请在官方页面查看您所在的国家。",
         "es": "Becas de posgrado para personas de países elegibles; consulta en la página oficial tu país.",
         "fr": "Bourses de troisième cycle pour des personnes de pays éligibles ; consultez la page officielle pour votre pays.",
-        "ka": "სამაგისტრო სტიპენდიები შესაბამისი ქვეყნების მოქალაქეებისთვის; თქვენი ქვეყანა იხილეთ ოფიციალურ გვერდზე."
+        "ka": "სამაგისტრო სტიპენდიები შესაბამისი ქვეყნების მოქალაქეებისთვის; თქვენი ქვეყანა იხილეთ ოფიციალურ გვერდზე.",
+        "uk": "Стипендії для навчання після бакалаврату для людей із відповідних країн; свою країну перевірте на офіційній сторінці.",
+        "tr": "Uygun ülkelerden gelenler için lisansüstü burslar; ülkeniz için resmî sayfaya bakın."
       }
     },
     {
@@ -355,7 +379,9 @@
         "zh": "在多个欧洲国家的联合硕士项目；奖学金由项目本身提供，请在项目网站上申请。",
         "es": "Másteres conjuntos en varios países europeos; las becas las concede el propio programa, solicita en el sitio web del programa.",
         "fr": "Masters conjoints dans plusieurs pays européens ; les bourses sont accordées par le programme lui-même, candidatez sur le site du programme.",
-        "ka": "ერთობლივი სამაგისტრო პროგრამები რამდენიმე ევროპულ ქვეყანაში; სტიპენდიებს პროგრამა თავად გასცემს, განაცხადი შეიტანეთ პროგრამის ვებგვერდზე."
+        "ka": "ერთობლივი სამაგისტრო პროგრამები რამდენიმე ევროპულ ქვეყანაში; სტიპენდიებს პროგრამა თავად გასცემს, განაცხადი შეიტანეთ პროგრამის ვებგვერდზე.",
+        "uk": "Спільні магістерські програми в кількох європейських країнах; стипендії надає сама програма, подавайте заяву на сайті програми.",
+        "tr": "Birkaç Avrupa ülkesinde ortak yüksek lisans programları; burslar programın kendisi tarafından verilir, programın web sitesinden başvurun."
       }
     },
     {
@@ -384,7 +410,9 @@
         "zh": "面向来自欧洲经济区以外、在参与项目的荷兰院校开始全日制本科或硕士学习、且尚未持有荷兰院校学位的学生。金额和院校名单见官方页面。",
         "es": "Para estudiantes de fuera del EEE que empiezan un grado o máster a tiempo completo en una institución neerlandesa participante y que aún no tienen un título de una institución neerlandesa. El importe y la lista de instituciones están en la página oficial.",
         "fr": "Pour les étudiants hors EEE qui commencent une licence ou un master à temps plein dans un établissement néerlandais participant et ne détiennent pas déjà un diplôme d’un établissement néerlandais. Le montant et la liste des établissements figurent sur la page officielle.",
-        "ka": "ევროპის ეკონომიკური ზონის გარეთ მყოფი სტუდენტებისთვის, რომლებიც იწყებენ სრულ განაკვეთზე ბაკალავრიატის ან მაგისტრატურის პროგრამას ჰოლანდიურ მონაწილე დაწესებულებაში და ჯერ არ აქვთ ჰოლანდიური დაწესებულების ხარისხი. თანხა და დაწესებულებების სია ოფიციალურ გვერდზეა."
+        "ka": "ევროპის ეკონომიკური ზონის გარეთ მყოფი სტუდენტებისთვის, რომლებიც იწყებენ სრულ განაკვეთზე ბაკალავრიატის ან მაგისტრატურის პროგრამას ჰოლანდიურ მონაწილე დაწესებულებაში და ჯერ არ აქვთ ჰოლანდიური დაწესებულების ხარისხი. თანხა და დაწესებულებების სია ოფიციალურ გვერდზეა.",
+        "uk": "Для студентів із-поза ЄЕЗ, які починають очну програму бакалаврату чи магістратури в нідерландському закладі-учаснику й ще не мають диплома нідерландського закладу. Суму та список закладів дивіться на офіційній сторінці.",
+        "tr": "AEA dışından gelip katılımcı bir Hollanda kurumunda tam zamanlı lisans veya yüksek lisans programına başlayan ve henüz bir Hollanda kurumundan derecesi olmayan öğrenciler için. Tutar ve kurumların listesi resmî sayfadadır."
       }
     },
     {
@@ -413,7 +441,9 @@
         "zh": "主要面向已持有硕士学位的早期职业研究人员（博士研究），以及艺术领域的首个硕士学习。向来自 183 个国家的申请人开放；每份申请都需要瑞士院校一位教授的支持。申请通过瑞士外交代表机构提交。",
         "es": "Principalmente para investigadores en inicio de carrera que ya tienen un máster (investigación doctoral) y para un primer máster en un campo artístico. Abierta a candidatos de 183 países; cada solicitud necesita el apoyo de un profesor de una institución suiza. Las solicitudes se tramitan a través de las representaciones diplomáticas suizas.",
         "fr": "Principalement pour des chercheurs en début de carrière déjà titulaires d’un master (recherche doctorale), et pour un premier master dans un domaine artistique. Ouverte aux candidats de 183 pays ; chaque candidature nécessite le soutien d’un professeur d’un établissement suisse. Les candidatures passent par les représentations diplomatiques suisses.",
-        "ka": "ძირითადად კარიერის დასაწყისში მყოფი მკვლევრებისთვის, რომლებსაც უკვე აქვთ მაგისტრის ხარისხი (სადოქტორო კვლევა), და ხელოვნების სფეროში პირველი მაგისტრატურისთვის. ღიაა 183 ქვეყნის განმცხადებლებისთვის; ყველა განაცხადს სჭირდება შვეიცარიის დაწესებულების პროფესორის მხარდაჭერა. განაცხადები გადის შვეიცარიის დიპლომატიური წარმომადგენლობების მეშვეობით."
+        "ka": "ძირითადად კარიერის დასაწყისში მყოფი მკვლევრებისთვის, რომლებსაც უკვე აქვთ მაგისტრის ხარისხი (სადოქტორო კვლევა), და ხელოვნების სფეროში პირველი მაგისტრატურისთვის. ღიაა 183 ქვეყნის განმცხადებლებისთვის; ყველა განაცხადს სჭირდება შვეიცარიის დაწესებულების პროფესორის მხარდაჭერა. განაცხადები გადის შვეიცარიის დიპლომატიური წარმომადგენლობების მეშვეობით.",
+        "uk": "Здебільшого для дослідників на початку кар’єри, які вже мають ступінь магістра (докторське дослідження), і для першої магістратури в галузі мистецтва. Відкрита для заявників зі 183 країн; кожна заява потребує підтримки професора швейцарського закладу. Заяви подаються через дипломатичні представництва Швейцарії.",
+        "tr": "Esas olarak yüksek lisans derecesi olan kariyerinin başındaki araştırmacılar (doktora araştırması) ve sanat alanında ilk yüksek lisans için. 183 ülkeden başvuranlara açıktır; her başvuru bir İsviçre kurumundaki profesörün desteğini gerektirir. Başvurular İsviçre diplomatik temsilcilikleri üzerinden yapılır."
       }
     },
     {
@@ -454,7 +484,9 @@
         "zh": "在捷克、匈牙利、波兰或斯洛伐克进行 1-2 个学期的硕士及硕士后学习或研究。官方页面所列东部伙伴关系国家和西巴尔干国家的公民可以申请；不能在自己的国籍国学习。国家名单和金额见官方页面。",
         "es": "Estudios o investigación de máster y posmáster de 1-2 semestres en Chequia, Hungría, Polonia o Eslovaquia. Pueden solicitarla los ciudadanos de los países de la Asociación Oriental y los Balcanes Occidentales que figuran en la página oficial; no se puede estudiar en el país de la propia nacionalidad. La lista de países y los importes están en la página oficial.",
         "fr": "Études ou recherche de master et post-master de 1 à 2 semestres en Tchéquie, en Hongrie, en Pologne ou en Slovaquie. Les citoyens des pays du Partenariat oriental et des Balkans occidentaux figurant sur la page officielle peuvent candidater ; on ne peut pas étudier dans son propre pays de nationalité. La liste des pays et les montants figurent sur la page officielle.",
-        "ka": "მაგისტრატურისა და პოსტმაგისტრატურის სწავლა ან კვლევა 1-2 სემესტრის განმავლობაში ჩეხეთში, უნგრეთში, პოლონეთში ან სლოვაკეთში. შეუძლიათ მიმართონ აღმოსავლეთ პარტნიორობისა და დასავლეთ ბალკანეთის იმ ქვეყნების მოქალაქეებმა, რომლებიც ოფიციალურ გვერდზეა მითითებული; საკუთარი მოქალაქეობის ქვეყანაში სწავლა არ შეიძლება. ქვეყნების სია და თანხები ოფიციალურ გვერდზეა."
+        "ka": "მაგისტრატურისა და პოსტმაგისტრატურის სწავლა ან კვლევა 1-2 სემესტრის განმავლობაში ჩეხეთში, უნგრეთში, პოლონეთში ან სლოვაკეთში. შეუძლიათ მიმართონ აღმოსავლეთ პარტნიორობისა და დასავლეთ ბალკანეთის იმ ქვეყნების მოქალაქეებმა, რომლებიც ოფიციალურ გვერდზეა მითითებული; საკუთარი მოქალაქეობის ქვეყანაში სწავლა არ შეიძლება. ქვეყნების სია და თანხები ოფიციალურ გვერდზეა.",
+        "uk": "Навчання або дослідження на рівні магістратури й після неї протягом 1-2 семестрів у Чехії, Угорщині, Польщі або Словаччині. Громадяни країн Східного партнерства й Західних Балкан зі списку на офіційній сторінці можуть подавати заяву; навчатися в країні свого громадянства не можна. Список країн і суми — на офіційній сторінці.",
+        "tr": "Çekya, Macaristan, Polonya veya Slovakya’da 1-2 dönemlik yüksek lisans ve yüksek lisans sonrası öğrenim veya araştırma. Resmî sayfada listelenen Doğu Ortaklığı ve Batı Balkan ülkelerinin vatandaşları başvurabilir; kendi uyrukluğunuzun ülkesinde öğrenim göremezsiniz. Ülke listesi ve tutarlar resmî sayfadadır."
       }
     },
     {
@@ -486,7 +518,9 @@
         "zh": "面向在国外学习（本科、硕士、博士层次）或从事科研实习的哈萨克斯坦公民。每个层次只授予一次；独立申请硕士者需要推荐大学名单上某所大学的录取通知。当前评选请查看官方页面。",
         "es": "Para ciudadanos de Kazajistán que estudian en el extranjero (grado, máster, doctorado) o realizan prácticas científicas. Se concede una vez por cada nivel; quienes solicitan un máster por su cuenta necesitan una oferta de una universidad de la lista de universidades recomendadas. Consulta en la página oficial el concurso en curso.",
         "fr": "Pour les citoyens du Kazakhstan qui étudient à l’étranger (licence, master, doctorat) ou font des stages scientifiques. Elle est attribuée une fois par niveau ; les candidats au master à titre individuel ont besoin d’une offre d’une université figurant sur la liste des universités recommandées. Consultez la page officielle pour le concours en cours.",
-        "ka": "ყაზახეთის მოქალაქეებისთვის, რომლებიც საზღვარგარეთ სწავლობენ (ბაკალავრიატი, მაგისტრატურა, დოქტორანტურა) ან გადიან სამეცნიერო სტაჟირებას. გაიცემა თითო დონეზე ერთხელ; დამოუკიდებელ მაგისტრანტებს სჭირდებათ შეთავაზება რეკომენდებული უნივერსიტეტების სიაში შემავალი უნივერსიტეტიდან. მიმდინარე კონკურსი იხილეთ ოფიციალურ გვერდზე."
+        "ka": "ყაზახეთის მოქალაქეებისთვის, რომლებიც საზღვარგარეთ სწავლობენ (ბაკალავრიატი, მაგისტრატურა, დოქტორანტურა) ან გადიან სამეცნიერო სტაჟირებას. გაიცემა თითო დონეზე ერთხელ; დამოუკიდებელ მაგისტრანტებს სჭირდებათ შეთავაზება რეკომენდებული უნივერსიტეტების სიაში შემავალი უნივერსიტეტიდან. მიმდინარე კონკურსი იხილეთ ოფიციალურ გვერდზე.",
+        "uk": "Для громадян Казахстану, які навчаються за кордоном (бакалаврат, магістратура, докторантура) або проходять наукове стажування. Присуджується один раз на кожний рівень; самостійні магістранти потребують пропозиції від університету зі списку рекомендованих. Поточний конкурс дивіться на офіційній сторінці.",
+        "tr": "Yurt dışında okuyan (lisans, yüksek lisans, doktora) veya bilimsel staj yapan Kazakistan vatandaşları için. Her düzey için bir kez verilir; bağımsız yüksek lisans başvuranlarının önerilen üniversiteler listesindeki bir üniversiteden teklifi olması gerekir. Güncel yarışma için resmî sayfaya bakın."
       }
     },
     {
@@ -518,7 +552,9 @@
         "zh": "仅面向在国外学习的乌兹别克斯坦公民（本科、硕士和博士层次）。资助可涵盖学费、住宿、膳食、每年一次往返旅费、教材和医疗保险。当前招生期请查看官方网站。",
         "es": "Solo para ciudadanos de Uzbekistán que estudian en el extranjero (grado, máster y doctorado). La financiación puede cubrir matrícula, alojamiento, comidas, un viaje de ida y vuelta al año, libros de texto y seguro médico. Consulta en el sitio oficial el periodo de admisión en curso.",
         "fr": "Uniquement pour les citoyens d’Ouzbékistan qui étudient à l’étranger (licence, master et doctorat). Le financement peut couvrir les frais de scolarité, le logement, les repas, un voyage aller-retour par an, les manuels et l’assurance maladie. Consultez le site officiel pour la période d’admission en cours.",
-        "ka": "მხოლოდ უზბეკეთის მოქალაქეებისთვის, რომლებიც საზღვარგარეთ სწავლობენ (ბაკალავრიატი, მაგისტრატურა და დოქტორანტურა). დაფინანსებამ შეიძლება მოიცვას სწავლის საფასური, საცხოვრებელი, კვება, წელიწადში ერთხელ მგზავრობა ორივე მიმართულებით, სახელმძღვანელოები და სამედიცინო დაზღვევა. მიმდინარე მიღების პერიოდი იხილეთ ოფიციალურ საიტზე."
+        "ka": "მხოლოდ უზბეკეთის მოქალაქეებისთვის, რომლებიც საზღვარგარეთ სწავლობენ (ბაკალავრიატი, მაგისტრატურა და დოქტორანტურა). დაფინანსებამ შეიძლება მოიცვას სწავლის საფასური, საცხოვრებელი, კვება, წელიწადში ერთხელ მგზავრობა ორივე მიმართულებით, სახელმძღვანელოები და სამედიცინო დაზღვევა. მიმდინარე მიღების პერიოდი იხილეთ ოფიციალურ საიტზე.",
+        "uk": "Лише для громадян Узбекистану, які навчаються за кордоном (бакалаврат, магістратура й докторантура). Фінансування може покривати навчання, проживання, харчування, поїздку раз на рік в обидва боки, підручники та медичне страхування. Поточний період прийому дивіться на офіційному сайті.",
+        "tr": "Yalnızca yurt dışında okuyan (lisans, yüksek lisans ve doktora düzeyi) Özbekistan vatandaşları için. Finansman öğrenim ücretini, konaklamayı, yemeği, yılda bir kez gidiş-dönüş yol masrafını, ders kitaplarını ve sağlık sigortasını karşılayabilir. Güncel kabul dönemi için resmî siteye bakın."
       }
     },
     {
@@ -560,7 +596,9 @@
         "zh": "面向选定发展中国家的公民（非欧盟公民，也非捷克居民）；以英语授课的后续硕士和博士项目。国家名单随每次征集而变化：此处使用的是 2027/2028 年度的名单，当前名单请查看官方页面。",
         "es": "Para ciudadanos de países en desarrollo seleccionados (no ciudadanos de la UE ni residentes de la República Checa); másteres y doctorados de continuación impartidos en inglés. La lista de países cambia con cada convocatoria: la lista usada aquí es la de la convocatoria 2027/2028; consulta en la página oficial la vigente.",
         "fr": "Pour les citoyens de pays en développement sélectionnés (ni citoyens de l’UE ni résidents de la République tchèque) ; masters et doctorats de suite enseignés en anglais. La liste des pays change à chaque appel : la liste utilisée ici est celle de l’appel 2027/2028, consultez la page officielle pour la liste actuelle.",
-        "ka": "არჩეული განვითარებადი ქვეყნების მოქალაქეებისთვის (არა ევროკავშირის მოქალაქეები და არა ჩეხეთის რესპუბლიკის რეზიდენტები); ინგლისურენოვანი გაგრძელებითი სამაგისტრო და სადოქტორო პროგრამები. ქვეყნების სია იცვლება თითოეულ კონკურსზე: აქ გამოყენებულია 2027/2028 წლის კონკურსის სია, მიმდინარე სია იხილეთ ოფიციალურ გვერდზე."
+        "ka": "არჩეული განვითარებადი ქვეყნების მოქალაქეებისთვის (არა ევროკავშირის მოქალაქეები და არა ჩეხეთის რესპუბლიკის რეზიდენტები); ინგლისურენოვანი გაგრძელებითი სამაგისტრო და სადოქტორო პროგრამები. ქვეყნების სია იცვლება თითოეულ კონკურსზე: აქ გამოყენებულია 2027/2028 წლის კონკურსის სია, მიმდინარე სია იხილეთ ოფიციალურ გვერდზე.",
+        "uk": "Для громадян вибраних країн, що розвиваються (не громадян ЄС і не резидентів Чехії); англомовні магістерські та докторські програми-продовження. Список країн змінюється з кожним конкурсом: тут використано список конкурсу 2027/2028, актуальний дивіться на офіційній сторінці.",
+        "tr": "Seçilmiş gelişmekte olan ülkelerin vatandaşları için (AB vatandaşları ve Çek Cumhuriyeti mukimleri hariç); İngilizce yürütülen devam eden yüksek lisans ve doktora programları. Ülke listesi her çağrıda değişir: burada kullanılan liste 2027/2028 çağrısına aittir, güncel liste için resmî sayfaya bakın."
       }
     },
     {
@@ -588,7 +626,9 @@
         "zh": "为符合条件国家（约 34 个；名单见官方页面）的公民提供瑞典全额资助的硕士学习。需要工作经验和领导力。",
         "es": "Estudios de máster en Suecia con financiación completa para ciudadanos de los países elegibles (unos 34; la lista está en la página oficial). Se exigen experiencia laboral y liderazgo.",
         "fr": "Études de master entièrement financées en Suède pour les citoyens des pays éligibles (environ 34 ; la liste figure sur la page officielle). Une expérience professionnelle et du leadership sont exigés.",
-        "ka": "მთლიანად დაფინანსებული მაგისტრატურა შვედეთში შესაბამისი ქვეყნების მოქალაქეებისთვის (დაახლოებით 34; სია ოფიციალურ გვერდზეა). საჭიროა სამუშაო გამოცდილება და ლიდერობა."
+        "ka": "მთლიანად დაფინანსებული მაგისტრატურა შვედეთში შესაბამისი ქვეყნების მოქალაქეებისთვის (დაახლოებით 34; სია ოფიციალურ გვერდზეა). საჭიროა სამუშაო გამოცდილება და ლიდერობა.",
+        "uk": "Повністю фінансоване навчання в магістратурі у Швеції для громадян відповідних країн (близько 34; список на офіційній сторінці). Потрібні досвід роботи й лідерство.",
+        "tr": "Uygun ülkelerin vatandaşları için (yaklaşık 34; liste resmî sayfadadır) İsveç’te tam finanse edilen yüksek lisans. İş deneyimi ve liderlik gerekir."
       }
     }
   ]
