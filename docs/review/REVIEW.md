@@ -793,6 +793,228 @@
 - Заметки сборщика: Official auckland.ac.nz fees page read 2026-10-06: 2026 international undergraduate fees in NZD per year, as listed. The Bachelor of Science is listed as NZ$47,221-58,009 depending on the subject: I stored the lowest (47,221). Not included: Medicine (admission from Year 2 only, NZ$86,561), Optometry, Communications, Education, Fine Arts, Dance, Medical Imaging, Property, Sport. A compulsory student services fee of NZ$9.44 per point (about NZ$1,133 per year) is not included. The page lists fees for 2026, which I stored as 2026/2027. NOT found: English requirements (IELTS etc.), deadlines, durations (left empty), accommodation. I did not copy the typical 3-4 year durations from memory.
 - Источников: 13; главные: https://www.auckland.ac.nz/en/study/fees-and-money-matters/tuition-fees/international-student-fees/undergraduate-international-fees.html
 
+### AGH University of Science and Technology (PL/agh-university-of-science-and-technology)
+
+- Сайт: https://www.agh.edu.pl · форма: public · основано: ? · общежитие: нет данных
+- Учебный год данных: 2026/2027; собрано: 2026-10-25
+- **Программа 1:** Computer Science (BSc) — bachelor, ISCED-F 0613, языки: en, 3.5 лет, on_campus, набор: 10
+  - Стоимость: 3000 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 2:** Computer Science for Embedded Systems (BSc) — bachelor, ISCED-F 0613, языки: en, 3.5 лет, on_campus, набор: 10
+  - Стоимость: 2500 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 3:** Mechanical Engineering (BSc) — bachelor, ISCED-F 0715, языки: en, 3.5 лет, on_campus, набор: 10
+  - Стоимость: 1725 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 4:** Mechatronic Engineering (BSc) — bachelor, ISCED-F 0714, языки: en, 3.5 лет, on_campus, набор: 10
+  - Стоимость: 1800 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 5:** Space Engineering (BSc) — bachelor, ISCED-F 0715, языки: en, 3.5 лет, on_campus, набор: 10
+  - Стоимость: 1250 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 6:** Geology of Natural Resources (BSc) — bachelor, ISCED-F 0532, языки: en, 3 лет, on_campus, набор: 10
+  - Стоимость: 1725 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 7:** Computer Physics (BSc) — bachelor, ISCED-F 0533, языки: en, 3.5 лет, on_campus, набор: 10
+  - Стоимость: 2000 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 8:** Applied Geology: Earth and Extraterrestrial Materials (MSc) — master, ISCED-F 0532, языки: en, 1.5 лет, on_campus, набор: 03
+  - Стоимость: 1750 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 9:** Applied Geology: Economic Geology (MSc) — master, ISCED-F 0532, языки: en, 1.5 лет, on_campus, набор: 03
+  - Стоимость: 1750 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 10:** Automatic Control and Robotics: Cyber-Physical Systems (MSc) — master, ISCED-F 0714, языки: en, 1.5 лет, on_campus, набор: 03
+  - Стоимость: 2700 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 11:** Chemical Technology: Chemical Technologies in Energy Sector (MSc) — master, ISCED-F 0711, языки: en, 1.5 лет, on_campus, набор: 03/10
+  - Стоимость: 2200 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 12:** Computer Science and Intelligent Systems: Artificial Intelligence and Data Analysis (MSc) — master, ISCED-F 0613, языки: en, 1.5 лет, on_campus, набор: 03
+  - Стоимость: 2700 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 13:** Digital Production for Sustainable Manufacturing (MSc) — master, ISCED-F 0715, языки: en, 1.5 лет, on_campus, набор: 03
+  - Стоимость: 3500 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 14:** Electrical Engineering: Smart Grids Technology Platform (MSc) — master, ISCED-F 0713, языки: en, 1.5 лет, on_campus, набор: 03
+  - Стоимость: 2400 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 15:** Energy and Environmental Engineering (MSc) — master, ISCED-F 0713, языки: en, 2 лет, on_campus, набор: 03
+  - Стоимость: 2200 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 16:** Energy Transition (MSc) — master, ISCED-F 0713, языки: en, 1.5 лет, on_campus, набор: 03
+  - Стоимость: 2200 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 17:** Geophysics: Applied Geophysics (MSc) — master, ISCED-F 0532, языки: en, 1.5 лет, on_campus, набор: 03
+  - Стоимость: 1750 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 18:** International Management (MSc) — master, ISCED-F 0413, языки: en, 2 лет, on_campus, набор: 10
+  - Стоимость: 3500 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 19:** Materials Science: Materials Engineering (MSc) — master, ISCED-F 0722, языки: en, 1.5 лет, on_campus, набор: 03
+  - Стоимость: 2200 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 20:** Mechatronic Engineering: Mechatronic Design (MSc) — master, ISCED-F 0714, языки: en, 1.5 лет, on_campus, набор: 03
+  - Стоимость: 2100 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 21:** Metallurgical Engineering (MSc) — master, ISCED-F 0722, языки: en, 2 лет, on_campus, набор: 10
+  - Стоимость: 2300 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 22:** Mining Engineering (MSc) — master, ISCED-F 0724, языки: en, 2 лет, on_campus, набор: 10
+  - Стоимость: 2500 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 23:** Modern Materials Design and Application (MSc) — master, ISCED-F 0722, языки: en, 1.5 лет, on_campus, набор: 03
+  - Стоимость: 2300 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 24:** Oil and Gas Engineering: Petroleum Engineering (MSc) — master, ISCED-F 0724, языки: en, 1.5 лет, on_campus, набор: 03
+  - Стоимость: 1950 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 25:** Raw Materials Value Chain (MSc) — master, ISCED-F 0724, языки: en, 2 лет, on_campus, набор: 10
+  - Стоимость: 0 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 26:** Remote Sensing and Geo Informatics (MSc) — master, ISCED-F 0532, языки: en, 2 лет, on_campus, набор: 10
+  - Стоимость: 1650 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 27:** Sustainable Energy Systems (MSc) — master, ISCED-F 0713, языки: en, 1.5 лет, on_campus, набор: 03
+  - Стоимость: 2200 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 28:** Space Technologies: Downstream (MSc) — master, ISCED-F 0715, языки: en, 1.5 лет, on_campus, набор: 03/10
+  - Стоимость: 2300 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 29:** Space Technologies: Upstream (MSc) — master, ISCED-F 0715, языки: en, 1.5 лет, on_campus, набор: 03/10
+  - Стоимость: 2300 EUR / semester (international)
+  - Требования: требования не найдены
+- Заметки сборщика: Official international.agh.edu.pl pages read 2026-10-25 (fees, bachelor offer, master offer, all for 2026/2027). Tuition is EUR per semester for international students (the page says they are admitted on a fee-payment basis and does not use the term non-EU); it is stored as period semester. Durations are given in semesters on the page (7 semesters = 3.5 years, 6 = 3, 3 = 1.5, 4 = 2). Recruitment windows are June-September (start 1 October) and January-February (start 1 March) with no exact dates or calendar year, so deadlines are empty. Raw Materials Value Chain is EUR 0 (project financed from EIT RawMaterials structural funds). The master Mechanical Engineering is NOT included: its fee is shown as available soon. Chemical Technology: the bridging semester is in Polish only. Application (recruitment) fee: PLN 85 per field without an entrance exam, PLN 100 with one (page); for bachelor programmes the page does not say whether an exam applies, so PLN 85 is stored. The part-time Metalcasting Engineering (PLN 4300 per semester) is not collected. The page does not state language level requirements or the required prior education of bachelor programmes (documents are a standard guess and should be checked). Faculty names are not stored.
+- Источников: 58; главные: https://www.international.agh.edu.pl/en/studies/fees · https://www.international.agh.edu.pl/en/studies/education-offer-bachelor-studies · https://www.international.agh.edu.pl/en/studies/education-offer-master-studies
+
+### Jagiellonian University (PL/jagiellonian-university)
+
+- Сайт: https://www.uj.edu.pl · форма: public · основано: ? · общежитие: нет данных
+- Учебный год данных: 2026/2027; собрано: 2026-10-25
+- **Программа 1:** Medicine (programme in English) — master, ISCED-F 0912, языки: en, 6 лет, on_campus, набор: ?
+  - Стоимость: 16000 EUR / year (all)
+  - Требования: ielts ≥ 6.5, toefl_ibt ≥ 87
+- **Программа 2:** European Studies (BA, Institute of European Studies) — bachelor, ISCED-F 0312, языки: en, 3 лет, on_campus, набор: ?
+  - Стоимость: 13200 EUR / total (all)
+  - Требования: требования не найдены
+- **Программа 3:** European Studies (MA, Institute of European Studies) — master, ISCED-F 0312, языки: en, 2 лет, on_campus, набор: ?
+  - Стоимость: 9000 EUR / total (all)
+  - Требования: требования не найдены
+- Заметки сборщика: Official uj.edu.pl pages read 2026-10-25. Medicine in English: EUR 16,000 per year for each of 6 years (EUR 96,000 in total), application fee PLN 100; round 1 of 2026 was 23.02-29.04.2026 (passed), no 2027 dates found, so deadlines are empty; the entrance exam, IELTS 6.5 / TOEFL iBT 87 and the chemistry plus biology-or-physics requirement are from the programme page. The page lists the level as 'undergraduate (long-cycle)': stored as master with 6 years. European Studies BA (3 years) and MA (2 years) at the Institute of European Studies: the page gives only totals for 2026/27 (EUR 13,200 = 6 instalments of 2,200; EUR 9,000 = 4 instalments of 2,250), the same for non-EU and EU students; stored as period 'total'. Other English programmes of the university (Erasmus Mundus, joint masters with partner universities, Business and Finance Management and others) are NOT collected: their fees and dates differ or are paid to partner universities. Application deadlines for the Institute programmes and the general English-taught master's schedule (first round 23.02-24.06, second round until 02.09; academic year not named on the page) were not stored. Founding year, rankings and dormitory are left empty.
+- Источников: 5; главные: https://irk.uj.edu.pl/en-gb/offer/SMO_PC_26/programme/medici_sjm_PC_en/ · https://welcome.uj.edu.pl/en_GB/admission/fees · https://ces.uj.edu.pl/prospective-students/tuition-and-fees
+
+### Warsaw University of Technology (PL/warsaw-university-of-technology)
+
+- Сайт: https://www.pw.edu.pl · форма: public · основано: ? · общежитие: нет данных
+- Учебный год данных: 2026/2027; собрано: 2026-10-25
+- **Программа 1:** Architecture (BSc) — bachelor, ISCED-F 0731, языки: en, 4 лет, on_campus, набор: 10
+  - Стоимость: 6830 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 2:** Electric and Hybrid Vehicles Engineering (BSc) — bachelor, ISCED-F 0716, языки: en, 3.5 лет, on_campus, набор: 10
+  - Стоимость: 4950 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 3:** Environmental Engineering (BSc) — bachelor, ISCED-F 0712, языки: en, 3.5 лет, on_campus, набор: 10
+  - Стоимость: 3000 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 4:** Environmental Protection (BSc) — bachelor, ISCED-F 0521, языки: en, 3.5 лет, on_campus, набор: 10
+  - Стоимость: 3000 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 5:** Civil Engineering (BSc) — bachelor, ISCED-F 0732, языки: en, 3.5 лет, on_campus, набор: 10
+  - Стоимость: 5100 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 6:** Electrical Engineering (BSc) — bachelor, ISCED-F 0713, языки: en, 3.5 лет, on_campus, набор: 10
+  - Стоимость: 4500 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 7:** Computer Science: Computer Systems and Networks (BSc) — bachelor, ISCED-F 0613, языки: en, 4 лет, on_campus, набор: 10
+  - Стоимость: 5520 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 8:** Computer Science and Information Systems (BSc) — bachelor, ISCED-F 0613, языки: en, 3.5 лет, on_campus, набор: 10
+  - Стоимость: 5700 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 9:** Mechatronics: Photonic Engineering or Mechatronic Devices and Systems (BSc) — bachelor, ISCED-F 0714, языки: en, 3.5 лет, on_campus, набор: 10
+  - Стоимость: 3600 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 10:** Aerospace Engineering: Aerospace Propulsion Systems or Aerospace Structures and Systems (BSc) — bachelor, ISCED-F 0715, языки: en, 3.5 лет, on_campus, набор: 10
+  - Стоимость: 2490 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 11:** Power Engineering (BSc) — bachelor, ISCED-F 0713, языки: en, 3.5 лет, on_campus, набор: 10
+  - Стоимость: 2340 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 12:** Architecture: Architecture for Society of Knowledge (MSc) — master, ISCED-F 0731, языки: en, 2 лет, on_campus, набор: 10
+  - Стоимость: 7090 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 13:** Urban Planning: Urban Redefinition Based Studies (MSc) — master, ISCED-F 0731, языки: en, 2 лет, on_campus, набор: 10
+  - Стоимость: 6830 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 14:** Mechanical Engineering: Advanced Machinery and Vehicles Engineering (MSc) — master, ISCED-F 0715, языки: en, 2 лет, on_campus, набор: 10
+  - Стоимость: 4950 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 15:** Environmental Engineering: Environment Protection Engineering (MSc) — master, ISCED-F 0712, языки: en, 2 лет, on_campus, набор: 10/02
+  - Стоимость: 3000 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 16:** Multienergy Systems (MSc) — master, ISCED-F 0713, языки: en, 1.5 лет, on_campus, набор: 10/02
+  - Стоимость: 3000 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 17:** Chemical and Process Engineering: Green Technologies in Chemical Engineering (MSc) — master, ISCED-F 0711, языки: en, 1.5 лет, on_campus, набор: 02
+  - Стоимость: 2500 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 18:** Biotechnology: Applied Biotechnology (MSc) — master, ISCED-F 0512, языки: en, 1.5 лет, on_campus, набор: 02
+  - Стоимость: 3150 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 19:** Civil Engineering (MSc) — master, ISCED-F 0732, языки: en, 2 лет, on_campus, набор: 10
+  - Стоимость: 5600 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 20:** Electrical Engineering (MSc) — master, ISCED-F 0713, языки: en, 1.5 лет, on_campus, набор: 10
+  - Стоимость: 4500 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 21:** Applied Computer Science, hybrid/part-time (MSc) — master, ISCED-F 0613, языки: en, 2 лет, blended, набор: 10
+  - Стоимость: 1946 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 22:** Computer Science: Computer Systems and Networks (MSc) — master, ISCED-F 0613, языки: en, 2 лет, on_campus, набор: 10/02
+  - Стоимость: 6450 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 23:** Geodesy and Cartography: Mobile Mapping and Navigation Systems (MSc) — master, ISCED-F 0732, языки: en, 1.5 лет, on_campus, набор: 02
+  - Стоимость: 1800 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 24:** Spatial Planning: Smart Environmental Planning and Design (MSc) — master, ISCED-F 0731, языки: en, 1.5 лет, on_campus, набор: 10
+  - Стоимость: 1800 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 25:** Data Science (MSc) — master, ISCED-F 0613, языки: en, 2 лет, on_campus, набор: 10/02
+  - Стоимость: 6510 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 26:** Materials Science and Engineering: Biomaterials (MSc) — master, ISCED-F 0722, языки: en, 1.5 лет, on_campus, набор: 02
+  - Стоимость: 4290 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 27:** Materials Science and Engineering: Materials for Energy (MSc) — master, ISCED-F 0722, языки: en, 1.5 лет, on_campus, набор: 02
+  - Стоимость: 4290 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 28:** Management and Production Engineering: Global Production Engineering and Management (MSc) — master, ISCED-F 0715, языки: en, 2 лет, on_campus, набор: 10/02
+  - Стоимость: 2600 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 29:** Mechatronics: Mechatronic Devices and Systems (MSc) — master, ISCED-F 0714, языки: en, 1.5 лет, on_campus, набор: 10
+  - Стоимость: 3600 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 30:** Photonics (MSc) — master, ISCED-F 0533, языки: en, 1.5 лет, on_campus, набор: 02
+  - Стоимость: 8000 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 31:** Power Engineering (MSc) — master, ISCED-F 0713, языки: en, 1.5 лет, on_campus, набор: 10
+  - Стоимость: 2340 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 32:** Power Engineering: Nuclear Power Engineering (MSc) — master, ISCED-F 0713, языки: en, 2 лет, on_campus, набор: 10
+  - Стоимость: 2340 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 33:** Aerospace Engineering: Aerospace Structures and Systems (MSc) — master, ISCED-F 0715, языки: en, 1.5 лет, on_campus, набор: 10
+  - Стоимость: 2490 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 34:** Robotics and Automatic Control: Robotics (MSc) — master, ISCED-F 0714, языки: en, 2 лет, on_campus, набор: 10
+  - Стоимость: 2340 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 35:** Transport: Transport Systems Engineering and Management (MSc) — master, ISCED-F 1041, языки: en, 1.5 лет, on_campus, набор: 10
+  - Стоимость: 2750 EUR / semester (international)
+  - Требования: требования не найдены
+- Заметки сборщика: Official students.pw.edu.pl pages (WUT International Students Office: B.Sc. offer and M.Sc. offer, both for the academic year 2026/2027, M.Sc. page updated 19 October 2026) read 2026-10-25. Tuition for non-EU citizens is EUR and the column is headed "TUITION FEE (one semester)" on both pages, so it is stored per semester; EU/EFTA fees (PLN) are not stored. The pages do not say that the programmes are taught in English (it is the offer of the International Students Office): English is stored as the language and should be confirmed on the programme pages. Durations are in semesters on the pages (1 semester = 1/2 year). Intakes: October and/or February; no application dates, entrance requirements or application fees are on the pages (documents are a standard guess and should be checked). Aerospace Engineering: Aerospace Propulsion Systems (M.Sc.) is NOT included (no fee or duration on the page). "Applied Computer Science" (M.Sc.) is hybrid/part-time and is stored as blended. The B.Sc. specialisations Photonic Engineering and Telecommunications appear in the sidebar but not in the 2026/2027 table and are not included. The actual semester fee follows the ECTS plan of each student (WUT regulations), so the amount is the official non-EU tuition for the offer.
+- Источников: 70; главные: https://www.students.pw.edu.pl/Studies-Offer/B.Sc.-offer · https://www.students.pw.edu.pl/Studies-Offer/M.Sc.-offer
+
 ### KTH Royal Institute of Technology (SE/royal-institute-of-technology)
 
 - Сайт: https://www.kth.se/en · форма: public · основано: ? · общежитие: нет данных

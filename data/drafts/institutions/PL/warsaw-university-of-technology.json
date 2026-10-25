@@ -1,0 +1,1761 @@
+{
+  "schema_version": 1,
+  "collected_at": "2026-10-25",
+  "academic_year": "2026/2027",
+  "institution": {
+    "external_ids": {},
+    "description": {
+      "en": "A large public technical university in Warsaw. Its International Students Office offers 11 bachelor and 24 master programmes for 2026/2027; non-EU tuition is paid per semester in euros.",
+      "ru": "Крупный государственный технический университет в Варшаве. Офис иностранных студентов предлагает на 2026/2027 год 11 программ бакалавриата и 24 магистерские; студенты из стран вне ЕС платят за обучение по семестрам в евро."
+    },
+    "rankings": [],
+    "dormitory": null,
+    "ownership": "public",
+    "founded_year": null,
+    "names": {
+      "original": "Politechnika Warszawska",
+      "en": "Warsaw University of Technology",
+      "ru": "Варшавский политехнический университет"
+    },
+    "type": "university",
+    "city": {
+      "original": "Warszawa",
+      "en": "Warsaw",
+      "ru": "Варшава"
+    },
+    "website": "https://www.pw.edu.pl",
+    "city_size": "megapolis",
+    "climate": "temperate",
+    "size": "large",
+    "features": [
+      "exchange"
+    ],
+    "country": "PL"
+  },
+  "programs": [
+    {
+      "names": {
+        "original": "Architecture (BSc)",
+        "en": "Architecture (BSc)",
+        "ru": "Архитектура (бакалавриат)"
+      },
+      "level": "bachelor",
+      "isced_f": "0731",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4.0,
+      "format": "on_campus",
+      "intakes": [
+        "10"
+      ],
+      "tuition": [
+        {
+          "amount": 6830,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.students.pw.edu.pl/Studies-Offer/B.Sc.-offer"
+    },
+    {
+      "names": {
+        "original": "Electric and Hybrid Vehicles Engineering (BSc)",
+        "en": "Electric and Hybrid Vehicles Engineering (BSc)",
+        "ru": "Инженерия электрических и гибридных транспортных средств (бакалавриат)"
+      },
+      "level": "bachelor",
+      "isced_f": "0716",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 3.5,
+      "format": "on_campus",
+      "intakes": [
+        "10"
+      ],
+      "tuition": [
+        {
+          "amount": 4950,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.students.pw.edu.pl/Studies-Offer/B.Sc.-offer"
+    },
+    {
+      "names": {
+        "original": "Environmental Engineering (BSc)",
+        "en": "Environmental Engineering (BSc)",
+        "ru": "Инженерия окружающей среды (бакалавриат)"
+      },
+      "level": "bachelor",
+      "isced_f": "0712",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 3.5,
+      "format": "on_campus",
+      "intakes": [
+        "10"
+      ],
+      "tuition": [
+        {
+          "amount": 3000,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.students.pw.edu.pl/Studies-Offer/B.Sc.-offer"
+    },
+    {
+      "names": {
+        "original": "Environmental Protection (BSc)",
+        "en": "Environmental Protection (BSc)",
+        "ru": "Охрана окружающей среды (бакалавриат)"
+      },
+      "level": "bachelor",
+      "isced_f": "0521",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 3.5,
+      "format": "on_campus",
+      "intakes": [
+        "10"
+      ],
+      "tuition": [
+        {
+          "amount": 3000,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.students.pw.edu.pl/Studies-Offer/B.Sc.-offer"
+    },
+    {
+      "names": {
+        "original": "Civil Engineering (BSc)",
+        "en": "Civil Engineering (BSc)",
+        "ru": "Строительство (бакалавриат)"
+      },
+      "level": "bachelor",
+      "isced_f": "0732",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 3.5,
+      "format": "on_campus",
+      "intakes": [
+        "10"
+      ],
+      "tuition": [
+        {
+          "amount": 5100,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.students.pw.edu.pl/Studies-Offer/B.Sc.-offer"
+    },
+    {
+      "names": {
+        "original": "Electrical Engineering (BSc)",
+        "en": "Electrical Engineering (BSc)",
+        "ru": "Электротехника (бакалавриат)"
+      },
+      "level": "bachelor",
+      "isced_f": "0713",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 3.5,
+      "format": "on_campus",
+      "intakes": [
+        "10"
+      ],
+      "tuition": [
+        {
+          "amount": 4500,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.students.pw.edu.pl/Studies-Offer/B.Sc.-offer"
+    },
+    {
+      "names": {
+        "original": "Computer Science: Computer Systems and Networks (BSc)",
+        "en": "Computer Science: Computer Systems and Networks (BSc)",
+        "ru": "Информатика: компьютерные системы и сети (бакалавриат)"
+      },
+      "level": "bachelor",
+      "isced_f": "0613",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 4.0,
+      "format": "on_campus",
+      "intakes": [
+        "10"
+      ],
+      "tuition": [
+        {
+          "amount": 5520,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.students.pw.edu.pl/Studies-Offer/B.Sc.-offer"
+    },
+    {
+      "names": {
+        "original": "Computer Science and Information Systems (BSc)",
+        "en": "Computer Science and Information Systems (BSc)",
+        "ru": "Информатика и информационные системы (бакалавриат)"
+      },
+      "level": "bachelor",
+      "isced_f": "0613",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 3.5,
+      "format": "on_campus",
+      "intakes": [
+        "10"
+      ],
+      "tuition": [
+        {
+          "amount": 5700,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.students.pw.edu.pl/Studies-Offer/B.Sc.-offer"
+    },
+    {
+      "names": {
+        "original": "Mechatronics: Photonic Engineering or Mechatronic Devices and Systems (BSc)",
+        "en": "Mechatronics: Photonic Engineering or Mechatronic Devices and Systems (BSc)",
+        "ru": "Мехатроника: фотоника или мехатронные устройства и системы (бакалавриат)"
+      },
+      "level": "bachelor",
+      "isced_f": "0714",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 3.5,
+      "format": "on_campus",
+      "intakes": [
+        "10"
+      ],
+      "tuition": [
+        {
+          "amount": 3600,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.students.pw.edu.pl/Studies-Offer/B.Sc.-offer"
+    },
+    {
+      "names": {
+        "original": "Aerospace Engineering: Aerospace Propulsion Systems or Aerospace Structures and Systems (BSc)",
+        "en": "Aerospace Engineering: Aerospace Propulsion Systems or Aerospace Structures and Systems (BSc)",
+        "ru": "Аэрокосмическая инженерия: двигательные установки или конструкции и системы (бакалавриат)"
+      },
+      "level": "bachelor",
+      "isced_f": "0715",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 3.5,
+      "format": "on_campus",
+      "intakes": [
+        "10"
+      ],
+      "tuition": [
+        {
+          "amount": 2490,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.students.pw.edu.pl/Studies-Offer/B.Sc.-offer"
+    },
+    {
+      "names": {
+        "original": "Power Engineering (BSc)",
+        "en": "Power Engineering (BSc)",
+        "ru": "Энергетика (бакалавриат)"
+      },
+      "level": "bachelor",
+      "isced_f": "0713",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 3.5,
+      "format": "on_campus",
+      "intakes": [
+        "10"
+      ],
+      "tuition": [
+        {
+          "amount": 2340,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.students.pw.edu.pl/Studies-Offer/B.Sc.-offer"
+    },
+    {
+      "names": {
+        "original": "Architecture: Architecture for Society of Knowledge (MSc)",
+        "en": "Architecture: Architecture for Society of Knowledge (MSc)",
+        "ru": "Архитектура: архитектура для общества знаний (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0731",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 2.0,
+      "format": "on_campus",
+      "intakes": [
+        "10"
+      ],
+      "tuition": [
+        {
+          "amount": 7090,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.students.pw.edu.pl/Studies-Offer/M.Sc.-offer"
+    },
+    {
+      "names": {
+        "original": "Urban Planning: Urban Redefinition Based Studies (MSc)",
+        "en": "Urban Planning: Urban Redefinition Based Studies (MSc)",
+        "ru": "Градостроительство: переосмысление городской среды (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0731",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 2.0,
+      "format": "on_campus",
+      "intakes": [
+        "10"
+      ],
+      "tuition": [
+        {
+          "amount": 6830,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.students.pw.edu.pl/Studies-Offer/M.Sc.-offer"
+    },
+    {
+      "names": {
+        "original": "Mechanical Engineering: Advanced Machinery and Vehicles Engineering (MSc)",
+        "en": "Mechanical Engineering: Advanced Machinery and Vehicles Engineering (MSc)",
+        "ru": "Машиностроение: современные машины и транспортные средства (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0715",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 2.0,
+      "format": "on_campus",
+      "intakes": [
+        "10"
+      ],
+      "tuition": [
+        {
+          "amount": 4950,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.students.pw.edu.pl/Studies-Offer/M.Sc.-offer"
+    },
+    {
+      "names": {
+        "original": "Environmental Engineering: Environment Protection Engineering (MSc)",
+        "en": "Environmental Engineering: Environment Protection Engineering (MSc)",
+        "ru": "Инженерия окружающей среды: инженерия охраны среды (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0712",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 2.0,
+      "format": "on_campus",
+      "intakes": [
+        "10",
+        "02"
+      ],
+      "tuition": [
+        {
+          "amount": 3000,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.students.pw.edu.pl/Studies-Offer/M.Sc.-offer"
+    },
+    {
+      "names": {
+        "original": "Multienergy Systems (MSc)",
+        "en": "Multienergy Systems (MSc)",
+        "ru": "Мультиэнергетические системы (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0713",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 1.5,
+      "format": "on_campus",
+      "intakes": [
+        "10",
+        "02"
+      ],
+      "tuition": [
+        {
+          "amount": 3000,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.students.pw.edu.pl/Studies-Offer/M.Sc.-offer"
+    },
+    {
+      "names": {
+        "original": "Chemical and Process Engineering: Green Technologies in Chemical Engineering (MSc)",
+        "en": "Chemical and Process Engineering: Green Technologies in Chemical Engineering (MSc)",
+        "ru": "Химическая и процессная инженерия: зелёные технологии (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0711",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 1.5,
+      "format": "on_campus",
+      "intakes": [
+        "02"
+      ],
+      "tuition": [
+        {
+          "amount": 2500,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.students.pw.edu.pl/Studies-Offer/M.Sc.-offer"
+    },
+    {
+      "names": {
+        "original": "Biotechnology: Applied Biotechnology (MSc)",
+        "en": "Biotechnology: Applied Biotechnology (MSc)",
+        "ru": "Биотехнология: прикладная биотехнология (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0512",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 1.5,
+      "format": "on_campus",
+      "intakes": [
+        "02"
+      ],
+      "tuition": [
+        {
+          "amount": 3150,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.students.pw.edu.pl/Studies-Offer/M.Sc.-offer"
+    },
+    {
+      "names": {
+        "original": "Civil Engineering (MSc)",
+        "en": "Civil Engineering (MSc)",
+        "ru": "Строительство (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0732",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 2.0,
+      "format": "on_campus",
+      "intakes": [
+        "10"
+      ],
+      "tuition": [
+        {
+          "amount": 5600,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.students.pw.edu.pl/Studies-Offer/M.Sc.-offer"
+    },
+    {
+      "names": {
+        "original": "Electrical Engineering (MSc)",
+        "en": "Electrical Engineering (MSc)",
+        "ru": "Электротехника (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0713",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 1.5,
+      "format": "on_campus",
+      "intakes": [
+        "10"
+      ],
+      "tuition": [
+        {
+          "amount": 4500,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.students.pw.edu.pl/Studies-Offer/M.Sc.-offer"
+    },
+    {
+      "names": {
+        "original": "Applied Computer Science, hybrid/part-time (MSc)",
+        "en": "Applied Computer Science, hybrid/part-time (MSc)",
+        "ru": "Прикладная информатика, гибридный/заочный формат (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0613",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 2.0,
+      "format": "blended",
+      "intakes": [
+        "10"
+      ],
+      "tuition": [
+        {
+          "amount": 1946,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.students.pw.edu.pl/Studies-Offer/M.Sc.-offer"
+    },
+    {
+      "names": {
+        "original": "Computer Science: Computer Systems and Networks (MSc)",
+        "en": "Computer Science: Computer Systems and Networks (MSc)",
+        "ru": "Информатика: компьютерные системы и сети (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0613",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 2.0,
+      "format": "on_campus",
+      "intakes": [
+        "10",
+        "02"
+      ],
+      "tuition": [
+        {
+          "amount": 6450,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.students.pw.edu.pl/Studies-Offer/M.Sc.-offer"
+    },
+    {
+      "names": {
+        "original": "Geodesy and Cartography: Mobile Mapping and Navigation Systems (MSc)",
+        "en": "Geodesy and Cartography: Mobile Mapping and Navigation Systems (MSc)",
+        "ru": "Геодезия и картография: мобильное картографирование и навигационные системы (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0732",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 1.5,
+      "format": "on_campus",
+      "intakes": [
+        "02"
+      ],
+      "tuition": [
+        {
+          "amount": 1800,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.students.pw.edu.pl/Studies-Offer/M.Sc.-offer"
+    },
+    {
+      "names": {
+        "original": "Spatial Planning: Smart Environmental Planning and Design (MSc)",
+        "en": "Spatial Planning: Smart Environmental Planning and Design (MSc)",
+        "ru": "Пространственное планирование: умное планирование и проектирование среды (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0731",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 1.5,
+      "format": "on_campus",
+      "intakes": [
+        "10"
+      ],
+      "tuition": [
+        {
+          "amount": 1800,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.students.pw.edu.pl/Studies-Offer/M.Sc.-offer"
+    },
+    {
+      "names": {
+        "original": "Data Science (MSc)",
+        "en": "Data Science (MSc)",
+        "ru": "Наука о данных (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0613",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 2.0,
+      "format": "on_campus",
+      "intakes": [
+        "10",
+        "02"
+      ],
+      "tuition": [
+        {
+          "amount": 6510,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.students.pw.edu.pl/Studies-Offer/M.Sc.-offer"
+    },
+    {
+      "names": {
+        "original": "Materials Science and Engineering: Biomaterials (MSc)",
+        "en": "Materials Science and Engineering: Biomaterials (MSc)",
+        "ru": "Материаловедение и инженерия: биоматериалы (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0722",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 1.5,
+      "format": "on_campus",
+      "intakes": [
+        "02"
+      ],
+      "tuition": [
+        {
+          "amount": 4290,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.students.pw.edu.pl/Studies-Offer/M.Sc.-offer"
+    },
+    {
+      "names": {
+        "original": "Materials Science and Engineering: Materials for Energy (MSc)",
+        "en": "Materials Science and Engineering: Materials for Energy (MSc)",
+        "ru": "Материаловедение и инженерия: материалы для энергетики (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0722",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 1.5,
+      "format": "on_campus",
+      "intakes": [
+        "02"
+      ],
+      "tuition": [
+        {
+          "amount": 4290,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.students.pw.edu.pl/Studies-Offer/M.Sc.-offer"
+    },
+    {
+      "names": {
+        "original": "Management and Production Engineering: Global Production Engineering and Management (MSc)",
+        "en": "Management and Production Engineering: Global Production Engineering and Management (MSc)",
+        "ru": "Менеджмент и производственная инженерия: глобальное производство и управление (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0715",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 2.0,
+      "format": "on_campus",
+      "intakes": [
+        "10",
+        "02"
+      ],
+      "tuition": [
+        {
+          "amount": 2600,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.students.pw.edu.pl/Studies-Offer/M.Sc.-offer"
+    },
+    {
+      "names": {
+        "original": "Mechatronics: Mechatronic Devices and Systems (MSc)",
+        "en": "Mechatronics: Mechatronic Devices and Systems (MSc)",
+        "ru": "Мехатроника: мехатронные устройства и системы (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0714",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 1.5,
+      "format": "on_campus",
+      "intakes": [
+        "10"
+      ],
+      "tuition": [
+        {
+          "amount": 3600,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.students.pw.edu.pl/Studies-Offer/M.Sc.-offer"
+    },
+    {
+      "names": {
+        "original": "Photonics (MSc)",
+        "en": "Photonics (MSc)",
+        "ru": "Фотоника (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0533",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 1.5,
+      "format": "on_campus",
+      "intakes": [
+        "02"
+      ],
+      "tuition": [
+        {
+          "amount": 8000,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.students.pw.edu.pl/Studies-Offer/M.Sc.-offer"
+    },
+    {
+      "names": {
+        "original": "Power Engineering (MSc)",
+        "en": "Power Engineering (MSc)",
+        "ru": "Энергетика (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0713",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 1.5,
+      "format": "on_campus",
+      "intakes": [
+        "10"
+      ],
+      "tuition": [
+        {
+          "amount": 2340,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.students.pw.edu.pl/Studies-Offer/M.Sc.-offer"
+    },
+    {
+      "names": {
+        "original": "Power Engineering: Nuclear Power Engineering (MSc)",
+        "en": "Power Engineering: Nuclear Power Engineering (MSc)",
+        "ru": "Энергетика: ядерная энергетика (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0713",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 2.0,
+      "format": "on_campus",
+      "intakes": [
+        "10"
+      ],
+      "tuition": [
+        {
+          "amount": 2340,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.students.pw.edu.pl/Studies-Offer/M.Sc.-offer"
+    },
+    {
+      "names": {
+        "original": "Aerospace Engineering: Aerospace Structures and Systems (MSc)",
+        "en": "Aerospace Engineering: Aerospace Structures and Systems (MSc)",
+        "ru": "Аэрокосмическая инженерия: конструкции и системы (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0715",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 1.5,
+      "format": "on_campus",
+      "intakes": [
+        "10"
+      ],
+      "tuition": [
+        {
+          "amount": 2490,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.students.pw.edu.pl/Studies-Offer/M.Sc.-offer"
+    },
+    {
+      "names": {
+        "original": "Robotics and Automatic Control: Robotics (MSc)",
+        "en": "Robotics and Automatic Control: Robotics (MSc)",
+        "ru": "Робототехника и автоматическое управление: робототехника (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0714",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 2.0,
+      "format": "on_campus",
+      "intakes": [
+        "10"
+      ],
+      "tuition": [
+        {
+          "amount": 2340,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.students.pw.edu.pl/Studies-Offer/M.Sc.-offer"
+    },
+    {
+      "names": {
+        "original": "Transport: Transport Systems Engineering and Management (MSc)",
+        "en": "Transport: Transport Systems Engineering and Management (MSc)",
+        "ru": "Транспорт: инженерия и управление транспортными системами (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "1041",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 1.5,
+      "format": "on_campus",
+      "intakes": [
+        "10"
+      ],
+      "tuition": [
+        {
+          "amount": 2750,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.students.pw.edu.pl/Studies-Offer/M.Sc.-offer"
+    }
+  ],
+  "scholarships": [],
+  "sources": [
+    {
+      "field": "programs[0].tuition[0].amount",
+      "url": "https://www.students.pw.edu.pl/Studies-Offer/B.Sc.-offer",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[0].duration_years",
+      "url": "https://www.students.pw.edu.pl/Studies-Offer/B.Sc.-offer",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[1].tuition[0].amount",
+      "url": "https://www.students.pw.edu.pl/Studies-Offer/B.Sc.-offer",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[1].duration_years",
+      "url": "https://www.students.pw.edu.pl/Studies-Offer/B.Sc.-offer",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[2].tuition[0].amount",
+      "url": "https://www.students.pw.edu.pl/Studies-Offer/B.Sc.-offer",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[2].duration_years",
+      "url": "https://www.students.pw.edu.pl/Studies-Offer/B.Sc.-offer",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[3].tuition[0].amount",
+      "url": "https://www.students.pw.edu.pl/Studies-Offer/B.Sc.-offer",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[3].duration_years",
+      "url": "https://www.students.pw.edu.pl/Studies-Offer/B.Sc.-offer",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[4].tuition[0].amount",
+      "url": "https://www.students.pw.edu.pl/Studies-Offer/B.Sc.-offer",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[4].duration_years",
+      "url": "https://www.students.pw.edu.pl/Studies-Offer/B.Sc.-offer",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[5].tuition[0].amount",
+      "url": "https://www.students.pw.edu.pl/Studies-Offer/B.Sc.-offer",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[5].duration_years",
+      "url": "https://www.students.pw.edu.pl/Studies-Offer/B.Sc.-offer",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[6].tuition[0].amount",
+      "url": "https://www.students.pw.edu.pl/Studies-Offer/B.Sc.-offer",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[6].duration_years",
+      "url": "https://www.students.pw.edu.pl/Studies-Offer/B.Sc.-offer",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[7].tuition[0].amount",
+      "url": "https://www.students.pw.edu.pl/Studies-Offer/B.Sc.-offer",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[7].duration_years",
+      "url": "https://www.students.pw.edu.pl/Studies-Offer/B.Sc.-offer",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[8].tuition[0].amount",
+      "url": "https://www.students.pw.edu.pl/Studies-Offer/B.Sc.-offer",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[8].duration_years",
+      "url": "https://www.students.pw.edu.pl/Studies-Offer/B.Sc.-offer",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[9].tuition[0].amount",
+      "url": "https://www.students.pw.edu.pl/Studies-Offer/B.Sc.-offer",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[9].duration_years",
+      "url": "https://www.students.pw.edu.pl/Studies-Offer/B.Sc.-offer",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[10].tuition[0].amount",
+      "url": "https://www.students.pw.edu.pl/Studies-Offer/B.Sc.-offer",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[10].duration_years",
+      "url": "https://www.students.pw.edu.pl/Studies-Offer/B.Sc.-offer",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[11].tuition[0].amount",
+      "url": "https://www.students.pw.edu.pl/Studies-Offer/M.Sc.-offer",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[11].duration_years",
+      "url": "https://www.students.pw.edu.pl/Studies-Offer/M.Sc.-offer",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[12].tuition[0].amount",
+      "url": "https://www.students.pw.edu.pl/Studies-Offer/M.Sc.-offer",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[12].duration_years",
+      "url": "https://www.students.pw.edu.pl/Studies-Offer/M.Sc.-offer",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[13].tuition[0].amount",
+      "url": "https://www.students.pw.edu.pl/Studies-Offer/M.Sc.-offer",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[13].duration_years",
+      "url": "https://www.students.pw.edu.pl/Studies-Offer/M.Sc.-offer",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[14].tuition[0].amount",
+      "url": "https://www.students.pw.edu.pl/Studies-Offer/M.Sc.-offer",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[14].duration_years",
+      "url": "https://www.students.pw.edu.pl/Studies-Offer/M.Sc.-offer",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[15].tuition[0].amount",
+      "url": "https://www.students.pw.edu.pl/Studies-Offer/M.Sc.-offer",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[15].duration_years",
+      "url": "https://www.students.pw.edu.pl/Studies-Offer/M.Sc.-offer",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[16].tuition[0].amount",
+      "url": "https://www.students.pw.edu.pl/Studies-Offer/M.Sc.-offer",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[16].duration_years",
+      "url": "https://www.students.pw.edu.pl/Studies-Offer/M.Sc.-offer",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[17].tuition[0].amount",
+      "url": "https://www.students.pw.edu.pl/Studies-Offer/M.Sc.-offer",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[17].duration_years",
+      "url": "https://www.students.pw.edu.pl/Studies-Offer/M.Sc.-offer",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[18].tuition[0].amount",
+      "url": "https://www.students.pw.edu.pl/Studies-Offer/M.Sc.-offer",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[18].duration_years",
+      "url": "https://www.students.pw.edu.pl/Studies-Offer/M.Sc.-offer",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[19].tuition[0].amount",
+      "url": "https://www.students.pw.edu.pl/Studies-Offer/M.Sc.-offer",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[19].duration_years",
+      "url": "https://www.students.pw.edu.pl/Studies-Offer/M.Sc.-offer",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[20].tuition[0].amount",
+      "url": "https://www.students.pw.edu.pl/Studies-Offer/M.Sc.-offer",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[20].duration_years",
+      "url": "https://www.students.pw.edu.pl/Studies-Offer/M.Sc.-offer",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[21].tuition[0].amount",
+      "url": "https://www.students.pw.edu.pl/Studies-Offer/M.Sc.-offer",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[21].duration_years",
+      "url": "https://www.students.pw.edu.pl/Studies-Offer/M.Sc.-offer",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[22].tuition[0].amount",
+      "url": "https://www.students.pw.edu.pl/Studies-Offer/M.Sc.-offer",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[22].duration_years",
+      "url": "https://www.students.pw.edu.pl/Studies-Offer/M.Sc.-offer",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[23].tuition[0].amount",
+      "url": "https://www.students.pw.edu.pl/Studies-Offer/M.Sc.-offer",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[23].duration_years",
+      "url": "https://www.students.pw.edu.pl/Studies-Offer/M.Sc.-offer",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[24].tuition[0].amount",
+      "url": "https://www.students.pw.edu.pl/Studies-Offer/M.Sc.-offer",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[24].duration_years",
+      "url": "https://www.students.pw.edu.pl/Studies-Offer/M.Sc.-offer",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[25].tuition[0].amount",
+      "url": "https://www.students.pw.edu.pl/Studies-Offer/M.Sc.-offer",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[25].duration_years",
+      "url": "https://www.students.pw.edu.pl/Studies-Offer/M.Sc.-offer",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[26].tuition[0].amount",
+      "url": "https://www.students.pw.edu.pl/Studies-Offer/M.Sc.-offer",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[26].duration_years",
+      "url": "https://www.students.pw.edu.pl/Studies-Offer/M.Sc.-offer",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[27].tuition[0].amount",
+      "url": "https://www.students.pw.edu.pl/Studies-Offer/M.Sc.-offer",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[27].duration_years",
+      "url": "https://www.students.pw.edu.pl/Studies-Offer/M.Sc.-offer",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[28].tuition[0].amount",
+      "url": "https://www.students.pw.edu.pl/Studies-Offer/M.Sc.-offer",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[28].duration_years",
+      "url": "https://www.students.pw.edu.pl/Studies-Offer/M.Sc.-offer",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[29].tuition[0].amount",
+      "url": "https://www.students.pw.edu.pl/Studies-Offer/M.Sc.-offer",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[29].duration_years",
+      "url": "https://www.students.pw.edu.pl/Studies-Offer/M.Sc.-offer",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[30].tuition[0].amount",
+      "url": "https://www.students.pw.edu.pl/Studies-Offer/M.Sc.-offer",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[30].duration_years",
+      "url": "https://www.students.pw.edu.pl/Studies-Offer/M.Sc.-offer",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[31].tuition[0].amount",
+      "url": "https://www.students.pw.edu.pl/Studies-Offer/M.Sc.-offer",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[31].duration_years",
+      "url": "https://www.students.pw.edu.pl/Studies-Offer/M.Sc.-offer",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[32].tuition[0].amount",
+      "url": "https://www.students.pw.edu.pl/Studies-Offer/M.Sc.-offer",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[32].duration_years",
+      "url": "https://www.students.pw.edu.pl/Studies-Offer/M.Sc.-offer",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[33].tuition[0].amount",
+      "url": "https://www.students.pw.edu.pl/Studies-Offer/M.Sc.-offer",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[33].duration_years",
+      "url": "https://www.students.pw.edu.pl/Studies-Offer/M.Sc.-offer",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[34].tuition[0].amount",
+      "url": "https://www.students.pw.edu.pl/Studies-Offer/M.Sc.-offer",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[34].duration_years",
+      "url": "https://www.students.pw.edu.pl/Studies-Offer/M.Sc.-offer",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    }
+  ],
+  "notes_for_reviewer": "Official students.pw.edu.pl pages (WUT International Students Office: B.Sc. offer and M.Sc. offer, both for the academic year 2026/2027, M.Sc. page updated 19 October 2026) read 2026-10-25. Tuition for non-EU citizens is EUR and the column is headed \"TUITION FEE (one semester)\" on both pages, so it is stored per semester; EU/EFTA fees (PLN) are not stored. The pages do not say that the programmes are taught in English (it is the offer of the International Students Office): English is stored as the language and should be confirmed on the programme pages. Durations are in semesters on the pages (1 semester = 1/2 year). Intakes: October and/or February; no application dates, entrance requirements or application fees are on the pages (documents are a standard guess and should be checked). Aerospace Engineering: Aerospace Propulsion Systems (M.Sc.) is NOT included (no fee or duration on the page). \"Applied Computer Science\" (M.Sc.) is hybrid/part-time and is stored as blended. The B.Sc. specialisations Photonic Engineering and Telecommunications appear in the sidebar but not in the 2026/2027 table and are not included. The actual semester fee follows the ECTS plan of each student (WUT regulations), so the amount is the official non-EU tuition for the offer."
+}

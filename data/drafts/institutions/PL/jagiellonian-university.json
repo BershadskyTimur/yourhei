@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "collected_at": "2026-10-25",
+  "academic_year": "2026/2027",
+  "institution": {
+    "external_ids": {},
+    "description": {
+      "en": "A large public university in Kraków. Foreign students pay tuition, and the amount is set separately for each programme; fees for programmes in English are published on the programme pages of the university.",
+      "ru": "Крупный государственный университет в Кракове. Иностранные студенты платят за обучение, сумма определяется отдельно для каждой программы; цены программ на английском опубликованы на страницах программ университета."
+    },
+    "rankings": [],
+    "dormitory": null,
+    "ownership": "public",
+    "founded_year": null,
+    "names": {
+      "original": "Uniwersytet Jagielloński",
+      "en": "Jagiellonian University",
+      "ru": "Ягеллонский университет"
+    },
+    "type": "university",
+    "city": {
+      "original": "Kraków",
+      "en": "Kraków",
+      "ru": "Краков"
+    },
+    "website": "https://www.uj.edu.pl",
+    "city_size": "medium",
+    "climate": "temperate",
+    "size": "large",
+    "features": [
+      "double_degree",
+      "exchange"
+    ],
+    "country": "PL"
+  },
+  "programs": [
+    {
+      "names": {
+        "original": "Medicine (programme in English)",
+        "en": "Medicine (programme in English)",
+        "ru": "Медицина (программа на английском)"
+      },
+      "level": "master",
+      "isced_f": "0912",
+      "languages": ["en"],
+      "duration_years": 6,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        { "amount": 16000, "currency": "EUR", "period": "year", "applies_to": "all" }
+      ],
+      "requirements": {
+        "documents": ["passport", "school_certificate"],
+        "min_scores": [
+          { "exam": "ielts", "min": 6.5 },
+          { "exam": "toefl_ibt", "min": 87 }
+        ],
+        "min_gpa": null,
+        "entrance_exams": "Online entrance exam in English, 100 multiple-choice questions in 180 minutes (reasoning and critical thinking in pre-medical sciences: biology, chemistry, mathematics/logic, ethics). Chemistry and either biology or physics must have been studied at secondary level."
+      },
+      "deadlines": [],
+      "application_fee": { "amount": 100, "currency": "PLN" },
+      "application_url": "https://irk.uj.edu.pl/en-gb/offer/SMO_PC_26/programme/medici_sjm_PC_en/"
+    },
+    {
+      "names": {
+        "original": "European Studies (BA, Institute of European Studies)",
+        "en": "European Studies (BA, Institute of European Studies)",
+        "ru": "Европейские исследования (бакалавриат, Институт европейских исследований)"
+      },
+      "level": "bachelor",
+      "isced_f": "0312",
+      "languages": ["en"],
+      "duration_years": 3,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        { "amount": 13200, "currency": "EUR", "period": "total", "applies_to": "all" }
+      ],
+      "requirements": {
+        "documents": ["passport", "school_certificate"],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://ces.uj.edu.pl/prospective-students/tuition-and-fees"
+    },
+    {
+      "names": {
+        "original": "European Studies (MA, Institute of European Studies)",
+        "en": "European Studies (MA, Institute of European Studies)",
+        "ru": "Европейские исследования (магистратура, Институт европейских исследований)"
+      },
+      "level": "master",
+      "isced_f": "0312",
+      "languages": ["en"],
+      "duration_years": 2,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        { "amount": 9000, "currency": "EUR", "period": "total", "applies_to": "all" }
+      ],
+      "requirements": {
+        "documents": ["passport", "diploma", "transcript"],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://ces.uj.edu.pl/prospective-students/tuition-and-fees"
+    }
+  ],
+  "scholarships": [],
+  "sources": [
+    { "field": "programs[0].tuition[0].amount", "url": "https://irk.uj.edu.pl/en-gb/offer/SMO_PC_26/programme/medici_sjm_PC_en/", "accessed_at": "2026-10-25", "confidence": "high" },
+    { "field": "programs[0].requirements.min_scores", "url": "https://irk.uj.edu.pl/en-gb/offer/SMO_PC_26/programme/medici_sjm_PC_en/", "accessed_at": "2026-10-25", "confidence": "high" },
+    { "field": "programs[0].application_fee", "url": "https://welcome.uj.edu.pl/en_GB/admission/fees", "accessed_at": "2026-10-25", "confidence": "high" },
+    { "field": "programs[1].tuition[0].amount", "url": "https://ces.uj.edu.pl/prospective-students/tuition-and-fees", "accessed_at": "2026-10-25", "confidence": "high" },
+    { "field": "programs[2].tuition[0].amount", "url": "https://ces.uj.edu.pl/prospective-students/tuition-and-fees", "accessed_at": "2026-10-25", "confidence": "high" }
+  ],
+  "notes_for_reviewer": "Official uj.edu.pl pages read 2026-10-25. Medicine in English: EUR 16,000 per year for each of 6 years (EUR 96,000 in total), application fee PLN 100; round 1 of 2026 was 23.02-29.04.2026 (passed), no 2027 dates found, so deadlines are empty; the entrance exam, IELTS 6.5 / TOEFL iBT 87 and the chemistry plus biology-or-physics requirement are from the programme page. The page lists the level as 'undergraduate (long-cycle)': stored as master with 6 years. European Studies BA (3 years) and MA (2 years) at the Institute of European Studies: the page gives only totals for 2026/27 (EUR 13,200 = 6 instalments of 2,200; EUR 9,000 = 4 instalments of 2,250), the same for non-EU and EU students; stored as period 'total'. Other English programmes of the university (Erasmus Mundus, joint masters with partner universities, Business and Finance Management and others) are NOT collected: their fees and dates differ or are paid to partner universities. Application deadlines for the Institute programmes and the general English-taught master's schedule (first round 23.02-24.06, second round until 02.09; academic year not named on the page) were not stored. Founding year, rankings and dormitory are left empty."
+}
