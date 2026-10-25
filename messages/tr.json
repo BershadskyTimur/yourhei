@@ -1384,7 +1384,10 @@
     "checkedAt": "Veriler {date} tarihinde yüklendi",
     "backToAll": "Tüm ülkeler",
     "empty": "Bu ülke için henüz yaklaşan son tarih yok.",
-    "checklistCta": "Belgelerinizi hazırlayın: kontrol listesi"
+    "checklistCta": "Belgelerinizi hazırlayın: kontrol listesi",
+    "nextTitle": "Yaklaşan son tarihler",
+    "byMonthTitle": "Aya göre",
+    "monthCount": "{count} son tarih"
   },
   "Checklist": {
     "title": "Belge kontrol listesi",

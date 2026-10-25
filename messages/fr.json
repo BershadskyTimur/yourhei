@@ -1384,7 +1384,10 @@
     "checkedAt": "Données chargées le {date}",
     "backToAll": "Tous les pays",
     "empty": "Aucune date limite à venir pour ce pays pour l’instant.",
-    "checklistCta": "Préparez vos documents : liste de contrôle"
+    "checklistCta": "Préparez vos documents : liste de contrôle",
+    "nextTitle": "Prochaines dates limites",
+    "byMonthTitle": "Par mois",
+    "monthCount": "{count} dates limites"
   },
   "Checklist": {
     "title": "Liste de documents",

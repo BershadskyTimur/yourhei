@@ -1384,7 +1384,10 @@
     "checkedAt": "تم تحميل البيانات في {date}",
     "backToAll": "كل البلدان",
     "empty": "لا توجد مواعيد قادمة لهذا البلد بعد.",
-    "checklistCta": "جهّز مستنداتك: قائمة تحقق"
+    "checklistCta": "جهّز مستنداتك: قائمة تحقق",
+    "nextTitle": "أقرب المواعيد",
+    "byMonthTitle": "حسب الشهر",
+    "monthCount": "{count} موعدًا"
   },
   "Checklist": {
     "title": "قائمة المستندات",

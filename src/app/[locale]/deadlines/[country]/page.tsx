@@ -6,7 +6,7 @@ import { DeadlineList } from '@/components/DeadlineList';
 import { JsonLd } from '@/components/JsonLd';
 import { Link } from '@/i18n/navigation';
 import { routing } from '@/i18n/routing';
-import { DEADLINES_BUILT, byMonth, countriesWithDeadlines, ofCountry } from '@/lib/deadlines/deadlines';
+import { DEADLINES_BUILT, countriesWithDeadlines, monthsOfCountry, ofCountry } from '@/lib/deadlines/deadlines';
 import { seoMetadata, trimDescription } from '@/lib/seo/metadata';
 import { breadcrumbList } from '@/lib/seo/structured';
 
@@ -46,11 +46,12 @@ export default async function DeadlinesCountryPage({ params }: { params: Params 
   const month = new Intl.DateTimeFormat(locale, { month: 'long', year: 'numeric', timeZone: 'UTC' });
   const date = new Intl.DateTimeFormat(locale, { dateStyle: 'long', timeZone: 'UTC' });
   const institutions = new Set(rows.map((r) => r.s)).size;
-  const groups = byMonth(rows);
+  const months = monthsOfCountry(country);
+  const code = country.toLowerCase();
 
   return (
     <div className="mx-auto max-w-3xl px-4 py-12">
-      <JsonLd data={breadcrumbList(locale, [{ name: 'YourHEI', path: '' }, { name: t('title'), path: '/deadlines' }, { name, path: `/deadlines/${country.toLowerCase()}` }])} />
+      <JsonLd data={breadcrumbList(locale, [{ name: 'YourHEI', path: '' }, { name: t('title'), path: '/deadlines' }, { name, path: `/deadlines/${code}` }])} />
       <p className="text-sm">
         <Link href="/deadlines" className="font-semibold text-accent-text underline underline-offset-4">← {t('backToAll')}</Link>
       </p>
@@ -58,14 +59,26 @@ export default async function DeadlinesCountryPage({ params }: { params: Params 
       <p className="mt-3 max-w-2xl text-lg text-muted">{t('countryIntro', { country: name, count: rows.length, institutions })}</p>
       <p className="mt-4 rounded-lg border border-line bg-accent-soft px-4 py-3 text-sm text-text">{t('note')}</p>
 
-      {groups.map((g) => (
-        <section key={g.month} className="mt-10" aria-labelledby={`m-${g.month}`}>
-          <h2 id={`m-${g.month}`} className="scroll-mt-28 text-2xl font-semibold capitalize text-text">{month.format(new Date(`${g.month}-01T00:00:00Z`))}</h2>
-          <div className="mt-3">
-            <DeadlineList rows={g.rows} locale={locale} />
-          </div>
-        </section>
-      ))}
+      <section className="mt-10" aria-labelledby="months-title">
+        <h2 id="months-title" className="text-2xl font-semibold text-text">{t('byMonthTitle')}</h2>
+        <ul className="mt-3 grid gap-3 sm:grid-cols-2">
+          {months.map((m) => (
+            <li key={m.month}>
+              <Link href={`/deadlines/${code}/${m.month}`} className="block rounded-lg border border-line bg-surface p-4 hover:bg-surface-strong sm:p-5">
+                <span className="block text-lg font-semibold capitalize text-text">{month.format(new Date(`${m.month}-01T00:00:00Z`))}</span>
+                <span className="mt-1 block text-sm text-muted">{t('monthCount', { count: m.count })}</span>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section className="mt-10" aria-labelledby="next-title">
+        <h2 id="next-title" className="text-2xl font-semibold text-text">{t('nextTitle')}</h2>
+        <div className="mt-3">
+          <DeadlineList rows={rows.slice(0, 10)} locale={locale} />
+        </div>
+      </section>
 
       <p className="mt-8 text-sm text-muted">{t('checkedAt', { date: date.format(new Date(`${DEADLINES_BUILT}T00:00:00Z`)) })}</p>
       <p className="mt-6">

@@ -1384,7 +1384,10 @@
     "checkedAt": "Məlumatlar {date} tarixində yüklənib",
     "backToAll": "Bütün ölkələr",
     "empty": "Bu ölkə üçün hələ yaxınlaşan müddət yoxdur.",
-    "checklistCta": "Sənədləri hazırlayın: yoxlama siyahısı"
+    "checklistCta": "Sənədləri hazırlayın: yoxlama siyahısı",
+    "nextTitle": "Ən yaxın müddətlər",
+    "byMonthTitle": "Aylar üzrə",
+    "monthCount": "Müddətlər: {count}"
   },
   "Checklist": {
     "title": "Sənədlərin siyahısı",

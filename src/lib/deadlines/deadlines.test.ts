@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { ROWS, byMonth, closingSoon, countriesWithDeadlines, ofCountry, upcoming, type DeadlineRow } from './deadlines';
+import { ROWS, byMonth, closingSoon, countriesWithDeadlines, monthsOfCountry, ofCountry, ofMonth, upcoming, type DeadlineRow } from './deadlines';
 
 const row = (c: string, d: string, s = 'x'): DeadlineRow => ({ c, s, n: s, d, i: null, a: 'all', l: ['master'], p: 1 });
 const rows = [row('DE', '2026-10-01'), row('DE', '2026-11-01', 'a'), row('NL', '2026-11-20', 'b'), row('DE', '2027-03-15', 'c'), row('DE', '2027-03-20', 'd')];
@@ -25,6 +25,17 @@ describe('deadline calendar', () => {
   });
   it('groups by month in the given order', () => {
     expect(byMonth(upcoming(rows, today)).map((g) => [g.month, g.rows.length])).toEqual([['2026-11', 2], ['2027-03', 2]]);
+  });
+});
+
+describe('months of a country', () => {
+  it('counts the rows of each month that still has deadlines', () => {
+    expect(monthsOfCountry('DE', rows, today)).toEqual([{ month: '2026-11', count: 1 }, { month: '2027-03', count: 2 }]);
+  });
+  it('takes one month of one country, without the passed days', () => {
+    expect(ofMonth('DE', '2027-03', rows, today).map((r) => r.s)).toEqual(['c', 'd']);
+    expect(ofMonth('DE', '2026-10', rows, today)).toEqual([]);
+    expect(ofMonth('NL', '2027-03', rows, today)).toEqual([]);
   });
 });
 

@@ -63,3 +63,13 @@ export function byMonth(rows: readonly DeadlineRow[]): { month: string; rows: De
   }
   return out;
 }
+
+/** The months that still have deadlines in a country, with the number of rows in each. */
+export function monthsOfCountry(country: string, rows: readonly DeadlineRow[] = ROWS, today: Date = new Date()): { month: string; count: number }[] {
+  return byMonth(ofCountry(country, rows, today)).map((g) => ({ month: g.month, count: g.rows.length }));
+}
+
+/** The deadlines of one country in one month ("2027-03"); the days that have passed are left out. */
+export function ofMonth(country: string, month: string, rows: readonly DeadlineRow[] = ROWS, today: Date = new Date()): DeadlineRow[] {
+  return ofCountry(country, rows, today).filter((r) => r.d.startsWith(month));
+}

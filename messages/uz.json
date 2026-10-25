@@ -1384,7 +1384,10 @@
     "checkedAt": "Ma’lumotlar {date} da yuklangan",
     "backToAll": "Barcha davlatlar",
     "empty": "Bu davlat uchun hali yaqinlashayotgan muddat yo‘q.",
-    "checklistCta": "Hujjatlarni tayyorlang: nazorat ro‘yxati"
+    "checklistCta": "Hujjatlarni tayyorlang: nazorat ro‘yxati",
+    "nextTitle": "Eng yaqin muddatlar",
+    "byMonthTitle": "Oylar bo‘yicha",
+    "monthCount": "Muddatlar: {count}"
   },
   "Checklist": {
     "title": "Hujjatlar ro‘yxati",

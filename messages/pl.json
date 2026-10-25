@@ -1384,7 +1384,10 @@
     "checkedAt": "Dane wczytano {date}",
     "backToAll": "Wszystkie kraje",
     "empty": "Dla tego kraju nie ma jeszcze nadchodzących terminów.",
-    "checklistCta": "Przygotuj dokumenty: lista kontrolna"
+    "checklistCta": "Przygotuj dokumenty: lista kontrolna",
+    "nextTitle": "Najbliższe terminy",
+    "byMonthTitle": "Według miesięcy",
+    "monthCount": "Terminy: {count}"
   },
   "Checklist": {
     "title": "Lista dokumentów",

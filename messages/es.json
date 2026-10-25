@@ -1384,7 +1384,10 @@
     "checkedAt": "Datos cargados el {date}",
     "backToAll": "Todos los países",
     "empty": "Todavía no hay plazos próximos para este país.",
-    "checklistCta": "Prepara tus documentos: lista de comprobación"
+    "checklistCta": "Prepara tus documentos: lista de comprobación",
+    "nextTitle": "Próximos plazos",
+    "byMonthTitle": "Por mes",
+    "monthCount": "{count} plazos"
   },
   "Checklist": {
     "title": "Lista de documentos",

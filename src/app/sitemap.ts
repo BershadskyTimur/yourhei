@@ -4,7 +4,7 @@ import { SITEMAP_CHUNK } from '@/lib/institutions/sitemap';
 import { getSitemapPoints } from '@/lib/institutions/summaries';
 import { GUIDES } from '@/lib/countries-guide/guides';
 import { COMBOS, fieldSlug, studyCountries } from '@/lib/study/combos';
-import { countriesWithDeadlines } from '@/lib/deadlines/deadlines';
+import { countriesWithDeadlines, monthsOfCountry } from '@/lib/deadlines/deadlines';
 import { publishedArticles } from '@/lib/blog/posts';
 import { siteUrl } from '@/lib/site-url';
 
@@ -30,7 +30,7 @@ export default async function sitemap(props: { id: Promise<string> }): Promise<M
   const pages: { path: string; lastModified?: string }[] = [
     ...(id === 0
       ? [
-          ...[...STATIC_PAGES, '/blog', '/deadlines', '/checklist', ...countriesWithDeadlines().map((c) => `/deadlines/${c.country.toLowerCase()}`), ...GUIDES.map((g) => `/countries/${g.country.toLowerCase()}`), ...studyCountries().map((c) => `/study/${c.toLowerCase()}`), ...COMBOS.map((c) => `/study/${c.country.toLowerCase()}/${fieldSlug(c.code)}`)].map((path) => ({ path })),
+          ...[...STATIC_PAGES, '/blog', '/deadlines', '/checklist', ...countriesWithDeadlines().flatMap((c) => [`/deadlines/${c.country.toLowerCase()}`, ...monthsOfCountry(c.country).map((m) => `/deadlines/${c.country.toLowerCase()}/${m.month}`)]), ...GUIDES.map((g) => `/countries/${g.country.toLowerCase()}`), ...studyCountries().map((c) => `/study/${c.toLowerCase()}`), ...COMBOS.map((c) => `/study/${c.country.toLowerCase()}/${fieldSlug(c.code)}`)].map((path) => ({ path })),
           ...publishedArticles().map((a) => ({ path: `/blog/${a.slug}`, lastModified: a.updated })),
         ]
       : []),

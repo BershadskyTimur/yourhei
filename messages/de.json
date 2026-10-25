@@ -1384,7 +1384,10 @@
     "checkedAt": "Daten geladen am {date}",
     "backToAll": "Alle Länder",
     "empty": "Für dieses Land gibt es noch keine kommenden Fristen.",
-    "checklistCta": "Unterlagen vorbereiten: Checkliste"
+    "checklistCta": "Unterlagen vorbereiten: Checkliste",
+    "nextTitle": "Nächste Fristen",
+    "byMonthTitle": "Nach Monat",
+    "monthCount": "{count} Fristen"
   },
   "Checklist": {
     "title": "Checkliste Unterlagen",

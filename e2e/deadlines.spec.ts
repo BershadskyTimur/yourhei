@@ -12,19 +12,32 @@ test.describe('deadline calendar', () => {
     await expect(page.getByRole('heading', { level: 1, name: 'Application deadlines: Germany' })).toBeVisible();
   });
 
-  test('a country page groups the dates by month and links every row to the institution', async ({ page }) => {
+  test('a country page lists the next dates and the months, and a month page lists every row with a link to the institution', async ({ page }) => {
     await page.goto('/en/deadlines/nl');
-    const months = page.getByRole('heading', { level: 2 });
+    await expect(page.getByRole('heading', { level: 2, name: 'By month' })).toBeVisible();
+    await expect(page.getByRole('heading', { level: 2, name: 'Next deadlines' })).toBeVisible();
+    const months = page.locator('a[href*="/en/deadlines/nl/20"]');
     expect(await months.count()).toBeGreaterThan(1);
+    await expect(months.first()).toContainText('deadlines');
+    // the next dates are never in the past
+    const dates = await page.locator('li time').evaluateAll((els) => els.map((e) => e.getAttribute('datetime') ?? ''));
+    const today = new Date().toISOString().slice(0, 10);
+    expect(dates.length).toBeGreaterThan(0);
+    for (const d of dates) expect(d >= today).toBe(true);
+
+    await months.first().click();
+    await expect(page).toHaveURL(/\/en\/deadlines\/nl\/\d{4}-\d{2}$/);
+    await expect(page.getByRole('heading', { level: 1 })).toContainText('Application deadlines: Netherlands');
     const first = page.locator('li h3 a').first();
     await expect(first).toHaveAttribute('href', /\/en\/institutions\/nl\/[a-z0-9-]+$/);
     await expect(page.getByText(/Programmes: \d+/).first()).toBeVisible();
     await expect(page.getByText(/always confirm it on the official page/)).toBeVisible();
-    // a passed date is never listed
-    const dates = await page.locator('main time, article time, li time').evaluateAll((els) => els.map((e) => e.getAttribute('datetime') ?? ''));
-    const today = new Date().toISOString().slice(0, 10);
-    expect(dates.length).toBeGreaterThan(0);
-    for (const d of dates) expect(d >= today).toBe(true);
+    await expect(page.locator('link[rel="canonical"]')).toHaveAttribute('href', /\/en\/deadlines\/nl\/\d{4}-\d{2}$/);
+  });
+
+  test('a month that does not exist or has no deadlines is a 404', async ({ page }) => {
+    expect((await page.goto('/en/deadlines/nl/2020-01'))?.status()).toBe(404);
+    expect((await page.goto('/en/deadlines/nl/not-a-month'))?.status()).toBe(404);
   });
 
   test('Russian reads Russian and a language that is not offered to search engines is marked noindex', async ({ page }) => {

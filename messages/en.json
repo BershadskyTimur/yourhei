@@ -1384,7 +1384,10 @@
     "checkedAt": "Data loaded on {date}",
     "backToAll": "All countries",
     "empty": "There are no upcoming deadlines for this country yet.",
-    "checklistCta": "Prepare your documents: checklist"
+    "checklistCta": "Prepare your documents: checklist",
+    "nextTitle": "Next deadlines",
+    "byMonthTitle": "By month",
+    "monthCount": "{count} deadlines"
   },
   "Checklist": {
     "title": "Document checklist",

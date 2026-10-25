@@ -1384,7 +1384,10 @@
     "checkedAt": "数据加载于 {date}",
     "backToAll": "所有国家",
     "empty": "该国暂时没有即将到来的截止日期。",
-    "checklistCta": "准备材料：清单"
+    "checklistCta": "准备材料：清单",
+    "nextTitle": "最近的截止日期",
+    "byMonthTitle": "按月份",
+    "monthCount": "{count} 个截止日期"
   },
   "Checklist": {
     "title": "材料清单",
