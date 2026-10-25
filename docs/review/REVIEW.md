@@ -580,6 +580,110 @@
 - Заметки сборщика: Official ug.edu.ge page read 2026-10-08: annual fees in USD for international students on English-taught programmes (list as published: BA 4,000-5,000; Dentistry 6,000; MD 6,500). The page gives no academic year, no duration (3 or 4 years for Business Administration is on the page, the others are my assumption of 4 years; Dentistry 5 and MD 6 are my assumption), no English requirements, no deadlines. ISCED-F codes are my assignment. Master programmes (MBA 4,000, International Business Law 4,000, Cybersecurity 5,000) are on the page but not included.
 - Источников: 14; главные: https://www.ug.edu.ge/en/tuition-and-fees
 
+### Budapest University of Technology and Economics (HU/budapest-university-of-technology-and-economics)
+
+- Сайт: https://bme.hu · форма: public · основано: ? · общежитие: нет данных
+- Учебный год данных: 2026/2027; собрано: 2026-10-25
+- **Программа 1:** Civil Engineering (BSc) — bachelor, ISCED-F 0732, языки: en, ? лет, on_campus, набор: 09
+  - Стоимость: 3200 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 2:** Chemical Technology and Biotechnology (BSc) — bachelor, ISCED-F 0711, языки: en, ? лет, on_campus, набор: 09
+  - Стоимость: 3200 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 3:** Engineering Management (BSc) — bachelor, ISCED-F 0413, языки: en, ? лет, on_campus, набор: 09
+  - Стоимость: 3200 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 4:** Computer Science Engineering (BSc) — bachelor, ISCED-F 0613, языки: en, ? лет, on_campus, набор: 09
+  - Стоимость: 3200 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 5:** Electrical Engineering (BSc) — bachelor, ISCED-F 0713, языки: en, ? лет, on_campus, набор: 09
+  - Стоимость: 3200 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 6:** Mathematics (BSc) — bachelor, ISCED-F 0541, языки: en, ? лет, on_campus, набор: 09
+  - Стоимость: 3200 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 7:** Physicist-Engineer (BSc) — bachelor, ISCED-F 0533, языки: en, ? лет, on_campus, набор: 09
+  - Стоимость: 3200 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 8:** Physics (BSc) — bachelor, ISCED-F 0533, языки: en, ? лет, on_campus, набор: 09
+  - Стоимость: 3200 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 9:** Mechanical Engineering (BSc) — bachelor, ISCED-F 0715, языки: en, ? лет, on_campus, набор: 09
+  - Стоимость: 3500 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 10:** Architecture (single-cycle MSc, 10 semesters) — master, ISCED-F 0731, языки: en, 5 лет, on_campus, набор: 09
+  - Стоимость: 3200 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 11:** Construction Information Technology Engineering (MSc) — master, ISCED-F 0732, языки: en, ? лет, on_campus, набор: 09
+  - Стоимость: 3800 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 12:** Infrastructure Engineering (MSc) — master, ISCED-F 0732, языки: en, ? лет, on_campus, набор: 09
+  - Стоимость: 3800 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 13:** Land Surveying and GIS Engineering (MSc) — master, ISCED-F 0732, языки: en, ? лет, on_campus, набор: 09
+  - Стоимость: 3800 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 14:** Structural Engineering (MSc) — master, ISCED-F 0732, языки: en, ? лет, on_campus, набор: 09
+  - Стоимость: 3800 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 15:** Mechanical Engineering Modelling (MSc) — master, ISCED-F 0715, языки: en, ? лет, on_campus, набор: 09
+  - Стоимость: 4000 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 16:** Architecture (MSc) — master, ISCED-F 0731, языки: en, ? лет, on_campus, набор: 09
+  - Стоимость: 3500 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 17:** Engineering Management (MSc) — master, ISCED-F 0413, языки: en, ? лет, on_campus, набор: 09
+  - Стоимость: 3500 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 18:** Finance (MSc) — master, ISCED-F 0412, языки: en, ? лет, on_campus, набор: 09
+  - Стоимость: 2200 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 19:** Management and Leadership (MSc) — master, ISCED-F 0413, языки: en, ? лет, on_campus, набор: 09
+  - Стоимость: 2200 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 20:** Regional and Environmental Economic Studies (MSc) — master, ISCED-F 0311, языки: en, ? лет, on_campus, набор: 09
+  - Стоимость: 2200 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 21:** Chemical Engineering (MSc) — master, ISCED-F 0711, языки: en, ? лет, on_campus, набор: 09
+  - Стоимость: 3500 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 22:** Applied Mathematics (MSc) — master, ISCED-F 0541, языки: en, ? лет, on_campus, набор: 09
+  - Стоимость: 3500 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 23:** Mathematics (MSc) — master, ISCED-F 0541, языки: en, ? лет, on_campus, набор: 09
+  - Стоимость: 3500 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 24:** Medical Physics (MSc) — master, ISCED-F 0533, языки: en, ? лет, on_campus, набор: 09
+  - Стоимость: 3500 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 25:** Physics (MSc) — master, ISCED-F 0533, языки: en, ? лет, on_campus, набор: 09
+  - Стоимость: 3500 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 26:** Artificial Engineering (MSc) — master, ISCED-F 0613, языки: en, ? лет, on_campus, набор: 09
+  - Стоимость: 3500 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 27:** Computer Science Engineering (MSc) — master, ISCED-F 0613, языки: en, ? лет, on_campus, набор: 09
+  - Стоимость: 3500 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 28:** Electrical Engineering (MSc) — master, ISCED-F 0713, языки: en, ? лет, on_campus, набор: 09
+  - Стоимость: 3500 EUR / semester (international)
+  - Требования: требования не найдены
+- Заметки сборщика: Official BME Xplore tuition fee table read 2026-10-25 (Fall Semester 2026/27, EUR per semester, "Non-EU" column; stored as international). Only the programmes with a fixed fee are collected. Not collected: the preparatory programmes, the doctoral programmes (EUR 4,500-5,000 per semester), the programmes whose fee is a base fee plus a credit fee (Transportation and Vehicle Engineering and its tracks, marked partly "not launched"), the single-cycle Transportation and Vehicle Engineering (OTM) and the Professional Pilot programme (HUF, no amount). The page says the amount may vary with the exchange rate and fees may change without notice. EU fees (EUR or HUF with a EUR equivalent) are not stored. Where the page shows two values (for example "3500 | 3200**"), the second is the reduced fee for BME graduates; the standard first value is stored. The language of instruction is not stated on the page: English is assumed because it is the page of the international (Xplore) offer and must be confirmed on the programme pages. Durations, deadlines, application fee and entrance requirements are not on this page; the university news says applications for 2026/27 were open from 1 April to 15 May 2026 (not stored). The intake is the fall semester (September). The documents list is a standard guess.
+- Источников: 28; главные: https://xplore.bme.hu/tuition-fees/
+
+### University of Szeged (HU/university-of-szeged)
+
+- Сайт: https://u-szeged.hu · форма: public · основано: ? · общежитие: нет данных
+- Учебный год данных: 2026/2027; собрано: 2026-10-25
+- **Программа 1:** Business Administration and Management (BSc) — bachelor, ISCED-F 0413, языки: en, ? лет, on_campus, набор: ?
+  - Стоимость: 2700 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 2:** International Economy and Business (MSc) — master, ISCED-F 0311, языки: en, ? лет, on_campus, набор: ?
+  - Стоимость: 3000 EUR / semester (international)
+  - Требования: требования не найдены
+- Заметки сборщика: Two official pages of the Faculty of Economics and Business Administration read 2026-10-25: both state 'Tuition fee for academic year 2026/2027' for non-EU citizens, EUR 2,700 per semester (BSc Business Administration and Management) and EUR 3,000 per semester (MSc International Economy and Business); entrance examination fee EUR 200 (non-EU) on both. The pages do not state the language, the duration, deadlines or an application fee; English is assumed because they are pages 'for international students' and the university lists these as English-taught programmes (confirm). Other programmes of the university (MA English Studies EUR 2,200 per semester, MA Educational Sciences, PhD programmes) were found only on pages without a clear 2026/2027 year and are NOT collected; the university also publishes a table 'Tuition & Fees of International Programmes' for 2025, which is not used because it is for another year. The documents list is a standard guess.
+- Источников: 2; главные: https://eco.u-szeged.hu/english/training-programmes/programmes-for-international-students/business-administration-and-management-bsc/fees-and-scholarships/fees-and-scholarships · https://eco.u-szeged.hu/english/training-programmes/programmes-for-international-students/international-economy-and-business-administration-ma/admission/fees/fees
+
 ### Trinity College Dublin (IE/trinity-college-dublin)
 
 - Сайт: https://www.tcd.ie · форма: public · основано: ? · общежитие: нет данных

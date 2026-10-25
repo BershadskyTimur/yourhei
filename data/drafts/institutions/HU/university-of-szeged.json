@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "collected_at": "2026-10-25",
+  "academic_year": "2026/2027",
+  "institution": {
+    "external_ids": {},
+    "description": {
+      "en": "A large public university in Szeged, southern Hungary. This card lists two programmes of the Faculty of Economics and Business Administration for international students; more programmes exist and are not collected yet.",
+      "ru": "Крупный государственный университет в Сегеде, на юге Венгрии. В карточке две программы экономического факультета для иностранных студентов; остальные программы пока не собраны."
+    },
+    "rankings": [],
+    "dormitory": null,
+    "ownership": "public",
+    "founded_year": null,
+    "names": {
+      "original": "Szegedi Tudományegyetem",
+      "en": "University of Szeged",
+      "ru": "Сегедский университет"
+    },
+    "type": "university",
+    "city": { "original": "Szeged", "en": "Szeged", "ru": "Сегед" },
+    "website": "https://u-szeged.hu",
+    "city_size": "medium",
+    "climate": "temperate",
+    "size": "large",
+    "features": ["exchange"],
+    "country": "HU"
+  },
+  "programs": [
+    {
+      "names": {
+        "original": "Business Administration and Management (BSc)",
+        "en": "Business Administration and Management (BSc)",
+        "ru": "Управление бизнесом и менеджмент (бакалавриат)"
+      },
+      "level": "bachelor",
+      "isced_f": "0413",
+      "languages": ["en"],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        { "amount": 2700, "currency": "EUR", "period": "semester", "applies_to": "international" }
+      ],
+      "requirements": {
+        "documents": ["passport", "school_certificate", "transcript"],
+        "min_scores": [],
+        "min_gpa": null,
+        "entrance_exams": "Entrance examination (fee EUR 200, non-refundable, paid by bank transfer before the exam)"
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://eco.u-szeged.hu/english/training-programmes/programmes-for-international-students/business-administration-and-management-bsc/fees-and-scholarships/fees-and-scholarships"
+    },
+    {
+      "names": {
+        "original": "International Economy and Business (MSc)",
+        "en": "International Economy and Business (MSc)",
+        "ru": "Международная экономика и бизнес (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0311",
+      "languages": ["en"],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        { "amount": 3000, "currency": "EUR", "period": "semester", "applies_to": "international" }
+      ],
+      "requirements": {
+        "documents": ["passport", "diploma", "transcript"],
+        "min_scores": [],
+        "min_gpa": null,
+        "entrance_exams": "Entrance examination (fee EUR 200, non-refundable, paid by bank transfer before the exam)"
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://eco.u-szeged.hu/english/training-programmes/programmes-for-international-students/international-economy-and-business-administration-ma/admission/fees/fees"
+    }
+  ],
+  "scholarships": [],
+  "sources": [
+    { "field": "programs[0].tuition[0].amount", "url": "https://eco.u-szeged.hu/english/training-programmes/programmes-for-international-students/business-administration-and-management-bsc/fees-and-scholarships/fees-and-scholarships", "accessed_at": "2026-10-25", "confidence": "high" },
+    { "field": "programs[1].tuition[0].amount", "url": "https://eco.u-szeged.hu/english/training-programmes/programmes-for-international-students/international-economy-and-business-administration-ma/admission/fees/fees", "accessed_at": "2026-10-25", "confidence": "high" }
+  ],
+  "notes_for_reviewer": "Two official pages of the Faculty of Economics and Business Administration read 2026-10-25: both state 'Tuition fee for academic year 2026/2027' for non-EU citizens, EUR 2,700 per semester (BSc Business Administration and Management) and EUR 3,000 per semester (MSc International Economy and Business); entrance examination fee EUR 200 (non-EU) on both. The pages do not state the language, the duration, deadlines or an application fee; English is assumed because they are pages 'for international students' and the university lists these as English-taught programmes (confirm). Other programmes of the university (MA English Studies EUR 2,200 per semester, MA Educational Sciences, PhD programmes) were found only on pages without a clear 2026/2027 year and are NOT collected; the university also publishes a table 'Tuition & Fees of International Programmes' for 2025, which is not used because it is for another year. The documents list is a standard guess."
+}

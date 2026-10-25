@@ -1,0 +1,1245 @@
+{
+  "schema_version": 1,
+  "collected_at": "2026-10-25",
+  "academic_year": "2026/2027",
+  "institution": {
+    "external_ids": {},
+    "description": {
+      "en": "A large public technical and economics university in Budapest. Its international offer (BME Xplore) lists tuition for non-EU students in euros per semester.",
+      "ru": "Крупный государственный технический и экономический университет в Будапеште. В международном предложении (BME Xplore) указана цена для студентов вне ЕС в евро за семестр."
+    },
+    "rankings": [],
+    "dormitory": null,
+    "ownership": "public",
+    "founded_year": null,
+    "names": {
+      "original": "Budapesti Műszaki és Gazdaságtudományi Egyetem",
+      "en": "Budapest University of Technology and Economics",
+      "ru": "Будапештский технико-экономический университет"
+    },
+    "type": "university",
+    "city": {
+      "original": "Budapest",
+      "en": "Budapest",
+      "ru": "Будапешт"
+    },
+    "website": "https://bme.hu",
+    "city_size": "megapolis",
+    "climate": "temperate",
+    "size": "large",
+    "features": [
+      "exchange"
+    ],
+    "country": "HU"
+  },
+  "programs": [
+    {
+      "names": {
+        "original": "Civil Engineering (BSc)",
+        "en": "Civil Engineering (BSc)",
+        "ru": "Строительство (бакалавриат)"
+      },
+      "level": "bachelor",
+      "isced_f": "0732",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 3200,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://xplore.bme.hu/admission/"
+    },
+    {
+      "names": {
+        "original": "Chemical Technology and Biotechnology (BSc)",
+        "en": "Chemical Technology and Biotechnology (BSc)",
+        "ru": "Химическая технология и биотехнология (бакалавриат)"
+      },
+      "level": "bachelor",
+      "isced_f": "0711",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 3200,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://xplore.bme.hu/admission/"
+    },
+    {
+      "names": {
+        "original": "Engineering Management (BSc)",
+        "en": "Engineering Management (BSc)",
+        "ru": "Инженерный менеджмент (бакалавриат)"
+      },
+      "level": "bachelor",
+      "isced_f": "0413",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 3200,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://xplore.bme.hu/admission/"
+    },
+    {
+      "names": {
+        "original": "Computer Science Engineering (BSc)",
+        "en": "Computer Science Engineering (BSc)",
+        "ru": "Информатика (инженерное направление, бакалавриат)"
+      },
+      "level": "bachelor",
+      "isced_f": "0613",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 3200,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://xplore.bme.hu/admission/"
+    },
+    {
+      "names": {
+        "original": "Electrical Engineering (BSc)",
+        "en": "Electrical Engineering (BSc)",
+        "ru": "Электротехника (бакалавриат)"
+      },
+      "level": "bachelor",
+      "isced_f": "0713",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 3200,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://xplore.bme.hu/admission/"
+    },
+    {
+      "names": {
+        "original": "Mathematics (BSc)",
+        "en": "Mathematics (BSc)",
+        "ru": "Математика (бакалавриат)"
+      },
+      "level": "bachelor",
+      "isced_f": "0541",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 3200,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://xplore.bme.hu/admission/"
+    },
+    {
+      "names": {
+        "original": "Physicist-Engineer (BSc)",
+        "en": "Physicist-Engineer (BSc)",
+        "ru": "Инженер-физик (бакалавриат)"
+      },
+      "level": "bachelor",
+      "isced_f": "0533",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 3200,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://xplore.bme.hu/admission/"
+    },
+    {
+      "names": {
+        "original": "Physics (BSc)",
+        "en": "Physics (BSc)",
+        "ru": "Физика (бакалавриат)"
+      },
+      "level": "bachelor",
+      "isced_f": "0533",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 3200,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://xplore.bme.hu/admission/"
+    },
+    {
+      "names": {
+        "original": "Mechanical Engineering (BSc)",
+        "en": "Mechanical Engineering (BSc)",
+        "ru": "Машиностроение (бакалавриат)"
+      },
+      "level": "bachelor",
+      "isced_f": "0715",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 3500,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://xplore.bme.hu/admission/"
+    },
+    {
+      "names": {
+        "original": "Architecture (single-cycle MSc, 10 semesters)",
+        "en": "Architecture (single-cycle MSc, 10 semesters)",
+        "ru": "Архитектура (единая программа магистра, 10 семестров)"
+      },
+      "level": "master",
+      "isced_f": "0731",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 5,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 3200,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://xplore.bme.hu/admission/"
+    },
+    {
+      "names": {
+        "original": "Construction Information Technology Engineering (MSc)",
+        "en": "Construction Information Technology Engineering (MSc)",
+        "ru": "Информационные технологии в строительстве (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0732",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 3800,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://xplore.bme.hu/admission/"
+    },
+    {
+      "names": {
+        "original": "Infrastructure Engineering (MSc)",
+        "en": "Infrastructure Engineering (MSc)",
+        "ru": "Инженерия инфраструктуры (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0732",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 3800,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://xplore.bme.hu/admission/"
+    },
+    {
+      "names": {
+        "original": "Land Surveying and GIS Engineering (MSc)",
+        "en": "Land Surveying and GIS Engineering (MSc)",
+        "ru": "Геодезия и ГИС (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0732",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 3800,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://xplore.bme.hu/admission/"
+    },
+    {
+      "names": {
+        "original": "Structural Engineering (MSc)",
+        "en": "Structural Engineering (MSc)",
+        "ru": "Строительные конструкции (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0732",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 3800,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://xplore.bme.hu/admission/"
+    },
+    {
+      "names": {
+        "original": "Mechanical Engineering Modelling (MSc)",
+        "en": "Mechanical Engineering Modelling (MSc)",
+        "ru": "Моделирование в машиностроении (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0715",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 4000,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://xplore.bme.hu/admission/"
+    },
+    {
+      "names": {
+        "original": "Architecture (MSc)",
+        "en": "Architecture (MSc)",
+        "ru": "Архитектура (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0731",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 3500,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://xplore.bme.hu/admission/"
+    },
+    {
+      "names": {
+        "original": "Engineering Management (MSc)",
+        "en": "Engineering Management (MSc)",
+        "ru": "Инженерный менеджмент (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0413",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 3500,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://xplore.bme.hu/admission/"
+    },
+    {
+      "names": {
+        "original": "Finance (MSc)",
+        "en": "Finance (MSc)",
+        "ru": "Финансы (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0412",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 2200,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://xplore.bme.hu/admission/"
+    },
+    {
+      "names": {
+        "original": "Management and Leadership (MSc)",
+        "en": "Management and Leadership (MSc)",
+        "ru": "Менеджмент и лидерство (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0413",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 2200,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://xplore.bme.hu/admission/"
+    },
+    {
+      "names": {
+        "original": "Regional and Environmental Economic Studies (MSc)",
+        "en": "Regional and Environmental Economic Studies (MSc)",
+        "ru": "Региональная и экологическая экономика (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0311",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 2200,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://xplore.bme.hu/admission/"
+    },
+    {
+      "names": {
+        "original": "Chemical Engineering (MSc)",
+        "en": "Chemical Engineering (MSc)",
+        "ru": "Химическая инженерия (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0711",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 3500,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://xplore.bme.hu/admission/"
+    },
+    {
+      "names": {
+        "original": "Applied Mathematics (MSc)",
+        "en": "Applied Mathematics (MSc)",
+        "ru": "Прикладная математика (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0541",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 3500,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://xplore.bme.hu/admission/"
+    },
+    {
+      "names": {
+        "original": "Mathematics (MSc)",
+        "en": "Mathematics (MSc)",
+        "ru": "Математика (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0541",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 3500,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://xplore.bme.hu/admission/"
+    },
+    {
+      "names": {
+        "original": "Medical Physics (MSc)",
+        "en": "Medical Physics (MSc)",
+        "ru": "Медицинская физика (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0533",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 3500,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://xplore.bme.hu/admission/"
+    },
+    {
+      "names": {
+        "original": "Physics (MSc)",
+        "en": "Physics (MSc)",
+        "ru": "Физика (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0533",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 3500,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://xplore.bme.hu/admission/"
+    },
+    {
+      "names": {
+        "original": "Artificial Engineering (MSc)",
+        "en": "Artificial Engineering (MSc)",
+        "ru": "Искусственный интеллект (инженерное направление, магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0613",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 3500,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://xplore.bme.hu/admission/"
+    },
+    {
+      "names": {
+        "original": "Computer Science Engineering (MSc)",
+        "en": "Computer Science Engineering (MSc)",
+        "ru": "Информатика (инженерное направление, магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0613",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 3500,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://xplore.bme.hu/admission/"
+    },
+    {
+      "names": {
+        "original": "Electrical Engineering (MSc)",
+        "en": "Electrical Engineering (MSc)",
+        "ru": "Электротехника (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0713",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [
+        "09"
+      ],
+      "tuition": [
+        {
+          "amount": 3500,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://xplore.bme.hu/admission/"
+    }
+  ],
+  "scholarships": [],
+  "sources": [
+    {
+      "field": "programs[0].tuition[0].amount",
+      "url": "https://xplore.bme.hu/tuition-fees/",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[1].tuition[0].amount",
+      "url": "https://xplore.bme.hu/tuition-fees/",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[2].tuition[0].amount",
+      "url": "https://xplore.bme.hu/tuition-fees/",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[3].tuition[0].amount",
+      "url": "https://xplore.bme.hu/tuition-fees/",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[4].tuition[0].amount",
+      "url": "https://xplore.bme.hu/tuition-fees/",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[5].tuition[0].amount",
+      "url": "https://xplore.bme.hu/tuition-fees/",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[6].tuition[0].amount",
+      "url": "https://xplore.bme.hu/tuition-fees/",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[7].tuition[0].amount",
+      "url": "https://xplore.bme.hu/tuition-fees/",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[8].tuition[0].amount",
+      "url": "https://xplore.bme.hu/tuition-fees/",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[9].tuition[0].amount",
+      "url": "https://xplore.bme.hu/tuition-fees/",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[10].tuition[0].amount",
+      "url": "https://xplore.bme.hu/tuition-fees/",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[11].tuition[0].amount",
+      "url": "https://xplore.bme.hu/tuition-fees/",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[12].tuition[0].amount",
+      "url": "https://xplore.bme.hu/tuition-fees/",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[13].tuition[0].amount",
+      "url": "https://xplore.bme.hu/tuition-fees/",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[14].tuition[0].amount",
+      "url": "https://xplore.bme.hu/tuition-fees/",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[15].tuition[0].amount",
+      "url": "https://xplore.bme.hu/tuition-fees/",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[16].tuition[0].amount",
+      "url": "https://xplore.bme.hu/tuition-fees/",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[17].tuition[0].amount",
+      "url": "https://xplore.bme.hu/tuition-fees/",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[18].tuition[0].amount",
+      "url": "https://xplore.bme.hu/tuition-fees/",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[19].tuition[0].amount",
+      "url": "https://xplore.bme.hu/tuition-fees/",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[20].tuition[0].amount",
+      "url": "https://xplore.bme.hu/tuition-fees/",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[21].tuition[0].amount",
+      "url": "https://xplore.bme.hu/tuition-fees/",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[22].tuition[0].amount",
+      "url": "https://xplore.bme.hu/tuition-fees/",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[23].tuition[0].amount",
+      "url": "https://xplore.bme.hu/tuition-fees/",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[24].tuition[0].amount",
+      "url": "https://xplore.bme.hu/tuition-fees/",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[25].tuition[0].amount",
+      "url": "https://xplore.bme.hu/tuition-fees/",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[26].tuition[0].amount",
+      "url": "https://xplore.bme.hu/tuition-fees/",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[27].tuition[0].amount",
+      "url": "https://xplore.bme.hu/tuition-fees/",
+      "accessed_at": "2026-10-25",
+      "confidence": "high"
+    }
+  ],
+  "notes_for_reviewer": "Official BME Xplore tuition fee table read 2026-10-25 (Fall Semester 2026/27, EUR per semester, \"Non-EU\" column; stored as international). Only the programmes with a fixed fee are collected. Not collected: the preparatory programmes, the doctoral programmes (EUR 4,500-5,000 per semester), the programmes whose fee is a base fee plus a credit fee (Transportation and Vehicle Engineering and its tracks, marked partly \"not launched\"), the single-cycle Transportation and Vehicle Engineering (OTM) and the Professional Pilot programme (HUF, no amount). The page says the amount may vary with the exchange rate and fees may change without notice. EU fees (EUR or HUF with a EUR equivalent) are not stored. Where the page shows two values (for example \"3500 | 3200**\"), the second is the reduced fee for BME graduates; the standard first value is stored. The language of instruction is not stated on the page: English is assumed because it is the page of the international (Xplore) offer and must be confirmed on the programme pages. Durations, deadlines, application fee and entrance requirements are not on this page; the university news says applications for 2026/27 were open from 1 April to 15 May 2026 (not stored). The intake is the fall semester (September). The documents list is a standard guess."
+}
