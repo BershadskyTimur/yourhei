@@ -4,7 +4,7 @@
 export const INDEXED_LOCALES: readonly string[] = ['ru', 'en'];
 
 /** The languages the blog has its own text in (written by hand, or machine translated and marked as such). */
-export const BLOG_LOCALES: readonly string[] = ['ru', 'en', 'zh', 'es', 'fr', 'ka', 'uk', 'tr', 'kk', 'uz'];
+export const BLOG_LOCALES: readonly string[] = ['ru', 'en', 'zh', 'es', 'fr', 'ka', 'uk', 'tr', 'kk', 'uz', 'az', 'hy', 'ky'];
 
 /** The language shown to search engines (and to people from everywhere) when no better version exists: hreflang "x-default". */
 export const X_DEFAULT_LOCALE = 'en';

@@ -4,7 +4,7 @@
 // Russian and English are written by hand; the other languages are machine translations of the English text (src/content/blog/i18n),
 // shown with a notice and kept out of the search results until a person has read them (config/seo.ts).
 export const BLOG_LANGS = ['ru', 'en'] as const;
-export const TRANSLATED_LANGS = ['zh', 'es', 'fr', 'ka', 'uk', 'tr', 'kk', 'uz'] as const;
+export const TRANSLATED_LANGS = ['zh', 'es', 'fr', 'ka', 'uk', 'tr', 'kk', 'uz', 'az', 'hy', 'ky'] as const;
 export type BlogLang = (typeof BLOG_LANGS)[number] | (typeof TRANSLATED_LANGS)[number];
 
 export type Block =

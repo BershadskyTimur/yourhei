@@ -91,6 +91,9 @@ test.describe('blog', () => {
     ['tr', 'Öğrenci vizesi için ne kadar para göstermelisiniz', 'makine çevirisi', 'Blog'],
     ['kk', 'Студенттік виза үшін қанша ақша көрсету керек', 'машиналық аударма', 'Блог'],
     ['uz', 'Talaba vizasi uchun qancha pul ko‘rsatish kerak', 'mashina tarjimasi', 'Blog'],
+    ['az', 'Tələbə vizası üçün nə qədər pul göstərmək lazımdır', 'maşın tərcüməsidir', 'Bloq'],
+    ['hy', 'Որքան գումար ցույց տալ ուսանողական վիզայի համար', 'մեքենայական թարգմանությունն է', 'Բլոգ'],
+    ['ky', 'Студенттик виза үчүн канча акча көрсөтүү керек', 'машиналык котормосу', 'Блог'],
   ] as const) {
     test(`${lang}: a machine translation with its own text and data, marked as such and kept out of the search results`, async ({ page }) => {
       await needArticles(page);
