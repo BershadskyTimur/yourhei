@@ -15,13 +15,16 @@ if (urls.length === 0) {
   urls = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]);
 }
 urls = urls.filter((u) => u.startsWith(`https://${HOST}/`));
-// the limit of one request is 10 000 addresses
+// the limit of one request is 10 000 addresses. Every engine gets the same list; one of them may refuse (see docs/BLOG.md).
+const ENGINES = ['https://yandex.com/indexnow', 'https://api.indexnow.org/indexnow'];
 for (let i = 0; i < urls.length; i += 10000) {
   const batch = urls.slice(i, i + 10000);
-  const res = await fetch('https://api.indexnow.org/indexnow', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json; charset=utf-8' },
-    body: JSON.stringify({ host: HOST, key, keyLocation: `https://${HOST}/${key}.txt`, urlList: batch }),
-  });
-  console.log(`${batch.length} addresses -> ${res.status} ${res.statusText}`);
+  for (const engine of ENGINES) {
+    const res = await fetch(engine, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json; charset=utf-8' },
+      body: JSON.stringify({ host: HOST, key, keyLocation: `https://${HOST}/${key}.txt`, urlList: batch }),
+    });
+    console.log(`${batch.length} addresses -> ${new URL(engine).host}: ${res.status} ${res.statusText}`);
+  }
 }
