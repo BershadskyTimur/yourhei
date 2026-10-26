@@ -15,10 +15,11 @@ import { czechiaApplication } from '@/content/blog/czechia-application';
 import { netherlandsApplication } from '@/content/blog/netherlands-application';
 import { turkiyeScholarshipsApply } from '@/content/blog/turkiye-scholarships-apply';
 import { daadScholarshipsApply } from '@/content/blog/daad-scholarships-apply';
+import { polandRecognitionNawa } from '@/content/blog/poland-recognition-nawa';
 import { stipendiumHungaricumApply } from '@/content/blog/stipendium-hungaricum-apply';
 
 // The list of articles, in the order they were planned. To add an article: write src/content/blog/<name>.ts and add it here.
-export const ARTICLES: Article[] = [workDuringStudies, proofOfFunds, afterGraduation, fullyFundedScholarships, scholarshipsByCitizenship, chooseCountry, freeTuition, turkiyeScholarshipsApply, netherlandsApplication, germanyApplication, finlandApplication, czechiaApplication, stipendiumHungaricumApply, daadScholarshipsApply];
+export const ARTICLES: Article[] = [workDuringStudies, proofOfFunds, afterGraduation, fullyFundedScholarships, scholarshipsByCitizenship, chooseCountry, freeTuition, turkiyeScholarshipsApply, netherlandsApplication, germanyApplication, finlandApplication, czechiaApplication, stipendiumHungaricumApply, daadScholarshipsApply, polandRecognitionNawa];
 
 /** The language of the text shown for a site language: Russian and English are written by hand, the translated ones have their own text, the rest read English. */
 export function blogLang(locale: string): BlogLang {
