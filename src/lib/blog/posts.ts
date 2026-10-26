@@ -14,9 +14,11 @@ import { finlandApplication } from '@/content/blog/finland-application';
 import { czechiaApplication } from '@/content/blog/czechia-application';
 import { netherlandsApplication } from '@/content/blog/netherlands-application';
 import { turkiyeScholarshipsApply } from '@/content/blog/turkiye-scholarships-apply';
+import { daadScholarshipsApply } from '@/content/blog/daad-scholarships-apply';
+import { stipendiumHungaricumApply } from '@/content/blog/stipendium-hungaricum-apply';
 
 // The list of articles, in the order they were planned. To add an article: write src/content/blog/<name>.ts and add it here.
-export const ARTICLES: Article[] = [workDuringStudies, proofOfFunds, afterGraduation, fullyFundedScholarships, scholarshipsByCitizenship, chooseCountry, freeTuition, turkiyeScholarshipsApply, netherlandsApplication, germanyApplication, finlandApplication, czechiaApplication];
+export const ARTICLES: Article[] = [workDuringStudies, proofOfFunds, afterGraduation, fullyFundedScholarships, scholarshipsByCitizenship, chooseCountry, freeTuition, turkiyeScholarshipsApply, netherlandsApplication, germanyApplication, finlandApplication, czechiaApplication, stipendiumHungaricumApply, daadScholarshipsApply];
 
 /** The language of the text shown for a site language: Russian and English are written by hand, the translated ones have their own text, the rest read English. */
 export function blogLang(locale: string): BlogLang {
@@ -43,6 +45,13 @@ export function publishedArticles(today: Date = new Date()): Article[] {
 
 export function getArticle(slug: string, today: Date = new Date()): Article | null {
   return publishedArticles(today).find((a) => a.slug === slug) ?? null;
+}
+
+/** The language of the text actually shown: a translation that is not written yet reads English. */
+export function articleLang(article: Article, locale: string): BlogLang {
+  const lang = blogLang(locale);
+  if (lang === 'ru' || lang === 'en') return lang;
+  return TRANSLATIONS[lang]?.[article.slug] ? lang : 'en';
 }
 
 export function bodyOf(article: Article, locale: string): ArticleBody {

@@ -6,7 +6,7 @@ import { BlogBody } from '@/components/blog/BlogBody';
 import { JsonLd } from '@/components/JsonLd';
 import { Link } from '@/i18n/navigation';
 import { routing } from '@/i18n/routing';
-import { blogLang, bodyOf, getArticle, isMachineTranslated, publishedArticles, readingMinutes, relatedArticles, sectionsOf } from '@/lib/blog/posts';
+import { articleLang, bodyOf, getArticle, publishedArticles, readingMinutes, relatedArticles, sectionsOf } from '@/lib/blog/posts';
 import { seoMetadata } from '@/lib/seo/metadata';
 import { articleLd, breadcrumbList } from '@/lib/seo/structured';
 
@@ -36,7 +36,7 @@ export default async function ArticlePage({ params }: { params: Params }) {
 
   const t = await getTranslations('Blog');
   const body = bodyOf(article, locale);
-  const lang = blogLang(locale);
+  const lang = articleLang(article, locale);
   const published = new Set(publishedArticles().map((a) => a.slug));
   const sections = sectionsOf(body.blocks);
   const related = relatedArticles(slug);
@@ -65,7 +65,7 @@ export default async function ArticlePage({ params }: { params: Params }) {
         <span aria-hidden="true"> · </span>
         {t('readMinutes', { count: readingMinutes(body.blocks) })}
       </p>
-      {locale !== 'ru' && locale !== 'en' && <p className="mt-4 rounded-lg border border-line bg-accent-soft px-4 py-3 text-sm font-medium text-text">{isMachineTranslated(locale) ? t('machineTranslated') : t('onlyRuEn')}</p>}
+      {locale !== 'ru' && locale !== 'en' && <p className="mt-4 rounded-lg border border-line bg-accent-soft px-4 py-3 text-sm font-medium text-text">{lang === 'en' ? t('onlyRuEn') : t('machineTranslated')}</p>}
 
       {sections.length >= 3 && (
         <nav aria-label={t('toc')} className="mt-6 rounded-lg border border-line bg-surface p-5">
