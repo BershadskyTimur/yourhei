@@ -795,6 +795,73 @@
 - Заметки сборщика: Official Corvinus "Fees and costs" page read 2026-10-26 (table "Tuition fees for self-funded international students", column "Non-EEA applicants", EUR per year; stored as international). The page does not state an academic year; it says the fees remain the same for the duration of studies, so the figures are those of the offer shown on the read date. Not collected: the preparatory programme (price shown without a clear split), the doctoral programmes, and the EEA prices in HUF. The page does not name the language of instruction: English is assumed because the page is the international (English) fee table and must be confirmed on the programme pages. Durations are stored only where the programme name says "1 year"; the intake months, the format and the deadlines are not on this page. Application fee: the page gives EUR 100 for bachelor's, master's and preparatory applications (non-refundable); it gives 9,000 HUF for MBA and PhD (listed there as "Executive MBA programme"), so no application fee is stored for the International MBA. Programme names are given as on the page; the suffix (BA/BSc/MSc/MA) is added from the level and is not on the page, and ISCED-F codes are inferred from the names (a guess, to review).
 - Источников: 39; главные: https://www.uni-corvinus.hu/post/landing-page/application/fees-and-costs/?lang=en
 
+### Óbuda University (HU/obuda-university)
+
+- Сайт: https://www.uni-obuda.hu · форма: ? · основано: ? · общежитие: нет данных
+- Учебный год данных: 2026/2027; собрано: 2026-10-26
+- **Программа 1:** Business Administration and Management (BSc) — bachelor, ISCED-F 0413, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 2900 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 2:** Commerce and Marketing (BSc) — bachelor, ISCED-F 0414, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 2900 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 3:** Computer Science Engineering (BSc) — bachelor, ISCED-F 0613, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 3200 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 4:** Electrical Engineering (BSc) — bachelor, ISCED-F 0713, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 3000 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 5:** Engineering Management (BSc) — bachelor, ISCED-F 0413, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 2700 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 6:** Environmental Engineering (BSc) — bachelor, ISCED-F 0712, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 2900 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 7:** Industrial Engineering (BSc) — bachelor, ISCED-F 0715, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 2900 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 8:** Mechatronical Engineering (BSc) — bachelor, ISCED-F 0714, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 2900 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 9:** Applied Mathematics (MSc) — master, ISCED-F 0541, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 3500 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 10:** Artificial Intelligence (MSc) — master, ISCED-F 0613, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 3600 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 11:** Architect (MSc) — master, ISCED-F 0731, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 3200 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 12:** Business Development (MSc) — master, ISCED-F 0413, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 3200 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 13:** Business Informatics (MSc) — master, ISCED-F 0613, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 3500 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 14:** Computer Science Engineering (MSc) — master, ISCED-F 0613, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 3500 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 15:** Cyber Security Engineering (MSc) — master, ISCED-F 0613, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 3500 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 16:** Data Science (MSc) — master, ISCED-F 0613, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 3500 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 17:** Electrical Engineering (MSc) — master, ISCED-F 0713, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 3200 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 18:** Marketing (MSc) — master, ISCED-F 0414, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 3200 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 19:** Mechanical Engineering (MSc) — master, ISCED-F 0715, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 3200 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 20:** Mechatronical Engineering (MSc) — master, ISCED-F 0714, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 3200 EUR / semester (international)
+  - Требования: требования не найдены
+- Заметки сборщика: Official Óbuda University "Tuition fees" page read 2026-10-26 (the page carries the date 2026-03-03; table "Tuition Fee/semester", column "Non-EEA", EUR per semester; stored as international). The page does not state an academic year; it is the current offer on the read date. One card per programme: the specialisations listed on the page under a programme (for example Digital Manager, Cloud Service Technologies, IT Security, Robotics, SOC Analyser, Welding Technology) share the programme fee and are not stored separately. Not collected: the preparatory undergraduate, graduate and PhD programmes (2,900-4,000 EUR per semester) and the EU/EEA prices. The page does not name the language of instruction: English is assumed because it is the international (English) admission page and must be confirmed on the programme pages. Durations, intake months, format and deadlines are not on this page. Application fee: EUR 150 per application, non-refundable (the page says it applies to every application). The page describes a refund policy with 15% or 20% of the tuition fee kept; not stored. ISCED-F codes are inferred from the programme names (a guess, to review). The suffix (BSc/MSc) in the names is added from the level of the table section.
+- Источников: 20; главные: https://www.uni-obuda.hu/en/admission/tuition-fees/
+
 ### University of Szeged (HU/university-of-szeged)
 
 - Сайт: https://u-szeged.hu · форма: public · основано: ? · общежитие: нет данных
