@@ -1,0 +1,1754 @@
+{
+  "schema_version": 1,
+  "collected_at": "2026-10-26",
+  "academic_year": "2026/2027",
+  "institution": {
+    "external_ids": {},
+    "description": {
+      "en": "A university in Budapest focused on economics, business, public policy and social sciences. Its international fee table lists English-language programmes with yearly tuition in euros for non-EEA students.",
+      "ru": "Университет в Будапеште, специализирующийся на экономике, бизнесе, государственной политике и общественных науках. В международной таблице цен указаны программы на английском с оплатой в евро за год для студентов вне ЕЭЗ."
+    },
+    "rankings": [],
+    "dormitory": null,
+    "ownership": null,
+    "founded_year": null,
+    "names": {
+      "original": "Budapesti Corvinus Egyetem",
+      "en": "Corvinus University of Budapest",
+      "ru": "Будапештский университет Корвина"
+    },
+    "type": "university",
+    "city": {
+      "original": "Budapest",
+      "en": "Budapest",
+      "ru": "Будапешт"
+    },
+    "website": "https://www.uni-corvinus.hu",
+    "city_size": "megapolis",
+    "climate": "temperate",
+    "size": null,
+    "features": [
+      "exchange"
+    ],
+    "country": "HU"
+  },
+  "programs": [
+    {
+      "names": {
+        "original": "Applied Economics (BA)",
+        "en": "Applied Economics (BA)",
+        "ru": "Прикладная экономика (бакалавриат)"
+      },
+      "level": "bachelor",
+      "isced_f": "0311",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": null,
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 7000,
+          "currency": "EUR",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 100,
+        "currency": "EUR"
+      },
+      "application_url": "https://www.uni-corvinus.hu/admission/?lang=en"
+    },
+    {
+      "names": {
+        "original": "Business and Management (BA)",
+        "en": "Business and Management (BA)",
+        "ru": "Бизнес и менеджмент (бакалавриат)"
+      },
+      "level": "bachelor",
+      "isced_f": "0413",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": null,
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 7000,
+          "currency": "EUR",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 100,
+        "currency": "EUR"
+      },
+      "application_url": "https://www.uni-corvinus.hu/admission/?lang=en"
+    },
+    {
+      "names": {
+        "original": "Business Informatics (BSc)",
+        "en": "Business Informatics (BSc)",
+        "ru": "Бизнес-информатика (бакалавриат)"
+      },
+      "level": "bachelor",
+      "isced_f": "0613",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": null,
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 7000,
+          "currency": "EUR",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 100,
+        "currency": "EUR"
+      },
+      "application_url": "https://www.uni-corvinus.hu/admission/?lang=en"
+    },
+    {
+      "names": {
+        "original": "Communication and Media Science (BA)",
+        "en": "Communication and Media Science (BA)",
+        "ru": "Коммуникации и медиа (бакалавриат)"
+      },
+      "level": "bachelor",
+      "isced_f": "0321",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": null,
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 6600,
+          "currency": "EUR",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 100,
+        "currency": "EUR"
+      },
+      "application_url": "https://www.uni-corvinus.hu/admission/?lang=en"
+    },
+    {
+      "names": {
+        "original": "Data Science in Business (BSc)",
+        "en": "Data Science in Business (BSc)",
+        "ru": "Наука о данных в бизнесе (бакалавриат)"
+      },
+      "level": "bachelor",
+      "isced_f": "0613",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": null,
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 7000,
+          "currency": "EUR",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 100,
+        "currency": "EUR"
+      },
+      "application_url": "https://www.uni-corvinus.hu/admission/?lang=en"
+    },
+    {
+      "names": {
+        "original": "International Business (BA)",
+        "en": "International Business (BA)",
+        "ru": "Международный бизнес (бакалавриат)"
+      },
+      "level": "bachelor",
+      "isced_f": "0413",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": null,
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 7000,
+          "currency": "EUR",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 100,
+        "currency": "EUR"
+      },
+      "application_url": "https://www.uni-corvinus.hu/admission/?lang=en"
+    },
+    {
+      "names": {
+        "original": "International Relations (BA)",
+        "en": "International Relations (BA)",
+        "ru": "Международные отношения (бакалавриат)"
+      },
+      "level": "bachelor",
+      "isced_f": "0312",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": null,
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 6600,
+          "currency": "EUR",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 100,
+        "currency": "EUR"
+      },
+      "application_url": "https://www.uni-corvinus.hu/admission/?lang=en"
+    },
+    {
+      "names": {
+        "original": "Philosophy, Politics, Economics (BA)",
+        "en": "Philosophy, Politics, Economics (BA)",
+        "ru": "Философия, политика, экономика (бакалавриат)"
+      },
+      "level": "bachelor",
+      "isced_f": "0312",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": null,
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 6600,
+          "currency": "EUR",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 100,
+        "currency": "EUR"
+      },
+      "application_url": "https://www.uni-corvinus.hu/admission/?lang=en"
+    },
+    {
+      "names": {
+        "original": "Advanced Supply Chain Management (MSc, 1 year)",
+        "en": "Advanced Supply Chain Management (MSc, 1 year)",
+        "ru": "Управление цепями поставок, углублённый курс (магистратура, 1 год)"
+      },
+      "level": "master",
+      "isced_f": "0413",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 1,
+      "format": null,
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 12000,
+          "currency": "EUR",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 100,
+        "currency": "EUR"
+      },
+      "application_url": "https://www.uni-corvinus.hu/admission/?lang=en"
+    },
+    {
+      "names": {
+        "original": "Agile Entrepreneurship (MSc)",
+        "en": "Agile Entrepreneurship (MSc)",
+        "ru": "Гибкое предпринимательство (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0413",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": null,
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 12000,
+          "currency": "EUR",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 100,
+        "currency": "EUR"
+      },
+      "application_url": "https://www.uni-corvinus.hu/admission/?lang=en"
+    },
+    {
+      "names": {
+        "original": "Artificial Intelligence in Business (MSc)",
+        "en": "Artificial Intelligence in Business (MSc)",
+        "ru": "Искусственный интеллект в бизнесе (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0613",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": null,
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 12000,
+          "currency": "EUR",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 100,
+        "currency": "EUR"
+      },
+      "application_url": "https://www.uni-corvinus.hu/admission/?lang=en"
+    },
+    {
+      "names": {
+        "original": "Business Informatics (CEMS) (MSc)",
+        "en": "Business Informatics (CEMS) (MSc)",
+        "ru": "Бизнес-информатика, CEMS (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0613",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": null,
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 8000,
+          "currency": "EUR",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 100,
+        "currency": "EUR"
+      },
+      "application_url": "https://www.uni-corvinus.hu/admission/?lang=en"
+    },
+    {
+      "names": {
+        "original": "Climate Policy and Regional Development (MSc)",
+        "en": "Climate Policy and Regional Development (MSc)",
+        "ru": "Климатическая политика и региональное развитие (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0312",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": null,
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 11000,
+          "currency": "EUR",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 100,
+        "currency": "EUR"
+      },
+      "application_url": "https://www.uni-corvinus.hu/admission/?lang=en"
+    },
+    {
+      "names": {
+        "original": "Communication and Media Studies (MA)",
+        "en": "Communication and Media Studies (MA)",
+        "ru": "Коммуникации и медиа (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0321",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": null,
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 7000,
+          "currency": "EUR",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 100,
+        "currency": "EUR"
+      },
+      "application_url": "https://www.uni-corvinus.hu/admission/?lang=en"
+    },
+    {
+      "names": {
+        "original": "Design, Business, Society (MSc)",
+        "en": "Design, Business, Society (MSc)",
+        "ru": "Дизайн, бизнес, общество (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0413",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": null,
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 12000,
+          "currency": "EUR",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 100,
+        "currency": "EUR"
+      },
+      "application_url": "https://www.uni-corvinus.hu/admission/?lang=en"
+    },
+    {
+      "names": {
+        "original": "Digital Innovation (MSc)",
+        "en": "Digital Innovation (MSc)",
+        "ru": "Цифровые инновации (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0413",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": null,
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 12000,
+          "currency": "EUR",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 100,
+        "currency": "EUR"
+      },
+      "application_url": "https://www.uni-corvinus.hu/admission/?lang=en"
+    },
+    {
+      "names": {
+        "original": "Economic Analysis (CEMS) (MSc)",
+        "en": "Economic Analysis (CEMS) (MSc)",
+        "ru": "Экономический анализ, CEMS (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0311",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": null,
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 8000,
+          "currency": "EUR",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 100,
+        "currency": "EUR"
+      },
+      "application_url": "https://www.uni-corvinus.hu/admission/?lang=en"
+    },
+    {
+      "names": {
+        "original": "Economic Behavior Analysis (CEMS) (MSc)",
+        "en": "Economic Behavior Analysis (CEMS) (MSc)",
+        "ru": "Анализ экономического поведения, CEMS (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0311",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": null,
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 8000,
+          "currency": "EUR",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 100,
+        "currency": "EUR"
+      },
+      "application_url": "https://www.uni-corvinus.hu/admission/?lang=en"
+    },
+    {
+      "names": {
+        "original": "Finance (CEMS) (MSc)",
+        "en": "Finance (CEMS) (MSc)",
+        "ru": "Финансы, CEMS (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0412",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": null,
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 8000,
+          "currency": "EUR",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 100,
+        "currency": "EUR"
+      },
+      "application_url": "https://www.uni-corvinus.hu/admission/?lang=en"
+    },
+    {
+      "names": {
+        "original": "Global Development Policy (MSc)",
+        "en": "Global Development Policy (MSc)",
+        "ru": "Политика глобального развития (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0312",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": null,
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 11000,
+          "currency": "EUR",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 100,
+        "currency": "EUR"
+      },
+      "application_url": "https://www.uni-corvinus.hu/admission/?lang=en"
+    },
+    {
+      "names": {
+        "original": "Health Economic Evaluation (MSc)",
+        "en": "Health Economic Evaluation (MSc)",
+        "ru": "Экономическая оценка здравоохранения (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0311",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": null,
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 11000,
+          "currency": "EUR",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 100,
+        "currency": "EUR"
+      },
+      "application_url": "https://www.uni-corvinus.hu/admission/?lang=en"
+    },
+    {
+      "names": {
+        "original": "Innovation and Entrepreneurship (MSc)",
+        "en": "Innovation and Entrepreneurship (MSc)",
+        "ru": "Инновации и предпринимательство (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0413",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": null,
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 8000,
+          "currency": "EUR",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 100,
+        "currency": "EUR"
+      },
+      "application_url": "https://www.uni-corvinus.hu/admission/?lang=en"
+    },
+    {
+      "names": {
+        "original": "Intellectual Property Management (MSc)",
+        "en": "Intellectual Property Management (MSc)",
+        "ru": "Управление интеллектуальной собственностью (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0413",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": null,
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 12000,
+          "currency": "EUR",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 100,
+        "currency": "EUR"
+      },
+      "application_url": "https://www.uni-corvinus.hu/admission/?lang=en"
+    },
+    {
+      "names": {
+        "original": "International Accounting and Auditing (MSc, 1 year)",
+        "en": "International Accounting and Auditing (MSc, 1 year)",
+        "ru": "Международный учёт и аудит (магистратура, 1 год)"
+      },
+      "level": "master",
+      "isced_f": "0411",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 1,
+      "format": null,
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 12000,
+          "currency": "EUR",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 100,
+        "currency": "EUR"
+      },
+      "application_url": "https://www.uni-corvinus.hu/admission/?lang=en"
+    },
+    {
+      "names": {
+        "original": "International Economy and Business (MSc)",
+        "en": "International Economy and Business (MSc)",
+        "ru": "Международная экономика и бизнес (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0311",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": null,
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 7000,
+          "currency": "EUR",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 100,
+        "currency": "EUR"
+      },
+      "application_url": "https://www.uni-corvinus.hu/admission/?lang=en"
+    },
+    {
+      "names": {
+        "original": "International Relations (MA)",
+        "en": "International Relations (MA)",
+        "ru": "Международные отношения (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0312",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": null,
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 7000,
+          "currency": "EUR",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 100,
+        "currency": "EUR"
+      },
+      "application_url": "https://www.uni-corvinus.hu/admission/?lang=en"
+    },
+    {
+      "names": {
+        "original": "International Sport Business (MSc)",
+        "en": "International Sport Business (MSc)",
+        "ru": "Международный спортивный бизнес (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0413",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": null,
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 12000,
+          "currency": "EUR",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 100,
+        "currency": "EUR"
+      },
+      "application_url": "https://www.uni-corvinus.hu/admission/?lang=en"
+    },
+    {
+      "names": {
+        "original": "Management (MSc)",
+        "en": "Management (MSc)",
+        "ru": "Менеджмент (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0413",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": null,
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 8000,
+          "currency": "EUR",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 100,
+        "currency": "EUR"
+      },
+      "application_url": "https://www.uni-corvinus.hu/admission/?lang=en"
+    },
+    {
+      "names": {
+        "original": "Management and Leadership (CEMS) (MSc)",
+        "en": "Management and Leadership (CEMS) (MSc)",
+        "ru": "Менеджмент и лидерство, CEMS (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0413",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": null,
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 8000,
+          "currency": "EUR",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 100,
+        "currency": "EUR"
+      },
+      "application_url": "https://www.uni-corvinus.hu/admission/?lang=en"
+    },
+    {
+      "names": {
+        "original": "Marketing (CEMS) (MSc)",
+        "en": "Marketing (CEMS) (MSc)",
+        "ru": "Маркетинг, CEMS (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0414",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": null,
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 8000,
+          "currency": "EUR",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 100,
+        "currency": "EUR"
+      },
+      "application_url": "https://www.uni-corvinus.hu/admission/?lang=en"
+    },
+    {
+      "names": {
+        "original": "Marketing Strategy and Innovation (MSc, 1 year)",
+        "en": "Marketing Strategy and Innovation (MSc, 1 year)",
+        "ru": "Маркетинговая стратегия и инновации (магистратура, 1 год)"
+      },
+      "level": "master",
+      "isced_f": "0414",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 1,
+      "format": null,
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 12000,
+          "currency": "EUR",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 100,
+        "currency": "EUR"
+      },
+      "application_url": "https://www.uni-corvinus.hu/admission/?lang=en"
+    },
+    {
+      "names": {
+        "original": "Political Economy (MSc)",
+        "en": "Political Economy (MSc)",
+        "ru": "Политическая экономия (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0311",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": null,
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 7000,
+          "currency": "EUR",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 100,
+        "currency": "EUR"
+      },
+      "application_url": "https://www.uni-corvinus.hu/admission/?lang=en"
+    },
+    {
+      "names": {
+        "original": "Public Governance (MSc)",
+        "en": "Public Governance (MSc)",
+        "ru": "Государственное управление (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0312",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": null,
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 11000,
+          "currency": "EUR",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 100,
+        "currency": "EUR"
+      },
+      "application_url": "https://www.uni-corvinus.hu/admission/?lang=en"
+    },
+    {
+      "names": {
+        "original": "Public Policy and Management (CEMS) (MSc)",
+        "en": "Public Policy and Management (CEMS) (MSc)",
+        "ru": "Государственная политика и управление, CEMS (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0312",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": null,
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 7000,
+          "currency": "EUR",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 100,
+        "currency": "EUR"
+      },
+      "application_url": "https://www.uni-corvinus.hu/admission/?lang=en"
+    },
+    {
+      "names": {
+        "original": "Social Data Science (MSc, 1 year)",
+        "en": "Social Data Science (MSc, 1 year)",
+        "ru": "Социальные данные (магистратура, 1 год)"
+      },
+      "level": "master",
+      "isced_f": "0314",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 1,
+      "format": null,
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 12000,
+          "currency": "EUR",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 100,
+        "currency": "EUR"
+      },
+      "application_url": "https://www.uni-corvinus.hu/admission/?lang=en"
+    },
+    {
+      "names": {
+        "original": "Strategic Project Management (MSc)",
+        "en": "Strategic Project Management (MSc)",
+        "ru": "Стратегическое управление проектами (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0413",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": null,
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 12000,
+          "currency": "EUR",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 100,
+        "currency": "EUR"
+      },
+      "application_url": "https://www.uni-corvinus.hu/admission/?lang=en"
+    },
+    {
+      "names": {
+        "original": "Sustainability Management and Entrepreneurship (MSc, 1 year)",
+        "en": "Sustainability Management and Entrepreneurship (MSc, 1 year)",
+        "ru": "Управление устойчивым развитием и предпринимательство (магистратура, 1 год)"
+      },
+      "level": "master",
+      "isced_f": "0413",
+      "languages": [
+        "en"
+      ],
+      "duration_years": 1,
+      "format": null,
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 12000,
+          "currency": "EUR",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 100,
+        "currency": "EUR"
+      },
+      "application_url": "https://www.uni-corvinus.hu/admission/?lang=en"
+    },
+    {
+      "names": {
+        "original": "Wicked Social Problems (MA)",
+        "en": "Wicked Social Problems (MA)",
+        "ru": "Сложные социальные проблемы (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0314",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": null,
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 7000,
+          "currency": "EUR",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 100,
+        "currency": "EUR"
+      },
+      "application_url": "https://www.uni-corvinus.hu/admission/?lang=en"
+    },
+    {
+      "names": {
+        "original": "International MBA (Master of Business Administration)",
+        "en": "International MBA (Master of Business Administration)",
+        "ru": "Международный MBA"
+      },
+      "level": "master",
+      "isced_f": "0413",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": null,
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 12000,
+          "currency": "EUR",
+          "period": "year",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.uni-corvinus.hu/admission/?lang=en"
+    }
+  ],
+  "scholarships": [],
+  "sources": [
+    {
+      "field": "programs[0].tuition[0].amount",
+      "url": "https://www.uni-corvinus.hu/post/landing-page/application/fees-and-costs/?lang=en",
+      "accessed_at": "2026-10-26",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[1].tuition[0].amount",
+      "url": "https://www.uni-corvinus.hu/post/landing-page/application/fees-and-costs/?lang=en",
+      "accessed_at": "2026-10-26",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[2].tuition[0].amount",
+      "url": "https://www.uni-corvinus.hu/post/landing-page/application/fees-and-costs/?lang=en",
+      "accessed_at": "2026-10-26",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[3].tuition[0].amount",
+      "url": "https://www.uni-corvinus.hu/post/landing-page/application/fees-and-costs/?lang=en",
+      "accessed_at": "2026-10-26",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[4].tuition[0].amount",
+      "url": "https://www.uni-corvinus.hu/post/landing-page/application/fees-and-costs/?lang=en",
+      "accessed_at": "2026-10-26",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[5].tuition[0].amount",
+      "url": "https://www.uni-corvinus.hu/post/landing-page/application/fees-and-costs/?lang=en",
+      "accessed_at": "2026-10-26",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[6].tuition[0].amount",
+      "url": "https://www.uni-corvinus.hu/post/landing-page/application/fees-and-costs/?lang=en",
+      "accessed_at": "2026-10-26",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[7].tuition[0].amount",
+      "url": "https://www.uni-corvinus.hu/post/landing-page/application/fees-and-costs/?lang=en",
+      "accessed_at": "2026-10-26",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[8].tuition[0].amount",
+      "url": "https://www.uni-corvinus.hu/post/landing-page/application/fees-and-costs/?lang=en",
+      "accessed_at": "2026-10-26",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[9].tuition[0].amount",
+      "url": "https://www.uni-corvinus.hu/post/landing-page/application/fees-and-costs/?lang=en",
+      "accessed_at": "2026-10-26",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[10].tuition[0].amount",
+      "url": "https://www.uni-corvinus.hu/post/landing-page/application/fees-and-costs/?lang=en",
+      "accessed_at": "2026-10-26",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[11].tuition[0].amount",
+      "url": "https://www.uni-corvinus.hu/post/landing-page/application/fees-and-costs/?lang=en",
+      "accessed_at": "2026-10-26",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[12].tuition[0].amount",
+      "url": "https://www.uni-corvinus.hu/post/landing-page/application/fees-and-costs/?lang=en",
+      "accessed_at": "2026-10-26",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[13].tuition[0].amount",
+      "url": "https://www.uni-corvinus.hu/post/landing-page/application/fees-and-costs/?lang=en",
+      "accessed_at": "2026-10-26",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[14].tuition[0].amount",
+      "url": "https://www.uni-corvinus.hu/post/landing-page/application/fees-and-costs/?lang=en",
+      "accessed_at": "2026-10-26",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[15].tuition[0].amount",
+      "url": "https://www.uni-corvinus.hu/post/landing-page/application/fees-and-costs/?lang=en",
+      "accessed_at": "2026-10-26",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[16].tuition[0].amount",
+      "url": "https://www.uni-corvinus.hu/post/landing-page/application/fees-and-costs/?lang=en",
+      "accessed_at": "2026-10-26",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[17].tuition[0].amount",
+      "url": "https://www.uni-corvinus.hu/post/landing-page/application/fees-and-costs/?lang=en",
+      "accessed_at": "2026-10-26",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[18].tuition[0].amount",
+      "url": "https://www.uni-corvinus.hu/post/landing-page/application/fees-and-costs/?lang=en",
+      "accessed_at": "2026-10-26",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[19].tuition[0].amount",
+      "url": "https://www.uni-corvinus.hu/post/landing-page/application/fees-and-costs/?lang=en",
+      "accessed_at": "2026-10-26",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[20].tuition[0].amount",
+      "url": "https://www.uni-corvinus.hu/post/landing-page/application/fees-and-costs/?lang=en",
+      "accessed_at": "2026-10-26",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[21].tuition[0].amount",
+      "url": "https://www.uni-corvinus.hu/post/landing-page/application/fees-and-costs/?lang=en",
+      "accessed_at": "2026-10-26",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[22].tuition[0].amount",
+      "url": "https://www.uni-corvinus.hu/post/landing-page/application/fees-and-costs/?lang=en",
+      "accessed_at": "2026-10-26",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[23].tuition[0].amount",
+      "url": "https://www.uni-corvinus.hu/post/landing-page/application/fees-and-costs/?lang=en",
+      "accessed_at": "2026-10-26",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[24].tuition[0].amount",
+      "url": "https://www.uni-corvinus.hu/post/landing-page/application/fees-and-costs/?lang=en",
+      "accessed_at": "2026-10-26",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[25].tuition[0].amount",
+      "url": "https://www.uni-corvinus.hu/post/landing-page/application/fees-and-costs/?lang=en",
+      "accessed_at": "2026-10-26",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[26].tuition[0].amount",
+      "url": "https://www.uni-corvinus.hu/post/landing-page/application/fees-and-costs/?lang=en",
+      "accessed_at": "2026-10-26",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[27].tuition[0].amount",
+      "url": "https://www.uni-corvinus.hu/post/landing-page/application/fees-and-costs/?lang=en",
+      "accessed_at": "2026-10-26",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[28].tuition[0].amount",
+      "url": "https://www.uni-corvinus.hu/post/landing-page/application/fees-and-costs/?lang=en",
+      "accessed_at": "2026-10-26",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[29].tuition[0].amount",
+      "url": "https://www.uni-corvinus.hu/post/landing-page/application/fees-and-costs/?lang=en",
+      "accessed_at": "2026-10-26",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[30].tuition[0].amount",
+      "url": "https://www.uni-corvinus.hu/post/landing-page/application/fees-and-costs/?lang=en",
+      "accessed_at": "2026-10-26",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[31].tuition[0].amount",
+      "url": "https://www.uni-corvinus.hu/post/landing-page/application/fees-and-costs/?lang=en",
+      "accessed_at": "2026-10-26",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[32].tuition[0].amount",
+      "url": "https://www.uni-corvinus.hu/post/landing-page/application/fees-and-costs/?lang=en",
+      "accessed_at": "2026-10-26",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[33].tuition[0].amount",
+      "url": "https://www.uni-corvinus.hu/post/landing-page/application/fees-and-costs/?lang=en",
+      "accessed_at": "2026-10-26",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[34].tuition[0].amount",
+      "url": "https://www.uni-corvinus.hu/post/landing-page/application/fees-and-costs/?lang=en",
+      "accessed_at": "2026-10-26",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[35].tuition[0].amount",
+      "url": "https://www.uni-corvinus.hu/post/landing-page/application/fees-and-costs/?lang=en",
+      "accessed_at": "2026-10-26",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[36].tuition[0].amount",
+      "url": "https://www.uni-corvinus.hu/post/landing-page/application/fees-and-costs/?lang=en",
+      "accessed_at": "2026-10-26",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[37].tuition[0].amount",
+      "url": "https://www.uni-corvinus.hu/post/landing-page/application/fees-and-costs/?lang=en",
+      "accessed_at": "2026-10-26",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[38].tuition[0].amount",
+      "url": "https://www.uni-corvinus.hu/post/landing-page/application/fees-and-costs/?lang=en",
+      "accessed_at": "2026-10-26",
+      "confidence": "high"
+    }
+  ],
+  "notes_for_reviewer": "Official Corvinus \"Fees and costs\" page read 2026-10-26 (table \"Tuition fees for self-funded international students\", column \"Non-EEA applicants\", EUR per year; stored as international). The page does not state an academic year; it says the fees remain the same for the duration of studies, so the figures are those of the offer shown on the read date. Not collected: the preparatory programme (price shown without a clear split), the doctoral programmes, and the EEA prices in HUF. The page does not name the language of instruction: English is assumed because the page is the international (English) fee table and must be confirmed on the programme pages. Durations are stored only where the programme name says \"1 year\"; the intake months, the format and the deadlines are not on this page. Application fee: the page gives EUR 100 for bachelor's, master's and preparatory applications (non-refundable); it gives 9,000 HUF for MBA and PhD (listed there as \"Executive MBA programme\"), so no application fee is stored for the International MBA. Programme names are given as on the page; the suffix (BA/BSc/MSc/MA) is added from the level and is not on the page, and ISCED-F codes are inferred from the names (a guess, to review)."
+}

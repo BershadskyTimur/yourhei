@@ -671,6 +671,130 @@
 - Заметки сборщика: Official BME Xplore tuition fee table read 2026-10-25 (Fall Semester 2026/27, EUR per semester, "Non-EU" column; stored as international). Only the programmes with a fixed fee are collected. Not collected: the preparatory programmes, the doctoral programmes (EUR 4,500-5,000 per semester), the programmes whose fee is a base fee plus a credit fee (Transportation and Vehicle Engineering and its tracks, marked partly "not launched"), the single-cycle Transportation and Vehicle Engineering (OTM) and the Professional Pilot programme (HUF, no amount). The page says the amount may vary with the exchange rate and fees may change without notice. EU fees (EUR or HUF with a EUR equivalent) are not stored. Where the page shows two values (for example "3500 | 3200**"), the second is the reduced fee for BME graduates; the standard first value is stored. The language of instruction is not stated on the page: English is assumed because it is the page of the international (Xplore) offer and must be confirmed on the programme pages. Durations, deadlines, application fee and entrance requirements are not on this page; the university news says applications for 2026/27 were open from 1 April to 15 May 2026 (not stored). The intake is the fall semester (September). The documents list is a standard guess.
 - Источников: 28; главные: https://xplore.bme.hu/tuition-fees/
 
+### Corvinus University of Budapest (HU/corvinus-university-of-budapest)
+
+- Сайт: https://www.uni-corvinus.hu · форма: ? · основано: ? · общежитие: нет данных
+- Учебный год данных: 2026/2027; собрано: 2026-10-26
+- **Программа 1:** Applied Economics (BA) — bachelor, ISCED-F 0311, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 7000 EUR / year (international)
+  - Требования: требования не найдены
+- **Программа 2:** Business and Management (BA) — bachelor, ISCED-F 0413, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 7000 EUR / year (international)
+  - Требования: требования не найдены
+- **Программа 3:** Business Informatics (BSc) — bachelor, ISCED-F 0613, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 7000 EUR / year (international)
+  - Требования: требования не найдены
+- **Программа 4:** Communication and Media Science (BA) — bachelor, ISCED-F 0321, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 6600 EUR / year (international)
+  - Требования: требования не найдены
+- **Программа 5:** Data Science in Business (BSc) — bachelor, ISCED-F 0613, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 7000 EUR / year (international)
+  - Требования: требования не найдены
+- **Программа 6:** International Business (BA) — bachelor, ISCED-F 0413, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 7000 EUR / year (international)
+  - Требования: требования не найдены
+- **Программа 7:** International Relations (BA) — bachelor, ISCED-F 0312, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 6600 EUR / year (international)
+  - Требования: требования не найдены
+- **Программа 8:** Philosophy, Politics, Economics (BA) — bachelor, ISCED-F 0312, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 6600 EUR / year (international)
+  - Требования: требования не найдены
+- **Программа 9:** Advanced Supply Chain Management (MSc, 1 year) — master, ISCED-F 0413, языки: en, 1 лет, ?, набор: ?
+  - Стоимость: 12000 EUR / year (international)
+  - Требования: требования не найдены
+- **Программа 10:** Agile Entrepreneurship (MSc) — master, ISCED-F 0413, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 12000 EUR / year (international)
+  - Требования: требования не найдены
+- **Программа 11:** Artificial Intelligence in Business (MSc) — master, ISCED-F 0613, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 12000 EUR / year (international)
+  - Требования: требования не найдены
+- **Программа 12:** Business Informatics (CEMS) (MSc) — master, ISCED-F 0613, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 8000 EUR / year (international)
+  - Требования: требования не найдены
+- **Программа 13:** Climate Policy and Regional Development (MSc) — master, ISCED-F 0312, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 11000 EUR / year (international)
+  - Требования: требования не найдены
+- **Программа 14:** Communication and Media Studies (MA) — master, ISCED-F 0321, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 7000 EUR / year (international)
+  - Требования: требования не найдены
+- **Программа 15:** Design, Business, Society (MSc) — master, ISCED-F 0413, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 12000 EUR / year (international)
+  - Требования: требования не найдены
+- **Программа 16:** Digital Innovation (MSc) — master, ISCED-F 0413, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 12000 EUR / year (international)
+  - Требования: требования не найдены
+- **Программа 17:** Economic Analysis (CEMS) (MSc) — master, ISCED-F 0311, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 8000 EUR / year (international)
+  - Требования: требования не найдены
+- **Программа 18:** Economic Behavior Analysis (CEMS) (MSc) — master, ISCED-F 0311, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 8000 EUR / year (international)
+  - Требования: требования не найдены
+- **Программа 19:** Finance (CEMS) (MSc) — master, ISCED-F 0412, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 8000 EUR / year (international)
+  - Требования: требования не найдены
+- **Программа 20:** Global Development Policy (MSc) — master, ISCED-F 0312, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 11000 EUR / year (international)
+  - Требования: требования не найдены
+- **Программа 21:** Health Economic Evaluation (MSc) — master, ISCED-F 0311, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 11000 EUR / year (international)
+  - Требования: требования не найдены
+- **Программа 22:** Innovation and Entrepreneurship (MSc) — master, ISCED-F 0413, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 8000 EUR / year (international)
+  - Требования: требования не найдены
+- **Программа 23:** Intellectual Property Management (MSc) — master, ISCED-F 0413, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 12000 EUR / year (international)
+  - Требования: требования не найдены
+- **Программа 24:** International Accounting and Auditing (MSc, 1 year) — master, ISCED-F 0411, языки: en, 1 лет, ?, набор: ?
+  - Стоимость: 12000 EUR / year (international)
+  - Требования: требования не найдены
+- **Программа 25:** International Economy and Business (MSc) — master, ISCED-F 0311, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 7000 EUR / year (international)
+  - Требования: требования не найдены
+- **Программа 26:** International Relations (MA) — master, ISCED-F 0312, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 7000 EUR / year (international)
+  - Требования: требования не найдены
+- **Программа 27:** International Sport Business (MSc) — master, ISCED-F 0413, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 12000 EUR / year (international)
+  - Требования: требования не найдены
+- **Программа 28:** Management (MSc) — master, ISCED-F 0413, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 8000 EUR / year (international)
+  - Требования: требования не найдены
+- **Программа 29:** Management and Leadership (CEMS) (MSc) — master, ISCED-F 0413, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 8000 EUR / year (international)
+  - Требования: требования не найдены
+- **Программа 30:** Marketing (CEMS) (MSc) — master, ISCED-F 0414, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 8000 EUR / year (international)
+  - Требования: требования не найдены
+- **Программа 31:** Marketing Strategy and Innovation (MSc, 1 year) — master, ISCED-F 0414, языки: en, 1 лет, ?, набор: ?
+  - Стоимость: 12000 EUR / year (international)
+  - Требования: требования не найдены
+- **Программа 32:** Political Economy (MSc) — master, ISCED-F 0311, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 7000 EUR / year (international)
+  - Требования: требования не найдены
+- **Программа 33:** Public Governance (MSc) — master, ISCED-F 0312, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 11000 EUR / year (international)
+  - Требования: требования не найдены
+- **Программа 34:** Public Policy and Management (CEMS) (MSc) — master, ISCED-F 0312, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 7000 EUR / year (international)
+  - Требования: требования не найдены
+- **Программа 35:** Social Data Science (MSc, 1 year) — master, ISCED-F 0314, языки: en, 1 лет, ?, набор: ?
+  - Стоимость: 12000 EUR / year (international)
+  - Требования: требования не найдены
+- **Программа 36:** Strategic Project Management (MSc) — master, ISCED-F 0413, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 12000 EUR / year (international)
+  - Требования: требования не найдены
+- **Программа 37:** Sustainability Management and Entrepreneurship (MSc, 1 year) — master, ISCED-F 0413, языки: en, 1 лет, ?, набор: ?
+  - Стоимость: 12000 EUR / year (international)
+  - Требования: требования не найдены
+- **Программа 38:** Wicked Social Problems (MA) — master, ISCED-F 0314, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 7000 EUR / year (international)
+  - Требования: требования не найдены
+- **Программа 39:** International MBA (Master of Business Administration) — master, ISCED-F 0413, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 12000 EUR / year (international)
+  - Требования: требования не найдены
+- Заметки сборщика: Official Corvinus "Fees and costs" page read 2026-10-26 (table "Tuition fees for self-funded international students", column "Non-EEA applicants", EUR per year; stored as international). The page does not state an academic year; it says the fees remain the same for the duration of studies, so the figures are those of the offer shown on the read date. Not collected: the preparatory programme (price shown without a clear split), the doctoral programmes, and the EEA prices in HUF. The page does not name the language of instruction: English is assumed because the page is the international (English) fee table and must be confirmed on the programme pages. Durations are stored only where the programme name says "1 year"; the intake months, the format and the deadlines are not on this page. Application fee: the page gives EUR 100 for bachelor's, master's and preparatory applications (non-refundable); it gives 9,000 HUF for MBA and PhD (listed there as "Executive MBA programme"), so no application fee is stored for the International MBA. Programme names are given as on the page; the suffix (BA/BSc/MSc/MA) is added from the level and is not on the page, and ISCED-F codes are inferred from the names (a guess, to review).
+- Источников: 39; главные: https://www.uni-corvinus.hu/post/landing-page/application/fees-and-costs/?lang=en
+
 ### University of Szeged (HU/university-of-szeged)
 
 - Сайт: https://u-szeged.hu · форма: public · основано: ? · общежитие: нет данных
