@@ -1,0 +1,127 @@
+import type { Article } from '@/lib/blog/types';
+
+export const cheveningApply: Article = {
+  slug: 'chevening-scholarship-how-to-apply',
+  published: '2026-11-17',
+  updated: '2026-11-17',
+  ru: {
+    title: 'Chevening: кто получит стипендию Великобритании и когда подавать',
+    description: 'Как устроена стипендия Chevening на одногодичную магистратуру в Великобритании: кто может подать заявку, 2 800 часов опыта, три курса, этапы отбора и сроки цикла 2027–28.',
+    blocks: [
+      { t: 'p', text: 'Chevening — стипендия правительства Великобритании на одногодичную магистратуру в британском университете для будущих лидеров из разных стран. Она полностью финансируемая, но требования строгие и их нужно проверить до начала работы над заявкой. Ниже то, что сказано на официальных страницах Chevening (проверено 26 октября 2026 года). Даты относятся к циклу 2027–28, и приём в него уже мог закрыться: точный срок для вашей страны указан на её странице на сайте.' },
+      { t: 'h2', id: 'what', text: 'Что это за программа' },
+      {
+        t: 'ul',
+        items: [
+          'Стипендия позволяет выдающимся людям, по словам сайта, «растущим лидерам со всего мира», пройти одногодичную магистратуру в Великобритании.',
+          'Она называется полностью финансируемой. Состав выплат и их размер смотрите на официальной странице, а не в этой статье.',
+          'Помимо основной программы есть Chevening SIDS и Chevening ASEAN, у каждой своя страница со списком стран.',
+          'Для исследовательских магистерских курсов есть отдельный поиск курсов.',
+        ],
+      },
+      { t: 'h2', id: 'eligibility', text: 'Кто может подать заявку' },
+      {
+        t: 'ul',
+        items: [
+          '**Гражданство.** Нужно быть гражданином страны или территории, которая участвует в Chevening. Заявители из стран, получающих официальную помощь на развитие (ODA), должны ещё и жить в такой стране.',
+          '**Диплом.** Бакалаврская степень, которая даёт право на британскую магистратуру. Учёба должна быть завершена не позднее чем за два года до срока подачи.',
+          '**Опыт работы.** Не меньше двух лет после бакалавриата, всего 2 800 часов. Это примерно два года полной занятости при 35-часовой неделе. Опыт должен охватывать не меньше двух лет, а заявки без него отклоняют.',
+          '**Что считается опытом.** Полная и частичная занятость, волонтёрство, оплачиваемые и неоплачиваемые стажировки. Можно указать до пятнадцати периодов работы. Увольняться ради подачи не нужно, но обсудите это с работодателем: он обязан отпустить вас, если вас выберут.',
+          '**Возвращение.** Нужно обязаться вернуться в свою страну (страну присуждения стипендии) не менее чем на два года после окончания стипендии.',
+          '**Три курса.** Нужно подать заявки на три разных подходящих курса британских университетов и к сроку, указанному в графике, иметь безусловное предложение хотя бы от одного.',
+          '**Кому нельзя.** Тем, кто уже учился в Великобритании по стипендии, финансируемой правительством; обладателям британского или двойного британского гражданства; тем, кто в момент подачи живёт в Великобритании; а также текущим или недавним (в последние два года) сотрудникам правительственных ведомств, British Council, университетов-партнёров и их дочерних структур и их близким родственникам.',
+        ],
+      },
+      { t: 'note', text: 'Требование к уровню английского на страницах, которые мы читали, не указано. Проверьте его в требованиях к выбранным курсам и в руководстве Chevening.' },
+      { t: 'h2', id: 'timeline', text: 'Сроки цикла 2027–28' },
+      {
+        t: 'ul',
+        items: [
+          '**Приём заявок:** открылся в августе 2026 года и закрывается в октябре 2026. Точную дату смотрите на странице вашей страны; онлайн-система закрывается в 11:00 UTC.',
+          '**Проверка на соответствие критериям:** с октября 2026.',
+          '**Оценка комиссией:** с середины октября 2026 до января 2027.',
+          '**Короткий список:** в середине февраля 2027; британские посольства приглашают прошедших на собеседование.',
+          '**Собеседования:** с марта по апрель 2027 в британских посольствах. Документы (удостоверение личности с фото, диплом бакалавра, рекомендательные письма) нужно загрузить не позднее чем за семь рабочих дней до собеседования.',
+          '**Результаты:** с середины июня 2027.',
+          '**Срок предложения:** 8 июля 2027, 17:00 по британскому летнему времени. К этой дате успешные кандидаты должны подать безусловное предложение от британского университета.',
+          '**Начало учёбы:** сентябрь или октябрь 2027.',
+        ],
+      },
+      { t: 'h2', id: 'plan', text: 'Как планировать' },
+      {
+        t: 'ol',
+        items: [
+          'Если приём этого цикла закрыт, не ждите следующего года: заранее посчитайте часы опыта и составьте список из трёх курсов.',
+          'Откройте страницу вашей страны на сайте Chevening и проверьте, участвует ли она и какие там даты.',
+          'Подготовьте документы по [чек-листу](/checklist): диплом, паспорт, рекомендательные письма.',
+          'Сравните с другими стипендиями на [странице стипендий](/scholarships) и с обзором [полностью оплаченных стипендий](/blog/fully-funded-scholarships-for-international-students).',
+          'Если вы из Грузии, Армении, Азербайджана, Украины, Казахстана или Узбекистана, посмотрите статью [Стипендии по гражданству](/blog/scholarships-by-citizenship-caucasus-central-asia).',
+        ],
+      },
+      { t: 'p', text: 'Мы перечисляем программы и ведём вас на официальную страницу; мы не гарантируем, что вы получите стипендию.' },
+      { t: 'p', text: 'Источники: [Chevening, стипендии](https://www.chevening.org/scholarships/); [Chevening, график](https://www.chevening.org/scholarships/application-timeline/); [Chevening, критерии](https://chevening.org/resource-hub/guidance/eligibility/); [Chevening, опыт работы](https://chevening.org/scholarships/who-can-apply/work-experience/).' },
+      { t: 'cta', href: '/scholarships', text: 'Все стипендии' },
+      { t: 'cta', href: '/checklist', text: 'Чек-лист документов' },
+    ],
+  },
+  en: {
+    title: 'Chevening: who can get the UK scholarship and when to apply',
+    description: 'How the Chevening scholarship for a one-year UK master\'s works: who can apply, 2,800 hours of experience, three courses, selection stages, 2027-28 dates.',
+    blocks: [
+      { t: 'p', text: 'Chevening is the UK government scholarship for a one-year master\'s degree at a British university for future leaders from many countries. It is fully funded, but the requirements are strict and you should check them before you start work on the application. Below is what the official Chevening pages say (checked on 26 October 2026). The dates belong to the 2027-28 cycle, and applications may already have closed: the exact deadline for your country is on its page on the website.' },
+      { t: 'h2', id: 'what', text: 'What this programme is' },
+      {
+        t: 'ul',
+        items: [
+          'The scholarship lets, in the site\'s words, "outstanding emerging leaders from all over the world" take a one-year master\'s degree in the UK.',
+          'It is described as fully funded. For what is paid and how much, see the official page, not this article.',
+          'Besides the main programme there are Chevening SIDS and Chevening ASEAN, each with its own page listing the countries.',
+          'There is a separate course finder for research master\'s courses.',
+        ],
+      },
+      { t: 'h2', id: 'eligibility', text: 'Who can apply' },
+      {
+        t: 'ul',
+        items: [
+          '**Citizenship.** You must be a citizen of a Chevening-eligible country or territory. Applicants from countries eligible for official development assistance (ODA) must also be resident in one.',
+          '**Degree.** An undergraduate degree that qualifies you for a UK master\'s programme. Your studies must have finished at least two years before the application deadline.',
+          '**Work experience.** At least two years after your undergraduate degree, 2,800 hours in all. This is about two years of full-time work on a 35-hour week. The experience must span at least two years, and applications without it are rejected.',
+          '**What counts.** Full-time and part-time employment, voluntary work, and paid or unpaid internships. You can enter up to fifteen periods of work. You do not need to resign to apply, but discuss it with your employer: they must release you if you are selected.',
+          '**Return.** You must commit to returning to your home country (the country of award) for at least two years after your scholarship ends.',
+          '**Three courses.** You must apply to three different eligible UK university courses and, by the deadline stated in the timeline, hold an unconditional offer from at least one.',
+          '**Who cannot apply.** People who previously studied in the UK on a UK government-funded scholarship; holders of British or dual British citizenship; people resident in the UK at the time of application; and current or recent (within two years) employees of a government department, the British Council, a partner UK university or their subsidiaries, and their immediate relatives.',
+        ],
+      },
+      { t: 'note', text: 'The pages we read do not state an English language requirement. Check it in the requirements of the courses you choose and in the Chevening guidance.' },
+      { t: 'h2', id: 'timeline', text: 'The dates of the 2027-28 cycle' },
+      {
+        t: 'ul',
+        items: [
+          '**Applications:** opened in August 2026 and close in October 2026. See your country\'s page for the exact date; the online system closes at 11:00 UTC.',
+          '**Eligibility sift:** from October 2026.',
+          '**Reading committee assessments:** mid-October 2026 to January 2027.',
+          '**Shortlisting:** mid-February 2027; British embassies invite shortlisted candidates to interview.',
+          '**Interviews:** March to April 2027 at British embassies. You must upload your documents (photo ID, undergraduate certificate or diploma, reference letters) at least seven working days before your interview.',
+          '**Results:** from mid-June 2027.',
+          '**Offer deadline:** 8 July 2027 at 17:00 BST. By this date successful candidates must submit an unconditional offer from a UK university.',
+          '**Studies begin:** September or October 2027.',
+        ],
+      },
+      { t: 'h2', id: 'plan', text: 'How to plan' },
+      {
+        t: 'ol',
+        items: [
+          'If applications for this cycle have closed, do not wait for next year: count your hours of experience and make a list of three courses in advance.',
+          'Open your country\'s page on the Chevening website and check whether it takes part and what its dates are.',
+          'Prepare your documents with the [checklist](/checklist): diploma, passport, reference letters.',
+          'Compare with other scholarships on the [scholarships page](/scholarships) and with the overview of [fully funded scholarships](/blog/fully-funded-scholarships-for-international-students).',
+          'If you are from Georgia, Armenia, Azerbaijan, Ukraine, Kazakhstan or Uzbekistan, see the article [Scholarships by citizenship](/blog/scholarships-by-citizenship-caucasus-central-asia).',
+        ],
+      },
+      { t: 'p', text: 'We list the programmes and send you to the official page; we do not guarantee that you will get a scholarship.' },
+      { t: 'p', text: 'Sources: [Chevening, scholarships](https://www.chevening.org/scholarships/); [Chevening, application timeline](https://www.chevening.org/scholarships/application-timeline/); [Chevening, eligibility](https://chevening.org/resource-hub/guidance/eligibility/); [Chevening, work experience](https://chevening.org/scholarships/who-can-apply/work-experience/).' },
+      { t: 'cta', href: '/scholarships', text: 'All scholarships' },
+      { t: 'cta', href: '/checklist', text: 'Document checklist' },
+    ],
+  },
+};
