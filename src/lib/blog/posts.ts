@@ -18,6 +18,7 @@ import { daadScholarshipsApply } from '@/content/blog/daad-scholarships-apply';
 import { erasmusMundusApply } from '@/content/blog/erasmus-mundus-apply';
 import { mextApply } from '@/content/blog/mext-apply';
 import { fulbrightApply } from '@/content/blog/fulbright-apply';
+import { nlScholarshipApply } from '@/content/blog/nl-scholarship-apply';
 import { eiffelApply } from '@/content/blog/eiffel-apply';
 import { visegradApply } from '@/content/blog/visegrad-apply';
 import { swissExcellenceScholarshipsApply } from '@/content/blog/swiss-excellence-scholarships-apply';
@@ -26,7 +27,7 @@ import { polandRecognitionNawa } from '@/content/blog/poland-recognition-nawa';
 import { stipendiumHungaricumApply } from '@/content/blog/stipendium-hungaricum-apply';
 
 // The list of articles, in the order they were planned. To add an article: write src/content/blog/<name>.ts and add it here.
-export const ARTICLES: Article[] = [workDuringStudies, proofOfFunds, afterGraduation, fullyFundedScholarships, scholarshipsByCitizenship, chooseCountry, freeTuition, turkiyeScholarshipsApply, netherlandsApplication, germanyApplication, finlandApplication, czechiaApplication, stipendiumHungaricumApply, daadScholarshipsApply, polandRecognitionNawa, erasmusMundusApply, cheveningApply, swissExcellenceScholarshipsApply, eiffelApply, visegradApply, mextApply, fulbrightApply];
+export const ARTICLES: Article[] = [workDuringStudies, proofOfFunds, afterGraduation, fullyFundedScholarships, scholarshipsByCitizenship, chooseCountry, freeTuition, turkiyeScholarshipsApply, netherlandsApplication, germanyApplication, finlandApplication, czechiaApplication, stipendiumHungaricumApply, daadScholarshipsApply, polandRecognitionNawa, erasmusMundusApply, cheveningApply, swissExcellenceScholarshipsApply, eiffelApply, visegradApply, mextApply, fulbrightApply, nlScholarshipApply];
 
 /** The language of the text shown for a site language: Russian and English are written by hand, the translated ones have their own text, the rest read English. */
 export function blogLang(locale: string): BlogLang {
