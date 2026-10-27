@@ -172,8 +172,8 @@ describe('the RSS feed', () => {
 const shapeOf = (blocks: Block[]) => blocks.map((b) => (b.t === 'h2' ? `h2:${b.id}` : b.t === 'ul' || b.t === 'ol' ? `${b.t}:${b.items.length}` : b.t === 'cta' ? `cta:${b.href}` : b.t === 'rules' || b.t === 'scholarships' || b.t === 'scholarshipsFor' ? JSON.stringify(b) : b.t));
 const linksOf = (blocks: Block[]) => blocks.flatMap((b) => (b.t === 'cta' ? [b.href] : texts([b]).flatMap((t) => parseInline(t).flatMap((x) => (x.kind === 'link' ? [x.href] : []))))).sort();
 
-// Articles whose machine translations are not written yet: they read English (with the notice) until the translations are added.
-// When you translate one, remove it from this list.
+// Articles whose machine translations are not written in every language yet: where a translation is missing they read English (with the notice).
+// A language may have some of them already. When an article is translated in all 14 languages, remove it from this list.
 const NOT_TRANSLATED_YET = ['stipendium-hungaricum-how-to-apply', 'daad-scholarships-how-to-apply', 'poland-recognition-of-certificate-and-diploma-nawa', 'erasmus-mundus-joint-masters-how-to-apply', 'chevening-scholarship-how-to-apply', 'swiss-government-excellence-scholarships-how-to-apply'];
 
 describe('machine translations of the articles', () => {
@@ -181,7 +181,10 @@ describe('machine translations of the articles', () => {
     expect([...BLOG_LANGS, ...TRANSLATED_LANGS].sort()).toEqual([...BLOG_LOCALES].sort());
     for (const lang of TRANSLATED_LANGS) {
       const tr = TRANSLATIONS[lang] ?? {};
-      expect(Object.keys(tr).sort(), lang).toEqual(ARTICLES.map((a) => a.slug).filter((s) => !NOT_TRANSLATED_YET.includes(s)).sort());
+      const required = ARTICLES.map((a) => a.slug).filter((s) => !NOT_TRANSLATED_YET.includes(s)).sort();
+      // a language may already have some of the articles of the "not yet" list, but never an article that does not exist
+      expect(Object.keys(tr).filter((s) => !NOT_TRANSLATED_YET.includes(s)).sort(), lang).toEqual(required);
+      for (const s of Object.keys(tr)) expect(ARTICLES.some((a) => a.slug === s), `${lang} ${s}`).toBe(true);
     }
   });
   it('have the same structure, sections, data blocks and links as the English article', () => {
