@@ -436,4 +436,4 @@
 
 ## Статьи MEXT и Fulbright, переводы Eiffel, Visegrad, MEXT, Fulbright (ветка more-10, 27.10.2026)
 - `mext-japan-scholarship-how-to-apply` (26.11.2026): семь категорий, два пути подачи, возрастные пределы; суммы выплат не указаны, потому что в таблице источника не ясно соответствие суммы и категории. `fulbright-foreign-student-program-how-to-apply` (3.12.2026): страница программы короткая, в статье отдельный раздел «чего нет на странице».
-- Четыре статьи (Eiffel, Visegrad, MEXT, Fulbright) переведены машинно на 14 языков: `src/content/blog/i18n/<язык>-more2.ts`. Теперь все 12+6+2+4 = 24 статьи переведены на все языки; `NOT_TRANSLATED_YET` пуст.
+- Четыре статьи (Eiffel, Visegrad, MEXT, Fulbright) переведены машинно на 14 языков: `src/content/blog/i18n/<язык>-more2.ts`. Теперь все 22 статьи (12+6+4) переведены на все языки; `NOT_TRANSLATED_YET` пуст.
