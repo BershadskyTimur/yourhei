@@ -1,0 +1,420 @@
+{
+  "schema_version": 1,
+  "collected_at": "2026-10-27",
+  "academic_year": "2026/2027",
+  "institution": {
+    "external_ids": {},
+    "description": {
+      "en": "The Warsaw School of Economics, a public university of economics and business in Warsaw. Its fee pages list English-taught bachelor's and master's programmes with tuition in euros per semester for international students for 2026/2027.",
+      "ru": "Варшавская школа экономики (SGH), государственный университет экономики и бизнеса в Варшаве. На страницах с ценами указаны программы бакалавриата и магистратуры на английском с оплатой в евро за семестр для иностранных студентов на 2026/2027."
+    },
+    "rankings": [],
+    "dormitory": null,
+    "ownership": "public",
+    "founded_year": null,
+    "names": {
+      "original": "Szkoła Główna Handlowa w Warszawie",
+      "en": "SGH Warsaw School of Economics",
+      "ru": "Варшавская школа экономики (SGH)"
+    },
+    "type": "university",
+    "city": {
+      "original": "Warszawa",
+      "en": "Warsaw",
+      "ru": "Варшава"
+    },
+    "website": "https://www.sgh.waw.pl",
+    "city_size": "megapolis",
+    "climate": "temperate",
+    "size": null,
+    "features": [],
+    "country": "PL"
+  },
+  "programs": [
+    {
+      "names": {
+        "original": "Global Business, Finance and Governance (BSc)",
+        "en": "Global Business, Finance and Governance (BSc)",
+        "ru": "Глобальный бизнес, финансы и управление (бакалавриат)"
+      },
+      "level": "bachelor",
+      "isced_f": "0412",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 2500,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 100,
+        "currency": "PLN"
+      },
+      "application_url": "https://www.sgh.waw.pl/en/admission"
+    },
+    {
+      "names": {
+        "original": "International Economics (BSc)",
+        "en": "International Economics (BSc)",
+        "ru": "Международная экономика (бакалавриат)"
+      },
+      "level": "bachelor",
+      "isced_f": "0311",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 2500,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 100,
+        "currency": "PLN"
+      },
+      "application_url": "https://www.sgh.waw.pl/en/admission"
+    },
+    {
+      "names": {
+        "original": "Management (BSc)",
+        "en": "Management (BSc)",
+        "ru": "Менеджмент (бакалавриат)"
+      },
+      "level": "bachelor",
+      "isced_f": "0413",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 2500,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 100,
+        "currency": "PLN"
+      },
+      "application_url": "https://www.sgh.waw.pl/en/admission"
+    },
+    {
+      "names": {
+        "original": "Quantitative Methods in Economics and Information Systems (BSc)",
+        "en": "Quantitative Methods in Economics and Information Systems (BSc)",
+        "ru": "Количественные методы в экономике и информационные системы (бакалавриат)"
+      },
+      "level": "bachelor",
+      "isced_f": "0311",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": "on_campus",
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 2500,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 100,
+        "currency": "PLN"
+      },
+      "application_url": "https://www.sgh.waw.pl/en/admission"
+    },
+    {
+      "names": {
+        "original": "Global Business, Finance and Governance (MSc)",
+        "en": "Global Business, Finance and Governance (MSc)",
+        "ru": "Глобальный бизнес, финансы и управление (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0412",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": null,
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 2400,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.sgh.waw.pl/en/admission"
+    },
+    {
+      "names": {
+        "original": "Advanced Analytics – Big Data (MSc)",
+        "en": "Advanced Analytics – Big Data (MSc)",
+        "ru": "Продвинутая аналитика и большие данные (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0613",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": null,
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 2400,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.sgh.waw.pl/en/admission"
+    },
+    {
+      "names": {
+        "original": "International Business (MSc)",
+        "en": "International Business (MSc)",
+        "ru": "Международный бизнес (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0413",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": null,
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 2400,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.sgh.waw.pl/en/admission"
+    },
+    {
+      "names": {
+        "original": "Management, Entrepreneurship, Technology and Innovation (MSc)",
+        "en": "Management, Entrepreneurship, Technology and Innovation (MSc)",
+        "ru": "Менеджмент, предпринимательство, технологии и инновации (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0413",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": null,
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 2400,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.sgh.waw.pl/en/admission"
+    },
+    {
+      "names": {
+        "original": "Finance and Accounting, Practical Profile with ACCA qualification (MSc)",
+        "en": "Finance and Accounting, Practical Profile with ACCA qualification (MSc)",
+        "ru": "Финансы и бухгалтерский учёт, практический профиль с квалификацией ACCA (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0411",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": null,
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 3100,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": null,
+      "application_url": "https://www.sgh.waw.pl/en/admission"
+    }
+  ],
+  "scholarships": [],
+  "sources": [
+    {
+      "field": "programs[0].tuition[0].amount",
+      "url": "https://www.sgh.waw.pl/en/table-fees-undergraduate-studies",
+      "accessed_at": "2026-10-27",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[1].tuition[0].amount",
+      "url": "https://www.sgh.waw.pl/en/table-fees-undergraduate-studies",
+      "accessed_at": "2026-10-27",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[2].tuition[0].amount",
+      "url": "https://www.sgh.waw.pl/en/table-fees-undergraduate-studies",
+      "accessed_at": "2026-10-27",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[3].tuition[0].amount",
+      "url": "https://www.sgh.waw.pl/en/table-fees-undergraduate-studies",
+      "accessed_at": "2026-10-27",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[4].tuition[0].amount",
+      "url": "https://www.sgh.waw.pl/en/fees-graduate-studies",
+      "accessed_at": "2026-10-27",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[5].tuition[0].amount",
+      "url": "https://www.sgh.waw.pl/en/fees-graduate-studies",
+      "accessed_at": "2026-10-27",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[6].tuition[0].amount",
+      "url": "https://www.sgh.waw.pl/en/fees-graduate-studies",
+      "accessed_at": "2026-10-27",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[7].tuition[0].amount",
+      "url": "https://www.sgh.waw.pl/en/fees-graduate-studies",
+      "accessed_at": "2026-10-27",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[8].tuition[0].amount",
+      "url": "https://www.sgh.waw.pl/en/fees-graduate-studies",
+      "accessed_at": "2026-10-27",
+      "confidence": "high"
+    }
+  ],
+  "notes_for_reviewer": "Official SGH fee pages read 2026-10-27: \"Table of fees for undergraduate studies\" (academic year 2026/2027; international students; full-time English-taught EUR 2,500 per semester paid at once, EUR 2,550 in five instalments) and \"Fees for graduate studies\" (2026-2027, EUR per semester; EUR 2,400 per semester paid at once, EUR 2,450 in five instalments; EUR 3,100 / 3,150 for Finance and Accounting with ACCA). The single-payment amount is stored. The master's page does not label the fees as international-student fees explicitly; they are stored as international because the programmes are taught in English. The list of English-taught programmes comes from the SGH page \"etr-easy-read\" (bachelor: four fields; master: five on that page); the master's programmes stored are the five that have a 2026/27 price on the fee page. Management, Entrepreneurship, Technology and Innovation is on the fee page but not on the easy-read page; \"International Master Program in Management Accounting\" is on the easy-read page but not on the fee page and is not stored. The four English-taught bachelor fields are priced by the single row \"Full-time, English-taught\" of the undergraduate table (it does not name the fields). Application fee: PLN 100 if admission includes an entrance exam and PLN 85 otherwise (undergraduate page); the higher value is stored for bachelor programmes. The master's fee page lists none, so none is stored. Durations, intakes and deadlines are not on these pages. Part-time Polish-taught programmes are not stored. ISCED-F codes are inferred from the names (a guess, to review). The suffix (BSc/MSc) in the names is added from the level."
+}

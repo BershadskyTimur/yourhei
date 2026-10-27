@@ -2465,6 +2465,61 @@ begin
 end
 $draft$;
 
+-- PL/sgh-warsaw-school-of-economics
+do $draft$
+declare v uuid;
+begin
+  select id into v from public.institutions where country = 'PL' and slug = 'sgh-warsaw-school-of-economics';
+  if v is null then raise exception 'Institution PL/sgh-warsaw-school-of-economics is not in the database: run the institutions import first'; end if;
+  update public.institutions set
+    website = coalesce('https://www.sgh.waw.pl', website), ownership = 'public', founded_year = coalesce(null, founded_year),
+    dormitory = null, description = '{"en":"The Warsaw School of Economics, a public university of economics and business in Warsaw. Its fee pages list English-taught bachelor''s and master''s programmes with tuition in euros per semester for international students for 2026/2027.","ru":"Варшавская школа экономики (SGH), государственный университет экономики и бизнеса в Варшаве. На страницах с ценами указаны программы бакалавриата и магистратуры на английском с оплатой в евро за семестр для иностранных студентов на 2026/2027."}'::jsonb, city_size = 'megapolis',
+    climate = 'temperate', size = null, features = array[]::text[],
+    status = 'draft', verified_at = null
+  where id = v;
+  delete from public.programs where institution_id = v and requirements ->> 'source' is null;
+  insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
+    v, '{"original":"Global Business, Finance and Governance (BSc)","en":"Global Business, Finance and Governance (BSc)","ru":"Глобальный бизнес, финансы и управление (бакалавриат)"}'::jsonb, 'bachelor', '0412', array['en']::text[], null, 'on_campus', array[]::text[],
+    '[{"amount":2500,"currency":"EUR","period":"semester","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, '{"amount":100,"currency":"PLN"}'::jsonb, 'https://www.sgh.waw.pl/en/admission', '2026/2027', 'draft', null);
+  insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
+    v, '{"original":"International Economics (BSc)","en":"International Economics (BSc)","ru":"Международная экономика (бакалавриат)"}'::jsonb, 'bachelor', '0311', array['en']::text[], null, 'on_campus', array[]::text[],
+    '[{"amount":2500,"currency":"EUR","period":"semester","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, '{"amount":100,"currency":"PLN"}'::jsonb, 'https://www.sgh.waw.pl/en/admission', '2026/2027', 'draft', null);
+  insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
+    v, '{"original":"Management (BSc)","en":"Management (BSc)","ru":"Менеджмент (бакалавриат)"}'::jsonb, 'bachelor', '0413', array['en']::text[], null, 'on_campus', array[]::text[],
+    '[{"amount":2500,"currency":"EUR","period":"semester","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, '{"amount":100,"currency":"PLN"}'::jsonb, 'https://www.sgh.waw.pl/en/admission', '2026/2027', 'draft', null);
+  insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
+    v, '{"original":"Quantitative Methods in Economics and Information Systems (BSc)","en":"Quantitative Methods in Economics and Information Systems (BSc)","ru":"Количественные методы в экономике и информационные системы (бакалавриат)"}'::jsonb, 'bachelor', '0311', array['en']::text[], null, 'on_campus', array[]::text[],
+    '[{"amount":2500,"currency":"EUR","period":"semester","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","school_certificate","transcript"],"min_scores":[],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, '{"amount":100,"currency":"PLN"}'::jsonb, 'https://www.sgh.waw.pl/en/admission', '2026/2027', 'draft', null);
+  insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
+    v, '{"original":"Global Business, Finance and Governance (MSc)","en":"Global Business, Finance and Governance (MSc)","ru":"Глобальный бизнес, финансы и управление (магистратура)"}'::jsonb, 'master', '0412', array['en']::text[], null, null, array[]::text[],
+    '[{"amount":2400,"currency":"EUR","period":"semester","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","diploma","transcript"],"min_scores":[],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://www.sgh.waw.pl/en/admission', '2026/2027', 'draft', null);
+  insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
+    v, '{"original":"Advanced Analytics – Big Data (MSc)","en":"Advanced Analytics – Big Data (MSc)","ru":"Продвинутая аналитика и большие данные (магистратура)"}'::jsonb, 'master', '0613', array['en']::text[], null, null, array[]::text[],
+    '[{"amount":2400,"currency":"EUR","period":"semester","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","diploma","transcript"],"min_scores":[],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://www.sgh.waw.pl/en/admission', '2026/2027', 'draft', null);
+  insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
+    v, '{"original":"International Business (MSc)","en":"International Business (MSc)","ru":"Международный бизнес (магистратура)"}'::jsonb, 'master', '0413', array['en']::text[], null, null, array[]::text[],
+    '[{"amount":2400,"currency":"EUR","period":"semester","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","diploma","transcript"],"min_scores":[],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://www.sgh.waw.pl/en/admission', '2026/2027', 'draft', null);
+  insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
+    v, '{"original":"Management, Entrepreneurship, Technology and Innovation (MSc)","en":"Management, Entrepreneurship, Technology and Innovation (MSc)","ru":"Менеджмент, предпринимательство, технологии и инновации (магистратура)"}'::jsonb, 'master', '0413', array['en']::text[], null, null, array[]::text[],
+    '[{"amount":2400,"currency":"EUR","period":"semester","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","diploma","transcript"],"min_scores":[],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://www.sgh.waw.pl/en/admission', '2026/2027', 'draft', null);
+  insert into public.programs (institution_id, names, level, isced_f, languages, duration_years, format, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status, verified_at) values (
+    v, '{"original":"Finance and Accounting, Practical Profile with ACCA qualification (MSc)","en":"Finance and Accounting, Practical Profile with ACCA qualification (MSc)","ru":"Финансы и бухгалтерский учёт, практический профиль с квалификацией ACCA (магистратура)"}'::jsonb, 'master', '0411', array['en']::text[], null, null, array[]::text[],
+    '[{"amount":3100,"currency":"EUR","period":"semester","applies_to":"international"}]'::jsonb, false, '{"documents":["passport","diploma","transcript"],"min_scores":[],"min_gpa":null,"entrance_exams":null,"interview":null,"portfolio":null}'::jsonb, '[]'::jsonb, null, 'https://www.sgh.waw.pl/en/admission', '2026/2027', 'draft', null);
+  delete from public.scholarships where institution_id = v;
+  delete from public.rankings where institution_id = v;
+  delete from public.sources where entity = 'institution' and entity_id = v::text;
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[0].tuition[0].amount', 'https://www.sgh.waw.pl/en/table-fees-undergraduate-studies', '2026-10-27', 'high');
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[1].tuition[0].amount', 'https://www.sgh.waw.pl/en/table-fees-undergraduate-studies', '2026-10-27', 'high');
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[2].tuition[0].amount', 'https://www.sgh.waw.pl/en/table-fees-undergraduate-studies', '2026-10-27', 'high');
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[3].tuition[0].amount', 'https://www.sgh.waw.pl/en/table-fees-undergraduate-studies', '2026-10-27', 'high');
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[4].tuition[0].amount', 'https://www.sgh.waw.pl/en/fees-graduate-studies', '2026-10-27', 'high');
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[5].tuition[0].amount', 'https://www.sgh.waw.pl/en/fees-graduate-studies', '2026-10-27', 'high');
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[6].tuition[0].amount', 'https://www.sgh.waw.pl/en/fees-graduate-studies', '2026-10-27', 'high');
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[7].tuition[0].amount', 'https://www.sgh.waw.pl/en/fees-graduate-studies', '2026-10-27', 'high');
+  insert into public.sources (entity, entity_id, field, url, accessed_at, confidence) values ('institution', v::text, 'programs[8].tuition[0].amount', 'https://www.sgh.waw.pl/en/fees-graduate-studies', '2026-10-27', 'high');
+end
+$draft$;
+
 -- PL/warsaw-university-of-technology
 do $draft$
 declare v uuid;

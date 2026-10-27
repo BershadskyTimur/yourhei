@@ -1393,6 +1393,40 @@
 - Заметки сборщика: Official Poznań University of Technology pages "First-cycle (B.Sc.) studies - Fees for international students" and "Second-cycle (M.Sc.) studies - Fees for international students", read 2026-10-27 (tuition fees for international students in the 2026/2027 academic year; the amounts are set in Ordinance No. 18 of the Rector). The pages give two amounts per programme: the 1st semester in EUR and each subsequent semester in PLN. Both are stored; the PLN regular-semester amount is the first entry (the one the catalogue shows), the EUR first-semester amount is the second. One card per programme: the pages list several programmes under one price line, and all of them are stored with that price. Application (recruitment) fee: 100 PLN for candidates who must take the entrance exam and 85 PLN for those who do not; the single fee is paid regardless of the number of programmes. The higher value (100 PLN) is stored. The language of instruction is stated on the pages as "studies in English". Durations, intake months, format and deadlines are not on these pages. Not collected: Polish-language studies. ISCED-F codes are inferred from the programme names (a guess, to review). The suffix (BSc/MSc) is added from the level of the page. The institution was not in the database: it is added with institutions_extra_put.sql (Wikidata Q1678753, CC0).
 - Источников: 50; главные: https://put.poznan.pl/en/admission-for-international/first-cycle/fees · https://put.poznan.pl/en/admission-for-international/second-cycle/fees
 
+### SGH Warsaw School of Economics (PL/sgh-warsaw-school-of-economics)
+
+- Сайт: https://www.sgh.waw.pl · форма: public · основано: ? · общежитие: нет данных
+- Учебный год данных: 2026/2027; собрано: 2026-10-27
+- **Программа 1:** Global Business, Finance and Governance (BSc) — bachelor, ISCED-F 0412, языки: en, ? лет, on_campus, набор: ?
+  - Стоимость: 2500 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 2:** International Economics (BSc) — bachelor, ISCED-F 0311, языки: en, ? лет, on_campus, набор: ?
+  - Стоимость: 2500 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 3:** Management (BSc) — bachelor, ISCED-F 0413, языки: en, ? лет, on_campus, набор: ?
+  - Стоимость: 2500 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 4:** Quantitative Methods in Economics and Information Systems (BSc) — bachelor, ISCED-F 0311, языки: en, ? лет, on_campus, набор: ?
+  - Стоимость: 2500 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 5:** Global Business, Finance and Governance (MSc) — master, ISCED-F 0412, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 2400 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 6:** Advanced Analytics – Big Data (MSc) — master, ISCED-F 0613, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 2400 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 7:** International Business (MSc) — master, ISCED-F 0413, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 2400 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 8:** Management, Entrepreneurship, Technology and Innovation (MSc) — master, ISCED-F 0413, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 2400 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 9:** Finance and Accounting, Practical Profile with ACCA qualification (MSc) — master, ISCED-F 0411, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 3100 EUR / semester (international)
+  - Требования: требования не найдены
+- Заметки сборщика: Official SGH fee pages read 2026-10-27: "Table of fees for undergraduate studies" (academic year 2026/2027; international students; full-time English-taught EUR 2,500 per semester paid at once, EUR 2,550 in five instalments) and "Fees for graduate studies" (2026-2027, EUR per semester; EUR 2,400 per semester paid at once, EUR 2,450 in five instalments; EUR 3,100 / 3,150 for Finance and Accounting with ACCA). The single-payment amount is stored. The master's page does not label the fees as international-student fees explicitly; they are stored as international because the programmes are taught in English. The list of English-taught programmes comes from the SGH page "etr-easy-read" (bachelor: four fields; master: five on that page); the master's programmes stored are the five that have a 2026/27 price on the fee page. Management, Entrepreneurship, Technology and Innovation is on the fee page but not on the easy-read page; "International Master Program in Management Accounting" is on the easy-read page but not on the fee page and is not stored. The four English-taught bachelor fields are priced by the single row "Full-time, English-taught" of the undergraduate table (it does not name the fields). Application fee: PLN 100 if admission includes an entrance exam and PLN 85 otherwise (undergraduate page); the higher value is stored for bachelor programmes. The master's fee page lists none, so none is stored. Durations, intakes and deadlines are not on these pages. Part-time Polish-taught programmes are not stored. ISCED-F codes are inferred from the names (a guess, to review). The suffix (BSc/MSc) in the names is added from the level.
+- Источников: 9; главные: https://www.sgh.waw.pl/en/table-fees-undergraduate-studies · https://www.sgh.waw.pl/en/fees-graduate-studies
+
 ### Warsaw University of Technology (PL/warsaw-university-of-technology)
 
 - Сайт: https://www.pw.edu.pl · форма: public · основано: ? · общежитие: нет данных
