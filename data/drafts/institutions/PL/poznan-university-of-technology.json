@@ -1,0 +1,1441 @@
+{
+  "schema_version": 1,
+  "collected_at": "2026-10-27",
+  "academic_year": "2026/2027",
+  "institution": {
+    "external_ids": {
+      "wikidata": "Q1678753"
+    },
+    "description": {
+      "en": "A public technical university in Poznań. Its pages for international students list English-language bachelor's and master's programmes with tuition for 2026/2027 in euros for the first semester and in zloty for the following ones.",
+      "ru": "Государственный технический университет в Познани. На страницах для иностранных студентов указаны программы бакалавриата и магистратуры на английском с ценой на 2026/2027: в евро за первый семестр и в злотых за следующие."
+    },
+    "rankings": [],
+    "dormitory": null,
+    "ownership": "public",
+    "founded_year": null,
+    "names": {
+      "original": "Politechnika Poznańska",
+      "en": "Poznań University of Technology",
+      "ru": "Познанский технический университет"
+    },
+    "type": "university",
+    "city": {
+      "original": "Poznań",
+      "en": "Poznań",
+      "ru": "Познань"
+    },
+    "website": "https://www.put.poznan.pl",
+    "city_size": "medium",
+    "climate": "temperate",
+    "size": null,
+    "features": [],
+    "country": "PL"
+  },
+  "programs": [
+    {
+      "names": {
+        "original": "Architecture (BSc)",
+        "en": "Architecture (BSc)",
+        "ru": "Архитектура (бакалавриат)"
+      },
+      "level": "bachelor",
+      "isced_f": "0731",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": null,
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 8800,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        },
+        {
+          "amount": 2460,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 100,
+        "currency": "PLN"
+      },
+      "application_url": "https://put.poznan.pl/en/admission-for-international"
+    },
+    {
+      "names": {
+        "original": "Artificial Intelligence (BSc)",
+        "en": "Artificial Intelligence (BSc)",
+        "ru": "Искусственный интеллект (бакалавриат)"
+      },
+      "level": "bachelor",
+      "isced_f": "0613",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": null,
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 8800,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        },
+        {
+          "amount": 2460,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 100,
+        "currency": "PLN"
+      },
+      "application_url": "https://put.poznan.pl/en/admission-for-international"
+    },
+    {
+      "names": {
+        "original": "Automatic Control and Robotics (BSc)",
+        "en": "Automatic Control and Robotics (BSc)",
+        "ru": "Автоматика и робототехника (бакалавриат)"
+      },
+      "level": "bachelor",
+      "isced_f": "0714",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": null,
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 6800,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        },
+        {
+          "amount": 1850,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 100,
+        "currency": "PLN"
+      },
+      "application_url": "https://put.poznan.pl/en/admission-for-international"
+    },
+    {
+      "names": {
+        "original": "Biomedical Engineering (BSc)",
+        "en": "Biomedical Engineering (BSc)",
+        "ru": "Биомедицинская инженерия (бакалавриат)"
+      },
+      "level": "bachelor",
+      "isced_f": "0719",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": null,
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 6800,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        },
+        {
+          "amount": 1850,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 100,
+        "currency": "PLN"
+      },
+      "application_url": "https://put.poznan.pl/en/admission-for-international"
+    },
+    {
+      "names": {
+        "original": "Chemical Technology (BSc)",
+        "en": "Chemical Technology (BSc)",
+        "ru": "Химическая технология (бакалавриат)"
+      },
+      "level": "bachelor",
+      "isced_f": "0711",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": null,
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 6800,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        },
+        {
+          "amount": 1850,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 100,
+        "currency": "PLN"
+      },
+      "application_url": "https://put.poznan.pl/en/admission-for-international"
+    },
+    {
+      "names": {
+        "original": "Engineering Management (BSc)",
+        "en": "Engineering Management (BSc)",
+        "ru": "Инженерный менеджмент (бакалавриат)"
+      },
+      "level": "bachelor",
+      "isced_f": "0413",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": null,
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 6800,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        },
+        {
+          "amount": 1850,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 100,
+        "currency": "PLN"
+      },
+      "application_url": "https://put.poznan.pl/en/admission-for-international"
+    },
+    {
+      "names": {
+        "original": "Mechanical Engineering (BSc)",
+        "en": "Mechanical Engineering (BSc)",
+        "ru": "Машиностроение (бакалавриат)"
+      },
+      "level": "bachelor",
+      "isced_f": "0715",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": null,
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 6800,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        },
+        {
+          "amount": 1850,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 100,
+        "currency": "PLN"
+      },
+      "application_url": "https://put.poznan.pl/en/admission-for-international"
+    },
+    {
+      "names": {
+        "original": "Microelectronics and Digital Communication (BSc)",
+        "en": "Microelectronics and Digital Communication (BSc)",
+        "ru": "Микроэлектроника и цифровая связь (бакалавриат)"
+      },
+      "level": "bachelor",
+      "isced_f": "0714",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": null,
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 6800,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        },
+        {
+          "amount": 1850,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 100,
+        "currency": "PLN"
+      },
+      "application_url": "https://put.poznan.pl/en/admission-for-international"
+    },
+    {
+      "names": {
+        "original": "Sustainable Building Engineering (BSc)",
+        "en": "Sustainable Building Engineering (BSc)",
+        "ru": "Устойчивое строительство (бакалавриат)"
+      },
+      "level": "bachelor",
+      "isced_f": "0732",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": null,
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 6800,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        },
+        {
+          "amount": 1850,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 100,
+        "currency": "PLN"
+      },
+      "application_url": "https://put.poznan.pl/en/admission-for-international"
+    },
+    {
+      "names": {
+        "original": "Quantum Technologies (BSc)",
+        "en": "Quantum Technologies (BSc)",
+        "ru": "Квантовые технологии (бакалавриат)"
+      },
+      "level": "bachelor",
+      "isced_f": "0533",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": null,
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 6800,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        },
+        {
+          "amount": 1850,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "school_certificate",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 100,
+        "currency": "PLN"
+      },
+      "application_url": "https://put.poznan.pl/en/admission-for-international"
+    },
+    {
+      "names": {
+        "original": "Architecture (MSc)",
+        "en": "Architecture (MSc)",
+        "ru": "Архитектура (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0731",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": null,
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 10500,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        },
+        {
+          "amount": 2950,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 100,
+        "currency": "PLN"
+      },
+      "application_url": "https://put.poznan.pl/en/admission-for-international"
+    },
+    {
+      "names": {
+        "original": "Artificial Intelligence (MSc)",
+        "en": "Artificial Intelligence (MSc)",
+        "ru": "Искусственный интеллект (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0613",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": null,
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 10500,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        },
+        {
+          "amount": 2950,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 100,
+        "currency": "PLN"
+      },
+      "application_url": "https://put.poznan.pl/en/admission-for-international"
+    },
+    {
+      "names": {
+        "original": "Computing (MSc)",
+        "en": "Computing (MSc)",
+        "ru": "Информатика (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0613",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": null,
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 10500,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        },
+        {
+          "amount": 2950,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 100,
+        "currency": "PLN"
+      },
+      "application_url": "https://put.poznan.pl/en/admission-for-international"
+    },
+    {
+      "names": {
+        "original": "Automatic Control and Robotics (MSc)",
+        "en": "Automatic Control and Robotics (MSc)",
+        "ru": "Автоматика и робототехника (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0714",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": null,
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 9600,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        },
+        {
+          "amount": 2580,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 100,
+        "currency": "PLN"
+      },
+      "application_url": "https://put.poznan.pl/en/admission-for-international"
+    },
+    {
+      "names": {
+        "original": "Biomedical Engineering (MSc)",
+        "en": "Biomedical Engineering (MSc)",
+        "ru": "Биомедицинская инженерия (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0719",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": null,
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 9600,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        },
+        {
+          "amount": 2580,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 100,
+        "currency": "PLN"
+      },
+      "application_url": "https://put.poznan.pl/en/admission-for-international"
+    },
+    {
+      "names": {
+        "original": "Chemical Technology (MSc)",
+        "en": "Chemical Technology (MSc)",
+        "ru": "Химическая технология (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0711",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": null,
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 9600,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        },
+        {
+          "amount": 2580,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 100,
+        "currency": "PLN"
+      },
+      "application_url": "https://put.poznan.pl/en/admission-for-international"
+    },
+    {
+      "names": {
+        "original": "Civil Engineering (MSc)",
+        "en": "Civil Engineering (MSc)",
+        "ru": "Строительство (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0732",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": null,
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 9600,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        },
+        {
+          "amount": 2580,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 100,
+        "currency": "PLN"
+      },
+      "application_url": "https://put.poznan.pl/en/admission-for-international"
+    },
+    {
+      "names": {
+        "original": "Electrical Engineering (MSc)",
+        "en": "Electrical Engineering (MSc)",
+        "ru": "Электротехника (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0713",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": null,
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 9600,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        },
+        {
+          "amount": 2580,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 100,
+        "currency": "PLN"
+      },
+      "application_url": "https://put.poznan.pl/en/admission-for-international"
+    },
+    {
+      "names": {
+        "original": "Electronics and Telecommunications (MSc)",
+        "en": "Electronics and Telecommunications (MSc)",
+        "ru": "Электроника и телекоммуникации (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0714",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": null,
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 9600,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        },
+        {
+          "amount": 2580,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 100,
+        "currency": "PLN"
+      },
+      "application_url": "https://put.poznan.pl/en/admission-for-international"
+    },
+    {
+      "names": {
+        "original": "Green Energy (MSc)",
+        "en": "Green Energy (MSc)",
+        "ru": "Зелёная энергетика (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0713",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": null,
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 9600,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        },
+        {
+          "amount": 2580,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 100,
+        "currency": "PLN"
+      },
+      "application_url": "https://put.poznan.pl/en/admission-for-international"
+    },
+    {
+      "names": {
+        "original": "Mechanical and Automotive Engineering (MSc)",
+        "en": "Mechanical and Automotive Engineering (MSc)",
+        "ru": "Машиностроение и автомобильная техника (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0715",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": null,
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 9200,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        },
+        {
+          "amount": 2480,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 100,
+        "currency": "PLN"
+      },
+      "application_url": "https://put.poznan.pl/en/admission-for-international"
+    },
+    {
+      "names": {
+        "original": "Transport (MSc)",
+        "en": "Transport (MSc)",
+        "ru": "Транспорт (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0716",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": null,
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 9200,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        },
+        {
+          "amount": 2480,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 100,
+        "currency": "PLN"
+      },
+      "application_url": "https://put.poznan.pl/en/admission-for-international"
+    },
+    {
+      "names": {
+        "original": "Engineering Management (MSc)",
+        "en": "Engineering Management (MSc)",
+        "ru": "Инженерный менеджмент (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0413",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": null,
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 8400,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        },
+        {
+          "amount": 2220,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 100,
+        "currency": "PLN"
+      },
+      "application_url": "https://put.poznan.pl/en/admission-for-international"
+    },
+    {
+      "names": {
+        "original": "Logistics (MSc)",
+        "en": "Logistics (MSc)",
+        "ru": "Логистика (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0413",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": null,
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 8400,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        },
+        {
+          "amount": 2220,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 100,
+        "currency": "PLN"
+      },
+      "application_url": "https://put.poznan.pl/en/admission-for-international"
+    },
+    {
+      "names": {
+        "original": "Information Technology for Smart and Sustainable Mobility (MSc)",
+        "en": "Information Technology for Smart and Sustainable Mobility (MSc)",
+        "ru": "ИТ для умной и устойчивой мобильности (магистратура)"
+      },
+      "level": "master",
+      "isced_f": "0613",
+      "languages": [
+        "en"
+      ],
+      "duration_years": null,
+      "format": null,
+      "intakes": [],
+      "tuition": [
+        {
+          "amount": 8000,
+          "currency": "PLN",
+          "period": "semester",
+          "applies_to": "international"
+        },
+        {
+          "amount": 1890,
+          "currency": "EUR",
+          "period": "semester",
+          "applies_to": "international"
+        }
+      ],
+      "requirements": {
+        "documents": [
+          "passport",
+          "diploma",
+          "transcript"
+        ],
+        "min_scores": [],
+        "min_gpa": null
+      },
+      "deadlines": [],
+      "application_fee": {
+        "amount": 100,
+        "currency": "PLN"
+      },
+      "application_url": "https://put.poznan.pl/en/admission-for-international"
+    }
+  ],
+  "scholarships": [],
+  "sources": [
+    {
+      "field": "programs[0].tuition[0].amount",
+      "url": "https://put.poznan.pl/en/admission-for-international/first-cycle/fees",
+      "accessed_at": "2026-10-27",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[0].tuition[1].amount",
+      "url": "https://put.poznan.pl/en/admission-for-international/first-cycle/fees",
+      "accessed_at": "2026-10-27",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[1].tuition[0].amount",
+      "url": "https://put.poznan.pl/en/admission-for-international/first-cycle/fees",
+      "accessed_at": "2026-10-27",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[1].tuition[1].amount",
+      "url": "https://put.poznan.pl/en/admission-for-international/first-cycle/fees",
+      "accessed_at": "2026-10-27",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[2].tuition[0].amount",
+      "url": "https://put.poznan.pl/en/admission-for-international/first-cycle/fees",
+      "accessed_at": "2026-10-27",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[2].tuition[1].amount",
+      "url": "https://put.poznan.pl/en/admission-for-international/first-cycle/fees",
+      "accessed_at": "2026-10-27",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[3].tuition[0].amount",
+      "url": "https://put.poznan.pl/en/admission-for-international/first-cycle/fees",
+      "accessed_at": "2026-10-27",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[3].tuition[1].amount",
+      "url": "https://put.poznan.pl/en/admission-for-international/first-cycle/fees",
+      "accessed_at": "2026-10-27",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[4].tuition[0].amount",
+      "url": "https://put.poznan.pl/en/admission-for-international/first-cycle/fees",
+      "accessed_at": "2026-10-27",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[4].tuition[1].amount",
+      "url": "https://put.poznan.pl/en/admission-for-international/first-cycle/fees",
+      "accessed_at": "2026-10-27",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[5].tuition[0].amount",
+      "url": "https://put.poznan.pl/en/admission-for-international/first-cycle/fees",
+      "accessed_at": "2026-10-27",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[5].tuition[1].amount",
+      "url": "https://put.poznan.pl/en/admission-for-international/first-cycle/fees",
+      "accessed_at": "2026-10-27",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[6].tuition[0].amount",
+      "url": "https://put.poznan.pl/en/admission-for-international/first-cycle/fees",
+      "accessed_at": "2026-10-27",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[6].tuition[1].amount",
+      "url": "https://put.poznan.pl/en/admission-for-international/first-cycle/fees",
+      "accessed_at": "2026-10-27",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[7].tuition[0].amount",
+      "url": "https://put.poznan.pl/en/admission-for-international/first-cycle/fees",
+      "accessed_at": "2026-10-27",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[7].tuition[1].amount",
+      "url": "https://put.poznan.pl/en/admission-for-international/first-cycle/fees",
+      "accessed_at": "2026-10-27",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[8].tuition[0].amount",
+      "url": "https://put.poznan.pl/en/admission-for-international/first-cycle/fees",
+      "accessed_at": "2026-10-27",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[8].tuition[1].amount",
+      "url": "https://put.poznan.pl/en/admission-for-international/first-cycle/fees",
+      "accessed_at": "2026-10-27",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[9].tuition[0].amount",
+      "url": "https://put.poznan.pl/en/admission-for-international/first-cycle/fees",
+      "accessed_at": "2026-10-27",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[9].tuition[1].amount",
+      "url": "https://put.poznan.pl/en/admission-for-international/first-cycle/fees",
+      "accessed_at": "2026-10-27",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[10].tuition[0].amount",
+      "url": "https://put.poznan.pl/en/admission-for-international/second-cycle/fees",
+      "accessed_at": "2026-10-27",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[10].tuition[1].amount",
+      "url": "https://put.poznan.pl/en/admission-for-international/second-cycle/fees",
+      "accessed_at": "2026-10-27",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[11].tuition[0].amount",
+      "url": "https://put.poznan.pl/en/admission-for-international/second-cycle/fees",
+      "accessed_at": "2026-10-27",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[11].tuition[1].amount",
+      "url": "https://put.poznan.pl/en/admission-for-international/second-cycle/fees",
+      "accessed_at": "2026-10-27",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[12].tuition[0].amount",
+      "url": "https://put.poznan.pl/en/admission-for-international/second-cycle/fees",
+      "accessed_at": "2026-10-27",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[12].tuition[1].amount",
+      "url": "https://put.poznan.pl/en/admission-for-international/second-cycle/fees",
+      "accessed_at": "2026-10-27",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[13].tuition[0].amount",
+      "url": "https://put.poznan.pl/en/admission-for-international/second-cycle/fees",
+      "accessed_at": "2026-10-27",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[13].tuition[1].amount",
+      "url": "https://put.poznan.pl/en/admission-for-international/second-cycle/fees",
+      "accessed_at": "2026-10-27",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[14].tuition[0].amount",
+      "url": "https://put.poznan.pl/en/admission-for-international/second-cycle/fees",
+      "accessed_at": "2026-10-27",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[14].tuition[1].amount",
+      "url": "https://put.poznan.pl/en/admission-for-international/second-cycle/fees",
+      "accessed_at": "2026-10-27",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[15].tuition[0].amount",
+      "url": "https://put.poznan.pl/en/admission-for-international/second-cycle/fees",
+      "accessed_at": "2026-10-27",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[15].tuition[1].amount",
+      "url": "https://put.poznan.pl/en/admission-for-international/second-cycle/fees",
+      "accessed_at": "2026-10-27",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[16].tuition[0].amount",
+      "url": "https://put.poznan.pl/en/admission-for-international/second-cycle/fees",
+      "accessed_at": "2026-10-27",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[16].tuition[1].amount",
+      "url": "https://put.poznan.pl/en/admission-for-international/second-cycle/fees",
+      "accessed_at": "2026-10-27",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[17].tuition[0].amount",
+      "url": "https://put.poznan.pl/en/admission-for-international/second-cycle/fees",
+      "accessed_at": "2026-10-27",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[17].tuition[1].amount",
+      "url": "https://put.poznan.pl/en/admission-for-international/second-cycle/fees",
+      "accessed_at": "2026-10-27",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[18].tuition[0].amount",
+      "url": "https://put.poznan.pl/en/admission-for-international/second-cycle/fees",
+      "accessed_at": "2026-10-27",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[18].tuition[1].amount",
+      "url": "https://put.poznan.pl/en/admission-for-international/second-cycle/fees",
+      "accessed_at": "2026-10-27",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[19].tuition[0].amount",
+      "url": "https://put.poznan.pl/en/admission-for-international/second-cycle/fees",
+      "accessed_at": "2026-10-27",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[19].tuition[1].amount",
+      "url": "https://put.poznan.pl/en/admission-for-international/second-cycle/fees",
+      "accessed_at": "2026-10-27",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[20].tuition[0].amount",
+      "url": "https://put.poznan.pl/en/admission-for-international/second-cycle/fees",
+      "accessed_at": "2026-10-27",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[20].tuition[1].amount",
+      "url": "https://put.poznan.pl/en/admission-for-international/second-cycle/fees",
+      "accessed_at": "2026-10-27",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[21].tuition[0].amount",
+      "url": "https://put.poznan.pl/en/admission-for-international/second-cycle/fees",
+      "accessed_at": "2026-10-27",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[21].tuition[1].amount",
+      "url": "https://put.poznan.pl/en/admission-for-international/second-cycle/fees",
+      "accessed_at": "2026-10-27",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[22].tuition[0].amount",
+      "url": "https://put.poznan.pl/en/admission-for-international/second-cycle/fees",
+      "accessed_at": "2026-10-27",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[22].tuition[1].amount",
+      "url": "https://put.poznan.pl/en/admission-for-international/second-cycle/fees",
+      "accessed_at": "2026-10-27",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[23].tuition[0].amount",
+      "url": "https://put.poznan.pl/en/admission-for-international/second-cycle/fees",
+      "accessed_at": "2026-10-27",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[23].tuition[1].amount",
+      "url": "https://put.poznan.pl/en/admission-for-international/second-cycle/fees",
+      "accessed_at": "2026-10-27",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[24].tuition[0].amount",
+      "url": "https://put.poznan.pl/en/admission-for-international/second-cycle/fees",
+      "accessed_at": "2026-10-27",
+      "confidence": "high"
+    },
+    {
+      "field": "programs[24].tuition[1].amount",
+      "url": "https://put.poznan.pl/en/admission-for-international/second-cycle/fees",
+      "accessed_at": "2026-10-27",
+      "confidence": "high"
+    }
+  ],
+  "notes_for_reviewer": "Official Poznań University of Technology pages \"First-cycle (B.Sc.) studies - Fees for international students\" and \"Second-cycle (M.Sc.) studies - Fees for international students\", read 2026-10-27 (tuition fees for international students in the 2026/2027 academic year; the amounts are set in Ordinance No. 18 of the Rector). The pages give two amounts per programme: the 1st semester in EUR and each subsequent semester in PLN. Both are stored; the PLN regular-semester amount is the first entry (the one the catalogue shows), the EUR first-semester amount is the second. One card per programme: the pages list several programmes under one price line, and all of them are stored with that price. Application (recruitment) fee: 100 PLN for candidates who must take the entrance exam and 85 PLN for those who do not; the single fee is paid regardless of the number of programmes. The higher value (100 PLN) is stored. The language of instruction is stated on the pages as \"studies in English\". Durations, intake months, format and deadlines are not on these pages. Not collected: Polish-language studies. ISCED-F codes are inferred from the programme names (a guess, to review). The suffix (BSc/MSc) is added from the level of the page. The institution was not in the database: it is added with institutions_extra_put.sql (Wikidata Q1678753, CC0)."
+}

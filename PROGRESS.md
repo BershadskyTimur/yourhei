@@ -419,3 +419,7 @@
 
 ## Статьи: Erasmus Mundus и Chevening (ветка articles-8, 26.10.2026)
 - `erasmus-mundus-joint-masters-how-to-apply` (выходит 28.10.2026; приём обычно октябрь–январь) и `chevening-scholarship-how-to-apply` (17.11.2026; цикл 2027–28, приём заявок закрывается в октябре 2026). Факты с официальных страниц Erasmus+ и Chevening. Требование к английскому на прочитанных страницах Chevening не указано: это отмечено в статье. Переводы на другие языки не написаны (`NOT_TRANSLATED_YET` в `posts.test.ts`).
+
+## Статья Swiss, карточка Poznań (ветка articles-9, 27.10.2026)
+- `swiss-government-excellence-scholarships-how-to-apply` (ru, en), выходит 30.10.2026: стипендия 2 450 CHF в месяц, возраст до 35, подача через швейцарские представительства, приём открылся 20.08.2026, следующий цикл с августа 2027. Источник: страница SERI.
+- Poznań University of Technology: сначала добавлен в базу вузов (`supabase/data/institutions_extra_put.sql`, Wikidata Q1678753, CC0), затем 25 программ (7 бакалавриат, 18 магистратура) по официальным страницам цен 2026/27: 1-й семестр в евро, остальные в злотых (оба хранятся, первым идёт злотовый). Загрузка по порядку: `institutions_extra_put.sql`, затем `drafts_pl_put.sql`.

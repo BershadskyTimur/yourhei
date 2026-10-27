@@ -1311,6 +1311,88 @@
 - Заметки сборщика: Official apply.p.lodz.pl fees-and-scholarships page read 2026-10-25 (tuition per semester in PLN for foreign candidates, academic year 2026/2027; the language is taken from the flag icons and the programme names). Only the programmes taught in English are collected (14 bachelor and 11 master); the Polish-language programmes of the same page are not. The business programme "Business, Society and Technology" also exists in a joint English-French version at the same fee. The page does not give programme durations, intake months, deadlines or entrance requirements, so those fields are empty (the documents list is a standard guess). Application fee: PLN 150 for Architecture and Design, PLN 85 for the others (per programme). Tuition is not charged to the exempt groups listed on the page (EU/EEA/EFTA and UK citizens, permanent residents, holders of the Polish C1 certificate, Karta Polaka and others); the page also mentions 20 fee-free places a year (two per faculty) and NAWA scholarships. Master Nanotechnology and the other Chemistry programmes in Polish are not collected.
 - Источников: 52; главные: https://apply.p.lodz.pl/en/enrollment/enroll/fees-and-scholarships
 
+### Poznań University of Technology (PL/poznan-university-of-technology)
+
+- Сайт: https://www.put.poznan.pl · форма: public · основано: ? · общежитие: нет данных
+- Учебный год данных: 2026/2027; собрано: 2026-10-27
+- **Программа 1:** Architecture (BSc) — bachelor, ISCED-F 0731, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 8800 PLN / semester (international); 2460 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 2:** Artificial Intelligence (BSc) — bachelor, ISCED-F 0613, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 8800 PLN / semester (international); 2460 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 3:** Automatic Control and Robotics (BSc) — bachelor, ISCED-F 0714, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 6800 PLN / semester (international); 1850 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 4:** Biomedical Engineering (BSc) — bachelor, ISCED-F 0719, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 6800 PLN / semester (international); 1850 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 5:** Chemical Technology (BSc) — bachelor, ISCED-F 0711, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 6800 PLN / semester (international); 1850 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 6:** Engineering Management (BSc) — bachelor, ISCED-F 0413, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 6800 PLN / semester (international); 1850 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 7:** Mechanical Engineering (BSc) — bachelor, ISCED-F 0715, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 6800 PLN / semester (international); 1850 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 8:** Microelectronics and Digital Communication (BSc) — bachelor, ISCED-F 0714, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 6800 PLN / semester (international); 1850 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 9:** Sustainable Building Engineering (BSc) — bachelor, ISCED-F 0732, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 6800 PLN / semester (international); 1850 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 10:** Quantum Technologies (BSc) — bachelor, ISCED-F 0533, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 6800 PLN / semester (international); 1850 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 11:** Architecture (MSc) — master, ISCED-F 0731, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 10500 PLN / semester (international); 2950 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 12:** Artificial Intelligence (MSc) — master, ISCED-F 0613, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 10500 PLN / semester (international); 2950 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 13:** Computing (MSc) — master, ISCED-F 0613, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 10500 PLN / semester (international); 2950 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 14:** Automatic Control and Robotics (MSc) — master, ISCED-F 0714, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 9600 PLN / semester (international); 2580 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 15:** Biomedical Engineering (MSc) — master, ISCED-F 0719, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 9600 PLN / semester (international); 2580 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 16:** Chemical Technology (MSc) — master, ISCED-F 0711, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 9600 PLN / semester (international); 2580 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 17:** Civil Engineering (MSc) — master, ISCED-F 0732, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 9600 PLN / semester (international); 2580 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 18:** Electrical Engineering (MSc) — master, ISCED-F 0713, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 9600 PLN / semester (international); 2580 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 19:** Electronics and Telecommunications (MSc) — master, ISCED-F 0714, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 9600 PLN / semester (international); 2580 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 20:** Green Energy (MSc) — master, ISCED-F 0713, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 9600 PLN / semester (international); 2580 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 21:** Mechanical and Automotive Engineering (MSc) — master, ISCED-F 0715, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 9200 PLN / semester (international); 2480 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 22:** Transport (MSc) — master, ISCED-F 0716, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 9200 PLN / semester (international); 2480 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 23:** Engineering Management (MSc) — master, ISCED-F 0413, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 8400 PLN / semester (international); 2220 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 24:** Logistics (MSc) — master, ISCED-F 0413, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 8400 PLN / semester (international); 2220 EUR / semester (international)
+  - Требования: требования не найдены
+- **Программа 25:** Information Technology for Smart and Sustainable Mobility (MSc) — master, ISCED-F 0613, языки: en, ? лет, ?, набор: ?
+  - Стоимость: 8000 PLN / semester (international); 1890 EUR / semester (international)
+  - Требования: требования не найдены
+- Заметки сборщика: Official Poznań University of Technology pages "First-cycle (B.Sc.) studies - Fees for international students" and "Second-cycle (M.Sc.) studies - Fees for international students", read 2026-10-27 (tuition fees for international students in the 2026/2027 academic year; the amounts are set in Ordinance No. 18 of the Rector). The pages give two amounts per programme: the 1st semester in EUR and each subsequent semester in PLN. Both are stored; the PLN regular-semester amount is the first entry (the one the catalogue shows), the EUR first-semester amount is the second. One card per programme: the pages list several programmes under one price line, and all of them are stored with that price. Application (recruitment) fee: 100 PLN for candidates who must take the entrance exam and 85 PLN for those who do not; the single fee is paid regardless of the number of programmes. The higher value (100 PLN) is stored. The language of instruction is stated on the pages as "studies in English". Durations, intake months, format and deadlines are not on these pages. Not collected: Polish-language studies. ISCED-F codes are inferred from the programme names (a guess, to review). The suffix (BSc/MSc) is added from the level of the page. The institution was not in the database: it is added with institutions_extra_put.sql (Wikidata Q1678753, CC0).
+- Источников: 50; главные: https://put.poznan.pl/en/admission-for-international/first-cycle/fees · https://put.poznan.pl/en/admission-for-international/second-cycle/fees
+
 ### Warsaw University of Technology (PL/warsaw-university-of-technology)
 
 - Сайт: https://www.pw.edu.pl · форма: public · основано: ? · общежитие: нет данных
