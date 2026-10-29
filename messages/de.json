@@ -925,7 +925,8 @@
       "why": "Warum es passt",
       "gaps": "Was fehlt",
       "noData": "Keine Daten zu",
-      "apply": "Auf der offiziellen Website bewerben"
+      "apply": "Auf der offiziellen Website bewerben",
+      "workAfter": "Arbeiten während des Studiums und nach dem Abschluss ({country})"
     },
     "components": {
       "academic": "Anforderungen",

@@ -925,7 +925,8 @@
       "why": "Why it fits",
       "gaps": "What is missing",
       "noData": "No data for",
-      "apply": "Apply on the official site"
+      "apply": "Apply on the official site",
+      "workAfter": "Work during studies and after graduation ({country})"
     },
     "components": {
       "academic": "requirements",

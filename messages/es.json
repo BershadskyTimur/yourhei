@@ -925,7 +925,8 @@
       "why": "Por qué encaja",
       "gaps": "Qué falta",
       "noData": "Sin datos de",
-      "apply": "Solicitar en el sitio oficial"
+      "apply": "Solicitar en el sitio oficial",
+      "workAfter": "Trabajo durante los estudios y después de graduarse ({country})"
     },
     "components": {
       "academic": "requisitos",

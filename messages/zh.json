@@ -925,7 +925,8 @@
       "why": "为什么适合你",
       "gaps": "还缺少什么",
       "noData": "缺少数据：",
-      "apply": "前往官网申请"
+      "apply": "前往官网申请",
+      "workAfter": "学习期间及毕业后的工作（{country}）"
     },
     "components": {
       "academic": "入学要求",

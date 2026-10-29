@@ -925,7 +925,8 @@
       "why": "Niyə uyğundur",
       "gaps": "Nə çatışmır",
       "noData": "Məlumat yoxdur:",
-      "apply": "Rəsmi saytda müraciət et"
+      "apply": "Rəsmi saytda müraciət et",
+      "workAfter": "Təhsil zamanı və məzun olduqdan sonra iş ({country})"
     },
     "components": {
       "academic": "tələblər",

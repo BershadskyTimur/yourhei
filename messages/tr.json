@@ -925,7 +925,8 @@
       "why": "Neden uyuyor",
       "gaps": "Neler eksik",
       "noData": "Veri yok:",
-      "apply": "Resmî sitede başvur"
+      "apply": "Resmî sitede başvur",
+      "workAfter": "Eğitim sırasında ve mezuniyetten sonra çalışma ({country})"
     },
     "components": {
       "academic": "koşullar",

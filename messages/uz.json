@@ -925,7 +925,8 @@
       "why": "Nega mos keladi",
       "gaps": "Nima yetishmaydi",
       "noData": "Ma’lumot yo‘q:",
-      "apply": "Rasmiy saytda ariza topshirish"
+      "apply": "Rasmiy saytda ariza topshirish",
+      "workAfter": "O'qish davomida va bitirgandan keyin ishlash ({country})"
     },
     "components": {
       "academic": "talablar",
