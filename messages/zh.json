@@ -187,7 +187,8 @@
     "sourceLine": "来源：{source}",
     "dataYear": "{year} 学年的数据",
     "methodologyLinkShort": "我们如何收集数据",
-    "countryGuide": "指南：在{country}留学"
+    "countryGuide": "指南：在{country}留学",
+    "rankingsSource": "名次来自 Wikidata（CC0）。前 100 名之后，排名通常给出一个名次区间：此处显示区间的起点。来源："
   },
   "Pages": {
     "about": {

@@ -25,7 +25,7 @@ export interface InstitutionDetail {
   description: LocalizedText;
   verifiedAt: string | null;
   programs: ProgramDetail[];
-  rankings: { name: string; year: number; position: string }[];
+  rankings: { name: string; year: number; position: string; sourceUrl: string | null }[];
   scholarships: { names: LocalizedText; covers: string | null; url: string | null }[];
   /** published student reviews (newest first, at most 20) and the average of all published ones */
   reviews: { rating: number; relation: string; body: string; createdAt: string | null }[];
@@ -34,7 +34,7 @@ export interface InstitutionDetail {
 
 const COLUMNS = `id, slug, type, country, city, names, website, ownership, founded_year, dormitory, features, description, verified_at, status,
   programs (id, names, level, isced_f, languages, duration_years, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status),
-  rankings (name, year, position, scope),
+  rankings (name, year, position, scope, source_url),
   scholarships (names, covers, url, status)`;
 
 /** The card of one institution, or null when it does not exist. */
@@ -83,7 +83,7 @@ export async function getInstitutionDetail(country: string, slug: string): Promi
     programs: published(r.programs).flatMap((p) => toProgramDetail(p) ?? []),
     rankings: arr(r.rankings).flatMap((x) => {
       const k = rec(x);
-      return str(k.name) && num(k.year) !== null && str(k.position) ? [{ name: k.name as string, year: num(k.year) as number, position: k.position as string }] : [];
+      return str(k.name) && num(k.year) !== null && str(k.position) ? [{ name: k.name as string, year: num(k.year) as number, position: k.position as string, sourceUrl: safeHttpUrl(k.source_url) }] : [];
     }),
     scholarships: published(r.scholarships).map((s) => ({ names: texts(s.names), covers: str(s.covers), url: safeHttpUrl(s.url) })),
     // before migration 0011 the table does not exist: the section is then simply empty

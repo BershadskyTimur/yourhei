@@ -187,7 +187,8 @@
     "sourceLine": "Fuente: {source}",
     "dataYear": "Datos del curso académico {year}",
     "methodologyLinkShort": "Cómo recopilamos los datos",
-    "countryGuide": "Guía: estudiar en {country}"
+    "countryGuide": "Guía: estudiar en {country}",
+    "rankingsSource": "Puestos según Wikidata (CC0). Después de los 100 primeros, los rankings suelen dar un intervalo de puestos: se muestra su inicio. Fuente:"
   },
   "Pages": {
     "about": {

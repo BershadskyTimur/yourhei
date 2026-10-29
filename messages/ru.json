@@ -187,7 +187,8 @@
     "sourceLine": "Источник: {source}",
     "dataYear": "Данные за {year} учебный год",
     "methodologyLinkShort": "Как мы собираем данные",
-    "countryGuide": "Справка: учёба в стране «{country}»"
+    "countryGuide": "Справка: учёба в стране «{country}»",
+    "rankingsSource": "Места по данным Wikidata (CC0). После первой сотни рейтинги часто дают диапазон мест: здесь указано его начало. Источник:"
   },
   "Pages": {
     "about": {

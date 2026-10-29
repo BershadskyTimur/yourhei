@@ -187,7 +187,8 @@
     "sourceLine": "Quelle: {source}",
     "dataYear": "Daten für das Studienjahr {year}",
     "methodologyLinkShort": "Wie wir Daten sammeln",
-    "countryGuide": "Leitfaden: Studieren in {country}"
+    "countryGuide": "Leitfaden: Studieren in {country}",
+    "rankingsSource": "Plätze laut Wikidata (CC0). Jenseits der ersten 100 geben die Rankings oft einen Platzbereich an: angezeigt wird sein Anfang. Quelle:"
   },
   "Pages": {
     "about": {

@@ -187,7 +187,8 @@
     "sourceLine": "Աղբյուր՝ {source}",
     "dataYear": "{year} ուսումնական տարվա տվյալներ",
     "methodologyLinkShort": "Ինչպես ենք հավաքում տվյալները",
-    "countryGuide": "Ուղեցույց՝ ուսում {country}"
+    "countryGuide": "Ուղեցույց՝ ուսում {country}",
+    "rankingsSource": "Տեղերը՝ ըստ Wikidata-ի (CC0) տվյալների։ Առաջին հարյուրյակից հետո վարկանիշները հաճախ տալիս են տեղերի միջակայք. այստեղ նշված է դրա սկիզբը։ Աղբյուր՝"
   },
   "Pages": {
     "about": {

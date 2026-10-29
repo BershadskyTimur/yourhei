@@ -187,7 +187,8 @@
     "sourceLine": "Mənbə: {source}",
     "dataYear": "{year} tədris ili üzrə məlumatlar",
     "methodologyLinkShort": "Məlumatı necə toplayırıq",
-    "countryGuide": "Bələdçi: {country} ölkəsində təhsil"
+    "countryGuide": "Bələdçi: {country} ölkəsində təhsil",
+    "rankingsSource": "Yerlər Wikidata (CC0) məlumatlarına görə. İlk yüzlükdən sonra reytinqlər çox vaxt yerlər aralığı verir: burada onun başlanğıcı göstərilib. Mənbə:"
   },
   "Pages": {
     "about": {

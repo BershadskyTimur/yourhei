@@ -187,7 +187,8 @@
     "sourceLine": "المصدر: {source}",
     "dataYear": "بيانات العام الدراسي {year}",
     "methodologyLinkShort": "كيف نجمع البيانات",
-    "countryGuide": "دليل: الدراسة في {country}"
+    "countryGuide": "دليل: الدراسة في {country}",
+    "rankingsSource": "المراتب وفق بيانات Wikidata (CC0). بعد المئة الأولى غالبًا ما تعطي التصنيفات نطاقًا من المراتب: يظهر هنا بدايته. المصدر:"
   },
   "Pages": {
     "about": {

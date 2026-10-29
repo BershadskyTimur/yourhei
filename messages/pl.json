@@ -187,7 +187,8 @@
     "sourceLine": "Źródło: {source}",
     "dataYear": "Dane za rok akademicki {year}",
     "methodologyLinkShort": "Jak zbieramy dane",
-    "countryGuide": "Przewodnik: studia w kraju {country}"
+    "countryGuide": "Przewodnik: studia w kraju {country}",
+    "rankingsSource": "Miejsca według Wikidata (CC0). Poza pierwszą setką rankingi często podają przedział miejsc: pokazano jego początek. Źródło:"
   },
   "Pages": {
     "about": {
