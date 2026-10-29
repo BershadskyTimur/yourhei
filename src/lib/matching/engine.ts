@@ -10,13 +10,51 @@ export const SAFE_MARGIN = 10;
 
 /** How many results each group shows, depending on the strategy answer (SPEC.md section 11). */
 export const GROUP_LIMITS: Record<MatchInput['strategy'], Record<Group, number>> = {
-  safe: { safe: 10, suitable: 6, ambitious: 2 },
-  balanced: { safe: 6, suitable: 6, ambitious: 4 },
-  ambitious: { safe: 3, suitable: 6, ambitious: 8 },
+  safe: { safe: 12, suitable: 8, ambitious: 3 },
+  balanced: { safe: 8, suitable: 10, ambitious: 6 },
+  ambitious: { safe: 4, suitable: 8, ambitious: 10 },
 };
 
 /** At most this many programmes of one institution are shown in one group, so the list is varied. */
 export const MAX_PER_INSTITUTION = 2;
+/**
+ * At most this many programmes of one country are shown in one group, unless the person chose exactly one country.
+ * Without it one country with many cheap programmes of the same score (Czechia, October 2026) filled every list.
+ * When the other countries have too few results, the best of the held-back ones fill the rest of the group.
+ */
+export const MAX_PER_COUNTRY = 3;
+
+/** How many of the components have data: on an equal score, the better-checked programme comes first. */
+const evidence = (r: MatchResult) => r.components.filter((c) => c.score !== null).length;
+const byRank = (a: MatchResult, b: MatchResult) => b.score - a.score || evidence(b) - evidence(a) || a.program.id.localeCompare(b.program.id);
+
+/** The best results of one group, at most `limit`, with at most two per institution and (when `capCountries`) three per country. */
+export function pickGroup(results: readonly MatchResult[], limit: number, capCountries: boolean): MatchResult[] {
+  const perInstitution = new Map<string, number>();
+  const perCountry = new Map<string, number>();
+  const chosen: MatchResult[] = [];
+  const heldBack: MatchResult[] = [];
+  const take = (r: MatchResult) => {
+    chosen.push(r);
+    perInstitution.set(r.program.institution.id, (perInstitution.get(r.program.institution.id) ?? 0) + 1);
+    perCountry.set(r.program.institution.country, (perCountry.get(r.program.institution.country) ?? 0) + 1);
+  };
+  for (const r of [...results].sort(byRank)) {
+    if (chosen.length >= limit) break;
+    if ((perInstitution.get(r.program.institution.id) ?? 0) >= MAX_PER_INSTITUTION) continue;
+    if (capCountries && (perCountry.get(r.program.institution.country) ?? 0) >= MAX_PER_COUNTRY) {
+      heldBack.push(r);
+      continue;
+    }
+    take(r);
+  }
+  for (const r of heldBack) {
+    if (chosen.length >= limit) break;
+    if ((perInstitution.get(r.program.institution.id) ?? 0) >= MAX_PER_INSTITUTION) continue;
+    take(r);
+  }
+  return chosen.sort(byRank);
+}
 
 export function groupFor(minMargin: number | null, met: boolean): Group {
   if (!met) return 'ambitious';
@@ -70,18 +108,8 @@ export function matchPrograms(programs: readonly MatchProgram[], input: MatchInp
   }
 
   const limits = GROUP_LIMITS[input.strategy];
-  const pick = (group: Group) => {
-    const perInstitution = new Map<string, number>();
-    return results
-      .filter((r) => r.group === group)
-      .sort((a, b) => b.score - a.score || a.program.id.localeCompare(b.program.id))
-      .filter((r) => {
-        const n = perInstitution.get(r.program.institution.id) ?? 0;
-        perInstitution.set(r.program.institution.id, n + 1);
-        return n < MAX_PER_INSTITUTION;
-      })
-      .slice(0, limits[group]);
-  };
+  const capCountries = input.countries.length !== 1;
+  const pick = (group: Group) => pickGroup(results.filter((r) => r.group === group), limits[group], capCountries);
 
   return { safe: pick('safe'), suitable: pick('suitable'), ambitious: pick('ambitious'), checked: programs.length, passed, rejected };
 }

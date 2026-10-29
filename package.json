@@ -15,6 +15,7 @@
     "cf:deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
     "test": "vitest run",
     "test:e2e": "playwright test",
+    "matches:check": "vitest run --config vitest.live.config.mts",
     "seed:build": "node scripts/build-seed.mjs",
     "data:import": "node scripts/import-drafts.mts"
   },
