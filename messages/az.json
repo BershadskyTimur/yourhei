@@ -504,13 +504,10 @@
     "ui": {
       "loading": "Yüklənir…",
       "loadFailed": "Sorğu yüklənmədi. Zəhmət olmasa, səhifəni yenilə və ya sonra yenidən cəhd et.",
-      "questionOf": "Sual {current} / {total}",
       "requiredLeft": "{count, plural, one {# məcburi sual qalıb} other {# məcburi sual qalıb}}",
       "optional": "Könüllü",
       "back": "Geri",
       "next": "Növbəti",
-      "skip": "Keç",
-      "skipAll": "Bütün könüllü sualları keç",
       "finish": "Bitir",
       "saving": "Saxlanılır…",
       "saveFailed": "Cavabın saxlanılmadı. Bağlantını yoxlayıb yenidən cəhd et.",
@@ -526,7 +523,8 @@
       "moveDown": "Aşağı apar",
       "counter": "{count} variantdan {chosen} seçilib",
       "range": "{min} ilə {max} arasında",
-      "popular": "Populyar istiqamətlər"
+      "popular": "Populyar istiqamətlər",
+      "pageOf": "Addım {current} / {total}"
     },
     "errors": {
       "required": "Zəhmət olmasa, bu suala cavab ver",
@@ -588,7 +586,15 @@
     "budget": {
       "currency": "Valyuta",
       "tuition": "İllik təhsil haqqı",
-      "living": "İllik yaşayış xərcləri"
+      "living": "İllik yaşayış xərcləri",
+      "free": "Yalnız pulsuz",
+      "upTo": "{max}-dək",
+      "between": "{min} – {max}",
+      "moreThan": "{min}-dan çox",
+      "currencies": {
+        "USD": "Dollar (USD)",
+        "EUR": "Avro (EUR)"
+      }
     },
     "olympiads": {
       "subject": "Fənn",
@@ -757,16 +763,6 @@
         "title": "Olimpiadalar və müsabiqələr",
         "hint": "Fənn, səviyyə və tutduğun yer."
       },
-      "achievements": {
-        "title": "Nailiyyətlərin",
-        "options": {
-          "projects": "Layihələr",
-          "publications": "Nəşrlər",
-          "sport": "İdman",
-          "creative": "Yaradıcılıq portfeli",
-          "volunteering": "Könüllülük"
-        }
-      },
       "entrance": {
         "title": "Nəyə hazırsan?",
         "options": {
@@ -775,17 +771,9 @@
           "creative_contest": "Yaradıcılıq müsabiqəsi"
         }
       },
-      "funding": {
-        "title": "Təhsil haqqını necə ödəməyi planlaşdırırsan?",
-        "options": {
-          "free": "Yalnız pulsuz (təhsil haqqı olmayan) yerlər",
-          "paid": "Ödənişli yerlər",
-          "both": "Hər ikisi"
-        }
-      },
       "budget": {
         "title": "İllik büdcən",
-        "hint": "İllik təhsil haqqı və yaşayış xərcləri, bir valyutada."
+        "hint": "Təxminən, dollar və ya avro ilə. Seçim aralığın yuxarı həddindən istifadə edir."
       },
       "scholarship": {
         "title": "Təqaüdə ehtiyacın var?",
@@ -793,13 +781,6 @@
           "yes": "Bəli, ehtiyacım var",
           "no": "Xeyr",
           "maybe": "Kömək edərdi"
-        }
-      },
-      "loan": {
-        "title": "Təhsil krediti haqqında düşünərdinmi?",
-        "options": {
-          "yes": "Bəli",
-          "no": "Xeyr"
         }
       },
       "rating": {
@@ -815,14 +796,6 @@
         "options": {
           "public": "Dövlət",
           "private": "Özəl",
-          "any": "Vacib deyil"
-        }
-      },
-      "size": {
-        "title": "Böyük, yoxsa kiçik müəssisə?",
-        "options": {
-          "large": "Böyük",
-          "small": "Kiçik",
           "any": "Vacib deyil"
         }
       },
@@ -850,15 +823,6 @@
           "any": "Vacib deyil"
         }
       },
-      "city_size": {
-        "title": "Hansı şəhər tipini üstün tutursan?",
-        "options": {
-          "megapolis": "Böyük metropol",
-          "medium": "Orta ölçülü şəhər",
-          "small_student": "Kiçik tələbə şəhərciyi",
-          "any": "Vacib deyil"
-        }
-      },
       "climate": {
         "title": "Hansı iqlimi üstün tutursan?",
         "options": {
@@ -876,38 +840,6 @@
           "any": "Vacib deyil"
         }
       },
-      "work_during": {
-        "title": "Oxuyarkən işləmək istəyirsən?",
-        "options": {
-          "yes": "Bəli",
-          "no": "Xeyr",
-          "maybe": "Bəlkə"
-        }
-      },
-      "after": {
-        "title": "Təhsildən sonrakı planların",
-        "options": {
-          "stay": "Ölkədə qalmaq",
-          "return": "Evə qayıtmaq",
-          "unknown": "Hələ əmin deyiləm"
-        }
-      },
-      "family": {
-        "title": "Kiminləsə səyahət edirsən?",
-        "hint": "Könüllü.",
-        "options": {
-          "partner": "Həyat yoldaşı ilə",
-          "children": "Uşaqlarla"
-        }
-      },
-      "accessibility": {
-        "title": "Əlçatan mühitə ehtiyacın var?",
-        "options": {
-          "yes": "Bəli",
-          "no": "Xeyr",
-          "prefer_not": "Deməməyi üstün tuturam"
-        }
-      },
       "priorities": {
         "title": "Ən vacib 3 şeyi seç",
         "hint": "Bu, uyğunluqlarını sıralayarkən nəyin ən çox nəzərə alınacağını müəyyən edir."
@@ -918,6 +850,17 @@
         "years": "Neçə il işləmisən?",
         "topic": "Tədqiqat mövzun"
       }
+    },
+    "pages": {
+      "goal": "Məqsəd",
+      "direction": "İstiqamət",
+      "school": "Məktəb və kollec",
+      "studies": "Təhsil və qiymətlər",
+      "languages": "Dillər",
+      "extra": "Nailiyyətlər və qəbul",
+      "money": "Pul",
+      "institution": "Müəssisə və həyat",
+      "final": "Sizin üçün ən vacibi"
     }
   },
   "Matches": {

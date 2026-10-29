@@ -6,9 +6,9 @@ import { describe, expect, it } from 'vitest';
 import { GROUP_LIMITS, MAX_PER_INSTITUTION, matchPrograms } from '../matching/engine';
 import { buildMatchInput } from '../matching/input';
 import type { MatchContext, MatchInput, MatchInstitution, MatchProgram, Matches } from '../matching/types';
-import { PRIORITIES_COUNT, PRIORITY_OPTIONS, QUESTIONS, type Question } from './config';
-import { educationLevelsFor, intakeOptions, isComplete, isDone, nextQuestion, optionsFor, pruneAnswers, skipAllOptional, stepAfter, validateAnswer, visibleQuestions, type Answers } from './engine';
-import { CERTIFICATES, CURRENCIES, EXAMS, GRADING_SYSTEMS, ISCED, LANGUAGE_CODES, OLYMPIAD_LEVELS, SELF_LEVELS, SUBJECTS } from './references';
+import { BUDGET_CURRENCIES, LIVING_BANDS, PRIORITIES_COUNT, PRIORITY_OPTIONS, QUESTIONS, TUITION_BANDS, type Question } from './config';
+import { educationLevelsFor, intakeOptions, isComplete, isDone, nextQuestion, optionsFor, pageAfter, pageErrors, pruneAnswers, submitPage, validateAnswer, visiblePages, visibleQuestions, type Answers } from './engine';
+import { CERTIFICATES, EXAMS, GRADING_SYSTEMS, ISCED, LANGUAGE_CODES, OLYMPIAD_LEVELS, SELF_LEVELS, SUBJECTS } from './references';
 import { RIASEC_FIELDS } from './riasec';
 
 // ---------------------------------------------------------------- a small seeded random generator (same run every time)
@@ -84,11 +84,8 @@ function answerFor(q: Question, a: Answers, r: Rng): unknown {
     }
     case 'studyLanguages':
       return { prepYear: r.chance(0.3), languages: r.some(['en', 'ru', 'de', 'tr', 'fr', 'es', 'pl'], 1, 3) };
-    case 'budget': {
-      const row: Record<string, unknown> = { currency: r.pick(CURRENCIES), living: Math.round(r.between(0, 30000)) };
-      if (a.funding !== 'free') row.tuition = Math.round(r.between(0, 40000));
-      return row;
-    }
+    case 'budget':
+      return { currency: r.pick(BUDGET_CURRENCIES), tuition: r.pick(TUITION_BANDS).id, living: r.pick(LIVING_BANDS).id };
     case 'olympiads':
       return r.some(SUBJECTS, 0, 3).map((s) => ({ subject: s.id, level: r.pick(OLYMPIAD_LEVELS), place: 1 + Math.floor(r.next() * 20) }));
     case 'research':
@@ -238,20 +235,19 @@ describe('every question accepts every one of its own options', () => {
   });
 });
 
-describe('every level, certainty of direction and funding choice can be finished', () => {
+describe('every level, certainty of direction and tuition range can be finished', () => {
   const levels = QUESTIONS.find((q) => q.id === 'level')!.options!;
   const certainties = QUESTIONS.find((q) => q.id === 'field_certainty')!.options!;
-  const fundings = QUESTIONS.find((q) => q.id === 'funding')!.options!;
   for (const level of levels) {
     for (const certainty of [...certainties, undefined]) {
-      for (const funding of fundings) {
-        it(`${level} / ${certainty ?? 'no direction question'} / ${funding}`, () => {
+      for (const band of TUITION_BANDS.map((b) => b.id)) {
+        it(`${level} / ${certainty ?? 'no direction question'} / ${band}`, () => {
           for (let seed = 1; seed <= 6; seed++) {
             const r = rng(seed * 7919 + level.length);
-            const forced: Answers = { level, funding };
+            const forced: Answers = { level, budget: { currency: r.pick(BUDGET_CURRENCIES), tuition: band, living: r.pick(LIVING_BANDS).id } };
             if (certainty) forced.field_certainty = certainty;
             const { answers, asked } = walk(r, forced);
-            const label = `${level}/${certainty}/${funding}/seed${seed}`;
+            const label = `${level}/${certainty}/${band}/seed${seed}`;
             // finished: nothing left to ask, all required answers valid
             expect(nextQuestion(answers, TODAY), label).toBeNull();
             expect(isComplete(answers, TODAY), label).toBe(true);
@@ -263,8 +259,10 @@ describe('every level, certainty of direction and funding choice can be finished
             if (level === 'school' || level === 'language_course') expect(ids.has('field_certainty'), label).toBe(false);
             else if (certainty === 'unknown') expect(ids.has('riasec'), label).toBe(true);
             else if (certainty) expect(ids.has('fields'), label).toBe(true);
-            // free education: no tuition question follow-ups
-            if (funding === 'free') expect(ids.has('scholarship') || ids.has('loan'), label).toBe(false);
+            // "free only" in the budget is the hard filter of free places; any other range is not
+            const input = buildMatchInput(pruned, { residence: 'GE', citizenships: ['GE'], countries: [], types: [] });
+            expect(input.funding === 'free', label).toBe(band === 'free');
+            expect(input.budget?.tuition ?? null, label).toBe(TUITION_BANDS.find((b) => b.id === band)!.max);
             // priorities is always last
             expect(asked.at(-1), label).toBe('priorities');
             // every answer in the pruned set belongs to a shown question
@@ -278,47 +276,59 @@ describe('every level, certainty of direction and funding choice can be finished
   }
 });
 
-// The page itself: "Back", changing an earlier answer, "Skip", "Skip all the rest", "Next" / "Finish" in any order.
-// stepAfter() is what the page calls after each save; the survey must always end, never get stuck or loop.
-describe('a restless person: back, changed answers, skips, skip-all', () => {
+// The screen itself, page by page: "Back", changing earlier answers, optional questions left empty, required ones
+// forgotten (the page then shows errors and stays), "Next" / "Finish" in any order. pageAfter() is what the screen calls
+// after a page was sent; the survey must always end, never get stuck or loop.
+describe('a restless person: back, changed answers, empty optional questions, forgotten required ones', () => {
   it('3000 such people always reach "Finish" with a complete survey', () => {
     let finished = 0;
     let backs = 0;
+    let refused = 0;
     for (let i = 0; i < 3000; i++) {
       const r = rng(50000 + i);
       let answers: Answers = {};
-      let current = nextQuestion(answers, TODAY)!.id;
+      let current = visiblePages(answers)[0].id;
       let done = false;
-      for (let step = 0; step < 800 && !done; step++) {
-        const shown = visibleQuestions(answers);
-        const idx = Math.max(0, shown.findIndex((q) => q.id === current));
-        const q = shown[idx];
+      for (let step = 0; step < 400 && !done; step++) {
+        const pages = visiblePages(answers);
+        const idx = Math.max(0, pages.findIndex((p) => p.id === current));
         if (idx > 0 && r.chance(0.15)) {
-          current = shown[idx - 1].id; // "Back"
+          current = pages[idx - 1].id; // "Back"
           backs++;
           continue;
         }
-        const withoutSkip = (a: Answers): Answers => ({ ...a, _skipped: (a._skipped ?? []).filter((id) => id !== q.id) });
-        let next: Answers;
-        let mode: 'step' | 'forward' = 'step';
-        if (!q.required && r.chance(0.25)) {
-          const rest = { ...answers };
-          delete rest[q.id];
-          next = { ...rest, _skipped: [...new Set([...(answers._skipped ?? []), q.id])] }; // "Skip"
-        } else if (!q.required && r.chance(0.1)) {
-          next = skipAllOptional({ ...answers }, TODAY); // "Skip all the rest"
-          mode = 'forward';
-        } else {
-          const value = answerFor(q, answers, r);
-          expect(validateAnswer(q, value, answers, TODAY), `person ${i}: ${q.id}`).toBeNull();
-          next = withoutSkip({ ...answers, [q.id]: value });
+        // fill the page the way a person does: top to bottom, and the page changes as they answer (e.g. the level)
+        let draft: Answers = { ...answers };
+        for (let k = 0; k < 20; k++) {
+          const page = visiblePages(draft).find((p) => p.id === pages[idx].id);
+          const open = page?.questions.find((q) => !(q.id in draft) && !(draft._skipped ?? []).includes(q.id) && !(q.required && r.chance(0.03)));
+          if (!open) break;
+          if (!open.required && r.chance(0.3)) {
+            draft = { ...draft, _skipped: [...new Set([...(draft._skipped ?? []), open.id])] }; // left empty
+            continue;
+          }
+          const value = answerFor(open, draft, r);
+          expect(validateAnswer(open, value, draft, TODAY), `person ${i}: ${open.id}`).toBeNull();
+          draft = { ...draft, [open.id]: value };
         }
-        const move = stepAfter(next, q.id, mode, TODAY);
-        expect(move.kind, `person ${i} got stuck after "${q.id}"`).not.toBe('stuck');
-        // the last question with every required answer valid: "Finish" must finish, whatever optional question is open
-        if (visibleQuestions(next).at(-1)?.id === q.id && isComplete(next, TODAY)) {
-          expect(move.kind, `person ${i}: "Finish" did not finish after "${q.id}"`).toBe('finish');
+        if (r.chance(0.1)) {
+          // changes one earlier answer on the page
+          const page = visiblePages(draft).find((p) => p.id === pages[idx].id);
+          const q = page ? r.pick(page.questions) : null;
+          if (q) draft = { ...draft, [q.id]: answerFor(q, draft, r) };
         }
+        const page = visiblePages(draft).find((p) => p.id === pages[idx].id) ?? visiblePages(draft)[0];
+        if (Object.keys(pageErrors(page, draft, TODAY)).length > 0) {
+          refused++; // the screen shows the errors and stays on the page
+          answers = draft;
+          current = page.id;
+          continue;
+        }
+        const next = submitPage(page, draft);
+        const move = pageAfter(next, page.id, TODAY);
+        expect(move.kind, `person ${i} got stuck after page "${page.id}"`).not.toBe('stuck');
+        const all = visiblePages(next);
+        if (all.at(-1)?.id === page.id && isComplete(next, TODAY)) expect(move.kind, `person ${i}: "Finish" did not finish`).toBe('finish');
         if (move.kind === 'finish') {
           expect(isComplete(pruneAnswers(next), TODAY), `person ${i}: finished, but not complete`).toBe(true);
           finished++;
@@ -326,13 +336,14 @@ describe('a restless person: back, changed answers, skips, skip-all', () => {
         } else if (move.kind === 'go') {
           answers = next;
           current = move.id;
-          expect(visibleQuestions(answers).some((x) => x.id === move.id), `person ${i}: sent to a question that is not shown`).toBe(true);
+          expect(all.some((p) => p.id === move.id), `person ${i}: sent to a page that is not shown`).toBe(true);
         }
       }
       expect(done, `person ${i} never reached "Finish"`).toBe(true);
     }
     expect(finished).toBe(3000);
     expect(backs).toBeGreaterThan(1000);
+    expect(refused).toBeGreaterThan(100);
   });
 });
 

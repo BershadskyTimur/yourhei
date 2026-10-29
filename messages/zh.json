@@ -504,13 +504,10 @@
     "ui": {
       "loading": "加载中…",
       "loadFailed": "无法加载问卷。请刷新页面或稍后再试。",
-      "questionOf": "第 {current} 题，共 {total} 题",
       "requiredLeft": "{count, plural, other {还剩 # 个必答问题}}",
       "optional": "选答",
       "back": "上一题",
       "next": "下一题",
-      "skip": "跳过",
-      "skipAll": "跳过所有选答问题",
       "finish": "完成",
       "saving": "正在保存…",
       "saveFailed": "无法保存你的回答。请检查网络后重试。",
@@ -526,7 +523,8 @@
       "moveDown": "下移",
       "counter": "已选 {chosen} / {count}",
       "range": "范围 {min} 至 {max}",
-      "popular": "热门方向"
+      "popular": "热门方向",
+      "pageOf": "第 {current} 步，共 {total} 步"
     },
     "errors": {
       "required": "请回答此问题",
@@ -588,7 +586,15 @@
     "budget": {
       "currency": "货币",
       "tuition": "每年学费",
-      "living": "每年生活费"
+      "living": "每年生活费",
+      "free": "仅限免费",
+      "upTo": "最多 {max}",
+      "between": "{min} – {max}",
+      "moreThan": "超过 {min}",
+      "currencies": {
+        "USD": "美元 (USD)",
+        "EUR": "欧元 (EUR)"
+      }
     },
     "olympiads": {
       "subject": "科目",
@@ -757,16 +763,6 @@
         "title": "奥林匹克竞赛与比赛",
         "hint": "科目、级别和获得的名次。"
       },
-      "achievements": {
-        "title": "你的成就",
-        "options": {
-          "projects": "项目",
-          "publications": "发表作品",
-          "sport": "体育",
-          "creative": "创意作品集",
-          "volunteering": "志愿服务"
-        }
-      },
       "entrance": {
         "title": "你愿意接受什么？",
         "options": {
@@ -775,17 +771,9 @@
           "creative_contest": "创意比赛"
         }
       },
-      "funding": {
-        "title": "你打算如何支付学费？",
-        "options": {
-          "free": "只考虑免学费名额",
-          "paid": "收费名额",
-          "both": "都可以考虑"
-        }
-      },
       "budget": {
         "title": "你的年度预算",
-        "hint": "每年的学费和生活费，使用同一种货币。"
+        "hint": "大致范围，以美元或欧元计。匹配时使用范围的上限。"
       },
       "scholarship": {
         "title": "你需要奖学金吗？",
@@ -793,13 +781,6 @@
           "yes": "是的，需要",
           "no": "不需要",
           "maybe": "有的话更好"
-        }
-      },
-      "loan": {
-        "title": "你会考虑教育贷款吗？",
-        "options": {
-          "yes": "会",
-          "no": "不会"
         }
       },
       "rating": {
@@ -815,14 +796,6 @@
         "options": {
           "public": "公立",
           "private": "私立",
-          "any": "不重要"
-        }
-      },
-      "size": {
-        "title": "大型还是小型院校？",
-        "options": {
-          "large": "大型",
-          "small": "小型",
           "any": "不重要"
         }
       },
@@ -850,15 +823,6 @@
           "any": "不重要"
         }
       },
-      "city_size": {
-        "title": "你喜欢什么样的城市？",
-        "options": {
-          "megapolis": "大都市",
-          "medium": "中等城市",
-          "small_student": "小型大学城",
-          "any": "不重要"
-        }
-      },
       "climate": {
         "title": "你喜欢什么气候？",
         "options": {
@@ -876,38 +840,6 @@
           "any": "不重要"
         }
       },
-      "work_during": {
-        "title": "你想在学习期间工作吗？",
-        "options": {
-          "yes": "想",
-          "no": "不想",
-          "maybe": "也许"
-        }
-      },
-      "after": {
-        "title": "学成之后的计划",
-        "options": {
-          "stay": "留在当地",
-          "return": "回国",
-          "unknown": "还没想好"
-        }
-      },
-      "family": {
-        "title": "你是否有人同行？",
-        "hint": "选答。",
-        "options": {
-          "partner": "伴侣",
-          "children": "孩子"
-        }
-      },
-      "accessibility": {
-        "title": "你需要无障碍环境吗？",
-        "options": {
-          "yes": "需要",
-          "no": "不需要",
-          "prefer_not": "不愿透露"
-        }
-      },
       "priorities": {
         "title": "请选择最重要的 3 项",
         "hint": "这决定了我们在为你的匹配排序时更看重什么。"
@@ -918,6 +850,17 @@
         "years": "你有几年工作经验？",
         "topic": "你的研究课题"
       }
+    },
+    "pages": {
+      "goal": "目标",
+      "direction": "方向",
+      "school": "中学与学院",
+      "studies": "学业与成绩",
+      "languages": "语言",
+      "extra": "成就与录取",
+      "money": "费用",
+      "institution": "院校与生活",
+      "final": "对您最重要的"
     }
   },
   "Matches": {

@@ -3,7 +3,7 @@
 //
 // Bump SURVEY_VERSION whenever a question is added, removed or changes meaning; every attempt
 // stores the version it was answered with.
-export const SURVEY_VERSION = 2;
+export const SURVEY_VERSION = 3;
 
 export type QuestionType =
   | 'single'
@@ -105,8 +105,6 @@ export const QUESTIONS: readonly Question[] = [
   { id: 'study_languages', block: 'results', type: 'studyLanguages', required: true, purpose: 'filter' },
   { id: 'olympiads', block: 'results', type: 'olympiads', required: false, purpose: 'score', max: 5,
     showIf: { q: 'level', in: ['school', 'college', 'foundation', 'bachelor'] } },
-  { id: 'achievements', block: 'results', type: 'multi', required: false, purpose: 'score',
-    options: ['projects', 'publications', 'sport', 'creative', 'volunteering'], showIf: NOT_LANG_COURSE },
   // Work experience and the research topic, together in one step (both optional, for information only).
   { id: 'research', block: 'results', type: 'research', required: false, purpose: 'info',
     showIf: { q: 'level', in: ['master', 'phd'] } },
@@ -114,21 +112,16 @@ export const QUESTIONS: readonly Question[] = [
     options: ['entrance_exams', 'interview', 'creative_contest'], showIf: NOT_LANG_COURSE },
 
   // D. Money
-  { id: 'funding', block: 'money', type: 'single', required: true, purpose: 'filter',
-    options: ['free', 'paid', 'both'] },
+  // The budget is chosen as a range in dollars or euros; "free only" replaces the former funding question (survey version 3).
   { id: 'budget', block: 'money', type: 'budget', required: true, purpose: 'filter' },
   { id: 'scholarship', block: 'money', type: 'single', required: false, purpose: 'score',
-    options: ['yes', 'no', 'maybe'], showIf: { q: 'funding', notIn: ['free'] } },
-  { id: 'loan', block: 'money', type: 'single', required: false, purpose: 'info',
-    options: ['yes', 'no'], showIf: { q: 'funding', notIn: ['free'] } },
+    options: ['yes', 'no', 'maybe'] },
 
   // E. Institution
   { id: 'rating', block: 'institution', type: 'single', required: false, purpose: 'score',
     options: ['top_world', 'top_country', 'any'], showIf: { q: 'level', in: HIGHER } },
   { id: 'ownership', block: 'institution', type: 'single', required: false, purpose: 'score',
     options: ['public', 'private', 'any'], showIf: NOT_LANG_COURSE },
-  { id: 'size', block: 'institution', type: 'single', required: false, purpose: 'score',
-    options: ['large', 'small', 'any'], showIf: NOT_LANG_COURSE },
   { id: 'strategy', block: 'institution', type: 'single', required: true, purpose: 'score',
     options: ['safe', 'balanced', 'ambitious'], showIf: NOT_LANG_COURSE },
   { id: 'extras', block: 'institution', type: 'multi', required: false, purpose: 'score',
@@ -137,23 +130,50 @@ export const QUESTIONS: readonly Question[] = [
     options: ['yes', 'no', 'any'], showIf: NOT_LANG_COURSE },
 
   // F. Life
-  { id: 'city_size', block: 'life', type: 'single', required: false, purpose: 'score',
-    options: ['megapolis', 'medium', 'small_student', 'any'] },
   { id: 'climate', block: 'life', type: 'single', required: false, purpose: 'score',
     options: ['warm', 'temperate', 'cold', 'any'] },
   { id: 'dorm', block: 'life', type: 'single', required: true, purpose: 'score', options: ['yes', 'no', 'any'] },
-  { id: 'work_during', block: 'life', type: 'single', required: false, purpose: 'score',
-    options: ['yes', 'no', 'maybe'], showIf: { q: 'level', notIn: ['school', 'language_course'] } },
-  { id: 'after', block: 'life', type: 'single', required: false, purpose: 'score',
-    options: ['stay', 'return', 'unknown'], showIf: { q: 'level', in: ['college', 'bachelor', 'master', 'phd'] } },
-  { id: 'family', block: 'life', type: 'multi', required: false, purpose: 'info',
-    options: ['partner', 'children'], showIf: { q: 'level', in: ['bachelor', 'master', 'phd'] } },
-  { id: 'accessibility', block: 'life', type: 'single', required: false, purpose: 'info',
-    options: ['yes', 'no', 'prefer_not'] },
 
   // I. Final
   { id: 'priorities', block: 'final', type: 'priorities', required: true, purpose: 'score' },
 ];
+
+/**
+ * The survey is shown page by page: each page holds the questions of one topic (only the ones shown to this person).
+ * Every question is on exactly one page, and the pages keep the order of QUESTIONS (checked by a test).
+ */
+export interface Page {
+  id: string;
+  questions: readonly string[];
+}
+export const PAGES: readonly Page[] = [
+  { id: 'goal', questions: ['level', 'situation', 'start', 'format'] },
+  { id: 'direction', questions: ['field_certainty', 'fields', 'riasec'] },
+  { id: 'school', questions: ['school_profile', 'school_grade', 'school_program', 'school_boarding', 'school_coed', 'profession', 'college_to_uni'] },
+  { id: 'studies', questions: ['education', 'diploma_field', 'grade', 'subjects', 'exams'] },
+  { id: 'languages', questions: ['languages', 'study_languages'] },
+  { id: 'extra', questions: ['olympiads', 'research', 'entrance'] },
+  { id: 'money', questions: ['budget', 'scholarship'] },
+  { id: 'institution', questions: ['rating', 'ownership', 'strategy', 'extras', 'recognition', 'climate', 'dorm'] },
+  { id: 'final', questions: ['priorities'] },
+];
+
+/** Budget ranges per year (question "budget"), in dollars or euros. `max` is what the matching uses; null = no limit. */
+export const BUDGET_CURRENCIES = ['USD', 'EUR'] as const;
+export const TUITION_BANDS = [
+  { id: 'free', min: 0, max: 0 },
+  { id: 'to5', min: 0, max: 5000 },
+  { id: 'to10', min: 5000, max: 10000 },
+  { id: 'to20', min: 10000, max: 20000 },
+  { id: 'to30', min: 20000, max: 30000 },
+  { id: 'over30', min: 30000, max: null },
+] as const;
+export const LIVING_BANDS = [
+  { id: 'to5', min: 0, max: 5000 },
+  { id: 'to10', min: 5000, max: 10000 },
+  { id: 'to15', min: 10000, max: 15000 },
+  { id: 'over15', min: 15000, max: null },
+] as const;
 
 /** The six things a person can mark as most important (question "priorities"). */
 export const PRIORITY_OPTIONS = ['price', 'prestige', 'location', 'chances', 'field', 'career'] as const;

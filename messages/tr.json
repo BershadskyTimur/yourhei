@@ -504,13 +504,10 @@
     "ui": {
       "loading": "Yükleniyor…",
       "loadFailed": "Anket yüklenemedi. Lütfen sayfayı yenile veya daha sonra tekrar dene.",
-      "questionOf": "Soru {current} / {total}",
       "requiredLeft": "{count, plural, one {# zorunlu soru kaldı} other {# zorunlu soru kaldı}}",
       "optional": "İsteğe bağlı",
       "back": "Geri",
       "next": "İleri",
-      "skip": "Atla",
-      "skipAll": "Tüm isteğe bağlı soruları atla",
       "finish": "Bitir",
       "saving": "Kaydediliyor…",
       "saveFailed": "Yanıtın kaydedilemedi. Bağlantını kontrol edip tekrar dene.",
@@ -526,7 +523,8 @@
       "moveDown": "Aşağı taşı",
       "counter": "{count} seçenekten {chosen} tanesi seçildi",
       "range": "{min} ile {max} arasında",
-      "popular": "Popüler alanlar"
+      "popular": "Popüler alanlar",
+      "pageOf": "Adım {current} / {total}"
     },
     "errors": {
       "required": "Lütfen bu soruyu yanıtla",
@@ -588,7 +586,15 @@
     "budget": {
       "currency": "Para birimi",
       "tuition": "Yıllık eğitim ücreti",
-      "living": "Yıllık yaşam giderleri"
+      "living": "Yıllık yaşam giderleri",
+      "free": "Yalnızca ücretsiz",
+      "upTo": "{max} kadar",
+      "between": "{min} – {max}",
+      "moreThan": "{min} üzeri",
+      "currencies": {
+        "USD": "Dolar (USD)",
+        "EUR": "Euro (EUR)"
+      }
     },
     "olympiads": {
       "subject": "Ders",
@@ -757,16 +763,6 @@
         "title": "Olimpiyatlar ve yarışmalar",
         "hint": "Ders, düzey ve aldığın derece."
       },
-      "achievements": {
-        "title": "Başarıların",
-        "options": {
-          "projects": "Projeler",
-          "publications": "Yayınlar",
-          "sport": "Spor",
-          "creative": "Yaratıcı portfolyo",
-          "volunteering": "Gönüllülük"
-        }
-      },
       "entrance": {
         "title": "Neye hazırsın?",
         "options": {
@@ -775,17 +771,9 @@
           "creative_contest": "Yaratıcı yarışma"
         }
       },
-      "funding": {
-        "title": "Eğitimini nasıl finanse etmeyi planlıyorsun?",
-        "options": {
-          "free": "Yalnızca ücretsiz (eğitim ücretsiz) kontenjanlar",
-          "paid": "Ücretli kontenjanlar",
-          "both": "İkisi de"
-        }
-      },
       "budget": {
         "title": "Yıllık bütçen",
-        "hint": "Yıllık eğitim ücreti ve yaşam giderleri, tek bir para biriminde."
+        "hint": "Yaklaşık olarak, dolar veya euro cinsinden. Eşleştirme aralığın üst sınırını kullanır."
       },
       "scholarship": {
         "title": "Burs ihtiyacın var mı?",
@@ -793,13 +781,6 @@
           "yes": "Evet, ihtiyacım var",
           "no": "Hayır",
           "maybe": "Yardımcı olurdu"
-        }
-      },
-      "loan": {
-        "title": "Eğitim kredisini düşünür müsün?",
-        "options": {
-          "yes": "Evet",
-          "no": "Hayır"
         }
       },
       "rating": {
@@ -815,14 +796,6 @@
         "options": {
           "public": "Devlet",
           "private": "Özel",
-          "any": "Önemli değil"
-        }
-      },
-      "size": {
-        "title": "Büyük mü, küçük kurum mu?",
-        "options": {
-          "large": "Büyük",
-          "small": "Küçük",
           "any": "Önemli değil"
         }
       },
@@ -850,15 +823,6 @@
           "any": "Önemli değil"
         }
       },
-      "city_size": {
-        "title": "Nasıl bir şehir tercih edersin?",
-        "options": {
-          "megapolis": "Büyük bir metropol",
-          "medium": "Orta büyüklükte bir şehir",
-          "small_student": "Küçük bir öğrenci kasabası",
-          "any": "Önemli değil"
-        }
-      },
       "climate": {
         "title": "Hangi iklimi tercih edersin?",
         "options": {
@@ -876,38 +840,6 @@
           "any": "Önemli değil"
         }
       },
-      "work_during": {
-        "title": "Okurken çalışmak ister misin?",
-        "options": {
-          "yes": "Evet",
-          "no": "Hayır",
-          "maybe": "Belki"
-        }
-      },
-      "after": {
-        "title": "Okulu bitirdikten sonraki planların",
-        "options": {
-          "stay": "Ülkede kalmak",
-          "return": "Eve dönmek",
-          "unknown": "Henüz emin değilim"
-        }
-      },
-      "family": {
-        "title": "Biriyle birlikte mi gidiyorsun?",
-        "hint": "İsteğe bağlı.",
-        "options": {
-          "partner": "Eşimle",
-          "children": "Çocuklarımla"
-        }
-      },
-      "accessibility": {
-        "title": "Erişilebilir bir ortama ihtiyacın var mı?",
-        "options": {
-          "yes": "Evet",
-          "no": "Hayır",
-          "prefer_not": "Söylememeyi tercih ederim"
-        }
-      },
       "priorities": {
         "title": "En önemli 3 şeyi seç",
         "hint": "Bu, eşleşmelerini sıralarken en çok neyin sayılacağını belirler."
@@ -918,6 +850,17 @@
         "years": "Kaç yıl çalıştın?",
         "topic": "Araştırma konun"
       }
+    },
+    "pages": {
+      "goal": "Hedefiniz",
+      "direction": "Alan",
+      "school": "Okul ve kolej",
+      "studies": "Eğitim ve notlar",
+      "languages": "Diller",
+      "extra": "Başarılar ve kabul",
+      "money": "Para",
+      "institution": "Kurum ve yaşam",
+      "final": "Sizin için en önemlisi"
     }
   },
   "Matches": {

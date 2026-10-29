@@ -1,15 +1,18 @@
 import { describe, expect, it } from 'vitest';
-import { QUESTIONS, QUESTION_BY_ID, SURVEY_VERSION } from './config';
+import { PAGES, QUESTIONS, QUESTION_BY_ID, SURVEY_VERSION } from './config';
 import {
   chosenFields,
+  firstOpenPage,
   intakeOptions,
   isComplete,
   nextQuestion,
+  pageAfter,
+  pageErrors,
   progress,
   pruneAnswers,
-  skipAllOptional,
-  stepAfter,
+  submitPage,
   validateAnswer,
+  visiblePages,
   visibleQuestions,
   type Answers,
 } from './engine';
@@ -28,8 +31,7 @@ const bachelor = (): Answers => ({
   grade: { system: 'five', value: 4.5 },
   languages: [{ lang: 'en', level: 'b2' }],
   study_languages: { languages: ['en'], prepYear: false },
-  funding: 'both',
-  budget: { currency: 'EUR', tuition: 5000, living: 8000 },
+  budget: { currency: 'EUR', tuition: 'to5', living: 'to10' },
   strategy: 'balanced',
   dorm: 'yes',
   priorities: ['price', 'field', 'chances'],
@@ -53,16 +55,24 @@ describe('config', () => {
   it('choice questions have options', () => {
     for (const q of QUESTIONS) if (q.type === 'single' || q.type === 'multi') expect(q.options?.length).toBeGreaterThan(1);
   });
+  it('every question is on exactly one page, and the pages keep the order of the questions', () => {
+    expect(PAGES.flatMap((p) => p.questions)).toEqual(QUESTIONS.map((q) => q.id));
+  });
+  it('the questions removed in version 3 are gone', () => {
+    for (const id of ['achievements', 'funding', 'loan', 'size', 'city_size', 'work_during', 'after', 'family', 'accessibility']) {
+      expect(QUESTION_BY_ID.has(id), id).toBe(false);
+    }
+  });
 });
 
 describe('adaptive questions', () => {
   it('starts with the general questions only', () => {
-    expect(ids({})).toEqual(['level', 'start', 'format', 'languages', 'study_languages', 'funding', 'budget', 'city_size', 'climate', 'dorm', 'accessibility', 'priorities']);
+    expect(ids({})).toEqual(['level', 'start', 'format', 'languages', 'study_languages', 'budget', 'scholarship', 'climate', 'dorm', 'priorities']);
   });
 
-  it('a bachelor applicant gets 14 required questions', () => {
+  it('a bachelor applicant gets 13 required questions', () => {
     const a = bachelor();
-    expect(required(a)).toHaveLength(14);
+    expect(required(a)).toHaveLength(13);
     expect(ids(a)).toContain('situation');
     expect(ids(a)).toContain('extras');
     expect(ids(a)).not.toContain('school_profile');
@@ -75,7 +85,7 @@ describe('adaptive questions', () => {
     expect(ids(a)).toEqual(expect.arrayContaining(['school_profile', 'school_grade', 'school_program']));
     expect(ids(a)).not.toContain('field_certainty');
     expect(ids(a)).not.toContain('situation');
-    expect(required(a)).toHaveLength(15);
+    expect(required(a)).toHaveLength(14);
   });
 
   it('a college applicant gets the college questions', () => {
@@ -85,7 +95,7 @@ describe('adaptive questions', () => {
 
   it('language courses skip education, grades, specialties and institution questions', () => {
     const a: Answers = { level: 'language_course' };
-    expect(required(a)).toEqual(['level', 'start', 'format', 'languages', 'study_languages', 'funding', 'budget', 'dorm', 'priorities']);
+    expect(required(a)).toEqual(['level', 'start', 'format', 'languages', 'study_languages', 'budget', 'dorm', 'priorities']);
     expect(ids(a)).not.toContain('education');
     expect(ids(a)).not.toContain('strategy');
   });
@@ -125,18 +135,16 @@ describe('adaptive questions', () => {
     expect(ids(a)).not.toContain('fields');
   });
 
-  it('free education removes the money follow-ups', () => {
-    const paid = ids({ ...bachelor(), funding: 'paid' });
-    const free = ids({ ...bachelor(), funding: 'free' });
-    expect(paid).toEqual(expect.arrayContaining(['scholarship', 'loan']));
-    expect(free).not.toContain('scholarship');
-    expect(free).not.toContain('loan');
+  it('the scholarship question is asked whatever the budget', () => {
+    expect(ids({ ...bachelor(), budget: { currency: 'USD', tuition: 'free', living: 'to5' } })).toContain('scholarship');
+    expect(ids(bachelor())).toContain('scholarship');
   });
 
   it('a typical path stays within the promised size', () => {
     const a = bachelor();
-    expect(required(a).length).toBeLessThanOrEqual(20);
-    expect(ids(a).length).toBeLessThanOrEqual(34);
+    expect(required(a).length).toBeLessThanOrEqual(15);
+    expect(ids(a).length).toBeLessThanOrEqual(26);
+    expect(visiblePages(a).length).toBeLessThanOrEqual(8);
   });
 });
 
@@ -155,46 +163,65 @@ describe('progress and completion', () => {
     const a = bachelor();
     delete a.priorities;
     expect(isComplete(a, today)).toBe(false);
-    expect(nextQuestion(skipAllOptional(a, today), today)!.id).toBe('priorities');
   });
 
   it('counts done and required-left', () => {
     const p = progress(bachelor(), today);
     expect(p.requiredLeft).toBe(0);
-    expect(p.done).toBe(14);
-    expect(p.total).toBeGreaterThan(14);
-  });
-
-  it('"skip all optional" finishes the optional part in one step', () => {
-    const skipped = skipAllOptional(bachelor(), today);
-    expect(nextQuestion(skipped, today)).toBeNull();
-    expect(progress(skipped, today).done).toBe(progress(skipped, today).total);
-  });
-
-  it('a required question cannot be skipped', () => {
-    const a: Answers = { ...bachelor(), _skipped: ['priorities'] };
-    delete a.priorities;
-    expect(isComplete(a, today)).toBe(false);
-    expect(nextQuestion(skipAllOptional(a, today), today)!.id).toBe('priorities');
+    expect(p.done).toBe(13);
+    expect(p.total).toBeGreaterThan(13);
   });
 });
-describe('what happens after an answer (the Finish button)', () => {
-  it('on the last question "Finish" finishes, even if an optional question earlier was left open', () => {
-    const a = bachelor(); // every required answer is there; the optional questions were neither answered nor skipped
-    expect(nextQuestion(a, today)?.id).not.toBeNull();
-    expect(stepAfter(a, 'priorities', 'step', today)).toEqual({ kind: 'finish' });
+
+describe('pages', () => {
+  const page = (a: Answers, id: string) => visiblePages(a).find((p) => p.id === id)!;
+
+  it('a bachelor sees the topic pages, without the school page', () => {
+    expect(visiblePages(bachelor()).map((p) => p.id)).toEqual(['goal', 'direction', 'studies', 'languages', 'extra', 'money', 'institution', 'final']);
+    expect(page(bachelor(), 'goal').questions.map((q) => q.id)).toEqual(['level', 'situation', 'start', 'format']);
   });
-  it('in the middle it moves to the next open question, and "skip all" goes to the first required one still open', () => {
-    const a = bachelor();
-    const open = { ...a };
-    delete open.dorm;
-    expect(stepAfter(open, 'strategy', 'step', today)).toEqual({ kind: 'go', id: 'extras' }); // the next one in order, optional too
-    expect(stepAfter(skipAllOptional(open, today), 'level', 'forward', today)).toEqual({ kind: 'go', id: 'dorm' });
+
+  it('a page shows only the questions shown to this person, and changes with the answers on it', () => {
+    expect(page({ level: 'bachelor' }, 'goal').questions.map((q) => q.id)).toContain('situation');
+    expect(page({ level: 'master' }, 'goal').questions.map((q) => q.id)).not.toContain('situation');
+    expect(page({ level: 'bachelor', field_certainty: 'unknown' }, 'direction').questions.map((q) => q.id)).toEqual(['field_certainty', 'riasec']);
   });
-  it('a required answer missing: the last question does not finish but goes back to it', () => {
+
+  it('a page with a required answer missing has an error for that question only; empty optional ones are fine', () => {
+    const a: Answers = { level: 'bachelor', start: '2027-09' };
+    expect(pageErrors(page(a, 'goal'), a, today)).toEqual({ format: 'required' });
+    expect(pageErrors(page(bachelor(), 'goal'), bachelor(), today)).toEqual({});
+  });
+
+  it('an optional answer that is given must still be valid', () => {
+    const a: Answers = { ...bachelor(), situation: 'nonsense' };
+    expect(pageErrors(page(a, 'goal'), a, today)).toEqual({ situation: 'invalid' });
+  });
+
+  it('sending a page marks its empty optional questions as skipped, and an answered one as no longer skipped', () => {
+    const sent = submitPage(page(bachelor(), 'goal'), bachelor());
+    expect(sent._skipped).toEqual(['situation']);
+    const again = submitPage(page(sent, 'goal'), { ...sent, situation: 'first' });
+    expect(again._skipped).toBeUndefined();
+    expect(again.situation).toBe('first');
+  });
+
+  it('"Next" goes to the following page; the last page finishes when nothing required is missing', () => {
+    expect(pageAfter(bachelor(), 'goal', today)).toEqual({ kind: 'go', id: 'direction' });
+    expect(pageAfter(bachelor(), 'final', today)).toEqual({ kind: 'finish' });
+  });
+
+  it('on the last page with a required answer missing elsewhere it goes back to that page', () => {
     const open = { ...bachelor() };
     delete open.grade;
-    expect(stepAfter(open, 'priorities', 'step', today)).toEqual({ kind: 'go', id: 'grade' });
+    expect(pageAfter(open, 'final', today)).toEqual({ kind: 'go', id: 'studies' });
+  });
+
+  it('a continued survey opens on the page of the first open question', () => {
+    expect(firstOpenPage({}, today)).toBe('goal');
+    const a: Answers = { ...bachelor(), _skipped: ['situation', 'subjects', 'exams', 'olympiads', 'entrance', 'scholarship', 'rating', 'ownership', 'extras', 'recognition', 'climate'] };
+    delete a.languages;
+    expect(firstOpenPage(a, today)).toBe('languages');
   });
 });
 
@@ -221,9 +248,9 @@ describe('validateAnswer', () => {
     expect(validateAnswer(q('level'), 'bachelor', {})).toBeNull();
     expect(validateAnswer(q('level'), 'phd2', {})).toBe('invalid');
     expect(validateAnswer(q('level'), '', {})).toBe('required');
-    expect(validateAnswer(q('achievements'), ['sport', 'projects'], {})).toBeNull();
-    expect(validateAnswer(q('achievements'), ['sport', 'sport'], {})).toBe('invalid');
-    expect(validateAnswer(q('achievements'), ['nonsense'], {})).toBe('invalid');
+    expect(validateAnswer(q('entrance'), ['interview', 'entrance_exams'], {})).toBeNull();
+    expect(validateAnswer(q('entrance'), ['interview', 'interview'], {})).toBe('invalid');
+    expect(validateAnswer(q('entrance'), ['nonsense'], {})).toBe('invalid');
   });
 
   it('numbers respect their range', () => {
@@ -282,13 +309,14 @@ describe('validateAnswer', () => {
     expect(validateAnswer(q('study_languages'), { languages: ['en'] }, {})).toBe('invalid');
   });
 
-  it('budget needs living costs, and tuition unless education must be free', () => {
-    const paid: Answers = { funding: 'paid' };
-    expect(validateAnswer(q('budget'), { currency: 'EUR', tuition: 5000, living: 7000 }, paid)).toBeNull();
-    expect(validateAnswer(q('budget'), { currency: 'EUR', tuition: null, living: 7000 }, paid)).toBe('invalid');
-    expect(validateAnswer(q('budget'), { currency: 'EUR', tuition: null, living: 7000 }, { funding: 'free' })).toBeNull();
-    expect(validateAnswer(q('budget'), { currency: 'XXX', tuition: 1, living: 1 }, paid)).toBe('invalid');
-    expect(validateAnswer(q('budget'), { currency: 'EUR', tuition: -5, living: 1 }, paid)).toBe('invalid');
+  it('budget: dollars or euros and a range for tuition and for living', () => {
+    expect(validateAnswer(q('budget'), { currency: 'EUR', tuition: 'to10', living: 'to5' }, {})).toBeNull();
+    expect(validateAnswer(q('budget'), { currency: 'USD', tuition: 'free', living: 'over15' }, {})).toBeNull();
+    expect(validateAnswer(q('budget'), { currency: 'EUR', tuition: 'to10' }, {})).toBe('required');
+    expect(validateAnswer(q('budget'), { currency: 'GEL', tuition: 'to10', living: 'to5' }, {})).toBe('invalid');
+    expect(validateAnswer(q('budget'), { currency: 'EUR', tuition: 'to7', living: 'to5' }, {})).toBe('invalid');
+    // the numbers of an older survey are asked again as ranges
+    expect(validateAnswer(q('budget'), { currency: 'EUR', tuition: 5000, living: 7000 }, {})).toBe('invalid');
   });
 
   it('priorities: exactly three different ones', () => {

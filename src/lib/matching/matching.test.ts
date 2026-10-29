@@ -1,11 +1,11 @@
 import { describe, expect, it } from 'vitest';
 import { academicFit, academicScore } from './academic';
 import { convert, pickTuition, yearlyAmount } from './currency';
-import { GROUP_LIMITS, groupFor, matchPrograms } from './engine';
+import { GROUP_LIMITS, groupFor, matchPrograms, pickGroup } from './engine';
 import { failedFilter, usableLanguages } from './filters';
 import { buildMatchInput } from './input';
 import { BASE_WEIGHTS, fieldMatch, marginScore, scoreProgram, weightsFor } from './scoring';
-import type { MatchContext, MatchInput, MatchInstitution, MatchProgram } from './types';
+import type { MatchContext, MatchInput, MatchInstitution, MatchProgram, MatchResult } from './types';
 
 const rates = { USD: 1, EUR: 0.92, GEL: 2.7, KZT: 480 };
 const ctx: MatchContext = {
@@ -396,6 +396,50 @@ describe('groups and results', () => {
     expect(m.safe.filter((r) => r.program.institution.id === 'i1')).toHaveLength(2);
   });
 
+  // One country with many equally good programmes must not fill the whole list (Czechia, October 2026).
+  const cheapIn = (country: string, n: number, score = 0) =>
+    Array.from({ length: n }, (_, i) =>
+      program({
+        id: `${country}${i}`,
+        institution: institution({ id: `${country}-i${i}`, country }),
+        tuition: [{ amount: 1000 + score, currency: 'GEL', period: 'year', appliesTo: 'international' }],
+      }),
+    );
+
+  it('shows at most three programmes of one country in a group when no single country was chosen', () => {
+    const m = matchPrograms([...cheapIn('GE', 12), ...cheapIn('KZ', 4, 6000), ...cheapIn('AM', 4, 6000), ...cheapIn('TR', 4, 6000)], input({ fields: [] }), ctx);
+    const countries = m.suitable.map((r) => r.program.institution.country);
+    expect(countries.filter((c) => c === 'GE')).toHaveLength(3);
+    expect(new Set(countries)).toEqual(new Set(['GE', 'KZ', 'AM', 'TR']));
+    expect(m.suitable).toHaveLength(GROUP_LIMITS.balanced.suitable);
+  });
+
+  it('fills the group with the best held-back programmes when other countries have too few', () => {
+    const m = matchPrograms([...cheapIn('GE', 12), ...cheapIn('KZ', 1, 6000)], input({ fields: [] }), ctx);
+    expect(m.suitable).toHaveLength(GROUP_LIMITS.balanced.suitable);
+    expect(m.suitable.filter((r) => r.program.institution.country === 'KZ')).toHaveLength(1);
+  });
+
+  it('does not limit the countries when the person chose exactly one', () => {
+    const m = matchPrograms([...cheapIn('GE', 12), ...cheapIn('KZ', 4, 6000)], input({ fields: [], countries: ['GE'] }), ctx);
+    expect(m.suitable.every((r) => r.program.institution.country === 'GE')).toBe(true);
+    expect(m.suitable).toHaveLength(GROUP_LIMITS.balanced.suitable);
+  });
+
+  it('on an equal score the programme with more checked data comes first', () => {
+    const result = (id: string, known: number): MatchResult => ({
+      program: program({ id, institution: institution({ id: `i-${id}` }) }),
+      score: 70,
+      group: 'suitable',
+      components: (['field', 'budget', 'academic'] as const).map((c, i) => ({ id: c, score: i < known ? 70 : null, weight: 10 })),
+      missing: [],
+      why: [],
+      gaps: [],
+      tuitionShown: null,
+    });
+    expect(pickGroup([result('a-less', 1), result('z-more', 3)], 5, true).map((r) => r.program.id)).toEqual(['z-more', 'a-less']);
+  });
+
   it('counts how many programmes each rule removed', () => {
     const m = matchPrograms(
       [
@@ -450,6 +494,19 @@ describe('buildMatchInput', () => {
     expect(i.strategy).toBe('balanced');
     expect(i.grade).toBeNull();
     expect(i.budget).toBeNull();
+  });
+
+  it('a budget range becomes its upper end; "free only" is the free filter; "more than" has no limit', () => {
+    const empty = { residence: null, citizenships: [], countries: [], types: [] };
+    expect(buildMatchInput({ budget: { currency: 'EUR', tuition: 'to10', living: 'to5' } }, empty).budget).toEqual({ currency: 'EUR', tuition: 10000, living: 5000 });
+    const free = buildMatchInput({ budget: { currency: 'USD', tuition: 'free', living: 'over15' } }, empty);
+    expect(free.funding).toBe('free');
+    expect(free.budget).toEqual({ currency: 'USD', tuition: 0, living: null });
+    expect(buildMatchInput({ budget: { currency: 'USD', tuition: 'over30', living: 'to15' } }, empty).budget?.tuition).toBeNull();
+    // an older survey: numbers and a separate funding answer
+    const old = buildMatchInput({ funding: 'free', budget: { currency: 'GEL', tuition: 4000, living: 9000 } }, empty);
+    expect(old.funding).toBe('free');
+    expect(old.budget).toEqual({ currency: 'GEL', tuition: 4000, living: 9000 });
   });
 
   it('takes the specialties accepted after the interests test', () => {

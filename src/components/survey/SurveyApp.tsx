@@ -4,14 +4,13 @@ import { useLocale, useTranslations } from 'next-intl';
 import { useEffect, useRef, useState } from 'react';
 import { Link, useRouter } from '@/i18n/navigation';
 import {
-  isDone,
-  nextQuestion,
+  firstOpenPage,
+  pageAfter,
+  pageErrors,
   progress,
   pruneAnswers,
-  skipAllOptional,
-  stepAfter,
-  validateAnswer,
-  visibleQuestions,
+  submitPage,
+  visiblePages,
   type Answers,
 } from '@/lib/survey/engine';
 import {
@@ -32,9 +31,6 @@ type View =
   | { kind: 'hub'; attempts: Attempt[] }
   | { kind: 'run'; attempt: Attempt }
   | { kind: 'done' };
-
-const isEmptyValue = (v: unknown): boolean =>
-  v === undefined || v === null || v === '' || (Array.isArray(v) && v.length === 0);
 
 export function SurveyApp() {
   const t = useTranslations('Survey');
@@ -182,26 +178,27 @@ function Runner({ attempt, onDone, onExit }: { attempt: Attempt; onDone: () => v
   const t = useTranslations('Survey');
   const tUi = useTranslations('Survey.ui');
   const [answers, setAnswers] = useState<Answers>(attempt.answers ?? {});
-  const [qid, setQid] = useState<string>(() => nextQuestion(attempt.answers ?? {})?.id ?? visibleQuestions({}).at(0)!.id);
-  const [errorCode, setErrorCode] = useState<string | null>(null);
+  const [pageId, setPageId] = useState<string>(() => firstOpenPage(attempt.answers ?? {}));
+  const [errors, setErrors] = useState<Record<string, string>>({});
   const [saveError, setSaveError] = useState(false);
   const [busy, setBusy] = useState(false);
   const titleRef = useRef<HTMLHeadingElement>(null);
 
-  const shown = visibleQuestions(answers);
-  const index = Math.max(0, shown.findIndex((q) => q.id === qid));
-  const q = shown[index];
+  // The questions of one topic share a screen; which ones are shown changes as the answers change (for example the level).
+  const pages = visiblePages(answers);
+  const index = Math.max(0, pages.findIndex((p) => p.id === pageId));
+  const page = pages[index];
   const stats = progress(answers);
-  const percent = Math.round((stats.done / Math.max(1, stats.total)) * 100);
-  const value = answers[q.id];
+  const percent = Math.round(((index + 1) / Math.max(1, pages.length)) * 100);
+  const isLast = index === pages.length - 1;
 
   const go = (id: string) => {
-    setQid(id);
-    setErrorCode(null);
+    setPageId(id);
+    setErrors({});
   };
 
-  // A new question starts at its title. The page is as long as the old question was, so without this a phone stays at the
-  // bottom ("Next" was pressed there) and shows the end of the new question. Not on the first screen (no jump on opening).
+  // A new page starts at its title. The screen is as long as the old page was, so without this a phone stays at the
+  // bottom ("Next" was pressed there) and shows the end of the new page. Not on the first screen (no jump on opening).
   const opened = useRef(false);
   useEffect(() => {
     if (!opened.current) {
@@ -211,7 +208,7 @@ function Runner({ attempt, onDone, onExit }: { attempt: Attempt; onDone: () => v
     const title = titleRef.current;
     if (!title) return;
     title.focus({ preventScroll: true });
-    // Android moves the page while the new question is drawn and the browser bar slides in or out, so the position is set
+    // Android moves the page while the new one is drawn and the browser bar slides in or out, so the position is set
     // again a few times until the layout has settled.
     const toTitle = () => titleRef.current?.scrollIntoView({ block: 'start' });
     toTitle();
@@ -221,16 +218,23 @@ function Runner({ attempt, onDone, onExit }: { attempt: Attempt; onDone: () => v
       cancelAnimationFrame(frame);
       timers.forEach(clearTimeout);
     };
-  }, [qid]);
+  }, [pageId]);
 
-  /** Saves, then moves on (or finishes when nothing is left). */
-  const commit = async (next: Answers, mode: 'step' | 'forward' = 'step') => {
+  /** Checks the page, saves, then moves on (or finishes when it was the last page and nothing is missing). */
+  const onNext = async () => {
+    const found = pageErrors(page, answers);
+    if (Object.keys(found).length > 0) {
+      setErrors(found);
+      document.getElementById(`q-${Object.keys(found)[0]}-title`)?.scrollIntoView({ block: 'start' });
+      return;
+    }
     const supabase = getSupabaseBrowser();
     if (!supabase) return;
+    const next = submitPage(page, answers);
     setBusy(true);
     setSaveError(false);
     try {
-      const step = stepAfter(next, q.id, mode);
+      const step = pageAfter(next, page.id);
       if (step.kind === 'finish') {
         const ok = await completeAttempt(supabase, attempt.id, pruneAnswers(next));
         if (!ok) throw new Error('attempt is frozen');
@@ -249,28 +253,6 @@ function Runner({ attempt, onDone, onExit }: { attempt: Attempt; onDone: () => v
     }
   };
 
-  const withoutSkip = (a: Answers): Answers => ({ ...a, _skipped: (a._skipped ?? []).filter((id) => id !== q.id) });
-
-  const onNext = async () => {
-    if (!q.required && isEmptyValue(value)) return skip(); // nothing entered: same as skipping
-    const error = validateAnswer(q, value, answers);
-    if (error) return setErrorCode(error);
-    await commit(withoutSkip(answers));
-  };
-
-  const skip = () => {
-    const rest = { ...answers };
-    delete rest[q.id];
-    return commit({ ...rest, _skipped: [...new Set([...(answers._skipped ?? []), q.id])] });
-  };
-
-  const skipAll = () => commit(skipAllOptional({ ...answers, [q.id]: value }), 'forward');
-
-  // "Finish" when no later question is open and nothing else required is missing.
-  const isLast =
-    shown.slice(index + 1).every((x) => isDone(x, answers)) &&
-    shown.every((x) => x.id === q.id || !x.required || isDone(x, answers));
-
   return (
     <div>
       <div className="mb-6">
@@ -280,41 +262,57 @@ function Runner({ attempt, onDone, onExit }: { attempt: Attempt; onDone: () => v
           aria-valuemin={0}
           aria-valuemax={100}
           aria-valuenow={percent}
-          aria-valuetext={tUi('questionOf', { current: index + 1, total: stats.total })}
+          aria-valuetext={tUi('pageOf', { current: index + 1, total: pages.length })}
           className="h-2 w-full overflow-hidden rounded-full bg-surface-strong"
         >
           <div className="h-full rounded-full bg-accent" style={{ width: `${percent}%` }} />
         </div>
         <p className="mt-2 flex flex-wrap justify-between gap-2 text-sm font-medium text-muted">
-          <span>{tUi('questionOf', { current: index + 1, total: stats.total })}</span>
+          <span>{tUi('pageOf', { current: index + 1, total: pages.length })}</span>
           <span>{tUi('requiredLeft', { count: stats.requiredLeft })}</span>
         </p>
       </div>
 
-      <h2 id="question-title" ref={titleRef} tabIndex={-1} className="scroll-mt-24 text-2xl font-semibold text-text outline-none">
-        {t(`q.${q.id}.title` as never)}
+      <h2 id="page-title" ref={titleRef} tabIndex={-1} className="scroll-mt-24 text-2xl font-semibold text-text outline-none">
+        {t(`pages.${page.id}` as never)}
       </h2>
-      {!q.required && <p className="mt-1 text-sm font-medium text-muted">{tUi('optional')}</p>}
-      {t.has(`q.${q.id}.hint` as never) && <p className="mt-2 text-muted">{t(`q.${q.id}.hint` as never)}</p>}
 
-      <div className="mt-6">
-        <QuestionView
-          key={q.id}
-          q={q}
-          value={value}
-          answers={answers}
-          onChange={(v) => {
-            setAnswers((a) => ({ ...a, [q.id]: v }));
-            setErrorCode(null);
-          }}
-        />
+      <div className="mt-6 space-y-8">
+        {page.questions.map((q) => {
+          const titleId = `q-${q.id}-title`;
+          return (
+            <section key={q.id} aria-labelledby={titleId}>
+              <h3 id={titleId} className="scroll-mt-24 text-lg font-semibold text-text">
+                {t(`q.${q.id}.title` as never)}
+              </h3>
+              {!q.required && <p className="text-sm font-medium text-muted">{tUi('optional')}</p>}
+              {t.has(`q.${q.id}.hint` as never) && <p className="mt-1 text-muted">{t(`q.${q.id}.hint` as never)}</p>}
+              <div className="mt-3">
+                <QuestionView
+                  q={q}
+                  value={answers[q.id]}
+                  answers={answers}
+                  titleId={titleId}
+                  onChange={(v) => {
+                    setAnswers((a) => ({ ...a, [q.id]: v }));
+                    setErrors((e) => {
+                      const { [q.id]: _gone, ...rest } = e;
+                      void _gone;
+                      return rest;
+                    });
+                  }}
+                />
+              </div>
+              {errors[q.id] && (
+                <p role="alert" className="mt-2 text-sm font-medium text-danger">
+                  {t(`errors.${errors[q.id]}` as never)}
+                </p>
+              )}
+            </section>
+          );
+        })}
       </div>
 
-      {errorCode && (
-        <p role="alert" className="mt-4 font-medium text-danger">
-          {t(`errors.${errorCode}` as never)}
-        </p>
-      )}
       {saveError && (
         <p role="alert" className="mt-4 font-medium text-danger">
           {tUi('saveFailed')}
@@ -323,27 +321,14 @@ function Runner({ attempt, onDone, onExit }: { attempt: Attempt; onDone: () => v
 
       <div className="mt-8 flex flex-wrap items-center gap-3">
         {index > 0 && (
-          <button type="button" disabled={busy} onClick={() => go(shown[index - 1].id)} className={secondaryButton}>
+          <button type="button" disabled={busy} onClick={() => go(pages[index - 1].id)} className={secondaryButton}>
             {tUi('back')}
           </button>
         )}
         <button type="button" disabled={busy} onClick={onNext} className={primaryButton}>
           {busy ? tUi('saving') : isLast ? tUi('finish') : tUi('next')}
         </button>
-        {!q.required && (
-          <button type="button" disabled={busy} onClick={skip} className={secondaryButton}>
-            {tUi('skip')}
-          </button>
-        )}
       </div>
-
-      {!q.required && (
-        <p className="mt-4">
-          <button type="button" disabled={busy} onClick={skipAll} className="text-sm font-medium text-accent-text underline underline-offset-4">
-            {tUi('skipAll')}
-          </button>
-        </p>
-      )}
 
       <p className="mt-8">
         <button type="button" onClick={onExit} className="text-sm text-muted underline underline-offset-4">
