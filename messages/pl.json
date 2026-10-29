@@ -504,13 +504,10 @@
     "ui": {
       "loading": "Wczytywanie…",
       "loadFailed": "Nie udało się wczytać ankiety. Odśwież stronę lub spróbuj później.",
-      "questionOf": "Pytanie {current} z {total}",
       "requiredLeft": "{count, plural, one {Pozostało # obowiązkowe pytanie} few {Pozostały # obowiązkowe pytania} many {Pozostało # obowiązkowych pytań} other {Pozostało # obowiązkowego pytania}}",
       "optional": "Opcjonalne",
       "back": "Wstecz",
       "next": "Dalej",
-      "skip": "Pomiń",
-      "skipAll": "Pomiń wszystkie opcjonalne pytania",
       "finish": "Zakończ",
       "saving": "Zapisywanie…",
       "saveFailed": "Nie udało się zapisać odpowiedzi. Sprawdź połączenie i spróbuj ponownie.",
@@ -526,7 +523,8 @@
       "moveDown": "W dół",
       "counter": "Wybrano {chosen} z {count}",
       "range": "Od {min} do {max}",
-      "popular": "Popularne kierunki"
+      "popular": "Popularne kierunki",
+      "pageOf": "Krok {current} z {total}"
     },
     "errors": {
       "required": "Odpowiedz na to pytanie",
@@ -588,7 +586,15 @@
     "budget": {
       "currency": "Waluta",
       "tuition": "Czesne rocznie",
-      "living": "Koszty utrzymania rocznie"
+      "living": "Koszty utrzymania rocznie",
+      "free": "Tylko bezpłatnie",
+      "upTo": "Do {max}",
+      "between": "{min} – {max}",
+      "moreThan": "Ponad {min}",
+      "currencies": {
+        "USD": "Dolary (USD)",
+        "EUR": "Euro (EUR)"
+      }
     },
     "olympiads": {
       "subject": "Przedmiot",
@@ -757,16 +763,6 @@
         "title": "Olimpiady i konkursy",
         "hint": "Przedmiot, szczebel i zajęte miejsce."
       },
-      "achievements": {
-        "title": "Twoje osiągnięcia",
-        "options": {
-          "projects": "Projekty",
-          "publications": "Publikacje",
-          "sport": "Sport",
-          "creative": "Portfolio twórcze",
-          "volunteering": "Wolontariat"
-        }
-      },
       "entrance": {
         "title": "Na co jesteś gotów(-owa)?",
         "options": {
@@ -775,17 +771,9 @@
           "creative_contest": "Konkurs twórczy"
         }
       },
-      "funding": {
-        "title": "Jak planujesz opłacić studia?",
-        "options": {
-          "free": "Tylko bezpłatne miejsca (bez czesnego)",
-          "paid": "Miejsca płatne",
-          "both": "Jedne i drugie"
-        }
-      },
       "budget": {
         "title": "Twój roczny budżet",
-        "hint": "Czesne i koszty utrzymania rocznie, w jednej walucie."
+        "hint": "W przybliżeniu, w dolarach lub euro. Dobór bierze górną granicę przedziału."
       },
       "scholarship": {
         "title": "Czy potrzebujesz stypendium?",
@@ -793,13 +781,6 @@
           "yes": "Tak, potrzebuję",
           "no": "Nie",
           "maybe": "Przydałoby się"
-        }
-      },
-      "loan": {
-        "title": "Czy rozważyłbyś(-abyś) kredyt studencki?",
-        "options": {
-          "yes": "Tak",
-          "no": "Nie"
         }
       },
       "rating": {
@@ -815,14 +796,6 @@
         "options": {
           "public": "Publiczna",
           "private": "Prywatna",
-          "any": "Nieważne"
-        }
-      },
-      "size": {
-        "title": "Duża czy mała placówka?",
-        "options": {
-          "large": "Duża",
-          "small": "Mała",
           "any": "Nieważne"
         }
       },
@@ -850,15 +823,6 @@
           "any": "Nieważne"
         }
       },
-      "city_size": {
-        "title": "Jakie miasto wolisz?",
-        "options": {
-          "megapolis": "Wielka metropolia",
-          "medium": "Średnie miasto",
-          "small_student": "Małe miasto studenckie",
-          "any": "Nieważne"
-        }
-      },
       "climate": {
         "title": "Jaki klimat wolisz?",
         "options": {
@@ -876,38 +840,6 @@
           "any": "Nieważne"
         }
       },
-      "work_during": {
-        "title": "Czy chcesz pracować podczas studiów?",
-        "options": {
-          "yes": "Tak",
-          "no": "Nie",
-          "maybe": "Może"
-        }
-      },
-      "after": {
-        "title": "Twoje plany po studiach",
-        "options": {
-          "stay": "Zostać w kraju",
-          "return": "Wrócić do domu",
-          "unknown": "Jeszcze nie wiem"
-        }
-      },
-      "family": {
-        "title": "Czy podróżujesz z kimś?",
-        "hint": "Opcjonalnie.",
-        "options": {
-          "partner": "Z partnerem",
-          "children": "Z dziećmi"
-        }
-      },
-      "accessibility": {
-        "title": "Czy potrzebujesz środowiska dostępnego dla osób z niepełnosprawnościami?",
-        "options": {
-          "yes": "Tak",
-          "no": "Nie",
-          "prefer_not": "Wolę nie podawać"
-        }
-      },
       "priorities": {
         "title": "Wybierz 3 najważniejsze rzeczy",
         "hint": "To decyduje, co liczy się najbardziej przy ustalaniu kolejności Twoich dopasowań."
@@ -918,6 +850,17 @@
         "years": "Ile lat pracowałeś(-aś)?",
         "topic": "Twój temat badawczy"
       }
+    },
+    "pages": {
+      "goal": "Cel",
+      "direction": "Kierunek",
+      "school": "Szkoła i college",
+      "studies": "Nauka i oceny",
+      "languages": "Języki",
+      "extra": "Osiągnięcia i rekrutacja",
+      "money": "Pieniądze",
+      "institution": "Uczelnia i życie",
+      "final": "Co jest dla Ciebie najważniejsze"
     }
   },
   "Matches": {

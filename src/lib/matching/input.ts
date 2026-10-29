@@ -1,4 +1,5 @@
 import { normalizeExam, normalizeGrade } from '../survey/normalize';
+import { LIVING_BANDS, TUITION_BANDS } from '../survey/config';
 import { chosenFields, type Answers } from '../survey/engine';
 import type { SelfLevel } from '../survey/references';
 import type { InstitutionType } from '../institutions/types';
@@ -61,14 +62,17 @@ export function buildMatchInput(answers: Answers, profile: ProfileFacts): MatchI
 
   const study = rec(answers.study_languages);
   const budget = rec(answers.budget);
-  const money = (v: unknown) => (typeof v === 'number' && Number.isFinite(v) ? v : null);
+  // The budget is a range (survey version 3): its upper end is the limit, "more than ..." has none. An older survey saved numbers.
+  const money = (v: unknown, bands: readonly { id: string; max: number | null }[]) =>
+    typeof v === 'number' && Number.isFinite(v) ? v : (bands.find((b) => b.id === v)?.max ?? null);
+  const freeOnly = budget.tuition === 'free' || answers.funding === 'free';
 
   return {
     level,
     start: isStr(answers.start) ? answers.start : null,
     format: formatsOf(answers.format),
-    funding: oneOf(answers.funding, ['free', 'paid', 'both'] as const) ?? 'both',
-    budget: isStr(budget.currency) ? { currency: budget.currency, tuition: money(budget.tuition), living: money(budget.living) } : null,
+    funding: freeOnly ? 'free' : (oneOf(answers.funding, ['free', 'paid', 'both'] as const) ?? 'both'),
+    budget: isStr(budget.currency) ? { currency: budget.currency, tuition: money(budget.tuition, TUITION_BANDS), living: money(budget.living, LIVING_BANDS) } : null,
     countries: profile.countries,
     types: profile.types.filter((t): t is InstitutionType => ['university', 'college', 'school', 'language_school', 'foundation', 'vocational'].includes(t)),
     citizenships: profile.citizenships,

@@ -1,19 +1,22 @@
 // The survey engine: pure functions over the config (config.ts) and the answers.
 // No browser or database code here, so everything can be tested.
 import {
+  BUDGET_CURRENCIES,
   EDUCATION_BY_LEVEL,
   EDUCATION_LEVELS,
+  LIVING_BANDS,
+  PAGES,
   PRIORITIES_COUNT,
   PRIORITY_OPTIONS,
   QUESTIONS,
   QUESTION_BY_ID,
+  TUITION_BANDS,
   type Condition,
   type Question,
 } from './config';
 import { examInRange, gradeInRange } from './normalize';
 import {
   CERTIFICATES,
-  CURRENCIES,
   EXAMS,
   GRADING_SYSTEMS,
   LANGUAGE_CODES,
@@ -165,13 +168,12 @@ export function validateAnswer(q: Question, value: unknown, answers: Answers, to
         : 'invalid';
     }
     case 'budget': {
-      if (!record(value) || !isStr(value.currency) || !(CURRENCIES as readonly string[]).includes(value.currency)) {
-        return 'invalid';
-      }
-      const money = (v: unknown) => isNum(v) && v >= 0 && v <= 1e9;
-      if (!money(value.living)) return 'invalid';
-      const needsTuition = answers.funding !== 'free';
-      return needsTuition && !money(value.tuition) ? 'invalid' : null;
+      // a currency (dollars or euros) and a range for tuition and for living; an older survey's numbers are asked again
+      if (!record(value)) return 'invalid';
+      const { currency, tuition, living } = value;
+      if (currency === undefined || tuition === undefined || living === undefined) return 'required';
+      const known = isStr(currency) && (BUDGET_CURRENCIES as readonly string[]).includes(currency);
+      return known && TUITION_BANDS.some((b) => b.id === tuition) && LIVING_BANDS.some((b) => b.id === living) ? null : 'invalid';
     }
     case 'olympiads': {
       if (!Array.isArray(value)) return 'invalid';
@@ -225,22 +227,71 @@ export function isComplete(answers: Answers, today?: Date): boolean {
   return visibleQuestions(answers).every((q) => !q.required || validateAnswer(q, answers[q.id], answers, today) === null);
 }
 
+/** An answer that holds nothing: an optional question left like this counts as skipped. */
+export const isEmptyAnswer = (v: unknown): boolean => v === undefined || v === null || v === '' || (Array.isArray(v) && v.length === 0);
+
+// ------------------------------------------------------------------ pages: the questions of one topic on one screen
+export interface ShownPage {
+  id: string;
+  questions: Question[];
+}
+
+/** The pages this person sees, each with only its shown questions; a page without any is left out. */
+export function visiblePages(answers: Answers): ShownPage[] {
+  const shown = new Set(visibleQuestions(answers).map((q) => q.id));
+  return PAGES.map((p) => ({ id: p.id, questions: p.questions.filter((id) => shown.has(id)).map((id) => QUESTION_BY_ID.get(id)!) })).filter(
+    (p) => p.questions.length > 0,
+  );
+}
+
+/** The problems on one page: question id -> error code (a key of Survey.errors.*). An empty optional question is fine. */
+export function pageErrors(page: ShownPage, answers: Answers, today?: Date): Record<string, string> {
+  const errors: Record<string, string> = {};
+  for (const q of page.questions) {
+    const value = answers[q.id];
+    if (!q.required && isEmptyAnswer(value)) continue;
+    const error = validateAnswer(q, value, answers, today);
+    if (error) errors[q.id] = error;
+  }
+  return errors;
+}
+
+/** The answers once a page is sent: its empty optional questions count as skipped, the answered ones no longer do. */
+export function submitPage(page: ShownPage, answers: Answers): Answers {
+  const next: Answers = { ...answers };
+  const skipped = new Set(answers._skipped ?? []);
+  for (const q of page.questions) {
+    if (!q.required && isEmptyAnswer(answers[q.id])) {
+      delete next[q.id];
+      skipped.add(q.id);
+    } else {
+      skipped.delete(q.id);
+    }
+  }
+  delete next._skipped;
+  return skipped.size > 0 ? { ...next, _skipped: [...skipped] } : next;
+}
+
 /**
- * What the page does after an answer was saved: finish the survey, or go to another question. `current` is the
- * question just answered or skipped; 'step' = the next open question after it, 'forward' = "skip all the rest".
- * (The decision lives here, not in the page, so that every route can be tested.)
+ * What the screen does after a page was sent: the next page, or the end when it was the last one and every required
+ * answer is valid, or back to the first page with a required answer missing. (Decided here, so every route is tested.)
  */
 export type NextStep = { kind: 'finish' } | { kind: 'go'; id: string } | { kind: 'stuck' };
-export function stepAfter(next: Answers, currentId: string, mode: 'step' | 'forward' = 'step', today?: Date): NextStep {
-  const after = visibleQuestions(next);
-  const at = after.findIndex((x) => x.id === currentId);
-  const following = mode === 'step' ? (after.slice(at + 1).find((x) => !isDone(x, next, today)) ?? null) : null;
-  // Past the last question and every required answer is valid: finished. An optional question left open earlier must
-  // not hold the "Finish" button back.
-  if (!following && isComplete(next, today)) return { kind: 'finish' };
-  // Nothing open after this question but something required is missing: go to that one (not to an optional one).
-  const target = following ?? after.find((x) => x.required && !isDone(x, next, today)) ?? nextQuestion(next, today);
-  return target ? { kind: 'go', id: target.id } : { kind: 'stuck' };
+export function pageAfter(answers: Answers, pageId: string, today?: Date): NextStep {
+  const pages = visiblePages(answers);
+  const at = pages.findIndex((p) => p.id === pageId);
+  const following = at >= 0 ? pages[at + 1] : undefined;
+  if (following) return { kind: 'go', id: following.id };
+  if (isComplete(answers, today)) return { kind: 'finish' };
+  const open = pages.find((p) => p.questions.some((q) => q.required && !isDone(q, answers, today)));
+  return open ? { kind: 'go', id: open.id } : { kind: 'stuck' };
+}
+
+/** The page a continued survey opens on: the one with the first open question, or the first page. */
+export function firstOpenPage(answers: Answers, today?: Date): string {
+  const pages = visiblePages(answers);
+  const open = nextQuestion(answers, today);
+  return (open && pages.find((p) => p.questions.some((q) => q.id === open.id))?.id) ?? pages[0].id;
 }
 
 export interface Progress {
@@ -256,15 +307,6 @@ export function progress(answers: Answers, today?: Date): Progress {
     total: shown.length,
     requiredLeft: shown.filter((q) => q.required && !isDone(q, answers, today)).length,
   };
-}
-
-/** Marks every shown, still unanswered optional question as skipped ("skip all the rest"). */
-export function skipAllOptional(answers: Answers, today?: Date): Answers {
-  const skipped = new Set(answers._skipped ?? []);
-  for (const q of visibleQuestions(answers)) {
-    if (!q.required && !isDone(q, answers, today)) skipped.add(q.id);
-  }
-  return { ...answers, _skipped: [...skipped] };
 }
 
 /**

@@ -496,6 +496,19 @@ describe('buildMatchInput', () => {
     expect(i.budget).toBeNull();
   });
 
+  it('a budget range becomes its upper end; "free only" is the free filter; "more than" has no limit', () => {
+    const empty = { residence: null, citizenships: [], countries: [], types: [] };
+    expect(buildMatchInput({ budget: { currency: 'EUR', tuition: 'to10', living: 'to5' } }, empty).budget).toEqual({ currency: 'EUR', tuition: 10000, living: 5000 });
+    const free = buildMatchInput({ budget: { currency: 'USD', tuition: 'free', living: 'over15' } }, empty);
+    expect(free.funding).toBe('free');
+    expect(free.budget).toEqual({ currency: 'USD', tuition: 0, living: null });
+    expect(buildMatchInput({ budget: { currency: 'USD', tuition: 'over30', living: 'to15' } }, empty).budget?.tuition).toBeNull();
+    // an older survey: numbers and a separate funding answer
+    const old = buildMatchInput({ funding: 'free', budget: { currency: 'GEL', tuition: 4000, living: 9000 } }, empty);
+    expect(old.funding).toBe('free');
+    expect(old.budget).toEqual({ currency: 'GEL', tuition: 4000, living: 9000 });
+  });
+
   it('takes the specialties accepted after the interests test', () => {
     const i = buildMatchInput({ riasec: { answers: Array(12).fill(3), accepted: ['0533'] } }, profile);
     expect(i.fields).toEqual(['0533']);

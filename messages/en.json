@@ -504,13 +504,10 @@
     "ui": {
       "loading": "Loading…",
       "loadFailed": "Could not load the survey. Please reload the page or try again later.",
-      "questionOf": "Question {current} of {total}",
       "requiredLeft": "{count, plural, one {# required question left} other {# required questions left}}",
       "optional": "Optional",
       "back": "Back",
       "next": "Next",
-      "skip": "Skip",
-      "skipAll": "Skip all optional questions",
       "finish": "Finish",
       "saving": "Saving…",
       "saveFailed": "Could not save your answer. Check your connection and try again.",
@@ -526,7 +523,8 @@
       "moveDown": "Move down",
       "counter": "{chosen} of {count} chosen",
       "range": "From {min} to {max}",
-      "popular": "Popular directions"
+      "popular": "Popular directions",
+      "pageOf": "Step {current} of {total}"
     },
     "errors": {
       "required": "Please answer this question",
@@ -588,7 +586,15 @@
     "budget": {
       "currency": "Currency",
       "tuition": "Tuition per year",
-      "living": "Living costs per year"
+      "living": "Living costs per year",
+      "free": "Free only",
+      "upTo": "Up to {max}",
+      "between": "{min} – {max}",
+      "moreThan": "More than {min}",
+      "currencies": {
+        "USD": "Dollars (USD)",
+        "EUR": "Euros (EUR)"
+      }
     },
     "olympiads": {
       "subject": "Subject",
@@ -757,16 +763,6 @@
         "title": "Olympiads and competitions",
         "hint": "Subject, level and the place you took."
       },
-      "achievements": {
-        "title": "Your achievements",
-        "options": {
-          "projects": "Projects",
-          "publications": "Publications",
-          "sport": "Sport",
-          "creative": "Creative portfolio",
-          "volunteering": "Volunteering"
-        }
-      },
       "entrance": {
         "title": "What are you ready for?",
         "options": {
@@ -775,17 +771,9 @@
           "creative_contest": "A creative contest"
         }
       },
-      "funding": {
-        "title": "How do you plan to pay for your studies?",
-        "options": {
-          "free": "Only free (tuition-free) places",
-          "paid": "Paid places",
-          "both": "Either"
-        }
-      },
       "budget": {
         "title": "Your yearly budget",
-        "hint": "Tuition and living costs per year, in one currency."
+        "hint": "Roughly, in dollars or euros. The matching uses the upper end of the range."
       },
       "scholarship": {
         "title": "Do you need a scholarship?",
@@ -793,13 +781,6 @@
           "yes": "Yes, I need one",
           "no": "No",
           "maybe": "It would help"
-        }
-      },
-      "loan": {
-        "title": "Would you consider an education loan?",
-        "options": {
-          "yes": "Yes",
-          "no": "No"
         }
       },
       "rating": {
@@ -815,14 +796,6 @@
         "options": {
           "public": "Public",
           "private": "Private",
-          "any": "Not important"
-        }
-      },
-      "size": {
-        "title": "Large or small institution?",
-        "options": {
-          "large": "Large",
-          "small": "Small",
           "any": "Not important"
         }
       },
@@ -850,15 +823,6 @@
           "any": "Not important"
         }
       },
-      "city_size": {
-        "title": "What kind of city do you prefer?",
-        "options": {
-          "megapolis": "A big metropolis",
-          "medium": "A medium-sized city",
-          "small_student": "A small student town",
-          "any": "Not important"
-        }
-      },
       "climate": {
         "title": "Which climate do you prefer?",
         "options": {
@@ -876,38 +840,6 @@
           "any": "Not important"
         }
       },
-      "work_during": {
-        "title": "Do you want to work while studying?",
-        "options": {
-          "yes": "Yes",
-          "no": "No",
-          "maybe": "Maybe"
-        }
-      },
-      "after": {
-        "title": "Your plans after studying",
-        "options": {
-          "stay": "Stay in the country",
-          "return": "Return home",
-          "unknown": "Not sure yet"
-        }
-      },
-      "family": {
-        "title": "Are you travelling with someone?",
-        "hint": "Optional.",
-        "options": {
-          "partner": "A partner",
-          "children": "Children"
-        }
-      },
-      "accessibility": {
-        "title": "Do you need an accessible environment?",
-        "options": {
-          "yes": "Yes",
-          "no": "No",
-          "prefer_not": "Prefer not to say"
-        }
-      },
       "priorities": {
         "title": "Choose the 3 most important things",
         "hint": "This decides what counts most when we rank your matches."
@@ -918,6 +850,17 @@
         "years": "How many years have you worked?",
         "topic": "Your research topic"
       }
+    },
+    "pages": {
+      "goal": "Your goal",
+      "direction": "Direction",
+      "school": "School and college",
+      "studies": "Studies and grades",
+      "languages": "Languages",
+      "extra": "Achievements and admission",
+      "money": "Money",
+      "institution": "Institution and life",
+      "final": "What matters most"
     }
   },
   "Matches": {

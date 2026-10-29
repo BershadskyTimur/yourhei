@@ -2,12 +2,11 @@
 
 import { useLocale, useTranslations } from 'next-intl';
 import { useMemo, type ReactNode } from 'react';
-import { PRIORITIES_COUNT, PRIORITY_OPTIONS, type Question } from '@/lib/survey/config';
+import { BUDGET_CURRENCIES, LIVING_BANDS, PRIORITIES_COUNT, PRIORITY_OPTIONS, TUITION_BANDS, type Question } from '@/lib/survey/config';
 import { educationLevelsFor, intakeOptions, optionsFor, type Answers } from '@/lib/survey/engine';
 import {
   CERTIFICATES,
   COMMON_LANGUAGES,
-  CURRENCIES,
   EXAMS,
   GRADING_SYSTEMS,
   LANGUAGE_CODES,
@@ -28,6 +27,8 @@ interface Props {
   value: V;
   answers: Answers;
   onChange: (value: V) => void;
+  /** the id of the question's title (several questions share one screen) */
+  titleId: string;
 }
 
 const asRecord = (v: V): Record<string, unknown> => (typeof v === 'object' && v !== null && !Array.isArray(v) ? (v as Record<string, unknown>) : {});
@@ -121,7 +122,7 @@ function Rows<T>({
 }
 
 /** Draws the input for one question according to its type. */
-export function QuestionView({ q, value, answers, onChange }: Props) {
+export function QuestionView({ q, value, answers, onChange, titleId }: Props) {
   const t = useTranslations('Survey');
   const tUi = useTranslations('Survey.ui');
   const locale = useLocale();
@@ -135,7 +136,7 @@ export function QuestionView({ q, value, answers, onChange }: Props) {
   switch (q.type) {
     case 'single':
       return (
-        <div role="radiogroup" aria-labelledby="question-title" className="grid gap-2 sm:grid-cols-2">
+        <div role="radiogroup" aria-labelledby={titleId} className="grid gap-2 sm:grid-cols-2">
           {optionsFor(q, answers).map((o) => (
             <label key={o} className={`flex min-h-12 cursor-pointer items-center gap-3 rounded-xl border p-3 ${value === o ? 'border-accent bg-accent-soft' : 'border-line-strong bg-bg'}`}>
               <input type="radio" name={q.id} checked={value === o} onChange={() => onChange(o)} className="h-5 w-5 accent-accent" />
@@ -161,9 +162,9 @@ export function QuestionView({ q, value, answers, onChange }: Props) {
     case 'number':
       return (
         <div className="max-w-xs">
-          <label htmlFor="q-number" className="sr-only">{t(`q.${q.id}.title` as never)}</label>
+          <label htmlFor={`q-${q.id}`} className="sr-only">{t(`q.${q.id}.title` as never)}</label>
           <input
-            id="q-number"
+            id={`q-${q.id}`}
             type="number"
             inputMode="numeric"
             min={q.min}
@@ -179,15 +180,15 @@ export function QuestionView({ q, value, answers, onChange }: Props) {
     case 'text':
       return (
         <div>
-          <label htmlFor="q-text" className="sr-only">{t(`q.${q.id}.title` as never)}</label>
-          <textarea id="q-text" rows={3} maxLength={500} value={textOf(value)} onChange={(e) => onChange(e.target.value)} className={`${inputClass} !h-auto py-2`} />
+          <label htmlFor={`q-${q.id}`} className="sr-only">{t(`q.${q.id}.title` as never)}</label>
+          <textarea id={`q-${q.id}`} rows={3} maxLength={500} value={textOf(value)} onChange={(e) => onChange(e.target.value)} className={`${inputClass} !h-auto py-2`} />
         </div>
       );
 
     case 'intake': {
       const fmt = new Intl.DateTimeFormat(locale, { month: 'long', year: 'numeric' });
       return (
-        <div role="radiogroup" aria-labelledby="question-title" className="grid gap-2 sm:grid-cols-2">
+        <div role="radiogroup" aria-labelledby={titleId} className="grid gap-2 sm:grid-cols-2">
           {intakeOptions().map((o) => {
             const [y, m] = o.split('-').map(Number);
             return (
@@ -427,29 +428,35 @@ export function QuestionView({ q, value, answers, onChange }: Props) {
 
     case 'budget': {
       const v = asRecord(value);
-      const needsTuition = answers.funding !== 'free';
-      const set = (patch: Record<string, unknown>) => onChange({ currency: 'EUR', tuition: null, living: null, ...v, ...patch });
+      const currency = typeof v.currency === 'string' && (BUDGET_CURRENCIES as readonly string[]).includes(v.currency) ? v.currency : null;
+      const amount = (n: number) =>
+        currency ? new Intl.NumberFormat(locale, { style: 'currency', currency, maximumFractionDigits: 0 }).format(n) : new Intl.NumberFormat(locale).format(n);
+      const range = (b: { id: string; min: number; max: number | null }) =>
+        b.id === 'free'
+          ? t('budget.free')
+          : b.max === null
+            ? t('budget.moreThan', { min: amount(b.min) })
+            : b.min === 0
+              ? t('budget.upTo', { max: amount(b.max) })
+              : t('budget.between', { min: amount(b.min), max: amount(b.max) });
+      const choice = (part: 'currency' | 'tuition' | 'living', options: { id: string; label: string }[]) => (
+        <div role="radiogroup" aria-labelledby={`${titleId}-${part}`}>
+          <p id={`${titleId}-${part}`} className="mb-2 font-semibold">{t(`budget.${part}` as never)}</p>
+          <div className="grid gap-2 sm:grid-cols-2">
+            {options.map((o) => (
+              <label key={o.id} className={`flex min-h-12 cursor-pointer items-center gap-3 rounded-xl border p-3 ${v[part] === o.id ? 'border-accent bg-accent-soft' : 'border-line-strong bg-bg'}`}>
+                <input type="radio" name={`budget-${part}`} checked={v[part] === o.id} onChange={() => onChange({ ...v, [part]: o.id })} className="h-5 w-5 accent-accent" />
+                <span>{o.label}</span>
+              </label>
+            ))}
+          </div>
+        </div>
+      );
       return (
-        <div className="grid max-w-xl gap-4 sm:grid-cols-3">
-          <div>
-            <SmallLabel htmlFor="budget-currency">{t('budget.currency')}</SmallLabel>
-            <select id="budget-currency" value={textOf(v.currency)} onChange={(e) => set({ currency: e.target.value })} className={inputClass}>
-              <option value="">{tUi('choose')}</option>
-              {CURRENCIES.map((c) => (
-                <option key={c} value={c}>{c}</option>
-              ))}
-            </select>
-          </div>
-          {needsTuition && (
-            <div>
-              <SmallLabel htmlFor="budget-tuition">{t('budget.tuition')}</SmallLabel>
-              <input id="budget-tuition" type="number" inputMode="decimal" min={0} value={textOf(v.tuition)} onChange={(e) => set({ tuition: numberOrNull(e.target.value) })} className={inputClass} />
-            </div>
-          )}
-          <div>
-            <SmallLabel htmlFor="budget-living">{t('budget.living')}</SmallLabel>
-            <input id="budget-living" type="number" inputMode="decimal" min={0} value={textOf(v.living)} onChange={(e) => set({ living: numberOrNull(e.target.value) })} className={inputClass} />
-          </div>
+        <div className="space-y-5">
+          {choice('currency', BUDGET_CURRENCIES.map((c) => ({ id: c, label: t(`budget.currencies.${c}` as never) })))}
+          {choice('tuition', TUITION_BANDS.map((b) => ({ id: b.id, label: range(b) })))}
+          {choice('living', LIVING_BANDS.map((b) => ({ id: b.id, label: range(b) })))}
         </div>
       );
     }

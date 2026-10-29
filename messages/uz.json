@@ -504,13 +504,10 @@
     "ui": {
       "loading": "Yuklanmoqda…",
       "loadFailed": "So‘rovnomani yuklab bo‘lmadi. Iltimos, sahifani yangilang yoki keyinroq qayta urinib ko‘ring.",
-      "questionOf": "{total} savoldan {current}-savol",
       "requiredLeft": "{count, plural, one {# ta majburiy savol qoldi} other {# ta majburiy savol qoldi}}",
       "optional": "Ixtiyoriy",
       "back": "Orqaga",
       "next": "Keyingisi",
-      "skip": "O‘tkazib yuborish",
-      "skipAll": "Barcha ixtiyoriy savollarni o‘tkazib yuborish",
       "finish": "Yakunlash",
       "saving": "Saqlanmoqda…",
       "saveFailed": "Javobingizni saqlab bo‘lmadi. Aloqani tekshirib, qayta urinib ko‘ring.",
@@ -526,7 +523,8 @@
       "moveDown": "Pastga",
       "counter": "{count} tadan {chosen} tasi tanlandi",
       "range": "{min} dan {max} gacha",
-      "popular": "Mashhur yo‘nalishlar"
+      "popular": "Mashhur yo‘nalishlar",
+      "pageOf": "{current}-qadam, jami {total}"
     },
     "errors": {
       "required": "Iltimos, bu savolga javob bering",
@@ -588,7 +586,15 @@
     "budget": {
       "currency": "Valyuta",
       "tuition": "Yillik o‘qish narxi",
-      "living": "Yillik yashash xarajatlari"
+      "living": "Yillik yashash xarajatlari",
+      "free": "Faqat bepul",
+      "upTo": "{max} gacha",
+      "between": "{min} – {max}",
+      "moreThan": "{min} dan ko'p",
+      "currencies": {
+        "USD": "Dollar (USD)",
+        "EUR": "Yevro (EUR)"
+      }
     },
     "olympiads": {
       "subject": "Fan",
@@ -757,16 +763,6 @@
         "title": "Olimpiadalar va tanlovlar",
         "hint": "Fan, daraja va egallagan o‘rningiz."
       },
-      "achievements": {
-        "title": "Yutuqlaringiz",
-        "options": {
-          "projects": "Loyihalar",
-          "publications": "Nashrlar",
-          "sport": "Sport",
-          "creative": "Ijodiy portfolio",
-          "volunteering": "Volontyorlik"
-        }
-      },
       "entrance": {
         "title": "Nimaga tayyorsiz?",
         "options": {
@@ -775,17 +771,9 @@
           "creative_contest": "Ijodiy tanlov"
         }
       },
-      "funding": {
-        "title": "O‘qishni qanday to‘lashni rejalashtiryapsiz?",
-        "options": {
-          "free": "Faqat bepul (o‘qish narxisiz) o‘rinlar",
-          "paid": "Pullik o‘rinlar",
-          "both": "Ikkalasi ham"
-        }
-      },
       "budget": {
         "title": "Yillik byudjetingiz",
-        "hint": "Yillik o‘qish narxi va yashash xarajatlari, bitta valyutada."
+        "hint": "Taxminan, dollar yoki yevroda. Tanlov oraliqning yuqori chegarasidan foydalanadi."
       },
       "scholarship": {
         "title": "Stipendiya kerakmi?",
@@ -793,13 +781,6 @@
           "yes": "Ha, kerak",
           "no": "Yo‘q",
           "maybe": "Yordam bo‘lardi"
-        }
-      },
-      "loan": {
-        "title": "Ta’lim kreditini ko‘rib chiqarmidingiz?",
-        "options": {
-          "yes": "Ha",
-          "no": "Yo‘q"
         }
       },
       "rating": {
@@ -815,14 +796,6 @@
         "options": {
           "public": "Davlat",
           "private": "Xususiy",
-          "any": "Muhim emas"
-        }
-      },
-      "size": {
-        "title": "Katta yoki kichik muassasa?",
-        "options": {
-          "large": "Katta",
-          "small": "Kichik",
           "any": "Muhim emas"
         }
       },
@@ -850,15 +823,6 @@
           "any": "Muhim emas"
         }
       },
-      "city_size": {
-        "title": "Qanday shaharni afzal ko‘rasiz?",
-        "options": {
-          "megapolis": "Katta megapolis",
-          "medium": "O‘rta kattalikdagi shahar",
-          "small_student": "Kichik talabalar shaharchasi",
-          "any": "Muhim emas"
-        }
-      },
       "climate": {
         "title": "Qaysi iqlimni afzal ko‘rasiz?",
         "options": {
@@ -876,38 +840,6 @@
           "any": "Muhim emas"
         }
       },
-      "work_during": {
-        "title": "O‘qish davomida ishlamoqchimisiz?",
-        "options": {
-          "yes": "Ha",
-          "no": "Yo‘q",
-          "maybe": "Balki"
-        }
-      },
-      "after": {
-        "title": "O‘qishdan keyingi rejalaringiz",
-        "options": {
-          "stay": "Mamlakatda qolish",
-          "return": "Uyga qaytish",
-          "unknown": "Hali aniq emas"
-        }
-      },
-      "family": {
-        "title": "Kimdir bilan birga borasizmi?",
-        "hint": "Ixtiyoriy.",
-        "options": {
-          "partner": "Turmush o‘rtog‘im bilan",
-          "children": "Bolalar bilan"
-        }
-      },
-      "accessibility": {
-        "title": "Qulay muhit kerakmi?",
-        "options": {
-          "yes": "Ha",
-          "no": "Yo‘q",
-          "prefer_not": "Aytmaslikni afzal ko‘raman"
-        }
-      },
       "priorities": {
         "title": "Eng muhim 3 narsani tanlang",
         "hint": "Bu natijalaringizni saralashda nimaga ko‘proq e’tibor berilishini belgilaydi."
@@ -918,6 +850,17 @@
         "years": "Necha yil ishlagansiz?",
         "topic": "Tadqiqot mavzuingiz"
       }
+    },
+    "pages": {
+      "goal": "Maqsad",
+      "direction": "Yo'nalish",
+      "school": "Maktab va kollej",
+      "studies": "O'qish va baholar",
+      "languages": "Tillar",
+      "extra": "Yutuqlar va qabul",
+      "money": "Pul",
+      "institution": "O'quv muassasasi va hayot",
+      "final": "Siz uchun eng muhimi"
     }
   },
   "Matches": {
