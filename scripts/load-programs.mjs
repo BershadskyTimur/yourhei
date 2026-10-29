@@ -117,8 +117,15 @@ async function processGroup(group) {
       });
     }
   }
-  for (const part of chunks(rows, 300)) {
+  // A part that hits the database time limit (busy database, many indexes) is split in half and sent again.
+  const insertPart = async (part) => {
     const { data: inserted, error } = await supabase.from('programs').insert(part.map((x) => x.row)).select('id');
+    if (error?.code === '57014' && part.length > 25) {
+      const half = Math.ceil(part.length / 2);
+      await insertPart(part.slice(0, half));
+      await insertPart(part.slice(half));
+      return;
+    }
     check('insert programmes', error);
     programs += inserted.length;
     const sources = inserted.flatMap((r, k) => {
@@ -126,7 +133,8 @@ async function processGroup(group) {
       return p.sourceUrl && p.tuition.length ? [{ entity: 'program', entity_id: r.id, field: 'tuition', url: p.sourceUrl, accessed_at: today, confidence: 'medium' }] : [];
     });
     for (const s of chunks(sources, 1000)) check('insert sources', (await supabase.from('sources').insert(s)).error);
-  }
+  };
+  for (const part of chunks(rows, 300)) await insertPart(part);
   institutions += group.length;
   console.log(`  ${institutions}/${data.institutions.length} institutions, ${programs} programmes (${created} institutions created)`);
 }
