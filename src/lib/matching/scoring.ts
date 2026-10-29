@@ -1,5 +1,6 @@
 import { academicScore, type AcademicFit } from './academic';
 import { convert, pickTuition, yearlyAmount } from './currency';
+import { lisbonRecognition } from './recognition';
 import type { ComponentId, ComponentScore, MatchContext, MatchInput, MatchProgram, Note, Ranking } from './types';
 
 /** Base weights; the three priorities of the survey boost theirs (SPEC.md section 11). */
@@ -122,7 +123,12 @@ function lifeScore(program: MatchProgram, input: MatchInput, ctx: MatchContext):
   if (input.workDuring === 'yes' && country?.workDuringStudy != null) parts.push(country.workDuringStudy ? 100 : 0);
   if (input.workDuring === 'maybe' && country?.workDuringStudy != null) parts.push(country.workDuringStudy ? 100 : 60);
   if (input.after === 'stay' && country?.postStudyWorkVisa != null) parts.push(country.postStudyWorkVisa ? 100 : 0);
-  if (input.recognition === 'yes' && country?.recognition != null) parts.push(country.recognition ? 100 : 0);
+  if (input.recognition === 'yes') {
+    // the country fact when the database has one, otherwise the Lisbon Recognition Convention (both countries parties)
+    const home = [...input.citizenships, ...(input.residence ? [input.residence] : [])];
+    const recognised = country?.recognition ?? lisbonRecognition(program.institution.country, home);
+    if (recognised != null) parts.push(recognised ? 100 : 0);
+  }
   return average(parts);
 }
 
