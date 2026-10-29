@@ -80,6 +80,25 @@ test.describe('matches page', () => {
     await expect(reach.getByRole('link', { name: 'Apply on the official site' })).toHaveAttribute('href', 'https://example.edu/apply');
   });
 
+  test('a card shows the country rules on work during and after studies when the country has a guide', async ({ page }) => {
+    const german = programRow('p-de', 'Berlin University', { institutions: { ...institution('i-de', 'Berlin University'), country: 'DE', city: { en: 'Berlin' } } });
+    await fakeSignIn(page, { ...profile, target_countries: ['DE'] }, [survey], { programs: [german], countries: [] });
+    await page.goto('/en/matches');
+    const toggle = page.getByRole('button', { name: /Work during studies and after graduation/ });
+    await expect(toggle).toHaveAttribute('aria-expanded', 'false');
+    await toggle.click();
+    await expect(toggle).toHaveAttribute('aria-expanded', 'true');
+    await expect(page.getByText(/140 full days or 280 half days/)).toBeVisible();
+    await expect(page.getByRole('link', { name: /Germany/ }).last()).toHaveAttribute('href', '/en/countries/de');
+  });
+
+  test('a country without a guide shows no such block', async ({ page }) => {
+    await fakeSignIn(page, profile, [survey], data);
+    await page.goto('/en/matches');
+    await expect(page.locator('article').first()).toBeVisible();
+    await expect(page.getByRole('button', { name: /Work during studies and after graduation/ })).toHaveCount(0);
+  });
+
   test('with no published programmes it says data is being added', async ({ page }) => {
     await fakeSignIn(page, profile, [survey], { programs: [], countries: [] });
     await page.goto('/en/matches');

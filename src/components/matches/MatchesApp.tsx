@@ -8,7 +8,8 @@ import { TrackedLink } from '@/components/TrackedLink';
 import { trackEvent } from '@/lib/analytics/track';
 import { primaryButton, secondaryButton } from '@/components/forms/ui';
 import { Link, useRouter } from '@/i18n/navigation';
-import { pickLocalized } from '@/lib/institutions/localized';
+import { guideOf } from '@/lib/countries-guide/guides';
+import { pickLocalized, pickText } from '@/lib/institutions/localized';
 import { buildSnapshot } from '@/lib/matches/snapshot';
 import { buildMatchInput } from '@/lib/matching/input';
 import { matchPrograms } from '@/lib/matching/engine';
@@ -227,7 +228,10 @@ function Results({ attempt, programs, countries, rates, ratesSource, widened, pa
 function ResultCard({ result, selected, full, onToggle }: { result: MatchResult; selected: boolean; full: boolean; onToggle: () => void }) {
   const t = useTranslations('Matches');
   const tCmp = useTranslations('Compare');
+  const tCountries = useTranslations('Countries');
+  const tInst = useTranslations('Institution');
   const locale = useLocale();
+  const [rulesOpen, setRulesOpen] = useState(false);
   const { program, score, why, gaps, missing, tuitionShown } = result;
   const inst = program.institution;
   const name = pickLocalized(program.names, locale).text;
@@ -246,6 +250,9 @@ function ResultCard({ result, selected, full, onToggle }: { result: MatchResult;
   })();
 
   const note = (n: Note) => t(`notes.${n.key}` as never, n.params as never);
+  // work during studies and after graduation: the country guide (the questions about them were removed from the survey)
+  const guide = guideOf(inst.country);
+  const rules = guide ? [{ title: tCountries('workTitle'), block: guide.work }, { title: tCountries('afterTitle'), block: guide.after }].filter((r) => r.block?.summary) : [];
 
   return (
     <article className="rounded-2xl border border-line bg-surface p-5">
@@ -292,6 +299,34 @@ function ResultCard({ result, selected, full, onToggle }: { result: MatchResult;
           <ul className="mt-1 space-y-1 text-sm">
             {gaps.map((n, i) => (<li key={i} className="flex gap-2"><span aria-hidden="true">!</span><span>{note(n)}</span></li>))}
           </ul>
+        </div>
+      )}
+
+      {rules.length > 0 && (
+        <div className="mt-3">
+          <button
+            type="button"
+            aria-expanded={rulesOpen}
+            onClick={() => setRulesOpen((o) => !o)}
+            className="flex min-h-9 items-center gap-2 text-start text-sm font-semibold text-brand"
+          >
+            <span aria-hidden="true" className="inline-block w-4">{rulesOpen ? '▾' : '▸'}</span>
+            {t('card.workAfter', { country })}
+          </button>
+          {rulesOpen && (
+            <div className="mt-1 space-y-2 ps-6 text-sm">
+              {rules.map((r) => (
+                <p key={r.title}>
+                  <span className="font-medium">{r.title}:</span> {pickText(r.block!.summary!, locale).text}
+                </p>
+              ))}
+              <p>
+                <Link href={`/countries/${inst.country.toLowerCase()}`} className="font-medium text-accent-text underline underline-offset-4">
+                  {tInst('countryGuide', { country })}
+                </Link>
+              </p>
+            </div>
+          )}
         </div>
       )}
 

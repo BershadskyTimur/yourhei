@@ -187,7 +187,8 @@
     "sourceLine": "Manba: {source}",
     "dataYear": "{year} o‘quv yili ma’lumotlari",
     "methodologyLinkShort": "Ma’lumotlarni qanday yig‘amiz",
-    "countryGuide": "Qo‘llanma: {country} mamlakatida o‘qish"
+    "countryGuide": "Qo‘llanma: {country} mamlakatida o‘qish",
+    "rankingsSource": "O'rinlar Wikidata (CC0) ma'lumotlariga ko'ra. Birinchi yuzlikdan keyin reytinglar ko'pincha o'rinlar oralig'ini beradi: bu yerda uning boshi ko'rsatilgan. Manba:"
   },
   "Pages": {
     "about": {
@@ -925,7 +926,8 @@
       "why": "Nega mos keladi",
       "gaps": "Nima yetishmaydi",
       "noData": "Ma’lumot yo‘q:",
-      "apply": "Rasmiy saytda ariza topshirish"
+      "apply": "Rasmiy saytda ariza topshirish",
+      "workAfter": "O'qish davomida va bitirgandan keyin ishlash ({country})"
     },
     "components": {
       "academic": "talablar",

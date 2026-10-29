@@ -178,6 +178,14 @@ export default async function InstitutionPage({ params }: { params: Params }) {
                 <li key={`${r.name}-${r.year}`}>{t('rankingLine', { name: r.name, year: r.year, position: r.position })}</li>
               ))}
             </ul>
+            {institution.rankings.some((r) => r.sourceUrl?.startsWith('https://www.wikidata.org/')) && (
+              <p className="mt-2 text-sm text-muted">
+                {t('rankingsSource')}{' '}
+                <a href={institution.rankings.find((r) => r.sourceUrl)!.sourceUrl!} target="_blank" rel="noopener noreferrer" className="underline underline-offset-4">
+                  Wikidata
+                </a>
+              </p>
+            )}
           </section>
         )}
 

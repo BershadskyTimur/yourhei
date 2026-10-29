@@ -187,7 +187,8 @@
     "sourceLine": "Kaynak: {source}",
     "dataYear": "{year} akademik yılı verileri",
     "methodologyLinkShort": "Verileri nasıl topluyoruz",
-    "countryGuide": "Rehber: {country} ülkesinde eğitim"
+    "countryGuide": "Rehber: {country} ülkesinde eğitim",
+    "rankingsSource": "Sıralamalar Wikidata (CC0) verilerine göre. İlk 100'den sonra sıralamalar genellikle bir aralık verir: burada aralığın başlangıcı gösterilir. Kaynak:"
   },
   "Pages": {
     "about": {
@@ -925,7 +926,8 @@
       "why": "Neden uyuyor",
       "gaps": "Neler eksik",
       "noData": "Veri yok:",
-      "apply": "Resmî sitede başvur"
+      "apply": "Resmî sitede başvur",
+      "workAfter": "Eğitim sırasında ve mezuniyetten sonra çalışma ({country})"
     },
     "components": {
       "academic": "koşullar",

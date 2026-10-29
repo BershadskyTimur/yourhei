@@ -187,7 +187,8 @@
     "sourceLine": "Źródło: {source}",
     "dataYear": "Dane za rok akademicki {year}",
     "methodologyLinkShort": "Jak zbieramy dane",
-    "countryGuide": "Przewodnik: studia w kraju {country}"
+    "countryGuide": "Przewodnik: studia w kraju {country}",
+    "rankingsSource": "Miejsca według Wikidata (CC0). Poza pierwszą setką rankingi często podają przedział miejsc: pokazano jego początek. Źródło:"
   },
   "Pages": {
     "about": {
@@ -925,7 +926,8 @@
       "why": "Dlaczego pasuje",
       "gaps": "Czego brakuje",
       "noData": "Brak danych dla:",
-      "apply": "Aplikuj na oficjalnej stronie"
+      "apply": "Aplikuj na oficjalnej stronie",
+      "workAfter": "Praca w trakcie studiów i po ich ukończeniu ({country})"
     },
     "components": {
       "academic": "wymagania",

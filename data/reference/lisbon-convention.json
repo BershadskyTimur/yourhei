@@ -1,0 +1,11 @@
+{
+  "_comment": "States for which the Lisbon Recognition Convention (Council of Europe / UNESCO, ETS No. 165) is in force: ratified or acceded, with a date of entry into force. A signature alone (United States) does not count. Copied from the official chart of signatures and ratifications.",
+  "source": "https://www.coe.int/en/web/conventions/full-list?module=signatures-by-treaty&treatynum=165",
+  "accessed": "2026-10-29",
+  "parties": [
+    "AL", "AD", "AM", "AT", "AZ", "BE", "BA", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "GE", "DE", "GR", "HU", "IS",
+    "IE", "IT", "LV", "LI", "LT", "LU", "MT", "MC", "ME", "NL", "MK", "NO", "PL", "PT", "MD", "RO", "SM", "RS", "SK", "SI",
+    "ES", "SE", "CH", "TR", "UA", "GB",
+    "AU", "BY", "CA", "VA", "IL", "KZ", "KG", "NZ", "RU", "TJ", "TM"
+  ]
+}

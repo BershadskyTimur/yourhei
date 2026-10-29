@@ -187,7 +187,8 @@
     "sourceLine": "Source : {source}",
     "dataYear": "Données de l’année universitaire {year}",
     "methodologyLinkShort": "Comment nous collectons les données",
-    "countryGuide": "Guide : étudier en {country}"
+    "countryGuide": "Guide : étudier en {country}",
+    "rankingsSource": "Rangs selon Wikidata (CC0). Au-delà des 100 premiers, les classements donnent souvent une fourchette de rangs : le début de la fourchette est indiqué. Source :"
   },
   "Pages": {
     "about": {
@@ -925,7 +926,8 @@
       "why": "Pourquoi il vous convient",
       "gaps": "Ce qui manque",
       "noData": "Pas de données pour",
-      "apply": "Candidater sur le site officiel"
+      "apply": "Candidater sur le site officiel",
+      "workAfter": "Travailler pendant les études et après le diplôme ({country})"
     },
     "components": {
       "academic": "conditions",

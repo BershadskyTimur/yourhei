@@ -5,7 +5,9 @@ import { GROUP_LIMITS, groupFor, matchPrograms, pickGroup } from './engine';
 import { failedFilter, usableLanguages } from './filters';
 import { buildMatchInput } from './input';
 import { BASE_WEIGHTS, fieldMatch, marginScore, scoreProgram, weightsFor } from './scoring';
+import { lisbonRecognition } from './recognition';
 import type { MatchContext, MatchInput, MatchInstitution, MatchProgram, MatchResult } from './types';
+import lisbon from '../../../data/reference/lisbon-convention.json';
 
 const rates = { USD: 1, EUR: 0.92, GEL: 2.7, KZT: 480 };
 const ctx: MatchContext = {
@@ -283,6 +285,20 @@ describe('scoring', () => {
     const s = scoreProgram(p, input({ dorm: 'yes', workDuring: 'yes', after: 'stay' }), ctx, academicFit(p, input()));
     // dorm 100, work 100, post-study visa false -> 0
     expect(s.components.find((c) => c.id === 'life')!.score).toBeCloseTo(66.7, 1);
+  });
+
+  it('recognition: both countries parties to the Lisbon convention = recognised; otherwise unknown, never "no"', () => {
+    expect(lisbonRecognition('DE', ['KZ'])).toBe(true);
+    expect(lisbonRecognition('DE', ['UZ'])).toBeNull(); // Uzbekistan is not a party
+    expect(lisbonRecognition('US', ['KZ'])).toBeNull(); // the United States only signed
+    expect(lisbonRecognition('CZ', ['UZ', 'KG'])).toBe(true); // a second citizenship counts
+    expect(lisbon.parties).toHaveLength(57); // the official chart: 57 ratifications and accessions
+    expect(new Set(lisbon.parties).size).toBe(57);
+    const lisbonCtx: MatchContext = { ...ctx, countries: {} };
+    const life = (country: string, citizenships: string[]) =>
+      scoreProgram(program({ institution: institution({ country }) }), input({ recognition: 'yes', citizenships, residence: null }), lisbonCtx, academicFit(program(), input())).components.find((c) => c.id === 'life')!.score;
+    expect(life('DE', ['KZ'])).toBe(100);
+    expect(life('DE', ['UZ'])).toBeNull();
   });
 
   it('extras: share of the wished-for features the institution has', () => {

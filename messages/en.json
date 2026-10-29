@@ -187,7 +187,8 @@
     "sourceLine": "Source: {source}",
     "dataYear": "Data for the {year} academic year",
     "methodologyLinkShort": "How we collect data",
-    "countryGuide": "Guide: studying in {country}"
+    "countryGuide": "Guide: studying in {country}",
+    "rankingsSource": "Positions as recorded in Wikidata (CC0). Beyond the top 100 the rankings often give a range of places: the start of the range is shown. Source:"
   },
   "Pages": {
     "about": {
@@ -925,7 +926,8 @@
       "why": "Why it fits",
       "gaps": "What is missing",
       "noData": "No data for",
-      "apply": "Apply on the official site"
+      "apply": "Apply on the official site",
+      "workAfter": "Work during studies and after graduation ({country})"
     },
     "components": {
       "academic": "requirements",
