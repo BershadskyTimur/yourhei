@@ -42,6 +42,10 @@ const securityHeaders = [
 const nextConfig: NextConfig = {
   // Do not tell everybody which framework the site runs on.
   poweredByHeader: false,
+  // Search engines look for /sitemap.xml first; the site's sitemaps are /sitemap/0.xml, /sitemap/1.xml ... (see app/sitemap.ts).
+  async redirects() {
+    return [{ source: '/sitemap.xml', destination: '/sitemap/0.xml', permanent: true }];
+  },
   async headers() {
     return [
       { source: '/:path*', headers: securityHeaders },
