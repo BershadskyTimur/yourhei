@@ -85,6 +85,9 @@ export async function generateMetadata({
     metadataBase: new URL(siteUrl()),
     title: t('title'),
     description: t('description'),
+    // Proof for Yandex.Webmaster that the site is ours (the same code as public/yandex_0df00030df9b8491.html, which
+    // Cloudflare answers with a redirect to the address without .html, so Yandex may not accept the file).
+    verification: { yandex: '0df00030df9b8491' },
     openGraph: {
       title: t('title'),
       description: t('description'),
