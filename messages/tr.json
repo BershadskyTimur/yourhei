@@ -1291,7 +1291,8 @@
   "Seo": {
     "institutionTitle": "{name}, {country}: programlar, ücretler ve son tarihler",
     "institutionDescription": "{name} ({place}). Programlar: {count}; düzeyler: {levels}. Ücretler, son tarihler, koşullar ve başvuru bağlantısı, resmî kaynaklardan.",
-    "countryDescription": "Öğrenci vizesi, öğrenirken çalışma, mezuniyetten sonra kalma, yaşam maliyeti ve diploma denkliği: {country}. Resmî sayfalara bağlantılar içeren kısa rehber."
+    "countryDescription": "Öğrenci vizesi, öğrenirken çalışma, mezuniyetten sonra kalma, yaşam maliyeti ve diploma denkliği: {country}. Resmî sayfalara bağlantılar içeren kısa rehber.",
+    "institutionDescriptionPrice": "{name} ({place}). Program sayısı: {count}; düzeyler: {levels}. Öğrenim ücreti: yılda {range}. Son tarihler ve başvuru bağlantısı resmî kaynaklardan."
   },
   "Blog": {
     "title": "Blog",

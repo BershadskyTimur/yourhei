@@ -1291,7 +1291,8 @@
   "Seo": {
     "institutionTitle": "{name}, {country}: programy, czesne i terminy",
     "institutionDescription": "{name} ({place}). Programy: {count}; poziomy: {levels}. Czesne, terminy, wymagania i link do aplikowania z oficjalnych źródeł.",
-    "countryDescription": "Wiza studencka, praca podczas studiów, pozostanie po ukończeniu, koszty życia i uznanie dyplomu: {country}. Krótki przewodnik z odnośnikami do oficjalnych stron."
+    "countryDescription": "Wiza studencka, praca podczas studiów, pozostanie po ukończeniu, koszty życia i uznanie dyplomu: {country}. Krótki przewodnik z odnośnikami do oficjalnych stron.",
+    "institutionDescriptionPrice": "{name} ({place}). Programy: {count}; poziomy: {levels}. Czesne: {range} rocznie. Terminy i link do aplikacji: z oficjalnych źródeł."
   },
   "Blog": {
     "title": "Blog",

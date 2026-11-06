@@ -18,6 +18,7 @@ import { pickLocalized, pickText } from '@/lib/institutions/localized';
 import { JsonLd } from '@/components/JsonLd';
 import { seoMetadata, trimDescription } from '@/lib/seo/metadata';
 import { countryLabel } from '@/lib/seo/place';
+import { tuitionRange } from '@/lib/seo/tuition-range';
 import { breadcrumbList } from '@/lib/seo/structured';
 import { comboOf, fieldSlug, studyCountries } from '@/lib/study/combos';
 import { iscedEntry, labelFor } from '@/lib/survey/references';
@@ -46,11 +47,26 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   const city = pickLocalized(institution.city, locale).text;
   const countryName = new Intl.DisplayNames([locale], { type: 'region' }).of(institution.country) ?? institution.country;
   const levels = LEVEL_ORDER.filter((l) => institution.programs.some((p) => p.level === l)).map((l) => tLevel(l as 'bachelor'));
+  // people search "<university> tuition": when the prices are known the description says them (cheapest to dearest per year)
+  const range = tuitionRange(institution.programs);
+  const money = (n: number, currency: string) => {
+    try {
+      return new Intl.NumberFormat(locale, { style: 'currency', currency, maximumFractionDigits: 0 }).format(n);
+    } catch {
+      return `${n} ${currency}`;
+    }
+  };
+  const descriptionOf = () => {
+    const args = { name, place: [city.replace(/\s+Municipality$/i, ''), countryLabel(locale, institution.country, countryName ?? institution.country)].filter(Boolean).join(', '), count: institution.programs.length, levels: levels.join(', ') };
+    if (!range) return t('institutionDescription', args);
+    const text = range.min === range.max ? money(range.min, range.currency) : `${money(range.min, range.currency)} – ${money(range.max, range.currency)}`;
+    return t('institutionDescriptionPrice', { ...args, range: text });
+  };
   return seoMetadata({
     locale,
     path: `/institutions/${country}/${slug}`,
     title: t('institutionTitle', { name, country: countryLabel(locale, institution.country, countryName ?? institution.country) }),
-    description: trimDescription(t('institutionDescription', { name, place: [city, countryLabel(locale, institution.country, countryName ?? institution.country)].filter(Boolean).join(', '), count: institution.programs.length, levels: levels.join(', ') })),
+    description: trimDescription(descriptionOf()),
     // A page without programmes is a thin page: keep it out of the search results (visitors can still open it).
     noindex: institution.programs.length === 0,
   });

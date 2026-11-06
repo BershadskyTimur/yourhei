@@ -1291,7 +1291,8 @@
   "Seo": {
     "institutionTitle": "{name}, {country}: Programme, Kosten und Fristen",
     "institutionDescription": "{name} ({place}). Programme: {count}; Stufen: {levels}. Kosten, Fristen, Voraussetzungen und Bewerbungslink aus offiziellen Quellen.",
-    "countryDescription": "Studienvisum, Arbeiten neben dem Studium, Bleiben nach dem Abschluss, Lebenshaltungskosten und Anerkennung des Abschlusses in {country}: ein kurzer Leitfaden mit Links zu den offiziellen Seiten."
+    "countryDescription": "Studienvisum, Arbeiten neben dem Studium, Bleiben nach dem Abschluss, Lebenshaltungskosten und Anerkennung des Abschlusses in {country}: ein kurzer Leitfaden mit Links zu den offiziellen Seiten.",
+    "institutionDescriptionPrice": "{name} ({place}). Programme: {count}; Stufen: {levels}. Studiengebühren: {range} pro Jahr. Fristen und Bewerbungslink: aus offiziellen Quellen."
   },
   "Blog": {
     "title": "Blog",

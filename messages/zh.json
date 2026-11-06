@@ -1291,7 +1291,8 @@
   "Seo": {
     "institutionTitle": "{name}, {country}：项目、学费与截止日期",
     "institutionDescription": "{name}（{place}）。项目数量：{count}；层次：{levels}。学费、截止日期、申请要求和申请链接，均来自官方来源。",
-    "countryDescription": "{country}的学习签证、学习期间工作、毕业后留下、生活费用和文凭认可：附官方页面链接的简明指南。"
+    "countryDescription": "{country}的学习签证、学习期间工作、毕业后留下、生活费用和文凭认可：附官方页面链接的简明指南。",
+    "institutionDescriptionPrice": "{name}（{place}）。项目数量：{count}；层次：{levels}。学费：每年 {range}。截止日期和申请链接均来自官方来源。"
   },
   "Blog": {
     "title": "博客",
