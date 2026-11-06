@@ -785,18 +785,25 @@ function UsersStats() {
 function Traffic() {
   const [days, setDays] = useState(30);
   const [state, setState] = useState<{ data: Row | null; error: string | null; loading: boolean }>({ data: null, error: null, loading: true });
+  // places and networks of the visits (migration 0040); before it is run the section is simply not shown
+  const [geo, setGeo] = useState<Row | null>(null);
   useEffect(() => {
     let live = true;
-    getSupabaseBrowser()!
+    const supabase = getSupabaseBrowser()!;
+    supabase
       .rpc('admin_traffic', { p_days: days })
       .then((res) => {
         if (live) setState({ data: res.data as Row | null, error: res.error?.message ?? null, loading: false });
       });
+    supabase.rpc('admin_traffic_geo', { p_days: days }).then((res) => {
+      if (live) setGeo(res.error ? null : (res.data as Row | null));
+    });
     return () => {
       live = false;
     };
   }, [days]);
   const d = state.data ?? {};
+  const g = geo ?? {};
   const byDay = (d.by_day as Row[]) ?? [];
   return (
     <section>
@@ -809,7 +816,7 @@ function Traffic() {
           <option value={365}>Год</option>
         </select>
       </div>
-      <p className="mt-1 text-sm text-muted">Считаются только посетители, которые нажали «Принять все» в баннере cookie и не включили Do Not Track, поэтому реальные цифры выше. Адреса IP не хранятся.</p>
+      <p className="mt-1 text-sm text-muted">Считаются только посетители, которые нажали «Принять все» в баннере cookie и не включили Do Not Track, поэтому реальные цифры выше. Адреса IP не хранятся: страна, город и провайдер берутся из данных сети Cloudflare.</p>
       <Status error={state.error} loading={state.loading} />
       {state.data && (
         <div className="mt-4 space-y-4">
@@ -825,6 +832,14 @@ function Traffic() {
             <BarList title="Устройства" rows={objRows(d.devices, { mobile: 'телефон', tablet: 'планшет', desktop: 'компьютер', unknown: 'нет данных' })} />
             <BarList title="Языки сайта" rows={objRows(d.locales)} />
             <BarList title="Откуда пришли" rows={rows(d.referrers, (r) => String(r.host))} hint="Сайты, с которых перешли по ссылке" />
+            {geo && (
+              <>
+                <BarList title="Города" rows={rows(g.cities, (r) => `${String(r.city)}, ${countryName(r.country)}`, (r) => `посетителей: ${r.visitors}`)} hint="По данным сети Cloudflare, примерно" />
+                <BarList title="Регионы" rows={rows(g.regions, (r) => `${String(r.region)}, ${countryName(r.country)}`)} />
+                <BarList title="Провайдеры и компании" rows={rows(g.networks, (r) => String(r.org), (r) => `AS${r.asn} · ${countryName(r.country)} · посетителей: ${r.visitors}`)} hint="Кому принадлежит сеть посетителя: интернет-провайдер, мобильный оператор или компания" />
+                <BarList title="Часовые пояса" rows={rows(g.timezones, (r) => String(r.timezone))} />
+              </>
+            )}
           </div>
         </div>
       )}

@@ -1,11 +1,14 @@
 import { createClient } from '@supabase/supabase-js';
 import { NextResponse, type NextRequest } from 'next/server';
+import { getCloudflareContext } from '@opennextjs/cloudflare';
+import { geoFromCloudflare } from '@/lib/analytics/geo';
 import { rowsFromRequest } from '@/lib/analytics/row';
 
 // Records anonymous page views and usage events (searches, clicks on "apply", matches; only sent by browsers whose
 // visitor pressed "Accept all" in the cookie banner). The browser sends them in batches of up to 10.
-// Stored: the page address, language, device type, the visitor's country (from the hosting network, the IP address
-// itself is never stored), the referring site and a random per-tab id. No names, no e-mails.
+// Stored: the page address, language, device type, where the visit comes from as the hosting network (Cloudflare) sees
+// it - country, region, city, time zone, the provider or company that owns the network (lib/analytics/geo.ts); the IP
+// address itself is never stored or sent anywhere - the referring site and a random per-tab id. No names, no e-mails.
 // Every value is checked in lib/analytics/row.ts before it reaches the database.
 
 const hits = new Map<string, { n: number; reset: number }>();
@@ -46,8 +49,15 @@ export async function POST(request: NextRequest) {
     return new NextResponse(null, { status: 400 });
   }
 
-  const country = request.headers.get('x-vercel-ip-country')?.toUpperCase() ?? null;
-  const rows = rowsFromRequest(body, country);
+  // the site runs on Cloudflare (the old Vercel country header is never sent, so the country used to be empty)
+  let cf: Record<string, unknown> | undefined;
+  try {
+    cf = (await getCloudflareContext<Record<string, unknown>>({ async: true })).cf;
+  } catch {
+    cf = undefined; // local development: only the header, if any
+  }
+  const geo = geoFromCloudflare(cf, request.headers.get('cf-ipcountry'));
+  const rows = rowsFromRequest(body, geo);
   if (rows.length === 0) return new NextResponse(null, { status: 204 });
 
   const supabase = createClient(url, key, { auth: { persistSession: false } });
