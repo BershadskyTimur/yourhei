@@ -55,7 +55,7 @@ describe('blog articles', () => {
 
   it('link only to real pages of the site or to https addresses', () => {
     const known = new Set(ARTICLES.map((a) => a.slug));
-    const pages = ['/catalog', '/scholarships', '/countries', '/register', '/deadlines', '/deadlines/nl', '/deadlines/de', '/deadlines/fi', '/deadlines/cz', '/checklist'];
+    const pages = ['/catalog', '/scholarships', '/countries', '/register', '/deadlines', '/deadlines/nl', '/deadlines/de', '/deadlines/fi', '/deadlines/cz', '/checklist', '/study/us', '/study/au', '/study/nl', '/study/fi'];
     for (const a of ARTICLES) {
       for (const lang of BLOG_LANGS) {
         const hrefs = [...texts(a[lang].blocks).flatMap((t) => parseInline(t).flatMap((p) => (p.kind === 'link' ? [p.href] : []))), ...a[lang].blocks.flatMap((b) => (b.t === 'cta' ? [b.href] : []))];
@@ -174,7 +174,7 @@ const linksOf = (blocks: Block[]) => blocks.flatMap((b) => (b.t === 'cta' ? [b.h
 
 // Articles whose machine translations are not written in every language yet: where a translation is missing they read English (with the notice).
 // A language may have some of them already. When an article is translated in all 14 languages, remove it from this list.
-const NOT_TRANSLATED_YET: string[] = [];
+const NOT_TRANSLATED_YET: string[] = ['how-much-does-it-cost-to-study-abroad-tuition-by-country'];
 
 describe('machine translations of the articles', () => {
   it('cover every article in every translated language, and the menu knows the languages', () => {
