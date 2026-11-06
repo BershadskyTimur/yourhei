@@ -2,8 +2,8 @@ import type { Article } from '@/lib/blog/types';
 
 export const cheveningApply: Article = {
   slug: 'chevening-scholarship-how-to-apply',
-  published: '2026-11-17',
-  updated: '2026-11-17',
+  published: '2026-11-06',
+  updated: '2026-11-06',
   ru: {
     title: 'Chevening: кто получит стипендию Великобритании и когда подавать',
     description: 'Как устроена стипендия Chevening на одногодичную магистратуру в Великобритании: кто может подать заявку, 2 800 часов опыта, три курса, этапы отбора и сроки цикла 2027–28.',

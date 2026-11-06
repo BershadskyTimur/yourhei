@@ -2,8 +2,8 @@ import type { Article } from '@/lib/blog/types';
 
 export const mextApply: Article = {
   slug: 'mext-japan-scholarship-how-to-apply',
-  published: '2026-11-26',
-  updated: '2026-11-26',
+  published: '2026-11-06',
+  updated: '2026-11-06',
   ru: {
     title: 'Стипендия MEXT (Япония): виды, возраст и как подать заявку',
     description: 'Как устроена стипендия правительства Японии MEXT: семь категорий, подача через посольство или университет, возрастные пределы, что оплачивается.',

@@ -2,8 +2,8 @@ import type { Article } from '@/lib/blog/types';
 
 export const polandRecognitionNawa: Article = {
   slug: 'poland-recognition-of-certificate-and-diploma-nawa',
-  published: '2026-11-10',
-  updated: '2026-11-10',
+  published: '2026-11-06',
+  updated: '2026-11-06',
   ru: {
     title: 'Поступление в Польшу: признание аттестата и диплома через NAWA',
     description: 'Нужно ли признавать аттестат или диплом для учёбы в Польше, какие документы грузить в системе SYRENA, сколько стоит заключение NAWA и чего оно не гарантирует.',

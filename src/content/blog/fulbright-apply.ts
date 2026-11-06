@@ -2,8 +2,8 @@ import type { Article } from '@/lib/blog/types';
 
 export const fulbrightApply: Article = {
   slug: 'fulbright-foreign-student-program-how-to-apply',
-  published: '2026-12-03',
-  updated: '2026-12-03',
+  published: '2026-11-06',
+  updated: '2026-11-06',
   ru: {
     title: 'Fulbright Foreign Student Program: как устроена стипендия США',
     description: 'Стипендия Fulbright для иностранных магистрантов и специалистов в США: подача через комиссию или посольство, два способа подбора вуза.',

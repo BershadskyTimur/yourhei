@@ -2,8 +2,8 @@ import type { Article } from '@/lib/blog/types';
 
 export const nlScholarshipApply: Article = {
   slug: 'nl-scholarship-netherlands-how-to-apply',
-  published: '2026-12-10',
-  updated: '2026-12-10',
+  published: '2026-11-06',
+  updated: '2026-11-06',
   ru: {
     title: 'NL Scholarship: стипендия 5 000 евро для студентов в Нидерландах',
     description: 'Как устроена стипендия NL Scholarship (бывшая Holland Scholarship): 5 000 евро в первый год, кто может подать заявку, как подать через вуз и какие вузы участвуют.',
