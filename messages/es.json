@@ -188,7 +188,10 @@
     "dataYear": "Datos del curso académico {year}",
     "methodologyLinkShort": "Cómo recopilamos los datos",
     "countryGuide": "Guía: estudiar en {country}",
-    "rankingsSource": "Puestos según Wikidata (CC0). Después de los 100 primeros, los rankings suelen dar un intervalo de puestos: se muestra su inicio. Fuente:"
+    "rankingsSource": "Puestos según Wikidata (CC0). Después de los 100 primeros, los rankings suelen dar un intervalo de puestos: se muestra su inicio. Fuente:",
+    "moreTitle": "Más sobre el tema",
+    "moreFields": "Áreas populares en este país",
+    "moreGuide": "Guía del país y reglas para estudiantes"
   },
   "Pages": {
     "about": {
@@ -1286,7 +1289,7 @@
     "cancel": "Cancelar"
   },
   "Seo": {
-    "institutionTitle": "{name}: programas, precios y plazos",
+    "institutionTitle": "{name}, {country}: programas, precios y plazos",
     "institutionDescription": "{name} ({place}). Programas: {count}; niveles: {levels}. Precios, plazos, requisitos y enlace para solicitar, de fuentes oficiales.",
     "countryDescription": "Visado de estudios, trabajar mientras estudias, quedarse tras graduarte, coste de vida y reconocimiento del título en {country}: una guía breve con enlaces a las páginas oficiales."
   },

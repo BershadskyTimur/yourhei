@@ -188,7 +188,10 @@
     "dataYear": "Données de l’année universitaire {year}",
     "methodologyLinkShort": "Comment nous collectons les données",
     "countryGuide": "Guide : étudier en {country}",
-    "rankingsSource": "Rangs selon Wikidata (CC0). Au-delà des 100 premiers, les classements donnent souvent une fourchette de rangs : le début de la fourchette est indiqué. Source :"
+    "rankingsSource": "Rangs selon Wikidata (CC0). Au-delà des 100 premiers, les classements donnent souvent une fourchette de rangs : le début de la fourchette est indiqué. Source :",
+    "moreTitle": "Pour aller plus loin",
+    "moreFields": "Domaines populaires dans ce pays",
+    "moreGuide": "Page du pays et règles pour les étudiants"
   },
   "Pages": {
     "about": {
@@ -1286,7 +1289,7 @@
     "cancel": "Annuler"
   },
   "Seo": {
-    "institutionTitle": "{name} : programmes, frais et dates limites",
+    "institutionTitle": "{name}, {country} : programmes, frais et dates limites",
     "institutionDescription": "{name} ({place}). Programmes : {count} ; niveaux : {levels}. Frais, dates limites, conditions et lien de candidature, issus de sources officielles.",
     "countryDescription": "Visa d’études, travailler pendant les études, rester après le diplôme, coût de la vie et reconnaissance du diplôme en {country} : un guide court avec des liens vers les pages officielles."
   },

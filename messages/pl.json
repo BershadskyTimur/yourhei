@@ -188,7 +188,10 @@
     "dataYear": "Dane za rok akademicki {year}",
     "methodologyLinkShort": "Jak zbieramy dane",
     "countryGuide": "Przewodnik: studia w kraju {country}",
-    "rankingsSource": "Miejsca według Wikidata (CC0). Poza pierwszą setką rankingi często podają przedział miejsc: pokazano jego początek. Źródło:"
+    "rankingsSource": "Miejsca według Wikidata (CC0). Poza pierwszą setką rankingi często podają przedział miejsc: pokazano jego początek. Źródło:",
+    "moreTitle": "Więcej na ten temat",
+    "moreFields": "Popularne kierunki w tym kraju",
+    "moreGuide": "Strona kraju i zasady dla studentów"
   },
   "Pages": {
     "about": {
@@ -1286,7 +1289,7 @@
     "cancel": "Anuluj"
   },
   "Seo": {
-    "institutionTitle": "{name}: programy, czesne i terminy",
+    "institutionTitle": "{name}, {country}: programy, czesne i terminy",
     "institutionDescription": "{name} ({place}). Programy: {count}; poziomy: {levels}. Czesne, terminy, wymagania i link do aplikowania z oficjalnych źródeł.",
     "countryDescription": "Wiza studencka, praca podczas studiów, pozostanie po ukończeniu, koszty życia i uznanie dyplomu: {country}. Krótki przewodnik z odnośnikami do oficjalnych stron."
   },

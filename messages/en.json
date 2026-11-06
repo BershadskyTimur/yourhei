@@ -188,7 +188,10 @@
     "dataYear": "Data for the {year} academic year",
     "methodologyLinkShort": "How we collect data",
     "countryGuide": "Guide: studying in {country}",
-    "rankingsSource": "Positions as recorded in Wikidata (CC0). Beyond the top 100 the rankings often give a range of places: the start of the range is shown. Source:"
+    "rankingsSource": "Positions as recorded in Wikidata (CC0). Beyond the top 100 the rankings often give a range of places: the start of the range is shown. Source:",
+    "moreTitle": "More on the topic",
+    "moreFields": "Popular fields in this country",
+    "moreGuide": "Country guide and rules for students"
   },
   "Pages": {
     "about": {
@@ -1286,7 +1289,7 @@
     "cancel": "Cancel"
   },
   "Seo": {
-    "institutionTitle": "{name}: programmes, tuition and deadlines",
+    "institutionTitle": "{name}, {country}: programmes, tuition and deadlines",
     "institutionDescription": "{name} ({place}). Programmes: {count}; levels: {levels}. Tuition, deadlines, requirements and the application link, from official sources.",
     "countryDescription": "Study visa, working while you study, staying after graduation, cost of living and diploma recognition in {country}: a short guide with links to the official pages."
   },
