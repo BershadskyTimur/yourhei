@@ -188,7 +188,10 @@
     "dataYear": "{year} o‘quv yili ma’lumotlari",
     "methodologyLinkShort": "Ma’lumotlarni qanday yig‘amiz",
     "countryGuide": "Qo‘llanma: {country} mamlakatida o‘qish",
-    "rankingsSource": "O'rinlar Wikidata (CC0) ma'lumotlariga ko'ra. Birinchi yuzlikdan keyin reytinglar ko'pincha o'rinlar oralig'ini beradi: bu yerda uning boshi ko'rsatilgan. Manba:"
+    "rankingsSource": "O'rinlar Wikidata (CC0) ma'lumotlariga ko'ra. Birinchi yuzlikdan keyin reytinglar ko'pincha o'rinlar oralig'ini beradi: bu yerda uning boshi ko'rsatilgan. Manba:",
+    "moreTitle": "Mavzu bo‘yicha yana",
+    "moreFields": "Bu mamlakatdagi mashhur yo‘nalishlar",
+    "moreGuide": "Mamlakat sahifasi va talabalar uchun qoidalar"
   },
   "Pages": {
     "about": {
@@ -1286,7 +1289,7 @@
     "cancel": "Bekor qilish"
   },
   "Seo": {
-    "institutionTitle": "{name}: dasturlar, narxlar va muddatlar",
+    "institutionTitle": "{name}, {country}: dasturlar, narxlar va muddatlar",
     "institutionDescription": "{name} ({place}). Dasturlar: {count}; darajalar: {levels}. Narxlar, muddatlar, talablar va ariza havolasi rasmiy manbalardan.",
     "countryDescription": "Talaba vizasi, o‘qish davrida ishlash, bitirgandan keyin qolish, yashash narxi va diplomni tan olish: {country}. Rasmiy sahifalarga havolali qisqa qo‘llanma."
   },

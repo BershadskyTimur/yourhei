@@ -188,7 +188,10 @@
     "dataYear": "{year} tədris ili üzrə məlumatlar",
     "methodologyLinkShort": "Məlumatı necə toplayırıq",
     "countryGuide": "Bələdçi: {country} ölkəsində təhsil",
-    "rankingsSource": "Yerlər Wikidata (CC0) məlumatlarına görə. İlk yüzlükdən sonra reytinqlər çox vaxt yerlər aralığı verir: burada onun başlanğıcı göstərilib. Mənbə:"
+    "rankingsSource": "Yerlər Wikidata (CC0) məlumatlarına görə. İlk yüzlükdən sonra reytinqlər çox vaxt yerlər aralığı verir: burada onun başlanğıcı göstərilib. Mənbə:",
+    "moreTitle": "Mövzu üzrə daha çox",
+    "moreFields": "Bu ölkədə populyar istiqamətlər",
+    "moreGuide": "Ölkə səhifəsi və tələbələr üçün qaydalar"
   },
   "Pages": {
     "about": {
@@ -1286,7 +1289,7 @@
     "cancel": "Ləğv et"
   },
   "Seo": {
-    "institutionTitle": "{name}: proqramlar, qiymətlər və müddətlər",
+    "institutionTitle": "{name}, {country}: proqramlar, qiymətlər və müddətlər",
     "institutionDescription": "{name} ({place}). Proqramlar: {count}; səviyyələr: {levels}. Qiymətlər, müddətlər, tələblər və müraciət linki rəsmi mənbələrdən.",
     "countryDescription": "Tələbə vizası, təhsil zamanı iş, məzun olduqdan sonra qalmaq, yaşayış xərcləri və diplomun tanınması: {country}. Rəsmi səhifələrə keçidlərlə qısa bələdçi."
   },

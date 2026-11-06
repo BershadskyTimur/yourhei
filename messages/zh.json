@@ -188,7 +188,10 @@
     "dataYear": "{year} 学年的数据",
     "methodologyLinkShort": "我们如何收集数据",
     "countryGuide": "指南：在{country}留学",
-    "rankingsSource": "名次来自 Wikidata（CC0）。前 100 名之后，排名通常给出一个名次区间：此处显示区间的起点。来源："
+    "rankingsSource": "名次来自 Wikidata（CC0）。前 100 名之后，排名通常给出一个名次区间：此处显示区间的起点。来源：",
+    "moreTitle": "相关内容",
+    "moreFields": "该国热门方向",
+    "moreGuide": "国家指南与学生须知"
   },
   "Pages": {
     "about": {
@@ -1286,7 +1289,7 @@
     "cancel": "取消"
   },
   "Seo": {
-    "institutionTitle": "{name}：项目、学费与截止日期",
+    "institutionTitle": "{name}, {country}：项目、学费与截止日期",
     "institutionDescription": "{name}（{place}）。项目数量：{count}；层次：{levels}。学费、截止日期、申请要求和申请链接，均来自官方来源。",
     "countryDescription": "{country}的学习签证、学习期间工作、毕业后留下、生活费用和文凭认可：附官方页面链接的简明指南。"
   },

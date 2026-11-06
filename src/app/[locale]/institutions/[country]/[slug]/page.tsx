@@ -17,8 +17,10 @@ import { getInstitutionDetail } from '@/lib/institutions/detail';
 import { pickLocalized, pickText } from '@/lib/institutions/localized';
 import { JsonLd } from '@/components/JsonLd';
 import { seoMetadata, trimDescription } from '@/lib/seo/metadata';
+import { countryLabel } from '@/lib/seo/place';
 import { breadcrumbList } from '@/lib/seo/structured';
-import { studyCountries } from '@/lib/study/combos';
+import { comboOf, fieldSlug, studyCountries } from '@/lib/study/combos';
+import { iscedEntry, labelFor } from '@/lib/survey/references';
 
 // The data of one institution changes rarely; a page is rebuilt at most once a day (bots visit thousands of these pages).
 export const revalidate = 86400;
@@ -47,8 +49,8 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   return seoMetadata({
     locale,
     path: `/institutions/${country}/${slug}`,
-    title: t('institutionTitle', { name }),
-    description: trimDescription(t('institutionDescription', { name, place: [city, countryName].filter(Boolean).join(', '), count: institution.programs.length, levels: levels.join(', ') })),
+    title: t('institutionTitle', { name, country: countryLabel(locale, institution.country, countryName ?? institution.country) }),
+    description: trimDescription(t('institutionDescription', { name, place: [city, countryLabel(locale, institution.country, countryName ?? institution.country)].filter(Boolean).join(', '), count: institution.programs.length, levels: levels.join(', ') })),
     // A page without programmes is a thin page: keep it out of the search results (visitors can still open it).
     noindex: institution.programs.length === 0,
   });
@@ -90,6 +92,16 @@ export default async function InstitutionPage({ params }: { params: Params }) {
     address: { '@type': 'PostalAddress', addressCountry: institution.country, ...(city ? { addressLocality: city } : {}) },
     ...(institution.foundedYear ? { foundingDate: String(institution.foundedYear) } : {}),
   };
+
+  // The fields this institution teaches that have a page "Study <field> in <country>": a way on to the other institutions
+  // of the country (and for search engines a link from every institution page to the field pages).
+  const fieldCount = new Map<string, number>();
+  for (const p of institution.programs) {
+    const code = p.iscedF?.slice(0, 3);
+    if (code && comboOf(institution.country, code) && iscedEntry(code)) fieldCount.set(code, (fieldCount.get(code) ?? 0) + 1);
+  }
+  const fieldLinks = [...fieldCount.entries()].sort((a, b) => b[1] - a[1]).slice(0, 6);
+  const hasGuide = guideOf(institution.country) !== null;
 
   return (
     <SideAds>
@@ -169,6 +181,31 @@ export default async function InstitutionPage({ params }: { params: Params }) {
             ))
           )}
         </section>
+
+        {(fieldLinks.length > 0 || hasGuide) && (
+          <section className="mt-10" aria-labelledby="more-title">
+            <h2 id="more-title" className="text-xl font-semibold text-text">{t('moreTitle')}</h2>
+            {fieldLinks.length > 0 && (
+              <>
+                <h3 className="mt-3 text-sm font-semibold uppercase tracking-wide text-muted">{t('moreFields')}</h3>
+                <ul className="mt-2 grid gap-x-6 gap-y-1 sm:grid-cols-2">
+                  {fieldLinks.map(([code]) => (
+                    <li key={code}>
+                      <Link href={`/study/${institution.country.toLowerCase()}/${fieldSlug(code)}`} className="text-accent-text underline underline-offset-4">
+                        {labelFor(iscedEntry(code)!, locale)}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </>
+            )}
+            {hasGuide && (
+              <p className="mt-3">
+                <Link href={`/countries/${institution.country.toLowerCase()}`} className="font-medium text-accent-text underline underline-offset-4">{t('moreGuide')}</Link>
+              </p>
+            )}
+          </section>
+        )}
 
         {institution.rankings.length > 0 && (
           <section className="mt-10" aria-labelledby="rankings-title">

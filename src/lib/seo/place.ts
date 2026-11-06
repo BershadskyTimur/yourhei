@@ -20,3 +20,11 @@ export function placeIn(locale: string, code: string, name: string): string {
   if (locale === 'en' && EN_THE.has(cc)) return `the ${name}`;
   return name;
 }
+
+// Russian names people search for ("США", not "Соединённые Штаты")
+const RU_SHORT: Record<string, string> = { US: 'США', GB: 'Великобритания', AE: 'ОАЭ' };
+
+/** The country name as people write it in the language; the full name from Intl.DisplayNames otherwise. */
+export function countryLabel(locale: string, code: string, name: string): string {
+  return locale === 'ru' ? (RU_SHORT[code.toUpperCase()] ?? name) : name;
+}

@@ -188,7 +188,10 @@
     "dataYear": "{year} akademik yılı verileri",
     "methodologyLinkShort": "Verileri nasıl topluyoruz",
     "countryGuide": "Rehber: {country} ülkesinde eğitim",
-    "rankingsSource": "Sıralamalar Wikidata (CC0) verilerine göre. İlk 100'den sonra sıralamalar genellikle bir aralık verir: burada aralığın başlangıcı gösterilir. Kaynak:"
+    "rankingsSource": "Sıralamalar Wikidata (CC0) verilerine göre. İlk 100'den sonra sıralamalar genellikle bir aralık verir: burada aralığın başlangıcı gösterilir. Kaynak:",
+    "moreTitle": "Konuyla ilgili",
+    "moreFields": "Bu ülkedeki popüler alanlar",
+    "moreGuide": "Ülke rehberi ve öğrenci kuralları"
   },
   "Pages": {
     "about": {
@@ -1286,7 +1289,7 @@
     "cancel": "İptal"
   },
   "Seo": {
-    "institutionTitle": "{name}: programlar, ücretler ve son tarihler",
+    "institutionTitle": "{name}, {country}: programlar, ücretler ve son tarihler",
     "institutionDescription": "{name} ({place}). Programlar: {count}; düzeyler: {levels}. Ücretler, son tarihler, koşullar ve başvuru bağlantısı, resmî kaynaklardan.",
     "countryDescription": "Öğrenci vizesi, öğrenirken çalışma, mezuniyetten sonra kalma, yaşam maliyeti ve diploma denkliği: {country}. Resmî sayfalara bağlantılar içeren kısa rehber."
   },
