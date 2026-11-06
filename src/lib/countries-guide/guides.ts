@@ -48,6 +48,11 @@ const ARTICLES_OF: Record<string, string[]> = {
 };
 const ARTICLES_FOR_ALL = ['work-during-studies-rules-by-country', 'after-graduation-work-permits-by-country', 'proof-of-funds-student-visa'];
 
+/** The countries an article is about (none for the articles that cover every country). */
+export function countriesOfArticle(slug: string): string[] {
+  return Object.entries(ARTICLES_OF).filter(([, slugs]) => slugs.includes(slug)).map(([cc]) => cc);
+}
+
 /** The slugs of the articles to link from a country guide: its own first, then the general ones. */
 export function articleSlugsOf(country: string): string[] {
   return [...(ARTICLES_OF[country.toUpperCase()] ?? []), ...ARTICLES_FOR_ALL];

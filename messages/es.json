@@ -1318,7 +1318,10 @@
     "noneConfirmed": "Todavía no hay en nuestros datos programas con una lista publicada de países que incluya este país. Consulta la lista completa de becas.",
     "severalCountries": "Varios países",
     "programmeDetails": "Detalles de los programas",
-    "machineTranslated": "Este artículo es una traducción automática del original en inglés y aún no lo ha revisado una persona. Comprueba las páginas oficiales enlazadas en el texto."
+    "machineTranslated": "Este artículo es una traducción automática del original en inglés y aún no lo ha revisado una persona. Comprueba las páginas oficiales enlazadas en el texto.",
+    "countriesTitle": "Sobre este país",
+    "countryGuideLink": "{country}: visado, trabajo y coste de vida",
+    "countryStudyLink": "{country}: programas y universidades"
   },
   "Deadlines": {
     "title": "Plazos de solicitud",

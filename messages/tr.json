@@ -1318,7 +1318,10 @@
     "noneConfirmed": "Verilerimizde henüz bu ülkeyi içeren yayımlanmış ülke listesi olan bir program yok. Tüm burs listesine bakın.",
     "severalCountries": "Birkaç ülke",
     "programmeDetails": "Programların ayrıntıları",
-    "machineTranslated": "Bu yazı İngilizce özgün metnin makine çevirisidir ve henüz bir insan tarafından okunmamıştır. Metinde bağlantısı verilen resmî sayfaları kontrol edin."
+    "machineTranslated": "Bu yazı İngilizce özgün metnin makine çevirisidir ve henüz bir insan tarafından okunmamıştır. Metinde bağlantısı verilen resmî sayfaları kontrol edin.",
+    "countriesTitle": "Bu ülke hakkında",
+    "countryGuideLink": "{country}: vize, çalışma ve yaşam maliyeti",
+    "countryStudyLink": "{country}: programlar ve üniversiteler"
   },
   "Deadlines": {
     "title": "Başvuru son tarihleri",

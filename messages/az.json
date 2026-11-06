@@ -1318,7 +1318,10 @@
     "noneConfirmed": "Məlumatlarımızda bu ölkənin daxil olduğu dərc edilmiş ölkə siyahısı olan proqram hələ yoxdur. Tam təqaüd siyahısına baxın.",
     "severalCountries": "Bir neçə ölkə",
     "programmeDetails": "Proqramlar haqqında ətraflı",
-    "machineTranslated": "Bu məqalə ingilis dilindəki orijinalın maşın tərcüməsidir və hələ insan tərəfindən oxunmayıb. Mətndəki rəsmi səhifələri yoxlayın."
+    "machineTranslated": "Bu məqalə ingilis dilindəki orijinalın maşın tərcüməsidir və hələ insan tərəfindən oxunmayıb. Mətndəki rəsmi səhifələri yoxlayın.",
+    "countriesTitle": "Bu ölkə haqqında",
+    "countryGuideLink": "{country}: viza, iş və yaşayış xərcləri",
+    "countryStudyLink": "{country}: proqramlar və universitetlər"
   },
   "Deadlines": {
     "title": "Müraciət müddətləri",
