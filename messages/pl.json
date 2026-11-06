@@ -444,7 +444,7 @@
       "s1Title": "Kim jesteśmy",
       "s1Text": "YourHEI to serwis, który pomaga kandydatom wybrać, gdzie studiować. Ta polityka wyjaśnia, jakie dane zbieramy i jak z nich korzystamy. Korzystając z serwisu, zgadzasz się z nią.",
       "s2Title": "Co zbieramy",
-      "s2Text": "Dane konta (e-mail i zabezpieczona forma Twojego hasła); dane profilu (data urodzenia, płeć, jeśli ją podasz, kraj zamieszkania, obywatelstwa, czego szukasz, status dokumentów); Twoje odpowiedzi w ankiecie; oraz dane techniczne i o użytkowaniu (odwiedzane strony, działania w serwisie, urządzenie, przeglądarka, język, adres IP, przybliżona lokalizacja, strona, z której przychodzisz), także za pomocą plików cookie i podobnych technologii.",
+      "s2Text": "Dane konta (e-mail i zabezpieczona forma Twojego hasła); dane profilu (data urodzenia, płeć, jeśli ją podasz, kraj zamieszkania, obywatelstwa, czego szukasz, status dokumentów); Twoje odpowiedzi w ankiecie; oraz dane techniczne i o użytkowaniu (odwiedzane strony, działania w serwisie, urządzenie, przeglądarka, język, adres IP, przybliżona lokalizacja, strona, z której przychodzisz), także za pomocą plików cookie i podobnych technologii. Na potrzeby statystyk odwiedzin (tylko jeśli zaakceptowano analityczne pliki cookie) zapisujemy kraj, region, miasto, strefę czasową oraz dostawcę internetu lub sieć, tak jak określa je nasz hosting; sam adres IP nie jest przechowywany w tych statystykach.",
       "s3Title": "Po co je zbieramy",
       "s3Text": "Aby prowadzić i ulepszać serwis, sprawdzać minimalny wiek, tworzyć Twoje dopasowania, komunikować się z Tobą, mierzyć korzystanie z serwisu, wyświetlać reklamy, prowadzić badania, zapewniać bezpieczeństwo serwisu i wypełniać obowiązki prawne.",
       "s4Title": "Analityka i udostępnianie",
@@ -1061,7 +1061,8 @@
     "ratesNote": "Ceny są przeliczane po dziennych kursach i są przybliżone. Ostatecznie liczy się strona placówki i jej oficjalna witryna.",
     "livingNote": "Koszty utrzymania to minimalna kwota, jaką kraj wymaga udokumentować przy wizie studenckiej. Rzeczywiste wydatki są zwykle wyższe, zwłaszcza w dużych miastach.",
     "emptyProgrammes": "Nie znaleziono programów. Wiele krajów nie ma jeszcze w naszej bazie danych o programach, ale mamy ich instytucje.",
-    "showInstitutions": "Pokaż instytucje"
+    "showInstitutions": "Pokaż instytucje",
+    "seoTitle": "Katalog"
   },
   "Scholarships": {
     "title": "Stypendia: gdzie studiować za darmo lub taniej",
@@ -1230,7 +1231,7 @@
   "Countries": {
     "listTitle": "Kierunki studiów za granicą",
     "listIntro": "Krótkie przewodniki po zasadach ważnych przed złożeniem wniosku: wiza studencka, praca w czasie studiów, pozostanie po ukończeniu. Przepisy się zmieniają: zawsze sprawdzaj je na oficjalnych stronach, do których linkujemy.",
-    "pageTitle": "Studia: {country}",
+    "pageTitle": "Studia: {place}",
     "visaTitle": "Wiza studencka i zezwolenie na pobyt",
     "workTitle": "Praca w czasie studiów",
     "afterTitle": "Po ukończeniu studiów",
@@ -1243,17 +1244,22 @@
     "checked": "Informacje sprawdzone dnia {date}. Przepisy się zmieniają: potwierdź je na oficjalnej stronie przed złożeniem wniosku.",
     "notCollected": "Jeszcze nie zebrano. Sprawdź oficjalną stronę.",
     "catalogLink": "Przeglądaj katalog",
-    "backToList": "Wszystkie kierunki"
+    "backToList": "Wszystkie kierunki",
+    "moreTitle": "Więcej o studiach: {place}",
+    "topFields": "Popularne kierunki",
+    "deadlinesLink": "Terminy składania dokumentów: {place}",
+    "articlesTitle": "Artykuły"
   },
   "Study": {
-    "hubTitle": "Studia: {country}. Programy według kierunków",
+    "hubTitle": "Studia: {place}. Programy według kierunków",
     "hubIntro": "Kierunki: {fields}. Programy: {programmes}. Dane pochodzą z oficjalnych źródeł.",
-    "pageTitle": "Studia: {field}. {country}",
+    "pageTitle": "Studia: {field}. {place}",
     "pageIntro": "Programy: {programmes}. Uczelnie: {institutions}. Dane pochodzą z oficjalnych źródeł; przed złożeniem wniosku sprawdź ceny i terminy na oficjalnej stronie.",
     "institutionsTitle": "Uczelnie oferujące: {field}",
     "programmesCount": "Programy: {count}",
     "examples": "Na przykład:",
-    "allFields": "Wszystkie kierunki: {country}"
+    "allFields": "Wszystkie kierunki: {country}",
+    "seoTitle": "Studia: {field}. {place} ({programmes})"
   },
   "ForInstitutions": {
     "title": "Dla uniwersytetów, college’ów i szkół",

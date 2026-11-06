@@ -2,6 +2,7 @@ import { JsonLd } from '@/components/JsonLd';
 import { breadcrumbList } from '@/lib/seo/structured';
 import { seoMetadata, trimDescription } from '@/lib/seo/metadata';
 import type { Metadata } from 'next';
+import { placeIn } from '@/lib/seo/place';
 import { hasLocale } from 'next-intl';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { notFound, permanentRedirect } from 'next/navigation';
@@ -41,7 +42,7 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   return seoMetadata({
     locale,
     path: `/study/${country.toLowerCase()}/${fieldSlug(r.code)}`,
-    title: t('pageTitle', { field: label, country: name }),
+    title: t('seoTitle', { field: label, country: name, place: placeIn(locale, r.cc, name), programmes: r.combo.programmes }),
     description: trimDescription(t('pageIntro', { programmes: r.combo.programmes, institutions: r.combo.institutions })),
   });
 }
@@ -67,7 +68,7 @@ export default async function StudyFieldPage({ params }: { params: Params }) {
   if (institutions.length === 0) notFound();
 
   return (
-    <PageShell title={t('pageTitle', { field: label, country: name })}>
+    <PageShell title={t('pageTitle', { field: label, country: name, place: placeIn(locale, r.cc, name) })}>
       <JsonLd data={breadcrumbList(locale, [{ name: 'YourHEI', path: '' }, { name, path: `/study/${country.toLowerCase()}` }, { name: label, path: `/study/${country.toLowerCase()}/${fieldSlug(r.code)}` }])} />
       <p>{t('pageIntro', { programmes: r.combo.programmes, institutions: r.combo.institutions })}</p>
 

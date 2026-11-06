@@ -444,7 +444,7 @@
       "s1Title": "Biz kimmiz",
       "s1Text": "YourHEI abituriyentlarga qayerda o‘qishni tanlashda yordam beradigan xizmatdir. Ushbu siyosat qanday ma’lumotlarni to‘plashimiz va ulardan qanday foydalanishimizni tushuntiradi. Saytdan foydalanib, siz unga rozilik bildirasiz.",
       "s2Title": "Nimalarni to‘playmiz",
-      "s2Text": "Hisob ma’lumotlari (e-pochta va parolning himoyalangan shakli); profil ma’lumotlari (tug‘ilgan sana, bersangiz jins, yashash davlati, fuqarolik, nimani izlayotganingiz, hujjatlaringiz holati); so‘rovnoma javoblaringiz; hamda kukilar va shunga o‘xshash texnologiyalar orqali texnik va foydalanish ma’lumotlari (ko‘rgan sahifalaringiz, saytdagi harakatlar, qurilma, brauzer, til, IP-manzil, taxminiy joylashuv, qayerdan kelganingiz).",
+      "s2Text": "Hisob ma’lumotlari (e-pochta va parolning himoyalangan shakli); profil ma’lumotlari (tug‘ilgan sana, bersangiz jins, yashash davlati, fuqarolik, nimani izlayotganingiz, hujjatlaringiz holati); so‘rovnoma javoblaringiz; hamda kukilar va shunga o‘xshash texnologiyalar orqali texnik va foydalanish ma’lumotlari (ko‘rgan sahifalaringiz, saytdagi harakatlar, qurilma, brauzer, til, IP-manzil, taxminiy joylashuv, qayerdan kelganingiz). Tashriflar statistikasi uchun (faqat analitik cookie'larni qabul qilgan bo'lsangiz) xostingimiz aniqlagan mamlakat, mintaqa, shahar, vaqt mintaqasi va internet-provayder yoki tarmoqni yozib olamiz; IP-manzilning o'zi bu statistikada saqlanmaydi.",
       "s3Title": "Nima uchun to‘playmiz",
       "s3Text": "Xizmatni yuritish va yaxshilash, eng kam yoshni tekshirish, natijalaringizni tuzish, siz bilan aloqa qilish, saytdan foydalanishni o‘lchash, reklama ko‘rsatish, tadqiqot o‘tkazish, xizmat xavfsizligini ta’minlash va qonuniy majburiyatlarni bajarish uchun.",
       "s4Title": "Tahlil va ulashish",
@@ -1061,7 +1061,8 @@
     "ratesNote": "Narxlar kundalik kurs bo‘yicha o‘giriladi va taxminiy. Yakuniy so‘z muassasa sahifasi va uning rasmiy saytida.",
     "livingNote": "Yashash xarajatlari — davlat talaba vizasi uchun tasdiqlashni talab qiladigan eng kam summa. Haqiqiy xarajatlar, ayniqsa yirik shaharlarda, odatda yuqoriroq bo‘ladi.",
     "emptyProgrammes": "Dasturlar topilmadi. Ko‘p mamlakatlarning dasturlari bazamizda hali yo‘q, lekin ularning muassasalari bor.",
-    "showInstitutions": "Muassasalarni ko‘rsatish"
+    "showInstitutions": "Muassasalarni ko‘rsatish",
+    "seoTitle": "Katalog"
   },
   "Scholarships": {
     "title": "Stipendiyalar: qayerda bepul yoki arzonroq o‘qish mumkin",
@@ -1230,7 +1231,7 @@
   "Countries": {
     "listTitle": "Ta’lim yo‘nalishlari",
     "listIntro": "Ariza berishdan oldin muhim qoidalar haqida qisqa qo‘llanmalar: talaba vizasi, o‘qish paytida ishlash, bitirgandan keyin qolish. Qoidalar o‘zgaradi: ularni har doim biz havola qilgan rasmiy sahifalarda tekshiring.",
-    "pageTitle": "{country} mamlakatida o‘qish",
+    "pageTitle": "{place} mamlakatida o‘qish",
     "visaTitle": "Talaba vizasi va yashash ruxsatnomasi",
     "workTitle": "O‘qish paytida ishlash",
     "afterTitle": "Bitirgandan keyin",
@@ -1243,17 +1244,22 @@
     "checked": "Ma’lumot {date} sanasida tekshirilgan. Qoidalar o‘zgaradi: ariza berishdan oldin rasmiy sahifada tekshiring.",
     "notCollected": "Hali yig‘ilmagan. Rasmiy sahifani tekshiring.",
     "catalogLink": "Katalogni ochish",
-    "backToList": "Barcha yo‘nalishlar"
+    "backToList": "Barcha yo‘nalishlar",
+    "moreTitle": "O'qish haqida ko'proq: {place}",
+    "topFields": "Mashhur yo‘nalishlar",
+    "deadlinesLink": "Hujjat topshirish muddatlari: {place}",
+    "articlesTitle": "Maqolalar"
   },
   "Study": {
-    "hubTitle": "{country} mamlakatida o‘qish: yo‘nalishlar bo‘yicha dasturlar",
+    "hubTitle": "{place} mamlakatida o‘qish: yo‘nalishlar bo‘yicha dasturlar",
     "hubIntro": "Yo‘nalishlar: {fields}. Dasturlar: {programmes}. Ma’lumotlar rasmiy manbalardan olingan.",
-    "pageTitle": "{country} mamlakatida {field} o‘qish",
+    "pageTitle": "{place} mamlakatida {field} o‘qish",
     "pageIntro": "Dasturlar: {programmes}. Muassasalar: {institutions}. Ma’lumotlar rasmiy manbalardan olingan; ariza berishdan oldin narxlar va muddatlarni rasmiy sahifada tekshiring.",
     "institutionsTitle": "{field} o‘qitiladigan muassasalar",
     "programmesCount": "Dasturlar: {count}",
     "examples": "Masalan:",
-    "allFields": "{country} mamlakatidagi barcha yo‘nalishlar"
+    "allFields": "{country} mamlakatidagi barcha yo‘nalishlar",
+    "seoTitle": "{place} mamlakatida {field} o‘qish ({programmes})"
   },
   "ForInstitutions": {
     "title": "Universitetlar, kollejlar va maktablar uchun",

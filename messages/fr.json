@@ -444,7 +444,7 @@
       "s1Title": "Qui sommes-nous",
       "s1Text": "YourHEI est un service qui aide les candidats à choisir où étudier. Cette politique explique quelles données nous collectons et comment nous les utilisons. En utilisant le site, vous l’acceptez.",
       "s2Title": "Ce que nous collectons",
-      "s2Text": "Les données du compte (adresse e-mail et forme protégée de votre mot de passe) ; les données du profil (date de naissance, genre si vous l’indiquez, pays de résidence, nationalités, ce que vous cherchez, état de vos documents) ; vos réponses au questionnaire ; et des données techniques et d’utilisation (pages visitées, actions sur le site, appareil, navigateur, langue, adresse IP, localisation approximative, site d’origine), y compris au moyen de cookies et de technologies similaires.",
+      "s2Text": "Les données du compte (adresse e-mail et forme protégée de votre mot de passe) ; les données du profil (date de naissance, genre si vous l’indiquez, pays de résidence, nationalités, ce que vous cherchez, état de vos documents) ; vos réponses au questionnaire ; et des données techniques et d’utilisation (pages visitées, actions sur le site, appareil, navigateur, langue, adresse IP, localisation approximative, site d’origine), y compris au moyen de cookies et de technologies similaires. Pour les statistiques de visite (uniquement si vous avez accepté les cookies d'analyse), nous enregistrons le pays, la région, la ville, le fuseau horaire et le fournisseur d'accès ou le réseau tels que notre hébergeur les détermine ; l'adresse IP elle-même n'est pas conservée dans ces statistiques.",
       "s3Title": "Pourquoi nous les collectons",
       "s3Text": "Pour faire fonctionner et améliorer le service, vérifier l’âge minimum, établir vos résultats, communiquer avec vous, mesurer l’utilisation du site, afficher de la publicité, mener des recherches, assurer la sécurité du service et respecter nos obligations légales.",
       "s4Title": "Analyses et partage",
@@ -1061,7 +1061,8 @@
     "ratesNote": "Les prix sont convertis aux taux de change du jour et sont approximatifs. La page de l’établissement et son site officiel font foi.",
     "livingNote": "Les frais de vie sont le montant minimum qu’un pays exige de justifier pour le visa étudiant. Les dépenses réelles sont généralement plus élevées, surtout dans les grandes villes.",
     "emptyProgrammes": "Aucun programme trouvé. Pour beaucoup de pays, notre base n’a pas encore de programmes, mais nous avons leurs établissements.",
-    "showInstitutions": "Afficher les établissements"
+    "showInstitutions": "Afficher les établissements",
+    "seoTitle": "Catalogue"
   },
   "Scholarships": {
     "title": "Bourses : où étudier gratuitement ou à moindre coût",
@@ -1230,7 +1231,7 @@
   "Countries": {
     "listTitle": "Destinations d’études",
     "listIntro": "De courts guides sur les règles qui comptent avant de candidater : visa d’études, travailler pendant ses études, rester après le diplôme. Les règles changent : vérifiez-les toujours sur les pages officielles que nous indiquons.",
-    "pageTitle": "Étudier en {country}",
+    "pageTitle": "Étudier en {place}",
     "visaTitle": "Visa d’études et titre de séjour",
     "workTitle": "Travailler pendant ses études",
     "afterTitle": "Après le diplôme",
@@ -1243,17 +1244,22 @@
     "checked": "Informations vérifiées le {date}. Les règles changent : confirmez-les sur la page officielle avant de candidater.",
     "notCollected": "Pas encore collecté. Consultez la page officielle.",
     "catalogLink": "Parcourir le catalogue",
-    "backToList": "Toutes les destinations"
+    "backToList": "Toutes les destinations",
+    "moreTitle": "En savoir plus sur les études : {place}",
+    "topFields": "Domaines populaires",
+    "deadlinesLink": "Dates limites de candidature : {place}",
+    "articlesTitle": "Articles"
   },
   "Study": {
-    "hubTitle": "Étudier en {country} : programmes par domaine",
+    "hubTitle": "Étudier en {place} : programmes par domaine",
     "hubIntro": "Domaines : {fields}. Programmes : {programmes}. Les données proviennent de sources officielles.",
-    "pageTitle": "Étudier {field} en {country}",
+    "pageTitle": "Étudier {field} en {place}",
     "pageIntro": "Programmes : {programmes}. Établissements : {institutions}. Les données proviennent de sources officielles ; vérifiez les prix et les dates sur la page officielle avant de candidater.",
     "institutionsTitle": "Établissements enseignant {field}",
     "programmesCount": "Programmes : {count}",
     "examples": "Par exemple :",
-    "allFields": "Tous les domaines en {country}"
+    "allFields": "Tous les domaines en {country}",
+    "seoTitle": "Étudier {field} en {place} ({programmes})"
   },
   "ForInstitutions": {
     "title": "Pour les universités, collèges et écoles",

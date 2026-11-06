@@ -444,7 +444,7 @@
       "s1Title": "Biz kimiz",
       "s1Text": "YourHEI, adayların nerede okuyacaklarını seçmelerine yardımcı olan bir hizmettir. Bu politika hangi verileri topladığımızı ve nasıl kullandığımızı açıklar. Siteyi kullanarak bunu kabul etmiş olursun.",
       "s2Title": "Ne topluyoruz",
-      "s2Text": "Hesap verileri (e-posta ve parolanın korunmuş biçimi); profil verileri (doğum tarihi, verirsen cinsiyet, ikamet edilen ülke, vatandaşlıklar, aradığın şey, belgelerinin durumu); anket yanıtların; ayrıca çerezler ve benzeri teknolojiler dahil teknik ve kullanım verileri (ziyaret ettiğin sayfalar, sitedeki eylemler, cihaz, tarayıcı, dil, IP adresi, yaklaşık konum, geldiğin site).",
+      "s2Text": "Hesap verileri (e-posta ve parolanın korunmuş biçimi); profil verileri (doğum tarihi, verirsen cinsiyet, ikamet edilen ülke, vatandaşlıklar, aradığın şey, belgelerinin durumu); anket yanıtların; ayrıca çerezler ve benzeri teknolojiler dahil teknik ve kullanım verileri (ziyaret ettiğin sayfalar, sitedeki eylemler, cihaz, tarayıcı, dil, IP adresi, yaklaşık konum, geldiğin site). Ziyaret istatistikleri için (yalnızca analitik çerezleri kabul ettiyseniz) barındırma hizmetimizin belirlediği ülke, bölge, şehir, saat dilimi ve internet sağlayıcısı veya ağı kaydederiz; IP adresinin kendisi bu istatistiklerde saklanmaz.",
       "s3Title": "Neden topluyoruz",
       "s3Text": "Hizmeti işletmek ve geliştirmek, asgari yaşı kontrol etmek, eşleşmelerini oluşturmak, seninle iletişim kurmak, sitenin nasıl kullanıldığını ölçmek, reklam göstermek, araştırma yapmak, hizmeti güvende tutmak ve yasal yükümlülükleri yerine getirmek için.",
       "s4Title": "Analiz ve paylaşım",
@@ -1061,7 +1061,8 @@
     "ratesNote": "Fiyatlar günlük döviz kurlarıyla dönüştürülür ve yaklaşıktır. Son söz kurumun sayfasında ve resmî sitesindedir.",
     "livingNote": "Yaşam giderleri, bir ülkenin öğrenci vizesi için göstermeni istediği asgari tutardır. Gerçek harcamalar, özellikle büyük şehirlerde, genellikle daha yüksektir.",
     "emptyProgrammes": "Program bulunamadı. Birçok ülkenin program verisi veritabanımızda henüz yok, ancak kurumları var.",
-    "showInstitutions": "Kurumları göster"
+    "showInstitutions": "Kurumları göster",
+    "seoTitle": "Katalog"
   },
   "Scholarships": {
     "title": "Burslar: nerede ücretsiz veya daha ucuza okunur",
@@ -1230,7 +1231,7 @@
   "Countries": {
     "listTitle": "Eğitim ülkeleri",
     "listIntro": "Başvurmadan önce önemli kurallara dair kısa rehberler: öğrenci vizesi, öğrenirken çalışma, mezuniyet sonrası kalma. Kurallar değişir: bunları her zaman bağlantı verdiğimiz resmî sayfalarda doğrula.",
-    "pageTitle": "{country} ülkesinde eğitim",
+    "pageTitle": "{place} ülkesinde eğitim",
     "visaTitle": "Öğrenci vizesi ve oturma izni",
     "workTitle": "Öğrenirken çalışma",
     "afterTitle": "Mezuniyet sonrası",
@@ -1243,17 +1244,22 @@
     "checked": "Bilgi {date} tarihinde kontrol edildi. Kurallar değişir: başvurmadan önce resmî sayfada doğrula.",
     "notCollected": "Henüz toplanmadı. Lütfen resmî sayfayı kontrol et.",
     "catalogLink": "Kataloğa göz at",
-    "backToList": "Tüm ülkeler"
+    "backToList": "Tüm ülkeler",
+    "moreTitle": "{place} eğitimi hakkında daha fazlası",
+    "topFields": "Popüler alanlar",
+    "deadlinesLink": "{place} başvuru tarihleri",
+    "articlesTitle": "Makaleler"
   },
   "Study": {
-    "hubTitle": "{country} ülkesinde eğitim: alanlara göre programlar",
+    "hubTitle": "{place} ülkesinde eğitim: alanlara göre programlar",
     "hubIntro": "Alanlar: {fields}. Programlar: {programmes}. Veriler resmî kaynaklardan gelir.",
-    "pageTitle": "{country} ülkesinde {field} eğitimi",
+    "pageTitle": "{place} ülkesinde {field} eğitimi",
     "pageIntro": "Programlar: {programmes}. Kurumlar: {institutions}. Veriler resmî kaynaklardan gelir; başvurmadan önce fiyatları ve tarihleri resmî sayfada doğrula.",
     "institutionsTitle": "{field} okutulan kurumlar",
     "programmesCount": "Programlar: {count}",
     "examples": "Örneğin:",
-    "allFields": "{country} ülkesindeki tüm alanlar"
+    "allFields": "{country} ülkesindeki tüm alanlar",
+    "seoTitle": "{place} ülkesinde {field} eğitimi ({programmes})"
   },
   "ForInstitutions": {
     "title": "Üniversiteler, kolejler ve okullar için",

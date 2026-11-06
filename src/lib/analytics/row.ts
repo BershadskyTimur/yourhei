@@ -1,4 +1,5 @@
 import { EVENT_NAMES, sanitizeMeta } from './events';
+import { NO_GEO, type VisitGeo } from './geo';
 
 /** One line of the site_events table. */
 export interface EventRow {
@@ -10,6 +11,12 @@ export interface EventRow {
   device: 'mobile' | 'tablet' | 'desktop' | null;
   referrer: string | null;
   session: string | null;
+  /** where the visit comes from (see geo.ts); only present when known */
+  region?: string;
+  city?: string;
+  timezone?: string;
+  asn?: number;
+  as_org?: string;
 }
 
 const isDevice = (v: unknown): v is 'mobile' | 'tablet' | 'desktop' => v === 'mobile' || v === 'tablet' || v === 'desktop';
@@ -22,7 +29,9 @@ export const MAX_EVENTS_PER_REQUEST = 10;
  * a bad address, the admin panel (not counted), an unknown event or values that do not pass the checks.
  * Pure function: everything that reaches the database goes through here.
  */
-export function eventToRow(body: unknown, country: string | null): EventRow | null {
+export function eventToRow(body: unknown, place: VisitGeo | string | null): EventRow | null {
+  const geo: VisitGeo = typeof place === 'string' || place === null ? { ...NO_GEO, country: place } : place;
+  const country = geo.country;
   if (typeof body !== 'object' || body === null) return null;
   const b = body as Record<string, unknown>;
   const path = typeof b.path === 'string' ? b.path : '';
@@ -44,16 +53,21 @@ export function eventToRow(body: unknown, country: string | null): EventRow | nu
     device: isDevice(b.device) ? b.device : null,
     referrer: typeof b.referrer === 'string' && /^[a-z0-9.-]{1,100}$/i.test(b.referrer) ? b.referrer : null,
     session: typeof b.session === 'string' ? b.session.slice(0, 40) : null,
+    ...(geo.region ? { region: geo.region } : {}),
+    ...(geo.city ? { city: geo.city } : {}),
+    ...(geo.timezone ? { timezone: geo.timezone } : {}),
+    ...(geo.asn ? { asn: geo.asn } : {}),
+    ...(geo.asOrg ? { as_org: geo.asOrg } : {}),
   };
 }
 
 /** A request holds one event ({...}) or a batch ({ events: [...] }); returns the valid rows, at most MAX_EVENTS_PER_REQUEST. */
-export function rowsFromRequest(body: unknown, country: string | null): EventRow[] {
+export function rowsFromRequest(body: unknown, place: VisitGeo | string | null): EventRow[] {
   const list = typeof body === 'object' && body !== null && Array.isArray((body as { events?: unknown }).events) ? (body as { events: unknown[] }).events : [body];
   return list
     .slice(0, MAX_EVENTS_PER_REQUEST)
     .flatMap((e) => {
-      const row = eventToRow(e, country);
+      const row = eventToRow(e, place);
       return row ? [row] : [];
     });
 }

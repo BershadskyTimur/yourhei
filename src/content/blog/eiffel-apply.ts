@@ -2,8 +2,8 @@ import type { Article } from '@/lib/blog/types';
 
 export const eiffelApply: Article = {
   slug: 'eiffel-excellence-scholarship-how-to-apply',
-  published: '2026-11-12',
-  updated: '2026-11-12',
+  published: '2026-11-06',
+  updated: '2026-11-06',
   ru: {
     title: 'Стипендия Eiffel (Франция): кто может получить и как подать заявку',
     description: 'Как устроена стипендия Eiffel для магистратуры и докторантуры во Франции: заявку подаёт французский вуз, 1 200 и 2 000 евро в месяц, возраст, сроки набора 2027.',

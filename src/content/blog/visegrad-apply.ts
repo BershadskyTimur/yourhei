@@ -2,8 +2,8 @@ import type { Article } from '@/lib/blog/types';
 
 export const visegradApply: Article = {
   slug: 'visegrad-scholarship-how-to-apply',
-  published: '2026-11-19',
-  updated: '2026-11-19',
+  published: '2026-11-06',
+  updated: '2026-11-06',
   ru: {
     title: 'Visegrad Scholarship: учёба в Чехии, Венгрии, Польше, Словакии',
     description: 'Как устроена стипендия Вышеградского фонда: кто может подать заявку (включая Грузию, Армению, Азербайджан, Украину), 3 500 евро за семестр, сроки набора 2027 и документы.',

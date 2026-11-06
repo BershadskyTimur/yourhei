@@ -444,7 +444,7 @@
       "s1Title": "Quiénes somos",
       "s1Text": "YourHEI es un servicio que ayuda a los aspirantes a elegir dónde estudiar. Esta política explica qué datos recogemos y cómo los usamos. Al usar el sitio, la aceptas.",
       "s2Title": "Qué recogemos",
-      "s2Text": "Datos de la cuenta (correo y una forma protegida de tu contraseña); datos del perfil (fecha de nacimiento, género si lo indicas, país de residencia, nacionalidades, lo que buscas, el estado de tus documentos); tus respuestas de la encuesta; y datos técnicos y de uso (páginas que visitas, acciones en el sitio, dispositivo, navegador, idioma, dirección IP, ubicación aproximada, el sitio desde el que llegas), también mediante cookies y tecnologías similares.",
+      "s2Text": "Datos de la cuenta (correo y una forma protegida de tu contraseña); datos del perfil (fecha de nacimiento, género si lo indicas, país de residencia, nacionalidades, lo que buscas, el estado de tus documentos); tus respuestas de la encuesta; y datos técnicos y de uso (páginas que visitas, acciones en el sitio, dispositivo, navegador, idioma, dirección IP, ubicación aproximada, el sitio desde el que llegas), también mediante cookies y tecnologías similares. Para las estadísticas de visitas (solo si aceptó las cookies de análisis) registramos el país, la región, la ciudad, la zona horaria y el proveedor de internet o la red según los determina nuestro alojamiento; la dirección IP en sí no se guarda en estas estadísticas.",
       "s3Title": "Por qué lo recogemos",
       "s3Text": "Para operar y mejorar el servicio, comprobar la edad mínima, elaborar tus recomendaciones, comunicarnos contigo, medir el uso del sitio, mostrar publicidad, hacer investigación, mantener la seguridad y cumplir obligaciones legales.",
       "s4Title": "Analítica y comunicación de datos",
@@ -1061,7 +1061,8 @@
     "ratesNote": "Los precios se convierten a los tipos de cambio diarios y son aproximados. Lo que vale es la página del centro y su web oficial.",
     "livingNote": "Los gastos de vida son el importe mínimo que un país exige acreditar para el visado de estudiante. El gasto real suele ser mayor, sobre todo en las grandes ciudades.",
     "emptyProgrammes": "No se encontraron programas. Muchos países aún no tienen datos de programas en nuestra base, pero sí tenemos sus instituciones.",
-    "showInstitutions": "Mostrar instituciones"
+    "showInstitutions": "Mostrar instituciones",
+    "seoTitle": "Catálogo"
   },
   "Scholarships": {
     "title": "Becas: dónde estudiar gratis o más barato",
@@ -1230,7 +1231,7 @@
   "Countries": {
     "listTitle": "Destinos de estudio",
     "listIntro": "Guías breves sobre las normas que importan antes de solicitar: visado de estudios, trabajar mientras estudias y quedarte tras graduarte. Las normas cambian: confírmalas siempre en las páginas oficiales que enlazamos.",
-    "pageTitle": "Estudiar en {country}",
+    "pageTitle": "Estudiar en {place}",
     "visaTitle": "Visado de estudios y permiso de residencia",
     "workTitle": "Trabajar mientras estudias",
     "afterTitle": "Después de graduarte",
@@ -1243,17 +1244,22 @@
     "checked": "Información comprobada el {date}. Las normas cambian: confírmalas en la página oficial antes de solicitar.",
     "notCollected": "Aún no recopilado. Consulta la página oficial.",
     "catalogLink": "Ver el catálogo",
-    "backToList": "Todos los destinos"
+    "backToList": "Todos los destinos",
+    "moreTitle": "Más sobre estudiar en {place}",
+    "topFields": "Áreas populares",
+    "deadlinesLink": "Plazos de solicitud en {place}",
+    "articlesTitle": "Artículos"
   },
   "Study": {
-    "hubTitle": "Estudiar en {country}: programas por área",
+    "hubTitle": "Estudiar en {place}: programas por área",
     "hubIntro": "Áreas: {fields}. Programas: {programmes}. Los datos proceden de fuentes oficiales.",
-    "pageTitle": "Estudiar {field} en {country}",
+    "pageTitle": "Estudiar {field} en {place}",
     "pageIntro": "Programas: {programmes}. Instituciones: {institutions}. Los datos proceden de fuentes oficiales; confirma precios y plazos en la página oficial antes de solicitar.",
     "institutionsTitle": "Instituciones donde se estudia {field}",
     "programmesCount": "Programas: {count}",
     "examples": "Por ejemplo:",
-    "allFields": "Todas las áreas en {country}"
+    "allFields": "Todas las áreas en {country}",
+    "seoTitle": "Estudiar {field} en {place} ({programmes})"
   },
   "ForInstitutions": {
     "title": "Para universidades, colegios y escuelas",
