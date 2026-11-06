@@ -1318,7 +1318,10 @@
     "noneConfirmed": "In unseren Daten gibt es noch kein Programm mit veröffentlichter Länderliste, die dieses Land enthält. Sehen Sie die vollständige Stipendienliste.",
     "severalCountries": "Mehrere Länder",
     "programmeDetails": "Details zu den Programmen",
-    "machineTranslated": "Dieser Artikel ist eine maschinelle Übersetzung des englischen Originals und wurde noch nicht von einem Menschen gelesen. Prüfen Sie die im Text verlinkten offiziellen Seiten."
+    "machineTranslated": "Dieser Artikel ist eine maschinelle Übersetzung des englischen Originals und wurde noch nicht von einem Menschen gelesen. Prüfen Sie die im Text verlinkten offiziellen Seiten.",
+    "countriesTitle": "Zu diesem Land",
+    "countryGuideLink": "{country}: Visum, Arbeit und Lebenshaltungskosten",
+    "countryStudyLink": "{country}: Programme und Hochschulen"
   },
   "Deadlines": {
     "title": "Bewerbungsfristen",

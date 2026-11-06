@@ -1,3 +1,4 @@
+import { countriesOfArticle } from '@/lib/countries-guide/guides';
 import { plainText } from './inline';
 import type { Article, ArticleBody, Block, BlogLang } from './types';
 import { TRANSLATED_LANGS } from './types';
@@ -70,9 +71,13 @@ export function bodyOf(article: Article, locale: string): ArticleBody {
   return TRANSLATIONS[lang]?.[article.slug] ?? article.en;
 }
 
-/** Other articles to read next: the newest ones, never the article itself. */
+/** Other articles to read next: the ones about the same countries first, then the newest, never the article itself. */
 export function relatedArticles(slug: string, today: Date = new Date(), count = 3): Article[] {
-  return publishedArticles(today).filter((a) => a.slug !== slug).slice(0, count);
+  const mine = countriesOfArticle(slug);
+  const shared = (a: Article) => countriesOfArticle(a.slug).filter((c) => mine.includes(c)).length;
+  const others = publishedArticles(today).filter((a) => a.slug !== slug);
+  // a stable sort keeps "the newest first" inside each group
+  return others.map((a, i) => ({ a, i, n: shared(a) })).sort((x, y) => y.n - x.n || x.i - y.i).slice(0, count).map(({ a }) => a);
 }
 
 const WORDS_PER_MINUTE = 180;

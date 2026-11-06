@@ -7,7 +7,10 @@ import { JsonLd } from '@/components/JsonLd';
 import { Link } from '@/i18n/navigation';
 import { routing } from '@/i18n/routing';
 import { articleLang, bodyOf, getArticle, publishedArticles, readingMinutes, relatedArticles, sectionsOf } from '@/lib/blog/posts';
+import { countriesOfArticle } from '@/lib/countries-guide/guides';
+import { countryLabel } from '@/lib/seo/place';
 import { seoMetadata } from '@/lib/seo/metadata';
+import { studyCountries } from '@/lib/study/combos';
 import { articleLd, breadcrumbList } from '@/lib/seo/structured';
 
 // Articles appear on their publication day: a page is built on the first visit and rebuilt every hour.
@@ -40,6 +43,10 @@ export default async function ArticlePage({ params }: { params: Params }) {
   const published = new Set(publishedArticles().map((a) => a.slug));
   const sections = sectionsOf(body.blocks);
   const related = relatedArticles(slug);
+  // the countries the article is about: a way on to their guide and to the programmes there
+  const regionNames = new Intl.DisplayNames([locale], { type: 'region' });
+  const withStudyPage = studyCountries();
+  const countries = countriesOfArticle(slug).map((cc) => ({ cc, name: countryLabel(locale, cc, regionNames.of(cc) ?? cc), study: withStudyPage.includes(cc) }));
   const date = new Intl.DateTimeFormat(locale, { dateStyle: 'long', timeZone: 'UTC' });
   const day = (iso: string) => date.format(new Date(`${iso}T00:00:00Z`));
 
@@ -85,6 +92,20 @@ export default async function ArticlePage({ params }: { params: Params }) {
       </div>
 
       <p className="mt-10 rounded-lg border border-line bg-surface px-4 py-3 text-sm text-muted">{t('disclaimer')}</p>
+
+      {countries.length > 0 && (
+        <section className="mt-12" aria-labelledby="countries-title">
+          <h2 id="countries-title" className="text-xl font-semibold text-text">{t('countriesTitle')}</h2>
+          <ul className="mt-3 space-y-2">
+            {countries.map((c) => (
+              <li key={c.cc} className="flex flex-wrap gap-x-4 gap-y-1">
+                <Link href={`/countries/${c.cc.toLowerCase()}`} className="font-semibold text-accent-text underline underline-offset-4">{t('countryGuideLink', { country: c.name })}</Link>
+                {c.study && <Link href={`/study/${c.cc.toLowerCase()}`} className="font-semibold text-accent-text underline underline-offset-4">{t('countryStudyLink', { country: c.name })}</Link>}
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
 
       {related.length > 0 && (
         <section className="mt-12" aria-labelledby="related-title">
