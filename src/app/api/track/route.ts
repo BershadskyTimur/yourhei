@@ -61,7 +61,12 @@ export async function POST(request: NextRequest) {
   if (rows.length === 0) return new NextResponse(null, { status: 204 });
 
   const supabase = createClient(url, key, { auth: { persistSession: false } });
-  const { error } = await supabase.from('site_events').insert(rows);
+  let { error } = await supabase.from('site_events').insert(rows);
+  // before migration 0040 the place columns do not exist: save the visit without them rather than lose it
+  if (error && /PGRST204|42703/.test(`${error.code}`)) {
+    const PLACE = new Set(['region', 'city', 'timezone', 'asn', 'as_org']);
+    ({ error } = await supabase.from('site_events').insert(rows.map((r) => Object.fromEntries(Object.entries(r).filter(([k]) => !PLACE.has(k))))));
+  }
   if (error) console.error('[track] could not save', error.message);
   return new NextResponse(null, { status: 204 });
 }
