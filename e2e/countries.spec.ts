@@ -7,13 +7,25 @@ test.describe('study destinations', () => {
     await expect(page).toHaveURL(/\/en\/countries$/);
     await page.getByRole('link', { name: 'Germany' }).click();
     await expect(page).toHaveURL(/\/en\/countries\/de$/);
-    await expect(page.getByRole('heading', { name: 'Studying in Germany' })).toBeVisible();
+    await expect(page.getByRole('heading', { level: 1, name: 'Studying in Germany: visa, work and cost of living' })).toBeVisible();
     await expect(page.getByText('140 full days or 280 half days')).toBeVisible();
     // every statement has an official link that opens in a new tab
     const links = page.locator('main a[href^="https://"]');
     expect(await links.count()).toBeGreaterThanOrEqual(3);
     await expect(links.first()).toHaveAttribute('rel', /noopener/);
     await expect(page.getByText(/at least .* per month/)).toBeVisible(); // the visa living minimum
+    // more about the country: its biggest fields, its deadlines and the articles about it
+    await expect(page.getByRole('heading', { name: 'More about studying in Germany' })).toBeVisible();
+    await expect(page.getByRole('link', { name: 'Application deadlines in Germany' })).toHaveAttribute('href', '/en/deadlines/de');
+    await expect(page.locator('a[href^="/en/study/de/"]').first()).toBeVisible();
+    await expect(page.locator('a[href^="/en/blog/"]').first()).toBeVisible();
+  });
+
+  test('Russian titles use the right case', async ({ page }) => {
+    await page.goto('/ru/countries/cz');
+    await expect(page).toHaveTitle(/Учёба в Чехии: виза, работа и стоимость жизни/);
+    await page.goto('/ru/study/de');
+    await expect(page.getByRole('heading', { level: 1 })).toHaveText('Учёба в Германии: программы по направлениям');
   });
 
   test('an unknown country is not found', async ({ page }) => {
