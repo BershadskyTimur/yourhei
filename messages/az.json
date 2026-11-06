@@ -1244,7 +1244,11 @@
     "checked": "Məlumat {date} tarixində yoxlanılıb. Qaydalar dəyişir: müraciətdən əvvəl rəsmi səhifədə yoxlayın.",
     "notCollected": "Hələ toplanmayıb. Rəsmi səhifəni yoxlayın.",
     "catalogLink": "Kataloqa bax",
-    "backToList": "Bütün istiqamətlər"
+    "backToList": "Bütün istiqamətlər",
+    "moreTitle": "Təhsil haqqında daha çox: {place}",
+    "topFields": "Populyar istiqamətlər",
+    "deadlinesLink": "Sənəd təqdimetmə müddətləri: {place}",
+    "articlesTitle": "Məqalələr"
   },
   "Study": {
     "hubTitle": "{place} ölkəsində təhsil: sahələr üzrə proqramlar",

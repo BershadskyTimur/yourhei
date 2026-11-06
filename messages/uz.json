@@ -1244,7 +1244,11 @@
     "checked": "Ma’lumot {date} sanasida tekshirilgan. Qoidalar o‘zgaradi: ariza berishdan oldin rasmiy sahifada tekshiring.",
     "notCollected": "Hali yig‘ilmagan. Rasmiy sahifani tekshiring.",
     "catalogLink": "Katalogni ochish",
-    "backToList": "Barcha yo‘nalishlar"
+    "backToList": "Barcha yo‘nalishlar",
+    "moreTitle": "O'qish haqida ko'proq: {place}",
+    "topFields": "Mashhur yo‘nalishlar",
+    "deadlinesLink": "Hujjat topshirish muddatlari: {place}",
+    "articlesTitle": "Maqolalar"
   },
   "Study": {
     "hubTitle": "{place} mamlakatida o‘qish: yo‘nalishlar bo‘yicha dasturlar",

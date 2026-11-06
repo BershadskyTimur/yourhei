@@ -1244,7 +1244,11 @@
     "checked": "Informacje sprawdzone dnia {date}. Przepisy się zmieniają: potwierdź je na oficjalnej stronie przed złożeniem wniosku.",
     "notCollected": "Jeszcze nie zebrano. Sprawdź oficjalną stronę.",
     "catalogLink": "Przeglądaj katalog",
-    "backToList": "Wszystkie kierunki"
+    "backToList": "Wszystkie kierunki",
+    "moreTitle": "Więcej o studiach: {place}",
+    "topFields": "Popularne kierunki",
+    "deadlinesLink": "Terminy składania dokumentów: {place}",
+    "articlesTitle": "Artykuły"
   },
   "Study": {
     "hubTitle": "Studia: {place}. Programy według kierunków",

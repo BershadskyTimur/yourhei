@@ -1244,7 +1244,11 @@
     "checked": "Informations vérifiées le {date}. Les règles changent : confirmez-les sur la page officielle avant de candidater.",
     "notCollected": "Pas encore collecté. Consultez la page officielle.",
     "catalogLink": "Parcourir le catalogue",
-    "backToList": "Toutes les destinations"
+    "backToList": "Toutes les destinations",
+    "moreTitle": "En savoir plus sur les études : {place}",
+    "topFields": "Domaines populaires",
+    "deadlinesLink": "Dates limites de candidature : {place}",
+    "articlesTitle": "Articles"
   },
   "Study": {
     "hubTitle": "Étudier en {place} : programmes par domaine",

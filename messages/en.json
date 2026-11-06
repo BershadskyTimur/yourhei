@@ -1244,7 +1244,11 @@
     "checked": "Information checked on {date}. Rules change: confirm them on the official page before you apply.",
     "notCollected": "Not collected yet. Please check the official page.",
     "catalogLink": "Browse the catalogue",
-    "backToList": "All destinations"
+    "backToList": "All destinations",
+    "moreTitle": "More about studying in {place}",
+    "topFields": "Popular fields",
+    "deadlinesLink": "Application deadlines in {place}",
+    "articlesTitle": "Articles"
   },
   "Study": {
     "hubTitle": "Study in {place}: programmes by field",

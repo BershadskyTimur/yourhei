@@ -1244,7 +1244,11 @@
     "checked": "Informationen geprüft am {date}. Regeln ändern sich: bestätige sie vor der Bewerbung auf der offiziellen Seite.",
     "notCollected": "Noch nicht erfasst. Bitte prüfe die offizielle Seite.",
     "catalogLink": "Katalog öffnen",
-    "backToList": "Alle Studienziele"
+    "backToList": "Alle Studienziele",
+    "moreTitle": "Mehr zum Studium in {place}",
+    "topFields": "Beliebte Fachgebiete",
+    "deadlinesLink": "Bewerbungsfristen in {place}",
+    "articlesTitle": "Artikel"
   },
   "Study": {
     "hubTitle": "Studieren in {place}: Programme nach Fachgebiet",

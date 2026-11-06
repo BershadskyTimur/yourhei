@@ -1244,7 +1244,11 @@
     "checked": "信息核查日期：{date}。规则会变化：申请前请在官方页面核实。",
     "notCollected": "尚未收集。请查看官方页面。",
     "catalogLink": "浏览目录",
-    "backToList": "所有目的地"
+    "backToList": "所有目的地",
+    "moreTitle": "更多关于在{place}留学",
+    "topFields": "热门方向",
+    "deadlinesLink": "{place}的申请截止日期",
+    "articlesTitle": "文章"
   },
   "Study": {
     "hubTitle": "在{place}留学：按专业领域查看项目",

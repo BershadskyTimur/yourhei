@@ -1244,7 +1244,11 @@
     "checked": "Información comprobada el {date}. Las normas cambian: confírmalas en la página oficial antes de solicitar.",
     "notCollected": "Aún no recopilado. Consulta la página oficial.",
     "catalogLink": "Ver el catálogo",
-    "backToList": "Todos los destinos"
+    "backToList": "Todos los destinos",
+    "moreTitle": "Más sobre estudiar en {place}",
+    "topFields": "Áreas populares",
+    "deadlinesLink": "Plazos de solicitud en {place}",
+    "articlesTitle": "Artículos"
   },
   "Study": {
     "hubTitle": "Estudiar en {place}: programas por área",

@@ -35,3 +35,20 @@ export function livingMinimum(country: string): LivingMinimum | null {
   const amount = row?.cities?.[0]?.amount;
   return row && typeof amount === 'number' ? { currency: row.currency, amount, year: row.year, url: row.url } : null;
 }
+
+/** Blog articles about one country (shown on its guide page when published), besides the ones for every country. */
+const ARTICLES_OF: Record<string, string[]> = {
+  DE: ['germany-how-to-apply-uni-assist', 'daad-scholarships-how-to-apply', 'free-tuition-germany-czechia-finland'],
+  GB: ['chevening-scholarship-how-to-apply'],
+  NL: ['netherlands-application-deadlines-studielink', 'nl-scholarship-netherlands-how-to-apply'],
+  FI: ['finland-how-to-apply-studyinfo', 'free-tuition-germany-czechia-finland'],
+  CZ: ['czechia-how-to-apply-universities', 'free-tuition-germany-czechia-finland'],
+  PL: ['poland-recognition-of-certificate-and-diploma-nawa', 'visegrad-scholarship-how-to-apply'],
+  TR: ['turkiye-scholarships-how-to-apply'],
+};
+const ARTICLES_FOR_ALL = ['work-during-studies-rules-by-country', 'after-graduation-work-permits-by-country', 'proof-of-funds-student-visa'];
+
+/** The slugs of the articles to link from a country guide: its own first, then the general ones. */
+export function articleSlugsOf(country: string): string[] {
+  return [...(ARTICLES_OF[country.toUpperCase()] ?? []), ...ARTICLES_FOR_ALL];
+}
