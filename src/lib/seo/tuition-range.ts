@@ -11,6 +11,18 @@ interface Item {
   durationYears: number | null;
 }
 
+/** "€8,000 – €12,000", or "€8,000" when both ends are equal, written the way the language of the page writes money. */
+export function formatTuitionRange(locale: string, r: TuitionRange): string {
+  const money = (n: number) => {
+    try {
+      return new Intl.NumberFormat(locale, { style: 'currency', currency: r.currency, maximumFractionDigits: 0 }).format(n);
+    } catch {
+      return `${n} ${r.currency}`;
+    }
+  };
+  return r.min === r.max ? money(r.min) : `${money(r.min)} – ${money(r.max)}`;
+}
+
 /**
  * The yearly tuition of an institution for a student from abroad, as the cheapest and the dearest price of its programmes, in the
  * currency most programmes use (prices in different currencies are not mixed). Used for the page description, where people who search

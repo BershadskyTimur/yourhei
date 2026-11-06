@@ -3,7 +3,7 @@ import { hasLocale } from 'next-intl';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { FavoriteButton } from '@/components/FavoriteButton';
-import { ProgramCard } from '@/components/ProgramCard';
+import { ProgramCard, examLabel } from '@/components/ProgramCard';
 import { ReportError } from '@/components/ReportError';
 import { ReviewForm } from '@/components/ReviewForm';
 import { TrackedLink } from '@/components/TrackedLink';
@@ -17,9 +17,10 @@ import { getInstitutionDetail } from '@/lib/institutions/detail';
 import { pickLocalized, pickText } from '@/lib/institutions/localized';
 import { JsonLd } from '@/components/JsonLd';
 import { seoMetadata, trimDescription } from '@/lib/seo/metadata';
-import { countryLabel } from '@/lib/seo/place';
-import { tuitionRange } from '@/lib/seo/tuition-range';
-import { breadcrumbList } from '@/lib/seo/structured';
+import { hasPrices, institutionFacts, levelRows } from '@/lib/seo/institution-faq';
+import { countryLabel, seoCity } from '@/lib/seo/place';
+import { formatTuitionRange, tuitionRange } from '@/lib/seo/tuition-range';
+import { breadcrumbList, faqPageLd, institutionLd, type FaqEntry } from '@/lib/seo/structured';
 import { comboOf, fieldSlug, studyCountries } from '@/lib/study/combos';
 import { iscedEntry, labelFor } from '@/lib/survey/references';
 
@@ -44,23 +45,15 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   const t = await getTranslations({ locale, namespace: 'Seo' });
   const tLevel = await getTranslations({ locale, namespace: 'Survey.q.level.options' });
   const name = pickLocalized(institution.names, locale).text;
-  const city = pickLocalized(institution.city, locale).text;
+  const city = seoCity(pickLocalized(institution.city, locale).text);
   const countryName = new Intl.DisplayNames([locale], { type: 'region' }).of(institution.country) ?? institution.country;
   const levels = LEVEL_ORDER.filter((l) => institution.programs.some((p) => p.level === l)).map((l) => tLevel(l as 'bachelor'));
   // people search "<university> tuition": when the prices are known the description says them (cheapest to dearest per year)
   const range = tuitionRange(institution.programs);
-  const money = (n: number, currency: string) => {
-    try {
-      return new Intl.NumberFormat(locale, { style: 'currency', currency, maximumFractionDigits: 0 }).format(n);
-    } catch {
-      return `${n} ${currency}`;
-    }
-  };
   const descriptionOf = () => {
-    const args = { name, place: [city.replace(/\s+Municipality$/i, ''), countryLabel(locale, institution.country, countryName ?? institution.country)].filter(Boolean).join(', '), count: institution.programs.length, levels: levels.join(', ') };
+    const args = { name, place: [city, countryLabel(locale, institution.country, countryName ?? institution.country)].filter(Boolean).join(', '), count: institution.programs.length, levels: levels.join(', ') };
     if (!range) return t('institutionDescription', args);
-    const text = range.min === range.max ? money(range.min, range.currency) : `${money(range.min, range.currency)} – ${money(range.max, range.currency)}`;
-    return t('institutionDescriptionPrice', { ...args, range: text });
+    return t('institutionDescriptionPrice', { ...args, range: formatTuitionRange(locale, range) });
   };
   return seoMetadata({
     locale,
@@ -80,6 +73,7 @@ export default async function InstitutionPage({ params }: { params: Params }) {
   if (!institution) notFound();
 
   const t = await getTranslations('Institution');
+  const tFaq = await getTranslations('Institution.faq');
   const tTypes = await getTranslations('Types');
   const tReviews = await getTranslations('Reviews');
   const tSurvey = await getTranslations('Survey.q.level.options');
@@ -98,17 +92,41 @@ export default async function InstitutionPage({ params }: { params: Params }) {
   if (institution.dormitory !== null) facts.push([t('dormitory'), institution.dormitory ? t('dormitoryYes') : t('dormitoryNo')]);
   const features = institution.features.filter((f) => t.has(`features.${f}` as 'features.exchange'));
 
-  // Structured data for search engines (an institution with its place and site).
-  const structured = {
-    '@context': 'https://schema.org',
-    '@type': institution.type === 'university' || institution.type === 'college' ? 'CollegeOrUniversity' : 'EducationalOrganization',
-    name,
-    ...(original && original !== name ? { alternateName: original } : {}),
-    ...(institution.website ? { url: institution.website } : {}),
-    ...(institution.wikidataId ? { sameAs: [`https://www.wikidata.org/wiki/${institution.wikidataId}`] } : {}),
-    address: { '@type': 'PostalAddress', addressCountry: institution.country, ...(city ? { addressLocality: city } : {}) },
-    ...(institution.foundedYear ? { foundingDate: String(institution.foundedYear) } : {}),
-  };
+  // Structured data for search engines (an institution with its place, site and Wikidata item).
+  const structured = institutionLd({ type: institution.type, name, original, website: institution.website, country: institution.country, city, foundedYear: institution.foundedYear, wikidataId: institution.wikidataId });
+
+  const levelLabel = (level: string) => (tSurvey.has(level as 'bachelor') ? tSurvey(level as 'bachelor') : level);
+  // The price table and the questions are made from the programmes read above (no further database reads).
+  const priceRows = levelRows(institution.programs, LEVEL_ORDER);
+  const info = institutionFacts(institution.programs, LEVEL_ORDER, new Date().toISOString().slice(0, 10));
+  const numberText = new Intl.NumberFormat(locale);
+  const dateText = new Intl.DateTimeFormat(locale, { dateStyle: 'long', timeZone: 'UTC' });
+  const langNames = new Intl.DisplayNames([locale], { type: 'language' });
+  // Only the questions whose answer is known; the same texts go to the structured data.
+  const faq: FaqEntry[] = [];
+  if (info.tuition) {
+    faq.push({ question: tFaq('tuitionQ', { name }), answer: [tFaq('tuitionA', { range: formatTuitionRange(locale, info.tuition) }), info.freeCount > 0 ? tFaq('freeNote', { count: info.freeCount }) : ''].filter(Boolean).join(' ') });
+  } else if (info.programCount > 0 && info.freeCount === info.programCount) {
+    faq.push({ question: tFaq('tuitionQ', { name }), answer: tFaq('allFree') });
+  }
+  if (info.deadlines.length > 0) {
+    faq.push({ question: tFaq('deadlinesQ', { name }), answer: tFaq('deadlinesA', { dates: info.deadlines.map((d) => dateText.format(new Date(`${d}T00:00:00Z`))).join(', ') }) });
+  }
+  if (info.programCount > 0) {
+    faq.push({ question: tFaq('programsQ', { name }), answer: tFaq('programsA', { programs: t('programsCount', { count: info.programCount }), levels: info.levels.map(levelLabel).join(', ') }) });
+  }
+  if (info.languages.length > 0) {
+    faq.push({ question: tFaq('languagesQ', { name }), answer: tFaq('languagesA', { languages: info.languages.map((l) => langNames.of(l) ?? l).join(', ') }) });
+  }
+  if (info.scores.length > 0) {
+    const scores = info.scores.map((s) => (s.min === s.max ? tFaq('scoreOne', { exam: examLabel(s.exam, locale), min: numberText.format(s.min) }) : tFaq('scoreRange', { exam: examLabel(s.exam, locale), min: numberText.format(s.min), max: numberText.format(s.max) })));
+    faq.push({ question: tFaq('scoresQ', { name }), answer: tFaq('scoresA', { scores: scores.join('; ') }) });
+  }
+  if (institution.dormitory !== null) {
+    faq.push({ question: tFaq('dormitoryQ', { name }), answer: institution.dormitory ? tFaq('dormitoryYes') : tFaq('dormitoryNo') });
+  }
+  // One question alone only repeats the programme list: the block needs at least two.
+  const showFaq = faq.length >= 2;
 
   // The fields this institution teaches that have a page "Study <field> in <country>": a way on to the other institutions
   // of the country (and for search engines a link from every institution page to the field pages).
@@ -123,6 +141,7 @@ export default async function InstitutionPage({ params }: { params: Params }) {
   return (
     <SideAds>
       <JsonLd data={structured} />
+      {showFaq && <JsonLd data={faqPageLd(faq)} />}
       <JsonLd
         data={breadcrumbList(locale, [
           { name: 'YourHEI', path: '' },
@@ -178,6 +197,32 @@ export default async function InstitutionPage({ params }: { params: Params }) {
           </section>
         )}
 
+        {hasPrices(priceRows) && (
+          <section className="mt-10" aria-labelledby="price-title">
+            <h2 id="price-title" className="text-xl font-semibold text-text">{t('priceTitle')}</h2>
+            <div className="mt-3 overflow-x-auto">
+              <table className="w-full min-w-[20rem] border-collapse text-sm">
+                <thead>
+                  <tr>
+                    <th scope="col" className="border-b border-line p-3 text-start font-semibold text-text">{t('priceLevel')}</th>
+                    <th scope="col" className="border-b border-line p-3 text-start font-semibold text-text">{t('pricePrograms')}</th>
+                    <th scope="col" className="border-b border-line p-3 text-start font-semibold text-text">{t('priceYear')}</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {priceRows.map((r) => (
+                    <tr key={r.level} className="align-top">
+                      <th scope="row" className="border-b border-line p-3 text-start font-medium text-muted">{levelLabel(r.level)}</th>
+                      <td className="border-b border-line p-3">{numberText.format(r.programs)}</td>
+                      <td className="border-b border-line p-3">{r.free ? t('free') : r.tuition ? formatTuitionRange(locale, r.tuition) : '—'}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </section>
+        )}
+
         <section className="mt-10" aria-labelledby="programs-title">
           <h2 id="programs-title" className="text-xl font-semibold text-text">
             {t('programsTitle')}
@@ -188,7 +233,7 @@ export default async function InstitutionPage({ params }: { params: Params }) {
           ) : (
             byLevel.map((g) => (
               <div key={g.level} className="mt-5">
-                <h3 className="text-sm font-semibold uppercase tracking-wide text-muted">{tSurvey.has(g.level as 'bachelor') ? tSurvey(g.level as 'bachelor') : g.level}</h3>
+                <h3 className="text-sm font-semibold uppercase tracking-wide text-muted">{levelLabel(g.level)}</h3>
                 <ul className="mt-2 space-y-4">
                   {g.items.map((p) => (
                     <ProgramCard key={p.id} program={p} country={institution.country} slug={institution.slug} city={institution.city} />
@@ -198,6 +243,20 @@ export default async function InstitutionPage({ params }: { params: Params }) {
             ))
           )}
         </section>
+
+        {showFaq && (
+          <section className="mt-10" aria-labelledby="faq-title">
+            <h2 id="faq-title" className="text-xl font-semibold text-text">{tFaq('title')}</h2>
+            <div className="mt-3 space-y-4">
+              {faq.map((e) => (
+                <div key={e.question}>
+                  <h3 className="text-lg font-semibold text-text">{e.question}</h3>
+                  <p className="mt-1">{e.answer}</p>
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
 
         {(fieldLinks.length > 0 || hasGuide) && (
           <section className="mt-10" aria-labelledby="more-title">

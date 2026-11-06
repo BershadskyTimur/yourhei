@@ -191,7 +191,31 @@
     "rankingsSource": "Rangs selon Wikidata (CC0). Au-delà des 100 premiers, les classements donnent souvent une fourchette de rangs : le début de la fourchette est indiqué. Source :",
     "moreTitle": "Pour aller plus loin",
     "moreFields": "Domaines populaires dans ce pays",
-    "moreGuide": "Page du pays et règles pour les étudiants"
+    "moreGuide": "Page du pays et règles pour les étudiants",
+    "faq": {
+      "title": "Questions fréquentes",
+      "tuitionQ": "{name} : combien coûtent les études ?",
+      "tuitionA": "Pour les étudiants venant de l'étranger : {range} par an. Le prix exact dépend du programme et figure sur sa fiche.",
+      "freeNote": "Programmes gratuits : {count}.",
+      "allFree": "D'après nos données, les programmes sont gratuits. Vérifiez les conditions sur le site officiel.",
+      "deadlinesQ": "{name} : quand faut-il candidater ?",
+      "deadlinesA": "Prochaines dates limites de candidature d'après nos données : {dates}. Elles dépendent du programme et de la rentrée et figurent sur les fiches des programmes.",
+      "programsQ": "{name} : quels programmes propose-t-il ?",
+      "programsA": "Dans notre base : {programs} ; niveaux : {levels}. La liste complète avec les prix et les conditions est sur cette page.",
+      "languagesQ": "{name} : dans quelle langue les programmes sont-ils enseignés ?",
+      "languagesA": "Langues d'enseignement : {languages}. La langue de chaque programme figure sur sa fiche.",
+      "scoresQ": "{name} : quels scores aux tests de langue sont exigés ?",
+      "scoresA": "Scores minimaux selon les programmes : {scores}. Ils varient d'un programme à l'autre, consultez la fiche de celui qui vous intéresse.",
+      "scoreRange": "{exam} : de {min} à {max}",
+      "scoreOne": "{exam} : {min}",
+      "dormitoryQ": "{name} : y a-t-il une résidence universitaire ?",
+      "dormitoryYes": "D'après nos données, il y a une résidence universitaire. Vérifiez les places et les prix sur le site officiel.",
+      "dormitoryNo": "D'après nos données, il n'y a pas de résidence universitaire. Vérifiez sur le site officiel."
+    },
+    "priceTitle": "Frais par niveau",
+    "priceLevel": "Niveau",
+    "pricePrograms": "Programmes",
+    "priceYear": "Prix par an"
   },
   "Pages": {
     "about": {

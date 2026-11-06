@@ -191,7 +191,31 @@
     "rankingsSource": "名次来自 Wikidata（CC0）。前 100 名之后，排名通常给出一个名次区间：此处显示区间的起点。来源：",
     "moreTitle": "相关内容",
     "moreFields": "该国热门方向",
-    "moreGuide": "国家指南与学生须知"
+    "moreGuide": "国家指南与学生须知",
+    "faq": {
+      "title": "常见问题",
+      "tuitionQ": "{name}：学费是多少？",
+      "tuitionA": "面向国际学生：每年 {range}。具体费用取决于项目，详见项目卡片。",
+      "freeNote": "免费项目：{count} 个。",
+      "allFree": "根据我们的数据，这些项目免费。请在官方网站核实条件。",
+      "deadlinesQ": "{name}：什么时候申请？",
+      "deadlinesA": "根据我们的数据，最近的申请截止日期：{dates}。截止日期取决于项目和入学批次，详见项目卡片。",
+      "programsQ": "{name}：有哪些项目？",
+      "programsA": "我们的数据库中有：{programs}；层次：{levels}。包含费用和要求的完整列表在本页。",
+      "languagesQ": "{name}：授课语言是什么？",
+      "languagesA": "授课语言：{languages}。每个项目的语言见其卡片。",
+      "scoresQ": "{name}：需要多少语言考试成绩？",
+      "scoresA": "各项目的最低成绩：{scores}。不同项目有所不同，请查看所需项目的卡片。",
+      "scoreRange": "{exam}：{min} 至 {max}",
+      "scoreOne": "{exam}：{min}",
+      "dormitoryQ": "{name}：有宿舍吗？",
+      "dormitoryYes": "根据我们的数据，有宿舍。名额和费用请在官方网站核实。",
+      "dormitoryNo": "根据我们的数据，没有宿舍。请在官方网站核实。"
+    },
+    "priceTitle": "按层次的费用",
+    "priceLevel": "层次",
+    "pricePrograms": "项目数",
+    "priceYear": "每年费用"
   },
   "Pages": {
     "about": {

@@ -191,7 +191,31 @@
     "rankingsSource": "Miejsca według Wikidata (CC0). Poza pierwszą setką rankingi często podają przedział miejsc: pokazano jego początek. Źródło:",
     "moreTitle": "Więcej na ten temat",
     "moreFields": "Popularne kierunki w tym kraju",
-    "moreGuide": "Strona kraju i zasady dla studentów"
+    "moreGuide": "Strona kraju i zasady dla studentów",
+    "faq": {
+      "title": "Najczęstsze pytania",
+      "tuitionQ": "{name}: ile kosztują studia?",
+      "tuitionA": "Dla studentów z zagranicy: {range} rocznie. Dokładna cena zależy od programu i jest podana na jego karcie.",
+      "freeNote": "Programy bezpłatne: {count}.",
+      "allFree": "Według naszych danych programy są bezpłatne. Warunki sprawdź na oficjalnej stronie.",
+      "deadlinesQ": "{name}: do kiedy składać dokumenty?",
+      "deadlinesA": "Najbliższe terminy składania dokumentów według naszych danych: {dates}. Terminy zależą od programu i naboru i są podane na kartach programów.",
+      "programsQ": "{name}: jakie programy są w ofercie?",
+      "programsA": "W naszej bazie: {programs}; poziomy: {levels}. Pełna lista z cenami i wymaganiami jest na tej stronie.",
+      "languagesQ": "{name}: w jakim języku prowadzone są zajęcia?",
+      "languagesA": "Języki nauczania: {languages}. Język każdego programu jest podany na jego karcie.",
+      "scoresQ": "{name}: jakie wyniki testów językowych są wymagane?",
+      "scoresA": "Minimalne wyniki według programów: {scores}. Różnią się między programami, sprawdź kartę wybranego programu.",
+      "scoreRange": "{exam}: od {min} do {max}",
+      "scoreOne": "{exam}: {min}",
+      "dormitoryQ": "{name}: czy jest akademik?",
+      "dormitoryYes": "Według naszych danych jest akademik. Dostępność miejsc i ceny sprawdź na oficjalnej stronie.",
+      "dormitoryNo": "Według naszych danych nie ma akademika. Sprawdź na oficjalnej stronie."
+    },
+    "priceTitle": "Koszty według poziomu",
+    "priceLevel": "Poziom",
+    "pricePrograms": "Programy",
+    "priceYear": "Cena za rok"
   },
   "Pages": {
     "about": {

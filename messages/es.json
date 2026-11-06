@@ -191,7 +191,31 @@
     "rankingsSource": "Puestos según Wikidata (CC0). Después de los 100 primeros, los rankings suelen dar un intervalo de puestos: se muestra su inicio. Fuente:",
     "moreTitle": "Más sobre el tema",
     "moreFields": "Áreas populares en este país",
-    "moreGuide": "Guía del país y reglas para estudiantes"
+    "moreGuide": "Guía del país y reglas para estudiantes",
+    "faq": {
+      "title": "Preguntas frecuentes",
+      "tuitionQ": "{name}: ¿cuánto cuesta estudiar?",
+      "tuitionA": "Para estudiantes del extranjero: {range} al año. El precio exacto depende del programa y figura en su ficha.",
+      "freeNote": "Programas gratuitos: {count}.",
+      "allFree": "Según nuestros datos, los programas son gratuitos. Consulta las condiciones en el sitio web oficial.",
+      "deadlinesQ": "{name}: ¿cuándo hay que presentar la solicitud?",
+      "deadlinesA": "Próximos plazos de solicitud según nuestros datos: {dates}. Los plazos dependen del programa y de la convocatoria y figuran en las fichas de los programas.",
+      "programsQ": "{name}: ¿qué programas ofrece?",
+      "programsA": "En nuestra base de datos: {programs}; niveles: {levels}. La lista completa con precios y requisitos está en esta página.",
+      "languagesQ": "{name}: ¿en qué idioma se imparten los programas?",
+      "languagesA": "Idiomas de enseñanza: {languages}. El idioma de cada programa figura en su ficha.",
+      "scoresQ": "{name}: ¿qué puntuaciones de idiomas se piden?",
+      "scoresA": "Puntuaciones mínimas según los programas: {scores}. Varían entre programas, así que consulta la ficha del que te interese.",
+      "scoreRange": "{exam}: de {min} a {max}",
+      "scoreOne": "{exam}: {min}",
+      "dormitoryQ": "{name}: ¿hay residencia de estudiantes?",
+      "dormitoryYes": "Según nuestros datos, hay residencia. Consulta plazas y precios en el sitio web oficial.",
+      "dormitoryNo": "Según nuestros datos, no hay residencia. Compruébalo en el sitio web oficial."
+    },
+    "priceTitle": "Precio por nivel",
+    "priceLevel": "Nivel",
+    "pricePrograms": "Programas",
+    "priceYear": "Precio al año"
   },
   "Pages": {
     "about": {
