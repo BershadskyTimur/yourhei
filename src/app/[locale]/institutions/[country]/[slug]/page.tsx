@@ -105,6 +105,7 @@ export default async function InstitutionPage({ params }: { params: Params }) {
     name,
     ...(original && original !== name ? { alternateName: original } : {}),
     ...(institution.website ? { url: institution.website } : {}),
+    ...(institution.wikidataId ? { sameAs: [`https://www.wikidata.org/wiki/${institution.wikidataId}`] } : {}),
     address: { '@type': 'PostalAddress', addressCountry: institution.country, ...(city ? { addressLocality: city } : {}) },
     ...(institution.foundedYear ? { foundingDate: String(institution.foundedYear) } : {}),
   };

@@ -19,6 +19,8 @@ export interface InstitutionDetail {
   names: LocalizedText;
   website: string | null;
   foundedYear: number | null;
+  /** the Wikidata item ("Q49112") from external_ids: lets search engines tie the page to the one real institution */
+  wikidataId: string | null;
   ownership: 'public' | 'private' | null;
   dormitory: boolean | null;
   features: string[];
@@ -32,10 +34,15 @@ export interface InstitutionDetail {
   reviewSummary: { count: number; rating: number } | null;
 }
 
-const COLUMNS = `id, slug, type, country, city, names, website, ownership, founded_year, dormitory, features, description, verified_at, status,
+const COLUMNS = `id, slug, type, country, city, names, website, external_ids, ownership, founded_year, dormitory, features, description, verified_at, status,
   programs (id, names, level, isced_f, languages, duration_years, intakes, tuition, free, requirements, deadlines, application_fee, application_url, academic_year, status),
   rankings (name, year, position, scope, source_url),
   scholarships (names, covers, url, status)`;
+
+/** "Q49112" or null: anything else in the column is ignored. */
+export function wikidataIdOf(v: unknown): string | null {
+  return typeof v === 'string' && /^Q[1-9]\d{0,12}$/.test(v.trim()) ? v.trim() : null;
+}
 
 /** The card of one institution, or null when it does not exist. */
 export async function getInstitutionDetail(country: string, slug: string): Promise<InstitutionDetail | null> {
@@ -48,7 +55,7 @@ export async function getInstitutionDetail(country: string, slug: string): Promi
     const { items } = await getMapInstitutions();
     const i = items.find((x) => x.country === cc && x.slug === slug);
     return i
-      ? { id: null, slug: i.slug, type: i.type, country: i.country, city: i.city, names: i.names, website: safeHttpUrl(i.website), foundedYear: i.foundedYear, ownership: null, dormitory: null, features: [], description: {}, verifiedAt: null, programs: [], rankings: [], scholarships: [], reviews: [], reviewSummary: null }
+      ? { id: null, slug: i.slug, type: i.type, country: i.country, city: i.city, names: i.names, website: safeHttpUrl(i.website), foundedYear: i.foundedYear, wikidataId: null, ownership: null, dormitory: null, features: [], description: {}, verifiedAt: null, programs: [], rankings: [], scholarships: [], reviews: [], reviewSummary: null }
       : null;
   }
 
@@ -75,6 +82,7 @@ export async function getInstitutionDetail(country: string, slug: string): Promi
     names: texts(r.names),
     website: safeHttpUrl(r.website),
     foundedYear: num(r.founded_year),
+    wikidataId: wikidataIdOf(rec(r.external_ids).wikidata),
     ownership: oneOf(r.ownership, ['public', 'private'] as const),
     dormitory: typeof r.dormitory === 'boolean' ? r.dormitory : null,
     features: arr(r.features).filter((f): f is string => typeof f === 'string'),
