@@ -1291,7 +1291,8 @@
   "Seo": {
     "institutionTitle": "{name}, {country}: programas, precios y plazos",
     "institutionDescription": "{name} ({place}). Programas: {count}; niveles: {levels}. Precios, plazos, requisitos y enlace para solicitar, de fuentes oficiales.",
-    "countryDescription": "Visado de estudios, trabajar mientras estudias, quedarse tras graduarte, coste de vida y reconocimiento del título en {country}: una guía breve con enlaces a las páginas oficiales."
+    "countryDescription": "Visado de estudios, trabajar mientras estudias, quedarse tras graduarte, coste de vida y reconocimiento del título en {country}: una guía breve con enlaces a las páginas oficiales.",
+    "institutionDescriptionPrice": "{name} ({place}). Programas: {count}; niveles: {levels}. Matrícula: {range} al año. Plazos y enlace de solicitud: de fuentes oficiales."
   },
   "Blog": {
     "title": "Blog",

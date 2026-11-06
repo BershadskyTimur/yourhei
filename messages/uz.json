@@ -1291,7 +1291,8 @@
   "Seo": {
     "institutionTitle": "{name}, {country}: dasturlar, narxlar va muddatlar",
     "institutionDescription": "{name} ({place}). Dasturlar: {count}; darajalar: {levels}. Narxlar, muddatlar, talablar va ariza havolasi rasmiy manbalardan.",
-    "countryDescription": "Talaba vizasi, o‘qish davrida ishlash, bitirgandan keyin qolish, yashash narxi va diplomni tan olish: {country}. Rasmiy sahifalarga havolali qisqa qo‘llanma."
+    "countryDescription": "Talaba vizasi, o‘qish davrida ishlash, bitirgandan keyin qolish, yashash narxi va diplomni tan olish: {country}. Rasmiy sahifalarga havolali qisqa qo‘llanma.",
+    "institutionDescriptionPrice": "{name} ({place}). Dasturlar: {count}; darajalar: {levels}. O'qish narxi: yiliga {range}. Muddatlar va ariza havolasi rasmiy manbalardan."
   },
   "Blog": {
     "title": "Blog",
