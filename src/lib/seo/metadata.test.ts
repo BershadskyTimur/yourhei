@@ -40,4 +40,26 @@ describe('trimDescription', () => {
     expect(out.endsWith('…')).toBe(true);
     expect(out).not.toMatch(/wor…$/);
   });
+
+  it('a long text is cut after the last whole sentence that fits, without "…"', () => {
+    const first = 'University of Example (Exampleville, Germany). Programmes: 12; levels: bachelor, master.';
+    const second = 'Tuition: 1 000 € – 9 000 € per year. Deadlines and the link to apply: from official sources.';
+    const out = trimDescription(`${first} ${second}`);
+    expect(out).toBe(`${first} Tuition: 1 000 € – 9 000 € per year.`);
+    expect(out.length).toBeLessThanOrEqual(160);
+  });
+
+  it('a decimal number or a very short first sentence is not taken for the end of the text', () => {
+    const long = `Costs 5.000 euro a year at St. John's and then ${'word '.repeat(40)}end`;
+    const out = trimDescription(long);
+    expect(out.endsWith('…')).toBe(true);
+    expect(out.length).toBeLessThanOrEqual(160);
+  });
+
+  it('Chinese full stops end a sentence too', () => {
+    const sentence = '示例大学位于示例城市，提供本科和硕士课程，学费信息和申请截止日期均来自官方网站，请在申请前再次核对官方页面上的最新信息。';
+    const out = trimDescription(`${sentence}${sentence}${sentence}${sentence}${sentence}${sentence}${sentence}`);
+    expect(out.endsWith('。')).toBe(true);
+    expect(out.length).toBeLessThanOrEqual(160);
+  });
 });

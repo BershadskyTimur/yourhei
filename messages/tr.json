@@ -191,7 +191,31 @@
     "rankingsSource": "Sıralamalar Wikidata (CC0) verilerine göre. İlk 100'den sonra sıralamalar genellikle bir aralık verir: burada aralığın başlangıcı gösterilir. Kaynak:",
     "moreTitle": "Konuyla ilgili",
     "moreFields": "Bu ülkedeki popüler alanlar",
-    "moreGuide": "Ülke rehberi ve öğrenci kuralları"
+    "moreGuide": "Ülke rehberi ve öğrenci kuralları",
+    "faq": {
+      "title": "Sık sorulan sorular",
+      "tuitionQ": "{name}: eğitim ne kadar tutuyor?",
+      "tuitionA": "Yurt dışından gelen öğrenciler için: yılda {range}. Kesin ücret programa göre değişir ve programın kartında yazar.",
+      "freeNote": "Ücretsiz programlar: {count}.",
+      "allFree": "Verilerimize göre programlar ücretsizdir. Koşulları resmî web sitesinden kontrol edin.",
+      "deadlinesQ": "{name}: ne zaman başvurulmalı?",
+      "deadlinesA": "Verilerimize göre en yakın başvuru tarihleri: {dates}. Son tarihler programa ve döneme göre değişir; program kartlarında yazar.",
+      "programsQ": "{name}: hangi programlar var?",
+      "programsA": "Veri tabanımızda: {programs}; düzeyler: {levels}. Fiyatlar ve koşullarla birlikte tam liste bu sayfadadır.",
+      "languagesQ": "{name}: eğitim hangi dilde veriliyor?",
+      "languagesA": "Eğitim dilleri: {languages}. Her programın dili kendi kartında yazar.",
+      "scoresQ": "{name}: hangi dil sınavı puanları isteniyor?",
+      "scoresA": "Programlara göre en düşük puanlar: {scores}. Programlar arasında farklılık gösterir; ilgilendiğiniz programın kartına bakın.",
+      "scoreRange": "{exam}: {min} ile {max} arası",
+      "scoreOne": "{exam}: {min}",
+      "dormitoryQ": "{name}: yurt var mı?",
+      "dormitoryYes": "Verilerimize göre yurt var. Yer durumunu ve fiyatları resmî web sitesinden kontrol edin.",
+      "dormitoryNo": "Verilerimize göre yurt yok. Resmî web sitesinden kontrol edin."
+    },
+    "priceTitle": "Düzeye göre ücret",
+    "priceLevel": "Düzey",
+    "pricePrograms": "Program",
+    "priceYear": "Yıllık ücret"
   },
   "Pages": {
     "about": {

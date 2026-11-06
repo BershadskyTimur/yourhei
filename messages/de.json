@@ -191,7 +191,31 @@
     "rankingsSource": "Plätze laut Wikidata (CC0). Jenseits der ersten 100 geben die Rankings oft einen Platzbereich an: angezeigt wird sein Anfang. Quelle:",
     "moreTitle": "Mehr zum Thema",
     "moreFields": "Beliebte Fachgebiete in diesem Land",
-    "moreGuide": "Länderseite und Regeln für Studierende"
+    "moreGuide": "Länderseite und Regeln für Studierende",
+    "faq": {
+      "title": "Häufige Fragen",
+      "tuitionQ": "{name}: Was kostet das Studium?",
+      "tuitionA": "Für Studierende aus dem Ausland: {range} pro Jahr. Der genaue Preis hängt vom Programm ab und steht auf dessen Karte.",
+      "freeNote": "Kostenlose Programme: {count}.",
+      "allFree": "Nach unseren Daten sind die Programme kostenlos. Die Bedingungen finden Sie auf der offiziellen Website.",
+      "deadlinesQ": "{name}: Wann muss ich mich bewerben?",
+      "deadlinesA": "Nächste Bewerbungsfristen nach unseren Daten: {dates}. Die Fristen hängen vom Programm und vom Studienbeginn ab und stehen auf den Programmkarten.",
+      "programsQ": "{name}: Welche Programme gibt es?",
+      "programsA": "In unserer Datenbank: {programs}; Stufen: {levels}. Die vollständige Liste mit Preisen und Voraussetzungen steht auf dieser Seite.",
+      "languagesQ": "{name}: In welcher Sprache wird unterrichtet?",
+      "languagesA": "Unterrichtssprachen: {languages}. Die Sprache jedes Programms steht auf dessen Karte.",
+      "scoresQ": "{name}: Welche Sprachtestergebnisse werden verlangt?",
+      "scoresA": "Mindestergebnisse je nach Programm: {scores}. Sie unterscheiden sich zwischen den Programmen, prüfen Sie die Karte des gewünschten Programms.",
+      "scoreRange": "{exam}: von {min} bis {max}",
+      "scoreOne": "{exam}: {min}",
+      "dormitoryQ": "{name}: Gibt es ein Wohnheim?",
+      "dormitoryYes": "Nach unseren Daten gibt es ein Wohnheim. Plätze und Preise finden Sie auf der offiziellen Website.",
+      "dormitoryNo": "Nach unseren Daten gibt es kein Wohnheim. Bitte auf der offiziellen Website prüfen."
+    },
+    "priceTitle": "Kosten nach Stufe",
+    "priceLevel": "Stufe",
+    "pricePrograms": "Programme",
+    "priceYear": "Preis pro Jahr"
   },
   "Pages": {
     "about": {

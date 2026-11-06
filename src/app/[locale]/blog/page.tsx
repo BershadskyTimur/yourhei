@@ -30,7 +30,7 @@ export default async function BlogIndexPage({ params }: { params: Promise<{ loca
   return (
     <div className="mx-auto max-w-3xl px-4 py-12">
       <JsonLd data={breadcrumbList(locale, [{ name: 'YourHEI', path: '' }, { name: t('title'), path: '/blog' }])} />
-      <h1 className="text-3xl font-semibold tracking-tight text-text sm:text-4xl">{t('title')}</h1>
+      <h1 className="text-3xl font-semibold tracking-tight text-text sm:text-4xl">{t('seoTitle')}</h1>
       <p className="mt-3 max-w-2xl text-lg text-muted">{t('intro')}</p>
       {locale !== 'ru' && locale !== 'en' && <p className="mt-4 rounded-lg border border-line bg-accent-soft px-4 py-3 text-sm font-medium text-text">{isMachineTranslated(locale) ? t('machineTranslated') : t('onlyRuEn')}</p>}
 

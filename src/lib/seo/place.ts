@@ -21,6 +21,16 @@ export function placeIn(locale: string, code: string, name: string): string {
   return name;
 }
 
+/**
+ * The city of an institution for search engines (page description, structured data). The source sometimes gives the county or
+ * a municipality instead of the city ("Middlesex County" for Harvard); such a name is left out rather than shown as the city.
+ * "Municipality" is only a word added to the real name ("Oslo Municipality"), so it is cut off.
+ */
+export function seoCity(city: string | null | undefined): string {
+  const name = (city ?? '').trim().replace(/\s+Municipality$/i, '');
+  return /\b(County|Parish)\b/i.test(name) || /(^|\s)округ(\s|$)/i.test(name) ? '' : name;
+}
+
 // Russian names people search for ("США", not "Соединённые Штаты")
 const RU_SHORT: Record<string, string> = { US: 'США', GB: 'Великобритания', AE: 'ОАЭ' };
 

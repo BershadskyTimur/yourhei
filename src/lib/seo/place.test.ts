@@ -1,5 +1,18 @@
 import { describe, expect, it } from 'vitest';
-import { placeIn } from './place';
+import { placeIn, seoCity } from './place';
+
+describe('the city for search engines', () => {
+  it('keeps a real city and cuts the word "Municipality"', () => {
+    expect(seoCity('Cambridge')).toBe('Cambridge');
+    expect(seoCity('Oslo Municipality')).toBe('Oslo');
+    expect(seoCity('  Тбилиси ')).toBe('Тбилиси');
+  });
+  it('leaves out a county instead of showing it as the city', () => {
+    expect(seoCity('Middlesex County')).toBe('');
+    expect(seoCity('округ Мидлсекс')).toBe('');
+    expect(seoCity(undefined)).toBe('');
+  });
+});
 
 describe('"in <country>" for titles', () => {
   it('Russian uses the prepositional case and "на" where needed', () => {

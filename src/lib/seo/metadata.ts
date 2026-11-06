@@ -56,10 +56,19 @@ export function seoMetadata(input: SeoInput): Metadata {
   };
 }
 
-/** A description cut at a word near 160 characters (what search engines show). */
+/** A cut that ends a sentence shorter than this is too short to be a description: the cut at a word is used instead. */
+const MIN_SENTENCE = 70;
+
+/**
+ * A description of at most 160 characters (what search engines show). A long text is cut after the last whole sentence that fits,
+ * so that it does not end on "…"; with no such sentence it is cut at a word and ends on "…".
+ */
 export function trimDescription(text: string, max = 160): string {
   const clean = text.replace(/\s+/g, ' ').trim();
   if (clean.length <= max) return clean;
+  let end = 0;
+  for (const m of clean.slice(0, max + 1).matchAll(/[.!?](?=\s)|。/g)) if (m.index + 1 <= max) end = m.index + 1;
+  if (end >= MIN_SENTENCE) return clean.slice(0, end);
   const cut = clean.slice(0, max - 1);
   return `${cut.slice(0, Math.max(cut.lastIndexOf(' '), max - 30))}…`;
 }

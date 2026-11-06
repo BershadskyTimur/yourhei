@@ -191,7 +191,31 @@
     "rankingsSource": "O'rinlar Wikidata (CC0) ma'lumotlariga ko'ra. Birinchi yuzlikdan keyin reytinglar ko'pincha o'rinlar oralig'ini beradi: bu yerda uning boshi ko'rsatilgan. Manba:",
     "moreTitle": "Mavzu bo‘yicha yana",
     "moreFields": "Bu mamlakatdagi mashhur yo‘nalishlar",
-    "moreGuide": "Mamlakat sahifasi va talabalar uchun qoidalar"
+    "moreGuide": "Mamlakat sahifasi va talabalar uchun qoidalar",
+    "faq": {
+      "title": "Ko‘p so‘raladigan savollar",
+      "tuitionQ": "{name}: o‘qish qancha turadi?",
+      "tuitionA": "Chet ellik talabalar uchun: yiliga {range}. Aniq narx dasturga bog‘liq va uning kartochkasida ko‘rsatilgan.",
+      "freeNote": "Bepul dasturlar: {count}.",
+      "allFree": "Bizning ma’lumotlarimizga ko‘ra, dasturlar bepul. Shartlarni rasmiy saytda aniqlang.",
+      "deadlinesQ": "{name}: hujjatlarni qachon topshirish kerak?",
+      "deadlinesA": "Bizning ma’lumotlarimizga ko‘ra eng yaqin topshirish muddatlari: {dates}. Muddatlar dastur va qabulga bog‘liq, ular dastur kartochkalarida ko‘rsatilgan.",
+      "programsQ": "{name}: qanday dasturlar bor?",
+      "programsA": "Bizning bazada: {programs}; darajalar: {levels}. Narxlar va talablar bilan to‘liq ro‘yxat shu sahifada.",
+      "languagesQ": "{name}: o‘qitish qaysi tilda olib boriladi?",
+      "languagesA": "O‘qitish tillari: {languages}. Har bir dasturning tili uning kartochkasida ko‘rsatilgan.",
+      "scoresQ": "{name}: til testlaridan qanday ball kerak?",
+      "scoresA": "Dasturlar bo‘yicha eng past ballar: {scores}. Ular dasturga qarab farq qiladi, kerakli dastur kartochkasini ko‘ring.",
+      "scoreRange": "{exam}: {min} dan {max} gacha",
+      "scoreOne": "{exam}: {min}",
+      "dormitoryQ": "{name}: yotoqxona bormi?",
+      "dormitoryYes": "Bizning ma’lumotlarimizga ko‘ra, yotoqxona bor. Joylar va narxlarni rasmiy saytda aniqlang.",
+      "dormitoryNo": "Bizning ma’lumotlarimizga ko‘ra, yotoqxona yo‘q. Rasmiy saytda aniqlang."
+    },
+    "priceTitle": "Daraja bo‘yicha narx",
+    "priceLevel": "Daraja",
+    "pricePrograms": "Dasturlar",
+    "priceYear": "Yillik narx"
   },
   "Pages": {
     "about": {

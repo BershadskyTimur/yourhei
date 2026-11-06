@@ -50,7 +50,7 @@ export async function HeroSample() {
   return (
     <article className="rounded-lg border border-line bg-surface p-6 shadow-[0_40px_60px_-40px_rgb(0_0_0/0.45)] sm:p-8">
       <p className="text-sm text-muted">{t('label')}</p>
-      <h2 className="mt-3 text-2xl font-medium leading-tight tracking-tight text-text sm:text-3xl">{SAMPLE.program}</h2>
+      <p className="mt-3 text-2xl font-medium leading-tight tracking-tight text-text sm:text-3xl">{SAMPLE.program}</p>
       <p className="mt-2 text-muted">
         {SAMPLE.institution}, {country}
       </p>

@@ -1,5 +1,15 @@
 import { describe, expect, it } from 'vitest';
-import { tuitionRange } from './tuition-range';
+import { formatTuitionRange, tuitionRange } from './tuition-range';
+
+describe('formatTuitionRange', () => {
+  it('writes both ends, or one price when they are equal', () => {
+    expect(formatTuitionRange('en', { min: 8000, max: 12000, currency: 'EUR' })).toBe('€8,000 – €12,000');
+    expect(formatTuitionRange('en', { min: 8000, max: 8000, currency: 'EUR' })).toBe('€8,000');
+  });
+  it('an unknown currency code is written as it is', () => {
+    expect(formatTuitionRange('en', { min: 5, max: 5, currency: 'not-a-code' })).toBe('5 not-a-code');
+  });
+});
 
 const line = (amount: number | null, currency = 'USD', period: 'year' | 'semester' | 'total' | 'credit' = 'year', appliesTo: 'all' | 'eu' | 'international' | 'domestic' = 'all') => ({ amount, currency, period, appliesTo });
 

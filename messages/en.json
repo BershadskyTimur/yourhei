@@ -191,7 +191,31 @@
     "rankingsSource": "Positions as recorded in Wikidata (CC0). Beyond the top 100 the rankings often give a range of places: the start of the range is shown. Source:",
     "moreTitle": "More on the topic",
     "moreFields": "Popular fields in this country",
-    "moreGuide": "Country guide and rules for students"
+    "moreGuide": "Country guide and rules for students",
+    "faq": {
+      "title": "Frequently asked questions",
+      "tuitionQ": "{name}: how much does it cost to study?",
+      "tuitionA": "For students from abroad: {range} per year. The exact price depends on the programme and is given on its card.",
+      "freeNote": "Free programmes: {count}.",
+      "allFree": "By our data, the programmes are free. Check the conditions on the official website.",
+      "deadlinesQ": "{name}: when should I apply?",
+      "deadlinesA": "Nearest application deadlines by our data: {dates}. Deadlines depend on the programme and the intake, and are given on the programme cards.",
+      "programsQ": "{name}: what programmes are offered?",
+      "programsA": "In our database: {programs}; levels: {levels}. The full list with prices and requirements is on this page.",
+      "languagesQ": "{name}: what language are the programmes taught in?",
+      "languagesA": "Languages of teaching: {languages}. The language of each programme is given on its card.",
+      "scoresQ": "{name}: what language test scores are required?",
+      "scoresA": "Minimum scores across the programmes: {scores}. They differ between programmes, so check the card of the one you need.",
+      "scoreRange": "{exam}: from {min} to {max}",
+      "scoreOne": "{exam}: {min}",
+      "dormitoryQ": "{name}: is there a dormitory?",
+      "dormitoryYes": "By our data, there is a dormitory. Check availability and prices on the official website.",
+      "dormitoryNo": "By our data, there is no dormitory. Check on the official website."
+    },
+    "priceTitle": "Tuition by level",
+    "priceLevel": "Level",
+    "pricePrograms": "Programmes",
+    "priceYear": "Price per year"
   },
   "Pages": {
     "about": {

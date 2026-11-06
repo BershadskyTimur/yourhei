@@ -191,7 +191,31 @@
     "rankingsSource": "Yerlər Wikidata (CC0) məlumatlarına görə. İlk yüzlükdən sonra reytinqlər çox vaxt yerlər aralığı verir: burada onun başlanğıcı göstərilib. Mənbə:",
     "moreTitle": "Mövzu üzrə daha çox",
     "moreFields": "Bu ölkədə populyar istiqamətlər",
-    "moreGuide": "Ölkə səhifəsi və tələbələr üçün qaydalar"
+    "moreGuide": "Ölkə səhifəsi və tələbələr üçün qaydalar",
+    "faq": {
+      "title": "Tez-tez verilən suallar",
+      "tuitionQ": "{name}: təhsil nə qədərdir?",
+      "tuitionA": "Əcnəbi tələbələr üçün: ildə {range}. Dəqiq qiymət proqramdan asılıdır və onun kartında göstərilir.",
+      "freeNote": "Pulsuz proqramlar: {count}.",
+      "allFree": "Məlumatlarımıza görə proqramlar pulsuzdur. Şərtləri rəsmi saytda dəqiqləşdirin.",
+      "deadlinesQ": "{name}: sənədləri nə vaxt təqdim etmək lazımdır?",
+      "deadlinesA": "Məlumatlarımıza görə ən yaxın müraciət tarixləri: {dates}. Müddətlər proqramdan və qəbuldan asılıdır, proqram kartlarında göstərilir.",
+      "programsQ": "{name}: hansı proqramlar var?",
+      "programsA": "Bazamızda: {programs}; səviyyələr: {levels}. Qiymətlər və tələblərlə tam siyahı bu səhifədədir.",
+      "languagesQ": "{name}: tədris hansı dildə aparılır?",
+      "languagesA": "Tədris dilləri: {languages}. Hər proqramın dili onun kartında göstərilir.",
+      "scoresQ": "{name}: dil imtahanlarından hansı bal tələb olunur?",
+      "scoresA": "Proqramlar üzrə minimum ballar: {scores}. Proqramlara görə fərqlənir, lazım olan proqramın kartına baxın.",
+      "scoreRange": "{exam}: {min} - {max} arası",
+      "scoreOne": "{exam}: {min}",
+      "dormitoryQ": "{name}: yataqxana varmı?",
+      "dormitoryYes": "Məlumatlarımıza görə yataqxana var. Yerləri və qiymətləri rəsmi saytda dəqiqləşdirin.",
+      "dormitoryNo": "Məlumatlarımıza görə yataqxana yoxdur. Rəsmi saytda dəqiqləşdirin."
+    },
+    "priceTitle": "Səviyyəyə görə qiymət",
+    "priceLevel": "Səviyyə",
+    "pricePrograms": "Proqram",
+    "priceYear": "İllik qiymət"
   },
   "Pages": {
     "about": {

@@ -74,7 +74,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
               {t('map.title')}
             </h1>
             <p className="mt-8 max-w-xl text-lg leading-relaxed text-muted sm:text-xl">
-              {t('hero.subtitle', { count: counts.total })}
+              {t('hero.subtitle', { count: new Intl.NumberFormat(locale).format(counts.total) })}
             </p>
             <div className="mt-10 flex flex-wrap items-center gap-x-8 gap-y-4">
               <Link href="/register" className={primary}>{t('how.cta')}</Link>
