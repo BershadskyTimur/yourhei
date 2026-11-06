@@ -1061,7 +1061,8 @@
     "ratesNote": "Qiymətlər gündəlik məzənnə ilə çevrilir və təxminidir. Son söz müəssisənin səhifəsi və rəsmi saytındadır.",
     "livingNote": "Yaşayış xərcləri ölkənin tələbə vizası üçün təsdiq etməyi tələb etdiyi minimum məbləğdir. Real xərclər, xüsusilə böyük şəhərlərdə, adətən daha yüksək olur.",
     "emptyProgrammes": "Proqram tapılmadı. Bir çox ölkənin proqram məlumatları bazamızda hələ yoxdur, lakin onların müəssisələri var.",
-    "showInstitutions": "Müəssisələri göstər"
+    "showInstitutions": "Müəssisələri göstər",
+    "seoTitle": "Kataloq"
   },
   "Scholarships": {
     "title": "Təqaüdlər: harada pulsuz və ya ucuz oxumaq olar",
@@ -1230,7 +1231,7 @@
   "Countries": {
     "listTitle": "Təhsil istiqamətləri",
     "listIntro": "Müraciətdən əvvəl vacib qaydalar haqqında qısa bələdçilər: təhsil vizası, təhsil zamanı iş, məzun olduqdan sonra qalmaq. Qaydalar dəyişir: onları həmişə göstərdiyimiz rəsmi səhifələrdə yoxlayın.",
-    "pageTitle": "{country} ölkəsində təhsil",
+    "pageTitle": "{place} ölkəsində təhsil",
     "visaTitle": "Təhsil vizası və yaşayış icazəsi",
     "workTitle": "Təhsil zamanı iş",
     "afterTitle": "Məzun olduqdan sonra",
@@ -1246,14 +1247,15 @@
     "backToList": "Bütün istiqamətlər"
   },
   "Study": {
-    "hubTitle": "{country} ölkəsində təhsil: sahələr üzrə proqramlar",
+    "hubTitle": "{place} ölkəsində təhsil: sahələr üzrə proqramlar",
     "hubIntro": "Sahələr: {fields}. Proqramlar: {programmes}. Məlumatlar rəsmi mənbələrdəndir.",
-    "pageTitle": "{country} ölkəsində {field} təhsili",
+    "pageTitle": "{place} ölkəsində {field} təhsili",
     "pageIntro": "Proqramlar: {programmes}. Müəssisələr: {institutions}. Məlumatlar rəsmi mənbələrdəndir; müraciətdən əvvəl qiymətləri və müddətləri rəsmi səhifədə yoxlayın.",
     "institutionsTitle": "{field} tədris edən müəssisələr",
     "programmesCount": "Proqramlar: {count}",
     "examples": "Məsələn:",
-    "allFields": "{country} ölkəsində bütün sahələr"
+    "allFields": "{country} ölkəsində bütün sahələr",
+    "seoTitle": "{place} ölkəsində {field} təhsili ({programmes})"
   },
   "ForInstitutions": {
     "title": "Universitetlər, kolleclər və məktəblər üçün",

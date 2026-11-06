@@ -8,7 +8,7 @@ import { SideAds } from '@/components/SideAds';
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'Catalog' });
-  return seoMetadata({ locale, path: '/catalog', title: t('title'), description: trimDescription(t('intro')) });
+  return seoMetadata({ locale, path: '/catalog', title: t('seoTitle'), description: trimDescription(t('intro')) });
 }
 
 export default async function Page({ params }: { params: Promise<{ locale: string }> }) {

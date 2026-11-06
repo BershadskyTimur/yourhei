@@ -2,6 +2,7 @@ import { JsonLd } from '@/components/JsonLd';
 import { breadcrumbList } from '@/lib/seo/structured';
 import { seoMetadata, trimDescription } from '@/lib/seo/metadata';
 import type { Metadata } from 'next';
+import { placeIn } from '@/lib/seo/place';
 import { hasLocale } from 'next-intl';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
@@ -25,7 +26,7 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   const t = await getTranslations({ locale, namespace: 'Countries' });
   const tSeo = await getTranslations({ locale, namespace: 'Seo' });
   const name = new Intl.DisplayNames([locale], { type: 'region' }).of(country.toUpperCase()) ?? country;
-  return seoMetadata({ locale, path: `/countries/${country.toLowerCase()}`, title: t('pageTitle', { country: name }), description: trimDescription(tSeo('countryDescription', { country: name })) });
+  return seoMetadata({ locale, path: `/countries/${country.toLowerCase()}`, title: t('pageTitle', { country: name, place: placeIn(locale, country, name) }), description: trimDescription(tSeo('countryDescription', { country: name })) });
 }
 
 function formatMoney(amount: number, currency: string, locale: string): string {
@@ -65,7 +66,7 @@ export default async function CountryPage({ params }: { params: Params }) {
   );
 
   return (
-    <PageShell title={t('pageTitle', { country: name })}>
+    <PageShell title={t('pageTitle', { country: name, place: placeIn(locale, guide.country, name) })}>
       <JsonLd data={breadcrumbList(locale, [{ name: 'YourHEI', path: '' }, { name, path: `/countries/${country.toLowerCase()}` }])} />
       {section('visa-title', t('visaTitle'), guide.visa)}
       {section('work-title', t('workTitle'), guide.work)}
@@ -92,7 +93,7 @@ export default async function CountryPage({ params }: { params: Params }) {
       <p className="text-sm text-muted">{t('checked', { date })}</p>
       <p className="flex flex-wrap gap-x-6 gap-y-2 text-base">
         {combosOfCountry(guide.country).length > 0 && (
-          <Link href={`/study/${guide.country.toLowerCase()}`} className="font-semibold text-accent-text underline underline-offset-4">{tStudy('hubTitle', { country: name })}</Link>
+          <Link href={`/study/${guide.country.toLowerCase()}`} className="font-semibold text-accent-text underline underline-offset-4">{tStudy('hubTitle', { country: name, place: placeIn(locale, guide.country, name) })}</Link>
         )}
         <Link href="/catalog" className="font-semibold text-accent-text underline underline-offset-4">{t('catalogLink')}</Link>
         <Link href="/countries" className="font-semibold text-accent-text underline underline-offset-4">{t('backToList')}</Link>

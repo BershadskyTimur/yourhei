@@ -1061,7 +1061,8 @@
     "ratesNote": "Los precios se convierten a los tipos de cambio diarios y son aproximados. Lo que vale es la página del centro y su web oficial.",
     "livingNote": "Los gastos de vida son el importe mínimo que un país exige acreditar para el visado de estudiante. El gasto real suele ser mayor, sobre todo en las grandes ciudades.",
     "emptyProgrammes": "No se encontraron programas. Muchos países aún no tienen datos de programas en nuestra base, pero sí tenemos sus instituciones.",
-    "showInstitutions": "Mostrar instituciones"
+    "showInstitutions": "Mostrar instituciones",
+    "seoTitle": "Catálogo"
   },
   "Scholarships": {
     "title": "Becas: dónde estudiar gratis o más barato",
@@ -1230,7 +1231,7 @@
   "Countries": {
     "listTitle": "Destinos de estudio",
     "listIntro": "Guías breves sobre las normas que importan antes de solicitar: visado de estudios, trabajar mientras estudias y quedarte tras graduarte. Las normas cambian: confírmalas siempre en las páginas oficiales que enlazamos.",
-    "pageTitle": "Estudiar en {country}",
+    "pageTitle": "Estudiar en {place}",
     "visaTitle": "Visado de estudios y permiso de residencia",
     "workTitle": "Trabajar mientras estudias",
     "afterTitle": "Después de graduarte",
@@ -1246,14 +1247,15 @@
     "backToList": "Todos los destinos"
   },
   "Study": {
-    "hubTitle": "Estudiar en {country}: programas por área",
+    "hubTitle": "Estudiar en {place}: programas por área",
     "hubIntro": "Áreas: {fields}. Programas: {programmes}. Los datos proceden de fuentes oficiales.",
-    "pageTitle": "Estudiar {field} en {country}",
+    "pageTitle": "Estudiar {field} en {place}",
     "pageIntro": "Programas: {programmes}. Instituciones: {institutions}. Los datos proceden de fuentes oficiales; confirma precios y plazos en la página oficial antes de solicitar.",
     "institutionsTitle": "Instituciones donde se estudia {field}",
     "programmesCount": "Programas: {count}",
     "examples": "Por ejemplo:",
-    "allFields": "Todas las áreas en {country}"
+    "allFields": "Todas las áreas en {country}",
+    "seoTitle": "Estudiar {field} en {place} ({programmes})"
   },
   "ForInstitutions": {
     "title": "Para universidades, colegios y escuelas",

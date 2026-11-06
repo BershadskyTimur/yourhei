@@ -1061,7 +1061,8 @@
     "ratesNote": "Les prix sont convertis aux taux de change du jour et sont approximatifs. La page de l’établissement et son site officiel font foi.",
     "livingNote": "Les frais de vie sont le montant minimum qu’un pays exige de justifier pour le visa étudiant. Les dépenses réelles sont généralement plus élevées, surtout dans les grandes villes.",
     "emptyProgrammes": "Aucun programme trouvé. Pour beaucoup de pays, notre base n’a pas encore de programmes, mais nous avons leurs établissements.",
-    "showInstitutions": "Afficher les établissements"
+    "showInstitutions": "Afficher les établissements",
+    "seoTitle": "Catalogue"
   },
   "Scholarships": {
     "title": "Bourses : où étudier gratuitement ou à moindre coût",
@@ -1230,7 +1231,7 @@
   "Countries": {
     "listTitle": "Destinations d’études",
     "listIntro": "De courts guides sur les règles qui comptent avant de candidater : visa d’études, travailler pendant ses études, rester après le diplôme. Les règles changent : vérifiez-les toujours sur les pages officielles que nous indiquons.",
-    "pageTitle": "Étudier en {country}",
+    "pageTitle": "Étudier en {place}",
     "visaTitle": "Visa d’études et titre de séjour",
     "workTitle": "Travailler pendant ses études",
     "afterTitle": "Après le diplôme",
@@ -1246,14 +1247,15 @@
     "backToList": "Toutes les destinations"
   },
   "Study": {
-    "hubTitle": "Étudier en {country} : programmes par domaine",
+    "hubTitle": "Étudier en {place} : programmes par domaine",
     "hubIntro": "Domaines : {fields}. Programmes : {programmes}. Les données proviennent de sources officielles.",
-    "pageTitle": "Étudier {field} en {country}",
+    "pageTitle": "Étudier {field} en {place}",
     "pageIntro": "Programmes : {programmes}. Établissements : {institutions}. Les données proviennent de sources officielles ; vérifiez les prix et les dates sur la page officielle avant de candidater.",
     "institutionsTitle": "Établissements enseignant {field}",
     "programmesCount": "Programmes : {count}",
     "examples": "Par exemple :",
-    "allFields": "Tous les domaines en {country}"
+    "allFields": "Tous les domaines en {country}",
+    "seoTitle": "Étudier {field} en {place} ({programmes})"
   },
   "ForInstitutions": {
     "title": "Pour les universités, collèges et écoles",

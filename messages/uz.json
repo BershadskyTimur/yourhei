@@ -1061,7 +1061,8 @@
     "ratesNote": "Narxlar kundalik kurs bo‘yicha o‘giriladi va taxminiy. Yakuniy so‘z muassasa sahifasi va uning rasmiy saytida.",
     "livingNote": "Yashash xarajatlari — davlat talaba vizasi uchun tasdiqlashni talab qiladigan eng kam summa. Haqiqiy xarajatlar, ayniqsa yirik shaharlarda, odatda yuqoriroq bo‘ladi.",
     "emptyProgrammes": "Dasturlar topilmadi. Ko‘p mamlakatlarning dasturlari bazamizda hali yo‘q, lekin ularning muassasalari bor.",
-    "showInstitutions": "Muassasalarni ko‘rsatish"
+    "showInstitutions": "Muassasalarni ko‘rsatish",
+    "seoTitle": "Katalog"
   },
   "Scholarships": {
     "title": "Stipendiyalar: qayerda bepul yoki arzonroq o‘qish mumkin",
@@ -1230,7 +1231,7 @@
   "Countries": {
     "listTitle": "Ta’lim yo‘nalishlari",
     "listIntro": "Ariza berishdan oldin muhim qoidalar haqida qisqa qo‘llanmalar: talaba vizasi, o‘qish paytida ishlash, bitirgandan keyin qolish. Qoidalar o‘zgaradi: ularni har doim biz havola qilgan rasmiy sahifalarda tekshiring.",
-    "pageTitle": "{country} mamlakatida o‘qish",
+    "pageTitle": "{place} mamlakatida o‘qish",
     "visaTitle": "Talaba vizasi va yashash ruxsatnomasi",
     "workTitle": "O‘qish paytida ishlash",
     "afterTitle": "Bitirgandan keyin",
@@ -1246,14 +1247,15 @@
     "backToList": "Barcha yo‘nalishlar"
   },
   "Study": {
-    "hubTitle": "{country} mamlakatida o‘qish: yo‘nalishlar bo‘yicha dasturlar",
+    "hubTitle": "{place} mamlakatida o‘qish: yo‘nalishlar bo‘yicha dasturlar",
     "hubIntro": "Yo‘nalishlar: {fields}. Dasturlar: {programmes}. Ma’lumotlar rasmiy manbalardan olingan.",
-    "pageTitle": "{country} mamlakatida {field} o‘qish",
+    "pageTitle": "{place} mamlakatida {field} o‘qish",
     "pageIntro": "Dasturlar: {programmes}. Muassasalar: {institutions}. Ma’lumotlar rasmiy manbalardan olingan; ariza berishdan oldin narxlar va muddatlarni rasmiy sahifada tekshiring.",
     "institutionsTitle": "{field} o‘qitiladigan muassasalar",
     "programmesCount": "Dasturlar: {count}",
     "examples": "Masalan:",
-    "allFields": "{country} mamlakatidagi barcha yo‘nalishlar"
+    "allFields": "{country} mamlakatidagi barcha yo‘nalishlar",
+    "seoTitle": "{place} mamlakatida {field} o‘qish ({programmes})"
   },
   "ForInstitutions": {
     "title": "Universitetlar, kollejlar va maktablar uchun",

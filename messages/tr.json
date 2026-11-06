@@ -1061,7 +1061,8 @@
     "ratesNote": "Fiyatlar günlük döviz kurlarıyla dönüştürülür ve yaklaşıktır. Son söz kurumun sayfasında ve resmî sitesindedir.",
     "livingNote": "Yaşam giderleri, bir ülkenin öğrenci vizesi için göstermeni istediği asgari tutardır. Gerçek harcamalar, özellikle büyük şehirlerde, genellikle daha yüksektir.",
     "emptyProgrammes": "Program bulunamadı. Birçok ülkenin program verisi veritabanımızda henüz yok, ancak kurumları var.",
-    "showInstitutions": "Kurumları göster"
+    "showInstitutions": "Kurumları göster",
+    "seoTitle": "Katalog"
   },
   "Scholarships": {
     "title": "Burslar: nerede ücretsiz veya daha ucuza okunur",
@@ -1230,7 +1231,7 @@
   "Countries": {
     "listTitle": "Eğitim ülkeleri",
     "listIntro": "Başvurmadan önce önemli kurallara dair kısa rehberler: öğrenci vizesi, öğrenirken çalışma, mezuniyet sonrası kalma. Kurallar değişir: bunları her zaman bağlantı verdiğimiz resmî sayfalarda doğrula.",
-    "pageTitle": "{country} ülkesinde eğitim",
+    "pageTitle": "{place} ülkesinde eğitim",
     "visaTitle": "Öğrenci vizesi ve oturma izni",
     "workTitle": "Öğrenirken çalışma",
     "afterTitle": "Mezuniyet sonrası",
@@ -1246,14 +1247,15 @@
     "backToList": "Tüm ülkeler"
   },
   "Study": {
-    "hubTitle": "{country} ülkesinde eğitim: alanlara göre programlar",
+    "hubTitle": "{place} ülkesinde eğitim: alanlara göre programlar",
     "hubIntro": "Alanlar: {fields}. Programlar: {programmes}. Veriler resmî kaynaklardan gelir.",
-    "pageTitle": "{country} ülkesinde {field} eğitimi",
+    "pageTitle": "{place} ülkesinde {field} eğitimi",
     "pageIntro": "Programlar: {programmes}. Kurumlar: {institutions}. Veriler resmî kaynaklardan gelir; başvurmadan önce fiyatları ve tarihleri resmî sayfada doğrula.",
     "institutionsTitle": "{field} okutulan kurumlar",
     "programmesCount": "Programlar: {count}",
     "examples": "Örneğin:",
-    "allFields": "{country} ülkesindeki tüm alanlar"
+    "allFields": "{country} ülkesindeki tüm alanlar",
+    "seoTitle": "{place} ülkesinde {field} eğitimi ({programmes})"
   },
   "ForInstitutions": {
     "title": "Üniversiteler, kolejler ve okullar için",

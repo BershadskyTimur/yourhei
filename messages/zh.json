@@ -1061,7 +1061,8 @@
     "ratesNote": "价格按每日汇率换算，仅为大致数额，以院校页面和官方网站为准。",
     "livingNote": "生活费是各国要求申请学生签证时证明的最低金额。实际花费通常更高，尤其是在大城市。",
     "emptyProgrammes": "未找到项目。许多国家的项目数据尚未收录，但我们有这些国家的院校。",
-    "showInstitutions": "显示院校"
+    "showInstitutions": "显示院校",
+    "seoTitle": "目录"
   },
   "Scholarships": {
     "title": "奖学金：哪里可以免费或低价留学",
@@ -1230,7 +1231,7 @@
   "Countries": {
     "listTitle": "留学目的地",
     "listIntro": "申请前需要了解的规则简明指南：学习签证、学习期间工作、毕业后留下。规则会变化：请务必在我们链接的官方页面核实。",
-    "pageTitle": "在{country}留学",
+    "pageTitle": "在{place}留学",
     "visaTitle": "学习签证与居留许可",
     "workTitle": "学习期间工作",
     "afterTitle": "毕业之后",
@@ -1246,14 +1247,15 @@
     "backToList": "所有目的地"
   },
   "Study": {
-    "hubTitle": "在{country}留学：按专业领域查看项目",
+    "hubTitle": "在{place}留学：按专业领域查看项目",
     "hubIntro": "领域：{fields}。项目：{programmes}。数据来自官方来源。",
-    "pageTitle": "在{country}学习{field}",
+    "pageTitle": "在{place}学习{field}",
     "pageIntro": "项目：{programmes}。院校：{institutions}。数据来自官方来源；申请前请在官方页面核实费用和截止日期。",
     "institutionsTitle": "开设{field}的院校",
     "programmesCount": "项目：{count}",
     "examples": "例如：",
-    "allFields": "{country}的所有领域"
+    "allFields": "{country}的所有领域",
+    "seoTitle": "在{place}学习{field} ({programmes})"
   },
   "ForInstitutions": {
     "title": "面向大学、学院和学校",
