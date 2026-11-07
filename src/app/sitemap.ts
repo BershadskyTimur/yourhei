@@ -7,6 +7,7 @@ import { COMBOS, fieldSlug, studyCountries } from '@/lib/study/combos';
 import { countriesWithDeadlines, monthsOfCountry } from '@/lib/deadlines/deadlines';
 import { publishedArticles } from '@/lib/blog/posts';
 import { siteUrl } from '@/lib/site-url';
+import { listCountries, pagesOf } from '@/lib/institutions/country-list';
 
 export const revalidate = 86400;
 
@@ -14,6 +15,11 @@ export const revalidate = 86400;
 // indexed language (see config/seo.ts), so the institutions are split into files of SITEMAP_CHUNK institutions (/sitemap/0.xml, /sitemap/1.xml ...).
 // Only institutions that have programmes are listed (see lib/institutions/sitemap.ts).
 const STATIC_PAGES = ['', '/catalog', '/scholarships', '/countries', '/for-institutions', '/methodology', '/about', '/contact', '/privacy', '/terms'];
+
+/** The lists "institutions of a country": /institutions/<country>, then /institutions/<country>/p/2 … */
+function listPages(items: { slug: string; country: string }[]): string[] {
+  return listCountries(items).flatMap((c) => Array.from({ length: pagesOf(c.count) }, (_, i) => `/institutions/${c.country.toLowerCase()}${i > 0 ? `/p/${i + 1}` : ''}`));
+}
 
 export async function generateSitemaps() {
   const items = await getSitemapPoints();
@@ -30,7 +36,7 @@ export default async function sitemap(props: { id: Promise<string> }): Promise<M
   const pages: { path: string; lastModified?: string }[] = [
     ...(id === 0
       ? [
-          ...[...STATIC_PAGES, '/blog', '/deadlines', '/checklist', ...countriesWithDeadlines().flatMap((c) => [`/deadlines/${c.country.toLowerCase()}`, ...monthsOfCountry(c.country).map((m) => `/deadlines/${c.country.toLowerCase()}/${m.month}`)]), ...GUIDES.map((g) => `/countries/${g.country.toLowerCase()}`), ...studyCountries().map((c) => `/study/${c.toLowerCase()}`), ...COMBOS.map((c) => `/study/${c.country.toLowerCase()}/${fieldSlug(c.code)}`)].map((path) => ({ path })),
+          ...[...STATIC_PAGES, '/blog', '/deadlines', '/checklist', '/institutions', ...listPages(items), ...countriesWithDeadlines().flatMap((c) => [`/deadlines/${c.country.toLowerCase()}`, ...monthsOfCountry(c.country).map((m) => `/deadlines/${c.country.toLowerCase()}/${m.month}`)]), ...GUIDES.map((g) => `/countries/${g.country.toLowerCase()}`), ...studyCountries().map((c) => `/study/${c.toLowerCase()}`), ...COMBOS.map((c) => `/study/${c.country.toLowerCase()}/${fieldSlug(c.code)}`)].map((path) => ({ path })),
           ...publishedArticles().map((a) => ({ path: `/blog/${a.slug}`, lastModified: a.updated })),
         ]
       : []),

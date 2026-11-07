@@ -44,7 +44,8 @@
     "countries": "وجهات الدراسة",
     "forInstitutions": "للمؤسسات",
     "blog": "المدونة",
-    "deadlines": "المواعيد"
+    "deadlines": "المواعيد",
+    "institutions": "الجامعات حسب الدولة"
   },
   "Types": {
     "university": "جامعة",
@@ -1389,5 +1390,20 @@
     "profileHint": "هل سجّلت الدخول؟ تُحفظ مستنداتك أيضًا في ملفك الشخصي.",
     "profileLink": "افتح الملف الشخصي",
     "calendarCta": "اطّلع على مواعيد التقديم"
+  },
+  "InstitutionsList": {
+    "indexTitle": "الجامعات حسب الدولة",
+    "indexSeoTitle": "الجامعات والكليات والمدارس حسب الدولة",
+    "indexIntro": "كل المؤسسات التي لها برامج على YourHEI، حسب الدولة. افتح دولة لترى القائمة مع روابط لكل مؤسسة: البرامج والرسوم والمواعيد.",
+    "count": "{count, plural, other {# مؤسسة}}",
+    "countryTitle": "الجامعات والكليات: {place}",
+    "countrySeoTitle": "الجامعات والكليات: {place}، {count, plural, other {# مؤسسة}}",
+    "countryIntro": "{count, plural, other {# مؤسسة}} لها برامج على YourHEI (الدولة: {place}). في صفحة كل منها: البرامج والرسوم للطلاب الدوليين والمواعيد من مصادر رسمية.",
+    "pageTitle": "{title} — صفحة {page}",
+    "pagesLabel": "صفحات القائمة",
+    "prev": "→ صفحة {page}",
+    "next": "صفحة {page} ←",
+    "allCountries": "كل الدول",
+    "allInCountry": "كل الجامعات والكليات: {place}"
   }
 }

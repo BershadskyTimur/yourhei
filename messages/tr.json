@@ -44,7 +44,8 @@
     "countries": "Eğitim ülkeleri",
     "forInstitutions": "Kurumlar için",
     "blog": "Blog",
-    "deadlines": "Son tarihler"
+    "deadlines": "Son tarihler",
+    "institutions": "Ülkelere göre üniversiteler"
   },
   "Types": {
     "university": "Üniversite",
@@ -1389,5 +1390,20 @@
     "profileHint": "Giriş yaptınız mı? Belgeleriniz profilinizde de saklanır.",
     "profileLink": "Profili aç",
     "calendarCta": "Başvuru son tarihlerine bak"
+  },
+  "InstitutionsList": {
+    "indexTitle": "Ülkelere göre üniversiteler",
+    "indexSeoTitle": "Ülkelere göre üniversiteler, kolejler ve okullar",
+    "indexIntro": "YourHEI’de programı olan tüm kurumlar, ülkelere göre. Kurum sayfalarına bağlantılı listeyi görmek için bir ülke açın: programlar, ücretler ve son tarihler.",
+    "count": "{count, plural, other {# kurum}}",
+    "countryTitle": "Üniversiteler ve kolejler: {place}",
+    "countrySeoTitle": "Üniversiteler ve kolejler: {place}, {count, plural, other {# kurum}}",
+    "countryIntro": "YourHEI’de programı olan {count, plural, other {# kurum}} (ülke: {place}). Her sayfada programlar, uluslararası öğrenciler için ücretler ve resmî kaynaklardan son tarihler var.",
+    "pageTitle": "{title} — sayfa {page}",
+    "pagesLabel": "Liste sayfaları",
+    "prev": "← Sayfa {page}",
+    "next": "Sayfa {page} →",
+    "allCountries": "Tüm ülkeler",
+    "allInCountry": "Tüm üniversiteler ve kolejler: {place}"
   }
 }

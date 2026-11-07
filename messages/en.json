@@ -44,7 +44,8 @@
     "countries": "Study destinations",
     "forInstitutions": "For institutions",
     "blog": "Blog",
-    "deadlines": "Deadlines"
+    "deadlines": "Deadlines",
+    "institutions": "Universities by country"
   },
   "Types": {
     "university": "University",
@@ -1389,5 +1390,20 @@
     "profileHint": "Signed in? Your documents are also kept in your profile.",
     "profileLink": "Open profile",
     "calendarCta": "See the application deadlines"
+  },
+  "InstitutionsList": {
+    "indexTitle": "Universities by country",
+    "indexSeoTitle": "Universities, colleges and schools by country",
+    "indexIntro": "Every institution with programmes on YourHEI, by country. Open a country for a list with links to each institution: programmes, fees and application deadlines.",
+    "count": "{count, plural, one {# institution} other {# institutions}}",
+    "countryTitle": "Universities and colleges in {place}",
+    "countrySeoTitle": "Universities and colleges in {place}: {count, plural, one {# institution} other {# institutions}}",
+    "countryIntro": "{count, plural, one {# institution} other {# institutions}} in {place} with programmes on YourHEI. Each page lists the programmes, fees for international students and deadlines from official sources.",
+    "pageTitle": "{title} — page {page}",
+    "pagesLabel": "Pages of the list",
+    "prev": "← Page {page}",
+    "next": "Page {page} →",
+    "allCountries": "All countries",
+    "allInCountry": "All universities and colleges in {place}"
   }
 }

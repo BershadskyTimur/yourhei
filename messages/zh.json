@@ -44,7 +44,8 @@
     "countries": "留学目的地",
     "forInstitutions": "面向院校",
     "blog": "博客",
-    "deadlines": "截止日期"
+    "deadlines": "截止日期",
+    "institutions": "各国院校"
   },
   "Types": {
     "university": "大学",
@@ -1389,5 +1390,20 @@
     "profileHint": "已登录？您的材料状态也保存在个人资料中。",
     "profileLink": "打开个人资料",
     "calendarCta": "查看申请截止日期"
+  },
+  "InstitutionsList": {
+    "indexTitle": "各国院校",
+    "indexSeoTitle": "各国大学、学院和学校",
+    "indexIntro": "YourHEI 上所有提供项目的院校，按国家列出。打开一个国家，查看带有各院校链接的列表：项目、学费和申请截止日期。",
+    "count": "{count, plural, other {# 所院校}}",
+    "countryTitle": "{place}的大学和学院",
+    "countrySeoTitle": "{place}的大学和学院：{count, plural, other {# 所院校}}",
+    "countryIntro": "YourHEI 上有 {count, plural, other {# 所院校}}（{place}）提供项目。每所院校的页面列出项目、国际学生学费和来自官方来源的截止日期。",
+    "pageTitle": "{title}（第 {page} 页）",
+    "pagesLabel": "列表页",
+    "prev": "← 第 {page} 页",
+    "next": "第 {page} 页 →",
+    "allCountries": "所有国家",
+    "allInCountry": "{place}的所有大学和学院"
   }
 }

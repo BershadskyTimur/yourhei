@@ -44,7 +44,8 @@
     "countries": "Kierunki studiów za granicą",
     "forInstitutions": "Dla instytucji",
     "blog": "Blog",
-    "deadlines": "Terminy"
+    "deadlines": "Terminy",
+    "institutions": "Uczelnie według krajów"
   },
   "Types": {
     "university": "Uniwersytet",
@@ -1389,5 +1390,20 @@
     "profileHint": "Zalogowany? Twoje dokumenty są też zapisane w profilu.",
     "profileLink": "Otwórz profil",
     "calendarCta": "Zobacz terminy składania dokumentów"
+  },
+  "InstitutionsList": {
+    "indexTitle": "Uczelnie według krajów",
+    "indexSeoTitle": "Uczelnie, college i szkoły według krajów: pełne listy",
+    "indexIntro": "Wszystkie placówki z programami w YourHEI, według krajów. Otwórz kraj, aby zobaczyć listę z linkami do stron placówek: programy, czesne i terminy.",
+    "count": "{count, plural, one {# placówka} few {# placówki} many {# placówek} other {# placówki}}",
+    "countryTitle": "Uczelnie i college: {place}",
+    "countrySeoTitle": "Uczelnie i college: {place}, {count, plural, one {# placówka} few {# placówki} many {# placówek} other {# placówki}}",
+    "countryIntro": "W YourHEI {count, plural, one {# placówka} few {# placówki} many {# placówek} other {# placówki}} z programami (kraj: {place}). Na stronie każdej: programy, czesne dla cudzoziemców i terminy z oficjalnych źródeł.",
+    "pageTitle": "{title} — strona {page}",
+    "pagesLabel": "Strony listy",
+    "prev": "← Strona {page}",
+    "next": "Strona {page} →",
+    "allCountries": "Wszystkie kraje",
+    "allInCountry": "Wszystkie uczelnie i college: {place}"
   }
 }

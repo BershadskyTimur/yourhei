@@ -44,7 +44,8 @@
     "countries": "Ta’lim yo‘nalishlari",
     "forInstitutions": "Muassasalar uchun",
     "blog": "Blog",
-    "deadlines": "Muddatlar"
+    "deadlines": "Muddatlar",
+    "institutions": "Davlatlar bo‘yicha universitetlar"
   },
   "Types": {
     "university": "Universitet",
@@ -1389,5 +1390,20 @@
     "profileHint": "Tizimga kirdingizmi? Hujjatlaringiz profilda ham saqlanadi.",
     "profileLink": "Profilni ochish",
     "calendarCta": "Topshirish muddatlarini ko‘rish"
+  },
+  "InstitutionsList": {
+    "indexTitle": "Davlatlar bo‘yicha universitetlar",
+    "indexSeoTitle": "Davlatlar bo‘yicha universitetlar, kollejlar va maktablar",
+    "indexIntro": "YourHEI’dagi dasturlari bor barcha ta’lim muassasalari, davlatlar bo‘yicha. Havolali ro‘yxatni ko‘rish uchun davlatni oching: dasturlar, narxlar va muddatlar.",
+    "count": "{count, plural, other {# muassasa}}",
+    "countryTitle": "Universitetlar va kollejlar: {place}",
+    "countrySeoTitle": "Universitetlar va kollejlar: {place}, {count, plural, other {# muassasa}}",
+    "countryIntro": "YourHEI’da dasturlari bor {count, plural, other {# muassasa}} (davlat: {place}). Har birining sahifasida: dasturlar, chet elliklar uchun narxlar va rasmiy manbalardan muddatlar.",
+    "pageTitle": "{title} — {page}-sahifa",
+    "pagesLabel": "Ro‘yxat sahifalari",
+    "prev": "← {page}-sahifa",
+    "next": "{page}-sahifa →",
+    "allCountries": "Barcha davlatlar",
+    "allInCountry": "Barcha universitetlar va kollejlar: {place}"
   }
 }

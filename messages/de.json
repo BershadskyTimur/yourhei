@@ -44,7 +44,8 @@
     "countries": "Studienziele",
     "forInstitutions": "Für Einrichtungen",
     "blog": "Blog",
-    "deadlines": "Fristen"
+    "deadlines": "Fristen",
+    "institutions": "Hochschulen nach Ländern"
   },
   "Types": {
     "university": "Universität",
@@ -1389,5 +1390,20 @@
     "profileHint": "Angemeldet? Ihre Unterlagen werden auch im Profil gespeichert.",
     "profileLink": "Profil öffnen",
     "calendarCta": "Bewerbungsfristen ansehen"
+  },
+  "InstitutionsList": {
+    "indexTitle": "Hochschulen nach Ländern",
+    "indexSeoTitle": "Hochschulen, Colleges und Schulen nach Ländern",
+    "indexIntro": "Alle Einrichtungen mit Programmen auf YourHEI, nach Ländern. Öffnen Sie ein Land für eine Liste mit Links zu jeder Einrichtung: Programme, Kosten und Fristen.",
+    "count": "{count, plural, one {# Einrichtung} other {# Einrichtungen}}",
+    "countryTitle": "Hochschulen und Colleges: {place}",
+    "countrySeoTitle": "Hochschulen und Colleges: {place}, {count, plural, one {# Einrichtung} other {# Einrichtungen}}",
+    "countryIntro": "{count, plural, one {# Einrichtung} other {# Einrichtungen}} mit Programmen auf YourHEI (Land: {place}). Jede Seite zeigt Programme, Kosten für internationale Studierende und Fristen aus offiziellen Quellen.",
+    "pageTitle": "{title} — Seite {page}",
+    "pagesLabel": "Seiten der Liste",
+    "prev": "← Seite {page}",
+    "next": "Seite {page} →",
+    "allCountries": "Alle Länder",
+    "allInCountry": "Alle Hochschulen und Colleges: {place}"
   }
 }

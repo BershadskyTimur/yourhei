@@ -44,7 +44,8 @@
     "countries": "Destinos de estudio",
     "forInstitutions": "Para instituciones",
     "blog": "Blog",
-    "deadlines": "Plazos"
+    "deadlines": "Plazos",
+    "institutions": "Universidades por país"
   },
   "Types": {
     "university": "Universidad",
@@ -1389,5 +1390,20 @@
     "profileHint": "¿Has iniciado sesión? Tus documentos también se guardan en tu perfil.",
     "profileLink": "Abrir perfil",
     "calendarCta": "Ver los plazos de solicitud"
+  },
+  "InstitutionsList": {
+    "indexTitle": "Universidades por país",
+    "indexSeoTitle": "Universidades, colleges y escuelas por país",
+    "indexIntro": "Todas las instituciones con programas en YourHEI, por país. Abre un país para ver la lista con enlaces a cada institución: programas, precios y plazos.",
+    "count": "{count, plural, one {# institución} other {# instituciones}}",
+    "countryTitle": "Universidades y colleges: {place}",
+    "countrySeoTitle": "Universidades y colleges: {place}, {count, plural, one {# institución} other {# instituciones}}",
+    "countryIntro": "{count, plural, one {# institución} other {# instituciones}} con programas en YourHEI (país: {place}). Cada página muestra programas, precios para estudiantes internacionales y plazos de fuentes oficiales.",
+    "pageTitle": "{title} — página {page}",
+    "pagesLabel": "Páginas de la lista",
+    "prev": "← Página {page}",
+    "next": "Página {page} →",
+    "allCountries": "Todos los países",
+    "allInCountry": "Todas las universidades y colleges: {place}"
   }
 }

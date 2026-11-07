@@ -44,7 +44,8 @@
     "countries": "Təhsil istiqamətləri",
     "forInstitutions": "Müəssisələr üçün",
     "blog": "Bloq",
-    "deadlines": "Müddətlər"
+    "deadlines": "Müddətlər",
+    "institutions": "Ölkələr üzrə universitetlər"
   },
   "Types": {
     "university": "Universitet",
@@ -1389,5 +1390,20 @@
     "profileHint": "Daxil olmusunuz? Sənədləriniz profildə də saxlanılır.",
     "profileLink": "Profili aç",
     "calendarCta": "Müraciət müddətlərinə bax"
+  },
+  "InstitutionsList": {
+    "indexTitle": "Ölkələr üzrə universitetlər",
+    "indexSeoTitle": "Ölkələr üzrə universitetlər, kolleclər və məktəblər",
+    "indexIntro": "YourHEI-də proqramları olan bütün təhsil müəssisələri, ölkələr üzrə. Keçidli siyahını görmək üçün ölkəni açın: proqramlar, qiymətlər və müddətlər.",
+    "count": "{count, plural, other {# müəssisə}}",
+    "countryTitle": "Universitetlər və kolleclər: {place}",
+    "countrySeoTitle": "Universitetlər və kolleclər: {place}, {count, plural, other {# müəssisə}}",
+    "countryIntro": "YourHEI-də proqramları olan {count, plural, other {# müəssisə}} (ölkə: {place}). Hər birinin səhifəsində: proqramlar, əcnəbilər üçün qiymətlər və rəsmi mənbələrdən müddətlər.",
+    "pageTitle": "{title} — səhifə {page}",
+    "pagesLabel": "Siyahının səhifələri",
+    "prev": "← Səhifə {page}",
+    "next": "Səhifə {page} →",
+    "allCountries": "Bütün ölkələr",
+    "allInCountry": "Bütün universitetlər və kolleclər: {place}"
   }
 }
