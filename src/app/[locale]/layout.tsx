@@ -87,7 +87,8 @@ export async function generateMetadata({
     description: t('description'),
     // Proof for Yandex.Webmaster that the site is ours (the same code as public/yandex_0df00030df9b8491.html, which
     // Cloudflare answers with a redirect to the address without .html, so Yandex may not accept the file).
-    verification: { yandex: '0df00030df9b8491' },
+    // The same for Bing Webmaster Tools (the tag msvalidate.01); without it Bing refuses IndexNow with 403.
+    verification: { yandex: '0df00030df9b8491', other: { 'msvalidate.01': '703332C47A7428AD05BB7BF4808B83D6' } },
     openGraph: {
       title: t('title'),
       description: t('description'),
