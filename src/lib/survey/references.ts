@@ -17,6 +17,10 @@ export interface IscedEntry {
   ka: string;
   es: string;
   zh: string;
+  /** only the broad and narrow fields (two and three digits) have these; the others fall back to English */
+  de?: string;
+  fr?: string;
+  pl?: string;
 }
 export const ISCED: IscedEntry[] = iscedData as IscedEntry[];
 const ISCED_BY_CODE = new Map(ISCED.map((e) => [e.c, e]));
