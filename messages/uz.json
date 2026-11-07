@@ -1316,7 +1316,15 @@
     "institutionTitle": "{name}, {country}: dasturlar, narxlar va muddatlar",
     "institutionDescription": "{name} ({place}). Dasturlar: {count}; darajalar: {levels}. Narxlar, muddatlar, talablar va ariza havolasi rasmiy manbalardan.",
     "countryDescription": "Talaba vizasi, o‘qish davrida ishlash, bitirgandan keyin qolish, yashash narxi va diplomni tan olish: {country}. Rasmiy sahifalarga havolali qisqa qo‘llanma.",
-    "institutionDescriptionPrice": "{name} ({place}). Dasturlar: {count}; darajalar: {levels}. O'qish narxi: yiliga {range}. Muddatlar va ariza havolasi rasmiy manbalardan."
+    "institutionDescriptionPrice": "{name} ({place}). Dasturlar: {count}; darajalar: {levels}. O'qish narxi: yiliga {range}. Muddatlar va ariza havolasi rasmiy manbalardan.",
+    "institutionTitleNoCountry": "{name}: dasturlar, narxlar va muddatlar",
+    "institutionTitleShort": "{name}",
+    "countriesTitle": "Ta’lim yo‘nalishlari",
+    "aboutTitle": "Loyiha haqida",
+    "methodologyTitle": "Ma’lumotlarimiz qayerdan",
+    "contactTitle": "Aloqa va yordam",
+    "studyHubDescription": "{place} — Yo‘nalishlar: {fields}. Dasturlar: {programmes}. Ma’lumotlar rasmiy manbalardan olingan.",
+    "deadlinesMonthTitle": "Hujjat topshirish muddatlari: {place}: {month}"
   },
   "Blog": {
     "title": "Blog",

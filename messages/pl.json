@@ -1316,7 +1316,15 @@
     "institutionTitle": "{name}, {country}: programy, czesne i terminy",
     "institutionDescription": "{name} ({place}). Programy: {count}; poziomy: {levels}. Czesne, terminy, wymagania i link do aplikowania z oficjalnych źródeł.",
     "countryDescription": "Wiza studencka, praca podczas studiów, pozostanie po ukończeniu, koszty życia i uznanie dyplomu: {country}. Krótki przewodnik z odnośnikami do oficjalnych stron.",
-    "institutionDescriptionPrice": "{name} ({place}). Programy: {count}; poziomy: {levels}. Czesne: {range} rocznie. Terminy i link do aplikacji: z oficjalnych źródeł."
+    "institutionDescriptionPrice": "{name} ({place}). Programy: {count}; poziomy: {levels}. Czesne: {range} rocznie. Terminy i link do aplikacji: z oficjalnych źródeł.",
+    "institutionTitleNoCountry": "{name}: programy, czesne i terminy",
+    "institutionTitleShort": "{name}",
+    "countriesTitle": "Kierunki studiów za granicą",
+    "aboutTitle": "O projekcie",
+    "methodologyTitle": "Skąd pochodzą nasze dane",
+    "contactTitle": "Kontakt i pomoc",
+    "studyHubDescription": "{place} — Kierunki: {fields}. Programy: {programmes}. Dane pochodzą z oficjalnych źródeł.",
+    "deadlinesMonthTitle": "Terminy składania dokumentów: {place}: {month}"
   },
   "Blog": {
     "title": "Blog",

@@ -1316,7 +1316,15 @@
     "institutionTitle": "{name}, {country}: პროგრამები, ფასები და ვადები",
     "institutionDescription": "{name} ({place}). პროგრამები: {count}; დონეები: {levels}. ფასები, ვადები, მოთხოვნები და განაცხადის ბმული ოფიციალური წყაროებიდან.",
     "countryDescription": "სასწავლო ვიზა, მუშაობა სწავლისას, დარჩენა დამთავრების შემდეგ, საცხოვრებელი ხარჯები და დიპლომის აღიარება: {country}. მოკლე გზამკვლევი ოფიციალურ გვერდებზე ბმულებით.",
-    "institutionDescriptionPrice": "{name} ({place}). პროგრამები: {count}; დონეები: {levels}. სწავლის ღირებულება: {range} წელიწადში. ვადები და განაცხადის ბმული: ოფიციალური წყაროებიდან."
+    "institutionDescriptionPrice": "{name} ({place}). პროგრამები: {count}; დონეები: {levels}. სწავლის ღირებულება: {range} წელიწადში. ვადები და განაცხადის ბმული: ოფიციალური წყაროებიდან.",
+    "institutionTitleNoCountry": "{name}: პროგრამები, ფასები და ვადები",
+    "institutionTitleShort": "{name}",
+    "countriesTitle": "სასწავლო მიმართულებები",
+    "aboutTitle": "პროექტის შესახებ",
+    "methodologyTitle": "საიდან არის ჩვენი მონაცემები",
+    "contactTitle": "კონტაქტი და მხარდაჭერა",
+    "studyHubDescription": "{place} — მიმართულებები: {fields}. პროგრამები: {programmes}. მონაცემები ოფიციალური წყაროებიდანაა.",
+    "deadlinesMonthTitle": "განაცხადის ვადები: {place}: {month}"
   },
   "Blog": {
     "title": "ბლოგი",

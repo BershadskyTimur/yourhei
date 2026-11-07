@@ -1316,7 +1316,15 @@
     "institutionTitle": "{name}, {country}: proqramlar, qiymətlər və müddətlər",
     "institutionDescription": "{name} ({place}). Proqramlar: {count}; səviyyələr: {levels}. Qiymətlər, müddətlər, tələblər və müraciət linki rəsmi mənbələrdən.",
     "countryDescription": "Tələbə vizası, təhsil zamanı iş, məzun olduqdan sonra qalmaq, yaşayış xərcləri və diplomun tanınması: {country}. Rəsmi səhifələrə keçidlərlə qısa bələdçi.",
-    "institutionDescriptionPrice": "{name} ({place}). Proqramlar: {count}; səviyyələr: {levels}. Təhsil haqqı: ildə {range}. Müddətlər və müraciət linki rəsmi mənbələrdən."
+    "institutionDescriptionPrice": "{name} ({place}). Proqramlar: {count}; səviyyələr: {levels}. Təhsil haqqı: ildə {range}. Müddətlər və müraciət linki rəsmi mənbələrdən.",
+    "institutionTitleNoCountry": "{name}: proqramlar, qiymətlər və müddətlər",
+    "institutionTitleShort": "{name}",
+    "countriesTitle": "Təhsil istiqamətləri",
+    "aboutTitle": "Layihə haqqında",
+    "methodologyTitle": "Məlumatlarımız haradandır",
+    "contactTitle": "Əlaqə və dəstək",
+    "studyHubDescription": "{place} — Sahələr: {fields}. Proqramlar: {programmes}. Məlumatlar rəsmi mənbələrdəndir.",
+    "deadlinesMonthTitle": "Müraciət müddətləri: {place}: {month}"
   },
   "Blog": {
     "title": "Bloq",

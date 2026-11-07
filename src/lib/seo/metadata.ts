@@ -56,6 +56,17 @@ export function seoMetadata(input: SeoInput): Metadata {
   };
 }
 
+/** About what search engines show of a title before they cut it. */
+export const TITLE_MAX = 60;
+
+/**
+ * The first of the titles (longest and most complete first) that fits in `max` characters; when none fits, the last one
+ * (the shortest). So a long institution name drops the country, then the list of what the page has, but keeps its name.
+ */
+export function fitTitle(candidates: readonly string[], max = TITLE_MAX): string {
+  return candidates.find((c) => c.length <= max) ?? candidates[candidates.length - 1] ?? '';
+}
+
 /** A cut that ends a sentence shorter than this is too short to be a description: the cut at a word is used instead. */
 const MIN_SENTENCE = 70;
 

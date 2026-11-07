@@ -1313,10 +1313,18 @@
     "cancel": "Cancel"
   },
   "Seo": {
-    "institutionTitle": "{name}, {country}: programmes, tuition and deadlines",
+    "institutionTitle": "{name}, {country}: tuition fees and programmes",
     "institutionDescription": "{name} ({place}). Programmes: {count}; levels: {levels}. Tuition, deadlines, requirements and the application link, from official sources.",
     "countryDescription": "Study visa, working while you study, staying after graduation, cost of living and diploma recognition in {country}: a short guide with links to the official pages.",
-    "institutionDescriptionPrice": "{name} ({place}). Programmes: {count}; levels: {levels}. Tuition: {range} per year. Deadlines and the application link: from official sources."
+    "institutionDescriptionPrice": "{name} ({place}). Programmes: {count}; levels: {levels}. Tuition: {range} per year. Deadlines and the application link: from official sources.",
+    "institutionTitleNoCountry": "{name}: tuition fees and programmes",
+    "institutionTitleShort": "{name}: tuition fees",
+    "countriesTitle": "Study abroad by country: visas, work and living costs",
+    "aboutTitle": "About YourHEI: how we help you choose where to study",
+    "methodologyTitle": "Where YourHEI data comes from: sources and methods",
+    "contactTitle": "Contact YourHEI: questions and data corrections",
+    "studyHubDescription": "{programmes, plural, one {# programme} other {# programmes}} in {place} across {fields, plural, one {# field} other {# fields}}: fees for international students, deadlines and institutions, from official sources.",
+    "deadlinesMonthTitle": "Application deadlines in {place}: {month}"
   },
   "Blog": {
     "title": "Blog",

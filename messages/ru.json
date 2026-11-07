@@ -1313,10 +1313,18 @@
     "cancel": "Отмена"
   },
   "Seo": {
-    "institutionTitle": "{name}, {country}: программы, цены и сроки подачи",
+    "institutionTitle": "{name}, {country}: стоимость обучения и программы",
     "institutionDescription": "{name} ({place}). Программ: {count}; уровни: {levels}. Стоимость, сроки подачи, требования и ссылка для подачи заявки: по официальным источникам.",
     "countryDescription": "Студенческая виза, работа во время учёбы, жизнь после выпуска, стоимость жизни и признание диплома: {country}. Краткий справочник со ссылками на официальные страницы.",
-    "institutionDescriptionPrice": "{name} ({place}). Программ: {count}; уровни: {levels}. Стоимость обучения: {range} в год. Сроки подачи и ссылка для заявки: по официальным источникам."
+    "institutionDescriptionPrice": "{name} ({place}). Программ: {count}; уровни: {levels}. Стоимость обучения: {range} в год. Сроки подачи и ссылка для заявки: по официальным источникам.",
+    "institutionTitleNoCountry": "{name}: стоимость обучения и программы",
+    "institutionTitleShort": "{name}: стоимость обучения",
+    "countriesTitle": "Учёба за границей по странам: визы, работа и жизнь",
+    "aboutTitle": "О проекте YourHEI: как мы помогаем выбрать вуз",
+    "methodologyTitle": "Откуда данные YourHEI: источники о вузах и ценах",
+    "contactTitle": "Контакты YourHEI: вопросы и исправления данных",
+    "studyHubDescription": "{programmes, plural, one {# программа} few {# программы} many {# программ} other {# программы}} {place} по {fields, plural, one {# направлению} other {# направлениям}}: цены для иностранцев, сроки подачи и вузы. Данные из официальных источников.",
+    "deadlinesMonthTitle": "Сроки подачи документов {place}: {month}"
   },
   "Blog": {
     "title": "Блог",
@@ -1356,7 +1364,7 @@
     "countriesTitle": "По странам",
     "countryCount": "Сроков: {count} · заведений: {institutions} · ближайший: {date}",
     "countryTitle": "Сроки подачи документов: {country}",
-    "countryIntro": "Ближайшие сроки в заведениях страны {country}: {count} дат в {institutions} заведениях. Откройте заведение, чтобы увидеть программы и ссылку для подачи заявки.",
+    "countryIntro": "Ближайшие сроки в заведениях страны {country}: {count, plural, one {# дата} few {# даты} many {# дат} other {# даты}} в {institutions, plural, one {# заведении} other {# заведениях}}. Откройте заведение, чтобы увидеть программы и ссылку для подачи заявки.",
     "programmes": "Программ: {count}",
     "intake": "Набор: {month}",
     "appliesInternational": "Иностранные студенты",

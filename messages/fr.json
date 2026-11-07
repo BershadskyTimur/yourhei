@@ -1316,7 +1316,15 @@
     "institutionTitle": "{name}, {country} : programmes, frais et dates limites",
     "institutionDescription": "{name} ({place}). Programmes : {count} ; niveaux : {levels}. Frais, dates limites, conditions et lien de candidature, issus de sources officielles.",
     "countryDescription": "Visa d’études, travailler pendant les études, rester après le diplôme, coût de la vie et reconnaissance du diplôme en {country} : un guide court avec des liens vers les pages officielles.",
-    "institutionDescriptionPrice": "{name} ({place}). Programmes : {count} ; niveaux : {levels}. Frais de scolarité : {range} par an. Dates limites et lien de candidature : sources officielles."
+    "institutionDescriptionPrice": "{name} ({place}). Programmes : {count} ; niveaux : {levels}. Frais de scolarité : {range} par an. Dates limites et lien de candidature : sources officielles.",
+    "institutionTitleNoCountry": "{name} : programmes, frais et dates limites",
+    "institutionTitleShort": "{name}",
+    "countriesTitle": "Destinations d’études",
+    "aboutTitle": "À propos du projet",
+    "methodologyTitle": "D’où viennent nos données",
+    "contactTitle": "Contact et assistance",
+    "studyHubDescription": "{place} — Domaines : {fields}. Programmes : {programmes}. Les données proviennent de sources officielles.",
+    "deadlinesMonthTitle": "Dates limites de candidature : {place} : {month}"
   },
   "Blog": {
     "title": "Blog",

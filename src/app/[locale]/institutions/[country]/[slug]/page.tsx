@@ -16,7 +16,7 @@ import { guideOf } from '@/lib/countries-guide/guides';
 import { getInstitutionDetail } from '@/lib/institutions/detail';
 import { pickLocalized, pickText } from '@/lib/institutions/localized';
 import { JsonLd } from '@/components/JsonLd';
-import { seoMetadata, trimDescription } from '@/lib/seo/metadata';
+import { fitTitle, seoMetadata, trimDescription } from '@/lib/seo/metadata';
 import { hasPrices, institutionFacts, levelRows } from '@/lib/seo/institution-faq';
 import { countryLabel, seoCity } from '@/lib/seo/place';
 import { formatTuitionRange, tuitionRange } from '@/lib/seo/tuition-range';
@@ -58,7 +58,12 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   return seoMetadata({
     locale,
     path: `/institutions/${country}/${slug}`,
-    title: t('institutionTitle', { name, country: countryLabel(locale, institution.country, countryName ?? institution.country) }),
+    // people search "<institution> tuition / стоимость": a long name drops the country, then "and programmes", but keeps the price words
+    title: fitTitle([
+      t('institutionTitle', { name, country: countryLabel(locale, institution.country, countryName ?? institution.country) }),
+      t('institutionTitleNoCountry', { name }),
+      t('institutionTitleShort', { name }),
+    ]),
     description: trimDescription(descriptionOf()),
     // A page without programmes is a thin page: keep it out of the search results (visitors can still open it).
     noindex: institution.programs.length === 0,

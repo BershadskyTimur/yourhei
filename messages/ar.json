@@ -1316,7 +1316,15 @@
     "institutionTitle": "{name}, {country}: البرامج والرسوم والمواعيد",
     "institutionDescription": "{name} ({place}). عدد البرامج: {count}؛ المستويات: {levels}. الرسوم والمواعيد والمتطلبات ورابط التقديم من مصادر رسمية.",
     "countryDescription": "تأشيرة الدراسة والعمل أثناء الدراسة والبقاء بعد التخرج وتكلفة المعيشة والاعتراف بالشهادة في {country}: دليل موجز مع روابط للصفحات الرسمية.",
-    "institutionDescriptionPrice": "{name} ({place}). البرامج: {count}؛ المستويات: {levels}. الرسوم الدراسية: {range} في السنة. المواعيد ورابط التقديم من مصادر رسمية."
+    "institutionDescriptionPrice": "{name} ({place}). البرامج: {count}؛ المستويات: {levels}. الرسوم الدراسية: {range} في السنة. المواعيد ورابط التقديم من مصادر رسمية.",
+    "institutionTitleNoCountry": "{name}: البرامج والرسوم والمواعيد",
+    "institutionTitleShort": "{name}",
+    "countriesTitle": "وجهات الدراسة",
+    "aboutTitle": "عن المشروع",
+    "methodologyTitle": "من أين تأتي بياناتنا",
+    "contactTitle": "التواصل والدعم",
+    "studyHubDescription": "{place} — المجالات: {fields}. البرامج: {programmes}. البيانات من مصادر رسمية.",
+    "deadlinesMonthTitle": "مواعيد التقديم: {place}: {month}"
   },
   "Blog": {
     "title": "المدونة",

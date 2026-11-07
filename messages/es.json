@@ -1316,7 +1316,15 @@
     "institutionTitle": "{name}, {country}: programas, precios y plazos",
     "institutionDescription": "{name} ({place}). Programas: {count}; niveles: {levels}. Precios, plazos, requisitos y enlace para solicitar, de fuentes oficiales.",
     "countryDescription": "Visado de estudios, trabajar mientras estudias, quedarse tras graduarte, coste de vida y reconocimiento del título en {country}: una guía breve con enlaces a las páginas oficiales.",
-    "institutionDescriptionPrice": "{name} ({place}). Programas: {count}; niveles: {levels}. Matrícula: {range} al año. Plazos y enlace de solicitud: de fuentes oficiales."
+    "institutionDescriptionPrice": "{name} ({place}). Programas: {count}; niveles: {levels}. Matrícula: {range} al año. Plazos y enlace de solicitud: de fuentes oficiales.",
+    "institutionTitleNoCountry": "{name}: programas, precios y plazos",
+    "institutionTitleShort": "{name}",
+    "countriesTitle": "Destinos de estudio",
+    "aboutTitle": "Acerca del proyecto",
+    "methodologyTitle": "De dónde vienen nuestros datos",
+    "contactTitle": "Contacto y soporte",
+    "studyHubDescription": "{place} — Áreas: {fields}. Programas: {programmes}. Los datos proceden de fuentes oficiales.",
+    "deadlinesMonthTitle": "Plazos de solicitud: {place}: {month}"
   },
   "Blog": {
     "title": "Blog",

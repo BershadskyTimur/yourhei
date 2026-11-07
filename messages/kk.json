@@ -1316,7 +1316,15 @@
     "institutionTitle": "{name}, {country}: бағдарламалар, бағалар және мерзімдер",
     "institutionDescription": "{name} ({place}). Бағдарламалар: {count}; деңгейлер: {levels}. Бағалар, мерзімдер, талаптар және өтінім беру сілтемесі ресми көздерден.",
     "countryDescription": "Студенттік виза, оқу кезінде жұмыс, бітіргеннен кейін қалу, тұрмыс құны және дипломды тану: {country}. Ресми беттерге сілтемелері бар қысқаша нұсқаулық.",
-    "institutionDescriptionPrice": "{name} ({place}). Бағдарламалар: {count}; деңгейлер: {levels}. Оқу ақысы: жылына {range}. Мерзімдер мен өтінім сілтемесі ресми дереккөздерден."
+    "institutionDescriptionPrice": "{name} ({place}). Бағдарламалар: {count}; деңгейлер: {levels}. Оқу ақысы: жылына {range}. Мерзімдер мен өтінім сілтемесі ресми дереккөздерден.",
+    "institutionTitleNoCountry": "{name}: бағдарламалар, бағалар және мерзімдер",
+    "institutionTitleShort": "{name}",
+    "countriesTitle": "Оқу бағыттары",
+    "aboutTitle": "Жоба туралы",
+    "methodologyTitle": "Біздің деректер қайдан алынады",
+    "contactTitle": "Байланыс және қолдау",
+    "studyHubDescription": "{place} — Бағыттар: {fields}. Бағдарламалар: {programmes}. Деректер ресми дереккөздерден алынған.",
+    "deadlinesMonthTitle": "Құжат тапсыру мерзімдері: {place}: {month}"
   },
   "Blog": {
     "title": "Блог",
