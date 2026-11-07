@@ -3,6 +3,8 @@
 #   python scripts/seo-audit.py
 # Nothing is written; it only reads public pages. See .claude/skills/seo-yourhei/SKILL.md for how to read the result.
 import re, sys, time, random, urllib.request, collections
+# The Windows console is not UTF-8 by default: without this, the first Russian or Chinese title stopped the script.
+sys.stdout.reconfigure(encoding='utf-8', errors='replace')
 UA = 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)'
 BASE = 'https://www.yourhei.com'
 
@@ -49,7 +51,7 @@ for u in sample:
     canon = (re.search(r'<link rel="canonical" href="([^"]*)"', html) or [None, ''])[1]
     robots_meta = (re.search(r'<meta name="robots" content="([^"]*)"', html) or [None, ''])[1]
     h1 = len(re.findall(r'<h1[\s>]', html))
-    hre = len(re.findall(r'hreflang=', html))
+    hre = len(re.findall(r'hreflang=', html, re.I))  # Next.js writes "hrefLang"
     words = len(re.sub(r'<[^>]+>', ' ', re.sub(r'<script[\s\S]*?</script>', ' ', html)).split())
     titles[title] += 1
     flag = []
@@ -57,8 +59,9 @@ for u in sample:
     if final != u: flag.append('REDIRECT ' + final)
     if canon and canon != u: flag.append('CANON ' + canon)
     if 'noindex' in robots_meta: flag.append('NOINDEX')
+    elif hre == 0: flag.append('NO HREFLANG')
     if not desc: flag.append('NO DESC')
     if h1 != 1: flag.append(f'H1={h1}')
     if dt > 3: flag.append(f'SLOW {dt:.1f}s')
-    print(f'{st} {dt:4.1f}s w={words:5d} hl={hre} {u[25:90]:65s} | {title[:60]} | {" ".join(flag)}')
+    print(f'{st} {dt:4.1f}s w={words:5d} hl={hre} {u[len(BASE):len(BASE) + 65]:65s} | {title[:60]} | {" ".join(flag)}')
 print('duplicate titles', [t for t, n in titles.items() if n > 1])
