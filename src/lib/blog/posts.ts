@@ -65,6 +65,16 @@ export function articleLang(article: Article, locale: string): BlogLang {
   return TRANSLATIONS[lang]?.[article.slug] ? lang : 'en';
 }
 
+/** Whether the article has its own text in this language (not the English text shown in its place). */
+export function isInLanguage(article: Article, locale: string): boolean {
+  return articleLang(article, locale) === blogLang(locale);
+}
+
+/** The languages (of `locales`) the article has its own text in: the only versions offered to search engines. */
+export function articleLocales(article: Article, locales: readonly string[]): string[] {
+  return locales.filter((l) => isInLanguage(article, l));
+}
+
 export function bodyOf(article: Article, locale: string): ArticleBody {
   const lang = blogLang(locale);
   if (lang === 'ru' || lang === 'en') return article[lang];

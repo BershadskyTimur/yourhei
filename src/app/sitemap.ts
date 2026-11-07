@@ -1,5 +1,8 @@
 import type { MetadataRoute } from 'next';
-import { INDEXED_LOCALES, X_DEFAULT_LOCALE } from '@/config/seo';
+import { X_DEFAULT_LOCALE } from '@/config/seo';
+import { routing } from '@/i18n/routing';
+import { indexedLocalesOf } from '@/lib/seo/metadata';
+import { articleLocales } from '@/lib/blog/posts';
 import { SITEMAP_CHUNK } from '@/lib/institutions/sitemap';
 import { getSitemapPoints } from '@/lib/institutions/summaries';
 import { GUIDES } from '@/lib/countries-guide/guides';
@@ -30,17 +33,21 @@ export async function generateSitemaps() {
 export default async function sitemap(props: { id: Promise<string> }): Promise<MetadataRoute.Sitemap> {
   const id = Number(await props.id);
   const base = siteUrl();
-  const alternates = (path: string) => ({ languages: { ...Object.fromEntries(INDEXED_LOCALES.map((l) => [l, `${base}/${l}${path}`])), 'x-default': `${base}/${X_DEFAULT_LOCALE}${path}` } });
+  const alternates = (locales: readonly string[], path: string) => ({ languages: { ...Object.fromEntries(locales.map((l) => [l, `${base}/${l}${path}`])), 'x-default': `${base}/${X_DEFAULT_LOCALE}${path}` } });
   const items = await getSitemapPoints();
   const slice = items.slice(id * SITEMAP_CHUNK, (id + 1) * SITEMAP_CHUNK);
-  const pages: { path: string; lastModified?: string }[] = [
+  const pages: { path: string; lastModified?: string; only?: readonly string[] }[] = [
     ...(id === 0
       ? [
           ...[...STATIC_PAGES, '/blog', '/deadlines', '/checklist', '/institutions', ...listPages(items), ...countriesWithDeadlines().flatMap((c) => [`/deadlines/${c.country.toLowerCase()}`, ...monthsOfCountry(c.country).map((m) => `/deadlines/${c.country.toLowerCase()}/${m.month}`)]), ...GUIDES.map((g) => `/countries/${g.country.toLowerCase()}`), ...studyCountries().map((c) => `/study/${c.toLowerCase()}`), ...COMBOS.map((c) => `/study/${c.country.toLowerCase()}/${fieldSlug(c.code)}`)].map((path) => ({ path })),
-          ...publishedArticles().map((a) => ({ path: `/blog/${a.slug}`, lastModified: a.updated })),
+          ...publishedArticles().map((a) => ({ path: `/blog/${a.slug}`, lastModified: a.updated, only: articleLocales(a, routing.locales) })),
         ]
       : []),
     ...slice.map((i) => ({ path: `/institutions/${i.country.toLowerCase()}/${i.slug}` })),
   ];
-  return pages.flatMap(({ path, lastModified }) => INDEXED_LOCALES.map((l) => ({ url: `${base}/${l}${path}`, alternates: alternates(path), ...(lastModified ? { lastModified } : {}) })));
+  // every page in each language it is offered in (institution pages: ru/en only; an article: only where it is translated)
+  return pages.flatMap(({ path, lastModified, only }) => {
+    const locales = indexedLocalesOf(path, only);
+    return locales.map((l) => ({ url: `${base}/${l}${path}`, alternates: alternates(locales, path), ...(lastModified ? { lastModified } : {}) }));
+  });
 }
