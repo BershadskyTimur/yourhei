@@ -14,7 +14,8 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   const { locale } = await params;
   if (!hasLocale(routing.locales, locale)) return {};
   const t = await getTranslations({ locale, namespace: 'Countries' });
-  return seoMetadata({ locale, path: '/countries', title: t('listTitle'), description: trimDescription(t('listIntro')) });
+  const tSeo = await getTranslations({ locale, namespace: 'Seo' });
+  return seoMetadata({ locale, path: '/countries', title: tSeo('countriesTitle'), description: trimDescription(t('listIntro')) });
 }
 
 export default async function CountriesPage({ params }: { params: Params }) {

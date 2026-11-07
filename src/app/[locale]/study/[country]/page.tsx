@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   const combos = combosOfCountry(code);
   const fields = combos.length;
   const programmes = combos.reduce((n, c) => n + c.programmes, 0);
-  return seoMetadata({ locale, path: `/study/${country.toLowerCase()}`, title: t('hubTitle', { country: name, place: placeIn(locale, code, name) }), description: trimDescription(t('hubIntro', { fields, programmes })) });
+  return seoMetadata({ locale, path: `/study/${country.toLowerCase()}`, title: t('hubTitle', { country: name, place: placeIn(locale, code, name) }), description: trimDescription((await getTranslations({ locale, namespace: 'Seo' }))('studyHubDescription', { fields, programmes, place: placeIn(locale, code, name) })) });
 }
 
 /** Every field of study with programmes in a country. */
