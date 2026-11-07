@@ -11,14 +11,17 @@ import { de } from './de';
 import { deMore } from './de-more';
 import { deMore2 } from './de-more2';
 import { deMore3 } from './de-more3';
+import { deMore4 } from './de-more4';
 import { es } from './es';
 import { esMore } from './es-more';
 import { esMore2 } from './es-more2';
 import { esMore3 } from './es-more3';
+import { esMore4 } from './es-more4';
 import { fr } from './fr';
 import { frMore } from './fr-more';
 import { frMore2 } from './fr-more2';
 import { frMore3 } from './fr-more3';
+import { frMore4 } from './fr-more4';
 import { hy } from './hy';
 import { hyMore } from './hy-more';
 import { hyMore2 } from './hy-more2';
@@ -39,6 +42,7 @@ import { pl } from './pl';
 import { plMore } from './pl-more';
 import { plMore2 } from './pl-more2';
 import { plMore3 } from './pl-more3';
+import { plMore4 } from './pl-more4';
 import { tr } from './tr';
 import { trMore } from './tr-more';
 import { trMore2 } from './tr-more2';
@@ -55,14 +59,15 @@ import { zh } from './zh';
 import { zhMore } from './zh-more';
 import { zhMore2 } from './zh-more2';
 import { zhMore3 } from './zh-more3';
+import { zhMore4 } from './zh-more4';
 
 // Machine translations of the English articles (by the address of the article). They are marked as such on the page and are not
 // offered to search engines until a person has read them: to open a language, add its code to INDEXED_LOCALES in src/config/seo.ts.
-// <lang>.ts holds the first twelve articles, <lang>-more.ts and <lang>-more2.ts the ones added later.
+// <lang>.ts holds the first twelve articles, <lang>-more*.ts the ones added later (-more4: the tuition article, es/zh/de/fr/pl only).
 export const TRANSLATIONS: Partial<Record<BlogLang, Translations>> = {
-  zh: { ...zh, ...zhMore, ...zhMore2, ...zhMore3 },
-  es: { ...es, ...esMore, ...esMore2, ...esMore3 },
-  fr: { ...fr, ...frMore, ...frMore2, ...frMore3 },
+  zh: { ...zh, ...zhMore, ...zhMore2, ...zhMore3, ...zhMore4 },
+  es: { ...es, ...esMore, ...esMore2, ...esMore3, ...esMore4 },
+  fr: { ...fr, ...frMore, ...frMore2, ...frMore3, ...frMore4 },
   ka: { ...ka, ...kaMore, ...kaMore2, ...kaMore3 },
   uk: { ...uk, ...ukMore, ...ukMore2, ...ukMore3 },
   tr: { ...tr, ...trMore, ...trMore2, ...trMore3 },
@@ -71,7 +76,7 @@ export const TRANSLATIONS: Partial<Record<BlogLang, Translations>> = {
   az: { ...az, ...azMore, ...azMore2, ...azMore3 },
   hy: { ...hy, ...hyMore, ...hyMore2, ...hyMore3 },
   ky: { ...ky, ...kyMore, ...kyMore2, ...kyMore3 },
-  pl: { ...pl, ...plMore, ...plMore2, ...plMore3 },
-  de: { ...de, ...deMore, ...deMore2, ...deMore3 },
+  pl: { ...pl, ...plMore, ...plMore2, ...plMore3, ...plMore4 },
+  de: { ...de, ...deMore, ...deMore2, ...deMore3, ...deMore4 },
   ar: { ...ar, ...arMore, ...arMore2, ...arMore3 },
 };

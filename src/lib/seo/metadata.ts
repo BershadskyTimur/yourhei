@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { INDEXED_LOCALES, X_DEFAULT_LOCALE, isIndexedLocale } from '@/config/seo';
+import { X_DEFAULT_LOCALE, indexedLocalesFor } from '@/config/seo';
 
 // The "search engine" part of a page's metadata, built in one place so that every page does it the same way: the address of the page,
 // the links between the language versions (hreflang), whether the page may be indexed, and the preview (Open Graph / Twitter).
@@ -19,25 +19,33 @@ export interface SeoInput {
   modified?: string;
   /** the address of the RSS feed offered on this page (inside the language, e.g. "/blog/feed.xml") */
   feed?: string;
+  /** the languages this page really exists in, when fewer than its path allows (an article not yet translated) */
+  locales?: readonly string[];
 }
 
-/** The languages a page of this path is offered in (for hreflang). */
-export function languageLinks(path: string): Record<string, string> {
-  const links = Object.fromEntries(INDEXED_LOCALES.map((l) => [l, `/${l}${path}`]));
+/** The languages a page of this path is offered in (for hreflang); `only` narrows them (an article not yet translated). */
+export function indexedLocalesOf(path: string, only?: readonly string[]): readonly string[] {
+  const all = indexedLocalesFor(path);
+  return only ? all.filter((l) => only.includes(l)) : all;
+}
+
+/** The links between the language versions of a page (hreflang), with x-default. */
+export function languageLinks(path: string, only?: readonly string[]): Record<string, string> {
+  const links = Object.fromEntries(indexedLocalesOf(path, only).map((l) => [l, `/${l}${path}`]));
   links['x-default'] = `/${X_DEFAULT_LOCALE}${path}`;
   return links;
 }
 
 export function seoMetadata(input: SeoInput): Metadata {
   const { locale, path, title, description } = input;
-  const indexable = isIndexedLocale(locale) && !input.noindex;
+  const indexable = indexedLocalesOf(path, input.locales).includes(locale) && !input.noindex;
   const url = `/${locale}${path}`;
   return {
     title,
     ...(description ? { description } : {}),
     alternates: {
       canonical: url,
-      ...(indexable ? { languages: languageLinks(path) } : {}),
+      ...(indexable ? { languages: languageLinks(path, input.locales) } : {}),
       ...(input.feed ? { types: { 'application/rss+xml': `/${locale}${input.feed}` } } : {}),
     },
     // a page that is not offered to search engines still lets them follow its links

@@ -1,4 +1,5 @@
 import { expect, test, type Page } from '@playwright/test';
+import { CONTENT_LOCALES } from '../src/config/seo';
 
 // The articles are shown from their publication day. These tests need the scheduled ones too, so the test server is started with
 // BLOG_SHOW_ALL=1 (playwright.config.ts); on a server started without it they are skipped.
@@ -87,14 +88,21 @@ test.describe('blog', () => {
     ['de', 'Wie viel Geld für das Studentenvisum', 'maschinelle Übersetzung', 'Blog'],
     ['ar', 'كم من المال يجب إثباته', 'ترجمة آلية', 'المدونة'],
   ] as const) {
-    test(`${lang}: a machine translation with its own text and data, marked as such and kept out of the search results`, async ({ page }) => {
+    // es, zh, de, fr, pl are offered to search engines (CONTENT_LOCALES); the other translations stay out of the results
+    const offered = (CONTENT_LOCALES as readonly string[]).includes(lang);
+    test(`${lang}: a machine translation with its own text and data, marked as such, ${offered ? 'offered to search engines' : 'kept out of the search results'}`, async ({ page }) => {
       await needArticles(page);
       await page.goto(`/${lang}/blog/proof-of-funds-student-visa`);
       await expect(page.getByRole('heading', { level: 1 })).toContainText(title);
       await expect(page.locator(`div[lang="${lang}"]`).first()).toBeVisible();
       await expect(page.getByText(notice).first()).toBeVisible();
-      await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content', /noindex/);
-      await expect(page.locator('link[rel="alternate"][hreflang="ru"]')).toHaveCount(0);
+      if (offered) {
+        await expect(page.locator('meta[name="robots"]')).toHaveCount(0);
+        await expect(page.locator('link[rel="alternate"][hreflang="ru"]')).toHaveCount(1);
+      } else {
+        await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content', /noindex/);
+        await expect(page.locator('link[rel="alternate"][hreflang="ru"]')).toHaveCount(0);
+      }
       // the data under the article is translated too (the note of Germany), and the menu offers the blog
       await expect(page.getByRole('heading', { level: 3 }).first()).toBeVisible();
       await expect(page.getByRole('navigation', { name: /./ }).first().getByRole('link', { name: menu })).toBeVisible();

@@ -188,7 +188,7 @@
     "sourceLine": "Quelle: {source}",
     "dataYear": "Daten für das Studienjahr {year}",
     "methodologyLinkShort": "Wie wir Daten sammeln",
-    "countryGuide": "Leitfaden: Studieren in {country}",
+    "countryGuide": "Länderleitfaden: {country}",
     "rankingsSource": "Plätze laut Wikidata (CC0). Jenseits der ersten 100 geben die Rankings oft einen Platzbereich an: angezeigt wird sein Anfang. Quelle:",
     "moreTitle": "Mehr zum Thema",
     "moreFields": "Beliebte Fachgebiete in diesem Land",
@@ -1090,7 +1090,7 @@
     "livingNote": "Die Lebenshaltungskosten sind der Mindestbetrag, den ein Land für das Studierendenvisum nachgewiesen haben will. Die tatsächlichen Ausgaben sind meist höher, besonders in Großstädten.",
     "emptyProgrammes": "Keine Programme gefunden. Für viele Länder gibt es in unserer Datenbank noch keine Programmdaten, aber ihre Einrichtungen haben wir.",
     "showInstitutions": "Einrichtungen anzeigen",
-    "seoTitle": "Katalog"
+    "seoTitle": "Studiengänge im Ausland: Suche nach Land, Sprache und Preis"
   },
   "Scholarships": {
     "title": "Stipendien: wo du kostenlos oder günstiger studieren kannst",
@@ -1286,8 +1286,8 @@
     "institutionsTitle": "Einrichtungen mit {field}",
     "programmesCount": "Programme: {count}",
     "examples": "Zum Beispiel:",
-    "allFields": "Alle Fachgebiete in {country}",
-    "seoTitle": "{field} studieren in {place} ({programmes})"
+    "allFields": "Alle Fachgebiete: {country}",
+    "seoTitle": "{field} studieren in {place}: {programmes, plural, one {# Studiengang} other {# Studiengänge}}, Kosten und Fristen"
   },
   "ForInstitutions": {
     "title": "Für Universitäten, Hochschulen und Schulen",
@@ -1316,16 +1316,16 @@
   "Seo": {
     "institutionTitle": "{name}, {country}: Programme, Kosten und Fristen",
     "institutionDescription": "{name} ({place}). Programme: {count}; Stufen: {levels}. Kosten, Fristen, Voraussetzungen und Bewerbungslink aus offiziellen Quellen.",
-    "countryDescription": "Studienvisum, Arbeiten neben dem Studium, Bleiben nach dem Abschluss, Lebenshaltungskosten und Anerkennung des Abschlusses in {country}: ein kurzer Leitfaden mit Links zu den offiziellen Seiten.",
+    "countryDescription": "Leitfaden {country}: Studienvisum, Arbeiten neben dem Studium, Bleiben nach dem Abschluss, Lebenshaltungskosten und Anerkennung des Abschlusses, mit Links zu den offiziellen Seiten.",
     "institutionDescriptionPrice": "{name} ({place}). Programme: {count}; Stufen: {levels}. Studiengebühren: {range} pro Jahr. Fristen und Bewerbungslink: aus offiziellen Quellen.",
     "institutionTitleNoCountry": "{name}: Programme, Kosten und Fristen",
     "institutionTitleShort": "{name}",
-    "countriesTitle": "Studienziele",
-    "aboutTitle": "Über das Projekt",
-    "methodologyTitle": "Woher unsere Daten stammen",
-    "contactTitle": "Kontakt & Support",
-    "studyHubDescription": "{place} — Fachgebiete: {fields}. Programme: {programmes}. Die Daten stammen aus offiziellen Quellen.",
-    "deadlinesMonthTitle": "Bewerbungsfristen: {place}: {month}"
+    "countriesTitle": "Studium im Ausland nach Ländern: Visum, Arbeit, Leben",
+    "aboutTitle": "Über YourHEI: so helfen wir bei der Wahl der Hochschule",
+    "methodologyTitle": "Woher die Daten von YourHEI stammen: Quellen und Methode",
+    "contactTitle": "Kontakt zu YourHEI: Fragen und Korrekturen",
+    "studyHubDescription": "{programmes, plural, one {# Studiengang} other {# Studiengänge}} in {place} in {fields, plural, one {# Fachgebiet} other {# Fachgebieten}}: Kosten für internationale Studierende, Fristen und Hochschulen aus offiziellen Quellen.",
+    "deadlinesMonthTitle": "Bewerbungsfristen in {place}: {month}"
   },
   "Blog": {
     "title": "Blog",
@@ -1365,7 +1365,7 @@
     "countriesTitle": "Nach Land",
     "countryCount": "Fristen: {count} · Einrichtungen: {institutions} · nächste: {date}",
     "countryTitle": "Bewerbungsfristen: {country}",
-    "countryIntro": "Kommende Fristen an Einrichtungen in {country}: {count} Termine an {institutions} Einrichtungen. Öffnen Sie eine Einrichtung, um ihre Studiengänge und den Bewerbungslink zu sehen.",
+    "countryIntro": "Kommende Fristen ({country}): {count} Termine an {institutions} Einrichtungen. Öffnen Sie eine Einrichtung, um ihre Studiengänge und den Bewerbungslink zu sehen.",
     "programmes": "Studiengänge: {count}",
     "intake": "Studienbeginn: {month}",
     "appliesInternational": "Internationale Studierende",
@@ -1396,14 +1396,14 @@
     "indexSeoTitle": "Hochschulen, Colleges und Schulen nach Ländern",
     "indexIntro": "Alle Einrichtungen mit Programmen auf YourHEI, nach Ländern. Öffnen Sie ein Land für eine Liste mit Links zu jeder Einrichtung: Programme, Kosten und Fristen.",
     "count": "{count, plural, one {# Einrichtung} other {# Einrichtungen}}",
-    "countryTitle": "Hochschulen und Colleges: {place}",
-    "countrySeoTitle": "Hochschulen und Colleges: {place}, {count, plural, one {# Einrichtung} other {# Einrichtungen}}",
-    "countryIntro": "{count, plural, one {# Einrichtung} other {# Einrichtungen}} mit Programmen auf YourHEI (Land: {place}). Jede Seite zeigt Programme, Kosten für internationale Studierende und Fristen aus offiziellen Quellen.",
+    "countryTitle": "Hochschulen und Colleges in {place}",
+    "countrySeoTitle": "Hochschulen und Colleges in {place}: {count, plural, one {# Einrichtung} other {# Einrichtungen}}",
+    "countryIntro": "{count, plural, one {# Einrichtung} other {# Einrichtungen}} in {place} mit Studiengängen auf YourHEI. Jede Seite zeigt Studiengänge, Kosten für internationale Studierende und Fristen aus offiziellen Quellen.",
     "pageTitle": "{title} — Seite {page}",
     "pagesLabel": "Seiten der Liste",
     "prev": "← Seite {page}",
     "next": "Seite {page} →",
     "allCountries": "Alle Länder",
-    "allInCountry": "Alle Hochschulen und Colleges: {place}"
+    "allInCountry": "Alle Hochschulen und Colleges in {place}"
   }
 }

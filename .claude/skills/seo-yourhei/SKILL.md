@@ -8,7 +8,7 @@ description: SEO work on YourHEI (www.yourhei.com): check the live site as Googl
 Facts about this site (checked November 2026) so the work does not start from zero.
 
 ## What exists and works
-- Only **ru and en** are offered to search engines (`INDEXED_LOCALES` in `src/config/seo.ts`). The 14 machine-translated languages are `noindex` until a native speaker has read them. Do not change this without the owner.
+- **ru and en** are offered to search engines on every page (`INDEXED_LOCALES` in `src/config/seo.ts`); **es, zh, de, fr, pl** on every page except the institution pages and lists (`CONTENT_LOCALES`, owner's decision of 7 Nov 2026; `indexedLocalesFor(path)`). The other 9 languages are `noindex`. An article without its own translation stays `noindex` in that language. Do not change the lists without the owner.
 - One sitemap (`/sitemap/0.xml`, about 12 000 addresses, ru + en with hreflang); `/sitemap.xml` redirects to it. `robots.txt` is built in `src/app/robots.ts` (training bots closed, search bots open) and merged by Cloudflare.
 - Every page type sets title, description, canonical, hreflang through `seoMetadata()` in `src/lib/seo/metadata.ts`; structured data in `src/lib/seo/structured.ts`.
 - IndexNow: `node scripts/indexnow.mjs <urls>` tells Yandex (accepted) and Bing (the key is refused, see PROGRESS.md) about new pages.

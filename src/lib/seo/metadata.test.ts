@@ -1,11 +1,14 @@
 import { describe, expect, it } from 'vitest';
-import { fitTitle, languageLinks, seoMetadata, trimDescription } from './metadata';
+import { fitTitle, indexedLocalesOf, languageLinks, seoMetadata, trimDescription } from './metadata';
 
 describe('seoMetadata', () => {
   it('an indexed language: self canonical, hreflang for the indexed languages and x-default, indexable', () => {
     const m = seoMetadata({ locale: 'ru', path: '/countries/de', title: 'T', description: 'D' });
     expect(m.alternates?.canonical).toBe('/ru/countries/de');
-    expect(m.alternates?.languages).toEqual({ ru: '/ru/countries/de', en: '/en/countries/de', 'x-default': '/en/countries/de' });
+    expect(m.alternates?.languages).toEqual({
+      ru: '/ru/countries/de', en: '/en/countries/de', es: '/es/countries/de', zh: '/zh/countries/de', de: '/de/countries/de', fr: '/fr/countries/de', pl: '/pl/countries/de',
+      'x-default': '/en/countries/de',
+    });
     expect(m.robots).toBeUndefined();
     expect(m.openGraph).toMatchObject({ title: 'T', description: 'D', url: '/ru/countries/de', locale: 'ru' });
   });
@@ -17,12 +20,31 @@ describe('seoMetadata', () => {
     expect(m.alternates?.languages).toBeUndefined();
   });
 
+  it('a content language (es, zh, de, fr, pl) is indexed everywhere except the institution pages and lists', () => {
+    expect(seoMetadata({ locale: 'de', path: '/blog/a', title: 'T' }).robots).toBeUndefined();
+    expect(seoMetadata({ locale: 'de', path: '/institutions/us/harvard-university', title: 'T' }).robots).toEqual({ index: false, follow: true });
+    expect(seoMetadata({ locale: 'de', path: '/institutions/us', title: 'T' }).robots).toEqual({ index: false, follow: true });
+    expect(seoMetadata({ locale: 'de', path: '/institutions', title: 'T' }).robots).toEqual({ index: false, follow: true });
+    // the institution pages offer only ru and en to search engines
+    expect(languageLinks('/institutions/us/x')).toEqual({ ru: '/ru/institutions/us/x', en: '/en/institutions/us/x', 'x-default': '/en/institutions/us/x' });
+    // "/institutionsfoo" is not an institution page
+    expect(indexedLocalesOf('/institutionsfoo')).toContain('fr');
+  });
+
+  it('an article not translated into a language: that language is not indexed and not in hreflang', () => {
+    const m = seoMetadata({ locale: 'fr', path: '/blog/a', title: 'T', locales: ['ru', 'en', 'de'] });
+    expect(m.robots).toEqual({ index: false, follow: true });
+    const de = seoMetadata({ locale: 'de', path: '/blog/a', title: 'T', locales: ['ru', 'en', 'de'] });
+    expect(de.robots).toBeUndefined();
+    expect(de.alternates?.languages).toEqual({ ru: '/ru/blog/a', en: '/en/blog/a', de: '/de/blog/a', 'x-default': '/en/blog/a' });
+  });
+
   it('a thin page is out of the results in every language', () => {
     expect(seoMetadata({ locale: 'en', path: '/x', title: 'T', noindex: true }).robots).toEqual({ index: false, follow: true });
   });
 
   it('the home page has an empty path', () => {
-    expect(languageLinks('')).toEqual({ ru: '/ru', en: '/en', 'x-default': '/en' });
+    expect(languageLinks('')).toEqual({ ru: '/ru', en: '/en', es: '/es', zh: '/zh', de: '/de', fr: '/fr', pl: '/pl', 'x-default': '/en' });
   });
 
   it('an article carries its dates', () => {

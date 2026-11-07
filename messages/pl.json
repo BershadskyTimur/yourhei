@@ -1090,7 +1090,7 @@
     "livingNote": "Koszty utrzymania to minimalna kwota, jaką kraj wymaga udokumentować przy wizie studenckiej. Rzeczywiste wydatki są zwykle wyższe, zwłaszcza w dużych miastach.",
     "emptyProgrammes": "Nie znaleziono programów. Wiele krajów nie ma jeszcze w naszej bazie danych o programach, ale mamy ich instytucje.",
     "showInstitutions": "Pokaż instytucje",
-    "seoTitle": "Katalog"
+    "seoTitle": "Studia za granicą: wyszukiwarka programów według kraju i ceny"
   },
   "Scholarships": {
     "title": "Stypendia: gdzie studiować za darmo lub taniej",
@@ -1287,7 +1287,7 @@
     "programmesCount": "Programy: {count}",
     "examples": "Na przykład:",
     "allFields": "Wszystkie kierunki: {country}",
-    "seoTitle": "Studia: {field}. {place} ({programmes})"
+    "seoTitle": "Studia: {field}. {place}: {programmes, plural, one {# program} few {# programy} many {# programów} other {# programu}}, czesne i terminy"
   },
   "ForInstitutions": {
     "title": "Dla uniwersytetów, college’ów i szkół",
@@ -1320,12 +1320,12 @@
     "institutionDescriptionPrice": "{name} ({place}). Programy: {count}; poziomy: {levels}. Czesne: {range} rocznie. Terminy i link do aplikacji: z oficjalnych źródeł.",
     "institutionTitleNoCountry": "{name}: programy, czesne i terminy",
     "institutionTitleShort": "{name}",
-    "countriesTitle": "Kierunki studiów za granicą",
-    "aboutTitle": "O projekcie",
-    "methodologyTitle": "Skąd pochodzą nasze dane",
-    "contactTitle": "Kontakt i pomoc",
-    "studyHubDescription": "{place} — Kierunki: {fields}. Programy: {programmes}. Dane pochodzą z oficjalnych źródeł.",
-    "deadlinesMonthTitle": "Terminy składania dokumentów: {place}: {month}"
+    "countriesTitle": "Studia za granicą według krajów: wiza, praca i życie",
+    "aboutTitle": "O YourHEI: jak pomagamy wybrać uczelnię",
+    "methodologyTitle": "Skąd YourHEI ma dane: źródła i metoda",
+    "contactTitle": "Kontakt z YourHEI: pytania i poprawki danych",
+    "studyHubDescription": "Studia: {place}. {programmes, plural, one {# program} few {# programy} many {# programów} other {# programu}}, {fields, plural, one {# kierunek} few {# kierunki} many {# kierunków} other {# kierunku}}: czesne dla cudzoziemców, terminy i uczelnie z oficjalnych źródeł.",
+    "deadlinesMonthTitle": "Terminy składania dokumentów: {place}, {month}"
   },
   "Blog": {
     "title": "Blog",

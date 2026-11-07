@@ -6,7 +6,7 @@ import { BlogBody } from '@/components/blog/BlogBody';
 import { JsonLd } from '@/components/JsonLd';
 import { Link } from '@/i18n/navigation';
 import { routing } from '@/i18n/routing';
-import { articleLang, bodyOf, getArticle, publishedArticles, readingMinutes, relatedArticles, sectionsOf } from '@/lib/blog/posts';
+import { articleLang, articleLocales, bodyOf, getArticle, publishedArticles, readingMinutes, relatedArticles, sectionsOf } from '@/lib/blog/posts';
 import { countriesOfArticle } from '@/lib/countries-guide/guides';
 import { countryLabel } from '@/lib/seo/place';
 import { seoMetadata } from '@/lib/seo/metadata';
@@ -27,7 +27,8 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   const article = getArticle(slug);
   if (!hasLocale(routing.locales, locale) || !article) return {};
   const body = bodyOf(article, locale);
-  return seoMetadata({ locale, path: `/blog/${slug}`, title: body.title, description: body.description, type: 'article', published: article.published, modified: article.updated });
+  // a language that shows the English text in place of a translation is not offered to search engines (it would copy /en)
+  return seoMetadata({ locale, path: `/blog/${slug}`, title: body.title, description: body.description, type: 'article', published: article.published, modified: article.updated, locales: articleLocales(article, routing.locales) });
 }
 
 export default async function ArticlePage({ params }: { params: Params }) {
