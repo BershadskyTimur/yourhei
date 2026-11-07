@@ -188,7 +188,7 @@
     "sourceLine": "Fuente: {source}",
     "dataYear": "Datos del curso académico {year}",
     "methodologyLinkShort": "Cómo recopilamos los datos",
-    "countryGuide": "Guía: estudiar en {country}",
+    "countryGuide": "Guía del país: {country}",
     "rankingsSource": "Puestos según Wikidata (CC0). Después de los 100 primeros, los rankings suelen dar un intervalo de puestos: se muestra su inicio. Fuente:",
     "moreTitle": "Más sobre el tema",
     "moreFields": "Áreas populares en este país",
@@ -1090,7 +1090,7 @@
     "livingNote": "Los gastos de vida son el importe mínimo que un país exige acreditar para el visado de estudiante. El gasto real suele ser mayor, sobre todo en las grandes ciudades.",
     "emptyProgrammes": "No se encontraron programas. Muchos países aún no tienen datos de programas en nuestra base, pero sí tenemos sus instituciones.",
     "showInstitutions": "Mostrar instituciones",
-    "seoTitle": "Catálogo"
+    "seoTitle": "Programas para estudiar en el extranjero: país, idioma y precio"
   },
   "Scholarships": {
     "title": "Becas: dónde estudiar gratis o más barato",
@@ -1286,8 +1286,8 @@
     "institutionsTitle": "Instituciones donde se estudia {field}",
     "programmesCount": "Programas: {count}",
     "examples": "Por ejemplo:",
-    "allFields": "Todas las áreas en {country}",
-    "seoTitle": "Estudiar {field} en {place} ({programmes})"
+    "allFields": "Todas las áreas: {country}",
+    "seoTitle": "Estudiar {field} en {place}: {programmes, plural, one {# programa} other {# programas}}, precios y plazos"
   },
   "ForInstitutions": {
     "title": "Para universidades, colegios y escuelas",
@@ -1316,16 +1316,16 @@
   "Seo": {
     "institutionTitle": "{name}, {country}: programas, precios y plazos",
     "institutionDescription": "{name} ({place}). Programas: {count}; niveles: {levels}. Precios, plazos, requisitos y enlace para solicitar, de fuentes oficiales.",
-    "countryDescription": "Visado de estudios, trabajar mientras estudias, quedarse tras graduarte, coste de vida y reconocimiento del título en {country}: una guía breve con enlaces a las páginas oficiales.",
+    "countryDescription": "{country}: visado de estudios, trabajar mientras estudias, quedarse tras graduarte, coste de vida y reconocimiento del título. Guía breve con enlaces a las páginas oficiales.",
     "institutionDescriptionPrice": "{name} ({place}). Programas: {count}; niveles: {levels}. Matrícula: {range} al año. Plazos y enlace de solicitud: de fuentes oficiales.",
     "institutionTitleNoCountry": "{name}: programas, precios y plazos",
     "institutionTitleShort": "{name}",
-    "countriesTitle": "Destinos de estudio",
-    "aboutTitle": "Acerca del proyecto",
-    "methodologyTitle": "De dónde vienen nuestros datos",
-    "contactTitle": "Contacto y soporte",
-    "studyHubDescription": "{place} — Áreas: {fields}. Programas: {programmes}. Los datos proceden de fuentes oficiales.",
-    "deadlinesMonthTitle": "Plazos de solicitud: {place}: {month}"
+    "countriesTitle": "Estudiar en el extranjero por país: visado, trabajo y vida",
+    "aboutTitle": "Sobre YourHEI: cómo te ayudamos a elegir dónde estudiar",
+    "methodologyTitle": "De dónde salen los datos de YourHEI: fuentes y método",
+    "contactTitle": "Contacto de YourHEI: preguntas y correcciones de datos",
+    "studyHubDescription": "{programmes, plural, one {# programa} other {# programas}} en {place} en {fields, plural, one {# área} other {# áreas}}: precios para estudiantes internacionales, plazos e instituciones, de fuentes oficiales.",
+    "deadlinesMonthTitle": "Plazos de solicitud en {place}: {month}"
   },
   "Blog": {
     "title": "Blog",
@@ -1396,14 +1396,14 @@
     "indexSeoTitle": "Universidades, colleges y escuelas por país",
     "indexIntro": "Todas las instituciones con programas en YourHEI, por país. Abre un país para ver la lista con enlaces a cada institución: programas, precios y plazos.",
     "count": "{count, plural, one {# institución} other {# instituciones}}",
-    "countryTitle": "Universidades y colleges: {place}",
-    "countrySeoTitle": "Universidades y colleges: {place}, {count, plural, one {# institución} other {# instituciones}}",
-    "countryIntro": "{count, plural, one {# institución} other {# instituciones}} con programas en YourHEI (país: {place}). Cada página muestra programas, precios para estudiantes internacionales y plazos de fuentes oficiales.",
+    "countryTitle": "Universidades y colleges en {place}",
+    "countrySeoTitle": "Universidades y colleges en {place}: {count, plural, one {# institución} other {# instituciones}}",
+    "countryIntro": "{count, plural, one {# institución} other {# instituciones}} en {place} con programas en YourHEI. Cada página muestra programas, precios para estudiantes internacionales y plazos de fuentes oficiales.",
     "pageTitle": "{title} — página {page}",
     "pagesLabel": "Páginas de la lista",
     "prev": "← Página {page}",
     "next": "Página {page} →",
     "allCountries": "Todos los países",
-    "allInCountry": "Todas las universidades y colleges: {place}"
+    "allInCountry": "Todas las universidades y colleges en {place}"
   }
 }

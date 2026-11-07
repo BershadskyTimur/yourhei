@@ -1,5 +1,5 @@
 // "In <country>" for page titles. Russian needs the prepositional case and sometimes "на" instead of "в" ("в Германии",
-// "на Гуаме"), which Intl.DisplayNames cannot give; the other languages use the country name as it is.
+// "на Гуаме"), which Intl.DisplayNames cannot give; French needs "en / au / aux / à", German and Spanish an article for some names.
 const RU: Record<string, string> = {
   AM: 'в Армении', AS: 'на Американском Самоа', AT: 'в Австрии', AU: 'в Австралии', AZ: 'в Азербайджане', BE: 'в Бельгии',
   BY: 'в Беларуси', CA: 'в Канаде', CH: 'в Швейцарии', CN: 'в Китае', CZ: 'в Чехии', DE: 'в Германии', DK: 'в Дании',
@@ -13,11 +13,35 @@ const RU: Record<string, string> = {
 // English: the countries whose name takes "the" ("in the Netherlands").
 const EN_THE = new Set(['NL', 'US', 'GB', 'AE', 'PH', 'BS', 'GM', 'MV']);
 
-/** The words for "in <country>" in Russian ("в Германии"); "the Netherlands" in English; elsewhere the country name. */
+// German and Spanish: the countries whose name takes an article after "in" / "en" ("in den Niederlanden", "en el Reino Unido").
+const DE: Record<string, string> = {
+  NL: 'den Niederlanden', TR: 'der Türkei', US: 'den Vereinigten Staaten', GB: 'dem Vereinigten Königreich', CH: 'der Schweiz',
+  SK: 'der Slowakei', UA: 'der Ukraine', AE: 'den Vereinigten Arabischen Emiraten', PH: 'den Philippinen', IR: 'dem Iran',
+  MP: 'den Nördlichen Marianen', VI: 'den Amerikanischen Jungferninseln', AS: 'Amerikanisch-Samoa',
+};
+const ES: Record<string, string> = { NL: 'los Países Bajos', GB: 'el Reino Unido', AE: 'los Emiratos Árabes Unidos' };
+
+// French: the whole "in <country>" ("en Allemagne", "au Canada", "aux Pays-Bas", "à Guam"). Not in the table: "en" for a name that
+// ends in "e" or starts with a vowel (feminine or elided), "au" otherwise.
+const FR: Record<string, string> = {
+  NL: 'aux Pays-Bas', US: 'aux États-Unis', GB: 'au Royaume-Uni', AE: 'aux Émirats arabes unis', PH: 'aux Philippines',
+  GU: 'à Guam', PR: 'à Porto Rico', MP: 'aux Îles Mariannes du Nord', VI: 'aux Îles Vierges des États-Unis', AS: 'aux Samoa américaines',
+  MX: 'au Mexique', KH: 'au Cambodge', MZ: 'au Mozambique', ZW: 'au Zimbabwe', SG: 'à Singapour', HK: 'à Hong Kong', MO: 'à Macao',
+  CY: 'à Chypre', MT: 'à Malte', IL: 'en Israël', IQ: 'en Irak', IR: 'en Iran',
+};
+
+/**
+ * The words for "in <country>" that the page titles put in {place}: Russian with the preposition and case ("в Германии", "на Гуаме");
+ * French with the preposition ("en Allemagne", "aux Pays-Bas"); English, German and Spanish the name with its article where it takes
+ * one (the templates say "in" / "en"); elsewhere the country name.
+ */
 export function placeIn(locale: string, code: string, name: string): string {
   const cc = code.toUpperCase();
   if (locale === 'ru') return RU[cc] ?? `в стране «${name}»`;
-  if (locale === 'en' && EN_THE.has(cc)) return `the ${name}`;
+  if (locale === 'en') return EN_THE.has(cc) ? `the ${name}` : name;
+  if (locale === 'de') return DE[cc] ?? name;
+  if (locale === 'es') return ES[cc] ?? name;
+  if (locale === 'fr') return FR[cc] ?? (/e$/i.test(name) || /^[aeiouyéèêâîôûh]/i.test(name) ? `en ${name}` : `au ${name}`);
   return name;
 }
 

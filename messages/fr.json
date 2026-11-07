@@ -188,7 +188,7 @@
     "sourceLine": "Source : {source}",
     "dataYear": "Données de l’année universitaire {year}",
     "methodologyLinkShort": "Comment nous collectons les données",
-    "countryGuide": "Guide : étudier en {country}",
+    "countryGuide": "Guide pays : {country}",
     "rankingsSource": "Rangs selon Wikidata (CC0). Au-delà des 100 premiers, les classements donnent souvent une fourchette de rangs : le début de la fourchette est indiqué. Source :",
     "moreTitle": "Pour aller plus loin",
     "moreFields": "Domaines populaires dans ce pays",
@@ -1090,7 +1090,7 @@
     "livingNote": "Les frais de vie sont le montant minimum qu’un pays exige de justifier pour le visa étudiant. Les dépenses réelles sont généralement plus élevées, surtout dans les grandes villes.",
     "emptyProgrammes": "Aucun programme trouvé. Pour beaucoup de pays, notre base n’a pas encore de programmes, mais nous avons leurs établissements.",
     "showInstitutions": "Afficher les établissements",
-    "seoTitle": "Catalogue"
+    "seoTitle": "Programmes d’études à l’étranger : pays, langue et prix"
   },
   "Scholarships": {
     "title": "Bourses : où étudier gratuitement ou à moindre coût",
@@ -1259,7 +1259,7 @@
   "Countries": {
     "listTitle": "Destinations d’études",
     "listIntro": "De courts guides sur les règles qui comptent avant de candidater : visa d’études, travailler pendant ses études, rester après le diplôme. Les règles changent : vérifiez-les toujours sur les pages officielles que nous indiquons.",
-    "pageTitle": "Étudier en {place}",
+    "pageTitle": "Étudier {place}",
     "visaTitle": "Visa d’études et titre de séjour",
     "workTitle": "Travailler pendant ses études",
     "afterTitle": "Après le diplôme",
@@ -1273,21 +1273,21 @@
     "notCollected": "Pas encore collecté. Consultez la page officielle.",
     "catalogLink": "Parcourir le catalogue",
     "backToList": "Toutes les destinations",
-    "moreTitle": "En savoir plus sur les études : {place}",
+    "moreTitle": "En savoir plus sur les études {place}",
     "topFields": "Domaines populaires",
-    "deadlinesLink": "Dates limites de candidature : {place}",
+    "deadlinesLink": "Dates limites de candidature {place}",
     "articlesTitle": "Articles"
   },
   "Study": {
-    "hubTitle": "Étudier en {place} : programmes par domaine",
+    "hubTitle": "Étudier {place} : programmes par domaine",
     "hubIntro": "Domaines : {fields}. Programmes : {programmes}. Les données proviennent de sources officielles.",
-    "pageTitle": "Étudier {field} en {place}",
+    "pageTitle": "Étudier {field} {place}",
     "pageIntro": "Programmes : {programmes}. Établissements : {institutions}. Les données proviennent de sources officielles ; vérifiez les prix et les dates sur la page officielle avant de candidater.",
     "institutionsTitle": "Établissements enseignant {field}",
     "programmesCount": "Programmes : {count}",
     "examples": "Par exemple :",
-    "allFields": "Tous les domaines en {country}",
-    "seoTitle": "Étudier {field} en {place} ({programmes})"
+    "allFields": "Tous les domaines : {country}",
+    "seoTitle": "Étudier {field} {place} : {programmes, plural, one {# programme} other {# programmes}}, frais et dates"
   },
   "ForInstitutions": {
     "title": "Pour les universités, collèges et écoles",
@@ -1316,16 +1316,16 @@
   "Seo": {
     "institutionTitle": "{name}, {country} : programmes, frais et dates limites",
     "institutionDescription": "{name} ({place}). Programmes : {count} ; niveaux : {levels}. Frais, dates limites, conditions et lien de candidature, issus de sources officielles.",
-    "countryDescription": "Visa d’études, travailler pendant les études, rester après le diplôme, coût de la vie et reconnaissance du diplôme en {country} : un guide court avec des liens vers les pages officielles.",
+    "countryDescription": "Guide {country} : visa d’études, travail pendant les études, rester après le diplôme, coût de la vie et reconnaissance du diplôme, avec des liens vers les pages officielles.",
     "institutionDescriptionPrice": "{name} ({place}). Programmes : {count} ; niveaux : {levels}. Frais de scolarité : {range} par an. Dates limites et lien de candidature : sources officielles.",
     "institutionTitleNoCountry": "{name} : programmes, frais et dates limites",
     "institutionTitleShort": "{name}",
-    "countriesTitle": "Destinations d’études",
-    "aboutTitle": "À propos du projet",
-    "methodologyTitle": "D’où viennent nos données",
-    "contactTitle": "Contact et assistance",
-    "studyHubDescription": "{place} — Domaines : {fields}. Programmes : {programmes}. Les données proviennent de sources officielles.",
-    "deadlinesMonthTitle": "Dates limites de candidature : {place} : {month}"
+    "countriesTitle": "Étudier à l’étranger par pays : visa, travail et vie",
+    "aboutTitle": "À propos de YourHEI : vous aider à choisir où étudier",
+    "methodologyTitle": "D’où viennent les données de YourHEI : sources et méthode",
+    "contactTitle": "Contacter YourHEI : questions et corrections",
+    "studyHubDescription": "{programmes, plural, one {# programme} other {# programmes}} {place} dans {fields, plural, one {# domaine} other {# domaines}} : frais pour étudiants internationaux, dates limites et établissements, de sources officielles.",
+    "deadlinesMonthTitle": "Dates limites de candidature {place} : {month}"
   },
   "Blog": {
     "title": "Blog",
@@ -1396,14 +1396,14 @@
     "indexSeoTitle": "Universités, collèges et écoles par pays",
     "indexIntro": "Tous les établissements avec des programmes sur YourHEI, par pays. Ouvrez un pays pour voir la liste avec des liens vers chaque établissement : programmes, frais et dates limites.",
     "count": "{count, plural, one {# établissement} other {# établissements}}",
-    "countryTitle": "Universités et collèges : {place}",
-    "countrySeoTitle": "Universités et collèges : {place}, {count, plural, one {# établissement} other {# établissements}}",
-    "countryIntro": "{count, plural, one {# établissement} other {# établissements}} avec des programmes sur YourHEI (pays : {place}). Chaque page présente les programmes, les frais pour étudiants internationaux et les dates limites de sources officielles.",
+    "countryTitle": "Universités et collèges {place}",
+    "countrySeoTitle": "Universités et collèges {place} : {count, plural, one {# établissement} other {# établissements}}",
+    "countryIntro": "{count, plural, one {# établissement} other {# établissements}} {place} avec des programmes sur YourHEI. Chaque page présente les programmes, les frais pour étudiants internationaux et les dates limites de sources officielles.",
     "pageTitle": "{title} — page {page}",
     "pagesLabel": "Pages de la liste",
     "prev": "← Page {page}",
     "next": "Page {page} →",
     "allCountries": "Tous les pays",
-    "allInCountry": "Toutes les universités et collèges : {place}"
+    "allInCountry": "Toutes les universités et tous les collèges {place}"
   }
 }

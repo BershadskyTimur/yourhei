@@ -46,6 +46,7 @@ export default async function DeadlinesMonthPage({ params }: { params: Params })
   if (rows.length === 0) notFound();
   setRequestLocale(locale);
   const t = await getTranslations('Deadlines');
+  const tSeo = await getTranslations('Seo');
   const name = new Intl.DisplayNames([locale], { type: 'region' }).of(country.toUpperCase()) ?? country;
   const fmt = new Intl.DateTimeFormat(locale, { month: 'long', year: 'numeric', timeZone: 'UTC' });
   const date = new Intl.DateTimeFormat(locale, { dateStyle: 'long', timeZone: 'UTC' });
@@ -70,7 +71,7 @@ export default async function DeadlinesMonthPage({ params }: { params: Params })
       <p className="text-sm">
         <Link href={`/deadlines/${code}`} className="font-semibold text-accent-text underline underline-offset-4">← {name}</Link>
       </p>
-      <h1 className="mt-4 text-3xl font-semibold capitalize tracking-tight text-text sm:text-4xl">{t('countryTitle', { country: name })}: {label}</h1>
+      <h1 className="mt-4 text-3xl font-semibold tracking-tight text-text sm:text-4xl">{tSeo('deadlinesMonthTitle', { place: placeIn(locale, country, name), month: label })}</h1>
       <p className="mt-3 max-w-2xl text-lg text-muted">{t('countryIntro', { country: name, count: rows.length, institutions })}</p>
       <p className="mt-4 rounded-lg border border-line bg-accent-soft px-4 py-3 text-sm text-text">{t('note')}</p>
 

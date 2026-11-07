@@ -1090,7 +1090,7 @@
     "livingNote": "生活费是各国要求申请学生签证时证明的最低金额。实际花费通常更高，尤其是在大城市。",
     "emptyProgrammes": "未找到项目。许多国家的项目数据尚未收录，但我们有这些国家的院校。",
     "showInstitutions": "显示院校",
-    "seoTitle": "目录"
+    "seoTitle": "海外留学项目目录：按国家、语言和价格查找"
   },
   "Scholarships": {
     "title": "奖学金：哪里可以免费或低价留学",
@@ -1287,7 +1287,7 @@
     "programmesCount": "项目：{count}",
     "examples": "例如：",
     "allFields": "{country}的所有领域",
-    "seoTitle": "在{place}学习{field} ({programmes})"
+    "seoTitle": "在{place}学习{field}：{programmes, plural, other {# 个项目}}，学费与截止日期"
   },
   "ForInstitutions": {
     "title": "面向大学、学院和学校",
@@ -1320,12 +1320,12 @@
     "institutionDescriptionPrice": "{name}（{place}）。项目数量：{count}；层次：{levels}。学费：每年 {range}。截止日期和申请链接均来自官方来源。",
     "institutionTitleNoCountry": "{name}：项目、学费与截止日期",
     "institutionTitleShort": "{name}",
-    "countriesTitle": "留学目的地",
-    "aboutTitle": "关于项目",
-    "methodologyTitle": "我们的数据来自哪里",
-    "contactTitle": "联系与支持",
-    "studyHubDescription": "{place} — 领域：{fields}。项目：{programmes}。数据来自官方来源。",
-    "deadlinesMonthTitle": "申请截止日期：{place}：{month}"
+    "countriesTitle": "按国家了解留学：签证、打工与生活费用",
+    "aboutTitle": "关于 YourHEI：帮你选择去哪里留学",
+    "methodologyTitle": "YourHEI 的数据来源：来源与方法",
+    "contactTitle": "联系 YourHEI：问题与数据更正",
+    "studyHubDescription": "在{place}留学：{fields, plural, other {# 个领域}}共 {programmes, plural, other {# 个项目}}，含国际学生学费、申请截止日期和院校，数据来自官方来源。",
+    "deadlinesMonthTitle": "{place}申请截止日期：{month}"
   },
   "Blog": {
     "title": "博客",
