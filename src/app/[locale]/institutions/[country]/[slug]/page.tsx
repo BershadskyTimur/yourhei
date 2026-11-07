@@ -18,7 +18,8 @@ import { pickLocalized, pickText } from '@/lib/institutions/localized';
 import { JsonLd } from '@/components/JsonLd';
 import { fitTitle, seoMetadata, trimDescription } from '@/lib/seo/metadata';
 import { hasPrices, institutionFacts, levelRows } from '@/lib/seo/institution-faq';
-import { countryLabel, seoCity } from '@/lib/seo/place';
+import { countryLabel, placeIn, seoCity } from '@/lib/seo/place';
+import { getListCountries } from '@/lib/institutions/country-list';
 import { formatTuitionRange, tuitionRange } from '@/lib/seo/tuition-range';
 import { breadcrumbList, faqPageLd, institutionLd, type FaqEntry } from '@/lib/seo/structured';
 import { comboOf, fieldSlug, studyCountries } from '@/lib/study/combos';
@@ -142,6 +143,9 @@ export default async function InstitutionPage({ params }: { params: Params }) {
   }
   const fieldLinks = [...fieldCount.entries()].sort((a, b) => b[1] - a[1]).slice(0, 6);
   const hasGuide = guideOf(institution.country) !== null;
+  // the list of all institutions of the country (only countries with enough institutions have one)
+  const hasList = (await getListCountries()).some((c) => c.country === institution.country.toUpperCase());
+  const tList = await getTranslations('InstitutionsList');
 
   return (
     <SideAds>
@@ -263,7 +267,7 @@ export default async function InstitutionPage({ params }: { params: Params }) {
           </section>
         )}
 
-        {(fieldLinks.length > 0 || hasGuide) && (
+        {(fieldLinks.length > 0 || hasGuide || hasList) && (
           <section className="mt-10" aria-labelledby="more-title">
             <h2 id="more-title" className="text-xl font-semibold text-text">{t('moreTitle')}</h2>
             {fieldLinks.length > 0 && (
@@ -279,6 +283,13 @@ export default async function InstitutionPage({ params }: { params: Params }) {
                   ))}
                 </ul>
               </>
+            )}
+            {hasList && (
+              <p className="mt-3">
+                <Link href={`/institutions/${institution.country.toLowerCase()}`} className="font-medium text-accent-text underline underline-offset-4">
+                  {tList('allInCountry', { place: placeIn(locale, institution.country, countryName ?? institution.country) })}
+                </Link>
+              </p>
             )}
             {hasGuide && (
               <p className="mt-3">
