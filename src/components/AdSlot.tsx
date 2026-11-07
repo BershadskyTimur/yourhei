@@ -20,13 +20,14 @@ export function AdSlot({ kind, className = '' }: { kind: AdKind; className?: str
   const t = useTranslations('Ads');
   const size = SIZES[kind];
   return (
+    // The words "Advertisement" and the size are drawn by the style sheet (globals.css) from the data attributes, not
+    // written into the page: until real ads fill the place, the text of the page stays free of them for search engines.
     <aside
       aria-label={t('label')}
       data-ad-slot={kind}
+      data-ad-label={t('label')}
+      data-ad-size={size.label}
       className={`mx-auto flex flex-col items-center justify-center rounded-lg border border-[var(--ad-border)] bg-[var(--ad-bg)] text-center ${size.box} ${className}`}
-    >
-      <span className="text-[10px] font-medium uppercase tracking-[0.22em] text-muted">{t('label')}</span>
-      <span className="mt-1 text-xs text-muted">{size.label}</span>
-    </aside>
+    />
   );
 }
