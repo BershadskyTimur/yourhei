@@ -100,7 +100,7 @@ export default async function InstitutionPage({ params }: { params: Params }) {
   const features = institution.features.filter((f) => t.has(`features.${f}` as 'features.exchange'));
 
   // Structured data for search engines (an institution with its place, site and Wikidata item).
-  const structured = institutionLd({ type: institution.type, name, original, website: institution.website, country: institution.country, city, foundedYear: institution.foundedYear, wikidataId: institution.wikidataId });
+  const structured = institutionLd({ type: institution.type, name, original, website: institution.website, country: institution.country, city, foundedYear: institution.foundedYear, wikidataId: institution.wikidataId, pagePath: `/${locale}/institutions/${country}/${slug}`, description: description.text });
 
   const levelLabel = (level: string) => (tSurvey.has(level as 'bachelor') ? tSurvey(level as 'bachelor') : level);
   // The price table and the questions are made from the programmes read above (no further database reads).

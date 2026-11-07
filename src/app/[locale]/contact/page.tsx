@@ -1,9 +1,11 @@
 import type { Metadata } from 'next';
 import { hasLocale } from 'next-intl';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { JsonLd } from '@/components/JsonLd';
 import { PageShell } from '@/components/PageShell';
 import { routing } from '@/i18n/routing';
 import { seoMetadata, trimDescription } from '@/lib/seo/metadata';
+import { aboutPageLd, organizationLd } from '@/lib/seo/structured';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
@@ -22,6 +24,8 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
   const t = await getTranslations('Pages.contact');
   return (
     <PageShell title={t('title')}>
+      <JsonLd data={aboutPageLd('ContactPage', locale, '/contact', t('title'), trimDescription(t('body')))} />
+      <JsonLd data={organizationLd(EMAIL)} />
       <p>{t('body')}</p>
       {EMAIL && (
         <p>
