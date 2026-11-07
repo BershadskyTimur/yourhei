@@ -1,6 +1,6 @@
 import { JsonLd } from '@/components/JsonLd';
 import { breadcrumbList } from '@/lib/seo/structured';
-import { seoMetadata, trimDescription } from '@/lib/seo/metadata';
+import { fitTitle, seoMetadata, trimDescription } from '@/lib/seo/metadata';
 import type { Metadata } from 'next';
 import { placeIn } from '@/lib/seo/place';
 import { hasLocale } from 'next-intl';
@@ -42,7 +42,8 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   return seoMetadata({
     locale,
     path: `/study/${country.toLowerCase()}/${fieldSlug(r.code)}`,
-    title: t('seoTitle', { field: label, country: name, place: placeIn(locale, r.cc, name), programmes: r.combo.programmes }),
+    // a long field name drops "N programmes, fees and deadlines" rather than being cut by the search engine
+    title: fitTitle([t('seoTitle', { field: label, country: name, place: placeIn(locale, r.cc, name), programmes: r.combo.programmes }), t('pageTitle', { field: label, country: name, place: placeIn(locale, r.cc, name) })]),
     description: trimDescription(t('pageIntro', { programmes: r.combo.programmes, institutions: r.combo.institutions })),
   });
 }

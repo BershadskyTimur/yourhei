@@ -9,7 +9,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale } = await params;
   if (!hasLocale(routing.locales, locale)) return {};
   const t = await getTranslations({ locale, namespace: 'Pages.about' });
-  return seoMetadata({ locale, path: '/about', title: t('title'), description: trimDescription(t('body')) });
+  const tSeo = await getTranslations({ locale, namespace: 'Seo' });
+  return seoMetadata({ locale, path: '/about', title: tSeo('aboutTitle'), description: trimDescription(t('body')) });
 }
 
 export default async function AboutPage({ params }: { params: Promise<{ locale: string }> }) {

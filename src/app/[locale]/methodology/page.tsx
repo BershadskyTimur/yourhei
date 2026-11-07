@@ -14,7 +14,8 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   const { locale } = await params;
   if (!hasLocale(routing.locales, locale)) return {};
   const t = await getTranslations({ locale, namespace: 'Methodology' });
-  return seoMetadata({ locale, path: '/methodology', title: t('title'), description: trimDescription(t('intro')) });
+  const tSeo = await getTranslations({ locale, namespace: 'Seo' });
+  return seoMetadata({ locale, path: '/methodology', title: tSeo('methodologyTitle'), description: trimDescription(t('intro')) });
 }
 
 /** Where the data comes from and how it is handled (the trust page). */

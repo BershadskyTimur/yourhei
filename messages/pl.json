@@ -44,7 +44,8 @@
     "countries": "Kierunki studiów za granicą",
     "forInstitutions": "Dla instytucji",
     "blog": "Blog",
-    "deadlines": "Terminy"
+    "deadlines": "Terminy",
+    "institutions": "Uczelnie według krajów"
   },
   "Types": {
     "university": "Uniwersytet",
@@ -1316,7 +1317,15 @@
     "institutionTitle": "{name}, {country}: programy, czesne i terminy",
     "institutionDescription": "{name} ({place}). Programy: {count}; poziomy: {levels}. Czesne, terminy, wymagania i link do aplikowania z oficjalnych źródeł.",
     "countryDescription": "Wiza studencka, praca podczas studiów, pozostanie po ukończeniu, koszty życia i uznanie dyplomu: {country}. Krótki przewodnik z odnośnikami do oficjalnych stron.",
-    "institutionDescriptionPrice": "{name} ({place}). Programy: {count}; poziomy: {levels}. Czesne: {range} rocznie. Terminy i link do aplikacji: z oficjalnych źródeł."
+    "institutionDescriptionPrice": "{name} ({place}). Programy: {count}; poziomy: {levels}. Czesne: {range} rocznie. Terminy i link do aplikacji: z oficjalnych źródeł.",
+    "institutionTitleNoCountry": "{name}: programy, czesne i terminy",
+    "institutionTitleShort": "{name}",
+    "countriesTitle": "Kierunki studiów za granicą",
+    "aboutTitle": "O projekcie",
+    "methodologyTitle": "Skąd pochodzą nasze dane",
+    "contactTitle": "Kontakt i pomoc",
+    "studyHubDescription": "{place} — Kierunki: {fields}. Programy: {programmes}. Dane pochodzą z oficjalnych źródeł.",
+    "deadlinesMonthTitle": "Terminy składania dokumentów: {place}: {month}"
   },
   "Blog": {
     "title": "Blog",
@@ -1381,5 +1390,20 @@
     "profileHint": "Zalogowany? Twoje dokumenty są też zapisane w profilu.",
     "profileLink": "Otwórz profil",
     "calendarCta": "Zobacz terminy składania dokumentów"
+  },
+  "InstitutionsList": {
+    "indexTitle": "Uczelnie według krajów",
+    "indexSeoTitle": "Uczelnie, college i szkoły według krajów: pełne listy",
+    "indexIntro": "Wszystkie placówki z programami w YourHEI, według krajów. Otwórz kraj, aby zobaczyć listę z linkami do stron placówek: programy, czesne i terminy.",
+    "count": "{count, plural, one {# placówka} few {# placówki} many {# placówek} other {# placówki}}",
+    "countryTitle": "Uczelnie i college: {place}",
+    "countrySeoTitle": "Uczelnie i college: {place}, {count, plural, one {# placówka} few {# placówki} many {# placówek} other {# placówki}}",
+    "countryIntro": "W YourHEI {count, plural, one {# placówka} few {# placówki} many {# placówek} other {# placówki}} z programami (kraj: {place}). Na stronie każdej: programy, czesne dla cudzoziemców i terminy z oficjalnych źródeł.",
+    "pageTitle": "{title} — strona {page}",
+    "pagesLabel": "Strony listy",
+    "prev": "← Strona {page}",
+    "next": "Strona {page} →",
+    "allCountries": "Wszystkie kraje",
+    "allInCountry": "Wszystkie uczelnie i college: {place}"
   }
 }

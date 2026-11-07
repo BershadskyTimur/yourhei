@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { languageLinks, seoMetadata, trimDescription } from './metadata';
+import { fitTitle, languageLinks, seoMetadata, trimDescription } from './metadata';
 
 describe('seoMetadata', () => {
   it('an indexed language: self canonical, hreflang for the indexed languages and x-default, indexable', () => {
@@ -61,5 +61,21 @@ describe('trimDescription', () => {
     const out = trimDescription(`${sentence}${sentence}${sentence}${sentence}${sentence}${sentence}${sentence}`);
     expect(out.endsWith('。')).toBe(true);
     expect(out.length).toBeLessThanOrEqual(160);
+  });
+});
+
+describe('fitTitle', () => {
+  it('takes the first title that fits in 60 characters', () => {
+    expect(fitTitle(['Harvard University, United States: tuition fees and programmes', 'Harvard University: tuition fees and programmes', 'Harvard University: tuition fees'])).toBe(
+      'Harvard University: tuition fees and programmes',
+    );
+    expect(fitTitle(['Century College, USA: tuition fees and programmes', 'x'])).toBe('Century College, USA: tuition fees and programmes');
+  });
+  it('falls back to the shortest (last) title when none fits', () => {
+    const long = 'A'.repeat(80);
+    expect(fitTitle([`${long}, X: fees and programmes`, `${long}: fees`])).toBe(`${long}: fees`);
+  });
+  it('an empty list gives an empty title', () => {
+    expect(fitTitle([])).toBe('');
   });
 });

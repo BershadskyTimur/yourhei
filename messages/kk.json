@@ -44,7 +44,8 @@
     "countries": "Оқу бағыттары",
     "forInstitutions": "Мекемелер үшін",
     "blog": "Блог",
-    "deadlines": "Мерзімдер"
+    "deadlines": "Мерзімдер",
+    "institutions": "Елдер бойынша ЖОО"
   },
   "Types": {
     "university": "Университет",
@@ -1316,7 +1317,15 @@
     "institutionTitle": "{name}, {country}: бағдарламалар, бағалар және мерзімдер",
     "institutionDescription": "{name} ({place}). Бағдарламалар: {count}; деңгейлер: {levels}. Бағалар, мерзімдер, талаптар және өтінім беру сілтемесі ресми көздерден.",
     "countryDescription": "Студенттік виза, оқу кезінде жұмыс, бітіргеннен кейін қалу, тұрмыс құны және дипломды тану: {country}. Ресми беттерге сілтемелері бар қысқаша нұсқаулық.",
-    "institutionDescriptionPrice": "{name} ({place}). Бағдарламалар: {count}; деңгейлер: {levels}. Оқу ақысы: жылына {range}. Мерзімдер мен өтінім сілтемесі ресми дереккөздерден."
+    "institutionDescriptionPrice": "{name} ({place}). Бағдарламалар: {count}; деңгейлер: {levels}. Оқу ақысы: жылына {range}. Мерзімдер мен өтінім сілтемесі ресми дереккөздерден.",
+    "institutionTitleNoCountry": "{name}: бағдарламалар, бағалар және мерзімдер",
+    "institutionTitleShort": "{name}",
+    "countriesTitle": "Оқу бағыттары",
+    "aboutTitle": "Жоба туралы",
+    "methodologyTitle": "Біздің деректер қайдан алынады",
+    "contactTitle": "Байланыс және қолдау",
+    "studyHubDescription": "{place} — Бағыттар: {fields}. Бағдарламалар: {programmes}. Деректер ресми дереккөздерден алынған.",
+    "deadlinesMonthTitle": "Құжат тапсыру мерзімдері: {place}: {month}"
   },
   "Blog": {
     "title": "Блог",
@@ -1381,5 +1390,20 @@
     "profileHint": "Кірдіңіз бе? Құжаттарыңыз профильде де сақталады.",
     "profileLink": "Профильді ашу",
     "calendarCta": "Тапсыру мерзімдерін көру"
+  },
+  "InstitutionsList": {
+    "indexTitle": "Елдер бойынша ЖОО",
+    "indexSeoTitle": "Елдер бойынша ЖОО, колледждер және мектептер",
+    "indexIntro": "YourHEI-дегі бағдарламалары бар барлық оқу орындары, елдер бойынша. Сілтемелері бар тізімді көру үшін елді ашыңыз: бағдарламалар, бағалар және мерзімдер.",
+    "count": "{count, plural, other {# оқу орны}}",
+    "countryTitle": "ЖОО және колледждер: {place}",
+    "countrySeoTitle": "ЖОО және колледждер: {place}, {count, plural, other {# оқу орны}}",
+    "countryIntro": "YourHEI-де бағдарламалары бар {count, plural, other {# оқу орны}} (ел: {place}). Әрқайсысының бетінде: бағдарламалар, шетелдіктерге арналған бағалар және ресми дереккөздерден мерзімдер.",
+    "pageTitle": "{title} — {page}-бет",
+    "pagesLabel": "Тізім беттері",
+    "prev": "← {page}-бет",
+    "next": "{page}-бет →",
+    "allCountries": "Барлық елдер",
+    "allInCountry": "Барлық ЖОО және колледждер: {place}"
   }
 }

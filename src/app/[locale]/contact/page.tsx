@@ -9,7 +9,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale } = await params;
   if (!hasLocale(routing.locales, locale)) return {};
   const t = await getTranslations({ locale, namespace: 'Pages.contact' });
-  return seoMetadata({ locale, path: '/contact', title: t('title'), description: trimDescription(t('body')) });
+  const tSeo = await getTranslations({ locale, namespace: 'Seo' });
+  return seoMetadata({ locale, path: '/contact', title: tSeo('contactTitle'), description: trimDescription(t('body')) });
 }
 
 // The contact address is set in .env.local (NEXT_PUBLIC_CONTACT_EMAIL), so it is never written in the code.

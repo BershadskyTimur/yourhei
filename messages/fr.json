@@ -44,7 +44,8 @@
     "countries": "Destinations d’études",
     "forInstitutions": "Pour les établissements",
     "blog": "Blog",
-    "deadlines": "Dates limites"
+    "deadlines": "Dates limites",
+    "institutions": "Universités par pays"
   },
   "Types": {
     "university": "Université",
@@ -1316,7 +1317,15 @@
     "institutionTitle": "{name}, {country} : programmes, frais et dates limites",
     "institutionDescription": "{name} ({place}). Programmes : {count} ; niveaux : {levels}. Frais, dates limites, conditions et lien de candidature, issus de sources officielles.",
     "countryDescription": "Visa d’études, travailler pendant les études, rester après le diplôme, coût de la vie et reconnaissance du diplôme en {country} : un guide court avec des liens vers les pages officielles.",
-    "institutionDescriptionPrice": "{name} ({place}). Programmes : {count} ; niveaux : {levels}. Frais de scolarité : {range} par an. Dates limites et lien de candidature : sources officielles."
+    "institutionDescriptionPrice": "{name} ({place}). Programmes : {count} ; niveaux : {levels}. Frais de scolarité : {range} par an. Dates limites et lien de candidature : sources officielles.",
+    "institutionTitleNoCountry": "{name} : programmes, frais et dates limites",
+    "institutionTitleShort": "{name}",
+    "countriesTitle": "Destinations d’études",
+    "aboutTitle": "À propos du projet",
+    "methodologyTitle": "D’où viennent nos données",
+    "contactTitle": "Contact et assistance",
+    "studyHubDescription": "{place} — Domaines : {fields}. Programmes : {programmes}. Les données proviennent de sources officielles.",
+    "deadlinesMonthTitle": "Dates limites de candidature : {place} : {month}"
   },
   "Blog": {
     "title": "Blog",
@@ -1381,5 +1390,20 @@
     "profileHint": "Connecté ? Vos documents sont aussi conservés dans votre profil.",
     "profileLink": "Ouvrir le profil",
     "calendarCta": "Voir les dates limites"
+  },
+  "InstitutionsList": {
+    "indexTitle": "Universités par pays",
+    "indexSeoTitle": "Universités, collèges et écoles par pays",
+    "indexIntro": "Tous les établissements avec des programmes sur YourHEI, par pays. Ouvrez un pays pour voir la liste avec des liens vers chaque établissement : programmes, frais et dates limites.",
+    "count": "{count, plural, one {# établissement} other {# établissements}}",
+    "countryTitle": "Universités et collèges : {place}",
+    "countrySeoTitle": "Universités et collèges : {place}, {count, plural, one {# établissement} other {# établissements}}",
+    "countryIntro": "{count, plural, one {# établissement} other {# établissements}} avec des programmes sur YourHEI (pays : {place}). Chaque page présente les programmes, les frais pour étudiants internationaux et les dates limites de sources officielles.",
+    "pageTitle": "{title} — page {page}",
+    "pagesLabel": "Pages de la liste",
+    "prev": "← Page {page}",
+    "next": "Page {page} →",
+    "allCountries": "Tous les pays",
+    "allInCountry": "Toutes les universités et collèges : {place}"
   }
 }

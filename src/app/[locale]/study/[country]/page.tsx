@@ -11,6 +11,7 @@ import { Link } from '@/i18n/navigation';
 import { routing } from '@/i18n/routing';
 import { COUNTRY_CODES } from '@/lib/countries';
 import { combosOfCountry, fieldSlug } from '@/lib/study/combos';
+import { getListCountries } from '@/lib/institutions/country-list';
 import { iscedEntry, labelFor } from '@/lib/survey/references';
 
 export const revalidate = 86400;
@@ -26,7 +27,7 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   const combos = combosOfCountry(code);
   const fields = combos.length;
   const programmes = combos.reduce((n, c) => n + c.programmes, 0);
-  return seoMetadata({ locale, path: `/study/${country.toLowerCase()}`, title: t('hubTitle', { country: name, place: placeIn(locale, code, name) }), description: trimDescription(t('hubIntro', { fields, programmes })) });
+  return seoMetadata({ locale, path: `/study/${country.toLowerCase()}`, title: t('hubTitle', { country: name, place: placeIn(locale, code, name) }), description: trimDescription((await getTranslations({ locale, namespace: 'Seo' }))('studyHubDescription', { fields, programmes, place: placeIn(locale, code, name) })) });
 }
 
 /** Every field of study with programmes in a country. */
@@ -44,6 +45,8 @@ export default async function StudyCountryPage({ params }: { params: Params }) {
     .map((c) => ({ ...c, label: labelFor(iscedEntry(c.code) ?? { en: c.code }, locale) }))
     .sort((a, b) => b.programmes - a.programmes || collator.compare(a.label, b.label));
   const programmes = combos.reduce((n, c) => n + c.programmes, 0);
+  const hasList = (await getListCountries()).some((c) => c.country === code);
+  const tList = await getTranslations('InstitutionsList');
   return (
     <PageShell title={t('hubTitle', { country: name, place: placeIn(locale, code, name) })}>
       <JsonLd data={breadcrumbList(locale, [{ name: 'YourHEI', path: '' }, { name, path: `/study/${country.toLowerCase()}` }])} />
@@ -58,6 +61,11 @@ export default async function StudyCountryPage({ params }: { params: Params }) {
           </li>
         ))}
       </ul>
+      {hasList && (
+        <p className="text-base">
+          <Link href={`/institutions/${code.toLowerCase()}`} className="font-semibold text-accent-text underline underline-offset-4">{tList('allInCountry', { place: placeIn(locale, code, name) })}</Link>
+        </p>
+      )}
     </PageShell>
   );
 }

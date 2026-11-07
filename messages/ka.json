@@ -44,7 +44,8 @@
     "countries": "სასწავლო მიმართულებები",
     "forInstitutions": "დაწესებულებებისთვის",
     "blog": "ბლოგი",
-    "deadlines": "ვადები"
+    "deadlines": "ვადები",
+    "institutions": "უნივერსიტეტები ქვეყნების მიხედვით"
   },
   "Types": {
     "university": "უნივერსიტეტი",
@@ -1316,7 +1317,15 @@
     "institutionTitle": "{name}, {country}: პროგრამები, ფასები და ვადები",
     "institutionDescription": "{name} ({place}). პროგრამები: {count}; დონეები: {levels}. ფასები, ვადები, მოთხოვნები და განაცხადის ბმული ოფიციალური წყაროებიდან.",
     "countryDescription": "სასწავლო ვიზა, მუშაობა სწავლისას, დარჩენა დამთავრების შემდეგ, საცხოვრებელი ხარჯები და დიპლომის აღიარება: {country}. მოკლე გზამკვლევი ოფიციალურ გვერდებზე ბმულებით.",
-    "institutionDescriptionPrice": "{name} ({place}). პროგრამები: {count}; დონეები: {levels}. სწავლის ღირებულება: {range} წელიწადში. ვადები და განაცხადის ბმული: ოფიციალური წყაროებიდან."
+    "institutionDescriptionPrice": "{name} ({place}). პროგრამები: {count}; დონეები: {levels}. სწავლის ღირებულება: {range} წელიწადში. ვადები და განაცხადის ბმული: ოფიციალური წყაროებიდან.",
+    "institutionTitleNoCountry": "{name}: პროგრამები, ფასები და ვადები",
+    "institutionTitleShort": "{name}",
+    "countriesTitle": "სასწავლო მიმართულებები",
+    "aboutTitle": "პროექტის შესახებ",
+    "methodologyTitle": "საიდან არის ჩვენი მონაცემები",
+    "contactTitle": "კონტაქტი და მხარდაჭერა",
+    "studyHubDescription": "{place} — მიმართულებები: {fields}. პროგრამები: {programmes}. მონაცემები ოფიციალური წყაროებიდანაა.",
+    "deadlinesMonthTitle": "განაცხადის ვადები: {place}: {month}"
   },
   "Blog": {
     "title": "ბლოგი",
@@ -1381,5 +1390,20 @@
     "profileHint": "შესული ხართ? თქვენი დოკუმენტები პროფილშიც ინახება.",
     "profileLink": "პროფილის გახსნა",
     "calendarCta": "განაცხადის ვადების ნახვა"
+  },
+  "InstitutionsList": {
+    "indexTitle": "უნივერსიტეტები ქვეყნების მიხედვით",
+    "indexSeoTitle": "უნივერსიტეტები, კოლეჯები და სკოლები ქვეყნების მიხედვით",
+    "indexIntro": "YourHEI-ზე ყველა დაწესებულება პროგრამებით, ქვეყნების მიხედვით. გახსენით ქვეყანა, რომ ნახოთ სია ბმულებით: პროგრამები, ფასები და ვადები.",
+    "count": "{count, plural, other {# დაწესებულება}}",
+    "countryTitle": "უნივერსიტეტები და კოლეჯები: {place}",
+    "countrySeoTitle": "უნივერსიტეტები და კოლეჯები: {place}, {count, plural, other {# დაწესებულება}}",
+    "countryIntro": "YourHEI-ზე {count, plural, other {# დაწესებულება}} პროგრამებით (ქვეყანა: {place}). თითოეულის გვერდზე: პროგრამები, ფასები უცხოელებისთვის და ვადები ოფიციალური წყაროებიდან.",
+    "pageTitle": "{title} — გვერდი {page}",
+    "pagesLabel": "სიის გვერდები",
+    "prev": "← გვერდი {page}",
+    "next": "გვერდი {page} →",
+    "allCountries": "ყველა ქვეყანა",
+    "allInCountry": "ყველა უნივერსიტეტი და კოლეჯი: {place}"
   }
 }

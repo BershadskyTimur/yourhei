@@ -44,7 +44,8 @@
     "countries": "Study destinations",
     "forInstitutions": "For institutions",
     "blog": "Blog",
-    "deadlines": "Deadlines"
+    "deadlines": "Deadlines",
+    "institutions": "Universities by country"
   },
   "Types": {
     "university": "University",
@@ -1313,10 +1314,18 @@
     "cancel": "Cancel"
   },
   "Seo": {
-    "institutionTitle": "{name}, {country}: programmes, tuition and deadlines",
+    "institutionTitle": "{name}, {country}: tuition fees and programmes",
     "institutionDescription": "{name} ({place}). Programmes: {count}; levels: {levels}. Tuition, deadlines, requirements and the application link, from official sources.",
     "countryDescription": "Study visa, working while you study, staying after graduation, cost of living and diploma recognition in {country}: a short guide with links to the official pages.",
-    "institutionDescriptionPrice": "{name} ({place}). Programmes: {count}; levels: {levels}. Tuition: {range} per year. Deadlines and the application link: from official sources."
+    "institutionDescriptionPrice": "{name} ({place}). Programmes: {count}; levels: {levels}. Tuition: {range} per year. Deadlines and the application link: from official sources.",
+    "institutionTitleNoCountry": "{name}: tuition fees and programmes",
+    "institutionTitleShort": "{name}: tuition fees",
+    "countriesTitle": "Study abroad by country: visas, work and living costs",
+    "aboutTitle": "About YourHEI: how we help you choose where to study",
+    "methodologyTitle": "Where YourHEI data comes from: sources and methods",
+    "contactTitle": "Contact YourHEI: questions and data corrections",
+    "studyHubDescription": "{programmes, plural, one {# programme} other {# programmes}} in {place} across {fields, plural, one {# field} other {# fields}}: fees for international students, deadlines and institutions, from official sources.",
+    "deadlinesMonthTitle": "Application deadlines in {place}: {month}"
   },
   "Blog": {
     "title": "Blog",
@@ -1381,5 +1390,20 @@
     "profileHint": "Signed in? Your documents are also kept in your profile.",
     "profileLink": "Open profile",
     "calendarCta": "See the application deadlines"
+  },
+  "InstitutionsList": {
+    "indexTitle": "Universities by country",
+    "indexSeoTitle": "Universities, colleges and schools by country",
+    "indexIntro": "Every institution with programmes on YourHEI, by country. Open a country for a list with links to each institution: programmes, fees and application deadlines.",
+    "count": "{count, plural, one {# institution} other {# institutions}}",
+    "countryTitle": "Universities and colleges in {place}",
+    "countrySeoTitle": "Universities and colleges in {place}: {count, plural, one {# institution} other {# institutions}}",
+    "countryIntro": "{count, plural, one {# institution} other {# institutions}} in {place} with programmes on YourHEI. Each page lists the programmes, fees for international students and deadlines from official sources.",
+    "pageTitle": "{title} — page {page}",
+    "pagesLabel": "Pages of the list",
+    "prev": "← Page {page}",
+    "next": "Page {page} →",
+    "allCountries": "All countries",
+    "allInCountry": "All universities and colleges in {place}"
   }
 }

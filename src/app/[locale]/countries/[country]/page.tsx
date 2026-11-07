@@ -12,6 +12,7 @@ import { routing } from '@/i18n/routing';
 import { GUIDES, GUIDE_ACCESSED, articleSlugsOf, guideOf, livingMinimum, type GuideBlock } from '@/lib/countries-guide/guides';
 import { bodyOf, publishedArticles } from '@/lib/blog/posts';
 import { countriesWithDeadlines } from '@/lib/deadlines/deadlines';
+import { getListCountries } from '@/lib/institutions/country-list';
 import { pickText } from '@/lib/institutions/localized';
 import { combosOfCountry, fieldSlug } from '@/lib/study/combos';
 import { iscedEntry, labelFor } from '@/lib/survey/references';
@@ -70,6 +71,8 @@ export default async function CountryPage({ params }: { params: Params }) {
 
   const topFields = [...combosOfCountry(guide.country)].filter((c) => iscedEntry(c.code)).sort((a, b) => b.programmes - a.programmes).slice(0, 8);
   const hasDeadlines = countriesWithDeadlines().some((c) => c.country === guide.country);
+  const hasList = (await getListCountries()).some((c) => c.country === guide.country);
+  const tList = await getTranslations('InstitutionsList');
   const published = publishedArticles();
   const articles = articleSlugsOf(guide.country).flatMap((slug) => published.filter((a) => a.slug === slug)).slice(0, 6);
 
@@ -114,6 +117,11 @@ export default async function CountryPage({ params }: { params: Params }) {
                 ))}
               </ul>
             </>
+          )}
+          {hasList && (
+            <p className="mt-3 text-base">
+              <Link href={`/institutions/${guide.country.toLowerCase()}`} className="font-semibold text-accent-text underline underline-offset-4">{tList('allInCountry', { place: placeIn(locale, guide.country, name) })}</Link>
+            </p>
           )}
           {hasDeadlines && (
             <p className="mt-3 text-base">

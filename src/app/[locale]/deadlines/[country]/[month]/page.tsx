@@ -8,6 +8,7 @@ import { Link } from '@/i18n/navigation';
 import { routing } from '@/i18n/routing';
 import { DEADLINES_BUILT, monthsOfCountry, ofMonth } from '@/lib/deadlines/deadlines';
 import { seoMetadata, trimDescription } from '@/lib/seo/metadata';
+import { placeIn } from '@/lib/seo/place';
 import { breadcrumbList } from '@/lib/seo/structured';
 
 export const revalidate = 86400;
@@ -33,7 +34,7 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   return seoMetadata({
     locale,
     path: `/deadlines/${country.toLowerCase()}/${month}`,
-    title: `${t('countryTitle', { country: name })}: ${label}`,
+    title: (await getTranslations({ locale, namespace: 'Seo' }))('deadlinesMonthTitle', { place: placeIn(locale, country, name), month: label }),
     description: trimDescription(t('countryIntro', { country: name, count: rows.length, institutions })),
   });
 }

@@ -44,7 +44,8 @@
     "countries": "Ուսման ուղղություններ",
     "forInstitutions": "Հաստատությունների համար",
     "blog": "Բլոգ",
-    "deadlines": "Վերջնաժամկետներ"
+    "deadlines": "Վերջնաժամկետներ",
+    "institutions": "Բուհեր ըստ երկրների"
   },
   "Types": {
     "university": "Բուհ",
@@ -1316,7 +1317,15 @@
     "institutionTitle": "{name}, {country}՝ ծրագրեր, գներ և վերջնաժամկետներ",
     "institutionDescription": "{name} ({place})։ Ծրագրեր՝ {count}. մակարդակներ՝ {levels}։ Գներ, վերջնաժամկետներ, պահանջներ և դիմելու հղում՝ պաշտոնական աղբյուրներից։",
     "countryDescription": "Ուսանողական վիզա, աշխատանք ուսման ընթացքում, մնալ ավարտելուց հետո, ապրուստի ծախսեր և դիպլոմի ճանաչում՝ {country}։ Համառոտ ուղեցույց՝ պաշտոնական էջերի հղումներով։",
-    "institutionDescriptionPrice": "{name} ({place}). Ծրագրեր՝ {count}; մակարդակներ՝ {levels}. Ուսման վարձ՝ տարեկան {range}. Ժամկետներն ու դիմելու հղումը՝ պաշտոնական աղբյուրներից։"
+    "institutionDescriptionPrice": "{name} ({place}). Ծրագրեր՝ {count}; մակարդակներ՝ {levels}. Ուսման վարձ՝ տարեկան {range}. Ժամկետներն ու դիմելու հղումը՝ պաշտոնական աղբյուրներից։",
+    "institutionTitleNoCountry": "{name}՝ ծրագրեր, գներ և վերջնաժամկետներ",
+    "institutionTitleShort": "{name}",
+    "countriesTitle": "Ուսման ուղղություններ",
+    "aboutTitle": "Նախագծի մասին",
+    "methodologyTitle": "Որտեղից են մեր տվյալները",
+    "contactTitle": "Կոնտակտներ և աջակցություն",
+    "studyHubDescription": "{place} — Ուղղություններ՝ {fields}։ Ծրագրեր՝ {programmes}։ Տվյալները պաշտոնական աղբյուրներից են։",
+    "deadlinesMonthTitle": "Դիմումների վերջնաժամկետներ՝ {place}՝ {month}"
   },
   "Blog": {
     "title": "Բլոգ",
@@ -1381,5 +1390,20 @@
     "profileHint": "Մուտք եք գործել։ Ձեր փաստաթղթերը պահվում են նաև պրոֆիլում։",
     "profileLink": "Բացել պրոֆիլը",
     "calendarCta": "Տեսնել դիմելու վերջնաժամկետները"
+  },
+  "InstitutionsList": {
+    "indexTitle": "Բուհեր ըստ երկրների",
+    "indexSeoTitle": "Բուհեր, քոլեջներ և դպրոցներ ըստ երկրների",
+    "indexIntro": "YourHEI-ում ծրագրեր ունեցող բոլոր հաստատությունները՝ ըստ երկրների։ Բացեք երկիրը՝ հղումներով ցուցակը տեսնելու համար՝ ծրագրեր, գներ և վերջնաժամկետներ։",
+    "count": "{count, plural, other {# հաստատություն}}",
+    "countryTitle": "Բուհեր և քոլեջներ՝ {place}",
+    "countrySeoTitle": "Բուհեր և քոլեջներ՝ {place}, {count, plural, other {# հաստատություն}}",
+    "countryIntro": "YourHEI-ում ծրագրերով {count, plural, other {# հաստատություն}} (երկիր՝ {place})։ Յուրաքանչյուրի էջում՝ ծրագրեր, գներ օտարերկրացիների համար և վերջնաժամկետներ պաշտոնական աղբյուրներից։",
+    "pageTitle": "{title} — էջ {page}",
+    "pagesLabel": "Ցուցակի էջեր",
+    "prev": "← Էջ {page}",
+    "next": "Էջ {page} →",
+    "allCountries": "Բոլոր երկրները",
+    "allInCountry": "Բոլոր բուհերը և քոլեջները՝ {place}"
   }
 }

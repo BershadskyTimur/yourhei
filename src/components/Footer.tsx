@@ -11,6 +11,7 @@ export function Footer() {
     { href: '/about', label: t('about') },
     { href: '/for-institutions', label: t('forInstitutions') },
     { href: '/countries', label: t('countries') },
+    { href: '/institutions', label: t('institutions') },
     { href: '/blog', label: t('blog') },
     { href: '/deadlines', label: t('deadlines') },
     { href: '/methodology', label: t('methodology') },
