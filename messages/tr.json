@@ -1057,6 +1057,7 @@
   },
   "Catalog": {
     "title": "Katalog",
+    "heading": "Yurt dışında eğitim programları kataloğu",
     "intro": "Veritabanındaki tüm programlar ve kurumlar. Ülke, düzey, eğitim dili, alan ve fiyata göre daralt. Fiyatlar seçtiğin para biriminde gösterilir.",
     "modeLabel": "Ne gösterilsin",
     "mode": {

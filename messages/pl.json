@@ -1057,6 +1057,7 @@
   },
   "Catalog": {
     "title": "Katalog",
+    "heading": "Katalog programów studiów za granicą",
     "intro": "Wszystkie programy i placówki z bazy. Zawęź wyniki według kraju, poziomu, języka studiów, dziedziny i ceny. Ceny są pokazywane w wybranej przez Ciebie walucie.",
     "modeLabel": "Co pokazać",
     "mode": {

@@ -1057,6 +1057,7 @@
   },
   "Catalog": {
     "title": "Katalog",
+    "heading": "Xorijda o‘qish dasturlari katalogi",
     "intro": "Ma’lumotlar bazasidagi barcha dasturlar va muassasalar. Davlat, daraja, o‘qish tili, soha va narx bo‘yicha toraytiring. Narxlar siz tanlagan valyutada ko‘rsatiladi.",
     "modeLabel": "Nimani ko‘rsatish",
     "mode": {

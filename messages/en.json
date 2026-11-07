@@ -1057,6 +1057,7 @@
   },
   "Catalog": {
     "title": "Catalog",
+    "heading": "Study abroad programme catalogue",
     "intro": "Every programme and institution in the database. Narrow it down by country, level, study language, field and price. Prices are shown in the currency you choose.",
     "modeLabel": "What to show",
     "mode": {

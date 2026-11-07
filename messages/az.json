@@ -1057,6 +1057,7 @@
   },
   "Catalog": {
     "title": "Kataloq",
+    "heading": "Xaricdə təhsil proqramları kataloqu",
     "intro": "Verilənlər bazasındakı bütün proqramlar və müəssisələr. Ölkə, səviyyə, təhsil dili, sahə və qiymətə görə daralt. Qiymətlər seçdiyin valyutada göstərilir.",
     "modeLabel": "Nə göstərilsin",
     "mode": {

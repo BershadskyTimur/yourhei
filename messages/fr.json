@@ -1057,6 +1057,7 @@
   },
   "Catalog": {
     "title": "Catalogue",
+    "heading": "Catalogue des programmes d’études à l’étranger",
     "intro": "Tous les programmes et établissements de la base de données. Filtrez par pays, niveau, langue d’études, domaine et prix. Les prix sont affichés dans la devise de votre choix.",
     "modeLabel": "Ce qu’il faut afficher",
     "mode": {

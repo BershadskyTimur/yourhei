@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { hasLocale } from 'next-intl';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
+import { dateBeforeStop } from '@/lib/date-text';
 import { FavoriteButton } from '@/components/FavoriteButton';
 import { ProgramCard, examLabel } from '@/components/ProgramCard';
 import { ReportError } from '@/components/ReportError';
@@ -368,7 +369,7 @@ export default async function InstitutionPage({ params }: { params: Params }) {
         {institution.programs.length === 0 && <p className="mt-6 text-muted">{t('comingSoon')}</p>}
 
         <footer className="mt-10 space-y-1 border-t border-line pt-4 text-sm text-muted">
-          {checked && <p>{t('checked', { date: checked })}</p>}
+          {checked && <p>{t('checked', { date: dateBeforeStop(checked) })}</p>}
           <p>{t('disclaimer')}</p>
           <div>
             <ReportError

@@ -1057,6 +1057,7 @@
   },
   "Catalog": {
     "title": "Catálogo",
+    "heading": "Catálogo de programas para estudiar en el extranjero",
     "intro": "Todos los programas y centros de la base de datos. Filtra por país, nivel, idioma de estudio, área y precio. Los precios se muestran en la moneda que elijas.",
     "modeLabel": "Qué mostrar",
     "mode": {

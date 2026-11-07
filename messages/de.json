@@ -1057,6 +1057,7 @@
   },
   "Catalog": {
     "title": "Katalog",
+    "heading": "Katalog der Studiengänge im Ausland",
     "intro": "Alle Studiengänge und Einrichtungen der Datenbank. Filtere nach Land, Abschluss, Studiensprache, Fachgebiet und Preis. Die Preise werden in der von dir gewählten Währung angezeigt.",
     "modeLabel": "Was angezeigt werden soll",
     "mode": {
