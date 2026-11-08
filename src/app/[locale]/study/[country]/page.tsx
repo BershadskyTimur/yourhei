@@ -16,6 +16,12 @@ import { iscedEntry, labelFor } from '@/lib/survey/references';
 
 export const revalidate = 86400;
 
+// Without this line the page was built again for every visitor (Cache-Control: no-store, checked 08.11.2026): now each
+// country is built on the first visit and kept for a day, like the field pages under it.
+export function generateStaticParams() {
+  return [];
+}
+
 type Params = Promise<{ locale: string; country: string }>;
 
 export async function generateMetadata({ params }: { params: Params }): Promise<Metadata> {

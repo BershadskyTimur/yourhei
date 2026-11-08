@@ -70,8 +70,13 @@ export async function getInstitutionDetail(country: string, slug: string): Promi
   const type = str(r.type);
   if (!type || !isInstitutionType(type)) return null;
   const id = str(r.id);
-  const reviewRows = id ? await supabase.from('reviews').select('rating, relation, body, created_at').eq('institution_id', id).eq('status', 'published').order('created_at', { ascending: false }).limit(20) : null;
-  const summaryRow = id ? await supabase.from('review_summary').select('reviews, rating').eq('institution_id', id).maybeSingle() : null;
+  // the two review reads at once, not one after the other (each waits ~0.2 s for the database while a search engine waits for the page)
+  const [reviewRows, summaryRow] = id
+    ? await Promise.all([
+        supabase.from('reviews').select('rating, relation, body, created_at').eq('institution_id', id).eq('status', 'published').order('created_at', { ascending: false }).limit(20),
+        supabase.from('review_summary').select('reviews, rating').eq('institution_id', id).maybeSingle(),
+      ])
+    : [null, null];
   const published = (rows: unknown) => arr(rows).map(rec).filter((x) => x.status === undefined || x.status === 'published');
   return {
     id: str(r.id),

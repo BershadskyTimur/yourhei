@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { LIST_PAGE, MIN_LIST, listCountries, pageSlugs, pagesOf } from './country-list';
+import { LIST_PAGE, MIN_LIST, listCountries, listFromCounts, pageSlugs, pagesOf } from './country-list';
 
 const points = (country: string, n: number) => Array.from({ length: n }, (_, i) => ({ slug: `${country.toLowerCase()}-${String(i).padStart(4, '0')}`, country }));
 
@@ -14,6 +14,16 @@ describe('listCountries', () => {
   });
   it('treats the country code case-insensitively', () => {
     expect(listCountries([{ slug: 'a', country: 'de' }, { slug: 'b', country: 'DE' }, { slug: 'c', country: 'De' }])).toEqual([{ country: 'DE', count: 3 }]);
+  });
+});
+
+describe('listFromCounts', () => {
+  it('gives the same list as counting the addresses one by one', () => {
+    const pts = [...points('US', 5), ...points('kz', MIN_LIST), ...points('NZ', MIN_LIST - 1)];
+    expect(listFromCounts([['US', 5], ['KZ', MIN_LIST], ['NZ', MIN_LIST - 1]])).toEqual(listCountries(pts));
+  });
+  it('adds up a country given twice or in another case', () => {
+    expect(listFromCounts([['de', 2], ['DE', 1]])).toEqual([{ country: 'DE', count: 3 }]);
   });
 });
 

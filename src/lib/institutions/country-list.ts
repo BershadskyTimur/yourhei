@@ -1,7 +1,7 @@
 import { createClient } from '@supabase/supabase-js';
 import { publicReadOptions } from '@/lib/supabase/read-options';
 import { str, texts, type Row } from './program-detail';
-import { getSitemapPoints } from './summaries';
+import { getSitemapCountryCounts, getSitemapPoints } from './summaries';
 import type { LocalizedText } from './types';
 
 // The lists "institutions of a country" (/institutions/<country>, /institutions/<country>/p/<n>): plain links to every
@@ -21,8 +21,13 @@ export interface Point {
 
 /** The countries that have a list, with how many institutions each has, most first (ties by code). */
 export function listCountries(points: readonly Point[]): { country: string; count: number }[] {
+  return listFromCounts(points.map((p) => [p.country, 1]));
+}
+
+/** The same from counts by country ([country, count], a country may appear more than once). */
+export function listFromCounts(counts: readonly (readonly [string, number])[]): { country: string; count: number }[] {
   const by = new Map<string, number>();
-  for (const p of points) by.set(p.country.toUpperCase(), (by.get(p.country.toUpperCase()) ?? 0) + 1);
+  for (const [country, n] of counts) by.set(country.toUpperCase(), (by.get(country.toUpperCase()) ?? 0) + n);
   return [...by.entries()]
     .filter(([, n]) => n >= MIN_LIST)
     .map(([country, count]) => ({ country, count }))
@@ -55,9 +60,9 @@ export interface CountryListPage {
   pages: number;
 }
 
-/** The countries with a list (for the index page and the sitemap). */
+/** The countries with a list (for the index page and the links from institution, guide and study pages). */
 export async function getListCountries(): Promise<{ country: string; count: number }[]> {
-  return listCountries(await getSitemapPoints());
+  return listFromCounts(await getSitemapCountryCounts());
 }
 
 /**

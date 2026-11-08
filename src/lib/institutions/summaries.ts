@@ -68,6 +68,19 @@ export async function getCompactPoints(locale: string): Promise<CompactInstituti
   return error ? null : encodeInstitutions(items, locale);
 }
 
+/**
+ * How many institutions with programmes each country has (the same institutions as getSitemapPoints), as [country, count].
+ * About 2 KB instead of the 231 KB of every address (migration 0041); without the migration, counted from the addresses.
+ */
+export async function getSitemapCountryCounts(): Promise<[string, number][]> {
+  const { data, missing } = await rpc<[string, number][]>('sitemap_country_counts');
+  if (Array.isArray(data) && data.length > 0) return data;
+  if (!missing) return []; // the database could not be read: no list links this time
+  const by = new Map<string, number>();
+  for (const p of await getSitemapPoints()) by.set(p.country, (by.get(p.country) ?? 0) + 1);
+  return [...by.entries()];
+}
+
 /** Slug and country of every institution that has programmes (the pages worth offering to search engines). */
 export async function getSitemapPoints(): Promise<{ slug: string; country: string }[]> {
   // robots.txt and the sitemap must never fail, so here the slow way stays as the last resort (once a day at most)
