@@ -1326,7 +1326,8 @@
     "methodologyTitle": "Verilerimiz nereden geliyor",
     "contactTitle": "İletişim ve destek",
     "studyHubDescription": "{place} — Alanlar: {fields}. Programlar: {programmes}. Veriler resmî kaynaklardan gelir.",
-    "deadlinesMonthTitle": "Başvuru son tarihleri: {place}: {month}"
+    "deadlinesMonthTitle": "Başvuru son tarihleri: {place}: {month}",
+    "deadlinesMonthDescription": "Başvuru son tarihleri: {place}, {month}: {institutions} kurumda {count} son tarih, ilki {first}. Tarihler programların resmi sayfalarından alınmıştır."
   },
   "Blog": {
     "title": "Blog",

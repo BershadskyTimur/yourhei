@@ -6,7 +6,8 @@ export const finlandApplication: Article = {
   updated: '2026-10-24',
   ru: {
     title: 'Как подать заявку в Финляндию: Studyinfo и совместный набор',
-    description: 'Как поступить в финский вуз через Studyinfo: совместный набор в январе, набор на январский старт, требования для бакалавриата и магистратуры и сбор для студентов вне ЕС.',
+    seoTitle: 'Поступление в Финляндию через Studyinfo: сроки и сбор',
+    description: 'Как поступить в финский вуз через Studyinfo: совместный набор в январе, набор на январский старт, требования и сбор 100 евро для студентов вне ЕС.',
     blocks: [
       { t: 'p', text: 'В Финляндии заявки подают через единый официальный портал Studyinfo.fi. Ниже — что сказано на официальных страницах Study in Finland о периодах набора и требованиях (проверено 24 октября 2026 года). Точные даты и условия программы всегда проверяйте на Studyinfo и на сайте вуза.' },
       { t: 'h2', id: 'portal', text: 'Где подавать' },
@@ -53,7 +54,8 @@ export const finlandApplication: Article = {
   },
   en: {
     title: 'How to apply to Finland: Studyinfo and the joint application',
-    description: 'How to apply to a Finnish university through Studyinfo: the joint application in January, the autumn round, the requirements and the fee for non-EU students.',
+    seoTitle: 'Applying to Finland via Studyinfo: dates and fee',
+    description: 'How to apply to a Finnish university through Studyinfo: the joint application in January, the autumn round, the requirements and the EUR 100 non-EU fee.',
     blocks: [
       { t: 'p', text: 'In Finland applications go through one official portal, Studyinfo.fi. Below is what the official Study in Finland pages say about the application periods and the requirements (checked on 24 October 2026). Always confirm the exact dates and conditions of a programme on Studyinfo and on the university’s website.' },
       { t: 'h2', id: 'portal', text: 'Where to apply' },

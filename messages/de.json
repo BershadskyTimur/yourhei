@@ -1326,7 +1326,8 @@
     "methodologyTitle": "Woher die Daten von YourHEI stammen: Quellen und Methode",
     "contactTitle": "Kontakt zu YourHEI: Fragen und Korrekturen",
     "studyHubDescription": "{programmes, plural, one {# Studiengang} other {# Studiengänge}} in {place} in {fields, plural, one {# Fachgebiet} other {# Fachgebieten}}: Kosten für internationale Studierende, Fristen und Hochschulen aus offiziellen Quellen.",
-    "deadlinesMonthTitle": "Bewerbungsfristen in {place}: {month}"
+    "deadlinesMonthTitle": "Bewerbungsfristen in {place}: {month}",
+    "deadlinesMonthDescription": "Bewerbungsfristen in {place} im {month}: {count} Fristen an {institutions} Einrichtungen, die erste am {first}. Daten von den offiziellen Programmseiten."
   },
   "Blog": {
     "title": "Blog",

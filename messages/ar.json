@@ -1326,7 +1326,8 @@
     "methodologyTitle": "من أين تأتي بياناتنا",
     "contactTitle": "التواصل والدعم",
     "studyHubDescription": "{place} — المجالات: {fields}. البرامج: {programmes}. البيانات من مصادر رسمية.",
-    "deadlinesMonthTitle": "مواعيد التقديم: {place}: {month}"
+    "deadlinesMonthTitle": "مواعيد التقديم: {place}: {month}",
+    "deadlinesMonthDescription": "مواعيد التقديم: {place}، {month}: {count} موعدًا في {institutions} مؤسسة، أولها في {first}. التواريخ من الصفحات الرسمية للبرامج."
   },
   "Blog": {
     "title": "المدونة",

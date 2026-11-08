@@ -1326,7 +1326,8 @@
     "methodologyTitle": "YourHEI 的数据来源：来源与方法",
     "contactTitle": "联系 YourHEI：问题与数据更正",
     "studyHubDescription": "在{place}留学：{fields, plural, other {# 个领域}}共 {programmes, plural, other {# 个项目}}，含国际学生学费、申请截止日期和院校，数据来自官方来源。",
-    "deadlinesMonthTitle": "{place}申请截止日期：{month}"
+    "deadlinesMonthTitle": "{place}申请截止日期：{month}",
+    "deadlinesMonthDescription": "{place}{month}申请截止日期：{institutions} 所院校共 {count} 个截止日期，最早为 {first}。日期来自项目官方页面。"
   },
   "Blog": {
     "title": "博客",

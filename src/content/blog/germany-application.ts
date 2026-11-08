@@ -61,7 +61,8 @@ export const germanyApplication: Article = {
   },
   en: {
     title: 'How to apply to a German university: deadlines and uni-assist',
-    description: 'Where to send your documents in Germany: uni-assist, the university or the Stiftung für Hochschulzulassung. Deadlines for both semesters, fees and documents.',
+    seoTitle: 'Applying to a German university: uni-assist and deadlines',
+    description: 'How to apply to a German university: uni-assist, the university or the Stiftung für Hochschulzulassung. Deadlines: 15 July (winter), 15 January (summer).',
     blocks: [
       { t: 'p', text: 'Germany has no single window for all universities: where you apply depends on your country, your qualification and the subject. Below is what the official DAAD page says about how to apply, the deadlines and the documents (checked on 24 October 2026). Always confirm the exact dates of each university with the university itself.' },
       { t: 'h2', id: 'where', text: 'Where to apply' },

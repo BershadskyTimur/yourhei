@@ -1326,7 +1326,8 @@
     "methodologyTitle": "Որտեղից են մեր տվյալները",
     "contactTitle": "Կոնտակտներ և աջակցություն",
     "studyHubDescription": "{place} — Ուղղություններ՝ {fields}։ Ծրագրեր՝ {programmes}։ Տվյալները պաշտոնական աղբյուրներից են։",
-    "deadlinesMonthTitle": "Դիմումների վերջնաժամկետներ՝ {place}՝ {month}"
+    "deadlinesMonthTitle": "Դիմումների վերջնաժամկետներ՝ {place}՝ {month}",
+    "deadlinesMonthDescription": "Դիմումների վերջնաժամկետներ՝ {place}, {month}․ {count} վերջնաժամկետ {institutions} հաստատությունում, առաջինը՝ {first}։ Ամսաթվերը ծրագրերի պաշտոնական էջերից են։"
   },
   "Blog": {
     "title": "Բլոգ",

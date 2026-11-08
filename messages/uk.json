@@ -1326,7 +1326,8 @@
     "methodologyTitle": "Звідки наші дані",
     "contactTitle": "Контакти та підтримка",
     "studyHubDescription": "{place} — Напрямів: {fields}. Програм: {programmes}. Дані взято з офіційних джерел.",
-    "deadlinesMonthTitle": "Строки подання документів: {place}: {month}"
+    "deadlinesMonthTitle": "Строки подання документів: {place}: {month}",
+    "deadlinesMonthDescription": "Строки подання документів: {place}, {month}. {count, plural, one {# строк} few {# строки} many {# строків} other {# строку}} у {institutions, plural, one {# закладі} other {# закладах}}, перший — {first}. Дати — з офіційних сторінок програм."
   },
   "Blog": {
     "title": "Блог",

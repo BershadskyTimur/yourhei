@@ -1326,7 +1326,8 @@
     "methodologyTitle": "Məlumatlarımız haradandır",
     "contactTitle": "Əlaqə və dəstək",
     "studyHubDescription": "{place} — Sahələr: {fields}. Proqramlar: {programmes}. Məlumatlar rəsmi mənbələrdəndir.",
-    "deadlinesMonthTitle": "Müraciət müddətləri: {place}: {month}"
+    "deadlinesMonthTitle": "Müraciət müddətləri: {place}: {month}",
+    "deadlinesMonthDescription": "Müraciət müddətləri: {place}, {month}: {institutions} müəssisədə {count} müddət, birincisi — {first}. Tarixlər proqramların rəsmi səhifələrindən götürülüb."
   },
   "Blog": {
     "title": "Bloq",

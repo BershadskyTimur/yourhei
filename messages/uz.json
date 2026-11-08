@@ -1326,7 +1326,8 @@
     "methodologyTitle": "Ma’lumotlarimiz qayerdan",
     "contactTitle": "Aloqa va yordam",
     "studyHubDescription": "{place} — Yo‘nalishlar: {fields}. Dasturlar: {programmes}. Ma’lumotlar rasmiy manbalardan olingan.",
-    "deadlinesMonthTitle": "Hujjat topshirish muddatlari: {place}: {month}"
+    "deadlinesMonthTitle": "Hujjat topshirish muddatlari: {place}: {month}",
+    "deadlinesMonthDescription": "Hujjat topshirish muddatlari: {place}, {month}: {institutions} ta muassasada {count} ta muddat, birinchisi — {first}. Sanalar dasturlarning rasmiy sahifalaridan olingan."
   },
   "Blog": {
     "title": "Blog",

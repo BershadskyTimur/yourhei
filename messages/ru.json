@@ -1316,9 +1316,9 @@
   },
   "Seo": {
     "institutionTitle": "{name}, {country}: стоимость обучения и программы",
-    "institutionDescription": "{name} ({place}). Программ: {count}; уровни: {levels}. Стоимость, сроки подачи, требования и ссылка для подачи заявки: по официальным источникам.",
+    "institutionDescription": "{name} ({place}): программы и стоимость обучения. Программ: {count}; уровни: {levels}. Сроки подачи, требования и ссылка на заявку — по официальным источникам.",
     "countryDescription": "Студенческая виза, работа во время учёбы, жизнь после выпуска, стоимость жизни и признание диплома: {country}. Краткий справочник со ссылками на официальные страницы.",
-    "institutionDescriptionPrice": "{name} ({place}). Программ: {count}; уровни: {levels}. Стоимость обучения: {range} в год. Сроки подачи и ссылка для заявки: по официальным источникам.",
+    "institutionDescriptionPrice": "{name} ({place}): стоимость обучения — {range} в год. Программ: {count}; уровни: {levels}. Сроки подачи и ссылка на заявку — по официальным источникам.",
     "institutionTitleNoCountry": "{name}: стоимость обучения и программы",
     "institutionTitleShort": "{name}: стоимость обучения",
     "countriesTitle": "Учёба за границей по странам: визы, работа и жизнь",
@@ -1326,7 +1326,8 @@
     "methodologyTitle": "Откуда данные YourHEI: источники о вузах и ценах",
     "contactTitle": "Контакты YourHEI: вопросы и исправления данных",
     "studyHubDescription": "{programmes, plural, one {# программа} few {# программы} many {# программ} other {# программы}} {place} по {fields, plural, one {# направлению} other {# направлениям}}: цены для иностранцев, сроки подачи и вузы. Данные из официальных источников.",
-    "deadlinesMonthTitle": "Сроки подачи документов {place}: {month}"
+    "deadlinesMonthTitle": "Сроки подачи документов {place}: {month}",
+    "deadlinesMonthDescription": "Когда подавать документы {place}: {month} — {count, plural, one {# срок} few {# срока} many {# сроков} other {# срока}} в {institutions, plural, one {# заведении} other {# заведениях}}, первый — {first}. Даты — с официальных страниц программ."
   },
   "Blog": {
     "title": "Блог",

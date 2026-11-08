@@ -6,7 +6,8 @@ export const netherlandsApplication: Article = {
   updated: '2026-10-24',
   ru: {
     title: 'Поступление в Нидерланды: Studielink и сроки подачи',
-    description: 'Как подать заявку в нидерландский вуз через Studielink: общие сроки 1 мая и 15 января, чем они отличаются для программ, и что проверить у самого вуза.',
+    seoTitle: 'Studielink: сроки подачи в вузы Нидерландов',
+    description: 'Сроки Studielink для вузов Нидерландов: 15 января для программ с numerus fixus, 1 мая для остального бакалавриата. Как подать заявку и что проверить.',
     blocks: [
       { t: 'p', text: 'В Нидерландах заявки на большинство программ подаются через единый официальный портал Studielink. Сроки при этом бывают разные, и именно с ними чаще всего возникают недоразумения. Ниже — то, что сказано на официальных страницах Studielink и Study in NL (проверено 24 октября 2026 года).' },
       { t: 'h2', id: 'studielink', text: 'Что такое Studielink' },
@@ -51,7 +52,8 @@ export const netherlandsApplication: Article = {
   },
   en: {
     title: 'Applying to the Netherlands: Studielink and the deadlines',
-    description: 'How to apply to a Dutch university through Studielink: the general 1 May and 15 January deadlines, how they differ by programme, and what to check with the university.',
+    seoTitle: 'Studielink deadlines: how to apply to the Netherlands',
+    description: 'Studielink deadlines for Dutch universities: 15 January for numerus fixus programmes, 1 May for other bachelor\'s. How to apply and what to check.',
     blocks: [
       { t: 'p', text: 'In the Netherlands, applications to most programmes go through one official portal, Studielink. The deadlines differ, and they are where misunderstandings happen most often. Below is what the official Studielink and Study in NL pages say (checked on 24 October 2026).' },
       { t: 'h2', id: 'studielink', text: 'What Studielink is' },

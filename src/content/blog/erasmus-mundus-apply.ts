@@ -6,7 +6,8 @@ export const erasmusMundusApply: Article = {
   updated: '2026-10-28',
   ru: {
     title: 'Erasmus Mundus Joint Masters: как поступить и получить стипендию',
-    description: 'Что такое совместные магистерские программы Erasmus Mundus, кто может подать заявку, как подавать (сразу в программу), что покрывает стипендия и когда обычно идёт приём.',
+    seoTitle: 'Erasmus Mundus: как поступить в магистратуру со стипендией',
+    description: 'Erasmus Mundus Joint Masters: кто может подать заявку, как подавать прямо в программу и что покрывает стипендия. Приём обычно идёт с октября по январь.',
     blocks: [
       { t: 'p', text: 'Erasmus Mundus Joint Masters (EMJM) — совместные магистерские программы нескольких университетов из разных стран. Их финансирует Европейский союз, а стипендии получают лучшие кандидаты со всего мира. Заявку здесь подают не в одно общее ведомство, а прямо в выбранную программу. Ниже то, что сказано на официальной странице программы Erasmus+ (проверено 26 октября 2026 года).' },
       { t: 'h2', id: 'what', text: 'Что это за программы' },
@@ -65,7 +66,8 @@ export const erasmusMundusApply: Article = {
   },
   en: {
     title: 'Erasmus Mundus Joint Masters: how to apply and get a scholarship',
-    description: 'What Erasmus Mundus Joint Masters are, who can apply, how to apply (straight to the programme), what the scholarship covers and when the application period usually runs.',
+    seoTitle: 'Erasmus Mundus Joint Masters: how to apply',
+    description: 'Erasmus Mundus Joint Masters: who can apply, how to apply straight to the programme and what the scholarship covers. Applications usually run October–January.',
     blocks: [
       { t: 'p', text: 'Erasmus Mundus Joint Masters (EMJM) are joint master\'s programmes run by several universities from different countries. The European Union funds them, and the scholarships go to the best applicants from all over the world. You do not apply to one common office here, but straight to the programme you choose. Below is what the official Erasmus+ page says (checked on 26 October 2026).' },
       { t: 'h2', id: 'what', text: 'What these programmes are' },

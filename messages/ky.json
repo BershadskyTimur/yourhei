@@ -1326,7 +1326,8 @@
     "methodologyTitle": "Биздин маалыматтар кайдан",
     "contactTitle": "Байланыш жана колдоо",
     "studyHubDescription": "{place} — Багыттар: {fields}. Программалар: {programmes}. Маалыматтар расмий булактардан алынган.",
-    "deadlinesMonthTitle": "Документ тапшыруу мөөнөттөрү: {place}: {month}"
+    "deadlinesMonthTitle": "Документ тапшыруу мөөнөттөрү: {place}: {month}",
+    "deadlinesMonthDescription": "Документ тапшыруу мөөнөттөрү: {place}, {month}: {institutions} мекемеде {count} мөөнөт, биринчиси — {first}. Даталар программалардын расмий барактарынан алынды."
   },
   "Blog": {
     "title": "Блог",

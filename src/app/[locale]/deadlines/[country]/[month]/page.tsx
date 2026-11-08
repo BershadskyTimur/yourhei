@@ -7,6 +7,7 @@ import { JsonLd } from '@/components/JsonLd';
 import { Link } from '@/i18n/navigation';
 import { routing } from '@/i18n/routing';
 import { DEADLINES_BUILT, monthsOfCountry, ofMonth } from '@/lib/deadlines/deadlines';
+import { dateBeforeStop } from '@/lib/date-text';
 import { seoMetadata, trimDescription } from '@/lib/seo/metadata';
 import { placeIn } from '@/lib/seo/place';
 import { breadcrumbList } from '@/lib/seo/structured';
@@ -27,15 +28,20 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   const { locale, country, month } = await params;
   const rows = MONTH.test(month) ? ofMonth(country, month) : [];
   if (!hasLocale(routing.locales, locale) || rows.length === 0) return {};
-  const t = await getTranslations({ locale, namespace: 'Deadlines' });
   const name = new Intl.DisplayNames([locale], { type: 'region' }).of(country.toUpperCase()) ?? country;
   const label = new Intl.DateTimeFormat(locale, { month: 'long', year: 'numeric', timeZone: 'UTC' }).format(new Date(`${month}-01T00:00:00Z`));
   const institutions = new Set(rows.map((r) => r.s)).size;
+  const tSeo = await getTranslations({ locale, namespace: 'Seo' });
+  const place = placeIn(locale, country, name);
+  // people search "<country> <month> deadline": the description says the month, how many dates and the first one
+  const first = rows.reduce((min, r) => (r.d < min ? r.d : min), rows[0].d);
+  // the date ends the sentence: "4 января 2027 г." loses its own dot (no "г..")
+  const firstText = dateBeforeStop(new Intl.DateTimeFormat(locale, { dateStyle: 'long', timeZone: 'UTC' }).format(new Date(`${first}T00:00:00Z`)));
   return seoMetadata({
     locale,
     path: `/deadlines/${country.toLowerCase()}/${month}`,
-    title: (await getTranslations({ locale, namespace: 'Seo' }))('deadlinesMonthTitle', { place: placeIn(locale, country, name), month: label }),
-    description: trimDescription(t('countryIntro', { country: name, count: rows.length, institutions })),
+    title: tSeo('deadlinesMonthTitle', { place, month: label }),
+    description: trimDescription(tSeo('deadlinesMonthDescription', { place, month: label, count: rows.length, institutions, first: firstText })),
   });
 }
 
