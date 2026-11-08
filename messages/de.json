@@ -1057,6 +1057,7 @@
   },
   "Catalog": {
     "title": "Katalog",
+    "heading": "Katalog der Studiengänge im Ausland",
     "intro": "Alle Studiengänge und Einrichtungen der Datenbank. Filtere nach Land, Abschluss, Studiensprache, Fachgebiet und Preis. Die Preise werden in der von dir gewählten Währung angezeigt.",
     "modeLabel": "Was angezeigt werden soll",
     "mode": {
@@ -1325,7 +1326,8 @@
     "methodologyTitle": "Woher die Daten von YourHEI stammen: Quellen und Methode",
     "contactTitle": "Kontakt zu YourHEI: Fragen und Korrekturen",
     "studyHubDescription": "{programmes, plural, one {# Studiengang} other {# Studiengänge}} in {place} in {fields, plural, one {# Fachgebiet} other {# Fachgebieten}}: Kosten für internationale Studierende, Fristen und Hochschulen aus offiziellen Quellen.",
-    "deadlinesMonthTitle": "Bewerbungsfristen in {place}: {month}"
+    "deadlinesMonthTitle": "Bewerbungsfristen in {place}: {month}",
+    "deadlinesMonthDescription": "Bewerbungsfristen in {place} im {month}: {count} Fristen an {institutions} Einrichtungen, die erste am {first}. Daten von den offiziellen Programmseiten."
   },
   "Blog": {
     "title": "Blog",

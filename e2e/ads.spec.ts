@@ -14,7 +14,7 @@ test.describe('ad places', () => {
     await page.goto('/en');
     await expect(page.locator('#map')).toBeAttached();
     expect(await visibleCount(page)).toBe(0);
-    await expect(page.locator(':text-is("Advertisement"):visible')).toHaveCount(0); // present in the page, but hidden
+    await expect(page.getByText("Advertisement")).toHaveCount(0); // the word is drawn by the style sheet, not written into the page
     const box = await page.locator('#map').boundingBox();
     expect(box!.width).toBeGreaterThan(1100); // the whole width, not three fifths
   });

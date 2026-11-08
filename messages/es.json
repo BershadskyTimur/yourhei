@@ -1057,6 +1057,7 @@
   },
   "Catalog": {
     "title": "Catálogo",
+    "heading": "Catálogo de programas para estudiar en el extranjero",
     "intro": "Todos los programas y centros de la base de datos. Filtra por país, nivel, idioma de estudio, área y precio. Los precios se muestran en la moneda que elijas.",
     "modeLabel": "Qué mostrar",
     "mode": {
@@ -1325,7 +1326,8 @@
     "methodologyTitle": "De dónde salen los datos de YourHEI: fuentes y método",
     "contactTitle": "Contacto de YourHEI: preguntas y correcciones de datos",
     "studyHubDescription": "{programmes, plural, one {# programa} other {# programas}} en {place} en {fields, plural, one {# área} other {# áreas}}: precios para estudiantes internacionales, plazos e instituciones, de fuentes oficiales.",
-    "deadlinesMonthTitle": "Plazos de solicitud en {place}: {month}"
+    "deadlinesMonthTitle": "Plazos de solicitud en {place}: {month}",
+    "deadlinesMonthDescription": "Plazos de solicitud en {place} en {month}: {count} plazos en {institutions} instituciones; el primero, el {first}. Fechas de las páginas oficiales de los programas."
   },
   "Blog": {
     "title": "Blog",

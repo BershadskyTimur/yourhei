@@ -25,6 +25,17 @@
       "env": {
         "BLOG_SHOW_ALL": "1"
       }
+    },
+    {
+      "name": "yourhei-prod",
+      "runtimeExecutable": "C:\\Program Files\\nodejs\\node.exe",
+      "runtimeArgs": [
+        "node_modules/next/dist/bin/next",
+        "start",
+        "-p",
+        "3002"
+      ],
+      "port": 3002
     }
   ]
 }

@@ -36,6 +36,8 @@ describe('blog articles', () => {
         expect(a[lang].title.length, `${a.slug} ${lang} title`).toBeLessThanOrEqual(70);
         expect(a[lang].description.length, `${a.slug} ${lang} description`).toBeGreaterThanOrEqual(90);
         expect(a[lang].description.length, `${a.slug} ${lang} description`).toBeLessThanOrEqual(170);
+        // a title of its own for search engines must fit what they show
+        if (a[lang].seoTitle !== undefined) expect(a[lang].seoTitle!.length, `${a.slug} ${lang} seoTitle`).toBeLessThanOrEqual(60);
         expect(a[lang].blocks.length).toBeGreaterThan(4);
       }
       // the same blocks in the same order: a data block or a section can not be missing in one language

@@ -64,7 +64,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
   const tChecklist = await getTranslations('Checklist');
   return (
     <>
-      <JsonLd data={organizationLd()} />
+      <JsonLd data={organizationLd(process.env.NEXT_PUBLIC_CONTACT_EMAIL)} />
       <JsonLd data={websiteLd(locale, tMeta('description'))} />
       <section className="hero-bg">
         <div className="mx-auto grid max-w-[1500px] items-center gap-12 px-4 py-14 sm:py-20 lg:grid-cols-[minmax(0,1fr)_minmax(0,460px)] lg:gap-20 lg:py-24">

@@ -8,8 +8,8 @@ import { Link } from '@/i18n/navigation';
 import { routing } from '@/i18n/routing';
 import { articleLang, articleLocales, bodyOf, getArticle, publishedArticles, readingMinutes, relatedArticles, sectionsOf } from '@/lib/blog/posts';
 import { countriesOfArticle } from '@/lib/countries-guide/guides';
-import { countryLabel } from '@/lib/seo/place';
-import { seoMetadata } from '@/lib/seo/metadata';
+import { countryLabel, placeIn } from '@/lib/seo/place';
+import { seoMetadata, trimDescription } from '@/lib/seo/metadata';
 import { studyCountries } from '@/lib/study/combos';
 import { articleLd, breadcrumbList } from '@/lib/seo/structured';
 
@@ -28,7 +28,8 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   if (!hasLocale(routing.locales, locale) || !article) return {};
   const body = bodyOf(article, locale);
   // a language that shows the English text in place of a translation is not offered to search engines (it would copy /en)
-  return seoMetadata({ locale, path: `/blog/${slug}`, title: body.title, description: body.description, type: 'article', published: article.published, modified: article.updated, locales: articleLocales(article, routing.locales) });
+  // search engines cut a title after ~60 characters and a description after ~160: a shorter title of its own, a description cut at a sentence
+  return seoMetadata({ locale, path: `/blog/${slug}`, title: body.seoTitle ?? body.title, description: trimDescription(body.description), type: 'article', published: article.published, modified: article.updated, locales: articleLocales(article, routing.locales) });
 }
 
 export default async function ArticlePage({ params }: { params: Params }) {
@@ -47,6 +48,10 @@ export default async function ArticlePage({ params }: { params: Params }) {
   // the countries the article is about: a way on to their guide and to the programmes there
   const regionNames = new Intl.DisplayNames([locale], { type: 'region' });
   const withStudyPage = studyCountries();
+  // and to the list of its institutions (the way search engines reach the institution pages from an article). A country with a study
+  // page has institutions with programmes, so it has a list too (checked 08.11.2026: 11 of 11); this asks the database nothing, as the
+  // article is rebuilt every hour in every language.
+  const tList = await getTranslations('InstitutionsList');
   const countries = countriesOfArticle(slug).map((cc) => ({ cc, name: countryLabel(locale, cc, regionNames.of(cc) ?? cc), study: withStudyPage.includes(cc) }));
   const date = new Intl.DateTimeFormat(locale, { dateStyle: 'long', timeZone: 'UTC' });
   const day = (iso: string) => date.format(new Date(`${iso}T00:00:00Z`));
@@ -102,6 +107,7 @@ export default async function ArticlePage({ params }: { params: Params }) {
               <li key={c.cc} className="flex flex-wrap gap-x-4 gap-y-1">
                 <Link href={`/countries/${c.cc.toLowerCase()}`} className="font-semibold text-accent-text underline underline-offset-4">{t('countryGuideLink', { country: c.name })}</Link>
                 {c.study && <Link href={`/study/${c.cc.toLowerCase()}`} className="font-semibold text-accent-text underline underline-offset-4">{t('countryStudyLink', { country: c.name })}</Link>}
+                {c.study && <Link href={`/institutions/${c.cc.toLowerCase()}`} className="font-semibold text-accent-text underline underline-offset-4">{tList('allInCountry', { place: placeIn(locale, c.cc, c.name) })}</Link>}
               </li>
             ))}
           </ul>

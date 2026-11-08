@@ -1057,6 +1057,7 @@
   },
   "Catalog": {
     "title": "Catalogue",
+    "heading": "Catalogue des programmes d’études à l’étranger",
     "intro": "Tous les programmes et établissements de la base de données. Filtrez par pays, niveau, langue d’études, domaine et prix. Les prix sont affichés dans la devise de votre choix.",
     "modeLabel": "Ce qu’il faut afficher",
     "mode": {
@@ -1325,7 +1326,8 @@
     "methodologyTitle": "D’où viennent les données de YourHEI : sources et méthode",
     "contactTitle": "Contacter YourHEI : questions et corrections",
     "studyHubDescription": "{programmes, plural, one {# programme} other {# programmes}} {place} dans {fields, plural, one {# domaine} other {# domaines}} : frais pour étudiants internationaux, dates limites et établissements, de sources officielles.",
-    "deadlinesMonthTitle": "Dates limites de candidature {place} : {month}"
+    "deadlinesMonthTitle": "Dates limites de candidature {place} : {month}",
+    "deadlinesMonthDescription": "Dates limites de candidature {place} en {month} : {count} dates dans {institutions} établissements, la première le {first}. Dates issues des pages officielles des programmes."
   },
   "Blog": {
     "title": "Blog",

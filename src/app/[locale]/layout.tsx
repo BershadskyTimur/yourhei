@@ -25,18 +25,23 @@ import '../globals.css';
 
 // Latin (incl. Turkish, Azerbaijani, Polish, Uzbek letters) + Cyrillic (incl. Kazakh and Kyrgyz letters), Armenian,
 // Georgian (Mkhedruli), Arabic and Simplified Chinese.
+// `subsets` only says which files are fetched before the page is drawn ("preload"); the style sheet still has every
+// subset, and the browser fetches the others (latin-ext, cyrillic-ext) only when a page has such letters. Preloading all
+// subsets of both fonts made every page fetch 8 files (about 260 KB) before the first text, which took ~3 s on a slow phone.
 const plexSans = IBM_Plex_Sans({
-  subsets: ['latin', 'latin-ext', 'cyrillic', 'cyrillic-ext'],
+  subsets: ['latin', 'cyrillic'],
   weight: ['400', '500', '600'],
   variable: '--font-plex',
   display: 'swap',
 });
 // Headings: a serif (Latin and Cyrillic; other scripts use the sans stack). Only the weight axis is loaded: the optical-size
 // axis made each file about twice as large (200 KB for a Russian page), which is too much for a heading font.
+// Not preloaded: headings are drawn in a similar system serif first and switch when the font arrives (display: swap).
 const sourceSerif = Source_Serif_4({
   subsets: ['latin', 'latin-ext', 'cyrillic', 'cyrillic-ext'],
   variable: '--font-source-serif',
   display: 'swap',
+  preload: false,
 });
 const notoGeorgian = Noto_Sans_Georgian({
   subsets: ['georgian'],

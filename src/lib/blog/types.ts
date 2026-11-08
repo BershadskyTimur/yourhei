@@ -28,6 +28,8 @@ export type Block =
 
 export interface ArticleBody {
   title: string;
+  /** the title for search engines when the heading is longer than ~60 characters or does not start with what people search */
+  seoTitle?: string;
   /** what search engines show under the title: 90-170 characters */
   description: string;
   blocks: Block[];

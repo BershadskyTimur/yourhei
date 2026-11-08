@@ -74,6 +74,18 @@ export async function InstitutionListPage({ locale, country, page, list }: { loc
           {page < list.pages && (
             <Link href={listPath(cc, page + 1)} className="font-semibold text-accent-text underline underline-offset-4">{t('next', { page: page + 1 })}</Link>
           )}
+          {/* every page by its number: an institution on page 17 is two links from the first page, not seventeen */}
+          <ol className="flex w-full flex-wrap gap-x-1 gap-y-1">
+            {Array.from({ length: list.pages }, (_, i) => i + 1).map((n) => (
+              <li key={n}>
+                {n === page ? (
+                  <span aria-current="page" className="inline-block min-w-8 px-1 py-1 text-center font-semibold text-text">{n}</span>
+                ) : (
+                  <Link href={listPath(cc, n)} className="inline-block min-w-8 px-1 py-1 text-center font-semibold text-accent-text underline underline-offset-4">{n}</Link>
+                )}
+              </li>
+            ))}
+          </ol>
         </nav>
       )}
 

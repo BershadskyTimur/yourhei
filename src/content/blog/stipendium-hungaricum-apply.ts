@@ -6,7 +6,8 @@ export const stipendiumHungaricumApply: Article = {
   updated: '2026-10-27',
   ru: {
     title: 'Stipendium Hungaricum: как подать заявку на стипендию Венгрии',
-    description: 'Как получить венгерскую стипендию Stipendium Hungaricum: шаги подачи через Tempus Public Foundation, сроки цикла, вступительные экзамены, язык и что нужно знать заранее.',
+    seoTitle: 'Stipendium Hungaricum: как получить стипендию Венгрии',
+    description: 'Как получить Stipendium Hungaricum: шаги подачи, срок (в наборе 2026/2027 — 15 января), номинация и экзамены. По официальным страницам программы.',
     blocks: [
       { t: 'p', text: 'Stipendium Hungaricum — государственная стипендия Венгрии для иностранных студентов. Она устроена иначе, чем многие другие программы: заявку подают не только на сайте программы, но и через ответственный орган вашей страны. Ниже порядок подачи и сроки по официальным страницам программы (проверено 26 октября 2026 года). Даты в статье относятся к набору 2026/2027, а даты следующего набора смотрите в объявлении на сайте программы.' },
       { t: 'h2', id: 'what', text: 'Что это за программа' },
@@ -72,7 +73,8 @@ export const stipendiumHungaricumApply: Article = {
   },
   en: {
     title: 'Stipendium Hungaricum: how to apply for the Hungarian scholarship',
-    description: 'How to get the Hungarian Stipendium Hungaricum scholarship: application steps, cycle dates, entrance exams, language rules and what to know in advance.',
+    seoTitle: 'Stipendium Hungaricum: how to apply, step by step',
+    description: 'How to apply for Stipendium Hungaricum: the steps, the deadline (15 January in the 2026/2027 round), nomination and entrance exams, from the official pages.',
     blocks: [
       { t: 'p', text: 'Stipendium Hungaricum is the Hungarian government scholarship for international students. It works differently from many other programmes: you do not only apply on the programme website, but also to the responsible authority of your own country. Below are the steps and the dates from the official pages of the programme (checked on 26 October 2026). The dates in this article belong to the 2026/2027 call; check the announcement on the programme site for the next one.' },
       { t: 'h2', id: 'what', text: 'What this programme is' },

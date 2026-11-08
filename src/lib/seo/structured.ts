@@ -19,10 +19,38 @@ export function breadcrumbList(locale: string, crumbs: Crumb[]) {
   };
 }
 
-/** Who runs the site (no personal data: the brand and the address only). */
-export function organizationLd() {
+/** The one id of the organisation behind the site, so that every page that mentions it points to the same thing. */
+export const organizationId = () => `${siteUrl()}/#organization`;
+
+/**
+ * Who runs the site (no personal data: the brand, the address and the public contact address only). The logo is the
+ * square app icon (search engines want a square logo of at least 112 px, not the wide preview picture).
+ */
+export function organizationLd(email?: string | null) {
   const base = siteUrl();
-  return { '@context': 'https://schema.org', '@type': 'Organization', name: 'YourHEI', url: base, logo: `${base}/og.png` };
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    '@id': organizationId(),
+    name: 'YourHEI',
+    url: base,
+    logo: { '@type': 'ImageObject', url: `${base}/apple-icon.png`, width: 180, height: 180 },
+    ...(email ? { email, contactPoint: { '@type': 'ContactPoint', contactType: 'customer support', email } } : {}),
+  };
+}
+
+/** The "about" and "contact" pages: a page about the organisation (its details are in organizationLd). */
+export function aboutPageLd(kind: 'AboutPage' | 'ContactPage', locale: string, path: string, name: string, description: string) {
+  const base = siteUrl();
+  return {
+    '@context': 'https://schema.org',
+    '@type': kind,
+    name,
+    description,
+    url: `${base}/${locale}${path}`,
+    inLanguage: locale,
+    about: { '@id': organizationId() },
+  };
 }
 
 export function websiteLd(locale: string, description: string) {
@@ -69,6 +97,10 @@ export interface InstitutionLdInput {
   foundedYear?: number | null;
   /** the Wikidata item ("Q49112"): ties the page to the one real institution */
   wikidataId?: string | null;
+  /** the address of this page ("/ru/institutions/us/harvard-university"): gives the institution an id of its own */
+  pagePath?: string;
+  /** the text about the institution that is shown on the page */
+  description?: string | null;
 }
 
 /** An institution with its place and site; `sameAs` points to its Wikidata item when the data has one. */
@@ -77,7 +109,9 @@ export function institutionLd(i: InstitutionLdInput) {
   return {
     '@context': 'https://schema.org',
     '@type': i.type === 'university' || i.type === 'college' ? 'CollegeOrUniversity' : 'EducationalOrganization',
+    ...(i.pagePath ? { '@id': `${siteUrl()}${i.pagePath}#institution`, mainEntityOfPage: `${siteUrl()}${i.pagePath}` } : {}),
     name: i.name,
+    ...(i.description ? { description: i.description } : {}),
     ...(i.original && i.original !== i.name ? { alternateName: i.original } : {}),
     ...(i.website ? { url: i.website } : {}),
     ...(i.wikidataId ? { sameAs: [`https://www.wikidata.org/wiki/${i.wikidataId}`] } : {}),

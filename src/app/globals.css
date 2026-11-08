@@ -297,6 +297,21 @@ li {
 :root:not([data-ads='on']) [data-ad-column] {
   display: none !important;
 }
+/* The placeholder of an empty ad place: its words come from the data attributes of AdSlot (not from the page text). */
+[data-ad-slot]:empty::before {
+  content: attr(data-ad-label);
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: var(--color-muted);
+}
+[data-ad-slot]:empty::after {
+  content: attr(data-ad-size);
+  margin-top: 0.25rem;
+  font-size: 0.75rem;
+  color: var(--color-muted);
+}
 @media (min-width: 80rem) {
   :root[data-ads='on'] .ads-side-grid {
     grid-template-columns: 160px minmax(0, 1fr) 160px;

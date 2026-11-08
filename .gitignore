@@ -54,3 +54,6 @@ next-env.d.ts
 
 # raw official datasets downloaded for the importers (large, re-downloadable)
 /data/raw/
+
+# Search Console exports (private data)
+seo-data/

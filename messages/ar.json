@@ -1057,6 +1057,7 @@
   },
   "Catalog": {
     "title": "الكتالوج",
+    "heading": "دليل برامج الدراسة في الخارج",
     "intro": "كل البرامج والمؤسسات الموجودة في قاعدة البيانات. ضيّق النتائج حسب الدولة والمستوى ولغة الدراسة والمجال والسعر. تُعرض الأسعار بالعملة التي تختارها.",
     "modeLabel": "ما الذي يُعرض",
     "mode": {
@@ -1325,7 +1326,8 @@
     "methodologyTitle": "من أين تأتي بياناتنا",
     "contactTitle": "التواصل والدعم",
     "studyHubDescription": "{place} — المجالات: {fields}. البرامج: {programmes}. البيانات من مصادر رسمية.",
-    "deadlinesMonthTitle": "مواعيد التقديم: {place}: {month}"
+    "deadlinesMonthTitle": "مواعيد التقديم: {place}: {month}",
+    "deadlinesMonthDescription": "مواعيد التقديم: {place}، {month}: {count} موعدًا في {institutions} مؤسسة، أولها في {first}. التواريخ من الصفحات الرسمية للبرامج."
   },
   "Blog": {
     "title": "المدونة",

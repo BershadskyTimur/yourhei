@@ -18,7 +18,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
   return (
     <SideAds>
       <div className="mx-auto max-w-4xl py-10">
-        <h1 className="text-3xl font-semibold tracking-tight text-text">{t('title')}</h1>
+        <h1 className="text-3xl font-semibold tracking-tight text-text">{t('heading')}</h1>
         <p className="mt-2 max-w-2xl text-muted">{t('intro')}</p>
         <div className="mt-6">
           <Suspense>

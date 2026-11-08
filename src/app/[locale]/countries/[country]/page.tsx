@@ -1,4 +1,5 @@
 import { JsonLd } from '@/components/JsonLd';
+import { dateBeforeStop } from '@/lib/date-text';
 import { breadcrumbList } from '@/lib/seo/structured';
 import { seoMetadata, trimDescription } from '@/lib/seo/metadata';
 import type { Metadata } from 'next';
@@ -143,7 +144,7 @@ export default async function CountryPage({ params }: { params: Params }) {
         </section>
       )}
 
-      <p className="text-sm text-muted">{t('checked', { date })}</p>
+      <p className="text-sm text-muted">{t('checked', { date: dateBeforeStop(date) })}</p>
       <p className="flex flex-wrap gap-x-6 gap-y-2 text-base">
         {combosOfCountry(guide.country).length > 0 && (
           <Link href={`/study/${guide.country.toLowerCase()}`} className="font-semibold text-accent-text underline underline-offset-4">{tStudy('hubTitle', { country: name, place: placeIn(locale, guide.country, name) })}</Link>
