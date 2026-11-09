@@ -21,7 +21,8 @@ import { fitTitle, seoMetadata, trimDescription } from '@/lib/seo/metadata';
 import { hasPrices, institutionFacts, levelRows } from '@/lib/seo/institution-faq';
 import { countryLabel, placeIn, seoCity } from '@/lib/seo/place';
 import { getListCountries } from '@/lib/institutions/country-list';
-import { formatTuitionRange, tuitionRange } from '@/lib/seo/tuition-range';
+import { formatTuitionRange, tuitionYear } from '@/lib/seo/tuition-range';
+import { composeDescription, institutionTitleCandidates } from '@/lib/seo/institution-meta';
 import { breadcrumbList, faqPageLd, institutionLd, type FaqEntry } from '@/lib/seo/structured';
 import { comboOf, fieldSlug, studyCountries } from '@/lib/study/combos';
 import { iscedEntry, labelFor } from '@/lib/survey/references';
@@ -49,24 +50,37 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   const name = pickLocalized(institution.names, locale).text;
   const city = seoCity(pickLocalized(institution.city, locale).text);
   const countryName = new Intl.DisplayNames([locale], { type: 'region' }).of(institution.country) ?? institution.country;
-  const levels = LEVEL_ORDER.filter((l) => institution.programs.some((p) => p.level === l)).map((l) => tLevel(l as 'bachelor'));
-  // people search "<university> tuition": when the prices are known the description says them (cheapest to dearest per year)
-  const range = tuitionRange(institution.programs);
-  const descriptionOf = () => {
-    const args = { name, place: [city, countryLabel(locale, institution.country, countryName ?? institution.country)].filter(Boolean).join(', '), count: institution.programs.length, levels: levels.join(', ') };
-    if (!range) return t('institutionDescription', args);
-    return t('institutionDescriptionPrice', { ...args, range: formatTuitionRange(locale, range) });
-  };
+  const levelNames = LEVEL_ORDER.filter((l) => institution.programs.some((p) => p.level === l)).map((l) => tLevel(l as 'bachelor'));
+  // ru and en write the levels in the middle of a sentence ("уровни: бакалавриат"); other languages keep their own case (German
+  // nouns), and so do short forms ("PhD")
+  const lower = (l: string) => (/^\p{Lu}[\p{Ll}'’-]*(?=\s|$)/u.test(l) ? l[0].toLocaleLowerCase(locale) + l.slice(1) : l);
+  const levels = (locale === 'ru' || locale === 'en' ? levelNames.map(lower) : levelNames).join(', ');
+  const countryText = countryLabel(locale, institution.country, countryName ?? institution.country);
+  const place = [city, countryText].filter(Boolean).join(', ');
+  // The facts the page itself shows (price for students from abroad with the year it is for, next deadline, languages):
+  // the title promises only what is known (SEO audit of 9 Nov 2026), the description says the figures.
+  const info = institutionFacts(institution.programs, LEVEL_ORDER, new Date().toISOString().slice(0, 10));
+  const year = info.tuition ? tuitionYear(institution.programs) : null;
+  const count = institution.programs.length;
+  const allFree = count > 0 && info.freeCount === count;
+  const langNames = new Intl.DisplayNames([locale], { type: 'language' });
+  const first = info.tuition
+    ? t('institutionDescriptionFee', { name, place, range: formatTuitionRange(locale, info.tuition), year: year ?? '' }).replace(' ()', '').replace('（）', '')
+    : t(allFree ? 'institutionDescriptionFree' : 'institutionDescriptionNoFee', { name, place, count, levels });
+  const description = composeDescription([
+    first,
+    // a date that ends with a dot ("21 января 2027 г.") does not get a second one
+    info.deadlines[0] && t('institutionDescriptionDeadline', { date: new Intl.DateTimeFormat(locale, { dateStyle: 'long', timeZone: 'UTC' }).format(new Date(`${info.deadlines[0]}T00:00:00Z`)) }).replace(/\.\.$/, '.'),
+    info.tuition && t('institutionDescriptionProgrammes', { count, levels }),
+    info.languages.length > 0 && t('institutionDescriptionLanguages', { languages: info.languages.slice(0, 3).map((l) => langNames.of(l) ?? l).join(', ') }),
+    institution.website && t('institutionDescriptionSite'),
+  ]);
   return seoMetadata({
     locale,
     path: `/institutions/${country}/${slug}`,
-    // people search "<institution> tuition / стоимость": a long name drops the country, then "and programmes", but keeps the price words
-    title: fitTitle([
-      t('institutionTitle', { name, country: countryLabel(locale, institution.country, countryName ?? institution.country) }),
-      t('institutionTitleNoCountry', { name }),
-      t('institutionTitleShort', { name }),
-    ]),
-    description: trimDescription(descriptionOf()),
+    // people search "<institution> стоимость / fees": the title names the year of the prices, and without prices does not promise them
+    title: fitTitle(institutionTitleCandidates((key, values) => t(key as 'institutionTitleFee', values), { name, original: institution.names.original, place: city || countryText, fee: info.tuition !== null, year })),
+    description: trimDescription(description),
     // A page without programmes is a thin page: keep it out of the search results (visitors can still open it).
     noindex: institution.programs.length === 0,
   });

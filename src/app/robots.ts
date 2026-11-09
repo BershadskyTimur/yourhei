@@ -5,7 +5,8 @@ import { siteUrl } from '@/lib/site-url';
 
 export const revalidate = 86400;
 
-// Pages that are for people, not for search engines.
+// Pages that are for people, not for search engines. They also say noindex themselves (src/lib/seo/private-page.ts); they stay
+// closed here so that crawlers do not spend database reads on them. Sign-in and sign-up are not listed: crawlers must see their noindex.
 const PRIVATE = ['/api/', '/auth/', '/*/admin', '/*/profile', '/*/survey', '/*/matches', '/*/favorites', '/*/compare', '/*/shared', '/*/cabinet', '/*?_rsc='];
 
 // Crawlers that copy content for AI training or sell SEO data. They bring no visitors, and their visits to thousands of

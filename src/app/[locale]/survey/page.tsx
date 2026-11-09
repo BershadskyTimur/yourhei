@@ -1,6 +1,12 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { SideAds } from '@/components/SideAds';
 import { SurveyApp } from '@/components/survey/SurveyApp';
+import { privatePageMetadata } from '@/lib/seo/private-page';
+
+// For the visitor, not for search engines: own title, noindex (see src/lib/seo/private-page.ts).
+export function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  return privatePageMetadata(params, 'Survey', '/survey');
+}
 
 export default async function SurveyPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;

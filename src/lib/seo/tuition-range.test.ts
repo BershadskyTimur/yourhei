@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { formatTuitionRange, tuitionRange } from './tuition-range';
+import { formatTuitionRange, shortAcademicYear, tuitionRange, tuitionYear } from './tuition-range';
 
 describe('formatTuitionRange', () => {
   it('writes both ends, or one price when they are equal', () => {
@@ -30,5 +30,28 @@ describe('tuitionRange', () => {
   it('is null when nothing is known or everything is free', () => {
     expect(tuitionRange([])).toBeNull();
     expect(tuitionRange([{ tuition: [line(0)], durationYears: 1 }, { tuition: [line(null)], durationYears: 1 }])).toBeNull();
+  });
+});
+
+describe('tuitionYear', () => {
+  const priced = (amount: number, academicYear: string | null, currency = 'USD') => ({ tuition: [line(amount, currency)], durationYears: 1, academicYear });
+  it('is the year most priced programmes give, written short', () => {
+    expect(tuitionYear([priced(1000, '2025/2026'), priced(2000, '2025/2026'), priced(3000, '2026/2027')])).toBe('2025/26');
+    expect(tuitionYear([priced(1000, '2026')])).toBe('2026');
+  });
+  it('looks only at the programmes whose price is counted', () => {
+    expect(tuitionYear([priced(100, '2024/2025', 'GEL'), priced(5000, '2026/2027'), priced(7000, '2026/2027')])).toBe('2026/27');
+  });
+  it('is null without a price or a year', () => {
+    expect(tuitionYear([])).toBeNull();
+    expect(tuitionYear([priced(1000, null)])).toBeNull();
+  });
+});
+
+describe('shortAcademicYear', () => {
+  it('shortens the second year', () => {
+    expect(shortAcademicYear('2025/2026')).toBe('2025/26');
+    expect(shortAcademicYear('2026-2027')).toBe('2026/27');
+    expect(shortAcademicYear('2026')).toBe('2026');
   });
 });

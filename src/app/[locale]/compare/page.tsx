@@ -2,6 +2,12 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { Suspense } from 'react';
 import { SideAds } from '@/components/SideAds';
 import { CompareApp } from '@/components/CompareApp';
+import { privatePageMetadata } from '@/lib/seo/private-page';
+
+// For the visitor, not for search engines: own title, noindex (see src/lib/seo/private-page.ts).
+export function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  return privatePageMetadata(params, 'Compare', '/compare');
+}
 
 export default async function Page({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
