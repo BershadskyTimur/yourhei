@@ -216,7 +216,16 @@
     "priceTitle": "按层次的费用",
     "priceLevel": "层次",
     "pricePrograms": "项目数",
-    "priceYear": "每年费用"
+    "priceYear": "每年费用",
+    "answerTitle": "概览",
+    "answerTuition": "国际学生每年学费",
+    "answerUnknown": "待确认",
+    "answerDeadline": "最近的申请截止日期",
+    "answerDeadlineMonth": "本月所有截止日期",
+    "answerLanguages": "授课语言",
+    "moreDeadlines": "申请截止日期",
+    "moreArticles": "关于该国的文章",
+    "similarTitle": "{place}的类似院校"
   },
   "Pages": {
     "about": {
@@ -1363,7 +1372,9 @@
     "machineTranslated": "本文是英文原文的机器翻译，尚未经人工审阅。请核对文中链接的官方页面。",
     "countriesTitle": "关于该国家",
     "countryGuideLink": "{country}：签证、工作与生活成本",
-    "countryStudyLink": "{country}：项目与高校"
+    "countryStudyLink": "{country}：项目与高校",
+    "deadlinesTitle": "即将到来的申请截止日期",
+    "institutionsTitle": "YourHEI 上{place}的院校"
   },
   "Deadlines": {
     "title": "申请截止日期",

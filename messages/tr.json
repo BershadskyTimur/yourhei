@@ -216,7 +216,16 @@
     "priceTitle": "Düzeye göre ücret",
     "priceLevel": "Düzey",
     "pricePrograms": "Program",
-    "priceYear": "Yıllık ücret"
+    "priceYear": "Yıllık ücret",
+    "answerTitle": "Kısaca",
+    "answerTuition": "Uluslararası öğrenciler için yıllık ücret",
+    "answerUnknown": "Henüz doğrulanmadı",
+    "answerDeadline": "En yakın başvuru tarihi",
+    "answerDeadlineMonth": "Bu ayın tüm tarihleri",
+    "answerLanguages": "Eğitim dilleri",
+    "moreDeadlines": "Başvuru tarihleri",
+    "moreArticles": "Bu ülke hakkında yazılar",
+    "similarTitle": "Benzer kurumlar: {place}"
   },
   "Pages": {
     "about": {
@@ -1363,7 +1372,9 @@
     "machineTranslated": "Bu yazı İngilizce özgün metnin makine çevirisidir ve henüz bir insan tarafından okunmamıştır. Metinde bağlantısı verilen resmî sayfaları kontrol edin.",
     "countriesTitle": "Bu ülke hakkında",
     "countryGuideLink": "{country}: vize, çalışma ve yaşam maliyeti",
-    "countryStudyLink": "{country}: programlar ve üniversiteler"
+    "countryStudyLink": "{country}: programlar ve üniversiteler",
+    "deadlinesTitle": "Yaklaşan başvuru tarihleri",
+    "institutionsTitle": "YourHEI'de kurumlar: {place}"
   },
   "Deadlines": {
     "title": "Başvuru son tarihleri",

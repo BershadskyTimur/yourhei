@@ -216,7 +216,16 @@
     "priceTitle": "Koszty według poziomu",
     "priceLevel": "Poziom",
     "pricePrograms": "Programy",
-    "priceYear": "Cena za rok"
+    "priceYear": "Cena za rok",
+    "answerTitle": "W skrócie",
+    "answerTuition": "Roczne czesne dla studentów zagranicznych",
+    "answerUnknown": "Do potwierdzenia",
+    "answerDeadline": "Najbliższy termin składania wniosków",
+    "answerDeadlineMonth": "Wszystkie terminy w tym miesiącu",
+    "answerLanguages": "Języki wykładowe",
+    "moreDeadlines": "Terminy składania wniosków",
+    "moreArticles": "Artykuły o tym kraju",
+    "similarTitle": "Podobne uczelnie: {place}"
   },
   "Pages": {
     "about": {
@@ -1363,7 +1372,9 @@
     "machineTranslated": "Ten artykuł to tłumaczenie maszynowe angielskiego oryginału i nie przeczytała go jeszcze żadna osoba. Sprawdź oficjalne strony podane w tekście.",
     "countriesTitle": "O tym kraju",
     "countryGuideLink": "{country}: wiza, praca i koszty życia",
-    "countryStudyLink": "{country}: programy i uczelnie"
+    "countryStudyLink": "{country}: programy i uczelnie",
+    "deadlinesTitle": "Najbliższe terminy składania wniosków",
+    "institutionsTitle": "Uczelnie w YourHEI: {place}"
   },
   "Deadlines": {
     "title": "Terminy składania dokumentów",

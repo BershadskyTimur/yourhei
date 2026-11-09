@@ -8,6 +8,8 @@ import { Link } from '@/i18n/navigation';
 import { routing } from '@/i18n/routing';
 import { articleLang, articleLocales, bodyOf, getArticle, publishedArticles, readingMinutes, relatedArticles, sectionsOf } from '@/lib/blog/posts';
 import { countriesOfArticle } from '@/lib/countries-guide/guides';
+import { ARTICLE_INSTITUTIONS } from '@/lib/blog/article-institutions';
+import { nextPerInstitution } from '@/lib/deadlines/deadlines';
 import { countryLabel, placeIn } from '@/lib/seo/place';
 import { seoMetadata, trimDescription } from '@/lib/seo/metadata';
 import { studyCountries } from '@/lib/study/combos';
@@ -53,6 +55,13 @@ export default async function ArticlePage({ params }: { params: Params }) {
   // article is rebuilt every hour in every language.
   const tList = await getTranslations('InstitutionsList');
   const countries = countriesOfArticle(slug).map((cc) => ({ cc, name: countryLabel(locale, cc, regionNames.of(cc) ?? cc), study: withStudyPage.includes(cc) }));
+  // the nearest deadline of a few institutions of the article's countries (the calendar file, not the database): from an article to
+  // the institution pages and the country calendar; for an article whose country has no calendar, its own list of institutions
+  const tDeadlines = await getTranslations('Deadlines');
+  const soon = nextPerInstitution(countriesOfArticle(slug), 6);
+  const soonCountries = [...new Set(soon.map((r) => r.c))];
+  const own = ARTICLE_INSTITUTIONS[slug] ?? null;
+  const ownPlace = own ? placeIn(locale, own.country, countryLabel(locale, own.country, regionNames.of(own.country) ?? own.country)) : '';
   const date = new Intl.DateTimeFormat(locale, { dateStyle: 'long', timeZone: 'UTC' });
   const day = (iso: string) => date.format(new Date(`${iso}T00:00:00Z`));
 
@@ -108,6 +117,40 @@ export default async function ArticlePage({ params }: { params: Params }) {
                 <Link href={`/countries/${c.cc.toLowerCase()}`} className="font-semibold text-accent-text underline underline-offset-4">{t('countryGuideLink', { country: c.name })}</Link>
                 {c.study && <Link href={`/study/${c.cc.toLowerCase()}`} className="font-semibold text-accent-text underline underline-offset-4">{t('countryStudyLink', { country: c.name })}</Link>}
                 {c.study && <Link href={`/institutions/${c.cc.toLowerCase()}`} className="font-semibold text-accent-text underline underline-offset-4">{tList('allInCountry', { place: placeIn(locale, c.cc, c.name) })}</Link>}
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      {soon.length > 0 && (
+        <section className="mt-12" aria-labelledby="deadlines-title">
+          <h2 id="deadlines-title" className="text-xl font-semibold text-text">{t('deadlinesTitle')}</h2>
+          <ul className="mt-3 space-y-2">
+            {soon.map((r) => (
+              <li key={`${r.c}/${r.s}`}>
+                <Link href={`/institutions/${r.c.toLowerCase()}/${r.s}`} className="font-semibold text-accent-text underline underline-offset-4">{r.n}</Link>
+                <span className="text-muted"> — {day(r.d)}</span>
+              </li>
+            ))}
+          </ul>
+          <ul className="mt-3 space-y-1">
+            {soonCountries.map((cc) => (
+              <li key={cc}>
+                <Link href={`/deadlines/${cc.toLowerCase()}`} className="font-semibold text-accent-text underline underline-offset-4">{tDeadlines('countryTitle', { country: countryLabel(locale, cc, regionNames.of(cc) ?? cc) })}</Link>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      {own && (
+        <section className="mt-12" aria-labelledby="institutions-title">
+          <h2 id="institutions-title" className="text-xl font-semibold text-text">{t('institutionsTitle', { place: ownPlace })}</h2>
+          <ul className="mt-3 space-y-2">
+            {own.items.map((i) => (
+              <li key={i.slug}>
+                <Link href={`/institutions/${own.country.toLowerCase()}/${i.slug}`} className="font-semibold text-accent-text underline underline-offset-4">{(locale === 'ru' && i.names.ru) || i.names.en}</Link>
               </li>
             ))}
           </ul>

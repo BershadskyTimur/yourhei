@@ -216,7 +216,16 @@
     "priceTitle": "Daraja bo‘yicha narx",
     "priceLevel": "Daraja",
     "pricePrograms": "Dasturlar",
-    "priceYear": "Yillik narx"
+    "priceYear": "Yillik narx",
+    "answerTitle": "Qisqacha",
+    "answerTuition": "Xorijiy talabalar uchun yillik to'lov",
+    "answerUnknown": "Aniqlanmoqda",
+    "answerDeadline": "Eng yaqin ariza muddati",
+    "answerDeadlineMonth": "Shu oyning barcha muddatlari",
+    "answerLanguages": "O'qitish tillari",
+    "moreDeadlines": "Ariza topshirish muddatlari",
+    "moreArticles": "Mamlakat haqida maqolalar",
+    "similarTitle": "O'xshash ta'lim muassasalari: {place}"
   },
   "Pages": {
     "about": {
@@ -1363,7 +1372,9 @@
     "machineTranslated": "Bu maqola inglizcha asl nusxaning mashina tarjimasi bo‘lib, uni hali inson o‘qib chiqmagan. Matndagi rasmiy sahifalarni tekshiring.",
     "countriesTitle": "Bu mamlakat haqida",
     "countryGuideLink": "{country}: viza, ish va yashash narxi",
-    "countryStudyLink": "{country}: dasturlar va universitetlar"
+    "countryStudyLink": "{country}: dasturlar va universitetlar",
+    "deadlinesTitle": "Yaqinlashayotgan ariza muddatlari",
+    "institutionsTitle": "YourHEI'dagi ta'lim muassasalari: {place}"
   },
   "Deadlines": {
     "title": "Hujjat topshirish muddatlari",

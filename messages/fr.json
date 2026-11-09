@@ -216,7 +216,16 @@
     "priceTitle": "Frais par niveau",
     "priceLevel": "Niveau",
     "pricePrograms": "Programmes",
-    "priceYear": "Prix par an"
+    "priceYear": "Prix par an",
+    "answerTitle": "En bref",
+    "answerTuition": "Frais de scolarité annuels pour étudiants internationaux",
+    "answerUnknown": "À confirmer",
+    "answerDeadline": "Prochaine date limite de candidature",
+    "answerDeadlineMonth": "Toutes les dates limites de ce mois",
+    "answerLanguages": "Langues d'enseignement",
+    "moreDeadlines": "Dates limites de candidature",
+    "moreArticles": "Articles sur ce pays",
+    "similarTitle": "Établissements similaires {place}"
   },
   "Pages": {
     "about": {
@@ -1363,7 +1372,9 @@
     "machineTranslated": "Cet article est une traduction automatique de l’original anglais et n’a pas encore été relu par une personne. Vérifiez les pages officielles indiquées dans le texte.",
     "countriesTitle": "À propos de ce pays",
     "countryGuideLink": "{country} : visa, travail et coût de la vie",
-    "countryStudyLink": "{country} : programmes et universités"
+    "countryStudyLink": "{country} : programmes et universités",
+    "deadlinesTitle": "Prochaines dates limites",
+    "institutionsTitle": "Établissements {place} sur YourHEI"
   },
   "Deadlines": {
     "title": "Dates limites de candidature",

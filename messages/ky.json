@@ -216,7 +216,16 @@
     "priceTitle": "Деңгээл боюнча баасы",
     "priceLevel": "Деңгээл",
     "pricePrograms": "Программа",
-    "priceYear": "Жылдык баа"
+    "priceYear": "Жылдык баа",
+    "answerTitle": "Кыскача",
+    "answerTuition": "Чет элдиктер үчүн жылдык акы",
+    "answerUnknown": "Такталууда",
+    "answerDeadline": "Арыз берүүнүн эң жакынкы мөөнөтү",
+    "answerDeadlineMonth": "Ушул айдын бардык мөөнөттөрү",
+    "answerLanguages": "Окутуу тилдери",
+    "moreDeadlines": "Документ тапшыруу мөөнөттөрү",
+    "moreArticles": "Өлкө жөнүндө макалалар",
+    "similarTitle": "Окшош окуу жайлары: {place}"
   },
   "Pages": {
     "about": {
@@ -1363,7 +1372,9 @@
     "machineTranslated": "Бул макала англисче түпнуска макаланын машиналык котормосу, аны али адам текшере элек. Тексттеги расмий барактарды текшериңиз.",
     "countriesTitle": "Бул өлкө жөнүндө",
     "countryGuideLink": "{country}: виза, жумуш жана жашоонун баасы",
-    "countryStudyLink": "{country}: программалар жана университеттер"
+    "countryStudyLink": "{country}: программалар жана университеттер",
+    "deadlinesTitle": "Жакынкы арыз мөөнөттөрү",
+    "institutionsTitle": "YourHEI'деги окуу жайлары: {place}"
   },
   "Deadlines": {
     "title": "Документ тапшыруу мөөнөттөрү",

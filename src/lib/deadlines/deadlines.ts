@@ -73,3 +73,18 @@ export function monthsOfCountry(country: string, rows: readonly DeadlineRow[] = 
 export function ofMonth(country: string, month: string, rows: readonly DeadlineRow[] = ROWS, today: Date = new Date()): DeadlineRow[] {
   return ofCountry(country, rows, today).filter((r) => r.d.startsWith(month));
 }
+
+/** The nearest upcoming deadline of each institution in the countries, soonest first, at most `count` institutions (for the article pages). */
+export function nextPerInstitution(countries: readonly string[], count: number, rows: readonly DeadlineRow[] = ROWS, today: Date = new Date()): DeadlineRow[] {
+  const wanted = new Set(countries.map((c) => c.toUpperCase()));
+  const seen = new Set<string>();
+  const out: DeadlineRow[] = [];
+  for (const r of upcoming(rows, today)) {
+    if (out.length >= count) break;
+    const key = `${r.c}/${r.s}`;
+    if (!wanted.has(r.c) || seen.has(key)) continue;
+    seen.add(key);
+    out.push(r);
+  }
+  return out;
+}

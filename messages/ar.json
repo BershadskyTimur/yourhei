@@ -216,7 +216,16 @@
     "priceTitle": "التكلفة حسب المستوى",
     "priceLevel": "المستوى",
     "pricePrograms": "البرامج",
-    "priceYear": "السعر في السنة"
+    "priceYear": "السعر في السنة",
+    "answerTitle": "باختصار",
+    "answerTuition": "الرسوم السنوية للطلاب الدوليين",
+    "answerUnknown": "قيد التأكيد",
+    "answerDeadline": "أقرب موعد نهائي للتقديم",
+    "answerDeadlineMonth": "جميع المواعيد في هذا الشهر",
+    "answerLanguages": "لغات التدريس",
+    "moreDeadlines": "مواعيد التقديم",
+    "moreArticles": "مقالات عن هذا البلد",
+    "similarTitle": "مؤسسات مشابهة: {place}"
   },
   "Pages": {
     "about": {
@@ -1363,7 +1372,9 @@
     "machineTranslated": "هذه المقالة ترجمة آلية للأصل الإنجليزي ولم يراجعها شخص بعد. راجع الصفحات الرسمية المرتبطة في النص.",
     "countriesTitle": "عن هذا البلد",
     "countryGuideLink": "{country}: التأشيرة والعمل وتكلفة المعيشة",
-    "countryStudyLink": "{country}: البرامج والجامعات"
+    "countryStudyLink": "{country}: البرامج والجامعات",
+    "deadlinesTitle": "مواعيد التقديم القادمة",
+    "institutionsTitle": "مؤسسات على YourHEI: {place}"
   },
   "Deadlines": {
     "title": "مواعيد التقديم",

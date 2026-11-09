@@ -216,7 +216,16 @@
     "priceTitle": "Kosten nach Stufe",
     "priceLevel": "Stufe",
     "pricePrograms": "Programme",
-    "priceYear": "Preis pro Jahr"
+    "priceYear": "Preis pro Jahr",
+    "answerTitle": "Auf einen Blick",
+    "answerTuition": "Jährliche Studiengebühren für internationale Studierende",
+    "answerUnknown": "Noch nicht bestätigt",
+    "answerDeadline": "Nächste Bewerbungsfrist",
+    "answerDeadlineMonth": "Alle Fristen in diesem Monat",
+    "answerLanguages": "Unterrichtssprachen",
+    "moreDeadlines": "Bewerbungsfristen",
+    "moreArticles": "Artikel über dieses Land",
+    "similarTitle": "Ähnliche Hochschulen in {place}"
   },
   "Pages": {
     "about": {
@@ -1363,7 +1372,9 @@
     "machineTranslated": "Dieser Artikel ist eine maschinelle Übersetzung des englischen Originals und wurde noch nicht von einem Menschen gelesen. Prüfen Sie die im Text verlinkten offiziellen Seiten.",
     "countriesTitle": "Zu diesem Land",
     "countryGuideLink": "{country}: Visum, Arbeit und Lebenshaltungskosten",
-    "countryStudyLink": "{country}: Programme und Hochschulen"
+    "countryStudyLink": "{country}: Programme und Hochschulen",
+    "deadlinesTitle": "Nächste Bewerbungsfristen",
+    "institutionsTitle": "Hochschulen in {place} auf YourHEI"
   },
   "Deadlines": {
     "title": "Bewerbungsfristen",

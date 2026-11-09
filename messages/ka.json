@@ -216,7 +216,16 @@
     "priceTitle": "ღირებულება დონეების მიხედვით",
     "priceLevel": "დონე",
     "pricePrograms": "პროგრამები",
-    "priceYear": "ფასი წელიწადში"
+    "priceYear": "ფასი წელიწადში",
+    "answerTitle": "მოკლედ",
+    "answerTuition": "წლიური საფასური უცხოელი სტუდენტებისთვის",
+    "answerUnknown": "ზუსტდება",
+    "answerDeadline": "განაცხადის უახლოესი ვადა",
+    "answerDeadlineMonth": "ამ თვის ყველა ვადა",
+    "answerLanguages": "სწავლების ენები",
+    "moreDeadlines": "განაცხადის ვადები",
+    "moreArticles": "სტატიები ქვეყნის შესახებ",
+    "similarTitle": "მსგავსი დაწესებულებები: {place}"
   },
   "Pages": {
     "about": {
@@ -1363,7 +1372,9 @@
     "machineTranslated": "ეს სტატია ინგლისური ორიგინალის მანქანური თარგმანია და ადამიანს ჯერ არ გადაუთვალიერებია. შეამოწმეთ ტექსტში მითითებული ოფიციალური გვერდები.",
     "countriesTitle": "ამ ქვეყნის შესახებ",
     "countryGuideLink": "{country}: ვიზა, მუშაობა და ცხოვრების ღირებულება",
-    "countryStudyLink": "{country}: პროგრამები და უნივერსიტეტები"
+    "countryStudyLink": "{country}: პროგრამები და უნივერსიტეტები",
+    "deadlinesTitle": "განაცხადის უახლოესი ვადები",
+    "institutionsTitle": "სასწავლებლები YourHEI-ზე: {place}"
   },
   "Deadlines": {
     "title": "განაცხადის ვადები",

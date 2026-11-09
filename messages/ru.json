@@ -216,7 +216,16 @@
     "priceTitle": "Стоимость по уровням",
     "priceLevel": "Уровень",
     "pricePrograms": "Программ",
-    "priceYear": "Цена в год"
+    "priceYear": "Цена в год",
+    "answerTitle": "Коротко",
+    "answerTuition": "Стоимость для иностранцев в год",
+    "answerUnknown": "Уточняется",
+    "answerDeadline": "Ближайший срок подачи",
+    "answerDeadlineMonth": "Все сроки этого месяца",
+    "answerLanguages": "Языки обучения",
+    "moreDeadlines": "Сроки подачи документов",
+    "moreArticles": "Статьи о стране",
+    "similarTitle": "Похожие заведения {place}"
   },
   "Pages": {
     "about": {
@@ -1363,7 +1372,9 @@
     "machineTranslated": "Эта статья — машинный перевод английского оригинала, её ещё не проверял человек. Сверяйтесь с официальными страницами, на которые ведут ссылки в тексте.",
     "countriesTitle": "Об этой стране",
     "countryGuideLink": "{country}: виза, работа и стоимость жизни",
-    "countryStudyLink": "{country}: программы и вузы"
+    "countryStudyLink": "{country}: программы и вузы",
+    "deadlinesTitle": "Ближайшие сроки подачи",
+    "institutionsTitle": "Вузы {place} на YourHEI"
   },
   "Deadlines": {
     "title": "Сроки подачи документов",

@@ -216,7 +216,16 @@
     "priceTitle": "Արժեքը ըստ մակարդակի",
     "priceLevel": "Մակարդակ",
     "pricePrograms": "Ծրագրեր",
-    "priceYear": "Գինը տարեկան"
+    "priceYear": "Գինը տարեկան",
+    "answerTitle": "Համառոտ",
+    "answerTuition": "Տարեկան վարձ օտարերկրացիների համար",
+    "answerUnknown": "Ճշտվում է",
+    "answerDeadline": "Դիմելու մոտակա ժամկետը",
+    "answerDeadlineMonth": "Այս ամսվա բոլոր ժամկետները",
+    "answerLanguages": "Ուսուցման լեզուները",
+    "moreDeadlines": "Դիմելու ժամկետները",
+    "moreArticles": "Հոդվածներ երկրի մասին",
+    "similarTitle": "Նմանատիպ հաստատություններ՝ {place}"
   },
   "Pages": {
     "about": {
@@ -1363,7 +1372,9 @@
     "machineTranslated": "Այս հոդվածը անգլերեն բնագրի մեքենայական թարգմանությունն է և դեռ մարդու կողմից չի ստուգվել։ Ստուգեք տեքստում նշված պաշտոնական էջերը։",
     "countriesTitle": "Այս երկրի մասին",
     "countryGuideLink": "{country}. վիզա, աշխատանք և ապրելու արժեք",
-    "countryStudyLink": "{country}. ծրագրեր և համալսարաններ"
+    "countryStudyLink": "{country}. ծրագրեր և համալսարաններ",
+    "deadlinesTitle": "Դիմելու մոտակա ժամկետները",
+    "institutionsTitle": "Հաստատություններ YourHEI-ում՝ {place}"
   },
   "Deadlines": {
     "title": "Դիմումների վերջնաժամկետներ",

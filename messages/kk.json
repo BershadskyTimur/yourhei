@@ -216,7 +216,16 @@
     "priceTitle": "Деңгей бойынша құны",
     "priceLevel": "Деңгей",
     "pricePrograms": "Бағдарлама",
-    "priceYear": "Жылдық баға"
+    "priceYear": "Жылдық баға",
+    "answerTitle": "Қысқаша",
+    "answerTuition": "Шетелдіктерге арналған жылдық ақы",
+    "answerUnknown": "Нақтыланып жатыр",
+    "answerDeadline": "Өтінім берудің ең жақын мерзімі",
+    "answerDeadlineMonth": "Осы айдың барлық мерзімдері",
+    "answerLanguages": "Оқыту тілдері",
+    "moreDeadlines": "Құжат тапсыру мерзімдері",
+    "moreArticles": "Ел туралы мақалалар",
+    "similarTitle": "Ұқсас оқу орындары: {place}"
   },
   "Pages": {
     "about": {
@@ -1363,7 +1372,9 @@
     "machineTranslated": "Бұл мақала ағылшынша түпнұсқаның машиналық аудармасы, оны әлі адам тексерген жоқ. Мәтіндегі ресми беттерді тексеріңіз.",
     "countriesTitle": "Осы ел туралы",
     "countryGuideLink": "{country}: виза, жұмыс және тұрмыс құны",
-    "countryStudyLink": "{country}: бағдарламалар мен университеттер"
+    "countryStudyLink": "{country}: бағдарламалар мен университеттер",
+    "deadlinesTitle": "Жақындағы өтінім мерзімдері",
+    "institutionsTitle": "YourHEI-дегі оқу орындары: {place}"
   },
   "Deadlines": {
     "title": "Құжат тапсыру мерзімдері",

@@ -216,7 +216,16 @@
     "priceTitle": "Tuition by level",
     "priceLevel": "Level",
     "pricePrograms": "Programmes",
-    "priceYear": "Price per year"
+    "priceYear": "Price per year",
+    "answerTitle": "At a glance",
+    "answerTuition": "Yearly tuition for international students",
+    "answerUnknown": "Not confirmed yet",
+    "answerDeadline": "Next application deadline",
+    "answerDeadlineMonth": "All deadlines this month",
+    "answerLanguages": "Languages of teaching",
+    "moreDeadlines": "Application deadlines",
+    "moreArticles": "Articles about this country",
+    "similarTitle": "Similar institutions in {place}"
   },
   "Pages": {
     "about": {
@@ -1363,7 +1372,9 @@
     "machineTranslated": "This article is a machine translation of the English original and has not been read by a person yet. Check the official pages linked in the text.",
     "countriesTitle": "About this country",
     "countryGuideLink": "{country}: visa, work and cost of living",
-    "countryStudyLink": "{country}: programmes and universities"
+    "countryStudyLink": "{country}: programmes and universities",
+    "deadlinesTitle": "Upcoming application deadlines",
+    "institutionsTitle": "Institutions in {place} on YourHEI"
   },
   "Deadlines": {
     "title": "Application deadlines",

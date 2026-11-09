@@ -13,8 +13,12 @@ import { SideAds } from '@/components/SideAds';
 import { TypeDot } from '@/components/TypeDot';
 import { Link } from '@/i18n/navigation';
 import { routing } from '@/i18n/routing';
-import { guideOf } from '@/lib/countries-guide/guides';
+import { articleSlugsOf, guideOf } from '@/lib/countries-guide/guides';
 import { getInstitutionDetail } from '@/lib/institutions/detail';
+import { getSimilarInstitutions } from '@/lib/institutions/similar';
+import { sourceOf } from '@/lib/institutions/sources';
+import { countriesWithDeadlines, monthsOfCountry } from '@/lib/deadlines/deadlines';
+import { bodyOf, getArticle } from '@/lib/blog/posts';
 import { pickLocalized, pickText } from '@/lib/institutions/localized';
 import { JsonLd } from '@/components/JsonLd';
 import { fitTitle, seoMetadata, trimDescription } from '@/lib/seo/metadata';
@@ -161,6 +165,29 @@ export default async function InstitutionPage({ params }: { params: Params }) {
   // the list of all institutions of the country (only countries with enough institutions have one)
   const hasList = (await getListCountries()).some((c) => c.country === institution.country.toUpperCase());
   const tList = await getTranslations('InstitutionsList');
+  const tDeadlines = await getTranslations('Deadlines');
+  const cc = institution.country.toLowerCase();
+  const place = placeIn(locale, institution.country, countryName ?? institution.country);
+
+  // "At a glance": the price for students from abroad with the year it is for and its source, the next deadline, the programmes and
+  // languages. Everything comes from the programmes already read; a fact that is not known says so instead of a number.
+  const year = info.tuition ? tuitionYear(institution.programs) : null;
+  const allFree = info.programCount > 0 && info.freeCount === info.programCount;
+  const sourceCounts = new Map<string, number>();
+  for (const p of institution.programs) if (p.source && p.tuition.length > 0) sourceCounts.set(p.source, (sourceCounts.get(p.source) ?? 0) + 1);
+  const priceSource = sourceOf([...sourceCounts.entries()].sort((a, b) => b[1] - a[1])[0]?.[0] ?? null);
+  const nextDeadline = info.deadlines[0] ?? null;
+  // the month page of the deadline calendar exists only for a month that has dates in the calendar
+  const deadlineMonth = nextDeadline && monthsOfCountry(institution.country).some((m) => m.month === nextDeadline.slice(0, 7)) ? nextDeadline.slice(0, 7) : null;
+  const hasDeadlines = countriesWithDeadlines().some((c) => c.country === institution.country.toUpperCase());
+
+  // links on: the country's deadline calendar, the articles about the country, institutions of the same type nearby in the list
+  const articles = articleSlugsOf(institution.country)
+    .map((s) => getArticle(s))
+    .filter((a) => a !== null)
+    .slice(0, 4)
+    .map((a) => ({ slug: a.slug, title: bodyOf(a, locale).title }));
+  const similar = await getSimilarInstitutions(institution.country, institution.type, institution.slug, locale);
 
   return (
     <SideAds>
@@ -169,7 +196,11 @@ export default async function InstitutionPage({ params }: { params: Params }) {
       <JsonLd
         data={breadcrumbList(locale, [
           { name: 'YourHEI', path: '' },
-          ...(studyCountries().includes(institution.country) ? [{ name: countryName ?? institution.country, path: `/study/${institution.country.toLowerCase()}` }] : []),
+          ...(hasList
+            ? [{ name: tList('allInCountry', { place: placeIn(locale, institution.country, countryName ?? institution.country) }), path: `/institutions/${institution.country.toLowerCase()}` }]
+            : studyCountries().includes(institution.country)
+              ? [{ name: countryName ?? institution.country, path: `/study/${institution.country.toLowerCase()}` }]
+              : []),
           { name, path: `/institutions/${country}/${slug}` },
         ])}
       />
@@ -198,6 +229,55 @@ export default async function InstitutionPage({ params }: { params: Params }) {
           )}
           <FavoriteButton institutionId={institution.id} />
         </div>
+
+        {info.programCount > 0 && (
+          <section className="mt-8" aria-labelledby="answer-title">
+            <h2 id="answer-title" className="text-xl font-semibold text-text">{t('answerTitle')}</h2>
+            <dl className="mt-3 grid gap-3 sm:grid-cols-2">
+              <div className="rounded-lg border border-line bg-surface px-4 py-3">
+                <dt className="text-sm text-muted">{t('answerTuition')}</dt>
+                <dd className="font-medium">{info.tuition ? formatTuitionRange(locale, info.tuition) : allFree ? t('free') : t('answerUnknown')}</dd>
+                {info.tuition && year && <dd className="text-sm text-muted">{t('dataYear', { year })}</dd>}
+                {info.tuition && priceSource && (
+                  <dd className="text-sm text-muted">
+                    {priceSource.url ? (
+                      <a href={priceSource.url} target="_blank" rel="noopener noreferrer" className="underline underline-offset-4">{t('sourceLine', { source: priceSource.name })}</a>
+                    ) : (
+                      t('sourceLine', { source: priceSource.name })
+                    )}
+                  </dd>
+                )}
+              </div>
+              <div className="rounded-lg border border-line bg-surface px-4 py-3">
+                <dt className="text-sm text-muted">{t('answerDeadline')}</dt>
+                <dd className="font-medium">{nextDeadline ? dateText.format(new Date(`${nextDeadline}T00:00:00Z`)) : t('answerUnknown')}</dd>
+                {deadlineMonth ? (
+                  <dd className="text-sm">
+                    <Link href={`/deadlines/${cc}/${deadlineMonth}`} className="text-accent-text underline underline-offset-4">{t('answerDeadlineMonth')}</Link>
+                  </dd>
+                ) : (
+                  hasDeadlines && (
+                    <dd className="text-sm">
+                      <Link href={`/deadlines/${cc}`} className="text-accent-text underline underline-offset-4">{tDeadlines('countryTitle', { country: countryName ?? institution.country })}</Link>
+                    </dd>
+                  )
+                )}
+              </div>
+              <div className="rounded-lg border border-line bg-surface px-4 py-3">
+                <dt className="text-sm text-muted">{t('programsTitle')}</dt>
+                <dd className="font-medium">{t('programsCount', { count: info.programCount })}</dd>
+                <dd className="text-sm text-muted">{info.levels.map(levelLabel).join(', ')}</dd>
+              </div>
+              {info.languages.length > 0 && (
+                <div className="rounded-lg border border-line bg-surface px-4 py-3">
+                  <dt className="text-sm text-muted">{t('answerLanguages')}</dt>
+                  <dd className="font-medium">{info.languages.map((l) => langNames.of(l) ?? l).join(', ')}</dd>
+                </div>
+              )}
+            </dl>
+            {checked && <p className="mt-3 text-sm text-muted">{t('checked', { date: dateBeforeStop(checked) })}</p>}
+          </section>
+        )}
 
         {description.text && <p className="mt-6 text-lg leading-relaxed">{description.text}</p>}
 
@@ -282,7 +362,7 @@ export default async function InstitutionPage({ params }: { params: Params }) {
           </section>
         )}
 
-        {(fieldLinks.length > 0 || hasGuide || hasList) && (
+        {(fieldLinks.length > 0 || hasGuide || hasList || hasDeadlines || articles.length > 0) && (
           <section className="mt-10" aria-labelledby="more-title">
             <h2 id="more-title" className="text-xl font-semibold text-text">{t('moreTitle')}</h2>
             {fieldLinks.length > 0 && (
@@ -294,6 +374,26 @@ export default async function InstitutionPage({ params }: { params: Params }) {
                       <Link href={`/study/${institution.country.toLowerCase()}/${fieldSlug(code)}`} className="text-accent-text underline underline-offset-4">
                         {labelFor(iscedEntry(code)!, locale)}
                       </Link>
+                    </li>
+                  ))}
+                </ul>
+              </>
+            )}
+            {hasDeadlines && (
+              <>
+                <h3 className="mt-5 text-sm font-semibold uppercase tracking-wide text-muted">{t('moreDeadlines')}</h3>
+                <p className="mt-2">
+                  <Link href={`/deadlines/${cc}`} className="text-accent-text underline underline-offset-4">{tDeadlines('countryTitle', { country: countryName ?? institution.country })}</Link>
+                </p>
+              </>
+            )}
+            {articles.length > 0 && (
+              <>
+                <h3 className="mt-5 text-sm font-semibold uppercase tracking-wide text-muted">{t('moreArticles')}</h3>
+                <ul className="mt-2 space-y-1">
+                  {articles.map((a) => (
+                    <li key={a.slug}>
+                      <Link href={`/blog/${a.slug}`} className="text-accent-text underline underline-offset-4">{a.title}</Link>
                     </li>
                   ))}
                 </ul>
@@ -311,6 +411,20 @@ export default async function InstitutionPage({ params }: { params: Params }) {
                 <Link href={`/countries/${institution.country.toLowerCase()}`} className="font-medium text-accent-text underline underline-offset-4">{t('moreGuide')}</Link>
               </p>
             )}
+          </section>
+        )}
+
+        {similar.length > 0 && (
+          <section className="mt-10" aria-labelledby="similar-title">
+            <h2 id="similar-title" className="text-xl font-semibold text-text">{t('similarTitle', { place })}</h2>
+            <ul className="mt-3 grid gap-x-6 gap-y-2 sm:grid-cols-2">
+              {similar.map((i) => (
+                <li key={i.slug}>
+                  <Link href={`/institutions/${cc}/${i.slug}`} className="text-accent-text underline underline-offset-4">{i.name}</Link>
+                  {i.city && <span className="text-sm text-muted"> · {i.city}</span>}
+                </li>
+              ))}
+            </ul>
           </section>
         )}
 

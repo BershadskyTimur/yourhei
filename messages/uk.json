@@ -216,7 +216,16 @@
     "priceTitle": "Вартість за рівнями",
     "priceLevel": "Рівень",
     "pricePrograms": "Програм",
-    "priceYear": "Ціна на рік"
+    "priceYear": "Ціна на рік",
+    "answerTitle": "Коротко",
+    "answerTuition": "Вартість для іноземців на рік",
+    "answerUnknown": "Уточнюється",
+    "answerDeadline": "Найближчий термін подання",
+    "answerDeadlineMonth": "Усі терміни цього місяця",
+    "answerLanguages": "Мови навчання",
+    "moreDeadlines": "Терміни подання документів",
+    "moreArticles": "Статті про країну",
+    "similarTitle": "Схожі заклади: {place}"
   },
   "Pages": {
     "about": {
@@ -1363,7 +1372,9 @@
     "machineTranslated": "Ця стаття — машинний переклад англійського оригіналу, її ще не перевіряла людина. Звіряйтеся з офіційними сторінками, на які є посилання в тексті.",
     "countriesTitle": "Про цю країну",
     "countryGuideLink": "{country}: віза, робота та вартість життя",
-    "countryStudyLink": "{country}: програми та виші"
+    "countryStudyLink": "{country}: програми та виші",
+    "deadlinesTitle": "Найближчі терміни подання",
+    "institutionsTitle": "Виші на YourHEI: {place}"
   },
   "Deadlines": {
     "title": "Строки подання документів",

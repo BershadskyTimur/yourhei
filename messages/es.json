@@ -216,7 +216,16 @@
     "priceTitle": "Precio por nivel",
     "priceLevel": "Nivel",
     "pricePrograms": "Programas",
-    "priceYear": "Precio al año"
+    "priceYear": "Precio al año",
+    "answerTitle": "En resumen",
+    "answerTuition": "Matrícula anual para estudiantes internacionales",
+    "answerUnknown": "Por confirmar",
+    "answerDeadline": "Próximo plazo de solicitud",
+    "answerDeadlineMonth": "Todos los plazos de este mes",
+    "answerLanguages": "Idiomas de enseñanza",
+    "moreDeadlines": "Plazos de solicitud",
+    "moreArticles": "Artículos sobre este país",
+    "similarTitle": "Instituciones similares en {place}"
   },
   "Pages": {
     "about": {
@@ -1363,7 +1372,9 @@
     "machineTranslated": "Este artículo es una traducción automática del original en inglés y aún no lo ha revisado una persona. Comprueba las páginas oficiales enlazadas en el texto.",
     "countriesTitle": "Sobre este país",
     "countryGuideLink": "{country}: visado, trabajo y coste de vida",
-    "countryStudyLink": "{country}: programas y universidades"
+    "countryStudyLink": "{country}: programas y universidades",
+    "deadlinesTitle": "Próximos plazos de solicitud",
+    "institutionsTitle": "Instituciones en {place} en YourHEI"
   },
   "Deadlines": {
     "title": "Plazos de solicitud",

@@ -216,7 +216,16 @@
     "priceTitle": "Səviyyəyə görə qiymət",
     "priceLevel": "Səviyyə",
     "pricePrograms": "Proqram",
-    "priceYear": "İllik qiymət"
+    "priceYear": "İllik qiymət",
+    "answerTitle": "Qısaca",
+    "answerTuition": "Xarici tələbələr üçün illik haqq",
+    "answerUnknown": "Dəqiqləşdirilir",
+    "answerDeadline": "Ən yaxın müraciət müddəti",
+    "answerDeadlineMonth": "Bu ayın bütün müddətləri",
+    "answerLanguages": "Tədris dilləri",
+    "moreDeadlines": "Müraciət müddətləri",
+    "moreArticles": "Bu ölkə haqqında məqalələr",
+    "similarTitle": "Oxşar təhsil müəssisələri: {place}"
   },
   "Pages": {
     "about": {
@@ -1363,7 +1372,9 @@
     "machineTranslated": "Bu məqalə ingilis dilindəki orijinalın maşın tərcüməsidir və hələ insan tərəfindən oxunmayıb. Mətndəki rəsmi səhifələri yoxlayın.",
     "countriesTitle": "Bu ölkə haqqında",
     "countryGuideLink": "{country}: viza, iş və yaşayış xərcləri",
-    "countryStudyLink": "{country}: proqramlar və universitetlər"
+    "countryStudyLink": "{country}: proqramlar və universitetlər",
+    "deadlinesTitle": "Yaxınlaşan müraciət müddətləri",
+    "institutionsTitle": "YourHEI-də təhsil müəssisələri: {place}"
   },
   "Deadlines": {
     "title": "Müraciət müddətləri",

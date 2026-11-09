@@ -111,7 +111,9 @@ for (const p of inst) {
     : [...levels].every((l) => l === 'language_course' || l === 'foundation') ? (levels.has('foundation') ? 'foundation' : 'language_school')
     : 'vocational';
 
-  const nameEn = (p['Trading Name'] || p['Institution Name']).replace(/\s*\(.*?\)\s*$/, '').trim();
+  // the register writes "N/A" / "NA" when a provider has no trading name: then its legal name is the name (18 such in Nov 2026)
+  const trading = /^\s*n\/?a\s*$/i.test(p['Trading Name'] ?? '') ? '' : p['Trading Name'];
+  const nameEn = (trading || p['Institution Name']).replace(/\s*\(.*?\)\s*$/, '').trim();
   let matched = known.get(norm(nameEn)) ?? known.get(norm(p['Institution Name']));
   if (matched && claimed.has(matched)) matched = undefined; // two providers must not share one institution
   if (matched) claimed.add(matched);
