@@ -27,4 +27,15 @@ describe('study pages (country + field)', () => {
     expect(combosOfCountry(first.country).length).toBeGreaterThan(0);
     expect(studyCountries()).toContain(first.country);
   });
+  it('a price range is only given where at least half of the programmes are priced, and it is a plausible yearly price', () => {
+    const priced = COMBOS.filter((c) => c.fee);
+    expect(priced.length).toBeGreaterThan(20);
+    for (const c of priced) {
+      const fee = c.fee!;
+      expect(fee.priced * 2, `${c.country} ${c.code}`).toBeGreaterThanOrEqual(c.programmes);
+      expect(fee.min, `${c.country} ${c.code}`).toBeGreaterThanOrEqual(100);
+      expect(fee.max).toBeGreaterThanOrEqual(fee.min);
+      expect(fee.currency).toMatch(/^[A-Z]{3}$/);
+    }
+  });
 });

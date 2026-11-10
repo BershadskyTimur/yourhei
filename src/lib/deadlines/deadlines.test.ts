@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { ROWS, byMonth, closingSoon, countriesWithDeadlines, monthsOfCountry, nextPerInstitution, ofCountry, ofMonth, upcoming, type DeadlineRow } from './deadlines';
+import { ROWS, byMonth, closingSoon, countriesWithDeadlines, monthsOfCountry, nextPerInstitution, ofCountry, ofMonth, upcoming, yearsOf, type DeadlineRow } from './deadlines';
 
 const row = (c: string, d: string, s = 'x'): DeadlineRow => ({ c, s, n: s, d, i: null, a: 'all', l: ['master'], p: 1 });
 const rows = [row('DE', '2026-10-01'), row('DE', '2026-11-01', 'a'), row('NL', '2026-11-20', 'b'), row('DE', '2027-03-15', 'c'), row('DE', '2027-03-20', 'd')];
@@ -65,5 +65,13 @@ describe('nextPerInstitution', () => {
   });
   it('stops at the count and skips past dates', () => {
     expect(nextPerInstitution(['DE'], 1, list, new Date('2026-11-11T12:00:00Z')).map((r) => r.d)).toEqual(['2026-11-12']);
+  });
+});
+
+describe('yearsOf', () => {
+  it('gives one year or the first and the last', () => {
+    expect(yearsOf(['2026-11-10', '2026-12-01'])).toBe('2026');
+    expect(yearsOf(['2027-03-01', '2026-11-10', '2027-09-01'])).toBe('2026–2027');
+    expect(yearsOf([])).toBe('');
   });
 });

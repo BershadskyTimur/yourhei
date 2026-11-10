@@ -1293,6 +1293,8 @@
     "hubIntro": "Yo‘nalishlar: {fields}. Dasturlar: {programmes}. Ma’lumotlar rasmiy manbalardan olingan.",
     "pageTitle": "{place} mamlakatida {field} o‘qish",
     "pageIntro": "Dasturlar: {programmes}. Muassasalar: {institutions}. Ma’lumotlar rasmiy manbalardan olingan; ariza berishdan oldin narxlar va muddatlarni rasmiy sahifada tekshiring.",
+    "pageIntroFee": "{field} — {place}: {range} yiliga. Dasturlar: {programmes}. Muassasalar: {institutions}. Ma’lumotlar rasmiy manbalardan olingan; ariza berishdan oldin narxlar va muddatlarni rasmiy sahifada tekshiring.",
+    "pageIntroCounts": "{field} — {place}. Dasturlar: {programmes}. Muassasalar: {institutions}. Ma’lumotlar rasmiy manbalardan olingan; ariza berishdan oldin narxlar va muddatlarni rasmiy sahifada tekshiring.",
     "institutionsTitle": "{field} o‘qitiladigan muassasalar",
     "programmesCount": "Dasturlar: {count}",
     "examples": "Masalan:",
@@ -1343,7 +1345,8 @@
     "contactTitle": "Aloqa va yordam",
     "studyHubDescription": "{place} — Yo‘nalishlar: {fields}. Dasturlar: {programmes}. Ma’lumotlar rasmiy manbalardan olingan.",
     "deadlinesMonthTitle": "Hujjat topshirish muddatlari: {place}: {month}",
-    "deadlinesMonthDescription": "Hujjat topshirish muddatlari: {place}, {month}: {institutions} ta muassasada {count} ta muddat, birinchisi — {first}. Sanalar dasturlarning rasmiy sahifalaridan olingan."
+    "deadlinesMonthDescription": "Hujjat topshirish muddatlari: {place}, {month}: {institutions} ta muassasada {count} ta muddat, birinchisi — {first}. Sanalar dasturlarning rasmiy sahifalaridan olingan.",
+    "deadlinesCountryTitle": "Hujjat topshirish muddatlari: {place}: {years} ({count})"
   },
   "Blog": {
     "title": "Blog",

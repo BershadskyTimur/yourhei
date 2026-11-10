@@ -1293,6 +1293,8 @@
     "hubIntro": "Kierunki: {fields}. Programy: {programmes}. Dane pochodzą z oficjalnych źródeł.",
     "pageTitle": "Studia: {field}. {place}",
     "pageIntro": "Programy: {programmes}. Uczelnie: {institutions}. Dane pochodzą z oficjalnych źródeł; przed złożeniem wniosku sprawdź ceny i terminy na oficjalnej stronie.",
+    "pageIntroFee": "{field} — {place}: większość programów kosztuje {range} rocznie dla cudzoziemców. {programmes, plural, one {# program} few {# programy} many {# programów} other {# programu}} na {institutions, plural, one {# uczelni} other {# uczelniach}}. Dane pochodzą z oficjalnych źródeł; przed złożeniem wniosku sprawdź ceny i terminy na oficjalnej stronie.",
+    "pageIntroCounts": "{field} — {place}: {programmes, plural, one {# program} few {# programy} many {# programów} other {# programu}} na {institutions, plural, one {# uczelni} other {# uczelniach}}. Na stronie każdej uczelni: czesne, terminy i oficjalne linki. Dane pochodzą z oficjalnych źródeł; przed złożeniem wniosku sprawdź ceny i terminy na oficjalnej stronie.",
     "institutionsTitle": "Uczelnie oferujące: {field}",
     "programmesCount": "Programy: {count}",
     "examples": "Na przykład:",
@@ -1343,7 +1345,8 @@
     "contactTitle": "Kontakt z YourHEI: pytania i poprawki danych",
     "studyHubDescription": "Studia: {place}. {programmes, plural, one {# program} few {# programy} many {# programów} other {# programu}}, {fields, plural, one {# kierunek} few {# kierunki} many {# kierunków} other {# kierunku}}: czesne dla cudzoziemców, terminy i uczelnie z oficjalnych źródeł.",
     "deadlinesMonthTitle": "Terminy składania dokumentów: {place}, {month}",
-    "deadlinesMonthDescription": "Terminy składania dokumentów: {place}, {month}. {count, plural, one {# termin} few {# terminy} many {# terminów} other {# terminu}} w {institutions, plural, one {# placówce} other {# placówkach}}, pierwszy: {first}. Daty z oficjalnych stron programów."
+    "deadlinesMonthDescription": "Terminy składania dokumentów: {place}, {month}. {count, plural, one {# termin} few {# terminy} many {# terminów} other {# terminu}} w {institutions, plural, one {# placówce} other {# placówkach}}, pierwszy: {first}. Daty z oficjalnych stron programów.",
+    "deadlinesCountryTitle": "Terminy składania dokumentów: {place}, {years} ({count})"
   },
   "Blog": {
     "title": "Blog",

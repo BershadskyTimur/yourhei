@@ -1293,6 +1293,8 @@
     "hubIntro": "Направлений: {fields}. Программ: {programmes}. Данные взяты из официальных источников.",
     "pageTitle": "{field} {place}",
     "pageIntro": "Программ: {programmes}. Заведений: {institutions}. Данные взяты из официальных источников; перед подачей проверьте цены и сроки на официальной странице.",
+    "pageIntroFee": "{field} {place}: большинство программ стоит {range} в год для иностранцев. {programmes, plural, one {# программа} few {# программы} many {# программ} other {# программы}} в {institutions, plural, one {# заведении} other {# заведениях}}. Данные взяты из официальных источников; перед подачей проверьте цены и сроки на официальной странице.",
+    "pageIntroCounts": "{field} {place}: {programmes, plural, one {# программа} few {# программы} many {# программ} other {# программы}} в {institutions, plural, one {# заведении} other {# заведениях}}. На странице каждого заведения — цены, сроки и официальные ссылки. Данные взяты из официальных источников; перед подачей проверьте цены и сроки на официальной странице.",
     "institutionsTitle": "Заведения, где преподают: {field}",
     "programmesCount": "Программ: {count}",
     "examples": "Например:",
@@ -1343,7 +1345,8 @@
     "contactTitle": "Контакты YourHEI: вопросы и исправления данных",
     "studyHubDescription": "{programmes, plural, one {# программа} few {# программы} many {# программ} other {# программы}} {place} по {fields, plural, one {# направлению} other {# направлениям}}: цены для иностранцев, сроки подачи и вузы. Данные из официальных источников.",
     "deadlinesMonthTitle": "Сроки подачи документов {place}: {month}",
-    "deadlinesMonthDescription": "Когда подавать документы {place}: {month} — {count, plural, one {# срок} few {# срока} many {# сроков} other {# срока}} в {institutions, plural, one {# заведении} other {# заведениях}}, первый — {first}. Даты — с официальных страниц программ."
+    "deadlinesMonthDescription": "Когда подавать документы {place}: {month} — {count, plural, one {# срок} few {# срока} many {# сроков} other {# срока}} в {institutions, plural, one {# заведении} other {# заведениях}}, первый — {first}. Даты — с официальных страниц программ.",
+    "deadlinesCountryTitle": "Сроки подачи документов {place}, {years}: {count, plural, one {# дата} few {# даты} many {# дат} other {# даты}}"
   },
   "Blog": {
     "title": "Блог",

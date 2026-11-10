@@ -1293,6 +1293,8 @@
     "hubIntro": "Domaines : {fields}. Programmes : {programmes}. Les données proviennent de sources officielles.",
     "pageTitle": "Étudier {field} {place}",
     "pageIntro": "Programmes : {programmes}. Établissements : {institutions}. Les données proviennent de sources officielles ; vérifiez les prix et les dates sur la page officielle avant de candidater.",
+    "pageIntroFee": "{field} {place} : la plupart des programmes coûtent {range} par an pour les étudiants internationaux. {programmes, plural, one {# programme} other {# programmes}} dans {institutions, plural, one {# établissement} other {# établissements}}. Les données proviennent de sources officielles ; vérifiez les prix et les dates sur la page officielle avant de candidater.",
+    "pageIntroCounts": "{field} {place} : {programmes, plural, one {# programme} other {# programmes}} dans {institutions, plural, one {# établissement} other {# établissements}}. Chaque établissement indique ses frais, dates limites et liens officiels. Les données proviennent de sources officielles ; vérifiez les prix et les dates sur la page officielle avant de candidater.",
     "institutionsTitle": "Établissements enseignant {field}",
     "programmesCount": "Programmes : {count}",
     "examples": "Par exemple :",
@@ -1343,7 +1345,8 @@
     "contactTitle": "Contacter YourHEI : questions et corrections",
     "studyHubDescription": "{programmes, plural, one {# programme} other {# programmes}} {place} dans {fields, plural, one {# domaine} other {# domaines}} : frais pour étudiants internationaux, dates limites et établissements, de sources officielles.",
     "deadlinesMonthTitle": "Dates limites de candidature {place} : {month}",
-    "deadlinesMonthDescription": "Dates limites de candidature {place} en {month} : {count} dates dans {institutions} établissements, la première le {first}. Dates issues des pages officielles des programmes."
+    "deadlinesMonthDescription": "Dates limites de candidature {place} en {month} : {count} dates dans {institutions} établissements, la première le {first}. Dates issues des pages officielles des programmes.",
+    "deadlinesCountryTitle": "Dates limites de candidature {place} {years} : {count, plural, one {# date} other {# dates}}"
   },
   "Blog": {
     "title": "Blog",

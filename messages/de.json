@@ -1293,6 +1293,8 @@
     "hubIntro": "Fachgebiete: {fields}. Programme: {programmes}. Die Daten stammen aus offiziellen Quellen.",
     "pageTitle": "{field} studieren in {place}",
     "pageIntro": "Programme: {programmes}. Einrichtungen: {institutions}. Die Daten stammen aus offiziellen Quellen; prüfe Preise und Fristen vor der Bewerbung auf der offiziellen Seite.",
+    "pageIntroFee": "{field} in {place}: Die meisten Studiengänge kosten {range} pro Jahr für internationale Studierende. {programmes, plural, one {# Studiengang} other {# Studiengänge}} an {institutions, plural, one {# Einrichtung} other {# Einrichtungen}}. Die Daten stammen aus offiziellen Quellen; prüfe Preise und Fristen vor der Bewerbung auf der offiziellen Seite.",
+    "pageIntroCounts": "{field} in {place}: {programmes, plural, one {# Studiengang} other {# Studiengänge}} an {institutions, plural, one {# Einrichtung} other {# Einrichtungen}}. Jede Einrichtungsseite zeigt Kosten, Fristen und offizielle Links. Die Daten stammen aus offiziellen Quellen; prüfe Preise und Fristen vor der Bewerbung auf der offiziellen Seite.",
     "institutionsTitle": "Einrichtungen mit {field}",
     "programmesCount": "Programme: {count}",
     "examples": "Zum Beispiel:",
@@ -1343,7 +1345,8 @@
     "contactTitle": "Kontakt zu YourHEI: Fragen und Korrekturen",
     "studyHubDescription": "{programmes, plural, one {# Studiengang} other {# Studiengänge}} in {place} in {fields, plural, one {# Fachgebiet} other {# Fachgebieten}}: Kosten für internationale Studierende, Fristen und Hochschulen aus offiziellen Quellen.",
     "deadlinesMonthTitle": "Bewerbungsfristen in {place}: {month}",
-    "deadlinesMonthDescription": "Bewerbungsfristen in {place} im {month}: {count} Fristen an {institutions} Einrichtungen, die erste am {first}. Daten von den offiziellen Programmseiten."
+    "deadlinesMonthDescription": "Bewerbungsfristen in {place} im {month}: {count} Fristen an {institutions} Einrichtungen, die erste am {first}. Daten von den offiziellen Programmseiten.",
+    "deadlinesCountryTitle": "Bewerbungsfristen in {place} {years}: {count, plural, one {# Termin} other {# Termine}}"
   },
   "Blog": {
     "title": "Blog",

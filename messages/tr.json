@@ -1293,6 +1293,8 @@
     "hubIntro": "Alanlar: {fields}. Programlar: {programmes}. Veriler resmî kaynaklardan gelir.",
     "pageTitle": "{place} ülkesinde {field} eğitimi",
     "pageIntro": "Programlar: {programmes}. Kurumlar: {institutions}. Veriler resmî kaynaklardan gelir; başvurmadan önce fiyatları ve tarihleri resmî sayfada doğrula.",
+    "pageIntroFee": "{field} — {place}: {range} yıllık. Programlar: {programmes}. Kurumlar: {institutions}. Veriler resmî kaynaklardan gelir; başvurmadan önce fiyatları ve tarihleri resmî sayfada doğrula.",
+    "pageIntroCounts": "{field} — {place}. Programlar: {programmes}. Kurumlar: {institutions}. Veriler resmî kaynaklardan gelir; başvurmadan önce fiyatları ve tarihleri resmî sayfada doğrula.",
     "institutionsTitle": "{field} okutulan kurumlar",
     "programmesCount": "Programlar: {count}",
     "examples": "Örneğin:",
@@ -1343,7 +1345,8 @@
     "contactTitle": "İletişim ve destek",
     "studyHubDescription": "{place} — Alanlar: {fields}. Programlar: {programmes}. Veriler resmî kaynaklardan gelir.",
     "deadlinesMonthTitle": "Başvuru son tarihleri: {place}: {month}",
-    "deadlinesMonthDescription": "Başvuru son tarihleri: {place}, {month}: {institutions} kurumda {count} son tarih, ilki {first}. Tarihler programların resmi sayfalarından alınmıştır."
+    "deadlinesMonthDescription": "Başvuru son tarihleri: {place}, {month}: {institutions} kurumda {count} son tarih, ilki {first}. Tarihler programların resmi sayfalarından alınmıştır.",
+    "deadlinesCountryTitle": "Başvuru son tarihleri: {place}: {years} ({count})"
   },
   "Blog": {
     "title": "Blog",

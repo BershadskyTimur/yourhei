@@ -1293,6 +1293,8 @@
     "hubIntro": "Sahələr: {fields}. Proqramlar: {programmes}. Məlumatlar rəsmi mənbələrdəndir.",
     "pageTitle": "{place} ölkəsində {field} təhsili",
     "pageIntro": "Proqramlar: {programmes}. Müəssisələr: {institutions}. Məlumatlar rəsmi mənbələrdəndir; müraciətdən əvvəl qiymətləri və müddətləri rəsmi səhifədə yoxlayın.",
+    "pageIntroFee": "{field} — {place}: {range} illik. Proqramlar: {programmes}. Müəssisələr: {institutions}. Məlumatlar rəsmi mənbələrdəndir; müraciətdən əvvəl qiymətləri və müddətləri rəsmi səhifədə yoxlayın.",
+    "pageIntroCounts": "{field} — {place}. Proqramlar: {programmes}. Müəssisələr: {institutions}. Məlumatlar rəsmi mənbələrdəndir; müraciətdən əvvəl qiymətləri və müddətləri rəsmi səhifədə yoxlayın.",
     "institutionsTitle": "{field} tədris edən müəssisələr",
     "programmesCount": "Proqramlar: {count}",
     "examples": "Məsələn:",
@@ -1343,7 +1345,8 @@
     "contactTitle": "Əlaqə və dəstək",
     "studyHubDescription": "{place} — Sahələr: {fields}. Proqramlar: {programmes}. Məlumatlar rəsmi mənbələrdəndir.",
     "deadlinesMonthTitle": "Müraciət müddətləri: {place}: {month}",
-    "deadlinesMonthDescription": "Müraciət müddətləri: {place}, {month}: {institutions} müəssisədə {count} müddət, birincisi — {first}. Tarixlər proqramların rəsmi səhifələrindən götürülüb."
+    "deadlinesMonthDescription": "Müraciət müddətləri: {place}, {month}: {institutions} müəssisədə {count} müddət, birincisi — {first}. Tarixlər proqramların rəsmi səhifələrindən götürülüb.",
+    "deadlinesCountryTitle": "Müraciət müddətləri: {place}: {years} ({count})"
   },
   "Blog": {
     "title": "Bloq",

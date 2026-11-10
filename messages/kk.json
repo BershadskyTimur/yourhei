@@ -1293,6 +1293,8 @@
     "hubIntro": "Бағыттар: {fields}. Бағдарламалар: {programmes}. Деректер ресми дереккөздерден алынған.",
     "pageTitle": "{place} елінде {field} оқу",
     "pageIntro": "Бағдарламалар: {programmes}. Мекемелер: {institutions}. Деректер ресми дереккөздерден алынған; өтініш бермес бұрын бағалар мен мерзімдерді ресми бетте тексеріңіз.",
+    "pageIntroFee": "{field} — {place}: {range} жылына. Бағдарламалар: {programmes}. Мекемелер: {institutions}. Деректер ресми дереккөздерден алынған; өтініш бермес бұрын бағалар мен мерзімдерді ресми бетте тексеріңіз.",
+    "pageIntroCounts": "{field} — {place}. Бағдарламалар: {programmes}. Мекемелер: {institutions}. Деректер ресми дереккөздерден алынған; өтініш бермес бұрын бағалар мен мерзімдерді ресми бетте тексеріңіз.",
     "institutionsTitle": "{field} оқытылатын мекемелер",
     "programmesCount": "Бағдарламалар: {count}",
     "examples": "Мысалы:",
@@ -1343,7 +1345,8 @@
     "contactTitle": "Байланыс және қолдау",
     "studyHubDescription": "{place} — Бағыттар: {fields}. Бағдарламалар: {programmes}. Деректер ресми дереккөздерден алынған.",
     "deadlinesMonthTitle": "Құжат тапсыру мерзімдері: {place}: {month}",
-    "deadlinesMonthDescription": "Құжат тапсыру мерзімдері: {place}, {month}: {institutions} мекемеде {count} мерзім, біріншісі — {first}. Күндер бағдарламалардың ресми беттерінен алынды."
+    "deadlinesMonthDescription": "Құжат тапсыру мерзімдері: {place}, {month}: {institutions} мекемеде {count} мерзім, біріншісі — {first}. Күндер бағдарламалардың ресми беттерінен алынды.",
+    "deadlinesCountryTitle": "Құжат тапсыру мерзімдері: {place}: {years} ({count})"
   },
   "Blog": {
     "title": "Блог",

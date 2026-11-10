@@ -1293,6 +1293,8 @@
     "hubIntro": "Fields: {fields}. Programmes: {programmes}. The data comes from official sources.",
     "pageTitle": "Study {field} in {place}",
     "pageIntro": "Programmes: {programmes}. Institutions: {institutions}. The data comes from official sources; confirm prices and deadlines on the official page before you apply.",
+    "pageIntroFee": "{field} in {place}: most programmes cost {range} a year for international students. {programmes, plural, one {# programme} other {# programmes}} at {institutions, plural, one {# institution} other {# institutions}}. The data comes from official sources; confirm prices and deadlines on the official page before you apply.",
+    "pageIntroCounts": "{field} in {place}: {programmes, plural, one {# programme} other {# programmes}} at {institutions, plural, one {# institution} other {# institutions}}. Each institution page lists fees, deadlines and official links. The data comes from official sources; confirm prices and deadlines on the official page before you apply.",
     "institutionsTitle": "Institutions teaching {field}",
     "programmesCount": "Programmes: {count}",
     "examples": "For example:",
@@ -1343,7 +1345,8 @@
     "contactTitle": "Contact YourHEI: questions and data corrections",
     "studyHubDescription": "{programmes, plural, one {# programme} other {# programmes}} in {place} across {fields, plural, one {# field} other {# fields}}: fees for international students, deadlines and institutions, from official sources.",
     "deadlinesMonthTitle": "Application deadlines in {place}: {month}",
-    "deadlinesMonthDescription": "When to apply in {place} in {month}: {count, plural, one {# deadline} other {# deadlines}} at {institutions, plural, one {# institution} other {# institutions}}, the first on {first}. Dates from official programme pages."
+    "deadlinesMonthDescription": "When to apply in {place} in {month}: {count, plural, one {# deadline} other {# deadlines}} at {institutions, plural, one {# institution} other {# institutions}}, the first on {first}. Dates from official programme pages.",
+    "deadlinesCountryTitle": "Application deadlines in {place}, {years}: {count, plural, one {# date} other {# dates}}"
   },
   "Blog": {
     "title": "Blog",

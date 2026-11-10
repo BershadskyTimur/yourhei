@@ -6,8 +6,9 @@ import { DeadlineList } from '@/components/DeadlineList';
 import { JsonLd } from '@/components/JsonLd';
 import { Link } from '@/i18n/navigation';
 import { routing } from '@/i18n/routing';
-import { DEADLINES_BUILT, countriesWithDeadlines, monthsOfCountry, ofCountry } from '@/lib/deadlines/deadlines';
-import { seoMetadata, trimDescription } from '@/lib/seo/metadata';
+import { DEADLINES_BUILT, countriesWithDeadlines, monthsOfCountry, ofCountry, yearsOf } from '@/lib/deadlines/deadlines';
+import { fitTitle, seoMetadata, trimDescription } from '@/lib/seo/metadata';
+import { placeIn } from '@/lib/seo/place';
 import { breadcrumbList } from '@/lib/seo/structured';
 
 export const revalidate = 86400;
@@ -27,10 +28,12 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   const t = await getTranslations({ locale, namespace: 'Deadlines' });
   const name = new Intl.DisplayNames([locale], { type: 'region' }).of(country.toUpperCase()) ?? country;
   const institutions = new Set(rows.map((r) => r.s)).size;
+  const tSeo = await getTranslations({ locale, namespace: 'Seo' });
   return seoMetadata({
     locale,
     path: `/deadlines/${country.toLowerCase()}`,
-    title: t('countryTitle', { country: name }),
+    // people search "<country> deadline 2027": the years and the number of dates are in the title; a long one falls back to the short title
+    title: fitTitle([tSeo('deadlinesCountryTitle', { place: placeIn(locale, country.toUpperCase(), name), years: yearsOf(rows.map((r) => r.d)), count: rows.length }), t('countryTitle', { country: name })], 65),
     description: trimDescription(t('countryIntro', { country: name, count: rows.length, institutions })),
   });
 }

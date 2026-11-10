@@ -10,6 +10,11 @@ export interface StudyCombo {
   code: string;
   programmes: number;
   institutions: number;
+  /**
+   * What most programmes cost a year for a student from abroad (10th to 90th percentile, one currency); present only when
+   * at least half of the programmes have a price. Built by scripts/build-study-combos.mjs.
+   */
+  fee?: { min: number; max: number; currency: string; priced: number };
 }
 
 export const COMBOS: StudyCombo[] = (combosData as unknown as { combos: StudyCombo[] }).combos;

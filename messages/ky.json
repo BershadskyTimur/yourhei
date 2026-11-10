@@ -1293,6 +1293,8 @@
     "hubIntro": "Багыттар: {fields}. Программалар: {programmes}. Маалыматтар расмий булактардан алынган.",
     "pageTitle": "{place} өлкөсүндө {field} окуу",
     "pageIntro": "Программалар: {programmes}. Мекемелер: {institutions}. Маалыматтар расмий булактардан алынган; арыз берерден мурун баалар менен мөөнөттөрдү расмий баракчадан текшериңиз.",
+    "pageIntroFee": "{field} — {place}: {range} жылына. Программалар: {programmes}. Мекемелер: {institutions}. Маалыматтар расмий булактардан алынган; арыз берерден мурун баалар менен мөөнөттөрдү расмий баракчадан текшериңиз.",
+    "pageIntroCounts": "{field} — {place}. Программалар: {programmes}. Мекемелер: {institutions}. Маалыматтар расмий булактардан алынган; арыз берерден мурун баалар менен мөөнөттөрдү расмий баракчадан текшериңиз.",
     "institutionsTitle": "{field} окутулган мекемелер",
     "programmesCount": "Программалар: {count}",
     "examples": "Мисалы:",
@@ -1343,7 +1345,8 @@
     "contactTitle": "Байланыш жана колдоо",
     "studyHubDescription": "{place} — Багыттар: {fields}. Программалар: {programmes}. Маалыматтар расмий булактардан алынган.",
     "deadlinesMonthTitle": "Документ тапшыруу мөөнөттөрү: {place}: {month}",
-    "deadlinesMonthDescription": "Документ тапшыруу мөөнөттөрү: {place}, {month}: {institutions} мекемеде {count} мөөнөт, биринчиси — {first}. Даталар программалардын расмий барактарынан алынды."
+    "deadlinesMonthDescription": "Документ тапшыруу мөөнөттөрү: {place}, {month}: {institutions} мекемеде {count} мөөнөт, биринчиси — {first}. Даталар программалардын расмий барактарынан алынды.",
+    "deadlinesCountryTitle": "Документ тапшыруу мөөнөттөрү: {place}: {years} ({count})"
   },
   "Blog": {
     "title": "Блог",

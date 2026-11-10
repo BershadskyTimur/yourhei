@@ -88,3 +88,12 @@ export function nextPerInstitution(countries: readonly string[], count: number, 
   }
   return out;
 }
+
+/** The years a list of dates covers: "2026–2027", or "2026" when all are in one year; "" for an empty list. */
+export function yearsOf(dates: readonly string[]): string {
+  const years = dates.map((d) => d.slice(0, 4)).filter((y) => /^\d{4}$/.test(y)).sort();
+  if (years.length === 0) return '';
+  const first = years[0];
+  const last = years[years.length - 1];
+  return first === last ? first : `${first}–${last}`;
+}

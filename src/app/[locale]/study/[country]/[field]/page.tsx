@@ -11,7 +11,8 @@ import { Link } from '@/i18n/navigation';
 import { routing } from '@/i18n/routing';
 import { COUNTRY_CODES } from '@/lib/countries';
 import { pickLocalized } from '@/lib/institutions/localized';
-import { codeOfSlug, comboOf, fieldSlug } from '@/lib/study/combos';
+import { formatTuitionRange } from '@/lib/seo/tuition-range';
+import { codeOfSlug, comboOf, fieldSlug, type StudyCombo } from '@/lib/study/combos';
 import { getStudyInstitutions } from '@/lib/study/get';
 import { iscedEntry, labelFor } from '@/lib/survey/references';
 
@@ -32,6 +33,15 @@ function resolve(country: string, field: string) {
   return combo && entry ? { combo, entry, cc, code } : null;
 }
 
+/**
+ * The first paragraph of the page, also its description for search engines: the field, the country, the counts and, when
+ * most programmes have a price, what most of them cost a year (people search "<field> in <country> fees").
+ */
+function intro(t: (key: 'pageIntroFee' | 'pageIntroCounts', values: Record<string, string | number>) => string, locale: string, field: string, place: string, combo: StudyCombo): string {
+  const counts = { field, place, programmes: combo.programmes, institutions: combo.institutions };
+  return combo.fee ? t('pageIntroFee', { ...counts, range: formatTuitionRange(locale, combo.fee) }) : t('pageIntroCounts', counts);
+}
+
 export async function generateMetadata({ params }: { params: Params }): Promise<Metadata> {
   const { locale, country, field } = await params;
   const r = resolve(country, field);
@@ -44,7 +54,7 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
     path: `/study/${country.toLowerCase()}/${fieldSlug(r.code)}`,
     // a long field name drops "N programmes, fees and deadlines" rather than being cut by the search engine
     title: fitTitle([t('seoTitle', { field: label, country: name, place: placeIn(locale, r.cc, name), programmes: r.combo.programmes }), t('pageTitle', { field: label, country: name, place: placeIn(locale, r.cc, name) })]),
-    description: trimDescription(t('pageIntro', { programmes: r.combo.programmes, institutions: r.combo.institutions })),
+    description: trimDescription(intro(t, locale, label, placeIn(locale, r.cc, name), r.combo)),
   });
 }
 
@@ -71,7 +81,7 @@ export default async function StudyFieldPage({ params }: { params: Params }) {
   return (
     <PageShell title={t('pageTitle', { field: label, country: name, place: placeIn(locale, r.cc, name) })}>
       <JsonLd data={breadcrumbList(locale, [{ name: 'YourHEI', path: '' }, { name, path: `/study/${country.toLowerCase()}` }, { name: label, path: `/study/${country.toLowerCase()}/${fieldSlug(r.code)}` }])} />
-      <p>{t('pageIntro', { programmes: r.combo.programmes, institutions: r.combo.institutions })}</p>
+      <p>{intro(t, locale, label, placeIn(locale, r.cc, name), r.combo)}</p>
 
       <section aria-labelledby="inst-title">
         <h2 id="inst-title" className="text-xl font-semibold text-text">{t('institutionsTitle', { field: label })}</h2>

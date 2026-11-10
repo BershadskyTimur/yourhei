@@ -1293,6 +1293,8 @@
     "hubIntro": "Ուղղություններ՝ {fields}։ Ծրագրեր՝ {programmes}։ Տվյալները պաշտոնական աղբյուրներից են։",
     "pageTitle": "Ուսում՝ {field}. {place}",
     "pageIntro": "Ծրագրեր՝ {programmes}։ Հաստատություններ՝ {institutions}։ Տվյալները պաշտոնական աղբյուրներից են․ դիմելուց առաջ ստուգեք գները և ժամկետները պաշտոնական էջում։",
+    "pageIntroFee": "{field} — {place}: {range} տարեկան. Ծրագրեր՝ {programmes}։ Հաստատություններ՝ {institutions}։ Տվյալները պաշտոնական աղբյուրներից են․ դիմելուց առաջ ստուգեք գները և ժամկետները պաշտոնական էջում։",
+    "pageIntroCounts": "{field} — {place}. Ծրագրեր՝ {programmes}։ Հաստատություններ՝ {institutions}։ Տվյալները պաշտոնական աղբյուրներից են․ դիմելուց առաջ ստուգեք գները և ժամկետները պաշտոնական էջում։",
     "institutionsTitle": "Հաստատություններ, որտեղ դասավանդվում է՝ {field}",
     "programmesCount": "Ծրագրեր՝ {count}",
     "examples": "Օրինակ՝",
@@ -1343,7 +1345,8 @@
     "contactTitle": "Կոնտակտներ և աջակցություն",
     "studyHubDescription": "{place} — Ուղղություններ՝ {fields}։ Ծրագրեր՝ {programmes}։ Տվյալները պաշտոնական աղբյուրներից են։",
     "deadlinesMonthTitle": "Դիմումների վերջնաժամկետներ՝ {place}՝ {month}",
-    "deadlinesMonthDescription": "Դիմումների վերջնաժամկետներ՝ {place}, {month}․ {count} վերջնաժամկետ {institutions} հաստատությունում, առաջինը՝ {first}։ Ամսաթվերը ծրագրերի պաշտոնական էջերից են։"
+    "deadlinesMonthDescription": "Դիմումների վերջնաժամկետներ՝ {place}, {month}․ {count} վերջնաժամկետ {institutions} հաստատությունում, առաջինը՝ {first}։ Ամսաթվերը ծրագրերի պաշտոնական էջերից են։",
+    "deadlinesCountryTitle": "Դիմումների վերջնաժամկետներ՝ {place}՝ {years} ({count})"
   },
   "Blog": {
     "title": "Բլոգ",

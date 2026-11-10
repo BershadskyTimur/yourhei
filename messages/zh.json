@@ -1293,6 +1293,8 @@
     "hubIntro": "领域：{fields}。项目：{programmes}。数据来自官方来源。",
     "pageTitle": "在{place}学习{field}",
     "pageIntro": "项目：{programmes}。院校：{institutions}。数据来自官方来源；申请前请在官方页面核实费用和截止日期。",
+    "pageIntroFee": "{place}{field}专业：大多数项目的国际学生学费为每年 {range}。{institutions, plural, other {# 所院校}}共 {programmes, plural, other {# 个项目}}。数据来自官方来源；申请前请在官方页面核实费用和截止日期。",
+    "pageIntroCounts": "{place}{field}专业：{institutions, plural, other {# 所院校}}共 {programmes, plural, other {# 个项目}}。各院校页面列出学费、截止日期和官方链接。数据来自官方来源；申请前请在官方页面核实费用和截止日期。",
     "institutionsTitle": "开设{field}的院校",
     "programmesCount": "项目：{count}",
     "examples": "例如：",
@@ -1343,7 +1345,8 @@
     "contactTitle": "联系 YourHEI：问题与数据更正",
     "studyHubDescription": "在{place}留学：{fields, plural, other {# 个领域}}共 {programmes, plural, other {# 个项目}}，含国际学生学费、申请截止日期和院校，数据来自官方来源。",
     "deadlinesMonthTitle": "{place}申请截止日期：{month}",
-    "deadlinesMonthDescription": "{place}{month}申请截止日期：{institutions} 所院校共 {count} 个截止日期，最早为 {first}。日期来自项目官方页面。"
+    "deadlinesMonthDescription": "{place}{month}申请截止日期：{institutions} 所院校共 {count} 个截止日期，最早为 {first}。日期来自项目官方页面。",
+    "deadlinesCountryTitle": "{place}申请截止日期 {years}：共 {count} 个"
   },
   "Blog": {
     "title": "博客",

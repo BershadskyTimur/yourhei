@@ -1293,6 +1293,8 @@
     "hubIntro": "Áreas: {fields}. Programas: {programmes}. Los datos proceden de fuentes oficiales.",
     "pageTitle": "Estudiar {field} en {place}",
     "pageIntro": "Programas: {programmes}. Instituciones: {institutions}. Los datos proceden de fuentes oficiales; confirma precios y plazos en la página oficial antes de solicitar.",
+    "pageIntroFee": "{field} en {place}: la mayoría de los programas cuesta {range} al año para estudiantes internacionales. {programmes, plural, one {# programa} other {# programas}} en {institutions, plural, one {# institución} other {# instituciones}}. Los datos proceden de fuentes oficiales; confirma precios y plazos en la página oficial antes de solicitar.",
+    "pageIntroCounts": "{field} en {place}: {programmes, plural, one {# programa} other {# programas}} en {institutions, plural, one {# institución} other {# instituciones}}. Cada institución muestra precios, plazos y enlaces oficiales. Los datos proceden de fuentes oficiales; confirma precios y plazos en la página oficial antes de solicitar.",
     "institutionsTitle": "Instituciones donde se estudia {field}",
     "programmesCount": "Programas: {count}",
     "examples": "Por ejemplo:",
@@ -1343,7 +1345,8 @@
     "contactTitle": "Contacto de YourHEI: preguntas y correcciones de datos",
     "studyHubDescription": "{programmes, plural, one {# programa} other {# programas}} en {place} en {fields, plural, one {# área} other {# áreas}}: precios para estudiantes internacionales, plazos e instituciones, de fuentes oficiales.",
     "deadlinesMonthTitle": "Plazos de solicitud en {place}: {month}",
-    "deadlinesMonthDescription": "Plazos de solicitud en {place} en {month}: {count} plazos en {institutions} instituciones; el primero, el {first}. Fechas de las páginas oficiales de los programas."
+    "deadlinesMonthDescription": "Plazos de solicitud en {place} en {month}: {count} plazos en {institutions} instituciones; el primero, el {first}. Fechas de las páginas oficiales de los programas.",
+    "deadlinesCountryTitle": "Plazos de solicitud en {place} {years}: {count, plural, one {# fecha} other {# fechas}}"
   },
   "Blog": {
     "title": "Blog",

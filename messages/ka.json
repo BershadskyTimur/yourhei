@@ -1293,6 +1293,8 @@
     "hubIntro": "მიმართულებები: {fields}. პროგრამები: {programmes}. მონაცემები ოფიციალური წყაროებიდანაა.",
     "pageTitle": "სწავლა: {field}. {place}",
     "pageIntro": "პროგრამები: {programmes}. დაწესებულებები: {institutions}. მონაცემები ოფიციალური წყაროებიდანაა; განაცხადამდე გადაამოწმეთ ფასები და ვადები ოფიციალურ გვერდზე.",
+    "pageIntroFee": "{field} — {place}: {range} წელიწადში. პროგრამები: {programmes}. დაწესებულებები: {institutions}. მონაცემები ოფიციალური წყაროებიდანაა; განაცხადამდე გადაამოწმეთ ფასები და ვადები ოფიციალურ გვერდზე.",
+    "pageIntroCounts": "{field} — {place}. პროგრამები: {programmes}. დაწესებულებები: {institutions}. მონაცემები ოფიციალური წყაროებიდანაა; განაცხადამდე გადაამოწმეთ ფასები და ვადები ოფიციალურ გვერდზე.",
     "institutionsTitle": "დაწესებულებები, სადაც ისწავლება: {field}",
     "programmesCount": "პროგრამები: {count}",
     "examples": "მაგალითად:",
@@ -1343,7 +1345,8 @@
     "contactTitle": "კონტაქტი და მხარდაჭერა",
     "studyHubDescription": "{place} — მიმართულებები: {fields}. პროგრამები: {programmes}. მონაცემები ოფიციალური წყაროებიდანაა.",
     "deadlinesMonthTitle": "განაცხადის ვადები: {place}: {month}",
-    "deadlinesMonthDescription": "განაცხადის ვადები: {place}, {month}: {count} ვადა {institutions} დაწესებულებაში, პირველი — {first}. თარიღები პროგრამების ოფიციალური გვერდებიდანაა."
+    "deadlinesMonthDescription": "განაცხადის ვადები: {place}, {month}: {count} ვადა {institutions} დაწესებულებაში, პირველი — {first}. თარიღები პროგრამების ოფიციალური გვერდებიდანაა.",
+    "deadlinesCountryTitle": "განაცხადის ვადები: {place}: {years} ({count})"
   },
   "Blog": {
     "title": "ბლოგი",
