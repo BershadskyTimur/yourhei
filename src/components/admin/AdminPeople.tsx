@@ -6,7 +6,7 @@ import { getSupabaseBrowser } from '@/lib/supabase/client';
 
 // Who uses the site: the list of accounts and the log of visits (address, place, browser, pages).
 // Russian only, like the rest of the admin panel. The database refuses these functions to anyone who is not an
-// administrator (supabase/migrations/0042_visitor_details.sql). Passwords are not shown and cannot be: the database
+// administrator (supabase/migrations/0042_visitor_details.sql and 0043_visits_fix_and_sorting.sql). Passwords are not shown and cannot be: the database
 // keeps only an irreversible hash of them.
 
 type Row = Record<string, unknown>;
@@ -50,10 +50,10 @@ function usePage(fn: string, args: Record<string, unknown>, deps: unknown[]) {
       .rpc(fn, args)
       .then((res) => {
         if (!live) return;
-        const missing = res.error && /function|does not exist|schema cache|PGRST20/i.test(res.error.message);
+        const missing = res.error && /function|column|does not exist|schema cache|PGRST20/i.test(res.error.message);
         setState({
           data: res.error ? null : (res.data as Page | null),
-          error: res.error ? res.error.message + (missing ? ' Запустите файл 0042_visitor_details.sql в Supabase (SQL Editor).' : '') : null,
+          error: res.error ? res.error.message + (missing ? ' Запустите файл 0043_visits_fix_and_sorting.sql в Supabase (SQL Editor).' : '') : null,
           loading: false,
         });
       });
@@ -108,7 +108,9 @@ function Field({ label, children }: { label: string; children: React.ReactNode }
 export function Accounts({ onShowVisits }: { onShowVisits: (email: string) => void }) {
   const [q, setQ] = useState('');
   const [page, setPage] = useState(0);
-  const { data, error, loading } = usePage('admin_accounts', { p_search: q || null, p_limit: PAGE, p_offset: page * PAGE }, [q, page]);
+  const [sort, setSort] = useState('created');
+  const [desc, setDesc] = useState(true);
+  const { data, error, loading } = usePage('admin_accounts', { p_search: q || null, p_limit: PAGE, p_offset: page * PAGE, p_sort: sort, p_desc: desc }, [q, page, sort, desc]);
 
   return (
     <section>
@@ -118,6 +120,22 @@ export function Accounts({ onShowVisits }: { onShowVisits: (email: string) => vo
       </p>
       <div className="mt-3">
         <Search value={q} placeholder="Почта или начало IP-адреса" onSearch={(v) => { setQ(v); setPage(0); }} />
+      </div>
+      <div className="mt-2 flex flex-wrap items-center gap-2">
+        <label className="flex items-center gap-2 text-sm">
+          Сортировать по
+          <select className={input} value={sort} onChange={(e) => { setSort(e.target.value); setPage(0); }}>
+            <option value="created">дате регистрации</option>
+            <option value="login">последнему входу</option>
+            <option value="visit">последнему визиту</option>
+            <option value="views">числу просмотренных страниц</option>
+            <option value="email">почте</option>
+          </select>
+        </label>
+        <button type="button" className={btn} onClick={() => { setDesc(!desc); setPage(0); }}>
+          {sort === 'email' ? (desc ? 'Я → А' : 'А → Я') : sort === 'views' ? (desc ? 'сначала больше' : 'сначала меньше') : desc ? 'сначала новые' : 'сначала старые'}
+        </button>
+        {data && <span className="text-sm text-muted">Всего: {data.total}</span>}
       </div>
       {loading && <p className="mt-3">Загрузка…</p>}
       {error && !loading && <p role="alert" className="mt-3 text-danger">Ошибка: {error}</p>}
@@ -200,7 +218,9 @@ export function Visitors({ initialSearch = '' }: { initialSearch?: string }) {
   const [q, setQ] = useState(initialSearch);
   const [page, setPage] = useState(0);
   const [open, setOpen] = useState<string | null>(null);
-  const { data, error, loading } = usePage('admin_visits', { p_days: days, p_search: q || null, p_limit: PAGE, p_offset: page * PAGE }, [days, q, page]);
+  const [who, setWho] = useState('all');
+  const [sort, setSort] = useState('new');
+  const { data, error, loading } = usePage('admin_visits', { p_days: days, p_search: q || null, p_limit: PAGE, p_offset: page * PAGE, p_who: who, p_sort: sort }, [days, q, page, who, sort]);
 
   return (
     <section>
@@ -219,6 +239,19 @@ export function Visitors({ initialSearch = '' }: { initialSearch?: string }) {
       </p>
       <div className="mt-3">
         <Search key={initialSearch} value={q} placeholder="IP, город, провайдер, почта или код страны" onSearch={(v) => { setQ(v); setPage(0); }} />
+      </div>
+      <div className="mt-2 flex flex-wrap items-center gap-2">
+        <select className={input} aria-label="Чьи визиты" value={who} onChange={(e) => { setWho(e.target.value); setPage(0); }}>
+          <option value="all">Все визиты</option>
+          <option value="accounts">Только с аккаунтом</option>
+          <option value="guests">Только без аккаунта</option>
+        </select>
+        <select className={input} aria-label="Порядок" value={sort} onChange={(e) => { setSort(e.target.value); setPage(0); }}>
+          <option value="new">Сначала новые</option>
+          <option value="old">Сначала старые</option>
+          <option value="pages">Сначала с большим числом страниц</option>
+        </select>
+        {data && <span className="text-sm text-muted">Найдено: {data.total}</span>}
       </div>
       {loading && <p className="mt-3">Загрузка…</p>}
       {error && !loading && <p role="alert" className="mt-3 text-danger">Ошибка: {error}</p>}
