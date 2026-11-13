@@ -481,7 +481,7 @@
       "s1Title": "Who we are",
       "s1Text": "YourHEI is a service that helps applicants choose where to study. This policy explains what data we collect and how we use it. By using the site you agree to it.",
       "s2Title": "What we collect",
-      "s2Text": "Account data (e-mail and a protected form of your password); profile data (date of birth, gender if you give it, country of residence, citizenships, what you are looking for, the status of your documents); your survey answers; and technical and usage data (pages you visit, actions on the site, device, browser, language, IP address, approximate location, the site you came from), including through cookies and similar technologies. For visit statistics (only if you accepted analytics cookies) we record the country, region, city, time zone and internet provider or network as our hosting determines them; the IP address itself is not stored in these statistics.",
+      "s2Text": "Account data (e-mail and a protected form of your password); profile data (date of birth, gender if you give it, country of residence, citizenships, what you are looking for, the status of your documents); your survey answers; and technical and usage data (pages you visit, actions on the site, device, browser, language, IP address, approximate location, the site you came from), including through cookies and similar technologies. For every visit to the site we keep a log: the IP address, browser and operating system, screen size, the pages opened, the site you came from, and the country, region, city, postal code, approximate coordinates, time zone and internet provider as our hosting determines them from the IP address; if you are signed in, your visits are linked to your account. IP addresses are kept in this log for up to 3 years. The log is kept whatever you choose in the cookie banner: the choice only decides whether a visit identifier is stored in your browser and whether third-party analytics is loaded.",
       "s3Title": "Why we collect it",
       "s3Text": "To run and improve the service, check the minimum age, build your matches, communicate with you, measure how the site is used, show advertising, do research, keep the service secure and meet legal duties.",
       "s4Title": "Analytics and sharing",
@@ -1058,7 +1058,7 @@
   },
   "Consent": {
     "title": "Cookies and analytics",
-    "text": "We use necessary cookies to run the site (language, theme, login). With your permission we also use analytics and advertising technologies and may share this data with our partners, as described in the Privacy Policy.",
+    "text": "We use necessary cookies to run the site (language, theme, login) and keep a log of visits (IP address, browser, pages) for security and statistics. With your permission we also store a visit identifier in your browser, use analytics and advertising technologies and may share this data with our partners, as described in the Privacy Policy.",
     "accept": "Accept all",
     "decline": "Only necessary",
     "policy": "Privacy Policy",

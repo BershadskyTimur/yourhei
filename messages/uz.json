@@ -481,7 +481,7 @@
       "s1Title": "Biz kimmiz",
       "s1Text": "YourHEI abituriyentlarga qayerda o‘qishni tanlashda yordam beradigan xizmatdir. Ushbu siyosat qanday ma’lumotlarni to‘plashimiz va ulardan qanday foydalanishimizni tushuntiradi. Saytdan foydalanib, siz unga rozilik bildirasiz.",
       "s2Title": "Nimalarni to‘playmiz",
-      "s2Text": "Hisob ma’lumotlari (e-pochta va parolning himoyalangan shakli); profil ma’lumotlari (tug‘ilgan sana, bersangiz jins, yashash davlati, fuqarolik, nimani izlayotganingiz, hujjatlaringiz holati); so‘rovnoma javoblaringiz; hamda kukilar va shunga o‘xshash texnologiyalar orqali texnik va foydalanish ma’lumotlari (ko‘rgan sahifalaringiz, saytdagi harakatlar, qurilma, brauzer, til, IP-manzil, taxminiy joylashuv, qayerdan kelganingiz). Tashriflar statistikasi uchun (faqat analitik cookie'larni qabul qilgan bo'lsangiz) xostingimiz aniqlagan mamlakat, mintaqa, shahar, vaqt mintaqasi va internet-provayder yoki tarmoqni yozib olamiz; IP-manzilning o'zi bu statistikada saqlanmaydi.",
+      "s2Text": "Hisob ma’lumotlari (e-pochta va parolning himoyalangan shakli); profil ma’lumotlari (tug‘ilgan sana, bersangiz jins, yashash davlati, fuqarolik, nimani izlayotganingiz, hujjatlaringiz holati); so‘rovnoma javoblaringiz; hamda kukilar va shunga o‘xshash texnologiyalar orqali texnik va foydalanish ma’lumotlari (ko‘rgan sahifalaringiz, saytdagi harakatlar, qurilma, brauzer, til, IP-manzil, taxminiy joylashuv, qayerdan kelganingiz). Saytga har bir tashrif haqida jurnal yuritamiz: IP-manzil, brauzer va operatsion tizim, ekran o‘lchami, ochilgan sahifalar, qaysi saytdan kelganingiz, shuningdek xostingimiz IP-manzil bo‘yicha aniqlaydigan mamlakat, hudud, shahar, pochta indeksi, taxminiy koordinatalar, vaqt mintaqasi va internet-provayder; hisobingizga kirgan bo‘lsangiz, tashriflar hisobingizga bog‘lanadi. IP-manzillar bu jurnalda 3 yilgacha saqlanadi. Jurnal cookie bannerdagi tanlovingizdan qat’i nazar yuritiladi: tanlov faqat brauzeringizda tashrif identifikatori saqlanishi va uchinchi tomon analitikasi yuklanishini belgilaydi.",
       "s3Title": "Nima uchun to‘playmiz",
       "s3Text": "Xizmatni yuritish va yaxshilash, eng kam yoshni tekshirish, natijalaringizni tuzish, siz bilan aloqa qilish, saytdan foydalanishni o‘lchash, reklama ko‘rsatish, tadqiqot o‘tkazish, xizmat xavfsizligini ta’minlash va qonuniy majburiyatlarni bajarish uchun.",
       "s4Title": "Tahlil va ulashish",
@@ -1058,7 +1058,7 @@
   },
   "Consent": {
     "title": "Kukilar va tahlil",
-    "text": "Saytning ishlashi uchun zarur kukilardan foydalanamiz (til, mavzu, kirish). Ruxsatingiz bilan tahlil va reklama texnologiyalaridan ham foydalanamiz va bu ma’lumotlarni Maxfiylik siyosatida bayon etilganidek hamkorlarimiz bilan ulashishimiz mumkin.",
+    "text": "Sayt ishlashi uchun zarur cookie-fayllardan foydalanamiz (til, mavzu, kirish) hamda xavfsizlik va statistika uchun tashriflar jurnalini yuritamiz (IP-manzil, brauzer, sahifalar). Ruxsatingiz bilan brauzeringizda tashrif identifikatorini ham saqlaymiz, analitika va reklama texnologiyalaridan foydalanamiz va bu ma’lumotlarni Maxfiylik siyosatida ta’riflanganidek hamkorlarimizga berishimiz mumkin.",
     "accept": "Hammasini qabul qilish",
     "decline": "Faqat zaruriylari",
     "policy": "Maxfiylik siyosati",

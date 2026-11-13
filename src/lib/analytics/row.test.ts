@@ -22,6 +22,26 @@ describe('eventToRow', () => {
   });
 });
 
+describe('who is visiting', () => {
+  const client = { ip: '203.0.113.7', userAgent: 'Mozilla/5.0 test', browser: 'Chrome 130', os: 'Windows 10/11', fallbackSession: 'h123' };
+
+  it('adds the address and browser the server saw, and what the browser says about itself', () => {
+    const row = eventToRow({ ...view, lang: 'ru-RU', screen: '1920x1080', ip: '1.1.1.1', browser: 'Fake' }, 'GE', client);
+    expect(row).toMatchObject({ ip: '203.0.113.7', user_agent: 'Mozilla/5.0 test', browser: 'Chrome 130', os: 'Windows 10/11', lang: 'ru-RU', screen: '1920x1080', session: 's1' });
+  });
+
+  it('gives a visit without a browser id the id made by the server', () => {
+    expect(eventToRow({ path: '/ru' }, null, client)?.session).toBe('h123');
+  });
+
+  it('drops a bad address, language and screen', () => {
+    const row = eventToRow({ ...view, lang: '<b>', screen: 'huge' }, null, { ...client, ip: 'not an ip' });
+    expect(row).not.toHaveProperty('ip');
+    expect(row).not.toHaveProperty('lang');
+    expect(row).not.toHaveProperty('screen');
+  });
+});
+
 describe('rowsFromRequest', () => {
   it('accepts one event as before', () => {
     expect(rowsFromRequest(view, null)).toHaveLength(1);

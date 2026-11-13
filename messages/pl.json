@@ -481,7 +481,7 @@
       "s1Title": "Kim jesteśmy",
       "s1Text": "YourHEI to serwis, który pomaga kandydatom wybrać, gdzie studiować. Ta polityka wyjaśnia, jakie dane zbieramy i jak z nich korzystamy. Korzystając z serwisu, zgadzasz się z nią.",
       "s2Title": "Co zbieramy",
-      "s2Text": "Dane konta (e-mail i zabezpieczona forma Twojego hasła); dane profilu (data urodzenia, płeć, jeśli ją podasz, kraj zamieszkania, obywatelstwa, czego szukasz, status dokumentów); Twoje odpowiedzi w ankiecie; oraz dane techniczne i o użytkowaniu (odwiedzane strony, działania w serwisie, urządzenie, przeglądarka, język, adres IP, przybliżona lokalizacja, strona, z której przychodzisz), także za pomocą plików cookie i podobnych technologii. Na potrzeby statystyk odwiedzin (tylko jeśli zaakceptowano analityczne pliki cookie) zapisujemy kraj, region, miasto, strefę czasową oraz dostawcę internetu lub sieć, tak jak określa je nasz hosting; sam adres IP nie jest przechowywany w tych statystykach.",
+      "s2Text": "Dane konta (e-mail i zabezpieczona forma Twojego hasła); dane profilu (data urodzenia, płeć, jeśli ją podasz, kraj zamieszkania, obywatelstwa, czego szukasz, status dokumentów); Twoje odpowiedzi w ankiecie; oraz dane techniczne i o użytkowaniu (odwiedzane strony, działania w serwisie, urządzenie, przeglądarka, język, adres IP, przybliżona lokalizacja, strona, z której przychodzisz), także za pomocą plików cookie i podobnych technologii. O każdej wizycie w serwisie prowadzimy dziennik: adres IP, przeglądarka i system operacyjny, rozmiar ekranu, otwarte strony, strona, z której przychodzisz, a także kraj, region, miasto, kod pocztowy, przybliżone współrzędne, strefa czasowa i dostawca internetu, tak jak określa je na podstawie adresu IP nasz hosting; jeśli jesteś zalogowany, wizyty są powiązane z Twoim kontem. Adresy IP są przechowywane w tym dzienniku do 3 lat. Dziennik jest prowadzony niezależnie od Twojego wyboru w banerze cookie: wybór decyduje tylko o tym, czy w Twojej przeglądarce zapisywany jest identyfikator wizyty i czy ładowana jest analityka podmiotów trzecich.",
       "s3Title": "Po co je zbieramy",
       "s3Text": "Aby prowadzić i ulepszać serwis, sprawdzać minimalny wiek, tworzyć Twoje dopasowania, komunikować się z Tobą, mierzyć korzystanie z serwisu, wyświetlać reklamy, prowadzić badania, zapewniać bezpieczeństwo serwisu i wypełniać obowiązki prawne.",
       "s4Title": "Analityka i udostępnianie",
@@ -1058,7 +1058,7 @@
   },
   "Consent": {
     "title": "Pliki cookie i analityka",
-    "text": "Używamy niezbędnych plików cookie do działania serwisu (język, motyw, logowanie). Za Twoją zgodą stosujemy też technologie analityczne i reklamowe i możemy udostępniać te dane naszym partnerom, jak opisano w polityce prywatności.",
+    "text": "Używamy niezbędnych plików cookie do działania serwisu (język, motyw, logowanie) i prowadzimy dziennik wizyt (adres IP, przeglądarka, strony) dla bezpieczeństwa i statystyk. Za Twoją zgodą zapisujemy też w przeglądarce identyfikator wizyty, używamy technologii analitycznych i reklamowych i możemy udostępniać te dane naszym partnerom, jak opisano w Polityce prywatności.",
     "accept": "Zaakceptuj wszystkie",
     "decline": "Tylko niezbędne",
     "policy": "Polityka prywatności",

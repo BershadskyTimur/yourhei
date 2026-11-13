@@ -1,6 +1,6 @@
-// Where a visit comes from, as the hosting network (Cloudflare) sees it: country, region, city, time zone and the network
-// that owns the address (the internet provider or company, e.g. "Kazakhtelecom JSC"). The IP address itself is never
-// stored or sent anywhere. Only recorded for visitors who pressed "Accept all" in the cookie banner (see api/track).
+// Where a visit comes from, as the hosting network (Cloudflare) sees it: country, region, city, postal code, approximate
+// coordinates (of the city, not of the person), time zone and the network that owns the address (the internet provider
+// or company, e.g. "Kazakhtelecom JSC"). Recorded for every visit (see api/track).
 
 export interface VisitGeo {
   country: string | null;
@@ -9,15 +9,24 @@ export interface VisitGeo {
   timezone: string | null;
   asn: number | null;
   asOrg: string | null;
+  postal: string | null;
+  lat: number | null;
+  lon: number | null;
 }
 
-export const NO_GEO: VisitGeo = { country: null, region: null, city: null, timezone: null, asn: null, asOrg: null };
+export const NO_GEO: VisitGeo = { country: null, region: null, city: null, timezone: null, asn: null, asOrg: null, postal: null, lat: null, lon: null };
 
 /** A short text without control characters, or null. */
 function text(v: unknown, max: number): string | null {
   if (typeof v !== 'string') return null;
   const t = v.replace(/[\u0000-\u001f\u007f]/g, '').trim();
   return t ? t.slice(0, max) : null;
+}
+
+/** A coordinate (Cloudflare sends it as text), rounded to about 100 m, or null. */
+function coord(v: unknown, max: number): number | null {
+  const n = typeof v === 'number' ? v : typeof v === 'string' && /^-?\d{1,3}(\.\d+)?$/.test(v) ? Number(v) : NaN;
+  return Number.isFinite(n) && Math.abs(n) <= max ? Math.round(n * 1000) / 1000 : null;
 }
 
 /**
@@ -37,5 +46,8 @@ export function geoFromCloudflare(cf: Record<string, unknown> | undefined | null
     timezone: timezone && /^[A-Za-z_]+(\/[A-Za-z0-9_+\-]+){0,2}$/.test(timezone) ? timezone : null,
     asn,
     asOrg: text(c.asOrganization, 120),
+    postal: text(c.postalCode, 20),
+    lat: coord(c.latitude, 90),
+    lon: coord(c.longitude, 180),
   };
 }

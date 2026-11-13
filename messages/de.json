@@ -481,7 +481,7 @@
       "s1Title": "Wer wir sind",
       "s1Text": "YourHEI ist ein Dienst, der Studieninteressierten bei der Wahl ihres Studienorts hilft. Diese Erklärung beschreibt, welche Daten wir erheben und wie wir sie verwenden. Mit der Nutzung der Website stimmst du ihr zu.",
       "s2Title": "Was wir erheben",
-      "s2Text": "Kontodaten (E-Mail-Adresse und eine geschützte Form deines Passworts); Profildaten (Geburtsdatum, Geschlecht, falls angegeben, Wohnsitzland, Staatsangehörigkeiten, wonach du suchst, Status deiner Dokumente); deine Antworten im Fragebogen; sowie technische und Nutzungsdaten (besuchte Seiten, Aktionen auf der Website, Gerät, Browser, Sprache, IP-Adresse, ungefährer Standort, die Website, von der du kamst), auch durch Cookies und ähnliche Technologien. Für die Besuchsstatistik (nur wenn Sie Analyse-Cookies akzeptiert haben) erfassen wir Land, Region, Stadt, Zeitzone und Internetanbieter oder Netzwerk, wie unser Hosting sie ermittelt; die IP-Adresse selbst wird in dieser Statistik nicht gespeichert.",
+      "s2Text": "Kontodaten (E-Mail-Adresse und eine geschützte Form deines Passworts); Profildaten (Geburtsdatum, Geschlecht, falls angegeben, Wohnsitzland, Staatsangehörigkeiten, wonach du suchst, Status deiner Dokumente); deine Antworten im Fragebogen; sowie technische und Nutzungsdaten (besuchte Seiten, Aktionen auf der Website, Gerät, Browser, Sprache, IP-Adresse, ungefährer Standort, die Website, von der du kamst), auch durch Cookies und ähnliche Technologien. Über jeden Besuch der Website führen wir ein Protokoll: IP-Adresse, Browser und Betriebssystem, Bildschirmgröße, aufgerufene Seiten, die Website, von der du kamst, sowie Land, Region, Stadt, Postleitzahl, ungefähre Koordinaten, Zeitzone und Internetanbieter, wie unser Hosting sie anhand der IP-Adresse ermittelt; wenn du angemeldet bist, werden die Besuche deinem Konto zugeordnet. IP-Adressen werden in diesem Protokoll bis zu 3 Jahre gespeichert. Das Protokoll wird unabhängig von deiner Auswahl im Cookie-Banner geführt: Die Auswahl entscheidet nur, ob eine Besuchskennung in deinem Browser gespeichert und ob Analyse von Drittanbietern geladen wird.",
       "s3Title": "Warum wir sie erheben",
       "s3Text": "Um den Dienst zu betreiben und zu verbessern, das Mindestalter zu prüfen, deine Treffer zu erstellen, mit dir zu kommunizieren, die Nutzung der Website zu messen, Werbung anzuzeigen, Forschung zu betreiben, den Dienst sicher zu halten und gesetzliche Pflichten zu erfüllen.",
       "s4Title": "Analyse und Weitergabe",
@@ -1058,7 +1058,7 @@
   },
   "Consent": {
     "title": "Cookies und Analyse",
-    "text": "Wir verwenden notwendige Cookies, um die Website zu betreiben (Sprache, Design, Anmeldung). Mit deiner Erlaubnis nutzen wir auch Analyse- und Werbetechnologien und können diese Daten mit unseren Partnern teilen, wie in der Datenschutzerklärung beschrieben.",
+    "text": "Wir verwenden notwendige Cookies, um die Website zu betreiben (Sprache, Design, Anmeldung), und führen zur Sicherheit und für Statistiken ein Besuchsprotokoll (IP-Adresse, Browser, Seiten). Mit deiner Erlaubnis speichern wir außerdem eine Besuchskennung in deinem Browser, nutzen Analyse- und Werbetechnologien und können diese Daten mit unseren Partnern teilen, wie in der Datenschutzerklärung beschrieben.",
     "accept": "Alle akzeptieren",
     "decline": "Nur notwendige",
     "policy": "Datenschutzerklärung",

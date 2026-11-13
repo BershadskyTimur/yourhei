@@ -5,34 +5,76 @@ import { Link } from '@/i18n/navigation';
 import { safeHttpUrl } from '@/lib/safe-url';
 import { iscedEntry } from '@/lib/survey/references';
 import { getSupabaseBrowser, isSupabaseConfigured } from '@/lib/supabase/client';
+import { Accounts, Visitors } from './AdminPeople';
 import { DataHealth, Duplicates, ErrorReports, ExportData, SystemStatus, TopInstitutions } from './AdminTools';
 
 // The admin panel is an internal tool for the site owner, so it is in Russian only (not translated).
 // Real protection is in the database (supabase/migrations/0006_admin.sql): without the "admin" role
 // every request below is refused by Row Level Security, whatever this page shows.
 
-type Tab = 'dashboard' | 'users' | 'traffic' | 'insights' | 'topinst' | 'health' | 'institutions' | 'duplicates' | 'programs' | 'reviews' | 'reports' | 'reps' | 'countries' | 'export' | 'system' | 'log';
+type Tab = 'dashboard' | 'accounts' | 'visitors' | 'users' | 'traffic' | 'insights' | 'topinst' | 'health' | 'institutions' | 'duplicates' | 'programs' | 'reviews' | 'reports' | 'reps' | 'countries' | 'export' | 'system' | 'log';
 type Access = 'loading' | 'guest' | 'denied' | 'admin' | 'unconfigured';
 type Row = Record<string, unknown>;
 
-const TABS: { id: Tab; label: string }[] = [
-  { id: 'dashboard', label: 'Обзор' },
-  { id: 'users', label: 'Пользователи' },
-  { id: 'traffic', label: 'Посещаемость' },
-  { id: 'insights', label: 'Аналитика' },
-  { id: 'topinst', label: 'Популярные заведения' },
-  { id: 'health', label: 'Здоровье данных' },
-  { id: 'institutions', label: 'Вузы и школы' },
-  { id: 'duplicates', label: 'Дубликаты' },
-  { id: 'programs', label: 'Программы на проверке' },
-  { id: 'reviews', label: 'Отзывы' },
-  { id: 'reports', label: 'Жалобы на ошибки' },
-  { id: 'reps', label: 'Заявки заведений' },
-  { id: 'countries', label: 'Данные стран' },
-  { id: 'export', label: 'Экспорт' },
-  { id: 'system', label: 'Состояние сайта' },
-  { id: 'log', label: 'Журнал изменений' },
+// Six sections instead of one long row of buttons; a section with several pages shows them in a second row.
+const SECTIONS: { id: string; label: string; tabs: { id: Tab; label: string }[] }[] = [
+  { id: 'overview', label: 'Обзор', tabs: [{ id: 'dashboard', label: 'Обзор' }] },
+  {
+    id: 'people',
+    label: 'Люди',
+    tabs: [
+      { id: 'accounts', label: 'Аккаунты' },
+      { id: 'visitors', label: 'Посетители' },
+      { id: 'users', label: 'Статистика аккаунтов' },
+    ],
+  },
+  {
+    id: 'analytics',
+    label: 'Аналитика',
+    tabs: [
+      { id: 'traffic', label: 'Посещаемость' },
+      { id: 'insights', label: 'Поведение' },
+      { id: 'topinst', label: 'Популярные заведения' },
+    ],
+  },
+  {
+    id: 'data',
+    label: 'Данные',
+    tabs: [
+      { id: 'institutions', label: 'Вузы и школы' },
+      { id: 'programs', label: 'Программы на проверке' },
+      { id: 'countries', label: 'Данные стран' },
+      { id: 'duplicates', label: 'Дубликаты' },
+      { id: 'health', label: 'Здоровье данных' },
+      { id: 'export', label: 'Экспорт' },
+    ],
+  },
+  {
+    id: 'inbox',
+    label: 'Обращения',
+    tabs: [
+      { id: 'reviews', label: 'Отзывы' },
+      { id: 'reports', label: 'Жалобы на ошибки' },
+      { id: 'reps', label: 'Заявки заведений' },
+    ],
+  },
+  {
+    id: 'system',
+    label: 'Система',
+    tabs: [
+      { id: 'system', label: 'Состояние сайта' },
+      { id: 'log', label: 'Журнал изменений' },
+    ],
+  },
 ];
+const ALL_TABS = SECTIONS.flatMap((s) => s.tabs.map((t) => t.id));
+
+/** The page named in the address after "#", so that a reload or a saved link opens the same page. */
+function tabFromHash(): Tab {
+  if (typeof window === 'undefined') return 'dashboard';
+  const h = window.location.hash.slice(1) as Tab;
+  return ALL_TABS.includes(h) ? h : 'dashboard';
+}
 
 const STAT_LABELS: [string, string][] = [
   ['users', 'Пользователей'],
@@ -61,7 +103,17 @@ function nameOf(names: unknown): string {
 
 export function AdminApp() {
   const [access, setAccess] = useState<Access>(() => (isSupabaseConfigured() ? 'loading' : 'unconfigured'));
-  const [tab, setTab] = useState<Tab>('dashboard');
+  const [tab, setTabState] = useState<Tab>(tabFromHash);
+  // "Visits" of an account opens the log of visits already filtered by that e-mail
+  const [visitorSearch, setVisitorSearch] = useState('');
+  const setTab = (next: Tab) => {
+    setTabState(next);
+    try {
+      window.history.replaceState(null, '', `#${next}`);
+    } catch {
+      /* the address just stays as it was */
+    }
+  };
 
   useEffect(() => {
     const supabase = getSupabaseBrowser();
@@ -84,24 +136,54 @@ export function AdminApp() {
     );
   if (access === 'denied') return <p>Нет доступа: у этого аккаунта нет роли администратора.</p>;
 
+  const section = SECTIONS.find((s) => s.tabs.some((t) => t.id === tab)) ?? SECTIONS[0];
+
   return (
     <div>
-      <div role="tablist" aria-label="Разделы админ-панели" className="flex flex-wrap gap-2">
-        {TABS.map((t) => (
+      <nav aria-label="Разделы админ-панели" className="flex flex-wrap gap-2">
+        {SECTIONS.map((s) => (
           <button
-            key={t.id}
-            role="tab"
+            key={s.id}
             type="button"
-            aria-selected={tab === t.id}
-            onClick={() => setTab(t.id)}
-            className={tab === t.id ? btnPrimary : btn}
+            aria-current={s.id === section.id ? 'true' : undefined}
+            onClick={() => {
+              if (s.id !== section.id) setTab(s.tabs[0].id);
+            }}
+            className={s.id === section.id ? btnPrimary : btn}
           >
-            {t.label}
+            {s.label}
           </button>
         ))}
-      </div>
+      </nav>
+      {section.tabs.length > 1 && (
+        <nav aria-label={`Страницы раздела «${section.label}»`} className="mt-3 flex flex-wrap gap-x-5 gap-y-1 border-b border-line">
+          {section.tabs.map((t) => (
+            <button
+              key={t.id}
+              type="button"
+              aria-current={tab === t.id ? 'page' : undefined}
+              onClick={() => {
+                if (t.id === 'visitors') setVisitorSearch('');
+                setTab(t.id);
+              }}
+              className={`-mb-px border-b-2 py-2 text-sm font-medium ${tab === t.id ? 'border-accent text-text' : 'border-transparent text-muted hover:text-text'}`}
+            >
+              {t.label}
+            </button>
+          ))}
+        </nav>
+      )}
       <div className="mt-6">
         {tab === 'dashboard' && <Dashboard />}
+        {tab === 'accounts' && (
+          <Accounts
+            onShowVisits={(email) => {
+              setVisitorSearch(email);
+              setTab('visitors');
+            }}
+          />
+        )}
+        {tab === 'visitors' && <Visitors key={visitorSearch} initialSearch={visitorSearch} />}
         {tab === 'users' && <UsersStats />}
         {tab === 'traffic' && <Traffic />}
         {tab === 'insights' && <Insights />}
@@ -745,8 +827,8 @@ function UsersStats() {
   const pct = (a: number, b: number) => (b > 0 ? `${Math.round((a / b) * 100)}%` : '—');
   return (
     <section>
-      <h2 className="text-xl font-semibold">Пользователи</h2>
-      <p className="mt-1 text-sm text-muted">Только суммы и средние значения, без имён и почт. Возраст считается по дате рождения из профиля.</p>
+      <h2 className="text-xl font-semibold">Статистика аккаунтов</h2>
+      <p className="mt-1 text-sm text-muted">Суммы и средние значения по всем зарегистрированным; список людей с почтами — на странице «Аккаунты». Возраст считается по дате рождения из профиля.</p>
       <Status error={error} loading={loading} />
       {data && (
         <div className="mt-4 space-y-4">
@@ -787,6 +869,8 @@ function Traffic() {
   const [state, setState] = useState<{ data: Row | null; error: string | null; loading: boolean }>({ data: null, error: null, loading: true });
   // places and networks of the visits (migration 0040); before it is run the section is simply not shown
   const [geo, setGeo] = useState<Row | null>(null);
+  // browsers, systems, languages (migration 0042); same rule
+  const [tech, setTech] = useState<Row | null>(null);
   useEffect(() => {
     let live = true;
     const supabase = getSupabaseBrowser()!;
@@ -798,12 +882,16 @@ function Traffic() {
     supabase.rpc('admin_traffic_geo', { p_days: days }).then((res) => {
       if (live) setGeo(res.error ? null : (res.data as Row | null));
     });
+    supabase.rpc('admin_traffic_tech', { p_days: days }).then((res) => {
+      if (live) setTech(res.error ? null : (res.data as Row | null));
+    });
     return () => {
       live = false;
     };
   }, [days]);
   const d = state.data ?? {};
   const g = geo ?? {};
+  const tc = tech ?? {};
   const byDay = (d.by_day as Row[]) ?? [];
   return (
     <section>
@@ -816,13 +904,15 @@ function Traffic() {
           <option value={365}>Год</option>
         </select>
       </div>
-      <p className="mt-1 text-sm text-muted">Считаются только посетители, которые нажали «Принять все» в баннере cookie и не включили Do Not Track, поэтому реальные цифры выше. Адреса IP не хранятся: страна, город и провайдер берутся из данных сети Cloudflare.</p>
+      <p className="mt-1 text-sm text-muted">Считаются все посетители, кроме поисковых роботов. До 13.11.2026 записывались только те, кто нажал «Принять все» в баннере cookie, поэтому более ранние цифры занижены. Страна, город и провайдер берутся из данных сети Cloudflare; отдельные визиты с IP-адресами — на странице «Люди → Посетители».</p>
       <Status error={state.error} loading={state.loading} />
       {state.data && (
         <div className="mt-4 space-y-4">
-          <dl className="grid gap-3 sm:grid-cols-2">
+          <dl className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
             <Stat label="Просмотров страниц" value={String(d.views ?? 0)} />
-            <Stat label="Посетителей (сессий)" value={String(d.visitors ?? 0)} />
+            <Stat label="Визитов" value={String(d.visitors ?? 0)} />
+            {tech && <Stat label="Разных IP-адресов" value={String(tc.addresses ?? 0)} />}
+            {tech && <Stat label="Вошедших в аккаунт" value={String(tc.signed_in ?? 0)} />}
           </dl>
           <div className="grid gap-4 lg:grid-cols-2">
             <DayChart title="Просмотры по дням" data={byDay} valueKey="views" />
@@ -832,6 +922,14 @@ function Traffic() {
             <BarList title="Устройства" rows={objRows(d.devices, { mobile: 'телефон', tablet: 'планшет', desktop: 'компьютер', unknown: 'нет данных' })} />
             <BarList title="Языки сайта" rows={objRows(d.locales)} />
             <BarList title="Откуда пришли" rows={rows(d.referrers, (r) => String(r.host))} hint="Сайты, с которых перешли по ссылке" />
+            {tech && (
+              <>
+                <BarList title="Браузеры" rows={rows(tc.browsers, (r) => String(r.label))} hint="По числу визитов" />
+                <BarList title="Операционные системы" rows={rows(tc.systems, (r) => String(r.label))} />
+                <BarList title="Языки браузеров" rows={rows(tc.languages, (r) => String(r.label))} hint="Язык, выбранный в браузере посетителя" />
+                <BarList title="Размеры экранов" rows={rows(tc.screens, (r) => String(r.label))} />
+              </>
+            )}
             {geo && (
               <>
                 <BarList title="Города" rows={rows(g.cities, (r) => `${String(r.city)}, ${countryName(r.country)}`, (r) => `посетителей: ${r.visitors}`)} hint="По данным сети Cloudflare, примерно" />
@@ -884,7 +982,7 @@ function Insights() {
   return (
     <section>
       <div className="flex flex-wrap items-center justify-between gap-3">
-        <h2 className="text-xl font-semibold">Аналитика</h2>
+        <h2 className="text-xl font-semibold">Поведение</h2>
         <select className={input} aria-label="Период" value={days} onChange={(e) => { setDays(Number(e.target.value)); setState((s) => ({ ...s, loading: true })); }}>
           <option value={7}>7 дней</option>
           <option value={30}>30 дней</option>
@@ -893,7 +991,7 @@ function Insights() {
         </select>
       </div>
       <p className="mt-1 text-sm text-muted">
-        Что люди делают на сайте. Считаются только те, кто нажал «Принять все» в баннере cookie, поэтому реальные цифры выше. Без имён и адресов IP. Поисковые фразы хранятся до 40 символов.
+        Что люди делают на сайте: суммы по всем посетителям (до 13.11.2026 — только по тем, кто нажал «Принять все» в баннере cookie). Поисковые фразы хранятся до 40 символов.
       </p>
       {state.error && !state.loading && <p role="alert" className="mt-3 text-danger">Ошибка: {state.error}. Если написано про функцию — запустите файл 0013_insights.sql в Supabase.</p>}
       {state.loading && <p className="mt-3">Загрузка…</p>}

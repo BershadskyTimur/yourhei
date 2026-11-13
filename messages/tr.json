@@ -481,7 +481,7 @@
       "s1Title": "Biz kimiz",
       "s1Text": "YourHEI, adayların nerede okuyacaklarını seçmelerine yardımcı olan bir hizmettir. Bu politika hangi verileri topladığımızı ve nasıl kullandığımızı açıklar. Siteyi kullanarak bunu kabul etmiş olursun.",
       "s2Title": "Ne topluyoruz",
-      "s2Text": "Hesap verileri (e-posta ve parolanın korunmuş biçimi); profil verileri (doğum tarihi, verirsen cinsiyet, ikamet edilen ülke, vatandaşlıklar, aradığın şey, belgelerinin durumu); anket yanıtların; ayrıca çerezler ve benzeri teknolojiler dahil teknik ve kullanım verileri (ziyaret ettiğin sayfalar, sitedeki eylemler, cihaz, tarayıcı, dil, IP adresi, yaklaşık konum, geldiğin site). Ziyaret istatistikleri için (yalnızca analitik çerezleri kabul ettiyseniz) barındırma hizmetimizin belirlediği ülke, bölge, şehir, saat dilimi ve internet sağlayıcısı veya ağı kaydederiz; IP adresinin kendisi bu istatistiklerde saklanmaz.",
+      "s2Text": "Hesap verileri (e-posta ve parolanın korunmuş biçimi); profil verileri (doğum tarihi, verirsen cinsiyet, ikamet edilen ülke, vatandaşlıklar, aradığın şey, belgelerinin durumu); anket yanıtların; ayrıca çerezler ve benzeri teknolojiler dahil teknik ve kullanım verileri (ziyaret ettiğin sayfalar, sitedeki eylemler, cihaz, tarayıcı, dil, IP adresi, yaklaşık konum, geldiğin site). Siteye yapılan her ziyaret için bir kayıt tutuyoruz: IP adresi, tarayıcı ve işletim sistemi, ekran boyutu, açılan sayfalar, geldiğin site ve barındırma hizmetimizin IP adresinden belirlediği ülke, bölge, şehir, posta kodu, yaklaşık koordinatlar, saat dilimi ve internet sağlayıcısı; oturum açtıysan ziyaretler hesabınla ilişkilendirilir. IP adresleri bu kayıtta en fazla 3 yıl saklanır. Kayıt, çerez bildirimindeki seçiminden bağımsız olarak tutulur: seçim yalnızca tarayıcında bir ziyaret kimliğinin saklanıp saklanmayacağını ve üçüncü taraf analitiğin yüklenip yüklenmeyeceğini belirler.",
       "s3Title": "Neden topluyoruz",
       "s3Text": "Hizmeti işletmek ve geliştirmek, asgari yaşı kontrol etmek, eşleşmelerini oluşturmak, seninle iletişim kurmak, sitenin nasıl kullanıldığını ölçmek, reklam göstermek, araştırma yapmak, hizmeti güvende tutmak ve yasal yükümlülükleri yerine getirmek için.",
       "s4Title": "Analiz ve paylaşım",
@@ -1058,7 +1058,7 @@
   },
   "Consent": {
     "title": "Çerezler ve analiz",
-    "text": "Siteyi çalıştırmak için gerekli çerezleri kullanıyoruz (dil, tema, giriş). İznin olursa analiz ve reklam teknolojilerini de kullanırız ve bu verileri Gizlilik politikasında anlatıldığı gibi iş ortaklarımızla paylaşabiliriz.",
+    "text": "Sitenin çalışması için gerekli çerezleri kullanıyoruz (dil, tema, giriş) ve güvenlik ile istatistik için bir ziyaret kaydı tutuyoruz (IP adresi, tarayıcı, sayfalar). İznin olursa tarayıcında bir ziyaret kimliği de saklıyor, analitik ve reklam teknolojilerini kullanıyoruz ve bu verileri Gizlilik Politikası’nda açıklandığı şekilde iş ortaklarımızla paylaşabiliyoruz.",
     "accept": "Hepsini kabul et",
     "decline": "Yalnızca gerekli olanlar",
     "policy": "Gizlilik politikası",

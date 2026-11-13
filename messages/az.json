@@ -481,7 +481,7 @@
       "s1Title": "Biz kimik",
       "s1Text": "YourHEI abituriyentlərə harada oxuyacaqlarını seçməkdə kömək edən xidmətdir. Bu siyasət hansı məlumatları topladığımızı və onlardan necə istifadə etdiyimizi izah edir. Saytdan istifadə etməklə onunla razılaşırsan.",
       "s2Title": "Nə toplayırıq",
-      "s2Text": "Hesab məlumatları (e-poçt və parolun qorunan forması); profil məlumatları (doğum tarixi, versən cins, yaşadığın ölkə, vətəndaşlıqlar, nə axtardığın, sənədlərinin statusu); sorğu cavabların; həmçinin kukilər və oxşar texnologiyalar vasitəsilə texniki və istifadə məlumatları (baxdığın səhifələr, saytdakı hərəkətlər, cihaz, brauzer, dil, IP ünvanı, təxmini yer, gəldiyin sayt). Ziyarət statistikası üçün (yalnız analitik cookie-ləri qəbul etmisinizsə) hostinqimizin müəyyən etdiyi ölkəni, regionu, şəhəri, saat qurşağını və internet provayderini və ya şəbəkəni qeyd edirik; IP ünvanının özü bu statistikada saxlanılmır.",
+      "s2Text": "Hesab məlumatları (e-poçt və parolun qorunan forması); profil məlumatları (doğum tarixi, versən cins, yaşadığın ölkə, vətəndaşlıqlar, nə axtardığın, sənədlərinin statusu); sorğu cavabların; həmçinin kukilər və oxşar texnologiyalar vasitəsilə texniki və istifadə məlumatları (baxdığın səhifələr, saytdakı hərəkətlər, cihaz, brauzer, dil, IP ünvanı, təxmini yer, gəldiyin sayt). Sayta hər ziyarət barədə jurnal aparırıq: IP ünvanı, brauzer və əməliyyat sistemi, ekran ölçüsü, açılan səhifələr, gəldiyin sayt, həmçinin hostinqimizin IP ünvanına görə müəyyən etdiyi ölkə, region, şəhər, poçt indeksi, təxmini koordinatlar, saat qurşağı və internet provayderi; hesabına daxil olmusansa, ziyarətlər hesabınla əlaqələndirilir. IP ünvanları bu jurnalda 3 ilədək saxlanılır. Jurnal kuki bannerindəki seçimindən asılı olmayaraq aparılır: seçim yalnız brauzerində ziyarət identifikatorunun saxlanılıb-saxlanılmayacağını və üçüncü tərəf analitikasının yüklənib-yüklənməyəcəyini müəyyən edir.",
       "s3Title": "Nə üçün toplayırıq",
       "s3Text": "Xidməti işlətmək və təkmilləşdirmək, minimum yaşı yoxlamaq, uyğunluqlarını yaratmaq, səninlə əlaqə saxlamaq, saytın necə istifadə olunduğunu ölçmək, reklam göstərmək, tədqiqat aparmaq, xidmətin təhlükəsizliyini təmin etmək və qanuni öhdəlikləri yerinə yetirmək üçün.",
       "s4Title": "Analitika və paylaşma",
@@ -1058,7 +1058,7 @@
   },
   "Consent": {
     "title": "Kukilər və analitika",
-    "text": "Saytın işləməsi üçün zəruri kukilərdən istifadə edirik (dil, mövzu, giriş). İcazən olarsa, analitika və reklam texnologiyalarından da istifadə edirik və bu məlumatları Məxfilik siyasətində təsvir olunduğu kimi tərəfdaşlarımızla paylaşa bilərik.",
+    "text": "Saytın işləməsi üçün zəruri kukilərdən istifadə edirik (dil, mövzu, giriş) və təhlükəsizlik və statistika üçün ziyarət jurnalı aparırıq (IP ünvanı, brauzer, səhifələr). İcazən olarsa, brauzerində ziyarət identifikatoru da saxlayırıq, analitika və reklam texnologiyalarından istifadə edirik və bu məlumatları Məxfilik siyasətində təsvir olunduğu kimi tərəfdaşlarımızla paylaşa bilərik.",
     "accept": "Hamısını qəbul et",
     "decline": "Yalnız zəruriləri",
     "policy": "Məxfilik siyasəti",
