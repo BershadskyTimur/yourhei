@@ -152,6 +152,18 @@ html {
   overflow-anchor: none; /* the page must not jump to the bottom when the content changes */
 }
 
+/* The list of languages names each language in its own letters (Georgian, Kazakh, Azerbaijani …). In the site font those
+   names made every page download three more font files (about 90 KB) just to measure a closed list, so the list is drawn
+   in the device's own font. (Setting it on the options alone is not enough: the browser measures them in the list's font.) */
+.locale-select {
+  font-family: system-ui, sans-serif;
+}
+
+/* The cookie banner is in the page from the server; a visitor who has already answered does not see it (layout.tsx sets data-consent). */
+html[data-consent] [data-consent-banner='auto'] {
+  display: none;
+}
+
 /* Android phones render the same CSS larger than iPhones: a rem-based interface is scaled down by 12%. */
 html.android {
   font-size: 14px;

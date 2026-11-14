@@ -1,6 +1,7 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { RegisterWizard } from '@/components/RegisterWizard';
 import { privatePageMetadata } from '@/lib/seo/private-page';
+import { ClientMessages } from '@/i18n/ClientMessages';
 
 // For the visitor, not for search engines: own title, noindex (see src/lib/seo/private-page.ts).
 export function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
@@ -12,12 +13,14 @@ export default async function RegisterPage({ params }: { params: Promise<{ local
   setRequestLocale(locale);
   const t = await getTranslations('Register');
   return (
-    <div className="mx-auto max-w-2xl px-4 py-10">
-      <h1 className="text-3xl font-semibold text-text">{t('title')}</h1>
-      {/* The form appears after the saved draft is read; the reserved height keeps the footer from jumping. */}
-      <div className="mt-4 min-h-[70svh]">
-        <RegisterWizard />
+    <ClientMessages namespaces={['Register', 'Login.errors']}>
+      <div className="mx-auto max-w-2xl px-4 py-10">
+        <h1 className="text-3xl font-semibold text-text">{t('title')}</h1>
+        {/* The form appears after the saved draft is read; the reserved height keeps the footer from jumping. */}
+        <div className="mt-4 min-h-[70svh]">
+          <RegisterWizard />
+        </div>
       </div>
-    </div>
+    </ClientMessages>
   );
 }

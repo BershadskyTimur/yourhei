@@ -59,7 +59,9 @@ export function InstitutionExplorer({ typeCounts, loadError }: Props) {
           io.disconnect();
         }
       },
-      { rootMargin: '700px' },
+      // Close enough to be ready when the visitor scrolls to it, far enough not to load 4 MB of map for a phone visitor
+      // who only reads the first screen (with 700px the map always loaded on phones and blocked the page for 3 s).
+      { rootMargin: '250px' },
     );
     io.observe(el);
     return () => io.disconnect();

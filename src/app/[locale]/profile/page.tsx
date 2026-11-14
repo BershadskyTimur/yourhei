@@ -3,6 +3,7 @@ import { Suspense } from 'react';
 import { SideAds } from '@/components/SideAds';
 import { ProfileEditor } from '@/components/ProfileEditor';
 import { privatePageMetadata } from '@/lib/seo/private-page';
+import { ClientMessages } from '@/i18n/ClientMessages';
 
 // For the visitor, not for search engines: own title, noindex (see src/lib/seo/private-page.ts).
 export function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
@@ -14,15 +15,17 @@ export default async function ProfilePage({ params }: { params: Promise<{ locale
   setRequestLocale(locale);
   const t = await getTranslations('Profile');
   return (
-    <SideAds>
-    <div className="mx-auto max-w-2xl py-10">
-      <h1 className="text-3xl font-semibold text-text">{t('title')}</h1>
-      <div className="mt-6">
-        <Suspense>
-          <ProfileEditor />
-        </Suspense>
+    <ClientMessages namespaces={['Profile', 'Register.about', 'Register.documents', 'Register.search', 'Register.errors', 'Types', 'Subregions']}>
+      <SideAds>
+      <div className="mx-auto max-w-2xl py-10">
+        <h1 className="text-3xl font-semibold text-text">{t('title')}</h1>
+        <div className="mt-6">
+          <Suspense>
+            <ProfileEditor />
+          </Suspense>
+        </div>
       </div>
-    </div>
-    </SideAds>
+      </SideAds>
+    </ClientMessages>
   );
 }

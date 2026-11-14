@@ -2,6 +2,7 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { SideAds } from '@/components/SideAds';
 import { MatchesApp } from '@/components/matches/MatchesApp';
 import { privatePageMetadata } from '@/lib/seo/private-page';
+import { ClientMessages } from '@/i18n/ClientMessages';
 
 // For the visitor, not for search engines: own title, noindex (see src/lib/seo/private-page.ts).
 export function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
@@ -13,13 +14,15 @@ export default async function MatchesPage({ params }: { params: Promise<{ locale
   setRequestLocale(locale);
   const t = await getTranslations('Matches');
   return (
-    <SideAds>
-    <div className="mx-auto max-w-3xl py-10">
-      <h1 className="text-3xl font-semibold tracking-tight text-text">{t('title')}</h1>
-      <div className="mt-6">
-        <MatchesApp />
+    <ClientMessages namespaces={['Matches', 'Compare', 'Countries', 'Institution', 'Register.errors']}>
+      <SideAds>
+      <div className="mx-auto max-w-3xl py-10">
+        <h1 className="text-3xl font-semibold tracking-tight text-text">{t('title')}</h1>
+        <div className="mt-6">
+          <MatchesApp />
+        </div>
       </div>
-    </div>
-    </SideAds>
+      </SideAds>
+    </ClientMessages>
   );
 }

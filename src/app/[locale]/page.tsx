@@ -16,6 +16,7 @@ import { LOCALES } from '@/config/locales';
 import { Link } from '@/i18n/navigation';
 import { routing } from '@/i18n/routing';
 import { getMapCounts } from '@/lib/institutions/summaries';
+import { ClientMessages } from '@/i18n/ClientMessages';
 
 // The home page is rebuilt at most twice a day (the counts on it change slowly); every rebuild reads the database.
 export const revalidate = 43200;
@@ -63,137 +64,140 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
   const tDeadlines = await getTranslations('Deadlines');
   const tChecklist = await getTranslations('Checklist');
   return (
-    <>
-      <JsonLd data={organizationLd(process.env.NEXT_PUBLIC_CONTACT_EMAIL)} />
-      <JsonLd data={websiteLd(locale, tMeta('description'))} />
-      <section className="hero-bg">
-        <div className="mx-auto grid max-w-[1500px] items-center gap-12 px-4 py-14 sm:py-20 lg:grid-cols-[minmax(0,1fr)_minmax(0,460px)] lg:gap-20 lg:py-24">
-          <div>
-            <p className="text-base font-medium text-accent-text">{t('hero.badge')}</p>
-            <h1 className="mt-4 max-w-4xl text-4xl font-normal leading-[1.05] tracking-[-0.03em] text-text sm:text-6xl lg:text-7xl">
-              {t('map.title')}
-            </h1>
-            <p className="mt-8 max-w-xl text-lg leading-relaxed text-muted sm:text-xl">
-              {t('hero.subtitle', { count: new Intl.NumberFormat(locale).format(counts.total) })}
-            </p>
-            <div className="mt-10 flex flex-wrap items-center gap-x-8 gap-y-4">
-              <Link href="/register" className={primary}>{t('how.cta')}</Link>
-              <a href="#map" className="border-b border-gold pb-1 text-lg font-medium text-text hover:opacity-80">
-                {t('hero.ctaMap')}
-              </a>
+    <ClientMessages namespaces={['Home.map', 'Types', 'Catalog']}>
+      <>
+        <JsonLd data={organizationLd(process.env.NEXT_PUBLIC_CONTACT_EMAIL)} />
+        <JsonLd data={websiteLd(locale, tMeta('description'))} />
+        <section className="hero-bg">
+          <div className="mx-auto grid max-w-[1500px] items-center gap-12 px-4 py-14 sm:py-20 lg:grid-cols-[minmax(0,1fr)_minmax(0,460px)] lg:gap-20 lg:py-24">
+            <div>
+              <p className="text-base font-medium text-accent-text">{t('hero.badge')}</p>
+              <h1 className="mt-4 max-w-4xl text-4xl font-normal leading-[1.05] tracking-[-0.03em] text-text sm:text-6xl lg:text-7xl">
+                {t('map.title')}
+              </h1>
+              <p className="mt-8 max-w-xl text-lg leading-relaxed text-muted sm:text-xl">
+                {t('hero.subtitle', { count: new Intl.NumberFormat(locale).format(counts.total) })}
+              </p>
+              <div className="mt-10 flex flex-wrap items-center gap-x-8 gap-y-4">
+                <Link href="/register" className={primary}>{t('how.cta')}</Link>
+                <a href="#map" className="border-b border-gold pb-1 text-lg font-medium text-text hover:opacity-80">
+                  {t('hero.ctaMap')}
+                </a>
+              </div>
+              <ul className="mt-12 flex max-w-xl flex-wrap gap-x-10 gap-y-3 border-t border-line pt-5 text-base text-muted">
+                {[
+                  t('stats.institutions', { count: counts.total }),
+                  t('stats.countries', { count: countries.length }),
+                  t('stats.languages', { count: LOCALES.length }),
+                  t('stats.free'),
+                ].map((s) => (
+                  <li key={s} className="font-serif text-lg text-text">
+                    {s}
+                  </li>
+                ))}
+              </ul>
             </div>
-            <ul className="mt-12 flex max-w-xl flex-wrap gap-x-10 gap-y-3 border-t border-line pt-5 text-base text-muted">
-              {[
-                t('stats.institutions', { count: counts.total }),
-                t('stats.countries', { count: countries.length }),
-                t('stats.languages', { count: LOCALES.length }),
-                t('stats.free'),
-              ].map((s) => (
-                <li key={s} className="font-serif text-lg text-text">
-                  {s}
-                </li>
-              ))}
-            </ul>
+            <HeroSample />
           </div>
-          <HeroSample />
-        </div>
-      </section>
+        </section>
 
-      {/* On wide screens the map takes the middle three fifths and an ad column stands on each side. */}
-      <div className="map-stage">
-        <div className="ads-home-grid mx-auto grid max-w-[1800px] gap-6 px-4">
-          <div data-ad-column className="hidden xl:block">
-            <div className="sticky top-24 pt-16"><AdSlot kind="rail" /></div>
+        {/* On wide screens the map takes the middle three fifths and an ad column stands on each side. */}
+        <div className="map-stage">
+          <div className="ads-home-grid mx-auto grid max-w-[1800px] gap-6 px-4">
+            <div data-ad-column className="hidden xl:block">
+              <div className="sticky top-24 pt-16"><AdSlot kind="rail" /></div>
+            </div>
+            <InstitutionExplorer typeCounts={counts.types} loadError={error} />
+            <div data-ad-column className="hidden xl:block">
+              <div className="sticky top-24 pt-16"><AdSlot kind="rail" /></div>
+            </div>
           </div>
-          <InstitutionExplorer typeCounts={counts.types} loadError={error} />
-          <div data-ad-column className="hidden xl:block">
-            <div className="sticky top-24 pt-16"><AdSlot kind="rail" /></div>
+          <div data-ad-column className="mx-auto max-w-[1500px] px-4 pb-8 pt-6 xl:hidden">
+            <AdSlot kind="banner" />
           </div>
         </div>
-        <div data-ad-column className="mx-auto max-w-[1500px] px-4 pb-8 pt-6 xl:hidden">
-          <AdSlot kind="banner" />
-        </div>
-      </div>
 
-      <section aria-labelledby="why-title" className="mx-auto mt-24 max-w-[1500px] px-4">
-        <h2 id="why-title" className={sectionTitle}>{t('why.title')}</h2>
-        <ul className="mt-10 grid gap-x-10 gap-y-10 sm:grid-cols-2 lg:grid-cols-4">
-          {features.map((f) => (
-            <li key={f.title} className="border-t border-text pt-5">
-              <span className="text-gold-text">{f.icon}</span>
-              <h3 className="mt-4 text-xl font-medium">{f.title}</h3>
-              <p className="mt-2 leading-relaxed text-muted">{f.text}</p>
-            </li>
-          ))}
-        </ul>
-      </section>
-
-      <section aria-labelledby="how-title" className="mx-auto mt-24 max-w-[1500px] px-4">
-        <h2 id="how-title" className={sectionTitle}>{t('how.title')}</h2>
-        <ol className="mt-10 grid gap-x-10 gap-y-10 sm:grid-cols-3">
-          {steps.map((s, idx) => (
-            <li key={s.title} className="border-t border-text pt-5">
-              <span aria-hidden="true" className="font-serif text-5xl font-normal text-gold-text">
-                {idx + 1}
-              </span>
-              <h3 className="mt-4 text-xl font-medium">{s.title}</h3>
-              <p className="mt-2 leading-relaxed text-muted">{s.text}</p>
-            </li>
-          ))}
-        </ol>
-      </section>
-
-      <section aria-labelledby="resources-title" className="mx-auto mt-24 max-w-[1500px] px-4">
-        <h2 id="resources-title" className={sectionTitle}>{t('resources.title')}</h2>
-        <ul className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {isIndexedLocale(locale, '/blog') &&
-            publishedArticles().filter((a) => isInLanguage(a, locale)).slice(0, 2).map((a) => (
-              <li key={a.slug}>
-                <Link href={`/blog/${a.slug}`} className="block h-full rounded-lg border border-line bg-surface p-5 hover:bg-surface-strong">
-                  <span className="text-sm font-medium text-gold-text">{tBlog('title')}</span>
-                  <span className="mt-2 block text-lg font-semibold leading-snug text-text">{bodyOf(a, locale).title}</span>
-                </Link>
-              </li>
-            ))}
-          <li>
-            <Link href="/deadlines" className="block h-full rounded-lg border border-line bg-surface p-5 hover:bg-surface-strong">
-              <span className="text-lg font-semibold text-text">{tDeadlines('title')}</span>
-              <span className="mt-2 block text-muted">{tDeadlines('intro')}</span>
-            </Link>
-          </li>
-          <li>
-            <Link href="/checklist" className="block h-full rounded-lg border border-line bg-surface p-5 hover:bg-surface-strong">
-              <span className="text-lg font-semibold text-text">{tChecklist('title')}</span>
-              <span className="mt-2 block text-muted">{tChecklist('intro')}</span>
-            </Link>
-          </li>
-        </ul>
-      </section>
-
-      {countries.length > 0 && (
-        <section aria-labelledby="countries-title" className="mx-auto mt-24 max-w-[1500px] px-4">
-          <h2 id="countries-title" className={sectionTitle}>{t('countries.title')}</h2>
-          <p className="mt-4 text-lg text-muted">{t('countries.text')}</p>
-          <ul className="mt-8 flex flex-wrap gap-2">
-            {countries.map(([code, count]) => (
-              <li key={code} className="rounded-lg border border-line bg-surface px-3 py-1.5 text-sm">
-                {regionNames.of(code) ?? code}
-                <span className="ms-2 text-xs text-muted">{count}</span>
+        <section aria-labelledby="why-title" className="mx-auto mt-24 max-w-[1500px] px-4">
+          <h2 id="why-title" className={sectionTitle}>{t('why.title')}</h2>
+          <ul className="mt-10 grid gap-x-10 gap-y-10 sm:grid-cols-2 lg:grid-cols-4">
+            {features.map((f) => (
+              <li key={f.title} className="border-t border-text pt-5">
+                <span className="text-gold-text">{f.icon}</span>
+                <h3 className="mt-4 text-xl font-medium">{f.title}</h3>
+                <p className="mt-2 leading-relaxed text-muted">{f.text}</p>
               </li>
             ))}
           </ul>
         </section>
-      )}
 
-      <section className="band-dark mx-4 mt-24 overflow-hidden rounded-lg border border-line xl:mx-auto xl:max-w-[1500px]">
-        <div className="flex flex-col items-start gap-6 px-6 py-12 sm:px-12 lg:flex-row lg:items-center lg:justify-between">
-          <div>
-            <h2 className="text-3xl font-normal tracking-tight text-text sm:text-4xl">{t('cta.title')}</h2>
-            <p className="mt-3 max-w-2xl text-lg text-muted">{t('cta.text')}</p>
+        <section aria-labelledby="how-title" className="mx-auto mt-24 max-w-[1500px] px-4">
+          <h2 id="how-title" className={sectionTitle}>{t('how.title')}</h2>
+          <ol className="mt-10 grid gap-x-10 gap-y-10 sm:grid-cols-3">
+            {steps.map((s, idx) => (
+              <li key={s.title} className="border-t border-text pt-5">
+                <span aria-hidden="true" className="font-serif text-5xl font-normal text-gold-text">
+                  {idx + 1}
+                </span>
+                <h3 className="mt-4 text-xl font-medium">{s.title}</h3>
+                <p className="mt-2 leading-relaxed text-muted">{s.text}</p>
+              </li>
+            ))}
+          </ol>
+        </section>
+
+        <section aria-labelledby="resources-title" className="mx-auto mt-24 max-w-[1500px] px-4">
+          <h2 id="resources-title" className={sectionTitle}>{t('resources.title')}</h2>
+          <ul className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {isIndexedLocale(locale, '/blog') &&
+              publishedArticles().filter((a) => isInLanguage(a, locale)).slice(0, 2).map((a) => (
+                <li key={a.slug}>
+                  <Link href={`/blog/${a.slug}`} className="block h-full rounded-lg border border-line bg-surface p-5 hover:bg-surface-strong">
+                    <span className="text-sm font-medium text-gold-text">{tBlog('title')}</span>
+                    <span className="mt-2 block text-lg font-semibold leading-snug text-text">{bodyOf(a, locale).title}</span>
+                  </Link>
+                </li>
+              ))}
+            <li>
+              <Link href="/deadlines" className="block h-full rounded-lg border border-line bg-surface p-5 hover:bg-surface-strong">
+                <span className="text-lg font-semibold text-text">{tDeadlines('title')}</span>
+                <span className="mt-2 block text-muted">{tDeadlines('intro')}</span>
+              </Link>
+            </li>
+            <li>
+              <Link href="/checklist" className="block h-full rounded-lg border border-line bg-surface p-5 hover:bg-surface-strong">
+                <span className="text-lg font-semibold text-text">{tChecklist('title')}</span>
+                <span className="mt-2 block text-muted">{tChecklist('intro')}</span>
+              </Link>
+            </li>
+          </ul>
+        </section>
+
+        {countries.length > 0 && (
+          <section aria-labelledby="countries-title" className="mx-auto mt-24 max-w-[1500px] px-4">
+            <h2 id="countries-title" className={sectionTitle}>{t('countries.title')}</h2>
+            <p className="mt-4 text-lg text-muted">{t('countries.text')}</p>
+            {/* The look of the chips is set once on the list: with classes on each of the ~230 chips the page carried 30 KB more. */}
+          <ul className="mt-8 flex flex-wrap gap-2 [&>li]:rounded-lg [&>li]:border [&>li]:border-line [&>li]:bg-surface [&>li]:px-3 [&>li]:py-1.5 [&>li]:text-sm [&>li>span]:ms-2 [&>li>span]:text-xs [&>li>span]:text-muted">
+              {countries.map(([code, count]) => (
+                <li key={code}>
+                  {regionNames.of(code) ?? code}
+                  <span>{count}</span>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
+
+        <section className="band-dark mx-4 mt-24 overflow-hidden rounded-lg border border-line xl:mx-auto xl:max-w-[1500px]">
+          <div className="flex flex-col items-start gap-6 px-6 py-12 sm:px-12 lg:flex-row lg:items-center lg:justify-between">
+            <div>
+              <h2 className="text-3xl font-normal tracking-tight text-text sm:text-4xl">{t('cta.title')}</h2>
+              <p className="mt-3 max-w-2xl text-lg text-muted">{t('cta.text')}</p>
+            </div>
+            <Link href="/register" className={primary}>{t('how.cta')}</Link>
           </div>
-          <Link href="/register" className={primary}>{t('how.cta')}</Link>
-        </div>
-      </section>
-    </>
+        </section>
+      </>
+    </ClientMessages>
   );
 }

@@ -7,7 +7,7 @@ import {
   Noto_Sans_SC,
   Source_Serif_4,
 } from 'next/font/google';
-import { hasLocale, NextIntlClientProvider } from 'next-intl';
+import { hasLocale } from 'next-intl';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import type { ReactNode } from 'react';
@@ -19,6 +19,7 @@ import { TranslationNotice } from '@/components/TranslationNotice';
 import { PageViewTracker } from '@/components/PageViewTracker';
 import { ThemeProvider } from '@/components/ThemeProvider';
 import { LOCALES } from '@/config/locales';
+import { ClientMessages } from '@/i18n/ClientMessages';
 import { routing } from '@/i18n/routing';
 import { siteUrl } from '@/lib/site-url';
 import '../globals.css';
@@ -131,9 +132,14 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} dir={dir} className={fonts} suppressHydrationWarning>
       <body className="flex min-h-svh flex-col">
-        {/* Android phones show the interface larger than iPhones: a class on <html> lets the CSS scale it down a little. */}
-        <script dangerouslySetInnerHTML={{ __html: "if(/Android/i.test(navigator.userAgent))document.documentElement.classList.add('android')" }} />
-        <NextIntlClientProvider>
+        {/* Runs before the page is drawn:
+            - Android phones show the interface larger than iPhones: a class on <html> lets the CSS scale it down a little;
+            - a visitor who already answered the cookie banner gets <html data-consent>, which hides the banner (ConsentBanner.tsx);
+            - `__name` is a helper the Cloudflare build adds inside the theme script; without it that script stopped with
+              "__name is not defined" and a dark-theme page flashed light while loading. */}
+        <script dangerouslySetInnerHTML={{ __html: "window.__name=window.__name||function(f){return f};if(/Android/i.test(navigator.userAgent))document.documentElement.classList.add('android');try{var c=localStorage.getItem('yourhei-consent');if(c==='all'||c==='necessary')document.documentElement.dataset.consent=c}catch(e){}" }} />
+        {/* Only the texts the browser components need are sent with the page (src/i18n/pick-messages.ts). */}
+        <ClientMessages>
           <ThemeProvider>
             <a
               href="#main-content"
@@ -151,7 +157,7 @@ export default async function LocaleLayout({
             <AdsFlag />
             <PageViewTracker />
           </ThemeProvider>
-        </NextIntlClientProvider>
+        </ClientMessages>
       </body>
     </html>
   );

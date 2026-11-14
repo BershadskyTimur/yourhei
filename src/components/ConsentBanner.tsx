@@ -32,13 +32,21 @@ export function openConsentSettings() {
 export function ConsentBanner() {
   const t = useTranslations('Consent');
   const [choice, setChoice] = useState<Choice>(null);
-  const [open, setOpen] = useState(false);
+  // The banner is part of the page the server sends, so a first-time visitor sees it with the first paint (it is often the
+  // largest text on a phone screen, and drawing it only after the scripts made the page's "largest paint" seconds late).
+  // For a visitor who has already chosen, a small script in the layout marks <html data-consent> before the first paint
+  // and the style sheet hides the banner; `forced` shows it again from the "Cookie settings" link.
+  const [open, setOpen] = useState(true);
+  const [forced, setForced] = useState(false);
 
   useEffect(() => {
     const saved = read();
     setChoice(saved); // eslint-disable-line react-hooks/set-state-in-effect
     setOpen(saved === null);
-    const reopen = () => setOpen(true);
+    const reopen = () => {
+      setForced(true);
+      setOpen(true);
+    };
     window.addEventListener(EVENT, reopen);
     return () => window.removeEventListener(EVENT, reopen);
   }, []);
@@ -49,8 +57,10 @@ export function ConsentBanner() {
     } catch {
       /* private mode: the choice just lasts until the page is closed */
     }
+    document.documentElement.dataset.consent = value;
     setChoice(value);
     setOpen(false);
+    setForced(false);
   }
 
   return (
@@ -64,7 +74,7 @@ export function ConsentBanner() {
         </>
       )}
       {open && (
-        <div role="region" aria-labelledby="consent-title" className="fixed inset-x-3 bottom-3 z-50 mx-auto max-w-3xl rounded-lg border border-line-strong bg-bg p-4 shadow-lg sm:p-5">
+        <div role="region" aria-labelledby="consent-title" data-consent-banner={forced ? 'forced' : 'auto'} className="fixed inset-x-3 bottom-3 z-50 mx-auto max-w-3xl rounded-lg border border-line-strong bg-bg p-4 shadow-lg sm:p-5">
           <h2 id="consent-title" className="text-base font-semibold text-text">{t('title')}</h2>
           <p className="mt-1 text-sm text-muted">
             {t('text')}{' '}

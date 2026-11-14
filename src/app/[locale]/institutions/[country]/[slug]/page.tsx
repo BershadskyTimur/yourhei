@@ -30,6 +30,7 @@ import { composeDescription, institutionTitleCandidates } from '@/lib/seo/instit
 import { breadcrumbList, faqPageLd, institutionLd, type FaqEntry } from '@/lib/seo/structured';
 import { comboOf, fieldSlug, studyCountries } from '@/lib/study/combos';
 import { iscedEntry, labelFor } from '@/lib/survey/references';
+import { ClientMessages } from '@/i18n/ClientMessages';
 
 // The data of one institution changes rarely; a page is rebuilt at most once a day (bots visit thousands of these pages).
 export const revalidate = 86400;
@@ -190,329 +191,331 @@ export default async function InstitutionPage({ params }: { params: Params }) {
   const similar = await getSimilarInstitutions(institution.country, institution.type, institution.slug, locale);
 
   return (
-    <SideAds>
-      <JsonLd data={structured} />
-      {showFaq && <JsonLd data={faqPageLd(faq)} />}
-      <JsonLd
-        data={breadcrumbList(locale, [
-          { name: 'YourHEI', path: '' },
-          ...(hasList
-            ? [{ name: tList('allInCountry', { place: placeIn(locale, institution.country, countryName ?? institution.country) }), path: `/institutions/${institution.country.toLowerCase()}` }]
-            : studyCountries().includes(institution.country)
-              ? [{ name: countryName ?? institution.country, path: `/study/${institution.country.toLowerCase()}` }]
-              : []),
-          { name, path: `/institutions/${country}/${slug}` },
-        ])}
-      />
-      <article className="mx-auto max-w-3xl py-12">
-        <p className="flex items-center gap-3 text-sm font-medium uppercase tracking-wide text-muted">
-          <TypeDot type={institution.type} />
-          {tTypes(institution.type)}
-        </p>
-        <h1 className="mt-3 text-3xl font-semibold tracking-tight text-text">{name}</h1>
-        {original && original !== name && <p className="mt-1 text-lg text-muted">{original}</p>}
-        <p className="mt-3 text-lg">{[city, countryName].filter(Boolean).join(', ')}</p>
-        {guideOf(institution.country) && (
-          <p className="mt-1 text-sm">
-            <Link href={`/countries/${institution.country.toLowerCase()}`} className="font-medium text-accent-text underline underline-offset-4">
-              {t('countryGuide', { country: countryName ?? institution.country })}
+    <ClientMessages namespaces={['Institution', 'Catalog', 'ReportError', 'Reviews', 'Cabinet.claim', 'Register.errors']}>
+      <SideAds>
+        <JsonLd data={structured} />
+        {showFaq && <JsonLd data={faqPageLd(faq)} />}
+        <JsonLd
+          data={breadcrumbList(locale, [
+            { name: 'YourHEI', path: '' },
+            ...(hasList
+              ? [{ name: tList('allInCountry', { place: placeIn(locale, institution.country, countryName ?? institution.country) }), path: `/institutions/${institution.country.toLowerCase()}` }]
+              : studyCountries().includes(institution.country)
+                ? [{ name: countryName ?? institution.country, path: `/study/${institution.country.toLowerCase()}` }]
+                : []),
+            { name, path: `/institutions/${country}/${slug}` },
+          ])}
+        />
+        <article className="mx-auto max-w-3xl py-12">
+          <p className="flex items-center gap-3 text-sm font-medium uppercase tracking-wide text-muted">
+            <TypeDot type={institution.type} />
+            {tTypes(institution.type)}
+          </p>
+          <h1 className="mt-3 text-3xl font-semibold tracking-tight text-text">{name}</h1>
+          {original && original !== name && <p className="mt-1 text-lg text-muted">{original}</p>}
+          <p className="mt-3 text-lg">{[city, countryName].filter(Boolean).join(', ')}</p>
+          {guideOf(institution.country) && (
+            <p className="mt-1 text-sm">
+              <Link href={`/countries/${institution.country.toLowerCase()}`} className="font-medium text-accent-text underline underline-offset-4">
+                {t('countryGuide', { country: countryName ?? institution.country })}
+              </Link>
+            </p>
+          )}
+          {institution.foundedYear && <p className="mt-1 text-muted">{t('founded', { year: institution.foundedYear })}</p>}
+
+          <div className="mt-5 flex flex-wrap items-center gap-3">
+            {institution.website && (
+              <TrackedLink href={institution.website} meta={{ kind: 'website', country: institution.country, slug: institution.slug }} className="inline-flex h-10 items-center rounded-lg bg-accent px-4 text-sm font-medium text-on-accent hover:opacity-90">
+                {t('officialSite')}
+              </TrackedLink>
+            )}
+            <FavoriteButton institutionId={institution.id} />
+          </div>
+
+          {info.programCount > 0 && (
+            <section className="mt-8" aria-labelledby="answer-title">
+              <h2 id="answer-title" className="text-xl font-semibold text-text">{t('answerTitle')}</h2>
+              <dl className="mt-3 grid gap-3 sm:grid-cols-2">
+                <div className="rounded-lg border border-line bg-surface px-4 py-3">
+                  <dt className="text-sm text-muted">{t('answerTuition')}</dt>
+                  <dd className="font-medium">{info.tuition ? formatTuitionRange(locale, info.tuition) : allFree ? t('free') : t('answerUnknown')}</dd>
+                  {info.tuition && year && <dd className="text-sm text-muted">{t('dataYear', { year })}</dd>}
+                  {info.tuition && priceSource && (
+                    <dd className="text-sm text-muted">
+                      {priceSource.url ? (
+                        <a href={priceSource.url} target="_blank" rel="noopener noreferrer" className="underline underline-offset-4">{t('sourceLine', { source: priceSource.name })}</a>
+                      ) : (
+                        t('sourceLine', { source: priceSource.name })
+                      )}
+                    </dd>
+                  )}
+                </div>
+                <div className="rounded-lg border border-line bg-surface px-4 py-3">
+                  <dt className="text-sm text-muted">{t('answerDeadline')}</dt>
+                  <dd className="font-medium">{nextDeadline ? dateText.format(new Date(`${nextDeadline}T00:00:00Z`)) : t('answerUnknown')}</dd>
+                  {deadlineMonth ? (
+                    <dd className="text-sm">
+                      <Link href={`/deadlines/${cc}/${deadlineMonth}`} className="text-accent-text underline underline-offset-4">{t('answerDeadlineMonth')}</Link>
+                    </dd>
+                  ) : (
+                    hasDeadlines && (
+                      <dd className="text-sm">
+                        <Link href={`/deadlines/${cc}`} className="text-accent-text underline underline-offset-4">{tDeadlines('countryTitle', { country: countryName ?? institution.country })}</Link>
+                      </dd>
+                    )
+                  )}
+                </div>
+                <div className="rounded-lg border border-line bg-surface px-4 py-3">
+                  <dt className="text-sm text-muted">{t('programsTitle')}</dt>
+                  <dd className="font-medium">{t('programsCount', { count: info.programCount })}</dd>
+                  <dd className="text-sm text-muted">{info.levels.map(levelLabel).join(', ')}</dd>
+                </div>
+                {info.languages.length > 0 && (
+                  <div className="rounded-lg border border-line bg-surface px-4 py-3">
+                    <dt className="text-sm text-muted">{t('answerLanguages')}</dt>
+                    <dd className="font-medium">{info.languages.map((l) => langNames.of(l) ?? l).join(', ')}</dd>
+                  </div>
+                )}
+              </dl>
+              {checked && <p className="mt-3 text-sm text-muted">{t('checked', { date: dateBeforeStop(checked) })}</p>}
+            </section>
+          )}
+
+          {description.text && <p className="mt-6 text-lg leading-relaxed">{description.text}</p>}
+
+          {(facts.length > 0 || features.length > 0) && (
+            <section className="mt-8" aria-labelledby="facts-title">
+              <h2 id="facts-title" className="text-xl font-semibold text-text">{t('factsTitle')}</h2>
+              <dl className="mt-3 grid gap-3 sm:grid-cols-2">
+                {facts.map(([k, v]) => (
+                  <div key={k} className="rounded-lg border border-line bg-surface px-4 py-3">
+                    <dt className="text-sm text-muted">{k}</dt>
+                    <dd className="font-medium">{v}</dd>
+                  </div>
+                ))}
+                {features.length > 0 && (
+                  <div className="rounded-lg border border-line bg-surface px-4 py-3">
+                    <dt className="text-sm text-muted">{t('featuresTitle')}</dt>
+                    <dd className="font-medium">{features.map((f) => t(`features.${f}` as 'features.exchange')).join(', ')}</dd>
+                  </div>
+                )}
+              </dl>
+            </section>
+          )}
+
+          {hasPrices(priceRows) && (
+            <section className="mt-10" aria-labelledby="price-title">
+              <h2 id="price-title" className="text-xl font-semibold text-text">{t('priceTitle')}</h2>
+              <div className="mt-3 overflow-x-auto">
+                <table className="w-full min-w-[20rem] border-collapse text-sm">
+                  <thead>
+                    <tr>
+                      <th scope="col" className="border-b border-line p-3 text-start font-semibold text-text">{t('priceLevel')}</th>
+                      <th scope="col" className="border-b border-line p-3 text-start font-semibold text-text">{t('pricePrograms')}</th>
+                      <th scope="col" className="border-b border-line p-3 text-start font-semibold text-text">{t('priceYear')}</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {priceRows.map((r) => (
+                      <tr key={r.level} className="align-top">
+                        <th scope="row" className="border-b border-line p-3 text-start font-medium text-muted">{levelLabel(r.level)}</th>
+                        <td className="border-b border-line p-3">{numberText.format(r.programs)}</td>
+                        <td className="border-b border-line p-3">{r.free ? t('free') : r.tuition ? formatTuitionRange(locale, r.tuition) : '—'}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </section>
+          )}
+
+          <section className="mt-10" aria-labelledby="programs-title">
+            <h2 id="programs-title" className="text-xl font-semibold text-text">
+              {t('programsTitle')}
+              {institution.programs.length > 0 && <span className="ms-2 text-base font-normal text-muted">{t('programsCount', { count: institution.programs.length })}</span>}
+            </h2>
+            {byLevel.length === 0 ? (
+              <p className="mt-3 rounded-lg border border-line bg-accent-soft px-4 py-3">{t('noPrograms')}</p>
+            ) : (
+              byLevel.map((g) => (
+                <div key={g.level} className="mt-5">
+                  <h3 className="text-sm font-semibold uppercase tracking-wide text-muted">{levelLabel(g.level)}</h3>
+                  <ul className="mt-2 space-y-4">
+                    {g.items.map((p) => (
+                      <ProgramCard key={p.id} program={p} country={institution.country} slug={institution.slug} city={institution.city} />
+                    ))}
+                  </ul>
+                </div>
+              ))
+            )}
+          </section>
+
+          {showFaq && (
+            <section className="mt-10" aria-labelledby="faq-title">
+              <h2 id="faq-title" className="text-xl font-semibold text-text">{tFaq('title')}</h2>
+              <div className="mt-3 space-y-4">
+                {faq.map((e) => (
+                  <div key={e.question}>
+                    <h3 className="text-lg font-semibold text-text">{e.question}</h3>
+                    <p className="mt-1">{e.answer}</p>
+                  </div>
+                ))}
+              </div>
+            </section>
+          )}
+
+          {(fieldLinks.length > 0 || hasGuide || hasList || hasDeadlines || articles.length > 0) && (
+            <section className="mt-10" aria-labelledby="more-title">
+              <h2 id="more-title" className="text-xl font-semibold text-text">{t('moreTitle')}</h2>
+              {fieldLinks.length > 0 && (
+                <>
+                  <h3 className="mt-3 text-sm font-semibold uppercase tracking-wide text-muted">{t('moreFields')}</h3>
+                  <ul className="mt-2 grid gap-x-6 gap-y-1 sm:grid-cols-2">
+                    {fieldLinks.map(([code]) => (
+                      <li key={code}>
+                        <Link href={`/study/${institution.country.toLowerCase()}/${fieldSlug(code)}`} className="text-accent-text underline underline-offset-4">
+                          {labelFor(iscedEntry(code)!, locale)}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </>
+              )}
+              {hasDeadlines && (
+                <>
+                  <h3 className="mt-5 text-sm font-semibold uppercase tracking-wide text-muted">{t('moreDeadlines')}</h3>
+                  <p className="mt-2">
+                    <Link href={`/deadlines/${cc}`} className="text-accent-text underline underline-offset-4">{tDeadlines('countryTitle', { country: countryName ?? institution.country })}</Link>
+                  </p>
+                </>
+              )}
+              {articles.length > 0 && (
+                <>
+                  <h3 className="mt-5 text-sm font-semibold uppercase tracking-wide text-muted">{t('moreArticles')}</h3>
+                  <ul className="mt-2 space-y-1">
+                    {articles.map((a) => (
+                      <li key={a.slug}>
+                        <Link href={`/blog/${a.slug}`} className="text-accent-text underline underline-offset-4">{a.title}</Link>
+                      </li>
+                    ))}
+                  </ul>
+                </>
+              )}
+              {hasList && (
+                <p className="mt-3">
+                  <Link href={`/institutions/${institution.country.toLowerCase()}`} className="font-medium text-accent-text underline underline-offset-4">
+                    {tList('allInCountry', { place: placeIn(locale, institution.country, countryName ?? institution.country) })}
+                  </Link>
+                </p>
+              )}
+              {hasGuide && (
+                <p className="mt-3">
+                  <Link href={`/countries/${institution.country.toLowerCase()}`} className="font-medium text-accent-text underline underline-offset-4">{t('moreGuide')}</Link>
+                </p>
+              )}
+            </section>
+          )}
+
+          {similar.length > 0 && (
+            <section className="mt-10" aria-labelledby="similar-title">
+              <h2 id="similar-title" className="text-xl font-semibold text-text">{t('similarTitle', { place })}</h2>
+              <ul className="mt-3 grid gap-x-6 gap-y-2 sm:grid-cols-2">
+                {similar.map((i) => (
+                  <li key={i.slug}>
+                    <Link href={`/institutions/${cc}/${i.slug}`} className="text-accent-text underline underline-offset-4">{i.name}</Link>
+                    {i.city && <span className="text-sm text-muted"> · {i.city}</span>}
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )}
+
+          {institution.rankings.length > 0 && (
+            <section className="mt-10" aria-labelledby="rankings-title">
+              <h2 id="rankings-title" className="text-xl font-semibold text-text">{t('rankingsTitle')}</h2>
+              <ul className="mt-3 space-y-1">
+                {institution.rankings.map((r) => (
+                  <li key={`${r.name}-${r.year}`}>{t('rankingLine', { name: r.name, year: r.year, position: r.position })}</li>
+                ))}
+              </ul>
+              {institution.rankings.some((r) => r.sourceUrl?.startsWith('https://www.wikidata.org/')) && (
+                <p className="mt-2 text-sm text-muted">
+                  {t('rankingsSource')}{' '}
+                  <a href={institution.rankings.find((r) => r.sourceUrl)!.sourceUrl!} target="_blank" rel="noopener noreferrer" className="underline underline-offset-4">
+                    Wikidata
+                  </a>
+                </p>
+              )}
+            </section>
+          )}
+
+          {institution.scholarships.length > 0 && (
+            <section className="mt-10" aria-labelledby="scholarships-title">
+              <h2 id="scholarships-title" className="text-xl font-semibold text-text">{t('scholarshipsTitle')}</h2>
+              <ul className="mt-3 space-y-2">
+                {institution.scholarships.map((s, i) => (
+                  <li key={i}>
+                    {s.url ? (
+                      <a href={s.url} target="_blank" rel="noopener noreferrer" className="font-medium text-accent-text underline underline-offset-4">{pickLocalized(s.names, locale).text}</a>
+                    ) : (
+                      <span className="font-medium">{pickLocalized(s.names, locale).text}</span>
+                    )}
+                    {s.covers && t.has(`covers.${s.covers}` as 'covers.full') && <span className="text-muted"> — {t(`covers.${s.covers}` as 'covers.full')}</span>}
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )}
+
+          <section className="mt-10" aria-labelledby="reviews-title">
+            <h2 id="reviews-title" className="text-xl font-semibold text-text">
+              {tReviews('title')}
+              {institution.reviewSummary && (
+                <span className="ms-2 text-base font-normal text-muted">{tReviews('summary', { rating: institution.reviewSummary.rating.toFixed(1), count: institution.reviewSummary.count })}</span>
+              )}
+            </h2>
+            {institution.reviews.length === 0 ? (
+              <p className="mt-3 text-muted">{tReviews('none')}</p>
+            ) : (
+              <ul className="mt-3 space-y-3">
+                {institution.reviews.map((r, i) => (
+                  <li key={i} className="rounded-lg border border-line bg-surface p-4">
+                    <p className="text-sm text-muted">
+                      <span className="text-accent-text" aria-label={tReviews('stars', { count: r.rating })}>{'★'.repeat(r.rating)}{'☆'.repeat(5 - r.rating)}</span>
+                      {' · '}
+                      {tReviews.has(`relations.${r.relation}` as 'relations.student') ? tReviews(`relations.${r.relation}` as 'relations.student') : r.relation}
+                      {r.createdAt ? ` · ${new Intl.DateTimeFormat(locale, { dateStyle: 'long' }).format(new Date(r.createdAt))}` : ''}
+                    </p>
+                    <p className="mt-1 whitespace-pre-line">{r.body}</p>
+                  </li>
+                ))}
+              </ul>
+            )}
+            <ReviewForm institutionId={institution.id} />
+          </section>
+
+          <ClaimInstitution institutionId={institution.id} />
+
+          {institution.programs.length === 0 && <p className="mt-6 text-muted">{t('comingSoon')}</p>}
+
+          <footer className="mt-10 space-y-1 border-t border-line pt-4 text-sm text-muted">
+            {checked && <p>{t('checked', { date: dateBeforeStop(checked) })}</p>}
+            <p>{t('disclaimer')}</p>
+            <div>
+              <ReportError
+                label={t('report')}
+                mailto={CONTACT ? `mailto:${CONTACT}?subject=${encodeURIComponent(`${name} (${institution.country}/${institution.slug})`)}` : undefined}
+              />
+            </div>
+          </footer>
+
+          <p className="mt-8">
+            <Link href="/" className="font-semibold text-accent-text underline underline-offset-4">
+              {t('back')}
             </Link>
           </p>
-        )}
-        {institution.foundedYear && <p className="mt-1 text-muted">{t('founded', { year: institution.foundedYear })}</p>}
-
-        <div className="mt-5 flex flex-wrap items-center gap-3">
-          {institution.website && (
-            <TrackedLink href={institution.website} meta={{ kind: 'website', country: institution.country, slug: institution.slug }} className="inline-flex h-10 items-center rounded-lg bg-accent px-4 text-sm font-medium text-on-accent hover:opacity-90">
-              {t('officialSite')}
-            </TrackedLink>
-          )}
-          <FavoriteButton institutionId={institution.id} />
-        </div>
-
-        {info.programCount > 0 && (
-          <section className="mt-8" aria-labelledby="answer-title">
-            <h2 id="answer-title" className="text-xl font-semibold text-text">{t('answerTitle')}</h2>
-            <dl className="mt-3 grid gap-3 sm:grid-cols-2">
-              <div className="rounded-lg border border-line bg-surface px-4 py-3">
-                <dt className="text-sm text-muted">{t('answerTuition')}</dt>
-                <dd className="font-medium">{info.tuition ? formatTuitionRange(locale, info.tuition) : allFree ? t('free') : t('answerUnknown')}</dd>
-                {info.tuition && year && <dd className="text-sm text-muted">{t('dataYear', { year })}</dd>}
-                {info.tuition && priceSource && (
-                  <dd className="text-sm text-muted">
-                    {priceSource.url ? (
-                      <a href={priceSource.url} target="_blank" rel="noopener noreferrer" className="underline underline-offset-4">{t('sourceLine', { source: priceSource.name })}</a>
-                    ) : (
-                      t('sourceLine', { source: priceSource.name })
-                    )}
-                  </dd>
-                )}
-              </div>
-              <div className="rounded-lg border border-line bg-surface px-4 py-3">
-                <dt className="text-sm text-muted">{t('answerDeadline')}</dt>
-                <dd className="font-medium">{nextDeadline ? dateText.format(new Date(`${nextDeadline}T00:00:00Z`)) : t('answerUnknown')}</dd>
-                {deadlineMonth ? (
-                  <dd className="text-sm">
-                    <Link href={`/deadlines/${cc}/${deadlineMonth}`} className="text-accent-text underline underline-offset-4">{t('answerDeadlineMonth')}</Link>
-                  </dd>
-                ) : (
-                  hasDeadlines && (
-                    <dd className="text-sm">
-                      <Link href={`/deadlines/${cc}`} className="text-accent-text underline underline-offset-4">{tDeadlines('countryTitle', { country: countryName ?? institution.country })}</Link>
-                    </dd>
-                  )
-                )}
-              </div>
-              <div className="rounded-lg border border-line bg-surface px-4 py-3">
-                <dt className="text-sm text-muted">{t('programsTitle')}</dt>
-                <dd className="font-medium">{t('programsCount', { count: info.programCount })}</dd>
-                <dd className="text-sm text-muted">{info.levels.map(levelLabel).join(', ')}</dd>
-              </div>
-              {info.languages.length > 0 && (
-                <div className="rounded-lg border border-line bg-surface px-4 py-3">
-                  <dt className="text-sm text-muted">{t('answerLanguages')}</dt>
-                  <dd className="font-medium">{info.languages.map((l) => langNames.of(l) ?? l).join(', ')}</dd>
-                </div>
-              )}
-            </dl>
-            {checked && <p className="mt-3 text-sm text-muted">{t('checked', { date: dateBeforeStop(checked) })}</p>}
-          </section>
-        )}
-
-        {description.text && <p className="mt-6 text-lg leading-relaxed">{description.text}</p>}
-
-        {(facts.length > 0 || features.length > 0) && (
-          <section className="mt-8" aria-labelledby="facts-title">
-            <h2 id="facts-title" className="text-xl font-semibold text-text">{t('factsTitle')}</h2>
-            <dl className="mt-3 grid gap-3 sm:grid-cols-2">
-              {facts.map(([k, v]) => (
-                <div key={k} className="rounded-lg border border-line bg-surface px-4 py-3">
-                  <dt className="text-sm text-muted">{k}</dt>
-                  <dd className="font-medium">{v}</dd>
-                </div>
-              ))}
-              {features.length > 0 && (
-                <div className="rounded-lg border border-line bg-surface px-4 py-3">
-                  <dt className="text-sm text-muted">{t('featuresTitle')}</dt>
-                  <dd className="font-medium">{features.map((f) => t(`features.${f}` as 'features.exchange')).join(', ')}</dd>
-                </div>
-              )}
-            </dl>
-          </section>
-        )}
-
-        {hasPrices(priceRows) && (
-          <section className="mt-10" aria-labelledby="price-title">
-            <h2 id="price-title" className="text-xl font-semibold text-text">{t('priceTitle')}</h2>
-            <div className="mt-3 overflow-x-auto">
-              <table className="w-full min-w-[20rem] border-collapse text-sm">
-                <thead>
-                  <tr>
-                    <th scope="col" className="border-b border-line p-3 text-start font-semibold text-text">{t('priceLevel')}</th>
-                    <th scope="col" className="border-b border-line p-3 text-start font-semibold text-text">{t('pricePrograms')}</th>
-                    <th scope="col" className="border-b border-line p-3 text-start font-semibold text-text">{t('priceYear')}</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {priceRows.map((r) => (
-                    <tr key={r.level} className="align-top">
-                      <th scope="row" className="border-b border-line p-3 text-start font-medium text-muted">{levelLabel(r.level)}</th>
-                      <td className="border-b border-line p-3">{numberText.format(r.programs)}</td>
-                      <td className="border-b border-line p-3">{r.free ? t('free') : r.tuition ? formatTuitionRange(locale, r.tuition) : '—'}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </section>
-        )}
-
-        <section className="mt-10" aria-labelledby="programs-title">
-          <h2 id="programs-title" className="text-xl font-semibold text-text">
-            {t('programsTitle')}
-            {institution.programs.length > 0 && <span className="ms-2 text-base font-normal text-muted">{t('programsCount', { count: institution.programs.length })}</span>}
-          </h2>
-          {byLevel.length === 0 ? (
-            <p className="mt-3 rounded-lg border border-line bg-accent-soft px-4 py-3">{t('noPrograms')}</p>
-          ) : (
-            byLevel.map((g) => (
-              <div key={g.level} className="mt-5">
-                <h3 className="text-sm font-semibold uppercase tracking-wide text-muted">{levelLabel(g.level)}</h3>
-                <ul className="mt-2 space-y-4">
-                  {g.items.map((p) => (
-                    <ProgramCard key={p.id} program={p} country={institution.country} slug={institution.slug} city={institution.city} />
-                  ))}
-                </ul>
-              </div>
-            ))
-          )}
-        </section>
-
-        {showFaq && (
-          <section className="mt-10" aria-labelledby="faq-title">
-            <h2 id="faq-title" className="text-xl font-semibold text-text">{tFaq('title')}</h2>
-            <div className="mt-3 space-y-4">
-              {faq.map((e) => (
-                <div key={e.question}>
-                  <h3 className="text-lg font-semibold text-text">{e.question}</h3>
-                  <p className="mt-1">{e.answer}</p>
-                </div>
-              ))}
-            </div>
-          </section>
-        )}
-
-        {(fieldLinks.length > 0 || hasGuide || hasList || hasDeadlines || articles.length > 0) && (
-          <section className="mt-10" aria-labelledby="more-title">
-            <h2 id="more-title" className="text-xl font-semibold text-text">{t('moreTitle')}</h2>
-            {fieldLinks.length > 0 && (
-              <>
-                <h3 className="mt-3 text-sm font-semibold uppercase tracking-wide text-muted">{t('moreFields')}</h3>
-                <ul className="mt-2 grid gap-x-6 gap-y-1 sm:grid-cols-2">
-                  {fieldLinks.map(([code]) => (
-                    <li key={code}>
-                      <Link href={`/study/${institution.country.toLowerCase()}/${fieldSlug(code)}`} className="text-accent-text underline underline-offset-4">
-                        {labelFor(iscedEntry(code)!, locale)}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </>
-            )}
-            {hasDeadlines && (
-              <>
-                <h3 className="mt-5 text-sm font-semibold uppercase tracking-wide text-muted">{t('moreDeadlines')}</h3>
-                <p className="mt-2">
-                  <Link href={`/deadlines/${cc}`} className="text-accent-text underline underline-offset-4">{tDeadlines('countryTitle', { country: countryName ?? institution.country })}</Link>
-                </p>
-              </>
-            )}
-            {articles.length > 0 && (
-              <>
-                <h3 className="mt-5 text-sm font-semibold uppercase tracking-wide text-muted">{t('moreArticles')}</h3>
-                <ul className="mt-2 space-y-1">
-                  {articles.map((a) => (
-                    <li key={a.slug}>
-                      <Link href={`/blog/${a.slug}`} className="text-accent-text underline underline-offset-4">{a.title}</Link>
-                    </li>
-                  ))}
-                </ul>
-              </>
-            )}
-            {hasList && (
-              <p className="mt-3">
-                <Link href={`/institutions/${institution.country.toLowerCase()}`} className="font-medium text-accent-text underline underline-offset-4">
-                  {tList('allInCountry', { place: placeIn(locale, institution.country, countryName ?? institution.country) })}
-                </Link>
-              </p>
-            )}
-            {hasGuide && (
-              <p className="mt-3">
-                <Link href={`/countries/${institution.country.toLowerCase()}`} className="font-medium text-accent-text underline underline-offset-4">{t('moreGuide')}</Link>
-              </p>
-            )}
-          </section>
-        )}
-
-        {similar.length > 0 && (
-          <section className="mt-10" aria-labelledby="similar-title">
-            <h2 id="similar-title" className="text-xl font-semibold text-text">{t('similarTitle', { place })}</h2>
-            <ul className="mt-3 grid gap-x-6 gap-y-2 sm:grid-cols-2">
-              {similar.map((i) => (
-                <li key={i.slug}>
-                  <Link href={`/institutions/${cc}/${i.slug}`} className="text-accent-text underline underline-offset-4">{i.name}</Link>
-                  {i.city && <span className="text-sm text-muted"> · {i.city}</span>}
-                </li>
-              ))}
-            </ul>
-          </section>
-        )}
-
-        {institution.rankings.length > 0 && (
-          <section className="mt-10" aria-labelledby="rankings-title">
-            <h2 id="rankings-title" className="text-xl font-semibold text-text">{t('rankingsTitle')}</h2>
-            <ul className="mt-3 space-y-1">
-              {institution.rankings.map((r) => (
-                <li key={`${r.name}-${r.year}`}>{t('rankingLine', { name: r.name, year: r.year, position: r.position })}</li>
-              ))}
-            </ul>
-            {institution.rankings.some((r) => r.sourceUrl?.startsWith('https://www.wikidata.org/')) && (
-              <p className="mt-2 text-sm text-muted">
-                {t('rankingsSource')}{' '}
-                <a href={institution.rankings.find((r) => r.sourceUrl)!.sourceUrl!} target="_blank" rel="noopener noreferrer" className="underline underline-offset-4">
-                  Wikidata
-                </a>
-              </p>
-            )}
-          </section>
-        )}
-
-        {institution.scholarships.length > 0 && (
-          <section className="mt-10" aria-labelledby="scholarships-title">
-            <h2 id="scholarships-title" className="text-xl font-semibold text-text">{t('scholarshipsTitle')}</h2>
-            <ul className="mt-3 space-y-2">
-              {institution.scholarships.map((s, i) => (
-                <li key={i}>
-                  {s.url ? (
-                    <a href={s.url} target="_blank" rel="noopener noreferrer" className="font-medium text-accent-text underline underline-offset-4">{pickLocalized(s.names, locale).text}</a>
-                  ) : (
-                    <span className="font-medium">{pickLocalized(s.names, locale).text}</span>
-                  )}
-                  {s.covers && t.has(`covers.${s.covers}` as 'covers.full') && <span className="text-muted"> — {t(`covers.${s.covers}` as 'covers.full')}</span>}
-                </li>
-              ))}
-            </ul>
-          </section>
-        )}
-
-        <section className="mt-10" aria-labelledby="reviews-title">
-          <h2 id="reviews-title" className="text-xl font-semibold text-text">
-            {tReviews('title')}
-            {institution.reviewSummary && (
-              <span className="ms-2 text-base font-normal text-muted">{tReviews('summary', { rating: institution.reviewSummary.rating.toFixed(1), count: institution.reviewSummary.count })}</span>
-            )}
-          </h2>
-          {institution.reviews.length === 0 ? (
-            <p className="mt-3 text-muted">{tReviews('none')}</p>
-          ) : (
-            <ul className="mt-3 space-y-3">
-              {institution.reviews.map((r, i) => (
-                <li key={i} className="rounded-lg border border-line bg-surface p-4">
-                  <p className="text-sm text-muted">
-                    <span className="text-accent-text" aria-label={tReviews('stars', { count: r.rating })}>{'★'.repeat(r.rating)}{'☆'.repeat(5 - r.rating)}</span>
-                    {' · '}
-                    {tReviews.has(`relations.${r.relation}` as 'relations.student') ? tReviews(`relations.${r.relation}` as 'relations.student') : r.relation}
-                    {r.createdAt ? ` · ${new Intl.DateTimeFormat(locale, { dateStyle: 'long' }).format(new Date(r.createdAt))}` : ''}
-                  </p>
-                  <p className="mt-1 whitespace-pre-line">{r.body}</p>
-                </li>
-              ))}
-            </ul>
-          )}
-          <ReviewForm institutionId={institution.id} />
-        </section>
-
-        <ClaimInstitution institutionId={institution.id} />
-
-        {institution.programs.length === 0 && <p className="mt-6 text-muted">{t('comingSoon')}</p>}
-
-        <footer className="mt-10 space-y-1 border-t border-line pt-4 text-sm text-muted">
-          {checked && <p>{t('checked', { date: dateBeforeStop(checked) })}</p>}
-          <p>{t('disclaimer')}</p>
-          <div>
-            <ReportError
-              label={t('report')}
-              mailto={CONTACT ? `mailto:${CONTACT}?subject=${encodeURIComponent(`${name} (${institution.country}/${institution.slug})`)}` : undefined}
-            />
-          </div>
-        </footer>
-
-        <p className="mt-8">
-          <Link href="/" className="font-semibold text-accent-text underline underline-offset-4">
-            {t('back')}
-          </Link>
-        </p>
-      </article>
-    </SideAds>
+        </article>
+      </SideAds>
+    </ClientMessages>
   );
 }
