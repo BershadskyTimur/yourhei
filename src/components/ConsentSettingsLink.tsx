@@ -7,7 +7,7 @@ import { openConsentSettings } from './ConsentBanner';
 export function ConsentSettingsLink() {
   const t = useTranslations('Consent');
   return (
-    <button type="button" onClick={openConsentSettings} className="font-medium underline-offset-4 hover:underline">
+    <button type="button" onClick={openConsentSettings} className="py-2 font-medium underline-offset-4 hover:underline">
       {t('settings')}
     </button>
   );

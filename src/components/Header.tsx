@@ -8,7 +8,7 @@ import { ThemeToggle } from './ThemeToggle';
 
 /** A link with a thin brass line that grows under it on hover. */
 const navLink =
-  'py-1 bg-[linear-gradient(var(--gold),var(--gold))] bg-[length:0_1px] bg-[position:0_100%] bg-no-repeat transition-[background-size] duration-200 hover:bg-[length:100%_1px] motion-reduce:transition-none';
+  'py-2 bg-[linear-gradient(var(--gold),var(--gold))] bg-[length:0_1px] bg-[position:0_100%] bg-no-repeat transition-[background-size] duration-200 hover:bg-[length:100%_1px] motion-reduce:transition-none';
 
 export function Header() {
   const t = useTranslations('Header');

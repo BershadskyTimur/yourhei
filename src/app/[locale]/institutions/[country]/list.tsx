@@ -52,12 +52,13 @@ export async function InstitutionListPage({ locale, country, page, list }: { loc
       />
       <p>{t('countryIntro', { count: list.total, place })}</p>
 
-      <ul className="grid gap-x-6 gap-y-1 text-base sm:grid-cols-2">
+      {/* The padding of a link makes it taller to the finger without moving the lines; the gap keeps two links from overlapping. */}
+      <ul className="grid gap-x-6 gap-y-2 text-base sm:grid-cols-2">
         {list.items.map((i) => {
           const city = pickLocalized(i.city, locale).text;
           return (
             <li key={i.slug}>
-              <Link href={`/institutions/${cc.toLowerCase()}/${i.slug}`} className="text-accent-text underline underline-offset-4">
+              <Link href={`/institutions/${cc.toLowerCase()}/${i.slug}`} className="py-1 text-accent-text underline underline-offset-4">
                 {pickLocalized(i.names, locale).text}
               </Link>
               {city && <span className="text-muted"> · {city}</span>}
@@ -79,7 +80,7 @@ export async function InstitutionListPage({ locale, country, page, list }: { loc
             {Array.from({ length: list.pages }, (_, i) => i + 1).map((n) => (
               <li key={n}>
                 {n === page ? (
-                  <span aria-current="page" className="inline-block min-w-8 px-1 py-1 text-center font-semibold text-text">{n}</span>
+                  <span aria-current="page" className="inline-block min-w-10 px-1 py-2 text-center font-semibold text-text">{n}</span>
                 ) : (
                   <Link href={listPath(cc, n)} className="inline-block min-w-8 px-1 py-1 text-center font-semibold text-accent-text underline underline-offset-4">{n}</Link>
                 )}

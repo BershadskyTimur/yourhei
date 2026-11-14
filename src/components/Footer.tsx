@@ -29,10 +29,11 @@ export function Footer() {
           <p className="mt-3 max-w-md text-sm text-footer-muted">{t('tagline')}</p>
         </div>
         <nav aria-label={t('navLabel')}>
-          <ul className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:gap-x-8">
+          {/* Each link is a finger-sized target: the height comes from the padding of the link, not from a gap between rows. */}
+          <ul className="flex flex-col gap-1 sm:flex-row sm:flex-wrap sm:gap-x-8">
             {links.map((l) => (
               <li key={l.href}>
-                <Link href={l.href} className="font-medium underline-offset-4 hover:underline">
+                <Link href={l.href} className="inline-block py-2 font-medium underline-offset-4 hover:underline">
                   {l.label}
                 </Link>
               </li>
