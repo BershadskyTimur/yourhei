@@ -1,3 +1,5 @@
+import { JsonLd } from '@/components/JsonLd';
+import { topLevelCrumbs } from '@/lib/seo/structured';
 import { seoMetadata, trimDescription } from '@/lib/seo/metadata';
 import type { Metadata } from 'next';
 import { hasLocale } from 'next-intl';
@@ -43,6 +45,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
     <ClientMessages namespaces={['Scholarships', 'Register.errors']}>
       <SideAds>
         <div className="mx-auto max-w-3xl py-10">
+          <JsonLd data={topLevelCrumbs(locale, t('title'), '/scholarships')} />
           <h1 className="text-3xl font-semibold tracking-tight text-text">{t('title')}</h1>
           <p className="mt-2 max-w-2xl text-muted">{t('intro')}</p>
 

@@ -1,3 +1,5 @@
+import { JsonLd } from '@/components/JsonLd';
+import { topLevelCrumbs } from '@/lib/seo/structured';
 import { seoMetadata, trimDescription } from '@/lib/seo/metadata';
 import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
@@ -21,6 +23,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
       <SideAds>
         {/* The results arrive after the page: the reserved height keeps the footer from jumping down when they do. */}
         <div className="mx-auto min-h-[110svh] max-w-4xl py-10">
+          <JsonLd data={topLevelCrumbs(locale, t('heading'), '/catalog')} />
           <h1 className="text-3xl font-semibold tracking-tight text-text">{t('heading')}</h1>
           <p className="mt-2 max-w-2xl text-muted">{t('intro')}</p>
           <div className="mt-6">

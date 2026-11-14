@@ -1,3 +1,5 @@
+import { JsonLd } from '@/components/JsonLd';
+import { topLevelCrumbs } from '@/lib/seo/structured';
 import { seoMetadata, trimDescription } from '@/lib/seo/metadata';
 import type { Metadata } from 'next';
 import { hasLocale } from 'next-intl';
@@ -29,6 +31,7 @@ export default async function MethodologyPage({ params }: { params: Params }) {
 
   return (
     <PageShell title={t('title')}>
+      <JsonLd data={topLevelCrumbs(locale, t('title'), '/methodology')} />
       <p>{t('intro')}</p>
 
       <section aria-labelledby="sources-title">

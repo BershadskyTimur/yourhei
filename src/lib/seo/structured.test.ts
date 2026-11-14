@@ -46,6 +46,8 @@ describe('structured data', () => {
     expect(organizationLd().name).toBe('YourHEI');
     expect(organizationLd()).not.toHaveProperty('email');
     expect(websiteLd('en', 'x').inLanguage).toBe('en');
+    expect(websiteLd('ru', 'x').potentialAction.target.urlTemplate.endsWith('/ru/catalog?q={search_term_string}')).toBe(true);
+    expect(websiteLd('ru', 'x').potentialAction['query-input']).toBe('required name=search_term_string');
   });
   it('the organization has a square logo, one id and, when set, the public contact address', () => {
     const o = organizationLd('help@example.org');

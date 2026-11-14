@@ -53,10 +53,27 @@ export function aboutPageLd(kind: 'AboutPage' | 'ContactPage', locale: string, p
   };
 }
 
+/** The site in one language, with its search: the catalogue opened with ?q=… shows the programmes whose name has the words. */
 export function websiteLd(locale: string, description: string) {
   const base = siteUrl();
-  return { '@context': 'https://schema.org', '@type': 'WebSite', name: 'YourHEI', url: `${base}/${locale}`, inLanguage: locale, description };
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'YourHEI',
+    url: `${base}/${locale}`,
+    inLanguage: locale,
+    description,
+    publisher: { '@id': organizationId() },
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: { '@type': 'EntryPoint', urlTemplate: `${base}/${locale}/catalog?q={search_term_string}` },
+      'query-input': 'required name=search_term_string',
+    },
+  };
 }
+
+/** The trail of a page that stands right under the home page ("YourHEI > Scholarships"). */
+export const topLevelCrumbs = (locale: string, name: string, path: string) => breadcrumbList(locale, [{ name: 'YourHEI', path: '' }, { name, path }]);
 
 export interface ArticleLdInput {
   locale: string;
@@ -82,7 +99,8 @@ export function articleLd(a: ArticleLdInput) {
     mainEntityOfPage: url,
     image: `${base}/og.png`,
     author: { '@type': 'Organization', name: 'YourHEI', url: base },
-    publisher: { '@type': 'Organization', name: 'YourHEI', url: base, logo: { '@type': 'ImageObject', url: `${base}/og.png` } },
+    // the same organisation as on the home page, with the square logo search engines ask for
+    publisher: { '@type': 'Organization', '@id': organizationId(), name: 'YourHEI', url: base, logo: { '@type': 'ImageObject', url: `${base}/apple-icon.png`, width: 180, height: 180 } },
   };
 }
 

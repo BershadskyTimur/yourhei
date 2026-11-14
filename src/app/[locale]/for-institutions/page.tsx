@@ -1,3 +1,5 @@
+import { JsonLd } from '@/components/JsonLd';
+import { topLevelCrumbs } from '@/lib/seo/structured';
 import { seoMetadata, trimDescription } from '@/lib/seo/metadata';
 import type { Metadata } from 'next';
 import { hasLocale } from 'next-intl';
@@ -27,6 +29,7 @@ export default async function ForInstitutionsPage({ params }: { params: Params }
   return (
     <ClientMessages namespaces={['Register.errors']}>
       <PageShell title={t('title')}>
+        <JsonLd data={topLevelCrumbs(locale, t('title'), '/for-institutions')} />
         <p>{t('intro')}</p>
 
         <section aria-labelledby="what-title">

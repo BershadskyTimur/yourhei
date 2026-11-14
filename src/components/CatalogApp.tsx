@@ -92,6 +92,15 @@ export function CatalogApp() {
   const legacy = useRef(false);
   const run = useRef(0);
 
+  // A search that arrives in the address (/catalog?q=design: the site search that the structured data of the home page
+  // offers to search engines) fills the "name contains" field and is applied at once.
+  useEffect(() => {
+    const q = new URLSearchParams(window.location.search).get('q')?.trim().slice(0, 60);
+    if (!q) return;
+    setFilters((f) => ({ ...f, q })); // eslint-disable-line react-hooks/set-state-in-effect
+    setApplied((f) => ({ ...f, q }));
+  }, []);
+
   // exchange rates and the living costs of the countries
   useEffect(() => {
     void loadRates().then(setRates);

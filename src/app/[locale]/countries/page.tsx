@@ -1,3 +1,5 @@
+import { JsonLd } from '@/components/JsonLd';
+import { topLevelCrumbs } from '@/lib/seo/structured';
 import type { Metadata } from 'next';
 import { hasLocale } from 'next-intl';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
@@ -28,6 +30,7 @@ export default async function CountriesPage({ params }: { params: Params }) {
   const list = GUIDES.map((g) => ({ code: g.country, name: names.of(g.country) ?? g.country })).sort((a, b) => collator.compare(a.name, b.name));
   return (
     <PageShell title={t('listTitle')}>
+      <JsonLd data={topLevelCrumbs(locale, t('listTitle'), '/countries')} />
       <p>{t('listIntro')}</p>
       <ul className="grid gap-3 text-base sm:grid-cols-2">
         {list.map((c) => (
