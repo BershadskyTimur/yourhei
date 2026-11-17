@@ -11,6 +11,7 @@ import { countriesWithDeadlines, monthsOfCountry } from '@/lib/deadlines/deadlin
 import { publishedArticles } from '@/lib/blog/posts';
 import { siteUrl } from '@/lib/site-url';
 import { listCountries, pagesOf } from '@/lib/institutions/country-list';
+import { isListedThin } from '@/lib/seo/thin-institutions';
 
 export const revalidate = 86400;
 
@@ -43,7 +44,8 @@ export default async function sitemap(props: { id: Promise<string> }): Promise<M
           ...publishedArticles().map((a) => ({ path: `/blog/${a.slug}`, lastModified: a.updated, only: articleLocales(a, routing.locales) })),
         ]
       : []),
-    ...slice.map((i) => ({ path: `/institutions/${i.country.toLowerCase()}/${i.slug}` })),
+    // thin institution pages carry noindex: the sitemap lists only the pages offered to search engines
+    ...slice.filter((i) => !isListedThin(i.country, i.slug)).map((i) => ({ path: `/institutions/${i.country.toLowerCase()}/${i.slug}` })),
   ];
   // every page in each language it is offered in (institution pages: ru/en only; an article: only where it is translated)
   return pages.flatMap(({ path, lastModified, only }) => {

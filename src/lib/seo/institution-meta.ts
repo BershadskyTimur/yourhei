@@ -45,6 +45,17 @@ export function institutionTitleCandidates(t: SeoText, input: TitleInput): strin
   ];
 }
 
+/**
+ * A thin institution page (decision of the owner, 17.11.2026, after Google dropped half of the site from its index on 10.11.2026):
+ * no known yearly price for students from abroad, no free programme and no upcoming application date. Such a page only lists
+ * programme names and says "fees not confirmed yet", so it is kept out of the search results (visitors can still open it) and out
+ * of the sitemap (data/generated/thin-institutions.json is the same rule worked out in the database). It is offered again as soon
+ * as the institution gets a price or a deadline.
+ */
+export function isThinInstitution(facts: { tuition: unknown; freeCount: number; deadlines: readonly string[] }): boolean {
+  return facts.tuition === null && facts.freeCount === 0 && facts.deadlines.length === 0;
+}
+
 /** The length a description is filled up to: search engines show about 155-160 characters. */
 export const DESCRIPTION_TARGET = 155;
 

@@ -26,7 +26,7 @@ import { hasPrices, institutionFacts, levelRows } from '@/lib/seo/institution-fa
 import { countryLabel, placeIn, seoCity } from '@/lib/seo/place';
 import { getListCountries } from '@/lib/institutions/country-list';
 import { formatTuitionRange, tuitionYear } from '@/lib/seo/tuition-range';
-import { composeDescription, institutionTitleCandidates } from '@/lib/seo/institution-meta';
+import { composeDescription, institutionTitleCandidates, isThinInstitution } from '@/lib/seo/institution-meta';
 import { breadcrumbList, faqPageLd, institutionLd, type FaqEntry } from '@/lib/seo/structured';
 import { comboOf, fieldSlug, studyCountries } from '@/lib/study/combos';
 import { iscedEntry, labelFor } from '@/lib/survey/references';
@@ -86,8 +86,9 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
     // people search "<institution> стоимость / fees": the title names the year of the prices, and without prices does not promise them
     title: fitTitle(institutionTitleCandidates((key, values) => t(key as 'institutionTitleFee', values), { name, original: institution.names.original, place: city || countryText, fee: info.tuition !== null, year })),
     description: trimDescription(description),
-    // A page without programmes is a thin page: keep it out of the search results (visitors can still open it).
-    noindex: institution.programs.length === 0,
+    // A page without programmes, or without any price, free programme or upcoming deadline, is a thin page: keep it out of the
+    // search results (visitors can still open it). See isThinInstitution.
+    noindex: institution.programs.length === 0 || isThinInstitution(info),
   });
 }
 

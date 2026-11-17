@@ -1,5 +1,5 @@
 import { JsonLd } from '@/components/JsonLd';
-import { isIndexedLocale } from '@/config/seo';
+import { isContentLocale } from '@/config/seo';
 import { bodyOf, isInLanguage, publishedArticles } from '@/lib/blog/posts';
 import { organizationLd, websiteLd } from '@/lib/seo/structured';
 import { seoMetadata } from '@/lib/seo/metadata';
@@ -148,7 +148,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
         <section aria-labelledby="resources-title" className="mx-auto mt-24 max-w-[1500px] px-4">
           <h2 id="resources-title" className={sectionTitle}>{t('resources.title')}</h2>
           <ul className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {isIndexedLocale(locale, '/blog') &&
+            {isContentLocale(locale) &&
               publishedArticles().filter((a) => isInLanguage(a, locale)).slice(0, 2).map((a) => (
                 <li key={a.slug}>
                   <Link href={`/blog/${a.slug}`} className="block h-full rounded-lg border border-line bg-surface p-5 hover:bg-surface-strong">

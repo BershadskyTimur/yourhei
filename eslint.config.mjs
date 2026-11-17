@@ -19,6 +19,8 @@ const eslintConfig = defineConfig([
     // Cloudflare build output and local state.
     ".open-next/**",
     ".wrangler/**",
+    // Claude Code: git worktrees of other sessions (each a full copy of the project with its own build output) and skills.
+    ".claude/**",
   ]),
 ]);
 

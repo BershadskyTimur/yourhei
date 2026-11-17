@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { composeDescription, institutionTitleCandidates, nameWithOriginal } from './institution-meta';
+import { composeDescription, institutionTitleCandidates, isThinInstitution, nameWithOriginal } from './institution-meta';
 import { fitTitle } from './metadata';
 
 // The Russian templates of messages/ru.json (Seo), filled the way next-intl fills them.
@@ -53,5 +53,17 @@ describe('composeDescription', () => {
   it('keeps the first sentence even when it is long, and drops empty ones', () => {
     expect(composeDescription([false, 'x'.repeat(200), ''], 155)).toBe('x'.repeat(200));
     expect(composeDescription([])).toBe('');
+  });
+});
+
+describe('isThinInstitution', () => {
+  const price = { min: 10000, max: 20000, currency: 'USD' };
+  it('a page with no price, nothing free and no upcoming deadline is thin', () => {
+    expect(isThinInstitution({ tuition: null, freeCount: 0, deadlines: [] })).toBe(true);
+  });
+  it('a price, a free programme or an upcoming deadline is enough to offer the page', () => {
+    expect(isThinInstitution({ tuition: price, freeCount: 0, deadlines: [] })).toBe(false);
+    expect(isThinInstitution({ tuition: null, freeCount: 1, deadlines: [] })).toBe(false);
+    expect(isThinInstitution({ tuition: null, freeCount: 0, deadlines: ['2027-01-15'] })).toBe(false);
   });
 });
