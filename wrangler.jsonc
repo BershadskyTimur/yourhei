@@ -4,6 +4,11 @@
   "main": ".open-next/worker.js",
   "compatibility_date": "2026-10-01",
   "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+  // Run the Worker next to the database (Supabase, Frankfurt = aws:eu-central-1) instead of next to the visitor. A page that is
+  // built for the first time reads the database four times in a row; from a data centre in the USA (where Googlebot crawls from)
+  // each read crossed the ocean. Static files (scripts, styles, fonts, images) are still served from the nearest data centre.
+  // Check: the `cf-placement` response header. Undo: remove this block. https://developers.cloudflare.com/workers/configuration/placement/
+  "placement": { "region": "aws:eu-central-1" },
   "assets": {
     "directory": ".open-next/assets",
     "binding": "ASSETS"

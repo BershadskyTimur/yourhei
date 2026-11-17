@@ -95,8 +95,15 @@ export default async function InstitutionPage({ params }: { params: Params }) {
   const { locale, country, slug } = await params;
   if (!hasLocale(routing.locales, locale)) notFound();
   setRequestLocale(locale);
+  // The list of countries that have an institution list does not depend on the institution: it is read at the same time as the
+  // institution instead of after it (a page built for the first time waits for each database read in turn). The empty catch only
+  // keeps a failure from being reported as unhandled when the page ends early (not found); the await below still sees it.
+  const listCountries = getListCountries();
+  listCountries.catch(() => {});
   const institution = await getInstitutionDetail(country, slug);
   if (!institution) notFound();
+  // Similar institutions need the type of this one; they are read while the rest of the page is prepared.
+  const similarInstitutions = getSimilarInstitutions(institution.country, institution.type, institution.slug, locale);
 
   const t = await getTranslations('Institution');
   const tFaq = await getTranslations('Institution.faq');
@@ -164,7 +171,7 @@ export default async function InstitutionPage({ params }: { params: Params }) {
   const fieldLinks = [...fieldCount.entries()].sort((a, b) => b[1] - a[1]).slice(0, 6);
   const hasGuide = guideOf(institution.country) !== null;
   // the list of all institutions of the country (only countries with enough institutions have one)
-  const hasList = (await getListCountries()).some((c) => c.country === institution.country.toUpperCase());
+  const hasList = (await listCountries).some((c) => c.country === institution.country.toUpperCase());
   const tList = await getTranslations('InstitutionsList');
   const tDeadlines = await getTranslations('Deadlines');
   const cc = institution.country.toLowerCase();
@@ -188,7 +195,7 @@ export default async function InstitutionPage({ params }: { params: Params }) {
     .filter((a) => a !== null)
     .slice(0, 4)
     .map((a) => ({ slug: a.slug, title: bodyOf(a, locale).title }));
-  const similar = await getSimilarInstitutions(institution.country, institution.type, institution.slug, locale);
+  const similar = await similarInstitutions;
 
   return (
     <ClientMessages namespaces={['Institution', 'Catalog', 'ReportError', 'Reviews', 'Cabinet.claim', 'Register.errors']}>
