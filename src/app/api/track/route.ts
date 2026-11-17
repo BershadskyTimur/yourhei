@@ -3,6 +3,7 @@ import { NextResponse, type NextRequest } from 'next/server';
 import { getCloudflareContext } from '@opennextjs/cloudflare';
 import { accessTokenFromCookies } from '@/lib/analytics/auth-cookie';
 import { geoFromCloudflare } from '@/lib/analytics/geo';
+import { isLocalVisit } from '@/lib/analytics/local';
 import { rowsFromRequest, type EventRow, type VisitClient } from '@/lib/analytics/row';
 import { parseUserAgent } from '@/lib/analytics/ua';
 
@@ -14,6 +15,7 @@ import { parseUserAgent } from '@/lib/analytics/ua';
 // (lib/analytics/geo.ts). A visit of a signed-in person is linked to the account by the database itself (migration
 // 0042): the sign-in token from the cookies is only passed on, never trusted here.
 // Every value is checked in lib/analytics/row.ts before it reaches the database. Only an admin can read the table.
+// Nothing is saved when the site runs on someone's own computer (lib/analytics/local.ts): those are checks, not visitors.
 
 const hits = new Map<string, { n: number; reset: number }>();
 const MAX_BODY = 8192;
@@ -53,6 +55,8 @@ export async function POST(request: NextRequest) {
   if (!url || !key) return new NextResponse(null, { status: 204 });
 
   const ip = (request.headers.get('cf-connecting-ip') ?? request.headers.get('x-forwarded-for')?.split(',')[0])?.trim() || 'unknown';
+  // the site running on one's own computer: a check, not a visitor (lib/analytics/local.ts)
+  if (isLocalVisit(request.nextUrl.hostname, ip)) return new NextResponse(null, { status: 204 });
   if (tooMany(ip)) return new NextResponse(null, { status: 429 });
   const userAgent = request.headers.get('user-agent') ?? '';
   if (BOT.test(userAgent)) return new NextResponse(null, { status: 204 });
