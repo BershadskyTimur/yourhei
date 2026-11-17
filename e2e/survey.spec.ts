@@ -183,6 +183,8 @@ test.describe('survey', () => {
     // iPhone Safari does not scroll when an element gets the focus: simulate that, on a short screen
     await page.addInitScript(() => {
       HTMLElement.prototype.focus = function () {};
+      // the cookie choice is already made: on a 500 px screen the banner would cover the "Start the survey" button
+      window.localStorage.setItem('yourhei-consent', 'necessary');
     });
     await page.setViewportSize({ width: 390, height: 500 });
     await startSurvey(page);

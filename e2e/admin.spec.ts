@@ -1,10 +1,17 @@
-import { expect, test } from '@playwright/test';
+import { expect, test, type Page } from '@playwright/test';
 import { readFileSync } from 'node:fs';
 import { fakeSignIn } from './helpers';
 
 const supabaseUrl = () =>
   /^NEXT_PUBLIC_SUPABASE_URL=(.+)$/m.exec(readFileSync('.env.local', 'utf8'))?.[1].trim() ??
   'https://example.supabase.co';
+
+// Since aef84c2 the panel has six section buttons; a section with several pages shows them in a second row (AdminApp.tsx).
+const sections = (page: Page) => page.getByRole('navigation', { name: 'Разделы админ-панели' });
+const openPage = async (page: Page, section: string, subpage: string) => {
+  await sections(page).getByRole('button', { name: section, exact: true }).click();
+  await page.getByRole('navigation', { name: `Страницы раздела «${section}»` }).getByRole('button', { name: subpage, exact: true }).click();
+};
 
 test.describe('admin panel', () => {
   test('a guest is asked to log in', async ({ page }) => {
@@ -16,10 +23,10 @@ test.describe('admin panel', () => {
     await fakeSignIn(page, { id: 'u1', role: 'user' });
     await page.goto('/en/admin');
     await expect(page.getByText('Нет доступа')).toBeVisible();
-    await expect(page.getByRole('tab')).toHaveCount(0);
+    await expect(sections(page)).toHaveCount(0);
   });
 
-  test('an admin sees the dashboard and tabs', async ({ page }) => {
+  test('an admin sees the dashboard and the six sections', async ({ page }) => {
     await fakeSignIn(page, { id: 'u1', role: 'admin' });
     await page.route(`${supabaseUrl()}/rest/v1/rpc/admin_stats**`, (route) =>
       route.fulfill({
@@ -29,12 +36,12 @@ test.describe('admin panel', () => {
       }),
     );
     await page.goto('/en/admin');
-    await expect(page.getByRole('tab')).toHaveCount(16);
+    await expect(sections(page).getByRole('button')).toHaveText(['Обзор', 'Люди', 'Аналитика', 'Данные', 'Обращения', 'Система']);
     await expect(page.getByText('42')).toBeVisible();
     await expect(page.getByRole('link', { name: 'Admin' })).toBeVisible();
   });
 
-  test('the users tab shows totals, average age and countries', async ({ page }) => {
+  test('the account statistics page shows totals, average age and countries', async ({ page }) => {
     await fakeSignIn(page, { id: 'u1', role: 'admin' });
     await page.route(`${supabaseUrl()}/rest/v1/rpc/admin_stats**`, (route) =>
       route.fulfill({ status: 200, contentType: 'application/json', body: JSON.stringify({ users: 1 }) }),
@@ -53,13 +60,13 @@ test.describe('admin panel', () => {
       }),
     );
     await page.goto('/en/admin');
-    await page.getByRole('tab', { name: 'Пользователи' }).click();
+    await openPage(page, 'Люди', 'Статистика аккаунтов');
     await expect(page.getByText('21.4')).toBeVisible();
     await expect(page.getByRole('definition').filter({ hasText: /^120$/ })).toBeVisible();
     await expect(page.getByText(/ср. возраст 20.1/)).toBeVisible();
   });
 
-  test('the traffic tab explains what is counted', async ({ page }) => {
+  test('the traffic page explains what is counted', async ({ page }) => {
     await fakeSignIn(page, { id: 'u1', role: 'admin' });
     await page.route(`${supabaseUrl()}/rest/v1/rpc/admin_stats**`, (route) =>
       route.fulfill({ status: 200, contentType: 'application/json', body: JSON.stringify({ users: 1 }) }),
@@ -68,7 +75,7 @@ test.describe('admin panel', () => {
       route.fulfill({ status: 200, contentType: 'application/json', body: JSON.stringify({ views: 777, visitors: 321, by_day: [], top_pages: [{ path: '/about', n: 5 }], countries: [], devices: {}, locales: {}, referrers: [] }) }),
     );
     await page.goto('/en/admin');
-    await page.getByRole('tab', { name: 'Посещаемость' }).click();
+    await openPage(page, 'Аналитика', 'Посещаемость');
     await expect(page.getByText('777')).toBeVisible();
     await expect(page.getByText(/Принять все/)).toBeVisible();
   });
@@ -81,7 +88,7 @@ test.describe('admin panel', () => {
   };
   const json = (body: unknown) => ({ status: 200, contentType: 'application/json', body: JSON.stringify(body) });
 
-  test('the data health tab shows coverage by country', async ({ page }) => {
+  test('the data health page shows coverage by country', async ({ page }) => {
     await asAdmin(page);
     await page.route(`${supabaseUrl()}/rest/v1/rpc/admin_dh_institutions**`, (route) =>
       route.fulfill(json({ total: 12549, by_country: { DE: 400, CZ: 50 } })),
@@ -95,7 +102,7 @@ test.describe('admin panel', () => {
         : { country, institutions_with_programmes: 0, programmes: 0, priced: 0, with_deadline: 0, with_language: 0, with_field: 0 }));
     });
     await page.goto('/en/admin');
-    await page.getByRole('tab', { name: 'Здоровье данных' }).click();
+    await openPage(page, 'Данные', 'Здоровье данных');
     await expect(page.getByRole('cell', { name: 'Германия' })).toBeVisible();
     await expect(page.getByText('70%', { exact: true })).toBeVisible(); // prices: 700 of 1000
     await expect(page.getByText('5%', { exact: true })).toBeVisible(); // deadlines: 50 of 1000
@@ -103,7 +110,7 @@ test.describe('admin panel', () => {
     await expect(page.getByText('12 549')).toBeVisible(); // institutions in total
   });
 
-  test('the popular institutions, duplicates and system tabs show their data', async ({ page }) => {
+  test('the popular institutions, duplicates and system pages show their data', async ({ page }) => {
     await asAdmin(page);
     await page.route(`${supabaseUrl()}/rest/v1/rpc/admin_top_institutions**`, (route) =>
       route.fulfill(json([{ country: 'GE', slug: 'tbilisi-state-university', name: 'Tbilisi State University', views: 55, visitors: 40, clicks: 7 }])),
@@ -116,11 +123,11 @@ test.describe('admin panel', () => {
     );
     await page.route('**/api/health', (route) => route.fulfill(json({ ok: true, ms: 12 })));
     await page.goto('/en/admin');
-    await page.getByRole('tab', { name: 'Популярные заведения' }).click();
+    await openPage(page, 'Аналитика', 'Популярные заведения');
     await expect(page.getByRole('link', { name: 'Tbilisi State University' })).toBeVisible();
-    await page.getByRole('tab', { name: 'Дубликаты' }).click();
+    await openPage(page, 'Данные', 'Дубликаты');
     await expect(page.getByText('city-college-2')).toBeVisible();
-    await page.getByRole('tab', { name: 'Состояние сайта' }).click();
+    await openPage(page, 'Система', 'Состояние сайта');
     await expect(page.getByText(/450 МБ/)).toBeVisible();
     await expect(page.getByText(/почти заполнена/)).toBeVisible(); // 90% of the free plan
     await page.getByRole('button', { name: 'Проверить сейчас' }).click();
@@ -138,7 +145,7 @@ test.describe('admin panel', () => {
       return route.fulfill(json([{ id: 'r1', created_at: '2026-10-20T10:00:00Z', path: '/en/institutions/de/x', note: 'The website address is wrong', contact: 'a@b.c', locale: 'en', status: 'new', admin_note: null }]));
     });
     await page.goto('/en/admin');
-    await page.getByRole('tab', { name: 'Жалобы на ошибки' }).click();
+    await openPage(page, 'Обращения', 'Жалобы на ошибки');
     await expect(page.getByText('The website address is wrong')).toBeVisible();
     await page.getByLabel('Статус').last().selectOption('done');
     await page.getByLabel('Заметка (видите только вы)').fill('fixed');
@@ -147,13 +154,13 @@ test.describe('admin panel', () => {
     expect(patches[0]).toEqual({ status: 'done', admin_note: 'fixed' });
   });
 
-  test('the export tab downloads a CSV file', async ({ page }) => {
+  test('the export page downloads a CSV file', async ({ page }) => {
     await asAdmin(page);
     await page.route(`${supabaseUrl()}/rest/v1/institutions**`, (route) =>
       route.fulfill(json([{ slug: 'a', type: 'university', country: 'DE', city: { en: 'Berlin' }, names: { en: 'A, University' }, website: null, ownership: null, founded_year: null, status: 'published' }])),
     );
     await page.goto('/en/admin');
-    await page.getByRole('tab', { name: 'Экспорт' }).click();
+    await openPage(page, 'Данные', 'Экспорт');
     const [file] = await Promise.all([page.waitForEvent('download'), page.getByRole('button', { name: 'Заведения (все)' }).click()]);
     expect(file.suggestedFilename()).toMatch(/^yourhei-institutions-\d{4}-\d{2}-\d{2}\.csv$/);
     await expect(page.getByRole('status')).toContainText('Готово: 1 строк');

@@ -27,7 +27,8 @@ test.describe('deadline calendar', () => {
 
     await months.first().click();
     await expect(page).toHaveURL(/\/en\/deadlines\/nl\/\d{4}-\d{2}$/);
-    await expect(page.getByRole('heading', { level: 1 })).toContainText('Application deadlines: Netherlands');
+    // e.g. "Application deadlines in the Netherlands: November 2026" (the SEO title, since 0b5acd3)
+    await expect(page.getByRole('heading', { level: 1 })).toHaveText(/^Application deadlines in the Netherlands: \w+ \d{4}$/);
     const first = page.locator('li h3 a').first();
     await expect(first).toHaveAttribute('href', /\/en\/institutions\/nl\/[a-z0-9-]+$/);
     await expect(page.getByText(/Programmes: \d+/).first()).toBeVisible();

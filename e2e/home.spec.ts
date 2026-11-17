@@ -15,7 +15,8 @@ test.describe('home page in every language', () => {
       // the map loads when it comes near the screen
       await page.locator('#map').scrollIntoViewIfNeeded();
       await expect(page.locator('[data-map-ready="true"]')).toBeVisible();
-      await expect(page.locator('footer a')).toHaveCount(9);
+      // the 10 links of Footer.tsx (the "Cookie settings" item is a button, not a link)
+      await expect(page.locator('footer a')).toHaveCount(10);
 
       const overflow = await page.evaluate(
         () => document.documentElement.scrollWidth - document.documentElement.clientWidth,
