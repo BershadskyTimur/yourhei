@@ -1427,6 +1427,9 @@
     "prev": "→ صفحة {page}",
     "next": "صفحة {page} ←",
     "allCountries": "كل الدول",
-    "allInCountry": "كل الجامعات والكليات: {place}"
+    "allInCountry": "كل الجامعات والكليات: {place}",
+    "rankedTitle": "جامعات في التصنيفات العالمية",
+    "rankedIntro": "مدرجة في تصنيفات QS أو THE أو شنغهاي (ARWU) العالمية، وفقًا لـ Wikidata.",
+    "allTitle": "جميع المؤسسات أبجديًا"
   }
 }

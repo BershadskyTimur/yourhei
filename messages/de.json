@@ -1427,6 +1427,9 @@
     "prev": "← Seite {page}",
     "next": "Seite {page} →",
     "allCountries": "Alle Länder",
-    "allInCountry": "Alle Hochschulen und Colleges in {place}"
+    "allInCountry": "Alle Hochschulen und Colleges in {place}",
+    "rankedTitle": "Universitäten in Weltrankings",
+    "rankedIntro": "In den Weltrankings von QS, THE oder Shanghai (ARWU) gelistet, laut Wikidata.",
+    "allTitle": "Alle Einrichtungen von A bis Z"
   }
 }

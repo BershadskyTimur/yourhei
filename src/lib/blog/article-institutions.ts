@@ -17,4 +17,13 @@ export const ARTICLE_INSTITUTIONS: Record<string, { country: string; items: Arti
       { slug: 'university-of-szeged', names: { en: 'University of Szeged', ru: 'Сегедский университет' } },
     ],
   },
+  // Poland has no deadline calendar; the two Polish institutions with a world ranking (data/generated/ranked-institutions.json,
+  // checked 17.11.2026)
+  'poland-recognition-of-certificate-and-diploma-nawa': {
+    country: 'PL',
+    items: [
+      { slug: 'jagiellonian-university', names: { en: 'Jagiellonian University', ru: 'Ягеллонский университет' } },
+      { slug: 'warsaw-university-of-technology', names: { en: 'Warsaw University of Technology', ru: 'Варшавский политехнический университет' } },
+    ],
+  },
 };

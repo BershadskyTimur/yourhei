@@ -1427,6 +1427,9 @@
     "prev": "← {page}-sahifa",
     "next": "{page}-sahifa →",
     "allCountries": "Barcha davlatlar",
-    "allInCountry": "Barcha universitetlar va kollejlar: {place}"
+    "allInCountry": "Barcha universitetlar va kollejlar: {place}",
+    "rankedTitle": "Jahon reytinglaridagi universitetlar",
+    "rankedIntro": "Wikidata maʼlumotlariga koʻra, QS, THE yoki Shanxay (ARWU) jahon reytinglariga kiradi.",
+    "allTitle": "Barcha oʻquv yurtlari alifbo tartibida"
   }
 }

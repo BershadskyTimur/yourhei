@@ -9,6 +9,10 @@ import type { CountryListPage } from '@/lib/institutions/country-list';
 import { placeIn } from '@/lib/seo/place';
 import { breadcrumbList } from '@/lib/seo/structured';
 import { combosOfCountry } from '@/lib/study/combos';
+import { RANKED, ofCountry } from '@/lib/institutions/ranked';
+
+/** How many ranked institutions the first page of a country's list links to above the full list. */
+const RANKED_ON_LIST = 20;
 
 /** Where page `page` of a country's list lives: the first page at /institutions/<country>, the others at …/p/<n>. */
 export const listPath = (country: string, page: number): string => `/institutions/${country.toLowerCase()}${page > 1 ? `/p/${page}` : ''}`;
@@ -39,6 +43,8 @@ export async function InstitutionListPage({ locale, country, page, list }: { loc
   const base = t('countryTitle', { place });
   const title = page > 1 ? t('pageTitle', { title: base, page }) : base;
   const hasFields = combosOfCountry(cc).length > 0;
+  // the best-known institutions of the country first, so that they are one click from the list and not on its page 7
+  const ranked = page === 1 ? ofCountry(RANKED, cc, RANKED_ON_LIST) : [];
 
   return (
     <PageShell title={title}>
@@ -51,6 +57,23 @@ export async function InstitutionListPage({ locale, country, page, list }: { loc
         ])}
       />
       <p>{t('countryIntro', { count: list.total, place })}</p>
+
+      {ranked.length > 0 && (
+        <section aria-labelledby="ranked-title" className="pt-4">
+          <h2 id="ranked-title" className="text-xl font-semibold text-text">{t('rankedTitle')}</h2>
+          <p className="mt-2 text-muted">{t('rankedIntro')}</p>
+          <ul className="mt-3 grid gap-x-6 gap-y-2 text-base sm:grid-cols-2">
+            {ranked.map((i) => (
+              <li key={i.s}>
+                <Link href={`/institutions/${i.c}/${i.s}`} className="py-1 text-accent-text underline underline-offset-4">
+                  {pickLocalized(i.names, locale).text}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+      {ranked.length > 0 && <h2 className="pt-4 text-xl font-semibold text-text">{t('allTitle')}</h2>}
 
       {/* The padding of a link makes it taller to the finger without moving the lines; the gap keeps two links from overlapping. */}
       <ul className="grid gap-x-6 gap-y-2 text-base sm:grid-cols-2">

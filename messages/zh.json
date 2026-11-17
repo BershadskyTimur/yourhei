@@ -1427,6 +1427,9 @@
     "prev": "← 第 {page} 页",
     "next": "第 {page} 页 →",
     "allCountries": "所有国家",
-    "allInCountry": "{place}的所有大学和学院"
+    "allInCountry": "{place}的所有大学和学院",
+    "rankedTitle": "世界排名中的大学",
+    "rankedIntro": "根据 Wikidata，列入 QS、THE 或上海软科（ARWU）世界大学排名。",
+    "allTitle": "所有院校（按字母顺序）"
   }
 }

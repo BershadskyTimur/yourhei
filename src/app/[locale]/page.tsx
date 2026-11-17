@@ -16,6 +16,8 @@ import { LOCALES } from '@/config/locales';
 import { Link } from '@/i18n/navigation';
 import { routing } from '@/i18n/routing';
 import { getMapCounts } from '@/lib/institutions/summaries';
+import { pickLocalized } from '@/lib/institutions/localized';
+import { RANKED, mixed } from '@/lib/institutions/ranked';
 import { ClientMessages } from '@/i18n/ClientMessages';
 
 // The home page is rebuilt at most twice a day (the counts on it change slowly); every rebuild reads the database.
@@ -63,6 +65,9 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
   const tBlog = await getTranslations('Blog');
   const tDeadlines = await getTranslations('Deadlines');
   const tChecklist = await getTranslations('Checklist');
+  const tList = await getTranslations('InstitutionsList');
+  // links to the best-known institutions (world rankings), at most 6 of one country: from the home page straight to them
+  const ranked = mixed(RANKED, 24, 6);
   return (
     <ClientMessages namespaces={['Home.map', 'Types', 'Catalog']}>
       <>
@@ -171,6 +176,26 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
             </li>
           </ul>
         </section>
+
+        {ranked.length > 0 && (
+          <section aria-labelledby="ranked-title" className="mx-auto mt-24 max-w-[1500px] px-4">
+            <h2 id="ranked-title" className={sectionTitle}>{tList('rankedTitle')}</h2>
+            <p className="mt-4 text-lg text-muted">{tList('rankedIntro')}</p>
+            <ul className="mt-8 grid gap-x-6 gap-y-2 text-base sm:grid-cols-2 lg:grid-cols-3">
+              {ranked.map((i) => (
+                <li key={`${i.c}/${i.s}`}>
+                  <Link href={`/institutions/${i.c}/${i.s}`} className="py-1 text-accent-text underline underline-offset-4">
+                    {pickLocalized(i.names, locale).text}
+                  </Link>
+                  <span className="text-muted"> · {regionNames.of(i.c.toUpperCase()) ?? i.c.toUpperCase()}</span>
+                </li>
+              ))}
+            </ul>
+            <p className="mt-6 text-base">
+              <Link href="/institutions" className="font-semibold text-accent-text underline underline-offset-4">{tList('indexTitle')}</Link>
+            </p>
+          </section>
+        )}
 
         {countries.length > 0 && (
           <section aria-labelledby="countries-title" className="mx-auto mt-24 max-w-[1500px] px-4">

@@ -1427,6 +1427,9 @@
     "prev": "← Səhifə {page}",
     "next": "Səhifə {page} →",
     "allCountries": "Bütün ölkələr",
-    "allInCountry": "Bütün universitetlər və kolleclər: {place}"
+    "allInCountry": "Bütün universitetlər və kolleclər: {place}",
+    "rankedTitle": "Dünya reytinqlərindəki universitetlər",
+    "rankedIntro": "Wikidata məlumatlarına görə QS, THE və ya Şanxay (ARWU) dünya reytinqlərinə daxildir.",
+    "allTitle": "Bütün təhsil müəssisələri əlifba sırası ilə"
   }
 }

@@ -1,0 +1,2897 @@
+{
+ "generated": "2026-11-17",
+ "count": 230,
+ "rule": "Published institutions with published programmes and a position in the QS, THE or Shanghai (ARWU) world ranking (Wikidata CC0); best = the best position. Regenerate with scripts/build-ranked.mjs.",
+ "items": [
+  {
+   "c": "gb",
+   "s": "university-of-oxford",
+   "best": 1,
+   "names": {
+    "en": "University of Oxford",
+    "ru": "Оксфордский университет",
+    "ka": "ოქსფორდის უნივერსიტეტი",
+    "es": "Universidad de Oxford",
+    "zh": "牛津大学",
+    "original": "University of Oxford"
+   }
+  },
+  {
+   "c": "us",
+   "s": "harvard-university",
+   "best": 1,
+   "names": {
+    "en": "Harvard University",
+    "ru": "Гарвардский университет",
+    "ka": "ჰარვარდის უნივერსიტეტი",
+    "es": "Universidad Harvard",
+    "zh": "哈佛大学",
+    "original": "Harvard University"
+   }
+  },
+  {
+   "c": "us",
+   "s": "massachusetts-institute-of-technology",
+   "best": 1,
+   "names": {
+    "en": "Massachusetts Institute of Technology",
+    "ru": "Массачусетский технологический институт",
+    "ka": "მასაჩუსეტსის ტექნოლოგიის ინსტიტუტი",
+    "es": "Instituto Tecnológico de Massachusetts",
+    "zh": "麻省理工学院",
+    "original": "Massachusetts Institute of Technology"
+   }
+  },
+  {
+   "c": "gb",
+   "s": "imperial-college-london",
+   "best": 2,
+   "names": {
+    "en": "Imperial College London",
+    "ru": "Имперский колледж Лондона",
+    "ka": "ლონდონის საიმპერიო კოლეჯი",
+    "es": "Escuela Imperial de Londres",
+    "zh": "伦敦帝国学院",
+    "original": "Imperial College of Science, Technology and Medicine"
+   }
+  },
+  {
+   "c": "us",
+   "s": "stanford-university",
+   "best": 2,
+   "names": {
+    "en": "Stanford University",
+    "ru": "Стэнфордский университет",
+    "ka": "სტენფორდის უნივერსიტეტი",
+    "es": "Universidad Stanford",
+    "zh": "斯坦福大学",
+    "original": "Leland Stanford Junior University"
+   }
+  },
+  {
+   "c": "gb",
+   "s": "university-of-cambridge",
+   "best": 3,
+   "names": {
+    "en": "University of Cambridge",
+    "ru": "Кембриджский университет",
+    "ka": "კემბრიჯის უნივერსიტეტი",
+    "es": "Universidad de Cambridge",
+    "zh": "剑桥大学",
+    "original": "University of Cambridge"
+   }
+  },
+  {
+   "c": "us",
+   "s": "princeton-university",
+   "best": 3,
+   "names": {
+    "en": "Princeton University",
+    "ru": "Принстонский университет",
+    "ka": "პრინსტონის უნივერსიტეტი",
+    "es": "Universidad de Princeton",
+    "zh": "普林斯顿大学",
+    "original": "Princeton University"
+   }
+  },
+  {
+   "c": "us",
+   "s": "university-of-california-berkeley",
+   "best": 5,
+   "names": {
+    "en": "University of California, Berkeley",
+    "ru": "Калифорнийский университет в Беркли",
+    "ka": "კალიფორნიის უნივერსიტეტი",
+    "es": "Universidad de California en Berkeley",
+    "zh": "加州大学伯克利分校",
+    "original": "University of California, Berkeley"
+   }
+  },
+  {
+   "c": "us",
+   "s": "california-institute-of-technology",
+   "best": 7,
+   "names": {
+    "en": "California Institute of Technology",
+    "ru": "Калифорнийский технологический институт",
+    "ka": "კალიფორნიის ტექნოლოგიის ინსტიტუტი",
+    "es": "Instituto de Tecnología de California",
+    "zh": "加州理工学院",
+    "original": "California Institute of Technology"
+   }
+  },
+  {
+   "c": "gb",
+   "s": "university-college-london",
+   "best": 9,
+   "names": {
+    "en": "University College London",
+    "ru": "Университетский колледж Лондона",
+    "ka": "ლონდონის საუნივერსიტეტო კოლეჯი",
+    "es": "University College de Londres",
+    "zh": "伦敦大学学院",
+    "original": "University College London"
+   }
+  },
+  {
+   "c": "us",
+   "s": "yale-university",
+   "best": 9,
+   "names": {
+    "en": "Yale University",
+    "ru": "Йельский университет",
+    "ka": "იელის უნივერსიტეტი",
+    "es": "Universidad Yale",
+    "zh": "耶鲁大学",
+    "original": "Yale University"
+   }
+  },
+  {
+   "c": "us",
+   "s": "university-of-chicago",
+   "best": 10,
+   "names": {
+    "en": "University of Chicago",
+    "ru": "Чикагский университет",
+    "ka": "ჩიკაგოს უნივერსიტეტი",
+    "es": "Universidad de Chicago",
+    "zh": "芝加哥大学",
+    "original": "University of Chicago"
+   }
+  },
+  {
+   "c": "cn",
+   "s": "tsinghua-university",
+   "best": 12,
+   "names": {
+    "en": "Tsinghua University",
+    "ru": "Университет Цинхуа",
+    "ka": "ცინგხუას უნივერსიტეტი",
+    "es": "Universidad Tsinghua",
+    "zh": "清华大学",
+    "original": "Tsinghua University"
+   }
+  },
+  {
+   "c": "us",
+   "s": "cornell-university",
+   "best": 12,
+   "names": {
+    "en": "Cornell University",
+    "ru": "Корнеллский университет",
+    "ka": "კორნელის უნივერსიტეტი",
+    "es": "Universidad Cornell",
+    "zh": "康奈尔大学",
+    "original": "Cornell University"
+   }
+  },
+  {
+   "c": "us",
+   "s": "university-of-pennsylvania",
+   "best": 12,
+   "names": {
+    "en": "University of Pennsylvania",
+    "ru": "Пенсильванский университет",
+    "ka": "პენსილვანიის უნივერსიტეტი",
+    "es": "Universidad de Pensilvania",
+    "zh": "宾夕法尼亚大学",
+    "original": "University of Pennsylvania"
+   }
+  },
+  {
+   "c": "cn",
+   "s": "peking-university",
+   "best": 13,
+   "names": {
+    "en": "Peking University",
+    "ru": "Пекинский университет",
+    "ka": "პეკინის უნივერსიტეტი",
+    "es": "Universidad de Pekín",
+    "zh": "北京大学",
+    "original": "Peking University"
+   }
+  },
+  {
+   "c": "us",
+   "s": "university-of-california-los-angeles",
+   "best": 15,
+   "names": {
+    "en": "University of California, Los Angeles",
+    "ru": "Калифорнийский университет в Лос-Анджелесе",
+    "ka": "კალიფორნიის უნივერსიტეტი",
+    "es": "Universidad de California en Los Ángeles",
+    "zh": "加州大学洛杉矶分校",
+    "original": "University of California, Los Angeles"
+   }
+  },
+  {
+   "c": "cn",
+   "s": "university-of-hong-kong",
+   "best": 17,
+   "names": {
+    "en": "University of Hong Kong",
+    "ru": "Гонконгский университет",
+    "es": "Universidad de Hong Kong",
+    "zh": "香港大学",
+    "original": "香港大學"
+   }
+  },
+  {
+   "c": "au",
+   "s": "university-of-melbourne",
+   "best": 19,
+   "names": {
+    "en": "University of Melbourne",
+    "ru": "Мельбурнский университет",
+    "ka": "მელბურნის უნივერსიტეტი",
+    "es": "Universidad de Melbourne",
+    "zh": "墨尔本大学",
+    "original": "University of Melbourne"
+   }
+  },
+  {
+   "c": "au",
+   "s": "university-of-new-south-wales",
+   "best": 19,
+   "names": {
+    "en": "University of New South Wales",
+    "ru": "Университет Нового Южного Уэльса",
+    "es": "Universidad de Nueva Gales del Sur",
+    "zh": "新南威尔士大学",
+    "original": "University of New South Wales"
+   }
+  },
+  {
+   "c": "us",
+   "s": "johns-hopkins-university",
+   "best": 19,
+   "names": {
+    "en": "Johns Hopkins University",
+    "ru": "Университет Джонса Хопкинса",
+    "ka": "ჯონს ჰოპკინზის უნივერსიტეტი",
+    "es": "Universidad Johns Hopkins",
+    "zh": "约翰斯·霍普金斯大学",
+    "original": "Johns Hopkins University"
+   }
+  },
+  {
+   "c": "us",
+   "s": "university-of-california-san-diego",
+   "best": 20,
+   "names": {
+    "en": "University of California, San Diego",
+    "ru": "Университет Калифорнии в Сан-Диего",
+    "ka": "კალიფორნიის უნივერსიტეტი",
+    "es": "Universidad de California en San Diego",
+    "zh": "圣迭戈加利福尼亚大学",
+    "original": "University of California, San Diego"
+   }
+  },
+  {
+   "c": "us",
+   "s": "university-of-california-san-francisco",
+   "best": 21,
+   "names": {
+    "en": "University of California, San Francisco",
+    "ru": "Калифорнийский университет в Сан-Франциско",
+    "ka": "კალიფორნიის უნივერსიტეტი",
+    "es": "Universidad de California en San Francisco",
+    "zh": "旧金山加利福尼亚大学",
+    "original": "University of California, San Francisco"
+   }
+  },
+  {
+   "c": "ca",
+   "s": "university-of-toronto",
+   "best": 22,
+   "names": {
+    "en": "University of Toronto",
+    "ru": "Университет Торонто",
+    "ka": "ტორონტოს უნივერსიტეტი",
+    "es": "Universidad de Toronto",
+    "zh": "多伦多大学",
+    "original": "University of Toronto"
+   }
+  },
+  {
+   "c": "de",
+   "s": "technical-university-of-munich",
+   "best": 22,
+   "names": {
+    "en": "Technical University of Munich",
+    "ru": "Мюнхенский технический университет",
+    "ka": "მიუნხენის ტექნიკური უნივერსიტეტი",
+    "es": "Universidad Técnica de Múnich",
+    "zh": "慕尼黑工业大学",
+    "original": "Technical University of Munich"
+   }
+  },
+  {
+   "c": "us",
+   "s": "duke-university",
+   "best": 22,
+   "names": {
+    "en": "Duke University",
+    "ru": "Университет Дьюка",
+    "ka": "დიუკის უნივერსიტეტი",
+    "es": "Universidad Duke",
+    "zh": "杜克大学",
+    "original": "Duke University"
+   }
+  },
+  {
+   "c": "us",
+   "s": "washington-university-in-st-louis",
+   "best": 23,
+   "names": {
+    "en": "Washington University in St. Louis",
+    "ru": "Университет Вашингтона в Сент-Луисе",
+    "ka": "სენტ-ლუისის ვაშინგტონის უნივერსიტეტი",
+    "es": "Universidad Washington en San Luis",
+    "zh": "圣路易斯华盛顿大学",
+    "original": "Washington University in St. Louis"
+   }
+  },
+  {
+   "c": "au",
+   "s": "university-of-sydney",
+   "best": 25,
+   "names": {
+    "en": "University of Sydney",
+    "ru": "Сиднейский университет",
+    "ka": "სიდნეის უნივერსიტეტი",
+    "es": "Universidad de Sídney",
+    "zh": "悉尼大学",
+    "original": "The University of Sydney"
+   }
+  },
+  {
+   "c": "us",
+   "s": "carnegie-mellon-university",
+   "best": 27,
+   "names": {
+    "en": "Carnegie Mellon University",
+    "ru": "Университет Карнеги — Меллона",
+    "ka": "კარნეგი-მელონის უნივერსიტეტი",
+    "es": "Universidad Carnegie Mellon",
+    "zh": "卡内基梅隆大学",
+    "original": "Carnegie Mellon University"
+   }
+  },
+  {
+   "c": "us",
+   "s": "new-york-university",
+   "best": 27,
+   "names": {
+    "en": "New York University",
+    "ru": "Нью-Йоркский университет",
+    "ka": "ნიუ-იორკის უნივერსიტეტი",
+    "es": "Universidad de Nueva York",
+    "zh": "纽约大学",
+    "original": "New York University"
+   }
+  },
+  {
+   "c": "gb",
+   "s": "university-of-edinburgh",
+   "best": 29,
+   "names": {
+    "en": "University of Edinburgh",
+    "ru": "Эдинбургский университет",
+    "ka": "ედინბურგის უნივერსიტეტი",
+    "es": "Universidad de Edimburgo",
+    "zh": "爱丁堡大学",
+    "original": "University of Edinburgh"
+   }
+  },
+  {
+   "c": "us",
+   "s": "the-rockefeller-university",
+   "best": 29,
+   "names": {
+    "en": "The Rockefeller University",
+    "ru": "Рокфеллеровский университет",
+    "es": "Universidad Rockefeller",
+    "zh": "洛克菲勒大学",
+    "original": "Rockefeller University"
+   }
+  },
+  {
+   "c": "au",
+   "s": "australian-national-university",
+   "best": 30,
+   "names": {
+    "en": "Australian National University",
+    "ru": "Австралийский национальный университет",
+    "ka": "ავსტრალიის ეროვნული უნივერსიტეტი",
+    "es": "Universidad Nacional Australiana",
+    "zh": "澳大利亚国立大学",
+    "original": "Australian National University"
+   }
+  },
+  {
+   "c": "us",
+   "s": "northwestern-university",
+   "best": 30,
+   "names": {
+    "en": "Northwestern University",
+    "ru": "Северо-Западный университет",
+    "ka": "ჩრდილოდასავლეთის უნივერსიტეტი",
+    "es": "Universidad del Noroeste",
+    "zh": "西北大学",
+    "original": "Northwestern University"
+   }
+  },
+  {
+   "c": "gb",
+   "s": "king-s-college-london",
+   "best": 31,
+   "names": {
+    "en": "King's College London",
+    "ru": "Королевский колледж Лондона",
+    "ka": "ლონდონის სამეფო კოლეჯი",
+    "es": "King's College de Londres",
+    "zh": "伦敦国王学院",
+    "original": "King's College London"
+   }
+  },
+  {
+   "c": "de",
+   "s": "ludwig-maximilians-universitat-munchen",
+   "best": 32,
+   "names": {
+    "en": "Ludwig-Maximilians-Universität München",
+    "ru": "Мюнхенский университет",
+    "ka": "ლუდვიგ მაქსიმილიანის მიუნხენის უნივერსიტეტი",
+    "es": "Universidad de Múnich",
+    "zh": "慕尼黑大学",
+    "original": "Ludwig-Maximilians-Universität München"
+   }
+  },
+  {
+   "c": "gb",
+   "s": "university-of-manchester",
+   "best": 35,
+   "names": {
+    "en": "University of Manchester",
+    "ru": "Манчестерский университет",
+    "ka": "მანჩესტერის უნივერსიტეტი",
+    "es": "Universidad de Mánchester",
+    "zh": "曼彻斯特大学",
+    "original": "University of Manchester"
+   }
+  },
+  {
+   "c": "us",
+   "s": "university-of-wisconsin-madison",
+   "best": 36,
+   "names": {
+    "en": "University of Wisconsin–Madison",
+    "ru": "Висконсинский университет в Мадисоне",
+    "ka": "მადისონის ვისკონსინის უნივერსიტეტი",
+    "es": "Universidad de Wisconsin-Madison",
+    "zh": "威斯康星大学麦迪逊分校",
+    "original": "University of Wisconsin–Madison"
+   }
+  },
+  {
+   "c": "au",
+   "s": "monash-university",
+   "best": 37,
+   "names": {
+    "en": "Monash University",
+    "ru": "Университет Монаша",
+    "es": "Universidad de Monash",
+    "zh": "蒙纳士大学",
+    "original": "Monash University"
+   }
+  },
+  {
+   "c": "us",
+   "s": "university-of-north-carolina-at-chapel-hill",
+   "best": 39,
+   "names": {
+    "en": "University of North Carolina at Chapel Hill",
+    "ru": "Университет Северной Каролины в Чапел-Хилле",
+    "ka": "ჩაპელ-ჰილის ჩრდილოეთ კაროლინის უნივერისტეტი",
+    "es": "Universidad de Carolina del Norte en Chapel Hill",
+    "zh": "北卡罗来纳大学查珀尔希尔校区",
+    "original": "University of North Carolina at Chapel Hill"
+   }
+  },
+  {
+   "c": "au",
+   "s": "university-of-queensland",
+   "best": 42,
+   "names": {
+    "en": "University of Queensland",
+    "ru": "Квинслендский университет",
+    "ka": "კუინზლენდის უნივერსიტეტი",
+    "es": "Universidad de Queensland",
+    "zh": "昆士兰大学",
+    "original": "University of Queensland"
+   }
+  },
+  {
+   "c": "us",
+   "s": "university-of-illinois-urbana-champaign",
+   "best": 43,
+   "names": {
+    "en": "University of Illinois Urbana-Champaign",
+    "ru": "Иллинойский университет в Урбана-Шампейне",
+    "ka": "ილინოისის უნივერსიტეტი ურბანა-შამპეინში",
+    "es": "Universidad de Illinois en Urbana-Champaign",
+    "zh": "伊利诺伊大学厄巴纳-香槟分校",
+    "original": "University of Illinois Urbana-Champaign"
+   }
+  },
+  {
+   "c": "nl",
+   "s": "delft-university-of-technology",
+   "best": 47,
+   "names": {
+    "en": "Delft University of Technology",
+    "ru": "Делфтский технический университет",
+    "ka": "დელფტის ტექნიკური უნივერსიტეტი",
+    "es": "Universidad Técnica de Delft",
+    "zh": "代尔夫特理工大学",
+    "original": "Delft University of Technology"
+   }
+  },
+  {
+   "c": "de",
+   "s": "heidelberg-university",
+   "best": 49,
+   "names": {
+    "en": "Heidelberg University",
+    "ru": "Гейдельбергский университет",
+    "ka": "ჰაიდელბერგის უნივერსიტეტი",
+    "es": "Universidad de Heidelberg",
+    "zh": "海德堡大学",
+    "original": "Heidelberg University"
+   }
+  },
+  {
+   "c": "us",
+   "s": "university-of-texas-at-austin",
+   "best": 49,
+   "names": {
+    "en": "University of Texas at Austin",
+    "ru": "Техасский университет в Остине",
+    "ka": "ტეხასის უნივერსიტეტი (ოსტინი)",
+    "es": "Universidad de Texas en Austin",
+    "zh": "德克薩斯州大學奧斯汀分校",
+    "original": "University of Texas at Austin"
+   }
+  },
+  {
+   "c": "se",
+   "s": "karolinska-institutet",
+   "best": 50,
+   "names": {
+    "en": "Karolinska Institutet",
+    "ru": "Каролинский институт",
+    "ka": "შვედეთის სამეფო ინსტიტუტი",
+    "es": "Instituto Karolinska",
+    "zh": "卡罗琳学院",
+    "original": "Karolinska Institutet"
+   }
+  },
+  {
+   "c": "gb",
+   "s": "university-of-bristol",
+   "best": 51,
+   "names": {
+    "en": "University of Bristol",
+    "ru": "Бристольский университет",
+    "ka": "ბრისტოლის უნივერსიტეტი",
+    "es": "Universidad de Brístol",
+    "zh": "布里斯托尔大学",
+    "original": "University of Bristol"
+   }
+  },
+  {
+   "c": "gb",
+   "s": "london-school-of-economics-and-political-science",
+   "best": 52,
+   "names": {
+    "en": "London School of Economics and Political Science",
+    "ru": "Лондонская школа экономики и политических наук",
+    "ka": "ლონდონის ეკონომიკის სკოლა",
+    "es": "Escuela de Economía y Ciencia Política de Londres",
+    "zh": "伦敦政治经济学院",
+    "original": "The London School of Economics and Political Science"
+   }
+  },
+  {
+   "c": "nl",
+   "s": "university-of-amsterdam",
+   "best": 55,
+   "names": {
+    "en": "University of Amsterdam",
+    "ru": "Амстердамский университет",
+    "ka": "ამსტერდამის უნივერსიტეტი",
+    "es": "Universidad de Ámsterdam",
+    "zh": "阿姆斯特丹大学",
+    "original": "University of Amsterdam"
+   }
+  },
+  {
+   "c": "nl",
+   "s": "utrecht-university",
+   "best": 57,
+   "names": {
+    "en": "Utrecht University",
+    "ru": "Утрехтский университет",
+    "ka": "უტრეხტის უნივერსიტეტი",
+    "es": "Universidad de Utrecht",
+    "zh": "乌得勒支大学",
+    "original": "Universiteit Utrecht"
+   }
+  },
+  {
+   "c": "de",
+   "s": "university-of-bonn",
+   "best": 61,
+   "names": {
+    "en": "University of Bonn",
+    "ru": "Боннский университет",
+    "ka": "ბონის უნივერსიტეტი",
+    "es": "Universidad de Bonn",
+    "zh": "波恩大学",
+    "original": "Rheinische Friedrich-Wilhelms-Universität Bonn"
+   }
+  },
+  {
+   "c": "us",
+   "s": "vanderbilt-university",
+   "best": 62,
+   "names": {
+    "en": "Vanderbilt University",
+    "ru": "Университет Вандербильта",
+    "ka": "ვანდერბილტის უნივერსიტეტი",
+    "es": "Universidad Vanderbilt",
+    "zh": "范德比尔特大学",
+    "original": "Vanderbilt University"
+   }
+  },
+  {
+   "c": "us",
+   "s": "university-of-colorado-boulder",
+   "best": 63,
+   "names": {
+    "en": "University of Colorado Boulder",
+    "ru": "Колорадский университет в Боулдере",
+    "es": "Universidad de Colorado en Boulder",
+    "zh": "科羅拉多大學博爾德分校",
+    "original": "University of Colorado Boulder"
+   }
+  },
+  {
+   "c": "us",
+   "s": "university-of-california-davis",
+   "best": 64,
+   "names": {
+    "en": "University of California, Davis",
+    "ru": "Калифорнийский университет в Девисе",
+    "es": "Universidad de California en Davis",
+    "zh": "戴维斯加利福尼亚大学",
+    "original": "University of California, Davis"
+   }
+  },
+  {
+   "c": "nz",
+   "s": "university-of-auckland",
+   "best": 65,
+   "names": {
+    "en": "University of Auckland",
+    "ru": "Оклендский университет",
+    "ka": "ოკლენდის უნივერსიტეტი",
+    "es": "Universidad de Auckland",
+    "zh": "奥克兰大学",
+    "original": "University of Auckland"
+   }
+  },
+  {
+   "c": "us",
+   "s": "brown-university",
+   "best": 65,
+   "names": {
+    "en": "Brown University",
+    "ru": "Брауновский университет",
+    "ka": "ბრაუნის უნივერსიტეტი",
+    "es": "Universidad Brown",
+    "zh": "布朗大学",
+    "original": "Brown University"
+   }
+  },
+  {
+   "c": "nl",
+   "s": "wageningen-university-research",
+   "best": 66,
+   "names": {
+    "en": "Wageningen University & Research",
+    "ru": "Вагенингенский университет",
+    "es": "Universidad de Wageningen",
+    "zh": "瓦赫宁恩大学",
+    "original": "Wageningen University"
+   }
+  },
+  {
+   "c": "us",
+   "s": "university-of-southern-california",
+   "best": 68,
+   "names": {
+    "en": "University of Southern California",
+    "ru": "Университет Южной Калифорнии",
+    "ka": "სამხრეთ კალიფორნიის უნივერსიტეტი",
+    "es": "Universidad del Sur de California",
+    "zh": "南加州大学",
+    "original": "University of Southern California"
+   }
+  },
+  {
+   "c": "nl",
+   "s": "leiden-university",
+   "best": 70,
+   "names": {
+    "en": "Leiden University",
+    "ru": "Лейденский университет",
+    "ka": "ლეიდენის უნივერსიტეტი",
+    "es": "Universidad de Leiden",
+    "zh": "莱顿大学",
+    "original": "Universiteit Leiden"
+   }
+  },
+  {
+   "c": "us",
+   "s": "university-of-california-santa-barbara",
+   "best": 70,
+   "names": {
+    "en": "University of California, Santa Barbara",
+    "ru": "Калифорнийский университет в Санта-Барбаре",
+    "ka": "კალიფორნიის უნივერსიტეტი (სანტა-ბარბარა)",
+    "es": "Universidad de California en Santa Bárbara",
+    "zh": "加利福尼亚大学圣巴巴拉分校",
+    "original": "University of California, Santa Barbara"
+   }
+  },
+  {
+   "c": "se",
+   "s": "lund-university",
+   "best": 72,
+   "names": {
+    "en": "Lund University",
+    "ru": "Лундский университет",
+    "ka": "ლუნდის უნივერსიტეტი",
+    "es": "Universidad de Lund",
+    "zh": "隆德大学",
+    "original": "Lund University"
+   }
+  },
+  {
+   "c": "gb",
+   "s": "university-of-warwick",
+   "best": 74,
+   "names": {
+    "en": "University of Warwick",
+    "ru": "Уорикский университет",
+    "ka": "უორვიკის უნივერსიტეტი",
+    "es": "Universidad de Warwick",
+    "zh": "华威大学",
+    "original": "University of Warwick"
+   }
+  },
+  {
+   "c": "nl",
+   "s": "university-of-groningen",
+   "best": 74,
+   "names": {
+    "en": "University of Groningen",
+    "ru": "Университет Гронингена",
+    "ka": "გრონინგენის უნივერსიტეტი",
+    "es": "Universidad de Groninga",
+    "zh": "格罗宁根大学",
+    "original": "University of Groningen"
+   }
+  },
+  {
+   "c": "gb",
+   "s": "university-of-birmingham",
+   "best": 76,
+   "names": {
+    "en": "University of Birmingham",
+    "ru": "Бирмингемский университет",
+    "ka": "ბირმინგემის უნივერსიტეტი",
+    "es": "Universidad de Birmingham",
+    "zh": "伯明翰大学",
+    "original": "University of Birmingham"
+   }
+  },
+  {
+   "c": "us",
+   "s": "university-of-california-irvine",
+   "best": 76,
+   "names": {
+    "en": "University of California, Irvine",
+    "ru": "Калифорнийский университет в Ирвайне",
+    "es": "Universidad de California en Irvine",
+    "zh": "加利福尼亚大学欧文分校",
+    "original": "University of California, Irvine"
+   }
+  },
+  {
+   "c": "au",
+   "s": "university-of-western-australia",
+   "best": 77,
+   "names": {
+    "en": "University of Western Australia",
+    "ru": "Университет Западной Австралии",
+    "ka": "დასავლეთ ავსტრალიის უნივერსიტეტი",
+    "es": "Universidad de Australia Occidental",
+    "zh": "西澳大学",
+    "original": "University of Western Australia"
+   }
+  },
+  {
+   "c": "us",
+   "s": "boston-university",
+   "best": 77,
+   "names": {
+    "en": "Boston University",
+    "ru": "Бостонский университет",
+    "ka": "ბოსტონის უნივერსიტეტი",
+    "es": "Universidad de Boston",
+    "zh": "波士顿大学",
+    "original": "Boston University"
+   }
+  },
+  {
+   "c": "se",
+   "s": "royal-institute-of-technology",
+   "best": 78,
+   "names": {
+    "en": "Royal Institute of Technology",
+    "ru": "Королевский технологический институт",
+    "ka": "შვედეთის სამეფო ტექნოლოგიური უნივერსიტეტი",
+    "es": "Real Universidad Politécnica",
+    "zh": "皇家工学院",
+    "original": "Royal Institute of Technology"
+   }
+  },
+  {
+   "c": "au",
+   "s": "adelaide-university",
+   "best": 79,
+   "names": {
+    "en": "Adelaide University",
+    "ru": "Аделаидский университет",
+    "zh": "阿德莱德大学 (2026年)",
+    "original": "Adelaide University"
+   }
+  },
+  {
+   "c": "gb",
+   "s": "university-of-glasgow",
+   "best": 79,
+   "names": {
+    "en": "University of Glasgow",
+    "ru": "Университет Глазго",
+    "ka": "გლაზგოს უნივერსიტეტი",
+    "es": "Universidad de Glasgow",
+    "zh": "格拉斯哥大学",
+    "original": "University of Glasgow"
+   }
+  },
+  {
+   "c": "gb",
+   "s": "university-of-leeds",
+   "best": 86,
+   "names": {
+    "en": "University of Leeds",
+    "ru": "Лидсский университет",
+    "ka": "ლიდზის უნივერსიტეტი",
+    "es": "Universidad de Leeds",
+    "zh": "利兹大学",
+    "original": "University of Leeds"
+   }
+  },
+  {
+   "c": "gb",
+   "s": "university-of-southampton",
+   "best": 87,
+   "names": {
+    "en": "University of Southampton",
+    "ru": "Саутгемптонский университет",
+    "ka": "საუთჰემპტონის უნივერსიტეტი",
+    "es": "Universidad de Southampton",
+    "zh": "南安普敦大学",
+    "original": "University of Southampton"
+   }
+  },
+  {
+   "c": "de",
+   "s": "freie-universitat-berlin",
+   "best": 88,
+   "names": {
+    "en": "Freie Universität Berlin",
+    "ru": "Свободный университет Берлина",
+    "ka": "ბერლინის თავისუფალი უნივერსიტეტი",
+    "es": "Universidad Libre de Berlín",
+    "zh": "柏林自由大学",
+    "original": "Freie Universität Berlin"
+   }
+  },
+  {
+   "c": "nl",
+   "s": "erasmus-university-rotterdam",
+   "best": 88,
+   "names": {
+    "en": "Erasmus University Rotterdam",
+    "ru": "Университет Эразма Роттердамского",
+    "es": "Universidad Erasmo de Róterdam",
+    "zh": "鹿特丹大学",
+    "original": "Erasmus Universiteit Rotterdam"
+   }
+  },
+  {
+   "c": "de",
+   "s": "humboldt-universitat-zu-berlin",
+   "best": 89,
+   "names": {
+    "en": "Humboldt-Universität zu Berlin",
+    "ru": "Берлинский университет",
+    "ka": "ჰუმბოლდტის უნივერსიტეტი",
+    "es": "Universidad Humboldt de Berlín",
+    "zh": "柏林洪堡大学",
+    "original": "Humboldt-Universität zu Berlin"
+   }
+  },
+  {
+   "c": "gb",
+   "s": "durham-university",
+   "best": 89,
+   "names": {
+    "en": "Durham University",
+    "ru": "Даремский университет",
+    "ka": "დარემის უნივერსიტეტი",
+    "es": "Universidad de Durham",
+    "zh": "杜伦大学",
+    "original": "Durham University"
+   }
+  },
+  {
+   "c": "de",
+   "s": "rwth-aachen-university",
+   "best": 92,
+   "names": {
+    "en": "RWTH Aachen University",
+    "ru": "Рейнско-Вестфальский технический университет Ахена",
+    "ka": "აახენის რაინ-ვესტფალიის ტექნიკური უნივერსიტეტი",
+    "es": "Universidad Técnica de Aquisgrán",
+    "zh": "亚琛工业大学",
+    "original": "RWTH Aachen University"
+   }
+  },
+  {
+   "c": "gb",
+   "s": "university-of-sheffield",
+   "best": 92,
+   "names": {
+    "en": "University of Sheffield",
+    "ru": "Шеффилдский университет",
+    "ka": "შეფილდის უნივერსიტეტი",
+    "es": "Universidad de Sheffield",
+    "zh": "谢菲尔德大学",
+    "original": "University of Sheffield"
+   }
+  },
+  {
+   "c": "se",
+   "s": "uppsala-university",
+   "best": 93,
+   "names": {
+    "en": "Uppsala University",
+    "ru": "Уппсальский университет",
+    "ka": "უფსალის უნივერსიტეტი",
+    "es": "Universidad de Upsala",
+    "zh": "乌普萨拉大学",
+    "original": "Uppsala University"
+   }
+  },
+  {
+   "c": "fi",
+   "s": "university-of-helsinki",
+   "best": 94,
+   "names": {
+    "en": "University of Helsinki",
+    "ru": "Хельсинкский университет",
+    "ka": "ჰელსინკის უნივერსიტეტი",
+    "es": "Universidad de Helsinki",
+    "zh": "赫尔辛基大学",
+    "original": "Helsingfors universitet"
+   }
+  },
+  {
+   "c": "us",
+   "s": "university-of-florida",
+   "best": 94,
+   "names": {
+    "en": "University of Florida",
+    "ru": "Флоридский университет",
+    "ka": "ფლორიდის უნივერსიტეტი",
+    "es": "Universidad de la Florida",
+    "zh": "佛罗里达大学",
+    "original": "University of Florida"
+   }
+  },
+  {
+   "c": "au",
+   "s": "university-of-technology-sydney",
+   "best": 96,
+   "names": {
+    "en": "University of Technology Sydney",
+    "ru": "Технологический университет Сиднея",
+    "ka": "სიდნეის ტენლოგიური უნივერსიტეტი",
+    "es": "Universidad Tecnológica de Sídney",
+    "zh": "悉尼科技大学",
+    "original": "University of Technology Sydney"
+   }
+  },
+  {
+   "c": "de",
+   "s": "karlsruhe-institute-of-technology",
+   "best": 98,
+   "names": {
+    "en": "Karlsruhe Institute of Technology",
+    "ru": "Технологический институт Карлсруэ",
+    "ka": "კარლსრუეს ტექნოლოგიური უნსტიტუტი",
+    "es": "Universidad de Karlsruhe",
+    "zh": "卡尔斯鲁厄理工学院",
+    "original": "Karlsruher Institut für Technologie"
+   }
+  },
+  {
+   "c": "de",
+   "s": "university-of-tubingen",
+   "best": 98,
+   "names": {
+    "en": "University of Tübingen",
+    "ru": "Тюбингенский университет",
+    "ka": "ტიუბინგენის უნივერსიტეტი",
+    "es": "Universidad de Tubinga",
+    "zh": "蒂宾根大学",
+    "original": "Eberhard Karls Universität Tübingen"
+   }
+  },
+  {
+   "c": "se",
+   "s": "stockholm-university",
+   "best": 100,
+   "names": {
+    "en": "Stockholm University",
+    "ru": "Стокгольмский университет",
+    "ka": "სტოკჰოლმის უნივერსიტეტი",
+    "es": "Universidad de Estocolmo",
+    "zh": "斯德哥尔摩大学",
+    "original": "Stockholm University"
+   }
+  },
+  {
+   "c": "us",
+   "s": "emory-university",
+   "best": 102,
+   "names": {
+    "en": "Emory University",
+    "ru": "Университет Эмори",
+    "es": "Universidad Emory",
+    "zh": "艾默理大学",
+    "original": "Emory University"
+   }
+  },
+  {
+   "c": "us",
+   "s": "rice-university",
+   "best": 103,
+   "names": {
+    "en": "Rice University",
+    "ru": "Университет Райса",
+    "ka": "რაისის უნივერსიტეტი",
+    "es": "Universidad Rice",
+    "zh": "莱斯大学",
+    "original": "William Marsh Rice University"
+   }
+  },
+  {
+   "c": "us",
+   "s": "michigan-state-university",
+   "best": 106,
+   "names": {
+    "en": "Michigan State University",
+    "ru": "Университет штата Мичиган",
+    "es": "Universidad Estatal de Míchigan",
+    "zh": "密歇根州立大学",
+    "original": "Michigan State University"
+   }
+  },
+  {
+   "c": "gb",
+   "s": "university-of-nottingham",
+   "best": 108,
+   "names": {
+    "en": "University of Nottingham",
+    "ru": "Ноттингемский университет",
+    "ka": "ნოტინგემის უნივერსიტეტი",
+    "es": "Universidad de Nottingham",
+    "zh": "诺丁汉大学",
+    "original": "University of Nottingham"
+   }
+  },
+  {
+   "c": "gb",
+   "s": "queen-mary-university-of-london",
+   "best": 110,
+   "names": {
+    "en": "Queen Mary University of London",
+    "ru": "Лондонский университет королевы Марии",
+    "es": "Queen Mary University of London",
+    "zh": "伦敦玛丽女王大学",
+    "original": "Queen Mary University of London"
+   }
+  },
+  {
+   "c": "gb",
+   "s": "university-of-st-andrews",
+   "best": 113,
+   "names": {
+    "en": "University of St Andrews",
+    "ru": "Сент-Эндрюсский университет",
+    "ka": "სენტ-ენდრიუს უნივერსიტეტი",
+    "es": "Universidad de Saint Andrews",
+    "zh": "圣安德鲁斯大学",
+    "original": "University of St Andrews"
+   }
+  },
+  {
+   "c": "fi",
+   "s": "aalto-university",
+   "best": 114,
+   "names": {
+    "en": "Aalto University",
+    "ru": "Университет Аалто",
+    "ka": "აალტოს უნივერსიტეტი",
+    "es": "Universidad Aalto",
+    "zh": "阿尔托大学",
+    "original": "Aalto University"
+   }
+  },
+  {
+   "c": "de",
+   "s": "university-of-gottingen",
+   "best": 122,
+   "names": {
+    "en": "University of Göttingen",
+    "ru": "Гёттингенский университет",
+    "ka": "გიოტინგენის უნივერსიტეტი",
+    "es": "Universidad de Gotinga",
+    "zh": "哥廷根大学",
+    "original": "Georg-August-Universität Göttingen"
+   }
+  },
+  {
+   "c": "au",
+   "s": "rmit-university",
+   "best": 125,
+   "names": {
+    "en": "RMIT University",
+    "ru": "Мельбурнский королевский технологический университет",
+    "es": "Universidad Real Instituto de Tecnología de Melbourne",
+    "zh": "墨尔本皇家理工大学",
+    "original": "RMIT University"
+   }
+  },
+  {
+   "c": "de",
+   "s": "university-of-hamburg",
+   "best": 126,
+   "names": {
+    "en": "University of Hamburg",
+    "ru": "Гамбургский университет",
+    "ka": "ჰამბურგის უნივერსიტეტი",
+    "es": "Universidad de Hamburgo",
+    "zh": "汉堡大学",
+    "original": "University of Hamburg"
+   }
+  },
+  {
+   "c": "us",
+   "s": "university-of-rochester",
+   "best": 127,
+   "names": {
+    "en": "University of Rochester",
+    "ru": "Рочестерский университет",
+    "ka": "როჩესტერის უნივერსიტეტი",
+    "es": "Universidad de Rochester",
+    "zh": "罗切斯特大学",
+    "original": "University of Rochester"
+   }
+  },
+  {
+   "c": "nl",
+   "s": "maastricht-university",
+   "best": 131,
+   "names": {
+    "en": "Maastricht University",
+    "ru": "Университет Маастрихта",
+    "es": "Universidad de Maastricht",
+    "zh": "马斯特里赫特大学",
+    "original": "Maastricht University"
+   }
+  },
+  {
+   "c": "gb",
+   "s": "university-of-bath",
+   "best": 132,
+   "names": {
+    "en": "University of Bath",
+    "ru": "Батский университет",
+    "es": "Universidad de Bath",
+    "zh": "巴斯大学",
+    "original": "University of Bath"
+   }
+  },
+  {
+   "c": "gb",
+   "s": "newcastle-university",
+   "best": 137,
+   "names": {
+    "en": "Newcastle University",
+    "ru": "Ньюкаслский университет",
+    "es": "Universidad de Newcastle upon Tyne",
+    "zh": "纽卡斯尔大学",
+    "original": "Newcastle University"
+   }
+  },
+  {
+   "c": "au",
+   "s": "macquarie-university",
+   "best": 138,
+   "names": {
+    "en": "Macquarie University",
+    "ru": "Университет Маккуори",
+    "es": "Universidad de Macquarie",
+    "zh": "麦考瑞大学",
+    "original": "Macquarie University"
+   }
+  },
+  {
+   "c": "de",
+   "s": "university-of-freiburg",
+   "best": 139,
+   "names": {
+    "en": "University of Freiburg",
+    "ru": "Фрайбургский университет",
+    "ka": "ფრაიბურგის უნივერსიტეტი",
+    "es": "Universidad de Friburgo",
+    "zh": "弗赖堡大学",
+    "original": "University of Freiburg"
+   }
+  },
+  {
+   "c": "nl",
+   "s": "eindhoven-university-of-technology",
+   "best": 140,
+   "names": {
+    "en": "Eindhoven University of Technology",
+    "ru": "Технический университет Эйндховена",
+    "es": "Universidad Técnica de Eindhoven",
+    "zh": "埃因霍温理工大学",
+    "original": "Eindhoven University of Technology"
+   }
+  },
+  {
+   "c": "us",
+   "s": "university-of-arizona",
+   "best": 140,
+   "names": {
+    "en": "University of Arizona",
+    "ru": "Аризонский университет",
+    "es": "Universidad de Arizona",
+    "zh": "亚利桑那大学",
+    "original": "University of Arizona"
+   }
+  },
+  {
+   "c": "gb",
+   "s": "university-of-liverpool",
+   "best": 144,
+   "names": {
+    "en": "University of Liverpool",
+    "ru": "Ливерпульский университет",
+    "ka": "ლივერპულის უნივერსიტეტი",
+    "es": "Universidad de Liverpool",
+    "zh": "利物浦大学",
+    "original": "University of Liverpool"
+   }
+  },
+  {
+   "c": "de",
+   "s": "technische-universitat-berlin",
+   "best": 145,
+   "names": {
+    "en": "Technische Universität Berlin",
+    "ru": "Берлинский технический университет",
+    "ka": "ბერლინის ტექნიკური უნივერსიტეტი",
+    "es": "Universidad Técnica de Berlín",
+    "zh": "柏林工业大学",
+    "original": "Technische Universität Berlin"
+   }
+  },
+  {
+   "c": "us",
+   "s": "case-western-reserve-university",
+   "best": 148,
+   "names": {
+    "en": "Case Western Reserve University",
+    "ru": "Кейсовский университет Западного резервного района",
+    "ka": "კეიზის დასავლეთ სარეზერვო უნივერსიტეტი",
+    "es": "Universidad Case de la Reserva Occidental",
+    "zh": "凱斯西儲大學",
+    "original": "Case Western Reserve University"
+   }
+  },
+  {
+   "c": "gb",
+   "s": "university-of-exeter",
+   "best": 155,
+   "names": {
+    "en": "University of Exeter",
+    "ru": "Эксетерский университет",
+    "ka": "ექსეტერის უნივერსიტეტი",
+    "es": "Universidad de Exeter",
+    "zh": "艾希特大学",
+    "original": "University of Exeter"
+   }
+  },
+  {
+   "c": "nl",
+   "s": "radboud-university",
+   "best": 155,
+   "names": {
+    "en": "Radboud University",
+    "ru": "Университет Радбода",
+    "es": "Universidad Radboud de Nimega",
+    "zh": "奈梅亨拉德伯德大學",
+    "original": "Radboud Universiteit Nijmegen"
+   }
+  },
+  {
+   "c": "gb",
+   "s": "university-of-york",
+   "best": 156,
+   "names": {
+    "en": "University of York",
+    "ru": "Университет Йорка",
+    "ka": "იორკის უნივერსიტეტი",
+    "es": "Universidad de York",
+    "zh": "约克大学",
+    "original": "University of York"
+   }
+  },
+  {
+   "c": "gb",
+   "s": "university-of-lancaster",
+   "best": 157,
+   "names": {
+    "en": "University of Lancaster",
+    "ru": "Ланкастерский университет",
+    "es": "Universidad de Lancaster",
+    "zh": "兰卡斯特大学",
+    "original": "University of Lancaster"
+   }
+  },
+  {
+   "c": "de",
+   "s": "university-of-cologne",
+   "best": 165,
+   "names": {
+    "en": "University of Cologne",
+    "ru": "Кёльнский университет",
+    "ka": "კელნის უნივერსიტეტი",
+    "es": "Universidad de Colonia",
+    "zh": "科隆大学",
+    "original": "University of Cologne"
+   }
+  },
+  {
+   "c": "se",
+   "s": "chalmers-university-of-technology",
+   "best": 165,
+   "names": {
+    "en": "Chalmers University of Technology",
+    "ru": "Чалмерский технологический институт",
+    "es": "Universidad Politécnica de Chalmers",
+    "zh": "查尔摩斯工学院",
+    "original": "Chalmers tekniska högskola"
+   }
+  },
+  {
+   "c": "nl",
+   "s": "vrije-universiteit-amsterdam",
+   "best": 179,
+   "names": {
+    "en": "Vrije Universiteit Amsterdam",
+    "ru": "Амстердамский свободный университет",
+    "ka": "ამსტერდამის თავისუფალი უნივერსიტეტი",
+    "es": "Universidad Libre de Ámsterdam",
+    "zh": "阿姆斯特丹自由大学",
+    "original": "Vrije Universiteit Amsterdam"
+   }
+  },
+  {
+   "c": "gb",
+   "s": "cardiff-university",
+   "best": 181,
+   "names": {
+    "en": "Cardiff University",
+    "ru": "Университет Кардиффа",
+    "es": "Universidad de Cardiff",
+    "zh": "卡迪夫大学",
+    "original": "Cardiff University"
+   }
+  },
+  {
+   "c": "us",
+   "s": "dartmouth-college",
+   "best": 181,
+   "names": {
+    "en": "Dartmouth College",
+    "ru": "Дартмутский колледж",
+    "ka": "დარტმუთის კოლეჯი",
+    "es": "Dartmouth College",
+    "zh": "达特茅斯学院",
+    "original": "Dartmouth College"
+   }
+  },
+  {
+   "c": "us",
+   "s": "university-of-california-santa-cruz",
+   "best": 182,
+   "names": {
+    "en": "University of California, Santa Cruz",
+    "ru": "Калифорнийский университет в Санта-Крузе",
+    "es": "Universidad de California en Santa Cruz",
+    "zh": "圣塔克鲁兹加利福尼亚大学",
+    "original": "University of California, Santa Cruz"
+   }
+  },
+  {
+   "c": "au",
+   "s": "curtin-university",
+   "best": 183,
+   "names": {
+    "en": "Curtin University",
+    "ru": "Университет Кёртина",
+    "es": "Universidad John Curtin",
+    "zh": "科廷大学",
+    "original": "Curtin University"
+   }
+  },
+  {
+   "c": "au",
+   "s": "university-of-wollongong",
+   "best": 184,
+   "names": {
+    "en": "University of Wollongong",
+    "ru": "Университет Вуллонгонг",
+    "es": "Universidad de Wollongong",
+    "zh": "伍伦贡大学",
+    "original": "University of Wollongong"
+   }
+  },
+  {
+   "c": "us",
+   "s": "tufts-university",
+   "best": 190,
+   "names": {
+    "en": "Tufts University",
+    "ru": "Университет Тафтса",
+    "ka": "ტაფტსის უნივერსიტეტი",
+    "es": "Universidad Tufts",
+    "zh": "塔夫茨大学",
+    "original": "Tufts University"
+   }
+  },
+  {
+   "c": "nl",
+   "s": "university-of-twente",
+   "best": 191,
+   "names": {
+    "en": "University of Twente",
+    "ru": "Университет Твенте",
+    "es": "Universidad de Twente",
+    "zh": "屯特大学",
+    "original": "Universiteit Twente"
+   }
+  },
+  {
+   "c": "gb",
+   "s": "university-of-leicester",
+   "best": 193,
+   "names": {
+    "en": "University of Leicester",
+    "ru": "Университет Лестера",
+    "es": "Universidad de Leicester",
+    "zh": "莱斯特大学",
+    "original": "University of Leicester"
+   }
+  },
+  {
+   "c": "gb",
+   "s": "university-of-reading",
+   "best": 194,
+   "names": {
+    "en": "University of Reading",
+    "ru": "Редингский университет",
+    "es": "Universidad de Reading",
+    "zh": "雷丁大学",
+    "original": "University of Reading"
+   }
+  },
+  {
+   "c": "us",
+   "s": "university-of-notre-dame",
+   "best": 195,
+   "names": {
+    "en": "University of Notre Dame",
+    "ru": "Университет Нотр-Дам",
+    "ka": "ნოტრ-დამის უნივერსიტეტი",
+    "es": "Universidad de Notre Dame",
+    "zh": "聖母大學",
+    "original": "University of Notre Dame du Lac"
+   }
+  },
+  {
+   "c": "de",
+   "s": "university-of-munster",
+   "best": 198,
+   "names": {
+    "en": "University of Münster",
+    "ru": "Вестфальский университет имени Вильгельма",
+    "ka": "მიუნსტერის უნივერსიტეტი",
+    "es": "Universidad de Münster",
+    "zh": "明斯特大学",
+    "original": "University of Münster"
+   }
+  },
+  {
+   "c": "gb",
+   "s": "queen-s-university-belfast",
+   "best": 199,
+   "names": {
+    "en": "Queen's University Belfast",
+    "ru": "Университет Квинс в Белфасте",
+    "es": "Universidad Queen’s de Belfast",
+    "zh": "贝尔法斯特女王大学",
+    "original": "Queen's University of Belfast"
+   }
+  },
+  {
+   "c": "us",
+   "s": "indiana-university-bloomington",
+   "best": 199,
+   "names": {
+    "en": "Indiana University Bloomington",
+    "ru": "Индианский университет в Блумингтоне",
+    "es": "Universidad de Indiana Bloomington",
+    "zh": "印第安纳大学布卢明顿分校",
+    "original": "Indiana University Bloomington"
+   }
+  },
+  {
+   "c": "se",
+   "s": "university-of-gothenburg",
+   "best": 202,
+   "names": {
+    "en": "University of Gothenburg",
+    "ru": "Гётеборгский университет",
+    "ka": "გეტებორგის უნივერსიტეტი",
+    "es": "Universidad de Gotemburgo",
+    "zh": "哥特堡大學",
+    "original": "Kungl. Universitetet i Göteborg"
+   }
+  },
+  {
+   "c": "au",
+   "s": "deakin-university",
+   "best": 207,
+   "names": {
+    "en": "Deakin University",
+    "ru": "Университет Дикина",
+    "es": "Universidad de Deakin",
+    "zh": "迪肯大學",
+    "original": "Deakin University"
+   }
+  },
+  {
+   "c": "gb",
+   "s": "loughborough-university",
+   "best": 225,
+   "names": {
+    "en": "Loughborough University",
+    "ru": "Университет Лафборо",
+    "es": "Universidad de Loughborough",
+    "zh": "羅浮堡大學",
+    "original": "Loughborough University"
+   }
+  },
+  {
+   "c": "au",
+   "s": "queensland-university-of-technology",
+   "best": 226,
+   "names": {
+    "en": "Queensland University of Technology",
+    "ru": "Квинслендский технологический университет",
+    "es": "Queensland University of Technology",
+    "zh": "昆士兰科技大学",
+    "original": "Queensland University of Technology"
+   }
+  },
+  {
+   "c": "au",
+   "s": "university-of-newcastle",
+   "best": 227,
+   "names": {
+    "en": "University of Newcastle",
+    "ru": "Ньюкаслский университет",
+    "es": "Universidad de Newcastle (Australia)",
+    "zh": "纽卡斯尔大学",
+    "original": "University of Newcastle"
+   }
+  },
+  {
+   "c": "au",
+   "s": "la-trobe-university",
+   "best": 233,
+   "names": {
+    "en": "La Trobe University",
+    "ru": "Университет Ла Троба",
+    "es": "Universidad La Trobe",
+    "zh": "乐卓博大学",
+    "original": "La Trobe University"
+   }
+  },
+  {
+   "c": "us",
+   "s": "university-of-massachusetts-amherst",
+   "best": 247,
+   "names": {
+    "en": "University of Massachusetts Amherst",
+    "ru": "Массачусетский университет в Амхерсте",
+    "ka": "ამჰერსტის მასაჩუსეტსის უნივერსიტეტი",
+    "es": "Universidad de Massachusetts Amherst",
+    "zh": "马萨诸塞州立大学艾莫斯特分校",
+    "original": "University of Massachusetts Amherst"
+   }
+  },
+  {
+   "c": "gb",
+   "s": "university-of-strathclyde",
+   "best": 251,
+   "names": {
+    "en": "University of Strathclyde",
+    "ru": "Университет Стратклайда",
+    "ka": "სტრატკლაიდის უნივერსიტეტი",
+    "es": "Universidad de Strathclyde",
+    "zh": "斯特拉斯克莱德大学",
+    "original": "University of Strathclyde"
+   }
+  },
+  {
+   "c": "de",
+   "s": "technical-university-of-darmstadt",
+   "best": 253,
+   "names": {
+    "en": "Technical University of Darmstadt",
+    "ru": "Дармштадтский технический университет",
+    "ka": "დარმშტადტის ტექნიკური უნივერსიტეტი",
+    "es": "Universidad Técnica de Darmstadt",
+    "zh": "达姆施塔特工业大学",
+    "original": "Technical University of Darmstadt"
+   }
+  },
+  {
+   "c": "gb",
+   "s": "university-of-aberdeen",
+   "best": 262,
+   "names": {
+    "en": "University of Aberdeen",
+    "ru": "Абердинский университет",
+    "ka": "აბერდინის უნივერსიტეტი",
+    "es": "Universidad de Aberdeen",
+    "zh": "阿伯丁大学",
+    "original": "University of Aberdeen"
+   }
+  },
+  {
+   "c": "gb",
+   "s": "university-of-surrey",
+   "best": 262,
+   "names": {
+    "en": "University of Surrey",
+    "ru": "Университет Суррея",
+    "es": "universidad de Surrey",
+    "zh": "薩里大學",
+    "original": "University of Surrey"
+   }
+  },
+  {
+   "c": "cz",
+   "s": "charles-university",
+   "best": 265,
+   "names": {
+    "en": "Charles University",
+    "ru": "Карлов университет",
+    "ka": "კარლის უნივერსიტეტი",
+    "es": "Universidad Carolina de Praga",
+    "zh": "查理大学",
+    "original": "Univerzita Karlova"
+   }
+  },
+  {
+   "c": "au",
+   "s": "griffith-university",
+   "best": 268,
+   "names": {
+    "en": "Griffith University",
+    "es": "Universidad Griffith",
+    "zh": "格里菲斯大学",
+    "original": "Griffith University"
+   }
+  },
+  {
+   "c": "tr",
+   "s": "middle-east-technical-university",
+   "best": 269,
+   "names": {
+    "en": "Middle East Technical University",
+    "ru": "Ближневосточный технический университет",
+    "ka": "ახლო აღმოსავლეთის ტექნიკური უნივერსიტეტი",
+    "es": "Universidad Técnica de Medio Oriente",
+    "zh": "中东技术大学",
+    "original": "Orta Doğu Teknik Üniversitesi"
+   }
+  },
+  {
+   "c": "gb",
+   "s": "university-of-sussex",
+   "best": 278,
+   "names": {
+    "en": "University of Sussex",
+    "ru": "Сассекский университет",
+    "ka": "სასექსის უნივერსიტეტი",
+    "es": "Universidad de Sussex",
+    "zh": "萨塞克斯大学",
+    "original": "University of Sussex"
+   }
+  },
+  {
+   "c": "us",
+   "s": "georgetown-university",
+   "best": 285,
+   "names": {
+    "en": "Georgetown University",
+    "ru": "Джорджтаунский университет",
+    "ka": "ჯორჯტაუნის უნივერსიტეტი",
+    "es": "Universidad de Georgetown",
+    "zh": "乔治敦大学",
+    "original": "Georgetown University"
+   }
+  },
+  {
+   "c": "gb",
+   "s": "heriot-watt-university",
+   "best": 287,
+   "names": {
+    "en": "Heriot-Watt University",
+    "ru": "Университет Хериота-Уатта",
+    "ka": "ჰერიოტ ვატის უნივერსიტეტი",
+    "es": "Universidad Heriot-Watt",
+    "zh": "赫瑞瓦特大学",
+    "original": "Heriot-Watt University"
+   }
+  },
+  {
+   "c": "au",
+   "s": "swinburne-university-of-technology",
+   "best": 294,
+   "names": {
+    "en": "Swinburne University of Technology",
+    "ru": "Технологический университет Суинберна",
+    "zh": "斯威本科技大學",
+    "original": "Swinburne University Of Technology"
+   }
+  },
+  {
+   "c": "pl",
+   "s": "jagiellonian-university",
+   "best": 303,
+   "names": {
+    "en": "Jagiellonian University",
+    "ru": "Ягеллонский университет",
+    "ka": "იაგელონის უნივერსიტეტი",
+    "es": "Universidad Jagellónica",
+    "zh": "雅盖隆大学",
+    "original": "Universitas Iagellonica Cracoviensis"
+   }
+  },
+  {
+   "c": "gb",
+   "s": "swansea-university",
+   "best": 307,
+   "names": {
+    "en": "Swansea University",
+    "ru": "Университет в Суонси",
+    "es": "Universidad de Swansea",
+    "zh": "斯旺西大学",
+    "original": "Swansea University"
+   }
+  },
+  {
+   "c": "de",
+   "s": "university-of-stuttgart",
+   "best": 310,
+   "names": {
+    "en": "University of Stuttgart",
+    "ru": "Штутгартский университет",
+    "ka": "შტუტგარტის უნივერსიტეტი",
+    "es": "Universidad de Stuttgart",
+    "zh": "斯图加特大学",
+    "original": "University of Stuttgart"
+   }
+  },
+  {
+   "c": "se",
+   "s": "linkoping-university",
+   "best": 310,
+   "names": {
+    "en": "Linköping University",
+    "ru": "Линчёпингский университет",
+    "es": "Universidad de Linköping",
+    "zh": "林雪平大学",
+    "original": "Linköping University"
+   }
+  },
+  {
+   "c": "au",
+   "s": "university-of-tasmania",
+   "best": 314,
+   "names": {
+    "en": "University of Tasmania",
+    "ru": "Университет Тасмании",
+    "ka": "ტასმანიის უნივერსიტეტი",
+    "es": "Universidad de Tasmania",
+    "zh": "塔斯马尼亚大学",
+    "original": "University of Tasmania"
+   }
+  },
+  {
+   "c": "us",
+   "s": "university-of-miami",
+   "best": 314,
+   "names": {
+    "en": "University of Miami",
+    "ru": "Университет Майами",
+    "ka": "მაიამის უნივერსიტეტი",
+    "es": "Universidad de Miami",
+    "zh": "迈阿密大学",
+    "original": "University of Miami"
+   }
+  },
+  {
+   "c": "de",
+   "s": "goethe-university-frankfurt",
+   "best": 316,
+   "names": {
+    "en": "Goethe University Frankfurt",
+    "ru": "Франкфуртский университет имени Иоганна Вольфганга Гёте",
+    "ka": "ფრანკფურტის გოეთეს უნივერსიტეტი",
+    "es": "Universidad Johann Wolfgang Goethe",
+    "zh": "约翰-沃尔夫冈-歌德法兰克福大学",
+    "original": "Goethe-Universität"
+   }
+  },
+  {
+   "c": "us",
+   "s": "university-of-illinois-chicago",
+   "best": 334,
+   "names": {
+    "en": "University of Illinois Chicago",
+    "ru": "Иллинойсский университет в Чикаго",
+    "ka": "ილინოისის უნივერსიტეტი ჩიკაგოში",
+    "es": "Universidad de Illinois en Chicago",
+    "zh": "伊利諾大學芝加哥分校",
+    "original": "University of Illinois at Chicago"
+   }
+  },
+  {
+   "c": "fi",
+   "s": "university-of-oulu",
+   "best": 342,
+   "names": {
+    "en": "University of Oulu",
+    "ru": "Оулуский университет",
+    "es": "Universidad de Oulu",
+    "zh": "奥卢大学",
+    "original": "University of Oulu"
+   }
+  },
+  {
+   "c": "us",
+   "s": "george-washington-university",
+   "best": 358,
+   "names": {
+    "en": "George Washington University",
+    "ru": "Университет Джорджа Вашингтона",
+    "ka": "ჯორჯ ვაშინგტონის უნივერსიტეტი",
+    "es": "Universidad George Washington",
+    "zh": "乔治·华盛顿大学",
+    "original": "George Washington University"
+   }
+  },
+  {
+   "c": "fi",
+   "s": "university-of-turku",
+   "best": 366,
+   "names": {
+    "en": "University of Turku",
+    "ru": "Университет Турку",
+    "es": "Universidad de Turku",
+    "zh": "图尔库大学",
+    "original": "University of Turku"
+   }
+  },
+  {
+   "c": "tr",
+   "s": "bogazici-university",
+   "best": 371,
+   "names": {
+    "en": "Boğaziçi University",
+    "ru": "Босфорский университет",
+    "ka": "ბოსფორის უნივერსიტეტი",
+    "es": "Universidad del Bósforo",
+    "zh": "海峡大学",
+    "original": "Boğaziçi University"
+   }
+  },
+  {
+   "c": "gb",
+   "s": "oxford-brookes-university",
+   "best": 374,
+   "names": {
+    "en": "Oxford Brookes University",
+    "ru": "Университет Оксфорд Брукс",
+    "es": "Universidad Oxford Brookes",
+    "zh": "牛津布魯克斯大學",
+    "original": "Oxford Brookes University"
+   }
+  },
+  {
+   "c": "gb",
+   "s": "university-of-east-anglia",
+   "best": 381,
+   "names": {
+    "en": "University of East Anglia",
+    "ru": "Университет Восточной Англии",
+    "ka": "აღმოსავლეთ ანგლიის უნივერსიტეტი",
+    "es": "Universidad de Anglia del Este",
+    "zh": "东安格利亚大学",
+    "original": "University of East Anglia"
+   }
+  },
+  {
+   "c": "gb",
+   "s": "brunel-university-london",
+   "best": 385,
+   "names": {
+    "en": "Brunel University London",
+    "ru": "Университет Брюнеля",
+    "es": "Brunel University London",
+    "zh": "布魯內爾大學",
+    "original": "Brunel University London"
+   }
+  },
+  {
+   "c": "au",
+   "s": "flinders-university",
+   "best": 387,
+   "names": {
+    "en": "Flinders University",
+    "ru": "Университет Флиндерса",
+    "es": "Flinders University",
+    "zh": "弗林德斯大学",
+    "original": "Flinders University"
+   }
+  },
+  {
+   "c": "gb",
+   "s": "birkbeck-university-of-london",
+   "best": 388,
+   "names": {
+    "en": "Birkbeck, University of London",
+    "ru": "Биркбек",
+    "ka": "ბირკბეკი",
+    "es": "Birkbeck College",
+    "zh": "伦敦大学伯贝克学院",
+    "original": "Birkbeck, University of London"
+   }
+  },
+  {
+   "c": "de",
+   "s": "ruhr-university-bochum",
+   "best": 395,
+   "names": {
+    "en": "Ruhr University Bochum",
+    "ru": "Рурский университет",
+    "ka": "რურის უნივერსიტეტი ბოხუმში",
+    "es": "Universidad del Ruhr de Bochum",
+    "zh": "波鸿大学",
+    "original": "Ruhr University Bochum"
+   }
+  },
+  {
+   "c": "gb",
+   "s": "aston-university",
+   "best": 395,
+   "names": {
+    "en": "Aston University",
+    "ru": "Астонский университет",
+    "es": "Aston University",
+    "zh": "阿斯頓大學",
+    "original": "Aston University"
+   }
+  },
+  {
+   "c": "us",
+   "s": "northeastern-university",
+   "best": 396,
+   "names": {
+    "en": "Northeastern University",
+    "ru": "Северо-Восточный университет",
+    "es": "Universidad Northeastern",
+    "zh": "东北大学",
+    "original": "Northeastern University"
+   }
+  },
+  {
+   "c": "fi",
+   "s": "lappeenranta-lahti-university-of-technology-lut",
+   "best": 397,
+   "names": {
+    "en": "Lappeenranta-Lahti University of Technology LUT",
+    "ru": "Лаппеэнрантский технологический университет",
+    "es": "Universidad Politécnica de Lappeenranta",
+    "zh": "拉彭兰塔工业大学",
+    "original": "Lappeenrannan–Lahden teknillinen yliopisto LUT"
+   }
+  },
+  {
+   "c": "gb",
+   "s": "university-of-kent",
+   "best": 397,
+   "names": {
+    "en": "University of Kent",
+    "ru": "Кентский университет",
+    "ka": "კენტის უნივერსიტეტი",
+    "es": "Universidad de Kent",
+    "zh": "肯特大学",
+    "original": "University of Kent"
+   }
+  },
+  {
+   "c": "au",
+   "s": "western-sydney-university",
+   "best": 400,
+   "names": {
+    "en": "Western Sydney University",
+    "ru": "Университет Западного Сиднея",
+    "zh": "西悉尼大学",
+    "original": "Western Sydney University"
+   }
+  },
+  {
+   "c": "se",
+   "s": "umea-university",
+   "best": 401,
+   "names": {
+    "en": "Umeå University",
+    "ru": "Университет Умео",
+    "ka": "უმეოს უნივერსიტეტი",
+    "es": "Universidad de Umeå",
+    "zh": "于默奥大学",
+    "original": "Umeå University"
+   }
+  },
+  {
+   "c": "tr",
+   "s": "sabanc-university",
+   "best": 404,
+   "names": {
+    "en": "Sabancı University",
+    "ru": "Университет Сабанджи",
+    "zh": "萨班哲大学",
+    "original": "Sabancı University"
+   }
+  },
+  {
+   "c": "kz",
+   "s": "satbayev-university",
+   "best": 405,
+   "names": {
+    "en": "Satbayev University",
+    "ru": "Казахский национальный исследовательский технический университет имени К. И. Сатпаева",
+    "es": "Universidad Nacional Técnica de Kazajistán",
+    "zh": "萨巴拜耶夫哈萨克国立科技大学",
+    "original": "Казахский горно-металлургический институт"
+   }
+  },
+  {
+   "c": "au",
+   "s": "university-of-southern-queensland",
+   "best": 410,
+   "names": {
+    "en": "University of Southern Queensland",
+    "ru": "Университет Южного Квинсленда",
+    "zh": "南昆士蘭大學",
+    "original": "University of Southern Queensland"
+   }
+  },
+  {
+   "c": "us",
+   "s": "yeshiva-university",
+   "best": 413,
+   "names": {
+    "en": "Yeshiva University",
+    "ru": "Иешива-университет",
+    "ka": "იეშივას უნივერსიტეტი",
+    "es": "Universidad Yeshiva",
+    "zh": "叶史瓦大学",
+    "original": "Yeshiva University"
+   }
+  },
+  {
+   "c": "tr",
+   "s": "bilkent-university",
+   "best": 415,
+   "names": {
+    "en": "Bilkent University",
+    "ru": "Билькентский университет",
+    "es": "Universidad Bilkent",
+    "zh": "毕尔肯大学",
+    "original": "Bilkent University"
+   }
+  },
+  {
+   "c": "cz",
+   "s": "czech-technical-university-in-prague",
+   "best": 416,
+   "names": {
+    "en": "Czech Technical University in Prague",
+    "ru": "Чешский технический университет в Праге",
+    "ka": "პრაღის ჩეხეთის ტექნიკური უნივერსიტეტი",
+    "es": "Universidad Técnica Checa en Praga",
+    "zh": "布拉格捷克理工大学",
+    "original": "České vysoké učení technické v Praze"
+   }
+  },
+  {
+   "c": "de",
+   "s": "university-of-mannheim",
+   "best": 416,
+   "names": {
+    "en": "University of Mannheim",
+    "ru": "Университет Мангейма",
+    "es": "Universidad de Mannheim",
+    "zh": "曼海姆大学",
+    "original": "University of Mannheim"
+   }
+  },
+  {
+   "c": "au",
+   "s": "murdoch-university",
+   "best": 423,
+   "names": {
+    "en": "Murdoch University",
+    "ru": "Университет Мёрдока",
+    "zh": "莫道克大学",
+    "original": "Murdoch University"
+   }
+  },
+  {
+   "c": "gb",
+   "s": "university-of-dundee",
+   "best": 428,
+   "names": {
+    "en": "University of Dundee",
+    "ru": "Университет Данди",
+    "es": "Universidad de Dundee",
+    "zh": "邓迪大学",
+    "original": "University of Dundee"
+   }
+  },
+  {
+   "c": "cz",
+   "s": "masaryk-university",
+   "best": 430,
+   "names": {
+    "en": "Masaryk University",
+    "ru": "Масариков университет",
+    "es": "Universidad Masaryk",
+    "zh": "马萨里克大学",
+    "original": "Masarykova univerzita"
+   }
+  },
+  {
+   "c": "de",
+   "s": "leibniz-university-hannover",
+   "best": 433,
+   "names": {
+    "en": "Leibniz University Hannover",
+    "ru": "Ганноверский университет",
+    "ka": "ჰანოვერის უნივერსიტეტი",
+    "es": "Universidad de Hannover",
+    "zh": "汉诺威莱布尼兹大学",
+    "original": "Gottfried Wilhelm Leibniz Universität"
+   }
+  },
+  {
+   "c": "us",
+   "s": "wake-forest-university",
+   "best": 438,
+   "names": {
+    "en": "Wake Forest University",
+    "ru": "Университет Уэйк-Форест",
+    "es": "Universidad de Wake Forest",
+    "zh": "威克森林大学",
+    "original": "Wake Forest University"
+   }
+  },
+  {
+   "c": "au",
+   "s": "james-cook-university",
+   "best": 440,
+   "names": {
+    "en": "James Cook University",
+    "ru": "Университет Джеймса Кука",
+    "es": "Universidad James Cook",
+    "zh": "詹姆士库克大学",
+    "original": "James Cook University"
+   }
+  },
+  {
+   "c": "de",
+   "s": "university-of-konstanz",
+   "best": 440,
+   "names": {
+    "en": "University of Konstanz",
+    "ru": "Констанцский университет",
+    "ka": "კონსტანცის უნივერსიტეტი",
+    "es": "universidad de Constanza",
+    "zh": "康斯坦茨大学",
+    "original": "University of Konstanz"
+   }
+  },
+  {
+   "c": "us",
+   "s": "university-of-california-riverside",
+   "best": 440,
+   "names": {
+    "en": "University of California, Riverside",
+    "ru": "Калифорнийский университет в Риверсайде",
+    "es": "Universidad de California en Riverside",
+    "zh": "加州大学河滨分校",
+    "original": "University of California, Riverside"
+   }
+  },
+  {
+   "c": "de",
+   "s": "university-of-bayreuth",
+   "best": 448,
+   "names": {
+    "en": "University of Bayreuth",
+    "ru": "Байройтский университет",
+    "es": "Universidad de Bayreuth",
+    "zh": "拜罗伊特大学",
+    "original": "Universität Bayreuth"
+   }
+  },
+  {
+   "c": "de",
+   "s": "johannes-gutenberg-university-mainz",
+   "best": 452,
+   "names": {
+    "en": "Johannes Gutenberg University Mainz",
+    "ru": "Майнцский университет",
+    "ka": "მაინცის უნივერსიტეტი",
+    "es": "Universidad de Mainz",
+    "zh": "美因茨大学",
+    "original": "Johannes Gutenberg University Mainz"
+   }
+  },
+  {
+   "c": "gb",
+   "s": "university-of-stirling",
+   "best": 452,
+   "names": {
+    "en": "University of Stirling",
+    "ru": "Стирлингский университет",
+    "es": "Universidad de Stirling",
+    "zh": "斯特灵大学",
+    "original": "University of Stirling"
+   }
+  },
+  {
+   "c": "us",
+   "s": "stony-brook-university",
+   "best": 452,
+   "names": {
+    "en": "Stony Brook University",
+    "ru": "Университет штата Нью-Йорк в Стони-Бруке",
+    "ka": "სტონი-ბრუკის უნივერსიტეტი",
+    "es": "Universidad de Stony Brook",
+    "zh": "石溪大学",
+    "original": "Stony Brook University"
+   }
+  },
+  {
+   "c": "gb",
+   "s": "university-of-essex",
+   "best": 456,
+   "names": {
+    "en": "University of Essex",
+    "ru": "Эссекский университет",
+    "es": "Universidad de Essex",
+    "zh": "埃塞克斯大学",
+    "original": "University of Essex"
+   }
+  },
+  {
+   "c": "gb",
+   "s": "royal-holloway-university-of-london",
+   "best": 461,
+   "names": {
+    "en": "Royal Holloway, University of London",
+    "ru": "Королевский колледж Холлоуэй",
+    "ka": "ჰოლოუეის სამეფო კოლეჯი",
+    "es": "Royal Holloway",
+    "zh": "皇家哈洛威学院",
+    "original": "Royal Holloway, University of London"
+   }
+  },
+  {
+   "c": "us",
+   "s": "university-of-kansas",
+   "best": 465,
+   "names": {
+    "en": "University of Kansas",
+    "ru": "Канзасский университет",
+    "ka": "კანზასის უნივერსიტეტი",
+    "es": "Universidad de Kansas",
+    "zh": "堪萨斯大学",
+    "original": "University of Kansas"
+   }
+  },
+  {
+   "c": "us",
+   "s": "washington-state-university",
+   "best": 466,
+   "names": {
+    "en": "Washington State University",
+    "ru": "Университет штата Вашингтон",
+    "ka": "ვაშინგტონის შტატის უნივერსიტეტი",
+    "es": "Universidad Estatal de Washington",
+    "zh": "华盛顿州立大学",
+    "original": "Washington State University"
+   }
+  },
+  {
+   "c": "us",
+   "s": "university-of-alaska-fairbanks",
+   "best": 467,
+   "names": {
+    "en": "University of Alaska Fairbanks",
+    "ru": "Аляскинский университет в Фэрбенксе",
+    "es": "Universidad de Alaska Fairbanks",
+    "zh": "阿拉斯加大学费尔班克斯分校",
+    "original": "University of Alaska System"
+   }
+  },
+  {
+   "c": "us",
+   "s": "illinois-institute-of-technology",
+   "best": 469,
+   "names": {
+    "en": "Illinois Institute of Technology",
+    "ru": "Иллинойсский технологический институт",
+    "es": "Instituto de Tecnología de Illinois",
+    "zh": "伊利諾理工學院",
+    "original": "Illinois Institute of Technology"
+   }
+  },
+  {
+   "c": "us",
+   "s": "iowa-state-university",
+   "best": 470,
+   "names": {
+    "en": "Iowa State University",
+    "ru": "Университет штата Айова",
+    "ka": "აიოვის შტატის უნივერსიტეტი",
+    "es": "Universidad Estatal de Iowa",
+    "zh": "爱荷华州立大学",
+    "original": "Iowa State University of Science and Technology"
+   }
+  },
+  {
+   "c": "gb",
+   "s": "bangor-university",
+   "best": 474,
+   "names": {
+    "en": "Bangor University",
+    "ru": "Бангорский университет",
+    "es": "Universidad de Bangor",
+    "zh": "班戈大学",
+    "original": "Bangor University"
+   }
+  },
+  {
+   "c": "de",
+   "s": "university-of-potsdam",
+   "best": 477,
+   "names": {
+    "en": "University of Potsdam",
+    "ru": "Потсдамский университет",
+    "ka": "პოტსდამის უნივერსიტეტი",
+    "es": "Universidad de Potsdam",
+    "zh": "波茨坦大学",
+    "original": "University of Potsdam"
+   }
+  },
+  {
+   "c": "au",
+   "s": "edith-cowan-university",
+   "best": 487,
+   "names": {
+    "en": "Edith Cowan University",
+    "ru": "Университет Эдит Коуэн",
+    "es": "Universidad Edith Cowan",
+    "zh": "伊迪丝·考恩大学",
+    "original": "Edith Cowan University"
+   }
+  },
+  {
+   "c": "pl",
+   "s": "warsaw-university-of-technology",
+   "best": 487,
+   "names": {
+    "en": "Warsaw University of Technology",
+    "ru": "Варшавский политехнический университет",
+    "ka": "ვარშავის პოლიტექნიკური ინსტიტუტი",
+    "es": "Universidad Politécnica de Varsovia",
+    "zh": "华沙工业大学",
+    "original": "Warsaw University of Technology"
+   }
+  },
+  {
+   "c": "us",
+   "s": "university-at-buffalo",
+   "best": 491,
+   "names": {
+    "en": "University at Buffalo",
+    "ru": "Университет штата Нью-Йорк в Буффало",
+    "es": "Universidad de Búfalo",
+    "zh": "布法罗大学",
+    "original": "University at Buffalo, The State University of New York"
+   }
+  },
+  {
+   "c": "au",
+   "s": "university-of-canberra",
+   "best": 494,
+   "names": {
+    "en": "University of Canberra",
+    "ru": "Университет Канберры",
+    "ka": "კანბერის უნივერსიტეტი",
+    "es": "Universidad de Canberra",
+    "zh": "堪培拉大学",
+    "original": "University of Canberra"
+   }
+  },
+  {
+   "c": "us",
+   "s": "boston-college",
+   "best": 494,
+   "names": {
+    "en": "Boston College",
+    "ru": "Бостонский колледж",
+    "es": "Boston College",
+    "zh": "波士顿学院",
+    "original": "Boston College"
+   }
+  },
+  {
+   "c": "us",
+   "s": "rensselaer-polytechnic-institute",
+   "best": 494,
+   "names": {
+    "en": "Rensselaer Polytechnic Institute",
+    "ru": "Политехнический институт Ренсселера",
+    "ka": "რენსელერის პოლიტექნიკური ინსტიტუტი",
+    "es": "Instituto Politécnico Rensselaer",
+    "zh": "伦斯勒理工学院",
+    "original": "Rensselaer Polytechnic Institute"
+   }
+  },
+  {
+   "c": "us",
+   "s": "brandeis-university",
+   "best": 497,
+   "names": {
+    "en": "Brandeis University",
+    "ru": "Брандейский университет",
+    "ka": "ბრანდეისის უნივერსიტეტი",
+    "es": "Universidad Brandeis",
+    "zh": "布兰戴斯大学",
+    "original": "Brandeis University"
+   }
+  },
+  {
+   "c": "fi",
+   "s": "university-of-jyvaskyla",
+   "best": 498,
+   "names": {
+    "en": "University of Jyväskylä",
+    "ru": "Университет Йювяскюля",
+    "ka": "იუვასკიულიის უნივერსიტეტი",
+    "es": "Universidad de Jyväskylä",
+    "zh": "于韦斯屈莱大学",
+    "original": "Jyväskylän yliopisto"
+   }
+  },
+  {
+   "c": "gb",
+   "s": "university-of-huddersfield",
+   "best": 501,
+   "names": {
+    "en": "University of Huddersfield",
+    "ru": "Университет Хаддерсфилда",
+    "zh": "哈德斯菲尔德大学",
+    "original": "University of Huddersfield"
+   }
+  },
+  {
+   "c": "us",
+   "s": "oregon-state-university",
+   "best": 505,
+   "names": {
+    "en": "Oregon State University",
+    "ru": "Университет штата Орегон",
+    "es": "Universidad Estatal de Oregón",
+    "zh": "俄勒冈州立大学",
+    "original": "Oregon State University"
+   }
+  },
+  {
+   "c": "us",
+   "s": "university-of-delaware",
+   "best": 506,
+   "names": {
+    "en": "University of Delaware",
+    "ru": "Делавэрский университет",
+    "ka": "დელავერის უნივერსიტეტი",
+    "es": "Universidad de Delaware",
+    "zh": "特拉华大学",
+    "original": "University of Delaware"
+   }
+  },
+  {
+   "c": "gb",
+   "s": "soas-university-of-london",
+   "best": 511,
+   "names": {
+    "en": "SOAS, University of London",
+    "ru": "Школа востоковедения и африканистики Лондонского университета",
+    "ka": "ლონდონის უნივერსიტეტის აღმოსავლური და აფრიკული კვლევების სკოლა",
+    "es": "Escuela de Estudios Orientales y Africanos",
+    "zh": "倫敦大學亞非學院",
+    "original": "SOAS, University of London"
+   }
+  },
+  {
+   "c": "ge",
+   "s": "the-university-of-georgia",
+   "best": 514,
+   "names": {
+    "en": "The University of Georgia",
+    "ka": "საქართველოს უნივერსიტეტი",
+    "zh": "格鲁吉亚大学",
+    "original": "საქართველოს უნივერსიტეტი"
+   }
+  },
+  {
+   "c": "gb",
+   "s": "university-of-hull",
+   "best": 516,
+   "names": {
+    "en": "University of Hull",
+    "ru": "Университет Халла",
+    "es": "Universidad de Hull",
+    "zh": "赫尔大学",
+    "original": "University of Hull"
+   }
+  },
+  {
+   "c": "de",
+   "s": "university-of-jena",
+   "best": 526,
+   "names": {
+    "en": "University of Jena",
+    "ru": "Йенский университет",
+    "ka": "იენის უნივერსიტეტი",
+    "es": "Universidad de Jena",
+    "zh": "耶拿大学",
+    "original": "Friedrich-Schiller-Universität Jena"
+   }
+  },
+  {
+   "c": "gb",
+   "s": "coventry-university",
+   "best": 526,
+   "names": {
+    "en": "Coventry University",
+    "ru": "Университет Ковентри",
+    "es": "Universidad de Coventry",
+    "zh": "考文垂大学",
+    "original": "Coventry University"
+   }
+  },
+  {
+   "c": "gb",
+   "s": "university-of-bradford",
+   "best": 531,
+   "names": {
+    "en": "University of Bradford",
+    "ru": "Университет Брэдфорда",
+    "es": "Universidad de Bradford",
+    "zh": "布拉德福德大学",
+    "original": "University of Bradford"
+   }
+  },
+  {
+   "c": "us",
+   "s": "university-of-utah",
+   "best": 531,
+   "names": {
+    "en": "University of Utah",
+    "ru": "Университет Юты",
+    "ka": "იუტის უნივერსიტეტი",
+    "es": "Universidad de Utah",
+    "zh": "犹他大学",
+    "original": "University of Utah"
+   }
+  },
+  {
+   "c": "fi",
+   "s": "university-of-eastern-finland",
+   "best": 535,
+   "names": {
+    "en": "University of Eastern Finland",
+    "ru": "Восточнофинляндский университет",
+    "ka": "აღმოსავლეთ ფინეთის უნივერსიტეტი",
+    "es": "Universidad de Finlandia Oriental",
+    "zh": "东芬兰大学",
+    "original": "University of Eastern Finland"
+   }
+  },
+  {
+   "c": "us",
+   "s": "lehigh-university",
+   "best": 548,
+   "names": {
+    "en": "Lehigh University",
+    "ru": "Лихайский университет",
+    "es": "Universidad de Lehigh",
+    "zh": "理海大学",
+    "original": "Lehigh University"
+   }
+  },
+  {
+   "c": "gb",
+   "s": "ulster-university",
+   "best": 559,
+   "names": {
+    "en": "Ulster University",
+    "ru": "Ольстерский университет",
+    "es": "Universidad del Úlster",
+    "zh": "阿爾斯特大學",
+    "original": "Ulster University"
+   }
+  },
+  {
+   "c": "gb",
+   "s": "university-of-plymouth",
+   "best": 561,
+   "names": {
+    "en": "University of Plymouth",
+    "es": "Universidad de Plymouth",
+    "zh": "普利茅斯大学",
+    "original": "University of Plymouth"
+   }
+  },
+  {
+   "c": "us",
+   "s": "university-of-south-florida",
+   "best": 563,
+   "names": {
+    "en": "University of South Florida",
+    "ru": "Южно-Флоридский университет",
+    "es": "Universidad del Sur de Florida",
+    "zh": "南佛罗里达大学",
+    "original": "University of South Florida"
+   }
+  },
+  {
+   "c": "us",
+   "s": "university-of-connecticut",
+   "best": 565,
+   "names": {
+    "en": "University of Connecticut",
+    "ru": "Коннектикутский университет",
+    "es": "Universidad de Connecticut",
+    "zh": "康涅狄格大学",
+    "original": "University of Connecticut"
+   }
+  },
+  {
+   "c": "us",
+   "s": "florida-state-university",
+   "best": 573,
+   "names": {
+    "en": "Florida State University",
+    "ru": "Университет штата Флорида",
+    "ka": "ფლორიდის სახელმწიფო უნივერსიტეტი",
+    "es": "Universidad Estatal de Florida",
+    "zh": "佛罗里达州立大学",
+    "original": "Florida State University"
+   }
+  },
+  {
+   "c": "us",
+   "s": "florida-international-university",
+   "best": 574,
+   "names": {
+    "en": "Florida International University",
+    "ru": "Международный университет Флориды",
+    "ka": "ფლორიდის საერთაშორისო უნივერსიტეტი",
+    "es": "Universidad Internacional de Florida",
+    "zh": "佛羅里達國際大學",
+    "original": "Florida International University"
+   }
+  },
+  {
+   "c": "au",
+   "s": "southern-cross-university",
+   "best": 576,
+   "names": {
+    "en": "Southern Cross University",
+    "ru": "Университет Южного Креста",
+    "zh": "南十字星大學",
+    "original": "Southern Cross University"
+   }
+  },
+  {
+   "c": "au",
+   "s": "bond-university",
+   "best": 587,
+   "names": {
+    "en": "Bond University",
+    "es": "Universidad Bond",
+    "zh": "邦德大學",
+    "original": "Bond University"
+   }
+  },
+  {
+   "c": "de",
+   "s": "university-of-bremen",
+   "best": 592,
+   "names": {
+    "en": "University of Bremen",
+    "ru": "Бременский университет",
+    "ka": "ბრემენის უნივერსიტეტი",
+    "es": "Universidad de Bremen",
+    "zh": "不来梅大学",
+    "original": "University of Bremen"
+   }
+  },
+  {
+   "c": "gb",
+   "s": "nottingham-trent-university",
+   "best": 592,
+   "names": {
+    "en": "Nottingham Trent University",
+    "ru": "Университет Ноттингем Трент",
+    "es": "Universidad Nottingham Trent",
+    "zh": "諾丁漢特倫特大學",
+    "original": "Nottingham Trent University"
+   }
+  },
+  {
+   "c": "us",
+   "s": "university-of-central-florida",
+   "best": 593,
+   "names": {
+    "en": "University of Central Florida",
+    "ru": "университет Центральной Флориды",
+    "es": "Universidad de Florida Central",
+    "zh": "中佛罗里达大学",
+    "original": "University of Central Florida"
+   }
+  },
+  {
+   "c": "us",
+   "s": "university-of-iowa",
+   "best": 596,
+   "names": {
+    "en": "University of Iowa",
+    "ru": "Айовский университет",
+    "ka": "აიოვის უნივერსიტეტი",
+    "es": "Universidad de Iowa",
+    "zh": "衣阿华大学",
+    "original": "University of Iowa"
+   }
+  },
+  {
+   "c": "de",
+   "s": "saarland-university",
+   "best": 601,
+   "names": {
+    "en": "Saarland University",
+    "ru": "Саарский университет",
+    "ka": "ზაარლანდის უნივერსიტეტი",
+    "es": "Universidad del Sarre",
+    "zh": "沙尔大学",
+    "original": "Saarland University"
+   }
+  },
+  {
+   "c": "gb",
+   "s": "university-of-portsmouth",
+   "best": 662,
+   "names": {
+    "en": "University of Portsmouth",
+    "ru": "Портсмутский университет",
+    "zh": "朴茨茅斯大学",
+    "original": "Portsmouth and Gosport School of Science and Art"
+   }
+  }
+ ]
+}

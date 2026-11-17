@@ -1427,6 +1427,9 @@
     "prev": "← Сторінка {page}",
     "next": "Сторінка {page} →",
     "allCountries": "Усі країни",
-    "allInCountry": "Усі виші та коледжі: {place}"
+    "allInCountry": "Усі виші та коледжі: {place}",
+    "rankedTitle": "Університети зі світових рейтингів",
+    "rankedIntro": "Входять до світових рейтингів QS, THE або Шанхайського (ARWU), за даними Wikidata.",
+    "allTitle": "Усі заклади за абеткою"
   }
 }

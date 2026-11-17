@@ -1427,6 +1427,9 @@
     "prev": "← Sayfa {page}",
     "next": "Sayfa {page} →",
     "allCountries": "Tüm ülkeler",
-    "allInCountry": "Tüm üniversiteler ve kolejler: {place}"
+    "allInCountry": "Tüm üniversiteler ve kolejler: {place}",
+    "rankedTitle": "Dünya sıralamalarındaki üniversiteler",
+    "rankedIntro": "Wikidata'ya göre QS, THE veya Şanghay (ARWU) dünya sıralamalarında yer alıyor.",
+    "allTitle": "Tüm kurumlar A'dan Z'ye"
   }
 }

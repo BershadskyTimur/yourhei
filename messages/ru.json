@@ -1427,6 +1427,9 @@
     "prev": "← Страница {page}",
     "next": "Страница {page} →",
     "allCountries": "Все страны",
-    "allInCountry": "Все вузы и колледжи {place}"
+    "allInCountry": "Все вузы и колледжи {place}",
+    "rankedTitle": "Университеты из мировых рейтингов",
+    "rankedIntro": "Входят в мировые рейтинги QS, THE или Шанхайский (ARWU), по данным Wikidata.",
+    "allTitle": "Все заведения по алфавиту"
   }
 }
