@@ -1,6 +1,6 @@
 # YourHEI — правила проекта
 
-Полное ТЗ: [SPEC.md](SPEC.md). Сбор данных о заведениях: [DATA_COLLECTION.md](DATA_COLLECTION.md). Ход работы: [PROGRESS.md](PROGRESS.md). Правила Next.js этой версии: [AGENTS.md](AGENTS.md) (перед кодом смотри `node_modules/next/dist/docs/`).
+Полное ТЗ: [SPEC.md](SPEC.md). Сбор данных о заведениях: [DATA_COLLECTION.md](DATA_COLLECTION.md). Ход работы: [PROGRESS.md](PROGRESS.md). Отложенные SEO-задачи и проверки по датам: [docs/seo/DEFERRED.md](docs/seo/DEFERRED.md) — перед любой работой по SEO прочитай и скажи владельцу, что подошло по сроку. Правила Next.js этой версии: [AGENTS.md](AGENTS.md) (перед кодом смотри `node_modules/next/dist/docs/`).
 
 ## Главное
 
