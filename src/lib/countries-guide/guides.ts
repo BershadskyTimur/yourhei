@@ -42,8 +42,8 @@ const ARTICLES_OF: Record<string, string[]> = {
   GB: ['ucas-how-to-apply-uk-universities', 'chevening-scholarship-how-to-apply'],
   NL: ['netherlands-application-deadlines-studielink', 'nl-scholarship-netherlands-how-to-apply', 'netherlands-tuition-fees-international-students'],
   FI: ['finland-how-to-apply-studyinfo', 'free-tuition-germany-czechia-finland'],
-  CZ: ['czechia-how-to-apply-universities', 'free-tuition-germany-czechia-finland'],
-  PL: ['poland-recognition-of-certificate-and-diploma-nawa', 'visegrad-scholarship-how-to-apply'],
+  CZ: ['czechia-how-to-apply-universities', 'czechia-nostrification-recognition-of-certificate-and-diploma', 'free-tuition-germany-czechia-finland'],
+  PL: ['poland-recognition-of-certificate-and-diploma-nawa', 'poland-banach-nawa-polish-card-scholarships', 'visegrad-scholarship-how-to-apply'],
   TR: ['turkiye-scholarships-how-to-apply'],
 };
 const ARTICLES_FOR_ALL = ['work-during-studies-rules-by-country', 'after-graduation-work-permits-by-country', 'proof-of-funds-student-visa'];
