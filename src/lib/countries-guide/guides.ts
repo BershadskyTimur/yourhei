@@ -40,7 +40,7 @@ export function livingMinimum(country: string): LivingMinimum | null {
 const ARTICLES_OF: Record<string, string[]> = {
   DE: ['germany-how-to-apply-uni-assist', 'daad-scholarships-how-to-apply', 'free-tuition-germany-czechia-finland'],
   GB: ['chevening-scholarship-how-to-apply'],
-  NL: ['netherlands-application-deadlines-studielink', 'nl-scholarship-netherlands-how-to-apply'],
+  NL: ['netherlands-application-deadlines-studielink', 'nl-scholarship-netherlands-how-to-apply', 'netherlands-tuition-fees-international-students'],
   FI: ['finland-how-to-apply-studyinfo', 'free-tuition-germany-czechia-finland'],
   CZ: ['czechia-how-to-apply-universities', 'free-tuition-germany-czechia-finland'],
   PL: ['poland-recognition-of-certificate-and-diploma-nawa', 'visegrad-scholarship-how-to-apply'],
