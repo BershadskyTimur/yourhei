@@ -31,9 +31,11 @@ import { ivyLeagueTuition } from '@/content/blog/ivy-league-tuition';
 import { swedenTuition } from '@/content/blog/sweden-tuition';
 import { australiaTuition } from '@/content/blog/australia-tuition';
 import { netherlandsTuition } from '@/content/blog/netherlands-tuition';
+import { swedenApplication } from '@/content/blog/sweden-application';
+import { germanyDocuments } from '@/content/blog/germany-documents';
 
 // The list of articles, in the order they were planned. To add an article: write src/content/blog/<name>.ts and add it here.
-export const ARTICLES: Article[] = [workDuringStudies, proofOfFunds, afterGraduation, fullyFundedScholarships, scholarshipsByCitizenship, chooseCountry, freeTuition, turkiyeScholarshipsApply, netherlandsApplication, germanyApplication, finlandApplication, czechiaApplication, stipendiumHungaricumApply, daadScholarshipsApply, polandRecognitionNawa, erasmusMundusApply, cheveningApply, swissExcellenceScholarshipsApply, eiffelApply, visegradApply, mextApply, fulbrightApply, nlScholarshipApply, tuitionByCountry, ivyLeagueTuition, swedenTuition, australiaTuition, netherlandsTuition];
+export const ARTICLES: Article[] = [workDuringStudies, proofOfFunds, afterGraduation, fullyFundedScholarships, scholarshipsByCitizenship, chooseCountry, freeTuition, turkiyeScholarshipsApply, netherlandsApplication, germanyApplication, finlandApplication, czechiaApplication, stipendiumHungaricumApply, daadScholarshipsApply, polandRecognitionNawa, erasmusMundusApply, cheveningApply, swissExcellenceScholarshipsApply, eiffelApply, visegradApply, mextApply, fulbrightApply, nlScholarshipApply, tuitionByCountry, ivyLeagueTuition, swedenTuition, australiaTuition, netherlandsTuition, swedenApplication, germanyDocuments];
 
 /** The language of the text shown for a site language: Russian and English are written by hand, the translated ones have their own text, the rest read English. */
 export function blogLang(locale: string): BlogLang {

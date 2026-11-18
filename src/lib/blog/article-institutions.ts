@@ -8,6 +8,19 @@ export interface ArticleInstitution {
 }
 
 export const ARTICLE_INSTITUTIONS: Record<string, { country: string; items: ArticleInstitution[] }> = {
+  // Sweden has no country guide and no deadline block in the article page, so the article lists the institutions its text links to
+  // (the names of the pages are the ones of the article on Swedish tuition, checked on the live site 13.11.2026)
+  'sweden-how-to-apply-universityadmissions': {
+    country: 'SE',
+    items: [
+      { slug: 'lund-university', names: { en: 'Lund University', ru: 'Лундский университет' } },
+      { slug: 'uppsala-university', names: { en: 'Uppsala University', ru: 'Уппсальский университет' } },
+      { slug: 'stockholm-university', names: { en: 'Stockholm University', ru: 'Стокгольмский университет' } },
+      { slug: 'university-of-gothenburg', names: { en: 'University of Gothenburg', ru: 'Гётеборгский университет' } },
+      { slug: 'royal-institute-of-technology', names: { en: 'KTH Royal Institute of Technology', ru: 'Королевский технологический институт (KTH)' } },
+      { slug: 'chalmers-university-of-technology', names: { en: 'Chalmers University of Technology', ru: 'Чалмерский технологический институт' } },
+    ],
+  },
   'stipendium-hungaricum-how-to-apply': {
     country: 'HU',
     items: [

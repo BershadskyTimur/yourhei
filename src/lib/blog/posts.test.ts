@@ -178,7 +178,7 @@ const linksOf = (blocks: Block[]) => blocks.flatMap((b) => (b.t === 'cta' ? [b.h
 
 // Articles whose machine translations are not written in every language yet: where a translation is missing they read English (with the notice).
 // A language may have some of them already. When an article is translated in all 14 languages, remove it from this list.
-const NOT_TRANSLATED_YET: string[] = ['how-much-does-it-cost-to-study-abroad-tuition-by-country'];
+const NOT_TRANSLATED_YET: string[] = ['how-much-does-it-cost-to-study-abroad-tuition-by-country', 'sweden-how-to-apply-universityadmissions', 'germany-admission-documents-anabin-blocked-account'];
 
 describe('machine translations of the articles', () => {
   it('cover every article in every translated language, and the menu knows the languages', () => {
