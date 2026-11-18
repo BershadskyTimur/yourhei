@@ -8,6 +8,20 @@ export interface ArticleInstitution {
 }
 
 export const ARTICLE_INSTITUTIONS: Record<string, { country: string; items: ArticleInstitution[] }> = {
+  // The United States has no country guide, so the Common App article lists the seven colleges its text is about (the pages are the ones the
+  // article on Harvard and the Ivy League links to, checked on the live site 13.11.2026)
+  'common-app-how-to-apply-us-universities': {
+    country: 'US',
+    items: [
+      { slug: 'harvard-university', names: { en: 'Harvard University', ru: 'Гарвардский университет' } },
+      { slug: 'yale-university', names: { en: 'Yale University', ru: 'Йельский университет' } },
+      { slug: 'princeton-university', names: { en: 'Princeton University', ru: 'Принстонский университет' } },
+      { slug: 'brown-university', names: { en: 'Brown University', ru: 'Брауновский университет' } },
+      { slug: 'cornell-university', names: { en: 'Cornell University', ru: 'Корнеллский университет' } },
+      { slug: 'university-of-pennsylvania', names: { en: 'University of Pennsylvania', ru: 'Пенсильванский университет' } },
+      { slug: 'dartmouth-college', names: { en: 'Dartmouth College', ru: 'Дартмутский колледж' } },
+    ],
+  },
   // Sweden has no country guide and no deadline block in the article page, so the article lists the institutions its text links to
   // (the names of the pages are the ones of the article on Swedish tuition, checked on the live site 13.11.2026)
   'sweden-how-to-apply-universityadmissions': {

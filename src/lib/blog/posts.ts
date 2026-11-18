@@ -33,9 +33,11 @@ import { australiaTuition } from '@/content/blog/australia-tuition';
 import { netherlandsTuition } from '@/content/blog/netherlands-tuition';
 import { swedenApplication } from '@/content/blog/sweden-application';
 import { germanyDocuments } from '@/content/blog/germany-documents';
+import { ucasApplication } from '@/content/blog/ucas-application';
+import { commonAppApplication } from '@/content/blog/common-app-application';
 
 // The list of articles, in the order they were planned. To add an article: write src/content/blog/<name>.ts and add it here.
-export const ARTICLES: Article[] = [workDuringStudies, proofOfFunds, afterGraduation, fullyFundedScholarships, scholarshipsByCitizenship, chooseCountry, freeTuition, turkiyeScholarshipsApply, netherlandsApplication, germanyApplication, finlandApplication, czechiaApplication, stipendiumHungaricumApply, daadScholarshipsApply, polandRecognitionNawa, erasmusMundusApply, cheveningApply, swissExcellenceScholarshipsApply, eiffelApply, visegradApply, mextApply, fulbrightApply, nlScholarshipApply, tuitionByCountry, ivyLeagueTuition, swedenTuition, australiaTuition, netherlandsTuition, swedenApplication, germanyDocuments];
+export const ARTICLES: Article[] = [workDuringStudies, proofOfFunds, afterGraduation, fullyFundedScholarships, scholarshipsByCitizenship, chooseCountry, freeTuition, turkiyeScholarshipsApply, netherlandsApplication, germanyApplication, finlandApplication, czechiaApplication, stipendiumHungaricumApply, daadScholarshipsApply, polandRecognitionNawa, erasmusMundusApply, cheveningApply, swissExcellenceScholarshipsApply, eiffelApply, visegradApply, mextApply, fulbrightApply, nlScholarshipApply, tuitionByCountry, ivyLeagueTuition, swedenTuition, australiaTuition, netherlandsTuition, swedenApplication, germanyDocuments, commonAppApplication, ucasApplication];
 
 /** The language of the text shown for a site language: Russian and English are written by hand, the translated ones have their own text, the rest read English. */
 export function blogLang(locale: string): BlogLang {
