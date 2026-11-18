@@ -23,8 +23,47 @@ export function examLabel(id: string, locale: string): string {
   return e ? labelFor(e.label, locale) : id.toUpperCase();
 }
 
-/** One programme: name, basic facts, price, requirements, deadlines and the link to apply. */
-export async function ProgramCard({ program, country, slug, city }: { program: ProgramDetail; country: string; slug: string; city: Partial<Record<string, string>> }) {
+/** Where a programme's data comes from: programmes with the same key share one source line. */
+export const sourceKey = (p: ProgramDetail): string => (p.byInstitution ? 'institution' : (p.source ?? ''));
+
+/** Whether a programme has any requirement to show. */
+export const hasRequirements = (p: ProgramDetail): boolean => p.minScores.length > 0 || p.documents.length > 0 || Boolean(p.entrance);
+
+/**
+ * "Source: …, data for …, how we collect data" of a programme: under one card, or once under a list of programmes from one source
+ * (`source: false` on a card whose source is shown under the list, `year: false` when the year is shown there too).
+ */
+export async function ProgramSourceLine({ program, className, source: withSource = true, year: withYear = true }: { program: ProgramDetail; className: string; source?: boolean; year?: boolean }) {
+  const t = await getTranslations('Institution');
+  const source = withSource ? sourceOf(sourceKey(program)) : undefined;
+  const academicYear = withYear ? program.academicYear : null;
+  if (!source && !academicYear) return null;
+  return (
+    <p className={className}>
+      {source && (
+        <>
+          {t('sourceLine', { source: source.name })}
+          {source.url && (
+            <>
+              {' '}
+              (<a href={source.url} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{new URL(source.url).hostname.replace(/^www\./, '')}</a>)
+            </>
+          )}
+          {'. '}
+        </>
+      )}
+      {academicYear && <>{t('dataYear', { year: academicYear })}. </>}
+      {withSource && <Link href="/methodology" className="underline underline-offset-2">{t('methodologyLinkShort')}</Link>}
+    </p>
+  );
+}
+
+/**
+ * One programme: name, basic facts, price, requirements, deadlines and the link to apply. Requirements are left out when there are
+ * none (the same "not published yet" under each of 82 programmes was most of the text of an institution page); `sharedSource` leaves
+ * out the source (and `sharedYear` the data year) when the page shows it once under the list.
+ */
+export async function ProgramCard({ program, country, slug, city, sharedSource = false, sharedYear = false }: { program: ProgramDetail; country: string; slug: string; city: Partial<Record<string, string>>; sharedSource?: boolean; sharedYear?: boolean }) {
   const locale = await getLocale();
   const t = await getTranslations('Institution');
   const tCard = await getTranslations('Matches.card');
@@ -42,8 +81,7 @@ export async function ProgramCard({ program, country, slug, city }: { program: P
   const priceLine = (l: TuitionLine) => `${fmtMoney(l, locale)} ${t(`per.${l.period}` as 'per.year')} (${t(`for.${l.appliesTo}` as 'for.all')})`;
   const level = tSurvey.has(program.level as 'bachelor') ? tSurvey(program.level as 'bachelor') : program.level;
 
-  const hasReq = program.minScores.length > 0 || program.documents.length > 0 || program.entrance;
-  const source = sourceOf(program.byInstitution ? 'institution' : program.source);
+  const hasReq = hasRequirements(program);
 
   return (
     <li className="rounded-lg border border-line bg-surface p-5">
@@ -86,10 +124,10 @@ export async function ProgramCard({ program, country, slug, city }: { program: P
           </dd>
         </div>
 
-        <div>
-          <dt className="text-sm font-semibold text-text">{t('requirementsTitle')}</dt>
-          <dd className="mt-1 text-sm">
-            {hasReq ? (
+        {hasReq && (
+          <div>
+            <dt className="text-sm font-semibold text-text">{t('requirementsTitle')}</dt>
+            <dd className="mt-1 text-sm">
               <ul className="space-y-0.5">
                 {program.minScores.map((s) => (
                   <li key={s.exam}>{t('minScore', { exam: examLabel(s.exam, locale), score: s.min })}</li>
@@ -97,11 +135,9 @@ export async function ProgramCard({ program, country, slug, city }: { program: P
                 {program.entrance && <li>{t('entranceTitle')}: {program.entrance}</li>}
                 {program.documents.length > 0 && <li>{t('documentsTitle')}: {program.documents.map(docLabel).join(', ')}</li>}
               </ul>
-            ) : (
-              <span className="text-muted">{t('noRequirements')}</span>
-            )}
-          </dd>
-        </div>
+            </dd>
+          </div>
+        )}
       </dl>
 
       {(program.intakes.length > 0 || visibleDeadlines(program.deadlines).length > 0) && (
@@ -120,24 +156,7 @@ export async function ProgramCard({ program, country, slug, city }: { program: P
         </p>
       )}
 
-      {(source || program.academicYear) && (
-        <p className="mt-3 text-xs text-muted">
-          {source && (
-            <>
-              {t('sourceLine', { source: source.name })}
-              {source.url && (
-                <>
-                  {' '}
-                  (<a href={source.url} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{new URL(source.url).hostname.replace(/^www\./, '')}</a>)
-                </>
-              )}
-              {'. '}
-            </>
-          )}
-          {program.academicYear && <>{t('dataYear', { year: program.academicYear })}. </>}
-          <Link href="/methodology" className="underline underline-offset-2">{t('methodologyLinkShort')}</Link>
-        </p>
-      )}
+      <ProgramSourceLine program={program} source={!sharedSource} year={!sharedYear} className="mt-3 text-xs text-muted" />
 
       {program.applicationUrl && (
         <TrackedLink href={program.applicationUrl} meta={{ kind: 'program', country, slug }} className="mt-4 inline-flex h-10 items-center rounded-lg bg-accent px-4 text-sm font-medium text-on-accent hover:opacity-90">

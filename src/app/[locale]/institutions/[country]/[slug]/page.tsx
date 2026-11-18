@@ -4,7 +4,7 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { dateBeforeStop } from '@/lib/date-text';
 import { FavoriteButton } from '@/components/FavoriteButton';
-import { ProgramCard, examLabel } from '@/components/ProgramCard';
+import { ProgramCard, ProgramSourceLine, examLabel, hasRequirements, sourceKey } from '@/components/ProgramCard';
 import { ReportError } from '@/components/ReportError';
 import { ReviewForm } from '@/components/ReviewForm';
 import { TrackedLink } from '@/components/TrackedLink';
@@ -117,6 +117,11 @@ export default async function InstitutionPage({ params }: { params: Params }) {
   const countryName = new Intl.DisplayNames([locale], { type: 'region' }).of(institution.country);
   const description = pickText(institution.description, locale);
 
+  // one source line under the list when every programme has the same source (with the year when that is the same too) (and one note when none has requirements),
+  // instead of the same lines under each card
+  const sharedSource = institution.programs.length > 1 && new Set(institution.programs.map(sourceKey)).size === 1;
+  const sharedYear = sharedSource && new Set(institution.programs.map((p) => p.academicYear ?? '')).size === 1;
+  const noneHasRequirements = institution.programs.length > 0 && !institution.programs.some(hasRequirements);
   const byLevel = LEVEL_ORDER.map((level) => ({ level, items: institution.programs.filter((p) => p.level === level) })).filter((g) => g.items.length > 0);
   const checked = institution.verifiedAt
     ? new Intl.DateTimeFormat(locale, { dateStyle: 'long' }).format(new Date(institution.verifiedAt))
@@ -350,11 +355,17 @@ export default async function InstitutionPage({ params }: { params: Params }) {
                   <h3 className="text-sm font-semibold uppercase tracking-wide text-muted">{levelLabel(g.level)}</h3>
                   <ul className="mt-2 space-y-4">
                     {g.items.map((p) => (
-                      <ProgramCard key={p.id} program={p} country={institution.country} slug={institution.slug} city={institution.city} />
+                      <ProgramCard key={p.id} program={p} country={institution.country} slug={institution.slug} city={institution.city} sharedSource={sharedSource} sharedYear={sharedYear} />
                     ))}
                   </ul>
                 </div>
               ))
+            )}
+            {(noneHasRequirements || sharedSource) && (
+              <div className="mt-4 space-y-1 text-sm text-muted">
+                {noneHasRequirements && <p>{t('noRequirements')}</p>}
+                {sharedSource && <ProgramSourceLine program={institution.programs[0]} year={sharedYear} className="text-xs" />}
+              </div>
             )}
           </section>
 
